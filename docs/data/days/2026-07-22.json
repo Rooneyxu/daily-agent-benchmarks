@@ -1,0 +1,226 @@
+{
+  "date": "2026-07-22",
+  "count": 4,
+  "report": {
+    "date": "2026-07-22",
+    "count": 4,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 4,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On July 22, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Safety (4), GUI agents (1), Coding agents (1), and Tool use (1).",
+      "highlights": [
+        {
+          "id": "2607.20759",
+          "title": "IssueTrojanBench: Benchmarking AI Coding Agents Against Malicious Issue Requests",
+          "blurb": "AI coding agents powered by LLMs are increasingly integrated into real-world software development, where they generate, edit, and execute code with autonomous access to local files and tools."
+        },
+        {
+          "id": "2607.19865",
+          "title": "DocOps: A Verifiable Benchmark for Autonomous Agents in Complex Document Operations",
+          "blurb": "As autonomous agents rapidly evolve, their ability to reliably manipulate ubiquitous digital documents has become critical for enabling general-purpose AI assistants and automating complex workspace workflows."
+        },
+        {
+          "id": "2607.19670",
+          "title": "Same Game, Different Story: A Minimal Conservative Strategic Robustness Benchmark for Large Language Model Agents",
+          "blurb": "Large language model (LLM) agents increasingly operate in strategic settings where outcomes depend on the actions of other agents."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年7月22日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在安全（4）、GUI 智能体（1）、代码智能体（1）、工具使用（1）。",
+      "highlights": [
+        {
+          "id": "2607.20759",
+          "title": "IssueTrojanBench: Benchmarking AI Coding Agents Against Malicious Issue Requests",
+          "blurb": "AI coding agents powered by LLMs are increasingly integrated into real-world software development, where they generate, edit, and execute code with autonomous access to local files and tools."
+        },
+        {
+          "id": "2607.19865",
+          "title": "DocOps: A Verifiable Benchmark for Autonomous Agents in Complex Document Operations",
+          "blurb": "As autonomous agents rapidly evolve, their ability to reliably manipulate ubiquitous digital documents has become critical for enabling general-purpose AI assistants and automating complex workspace workflows."
+        },
+        {
+          "id": "2607.19670",
+          "title": "Same Game, Different Story: A Minimal Conservative Strategic Robustness Benchmark for Large Language Model Agents",
+          "blurb": "Large language model (LLM) agents increasingly operate in strategic settings where outcomes depend on the actions of other agents."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2607.20759",
+      "title": "IssueTrojanBench: Benchmarking AI Coding Agents Against Malicious Issue Requests",
+      "abstract": "AI coding agents powered by LLMs are increasingly integrated into real-world software development, where they generate, edit, and execute code with autonomous access to local files and tools. Coding agents inherit security risks from both the LLM backbone, where adversarial prompts, poisoned training data, and backdoor triggers can cause models to emit insecure or attacker-chosen code, and their agentic architecture, where tool-using autonomy enables induced misuse of external APIs, data exfiltration, and persistent compromise of development environments. This paper presents a systematic evaluation of malicious issue requests against state-of-the-art coding agents (Cursor, Claude Code, and Codex Desktop), powered by two major model families (OpenAI GPT-5.3 Codex/GPT-5.4 and Anthropic Sonnet 4.6). Our novel benchmark IssueTrojanBench contains malicious issues that are constructed based on four novel attack categories (i.e., embedded as malicious instructions in issues), six delivery vectors (e.g., PDF, or issue comment), and further augmented by perturbations. Our results reveal critical vulnerabilities in the as-deployed modern coding agents, i.e., 66.5% of the malicious issues from IssueTrojanBench penetrate all the guardrails (agent- and LLM-level) of coding agents. Our further analysis shows that rejection is almost entirely from LLMs rather than the agent frameworks, with GPT models broadly vulnerable and Sonnet 4.6 exhibiting more selective, risk-aware blocking of high-impact actions. Our evaluation also highlights that the current agent-level defense strategy offers limited additional protection for coding agents. Our findings highlight the urgent need for stronger agent- and model-level safety mechanisms to protect AI coding agents.",
+      "authors": [
+        "Ankur Singh",
+        "Jinqiu Yang",
+        "Tse-Hsun Chen"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-07-22T22:20:02Z",
+      "updated": "2026-07-22T22:20:02Z",
+      "announced_date": "2026-07-22",
+      "first_seen": "2026-07-22",
+      "comment": "10 pages, 4 figures, 4 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.20759v1",
+        "pdf": "https://arxiv.org/pdf/2607.20759v1",
+        "html": "https://arxiv.org/html/2607.20759"
+      },
+      "score": 21,
+      "tags": [
+        "gui",
+        "coding",
+        "tool-use",
+        "safety"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2607.20121",
+      "title": "OpenSkillRisk: Benchmarking Agent Safety When Using Real-World Risky Third-Party Skills",
+      "abstract": "LLM-based agents leverage third-party skills to extend their capabilities in open-world scenarios. However, third-party skills can introduce extra security vulnerabilities, as seemingly harmless skills can contain latent safety risks that only emerge during actual execution. In this work, we conduct a systematic investigation into how well current agent systems recognize and avoid such risks. To support quantitative and qualitative evaluation, we construct OpenSkillRisk, a dedicated safety benchmark containing 263 risky skills collected from public skill marketplaces. We classify these skills into seven categories based on their threat types and pair each skill with a standardized user task and a corresponding sandbox for controlled evaluation. Distinct from prior benchmarks, OpenSkillRisk not only covers more realistic and diverse unsafe scenarios, but also provides a fine-grained analysis to diagnose the behavioral patterns of agents in such scenarios. We conduct comprehensive experiments covering three mainstream CLI agent frameworks and thirteen state-of-the-art LLMs. Experimental results show that no tested system handles risky skills reliably: even the safest configurations still execute unsafe actions in about 17% of cases. Context-dependent and system-level risks are especially difficult for current agent systems to avoid. Our behavioral analysis reveals three recurring failure patterns: agents may fail to recognize the risk, recognize it but fail to intervene before acting, or follow skill instructions beyond the user's intended scope. These findings highlight the need to improve both risk reasoning in LLMs and execution control in agent frameworks.",
+      "authors": [
+        "Qiyuan Liu",
+        "Tingfeng Hui",
+        "Kun Zhan",
+        "Kaike Zhang",
+        "Ning Miao"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-07-22T13:24:09Z",
+      "updated": "2026-07-23T09:17:24Z",
+      "announced_date": "2026-07-22",
+      "first_seen": "2026-07-22",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.20121v2",
+        "pdf": "https://arxiv.org/pdf/2607.20121v2",
+        "html": "https://arxiv.org/html/2607.20121"
+      },
+      "score": 8,
+      "tags": [
+        "safety",
+        "planning"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2607.19865",
+      "title": "DocOps: A Verifiable Benchmark for Autonomous Agents in Complex Document Operations",
+      "abstract": "As autonomous agents rapidly evolve, their ability to reliably manipulate ubiquitous digital documents has become critical for enabling general-purpose AI assistants and automating complex workspace workflows. In this paper, we introduce DocOps, a deterministically verifiable evaluation framework underpinned by a hierarchical taxonomy that deconstructs document operations inspired by real-world practices into atomic dimensions and escalating workflow complexities. Based on DocOps, we systematically evaluate representative closed- and open-source models across various agentic harnesses, revealing that even the most advanced frontier configurations still exhibit profound limitations when handling highly coupled, long-range tasks. Furthermore, a fine-grained analysis of existing agents' manipulation behaviors uncovers 3 key failure modes: long-term state tracking collapse, shallow semantic verification, and destructive editing of structural metadata. Ultimately, our work exposes the capability boundaries of agents in maintaining global document consistency, shedding light on the future design of robust, non-destructive agents for complex digital ecosystems.",
+      "authors": [
+        "Jiazhen Jiang",
+        "Boxi Cao",
+        "Lingyong Yan",
+        "Yaojie Lu",
+        "Hongyu Lin",
+        "Shuaiqiang Wang",
+        "Dawei Yin",
+        "Xianpei Han",
+        "Le Sun"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-22T07:52:59Z",
+      "updated": "2026-07-22T07:52:59Z",
+      "announced_date": "2026-07-22",
+      "first_seen": "2026-07-22",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.19865v1",
+        "pdf": "https://arxiv.org/pdf/2607.19865v1",
+        "html": "https://arxiv.org/html/2607.19865"
+      },
+      "score": 17,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2607.19670",
+      "title": "Same Game, Different Story: A Minimal Conservative Strategic Robustness Benchmark for Large Language Model Agents",
+      "abstract": "Large language model (LLM) agents increasingly operate in strategic settings where outcomes depend on the actions of other agents. This raises a reliability question: will a model choose consistently when the same incentives are presented through different narratives? We introduce Same Game, Different Story, a benchmark that defines strategic robustness as invariance of model-induced action distributions under payoff-preserving changes in framing. We illustrate the framework through a secondary analysis of published aggregate cooperation rates for GPT-3.5, GPT-4, and LLaMa-2 across four social-dilemma games. The retained comparison covers business and friend-sharing framings, representing 24 model-game-context cells and 7,200 decisions in the source study. Because trial-level data were unavailable, approximate counts were reconstructed from published figures; the resulting estimates are therefore illustrative rather than an exact replication. Under the paper's conservative transformation, pooled strategic robustness is 0.783, and friend-sharing framing increases cooperation by 0.307 relative to business framing. The results indicate that social-relational framing can substantially alter LLM behavior even when the underlying action sets and payoffs remain fixed. Strategic robustness should therefore be evaluated separately from strategic competence, using families of payoff-equivalent prompts rather than a single presentation of a game.",
+      "authors": [
+        "Seyed Pouyan Mousavi Davoudi",
+        "Alireza Amiri-Margavi",
+        "Amin Gholami Davodi",
+        "Hamidreza Hasani Balyani",
+        "Arshia Gharagozlou"
+      ],
+      "categories": [
+        "cs.MA"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-07-22T02:18:49Z",
+      "updated": "2026-07-22T02:18:49Z",
+      "announced_date": "2026-07-22",
+      "first_seen": "2026-07-22",
+      "comment": "10 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.19670v1",
+        "pdf": "https://arxiv.org/pdf/2607.19670v1",
+        "html": "https://arxiv.org/html/2607.19670"
+      },
+      "score": 9,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 1
+    }
+  ]
+}

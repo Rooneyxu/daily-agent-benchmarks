@@ -1,0 +1,253 @@
+{
+  "date": "2026-01-26",
+  "count": 4,
+  "report": {
+    "date": "2026-01-26",
+    "count": 4,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "mobile",
+        "count": 1,
+        "en": "Mobile agents",
+        "zh": "移动智能体"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On January 26, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Tool use (2), Safety (2), Planning / reasoning (2), and Dialogue / customer (1).",
+      "highlights": [
+        {
+          "id": "2601.18842",
+          "title": "GUIGuard-Bench: Toward a General Evaluation for Privacy-Preserving GUI Agents",
+          "blurb": "As GUI agents increasingly rely on screenshots to perceive and operate digital environments, they may inadvertently expose sensitive information such as identities, accounts, locations, and behavioral traces."
+        },
+        {
+          "id": "2601.18700",
+          "title": "TEA-Bench: A Systematic Benchmarking of Tool-enhanced Emotional Support Dialogue Agent",
+          "blurb": "Emotional Support Conversation requires not only affective expression but also grounded instrumental support to provide trustworthy guidance."
+        },
+        {
+          "id": "2601.18137",
+          "title": "DeepPlanning: Benchmarking Long-Horizon Agentic Planning with Verifiable Constraints",
+          "blurb": "While agent evaluation has shifted toward long-horizon tasks, most benchmarks still emphasize local, step-level reasoning rather than the global constrained optimization (e.g., time and financial budgets) that demands ge…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年1月26日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在工具使用（2）、安全（2）、规划 / 推理（2）、对话 / 客服（1）。",
+      "highlights": [
+        {
+          "id": "2601.18842",
+          "title": "GUIGuard-Bench: Toward a General Evaluation for Privacy-Preserving GUI Agents",
+          "blurb": "As GUI agents increasingly rely on screenshots to perceive and operate digital environments, they may inadvertently expose sensitive information such as identities, accounts, locations, and behavioral traces."
+        },
+        {
+          "id": "2601.18700",
+          "title": "TEA-Bench: A Systematic Benchmarking of Tool-enhanced Emotional Support Dialogue Agent",
+          "blurb": "Emotional Support Conversation requires not only affective expression but also grounded instrumental support to provide trustworthy guidance."
+        },
+        {
+          "id": "2601.18137",
+          "title": "DeepPlanning: Benchmarking Long-Horizon Agentic Planning with Verifiable Constraints",
+          "blurb": "While agent evaluation has shifted toward long-horizon tasks, most benchmarks still emphasize local, step-level reasoning rather than the global constrained optimization (e.g., time and financial budgets) that demands ge…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2601.18700",
+      "title": "TEA-Bench: A Systematic Benchmarking of Tool-enhanced Emotional Support Dialogue Agent",
+      "abstract": "Emotional Support Conversation requires not only affective expression but also grounded instrumental support to provide trustworthy guidance. However, existing ESC systems and benchmarks largely focus on affective support in text-only settings, overlooking how external tools can enable factual grounding and reduce hallucination in multi-turn emotional support. We introduce TEA-Bench, the first interactive benchmark for evaluating tool-augmented agents in ESC, featuring realistic emotional scenarios, an MCP-style tool environment, and process-level metrics that jointly assess the quality and factual grounding of emotional support. Experiments on nine LLMs show that tool augmentation generally improves emotional support quality and reduces hallucination, but the gains are strongly capacity-dependent: stronger models use tools more selectively and effectively, while weaker models benefit only marginally. We further release TEA-Dialog, a dataset of tool-enhanced ESC dialogues, and find that supervised fine-tuning improves in-distribution support but generalizes poorly. Our results underscore the importance of tool use in building reliable emotional support agents. Our code and data can be found in https://github.com/XingYuSSS/TEA-Bench.",
+      "authors": [
+        "Xingyu Sui",
+        "Yanyan Zhao",
+        "Yulin Hu",
+        "Jiahe Guo",
+        "Weixiang Zhao",
+        "Bing Qin"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-01-26T17:15:27Z",
+      "updated": "2026-05-08T02:15:03Z",
+      "announced_date": "2026-01-26",
+      "first_seen": "2026-01-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.18700v2",
+        "pdf": "https://arxiv.org/pdf/2601.18700v2",
+        "html": "https://arxiv.org/html/2601.18700"
+      },
+      "score": 20,
+      "tags": [
+        "tool-use",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 3
+    },
+    {
+      "id": "2601.18842",
+      "title": "GUIGuard-Bench: Toward a General Evaluation for Privacy-Preserving GUI Agents",
+      "abstract": "As GUI agents increasingly rely on screenshots to perceive and operate digital environments, they may inadvertently expose sensitive information such as identities, accounts, locations, and behavioral traces. While existing benchmarks primarily focus on task completion, grounding, or defenses against third-party attacks, current visual privacy datasets remain largely restricted to static natural images, limiting their ability to capture the contextual dependence and task relevance of privacy risks in GUI task trajectories. To bridge this gap, we introduce \\textbf{GUIGuard-Bench}, a first-step benchmark for studying privacy-preserving GUI agents in trajectory-based GUI workflows. GUIGuard-Bench contains 241 real GUI-agent trajectories with 4,080 screenshots across Android and PC environments. Each screenshot is annotated at the region level with privacy bounding boxes, semantic privacy categories, risk levels, and whether the private information is necessary for completing the task. Built on these annotations, GUIGuard-Bench supports three complementary evaluations: privacy recognition, offline planning fidelity under protected screenshots, and the utility impact of different protection strategies. Our results show that current models can often detect whether a screenshot contains private information, but they struggle with fine-grained localization, category recognition, risk assessment, and task-necessity judgment. We also find that closed-source models, exemplified by Claude Sonnet 4.6, can maintain largely consistent planner semantics in Android environments after privacy protection is applied. Our results highlight privacy recognition as a critical bottleneck for practical GUI agents. Project: https://futuresis.github.io/GUIGuard-page/",
+      "authors": [
+        "Yanxi Wang",
+        "Zhiling Zhang",
+        "Wenbo Zhou",
+        "Weiming Zhang",
+        "Jie Zhang",
+        "Qiannan Zhu",
+        "Yu Shi",
+        "Shuxin Zheng",
+        "Jiyan He"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-01-26T11:33:40Z",
+      "updated": "2026-05-13T07:11:36Z",
+      "announced_date": "2026-01-26",
+      "first_seen": "2026-01-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.18842v3",
+        "pdf": "https://arxiv.org/pdf/2601.18842v3",
+        "html": "https://arxiv.org/html/2601.18842"
+      },
+      "score": 20,
+      "tags": [
+        "gui",
+        "safety",
+        "planning",
+        "mobile"
+      ],
+      "field": "computer-use",
+      "citations": 4
+    },
+    {
+      "id": "2601.18137",
+      "title": "DeepPlanning: Benchmarking Long-Horizon Agentic Planning with Verifiable Constraints",
+      "abstract": "While agent evaluation has shifted toward long-horizon tasks, most benchmarks still emphasize local, step-level reasoning rather than the global constrained optimization (e.g., time and financial budgets) that demands genuine planning ability. Meanwhile, existing LLM planning benchmarks underrepresent the active information gathering and fine-grained local constraints typical of real-world settings. To address this, we introduce DeepPlanning, a challenging benchmark for practical long-horizon agent planning. It features multi-day travel planning and multi-product shopping tasks that require proactive information acquisition, local constrained reasoning, and global constrained optimization. Evaluations on DeepPlanning show that even frontier agentic LLMs struggle with these problems, highlighting the importance of reliable explicit reasoning patterns and parallel tool use for achieving better effectiveness-efficiency trade-offs. Error analysis further points to promising directions for improving agentic LLMs over long planning horizons. We open-source the code and data to support future research.",
+      "authors": [
+        "Yinger Zhang",
+        "Shutong Jiang",
+        "Renhao Li",
+        "Jianhong Tu",
+        "Yang Su",
+        "Lianghao Deng",
+        "Xudong Guo",
+        "Chenxu Lv",
+        "Junyang Lin"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-01-26T04:43:49Z",
+      "updated": "2026-01-26T04:43:49Z",
+      "announced_date": "2026-01-26",
+      "first_seen": "2026-01-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.18137v1",
+        "pdf": "https://arxiv.org/pdf/2601.18137v1",
+        "html": "https://arxiv.org/html/2601.18137"
+      },
+      "score": 17,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 26
+    },
+    {
+      "id": "2601.18113",
+      "title": "MalURLBench: A Benchmark Evaluating Agents' Vulnerabilities When Processing Web URLs",
+      "abstract": "LLM-based web agents have become increasingly popular for their utility in daily life and work. However, they exhibit critical vulnerabilities when processing malicious URLs: accepting a disguised malicious URL enables subsequent access to unsafe webpages, which can cause severe damage to service providers and users. Despite this risk, no benchmark currently targets this emerging threat. To address this gap, we propose MalURLBench, the first benchmark for evaluating LLMs' vulnerabilities to malicious URLs. MalURLBench contains 61,845 attack instances spanning 10 real-world scenarios and 7 categories of real malicious websites. Experiments with 12 popular LLMs reveal that existing models struggle to detect elaborately disguised malicious URLs. We further identify and analyze key factors that impact attack success rates and propose URLGuard, a lightweight defense module. We believe this work will provide a foundational resource for advancing the security of web agents. Our code is available at https://github.com/JiangYingEr/MalURLBench.",
+      "authors": [
+        "Dezhang Kong",
+        "Zhuxi Wu",
+        "Shiqi Liu",
+        "Zhicheng Tan",
+        "Kuichen Lu",
+        "Minghao Li",
+        "Qichen Liu",
+        "Shengyu Chu",
+        "Zhenhua Xu",
+        "Xuan Liu",
+        "Meng Han"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-01-26T03:58:10Z",
+      "updated": "2026-03-13T04:12:36Z",
+      "announced_date": "2026-01-26",
+      "first_seen": "2026-01-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.18113v3",
+        "pdf": "https://arxiv.org/pdf/2601.18113v3",
+        "html": "https://arxiv.org/html/2601.18113"
+      },
+      "score": 15,
+      "tags": [
+        "web",
+        "safety"
+      ],
+      "field": "web",
+      "citations": 0
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "date": "2026-02-16",
+  "count": 3,
+  "report": {
+    "date": "2026-02-16",
+    "count": 3,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "3 new agent benchmarks",
+      "summary": "On February 16, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Tool use (1), Coding agents (1), Safety (1), and Multimodal (1).",
+      "highlights": [
+        {
+          "id": "2602.15197",
+          "title": "OpaqueToolsBench: Learning Nuances of Tool Behavior Through Interaction",
+          "blurb": "Tool-calling is essential for Large Language Model (LLM) agents to complete real-world tasks."
+        },
+        {
+          "id": "2602.15112",
+          "title": "ResearchGym: Evaluating Language Model Agents on Real-World AI Research",
+          "blurb": "We introduce ResearchGym, a benchmark and execution environment for evaluating AI agents on end-to-end research."
+        },
+        {
+          "id": "2602.15909",
+          "title": "Resp-Agent: An Agent-Based System for Multimodal Respiratory Sound Generation and Disease Diagnosis",
+          "blurb": "Deep learning-based respiratory auscultation is currently hindered by two fundamental challenges: (i) inherent information loss, as converting signals into spectrograms discards transient acoustic events and clinical con…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年2月16日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在工具使用（1）、代码智能体（1）、安全（1）、多模态（1）。",
+      "highlights": [
+        {
+          "id": "2602.15197",
+          "title": "OpaqueToolsBench: Learning Nuances of Tool Behavior Through Interaction",
+          "blurb": "Tool-calling is essential for Large Language Model (LLM) agents to complete real-world tasks."
+        },
+        {
+          "id": "2602.15112",
+          "title": "ResearchGym: Evaluating Language Model Agents on Real-World AI Research",
+          "blurb": "We introduce ResearchGym, a benchmark and execution environment for evaluating AI agents on end-to-end research."
+        },
+        {
+          "id": "2602.15909",
+          "title": "Resp-Agent: An Agent-Based System for Multimodal Respiratory Sound Generation and Disease Diagnosis",
+          "blurb": "Deep learning-based respiratory auscultation is currently hindered by two fundamental challenges: (i) inherent information loss, as converting signals into spectrograms discards transient acoustic events and clinical con…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2602.15197",
+      "title": "OpaqueToolsBench: Learning Nuances of Tool Behavior Through Interaction",
+      "abstract": "Tool-calling is essential for Large Language Model (LLM) agents to complete real-world tasks. While most existing benchmarks assume simple, perfectly documented tools, real-world tools (e.g., general \"search\" APIs) are often opaque, lacking clear best practices or failure modes. Can LLM agents improve their performance in environments with opaque tools by interacting and subsequently improving documentation? To study this, we create OpaqueToolsBench, a benchmark consisting of three distinct task-oriented environments: general function calling, interactive chess playing, and long-trajectory agentic search. Each environment provides underspecified tools that models must learn to use effectively to complete the task. Results on OpaqueToolsBench suggest existing methods for automatically documenting tools are expensive and unreliable when tools are opaque. To address this, we propose a simple framework, ToolObserver, that iteratively refines tool documentation by observing execution feedback from tool-calling trajectories. Our approach outperforms existing methods on OpaqueToolsBench across datasets, even in relatively hard settings. Furthermore, for test-time tool exploration settings, our method is also efficient, consuming 3.5-7.5x fewer total tokens than the best baseline.",
+      "authors": [
+        "Skyler Hallinan",
+        "Thejas Venkatesh",
+        "Xiang Ren",
+        "Sai Praneeth Karimireddy",
+        "Ashwin Paranjape",
+        "Yuhao Zhang",
+        "Jack Hessel"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-16T21:26:37Z",
+      "updated": "2026-02-16T21:26:37Z",
+      "announced_date": "2026-02-16",
+      "first_seen": "2026-02-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.15197v1",
+        "pdf": "https://arxiv.org/pdf/2602.15197v1",
+        "html": "https://arxiv.org/html/2602.15197"
+      },
+      "score": 15,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2602.15112",
+      "title": "ResearchGym: Evaluating Language Model Agents on Real-World AI Research",
+      "abstract": "We introduce ResearchGym, a benchmark and execution environment for evaluating AI agents on end-to-end research. To instantiate this, we repurpose five oral and spotlight papers from ICML, ICLR, and ACL. From each paper's repository, we preserve the datasets, evaluation harness, and baseline implementations but withhold the paper's proposed method. This results in five containerized task environments comprising 39 sub-tasks in total. Within each environment, agents must propose novel hypotheses, run experiments, and attempt to surpass strong human baselines on the paper's metrics. In a controlled evaluation of an agent powered by GPT-5, we observe a sharp capability--reliability gap. The agent improves over the provided baselines from the repository in just 1 of 15 evaluations (6.7%) by 11.5%, and completes only 26.5% of sub-tasks on average. We identify recurring long-horizon failure modes, including impatience, poor time and resource management, overconfidence in weak hypotheses, difficulty coordinating parallel experiments, and hard limits from context length. Yet in a single run, the agent surpasses the solution of an ICML 2025 Spotlight task, indicating that frontier agents can occasionally reach state-of-the-art performance, but do so unreliably. We additionally evaluate proprietary agent scaffolds including Claude Code (Opus-4.5) and Codex (GPT-5.2) which display a similar gap. ResearchGym provides infrastructure for systematic evaluation and analysis of autonomous agents on closed-loop research.",
+      "authors": [
+        "Aniketh Garikaparthi",
+        "Manasi Patwardhan",
+        "Arman Cohan"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-16T19:00:03Z",
+      "updated": "2026-03-11T22:07:26Z",
+      "announced_date": "2026-02-16",
+      "first_seen": "2026-02-16",
+      "comment": "ICLR 2026 Agents in the Wild Workshop",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.15112v2",
+        "pdf": "https://arxiv.org/pdf/2602.15112v2",
+        "html": "https://arxiv.org/html/2602.15112"
+      },
+      "score": 13,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 9
+    },
+    {
+      "id": "2602.15909",
+      "title": "Resp-Agent: An Agent-Based System for Multimodal Respiratory Sound Generation and Disease Diagnosis",
+      "abstract": "Deep learning-based respiratory auscultation is currently hindered by two fundamental challenges: (i) inherent information loss, as converting signals into spectrograms discards transient acoustic events and clinical context; (ii) limited data availability, exacerbated by severe class imbalance. To bridge these gaps, we present Resp-Agent, an autonomous multimodal system orchestrated by a novel Active Adversarial Curriculum Agent (Thinker-A$^2$CA). Unlike static pipelines, Thinker-A$^2$CA serves as a central controller that actively identifies diagnostic weaknesses and schedules targeted synthesis in a closed loop. To address the representation gap, we introduce a modality-weaving Diagnoser that weaves clinical text with audio tokens via strategic global attention and sparse audio anchors, capturing both long-range clinical context and millisecond-level transients. To address the data gap, we design a flow matching Generator that adapts a text-only Large Language Model (LLM) via modality injection, decoupling pathological content from acoustic style to synthesize hard-to-diagnose samples. As a foundation for this work, we introduce Resp-229k, a benchmark corpus of 229k recordings paired with LLM-distilled clinical narratives. Extensive experiments demonstrate that Resp-Agent consistently outperforms prior approaches across diverse evaluation settings, improving diagnostic robustness under data scarcity and long-tailed class imbalance. Our code and data are available at https://github.com/zpforlove/Resp-Agent.",
+      "authors": [
+        "Pengfei Zhang",
+        "Tianxin Xie",
+        "Minghao Yang",
+        "Li Liu"
+      ],
+      "categories": [
+        "eess.AS",
+        "cs.AI",
+        "cs.DB",
+        "cs.HC",
+        "cs.MA",
+        "cs.SD"
+      ],
+      "primary_category": "eess.AS",
+      "published": "2026-02-16T14:48:24Z",
+      "updated": "2026-02-27T12:24:11Z",
+      "announced_date": "2026-02-16",
+      "first_seen": "2026-02-16",
+      "comment": "24 pages, 3 figures. Published as a conference paper at ICLR 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.15909v3",
+        "pdf": "https://arxiv.org/pdf/2602.15909v3",
+        "html": "https://arxiv.org/html/2602.15909"
+      },
+      "score": 6,
+      "tags": [
+        "safety",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    }
+  ]
+}

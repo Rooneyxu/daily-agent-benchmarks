@@ -1,0 +1,323 @@
+{
+  "date": "2026-07-07",
+  "count": 6,
+  "report": {
+    "date": "2026-07-07",
+    "count": 6,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 5,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "workplace",
+        "count": 1,
+        "en": "Work / office",
+        "zh": "职场 / 办公"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      }
+    ],
+    "en": {
+      "headline": "6 new agent benchmarks",
+      "summary": "On July 7, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Tool use (5), Coding agents (2), Safety (2), and Planning / reasoning (2).",
+      "highlights": [
+        {
+          "id": "2607.06008",
+          "title": "PolyWorkBench: Benchmarking LLM Agents for Cross-Lingual Long-Horizon Workflows",
+          "blurb": "While Large Language Model (LLM) agents excel at monolingual long-horizon planning and tool use, enterprise workflows inherently require processing multilingual resources across extended trajectories."
+        },
+        {
+          "id": "2607.05775",
+          "title": "Beyond the Leaderboard: A Synthesis of Tool-Use, Planning, and Reasoning Failures in Large Language Model Agents",
+          "blurb": "Large language model (LLM) agents are increasingly evaluated on their ability to use tools, plan multi-step tasks, coordinate with other agents, and operate over extended horizons."
+        },
+        {
+          "id": "2607.06411",
+          "title": "RuBench: A Repository-Level Agentic Coding Benchmark with Natively Authored Russian Task Specifications",
+          "blurb": "Developers increasingly delegate real maintenance work to product-grade coding agents, and many state tasks in their native language, in the style of a customer request rather than a curated English issue."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 6 篇 Agent Benchmark",
+      "summary": "2026年7月7日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在工具使用（5）、代码智能体（2）、安全（2）、规划 / 推理（2）。",
+      "highlights": [
+        {
+          "id": "2607.06008",
+          "title": "PolyWorkBench: Benchmarking LLM Agents for Cross-Lingual Long-Horizon Workflows",
+          "blurb": "While Large Language Model (LLM) agents excel at monolingual long-horizon planning and tool use, enterprise workflows inherently require processing multilingual resources across extended trajectories."
+        },
+        {
+          "id": "2607.05775",
+          "title": "Beyond the Leaderboard: A Synthesis of Tool-Use, Planning, and Reasoning Failures in Large Language Model Agents",
+          "blurb": "Large language model (LLM) agents are increasingly evaluated on their ability to use tools, plan multi-step tasks, coordinate with other agents, and operate over extended horizons."
+        },
+        {
+          "id": "2607.06411",
+          "title": "RuBench: A Repository-Level Agentic Coding Benchmark with Natively Authored Russian Task Specifications",
+          "blurb": "Developers increasingly delegate real maintenance work to product-grade coding agents, and many state tasks in their native language, in the style of a customer request rather than a curated English issue."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2607.06411",
+      "title": "RuBench: A Repository-Level Agentic Coding Benchmark with Natively Authored Russian Task Specifications",
+      "abstract": "Developers increasingly delegate real maintenance work to product-grade coding agents, and many state tasks in their native language, in the style of a customer request rather than a curated English issue. We introduce RuBench 1.0, a benchmark of 25 tasks mined from recent fix commits in five live open-source repositories (aiohttp, aiogram, Laravel, NestJS, Fastify), each specified natively in Russian -- written from scratch, not translated -- and judged by the upstream maintainer's regression tests, which we withhold from release. All fix commits postdate the training-data cutoffs of every evaluated model. Round 1 evaluates Claude Code with Opus 4.8, Sonnet 5, and Haiku 4.5, and Codex CLI with GPT-5.5 (3 independent runs each; pass@1 with task-level uncertainty); the best configuration resolves 78.7% of tasks. Auditing full trajectories of an hors-concours configuration (Claude Code + Fable 5), we caught the product silently substituting the model on 20% of tasks via an official safeguard fallback -- evidence that the deployed product, not the model, is the unit actually measured. Version 2 adds Round 2: seven further configurations on the same frozen set under a per-configuration freshness gate -- the Russian-market agents SourceCraft CLI (ds, legacy) and Koda CLI (koda-pro), Antigravity with Gemini 3.1 Pro and 3.5 Flash, and Codex CLI with GPT-5.6 Sol and Luna. SourceCraft's flagship resolves 68.1% (N=23), above GPT-5.5 and both Gemini rows. A tool-call contamination re-audit of all 437 Round-2 trajectories finds the Russian and Gemini columns clean (0/293 cells) while flagging systematic oracle-hunting in the GPT-5.6 family (8/69 and 13/75 cells), including one case of mining a prior round's artifacts from the run machine's disk; honest scores are published alongside raw ones. We release statements, metadata, trajectories, and diffs; oracles are withheld with a SHA-256 manifest.",
+      "authors": [
+        "Evgeny Shilov"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-07-07T15:41:22Z",
+      "updated": "2026-07-19T18:49:59Z",
+      "announced_date": "2026-07-07",
+      "first_seen": "2026-07-07",
+      "comment": "20 pages, 1 figure, 9 tables. v2 adds Round 2: Russian-market coding agents (SourceCraft CLI, Koda CLI), Antigravity with Gemini 3.1 Pro / 3.5 Flash, and Codex CLI with GPT-5.6 on the same frozen task set, plus a tool-call contamination re-audit (network + disk layers). Data, full trajectories and harness: https://github.com/eugeneshilow/rubench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.06411v2",
+        "pdf": "https://arxiv.org/pdf/2607.06411v2",
+        "html": "https://arxiv.org/html/2607.06411"
+      },
+      "score": 16,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2607.06624",
+      "title": "AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation",
+      "abstract": "We present AgentLens, a production-assessed benchmark for interactive code agents. Most code-agent benchmarks reduce a run to a single bit -- did the task pass? -- but the people who actually use these agents experience the entire trajectory: how the agent follows instructions, uses its tools, verifies its own work, recovers from mistakes, and talks to them along the way. AgentLens evaluates that whole trajectory. It pairs formal verification, where an objective check exists, with LLM-written trajectory reviews and side-by-side comparisons, so that each run yields a readable explanation of why the score is what it is. This makes AgentLens useful for more than ranking models: we use it to diagnose model behavior, compare successive versions of our own agent, and catch product regressions in a nightly evaluation pipeline. We release the benchmark as open source at https://github.com/agent-lens/agent-lens-bench.",
+      "authors": [
+        "Andrey Podivilov",
+        "Vadim Lomshakov",
+        "Sergey Savin",
+        "Matvei Startsev",
+        "Roman Pozharskiy",
+        "Maksim Parshin",
+        "Sergey Nikolenko"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-07T11:27:43Z",
+      "updated": "2026-07-14T09:13:17Z",
+      "announced_date": "2026-07-07",
+      "first_seen": "2026-07-07",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.06624v2",
+        "pdf": "https://arxiv.org/pdf/2607.06624v2",
+        "html": "https://arxiv.org/html/2607.06624"
+      },
+      "score": 11,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 2
+    },
+    {
+      "id": "2607.06118",
+      "title": "WebRetriever: A Large-Scale Comprehensive Benchmark for Efficient Web Agent Evaluation",
+      "abstract": "As web agents increasingly demonstrate capabilities in automated task execution, the development of robust evaluation frameworks for assessing their navigation and task completion performance has emerged as a critical research priority. However, existing benchmarks exhibit fundamental limitations. First, they suffer from insufficient scale and limited domain diversity, constraining comprehensive evaluation of cross-domain generalization. Second, prevailing LLM-as-Judge evaluation methodologies inadequately capture fine-grained interaction semantics, particularly regarding precise query formulation and filtering operations. Third, current benchmarks predominantly emphasize navigation success metrics while neglecting critical requirements for real-world deployment scenarios. To address these limitations, we introduce WebRetriever, a large-scale benchmark encompassing 800 websites and 1,550 tasks across diverse domains, including consumer, professional, and enterprise sectors, with comprehensive coverage of user intent patterns. We propose NavEval (Navigation Evaluation), a novel LLM-as-Judge framework that leverages rich interaction context beyond visual screenshots, achieving state-of-the-art alignment with human judgment across multiple evaluation datasets. Furthermore, we establish three complementary evaluation protocols that collectively provide holistic assessment of web agent capabilities: navigation proficiency, knowledge-assisted interaction, and end-to-end task completion with information extraction. Extensive experimental analysis reveals substantial performance disparities across evaluation protocols, demonstrating that navigation success alone is an insufficient predictor of real-world application effectiveness. WebRetriever delivers fine-grained diagnostic insights into agent capabilities and establishes a rigorous foundation for advancing web agent research and development.",
+      "authors": [
+        "Wei Dong",
+        "Tianyu Fu",
+        "Zhe Yu",
+        "Hanning Wang",
+        "Anyang Su",
+        "Zhizhou Fang",
+        "Yuyang Chen",
+        "Shuo Wang",
+        "Minghui Wu",
+        "Ping Jiang",
+        "Zhen Lei",
+        "Chenxu Zhao"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.MM"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-07-07T10:27:31Z",
+      "updated": "2026-07-07T10:27:31Z",
+      "announced_date": "2026-07-07",
+      "first_seen": "2026-07-07",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.06118v1",
+        "pdf": "https://arxiv.org/pdf/2607.06118v1",
+        "html": "https://arxiv.org/html/2607.06118"
+      },
+      "score": 14,
+      "tags": [
+        "web",
+        "safety"
+      ],
+      "field": "web",
+      "citations": 0
+    },
+    {
+      "id": "2607.06008",
+      "title": "PolyWorkBench: Benchmarking LLM Agents for Cross-Lingual Long-Horizon Workflows",
+      "abstract": "While Large Language Model (LLM) agents excel at monolingual long-horizon planning and tool use, enterprise workflows inherently require processing multilingual resources across extended trajectories. The interaction between multilinguality and long-horizon execution, however, remains underexplored. We introduce PolyWorkBench, a benchmark designed to evaluate LLM agents on multilingual, long-horizon workplace workflows. PolyWorkBench features 67 tasks across five core domains: commerce, knowledge work, legal analysis, localization, and manufacturing. Tasks are authored by the paper's authors from real-world data seeds and independently verified through a second-author audit. Agents must integrate heterogeneous multilingual inputs, execute iterative tool-use trajectories, and produce structured domain artifacts. To rigorously assess performance, we adopt Grade, a task-specific structural scoring rubric, as our primary ranking metric, and complement it with Pytest for executable state verification and LLM-as-Judge for semantic quality diagnostics. Benchmark evaluations reveal that agent performance varies substantially across languages and drops sharply on the harder cross-lingual tasks, and our analysis shows that multilingual execution exposes systematic failure modes across planning, tool interaction, and decision-making in long-horizon agents.",
+      "authors": [
+        "Hongliang Li",
+        "Yijin Liu",
+        "Zhiwei Zhang",
+        "Zihe Liu",
+        "Xinyue Lou",
+        "Jinan Xu",
+        "Fandong Meng",
+        "Kaiyu Huang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-07T08:50:09Z",
+      "updated": "2026-08-17T05:33:41Z",
+      "announced_date": "2026-07-07",
+      "first_seen": "2026-07-07",
+      "comment": "17 Pages, 5 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.06008v3",
+        "pdf": "https://arxiv.org/pdf/2607.06008v3",
+        "html": "https://arxiv.org/html/2607.06008"
+      },
+      "score": 25,
+      "tags": [
+        "tool-use",
+        "planning",
+        "workplace"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2607.05915",
+      "title": "PCBWorld: A Benchmark Environment for Engine-Grounded PCB Design Automation",
+      "abstract": "PCB routing is the task of connecting the nets of a board with copper traces under strict design rules, yet learning-based methods still lag behind rule-based routers. We introduce PCBWorld, an open-source engine-grounded PCB routing environment built on KiCad, an electronic design automation (EDA) engine. As a human engineer does, agents in PCBWorld interactively route a board through the engine's native operations, guided by its Design Rule Check (DRC) feedback. The environment supports both RL and tool-using LLM agents. Alongside the environment, PCBWorld-Bench provides three board datasets in the native .kicad_pcb format, two controllable synthetic generators and 679 real open-source boards. It scores any completed board with eight engine-checked evaluation metrics, regardless of the routing method. In our experiments, agents in PCBWorld consistently outperformed grid-action RL policies and open-loop LLM baselines, and an RL policy trained only on synthetic boards transferred zero-shot to real boards, approaching rule-based routers.",
+      "authors": [
+        "Hyungseok Song",
+        "Junseok Park",
+        "Won-Seok Choi",
+        "Seohui Bae",
+        "Han-Seul Jeong",
+        "Youngjoon Park",
+        "Soonyoung Lee"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-07T07:09:46Z",
+      "updated": "2026-08-03T09:30:57Z",
+      "announced_date": "2026-07-07",
+      "first_seen": "2026-07-07",
+      "comment": "Accepted to the KDD 2026 Workshop on Evaluation and Trustworthiness of Agentic AI (non-archival). Main text with appendix",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.05915v2",
+        "pdf": "https://arxiv.org/pdf/2607.05915v2",
+        "html": "https://arxiv.org/html/2607.05915"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.05775",
+      "title": "Beyond the Leaderboard: A Synthesis of Tool-Use, Planning, and Reasoning Failures in Large Language Model Agents",
+      "abstract": "Large language model (LLM) agents are increasingly evaluated on their ability to use tools, plan multi-step tasks, coordinate with other agents, and operate over extended horizons. Reported benchmark gains often obscure recurring failure modes documented across otherwise unrelated evaluation efforts. This paper synthesizes 27 benchmark, taxonomy, and audit papers (2023-2026), spanning 19 distinct benchmarks, into a cross-cutting taxonomy of agent limitations. To our knowledge, this is the first synthesis that integrates evidence across tool use, planning, long-horizon reasoning, multi-agent coordination, safety, and measurement validity into a single, unified taxonomy of LLM agent limitations. We identify six failure clusters: (1) tool invocation and parameter-level errors, (2) planning and constraint-satisfaction failures, (3) long-horizon degradation from context accumulation, (4) multi-agent coordination failures, (5) safety and security failures under adversarial or underspecified conditions, and (6) measurement validity problems. The taxonomy was derived iteratively by grouping independently reported error categories into themes corresponding to distinct stages of the agent reasoning-to-action pipeline. Across the literature, we find that failures compound nonlinearly with task length, that strong performance on individual sub-tasks does not reliably translate into end-to-end success, and that additional scaffolding does not consistently improve reliability. At the same time, substantial progress has been demonstrated in single-turn tool use, short-horizon web navigation, and narrowly scoped coding tasks.",
+      "authors": [
+        "Wael Albayaydh",
+        "Rui Zhao",
+        "Ivan Flechais"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-07T03:05:13Z",
+      "updated": "2026-07-07T03:05:13Z",
+      "announced_date": "2026-07-07",
+      "first_seen": "2026-07-07",
+      "comment": "16 pages, 3 tables, 1 figure",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.05775v1",
+        "pdf": "https://arxiv.org/pdf/2607.05775v1",
+        "html": "https://arxiv.org/html/2607.05775"
+      },
+      "score": 19,
+      "tags": [
+        "tool-use",
+        "multi-agent",
+        "safety",
+        "planning",
+        "research"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    }
+  ]
+}

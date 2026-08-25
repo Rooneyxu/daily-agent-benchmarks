@@ -1,0 +1,135 @@
+{
+  "date": "2026-01-05",
+  "count": 2,
+  "report": {
+    "date": "2026-01-05",
+    "count": 2,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On January 5, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Tool use (1), Safety (1), Planning / reasoning (1), and Science lab (1).",
+      "highlights": [
+        {
+          "id": "2601.02598",
+          "title": "LongDA: Benchmarking LLM Agents for Long-Document Data Analysis",
+          "blurb": "We introduce LongDA, a data analysis benchmark for evaluating LLM-based agents under documentation-intensive analytical workflows."
+        },
+        {
+          "id": "2601.02314",
+          "title": "Project Ariadne: A Structural Causal Framework for Auditing Faithfulness in LLM Agents",
+          "blurb": "As Large Language Model (LLM) agents are increasingly tasked with high-stakes autonomous decision-making, the transparency of their reasoning processes has become a critical safety concern."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年1月5日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在工具使用（1）、安全（1）、规划 / 推理（1）、科学实验（1）。",
+      "highlights": [
+        {
+          "id": "2601.02598",
+          "title": "LongDA: Benchmarking LLM Agents for Long-Document Data Analysis",
+          "blurb": "We introduce LongDA, a data analysis benchmark for evaluating LLM-based agents under documentation-intensive analytical workflows."
+        },
+        {
+          "id": "2601.02314",
+          "title": "Project Ariadne: A Structural Causal Framework for Auditing Faithfulness in LLM Agents",
+          "blurb": "As Large Language Model (LLM) agents are increasingly tasked with high-stakes autonomous decision-making, the transparency of their reasoning processes has become a critical safety concern."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2601.02598",
+      "title": "LongDA: Benchmarking LLM Agents for Long-Document Data Analysis",
+      "abstract": "We introduce LongDA, a data analysis benchmark for evaluating LLM-based agents under documentation-intensive analytical workflows. In contrast to existing benchmarks that assume well-specified schemas and inputs, LongDA targets real-world settings in which navigating long documentation and complex data is the primary bottleneck. To this end, we manually curate raw data files, long and heterogeneous documentation, and expert-written publications from 17 publicly available U.S. national surveys, from which we extract 505 analytical queries grounded in real analytical practice. Solving these queries requires agents to first retrieve and integrate key information from multiple unstructured documents, before performing multi-step computations and writing executable code, which remains challenging for existing data analysis agents. To support the systematic evaluation under this setting, we develop LongTA, a tool-augmented agent framework that enables document access, retrieval, and code execution, and evaluate a range of proprietary and open-source models. Our experiments reveal substantial performance gaps even among state-of-the-art models, highlighting the challenges researchers should consider before applying LLM agents for decision support in real-world, high-stakes analytical settings.",
+      "authors": [
+        "Yiyang Li",
+        "Zheyuan Zhang",
+        "Tianyi Ma",
+        "Zehong Wang",
+        "Keerthiram Murugesan",
+        "Chuxu Zhang",
+        "Yanfang Ye"
+      ],
+      "categories": [
+        "cs.DL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.DL",
+      "published": "2026-01-05T23:23:16Z",
+      "updated": "2026-01-11T22:21:22Z",
+      "announced_date": "2026-01-05",
+      "first_seen": "2026-01-05",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.02598v2",
+        "pdf": "https://arxiv.org/pdf/2601.02598v2",
+        "html": "https://arxiv.org/html/2601.02598"
+      },
+      "score": 15,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 5
+    },
+    {
+      "id": "2601.02314",
+      "title": "Project Ariadne: A Structural Causal Framework for Auditing Faithfulness in LLM Agents",
+      "abstract": "As Large Language Model (LLM) agents are increasingly tasked with high-stakes autonomous decision-making, the transparency of their reasoning processes has become a critical safety concern. While \\textit{Chain-of-Thought} (CoT) prompting allows agents to generate human-readable reasoning traces, it remains unclear whether these traces are \\textbf{faithful} generative drivers of the model's output or merely \\textbf{post-hoc rationalizations}. We introduce \\textbf{Project Ariadne}, a novel XAI framework that utilizes Structural Causal Models (SCMs) and counterfactual logic to audit the causal integrity of agentic reasoning. Unlike existing interpretability methods that rely on surface-level textual similarity, Project Ariadne performs \\textbf{hard interventions} ($do$-calculus) on intermediate reasoning nodes -- systematically inverting logic, negating premises, and reversing factual claims -- to measure the \\textbf{Causal Sensitivity} ($φ$) of the terminal answer. Our empirical evaluation of state-of-the-art models reveals a persistent \\textit{Faithfulness Gap}. We define and detect a widespread failure mode termed \\textbf{Causal Decoupling}, where agents exhibit a violation density ($ρ$) of up to $0.77$ in factual and scientific domains. In these instances, agents arrive at identical conclusions despite contradictory internal logic, proving that their reasoning traces function as \"Reasoning Theater\" while decision-making is governed by latent parametric priors. Our findings suggest that current agentic architectures are inherently prone to unfaithful explanation, and we propose the Ariadne Score as a new benchmark for aligning stated logic with model action.",
+      "authors": [
+        "Sourena Khanzadeh"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-01-05T18:05:29Z",
+      "updated": "2026-01-05T18:05:29Z",
+      "announced_date": "2026-01-05",
+      "first_seen": "2026-01-05",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.02314v1",
+        "pdf": "https://arxiv.org/pdf/2601.02314v1",
+        "html": "https://arxiv.org/html/2601.02314"
+      },
+      "score": 13,
+      "tags": [
+        "safety",
+        "planning",
+        "science"
+      ],
+      "field": "other",
+      "citations": 2
+    }
+  ]
+}

@@ -1,0 +1,619 @@
+{
+  "date": "2026-05-18",
+  "count": 14,
+  "report": {
+    "date": "2026-05-18",
+    "count": 14,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 7,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 6,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "coding",
+        "count": 5,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "safety",
+        "count": 4,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "conversation",
+        "count": 2,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      },
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "gui",
+        "count": 2,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "14 new agent benchmarks",
+      "summary": "On May 18, 2026, arXiv listed 14 new agent benchmarks. Work clustered around Tool use (7), Planning / reasoning (6), Coding agents (5), and Safety (4).",
+      "highlights": [
+        {
+          "id": "2605.19099",
+          "title": "DecisionBench: A Benchmark for Emergent Delegation in Long-Horizon Agentic Workflows",
+          "blurb": "We introduce DecisionBench, a benchmark substrate for emergent delegation in long-horizon agentic workflows."
+        },
+        {
+          "id": "2605.18548",
+          "title": "STT-Arena: A More Realistic Environment for Tool-Using with Spatio-Temporal Dynamics",
+          "blurb": "Large language models (LLMs) deployed in real-world agentic applications must be capable of replanning and adapting when mid-task disruptions invalidate their prior decisions."
+        },
+        {
+          "id": "2605.18693",
+          "title": "SkillGenBench: Benchmarking Skill Generation Pipelines for LLM Agents",
+          "blurb": "As LLM agents are increasingly built around reusable skills, a central challenge is no longer only whether agents can use provided skills, but whether they can generate correct, reusable, and executable skills from repos…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 14 篇 Agent Benchmark",
+      "summary": "2026年5月18日，arXiv 新增 14 篇 Agent Benchmark。当日主题集中在工具使用（7）、规划 / 推理（6）、代码智能体（5）、安全（4）。",
+      "highlights": [
+        {
+          "id": "2605.19099",
+          "title": "DecisionBench: A Benchmark for Emergent Delegation in Long-Horizon Agentic Workflows",
+          "blurb": "We introduce DecisionBench, a benchmark substrate for emergent delegation in long-horizon agentic workflows."
+        },
+        {
+          "id": "2605.18548",
+          "title": "STT-Arena: A More Realistic Environment for Tool-Using with Spatio-Temporal Dynamics",
+          "blurb": "Large language models (LLMs) deployed in real-world agentic applications must be capable of replanning and adapting when mid-task disruptions invalidate their prior decisions."
+        },
+        {
+          "id": "2605.18693",
+          "title": "SkillGenBench: Benchmarking Skill Generation Pipelines for LLM Agents",
+          "blurb": "As LLM agents are increasingly built around reusable skills, a central challenge is no longer only whether agents can use provided skills, but whether they can generate correct, reusable, and executable skills from repos…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2605.19127",
+      "title": "POLAR-Bench: A Diagnostic Benchmark for Privacy-Utility Trade-offs in LLM Agents",
+      "abstract": "LLM agents increasingly have access to private user data and act on the user's behalf when interacting with third-party systems. The user defines what may and must not be shared, and the agent must robustly follow that intent even when third-party systems behave adversarially. We introduce POLAR-Bench (Policy-aware adversarial Benchmark), in which a trusted model with a privacy policy and a task converses with a third-party model that adversarially probes for both task-relevant and protected attributes. Across 10 domains and 7,852 samples, we score privacy and utility by deterministic set-membership and vary privacy policy dimension and attack strategy along two orthogonal axes, producing a 5 times 5 diagnostic surface per model. Our results reveal a sharp split: current frontier models withhold over 99% of protected attributes, while smaller open-weight models in the 1--30B range, the class users most commonly run as their own trusted agent on-device or via private inference, score notably worse, with the weakest leaking over half. POLAR-Bench thus localizes where each model's intent-following breaks down, providing a foothold for privacy alignment where it matters most.",
+      "authors": [
+        "Qiaoyuan Zheng",
+        "Yiqu Yang",
+        "Qi Gao",
+        "Imanol Schlag"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-18T21:27:07Z",
+      "updated": "2026-05-18T21:27:07Z",
+      "announced_date": "2026-05-18",
+      "first_seen": "2026-05-18",
+      "comment": "Preprint",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.19127v1",
+        "pdf": "https://arxiv.org/pdf/2605.19127v1",
+        "html": "https://arxiv.org/html/2605.19127"
+      },
+      "score": 20,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2605.19099",
+      "title": "DecisionBench: A Benchmark for Emergent Delegation in Long-Horizon Agentic Workflows",
+      "abstract": "We introduce DecisionBench, a benchmark substrate for emergent delegation in long-horizon agentic workflows. The substrate fixes a task suite (GAIA, tau-bench, BFCL multi-turn), a peer-model pool (11 models, 7 vendor families), a delegation interface (call_model plus an optional read_profile channel), a deterministic skill-annotation layer, and a multi-axis metric suite covering quality, cost, latency, delegation rate, routing fidelity-at-k, vendor self-preference, and a counterfactual-delegation ceiling. The substrate is agnostic to how peer information is generated or delivered, so learned routers, richer peer memories, adaptive profile construction, and multi-step delegation can all be evaluated against it. We characterize the substrate with a five-condition reference sweep on the full pool (n=23,375 task instances). Three benchmark-level findings emerge: (i) mean end-task quality is statistically indistinguishable across the four awareness conditions (|beta| <= 0.010, p >= 0.21), so quality-only evaluation would miss the orchestration signal; (ii) routing fidelity-at-1 ranges from 7.5% to 29.5% across conditions at near-equal mean quality, with delivery channel (on-demand tool vs. preloaded description) dominating description content; (iii) a counterfactual ceiling places perfect delegation 15-31 percentage points above measured performance on every suite, locating large unrealized headroom for future orchestration methods. We release the substrate, annotation layer, reference intervention suite, analysis pipeline, and 220 per-condition run archives.",
+      "authors": [
+        "Yuxuan Gao",
+        "Megan Wang",
+        "Yi Ling Yu",
+        "Zijian Carl Ma",
+        "Ao Qu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-18T20:37:14Z",
+      "updated": "2026-05-18T20:37:14Z",
+      "announced_date": "2026-05-18",
+      "first_seen": "2026-05-18",
+      "comment": "28 pages, 9 figures, 11 tables. Code and data: https://huggingface.co/decisionbench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.19099v1",
+        "pdf": "https://arxiv.org/pdf/2605.19099v1",
+        "html": "https://arxiv.org/html/2605.19099"
+      },
+      "score": 22,
+      "tags": [
+        "tool-use",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 2
+    },
+    {
+      "id": "2605.18693",
+      "title": "SkillGenBench: Benchmarking Skill Generation Pipelines for LLM Agents",
+      "abstract": "As LLM agents are increasingly built around reusable skills, a central challenge is no longer only whether agents can use provided skills, but whether they can generate correct, reusable, and executable skills from repositories and documents. Existing benchmarks primarily evaluate the efficacy of given skills or the ability of agents to solve downstream tasks from raw context, but they do not isolate skill generation itself as the object of study. We introduce SkillGenBench, a benchmark for evaluating skill generation pipelines under a unified and controlled protocol. In SkillGenBench, a generator receives raw corpora and produces standardized skill artifacts, which are then executed under fixed harnesses and assessed with unified evaluation procedures. The benchmark covers two generation regimes: task-conditioned generation, where a task-specific skill is synthesized after the task is revealed, and task-agnostic generation, where a reusable skill library must be distilled before downstream tasks are known. It also spans two complementary procedural sources: repository-grounded instances, where procedures are distributed across code, configuration, and scripts, and document-grounded instances, where procedures and constraints must be distilled from long-form text. We provide standardized task specifications, pinned environments, and evaluation protocols centered on deterministic execution-based checks, supplemented by auxiliary signals for diagnosis. Experiments across a range of skill-generation methods and backbones show substantial performance variation, highlight the difficulty of reusable skill distillation, and reveal distinct failure modes in skill generation from software repositories versus long-form documents. SkillGenBench establishes a reproducible testbed for studying skill generation as an independent research problem in agent systems.",
+      "authors": [
+        "Yifan Zhou",
+        "Zhentao Zhang",
+        "Ziming Cheng",
+        "Shuo Zhang",
+        "Qizhen Lan",
+        "Zhangquan Chen",
+        "Zhi Yang",
+        "QianyuXu",
+        "Ronghao Chen",
+        "Huacan Wang",
+        "Sen Hu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-18T17:28:36Z",
+      "updated": "2026-05-18T17:28:36Z",
+      "announced_date": "2026-05-18",
+      "first_seen": "2026-05-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.18693v1",
+        "pdf": "https://arxiv.org/pdf/2605.18693v1",
+        "html": "https://arxiv.org/html/2605.18693"
+      },
+      "score": 21,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 13
+    },
+    {
+      "id": "2605.18583",
+      "title": "Overeager Coding Agents: Measuring Out-of-Scope Actions on Benign Tasks",
+      "abstract": "Coding agents now run autonomously with shell, file, and network privileges. When a user issues a benign request, the agent sometimes does more than asked: it deletes unrelated files, wipes a stale credentials backup, or rewrites configuration the user never mentioned. We call these scope expansions overeager actions, an authorization problem distinct from capability failures, prompt injection, or sandbox escapes. We present OverEager-Gen, a benchmark dedicated to overeager behavior on benign tasks. Building it surfaces a measurement-validity issue: if a benchmark spells out the authorized scope inside the prompt, the agent stops inferring boundaries and starts pattern-matching declaration text. On Claude Code, stripping the consent declaration alone raises the overeager rate from 0.0% to 17.1% on paired scenarios (McNemar exact p = 2.4 x 10^-4). OverEager-Gen therefore certifies each scenario's discriminative power before admission via a behavioral-gradient validator, audits internal tool calls through a dual-channel stack (PATH-injected shim plus per-agent event streams), and ships byte-identical consent_kept and consent_stripped variants. OverEager-Bench contains 500 validated scenarios and ~7,500 runs across four agent products (Claude Code, OpenHands, Codex CLI, Gemini CLI) and six base models; a 50-sample re-annotation gives Cohen's kappa = 0.73 and rule-judge recall = 1.00. Stripping consent multiplies the overeager rate on every shared base model (Delta in [11.9, 17.2] pp). The framework axis dominates effect size: a permissive cluster (Claude Code, Codex CLI, Gemini CLI) runs at 5.4-27.7% while the ask-to-continue framework (OpenHands) sits at 0.2-4.5% (Fisher p <= 10^-5). Within-framework base-model variance reaches 15.9 pp, indicating that model-layer alignment does not fully propagate through permissive permission gating.",
+      "authors": [
+        "Yubin Qu",
+        "Ying Zhang",
+        "Yanjun Zhang",
+        "Gelei Deng",
+        "Yuekang Li",
+        "Leo Yu Zhang",
+        "Yi Liu"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL",
+        "cs.CR"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-05-18T16:00:41Z",
+      "updated": "2026-05-18T16:00:41Z",
+      "announced_date": "2026-05-18",
+      "first_seen": "2026-05-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.18583v1",
+        "pdf": "https://arxiv.org/pdf/2605.18583v1",
+        "html": "https://arxiv.org/html/2605.18583"
+      },
+      "score": 10,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 6
+    },
+    {
+      "id": "2605.18565",
+      "title": "MINTEval: Evaluating Memory under Multi-Target Interference in Long-Horizon Agent Systems",
+      "abstract": "Real-world agents operate over long and evolving horizons, where information is repeatedly updated and may interfere across memories, requiring accurate recall and aggregated reasoning over multiple pieces of information. However, existing benchmarks focus on static, independent recall and fail to capture these dynamic interactions between evolving memories. In this paper, we study how current memory-augmented agents perform in realistic, interference-heavy, long-horizon settings across diverse domains and question types. We introduce MINTEval (Long-Horizon Memory under INTerference Evaluation), a benchmark featuring (1) long, highly interconnected contexts with frequently updated information that induces substantial interference, (2) diverse domains (state tracking, multi-turn dialogue, Wikipedia revisions, and GitHub commits), enabling evaluation of domain generalization, and (3) diverse question types that assess robustness to interference, including (i) single-target recall tasks requiring retrieval of a specific target from long contexts, and (ii) multi-target aggregation tasks requiring reasoning over multiple relevant pieces of information. Overall, MINTEval has 15.6k question-answering pairs over long-horizon contexts averaging 138.8k tokens and extending up to 1.8M tokens per instance. We evaluate 7 representative systems, including vanilla long-context LLMs, RAG, and memory-augmented agent frameworks. Across all systems, we observe consistently low performance (avg. 27.9% accuracy), especially on questions requiring aggregated reasoning over multiple pieces of evidence. Our analysis shows that performance is primarily limited by retrieval and memory construction. Furthermore, current memory systems struggle to recall and reason over earlier facts that are revised or interfered with by subsequent context, with accuracy degrading as the number of intervening updates increases.",
+      "authors": [
+        "Hyunji Lee",
+        "Justin Chih-Yao Chen",
+        "Joykirat Singh",
+        "Zaid Khan",
+        "Elias Stengel-Eskin",
+        "Mohit Bansal"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-18T15:43:35Z",
+      "updated": "2026-05-19T16:05:55Z",
+      "announced_date": "2026-05-18",
+      "first_seen": "2026-05-18",
+      "comment": "Equal contribution; order decided by a coin flip. Code and data: https://github.com/amy-hyunji/MINTEval",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.18565v2",
+        "pdf": "https://arxiv.org/pdf/2605.18565v2",
+        "html": "https://arxiv.org/html/2605.18565"
+      },
+      "score": 6,
+      "tags": [
+        "safety",
+        "memory",
+        "planning",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 1
+    },
+    {
+      "id": "2605.18548",
+      "title": "STT-Arena: A More Realistic Environment for Tool-Using with Spatio-Temporal Dynamics",
+      "abstract": "Large language models (LLMs) deployed in real-world agentic applications must be capable of replanning and adapting when mid-task disruptions invalidate their prior decisions. Existing dynamic benchmarks primarily measure whether LLMs can detect temporal changes in a timely manner, leaving the complementary challenge of adaptive replanning under spatio-temporal dynamics largely unexplored. We introduce STT-Arena (Spatio-Temporal Tool-Use Arena), a benchmark of 227 high-quality interactive tasks spanning nine spatio-temporal conflict types and four solvability levels. Each task is grounded in a realistic, executable environment equipped with injected spatio-temporal triggers that can abruptly invalidate an ongoing plan, forcing the model to detect the state shift and construct a revised execution strategy. Extensive evaluation of frontier LLMs reveals that even the SOTA proprietary models, including Claude-4.6-Opus, achieves less than 40\\% overall accuracies, highlighting the fundamental difficulty of spatio-temporal dynamic reasoning. Systematic analysis of failure trajectories uncovers three recurring error modes of existing models: Stale-State Execution, Misdiagnosis of Dynamic Triggers, and Missing Post-Adaptation Verification. Guided by these findings, we propose an iterative trajectory refinement technique that eliminates these failure patterns from training data, and combine it with online RL to produce STT-Agent-4B which outperforms frontier LLMs on STT-Arena.",
+      "authors": [
+        "Tingfeng Hui",
+        "Hao Xu",
+        "Pengyu Zhu",
+        "Hongsheng Xin",
+        "Kun Zhan",
+        "Sen Su",
+        "Chunxiao Liu",
+        "Ning Miao"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-18T15:27:52Z",
+      "updated": "2026-05-18T15:27:52Z",
+      "announced_date": "2026-05-18",
+      "first_seen": "2026-05-18",
+      "comment": "Work in progress",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.18548v1",
+        "pdf": "https://arxiv.org/pdf/2605.18548v1",
+        "html": "https://arxiv.org/html/2605.18548"
+      },
+      "score": 21,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2605.18421",
+      "title": "EvoMemBench: Benchmarking Agent Memory from a Self-Evolving Perspective",
+      "abstract": "Recent benchmarks for Large Language Model (LLM) agents mainly evaluate reasoning, planning, and execution. However, memory is also essential for agents, as it enables them to store, update, and retrieve information over time. This ability remains under-evaluated, largely because existing benchmarks do not provide a systematic way to assess memory mechanisms. In this paper, we study agent memory from a self-evolving perspective and introduce EvoMemBench, a unified benchmark organized along two axes: memory scope (in-episode vs. cross-episode) and memory content (knowledge-oriented vs. execution-oriented). We compare 15 representative memory methods with strong long-context baselines under a standardized protocol. Results show that current memory systems are still far from a general solution: long-context baselines remain highly competitive, memory helps most when the current context is insufficient or tasks are difficult, and no single memory form works consistently across all settings. Retrieval-based methods remain strong for knowledge-intensive settings, whereas procedural and long-term memory methods are more effective for execution-oriented tasks when their stored experience matches the task structure. We hope EvoMemBench facilitates future research on more effective memory systems for LLM-based agents. Our code is available at https://github.com/DSAIL-Memory/EvoMemBench.",
+      "authors": [
+        "Yuyao Wang",
+        "Zhongjian Zhang",
+        "Mo Chi",
+        "Kaichi Yu",
+        "Yuhan Li",
+        "Miao Peng",
+        "Bing Tong",
+        "Chen Zhang",
+        "Yan Zhou",
+        "Jia Li"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-18T13:54:38Z",
+      "updated": "2026-06-15T07:27:08Z",
+      "announced_date": "2026-05-18",
+      "first_seen": "2026-05-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.18421v2",
+        "pdf": "https://arxiv.org/pdf/2605.18421v2",
+        "html": "https://arxiv.org/html/2605.18421"
+      },
+      "score": 11,
+      "tags": [
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 6
+    },
+    {
+      "id": "2605.18397",
+      "title": "Duet instrumentation: An Agentic Approach to Improving Sensitivity in Cloud Service Benchmarking",
+      "abstract": "Continuous cloud service performance benchmarking is essential for detecting performance bugs early before deploying them to production. However, detecting performance regressions using application benchmarks, which usually treat the system under test as a black box, is challenging due to variable I/O calls or changing performance characteristics of the underlying cloud infrastructure. Microbenchmarks are often more sensitive and accurate, but also more time-consuming to implement and run. Further, they do not capture the performance of the integrated system as a whole. A comprehensive performance assessment therefore typically requires a combination of both approaches. To address the shortcomings of application benchmarks, we propose duet instrumentation, a novel benchmarking paradigm enabled by recent advancements in large language model (LLM) code understanding. The idea is to analyze code changes between two consecutive application versions and measure performance differences directly at performance-relevant changes during a synchronized benchmark of both application versions, uncovering performance changes with higher sensitivity. We design a system that reliably automates the assessment and instrumentation of performance-relevant code changes between the two application versions. In experiments with a realistic testbed application offering configurable performance regressions, we find that our prototype achieves 58% precision, 93% recall, and 71% specificity (averaged across tasks) when comparing the generated instrumentation against the ideal instrumentation with a line-distance threshold of five. In the downstream application benchmark, we find that our prototype can detect performance regressions at up to 5x lower injected severity compared to a traditional duet application benchmark while preserving similar A/A latency distributions.",
+      "authors": [
+        "Sebastian Koch",
+        "Nils Japke",
+        "David Bermbach"
+      ],
+      "categories": [
+        "cs.DC"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-05-18T13:43:10Z",
+      "updated": "2026-05-18T13:43:10Z",
+      "announced_date": "2026-05-18",
+      "first_seen": "2026-05-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.18397v1",
+        "pdf": "https://arxiv.org/pdf/2605.18397v1",
+        "html": "https://arxiv.org/html/2605.18397"
+      },
+      "score": 13,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2605.18048",
+      "title": "DocOS: Towards Proactive Document-Guided Actions in GUI Agents",
+      "abstract": "While Graphical User Interface (GUI) agents have shown promising performance in automated device interaction, they primarily depend on static parametric knowledge from pre-training or instruction tuning. This reliance fundamentally limits their ability to handle long-tailed tasks that require explicit procedural knowledge absent from model parameters, often forcing agents to resort to inefficient and brittle trial-and-error exploration. To mitigate this limitation, we introduce \\textbf{Proactive Document-Guided Action} for GUI agents in dynamic, open-web environments, a novel paradigm that mirrors human problem-solving by enabling agents to autonomously search for relevant documentation to resolve long-tailed tasks. To evaluate agents' capability in this paradigm, we propose \\textbf{DocOS}, a benchmark designed to assess document-guided problem solving in fully interactive environments. DocOS requires agents to autonomously navigate a web browser, locate relevant online documentation, comprehend procedural instructions, and faithfully ground them into executable GUI actions. Extensive experiments reveal that progress is strictly constrained by dual bottlenecks: agents struggle to reliably locate relevant information during proactive search and frequently fail to faithfully ground retrieved instructions into precise actions, pointing toward document-guided interaction as a crucial pathway for enabling self-evolving GUI agents in dynamic environments.",
+      "authors": [
+        "Jingjing Liu",
+        "Ziye Huang",
+        "Zihao Cheng",
+        "Zeming Liu",
+        "Jiahong Wu",
+        "Yuhang Guo",
+        "Kehai Chen",
+        "Yunhong Wang",
+        "Haifeng Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-18T08:36:04Z",
+      "updated": "2026-05-18T08:36:04Z",
+      "announced_date": "2026-05-18",
+      "first_seen": "2026-05-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.18048v1",
+        "pdf": "https://arxiv.org/pdf/2605.18048v1",
+        "html": "https://arxiv.org/html/2605.18048"
+      },
+      "score": 10,
+      "tags": [
+        "web",
+        "gui"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2605.20251",
+      "title": "ProcCtrlBench: Evaluating Process-Level Defects and Control Preservation in LLM Coding Agents",
+      "abstract": "Existing benchmarks for LLM coding agents primarily evaluate final outcomes. While useful for measuring overall capability, these metrics provide limited visibility and often miss defects that arise during execution. We present ProcCtrlBench, a benchmark for execution-process evaluation in LLM coding agents. ProcCtrlBench organizes recurrent execution defects into a reusable ontology covering 11 defect types in 4 categories, and evaluates agent trajectories through standardized process evidence rather than final outcomes alone. To support comparison across heterogeneous agents, ProcCtrlBench standardizes raw logs into a unified trajectory representation and reports calibrated scorecards over process-level findings. In addition, ProcCtrlBench uses control preservation as a way to quantify execution-process quality, capturing whether execution remains interpretable, interruptible, correctable, reversible, and able to hand back authority when needed. We evaluate ProcCtrlBench on 200 cases sampled from three benchmarks: AndroidBench, TerminalBench, and SWE-bench-Verified. Results show that ProcCtrlBench can be instantiated with useful reliability, provides more stable semantics than direct thresholding, and reveals meaningful differences in execution quality that are often overlooked by conventional outcome-based evaluation.",
+      "authors": [
+        "Jiawei He",
+        "Jie Jia",
+        "Chenbo Liu",
+        "Chaoyi Xue",
+        "Yapeng Song",
+        "Xikai Yang",
+        "Dong Sun"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-05-18T08:34:48Z",
+      "updated": "2026-05-26T09:44:14Z",
+      "announced_date": "2026-05-18",
+      "first_seen": "2026-05-18",
+      "comment": "22 pages, 8 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.20251v4",
+        "pdf": "https://arxiv.org/pdf/2605.20251v4",
+        "html": "https://arxiv.org/html/2605.20251"
+      },
+      "score": 17,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 2
+    },
+    {
+      "id": "2605.17986",
+      "title": "LivePI: More Realistic Benchmarking of Agents Against Indirect Prompt Injection",
+      "abstract": "AI agents such as OpenClaw are increasingly deployed in local workflows with access to external tools. This creates indirect prompt-injection (IPI) risk: an agent may execute harmful instructions embedded in untrusted inputs such as email, downloaded files, webpages, repositories, or group-chat messages. Existing evaluations are often small, purely simulated, or focused on a narrow set of channels. We introduce LivePI (Live Prompt Injection), a structured benchmark for IPI risk in a production-like but test-controlled environment. LivePI covers seven input surfaces, twelve attack/rendering families, and five malicious goals, including protected-information exfiltration, unauthorized security-control changes, unsafe code retrieval or execution, inbox-summary exfiltration, and cryptocurrency transfer. We run LivePI on a real virtual machine with live but test-controlled email, chat, web, local-file, repository, and wallet interfaces. Across GPT-5.3-Codex, Claude Opus 4.6, Gemini 3.1 Pro, Kimi K2.5, and GLM-5, total attack success rates range from 10.7% to 29.6%. Group-chat injection is uniformly successful across the evaluated backbones in our deployment, and repository-link attacks produce high-severity failures despite a small denominator. We also evaluate a two-layer defense consisting of prompt-level filtering and pre-execution tool-call authorization. In the GPT-5.3-Codex setting, the defense intercepts all tested malicious-goal completions in LivePI before execution while preserving benign utility on PinchBench-derived workloads.",
+      "authors": [
+        "Lei Zhao",
+        "Abhay Bhaskar",
+        "Edgar Dobriban"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-05-18T07:41:35Z",
+      "updated": "2026-06-17T05:08:04Z",
+      "announced_date": "2026-05-18",
+      "first_seen": "2026-05-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.17986v3",
+        "pdf": "https://arxiv.org/pdf/2605.17986v3",
+        "html": "https://arxiv.org/html/2605.17986"
+      },
+      "score": 10,
+      "tags": [
+        "coding",
+        "tool-use",
+        "safety"
+      ],
+      "field": "coding",
+      "citations": 1
+    },
+    {
+      "id": "2605.17946",
+      "title": "SVFSearch: A Multimodal Knowledge-Intensive Benchmark for Short-Video Frame Search in the Gaming Vertical Domain",
+      "abstract": "Multimodal large language models are increasingly used as agent backbones that understand multimodal inputs, plan retrieval actions, invoke external tools, and reason over retrieved information. Yet existing benchmarks rarely evaluate this ability in short-video applications, where a paused frame is often visually ambiguous and answering requires vertical, long-tail, and fast-evolving domain knowledge. We introduce SVFSearch, the first open benchmark for short-video frame search in the Chinese gaming domain. SVFSearch contains 5,000 four-choice test examples and 4,198 auxiliary training examples, each centered on a paused game scene from a real short-video clip. To support fair and reproducible evaluation, SVFSearch provides a frozen offline retrieval environment with a game-domain text corpus, a topic-linked image gallery, and text, image, and multimodal retrieval interfaces, avoiding reliance on uncontrolled web search APIs. We evaluate representative paradigms ranging from direct QA and RAG workflow to Plan-Act-Replan agents and learned search models. Results reveal a large gap between model-only answering, practical agentic search, and oracle knowledge: the best open-source direct-QA model reaches 66.4%, the best practical agent achieves 79.1%, and oracle knowledge reaches 95.4%. Further analysis exposes bottlenecks in visual grounding, retrieval quality, evidence-grounded reasoning, and tool-use behavior, including over-search, answer-only shortcuts, and retrieval-induced misleading.",
+      "authors": [
+        "Lingtao Mao",
+        "Huangyu Dai",
+        "Xinyu Sun",
+        "Zihan Liang",
+        "Ben Chen",
+        "Chenyi Lei",
+        "Wenwu Ou"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-18T07:03:48Z",
+      "updated": "2026-05-20T03:33:36Z",
+      "announced_date": "2026-05-18",
+      "first_seen": "2026-05-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.17946v2",
+        "pdf": "https://arxiv.org/pdf/2605.17946v2",
+        "html": "https://arxiv.org/html/2605.17946"
+      },
+      "score": 12,
+      "tags": [
+        "gui",
+        "tool-use",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2605.17937",
+      "title": "BacktestBench: Benchmarking Large Language Models for Automated Quantitative Strategy Backtesting",
+      "abstract": "Quantitative backtesting is essential for evaluating trading strategies but remains hampered by high technical barriers and limited scalability. While Large Language Models (LLMs) offer a transformative path to automate this complex, interdisciplinary workflow through advanced code generation, tool usage, and agentic planning, the practical realization is significantly challenged by the current lack of a large-scale benchmark dedicated to automated quantitative backtesting, which hinders progress in this field. To bridge this critical gap, we introduce BacktestBench, the first large-scale benchmark for automated quantitative backtesting. Built from over 6 million real market records, it comprises 18,246 meticulously annotated question-answering pairs across four task categories: metrics calculation, ticker selection, strategy selection, and parameter confirmation. We also propose AutoBacktest, a robust multi-agent baseline that translates natural language strategies into reproducible backtests by coordinating a Summarizer for semantic factor extraction, a Retriever for validated SQL generation, and a Coder for Python backtesting implementation. Our evaluation on 23 mainstream LLMs, complemented by targeted ablations, identifies key factors that influence end-to-end performance and highlights the importance of grounded verification and standardized indicator representations.",
+      "authors": [
+        "Zhensheng Wang",
+        "Wenmian Yang",
+        "Qingtai Wu",
+        "Lequan Ma",
+        "Yiquan Zhang",
+        "Weijia Jia"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-18T06:52:08Z",
+      "updated": "2026-05-25T03:26:13Z",
+      "announced_date": "2026-05-18",
+      "first_seen": "2026-05-18",
+      "comment": "This paper has been accepted by KDD 2026 (Datasets and Benchmarks Track)",
+      "doi": "10.1145/3770855.3817460",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.17937v2",
+        "pdf": "https://arxiv.org/pdf/2605.17937v2",
+        "html": "https://arxiv.org/html/2605.17937"
+      },
+      "score": 16,
+      "tags": [
+        "coding",
+        "tool-use",
+        "multi-agent",
+        "safety",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2605.17894",
+      "title": "Evaluating Cognitive Age Alignment in Interactive AI Agents",
+      "abstract": "While agentic AI and its core multimodal large language models (MLLMs) have demonstrated remarkable promise in language and visual reasoning across domains ranging from daily life to advanced scientific research, a profound gap remains between artificial and human intelligence. Despite the integration of powerful tools and advanced MLLMs, state-of-the-art AI agents frequently fail at foundational, seemingly simple tasks that a child can resolve with ease. Inspired by the Wechsler Intelligence Scale for Children (WISC), we introduce ChildAgentEval, the first psychometrically grounded interactive benchmark for evaluating cognitive age alignment in MLLM-based agents. ChildAgentEval systematically compares the reasoning performance of various MLLM-based interactive agents against age-specific human developmental stages, exposing where current agentic AI systems can and cannot simulate age-specific cognitive behavior.",
+      "authors": [
+        "Yifan Shen",
+        "Jiawen Zhang",
+        "Jian Xu",
+        "Junho Kim",
+        "Ismini Lourentzou",
+        "Xu Cao",
+        "Meihuan Huang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-18T05:56:22Z",
+      "updated": "2026-05-18T05:56:22Z",
+      "announced_date": "2026-05-18",
+      "first_seen": "2026-05-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.17894v1",
+        "pdf": "https://arxiv.org/pdf/2605.17894v1",
+        "html": "https://arxiv.org/html/2605.17894"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use",
+        "planning",
+        "multimodal",
+        "science"
+      ],
+      "field": "multimodal",
+      "citations": 2
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "date": "2026-01-27",
+  "count": 2,
+  "report": {
+    "date": "2026-01-27",
+    "count": 2,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On January 27, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Coding agents (1), Tool use (1), Multi-agent (1), and Safety (1).",
+      "highlights": [
+        {
+          "id": "2601.20882",
+          "title": "DevOps-Gym: Benchmarking AI Agents in Software DevOps Cycle",
+          "blurb": "Even though demonstrating extraordinary capabilities in code generation and software issue resolving, AI agents' capabilities in the full software DevOps cycle are still unknown."
+        },
+        {
+          "id": "2601.19507",
+          "title": "Automated Safety Benchmarking: A Multi-agent Pipeline for LVLMs",
+          "blurb": "Large vision-language models (LVLMs) exhibit remarkable capabilities in cross-modal tasks but face significant safety challenges, which undermine their reliability in real-world applications."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年1月27日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在代码智能体（1）、工具使用（1）、多智能体（1）、安全（1）。",
+      "highlights": [
+        {
+          "id": "2601.20882",
+          "title": "DevOps-Gym: Benchmarking AI Agents in Software DevOps Cycle",
+          "blurb": "Even though demonstrating extraordinary capabilities in code generation and software issue resolving, AI agents' capabilities in the full software DevOps cycle are still unknown."
+        },
+        {
+          "id": "2601.19507",
+          "title": "Automated Safety Benchmarking: A Multi-agent Pipeline for LVLMs",
+          "blurb": "Large vision-language models (LVLMs) exhibit remarkable capabilities in cross-modal tasks but face significant safety challenges, which undermine their reliability in real-world applications."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2601.20882",
+      "title": "DevOps-Gym: Benchmarking AI Agents in Software DevOps Cycle",
+      "abstract": "Even though demonstrating extraordinary capabilities in code generation and software issue resolving, AI agents' capabilities in the full software DevOps cycle are still unknown. Different from pure code generation, handling the DevOps cycle in real-world software, including developing, deploying, and managing, requires analyzing large-scale projects, understanding dynamic program behaviors, leveraging domain-specific tools, and making sequential decisions. However, existing benchmarks focus on isolated problems and lack environments and tool interfaces for DevOps. We introduce DevOps-Gym, the first end-to-end benchmark for evaluating AI agents across core DevOps workflows: build and configuration, monitoring, issue resolving, and test generation. DevOps-Gym includes 700+ real-world tasks collected from 30+ projects in Java and Go. We develop a semi-automated data collection mechanism with rigorous and non-trivial expert efforts in ensuring the task coverage and quality. Our evaluation of state-of-the-art models and agents reveals fundamental limitations: they struggle with issue resolving and test generation in Java and Go, and remain unable to handle new tasks such as monitoring and build and configuration. These results highlight the need for essential research in automating the full DevOps cycle with AI agents.",
+      "authors": [
+        "Yuheng Tang",
+        "Kaijie Zhu",
+        "Bonan Ruan",
+        "Chuqi Zhang",
+        "Michael Yang",
+        "Hongwei Li",
+        "Suyue Guo",
+        "Tianneng Shi",
+        "Zekun Li",
+        "Christopher Kruegel",
+        "Giovanni Vigna",
+        "Dawn Song",
+        "William Yang Wang",
+        "Lun Wang",
+        "Yangruibo Ding",
+        "Zhenkai Liang",
+        "Wenbo Guo"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-01-27T18:43:46Z",
+      "updated": "2026-01-27T18:43:46Z",
+      "announced_date": "2026-01-27",
+      "first_seen": "2026-01-27",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.20882v1",
+        "pdf": "https://arxiv.org/pdf/2601.20882v1",
+        "html": "https://arxiv.org/html/2601.20882"
+      },
+      "score": 15,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 7
+    },
+    {
+      "id": "2601.19507",
+      "title": "Automated Safety Benchmarking: A Multi-agent Pipeline for LVLMs",
+      "abstract": "Large vision-language models (LVLMs) exhibit remarkable capabilities in cross-modal tasks but face significant safety challenges, which undermine their reliability in real-world applications. Efforts have been made to build LVLM safety evaluation benchmarks to uncover their vulnerability. However, existing benchmarks are hindered by their labor-intensive construction process, static complexity, and limited discriminative power. Thus, they may fail to keep pace with rapidly evolving models and emerging risks. To address these limitations, we propose VLSafetyBencher, the first automated system for LVLM safety benchmarking. VLSafetyBencher introduces four collaborative agents: Data Preprocessing, Generation, Augmentation, and Selection agents to construct and select high-quality samples. Experiments validates that VLSafetyBencher can construct high-quality safety benchmarks within one week at a minimal cost. The generated benchmark effectively distinguish safety, with a safety rate disparity of 70% between the most and least safe models.",
+      "authors": [
+        "Xiangyang Zhu",
+        "Yuan Tian",
+        "Zicheng Zhang",
+        "Qi Jia",
+        "Chunyi Li",
+        "Renrui Zhang",
+        "Heng Li",
+        "Zongrui Wang",
+        "Wei Sun"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-01-27T11:51:30Z",
+      "updated": "2026-01-27T11:51:30Z",
+      "announced_date": "2026-01-27",
+      "first_seen": "2026-01-27",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.19507v1",
+        "pdf": "https://arxiv.org/pdf/2601.19507v1",
+        "html": "https://arxiv.org/html/2601.19507"
+      },
+      "score": 13,
+      "tags": [
+        "multi-agent",
+        "safety",
+        "multimodal"
+      ],
+      "field": "multi-agent",
+      "citations": 1
+    }
+  ]
+}

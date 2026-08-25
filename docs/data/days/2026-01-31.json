@@ -1,0 +1,187 @@
+{
+  "date": "2026-01-31",
+  "count": 3,
+  "report": {
+    "date": "2026-01-31",
+    "count": 3,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "science",
+        "count": 2,
+        "en": "Science lab",
+        "zh": "科学实验"
+      }
+    ],
+    "en": {
+      "headline": "3 new agent benchmarks",
+      "summary": "On January 31, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Tool use (2), and Science lab (2).",
+      "highlights": [
+        {
+          "id": "2602.00685",
+          "title": "HumanStudy-Bench: Towards AI Agent Design for Participant Simulation",
+          "blurb": "Large language models (LLMs) are increasingly used as simulated participants in social science experiments, but their behavior is often unstable and highly sensitive to design choices."
+        },
+        {
+          "id": "2602.00933",
+          "title": "MCP-Atlas: A Large-Scale Benchmark for Tool-Use Competency with Real MCP Servers",
+          "blurb": "The Model Context Protocol (MCP) is emerging as a standard interface through which large language model (LLM) agents discover and invoke external tools."
+        },
+        {
+          "id": "2602.00456",
+          "title": "Benchmarking Agents in Insurance Underwriting Environments",
+          "blurb": "As AI agents integrate into enterprise applications, their evaluation demands benchmarks that reflect the complexity of real-world operations."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年1月31日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在工具使用（2）、科学实验（2）。",
+      "highlights": [
+        {
+          "id": "2602.00685",
+          "title": "HumanStudy-Bench: Towards AI Agent Design for Participant Simulation",
+          "blurb": "Large language models (LLMs) are increasingly used as simulated participants in social science experiments, but their behavior is often unstable and highly sensitive to design choices."
+        },
+        {
+          "id": "2602.00933",
+          "title": "MCP-Atlas: A Large-Scale Benchmark for Tool-Use Competency with Real MCP Servers",
+          "blurb": "The Model Context Protocol (MCP) is emerging as a standard interface through which large language model (LLM) agents discover and invoke external tools."
+        },
+        {
+          "id": "2602.00456",
+          "title": "Benchmarking Agents in Insurance Underwriting Environments",
+          "blurb": "As AI agents integrate into enterprise applications, their evaluation demands benchmarks that reflect the complexity of real-world operations."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2602.00933",
+      "title": "MCP-Atlas: A Large-Scale Benchmark for Tool-Use Competency with Real MCP Servers",
+      "abstract": "The Model Context Protocol (MCP) is emerging as a standard interface through which large language model (LLM) agents discover and invoke external tools. However, existing MCP evaluations fall short along three key axes: realistic multi-step workflows with cross-server orchestration, breadth across authentic MCP servers rather than mocks, and structured, reproducible claim-level scoring disentangled from agent verbosity or style. We introduce MCP-Atlas, a benchmark for measuring tool-use competency against production MCP servers. MCP-Atlas contains 1,000 natural-language tasks written and verified by human experts spanning 36 real MCP servers and 220 tools. Prompts do not specify servers, tools, or parameters, requiring agents to identify relevant tools among semantically plausible distractors and to compose multi-step, cross-server workflows. Each task is scored with a claim-level rubric, where final answers are scored against atomic factual claims grounded in tool outputs. This answer-centric scoring permits valid alternative tool-call trajectories to receive credit. We pair this with an 11-category diagnostic taxonomy that disentangles tool-call failures from cognitive failures in task understanding, synthesis, parsing, and stopping. Evaluating 20 frontier models from six providers under matched task-level conditions, we find pass rates up to 82.2% at a 0.75 claim coverage threshold and a clear three-tier performance structure. Automated diagnostics show that 63.3% of diagnosed failures are cognitive rather than tool-call related. Notably, several high-performing models fail after successful tool execution due to premature stopping or incorrect synthesis. We release the task schema, containerized harness, claim evaluator, and a 500-task public split, while reserving a 500-task private split to preserve leaderboard integrity. The code is at https://github.com/scaleapi/mcp-atlas.",
+      "authors": [
+        "Chaithanya Bandi",
+        "Razvan-Gabriel Dumitru",
+        "Ben Hertzberg",
+        "Divyansh Agarwal",
+        "Geobio Boo",
+        "Tejas Polakam",
+        "Sami Hassaan",
+        "Jeff Da",
+        "HiJae Kim",
+        "Vipul Gupta",
+        "Manasi Sharma",
+        "Andrew Park",
+        "Martin Dimakis",
+        "Ernesto Gabriel Hernandez Montoya",
+        "Dan Rambado",
+        "Ivan Salazar",
+        "Rafael Cruz",
+        "MohammadHossein Rezaei",
+        "Chetan Rane",
+        "Ben Levin",
+        "Daniel Yue Zhang",
+        "Brad Kenstler",
+        "Bing Liu"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-01-31T23:19:39Z",
+      "updated": "2026-05-19T23:26:22Z",
+      "announced_date": "2026-01-31",
+      "first_seen": "2026-01-31",
+      "comment": "25 pages, 3 figures, 9 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.00933v3",
+        "pdf": "https://arxiv.org/pdf/2602.00933v3",
+        "html": "https://arxiv.org/html/2602.00933"
+      },
+      "score": 17,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 40
+    },
+    {
+      "id": "2602.00685",
+      "title": "HumanStudy-Bench: Towards AI Agent Design for Participant Simulation",
+      "abstract": "Large language models (LLMs) are increasingly used as simulated participants in social science experiments, but their behavior is often unstable and highly sensitive to design choices. Prior evaluations frequently conflate base-model capabilities with experimental instantiation, obscuring whether outcomes reflect the model itself or the agent setup. We instead frame participant simulation as an agent-design problem over full experimental protocols, where an agent is defined by a base model and a specification (e.g., participant attributes) that encodes behavioral assumptions. We introduce HUMANSTUDY-BENCH, a benchmark and execution engine that orchestrates LLM-based agents to reconstruct published human-subject experiments via a Filter--Extract--Execute--Evaluate pipeline, replaying trial sequences and running the original analysis pipeline in a shared runtime that preserves the original statistical procedures end to end. To evaluate fidelity at the level of scientific inference, we propose new metrics to quantify how much human and agent behaviors agree. We instantiate 12 foundational studies as an initial suite in this dynamic benchmark, spanning individual cognition, strategic interaction, and social psychology, and covering more than 6,000 trials with human samples ranging from tens to over 2,100 participants.",
+      "authors": [
+        "Xuan Liu",
+        "Haoyang Shang",
+        "Zizhang Liu",
+        "Xinyan Liu",
+        "Yunze Xiao",
+        "Yiwen Tu",
+        "Haojian Jin"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-01-31T12:07:42Z",
+      "updated": "2026-01-31T12:07:42Z",
+      "announced_date": "2026-01-31",
+      "first_seen": "2026-01-31",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.00685v1",
+        "pdf": "https://arxiv.org/pdf/2602.00685v1",
+        "html": "https://arxiv.org/html/2602.00685"
+      },
+      "score": 19,
+      "tags": [
+        "science"
+      ],
+      "field": "other",
+      "citations": 4
+    },
+    {
+      "id": "2602.00456",
+      "title": "Benchmarking Agents in Insurance Underwriting Environments",
+      "abstract": "As AI agents integrate into enterprise applications, their evaluation demands benchmarks that reflect the complexity of real-world operations. Instead, existing benchmarks overemphasize open-domains such as code, use narrow accuracy metrics, and lack authentic complexity. We present UNDERWRITE, an expert-first, multi-turn insurance underwriting benchmark designed in close collaboration with domain experts to capture real-world enterprise challenges. UNDERWRITE introduces critical realism factors often absent in current benchmarks: proprietary business knowledge, noisy tool interfaces, and imperfect simulated users requiring careful information gathering. Evaluating 13 frontier models, we uncover significant gaps between research lab performance and enterprise readiness: the most accurate models are not the most efficient, models hallucinate domain knowledge despite tool access, and pass^k results show a 20% drop in performance. The results from UNDERWRITE demonstrate that expert involvement in benchmark design is essential for realistic agent evaluation, common agentic frameworks exhibit brittleness that skews performance reporting, and hallucination detection in specialized domains demands compositional approaches. Our work provides insights for developing benchmarks that better align with enterprise deployment requirements.",
+      "authors": [
+        "Amanda Dsouza",
+        "Ramya Ramakrishnan",
+        "Charles Dickens",
+        "Bhavishya Pohani",
+        "Christopher M Glaze"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-01-31T02:12:11Z",
+      "updated": "2026-01-31T02:12:11Z",
+      "announced_date": "2026-01-31",
+      "first_seen": "2026-01-31",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.00456v1",
+        "pdf": "https://arxiv.org/pdf/2602.00456v1",
+        "html": "https://arxiv.org/html/2602.00456"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "science"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

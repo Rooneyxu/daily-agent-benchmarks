@@ -1,0 +1,254 @@
+{
+  "date": "2026-08-08",
+  "count": 5,
+  "report": {
+    "date": "2026-08-08",
+    "count": 5,
+    "themes": [
+      {
+        "id": "embodied",
+        "count": 2,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "5 new agent benchmarks",
+      "summary": "On August 8, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Embodied / robotics (2), Safety (2), Multi-agent (1), and Planning / reasoning (1).",
+      "highlights": [
+        {
+          "id": "2608.08160",
+          "title": "Can LLM Agents Stick to the Script? A Benchmark for Long-Horizon Consistency in Interactive Narratives",
+          "blurb": "The rapid advancement of Large Language Models (LLMs) is revolutionizing AI for Games by enabling open-ended and fluid interactive storytelling."
+        },
+        {
+          "id": "2608.08036",
+          "title": "Compiling and Benchmarking Task-State Horizons for Embodied Agents",
+          "blurb": "Frontier agentic models are increasingly deployed as high-level planners for long-horizon embodied tasks."
+        },
+        {
+          "id": "2608.08045",
+          "title": "Lingjing: A Simulation Testbed for Multi-Agent Embodied Tasks in Open-Ended Cities",
+          "blurb": "Urban embodied intelligence requires coordination among heterogeneous agents (e.g., UAVs, ground robots, and autonomous vehicles) in dynamic cities."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年8月8日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在具身 / 机器人（2）、安全（2）、多智能体（1）、规划 / 推理（1）。",
+      "highlights": [
+        {
+          "id": "2608.08160",
+          "title": "Can LLM Agents Stick to the Script? A Benchmark for Long-Horizon Consistency in Interactive Narratives",
+          "blurb": "The rapid advancement of Large Language Models (LLMs) is revolutionizing AI for Games by enabling open-ended and fluid interactive storytelling."
+        },
+        {
+          "id": "2608.08036",
+          "title": "Compiling and Benchmarking Task-State Horizons for Embodied Agents",
+          "blurb": "Frontier agentic models are increasingly deployed as high-level planners for long-horizon embodied tasks."
+        },
+        {
+          "id": "2608.08045",
+          "title": "Lingjing: A Simulation Testbed for Multi-Agent Embodied Tasks in Open-Ended Cities",
+          "blurb": "Urban embodied intelligence requires coordination among heterogeneous agents (e.g., UAVs, ground robots, and autonomous vehicles) in dynamic cities."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.08277",
+      "title": "WirelessOpsAgent: A Benchmark and Agent Design for Action Assurance in Wireless Networks",
+      "abstract": "Large language model (LLM) agents are emerging as planners for autonomous wireless network operations. Yet a task answer that is correct at proposal time can still be unsafe at execution time if supporting telemetry is stale or inconsistent. Existing benchmarks mainly evaluate task solving from fixed observations and leave support checking at execution time untested. We introduce WirelessOptBench, a benchmark for action assurance in wireless operations. It turns wireless tasks into execution state decision episodes with controlled telemetry faults and action constraints. We further develop WirelessOpsAgent, which grounds candidate actions in current evidence and repairs recoverable support failures before execution. Across three backbone evaluations with 600 episodes each, WirelessOpsAgent achieves up to 0.983 Exact Action Accuracy. On Claude Sonnet 4.6, the Unsafe APPLY Rate decreases from 82.2% to 10.3% relative to the safest baseline. We make WirelessOptBench available at https://anonymous.4open.science/r/wirelessopsbench-artifact-D969/.",
+      "authors": [
+        "Zijian Lu",
+        "Yiping Zuo",
+        "Hao Xu",
+        "Weicong Chen",
+        "Xin He",
+        "Jiajia Guo",
+        "Shi Jin"
+      ],
+      "categories": [
+        "cs.NI"
+      ],
+      "primary_category": "cs.NI",
+      "published": "2026-08-08T18:12:15Z",
+      "updated": "2026-08-08T18:12:15Z",
+      "announced_date": "2026-08-08",
+      "first_seen": "2026-08-08",
+      "comment": "10 pages, 7 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.08277v1",
+        "pdf": "https://arxiv.org/pdf/2608.08277v1",
+        "html": "https://arxiv.org/html/2608.08277"
+      },
+      "score": 10,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.08160",
+      "title": "Can LLM Agents Stick to the Script? A Benchmark for Long-Horizon Consistency in Interactive Narratives",
+      "abstract": "The rapid advancement of Large Language Models (LLMs) is revolutionizing AI for Games by enabling open-ended and fluid interactive storytelling. However, existing research has largely overlooked the critical challenge of maintaining long-horizon logical consistency and narrative integrity against unconstrained user interventions. To address this, we formulate this challenge as Narrative Commitment Preservation (NCP), and take interactive narrative as our testbed. We introduce NCP-Bench, a benchmark of 100 narrative environments derived from movie synopses. Each environment includes a structured narrative specification (trajectory, commitments, and initial facts) that we can automatically check throughout the interaction between the player agent and the narrator agent. Experiments across state-of-the-art LLMs reveal a substantial long-horizon consistency gap: high linguistic quality does not guarantee commitment preservation; even strong models frequently generate logically conflicting content under adversarial interventions, with the best-performing model (GPT-5.2) achieving only 42% survival rate after 20 turns and fact conflict rates ranging from 40% to 68% across models, and only isolated runs satisfying all achievement commitments within the 100-turn limit.",
+      "authors": [
+        "Yingpeng Ma",
+        "Jianhao Yan",
+        "Bei Shi",
+        "Ka Hou Kam",
+        "Runnan Wang",
+        "Xuebo Liu",
+        "Yulong Chen",
+        "Yue Zhang",
+        "Derek F. Wong"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-08-08T14:38:18Z",
+      "updated": "2026-08-08T14:38:18Z",
+      "announced_date": "2026-08-08",
+      "first_seen": "2026-08-08",
+      "comment": "Accepted by ICML 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.08160v1",
+        "pdf": "https://arxiv.org/pdf/2608.08160v1",
+        "html": "https://arxiv.org/html/2608.08160"
+      },
+      "score": 20,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.08045",
+      "title": "Lingjing: A Simulation Testbed for Multi-Agent Embodied Tasks in Open-Ended Cities",
+      "abstract": "Urban embodied intelligence requires coordination among heterogeneous agents (e.g., UAVs, ground robots, and autonomous vehicles) in dynamic cities. Simulators therefore provide a scalable foundation for developing and evaluating such coordination. Existing platforms nevertheless isolate different embodiments and decouple them from task design and evaluation. We present \\textbf{Lingjing}, a simulation platform for heterogeneous multi-agent embodied intelligence in open-ended urban environments. Lingjing reconstructs and renders evolving cities from geographic data, synchronizes multiple physics engines, and exposes shared physical and structured urban state to agents. Its Gym-like interface supports user-defined ReAct agents and single- or multi-agent natural-language missions with configurable star or broadcast communication and resource constraints. Each episode becomes an attribution-ready replay that links agent trajectories and communication to relation-graph changes, resource consumption, and engine-based evaluations for systematic diagnosis. We evaluate twelve vision-language models on nine urban tasks under a shared engine-in-the-loop protocol. Controlled studies further examine communication, scalability, robustness, and failure provenance. Results expose persistent bottlenecks in grounding and long-horizon execution. They also show task-dependent coordination trade-offs and diminishing returns from added capacity, while heavier workloads further reduce success. Lingjing provides a unified testbed that enables reproducible end-to-end evaluation and systematic failure diagnosis in urban multi-agent embodied intelligence.",
+      "authors": [
+        "Xiaohe Li",
+        "Yiru Wang",
+        "Junhao Fan",
+        "Mingyuan Liu",
+        "Jie Huang",
+        "Kaixin Zhang",
+        "Jiahao Li",
+        "Chen Qian",
+        "Zide Fan"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-08T10:18:58Z",
+      "updated": "2026-08-08T10:18:58Z",
+      "announced_date": "2026-08-08",
+      "first_seen": "2026-08-08",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.08045v1",
+        "pdf": "https://arxiv.org/pdf/2608.08045v1",
+        "html": "https://arxiv.org/html/2608.08045"
+      },
+      "score": 13,
+      "tags": [
+        "multi-agent",
+        "embodied",
+        "safety",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2608.08036",
+      "title": "Compiling and Benchmarking Task-State Horizons for Embodied Agents",
+      "abstract": "Frontier agentic models are increasingly deployed as high-level planners for long-horizon embodied tasks. Existing robotic benchmarks have advanced long-horizon evaluation, but primarily characterize difficulty through action-sequence length and subtask complexity, overlooking a distinct challenge: agents must track evolving task-relevant world states induced by both their exploration and environmental dynamics. We define the span of task-relevant state transitions that an agent must track as task-state horizon (TSH). To evaluate how agent performance varies with TSH, we introduce RoboGraph, a robotic task compiler that translates state-transition dependencies into executable symbolic graphs. Specifically, RoboGraph constructs task-state horizons from spatial and temporal causal dependencies, including those induced by unexpected failures and interventions during task execution. Building on RoboGraph, we release a benchmark comprising 588 episodes across 84 scenes with varying TSHs. Experiments evaluating 15 advanced agentic models in both semantic and visual closed-loop environments show that most models struggle with demanding TSHs, revealing substantial gaps in maintaining, exploring, and updating task-relevant state over long horizon.",
+      "authors": [
+        "Meiqi Wang",
+        "Shichao Li"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-08T09:45:01Z",
+      "updated": "2026-08-08T09:45:01Z",
+      "announced_date": "2026-08-08",
+      "first_seen": "2026-08-08",
+      "comment": "32 pages, including appendices",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.08036v1",
+        "pdf": "https://arxiv.org/pdf/2608.08036v1",
+        "html": "https://arxiv.org/html/2608.08036"
+      },
+      "score": 17,
+      "tags": [
+        "embodied"
+      ],
+      "field": "embodied",
+      "citations": 0
+    },
+    {
+      "id": "2608.07899",
+      "title": "TelemetrySuffBench: Is Agent Telemetry Sufficient for Failure-Origin Diagnosis?",
+      "abstract": "Agent systems increasingly expose execution traces, yet telemetry that reveals a failure may still be inadequate for identifying where that failure originated. We introduce TelemetrySuffBench, a controlled benchmark that separates failure detection, fault-origin localization, and safe abstention under insufficient evidence. The benchmark constructs canonical multi-component traces with delayed-binding faults and renders them as paired coarse views, seven-factor telemetry masks, and exact-equal ambiguous origin pairs. We evaluate five frontier language models using unified protocols, explicit candidate sets, invalid-output accounting, subgroup analyses, and a frozen blind holdout. With full telemetry, origin-step Top-1 accuracy ranges from 33.8% to 97.2% across models. Metadata, OpenTelemetry-compatible, and OpenInference-compatible views retain 99.5% to 100% detection F1 while limiting origin-step accuracy to at most 0.5%, exposing a robust detection-localization gap. Factor ablations further show that removing decision content reduces origin-step accuracy to zero for every model, while provenance removal also causes large model-dependent losses. On rich ambiguous inputs that require abstention, evidence gating reduces unsupported unique-origin answers by 12.5 to 48.6 percentage points for three models, whereas two models still answer every case, revealing strong model dependence in safe abstention. Results on the frozen holdout reproduce the central pattern within the same generator family. These findings show that terminal status can support detection, whereas reliable causal attribution requires explicit decision-to-provenance links and abstention safeguards that remain effective across models. The dataset and benchmark implementation are available at https://anonymous.4open.science/r/TelemetrySuffBench-E635/README.md.",
+      "authors": [
+        "Yuxuan Zhu",
+        "Peng Pu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-08T03:54:22Z",
+      "updated": "2026-08-08T03:54:22Z",
+      "announced_date": "2026-08-08",
+      "first_seen": "2026-08-08",
+      "comment": "10 pages, 3 figures, 4 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.07899v1",
+        "pdf": "https://arxiv.org/pdf/2608.07899v1",
+        "html": "https://arxiv.org/html/2608.07899"
+      },
+      "score": 8,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

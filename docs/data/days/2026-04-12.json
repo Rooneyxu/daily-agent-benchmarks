@@ -1,0 +1,201 @@
+{
+  "date": "2026-04-12",
+  "count": 3,
+  "report": {
+    "date": "2026-04-12",
+    "count": 3,
+    "themes": [
+      {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      }
+    ],
+    "en": {
+      "headline": "3 new agent benchmarks",
+      "summary": "On April 12, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Multi-agent (2), Computer use (1), Safety (1), and Memory (1).",
+      "highlights": [
+        {
+          "id": "2604.10547",
+          "title": "Agent^2 RL-Bench: Can LLM Agents Engineer Agentic RL Post-Training?",
+          "blurb": "We introduce Agent2 RL-Bench, a compact diagnostic benchmark for evaluating agentic RL post-training, which tests whether LLM agents can autonomously design, implement, debug, and execute post-training pipelines that imp…"
+        },
+        {
+          "id": "2604.10577",
+          "title": "The Blind Spot of Agent Safety: How Benign User Instructions Expose Critical Vulnerabilities in Computer-Use Agents",
+          "blurb": "Computer-use agents (CUAs) can now autonomously complete complex tasks in real digital environments, but when misled, they can also be used to automate harmful actions programmatically."
+        },
+        {
+          "id": "2604.10456",
+          "title": "A Benchmark and Multi-Agent System for Instruction-driven Cinematic Video Compilation",
+          "blurb": "The surging demand for adapting long-form cinematic content into short videos has motivated the need for versatile automatic video compilation systems."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年4月12日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在多智能体（2）、计算机使用（1）、安全（1）、记忆（1）。",
+      "highlights": [
+        {
+          "id": "2604.10547",
+          "title": "Agent^2 RL-Bench: Can LLM Agents Engineer Agentic RL Post-Training?",
+          "blurb": "We introduce Agent2 RL-Bench, a compact diagnostic benchmark for evaluating agentic RL post-training, which tests whether LLM agents can autonomously design, implement, debug, and execute post-training pipelines that imp…"
+        },
+        {
+          "id": "2604.10577",
+          "title": "The Blind Spot of Agent Safety: How Benign User Instructions Expose Critical Vulnerabilities in Computer-Use Agents",
+          "blurb": "Computer-use agents (CUAs) can now autonomously complete complex tasks in real digital environments, but when misled, they can also be used to automate harmful actions programmatically."
+        },
+        {
+          "id": "2604.10456",
+          "title": "A Benchmark and Multi-Agent System for Instruction-driven Cinematic Video Compilation",
+          "blurb": "The surging demand for adapting long-form cinematic content into short videos has motivated the need for versatile automatic video compilation systems."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.10577",
+      "title": "The Blind Spot of Agent Safety: How Benign User Instructions Expose Critical Vulnerabilities in Computer-Use Agents",
+      "abstract": "Computer-use agents (CUAs) can now autonomously complete complex tasks in real digital environments, but when misled, they can also be used to automate harmful actions programmatically. Existing safety evaluations largely target explicit threats such as misuse and prompt injection, but overlook a subtle yet critical setting where user instructions are entirely benign and harm arises from the task context or execution outcome. We introduce OS-BLIND, a benchmark that evaluates CUAs under unintended attack conditions, comprising 300 human-crafted tasks across 12 categories, 8 applications, and 2 threat clusters: environment-embedded threats and agent-initiated harms. Our evaluation on frontier models and agentic frameworks reveals that most CUAs exceed 90% attack success rate (ASR), and even the safety-aligned Claude 4.5 Sonnet reaches 73.0% ASR. More interestingly, this vulnerability becomes even more severe, with ASR rising from 73.0% to 92.7% when Claude 4.5 Sonnet is deployed in multi-agent systems. Our analysis further shows that existing safety defenses provide limited protection when user instructions are benign. Safety alignment primarily activates within the first few steps and rarely re-engages during subsequent execution. In multi-agent systems, decomposed subtasks obscure the harmful intent from the model, causing safety-aligned models to fail. We will release our OS-BLIND to encourage the broader research community to further investigate and address these safety challenges.",
+      "authors": [
+        "Xuwei Ding",
+        "Skylar Zhai",
+        "Linxin Song",
+        "Jiate Li",
+        "Taiwei Shi",
+        "Nicholas Meade",
+        "Siva Reddy",
+        "Jian Kang",
+        "Jieyu Zhao"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-04-12T10:52:42Z",
+      "updated": "2026-04-17T07:20:03Z",
+      "announced_date": "2026-04-12",
+      "first_seen": "2026-04-12",
+      "comment": "63 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.10577v2",
+        "pdf": "https://arxiv.org/pdf/2604.10577v2",
+        "html": "https://arxiv.org/html/2604.10577"
+      },
+      "score": 15,
+      "tags": [
+        "multi-agent",
+        "computer-use",
+        "safety"
+      ],
+      "field": "computer-use",
+      "citations": 6
+    },
+    {
+      "id": "2604.10547",
+      "title": "Agent^2 RL-Bench: Can LLM Agents Engineer Agentic RL Post-Training?",
+      "abstract": "We introduce Agent2 RL-Bench, a compact diagnostic benchmark for evaluating agentic RL post-training, which tests whether LLM agents can autonomously design, implement, debug, and execute post-training pipelines that improve foundation models. RL post-training increasingly drives model alignment and specialization, yet existing benchmarks are largely static, rewarding supervised fine-tuning or script generation without assessing an agent's ability to close an interactive RL loop. Agent2 RL-Bench provides a unified agent-facing interface: each run starts from an isolated workspace containing a base model, task data, instructions, and a grading API, and agents must iterate within a fixed budget by training models and submitting artifacts for evaluation. The benchmark spans six tasks across three levels, from static rule-based training to judge-based optimization and closed-loop online RL with trajectory collection. Two diagnostic skills, namely runtime recording and post-hoc summarization, enable structured analysis of agent behavior, facilitating smooth and effective iteration of the benchmark's evaluation framework. Across five agent systems and six driver LLMs, agents show intelligent behavior but clear limitations: one RL-oriented run improves ALFWorld from 4.85 to 93.28 via SFT warm-up and GRPO with online rollouts, yet DeepSearchQA remains difficult, most successful routes rely on supervised pipelines, and interactive outcomes show large single-run differences across agent stacks. Overall, Agent2 RL-Bench shows that current agents can sometimes engineer online RL, but stable agent-driven RL post-training remains rare under fixed budgets. It also demonstrates that our benchmark provides a strong and effective evaluation framework for future research in this direction. Code is available at https://github.com/microsoft/RD-Agent/blob/main/rdagent/scenarios/rl/autorl_bench/README.md",
+      "authors": [
+        "Wanyi Chen",
+        "Xiao Yang",
+        "Xu Yang",
+        "Tianming Sha",
+        "Qizheng Li",
+        "Zhuo Wang",
+        "Bowen Xian",
+        "Fang Kong",
+        "Weiqing Liu",
+        "Jiang Bian"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-12T09:35:27Z",
+      "updated": "2026-05-13T11:50:55Z",
+      "announced_date": "2026-04-12",
+      "first_seen": "2026-04-12",
+      "comment": "37 pages, 7 figures, 20 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.10547v2",
+        "pdf": "https://arxiv.org/pdf/2604.10547v2",
+        "html": "https://arxiv.org/html/2604.10547"
+      },
+      "score": 24,
+      "tags": [],
+      "field": "other",
+      "citations": 3
+    },
+    {
+      "id": "2604.10456",
+      "title": "A Benchmark and Multi-Agent System for Instruction-driven Cinematic Video Compilation",
+      "abstract": "The surging demand for adapting long-form cinematic content into short videos has motivated the need for versatile automatic video compilation systems. However, existing compilation methods are limited to predefined tasks, and the community lacks a comprehensive benchmark to evaluate the cinematic compilation. To address this, we introduce CineBench, the first benchmark for instruction-driven cinematic video compilation, featuring diverse user instructions and high-quality ground-truth compilations annotated by professional editors. To overcome contextual collapse and temporal fragmentation, we present CineAgents, a multi-agent system that reformulates cinematic video compilation into ``design-and-compose'' paradigm. CineAgents performs script reverse-engineering to construct a hierarchical narrative memory to provide multi-level context and employs an iterative narrative planning process that refines a creative blueprint into a final compiled script. Extensive experiments demonstrate that CineAgents significantly outperforms existing methods, generating compilations with superior narrative coherence and logical coherence.",
+      "authors": [
+        "Peixuan Zhang",
+        "Chang Zhou",
+        "Ziyuan Zhang",
+        "Hualuo Liu",
+        "Chunjie Zhang",
+        "Jingqi Liu",
+        "Xiaohui Zhou",
+        "Xi Chen",
+        "Shuchen Weng",
+        "Si Li",
+        "Boxin Shi"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-04-12T04:39:09Z",
+      "updated": "2026-04-12T04:39:09Z",
+      "announced_date": "2026-04-12",
+      "first_seen": "2026-04-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.10456v1",
+        "pdf": "https://arxiv.org/pdf/2604.10456v1",
+        "html": "https://arxiv.org/html/2604.10456"
+      },
+      "score": 12,
+      "tags": [
+        "multi-agent",
+        "memory",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 4
+    }
+  ]
+}

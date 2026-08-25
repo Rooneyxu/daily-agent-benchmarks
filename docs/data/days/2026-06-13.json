@@ -1,0 +1,333 @@
+{
+  "date": "2026-06-13",
+  "count": 7,
+  "report": {
+    "date": "2026-06-13",
+    "count": 7,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      }
+    ],
+    "en": {
+      "headline": "7 new agent benchmarks",
+      "summary": "On June 13, 2026, arXiv listed 7 new agent benchmarks. Work clustered around Tool use (2), Safety (2), Multimodal (2), and Research agents (1).",
+      "highlights": [
+        {
+          "id": "2606.15508",
+          "title": "ToolMenuBench: Benchmarking Tool-Menu Filtering Strategies for Reliable and Efficient LLM Agents",
+          "blurb": "Tool-augmented large language model agents increasingly operate over large tool libraries, but existing evaluations often focus on whether a model can call a tool correctly rather than how the visible tool menu shapes re…"
+        },
+        {
+          "id": "2606.15034",
+          "title": "OSGuard: A Benchmark for Safety in Computer-Use Agents",
+          "blurb": "Computer-use agents are increasingly evaluated by whether they complete realistic desktop and web tasks."
+        },
+        {
+          "id": "2606.15300",
+          "title": "CODA-BENCH: Can Code Agents Handle Data-Intensive Tasks?",
+          "blurb": "Advanced agents are increasingly demonstrating the potential to operate as autonomous engineers, creating a growing demand for evaluation benchmarks that capture the complexity of real-world development."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 7 篇 Agent Benchmark",
+      "summary": "2026年6月13日，arXiv 新增 7 篇 Agent Benchmark。当日主题集中在工具使用（2）、安全（2）、多模态（2）、科研智能体（1）。",
+      "highlights": [
+        {
+          "id": "2606.15508",
+          "title": "ToolMenuBench: Benchmarking Tool-Menu Filtering Strategies for Reliable and Efficient LLM Agents",
+          "blurb": "Tool-augmented large language model agents increasingly operate over large tool libraries, but existing evaluations often focus on whether a model can call a tool correctly rather than how the visible tool menu shapes re…"
+        },
+        {
+          "id": "2606.15034",
+          "title": "OSGuard: A Benchmark for Safety in Computer-Use Agents",
+          "blurb": "Computer-use agents are increasingly evaluated by whether they complete realistic desktop and web tasks."
+        },
+        {
+          "id": "2606.15300",
+          "title": "CODA-BENCH: Can Code Agents Handle Data-Intensive Tasks?",
+          "blurb": "Advanced agents are increasingly demonstrating the potential to operate as autonomous engineers, creating a growing demand for evaluation benchmarks that capture the complexity of real-world development."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.15508",
+      "title": "ToolMenuBench: Benchmarking Tool-Menu Filtering Strategies for Reliable and Efficient LLM Agents",
+      "abstract": "Tool-augmented large language model agents increasingly operate over large tool libraries, but existing evaluations often focus on whether a model can call a tool correctly rather than how the visible tool menu shapes reliability, efficiency, and safety-relevant risk exposure. We introduce ToolMenuBench, a benchmark for evaluating tool-menu construction in multi-step LLM agents. ToolMenuBench varies tool-menu size, distractor type, state-dependent task structure, and risk exposure, and reports both filter-level and downstream agent metrics, including visible-tool count, risky-tool exposure, task success, wrong-tool calls, premature actions, and token usage. In a controlled evaluation across seven model backends, three tool-menu sizes, six filtering methods, and seven evaluation settings, CMTF improves task success from 32.1% under all-tools exposure to 85.7%, while reducing average token usage by roughly 98%. Causal minimal tool filtering achieves the strongest overall tradeoff, reducing visible tools, wrong-tool calls, premature actions, and risky-tool exposure relative to unfiltered exposure, lexical filtering, state-aware filtering, and broader causal-path baselines. ToolMenuBench provides a reusable evaluation framework for studying the agent-interface problem: which tools should be visible, when they should be visible, and under what cost or risk constraints.",
+      "authors": [
+        "Rahul Suresh Babu",
+        "Laxmipriya Ganesh Iyer"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-13T23:27:51Z",
+      "updated": "2026-06-13T23:27:51Z",
+      "announced_date": "2026-06-13",
+      "first_seen": "2026-06-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.15508v1",
+        "pdf": "https://arxiv.org/pdf/2606.15508v1",
+        "html": "https://arxiv.org/html/2606.15508"
+      },
+      "score": 21,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "other",
+      "citations": 4
+    },
+    {
+      "id": "2606.15345",
+      "title": "Beyond Monolingual Deep Research: Evaluating Agents and Retrievers with Cross-Lingual BrowseComp-Plus",
+      "abstract": "Deep research agents are increasingly evaluated on their ability to search for evidence, reason over retrieved sources, and produce grounded answers. Existing browsing benchmarks, however, largely assume that the user's query and the supporting evidence are written in the same language, leaving open whether agentic search systems can operate when relevant evidence appears in another language. We introduce XBCP (Cross-lingual BrowseComp-Plus), a controlled benchmark that preserves the English question-and-answer space of BrowseComp-Plus but varies the languages of the supporting documents. XBCP instantiates two complementary settings: in the cross-lingual setting, each query is paired with evidence in a single assigned language. In the multilingual setting, the full evidence corpus is distributed equally and randomly across 12 languages spanning high-resource and low-resource regimes. We evaluate four deep research agents using sparse and dense multilingual retrievers, measuring answer accuracy, evidence recall, search behavior, calibration, citation fidelity, and oracle retrieval. Results reveal substantial degradation when evidence is translated. Even strong, dense retrievers lose evidence recall, and agents become less calibrated and cite evidence less reliably. Notably, accuracy remains lower even when all gold evidence is supplied directly. These findings suggest that cross-lingual deep research exposes both retrieval failures and an independent, agent-side difficulty in integrating language-mismatched evidence.",
+      "authors": [
+        "Yuheng Lu",
+        "Qingcheng Zeng",
+        "Heli Qi",
+        "Puxuan Yu",
+        "Fuheng Zhao",
+        "Rui Yang",
+        "Hitomi Yanaka",
+        "Naoto Yokoya",
+        "Weihao Xuan"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.IR"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-13T15:11:52Z",
+      "updated": "2026-06-17T13:46:43Z",
+      "announced_date": "2026-06-13",
+      "first_seen": "2026-06-13",
+      "comment": "Preprint",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.15345v2",
+        "pdf": "https://arxiv.org/pdf/2606.15345v2",
+        "html": "https://arxiv.org/html/2606.15345"
+      },
+      "score": 11,
+      "tags": [
+        "research"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.15306",
+      "title": "LatentGym: A Testbed For Cross-Task Experiential Learning With Controllable Latent Structure",
+      "abstract": "We envision continually learning agentic systems that become more useful over time: as they encounter sequences of related tasks, they should infer the hidden structure shared across those tasks and use it to improve future decisions. This cross-task experiential learning capability is pivotal in domains such as personalization and interactive assistance, but existing training/evaluation frameworks do not provide shared, controllable latent structures and cannot measure whether or why agents improve. We introduce LatentGym: a controllable suite in which each environment is organized around a ground-truth latent variable governing the structure across tasks. Our construction yields metrics that separate exploration (whether the agent's actions gather information about the latent) from exploitation (whether the agent uses what it has gathered). We demonstrate our suite on empirical studies addressing three questions: how and why frontier models fail to adapt across related tasks; whether post-training on related task sequences improves general cross-task adaptation, and where those gains come from; and how design choices such as inter-task feedback shape training dynamics and generalization. Together, these results establish a controlled foundation for studying how LLM agents learn from experience across tasks, and for designing agents that adapt more reliably in sequential, personalized, and interactive settings.",
+      "authors": [
+        "Daksh Mittal",
+        "Tommaso Castellani",
+        "Thomson Yen",
+        "Naimeng Ye",
+        "Fangyu Wu",
+        "Minghui Chen",
+        "Tiffany Cai",
+        "Emmanouil Koukoumidis",
+        "William Zeng",
+        "Hongseok Namkoong"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-06-13T13:51:22Z",
+      "updated": "2026-06-13T13:51:22Z",
+      "announced_date": "2026-06-13",
+      "first_seen": "2026-06-13",
+      "comment": "61 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.15306v1",
+        "pdf": "https://arxiv.org/pdf/2606.15306v1",
+        "html": "https://arxiv.org/html/2606.15306"
+      },
+      "score": 12,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.15300",
+      "title": "CODA-BENCH: Can Code Agents Handle Data-Intensive Tasks?",
+      "abstract": "Advanced agents are increasingly demonstrating the potential to operate as autonomous engineers, creating a growing demand for evaluation benchmarks that capture the complexity of real-world development. Such environments typically involve both complex code and large-scale data (i.e., file system). However, existing benchmarks usually evaluate code-centric or data-centric capabilities in isolation, leaving a clear gap with real development scenarios. In this paper, we bridge this gap by introducing CODA-BENCH, the first benchmark to jointly evaluate code and data intelligence in a data-intensive environment. We construct a data-intensive Linux sandbox based on the Kaggle ecosystem (containing hundreds of datasets), where agents must actively explore complex file hierarchies to identify relevant resources and generate code for data-driven analytical tasks. CODA-BENCH comprises 1,009 tasks spanning 31 communities, with each task environment containing an average of 980 files, simulating realistic data scale and noise. Evaluations of advanced agents reveal that even top-performing systems struggle to effectively integrate data discovery with code execution, achieving a success rate of only 61.1%. These results highlight a substantial gap in current agentic capabilities for data-intensive tasks and point to promising directions for future research.",
+      "authors": [
+        "Yuxin Zhang",
+        "Ju Fan",
+        "Meihao Fan",
+        "Shaolei Zhang",
+        "Xiaoyong Du"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-13T13:46:47Z",
+      "updated": "2026-06-13T13:46:47Z",
+      "announced_date": "2026-06-13",
+      "first_seen": "2026-06-13",
+      "comment": "Accepted at ICML 2026. 37 pages, 11 figures. Project page: https://coda-bench.github.io/ Code: https://github.com/ruc-datalab/CoDA-Bench Data: https://huggingface.co/datasets/RUC-DataLab/CoDA-Bench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.15300v1",
+        "pdf": "https://arxiv.org/pdf/2606.15300v1",
+        "html": "https://arxiv.org/html/2606.15300"
+      },
+      "score": 15,
+      "tags": [],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2606.15152",
+      "title": "Can Agents Read the Room? Benchmarking Visual Social Intelligence in Multimodal Simulation",
+      "abstract": "Social interaction depends on both language and visible social signals, such as facial expressions, posture, gaze, and emotional shifts. Yet existing social-agent benchmarks are largely text-based and rarely test whether multimodal agents can use visual cues to guide interaction. We introduce \\textsc{\\benchmarkname{}}, a benchmark evaluating visual social intelligence in multimodal social simulation. It contains 240 scenarios, 585 role instances, and 2,340 role-task instances, combining aligned textual-visual evidence, structured role profiles, and four role-level tasks: expression task, characteristic task, interaction regulation task, and interaction outcome task. Evaluating seven recent MLLMs under verbalized-vision and direct-vision reveals a clear gap between local role enactment and interaction management: role-specific expression and conflict handling are near saturation, whereas interaction regulation and visually grounded outcome achievement remain substantially more difficult. The code is released at https://github.com/JunsWan/AgentViSS, and the dataset is available at https://huggingface.co/datasets/JunsWan/AgentViSS.",
+      "authors": [
+        "Shijun Wan",
+        "Xuehai Wu",
+        "Jiwen Zhang",
+        "Siyuan Wang",
+        "Zhongyu Wei"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-13T06:44:31Z",
+      "updated": "2026-06-13T06:44:31Z",
+      "announced_date": "2026-06-13",
+      "first_seen": "2026-06-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.15152v1",
+        "pdf": "https://arxiv.org/pdf/2606.15152v1",
+        "html": "https://arxiv.org/html/2606.15152"
+      },
+      "score": 10,
+      "tags": [
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2606.15107",
+      "title": "Towards Verifiable Agentic Data Science: Solving Irregular TSQA Via Tool-Grounded Reasoning",
+      "abstract": "Time series data in real-world deployments is overwhelmingly irregular. Observations are asynchronous, missing values are informative rather than random, and sampling frequencies vary across sensors and operational windows. However, existing Time Series Question Answering (TSQA) benchmarks mostly assume regularly sampled inputs, leaving a fundamental gap in understanding how large language models (LLMs) and AI agents perform under irregular conditions. To bridge this gap, we introduce IRTS-ToolBench, a benchmark of 1,700 questions spanning 10 task types across 13 domains. IRTS-ToolBench is designed to be used independently by any researcher working on LLM-based irregular time series analysis, providing standardized inputs and a reproducible evaluation protocol. Code can be found in https://github.com/SanhornC/IRTS-ToolBench.",
+      "authors": [
+        "Sanhorn Chen",
+        "Xiaoyang Chen",
+        "Boyu Liu",
+        "Roy Zhao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-13T04:41:04Z",
+      "updated": "2026-06-13T04:41:04Z",
+      "announced_date": "2026-06-13",
+      "first_seen": "2026-06-13",
+      "comment": "15 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.15107v1",
+        "pdf": "https://arxiv.org/pdf/2606.15107v1",
+        "html": "https://arxiv.org/html/2606.15107"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.15034",
+      "title": "OSGuard: A Benchmark for Safety in Computer-Use Agents",
+      "abstract": "Computer-use agents are increasingly evaluated by whether they complete realistic desktop and web tasks. However, task success alone can miss failures in which an agent reaches the nominal goal through an unsafe shortcut. We introduce OSGuard, a dual-granularity benchmark suite for evaluating safety in computer-use agents under benign, unchanged user instructions. OSGuard contains an action-level benchmark for local guardrail decisions and a risk-augmented execution suite for end-to-end evaluation. The action-level benchmark consists of contextualized proposed actions labeled as allowed, unrelated, or unsafe, each judged relative to the original instruction and current interface state. The execution suite contains manually constructed OSWorld-derived task variants in which the original task remains achievable, but the environment is modified to introduce latent hazards such as destructive overwrites, etc. Each variant is paired with augmented evaluators that retain the original task-success criterion while adding explicit state-based safety invariants, allowing us to distinguish safe completions from unsafe completions that satisfy the nominal task objective. Our experimental results on OSGuard show that current multimodal guardrails can perform well on isolated action judgments, while risk-augmented execution exposes remaining gaps between local oversight and reliable end-to-end safety. This dual-granularity design enables more precise diagnosis of whether models can both recognize unsafe proposed actions and improve full-task safety when deployed as guardrails.",
+      "authors": [
+        "Mina Mohammadmirzaei",
+        "Jeffrey Flanigan"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-13T00:32:24Z",
+      "updated": "2026-06-13T00:32:24Z",
+      "announced_date": "2026-06-13",
+      "first_seen": "2026-06-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.15034v1",
+        "pdf": "https://arxiv.org/pdf/2606.15034v1",
+        "html": "https://arxiv.org/html/2606.15034"
+      },
+      "score": 17,
+      "tags": [
+        "gui",
+        "computer-use",
+        "safety",
+        "multimodal"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    }
+  ]
+}

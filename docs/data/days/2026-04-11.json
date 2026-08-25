@@ -1,0 +1,168 @@
+{
+  "date": "2026-04-11",
+  "count": 3,
+  "report": {
+    "date": "2026-04-11",
+    "count": 3,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      }
+    ],
+    "en": {
+      "headline": "3 new agent benchmarks",
+      "summary": "On April 11, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Tool use (2), and Safety (2).",
+      "highlights": [
+        {
+          "id": "2605.16282",
+          "title": "Taxonomy and Consistency Analysis of Safety Benchmarks for AI Agents",
+          "blurb": "The rapid deployment of LLM-based autonomous agents has introduced safety risks that extend far beyond traditional LLM concerns, prompting a proliferation of safety benchmarks since late 2023."
+        },
+        {
+          "id": "2604.10261",
+          "title": "The Amazing Agent Race: Strong Tool Users, Weak Navigators",
+          "blurb": "Existing tool-use benchmarks for LLM agents are overwhelmingly linear: our analysis of six benchmarks shows 55 to 100% of instances are simple chains of 2 to 5 steps."
+        },
+        {
+          "id": "2604.10286",
+          "title": "STARS: Skill-Triggered Audit for Request-Conditioned Invocation Safety in Agent Systems",
+          "blurb": "Autonomous language-model agents increasingly rely on installable skills and tools to complete user tasks."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年4月11日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在工具使用（2）、安全（2）。",
+      "highlights": [
+        {
+          "id": "2605.16282",
+          "title": "Taxonomy and Consistency Analysis of Safety Benchmarks for AI Agents",
+          "blurb": "The rapid deployment of LLM-based autonomous agents has introduced safety risks that extend far beyond traditional LLM concerns, prompting a proliferation of safety benchmarks since late 2023."
+        },
+        {
+          "id": "2604.10261",
+          "title": "The Amazing Agent Race: Strong Tool Users, Weak Navigators",
+          "blurb": "Existing tool-use benchmarks for LLM agents are overwhelmingly linear: our analysis of six benchmarks shows 55 to 100% of instances are simple chains of 2 to 5 steps."
+        },
+        {
+          "id": "2604.10286",
+          "title": "STARS: Skill-Triggered Audit for Request-Conditioned Invocation Safety in Agent Systems",
+          "blurb": "Autonomous language-model agents increasingly rely on installable skills and tools to complete user tasks."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.10286",
+      "title": "STARS: Skill-Triggered Audit for Request-Conditioned Invocation Safety in Agent Systems",
+      "abstract": "Autonomous language-model agents increasingly rely on installable skills and tools to complete user tasks. Static skill auditing can expose capability surface before deployment, but it cannot determine whether a particular invocation is unsafe under the current user request and runtime context. We therefore study skill invocation auditing as a continuous-risk estimation problem: given a user request, candidate skill, and runtime context, predict a score that supports ranking and triage before a hard intervention is applied. We introduce STARS, which combines a static capability prior, a request-conditioned invocation risk model, and a calibrated risk-fusion policy. To evaluate this setting, we construct SIA-Bench, a benchmark of 3,000 invocation records with group-safe splits, lineage metadata, runtime context, canonical action labels, and derived continuous-risk targets. On a held-out split of indirect prompt injection attacks, calibrated fusion reaches 0.439 high-risk AUPRC, improving over 0.405 for the contextual scorer and 0.380 for the strongest static baseline, while the contextual scorer remains better calibrated with 0.289 expected calibration error. On the locked in-distribution test split, gains are smaller and static priors remain useful. The resulting claim is therefore narrower: request-conditioned auditing is most valuable as an invocation-time risk-scoring and triage layer rather than as a replacement for static screening. Code is available at https://github.com/123zgj123/STARS.",
+      "authors": [
+        "Guijia Zhang",
+        "Shu Yang",
+        "Xilin Gong",
+        "Di Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-11T17:06:42Z",
+      "updated": "2026-04-11T17:06:42Z",
+      "announced_date": "2026-04-11",
+      "first_seen": "2026-04-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.10286v1",
+        "pdf": "https://arxiv.org/pdf/2604.10286v1",
+        "html": "https://arxiv.org/html/2604.10286"
+      },
+      "score": 5,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2604.10261",
+      "title": "The Amazing Agent Race: Strong Tool Users, Weak Navigators",
+      "abstract": "Existing tool-use benchmarks for LLM agents are overwhelmingly linear: our analysis of six benchmarks shows 55 to 100% of instances are simple chains of 2 to 5 steps. We introduce The Amazing Agent Race (AAR), a benchmark featuring directed acyclic graph (DAG) puzzles (or \"legs\") with fork-merge tool chains. We release 1,400 instances across two variants: sequential (800 legs) and compositional (600 DAG legs). Agents must navigate Wikipedia, execute multi-step tool chains, and aggregate results into a verifiable answer. Legs are procedurally generated from Wikipedia seeds across four difficulty levels with live-API validation. Three complementary metrics (finish-line accuracy, pit-stop visit rate, and roadblock completion rate) separately diagnose navigation, tool-use, and arithmetic failures. Evaluating three agent frameworks on 1,400 legs, the best achieves only 37.2% accuracy. Navigation errors dominate (27 to 52% of trials) while tool-use errors remain below 17%, and agent architecture matters as much as model scale (Claude Code matches Codex CLI at 37% with 6x fewer tokens). The compositional structure of AAR reveals that agents fail not at calling tools but at navigating to the right pages, a blind spot invisible to linear benchmarks. The project page can be accessed at: https://minnesotanlp.github.io/the-amazing-agent-race",
+      "authors": [
+        "Zae Myung Kim",
+        "Dongseok Lee",
+        "Jaehyung Kim",
+        "Vipul Raheja",
+        "Dongyeop Kang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-11T15:58:29Z",
+      "updated": "2026-04-17T01:52:26Z",
+      "announced_date": "2026-04-11",
+      "first_seen": "2026-04-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.10261v2",
+        "pdf": "https://arxiv.org/pdf/2604.10261v2",
+        "html": "https://arxiv.org/html/2604.10261"
+      },
+      "score": 9,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2605.16282",
+      "title": "Taxonomy and Consistency Analysis of Safety Benchmarks for AI Agents",
+      "abstract": "The rapid deployment of LLM-based autonomous agents has introduced safety risks that extend far beyond traditional LLM concerns, prompting a proliferation of safety benchmarks since late 2023. However, these benchmarks have developed independently, with inconsistent threat models, incompatible metrics, and overlapping yet incomplete risk coverage. We present the first systematic analysis dedicated to agent safety benchmarks as evaluation instruments. We catalog 40 behavioral agent-safety benchmarks (2023-2026), plus 5 adjacent evaluator, defense, and dataset artifacts, propose a six-axis taxonomy of benchmark evaluation methodology, and apply it across the corpus to characterize how methodological choices shape safety conclusions. A coverage matrix reveals broad risk coverage but limited methodological convergence, while the taxonomy analysis shows a behavioral-benchmark core concentrated in sandboxed, constrained, and often safety-only evaluation. Across the landscape, we find that benchmark choice can yield contradictory safety conclusions, coverage counts often overstate evaluation depth, environment fidelity systematically shapes reported safety, the field disproportionately tests externally imposed rather than agent-internal risks, metric fragmentation limits comparison, and robustness remains effectively unbenchmarked. We ground these claims with a cross-benchmark consistency check, with 95% confidence intervals and Kendall's W concordance analysis, finding no evidence of ranking concordance across evaluation dimensions (W = 0.10, p = 0.94). We release structured metadata, full taxonomy codings, risk annotations, and all experimental artifacts, and propose minimum reporting standards for future benchmarks.",
+      "authors": [
+        "Miles Q. Li",
+        "Benjamin C. M. Fung",
+        "Boyang Li",
+        "Heba Ismail",
+        "Farkhund Iqbal"
+      ],
+      "categories": [
+        "cs.CY",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CY",
+      "published": "2026-04-11T04:25:19Z",
+      "updated": "2026-04-11T04:25:19Z",
+      "announced_date": "2026-04-11",
+      "first_seen": "2026-04-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.16282v1",
+        "pdf": "https://arxiv.org/pdf/2605.16282v1",
+        "html": "https://arxiv.org/html/2605.16282"
+      },
+      "score": 16,
+      "tags": [
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    }
+  ]
+}

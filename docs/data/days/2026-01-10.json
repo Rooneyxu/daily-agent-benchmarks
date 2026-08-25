@@ -1,0 +1,139 @@
+{
+  "date": "2026-01-10",
+  "count": 2,
+  "report": {
+    "date": "2026-01-10",
+    "count": 2,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On January 10, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Safety (2), Planning / reasoning (1), and Research agents (1).",
+      "highlights": [
+        {
+          "id": "2601.06676",
+          "title": "One Interaction Is Worth a Thousand Guesses: Benchmarking the Interactive Capabilities of Deep Research Agents",
+          "blurb": "Deep research agents powered by Large Language Models (LLMs) can perform multi-step reasoning, web exploration, and long-form report generation."
+        },
+        {
+          "id": "2601.06663",
+          "title": "SafePro: Evaluating the Safety of Professional-Level AI Agents",
+          "blurb": "Large language model-based agents are rapidly evolving from simple conversational assistants into autonomous systems capable of performing complex, professional-level tasks in various domains."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年1月10日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在安全（2）、规划 / 推理（1）、科研智能体（1）。",
+      "highlights": [
+        {
+          "id": "2601.06676",
+          "title": "One Interaction Is Worth a Thousand Guesses: Benchmarking the Interactive Capabilities of Deep Research Agents",
+          "blurb": "Deep research agents powered by Large Language Models (LLMs) can perform multi-step reasoning, web exploration, and long-form report generation."
+        },
+        {
+          "id": "2601.06663",
+          "title": "SafePro: Evaluating the Safety of Professional-Level AI Agents",
+          "blurb": "Large language model-based agents are rapidly evolving from simple conversational assistants into autonomous systems capable of performing complex, professional-level tasks in various domains."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2601.06676",
+      "title": "One Interaction Is Worth a Thousand Guesses: Benchmarking the Interactive Capabilities of Deep Research Agents",
+      "abstract": "Deep research agents powered by Large Language Models (LLMs) can perform multi-step reasoning, web exploration, and long-form report generation. However, existing systems remain largely autonomous, assuming fully specified user intent and evaluating only final outputs. In practice, research goals are often underspecified and evolve during exploration, yet current benchmarks neither model dynamic user feedback nor measure interaction costs. To address this gap, we introduce IDRBench, the first Interactive Deep Research Benchmark for systematically evaluating the interactive capabilities of deep research agents. IDRBench formulates deep research as an interactive process where agents may solicit clarification to better align with user intent. It integrates a modular interactive framework, a scalable reference-grounded user simulator, and an interaction-aware evaluation suite that jointly measures alignment gains and interaction overhead. Experiments on seven representative proprietary and open-weight LLMs show that interaction consistently improves research quality and robustness, while revealing substantial differences in interaction efficiency across models. These findings establish interactive capability as a distinct evaluation dimension and position IDRBench as a reusable benchmark for future user-aligned deep research agents.",
+      "authors": [
+        "Yingchaojie Feng",
+        "Qiang Huang",
+        "Xiaoya Xie",
+        "Zhaorui Yang",
+        "Jun Yu",
+        "Wei Chen",
+        "Anthony K. H. Tung"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.HC"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-01-10T20:29:12Z",
+      "updated": "2026-06-20T08:29:36Z",
+      "announced_date": "2026-01-10",
+      "first_seen": "2026-01-10",
+      "comment": "17 pages, 9 figures, 9 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.06676v2",
+        "pdf": "https://arxiv.org/pdf/2601.06676v2",
+        "html": "https://arxiv.org/html/2601.06676"
+      },
+      "score": 17,
+      "tags": [
+        "safety",
+        "planning",
+        "research"
+      ],
+      "field": "science",
+      "citations": 2
+    },
+    {
+      "id": "2601.06663",
+      "title": "SafePro: Evaluating the Safety of Professional-Level AI Agents",
+      "abstract": "Large language model-based agents are rapidly evolving from simple conversational assistants into autonomous systems capable of performing complex, professional-level tasks in various domains. While these advancements promise significant productivity gains, they also introduce critical safety risks that remain under-explored. Existing safety evaluations primarily focus on simple, daily assistance tasks, failing to capture the intricate decision-making processes and potential consequences of misaligned behaviors in professional settings. To address this gap, we introduce \\textbf{SafePro}, a comprehensive benchmark designed to evaluate the safety alignment of AI agents performing professional activities. SafePro features a dataset of high-complexity tasks across diverse professional domains with safety risks, developed through a rigorous iterative creation and review process. Our evaluation of state-of-the-art AI models reveals significant safety vulnerabilities and uncovers new unsafe behaviors in professional contexts. We further show that these models exhibit both insufficient safety judgment and weak safety alignment when executing complex professional tasks. In addition, we investigate safety mitigation strategies for improving agent safety in these scenarios and observe encouraging improvements. Together, our findings highlight the urgent need for robust safety mechanisms tailored to the next generation of professional AI agents.",
+      "authors": [
+        "Kaiwen Zhou",
+        "Shreedhar Jangam",
+        "Ashwin Nagarajan",
+        "Tejas Polu",
+        "Suhas Oruganti",
+        "Chengzhi Liu",
+        "Ching-Chen Kuo",
+        "Yuting Zheng",
+        "Sravana Narayanaraju",
+        "Xin Eric Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-01-10T19:53:09Z",
+      "updated": "2026-01-13T18:20:33Z",
+      "announced_date": "2026-01-10",
+      "first_seen": "2026-01-10",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.06663v2",
+        "pdf": "https://arxiv.org/pdf/2601.06663v2",
+        "html": "https://arxiv.org/html/2601.06663"
+      },
+      "score": 12,
+      "tags": [
+        "safety"
+      ],
+      "field": "workplace",
+      "citations": 6
+    }
+  ]
+}

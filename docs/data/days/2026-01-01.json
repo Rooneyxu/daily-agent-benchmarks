@@ -1,0 +1,144 @@
+{
+  "date": "2026-01-01",
+  "count": 2,
+  "report": {
+    "date": "2026-01-01",
+    "count": 2,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On January 1, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Safety (2), Tool use (1), Multi-agent (1), and Planning / reasoning (1).",
+      "highlights": [
+        {
+          "id": "2601.03281",
+          "title": "$α^3$-Bench: A Unified Benchmark of Safety, Robustness, and Efficiency for LLM-Based UAV Agents over 6G Networks",
+          "blurb": "Large Language Models (LLMs) are increasingly used as high level controllers for autonomous Unmanned Aerial Vehicle (UAV) missions."
+        },
+        {
+          "id": "2601.00227",
+          "title": "FlashInfer-Bench: Building the Virtuous Cycle for AI-driven LLM Systems",
+          "blurb": "Recent advances show that large language models (LLMs) can act as autonomous agents capable of generating GPU kernels, but integrating these AI-generated kernels into real-world inference systems remains challenging."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年1月1日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在安全（2）、工具使用（1）、多智能体（1）、规划 / 推理（1）。",
+      "highlights": [
+        {
+          "id": "2601.03281",
+          "title": "$α^3$-Bench: A Unified Benchmark of Safety, Robustness, and Efficiency for LLM-Based UAV Agents over 6G Networks",
+          "blurb": "Large Language Models (LLMs) are increasingly used as high level controllers for autonomous Unmanned Aerial Vehicle (UAV) missions."
+        },
+        {
+          "id": "2601.00227",
+          "title": "FlashInfer-Bench: Building the Virtuous Cycle for AI-driven LLM Systems",
+          "blurb": "Recent advances show that large language models (LLMs) can act as autonomous agents capable of generating GPU kernels, but integrating these AI-generated kernels into real-world inference systems remains challenging."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2601.03281",
+      "title": "$α^3$-Bench: A Unified Benchmark of Safety, Robustness, and Efficiency for LLM-Based UAV Agents over 6G Networks",
+      "abstract": "Large Language Models (LLMs) are increasingly used as high level controllers for autonomous Unmanned Aerial Vehicle (UAV) missions. However, existing evaluations rarely assess whether such agents remain safe, protocol compliant, and effective under realistic next generation networking constraints. This paper introduces $α^3$-Bench, a benchmark for evaluating LLM driven UAV autonomy as a multi turn conversational reasoning and control problem operating under dynamic 6G conditions. Each mission is formulated as a language mediated control loop between an LLM based UAV agent and a human operator, where decisions must satisfy strict schema validity, mission policies, speaker alternation, and safety constraints while adapting to fluctuating network slices, latency, jitter, packet loss, throughput, and edge load variations. To reflect modern agentic workflows, $α^3$-Bench integrates a dual action layer supporting both tool calls and agent to agent coordination, enabling evaluation of tool use consistency and multi agent interactions. We construct a large scale corpus of 113k conversational UAV episodes grounded in UAVBench scenarios and evaluate 17 state of the art LLMs using a fixed subset of 50 episodes per scenario under deterministic decoding. We propose a composite $α^3$ metric that unifies six pillars: Task Outcome, Safety Policy, Tool Consistency, Interaction Quality, Network Robustness, and Communication Cost, with efficiency normalized scores per second and per thousand tokens. Results show that while several models achieve high mission success and safety compliance, robustness and efficiency vary significantly under degraded 6G conditions, highlighting the need for network aware and resource efficient LLM based UAV agents. The dataset is publicly available on GitHub : https://github.com/maferrag/AlphaBench",
+      "authors": [
+        "Mohamed Amine Ferrag",
+        "Abderrahmane Lakas",
+        "Merouane Debbah"
+      ],
+      "categories": [
+        "eess.SY",
+        "cs.AI"
+      ],
+      "primary_category": "eess.SY",
+      "published": "2026-01-01T12:07:06Z",
+      "updated": "2026-01-01T12:07:06Z",
+      "announced_date": "2026-01-01",
+      "first_seen": "2026-01-01",
+      "comment": "20 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.03281v1",
+        "pdf": "https://arxiv.org/pdf/2601.03281v1",
+        "html": "https://arxiv.org/html/2601.03281"
+      },
+      "score": 19,
+      "tags": [
+        "tool-use",
+        "multi-agent",
+        "safety",
+        "planning"
+      ],
+      "field": "safety",
+      "citations": 10
+    },
+    {
+      "id": "2601.00227",
+      "title": "FlashInfer-Bench: Building the Virtuous Cycle for AI-driven LLM Systems",
+      "abstract": "Recent advances show that large language models (LLMs) can act as autonomous agents capable of generating GPU kernels, but integrating these AI-generated kernels into real-world inference systems remains challenging. FlashInfer-Bench addresses this gap by establishing a standardized, closed-loop framework that connects kernel generation, benchmarking, and deployment. At its core, FlashInfer Trace provides a unified schema describing kernel definitions, workloads, implementations, and evaluations, enabling consistent communication between agents and systems. Built on real serving traces, FlashInfer-Bench includes a curated dataset, a robust correctness- and performance-aware benchmarking framework, a public leaderboard to track LLM agents' GPU programming capabilities, and a dynamic substitution mechanism (apply()) that seamlessly injects the best-performing kernels into production LLM engines such as SGLang and vLLM. Using FlashInfer-Bench, we further evaluate the performance and limitations of LLM agents, compare the trade-offs among different GPU programming languages, and provide insights for future agent design. FlashInfer-Bench thus establishes a practical, reproducible pathway for continuously improving AI-generated kernels and deploying them into large-scale LLM inference.",
+      "authors": [
+        "Shanli Xing",
+        "Yiyan Zhai",
+        "Alexander Jiang",
+        "Yixin Dong",
+        "Yong Wu",
+        "Zihao Ye",
+        "Charlie Ruan",
+        "Yingyi Huang",
+        "Yineng Zhang",
+        "Liangsheng Yin",
+        "Aksara Bayyapu",
+        "Luis Ceze",
+        "Tianqi Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-01-01T06:18:53Z",
+      "updated": "2026-01-01T06:18:53Z",
+      "announced_date": "2026-01-01",
+      "first_seen": "2026-01-01",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.00227v1",
+        "pdf": "https://arxiv.org/pdf/2601.00227v1",
+        "html": "https://arxiv.org/html/2601.00227"
+      },
+      "score": 17,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 18
+    }
+  ]
+}

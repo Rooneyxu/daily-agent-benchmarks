@@ -1,0 +1,170 @@
+{
+  "date": "2026-06-19",
+  "count": 3,
+  "report": {
+    "date": "2026-06-19",
+    "count": 3,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      }
+    ],
+    "en": {
+      "headline": "3 new agent benchmarks",
+      "summary": "On June 19, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Planning / reasoning (1), and Tool use (1).",
+      "highlights": [
+        {
+          "id": "2608.20370",
+          "title": "Benchmarking LLM Serving Systems for Agentic AI Workloads with XPerf",
+          "blurb": "We present XPerf, a benchmarking framework that load-tests LLM serving systems with diverse agentic AI workloads."
+        },
+        {
+          "id": "2606.21140",
+          "title": "Matching Matters: A Fair Quality-Efficiency Benchmark for Command-Line Agents",
+          "blurb": "Rapid advances in large language models have improved the task-solving capabilities of command-line-interface (CLI)-based agents, whose CLIs determine how models invoke tools, maintain interaction history, and recover fr…"
+        },
+        {
+          "id": "2606.21169",
+          "title": "Trip+: Benchmarking Agents in Personalized Interactive Travel Planning",
+          "blurb": "Interactive travel planning has become a popular use case for language models."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年6月19日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在规划 / 推理（1）、工具使用（1）。",
+      "highlights": [
+        {
+          "id": "2608.20370",
+          "title": "Benchmarking LLM Serving Systems for Agentic AI Workloads with XPerf",
+          "blurb": "We present XPerf, a benchmarking framework that load-tests LLM serving systems with diverse agentic AI workloads."
+        },
+        {
+          "id": "2606.21140",
+          "title": "Matching Matters: A Fair Quality-Efficiency Benchmark for Command-Line Agents",
+          "blurb": "Rapid advances in large language models have improved the task-solving capabilities of command-line-interface (CLI)-based agents, whose CLIs determine how models invoke tools, maintain interaction history, and recover fr…"
+        },
+        {
+          "id": "2606.21169",
+          "title": "Trip+: Benchmarking Agents in Personalized Interactive Travel Planning",
+          "blurb": "Interactive travel planning has become a popular use case for language models."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.20370",
+      "title": "Benchmarking LLM Serving Systems for Agentic AI Workloads with XPerf",
+      "abstract": "We present XPerf, a benchmarking framework that load-tests LLM serving systems with diverse agentic AI workloads. It provides detailed profiling of the serving system and hardware, enabling users to identify performance bottlenecks introduced by agentic workloads. Benchmarking LLM serving systems under agentic workloads is challenging - agentic applications rely on nondeterministic LLM outputs to guide their control flow; therefore, workload patterns vary unpredictably from run to run. XPerf minimizes this workload variation with a fine-grained trace replay approach: it enables users to easily collect traces from real agentic applications, synthesize new workloads with various patterns if needed, and reproducibly replay them on different LLM serving systems. XPerf includes eight agentic applications across diverse use cases (e.g., coding, deep research, and Q&A) by default. Our empirical study using these workloads shows that XPerf accurately replays agentic workloads, provides detailed performance breakdowns, scales to larger serving systems, and assists in serving system debugging. We will open-source XPerf on GitHub.",
+      "authors": [
+        "Michael Wang",
+        "Yikang Yue",
+        "Shaobo Li",
+        "Yirui Eric Zhou",
+        "Chen Wang",
+        "Jian Huang"
+      ],
+      "categories": [
+        "cs.DC",
+        "cs.MA"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-06-19T17:17:04Z",
+      "updated": "2026-06-19T17:17:04Z",
+      "announced_date": "2026-06-19",
+      "first_seen": "2026-06-19",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.20370v1",
+        "pdf": "https://arxiv.org/pdf/2608.20370v1",
+        "html": "https://arxiv.org/html/2608.20370"
+      },
+      "score": 9,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.21169",
+      "title": "Trip+: Benchmarking Agents in Personalized Interactive Travel Planning",
+      "abstract": "Interactive travel planning has become a popular use case for language models. Agents are deployed to manage evolving preferences and unexpected disruptions over multiple turns. Such settings require models to make complex, profile-conditioned planning decisions. However, existing benchmarks often evaluate feasibility, personalization, or interaction in relatively isolated settings. We therefore introduce Trip+ to measure the ability of agents to plan travel holistically. In Trip+, given traveler profiles and dynamic interactions, agents must generate and revise minute-level itineraries. End-to-end traveler experiences are evaluated via an LLM-based simulator, enabling the assessment of subjective metrics like fatigue. Our scenarios range from simple request resolutions to complex environment-driven replanning. We evaluate 18 LMs and find a consistent gap in experiential quality. Models favor technically feasible but exhausting itineraries that diverge sharply from profiled traveler preferences.",
+      "authors": [
+        "Junle Chen",
+        "Wei Chen",
+        "Yehong Xu",
+        "Zhengjun Huang",
+        "Yuqian Wu",
+        "Zhoujin Tian",
+        "Kai Wang",
+        "Lei Wang",
+        "Xiaofang Zhou"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-19T07:17:40Z",
+      "updated": "2026-06-19T07:17:40Z",
+      "announced_date": "2026-06-19",
+      "first_seen": "2026-06-19",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.21169v1",
+        "pdf": "https://arxiv.org/pdf/2606.21169v1",
+        "html": "https://arxiv.org/html/2606.21169"
+      },
+      "score": 7,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2606.21140",
+      "title": "Matching Matters: A Fair Quality-Efficiency Benchmark for Command-Line Agents",
+      "abstract": "Rapid advances in large language models have improved the task-solving capabilities of command-line-interface (CLI)-based agents, whose CLIs determine how models invoke tools, maintain interaction history, and recover from failures. Consequently, effective matching between CLIs and LLMs has become essential. However, existing agent benchmarks largely emphasize success rate while overlooking practical objectives such as cost and efficiency, as well as the selection of LM-CLI combinations, all of which are critical in real-world deployment. We therefore introduce AgentMeter, a quality-efficiency benchmark with a new metric, the AgentMeter Score (AMS), that jointly characterizes task quality, budget sensitivity, and resource-intensive zero-reward execution, enabling a more complete assessment of deployed LM-CLI pairs. Furthermore, collected task descriptions may inadvertently favor LM-CLI pairs that are particularly compatible with their wording and structure, causing evaluation results to reflect description-specific advantages rather than general task-solving capability. We therefore propose AgentMeter-Opt, a trajectory-grounded optimization framework that constructs pair-adapted, task-preserving description variants to build a fairer evaluation set across LM-CLI pairs. Extensive experiments show that no CLI is universally optimal across language models and that task success, execution cost, and AMS identify different competitive configurations. Results on AgentMeter-Opt further reveal that task-preserving description changes affect LM-CLI pairs unevenly and can alter their relative ordering across valid description conditions. Together, AgentMeter and AgentMeter-Opt provide a practical foundation for fair and deployment-relevant evaluation of command-line agents.",
+      "authors": [
+        "Han Chi",
+        "Jiaxin Qi",
+        "Yan Cui",
+        "Baisheng Lai",
+        "Jianqiang Huang"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-06-19T06:26:32Z",
+      "updated": "2026-08-06T08:32:42Z",
+      "announced_date": "2026-06-19",
+      "first_seen": "2026-06-19",
+      "comment": "13 pages, 4 figures, 12 tables; includes supplementary material",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.21140v2",
+        "pdf": "https://arxiv.org/pdf/2606.21140v2",
+        "html": "https://arxiv.org/html/2606.21140"
+      },
+      "score": 8,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 1
+    }
+  ]
+}

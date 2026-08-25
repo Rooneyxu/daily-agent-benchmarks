@@ -1,0 +1,136 @@
+{
+  "date": "2026-08-07",
+  "count": 2,
+  "report": {
+    "date": "2026-08-07",
+    "count": 2,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On August 7, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Tool use (2), Safety (2), and Memory (2).",
+      "highlights": [
+        {
+          "id": "2608.06909",
+          "title": "Long-Horizon Agent Trajectory Attribution: A Unified Benchmark and Fine-Grained Annotation Framework",
+          "blurb": "Large language model (LLM) agents increasingly operate through long-horizon trajectories involving user instructions, tool use, external observations, and memory."
+        },
+        {
+          "id": "2608.06984",
+          "title": "HarnessSafe: Evaluating Safety Across Persistent Carriers in Agent Harnesses",
+          "blurb": "Modern agent harnesses persist state across tasks and sessions through persistent carriers like memory, skills, tools, and shared artifacts."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年8月7日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在工具使用（2）、安全（2）、记忆（2）。",
+      "highlights": [
+        {
+          "id": "2608.06909",
+          "title": "Long-Horizon Agent Trajectory Attribution: A Unified Benchmark and Fine-Grained Annotation Framework",
+          "blurb": "Large language model (LLM) agents increasingly operate through long-horizon trajectories involving user instructions, tool use, external observations, and memory."
+        },
+        {
+          "id": "2608.06984",
+          "title": "HarnessSafe: Evaluating Safety Across Persistent Carriers in Agent Harnesses",
+          "blurb": "Modern agent harnesses persist state across tasks and sessions through persistent carriers like memory, skills, tools, and shared artifacts."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.06984",
+      "title": "HarnessSafe: Evaluating Safety Across Persistent Carriers in Agent Harnesses",
+      "abstract": "Modern agent harnesses persist state across tasks and sessions through persistent carriers like memory, skills, tools, and shared artifacts. However, this capability creates delayed safety risks: attacker-influenced content can cross system boundaries and later affect the execution of a benign request. Existing benchmarks typically focus on a few carriers or harnesses, while end-to-end attack-success rates reveal little about how risks propagate. To this end, we present HarnessSafe, a benchmark comprising 328 executable cases across seven persistent-carrier families and evaluated on most mainstream agent harnesses. Each case is specified as a Persistent-Risk Lifecycle that traces attacker influence from its initial entry, through persistence across carriers and system boundaries, to a later benign trigger and an observable violation. We further introduce a multi-stage, trace-based evaluation that uses observable execution evidence to determine how far each attack chain progresses and where it is stopped. Experiments show that containment is carrier-specific and strongly depends on the harness-model configuration. Both the harness and model backend substantially shape containment outcomes, while attack success rates cannot reflect distinct lifecycle progression patterns.",
+      "authors": [
+        "Xiao Zhang",
+        "Yusheng Wang",
+        "Yuhao Fei",
+        "Dongyuan Li",
+        "Zian Liang",
+        "Liuyu Xiang",
+        "Hongxun Gu",
+        "Zhaofeng He"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-08-07T09:03:49Z",
+      "updated": "2026-08-07T09:03:49Z",
+      "announced_date": "2026-08-07",
+      "first_seen": "2026-08-07",
+      "comment": "21 pages, 3 figures. Preprint",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.06984v1",
+        "pdf": "https://arxiv.org/pdf/2608.06984v1",
+        "html": "https://arxiv.org/html/2608.06984"
+      },
+      "score": 6,
+      "tags": [
+        "tool-use",
+        "safety",
+        "memory"
+      ],
+      "field": "safety",
+      "citations": 1
+    },
+    {
+      "id": "2608.06909",
+      "title": "Long-Horizon Agent Trajectory Attribution: A Unified Benchmark and Fine-Grained Annotation Framework",
+      "abstract": "Large language model (LLM) agents increasingly operate through long-horizon trajectories involving user instructions, tool use, external observations, and memory. Existing benchmarks primarily evaluate behavioral outcomes but provide limited support for fine-grained attribution analysis. We introduce trajectory attribution and develop a benchmark and annotation framework for this task. The benchmark organizes heterogeneous trajectories under a unified component schema and provides annotations of the primary attribution component, together with attack and execution chains where applicable. Instantiating the benchmark with trajectories from AgentDojo and the Stage and Canary settings of Agent3Sigma yields more than 1,300 annotated trajectories covering task-aligned actions, unsafe actions, and safety refusals. The benchmark defines two evaluation tasks, primary attribution localization and attribution-chain recovery, and provides reference baselines based on incremental trajectory contribution and component-level leave-one-out perturbation. It captures diverse attribution settings, including local and long-range attribution as well as structured attribution chains. Reference baseline results exhibit substantial performance differences across these settings, providing an initial characterization of the benchmark's attribution challenges. Beyond this initial instantiation, we release a reusable annotation skill that enables trajectories generated by new agent models to be standardized, annotated, and evaluated under the same framework. Project resources and future releases are available at https://github.com/chenjing-2024/agent-trajectory-attribution.",
+      "authors": [
+        "Jing Chen",
+        "Yang Sun",
+        "Li Zhang",
+        "Lin Xu",
+        "Jie Shi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-07T07:43:12Z",
+      "updated": "2026-08-07T07:43:12Z",
+      "announced_date": "2026-08-07",
+      "first_seen": "2026-08-07",
+      "comment": "17 pages, 4 figures, 7 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.06909v1",
+        "pdf": "https://arxiv.org/pdf/2608.06909v1",
+        "html": "https://arxiv.org/html/2608.06909"
+      },
+      "score": 8,
+      "tags": [
+        "tool-use",
+        "safety",
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

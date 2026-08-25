@@ -1,0 +1,280 @@
+{
+  "date": "2026-05-25",
+  "count": 5,
+  "report": {
+    "date": "2026-05-25",
+    "count": 5,
+    "themes": [
+      {
+        "id": "workplace",
+        "count": 2,
+        "en": "Work / office",
+        "zh": "职场 / 办公"
+      },
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "5 new agent benchmarks",
+      "summary": "On May 25, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Work / office (2), Memory (2), GUI agents (1), and Computer use (1).",
+      "highlights": [
+        {
+          "id": "2605.25707",
+          "title": "AgentHijack: Benchmarking Computer Use Agent Robustness to Common Environment Corruptions",
+          "blurb": "Autonomous computer use agents that powered by multimodal large language models (MLLMs) are emerging as capable assistants for completing complex digital workflows."
+        },
+        {
+          "id": "2605.26321",
+          "title": "Anchor: Mitigating Artifact Drift in Agent Benchmark Generation",
+          "blurb": "AI agents are beginning to complete valuable, long-horizon business operations tasks, but training and evaluation environments for enterprise work still struggle to balance realism, verifiability, and scale."
+        },
+        {
+          "id": "2605.26329",
+          "title": "JobBench: Aligning Agent Work With Human Will",
+          "blurb": "Current benchmarks for occupational AI agents are scoped primarily by economic values, telling a replacement story."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年5月25日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在职场 / 办公（2）、记忆（2）、GUI 智能体（1）、计算机使用（1）。",
+      "highlights": [
+        {
+          "id": "2605.25707",
+          "title": "AgentHijack: Benchmarking Computer Use Agent Robustness to Common Environment Corruptions",
+          "blurb": "Autonomous computer use agents that powered by multimodal large language models (MLLMs) are emerging as capable assistants for completing complex digital workflows."
+        },
+        {
+          "id": "2605.26321",
+          "title": "Anchor: Mitigating Artifact Drift in Agent Benchmark Generation",
+          "blurb": "AI agents are beginning to complete valuable, long-horizon business operations tasks, but training and evaluation environments for enterprise work still struggle to balance realism, verifiability, and scale."
+        },
+        {
+          "id": "2605.26329",
+          "title": "JobBench: Aligning Agent Work With Human Will",
+          "blurb": "Current benchmarks for occupational AI agents are scoped primarily by economic values, telling a replacement story."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2605.26329",
+      "title": "JobBench: Aligning Agent Work With Human Will",
+      "abstract": "Current benchmarks for occupational AI agents are scoped primarily by economic values, telling a replacement story. We introduce JobBench, which evaluates AI agents on the workflows that experts identify as high-priority for delegation, empowering humans based on their needs instead of replacing them with GDP value. JobBench covers 130 agentic tasks across 35 occupations. Each task is packaged as a workspace of heterogeneous reference files, requiring the agent to reason through the cluttered information streams of real professional work. Outputs are graded by a fact-anchored chain of rubrics, averaging 35.6 binary criteria per task. We evaluate 36 models; the strongest, Claude Opus~4.7 under Claude Code, reaches only 45.9 %. We hope JobBench shifts the community's target labour-market effect from replacement to enhancement: building agents that do what humans actually want delegated, not only what is most economically valuable.",
+      "authors": [
+        "Yuetai Li",
+        "Yichen Feng",
+        "Zhangchen Xu",
+        "Zixian Ma",
+        "Kaiyuan Zheng",
+        "Fengqing Jiang",
+        "Xinghua Sun",
+        "Rulin Shao",
+        "Zichen Chen",
+        "Yue Huang",
+        "Xinyang Han",
+        "Brian Lee",
+        "Kayla Xu",
+        "Shenglai Zeng",
+        "Hang Hua",
+        "Xiangliang Zhang",
+        "Basel Alomair",
+        "Ranjay Krishna",
+        "Luke Zettlemoyer",
+        "Pang Wei Koh",
+        "Bhaskar Ramasubramanian",
+        "Luyao Niu",
+        "Xiang Yue",
+        "Radha Poovendran"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-25T21:07:02Z",
+      "updated": "2026-05-25T21:07:02Z",
+      "announced_date": "2026-05-25",
+      "first_seen": "2026-05-25",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.26329v1",
+        "pdf": "https://arxiv.org/pdf/2605.26329v1",
+        "html": "https://arxiv.org/html/2605.26329"
+      },
+      "score": 11,
+      "tags": [
+        "workplace"
+      ],
+      "field": "workplace",
+      "citations": 4
+    },
+    {
+      "id": "2605.26321",
+      "title": "Anchor: Mitigating Artifact Drift in Agent Benchmark Generation",
+      "abstract": "AI agents are beginning to complete valuable, long-horizon business operations tasks, but training and evaluation environments for enterprise work still struggle to balance realism, verifiability, and scale. Environment and task creation frequently suffers from a failure mode we call artifact drift: when instructions, environments, oracles, and verifiers are created by loosely coupled processes, they frequently disagree on what a task requires, producing environments that are unsolvable, reward-hackable, or inconsistent. We introduce Anchor, a task-generation pipeline that formalizes domain experts' specifications of business workflows into constraint optimization programs. From a single parametric specification, the pipeline jointly produces a natural-language instruction, environment configuration, solver-certified ground-truth solution, and state-based verifier. With Anchor, altering parameters yields new tasks with controlled difficulty and known optimal solutions, producing harness-agnostic environments whose rewards depend solely on end-state business correctness. We apply Anchor to produce ERP-Bench: a benchmark of 300 long-horizon tasks spanning procurement and manufacturing workflows in a production-grade ERP system. We find that generation parameters predict realized difficulty, and that frontier models satisfy explicit task constraints in 26.1% of trials but reach a fully optimal solution in only 17.4% of trials. Overall, we show that Anchor and ERP-Bench offer a concrete recipe for building auditable evaluation environments for economically valuable agent work. We release the task generator and ERP-Bench dataset at erpbench.ai",
+      "authors": [
+        "Maksim Ivanov",
+        "Abhijay Rana"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-25T20:44:17Z",
+      "updated": "2026-05-25T20:44:17Z",
+      "announced_date": "2026-05-25",
+      "first_seen": "2026-05-25",
+      "comment": "Accepted to RLEval '26 (Workshop at ACM Conference on AI and Agentic Systems 2026)",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.26321v1",
+        "pdf": "https://arxiv.org/pdf/2605.26321v1",
+        "html": "https://arxiv.org/html/2605.26321"
+      },
+      "score": 11,
+      "tags": [
+        "workplace"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2605.26302",
+      "title": "Your Agents Are Aging Too: Agent Lifespan Engineering for Deployed Systems",
+      "abstract": "Long-lived AI agents are increasingly deployed as persistent operational systems, yet they are still evaluated like freshly initialized models. Day-one benchmarks miss a basic systems question: how long does an agent remain reliable after deployment? Even when model weights are frozen, an agent's effective state keeps changing as it compresses interaction history, retrieves from a growing memory store, revises facts after updates, and undergoes routine maintenance. Reliability therefore becomes a lifespan property of the full agent harness, not only a snapshot property of the base model. We introduce AgingBench, a longitudinal reliability benchmark for agent lifespan engineering: measuring not only whether deployed agents degrade, but what form the degradation takes and where repair should target. AgingBench organizes agent aging into four mechanisms: compression aging, interference aging, revision aging, and maintenance aging. To diagnose these failures, AgingBench uses temporal dependency graphs and paired counterfactual probes that produce diagnostic profiles for the write, retrieval, and utilization stages of the memory pipeline. Across 7 scenarios, 14 models, multiple memory policies, and both runner-controlled and autonomous agents, over ~400 runs spanning 8 - 200 sessions show that agent aging is not one-dimensional: behavioral tests can remain clean while factual precision decays; derived-state tracking can collapse sharply within a single model; and the same wrong answer can require different repairs depending on what the diagnostic profile points to. These results suggest that reliable agent deployment requires lifespan evaluation, mechanism-level diagnosis, and stage-targeted repair, not only stronger day-one models.",
+      "authors": [
+        "Jianing Zhu",
+        "Yeonju Ro",
+        "John Robertson",
+        "Kevin Wang",
+        "Junbo Li",
+        "Haris Vikalo",
+        "Aditya Akella",
+        "Zhangyang Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-25T19:55:12Z",
+      "updated": "2026-05-25T19:55:12Z",
+      "announced_date": "2026-05-25",
+      "first_seen": "2026-05-25",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.26302v1",
+        "pdf": "https://arxiv.org/pdf/2605.26302v1",
+        "html": "https://arxiv.org/html/2605.26302"
+      },
+      "score": 10,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 3
+    },
+    {
+      "id": "2605.25707",
+      "title": "AgentHijack: Benchmarking Computer Use Agent Robustness to Common Environment Corruptions",
+      "abstract": "Autonomous computer use agents that powered by multimodal large language models (MLLMs) are emerging as capable assistants for completing complex digital workflows. However, real-world execution environments are far from ideal: pop-ups, resolution changes, and competing applications frequently interfere with agent perception and control. We introduce AgentHijack, a benchmark designed to evaluate the robustness of computer-use agents under common corruptions, where the uncertainties in dynamic environment disrupt the execution flow without direct adversarial intent. Specifically, AgentHijack introduces 9 configurable common corruptions to replicate realistic imperfect scenarios. We evaluate a variety of desktop tasks that utilize MLLM-based agents and discover that even minor instances of corruption can result in substantial performance degradation, which emphasizes the fragility of agents and underscores the necessity of robustness evaluation. Afterward, we propose AgentHijack-Agent, a framework that integrates an action generator with enhanced grounding capabilities and an onlooker responsible for behavior summarization and environment checking. Extensive experiments validate its effectiveness. Our code, environment, baseline models and data are publicly available at: https://AgentHijack.github.io.",
+      "authors": [
+        "Jingwei Sun",
+        "Jianing Zhu",
+        "Yuanyi Li",
+        "Tongliang Liu",
+        "Xia HU",
+        "Bo Han"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-25T11:09:22Z",
+      "updated": "2026-05-25T11:09:22Z",
+      "announced_date": "2026-05-25",
+      "first_seen": "2026-05-25",
+      "comment": "accepted by ICML 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.25707v1",
+        "pdf": "https://arxiv.org/pdf/2605.25707v1",
+        "html": "https://arxiv.org/html/2605.25707"
+      },
+      "score": 24,
+      "tags": [
+        "gui",
+        "computer-use",
+        "safety",
+        "multimodal"
+      ],
+      "field": "computer-use",
+      "citations": 2
+    },
+    {
+      "id": "2605.25535",
+      "title": "Personalize-then-Store: Benchmarking and Learning Personalized Memory for Long-horizon Agents",
+      "abstract": "Existing large language model (LLM) based memory systems apply universal, static policies that overlook a fundamental reality: the contexts that are worth storing in memory are different across users. This misalignment wastes limited memory budget on transient interactions while failing to preserve critical context for long horizon tasks. To address this gap, we investigate an underexplored question: can LLM based memory systems learn personalized memory policies? We introduce PerMemBench, the first benchmark for evaluating personalized memory systems, featuring multi year, multi domain interaction histories across diverse user personas. We further present the first empirical study of memory personalization, proposing session level storage gating, a lightweight framework that selectively bypasses memory operations for transient sessions. Our study confirms that personalization yields substantial retention gains under perfect gating, yet reveals that accurate gating remains an open and critical challenge.",
+      "authors": [
+        "Yeonjun In",
+        "Wonjoong Kim",
+        "Sangwu Park",
+        "Kanghoon Yoon",
+        "Chanyoung Park"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-25T07:48:33Z",
+      "updated": "2026-05-25T07:48:33Z",
+      "announced_date": "2026-05-25",
+      "first_seen": "2026-05-25",
+      "comment": "preprint",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.25535v1",
+        "pdf": "https://arxiv.org/pdf/2605.25535v1",
+        "html": "https://arxiv.org/html/2605.25535"
+      },
+      "score": 7,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 2
+    }
+  ]
+}

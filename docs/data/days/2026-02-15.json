@@ -1,0 +1,152 @@
+{
+  "date": "2026-02-15",
+  "count": 2,
+  "report": {
+    "date": "2026-02-15",
+    "count": 2,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On February 15, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Planning / reasoning (2), Coding agents (1), and Tool use (1).",
+      "highlights": [
+        {
+          "id": "2602.14257",
+          "title": "AD-Bench: A Real-World, Trajectory-Aware Advertising Analytics Benchmark for LLM Agents",
+          "blurb": "While Large Language Model (LLM) agents have made remarkable progress on complex reasoning, evaluating them in real-world environments remains an open problem."
+        },
+        {
+          "id": "2602.14337",
+          "title": "LongCLI-Bench: A Preliminary Benchmark and Study for Long-horizon Agentic Programming in Command-Line Interfaces",
+          "blurb": "Recent advances in AI-assisted programming have empowered agents to execute complex workflows via command-line interfaces, however, existing benchmarks are limited by short task horizons, data contamination from GitHub s…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年2月15日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在规划 / 推理（2）、代码智能体（1）、工具使用（1）。",
+      "highlights": [
+        {
+          "id": "2602.14257",
+          "title": "AD-Bench: A Real-World, Trajectory-Aware Advertising Analytics Benchmark for LLM Agents",
+          "blurb": "While Large Language Model (LLM) agents have made remarkable progress on complex reasoning, evaluating them in real-world environments remains an open problem."
+        },
+        {
+          "id": "2602.14337",
+          "title": "LongCLI-Bench: A Preliminary Benchmark and Study for Long-horizon Agentic Programming in Command-Line Interfaces",
+          "blurb": "Recent advances in AI-assisted programming have empowered agents to execute complex workflows via command-line interfaces, however, existing benchmarks are limited by short task horizons, data contamination from GitHub s…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2602.14337",
+      "title": "LongCLI-Bench: A Preliminary Benchmark and Study for Long-horizon Agentic Programming in Command-Line Interfaces",
+      "abstract": "Recent advances in AI-assisted programming have empowered agents to execute complex workflows via command-line interfaces, however, existing benchmarks are limited by short task horizons, data contamination from GitHub scraping, and a lack of fine-grained evaluation metrics, fail to rigorously evaluate the long-horizon planning and execution capabilities essential for realistic software engineering. To address these gaps, we introduce LongCLI-Bench, a comprehensive benchmark designed to evaluate agentic capabilities across long-horizon, realistic tasks. We curated 20 high-quality, long-horizon tasks from over 1,000 computer science assignments and real-world workflows, covering four engineering categories: from scratch, feature addition, bug fixing, and refactoring. We propose a dual-set testing protocol for LongCLI-Bench, which measures requirement fulfillment (fail-to-pass) and regression avoidance (pass-to-pass), and incorporates step-level scoring to pinpoint execution failures. Extensive experiments reveal that even state-of-the-art agents achieve pass rates below 20% in LongCLI-Bench. Step-level analysis further indicates that the majority of tasks stall at less than 30% completion, highlighting that critical failures often occur in the early stages. Although self-correction offers marginal gains, human-agent collaboration through plan injection and interactive guidance yields significantly higher improvements. These results highlight that future research must emphasize the development of synergistic human-agent workflows alongside advances in agents' planning and execution capabilities to overcome key challenges in long-horizon task performance.",
+      "authors": [
+        "Yukang Feng",
+        "Jianwen Sun",
+        "Zelai Yang",
+        "Jiaxin Ai",
+        "Chuanhao Li",
+        "Zizhen Li",
+        "Fanrui Zhang",
+        "Kang He",
+        "Rui Ma",
+        "Jifan Lin",
+        "Jie Sun",
+        "Yang Xiao",
+        "Sizhuo Zhou",
+        "Wenxiao Wu",
+        "Yiming Liu",
+        "Pengfei Liu",
+        "Yu Qiao",
+        "Shenglin Zhang",
+        "Kaipeng Zhang"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.MA"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-15T23:12:57Z",
+      "updated": "2026-02-26T11:54:11Z",
+      "announced_date": "2026-02-15",
+      "first_seen": "2026-02-15",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.14337v2",
+        "pdf": "https://arxiv.org/pdf/2602.14337v2",
+        "html": "https://arxiv.org/html/2602.14337"
+      },
+      "score": 17,
+      "tags": [
+        "coding",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 21
+    },
+    {
+      "id": "2602.14257",
+      "title": "AD-Bench: A Real-World, Trajectory-Aware Advertising Analytics Benchmark for LLM Agents",
+      "abstract": "While Large Language Model (LLM) agents have made remarkable progress on complex reasoning, evaluating them in real-world environments remains an open problem. Existing benchmarks are largely confined to idealized simulations and fail to capture specialized domains such as advertising and marketing analytics, where tasks require multi-round interaction with professional tools and where ground-truth answers quickly become obsolete as data and platform rules evolve. To address this, we propose AD-Bench, a benchmark built from real user marketing-analysis requests on a production advertising platform. AD-Bench introduces two key designs: (i) a dynamic ground-truth pipeline that replays expert tool-call trajectories to regenerate answers consistent with the current environment, mitigating answer obsolescence; and (ii) a trajectory-aware evaluation that jointly measures end-to-end answer correctness (Pass@k) and trajectory coverage. Requests are stratified into three difficulty levels (L1-L3) to probe multi-round, multi-tool collaboration. Experiments show that the best model, Claude-Opus-4.7, attains Pass@1 = 76.9% and Pass@3 = 80.4% with 82.7% trajectory coverage overall, yet drops sharply on L3 to Pass@1 = 61.4% and Pass@3 = 65.1%, revealing that even state-of-the-art agents have substantial gaps in complex advertising analytics.",
+      "authors": [
+        "Lingxiang Hu",
+        "Yiding Sun",
+        "Tianle Xia",
+        "Wenwei Li",
+        "Ming Xu",
+        "Lan Xu",
+        "Siying Wang",
+        "Wei Xu",
+        "Jie Jiang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-15T17:59:47Z",
+      "updated": "2026-06-22T06:59:51Z",
+      "announced_date": "2026-02-15",
+      "first_seen": "2026-02-15",
+      "comment": "16 pages, 11 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.14257v2",
+        "pdf": "https://arxiv.org/pdf/2602.14257v2",
+        "html": "https://arxiv.org/html/2602.14257"
+      },
+      "score": 23,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 3
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "date": "2026-03-22",
+  "count": 1,
+  "report": {
+    "date": "2026-03-22",
+    "count": 1,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      }
+    ],
+    "en": {
+      "headline": "1 new agent benchmark",
+      "summary": "On March 22, 2026, arXiv listed 1 new agent benchmark: WirelessBench: A Tolerance-Aware LLM Agent Benchmark for Wireless Network Intelligence.",
+      "highlights": [
+        {
+          "id": "2603.21251",
+          "title": "WirelessBench: A Tolerance-Aware LLM Agent Benchmark for Wireless Network Intelligence",
+          "blurb": "LLM agents are emerging as a key enabler for autonomous wireless network management."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 1 篇 Agent Benchmark",
+      "summary": "2026年3月22日，arXiv 新增 1 篇 Agent Benchmark：WirelessBench: A Tolerance-Aware LLM Agent Benchmark for Wireless Network Intelligence。",
+      "highlights": [
+        {
+          "id": "2603.21251",
+          "title": "WirelessBench: A Tolerance-Aware LLM Agent Benchmark for Wireless Network Intelligence",
+          "blurb": "LLM agents are emerging as a key enabler for autonomous wireless network management."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2603.21251",
+      "title": "WirelessBench: A Tolerance-Aware LLM Agent Benchmark for Wireless Network Intelligence",
+      "abstract": "LLM agents are emerging as a key enabler for autonomous wireless network management. Reliably deploying them, however, demands benchmarks that reflect real engineering risk. Existing wireless benchmarks evaluate single isolated capabilities and treat all errors uniformly, missing both cascaded-chain failures and catastrophic unit confusions (\\textit{e.g.}, dB vs.\\ dBm). We present \\wb{}, the first tolerance-aware, tool-integrated benchmark for LLM-based wireless agents. \\wb{} is organized as a three-tier cognitive hierarchy: domain knowledge reasoning (WCHW, 1{,}392 items), intent-driven resource allocation (WCNS, 1{,}000 items), and proactive multi-step decisions under mobility (WCMSA, 1{,}000 items). Moreover, \\wb{} is established on three design principles: \\emph{(i)}~tolerance-aware scoring with catastrophic-error detection; \\emph{(ii)}~tool-necessary tasks requiring a 3GPP-compliant ray-tracing query for channel quality; and \\emph{(iii)}~Chain-of-Thought (CoT)-traceable items, where every benchmark item ships with a complete CoT trajectory enabling fine-grained diagnosis of where in the reasoning chain an agent fails. Our numerical results show that the direct-prompting model (GPT-4o) scores $68\\%$, trailing a tool-integrated agent ($84.64\\%$) by $16.64$\\,pp; $23\\%$ of errors are catastrophic failures invisible to exact-match metrics. More importantly, the hierarchy decomposes errors into four actionable diagnostic categories that flat evaluation cannot reveal. Code and data: https://wirelessbench.github.io/.",
+      "authors": [
+        "Jingwen Tong",
+        "Fang Liu",
+        "Linkai Xv",
+        "Shiliang Lu",
+        "Kangqi Li",
+        "Yiqian Zhang",
+        "Yijie Song",
+        "Zeyang Xue",
+        "Jun Zhang"
+      ],
+      "categories": [
+        "cs.NI",
+        "eess.SP"
+      ],
+      "primary_category": "cs.NI",
+      "published": "2026-03-22T14:14:30Z",
+      "updated": "2026-03-22T14:14:30Z",
+      "announced_date": "2026-03-22",
+      "first_seen": "2026-03-22",
+      "comment": "This paper is submitted to a possiable journal for publication",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.21251v1",
+        "pdf": "https://arxiv.org/pdf/2603.21251v1",
+        "html": "https://arxiv.org/html/2603.21251"
+      },
+      "score": 23,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 5
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "date": "2026-08-01",
+  "count": 4,
+  "report": {
+    "date": "2026-08-01",
+    "count": 4,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On August 1, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Planning / reasoning (2), Tool use (2), Safety (2), and Multi-agent (1).",
+      "highlights": [
+        {
+          "id": "2608.00805",
+          "title": "AgentSLABench: Evaluating and Benchmarking Agentic Systems Under Resource Constraints",
+          "blurb": "We present AgentSLABench, a resource-aware evaluation framework for autonomous AI agents that measures correctness alongside latency, cost, compute, memory, and network usage under declared resource budgets."
+        },
+        {
+          "id": "2608.00832",
+          "title": "AdvPlan-Bench: Adversarial Evaluation of Structured Plan-Generation Agents",
+          "blurb": "Structured plan-generation agents are often evaluated as if a plan has quality in isolation, yet many realistic planning tasks require asking how a candidate behaves when another agent can search for responses."
+        },
+        {
+          "id": "2608.00764",
+          "title": "FinDeepIndicator: Benchmarking Deep Research Agents in End-to-End Financial Indicator Construction",
+          "blurb": "Financial indicators are essential tools for transforming raw financial data into interpretable measures for various downstream tasks, such as valuation, risk assessment, and economic analysis."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年8月1日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在规划 / 推理（2）、工具使用（2）、安全（2）、多智能体（1）。",
+      "highlights": [
+        {
+          "id": "2608.00805",
+          "title": "AgentSLABench: Evaluating and Benchmarking Agentic Systems Under Resource Constraints",
+          "blurb": "We present AgentSLABench, a resource-aware evaluation framework for autonomous AI agents that measures correctness alongside latency, cost, compute, memory, and network usage under declared resource budgets."
+        },
+        {
+          "id": "2608.00832",
+          "title": "AdvPlan-Bench: Adversarial Evaluation of Structured Plan-Generation Agents",
+          "blurb": "Structured plan-generation agents are often evaluated as if a plan has quality in isolation, yet many realistic planning tasks require asking how a candidate behaves when another agent can search for responses."
+        },
+        {
+          "id": "2608.00764",
+          "title": "FinDeepIndicator: Benchmarking Deep Research Agents in End-to-End Financial Indicator Construction",
+          "blurb": "Financial indicators are essential tools for transforming raw financial data into interpretable measures for various downstream tasks, such as valuation, risk assessment, and economic analysis."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.00832",
+      "title": "AdvPlan-Bench: Adversarial Evaluation of Structured Plan-Generation Agents",
+      "abstract": "Structured plan-generation agents are often evaluated as if a plan has quality in isolation, yet many realistic planning tasks require asking how a candidate behaves when another agent can search for responses. We introduce AdvPlan-Bench, an offline benchmark for adversarial evaluation of structured plan-generation agents. The contribution is a general evaluation object: a typed plan, an adversarial response set, selector diagnostics, and traceable candidate-frontier metrics. AdvPlan-Bench represents plans as typed action chains with optional branches, assigns synthetic quality scores, compares opposing plans with BLUE-vs-RED advantage and Nash-gap diagnostics, and evaluates qualitative constraint coherence with a transparent heuristic rubric. In 150 synthetic scenarios spanning five planning templates, a sampled best-response policy that draws eight response candidates reduces BLUE advantage from .518 to .486 and BLUE win rate from .900 to .820 relative to a single-sample response. An offline LLM-policy contract baseline reaches .496 BLUE advantage and .700 BLUE win rate, while a two-stage multi-agent council obtains .509 BLUE advantage and .813 BLUE win rate. A three-rater rubric-sensitivity study over 600 rating records yields .978 inter-rater agreement. AdvPlan-Bench is not an operational planner and provides no evidence about real-world decision quality; it is a reproducible benchmark artifact for studying adversarial plan evaluation, response-budget sensitivity, candidate frontiers, and multi-agent critique-and-revision traces.",
+      "authors": [
+        "Alina Kapanova",
+        "Arun Kanhai",
+        "Natan Vidra",
+        "Spurthi Setty"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-08-01T19:17:03Z",
+      "updated": "2026-08-01T19:17:03Z",
+      "announced_date": "2026-08-01",
+      "first_seen": "2026-08-01",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.00832v1",
+        "pdf": "https://arxiv.org/pdf/2608.00832v1",
+        "html": "https://arxiv.org/html/2608.00832"
+      },
+      "score": 16,
+      "tags": [
+        "multi-agent",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2608.00805",
+      "title": "AgentSLABench: Evaluating and Benchmarking Agentic Systems Under Resource Constraints",
+      "abstract": "We present AgentSLABench, a resource-aware evaluation framework for autonomous AI agents that measures correctness alongside latency, cost, compute, memory, and network usage under declared resource budgets. Unlike standard benchmarks that report only accuracy, AgentSLABench produces a multi-dimensional profile per agent per task - the same way systems profilers (perf, pprof, cProfile) measure resource consumption of code, but extended with task correctness as a first-class dimension. AgentSLABench provides 16 task environments across 6 categories (5 core: multi-hop QA, retail substitution, code generation, web shopping, travel planning; 11 extended) with isolated Docker containers, declared CPU/memory/time/network budgets, sealed test sets with SHA256 hashes, and a standardized profiling protocol. We profile 5 general-purpose baseline agents (ReAct, PlanAndSolve, Reflexion, CoT, Random) plus 4 task-specialized agents, finding that specialized agents achieve 100% success on 3/5 core tasks (fact_qa, web_shopping, travel_planning) and 66.7-83.3% on retail and code_gen, while general baselines fail entirely on 4/5 domain tasks. Crucially, we report the Efficiency-Adjusted Success Rate (EASR) - success weighted by resource consumption relative to declared budgets - revealing that high accuracy at unbounded cost is not production-viable. We release the full infrastructure, sealed test sets, and profiling results to enable reproducible, resource-aware agent evaluation.",
+      "authors": [
+        "Meher Bhaskar Madiraju",
+        "Meher Sai Preetam Madiraju"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-01T18:17:47Z",
+      "updated": "2026-08-01T18:17:47Z",
+      "announced_date": "2026-08-01",
+      "first_seen": "2026-08-01",
+      "comment": "7 pages, 2 figures, 9 tables. Code, sealed test sets, and profiling artifacts available at: https://github.com/MeherBhaskar/agentslabench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.00805v1",
+        "pdf": "https://arxiv.org/pdf/2608.00805v1",
+        "html": "https://arxiv.org/html/2608.00805"
+      },
+      "score": 19,
+      "tags": [
+        "coding",
+        "memory",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2608.00764",
+      "title": "FinDeepIndicator: Benchmarking Deep Research Agents in End-to-End Financial Indicator Construction",
+      "abstract": "Financial indicators are essential tools for transforming raw financial data into interpretable measures for various downstream tasks, such as valuation, risk assessment, and economic analysis. However, existing financial benchmarks largely focus on answer-level accuracy and often assume that relevant data are already provided, leaving the assessment of the intermediate process of indicator construction underexplored. In this work, we propose FinDeepIndicator, the first benchmark dedicated to evaluating Deep Research (DR) agents in end-to-end financial indicator construction. Specifically, FinDeepIndicator evaluates DR agents across four stages in indicator construction: formula specification, data collection, indicator calculation, and answer generation, and covers fundamental, technical, and macroeconomic indicators organized into 21 fine-grained sub-categories. It contains 3,350 curated question-answer (QA) pairs derived from both U.S. and Chinese markets, 10 years of historical financial data, and 800 listed companies. Extensive experiments on search-equipped Large Language Models (LLMs) and DR agents show that, while LLMs generally perform well in formula specification, their accuracy drops substantially during data retrieval and numerical execution. DR agents consistently outperform search-equipped LLMs, yet remain unreliable in realistic financial analysis settings. These findings provide insights for developing more capable and trustworthy DR agents in finance.",
+      "authors": [
+        "Chaoqun Yang",
+        "Fengbin Zhu",
+        "Xinyu Lin",
+        "Long Bai",
+        "Xiaoluan Liu",
+        "Ke-Wei Huang",
+        "Roger Zimmermann",
+        "Tat-Seng Chua"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-01T16:54:41Z",
+      "updated": "2026-08-01T16:54:41Z",
+      "announced_date": "2026-08-01",
+      "first_seen": "2026-08-01",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.00764v1",
+        "pdf": "https://arxiv.org/pdf/2608.00764v1",
+        "html": "https://arxiv.org/html/2608.00764"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "safety",
+        "research"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2608.00677",
+      "title": "OpenART: Scaling Agent Red Teaming via Open-Ended Environment Evolution",
+      "abstract": "AI agents operate in persistent environments where early state changes can influence decisions far into the future. Unlike conventional language-model interactions, agent behavior is mediated through a shared state that is repeatedly modified and reused across long-horizon workflows. Current safety benchmarks often fail to capture these cumulative risks because they focus on short, static tasks. To address these limitations, we introduce OpenART, an open-ended arena for scalable agent red teaming through environment evolution. OpenART provides over 10,000 validated stateful scenarios across 50 domains, drawing from a pool of more than 500,000 tools and skills. These tasks require a median of 97 tool calls and enable unified evaluation across 75 different agent-model configurations. To systematically explore these evolving attack surfaces, we propose the Evolutionary Markov Hypergraph Attack (EMHA). EMHA is a black-box policy that performs feedback-driven environment evolution by coordinating authorized state transitions without requiring parameter updates. Throughout the evaluation, task objectives remain fixed while only the environment state changes. Across all configurations, EMHA achieves a pooled Attack Success Rate (ASR) of 85.0%. Its advantage over instruction-only evolution increases from approximately 2% on simple environments to over 17% on the most complex ones, demonstrating that environment evolution increasingly exposes safety failures as task complexity grows. Furthermore, our analysis shows that the specific runtime implementation of an agent explains a significant portion of safety variation beyond the underlying model's capabilities. These results establish OpenART as a scalable foundation for studying agent safety in complex, evolving environments.",
+      "authors": [
+        "Yunhao Chen",
+        "Xin Wang",
+        "Yixu Wang",
+        "Yi Liu",
+        "Jie Li",
+        "Yan Teng",
+        "Xingjun Ma",
+        "Xia Hu",
+        "Yu-Gang Jiang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-08-01T13:51:55Z",
+      "updated": "2026-08-01T13:51:55Z",
+      "announced_date": "2026-08-01",
+      "first_seen": "2026-08-01",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.00677v1",
+        "pdf": "https://arxiv.org/pdf/2608.00677v1",
+        "html": "https://arxiv.org/html/2608.00677"
+      },
+      "score": 10,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

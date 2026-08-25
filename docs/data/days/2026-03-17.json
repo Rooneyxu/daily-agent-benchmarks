@@ -1,0 +1,234 @@
+{
+  "date": "2026-03-17",
+  "count": 4,
+  "report": {
+    "date": "2026-03-17",
+    "count": 4,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On March 17, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Coding agents (2), Planning / reasoning (2), Multi-agent (1), and Tool use (1).",
+      "highlights": [
+        {
+          "id": "2603.16453",
+          "title": "RetailBench: Evaluating Long-Horizon Autonomous Decision-Making and Strategy Stability of LLM Agents in Realistic Retail Environments",
+          "blurb": "Large language model (LLM) agents have made rapid progress on short-horizon, well-scoped tasks, yet their ability to sustain coherent decisions in dynamic long-horizon environments remains uncertain."
+        },
+        {
+          "id": "2603.16289",
+          "title": "VisBrowse-Bench: Benchmarking Visual-Native Search for Multimodal Browsing Agents",
+          "blurb": "The rapid advancement of Multimodal Large Language Models (MLLMs) has enabled browsing agents to acquire and reason over multimodal information in the real world."
+        },
+        {
+          "id": "2603.17204",
+          "title": "CODMAS: A Dialectic Multi-Agent Collaborative Framework for Structured RTL Optimization",
+          "blurb": "Optimizing Register Transfer Level (RTL) code is a critical step in Electronic Design Automation (EDA) for improving power, performance, and area (PPA)."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年3月17日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在代码智能体（2）、规划 / 推理（2）、多智能体（1）、工具使用（1）。",
+      "highlights": [
+        {
+          "id": "2603.16453",
+          "title": "RetailBench: Evaluating Long-Horizon Autonomous Decision-Making and Strategy Stability of LLM Agents in Realistic Retail Environments",
+          "blurb": "Large language model (LLM) agents have made rapid progress on short-horizon, well-scoped tasks, yet their ability to sustain coherent decisions in dynamic long-horizon environments remains uncertain."
+        },
+        {
+          "id": "2603.16289",
+          "title": "VisBrowse-Bench: Benchmarking Visual-Native Search for Multimodal Browsing Agents",
+          "blurb": "The rapid advancement of Multimodal Large Language Models (MLLMs) has enabled browsing agents to acquire and reason over multimodal information in the real world."
+        },
+        {
+          "id": "2603.17204",
+          "title": "CODMAS: A Dialectic Multi-Agent Collaborative Framework for Structured RTL Optimization",
+          "blurb": "Optimizing Register Transfer Level (RTL) code is a critical step in Electronic Design Automation (EDA) for improving power, performance, and area (PPA)."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2603.17204",
+      "title": "CODMAS: A Dialectic Multi-Agent Collaborative Framework for Structured RTL Optimization",
+      "abstract": "Optimizing Register Transfer Level (RTL) code is a critical step in Electronic Design Automation (EDA) for improving power, performance, and area (PPA). We present CODMAS (Collaborative Optimization via a Dialectic Multi-Agent System), a framework that combines structured dialectic reasoning with domain-aware code generation and deterministic evaluation to automate RTL optimization. At the core of CODMAS are two dialectic agents: the Articulator, inspired by rubber-duck debugging, which articulates stepwise transformation plans and exposes latent assumptions; and the Hypothesis Partner, which predicts outcomes and reconciles deviations between expected and actual behavior to guide targeted refinements. These agents direct a Domain-Specific Coding Agent (DCA) to generate architecture-aware Verilog edits and a Code Evaluation Agent (CEA) to verify syntax, functionality, and PPA metrics. We introduce RTLOPT, a benchmark of 120 Verilog triples (unoptimized, optimized, testbench) for pipelining and clock-gating transformations. Across proprietary and open LLMs, CODMAS achieves ~25% reduction in critical path delay for pipelining and ~22% power reduction for clock gating, while reducing functional and compilation failures compared to strong prompting and agentic baselines. These results demonstrate that structured multi-agent reasoning can significantly enhance automated RTL optimization and scale to more complex designs and broader optimization tasks.",
+      "authors": [
+        "Che-Ming Chang",
+        "Prashanth Vijayaraghavan",
+        "Ashutosh Jadhav",
+        "Charles Mackin",
+        "Vandana Mukherjee",
+        "Hsinyu Tsai",
+        "Ehsan Degan"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AR",
+        "cs.PL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-03-17T23:10:07Z",
+      "updated": "2026-03-17T23:10:07Z",
+      "announced_date": "2026-03-17",
+      "first_seen": "2026-03-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.17204v1",
+        "pdf": "https://arxiv.org/pdf/2603.17204v1",
+        "html": "https://arxiv.org/html/2603.17204"
+      },
+      "score": 15,
+      "tags": [
+        "coding",
+        "multi-agent",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 2
+    },
+    {
+      "id": "2603.17104",
+      "title": "When the Specification Emerges: Benchmarking Faithfulness Loss in Long-Horizon Coding Agents",
+      "abstract": "Current coding-agent benchmarks usually pro- vide the full task specification upfront. Real research coding often does not: the intended system is progressively disclosed through in- teraction, requiring the agent to track durable design commitments across a long session. We introduce a benchmark for this setting and study faithfulne Ss Loss U nder eM ergent s Pecification (SLUMP), defined as the reduc- tion in final implementation faithfulness un- der emergent specification relative to a single- shot specification control. The benchmark con- tains 20 recent ML papers (10 ICML 2025, 10 NeurIPS 2025), 371 atomic verifiable compo- nents, and interaction scripts of approximately 60 coding requests that progressively disclose the target design without revealing the paper itself. Final repositories are scored with a five-level component-faithfulness rubric and accompanied by an exposure audit to verify that scored components are recoverable from the visible interaction. Evaluated on Claude Code and Codex, the single-shot specification control achieves higher overall implementation fidelity on 16/20 and 14/20 papers, respectively. Structural integration degrades under emergent specification on both platforms, while seman- tic faithfulness loss is substantial on Claude Code and small on Codex. As a mitigation case study, we introduce ProjectGuard, an exter- nal project-state layer for specification tracking. On Claude Code, ProjectGuard recovers 90% of the faithfulness gap, increases fully faith- ful components from 118 to 181, and reduces severe failures from 72 to 49. These results identify specification tracking as a distinct eval- uation target for long-horizon coding agents.",
+      "authors": [
+        "Lu Yan",
+        "Xuan Chen",
+        "Xiangyu Zhang"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-03-17T19:53:35Z",
+      "updated": "2026-03-17T19:53:35Z",
+      "announced_date": "2026-03-17",
+      "first_seen": "2026-03-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.17104v1",
+        "pdf": "https://arxiv.org/pdf/2603.17104v1",
+        "html": "https://arxiv.org/html/2603.17104"
+      },
+      "score": 15,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 3
+    },
+    {
+      "id": "2603.16453",
+      "title": "RetailBench: Evaluating Long-Horizon Autonomous Decision-Making and Strategy Stability of LLM Agents in Realistic Retail Environments",
+      "abstract": "Large language model (LLM) agents have made rapid progress on short-horizon, well-scoped tasks, yet their ability to sustain coherent decisions in dynamic long-horizon environments remains uncertain. We introduce RetailBench, a data-grounded simulation benchmark for evaluating tool-using LLM agents in single-store supermarket operation. RetailBench models retail management as a partially observable decision process and is designed to support thousand-day-scale simulations. In this environment, agents must manage pricing, replenishment, supplier selection, shelf assortment, inventory aging, customer feedback, external events, and cash-flow constraints. We evaluate seven contemporary LLMs under representative agent frameworks over a 180-day evaluation horizon and compare them with a privileged oracle policy. Results show substantial variation across models: only a small subset survives the full evaluation horizon, and even the strongest LLM runs remain substantially behind the oracle policy in final net worth and sales outcomes. Behavioral analysis attributes these gaps to incomplete evidence acquisition, surface-level decision making, and the lack of a consistent long-horizon policy. RetailBench provides a controlled testbed for studying reliable autonomy in economically grounded long-horizon decision-making.",
+      "authors": [
+        "Linghua Zhang",
+        "Jun Wang",
+        "Jingtong Wu",
+        "Zhisong Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-17T12:35:52Z",
+      "updated": "2026-07-08T13:11:31Z",
+      "announced_date": "2026-03-17",
+      "first_seen": "2026-03-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.16453v3",
+        "pdf": "https://arxiv.org/pdf/2603.16453v3",
+        "html": "https://arxiv.org/html/2603.16453"
+      },
+      "score": 19,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 6
+    },
+    {
+      "id": "2603.16289",
+      "title": "VisBrowse-Bench: Benchmarking Visual-Native Search for Multimodal Browsing Agents",
+      "abstract": "The rapid advancement of Multimodal Large Language Models (MLLMs) has enabled browsing agents to acquire and reason over multimodal information in the real world. But existing benchmarks suffer from two limitations: insufficient evaluation of visual reasoning ability and the neglect of native visual information of web pages in the reasoning chains. To address these challenges, we introduce a new benchmark for visual-native search, VisBrowse-Bench. It contains 169 VQA instances covering multiple domains and evaluates the models' visual reasoning capabilities during the search process through multimodal evidence cross-validation via text-image retrieval and joint reasoning. These data were constructed by human experts using a multi-stage pipeline and underwent rigorous manual verification. We additionally propose an agent workflow that can effectively drive the browsing agent to actively collect and reason over visual information during the search process. We comprehensively evaluated both open-source and closed-source models in this workflow. Experimental results show that even the best-performing model, Claude-4.6-Opus only achieves an accuracy of 47.6%, while the proprietary Deep Research model, o3-deep-research only achieves an accuracy of 41.1%. The code and data can be accessed at: https://github.com/ZhengboZhang/VisBrowse-Bench",
+      "authors": [
+        "Zhengbo Zhang",
+        "Jinbo Su",
+        "Zhaowen Zhou",
+        "Changtao Miao",
+        "Yuhan Hong",
+        "Qimeng Wu",
+        "Yumeng Liu",
+        "Feier Wu",
+        "Yihe Tian",
+        "Yuhao Liang",
+        "Zitong Shan",
+        "Wanke Xia",
+        "Yi-Fan Zhang",
+        "Bo Zhang",
+        "Zhe Li",
+        "Shiming Xiang",
+        "Ying Yan"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-03-17T09:24:13Z",
+      "updated": "2026-03-18T15:40:14Z",
+      "announced_date": "2026-03-17",
+      "first_seen": "2026-03-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.16289v2",
+        "pdf": "https://arxiv.org/pdf/2603.16289v2",
+        "html": "https://arxiv.org/html/2603.16289"
+      },
+      "score": 18,
+      "tags": [
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 8
+    }
+  ]
+}

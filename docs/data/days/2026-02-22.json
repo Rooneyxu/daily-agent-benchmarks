@@ -1,0 +1,191 @@
+{
+  "date": "2026-02-22",
+  "count": 3,
+  "report": {
+    "date": "2026-02-22",
+    "count": 3,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      }
+    ],
+    "en": {
+      "headline": "3 new agent benchmarks",
+      "summary": "On February 22, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Planning / reasoning (3), Safety (1), Science lab (1), and Tool use (1).",
+      "highlights": [
+        {
+          "id": "2602.19127",
+          "title": "AgenticRAGTracer: A Hop-Aware Benchmark for Diagnosing Multi-Step Retrieval Reasoning in Agentic RAG",
+          "blurb": "With the rapid advancement of agent-based methods in recent years, Agentic RAG has undoubtedly become an important research direction."
+        },
+        {
+          "id": "2602.18998",
+          "title": "Benchmark Test-Time Scaling of General LLM Agents",
+          "blurb": "LLM agents are increasingly expected to function as general-purpose systems capable of resolving open-ended user requests."
+        },
+        {
+          "id": "2602.19073",
+          "title": "Evaluation and Benchmarking Suite for Financial Large Language Models and Agents",
+          "blurb": "Over the past three years, the financial services industry has witnessed Large Language Models (LLMs) and agents transitioning from the exploration stage to readiness and governance stages."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年2月22日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在规划 / 推理（3）、安全（1）、科学实验（1）、工具使用（1）。",
+      "highlights": [
+        {
+          "id": "2602.19127",
+          "title": "AgenticRAGTracer: A Hop-Aware Benchmark for Diagnosing Multi-Step Retrieval Reasoning in Agentic RAG",
+          "blurb": "With the rapid advancement of agent-based methods in recent years, Agentic RAG has undoubtedly become an important research direction."
+        },
+        {
+          "id": "2602.18998",
+          "title": "Benchmark Test-Time Scaling of General LLM Agents",
+          "blurb": "LLM agents are increasingly expected to function as general-purpose systems capable of resolving open-ended user requests."
+        },
+        {
+          "id": "2602.19073",
+          "title": "Evaluation and Benchmarking Suite for Financial Large Language Models and Agents",
+          "blurb": "Over the past three years, the financial services industry has witnessed Large Language Models (LLMs) and agents transitioning from the exploration stage to readiness and governance stages."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2602.19127",
+      "title": "AgenticRAGTracer: A Hop-Aware Benchmark for Diagnosing Multi-Step Retrieval Reasoning in Agentic RAG",
+      "abstract": "With the rapid advancement of agent-based methods in recent years, Agentic RAG has undoubtedly become an important research direction. Multi-hop reasoning, which requires models to engage in deliberate thinking and multi-step interaction, serves as a critical testbed for assessing such capabilities. However, existing benchmarks typically provide only final questions and answers, while lacking the intermediate hop-level questions that gradually connect atomic questions to the final multi-hop query. This limitation prevents researchers from analyzing at which step an agent fails and restricts more fine-grained evaluation of model capabilities. Moreover, most current benchmarks are manually constructed, which is both time-consuming and labor-intensive, while also limiting scalability and generalization. To address these challenges, we introduce AgenticRAGTracer, the first Agentic RAG benchmark that is primarily constructed automatically by large language models and designed to support step-by-step validation. Our benchmark spans multiple domains, contains 1,305 data points, and has no overlap with existing mainstream benchmarks. Extensive experiments demonstrate that even the best large language models perform poorly on our dataset. For instance, GPT-5 attains merely 22.6\\% EM accuracy on the hardest portion of our dataset. Hop-aware diagnosis reveals that failures are primarily driven by distorted reasoning chains -- either collapsing prematurely or wandering into over-extension. This highlights a critical inability to allocate steps consistent with the task's logical structure, providing a diagnostic dimension missing in traditional evaluations. We believe our work will facilitate research in Agentic RAG and inspire further meaningful progress in this area. Our code and data are available at https://github.com/YqjMartin/AgenticRAGTracer.",
+      "authors": [
+        "Qijie You",
+        "Wenkai Yu",
+        "Wentao Zhang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-22T10:55:21Z",
+      "updated": "2026-07-02T15:09:01Z",
+      "announced_date": "2026-02-22",
+      "first_seen": "2026-02-22",
+      "comment": "Accepted at ACL 2026 Findings",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.19127v2",
+        "pdf": "https://arxiv.org/pdf/2602.19127v2",
+        "html": "https://arxiv.org/html/2602.19127"
+      },
+      "score": 16,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2602.19073",
+      "title": "Evaluation and Benchmarking Suite for Financial Large Language Models and Agents",
+      "abstract": "Over the past three years, the financial services industry has witnessed Large Language Models (LLMs) and agents transitioning from the exploration stage to readiness and governance stages. Financial large language models (FinLLMs), such as open FinGPT and proprietary BloombergGPT , have great potential in financial applications, including retrieving real-time data, tutoring, analyzing sentiment of social media, analyzing SEC filings, and agentic trading. However, general-purpose LLMs and agents lack financial expertise and often struggle to handle complex financial reasoning. This paper presents an evaluation and benchmarking suite that covers the lifecycle of FinLLMs and FinAgents. This suite led by SecureFinAI Lab includes an evaluation pipeline and a governance framework collaborating with Linux Foundation and PyTorch Foundation, a FinLLM Leaderboard with HuggingFace, an AgentOps framework with Red Hat, and a documentation website with Rensselear Center of Open Source. Our collaborative development evolves through three stages: FinLLM Exploration (2023), FinLLM Readiness (2024), and FinAI Governance (2025). The proposed suite serves as an open platform that enables researchers and practitioners to perform both quantitative and qualitative analysis of different FinLLMs and FinAgents, fostering a more robust and reliable FinAI ecosystem.",
+      "authors": [
+        "Shengyuan Lin",
+        "Kaiwen He",
+        "Jaisal Patel",
+        "Qinchuan Zhang",
+        "Chris Ding",
+        "James Tang",
+        "Keyi Wang",
+        "Yupeng Cao",
+        "Yan Wang",
+        "Kairong Xiao",
+        "Vincent Caldeira",
+        "Matt White",
+        "Xiao-Yang Liu Yanglet"
+      ],
+      "categories": [
+        "cs.CE"
+      ],
+      "primary_category": "cs.CE",
+      "published": "2026-02-22T07:13:16Z",
+      "updated": "2026-02-22T07:13:16Z",
+      "announced_date": "2026-02-22",
+      "first_seen": "2026-02-22",
+      "comment": "13 pages, 13 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.19073v1",
+        "pdf": "https://arxiv.org/pdf/2602.19073v1",
+        "html": "https://arxiv.org/html/2602.19073"
+      },
+      "score": 10,
+      "tags": [
+        "safety",
+        "planning",
+        "science"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2602.18998",
+      "title": "Benchmark Test-Time Scaling of General LLM Agents",
+      "abstract": "LLM agents are increasingly expected to function as general-purpose systems capable of resolving open-ended user requests. While existing benchmarks focus on domain-aware environments for developing specialized agents, evaluating general-purpose agents requires more realistic settings that challenge them to operate across multiple skills and tools within a unified environment. We introduce General AgentBench, a benchmark that provides such a unified framework for evaluating general LLM agents across search, coding, reasoning, and tool-use domains. Using General AgentBench, we systematically study test-time scaling behaviors under sequential scaling (iterative interaction) and parallel scaling (sampling multiple trajectories). Evaluation of ten leading LLM agents reveals a substantial performance degradation when moving from domain-specific evaluations to this general-agent setting. Moreover, we find that neither scaling methodology yields effective performance improvements in practice, due to two fundamental limitations: context ceiling in sequential scaling and verification gap in parallel scaling. Code is publicly available at https://github.com/cxcscmu/General-AgentBench.",
+      "authors": [
+        "Xiaochuan Li",
+        "Ryan Ming",
+        "Pranav Setlur",
+        "Abhijay Paladugu",
+        "Andy Tang",
+        "Hao Kang",
+        "Shuai Shao",
+        "Rong Jin",
+        "Chenyan Xiong"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-22T01:08:02Z",
+      "updated": "2026-02-22T01:08:02Z",
+      "announced_date": "2026-02-22",
+      "first_seen": "2026-02-22",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.18998v1",
+        "pdf": "https://arxiv.org/pdf/2602.18998v1",
+        "html": "https://arxiv.org/html/2602.18998"
+      },
+      "score": 16,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 20
+    }
+  ]
+}

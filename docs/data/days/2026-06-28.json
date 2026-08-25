@@ -1,0 +1,241 @@
+{
+  "date": "2026-06-28",
+  "count": 3,
+  "report": {
+    "date": "2026-06-28",
+    "count": 3,
+    "themes": [
+      {
+        "id": "gui",
+        "count": 2,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      }
+    ],
+    "en": {
+      "headline": "3 new agent benchmarks",
+      "summary": "On June 28, 2026, arXiv listed 3 new agent benchmarks. Work clustered around GUI agents (2), Planning / reasoning (2), Multimodal (2), and Tool use (1).",
+      "highlights": [
+        {
+          "id": "2606.29537",
+          "title": "OSWorld 2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks",
+          "blurb": "Existing computer-use benchmarks fail to capture the realism, complexity, and long-horizon demands of real-world computer use, limiting their ability to reveal the limitations of frontier agents."
+        },
+        {
+          "id": "2606.29193",
+          "title": "A Multi-Dataset Benchmark for Evaluating LLM Agents in Microservice Failure Diagnosis",
+          "blurb": "LLM-based agents are reshaping microservice operations into AgentOps, where benchmarks are key to evaluating failure diagnosis over multimodal observability data."
+        },
+        {
+          "id": "2606.29445",
+          "title": "Bridging VideoQA and Video-Guided Agentic Tasks via Generalized Keyframe Extraction",
+          "blurb": "Video understanding is a fundamental capability for multimodal intelligence, and recent Multimodal Large Language Models (MLLMs) have achieved remarkable performance on Video Question Answering (VideoQA) benchmarks."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年6月28日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在GUI 智能体（2）、规划 / 推理（2）、多模态（2）、工具使用（1）。",
+      "highlights": [
+        {
+          "id": "2606.29537",
+          "title": "OSWorld 2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks",
+          "blurb": "Existing computer-use benchmarks fail to capture the realism, complexity, and long-horizon demands of real-world computer use, limiting their ability to reveal the limitations of frontier agents."
+        },
+        {
+          "id": "2606.29193",
+          "title": "A Multi-Dataset Benchmark for Evaluating LLM Agents in Microservice Failure Diagnosis",
+          "blurb": "LLM-based agents are reshaping microservice operations into AgentOps, where benchmarks are key to evaluating failure diagnosis over multimodal observability data."
+        },
+        {
+          "id": "2606.29445",
+          "title": "Bridging VideoQA and Video-Guided Agentic Tasks via Generalized Keyframe Extraction",
+          "blurb": "Video understanding is a fundamental capability for multimodal intelligence, and recent Multimodal Large Language Models (MLLMs) have achieved remarkable performance on Video Question Answering (VideoQA) benchmarks."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.29537",
+      "title": "OSWorld 2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks",
+      "abstract": "Existing computer-use benchmarks fail to capture the realism, complexity, and long-horizon demands of real-world computer use, limiting their ability to reveal the limitations of frontier agents. We introduce OSWorld 2.0, a benchmark of 108 long-horizon computer-use workflows across everyday and professional tasks, designed to capture complex and challenging real-world phenomena. Each task represents a realistic end-to-end workflow that takes human users a median of about 1.6 hours to complete and requires an average of 318 tool calls with Claude Opus 4.7 using maximum thinking, compared with about 30 in OSWorld 1.0. OSWorld 2.0 targets challenge phenomena that are common in real workflows yet underrepresented in prior benchmarks, spanning interaction-design challenges such as streaming interaction and dynamic environments, as well as agent-pattern challenges such as cross-source reasoning, implicit-state inference, and visual-spatial precision. Tasks are grounded in authentic input artifacts and cross-referenced against realistic stateful user profile data, and include separate safety reports auditing safety-sensitive execution. Under our primary binary-completion metric at 500 steps, Claude Opus 4.8 with maximum thinking and batched tool calls scores best but still completes only 20.6% of tasks at a 54.8% partial score; GPT-5.5 is far more token-efficient yet plateaus near 13%. These results show that current agents are still far from professional-level computer use: rather than stumbling on basic GUI control or coding, they lose track of constraints, miss information that arrives mid-task, guess rather than ask the user, and skip verification, struggling most when a task hinges on hidden state they must recover.",
+      "authors": [
+        "Mengqi Yuan",
+        "Zilong Zhou",
+        "Xinzhuang Xiong",
+        "Weiming Wu",
+        "Jiayang Sun",
+        "Jiamin Song",
+        "Kaiqian Cui",
+        "Bowen Wang",
+        "Haoyuan Wu",
+        "Yitong Li",
+        "Dunjie Lu",
+        "Haikong Lu",
+        "Qi Zhen",
+        "Xinyuan Wang",
+        "Jiaqi Deng",
+        "Yuhao Yang",
+        "Cheng Chen",
+        "Boyuan Zheng",
+        "Alex Su",
+        "Xiao Yu",
+        "Hao Zou",
+        "Saaket Agashe",
+        "Xing Han Lu",
+        "Manpreet Kaur",
+        "Zhengyang Qi",
+        "Vincent Sunn Chen",
+        "Frederic Sala",
+        "Dayiheng Liu",
+        "Junyang Lin",
+        "Zhou Yu",
+        "Yu Su",
+        "Siva Reddy",
+        "Xin Eric Wang",
+        "Peng Qi",
+        "Tianbao Xie",
+        "Tao Yu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-28T17:59:17Z",
+      "updated": "2026-07-13T10:30:17Z",
+      "announced_date": "2026-06-28",
+      "first_seen": "2026-06-28",
+      "comment": "68 pages, 42 figures. Equal contribution: Mengqi Yuan, Zilong Zhou, and Xinzhuang Xiong",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.29537v2",
+        "pdf": "https://arxiv.org/pdf/2606.29537v2",
+        "html": "https://arxiv.org/html/2606.29537"
+      },
+      "score": 23,
+      "tags": [
+        "gui",
+        "tool-use",
+        "computer-use",
+        "safety",
+        "planning"
+      ],
+      "field": "workplace",
+      "citations": 10
+    },
+    {
+      "id": "2606.29445",
+      "title": "Bridging VideoQA and Video-Guided Agentic Tasks via Generalized Keyframe Extraction",
+      "abstract": "Video understanding is a fundamental capability for multimodal intelligence, and recent Multimodal Large Language Models (MLLMs) have achieved remarkable performance on Video Question Answering (VideoQA) benchmarks. However, existing benchmarks primarily evaluate whether models can perceive shallow visual cues, while rarely examining whether MLLMs can learn deeper knowledge or procedural skills from video tutorials and generalize them to downstream long-horizon agentic tasks. To address this gap, we introduce VG-GUIBench (Video-Guided GUI Benchmark), a new benchmark designed to evaluate whether MLLM-based GUI agents can follow video tutorials to complete corresponding GUI interactive tasks. Furthermore, we observe that the performance of models on both VideoQA and video-guided agentic tasks critically depends on effective keyframe extraction. Based on this observation, we propose TASKER (Task-driven And Scene-aware Keyframe searchER), a keyframe extraction algorithm that jointly considers task relevance and scene dynamics to identify informative frames. Experimental results demonstrate that TASKER achieves significant performance improvements on both VideoQA and video-guided agentic task benchmarks, outperforming the best baseline by 2.0% on the EgoSchema fullset and 1.8% on the NExT-QA dataset, respectively. These results further highlight the potential of generalized keyframe extraction methods for video understanding tasks. Our code and data are available at https://github.com/VG-GUI-TASKER/VG-GUI-TASKER.",
+      "authors": [
+        "Sunqi Fan",
+        "Qingle Liu",
+        "Runqi Yin",
+        "Meng-Hao Guo",
+        "Shuojin Yang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-06-28T15:11:19Z",
+      "updated": "2026-06-28T15:11:19Z",
+      "announced_date": "2026-06-28",
+      "first_seen": "2026-06-28",
+      "comment": "Accepted by ECCV 2026. Project Page: https://vg-gui-tasker.github.io/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.29445v1",
+        "pdf": "https://arxiv.org/pdf/2606.29445v1",
+        "html": "https://arxiv.org/html/2606.29445"
+      },
+      "score": 15,
+      "tags": [
+        "gui",
+        "multimodal"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2606.29193",
+      "title": "A Multi-Dataset Benchmark for Evaluating LLM Agents in Microservice Failure Diagnosis",
+      "abstract": "LLM-based agents are reshaping microservice operations into AgentOps, where benchmarks are key to evaluating failure diagnosis over multimodal observability data. However, existing benchmarks remain largely outcome-oriented: they score only the final answer and fail to assess the systematic reasoning process in failure diagnosis. We address this gap by introducing two large-scale datasets (AIOps2025 and RCA100) under a reasoning-process evaluation paradigm that assesses agentic diagnostic capability along three dimensions: Localization (where the fault occurs), Identification (what type of fault it is), and Reason (whether the reasoning trace is grounded in relevant evidence). Together, the two datasets comprise over 500 expert-labeled failure cases across two representative microservice systems (HipsterShop and the OpenTelemetry Demo Store). They cover diverse fault scenarios across resource, network, runtime, middleware/database, and application-logic categories and provide fine-grained causal evidence to support agent learning and reasoning-process evaluation. Beyond scale and coverage, the datasets have been carefully labelled by domain experts and validated through large-scale competitions, supporting more than 6,000 participating teams. This makes them not only expert-labeled diagnostic datasets, but also competition-validated benchmarks for evaluating agentic failure diagnosis in real-world microservice environments. Datasets are available at https://www.aiops.cn/gitlab/aiops-live-benchmark/agenticopseval.",
+      "authors": [
+        "Yuanhong Cai",
+        "Xiaohui Nie",
+        "Kanglin Yin",
+        "Changhua Pei",
+        "Yongqian Sun",
+        "Shenglin Zhang",
+        "Haibin Liu",
+        "Guiyang Liu",
+        "Xidao Wen",
+        "Fang Situ",
+        "Dan Pei"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-06-28T04:38:05Z",
+      "updated": "2026-06-28T04:38:05Z",
+      "announced_date": "2026-06-28",
+      "first_seen": "2026-06-28",
+      "comment": "10 pages, 6 figures, 6 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.29193v1",
+        "pdf": "https://arxiv.org/pdf/2606.29193v1",
+        "html": "https://arxiv.org/html/2606.29193"
+      },
+      "score": 16,
+      "tags": [
+        "web",
+        "planning",
+        "multimodal"
+      ],
+      "field": "web",
+      "citations": 1
+    }
+  ]
+}

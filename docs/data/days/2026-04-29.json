@@ -1,0 +1,184 @@
+{
+  "date": "2026-04-29",
+  "count": 3,
+  "report": {
+    "date": "2026-04-29",
+    "count": 3,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      }
+    ],
+    "en": {
+      "headline": "3 new agent benchmarks",
+      "summary": "On April 29, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Tool use (1), Coding agents (1), and Planning / reasoning (1).",
+      "highlights": [
+        {
+          "id": "2604.26278",
+          "title": "SWE-Bench 5G: Benchmarking AI Coding Agents on Telecom Network Engineering Tasks",
+          "blurb": "AI coding agents demonstrate strong performance on general-purpose software benchmarks."
+        },
+        {
+          "id": "2604.26235",
+          "title": "LATTICE: Evaluating Decision Support Utility of Crypto Agents",
+          "blurb": "We introduce LATTICE, a benchmark for evaluating the decision support utility of crypto agents in realistic user-facing scenarios."
+        },
+        {
+          "id": "2604.26904",
+          "title": "ClawGym: A Scalable Framework for Building Effective Claw Agents",
+          "blurb": "Claw-style environments support multi-step workflows over local files, tools, and persistent workspace states."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年4月29日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在工具使用（1）、代码智能体（1）、规划 / 推理（1）。",
+      "highlights": [
+        {
+          "id": "2604.26278",
+          "title": "SWE-Bench 5G: Benchmarking AI Coding Agents on Telecom Network Engineering Tasks",
+          "blurb": "AI coding agents demonstrate strong performance on general-purpose software benchmarks."
+        },
+        {
+          "id": "2604.26235",
+          "title": "LATTICE: Evaluating Decision Support Utility of Crypto Agents",
+          "blurb": "We introduce LATTICE, a benchmark for evaluating the decision support utility of crypto agents in realistic user-facing scenarios."
+        },
+        {
+          "id": "2604.26904",
+          "title": "ClawGym: A Scalable Framework for Building Effective Claw Agents",
+          "blurb": "Claw-style environments support multi-step workflows over local files, tools, and persistent workspace states."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.26904",
+      "title": "ClawGym: A Scalable Framework for Building Effective Claw Agents",
+      "abstract": "Claw-style environments support multi-step workflows over local files, tools, and persistent workspace states. However, scalable development around these environments remains constrained by the absence of a systematic framework, especially one for synthesizing verifiable training data and integrating it with agent training and diagnostic evaluation. To address this challenge, we present ClawGym, a scalable framework that supports the full lifecycle of Claw-style personal agent development. Concretely, we construct ClawGym-SynData, a diverse dataset of 13.5K filtered tasks synthesized from persona-driven intents and skill-grounded operations, paired with realistic mock workspaces and hybrid verification mechanisms. We then train a family of capable Claw-style models, termed ClawGym-Agents, through supervised fine-tuning on black-box rollout trajectories, and further explore reinforcement learning via a lightweight pipeline that parallelizes rollouts across per-task sandboxes. To support reliable evaluation, we further construct ClawGym-Bench, a benchmark of 200 instances calibrated through automated filtering and human-LLM review. Relevant resources have been released at https://github.com/ClawGym.",
+      "authors": [
+        "Fei Bai",
+        "Huatong Song",
+        "Shuang Sun",
+        "Daixuan Cheng",
+        "Yike Yang",
+        "Chuan Hao",
+        "Renyuan Li",
+        "Feng Chang",
+        "Yuan Wei",
+        "Ran Tao",
+        "Bryan Dai",
+        "Jian Yang",
+        "Wayne Xin Zhao",
+        "Ji-Rong Wen"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-04-29T17:12:22Z",
+      "updated": "2026-05-16T05:33:51Z",
+      "announced_date": "2026-04-29",
+      "first_seen": "2026-04-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.26904v3",
+        "pdf": "https://arxiv.org/pdf/2604.26904v3",
+        "html": "https://arxiv.org/html/2604.26904"
+      },
+      "score": 7,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 5
+    },
+    {
+      "id": "2604.26278",
+      "title": "SWE-Bench 5G: Benchmarking AI Coding Agents on Telecom Network Engineering Tasks",
+      "abstract": "AI coding agents demonstrate strong performance on general-purpose software benchmarks. However, their ability to handle 5G network engineering tasks remains unexplored. We propose SWE-Bench~5G, the first benchmark designed to investigate whether AI coding agents can resolve real-world bugs in 5G core network software. The benchmark collects task instances from three open-source 5G projects, packages each as a self-contained Docker environment with automated fail-to-pass tests, and provides a dual test strategy tailored to the complex runtime dependencies of telecom code. In addition, for instances whose original issues reference 3GPP specification clauses, we construct concise specification context documents, enabling controlled evaluation of whether domain knowledge improves agent performance. Experiments on four LLMs reveal that all models diagnose bugs at rates exceeding 91\\%, yet resolve rates remain between 10\\% and 30\\%, suggesting that both iterative code editing capability and domain knowledge play important roles. The specification injection experiment further confirms that 3GPP excerpts improve resolve rates on specification-dependent bugs, while the gains on generic defensive checks remain limited, indicating that the effect of domain knowledge is conditional on bug type.",
+      "authors": [
+        "Jiao Chen",
+        "Jianhua Tang",
+        "Xiaotong Yang",
+        "Zuohong Lv"
+      ],
+      "categories": [
+        "cs.NI"
+      ],
+      "primary_category": "cs.NI",
+      "published": "2026-04-29T04:20:35Z",
+      "updated": "2026-04-29T04:20:35Z",
+      "announced_date": "2026-04-29",
+      "first_seen": "2026-04-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.26278v1",
+        "pdf": "https://arxiv.org/pdf/2604.26278v1",
+        "html": "https://arxiv.org/html/2604.26278"
+      },
+      "score": 25,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2604.26235",
+      "title": "LATTICE: Evaluating Decision Support Utility of Crypto Agents",
+      "abstract": "We introduce LATTICE, a benchmark for evaluating the decision support utility of crypto agents in realistic user-facing scenarios. Prior crypto agent benchmarks mainly focus on reasoning-based or outcome-based evaluation, but do not assess agents' ability to assist user decision-making. LATTICE addresses this gap by: (1) defining six evaluation dimensions that capture key decision support properties; (2) proposing 16 task types that span the end-to-end crypto copilot workflow; and (3) using LLM judges to automatically score agent outputs based on these dimensions and tasks. Crucially, the dimensions and tasks are designed to be evaluable at scale using LLM judges, without relying on ground truth from expert annotators or external data sources. In lieu of these dependencies, LATTICE's LLM judge rubrics can be continually audited and updated given new dimensions, tasks, criteria, and human feedback, thus promoting reliable and extensible evaluation. While other benchmarks often compare foundation models sharing a generic agent framework, we use LATTICE to assess production-level agents used in actual crypto copilot products, reflecting the importance of orchestration and UI/UX design in determining agent quality. In this paper, we evaluate six real-world crypto copilots on 1,200 diverse queries and report breakdowns across dimensions, tasks, and query categories. Our experiments show that most of the tested copilots achieve comparable aggregate scores, but differ more significantly on dimension-level and task-level performance. This pattern suggests meaningful trade-offs in decision support quality: users with different priorities may be better served by different copilots than the aggregate rankings alone would indicate. To support reproducible research, we open-source all LATTICE code and data used in this paper.",
+      "authors": [
+        "Aaron Chan",
+        "Tengfei Li",
+        "Tianyi Xiao",
+        "Angela Chen",
+        "Junyi Du",
+        "Xiang Ren"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-04-29T02:32:14Z",
+      "updated": "2026-04-29T02:32:14Z",
+      "announced_date": "2026-04-29",
+      "first_seen": "2026-04-29",
+      "comment": "15 pages, 3 figures, 9 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.26235v1",
+        "pdf": "https://arxiv.org/pdf/2604.26235v1",
+        "html": "https://arxiv.org/html/2604.26235"
+      },
+      "score": 10,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

@@ -1,0 +1,385 @@
+{
+  "date": "2026-07-02",
+  "count": 8,
+  "report": {
+    "date": "2026-07-02",
+    "count": 8,
+    "themes": [
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      }
+    ],
+    "en": {
+      "headline": "8 new agent benchmarks",
+      "summary": "On July 2, 2026, arXiv listed 8 new agent benchmarks. Work clustered around Memory (2), Planning / reasoning (2), Coding agents (2), and Tool use (2).",
+      "highlights": [
+        {
+          "id": "2607.02684",
+          "title": "Can Coding Agents Implement Missed Compiler Optimizations? Evaluating LLM Agents on LLVM Peephole Optimizations",
+          "blurb": "Coding agents built on large language models are now capable of patching sizable real-world codebases, yet whether they can develop compiler optimizations remains an open question."
+        },
+        {
+          "id": "2607.01647",
+          "title": "AgenticDataBench: A Comprehensive Benchmark for Data Agents",
+          "blurb": "Data science aims to derive actionable insights from heterogeneous raw data, unlocking the value of the massive amounts of data generated in modern society."
+        },
+        {
+          "id": "2607.02255",
+          "title": "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents",
+          "blurb": "Memory for a long-horizon LLM agent is a contract about what each future decision is allowed to see."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 8 篇 Agent Benchmark",
+      "summary": "2026年7月2日，arXiv 新增 8 篇 Agent Benchmark。当日主题集中在记忆（2）、规划 / 推理（2）、代码智能体（2）、工具使用（2）。",
+      "highlights": [
+        {
+          "id": "2607.02684",
+          "title": "Can Coding Agents Implement Missed Compiler Optimizations? Evaluating LLM Agents on LLVM Peephole Optimizations",
+          "blurb": "Coding agents built on large language models are now capable of patching sizable real-world codebases, yet whether they can develop compiler optimizations remains an open question."
+        },
+        {
+          "id": "2607.01647",
+          "title": "AgenticDataBench: A Comprehensive Benchmark for Data Agents",
+          "blurb": "Data science aims to derive actionable insights from heterogeneous raw data, unlocking the value of the massive amounts of data generated in modern society."
+        },
+        {
+          "id": "2607.02255",
+          "title": "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents",
+          "blurb": "Memory for a long-horizon LLM agent is a contract about what each future decision is allowed to see."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2607.02814",
+      "title": "SovereignNegotiation-Bench: Evaluating User-Owned Personal Agents In Delegated Bargaining Under Privacy, Consent, Evidence, And Institutional Pressure",
+      "abstract": "Personal agents will increasingly negotiate on behalf of users: splitting costs with other personal agents, appealing platform decisions, escalating support disputes, requesting refunds, changing subscriptions, and negotiating deadlines or reimbursements. Existing negotiation benchmarks emphasize agreement, surplus, or strategic competence, but a user-owned agent can reach an agreement while harming the user through privacy leakage, consent violation, unsupported advocacy, over-concession, failed escalation, or poor auditability. We introduce SovereignNegotiation-Bench, a trace-level multi-turn benchmark for delegated personal-agent negotiation under private utilities, disclosure constraints, evidence requirements, and institutional asymmetry. The benchmark separates agent-visible observable state from evaluator-only labels and evaluates agreement success jointly with user utility, privacy, consent, evidence grounding, concession discipline, escalation, and auditability. We report an artifact-backed validation over 240 scenarios, 4 model families, 14 baselines, 13,440 frozen-prompt live trajectories, 61,135 parsed action rows, and a blinded 3-annotator audit over 300 items. The strongest agreement-maximizing baseline achieves the highest agreement rate but low user utility and high privacy/consent risk; FullSovereign does not maximize agreement, but obtains the best sovereign negotiation score by preserving utility, minimizing leakage, grounding claims, and reducing unauthorized commitments. The results show that agreement success is insufficient for user-owned negotiation agents.",
+      "authors": [
+        "Dylan Zongmin Liu"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-07-02T23:03:15Z",
+      "updated": "2026-07-02T23:03:15Z",
+      "announced_date": "2026-07-02",
+      "first_seen": "2026-07-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.02814v1",
+        "pdf": "https://arxiv.org/pdf/2607.02814v1",
+        "html": "https://arxiv.org/html/2607.02814"
+      },
+      "score": 13,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.02689",
+      "title": "S-EMBER: A Large-Scale Benchmark for Streaming Egocentric Memory Retrieval",
+      "abstract": "As wearable devices enable continuous first-person recording, AI assistants must reason across long time horizons to recall past experiences-a capability known as episodic memory. Current benchmarks often rely on offline evaluation with access to entire video files, failing to simulate the streaming reality of wearable intelligence. We introduce S-EMBER (Streaming Egocentric Memory Benchmark for Episodic Retrieval), a large-scale benchmark comprising 3,141 videos totaling 388 hours of organic activity captured via Ray-Ban Meta smart glasses. S-EMBER formalizes grounded streaming episodic retrieval, a paradigm shift from global offline search to causal, active recall triggered by visual events in a continuous stream. We provide 9,448 QA pairs requiring manual visual proof through precise temporal localization and supporting flexible response lengths to simulate natural human-AI interaction. Our extensive benchmarking of frontier models uncovers a localization paradox: while semantic reasoning improves with parameter scale, temporal grounding precision remains a stagnant architectural bottleneck that does not benefit from brute-force increases in model size, resolution, or frame density. S-EMBER establishes a hardware-authentic foundation for developing grounded, reliable episodic memory in the next generation of wearable AI agents.",
+      "authors": [
+        "Xiaodong Wang",
+        "Xuanyi Zhao",
+        "Pedro Rodriguez",
+        "Devendra Singh Sachan",
+        "Barlas Oguz",
+        "Seungwhan Moon",
+        "Shang-Wen Li",
+        "Gargi Ghosh",
+        "Xin Dong",
+        "Wen-Tau Yih"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-07-02T18:29:20Z",
+      "updated": "2026-07-02T18:29:20Z",
+      "announced_date": "2026-07-02",
+      "first_seen": "2026-07-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.02689v1",
+        "pdf": "https://arxiv.org/pdf/2607.02689v1",
+        "html": "https://arxiv.org/html/2607.02689"
+      },
+      "score": 12,
+      "tags": [
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.02684",
+      "title": "Can Coding Agents Implement Missed Compiler Optimizations? Evaluating LLM Agents on LLVM Peephole Optimizations",
+      "abstract": "Coding agents built on large language models are now capable of patching sizable real-world codebases, yet whether they can develop compiler optimizations remains an open question. To study this question, we introduce PeepholeBench, an evaluation framework whose tasks are constructed from real-world missed peephole optimizations reported against LLVM's InstCombine pass. Since missed peephole optimizations are typically fixed with small, localized patches, they offer a well-scoped but demanding testbed for coding agents: a correct fix demands rigorous reasoning about program semantics along with familiarity with optimizer-specific conventions. PeepholeBench derives its tasks from 21 resolved LLVM issues and 19 merged pull requests (PRs), supplies agents with only the issue context that existed before each fix, and assesses the resulting patches for both correctness and profitability. With PeepholeBench, we benchmark state-of-the-art coding agents on fixing missed peephole optimizations in LLVM's InstCombine pass, measuring their patches against the corresponding human-written fixes. We observe a tension between correctness and profitability, and no agent matches human developers on both dimensions at once. The dominant failure modes are overly narrow transformations and misuse of LLVM-specific mechanisms, errors that existing test suites rarely expose. Together, these results establish PeepholeBench as a realistic and challenging benchmark for coding agents, and suggest future directions for building agents that can more dependably assist compiler optimization development.",
+      "authors": [
+        "Hongxu Xu",
+        "Chunhao Liao",
+        "Xintong Zhou",
+        "Chengnian Sun"
+      ],
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-07-02T18:25:29Z",
+      "updated": "2026-07-02T18:25:29Z",
+      "announced_date": "2026-07-02",
+      "first_seen": "2026-07-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.02684v1",
+        "pdf": "https://arxiv.org/pdf/2607.02684v1",
+        "html": "https://arxiv.org/html/2607.02684"
+      },
+      "score": 18,
+      "tags": [
+        "coding",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2607.02370",
+      "title": "Understanding Agent-Based Patching of Compiler Missed Optimizations",
+      "abstract": "Compiler missed optimizations refer to cases in which compilers failed to optimize certain code. It takes many compiler developers' efforts to implement or patch such missed optimizations. In this paper, we present a systematic study of how well agents patch compiler missed optimizations. We identify a significant challenge that patching a missed optimization requires more than just fixing the reported case, and instead requires generalizing to similar cases. We construct a benchmark of real-world LLVM missed optimization issues and compare agent-generated patches with patches from developers in terms of optimization scope. Our results show that coding agents often optimize the given examples, but many generated patches either cover only part of the developer-intended scope or partially overlap with it; in some cases, they further generalize beyond the reference patch. We further introduce historical-knowledge augmentation techniques that leverage prior LLVM optimization pull requests through retrieval and distillation, showing that they improve developer-aligned generalization and yield practical benefits when applied to real-world IR.",
+      "authors": [
+        "Batu Guan",
+        "Zirui Wang",
+        "Shaohua Li"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-07-02T16:12:32Z",
+      "updated": "2026-07-03T04:14:00Z",
+      "announced_date": "2026-07-02",
+      "first_seen": "2026-07-02",
+      "comment": "11 pages, 10 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.02370v2",
+        "pdf": "https://arxiv.org/pdf/2607.02370v2",
+        "html": "https://arxiv.org/html/2607.02370"
+      },
+      "score": 7,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2607.02255",
+      "title": "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents",
+      "abstract": "Memory for a long-horizon LLM agent is a contract about what each future decision is allowed to see. The simplest contract appends past observations, tool calls, and reflections to every prompt, which makes prior context easy to access but also turns it into a jumbled mixture in which the effect of any single memory component is hard to isolate. We introduce and instrument an alternative bounded contract: every decision is made from a fresh user message assembled by typed retrieval, with no raw cross-decision transcript appended. The prompt thus stays bounded across runs of any length, and any single layer can be ablated in isolation. We instantiate the contract in Slay the Spire 2, a closed-rule stochastic deck-building game whose runs require hundreds of tactical and strategic decisions. A public online benchmark of frontier LLMs on the same game reports zero wins at the lowest difficulty across five configurations, and the developer-reported human win rate at the same difficulty is 16%; the task is hard but not saturated. Within our harness, a fixed-A0 ablation shows the largest observed difference when triggered strategic skills are enabled: the no-store baseline wins 3/10 games and adding the skill layer 6/10. At this sample size the comparison is directional rather than statistically decisive (Fisher exact p\\approx0.37); a cross-backbone probe and public accumulating-context baselines are reported as operational comparisons rather than controlled tests of the contract variable itself. We release a reproducible testbed: 298 completed trajectories with condition tags, frozen memory/skill snapshots, prompt records, and analysis scripts -- an agent design and a validated, reusable methodology for studying how explicit memory layers shape long-horizon LLM-agent decisions.",
+      "authors": [
+        "Xiangchen Cheng",
+        "Yunwei Jiang",
+        "Jianwen Sun",
+        "Zizhen Li",
+        "Chuanhao Li",
+        "Xiangcheng Cao",
+        "Yihao Liu",
+        "Fanrui Zhang",
+        "Li Jin",
+        "Kaipeng Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-02T14:44:32Z",
+      "updated": "2026-07-02T14:44:32Z",
+      "announced_date": "2026-07-02",
+      "first_seen": "2026-07-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.02255v1",
+        "pdf": "https://arxiv.org/pdf/2607.02255v1",
+        "html": "https://arxiv.org/html/2607.02255"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use",
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.02141",
+      "title": "A$^{2}$utoLPBench: An Auto-Generated, Agent-Friendly LP Benchmark via Inverse-KKT Construction",
+      "abstract": "Most LP-from-text benchmarks are static datasets of word problems written and labeled by hand. Once such a dataset is released, its size is fixed, its difficulty is fixed, and every problem can leak into the training data of future LLMs. We present \\textbf{A$^{2}$utoLPBench}, a benchmark for testing LLM-driven agents on linear programming problems written in plain text. We first pick a feasible point and dual, then write down a problem for which that point is optimal and the objective value is known. The answer is known by construction, with no solver call and no human annotator. The evaluation environment bundles a reference solver-critic baseline and a Docker image whose usage instructions are written for an LLM-driven agent to read. With these in place, any agent can run the benchmark and get a calibrated score with one command. Because the benchmark is a generator rather than a fixed dataset, it has properties no fixed dataset can match: an unlimited supply of fresh problems, a difficulty knob set by $(n,m)$, ground-truth answers correct by construction, low LLM-side cost per problem relative to human authoring, repeatable scores across independent batches, and resistance to training-data leakage when fresh post-cutoff seed ranges are used.",
+      "authors": [
+        "Shuo Ren",
+        "Yaohui Han",
+        "Yifan Shi",
+        "Libo Shen",
+        "Haodong Lu",
+        "Dongfang Wu",
+        "Rongliang Fu",
+        "Bei Yu",
+        "Tsung-Yi Ho"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-02T13:18:57Z",
+      "updated": "2026-07-02T13:18:57Z",
+      "announced_date": "2026-07-02",
+      "first_seen": "2026-07-02",
+      "comment": "25 pages and 4 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.02141v1",
+        "pdf": "https://arxiv.org/pdf/2607.02141v1",
+        "html": "https://arxiv.org/html/2607.02141"
+      },
+      "score": 13,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.01766",
+      "title": "SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation",
+      "abstract": "LLM agents are increasingly used to translate natural language into 3D scenes in a procedural way, but existing systems focus on static output. Dynamic 4D scenes from text alone, in which liquids flow, particles emit, rigid bodies cascade, and articulated mechanisms move, remain largely unexplored despite their value as editable content and as physics-grounded training data for video generation and embodied AI. Two challenges set the dynamic case apart from static text-to-scene work: an agent must jointly coordinate spatial layout, multiple physics solvers, temporal sequencing, camera, and lighting in a single coherent scene, and verifying motion correctness from rendered video is fundamentally harder than judging a single image. We present SimWorlds: a multi-agent framework that produces dynamic, editable 4D scenes from text, with Blender-specific procedural knowledge, a planner-coder-reviewer workflow driving a fixed ordered sequence of construction stages, a layered scene protocol enforced by a deterministic verifier, and a runtime-state inspection tool suite that catches mechanism failures the rendered image cannot reveal. We also introduce 4DBuildBench, a benchmark for assessing both visual fidelity and physical consistency of the procedural dynamic 3D scenes generated from text prompts. Experiments show that SimWorlds outperforms prior dynamic Blender generation baselines.",
+      "authors": [
+        "Chunjiang Liu",
+        "Xiaoyuan Wang",
+        "Haoyu Chen",
+        "Yizhou Zhao",
+        "Ming-Hsuan Yang",
+        "László A. Jeni"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-02T06:29:18Z",
+      "updated": "2026-07-02T06:29:18Z",
+      "announced_date": "2026-07-02",
+      "first_seen": "2026-07-02",
+      "comment": "20 pages, 3 figures. Project page: https://dynsimworlds.github.io",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.01766v1",
+        "pdf": "https://arxiv.org/pdf/2607.01766v1",
+        "html": "https://arxiv.org/html/2607.01766"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "multi-agent",
+        "embodied"
+      ],
+      "field": "multi-agent",
+      "citations": 1
+    },
+    {
+      "id": "2607.01647",
+      "title": "AgenticDataBench: A Comprehensive Benchmark for Data Agents",
+      "abstract": "Data science aims to derive actionable insights from heterogeneous raw data, unlocking the value of the massive amounts of data generated in modern society. Automating this process is essential to reducing labor-intensive efforts for data scientists and enabling scalable data-driven applications. Recently, large language model (LLM)-based data agents have emerged as a promising solution to automate data science workflows. However, the field lacks comprehensive benchmarks to rigorously evaluate these agents across diverse scenarios with fine-grained granularity. To address this gap, we propose AgenticDataBench, a comprehensive benchmark featuring realistic tasks spanning diverse domains with fine-grained ground-truth labels. This enables evaluations to capture the diversity and complexity of data science workflows and the detailed performance of agents. First, to cover diverse domains, we collect real datasets and tasks from 15 vertical domains, including 5 real-world B2B use cases from a leading fintech company. Second, to remove redundancy in real-world tasks and generate high-quality tasks for domains lacking real data, we introduce data science skills, recurring data-centric operational patterns, and quantify benchmark coverage by the number of skills included. Representative skills are extracted from large-scale task solutions on Stack Overflow using skill-aligned hierarchical clustering. Third, for real-world business tasks, we select task-solution pairs that maximize diversity in skill composition, ensuring broad coverage of practical scenarios. Fourth, to generate realistic tasks for devise domains without real tasks, we propose a systematic LLM-based task generation approach to create workflows and tasks based on these skills. Finally, we evaluate state-of-the-art data agents using our annotated benchmark and open-sourced testbed, providing detailed skill-level insights.",
+      "authors": [
+        "Zhaoyan Sun",
+        "Shan Zhong",
+        "Daizhou Wen",
+        "Jiaxing Han",
+        "Guoliang Li",
+        "Ying Yan",
+        "Peng Zhang",
+        "Yu Su",
+        "Xiang Qi",
+        "Baolin Sun",
+        "Chengyuan Yang",
+        "Tao Fang",
+        "Huaiyu Ruan"
+      ],
+      "categories": [
+        "cs.DB",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.DB",
+      "published": "2026-07-02T03:18:59Z",
+      "updated": "2026-07-02T03:18:59Z",
+      "announced_date": "2026-07-02",
+      "first_seen": "2026-07-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.01647v1",
+        "pdf": "https://arxiv.org/pdf/2607.01647v1",
+        "html": "https://arxiv.org/html/2607.01647"
+      },
+      "score": 15,
+      "tags": [],
+      "field": "workplace",
+      "citations": 4
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "date": "2026-08-18",
+  "count": 6,
+  "report": {
+    "date": "2026-08-18",
+    "count": 6,
+    "themes": [
+      {
+        "id": "gui",
+        "count": 2,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      },
+      {
+        "id": "mobile",
+        "count": 1,
+        "en": "Mobile agents",
+        "zh": "移动智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      }
+    ],
+    "en": {
+      "headline": "6 new agent benchmarks",
+      "summary": "On August 18, 2026, arXiv listed 6 new agent benchmarks. Work clustered around GUI agents (2), Safety (2), Computer use (1), and Mobile agents (1).",
+      "highlights": [
+        {
+          "id": "2608.18307",
+          "title": "ComponentBench: Diagnosing Component-Level Failures in Computer-Use Agents",
+          "blurb": "Current evaluation of computer-use agents is split between long-horizon workflow benchmarks and atomic GUI-grounding tests."
+        },
+        {
+          "id": "2608.17659",
+          "title": "MobileWorldSafety: Benchmarking GUI Agent Safety Against Environmental Injection Attacks in Android Apps",
+          "blurb": "LLM-powered GUI agents that autonomously operate smartphones are rapidly transitioning from research prototypes to early real-world deployment."
+        },
+        {
+          "id": "2608.17889",
+          "title": "VisDocAgentBench: Benchmarking Agents for Visually Rich Document Retrieval",
+          "blurb": "Visually rich documents encode relevance through language, layout, structured visual elements, and corpus context, yet retrieval is typically evaluated by one-shot query--page matching."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 6 篇 Agent Benchmark",
+      "summary": "2026年8月18日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在GUI 智能体（2）、安全（2）、计算机使用（1）、移动智能体（1）。",
+      "highlights": [
+        {
+          "id": "2608.18307",
+          "title": "ComponentBench: Diagnosing Component-Level Failures in Computer-Use Agents",
+          "blurb": "Current evaluation of computer-use agents is split between long-horizon workflow benchmarks and atomic GUI-grounding tests."
+        },
+        {
+          "id": "2608.17659",
+          "title": "MobileWorldSafety: Benchmarking GUI Agent Safety Against Environmental Injection Attacks in Android Apps",
+          "blurb": "LLM-powered GUI agents that autonomously operate smartphones are rapidly transitioning from research prototypes to early real-world deployment."
+        },
+        {
+          "id": "2608.17889",
+          "title": "VisDocAgentBench: Benchmarking Agents for Visually Rich Document Retrieval",
+          "blurb": "Visually rich documents encode relevance through language, layout, structured visual elements, and corpus context, yet retrieval is typically evaluated by one-shot query--page matching."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.18307",
+      "title": "ComponentBench: Diagnosing Component-Level Failures in Computer-Use Agents",
+      "abstract": "Current evaluation of computer-use agents is split between long-horizon workflow benchmarks and atomic GUI-grounding tests. This leaves an under-instrumented middle layer: realistic component-centered interactions (e.g., toggle a button set) that are short enough to diagnose and rich enough to capture the burdens of modern interfaces. We present ComponentBench, a benchmark and diagnostic pipeline for component-level evaluation of computer-use agents on modern web UIs. ComponentBench is organized around a library-agnostic ontology of 97 canonical UI components instantiated as 2,910 programmatically verified tasks across widely used component libraries, paired with cleaned human reference trajectories that enable evaluation of both task success and interaction efficiency. Beyond task collection, we introduce a scalable pipeline for auditing realized structural difficulty after implementation and synthesizing structured failure analyses across tasks and component families. Evaluating seven models -- GPT-5.4, Gemini 3 Flash, GPT-5.4 mini, GPT-5 mini, Gemini 3.1 Flash-Lite, Qwen3-VL-235B, and UI-TARS-1.5-7B -- across four observation and action spaces, we show that these design choices critically impact performance. Within a single shared harness, changing only the observation and action space shifts task success by more than 30% for the same model: GPT-5 mini falls from 83.1% with accessibility-tree observations to 48.9% with coordinate-only Pixel control. Moreover, even the fastest configuration takes 3.7x as long as the matched human reference, and spatial manipulations that are trivial for humans continue to challenge current agents.",
+      "authors": [
+        "Tianchen Guan",
+        "Xinlei Lin",
+        "Royce Cheng-Yue",
+        "Xiangjun Wang",
+        "Shuyan Zhou"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.HC"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-18T20:38:26Z",
+      "updated": "2026-08-18T20:38:26Z",
+      "announced_date": "2026-08-18",
+      "first_seen": "2026-08-18",
+      "comment": "Accepted at COLM 2026. 30 pages (10 pages main text), 10 figures, 15 tables. Website: https://componentbench.com Code: https://github.com/TianchenGuan/ComponentBench Data: https://huggingface.co/datasets/TianchenGuan/ComponentBench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.18307v1",
+        "pdf": "https://arxiv.org/pdf/2608.18307v1",
+        "html": "https://arxiv.org/html/2608.18307"
+      },
+      "score": 17,
+      "tags": [
+        "gui",
+        "computer-use"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2608.17889",
+      "title": "VisDocAgentBench: Benchmarking Agents for Visually Rich Document Retrieval",
+      "abstract": "Visually rich documents encode relevance through language, layout, structured visual elements, and corpus context, yet retrieval is typically evaluated by one-shot query--page matching. Agentic-search benchmarks usually score downstream question answering or report generation, leaving document ranking under iterative evidence acquisition underexplored. We introduce VisDocAgentBench, a closed-corpus benchmark comparing static and agentic retrieval under a shared ranked-output contract. It contains 2,375 pages from 100 documents and 120 unique-target queries balanced across direct, one-bridge, and two-bridge evidence structures. Relation-preserving construction yields semantic, relational, and visual queries, followed by full-document review and hard-negative validation. A strong late-interaction visual retriever reaches 97.50% Recall@1 on direct items but 2.50% on two-bridge items, exposing the limits of query--target matching when relevance depends on corpus context. Agents recover much of this loss, but planner choice and retrieval representation remain decisive. Every planner performs better with visual retrieval, whose best R@1 reaches 67.50% versus 37.50% for OCR-text. Ablations identify iterative search and page inspection as consequential capabilities, and providing the complete support context improves ranking on both routes. Trace analysis localizes the remaining losses to target discovery, candidate examination, and evidence-role integration. These findings motivate retrieval agents that combine modality-preserving discovery with evidence-directed verification.",
+      "authors": [
+        "Lexiang Hu",
+        "Yanzhao Zhang",
+        "Mingxin Li",
+        "Dingkun Long",
+        "Yikang Li",
+        "Fuwei Zhang",
+        "Yisen Wang",
+        "Zhouchen Lin"
+      ],
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-08-18T15:23:06Z",
+      "updated": "2026-08-18T15:23:06Z",
+      "announced_date": "2026-08-18",
+      "first_seen": "2026-08-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.17889v1",
+        "pdf": "https://arxiv.org/pdf/2608.17889v1",
+        "html": "https://arxiv.org/html/2608.17889"
+      },
+      "score": 13,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.17800",
+      "title": "StartupBench: Benchmarking General-Purpose Agents on Market-Validated End-to-End Workflows",
+      "abstract": "Recent advances in Large Language Models(LLMs) and agents have substantially improved the ability of AI systems to execute complex tasks. Yet existing benchmarks largely rely on researcher-selected tasks, leaving uncertain whether such progress extends to the work that real-world users actually demand from AI systems. We introduce \\textbf{StartupBench}, an E2E agent benchmark grounded in market-validated AI startup products. Rather than defining tasks from pre-defined assumptions about useful agent capabilities, we systematically study AI products with demonstrated adoption, together with their product workflows and users, to identify real-world tasks for which AI has established practical demand across diverse professional domains. We translate these workflows into complete deliverable-oriented tasks and evaluate them with fine-grained rubrics capturing their complex requirements. Across representative models evaluated under a unified agent harness, even the strongest model successfully completes only approximately 30\\% of StartupBench, despite making substantial partial progress on many tasks. Further analysis identifies aspects like complex instruction following and domain-specific expertise as major sources of failure. Our results reveal that many market-validated workflows remain beyond the reliable capabilities of current general-purpose agents, establishing StartupBench as an empirical measure of progress toward E2E completions of real-world user tasks.",
+      "authors": [
+        "Liya Zhu",
+        "Xin Ma",
+        "Tao Liu",
+        "Haodong Wang",
+        "Ge Zhang",
+        "Jingzhe Ding",
+        "Qingshui Gu",
+        "Yongjie Zhong",
+        "Jinxiang Meng",
+        "Yuan Gao",
+        "Yunqiu Zhou",
+        "Hao Zhu",
+        "Jifeng He",
+        "Yongzhi Liao",
+        "Xinyi Zhang",
+        "Chaoxin Li",
+        "Yi Zhu",
+        "Xi Lin",
+        "Duju Zeng",
+        "Xiang Gao",
+        "Wen Zhang",
+        "Yunyang Wang",
+        "Duo Wang",
+        "Huan Zhou",
+        "Zuo Wang",
+        "Jin Chen",
+        "Kaiyuan Zhang",
+        "Chuqian Yu",
+        "Tianhao Yu",
+        "Longxiang Liu",
+        "Jianbo Xue",
+        "Huimin Che",
+        "Jiahao Wang",
+        "Yujia Qin",
+        "Jiaheng Liu",
+        "Shen Yan",
+        "Xiaolong Chang",
+        "Wenhao Huang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-18T14:01:32Z",
+      "updated": "2026-08-18T14:01:32Z",
+      "announced_date": "2026-08-18",
+      "first_seen": "2026-08-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.17800v1",
+        "pdf": "https://arxiv.org/pdf/2608.17800v1",
+        "html": "https://arxiv.org/html/2608.17800"
+      },
+      "score": 11,
+      "tags": [],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2608.17659",
+      "title": "MobileWorldSafety: Benchmarking GUI Agent Safety Against Environmental Injection Attacks in Android Apps",
+      "abstract": "LLM-powered GUI agents that autonomously operate smartphones are rapidly transitioning from research prototypes to early real-world deployment. However, because these agents routinely process untrusted environmental content, they are highly vulnerable to environmental injection attacks, which include indirect prompt injections and adversarial instructions. Such attacks can manipulate the behavior of agents without user awareness through diverse channels encountered in everyday mobile use. Despite these risks, existing benchmarks often fail to capture everyday user scenarios, lacking a systematic evaluation of GUI agents under environmental injection attacks on mobile devices. To address this gap, we introduce MobileWorldSafety, a benchmark of 142 risk tasks built on real Android applications. For each task, we define a programmatically verifiable risk indicator over the final system state and evaluate outcomes with a two-stage pipeline: rule-based verification handles unambiguous cases, while an LLM judge adjudicates ambiguous ones. This distinguishes safety failures from capability failures and enables objective and reproducible assessment. Evaluations on six agents, including both general agents and specialized GUI agents, demonstrate that all agents remain highly vulnerable, with attack success rates ranging from 40.4% to 66.9%. These findings indicate that current agents often fail to maintain safety alignment when adversarial content is presented as ordinary mobile context. MobileWorldSafety provides a foundation for quantifying these vulnerabilities and advancing research on robust mobile GUI agents.",
+      "authors": [
+        "Sujin Chen",
+        "Lijun Li",
+        "Tianyi Du",
+        "Jing Shao"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-08-18T11:33:22Z",
+      "updated": "2026-08-18T11:33:22Z",
+      "announced_date": "2026-08-18",
+      "first_seen": "2026-08-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.17659v1",
+        "pdf": "https://arxiv.org/pdf/2608.17659v1",
+        "html": "https://arxiv.org/html/2608.17659"
+      },
+      "score": 15,
+      "tags": [
+        "gui",
+        "safety",
+        "mobile"
+      ],
+      "field": "mobile",
+      "citations": 0
+    },
+    {
+      "id": "2608.17597",
+      "title": "HarnessRisk: A Lifecycle-Oriented Benchmark for Agent Harness Safety",
+      "abstract": "Large language models are increasingly deployed through agent harnesses that manage tools, extensions, persistent state, permissions, and external actions. Existing safety benchmarks mainly target individual attack mechanisms or a limited subset of operational settings, making it difficult to compare how safety failures emerge across different harness responsibilities. We present HarnessRisk, a lifecycle oriented benchmark that organizes agent harness safety into six operational phases including Harness Configuration, Capability Extension, Runtime Operation, State Persistence, Action Control, and Incident Recovery. HarnessRisk contains 128 sandboxed cases, each pairing a benign user objective with an adversarial instruction embedded in an untrusted workflow artifact. We evaluate each trajectory using Utility, Attack Success Rate, Persistence, and Detection. Across three harnesses, six language models, and 14 model and harness configurations, attack success ranges from 12.6% to 80.9%, while Utility remains between 75.0% and 97.6%. Harness Configuration is the most vulnerable phase across all three harnesses, showing that attacks can succeed by altering security sensitive parameters within otherwise authorized workflows. We also find that explicit risk recognition does not reliably lead to safe action, as some configurations detect risks in more than 90% of runs while retaining substantial attack success. These results highlight the need to evaluate agent safety across multiple harness responsibilities and at the level of the deployed model and harness configuration.",
+      "authors": [
+        "Yajing Bai",
+        "Jinhao Duan",
+        "Jie Peng",
+        "Xianfeng Wu",
+        "Sijia Liu",
+        "Song Wang",
+        "Tianlong Chen"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-08-18T10:03:58Z",
+      "updated": "2026-08-18T10:03:58Z",
+      "announced_date": "2026-08-18",
+      "first_seen": "2026-08-18",
+      "comment": "Project Page: https://baiyajing.github.io/harness-risk/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.17597v1",
+        "pdf": "https://arxiv.org/pdf/2608.17597v1",
+        "html": "https://arxiv.org/html/2608.17597"
+      },
+      "score": 7,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2608.17524",
+      "title": "Evaluating RL Explainability Methods by How Much They Help Fix Bugs in Agents",
+      "abstract": "This preliminary paper outlines a planned evaluation benchmark for Explainable Reinforcement Learning (XRL) methods. Current evaluations rely on functionally-grounded metrics like faithfulness and compactness, and on human-grounded proxies like subjective ratings or prediction accuracy. We suggest evaluating XRL methods by how effectively their generated explanations help to diagnose and fix malfunctioning reinforcement learning (RL) agents. We propose EvalXRL, a benchmark in which a Large Language Model (LLM) coding agent uses different XRL methods to diagnose a held-out malfunction in an RL agent, and then repair it. Our proposed benchmark iterates across (environment $\\times$ malfunction $\\times$ XRL method) tuples and uses the reward signal of the RL agents to form a final score for each XRL method. The coding agent may use the method interactively: invoke the XRL method, process its output, form new hypotheses on what is broken, and invoke the method again with parameters adjusted for testing these hypotheses. This closed-loop structure may be described as a simplified version of the scientific method. Some XRL methods provide self-evaluations that follow this pattern; we propose the first head-to-head comparison of multiple XRL methods in closed-loop usage.",
+      "authors": [
+        "Ram Rachum",
+        "Yotam Amitai",
+        "Bálint Gyevnár",
+        "Reuth Mirsky",
+        "Cameron Allen"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-08-18T08:46:26Z",
+      "updated": "2026-08-18T08:46:26Z",
+      "announced_date": "2026-08-18",
+      "first_seen": "2026-08-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.17524v1",
+        "pdf": "https://arxiv.org/pdf/2608.17524v1",
+        "html": "https://arxiv.org/html/2608.17524"
+      },
+      "score": 8,
+      "tags": [
+        "coding",
+        "science"
+      ],
+      "field": "coding",
+      "citations": 0
+    }
+  ]
+}

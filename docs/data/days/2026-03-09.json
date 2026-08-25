@@ -1,0 +1,265 @@
+{
+  "date": "2026-03-09",
+  "count": 4,
+  "report": {
+    "date": "2026-03-09",
+    "count": 4,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On March 9, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Planning / reasoning (3), Tool use (2), Coding agents (1), and GUI agents (1).",
+      "highlights": [
+        {
+          "id": "2603.07980",
+          "title": "\\$OneMillion-Bench: How Far are Language Agents from Human Experts?",
+          "blurb": "As language models (LMs) evolve from chat assistants to long-horizon agents capable of multi-step reasoning and tool use, existing benchmarks remain largely confined to structured or exam-style tasks that fall short of r…"
+        },
+        {
+          "id": "2603.08262",
+          "title": "FinToolBench: Evaluating LLM Agents for Real-World Financial Tool Use",
+          "blurb": "The integration of Large Language Models (LLMs) into the financial domain is driving a paradigm shift from passive information retrieval to dynamic, agentic interaction."
+        },
+        {
+          "id": "2603.08013",
+          "title": "PIRA-Bench: A Transition from Reactive GUI Agents to GUI-based Proactive Intent Recommendation Agents",
+          "blurb": "Current Graphical User Interface (GUI) agents operate primarily under a reactive paradigm: a user must provide an explicit instruction for the agent to execute a task."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年3月9日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在规划 / 推理（3）、工具使用（2）、代码智能体（1）、GUI 智能体（1）。",
+      "highlights": [
+        {
+          "id": "2603.07980",
+          "title": "\\$OneMillion-Bench: How Far are Language Agents from Human Experts?",
+          "blurb": "As language models (LMs) evolve from chat assistants to long-horizon agents capable of multi-step reasoning and tool use, existing benchmarks remain largely confined to structured or exam-style tasks that fall short of r…"
+        },
+        {
+          "id": "2603.08262",
+          "title": "FinToolBench: Evaluating LLM Agents for Real-World Financial Tool Use",
+          "blurb": "The integration of Large Language Models (LLMs) into the financial domain is driving a paradigm shift from passive information retrieval to dynamic, agentic interaction."
+        },
+        {
+          "id": "2603.08013",
+          "title": "PIRA-Bench: A Transition from Reactive GUI Agents to GUI-based Proactive Intent Recommendation Agents",
+          "blurb": "Current Graphical User Interface (GUI) agents operate primarily under a reactive paradigm: a user must provide an explicit instruction for the agent to execute a task."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2603.08640",
+      "title": "PostTrainBench: Can LLM Agents Automate LLM Post-Training?",
+      "abstract": "AI agents have become surprisingly proficient at software engineering over the past year, largely due to improvements in reasoning capabilities. This raises a deeper question: can these systems extend their capabilities to automate AI research itself? In this paper, we explore post-training, the critical phase that turns base LLMs into useful assistants. We introduce PostTrainBench to benchmark how well LLM agents can perform post-training autonomously under bounded compute constraints (10 hours on one H100 GPU). We ask frontier agents (e.g., Claude Code with Opus 4.6) to optimize the performance of a base LLM on a particular benchmark (e.g., Qwen3-4B on AIME). Importantly, we do not provide any predefined strategies to the agents and instead give them full autonomy to find necessary information on the web, run experiments, and curate data. We find that frontier agents make substantial progress but generally lag behind instruction-tuned LLMs from leading providers: 23.2% for the best agent vs. 51.1% for official instruction-tuned models. However, agents can exceed instruction-tuned models in targeted scenarios: GPT-5.1 Codex Max achieves 89% on BFCL with Gemma-3-4B vs. 67% for the official model. We also observe several failure modes worth flagging. Agents sometimes engage in reward hacking: training on the test set, downloading existing instruction-tuned checkpoints instead of training their own, and using API keys they find to generate synthetic data without authorization. These behaviors are concerning and highlight the importance of careful sandboxing as these systems become more capable. Overall, we hope PostTrainBench will be useful for tracking progress in AI R&D automation and for studying the risks that come with it. Website and code are available at https://posttrainbench.com/.",
+      "authors": [
+        "Ben Rank",
+        "Hardik Bhatnagar",
+        "Ameya Prabhu",
+        "Shira Eisenberg",
+        "Karina Nguyen",
+        "Matthias Bethge",
+        "Maksym Andriushchenko"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-03-09T17:18:00Z",
+      "updated": "2026-03-10T15:55:40Z",
+      "announced_date": "2026-03-09",
+      "first_seen": "2026-03-09",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.08640v2",
+        "pdf": "https://arxiv.org/pdf/2603.08640v2",
+        "html": "https://arxiv.org/html/2603.08640"
+      },
+      "score": 14,
+      "tags": [
+        "coding",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 29
+    },
+    {
+      "id": "2603.08262",
+      "title": "FinToolBench: Evaluating LLM Agents for Real-World Financial Tool Use",
+      "abstract": "The integration of Large Language Models (LLMs) into the financial domain is driving a paradigm shift from passive information retrieval to dynamic, agentic interaction. While general-purpose tool learning has witnessed a surge in benchmarks, the financial sector, characterized by high stakes, strict compliance, and rapid data volatility, remains critically underserved. Existing financial evaluations predominantly focus on static textual analysis or document-based QA, ignoring the complex reality of tool execution. Conversely, general tool benchmarks lack the domain-specific rigor required for finance, often relying on toy environments or a negligible number of financial APIs. To bridge this gap, we introduce FinToolBench, the first real-world, runnable benchmark dedicated to evaluating financial tool learning agents. Unlike prior works limited to a handful of mock tools, FinToolBench establishes a realistic ecosystem coupling 760 executable financial tools with 295 rigorous, tool-required queries. We propose a novel evaluation framework that goes beyond binary execution success, assessing agents on finance-critical dimensions: timeliness, intent type, and regulatory domain alignment. Furthermore, we present FATR, a finance-aware tool retrieval and reasoning baseline that enhances stability and compliance. By providing the first testbed for auditable, agentic financial execution, FinToolBench sets a new standard for trustworthy AI in finance. The tool manifest, execution environment, and evaluation code will be open-sourced to facilitate future research.",
+      "authors": [
+        "Jiaxuan Lu",
+        "Kong Wang",
+        "Yemin Wang",
+        "Qingmei Tang",
+        "Hongwei Zeng",
+        "Xiang Chen",
+        "Jiahao Pi",
+        "Shujian Deng",
+        "Lingzhi Chen",
+        "Yi Fu",
+        "Kehua Yang",
+        "Xiao Sun"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-09T11:33:05Z",
+      "updated": "2026-08-01T16:26:47Z",
+      "announced_date": "2026-03-09",
+      "first_seen": "2026-03-09",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.08262v2",
+        "pdf": "https://arxiv.org/pdf/2603.08262v2",
+        "html": "https://arxiv.org/html/2603.08262"
+      },
+      "score": 22,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "tool-use",
+      "citations": 4
+    },
+    {
+      "id": "2603.08013",
+      "title": "PIRA-Bench: A Transition from Reactive GUI Agents to GUI-based Proactive Intent Recommendation Agents",
+      "abstract": "Current Graphical User Interface (GUI) agents operate primarily under a reactive paradigm: a user must provide an explicit instruction for the agent to execute a task. However, an intelligent AI assistant should be proactive, which is capable of anticipating user intentions directly from continuous visual inputs, such as mobile or desktop screenshots, and offering timely recommendations without explicit user prompting. Transitioning to this proactive paradigm presents significant challenges. Real-world screen activity is rarely linear; it consists of long-horizon trajectories fraught with noisy browsing, meaningless actions, and multithreaded task-switching. To address this gap, we introduce PIRA-Bench (Proactive Intent Recommendation Agent Benchmark), a novel benchmark for evaluating multimodal large language models (MLLMs) on continuous, weakly-supervised visual inputs. Unlike reactive datasets, PIRA-Bench features complex trajectories with multiple interleaved intents and noisy segments with various user profile contexts, challenging agents to detect actionable events while fitting to user preferences. Furthermore, we propose the PIRF baseline, a memory-aware, state-tracking framework that empowers general MLLMs to manage multiple task threads and handle misleading visual inputs. PIRA-Bench serves as an initial step toward robust and proactive GUI-based personal assistants.",
+      "authors": [
+        "Yuxiang Chai",
+        "Shunye Tang",
+        "Han Xiao",
+        "Rui Liu",
+        "Hongsheng Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-09T06:41:32Z",
+      "updated": "2026-03-09T06:41:32Z",
+      "announced_date": "2026-03-09",
+      "first_seen": "2026-03-09",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.08013v1",
+        "pdf": "https://arxiv.org/pdf/2603.08013v1",
+        "html": "https://arxiv.org/html/2603.08013"
+      },
+      "score": 19,
+      "tags": [
+        "gui",
+        "safety",
+        "memory",
+        "multimodal"
+      ],
+      "field": "computer-use",
+      "citations": 5
+    },
+    {
+      "id": "2603.07980",
+      "title": "\\$OneMillion-Bench: How Far are Language Agents from Human Experts?",
+      "abstract": "As language models (LMs) evolve from chat assistants to long-horizon agents capable of multi-step reasoning and tool use, existing benchmarks remain largely confined to structured or exam-style tasks that fall short of real-world professional demands. To this end, we introduce \\$OneMillion-Bench \\$OneMillion-Bench, a benchmark of 400 expert-curated tasks spanning Law, Finance, Industry, Healthcare, and Natural Science, built to evaluate agents across economically consequential scenarios. Unlike prior work, the benchmark requires retrieving authoritative sources, resolving conflicting evidence, applying domain-specific rules, and making constraint decisions, where correctness depends as much on the reasoning process as the final answer. We adopt a rubric-based evaluation protocol scoring factual accuracy, logical coherence, practical feasibility, and professional compliance, focused on expert-level problems to ensure meaningful differentiation across agents. Together, \\$OneMillion-Bench provides a unified testbed for assessing agentic reliability, professional depth, and practical readiness in domain-intensive scenarios.",
+      "authors": [
+        "Qianyu Yang",
+        "Yang Liu",
+        "Jiaqi Li",
+        "Jun Bai",
+        "Hao Chen",
+        "Kaiyuan Chen",
+        "Tiliang Duan",
+        "Jiayun Dong",
+        "Xiaobo Hu",
+        "Zixia Jia",
+        "Yang Liu",
+        "Tao Peng",
+        "Yixin Ren",
+        "Ran Tian",
+        "Zaiyuan Wang",
+        "Yanglihong Xiao",
+        "Gang Yao",
+        "Lingyue Yin",
+        "Ge Zhang",
+        "Chun Zhang",
+        "Jianpeng Jiao",
+        "Zilong Zheng",
+        "Yuan Gong"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-03-09T05:32:42Z",
+      "updated": "2026-03-09T05:32:42Z",
+      "announced_date": "2026-03-09",
+      "first_seen": "2026-03-09",
+      "comment": "39 pages, 9 figures, 8 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.07980v1",
+        "pdf": "https://arxiv.org/pdf/2603.07980v1",
+        "html": "https://arxiv.org/html/2603.07980"
+      },
+      "score": 25,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "workplace",
+      "citations": 10
+    }
+  ]
+}

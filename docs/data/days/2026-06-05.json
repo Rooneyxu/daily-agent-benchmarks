@@ -1,0 +1,422 @@
+{
+  "date": "2026-06-05",
+  "count": 8,
+  "report": {
+    "date": "2026-06-05",
+    "count": 8,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 4,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "coding",
+        "count": 4,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "planning",
+        "count": 4,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "8 new agent benchmarks",
+      "summary": "On June 5, 2026, arXiv listed 8 new agent benchmarks. Work clustered around Safety (4), Coding agents (4), Planning / reasoning (4), and Tool use (2).",
+      "highlights": [
+        {
+          "id": "2606.06960",
+          "title": "FinEvolveBench: A Benchmark for Self-Evolving Agents on Low-Repetition Tasks with Implicit Rewards",
+          "blurb": "Experience-based self-evolution enables language-model agents to improve their behavior by accumulating and updating experience at test time, yet existing evaluations often assume recurring task patterns and explicit suc…"
+        },
+        {
+          "id": "2606.07297",
+          "title": "SWE-Explore: Benchmarking How Coding Agents Explore Repositories",
+          "blurb": "Repository-level coding benchmarks such as SWE-bench have driven a rapid surge in the capabilities of coding agents."
+        },
+        {
+          "id": "2606.07805",
+          "title": "Beyond Goodhart's Law: A Dynamic Benchmark for Evaluating Compliance in Multi-Agent Systems",
+          "blurb": "The rapid evolution of Large Language Models (LLMs) from passive assistants to autonomous, execution-capable agents has introduced critical operational risks."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 8 篇 Agent Benchmark",
+      "summary": "2026年6月5日，arXiv 新增 8 篇 Agent Benchmark。当日主题集中在安全（4）、代码智能体（4）、规划 / 推理（4）、工具使用（2）。",
+      "highlights": [
+        {
+          "id": "2606.06960",
+          "title": "FinEvolveBench: A Benchmark for Self-Evolving Agents on Low-Repetition Tasks with Implicit Rewards",
+          "blurb": "Experience-based self-evolution enables language-model agents to improve their behavior by accumulating and updating experience at test time, yet existing evaluations often assume recurring task patterns and explicit suc…"
+        },
+        {
+          "id": "2606.07297",
+          "title": "SWE-Explore: Benchmarking How Coding Agents Explore Repositories",
+          "blurb": "Repository-level coding benchmarks such as SWE-bench have driven a rapid surge in the capabilities of coding agents."
+        },
+        {
+          "id": "2606.07805",
+          "title": "Beyond Goodhart's Law: A Dynamic Benchmark for Evaluating Compliance in Multi-Agent Systems",
+          "blurb": "The rapid evolution of Large Language Models (LLMs) from passive assistants to autonomous, execution-capable agents has introduced critical operational risks."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.07867",
+      "title": "The Cold-Start Safety Gap in LLM Agents",
+      "abstract": "Are tool-calling LLM agents equally safe throughout a conversation? We discover they are not: agents are most vulnerable at the very start of a session and become substantially safer after a few regular agentic tasks -- a phenomenon we term the cold-start safety gap. To study this systematically, we introduce Safety Over Depth for Agents (SODA), a benchmark that controls how many regular agentic tasks the agent completes before encountering a safety threat, supporting up to 20 preceding tasks. Evaluating 7 models from 4 families, safety improves by 9--52% as the number of preceding regular agentic tasks increases from zero to twenty. Representation analysis confirms that model hidden states gradually shift toward a safety-aligned region as more preceding tasks are present. By systematically studying which part of the preceding conversation matters most, we find that the regular agentic tasks themselves are the primary driver of safety, while the agent's own prior responses have less effect on safety but are essential for preserving later utility. This conclusion is further supported by evaluation on open-source safety benchmarks (AgentHarm, Agent Safety Bench) and utility benchmarks (BFCL, API-Bank), confirming that warming up the agent with regular agentic tasks before deployment makes it safer and preserves full capability. Based on these findings, we recommend a simple deployment strategy: having the agent complete a few regular agentic tasks before possible exposure to safety-critical requests mitigates the cold-start safety gap. Our code is available at https://github.com/Trustworthy-ML-Lab/Agent-Cold-Start-Safety-Gap",
+      "authors": [
+        "Chung-En Sun",
+        "Linbo Liu",
+        "Tsui-Wei Weng"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-05T21:58:19Z",
+      "updated": "2026-06-05T21:58:19Z",
+      "announced_date": "2026-06-05",
+      "first_seen": "2026-06-05",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.07867v1",
+        "pdf": "https://arxiv.org/pdf/2606.07867v1",
+        "html": "https://arxiv.org/html/2606.07867"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use",
+        "safety",
+        "science"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2606.07805",
+      "title": "Beyond Goodhart's Law: A Dynamic Benchmark for Evaluating Compliance in Multi-Agent Systems",
+      "abstract": "The rapid evolution of Large Language Models (LLMs) from passive assistants to autonomous, execution-capable agents has introduced critical operational risks. Most current evaluation frameworks neglect procedural compliance, leading to ''Machiavellian'' behaviors where agents strategically violate safety rules to maximize rewards - a direct manifestation of Goodhart's Law. To address this blind spot, we introduce MAC-Bench, a dynamic, adversarial benchmark designed to evaluate the procedural alignment of multi-agent systems under realistic pressure. We propose the SERV(Seed - Evolve - Refine - Verify) pipeline, an ``Agent-as-a-Benchmark'' paradigm that transforms unstructured legal texts into executable, contamination-free scenarios. By synthesizing holographic sandbox environments and injecting calibrated social-engineering pressure vectors, MAC-Bench forces agents into Pareto-optimal trade-offs between task success and regulatory adherence. We introduced novel metrics: the Compliance-Weighted Success Rate (CSR) and the Machiavellian Gap (MG), and conducted a comprehensive evaluation of state-of-the-art frontier models to reveal the pervasive trade-offs between success and compliance.",
+      "authors": [
+        "Yiyang Zhao",
+        "Zhuo Zhang",
+        "Qingxuan Le",
+        "Lizhen Qu",
+        "Zenglin Xu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-05T19:33:58Z",
+      "updated": "2026-06-05T19:33:58Z",
+      "announced_date": "2026-06-05",
+      "first_seen": "2026-06-05",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.07805v1",
+        "pdf": "https://arxiv.org/pdf/2606.07805v1",
+        "html": "https://arxiv.org/html/2606.07805"
+      },
+      "score": 15,
+      "tags": [
+        "multi-agent",
+        "safety"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2606.07314",
+      "title": "QBugLM: An Agentic Benchmarking Framework for LLM-based Quantum Software Debugging",
+      "abstract": "Quantum software bugs often yield silent, incorrect outputs rather than explicit errors, making them particularly difficult to detect and repair with conventional techniques. Although large language models (LLMs) have shown strong performance on classical software engineering tasks, their ability to debug quantum code remains largely unexplored. To bridge this gap, we propose QBugLM, a multi-agent framework that automates the quantum software debugging pipeline, from taxonomy-driven bug injection to LLM-based detection and repair, and finally to simulation-based validation, for framework-agnostic OpenQASM 3.0 programs. We further conduct a comprehensive case study using QBugLM to benchmark two LLMs, Claude 4.6 Sonnet and Qwen3 Coder Next, across different prompting strategies, bug categories, and quantum programs. Our results show that iterative feedback is critical, as a single retry raises Pass@1 from below 25% to above 80%. Moreover, simpler structured prompting can even outperform Chain-of-Thought and ReAct for reasoning-capable models under fixed-resource constraints. Our work takes initial steps toward benchmarking LLM capabilities for debugging quantum programs and offers practical insights to support future efforts in automated quantum software repair.",
+      "authors": [
+        "An B. B. Pham",
+        "Hoa T. Nguyen",
+        "Muhammad Usman"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.ET",
+        "quant-ph"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-06-05T14:34:46Z",
+      "updated": "2026-06-05T14:34:46Z",
+      "announced_date": "2026-06-05",
+      "first_seen": "2026-06-05",
+      "comment": "This paper was accepted at IEEE QSW 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.07314v1",
+        "pdf": "https://arxiv.org/pdf/2606.07314v1",
+        "html": "https://arxiv.org/html/2606.07314"
+      },
+      "score": 14,
+      "tags": [
+        "coding",
+        "multi-agent",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 1
+    },
+    {
+      "id": "2606.07297",
+      "title": "SWE-Explore: Benchmarking How Coding Agents Explore Repositories",
+      "abstract": "Repository-level coding benchmarks such as SWE-bench have driven a rapid surge in the capabilities of coding agents. Yet they usually treat coding tasks as a holistic, binary prediction problem (e.g., resolved or unresolved), neglecting fine-grained agent capabilities such as repository understanding, context retrieval, code localization, and bug diagnosis. In this paper, we introduce SWE-Explore, a benchmark that isolates the evaluation of repository exploration, a critical capability of coding agents. Given a repository and an issue, SWE-Explore asks an explorer to return a ranked list of relevant code regions under a fixed line budget. SWE-Explore covers 848 issues across 10 programming languages and 203 open-source repositories. For each instance, we derive line-level ground truth from independent agent trajectories that successfully solved the same issue, distilling the specific code regions their solution paths actually consulted. We evaluate exploration along coverage, ranking, and context-efficiency dimensions, showing that these metrics strongly track downstream repair behavior. Across a broad set of retrieval methods, general coding agents, and specialized localizers, we find that agentic explorers form a clear tier above classical retrieval. While file-level localization is already strong for modern methods, line-level coverage and efficient ranking remain the key axes differentiating state-of-the-art explorers.",
+      "authors": [
+        "Shaoqiu Zhang",
+        "Yuhang Wang",
+        "Jialiang Liang",
+        "Yuling Shi",
+        "Wenhao Zeng",
+        "Maoquan Wang",
+        "Shilin He",
+        "Ningyuan Xu",
+        "Siyu Ye",
+        "Kai Cai",
+        "Xiaodong Gu"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-06-05T14:08:27Z",
+      "updated": "2026-06-05T14:08:27Z",
+      "announced_date": "2026-06-05",
+      "first_seen": "2026-06-05",
+      "comment": "20 pages, 5 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.07297v1",
+        "pdf": "https://arxiv.org/pdf/2606.07297v1",
+        "html": "https://arxiv.org/html/2606.07297"
+      },
+      "score": 17,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 11
+    },
+    {
+      "id": "2606.07131",
+      "title": "MalSkillBench: A Runtime-Verified Benchmark of Malicious Agent Skills",
+      "abstract": "AI coding agents such as Claude Code and Gemini CLI increasingly extend themselves with third-party skills: markdown packages bundling natural-language instructions, executable scripts, and tool permissions. Because a skill is at once code and agent-facing instruction, it introduces a supply chain dependency whose risk is neither pure code nor pure prompt. Detection tools have never been measured against verified ground truth spanning this hybrid space, leaving their effectiveness unknown and wild-only evaluations biased. We present MalSkillBench, the first runtime-verified benchmark of malicious agent skills: 3,944 malicious skills labeled along a three-dimensional taxonomy of 108 cells. Of these, 3,214 come from a closed-loop Generate-Verify-Feedback pipeline admitting only samples whose malicious behavior fires inside a Docker sandbox under system-call monitoring and an LLM judge; we add 703 in-the-wild and 4,000 matched benign skills. Our measurements are consistent: code injection reaches 94.5% verification yield but prompt injection only 75.8%, the same fragility that later makes it hard to detect; the wild sample is narrow, dominated by one cryptocurrency-theft campaign (86.6% one behavior, 81% from two accounts) with a small but architecturally new tail attacking the agent control plane; the strongest skill-specific detector reaches 98.4% recall on code injection yet collapses on prompt-injection and agent-control attacks, and wild-only scoring swings the ranking by up to 66 recall points; supply-chain scanners and prompt-injection defenses each see only half of a skill, and no combination recovers the code-instruction relationship. Detecting malicious skills therefore requires reasoning jointly over task intent, code, and instructions. We release the dataset, pipeline, baselines, and results.",
+      "authors": [
+        "Wenbo Guo",
+        "Wei Zeng",
+        "Chengwei Liu",
+        "Xiaojun Jia",
+        "Yijia Xu",
+        "Lei Tang",
+        "Yong Fang",
+        "Yang Liu"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-06-05T10:43:19Z",
+      "updated": "2026-06-19T05:32:49Z",
+      "announced_date": "2026-06-05",
+      "first_seen": "2026-06-05",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.07131v3",
+        "pdf": "https://arxiv.org/pdf/2606.07131v3",
+        "html": "https://arxiv.org/html/2606.07131"
+      },
+      "score": 15,
+      "tags": [
+        "coding",
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "safety",
+      "citations": 11
+    },
+    {
+      "id": "2606.06960",
+      "title": "FinEvolveBench: A Benchmark for Self-Evolving Agents on Low-Repetition Tasks with Implicit Rewards",
+      "abstract": "Experience-based self-evolution enables language-model agents to improve their behavior by accumulating and updating experience at test time, yet existing evaluations often assume recurring task patterns and explicit success signals. We introduce \\textsc{FinEvolveBench}, a benchmark for self-evolving agents on low-repetition tasks with implicit rewards. The benchmark reconstructs a daily financial information stream over 31 Chinese A-share industry indices and aligns 177,324 public news articles with market observations. Researchers can define prediction horizons over this stream; we evaluate predictive market-sentiment factors against delayed market-adjusted returns after 10, 20, and 40 trading days. Unlike static benchmarks that score each prediction independently, \\textsc{FinEvolveBench} interleaves new decisions with delayed outcomes from earlier ones, testing whether agents can convert noisy real-world feedback into reusable experience at test time. Experiments with two backbone models show that the evaluated general-purpose memory systems do not consistently outperform the no-experience pipeline. A matched ablation further shows that feedback-driven utility updates help at shorter horizons on one backbone but hurt in most settings on the other. Together, these results position \\textsc{FinEvolveBench} as a diagnostic testbed for experience-based self-evolution under noisy, delayed, and outcome-level feedback.",
+      "authors": [
+        "Zihao Deng",
+        "Yining Zhu",
+        "Leiming Wang",
+        "Jingfei Lu",
+        "Junbo Wang",
+        "Chuncheng Ran",
+        "Yu Yang",
+        "Dixuan Yang",
+        "Jikun Shen"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-05T06:39:16Z",
+      "updated": "2026-08-12T07:10:01Z",
+      "announced_date": "2026-06-05",
+      "first_seen": "2026-06-05",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.06960v3",
+        "pdf": "https://arxiv.org/pdf/2606.06960v3",
+        "html": "https://arxiv.org/html/2606.06960"
+      },
+      "score": 23,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2606.07682",
+      "title": "SWE-Marathon: Can Agents Autonomously Complete Ultra-Long-Horizon Software Work?",
+      "abstract": "AI agents are increasingly expected to complete long-horizon workflows that require sustained progress over hours, millions of tokens, and complex environments. Yet current agent benchmarks largely evaluate short-form tasks, such as single pull requests, small tickets, or 5-10 minute exercises, limiting our ability to measure agents' capabilities in planning, long-context understanding, and memory use. We introduce SWE-Marathon, a benchmark of 20 long-horizon tasks spanning software engineering and adjacent technical domains. Each task consists of a unique executable environment, a human-written reference solution, and a multi-layer verification suite. Logged agent attempts average 27.2M total tokens, making SWE-Marathon substantially longer-horizon than existing SWE and command-line agent benchmarks. Current frontier coding agents solve fewer than 30% of tasks. Failures often arise from poor self-verification, self-reported infeasibility, and premature termination. We also observe reward-hacking behavior in 13.8% of rollouts, where agents attempt to exploit the environment or verifier to bypass the intended workflow. SWE-Marathon includes adversarial review of test suites and execution environments, as well as multi-layer checks designed to prevent shortcut solutions. We release SWE-Marathon, evaluation code, and agent trajectories at https://swe-marathon.org/.",
+      "authors": [
+        "Rishi Desai",
+        "Jesse Hu",
+        "Joan Cabezas",
+        "Neel Harsola",
+        "Pratyush Shukla",
+        "Roey Ben Chaim",
+        "Adnan El Assadi",
+        "Omkaar Mukund Kamath",
+        "Fenil Faldu",
+        "Prannay Hebbar",
+        "Jiankai Sun",
+        "Yiyuan Li",
+        "Pramod Srinivasan",
+        "Ishan Gupta",
+        "Christopher Settles",
+        "Daniel Wang",
+        "Derek Chen",
+        "Pranav Raja",
+        "Albert Liu",
+        "Marek Šuppa",
+        "Nevasini Sasikumar",
+        "Luyang Kong",
+        "Erik Quintanilla",
+        "Xiangyi Li",
+        "Ivan Bercovich",
+        "Steven Dillmann"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-06-05T00:39:44Z",
+      "updated": "2026-06-05T00:39:44Z",
+      "announced_date": "2026-06-05",
+      "first_seen": "2026-06-05",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.07682v1",
+        "pdf": "https://arxiv.org/pdf/2606.07682v1",
+        "html": "https://arxiv.org/html/2606.07682"
+      },
+      "score": 10,
+      "tags": [
+        "coding",
+        "memory",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 6
+    },
+    {
+      "id": "2606.06784",
+      "title": "What Your Posts Reveal: A Benchmark and Agentic Framework for User-Level Privacy Leakage on Social Media",
+      "abstract": "Public social media posts can reveal private information through weak cues scattered across text, images, or metadata. Such leakage is often cumulative and cross-post: cues that appear harmless in isolation may jointly expose a user's home, workplace, or routine. However, current research lacks a unified benchmark for user-level multimodal privacy leakage and an evaluation metric that captures exposure severity beyond binary accuracy. To address these gaps, we propose SopriBench, a synthetic benchmark guided by leakage patterns abstracted from a private reference corpus of Rednote and Instagram accounts, covering 50 user profiles and 1,569 images with attributes, contextual sensitivity, granularity, leakage type, inference difficulty, and supporting evidence. We further introduce the Privacy Exposure Score (PES), which weights value granularity by contextual sensitivity. Inspired by abductive reasoning, we introduce Argus, a training-free agentic framework for cumulative leakage inference. Argus forms hypotheses from accumulated evidence, verifies supporting evidence, and aggregates cross-post cues into privacy profiles, achieving 0.55 PES, a 25% improvement over the strongest baseline, with the largest gain on cross-post leakage.",
+      "authors": [
+        "Zifan Peng",
+        "Yini Huang",
+        "Aiwen Lu",
+        "Qiming Ye",
+        "Peixian Zhang",
+        "Jingyi Zheng",
+        "Yule Liu",
+        "Xuechao Wang",
+        "Xinlei He",
+        "Jiaheng Wei"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-06-05T00:02:47Z",
+      "updated": "2026-06-05T00:02:47Z",
+      "announced_date": "2026-06-05",
+      "first_seen": "2026-06-05",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.06784v1",
+        "pdf": "https://arxiv.org/pdf/2606.06784v1",
+        "html": "https://arxiv.org/html/2606.06784"
+      },
+      "score": 12,
+      "tags": [
+        "safety",
+        "planning",
+        "multimodal",
+        "workplace"
+      ],
+      "field": "workplace",
+      "citations": 1
+    }
+  ]
+}

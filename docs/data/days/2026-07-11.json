@@ -1,0 +1,183 @@
+{
+  "date": "2026-07-11",
+  "count": 3,
+  "report": {
+    "date": "2026-07-11",
+    "count": 3,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "3 new agent benchmarks",
+      "summary": "On July 11, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Tool use (2), Safety (2), Web agents (1), and Multimodal (1).",
+      "highlights": [
+        {
+          "id": "2607.19409",
+          "title": "FORCE-Bench: A Benchmark, Dataset, and Evaluation Harness for Agentic AI in Enterprise Finance",
+          "blurb": "Recent advances in large language models have accelerated deployment of agentic systems in operational finance."
+        },
+        {
+          "id": "2607.10490",
+          "title": "NetInjectBench: Benchmarking Indirect Prompt Injection in Tool-Using Large Language Model Agents for Network Operations",
+          "blurb": "Tool-using large language model (LLM) agents are attractive for network operations, but tickets, alerts, logs, runbooks, and ChatOps messages can carry indirect prompt injections."
+        },
+        {
+          "id": "2607.10079",
+          "title": "MAG: A Web-Agent Benchmark and Harness for Multimodal Action and Guide Generation",
+          "blurb": "Digital Adoption Platforms (DAPs) are embedded overlays widely used on web systems to guide users through operations inside a page, helping them get started with unfamiliar interfaces quickly."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年7月11日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在工具使用（2）、安全（2）、网页智能体（1）、多模态（1）。",
+      "highlights": [
+        {
+          "id": "2607.19409",
+          "title": "FORCE-Bench: A Benchmark, Dataset, and Evaluation Harness for Agentic AI in Enterprise Finance",
+          "blurb": "Recent advances in large language models have accelerated deployment of agentic systems in operational finance."
+        },
+        {
+          "id": "2607.10490",
+          "title": "NetInjectBench: Benchmarking Indirect Prompt Injection in Tool-Using Large Language Model Agents for Network Operations",
+          "blurb": "Tool-using large language model (LLM) agents are attractive for network operations, but tickets, alerts, logs, runbooks, and ChatOps messages can carry indirect prompt injections."
+        },
+        {
+          "id": "2607.10079",
+          "title": "MAG: A Web-Agent Benchmark and Harness for Multimodal Action and Guide Generation",
+          "blurb": "Digital Adoption Platforms (DAPs) are embedded overlays widely used on web systems to guide users through operations inside a page, helping them get started with unfamiliar interfaces quickly."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2607.10490",
+      "title": "NetInjectBench: Benchmarking Indirect Prompt Injection in Tool-Using Large Language Model Agents for Network Operations",
+      "abstract": "Tool-using large language model (LLM) agents are attractive for network operations, but tickets, alerts, logs, runbooks, and ChatOps messages can carry indirect prompt injections. We present NetInjectBench, a 130-scenario benchmark that separates untrusted artifact text, trusted policy metadata, and evaluation labels for network-operation tool use. The sample contains 40 benign, 40 weak-attack, 40 strong-attack, and 10 approved high-impact change scenarios; each is evaluated with Qwen2.5-7B, Llama3.1-8B, and Mistral-7B. Across 240 attack instances, naive execution reached an 82.50% unsafe tool-action rate. Prompt-only safety, Self-Reminder, Spotlighting, and a Two-Pass LLM Judge reduced this rate to 25.63%, 21.67%, 18.33%, and 10.00%, respectively. Static allowlisting reached 5.00% but blocked all approved changes, yielding 0.00% usefulness and 100.00% overblocking on approved cases. Under the stated metadata-integrity assumption, the metadata-aware policy gate produced 0/240 unsafe attack actions, with a 95% Wilson upper bound of 1.58%, while preserving 99.17% attack-scenario usefulness and 100.00% approved-change usefulness. The findings show that network-operation agents need execution-time authorization boundaries alongside prompt-level instruction hygiene.",
+      "authors": [
+        "Ruksat Khan Shayoni",
+        "Muhammad Faraz Shoaib",
+        "S M Asif Hossain",
+        "M. F. Mridha"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-07-11T21:54:20Z",
+      "updated": "2026-07-11T21:54:20Z",
+      "announced_date": "2026-07-11",
+      "first_seen": "2026-07-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.10490v1",
+        "pdf": "https://arxiv.org/pdf/2607.10490v1",
+        "html": "https://arxiv.org/html/2607.10490"
+      },
+      "score": 19,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "other",
+      "citations": 3
+    },
+    {
+      "id": "2607.10079",
+      "title": "MAG: A Web-Agent Benchmark and Harness for Multimodal Action and Guide Generation",
+      "abstract": "Digital Adoption Platforms (DAPs) are embedded overlays widely used on web systems to guide users through operations inside a page, helping them get started with unfamiliar interfaces quickly. Completing a real task, however, rarely means clicking a few buttons on a single page: it takes a sequence of actions that unfolds across changing page states. Prior studies have also treated automated web agent actions and guide text generation as two separate problems, and most of them feed models textual page representations such as the DOM or accessibility trees rather than the rendered screens that humans actually operate on. In this work we introduce MAG, the first benchmark that unifies task execution and guide writing into a single Multimodal Action and Guide task, with two grounding schemes over screenshots: Set-of-Mark element selection and raw pixel coordinates. We further build a complete harness for this compound task, covering annotation with LLM assistance and human verification, training, evaluation in live environments, and joint metrics for actions and guides. With this harness we evaluate frontier API models and open multimodal models, and report detailed analyses. Finally, we design a GRPO training method augmented with expert trajectories, which nearly doubles the success rate of a supervised 9B agent (from 6.9% to 13.2%) and improves guide quality at the same time. Even the strongest model completes fewer than 40% of the tasks, leaving ample room for future research.",
+      "authors": [
+        "Chengguang Gan",
+        "Hanjun Wei",
+        "Yunhao Liang",
+        "Zhixi Cai",
+        "Qinghao Zhang",
+        "Shiwen Ni"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-11T02:08:46Z",
+      "updated": "2026-07-16T03:28:43Z",
+      "announced_date": "2026-07-11",
+      "first_seen": "2026-07-11",
+      "comment": "8 pages main text, 21 pages total including appendices; 11 figures, 7 tables, 2 algorithms. Benchmark, harness, and model checkpoints to be released",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.10079v3",
+        "pdf": "https://arxiv.org/pdf/2607.10079v3",
+        "html": "https://arxiv.org/html/2607.10079"
+      },
+      "score": 10,
+      "tags": [
+        "web",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2607.19409",
+      "title": "FORCE-Bench: A Benchmark, Dataset, and Evaluation Harness for Agentic AI in Enterprise Finance",
+      "abstract": "Recent advances in large language models have accelerated deployment of agentic systems in operational finance. Existing benchmarks emphasize measuring general capabilities, instruction following, or safety, but few directly address the operational finance workflows that agentic systems are now being deployed to automate. Finance professionals require agents to not only provide factually sound and properly grounded information, but also ensure that this information is verifiable and consistently adheres to rules and constraints of the operational finance domain. We introduce FORCE-Bench, which contains 251 expert-annotated queries and evaluates responses using a rubric-based framework calibrated to the requirements of the operational finance domain, across eight dimensions: accuracy, citations, clarity, depth, groundedness, recency, relevance, and structure. FORCE-Bench assesses agentic systems on three task types: financial obligation research (querying ERP systems for accounts receivable and payable data), financial entity performance research (answering time-bound questions from public filings and market data), and business brief generation (synthesising multi-source company intelligence reports). To reflect real deployment conditions, we evaluate our purpose-built agent, as well as the general-purpose agentic systems, under common tool access and latency-bounded settings. Results show that general-purpose agentic systems do not consistently meet finance-domain quality requirements under operational constraints, while the purpose-built Finance Agent for Microsoft 365 Copilot is more reliable across dimensions. We release the dataset, rubrics, harness, and analysis code as open-source to support reproducible comparison and adaptation to other enterprise finance environments.",
+      "authors": [
+        "Wolfgang M. Pauli",
+        "Sarah Panda",
+        "Kidus Admassu",
+        "Said Bleik",
+        "Ademola Okerinde",
+        "Jeremy Reynolds"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-11T01:16:31Z",
+      "updated": "2026-07-11T01:16:31Z",
+      "announced_date": "2026-07-11",
+      "first_seen": "2026-07-11",
+      "comment": "22 pages, 10 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.19409v1",
+        "pdf": "https://arxiv.org/pdf/2607.19409v1",
+        "html": "https://arxiv.org/html/2607.19409"
+      },
+      "score": 22,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "other",
+      "citations": 2
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "date": "2026-08-02",
+  "count": 4,
+  "report": {
+    "date": "2026-08-02",
+    "count": 4,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 3,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On August 2, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Safety (3), Tool use (2), Planning / reasoning (1), and Coding agents (1).",
+      "highlights": [
+        {
+          "id": "2608.01149",
+          "title": "PATH-Bench: Path-Dependent Evaluation of Lifelong Agents",
+          "blurb": "Lifelong LLM agents increasingly adapt through external learning states that store past interactions as retrievable memories or reusable skills, yet existing benchmarks rarely account for how the path of accumulated expe…"
+        },
+        {
+          "id": "2608.07556",
+          "title": "MasDrift: Benchmarking Authorization Preservation Across Multi-Agent Architectures",
+          "blurb": "Multi-agent systems (MAS) decompose long-horizon tasks across supervisors and subagents, but delegated goals do not necessarily carry their original authorization boundaries."
+        },
+        {
+          "id": "2608.18136",
+          "title": "FraudBench: Stress-Testing Policy-Grounded Banking Agents Against Adaptive Fraud",
+          "blurb": "Conversational agents now act for end users through tools while holding access to customer databases and internal policy documents that a caller can reach through dialogue alone."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年8月2日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在安全（3）、工具使用（2）、规划 / 推理（1）、代码智能体（1）。",
+      "highlights": [
+        {
+          "id": "2608.01149",
+          "title": "PATH-Bench: Path-Dependent Evaluation of Lifelong Agents",
+          "blurb": "Lifelong LLM agents increasingly adapt through external learning states that store past interactions as retrievable memories or reusable skills, yet existing benchmarks rarely account for how the path of accumulated expe…"
+        },
+        {
+          "id": "2608.07556",
+          "title": "MasDrift: Benchmarking Authorization Preservation Across Multi-Agent Architectures",
+          "blurb": "Multi-agent systems (MAS) decompose long-horizon tasks across supervisors and subagents, but delegated goals do not necessarily carry their original authorization boundaries."
+        },
+        {
+          "id": "2608.18136",
+          "title": "FraudBench: Stress-Testing Policy-Grounded Banking Agents Against Adaptive Fraud",
+          "blurb": "Conversational agents now act for end users through tools while holding access to customer databases and internal policy documents that a caller can reach through dialogue alone."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.01358",
+      "title": "HopRefusalBench: Diagnosing Refusal Failures in Search-Augmented Agents for Multi-Hop Reasoning",
+      "abstract": "Search-augmented large language model agents are increasingly capable of solving knowledge-intensive tasks, but their behavior when a multi-hop question is fundamentally unanswerable remains poorly understood. Existing abstention benchmarks largely expose defects at the surface of single-hop queries and therefore cannot reveal failures that emerge only after valid intermediate reasoning and retrieval. We introduce HopRefusalBench, the first controlled benchmark of refusal within multi-hop search, comprising 889 unanswerable questions constructed from KILT-grounded entity paths. It crosses three causes of unanswerability (answer unknown, false premise, and underspecified context) with root, middle, and terminal topologies, making premise verification, intermediate-bridge validation, and terminal stopping separately observable. We further propose a final-outcome taxonomy spanning target-aware refusal, pseudo-refusal, hallucinated completion, and search-budget exhaustion, together with source-aware trajectory metrics for post-trigger continuation and token waste. Across ten frontier proprietary and open-weight models in search-augmented mode, the best model achieves a target-aware correct halting rate (TCHR) of only 42.9%. Root and middle items are consistently harder than terminal items, and all models attain their highest TCHR on false premises and their lowest on underspecified questions. Yet when pooled across categories, 84.7--98.4% of each model's explicit refusal-like responses identify the correct rationale, localizing the main bottleneck to committing to an appropriate non-answer; failed trajectories instead diverge into hallucination or search-budget exhaustion. These results establish refusal in multi-hop search as a consequential evaluation problem and provide a foundation for diagnosing and improving the reliability of search-augmented agents.",
+      "authors": [
+        "Jianan Xie",
+        "Xin Sun",
+        "Zhongqi Chen",
+        "Xing Zheng",
+        "Qiang Liu",
+        "Bowen Song"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-08-02T16:20:55Z",
+      "updated": "2026-08-02T16:20:55Z",
+      "announced_date": "2026-08-02",
+      "first_seen": "2026-08-02",
+      "comment": "20 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.01358v1",
+        "pdf": "https://arxiv.org/pdf/2608.01358v1",
+        "html": "https://arxiv.org/html/2608.01358"
+      },
+      "score": 8,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.01149",
+      "title": "PATH-Bench: Path-Dependent Evaluation of Lifelong Agents",
+      "abstract": "Lifelong LLM agents increasingly adapt through external learning states that store past interactions as retrievable memories or reusable skills, yet existing benchmarks rarely account for how the path of accumulated experience shapes what agents transfer and retain. In this work, we establish PATH-Bench, a benchmark for path-dependent evaluation of lifelong agents. PATH-Bench estimates directed task relationships via multi-model in-context learning, constructs probe-centered sequences with controlled helpful and interfering histories, and repeatedly evaluates probe tasks to measure average performance, forward transfer, backward transfer, and forgetting. We evaluate eight representative agents on single-turn code generation and multi-turn tool-use tasks under positive- and negative-dominant histories. Benchmark results show that experience utility depends jointly on how experience is represented and on the task's interaction structure, that strong transfer does not ensure retention, and that later experience can reshape gains acquired earlier in the learning path. Based on these findings, we propose Selective Experience Use (SEU), an agent harness that regulates how path-accumulated experience influences each new task, admitting helpful items while filtering out potential interference. SEU consistently reduces forgetting while improving forward transfer in the majority of settings. The PATH-Bench provides both a controlled evaluation framework and actionable guidance for designing more selective and robust lifelong agents.",
+      "authors": [
+        "Xidong Yang",
+        "Xingyi Zhang",
+        "Wenhao Li",
+        "Wenyan Liu",
+        "Junjie Sheng",
+        "Yun Hua",
+        "Wei Yin",
+        "Tao Fang",
+        "Chuyun Shen",
+        "Xiangfeng Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-02T11:00:04Z",
+      "updated": "2026-08-02T11:00:04Z",
+      "announced_date": "2026-08-02",
+      "first_seen": "2026-08-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.01149v1",
+        "pdf": "https://arxiv.org/pdf/2608.01149v1",
+        "html": "https://arxiv.org/html/2608.01149"
+      },
+      "score": 22,
+      "tags": [
+        "coding",
+        "tool-use",
+        "safety"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2608.18136",
+      "title": "FraudBench: Stress-Testing Policy-Grounded Banking Agents Against Adaptive Fraud",
+      "abstract": "Conversational agents now act for end users through tools while holding access to customer databases and internal policy documents that a caller can reach through dialogue alone. Banking is the clearest case: the same agent that answers a question can also change contact details, reset a PIN, or move money, so ordinary customer service is inseparable from authorization, fraud detection, and policy compliance. Existing financial-fraud benchmarks classify static transactions or messages, and general agent-safety benchmarks target prompt injection or generic harmful use; none test whether a policy-grounded banking agent safely acts when a caller manipulates identity, authorization, and trust over a conversation. We introduce FraudBench, an executable benchmark built on the $τ^2$-bench dual-control framework and the $τ$-Knowledge banking environment. Both the agent and the simulated caller act through tools over shared, mutable account state, and the agent may grant the caller access to selected tools; the environment exposes a 698-document internal policy corpus that the agent must retrieve from. FraudBench contains 150 authored adversarial scenarios; a frozen public set of 107 (90 across ten fraud mechanisms plus 17 chained adaptive attacks) is used for all reported runs, with 43 further chained attacks held out. Safety is history-dependent: single-control tasks satisfy every precondition but one, and adaptive attacks make a later, locally valid request unsafe because of an earlier probe, admission, or failed attempt. Each scenario is annotated with observable evidence, prohibited actions, safe dispositions, and intervention points. A preliminary single-trial evaluation of four agents on the 107 graded tasks yields attack-security between 49\\% and 65\\%, with money-mule and first-party fraud the most common cross-model weaknesses.",
+      "authors": [
+        "Dheeraj Mohandas Pai",
+        "Lu Xian"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-02T10:04:22Z",
+      "updated": "2026-08-02T10:04:22Z",
+      "announced_date": "2026-08-02",
+      "first_seen": "2026-08-02",
+      "comment": "9 Pages, 2 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.18136v1",
+        "pdf": "https://arxiv.org/pdf/2608.18136v1",
+        "html": "https://arxiv.org/html/2608.18136"
+      },
+      "score": 8,
+      "tags": [
+        "tool-use",
+        "safety",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 0
+    },
+    {
+      "id": "2608.07556",
+      "title": "MasDrift: Benchmarking Authorization Preservation Across Multi-Agent Architectures",
+      "abstract": "Multi-agent systems (MAS) decompose long-horizon tasks across supervisors and subagents, but delegated goals do not necessarily carry their original authorization boundaries. Existing safety benchmarks mainly study adversarial compromise, while work on constraint drift lacks controlled architecture-level evaluation. We introduce MasDrift, a benchmark of 600 benign productivity tasks across eight domains. Each task pairs required work with reserved actions. MasDrift compares single-agent, centralized, and decentralized coordination while varying hierarchy depth and peer width, measuring task completion and authorization preservation. Across generic multi-agent conditions, centralized hierarchies achieve 93.9--98.6% task completion versus 85.7--87.0% for peer networks, while unauthorized actions occur in 2.7--19.8% of tasks versus 0.6--0.8%, a gap that widens with hierarchy depth. We further compare two defenses that differ in where authorization evidence resides. One re-anchors every pending call to the original user request. The other carries an attenuated policy along the delegation chain. Re-anchoring reduces unauthorized actions in every model configuration we evaluate, at a cost of 1.6 points of pooled completion. Chain propagation blocks required work instead, forfeiting up to 36.3 points. A heterogeneous case study confirms that the failure follows from coordination rather than model strength. MasDrift exposes a centralization tradeoff and makes authorization preservation a measurable property of MAS design.",
+      "authors": [
+        "Zhuoning Xu",
+        "Xiucheng Zhang",
+        "Hanjun Luo",
+        "Yingbin Jin",
+        "Yinpeng Dong",
+        "Hanan Salam"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-08-02T04:46:15Z",
+      "updated": "2026-08-11T07:14:50Z",
+      "announced_date": "2026-08-02",
+      "first_seen": "2026-08-02",
+      "comment": "preprint",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.07556v2",
+        "pdf": "https://arxiv.org/pdf/2608.07556v2",
+        "html": "https://arxiv.org/html/2608.07556"
+      },
+      "score": 15,
+      "tags": [
+        "multi-agent",
+        "safety"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    }
+  ]
+}

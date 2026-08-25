@@ -1,0 +1,255 @@
+{
+  "date": "2026-07-13",
+  "count": 5,
+  "report": {
+    "date": "2026-07-13",
+    "count": 5,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      }
+    ],
+    "en": {
+      "headline": "5 new agent benchmarks",
+      "summary": "On July 13, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Tool use (2), Safety (2), Planning / reasoning (2), and Memory (1).",
+      "highlights": [
+        {
+          "id": "2607.11042",
+          "title": "BackendForge: Benchmarking Agentic End-to-End Code Generation with Backend Services",
+          "blurb": "Large language models (LLMs) are increasingly used in agentic coding settings, where they can inspect files, execute commands, run tests, observe failures, and iteratively revise code."
+        },
+        {
+          "id": "2607.13081",
+          "title": "SingGuard-NSFA: Extensible Guardrails for Agentic AI via Generative Reasoning and Real-Time Classification",
+          "blurb": "We present nsfaguard, a guardrail framework for securing agentic AI systems against operational threats, such as prompt injection, sensitive information extraction, malicious code requests, dangerous tool misuse, and res…"
+        },
+        {
+          "id": "2607.26072",
+          "title": "IFCMemoryBench: Evaluating Long-Term Memory of LLM-Based Agents in BIM Information Retrieval",
+          "blurb": "Long-term memory is becoming a core capability of LLM-based agents, but existing evaluations largely test conversational recall in open-domain or persona-grounded settings."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年7月13日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在工具使用（2）、安全（2）、规划 / 推理（2）、记忆（1）。",
+      "highlights": [
+        {
+          "id": "2607.11042",
+          "title": "BackendForge: Benchmarking Agentic End-to-End Code Generation with Backend Services",
+          "blurb": "Large language models (LLMs) are increasingly used in agentic coding settings, where they can inspect files, execute commands, run tests, observe failures, and iteratively revise code."
+        },
+        {
+          "id": "2607.13081",
+          "title": "SingGuard-NSFA: Extensible Guardrails for Agentic AI via Generative Reasoning and Real-Time Classification",
+          "blurb": "We present nsfaguard, a guardrail framework for securing agentic AI systems against operational threats, such as prompt injection, sensitive information extraction, malicious code requests, dangerous tool misuse, and res…"
+        },
+        {
+          "id": "2607.26072",
+          "title": "IFCMemoryBench: Evaluating Long-Term Memory of LLM-Based Agents in BIM Information Retrieval",
+          "blurb": "Long-term memory is becoming a core capability of LLM-based agents, but existing evaluations largely test conversational recall in open-domain or persona-grounded settings."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2607.12085",
+      "title": "Operationalising Multi-Dimensional Evaluation for Conversational Agents: A Scalable, Governed Pipeline with Selective Re-evaluation and Model Benchmarking",
+      "abstract": "Evaluating retail conversational agents requires methods beyond lexical-overlap metrics to assess intent alignment, factuality, helpfulness, clarity, tone, and overall response quality. Although LLM-as-a-judge methods provide scalable alternatives to human evaluation, production deployment introduces challenges in governance, reproducibility, cost, schema consistency, traceability, and reliability. We present GenAI Evaluation, a governed, configuration-driven pipeline for large-scale evaluation of retail conversational systems. It processes production chatbot logs through normalization, sharding, asynchronous execution, and schema-constrained LLM scoring. The framework evaluates helpfulness, truthfulness, clarity, tone alignment, and translation-specific dimensions. Selective re-evaluation processes only incomplete, malformed, or schema-invalid records, while schema locking, versioned configurations, validation logs, and record-level provenance support auditability. The framework processes approximately 50,000 records daily and has evaluated more than two million interactions. Validation used 12,980 stratified-random human-labeled records from four trained annotators. Classification covered 14 intents, 156 sub-intents, 18 major domains, and 129 sub-domains. The pipeline achieved a macro F1 score of 0.93 and 89% human-acceptability accuracy for translation.",
+      "authors": [
+        "Niranjan Kumar M",
+        "Balaji Nagarajan",
+        "Karthik Nair",
+        "Faysal Satter",
+        "Nithin Surendran"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-13T19:01:56Z",
+      "updated": "2026-07-13T19:01:56Z",
+      "announced_date": "2026-07-13",
+      "first_seen": "2026-07-13",
+      "comment": "14 pages, 1 figure of design of architecture and 2 tables exploring the results and benchmarking",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.12085v1",
+        "pdf": "https://arxiv.org/pdf/2607.12085v1",
+        "html": "https://arxiv.org/html/2607.12085"
+      },
+      "score": 6,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.11818",
+      "title": "MM-ToolSandBox: A Unified Framework for Evaluating Visual Tool-Calling Agents",
+      "abstract": "We introduce MM-ToolSandBox, a benchmark and evaluation framework for visually grounded tool-calling agents. The framework provides a stateful execution environment spanning 500+ tools across 16 application domains, supporting multi-image, multi-turn tasks where agents must ground progressively arriving visual inputs into executable tool calls while handling realistic conversational phenomena (goal revisions, error corrections, state mutations). An automated scenario generation pipeline produces diverse, visually grounded scenarios through information-flow-guided planning and multi-stage quality filtering, yielding 258 human-verified nominal scenarios and 50 variants targeting interactive UI applications. Evaluating 12 state-of-the-art models, from 4B open-weight to frontier proprietary systems, shows that current models still lack robust visual tool-calling capability: even the best model achieves below 50% success rate. Our failure analysis further reveals that visual precision, not only planning, is a primary bottleneck for capable models: 53% of failures stem from incorrect information extraction from images despite otherwise correct task workflows. A planning-to-precision crossover emerges with scale: smaller models fail at deciding what to do, while larger models fail at perceiving what they see, suggesting fundamentally different research directions for improving models at different capability levels. The framework and the benchmark are publicly available at https://github.com/apple/ml-mmtoolsandbox",
+      "authors": [
+        "Kaixin Ma",
+        "Di Feng",
+        "Alexander Metz",
+        "Jiarui Lu",
+        "Eshan Verma",
+        "Afshin Dehghan"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-07-13T17:13:09Z",
+      "updated": "2026-08-21T08:13:36Z",
+      "announced_date": "2026-07-13",
+      "first_seen": "2026-07-13",
+      "comment": "Benchmark link: https://github.com/apple/ml-mmtoolsandbox",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.11818v2",
+        "pdf": "https://arxiv.org/pdf/2607.11818v2",
+        "html": "https://arxiv.org/html/2607.11818"
+      },
+      "score": 6,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.26072",
+      "title": "IFCMemoryBench: Evaluating Long-Term Memory of LLM-Based Agents in BIM Information Retrieval",
+      "abstract": "Long-term memory is becoming a core capability of LLM-based agents, but existing evaluations largely test conversational recall in open-domain or persona-grounded settings. We argue that a stronger test is whether an agent can reuse information from prior sessions while acting over a live, structured, domain-specific environment. We study this problem in Building Information Modelling (BIM), a professional engineering workflow where agents must query large IFC models while also relying on project specifications, client decisions, and engineering conventions often discussed in conversation but absent from the model. We introduce IFCMemoryBench, a benchmark for evaluating long-term memory in LLM-based BIM information retrieval. IFCMemoryBench contains 143 multi-session tasks across 19 projects and 4,016 prior sessions, derived from incomplete-information questions in IFC-Bench v2. Each task seeds missing project context across earlier conversations and later asks a probe question that can be answered only by combining remembered context with live IFC queries. Our evaluation framework decomposes memory performance into ingestion, retrieval, and utilization, and measures both answer quality and memory quality with expert-validated LLM judges. We evaluate representative vector-, graph-, and file-based memory systems. The strongest system achieves only 32.4% answer accuracy under a deployment-realistic ingestion scope, and remains below 60% under oracle-filtered ingestion or a stronger probe agent. Analysis shows that current general-purpose memory systems often retrieve topically relevant context but store project knowledge as incomplete or fragmented facts. These results reveal a domain-transfer gap in agent memory and suggest that reliable professional agents require domain-aware memory representations linking conversations, project knowledge, and structured model entities.",
+      "authors": [
+        "Changyu Du",
+        "Alexander Vosseler",
+        "Filippo Mazza",
+        "André Borrmann"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-07-13T08:45:00Z",
+      "updated": "2026-07-13T08:45:00Z",
+      "announced_date": "2026-07-13",
+      "first_seen": "2026-07-13",
+      "comment": "KDD 2026 Workshop on Evaluation and Trustworthiness of Agentic AI",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.26072v1",
+        "pdf": "https://arxiv.org/pdf/2607.26072v1",
+        "html": "https://arxiv.org/html/2607.26072"
+      },
+      "score": 10,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.13081",
+      "title": "SingGuard-NSFA: Extensible Guardrails for Agentic AI via Generative Reasoning and Real-Time Classification",
+      "abstract": "We present nsfaguard, a guardrail framework for securing agentic AI systems against operational threats, such as prompt injection, sensitive information extraction, malicious code requests, dangerous tool misuse, and resource exhaustion. We first introduce the NSFA taxonomy, which organizes 185 risk variants into a CIA-triad-grounded hierarchy and is cross-validated against three well-established OWASP guidelines. Based on this taxonomy, we construct a benchmark suite spanning 133 languages, comprising over 93K purpose-built samples targeting both user queries and agent responses, along with 3,435 cross-source samples adapted from five public agent-security datasets. To detect these operational threats in practice, we develop a dual-mode approach combining SFT-based generative reasoning for interpretable offline auditing with discriminative classification heads on the frozen backbone, enabling real-time detection at approximately 50,ms. We release four models with 0.8B, 2B, 4B, and 9B parameters, all achieving $\\geq$94% F1 on purpose-built benchmarks and surpassing the strongest competing guardrails by 6 to 12 absolute points. On cross-source evaluation, the 9B model attains 91.29% F1 with a more balanced precision--recall trade-off. Moreover, ablation experiments show that classification heads can equip a guardrail with risk detection capabilities beyond its original scope and achieve state-of-the-art performance. These results demonstrate the extensibility of the approach and its generality as a plug-in enhancement.",
+      "authors": [
+        "SingGuard Team"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-07-13T07:28:45Z",
+      "updated": "2026-07-13T07:28:45Z",
+      "announced_date": "2026-07-13",
+      "first_seen": "2026-07-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.13081v1",
+        "pdf": "https://arxiv.org/pdf/2607.13081v1",
+        "html": "https://arxiv.org/html/2607.13081"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.11042",
+      "title": "BackendForge: Benchmarking Agentic End-to-End Code Generation with Backend Services",
+      "abstract": "Large language models (LLMs) are increasingly used in agentic coding settings, where they can inspect files, execute commands, run tests, observe failures, and iteratively revise code. This shift raises a central evaluation question: can an agentic LLM generate an end-to-end software artifact that is both deployable and behaviorally correct under execution? Backend services provide a controlled but realistic substrate for this evaluation. Their APIs expose application-level executable semantics, and deployed behavior can be checked deterministically against an OpenAPI contract through black-box HTTP interactions. We introduce BackendForge, a benchmark of 56 contract-defined backend generation tasks rewritten from real open-source applications. Given a visible specification and an OpenAPI contract, an LLM must generate a Dockerized service that is built, deployed, and evaluated only through HTTP tests. To strengthen evaluation without introducing hidden requirements, BackendForge uses a test agent and a code agent to co-evolve the test oracle and reference service, where the test agent proposes specification-grounded backend tests and the code agent repairs the reference implementation. Although the best-performing model, GPT-5.5, succeeds on 55.4\\% of tasks under the base oracle, it succeeds on only 28.6\\% under the final oracle. This gap suggests that current LLMs can implement many local API behaviors, but still struggle to produce complete backend services.",
+      "authors": [
+        "Yuzhe Guo",
+        "Mengzhou Wu",
+        "Yuan Cao",
+        "Jialei Wei",
+        "Dezhi Ran",
+        "Wei Yang",
+        "Tao Xie"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-07-13T03:13:21Z",
+      "updated": "2026-07-13T03:13:21Z",
+      "announced_date": "2026-07-13",
+      "first_seen": "2026-07-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.11042v1",
+        "pdf": "https://arxiv.org/pdf/2607.11042v1",
+        "html": "https://arxiv.org/html/2607.11042"
+      },
+      "score": 15,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    }
+  ]
+}

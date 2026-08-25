@@ -1,0 +1,494 @@
+{
+  "date": "2026-06-09",
+  "count": 9,
+  "report": {
+    "date": "2026-06-09",
+    "count": 9,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 5,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 4,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 3,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "science",
+        "count": 2,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      }
+    ],
+    "en": {
+      "headline": "9 new agent benchmarks",
+      "summary": "On June 9, 2026, arXiv listed 9 new agent benchmarks. Work clustered around Tool use (5), Planning / reasoning (4), Safety (3), and Science lab (2).",
+      "highlights": [
+        {
+          "id": "2606.11150",
+          "title": "ABC-Bench: An Agentic Bio-Capabilities Benchmark for Biosecurity",
+          "blurb": "Large language models (LLMs) are rapidly acquiring capabilities relevant to biological research, from literature synthesis to interpretation of experimental data."
+        },
+        {
+          "id": "2606.11042",
+          "title": "Workflow-GYM: Towards Long-Horizon Evaluation of Computer-use Agentic tasks in Real-World Professional Fields",
+          "blurb": "Recent years have witnessed the rapid evolution of AI agents toward handling increasingly complex, real-world tasks."
+        },
+        {
+          "id": "2606.11070",
+          "title": "T1-Bench: Benchmarking Multi-Scenario Agents in Real-World Domains",
+          "blurb": "Recent advances in reasoning and tool-calling capabilities of large language models (LLMs) have enabled increasingly capable agentic systems."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 9 篇 Agent Benchmark",
+      "summary": "2026年6月9日，arXiv 新增 9 篇 Agent Benchmark。当日主题集中在工具使用（5）、规划 / 推理（4）、安全（3）、科学实验（2）。",
+      "highlights": [
+        {
+          "id": "2606.11150",
+          "title": "ABC-Bench: An Agentic Bio-Capabilities Benchmark for Biosecurity",
+          "blurb": "Large language models (LLMs) are rapidly acquiring capabilities relevant to biological research, from literature synthesis to interpretation of experimental data."
+        },
+        {
+          "id": "2606.11042",
+          "title": "Workflow-GYM: Towards Long-Horizon Evaluation of Computer-use Agentic tasks in Real-World Professional Fields",
+          "blurb": "Recent years have witnessed the rapid evolution of AI agents toward handling increasingly complex, real-world tasks."
+        },
+        {
+          "id": "2606.11070",
+          "title": "T1-Bench: Benchmarking Multi-Scenario Agents in Real-World Domains",
+          "blurb": "Recent advances in reasoning and tool-calling capabilities of large language models (LLMs) have enabled increasingly capable agentic systems."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.11447",
+      "title": "AI Coding Agents Can Reproduce Social Science Findings",
+      "abstract": "Recent anecdotal evidence suggests that AI coding agents can reproduce published findings when provided with original data and code; yet systematic evaluation across social sciences remains limited. Existing evaluation benchmarks are insufficient, either small or conflate agent performance with problems in the reproduction materials themselves, such as code that fails to execute correctly. Here we introduce SocSci-Repro-Bench, a benchmark of 221 tasks spanning four disciplines and 13 substantive domains, constructed from studies whose results are either fully reproducible with available materials or demonstrably non-reproducible due to missing data, allowing us to isolate agents' reproduction capacity. Evaluating two frontier coding agents, Claude Code and Codex, we find that both can reproduce a large share of social science findings, with Claude Code substantially outperforming Codex. These reproduction rates considerably exceed those previously reported for general-purpose LLM-based agents on comparable reproducibility benchmarks. Both agents also perform strongly on a reasoning task requiring identification of underlying research questions, and additional analyses suggest that results are not primarily driven by memorization. Providing the original paper PDF alongside replication materials modestly improves performance but introduces bias on tasks where reproduction is impossible. We also show that agents can be nudged toward confirmatory specification search through subtle prompt framing. Together, these findings suggest that at least some frontier coding agents can serve as reliable executors of computational workflows while underscoring the need for careful benchmarking and prompt design as AI systems assume larger roles in scientific production.",
+      "authors": [
+        "Meysam Alizadeh",
+        "Mohsen Mosleh",
+        "Fabrizio Gilardi",
+        "Atoosa Kasirzadeh",
+        "Joshua Tucker"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-09T21:00:05Z",
+      "updated": "2026-06-09T21:00:05Z",
+      "announced_date": "2026-06-09",
+      "first_seen": "2026-06-09",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.11447v1",
+        "pdf": "https://arxiv.org/pdf/2606.11447v1",
+        "html": "https://arxiv.org/html/2606.11447"
+      },
+      "score": 11,
+      "tags": [
+        "coding",
+        "planning",
+        "science"
+      ],
+      "field": "coding",
+      "citations": 2
+    },
+    {
+      "id": "2606.11150",
+      "title": "ABC-Bench: An Agentic Bio-Capabilities Benchmark for Biosecurity",
+      "abstract": "Large language models (LLMs) are rapidly acquiring capabilities relevant to biological research, from literature synthesis to interpretation of experimental data. Increasingly, LLM agents can also perform in silico biology tasks that previously required experienced human biologists. These emerging AI capabilities offer new opportunities for scientific discovery and biomedical advances, but they also shift the landscape of biosecurity risks. To address this, we introduce the Agentic Bio-Capabilities Benchmark (ABC-Bench), a suite of tasks to measure agentic biosecurity-relevant capabilities. ABC-Bench evaluates LLM agents on both benign and dual-use biology tasks: writing code to operate liquid handling robots, designing DNA fragments for in vitro assembly, and evading DNA synthesis screening. These tasks require a combination of biology and software expertise. All tested LLM agents outperformed the median expert human baseliner on all three tasks. Agents performed highly on tasks drawing on published knowledge and well-documented protocols, and more weakly on a task requiring novel bioinformatics reasoning. In three wet-lab validation experiments, we found that OpenAI's o4-mini-high produced scripts that, when run on an OpenTrons liquid handling robot, successfully assembled DNA with expected sequences.",
+      "authors": [
+        "Andrew Bo Liu",
+        "Samira Nedungadi",
+        "Bryce Cai",
+        "Alex Kleinman",
+        "Harmon Bhasin",
+        "Seth Donoughe"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CY"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-09T17:35:37Z",
+      "updated": "2026-06-09T17:35:37Z",
+      "announced_date": "2026-06-09",
+      "first_seen": "2026-06-09",
+      "comment": "18 pages. To be published in ICML 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.11150v1",
+        "pdf": "https://arxiv.org/pdf/2606.11150v1",
+        "html": "https://arxiv.org/html/2606.11150"
+      },
+      "score": 22,
+      "tags": [
+        "embodied",
+        "planning",
+        "research",
+        "science"
+      ],
+      "field": "embodied",
+      "citations": 6
+    },
+    {
+      "id": "2606.20661",
+      "title": "From Knowing to Acting: Benchmarking Self-Awareness Capability of LLM Agents",
+      "abstract": "The integration of external tools has transitioned LLM agents from passive responders to autonomous systems. However, current benchmarks prioritize execution success, neglecting self-awareness capability, the ability to discern whether a problem requires necessary external resources or can be solved via internal parametric knowledge. To address this, we introduce KAPRO (Knowing-Acting Quadrant PRObe), a framework that evaluates cognitive-behavioral alignment by decoupling an agent's metacognitive judgment (Knowing) from its spontaneous execution (Acting). We further construct KAware, a dataset rigorously partitioning tasks into external, internal, and hybrid subspaces to systematically probe these epistemic boundaries. Extensive experiments across diverse agent architectures show that self-awareness capability is strongly correlated with task success but degrades sharply in internal-capability settings. Moreover, open-source and instruction-following models exhibit stronger tool overuse due to shallow pattern matching, while proprietary and reasoning-oriented models demonstrate more reliable cognitive gating. Benchmark and codes are available at https://github.com/AI-Santiago/KAware.",
+      "authors": [
+        "Yifan Li",
+        "Shengbin Yue",
+        "Boyu Feng",
+        "Jinhu Qi",
+        "Bo Ke",
+        "Zixing Song",
+        "Hongru Wang",
+        "Zhongyu Wei",
+        "Irwin King"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-09T17:17:08Z",
+      "updated": "2026-06-09T17:17:08Z",
+      "announced_date": "2026-06-09",
+      "first_seen": "2026-06-09",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.20661v1",
+        "pdf": "https://arxiv.org/pdf/2606.20661v1",
+        "html": "https://arxiv.org/html/2606.20661"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.11070",
+      "title": "T1-Bench: Benchmarking Multi-Scenario Agents in Real-World Domains",
+      "abstract": "Recent advances in reasoning and tool-calling capabilities of large language models (LLMs) have enabled increasingly capable agentic systems. However, existing benchmarks remain limited in task complexity, realism, and domain diversity, and often fail to capture interactions that span multiple domains, limiting their ability to evaluate agents in realistic multi-step settings that require sustained reasoning and coordination. To address these limitations, we introduce T1-Bench, a high-fidelity, comprehensive benchmark for evaluating agentic systems in realistic customer-facing, multi-domain environments, featuring interleaved scenarios that require structured reasoning across multi-turn user-assistant interactions and substantially increasing both compositional complexity and evaluative rigor across 25 domains of varying difficulty. We evaluate T1-Bench using 12 proprietary and open-weight models, providing a reproducible and standardized framework for assessing agent behavior, tool utilization, and conversational quality in complex, multi-step environments. We further complement automatic evaluation with human judgments to strengthen the assessment of qualitative performance. Overall, T1-Bench substantially advances prior benchmarks by increasing task complexity, interaction depth, and domain coverage in simulated multi-domain environments. To facilitate future research on agentic systems, we will publicly release data and evaluation code as open source.",
+      "authors": [
+        "Genta Indra Winata",
+        "Amartya Chakraborty",
+        "Yuzhen Lin",
+        "Swasthi P Rao",
+        "Shikhhar Siingh",
+        "Houhan Lu",
+        "Nadia Bathaee",
+        "Sriharsha Hatwar",
+        "Paresh Dashore",
+        "Anmol Jain",
+        "Kshitij Tayal",
+        "Xiuzhu Lin",
+        "Anirban Das",
+        "Sambit Sahu",
+        "Shi-Xiong Zhang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-09T16:32:14Z",
+      "updated": "2026-06-09T16:32:14Z",
+      "announced_date": "2026-06-09",
+      "first_seen": "2026-06-09",
+      "comment": "Preprint",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.11070v1",
+        "pdf": "https://arxiv.org/pdf/2606.11070v1",
+        "html": "https://arxiv.org/html/2606.11070"
+      },
+      "score": 18,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.11042",
+      "title": "Workflow-GYM: Towards Long-Horizon Evaluation of Computer-use Agentic tasks in Real-World Professional Fields",
+      "abstract": "Recent years have witnessed the rapid evolution of AI agents toward handling increasingly complex, real-world tasks. However, existing benchmarks rarely evaluate whether agents can operate graphical user interfaces to complete long-horizon, high-value professional workflows across diverse domains. Current GUI benchmarks still predominantly focus on general-purpose software, relatively simple applications, and short-horizon tasks, leaving it largely unknown whether modern agents can follow user instructions to autonomously operate domain-specific professional software and accomplish economically valuable work in an end-to-end manner. To bridge this gap, we introduce Workflow-GYM, a benchmark for long-horizon GUI tasks centered on professional domains and specialized software environments. Through extensive experiments on state-of-the-art models, we find that even the strongest models achieve only slightly above 30% success rates, highlighting that professional long-horizon GUI workflows remain highly challenging for current GUI agents. Further analysis reveals that current agents struggle to maintain long-horizon workflow consistency, frequently exhibiting workflow stage omission, error propagation, objective drift, and insufficient understanding of professional software environments. Our findings provide important insights into the limitations of current agent systems and suggest key directions for the next generation of GUI-agent research.",
+      "authors": [
+        "Liya Zhu",
+        "Jingzhe Ding",
+        "Jian Zhang",
+        "Jianbo Xue",
+        "Shihao Liang",
+        "Ge Zhang",
+        "Yi Zhu",
+        "Duju Zeng",
+        "Xiang Gao",
+        "Qingshui Gu",
+        "Mailun Gao",
+        "Huimin Che",
+        "Yan Zhao",
+        "Peiheng Zhou",
+        "Haojun Wang",
+        "Chaobo Xian",
+        "Lili Le",
+        "Chi Wu",
+        "Yiwei Liu",
+        "Shengda Long",
+        "Jiale Yang",
+        "Fangzhi Xu",
+        "Sijin Wu",
+        "Haodong Duan",
+        "Chao He",
+        "Zhaojian Li",
+        "Minchao Wang",
+        "Huan Zhou",
+        "Jiani Hou",
+        "Chuqian Yu",
+        "Weiran Shi",
+        "Hongwan Gao",
+        "Jiamin Chen",
+        "Guanhong Chen",
+        "Tingqin Luo",
+        "Kaiyuan Zhang",
+        "Zhixin Yao",
+        "Qing Hua",
+        "Yuhao Jiang",
+        "Jin Chen",
+        "Pu Chen",
+        "Zhenyu Hu",
+        "Xingyu Li",
+        "Zhengxuan Jiang",
+        "Meng Cao",
+        "Tianfeng Long",
+        "Haozhe Wang",
+        "Mingzhang Wang",
+        "Yichen Zhang",
+        "Yiming Dai",
+        "Chenchen Zhang",
+        "Jiaying Wang",
+        "Xinying Liu",
+        "Xingzu Liu",
+        "Lingling Zhang",
+        "Xinjie Chen",
+        "Yujia Qin",
+        "Wangchunshu Zhou",
+        "Zhiyong Wu",
+        "Yang Liu",
+        "Jiaheng Liu",
+        "Lei Zhang",
+        "Shen Yan",
+        "Wenhao Huang",
+        "Zaiyuan Wang",
+        "Xiaolong Chang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-09T16:10:16Z",
+      "updated": "2026-07-17T12:22:12Z",
+      "announced_date": "2026-06-09",
+      "first_seen": "2026-06-09",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.11042v4",
+        "pdf": "https://arxiv.org/pdf/2606.11042v4",
+        "html": "https://arxiv.org/html/2606.11042"
+      },
+      "score": 20,
+      "tags": [
+        "gui",
+        "computer-use",
+        "workplace"
+      ],
+      "field": "workplace",
+      "citations": 1
+    },
+    {
+      "id": "2606.10813",
+      "title": "RedAct: Redacting Agent Capability Traces for Procedural Skill Protection",
+      "abstract": "Users rely on execution traces to observe agent behavior, diagnose failures, and ensure accountability. These traces contain rich procedural detail, including tool invocations, intermediate decisions, and error-recovery logic. Yet this detail can expose private procedural skills, allowing downstream methods to recover key formulas, thresholds, and strategies without access to model weights or skill files. To quantify this risk and evaluate protection, we construct CapTraceBench, a benchmark of 75 specialized long-horizon tasks and 154 curated skills across seven domains. We also introduce RedAct, a protected trace release framework that localizes protected key information, rewrites traces while preserving verifier-critical evidence, and embeds behavioral watermarks for downstream provenance analysis. Across representative trace reuse methods, RedAct reduces normalized skill transfer (NST) from 44.7-67.1% on raw traces to below the no-skill baseline, while preserving audit evidence. Its standalone behavioral watermarks reach 93.6-100.0% true detection with a false alarm rate of at most 1.9%. These results frame public agent traces as security interfaces and show that selective redaction can reduce procedural capability leakage without removing audit evidence.",
+      "authors": [
+        "Shuwen Xu",
+        "Zhitao He",
+        "Yi R. Fung"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-06-09T12:57:50Z",
+      "updated": "2026-06-12T05:13:22Z",
+      "announced_date": "2026-06-09",
+      "first_seen": "2026-06-09",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.10813v3",
+        "pdf": "https://arxiv.org/pdf/2606.10813v3",
+        "html": "https://arxiv.org/html/2606.10813"
+      },
+      "score": 5,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2608.18099",
+      "title": "FinSkillBench: Evaluating AI Agents and Domain Skills for Investment Management",
+      "abstract": "Investment management is a high-stakes domain in which agentic AI systems must do more than generate plausible text. They must retrieve point-in-time data, assemble correct computational inputs, invoke specialized methods, and produce auditable structured outputs. We introduce FinSkillBench, an evaluation suite designed to measure whether language model agents can effectively use financial domain skills to solve investment management tasks. The benchmark spans three domains, portfolio construction, risk management, and fundamental analysis, and includes 12 subtasks with 2,603 task episodes. Each episode provides point-in-time inputs, hidden ground truth, and a task-specific verifier.We compare three conditions: no skill, curated skill packages consisting of procedural documents and executable components, and self-generated skills in which the agent writes and reuses its own procedures within an episode. Across 9 models and a large-scale evaluation, curated skills consistently improve performance, raising mean scores from 0.366 to 0.528, with the largest gains in portfolio construction and risk management. In contrast, self-generated skills provide little benefit despite higher computational cost. An independent evaluation using a separate agent framework (Hermes Agent, 8 models, 5,280 episodes total) reproduces the directional pattern across all three domains, with the magnitude of skill effects varying by subtask and harness. These results showthat in investment management agents, access to reliable procedural skills can be as important as model choice, while naive self-generation of skills is often ineffective. We release the benchmark, evaluation tools, curated skill packages, and full trajectories to support further research.",
+      "authors": [
+        "Jermyn Zhen Yong Bek",
+        "Zhuang Qiang Bok",
+        "Zhongtian Sun"
+      ],
+      "categories": [
+        "cs.AI",
+        "q-fin.PM"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-09T07:40:39Z",
+      "updated": "2026-06-09T07:40:39Z",
+      "announced_date": "2026-06-09",
+      "first_seen": "2026-06-09",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.18099v1",
+        "pdf": "https://arxiv.org/pdf/2608.18099v1",
+        "html": "https://arxiv.org/html/2608.18099"
+      },
+      "score": 17,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.10394",
+      "title": "STAGE-Claw: Automated State-based Agent Benchmarking for Realistic Scenarios",
+      "abstract": "Large language models are increasingly used to power personal agents for everyday applications, but evaluating these agents remains a challenge. Existing benchmarks still rely on sandboxed artifacts, static task design, and coarse scoring, which hinder scalability and limit progress toward reliable personal-agent evaluation. This paper introduces STAGE-Claw, an automated framework for building and evaluating realistic personal-agent scenarios in state-based personal-computing environments. Given a task hint, STAGE-Claw automatically creates and validates a realistic benchmark task with its environment, task prompts, ground truth, and related verification programs. Agents are then evaluated in realistic operating environments, where performance is measured by the correctness of the final system state rather than only the textual response. Using STAGE-Claw, this paper creates a benchmark with 40 challenging real scenario agent tasks, evaluates 11 frontier models, and analyzes their task scores, costs, tool-call reliability, and common failure patterns. Overall, STAGE-Claw offers a scalable, state-based way to evaluate agents in realistic user scenarios.",
+      "authors": [
+        "Sirui Liang",
+        "Bohan Yu",
+        "Peiyu Wang",
+        "Shiguang Guo",
+        "Wenxing Hu",
+        "Pengfei Cao",
+        "Jian Zhao",
+        "Cao Liu",
+        "Ke Zeng",
+        "Xunliang Cai",
+        "Kang Liu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-09T04:16:35Z",
+      "updated": "2026-06-09T04:16:35Z",
+      "announced_date": "2026-06-09",
+      "first_seen": "2026-06-09",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.10394v1",
+        "pdf": "https://arxiv.org/pdf/2606.10394v1",
+        "html": "https://arxiv.org/html/2606.10394"
+      },
+      "score": 8,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.10388",
+      "title": "Right Family, Wrong Skill: Benchmarking Risk Exposure in Agent Skill Retrieval",
+      "abstract": "Agent skill libraries are becoming routable software assets: a retrieved skill can contribute instructions, scripts, resource bindings, and execution assumptions to an agent. This makes retrieval failures more specific than broad irrelevance. A system can find the right capability family yet expose the wrong same-capability representative. We study this failure as same-capability risk-exposure retrieval. Each benchmark unit pairs a helpful skill with a query-specific risky sibling that shares the capability family but differs on an execution-controlling contract, such as the required resource, precondition, procedure, or artifact. We introduce SameCapRisk-Bench, an auditable benchmark with 1,190 skill-risk units and 1,686 evaluation query cases: 694 marked-sibling units under public library pressure and 496 hard role-flip units where the same two skills swap helpful/risky roles across paired queries. The release records admission evidence, cue/leakage checks, source hashes, family relations, and fixed candidate pools. The benchmark reports helpful ranking together with harmful sibling rate (HSR@K), the top-K exposure of the marked risky sibling. On this benchmark, public SkillRouter, SkillRet, and R3-Skill retrieve helpful skills at high Recall@3 (0.848--0.888) but also expose marked risky siblings frequently (HSR@3 0.346--0.372). A fully public score-and-cluster pipeline lowers HSR@3 to 0.128--0.182, with Recall@3 of 0.713--0.776. Under a benchmark-trained reference scorer, public text-cluster and controlled resolvers reach HSR@3 0.012 and 0.007; the latter attains Recall@3 0.833. Skill retrieval should therefore report both capability matching and same-family risk exposure, with HSR serving as a targeted exposure certificate for fixed skill libraries.",
+      "authors": [
+        "Jiandong Ding",
+        "Honglei Ji",
+        "Ming Liu",
+        "Tao Duan"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-06-09T03:54:45Z",
+      "updated": "2026-08-20T01:59:33Z",
+      "announced_date": "2026-06-09",
+      "first_seen": "2026-06-09",
+      "comment": "Preprint. 21 pages, 3 figures, 6 tables. Supersedes arXiv:2606.10388",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.10388v2",
+        "pdf": "https://arxiv.org/pdf/2606.10388v2",
+        "html": "https://arxiv.org/html/2606.10388"
+      },
+      "score": 8,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 3
+    }
+  ]
+}

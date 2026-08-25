@@ -1,0 +1,555 @@
+{
+  "date": "2026-05-14",
+  "count": 10,
+  "report": {
+    "date": "2026-05-14",
+    "count": 10,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 5,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "memory",
+        "count": 3,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      }
+    ],
+    "en": {
+      "headline": "10 new agent benchmarks",
+      "summary": "On May 14, 2026, arXiv listed 10 new agent benchmarks. Work clustered around Planning / reasoning (5), Memory (3), Tool use (3), and Multimodal (2).",
+      "highlights": [
+        {
+          "id": "2605.14537",
+          "title": "Cattle Trade: A Multi-Agent Benchmark for LLM Bluffing, Bidding, and Bargaining",
+          "blurb": "We introduce \\textsc{Cattle Trade, a multi-agent benchmark for evaluating large language models (LLMs) as agents in strategic reasoning under imperfect information, adversarial interaction, and resource constraints."
+        },
+        {
+          "id": "2605.14498",
+          "title": "GroupMemBench: Benchmarking LLM Agent Memory in Multi-Party Conversations",
+          "blurb": "Large Language Model (LLM) agents increasingly serve as personal assistants and workplace collaborators, where their utility depends on memory systems that extract, retrieve, and apply information across long-running con…"
+        },
+        {
+          "id": "2605.14415",
+          "title": "SWE-Chain: Benchmarking Coding Agents on Chained Release-Level Package Upgrades",
+          "blurb": "Coding agents powered by large language models are increasingly expected to perform realistic software maintenance tasks beyond isolated issue resolution."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 10 篇 Agent Benchmark",
+      "summary": "2026年5月14日，arXiv 新增 10 篇 Agent Benchmark。当日主题集中在规划 / 推理（5）、记忆（3）、工具使用（3）、多模态（2）。",
+      "highlights": [
+        {
+          "id": "2605.14537",
+          "title": "Cattle Trade: A Multi-Agent Benchmark for LLM Bluffing, Bidding, and Bargaining",
+          "blurb": "We introduce \\textsc{Cattle Trade, a multi-agent benchmark for evaluating large language models (LLMs) as agents in strategic reasoning under imperfect information, adversarial interaction, and resource constraints."
+        },
+        {
+          "id": "2605.14498",
+          "title": "GroupMemBench: Benchmarking LLM Agent Memory in Multi-Party Conversations",
+          "blurb": "Large Language Model (LLM) agents increasingly serve as personal assistants and workplace collaborators, where their utility depends on memory systems that extract, retrieve, and apply information across long-running con…"
+        },
+        {
+          "id": "2605.14415",
+          "title": "SWE-Chain: Benchmarking Coding Agents on Chained Release-Level Package Upgrades",
+          "blurb": "Coding agents powered by large language models are increasingly expected to perform realistic software maintenance tasks beyond isolated issue resolution."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2605.15128",
+      "title": "MemEye: A Visual-Centric Evaluation Framework for Multimodal Agent Memory",
+      "abstract": "Long-term agent memory is increasingly multimodal, yet existing evaluations rarely test whether agents preserve the visual evidence needed for later reasoning. In prior work, many visually grounded questions can be answered using only captions or textual traces, allowing answers to be inferred without preserving the fine-grained visual evidence. Meanwhile, harder cases that require reasoning over changing visual states are largely absent. Therefore, we introduce MemEye, a framework that evaluates memory capabilities from two dimensions: one measures the granularity of decisive visual evidence (from scene-level to pixel-level evidence), and the other measures how retrieved evidence must be used (from single evidence to evolutionary synthesis). Under this framework, we construct a new benchmark across 8 life-scenario tasks, with ablation-driven validation gates for assessing answerability, shortcut resistance, visual necessity, and reasoning structure. By evaluating 13 memory methods across 4 VLM backbones, we show that current architectures still struggle to preserve fine-grained visual details and reason about state changes over time. Our findings show that long-term multimodal memory depends on evidence routing, temporal tracking, and detail extraction.",
+      "authors": [
+        "Minghao Guo",
+        "Qingyue Jiao",
+        "Zeru Shi",
+        "Yihao Quan",
+        "Boxuan Zhang",
+        "Danrui Li",
+        "Liwei Che",
+        "Wujiang Xu",
+        "Shilong Liu",
+        "Zirui Liu",
+        "Mubbasir Kapadia",
+        "Vladimir Pavlovic",
+        "Jiang Liu",
+        "Mengdi Wang",
+        "Yiyu Shi",
+        "Dimitris N. Metaxas",
+        "Ruixiang Tang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL",
+        "cs.IR"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-05-14T17:37:52Z",
+      "updated": "2026-05-14T17:37:52Z",
+      "announced_date": "2026-05-14",
+      "first_seen": "2026-05-14",
+      "comment": "46 pages, 15 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.15128v1",
+        "pdf": "https://arxiv.org/pdf/2605.15128v1",
+        "html": "https://arxiv.org/html/2605.15128"
+      },
+      "score": 6,
+      "tags": [
+        "memory",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 8
+    },
+    {
+      "id": "2605.14678",
+      "title": "$π$-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows",
+      "abstract": "The rise of personal assistant agents, e.g., OpenClaw, highlights the growing potential of large language models to support users across everyday life and work. A core challenge in these settings is proactive assistance, since users often begin with underspecified requests and leave important needs, constraints, or preferences unstated. However, existing benchmarks rarely evaluate whether agents can identify and act on such hidden intents before they are explicitly stated, especially in sustained multi-turn interactions where user needs emerge gradually. To address this gap, we introduce $π$-Bench, a benchmark for proactive assistance comprising 100 multi-turn tasks across 5 domain-specific user personas. By incorporating hidden user intents, inter-task dependencies, and cross-session continuity, $π$-Bench evaluates agents' ability to anticipate and address user needs over extended interactions, jointly measuring proactivity and task completion in long-horizon trajectories that better reflect real-world use. Experiments show (1) proactive assistance remains challenging, (2) a clear distinction between task completion and proactivity, and (3) the value of prior interaction for proactive intent resolution in later tasks.",
+      "authors": [
+        "Haoran Zhang",
+        "Luxin Xu",
+        "Zhilin Wang",
+        "Runquan Gui",
+        "Shunkai Zhang",
+        "Haodi Lei",
+        "Zihao He",
+        "Bingsu He",
+        "Chicheng Qin",
+        "Tong Zhu",
+        "Xiaoye Qu",
+        "Yang Yang",
+        "Yu Cheng",
+        "Yafu Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-14T10:47:04Z",
+      "updated": "2026-05-19T02:06:51Z",
+      "announced_date": "2026-05-14",
+      "first_seen": "2026-05-14",
+      "comment": "44 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.14678v3",
+        "pdf": "https://arxiv.org/pdf/2605.14678v3",
+        "html": "https://arxiv.org/html/2605.14678"
+      },
+      "score": 9,
+      "tags": [],
+      "field": "other",
+      "citations": 3
+    },
+    {
+      "id": "2605.18859",
+      "title": "TwinRouterBench: Fast Static and Live Dynamic Evaluation for Realistic Agentic LLM Routing",
+      "abstract": "LLM routing matters most in long-horizon applications such as coding agents, deep research systems, and computer-use agents, where a single user request triggers many model calls. Routing each call to the cheapest sufficient model can cut costs without sacrificing quality, yet existing router benchmarks evaluate routers only on one-shot prompts. They never expose the router-visible prefix at an intermediate agent step, never test whether a cheaper replacement preserves downstream task success, and often rely on online LLM judges at evaluation time. We introduce TwinRouterBench, a step-level routing benchmark with two tracks. The static track provides 970 router-visible prefixes from 520 instances across SWE-bench, BFCL, mtRAG, QMSum, and PinchBench, each paired with an execution-verified target tier estimated under a released downgrade-and-cascade protocol; scoring is deterministic arithmetic over tier labels, trajectory membership, and token costs, with no online evaluator-side LLM judge. The dynamic track supplies a harness that runs routers on the full 500-case SWE-bench Verified suite; in this paper we report a 100-case held-out evaluation disjoint from the static SWE supervision split. At each LLM call the router selects a concrete model from a locked pool, and success is measured by official task resolution and realized API spend. The two tracks support fast offline iteration followed by end-to-end validation under live agent execution. Code and data are available at https://github.com/CommonstackAI/TwinRouterBench.",
+      "authors": [
+        "Pei Yang",
+        "Wanyi Chen",
+        "Tongyun Yang",
+        "Pengbin Feng",
+        "Jiarong Xing",
+        "Wentao Guo",
+        "Yuhang Yao",
+        "Yuhang Han",
+        "Hanchen Li",
+        "Xu Wang",
+        "Zeyu Wang",
+        "Jie Xiao",
+        "Anjie Yang",
+        "Liang Tian",
+        "Lynn Ai",
+        "Eric Yang",
+        "Tianyu Shi"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-05-14T08:58:59Z",
+      "updated": "2026-05-22T02:55:33Z",
+      "announced_date": "2026-05-14",
+      "first_seen": "2026-05-14",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.18859v2",
+        "pdf": "https://arxiv.org/pdf/2605.18859v2",
+        "html": "https://arxiv.org/html/2605.18859"
+      },
+      "score": 17,
+      "tags": [
+        "coding",
+        "computer-use"
+      ],
+      "field": "coding",
+      "citations": 3
+    },
+    {
+      "id": "2605.14537",
+      "title": "Cattle Trade: A Multi-Agent Benchmark for LLM Bluffing, Bidding, and Bargaining",
+      "abstract": "We introduce \\textsc{Cattle Trade, a multi-agent benchmark for evaluating large language models (LLMs) as agents in strategic reasoning under imperfect information, adversarial interaction, and resource constraints. The benchmark combines auctions, hidden-offer trade challenges (TCs), bargaining, bluffing, opponent modeling, and resource allocation within a single long-horizon game lasting 50--60 turns. Unlike prior agent benchmarks that test these abilities in isolation, \\textsc{Cattle Trade} evaluates whether agents integrate them across a competitive, multi-agent economic game with conflicting incentives. The benchmark logs every bid, TC offer, counteroffer, and card selection, enabling behavioural analysis beyond final scores or win rates. We evaluate seven cost-efficient language models and three deterministic code agents across 242 games. Strategic coherence, in particular spending efficiency, resource discipline, and phase-adaptive bidding, is associated with rank more strongly than spending volume or any single subskill. Two heuristic code agents outperform most tested LLMs, and behavioural traces surface recurring LLM failure modes including overbidding, self-bidding, bankrupt TC initiation, and weak opponent-state adaptation. Evaluating agentic competence requires benchmarks that test the joint deployment of multiple capabilities in multi-agent environments with conflicting incentives, uncertainty, and economic dynamics.",
+      "authors": [
+        "Robert Müller",
+        "Clemens Müller"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-14T08:20:03Z",
+      "updated": "2026-05-14T08:20:03Z",
+      "announced_date": "2026-05-14",
+      "first_seen": "2026-05-14",
+      "comment": "malgai workshop at iclr 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.14537v1",
+        "pdf": "https://arxiv.org/pdf/2605.14537v1",
+        "html": "https://arxiv.org/html/2605.14537"
+      },
+      "score": 20,
+      "tags": [
+        "multi-agent",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 2
+    },
+    {
+      "id": "2605.14504",
+      "title": "When Robots Do the Chores: A Benchmark and Agent for Long-Horizon Household Task Execution",
+      "abstract": "Long-horizon household tasks demand robust high-level planning and sustained reasoning capabilities, which are largely overlooked by existing embodied AI benchmarks that emphasize short-horizon navigation or manipulation and rely on fixed task categories. We introduce LongAct, a benchmark designed to evaluate planning-level autonomy in long-horizon household tasks specified through free-form instructions. By abstracting away embodiment-specific low-level control, LongAct isolates high-level cognitive capabilities such as instruction understanding, dependency management, memory maintenance, and adaptive planning. We further propose HoloMind, a VLM-driven agent with a DAG-based long-horizon hierarchical planner, a Multimodal Spatial Memory for persistent world modeling, an Episodic Memory for experience reuse, and a global Critic for reflective supervision. Experiments with GPT-5 and Qwen3-VL models show that HoloMind substantially improves long-horizon performance while reducing reliance on model scale. Even top models achieve only 59% goal completion and 16% full-task success, underscoring the difficulty of LongAct and the need for stronger long-horizon planning in embodied agents.",
+      "authors": [
+        "Zilin Zhu",
+        "Longteng Guo",
+        "Yanghong Mei",
+        "Bowen Pang",
+        "Zongxun Zhang",
+        "Xingjian He",
+        "Ruyi Ji",
+        "Jing Liu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-14T07:47:53Z",
+      "updated": "2026-05-16T18:16:21Z",
+      "announced_date": "2026-05-14",
+      "first_seen": "2026-05-14",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.14504v2",
+        "pdf": "https://arxiv.org/pdf/2605.14504v2",
+        "html": "https://arxiv.org/html/2605.14504"
+      },
+      "score": 11,
+      "tags": [
+        "embodied",
+        "safety",
+        "memory",
+        "planning",
+        "multimodal"
+      ],
+      "field": "embodied",
+      "citations": 2
+    },
+    {
+      "id": "2605.14498",
+      "title": "GroupMemBench: Benchmarking LLM Agent Memory in Multi-Party Conversations",
+      "abstract": "Large Language Model (LLM) agents increasingly serve as personal assistants and workplace collaborators, where their utility depends on memory systems that extract, retrieve, and apply information across long-running conversations. However, both existing memory systems and benchmarks are built around the dyadic, single-user setup, even though real deployments routinely span groups and channels with multiple users interacting with the agent and with each other. This mismatch leaves three properties of group memory unmeasured: (i) group dynamics that go beyond concatenated one-on-one chats, (ii) speaker-grounded belief tracking, where the per-user memory modeling is needed, and (iii) audience-adapted language, where Theory-of-Mind shifts produce role-specific vocabulary. We introduce GroupMemBench, a benchmark that exposes all three. A graph-grounded synthesis pipeline produces multi-party conversations with controllable reply structure and conditions each message on per-user personas and target audiences. An adversarial query pipeline then binds every question to a specific asker across six categories, spanning multi-hop reasoning, knowledge update, term ambiguity, user-implicit reasoning, temporal reasoning, and abstention, and iteratively searches challenging, realistic queries that reflect comprehensive memory capability. Benchmarking leading memory systems exposes a sharp collapse: the strongest one reaches only 46.0% average accuracy, with knowledge update at 27.1% and term ambiguity at 37.7%, while a simple BM25 baseline matches or exceeds most agent memory systems. This indicates current memory ingestion erases the structural and lexical features group memory depends on, leaving multi-user memory far from solved.",
+      "authors": [
+        "Jingbo Yang",
+        "Kwei-Herng Lai",
+        "Xiaowen Wang",
+        "Shiyu Chang",
+        "Yaar Harari",
+        "Evgeniy Gabrilovich"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-14T07:38:29Z",
+      "updated": "2026-05-16T21:14:35Z",
+      "announced_date": "2026-05-14",
+      "first_seen": "2026-05-14",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.14498v2",
+        "pdf": "https://arxiv.org/pdf/2605.14498v2",
+        "html": "https://arxiv.org/html/2605.14498"
+      },
+      "score": 18,
+      "tags": [
+        "memory",
+        "planning",
+        "workplace"
+      ],
+      "field": "workplace",
+      "citations": 5
+    },
+    {
+      "id": "2605.14415",
+      "title": "SWE-Chain: Benchmarking Coding Agents on Chained Release-Level Package Upgrades",
+      "abstract": "Coding agents powered by large language models are increasingly expected to perform realistic software maintenance tasks beyond isolated issue resolution. Existing benchmarks have shifted toward realistic software evolution, but they rarely capture continuous maintenance at the granularity of package releases, where changes are bundled, shipped, and inherited by subsequent versions. We present SWE-Chain, a benchmark for evaluating agents on chained release-level package upgrades, where each transition builds on the agent's prior codebase. To produce upgrade specifications, we design a divide-and-conquer synthesis pipeline that aligns release notes with code diffs for each version transition, ensuring the requirements are grounded in actual code changes, informative to agents, and feasible to implement. SWE-Chain contains 12 upgrade chains across 9 real Python packages, with 155 version transitions and 1,660 grounded upgrade requirements. Across nine frontier agent-model configurations, agents achieve an average of 44.8% resolving, 65.4% precision, and 50.2% F1 under the Build+Fix regime, with Claude-Opus-4.7 (Claude Code) leading at 60.8% resolving, 80.6% precision, and 68.5% F1. These results show that SWE-Chain is both feasible and discriminative, and reveal that current agents still struggle to make correct upgrades across chained package releases without breaking existing functionality.",
+      "authors": [
+        "Man Ho Lam",
+        "Chaozheng Wang",
+        "Hange Liu",
+        "Jingyu Xiao",
+        "Haau-sing Li",
+        "Jen-tse Huang",
+        "Terry Yue Zhuo",
+        "Michael R. Lyu"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-05-14T06:04:40Z",
+      "updated": "2026-05-14T06:04:40Z",
+      "announced_date": "2026-05-14",
+      "first_seen": "2026-05-14",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.14415v1",
+        "pdf": "https://arxiv.org/pdf/2605.14415v1",
+        "html": "https://arxiv.org/html/2605.14415"
+      },
+      "score": 18,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 4
+    },
+    {
+      "id": "2605.14355",
+      "title": "Herculean: An Agentic Benchmark for Financial Intelligence",
+      "abstract": "As AI agents improve, the central question is no longer whether they can solve isolated well-defined financial tasks, but whether they can reliably carry out financial professional work. Existing financial benchmarks offer only a partial view of this ability, as they primarily evaluate static competencies such as question answering, retrieval, summarization, and classification. We introduce Herculean, the first skilled benchmark for agentic financial intelligence spanning four representative workflows, including Trading, Hedging, Market Insights, and Auditing. Each workflow is instantiated as a standardized MCP-based skill environment with its own tools, interaction dynamics, constraints, and success criteria, enabling consistent end-to-end assessment of heterogeneous agent systems. Across frontier agents, we find agents perform relatively well on Trading and Market Insights, but struggle substantially on Hedging and Auditing, where long-horizon coordination, state consistency, and structured verification are critical. Overall, our results point to a key gap in current agents in turning financial reasoning into dependable workflow execution in high-stakes financial workflows.",
+      "authors": [
+        "Xueqing Peng",
+        "Zhuohan Xie",
+        "Yupeng Cao",
+        "Haohang Li",
+        "Lingfei Qian",
+        "Yan Wang",
+        "Vincent Jim Zhang",
+        "Huan He",
+        "Xuguang Ai",
+        "Linhai Ma",
+        "Ruoyu Xiang",
+        "Yueru He",
+        "Yi Han",
+        "Shuyao Wang",
+        "Yuqing Guo",
+        "Mingyang Jiang",
+        "Yilun Zhao",
+        "Youzhong Dong",
+        "Xiaoyu Wang",
+        "Yankai Chen",
+        "Ye Yuan",
+        "Qiyuan Zhang",
+        "Fuyuan Lyu",
+        "Haolun Wu",
+        "Yonghan Yang",
+        "Zichen Zhao",
+        "Yuyang Dai",
+        "Fan Zhang",
+        "Rania Elbadry",
+        "Ayesha Gull",
+        "Muhammad Usman Safder",
+        "Nuo Chen",
+        "Fengbin Zhu",
+        "Tianshi Cai",
+        "Zimu Wang",
+        "Polydoros Giannouris",
+        "Yuechen Jiang",
+        "Zhiwei Liu",
+        "Mohsinul Kabir",
+        "Yuyan Wang",
+        "Yixiang Zheng",
+        "Yangyang Yu",
+        "Weijin Liu",
+        "Wenbo Cao",
+        "Anke Xu",
+        "Peng Lu",
+        "Jerry Huang",
+        "Mingquan Lin",
+        "Prayag Tiwari",
+        "Yijia Zhao",
+        "Víctor Gutiérrez-Basulto",
+        "Xiao-Yang Liu",
+        "Kaleb E Smith",
+        "Jiahuan Pei",
+        "Arman Cohan",
+        "Jimin Huang",
+        "Yuehua Tang",
+        "Alejandro Lopez-Lira",
+        "Xi Chen",
+        "Xue Liu",
+        "Junichi Tsujii",
+        "Jian-Yun Nie",
+        "Sophia Ananiadou"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-14T04:30:49Z",
+      "updated": "2026-05-29T22:37:51Z",
+      "announced_date": "2026-05-14",
+      "first_seen": "2026-05-14",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.14355v3",
+        "pdf": "https://arxiv.org/pdf/2605.14355v3",
+        "html": "https://arxiv.org/html/2605.14355"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 3
+    },
+    {
+      "id": "2605.14322",
+      "title": "TeachArena: Are Language Agents Ready for Realistic Teaching Work?",
+      "abstract": "Language agents are increasingly deployed in professional workflows, yet tutoring remains a high-stakes capability that existing evaluations only partially capture. Effective tutor agents require more than producing correct answers or executing accurate tool calls: they must infer a warranted teaching decision from evidence, adapt support as learner state changes, and carry an instructor's request through a learning-management system (LMS) to a completed, verified intervention. We introduce TeachArena, a source-grounded benchmark that jointly evaluates three complementary surfaces of teaching work: professional pedagogical judgment, situated multi-turn tutoring, and end-to-end LMS teaching workflows. Its 354 audited tasks are each built around a pedagogical insight, grounded in evidence, and evaluated with matched verifiers over observable turn-level responses, tutoring trajectories, and persistent artifacts or environment states. Across a comprehensive evaluation of frontier models, our findings reveal that current models are generally capable of bounded pedagogical judgment, but still fall short of professional teaching standards in situated tutoring and end-to-end teaching-workflow execution. By unifying teacher judgment, adaptive tutoring, and institutional action in one auditable benchmark, TEACHARENA provides a measurement foundation for developing tutor agents that can support realistic teaching work.",
+      "authors": [
+        "Zixin Chen",
+        "Peng Liu",
+        "Rui Sheng",
+        "Haobo Li",
+        "Jianhong Tu",
+        "Xiaodong Deng",
+        "Kashun Shum",
+        "Dayiheng Liu",
+        "Huamin Qu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-14T03:34:25Z",
+      "updated": "2026-08-02T07:39:44Z",
+      "announced_date": "2026-05-14",
+      "first_seen": "2026-05-14",
+      "comment": "Under review",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.14322v3",
+        "pdf": "https://arxiv.org/pdf/2605.14322v3",
+        "html": "https://arxiv.org/html/2605.14322"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2605.14271",
+      "title": "Auditing Agent Harness Safety",
+      "abstract": "LLM agents increasingly run inside execution harnesses that dispatch tools, allocate resources, and route messages between specialized components. However, a harness can return a correct, benign answer over a trajectory that accesses unauthorized resources or leaks context to the wrong agent. Output-level evaluation cannot see these failures, yet most safety benchmarks score only final outputs or terminal states, even though many violations occur mid-trajectory rather than at termination. The central question is whether the harness respects user intent, permission boundaries, and information-flow constraints throughout execution. To address this gap, we propose HarnessAudit, a framework that audits full execution trajectories across boundary compliance, execution fidelity, and system stability, with a focus on multi-agent harnesses where these risks are most pronounced. We further introduce HarnessAudit-Bench, a benchmark of 210 tasks across eight real-world domains, instantiated in both single-agent and multi-agent configurations with embedded safety constraints. Evaluating ten harness configurations across frontier models and three multi-agent frameworks, we find that: (i) task completion is misaligned with safe execution, and violations accumulate with trajectory length; (ii) safety risks vary across domains, task types, and agent roles; (iii) most violations concentrate in resource access and inter-agent information transfer; and (iv) multi-agent collaboration expands the safety risk surface, while harness design sets the upper bound of safe deployment.",
+      "authors": [
+        "Chengzhi Liu",
+        "Yichen Guo",
+        "Yepeng Liu",
+        "Yuzhe Yang",
+        "Qianqi Yan",
+        "Xuandong Zhao",
+        "Wenyue Hua",
+        "Sheng Liu",
+        "Sharon Li",
+        "Yuheng Bu",
+        "Xin Eric Wang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CY"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-14T02:14:28Z",
+      "updated": "2026-05-16T00:50:55Z",
+      "announced_date": "2026-05-14",
+      "first_seen": "2026-05-14",
+      "comment": "11 Pages, 8 Figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.14271v2",
+        "pdf": "https://arxiv.org/pdf/2605.14271v2",
+        "html": "https://arxiv.org/html/2605.14271"
+      },
+      "score": 10,
+      "tags": [
+        "tool-use",
+        "multi-agent",
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 3
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "date": "2026-07-18",
+  "count": 4,
+  "report": {
+    "date": "2026-07-18",
+    "count": 4,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On July 18, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Tool use (2), Memory (2), Research agents (1), and Science lab (1).",
+      "highlights": [
+        {
+          "id": "2607.16848",
+          "title": "Beyond Memory Leaderboards: Evaluating Scientific Memory as Budgeted Context Restoration",
+          "blurb": "Long-term memory is becoming a core component of LLM agents, but most memory benchmarks evaluate conversations or compact summaries, while research agents need to restore evidence from full scientific papers."
+        },
+        {
+          "id": "2607.16632",
+          "title": "CLOSER-Bench: Evaluating Budgeted Cross-Stage Design Closure for Hardware Agents",
+          "blurb": "Hardware engineering exposes coding agents to a form of long-horizon work that is difficult to capture with pass-at-k: progress is continuous, tool feedback is delayed and heterogeneous, and a backend failure may require…"
+        },
+        {
+          "id": "2607.16716",
+          "title": "RECON: Benchmarking Agent Memory for Compositional Reasoning over Long Contexts",
+          "blurb": "Large language models and LLM-based agents are widely used as personal chat assistants, enterprise copilots, and autonomous workflow agents."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年7月18日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在工具使用（2）、记忆（2）、科研智能体（1）、科学实验（1）。",
+      "highlights": [
+        {
+          "id": "2607.16848",
+          "title": "Beyond Memory Leaderboards: Evaluating Scientific Memory as Budgeted Context Restoration",
+          "blurb": "Long-term memory is becoming a core component of LLM agents, but most memory benchmarks evaluate conversations or compact summaries, while research agents need to restore evidence from full scientific papers."
+        },
+        {
+          "id": "2607.16632",
+          "title": "CLOSER-Bench: Evaluating Budgeted Cross-Stage Design Closure for Hardware Agents",
+          "blurb": "Hardware engineering exposes coding agents to a form of long-horizon work that is difficult to capture with pass-at-k: progress is continuous, tool feedback is delayed and heterogeneous, and a backend failure may require…"
+        },
+        {
+          "id": "2607.16716",
+          "title": "RECON: Benchmarking Agent Memory for Compositional Reasoning over Long Contexts",
+          "blurb": "Large language models and LLM-based agents are widely used as personal chat assistants, enterprise copilots, and autonomous workflow agents."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2607.16848",
+      "title": "Beyond Memory Leaderboards: Evaluating Scientific Memory as Budgeted Context Restoration",
+      "abstract": "Long-term memory is becoming a core component of LLM agents, but most memory benchmarks evaluate conversations or compact summaries, while research agents need to restore evidence from full scientific papers. We introduce two full-text scientific-memory benchmarks, Public AI Memory (PAIM; 81 papers, 66 questions) and Public Transformers (PTr; 252 papers, 98 questions). We evaluate eight memory/retrieval systems, including our own proposed Theoria, plus a no-retrieval baseline. Our results show that memory leaderboards are not interpretable without the full protocol: ingestion granularity, raw-text preservation, retrieval budget, retrieval modality, rubric audit, and judge choice all affect the outcome. For example, on PAIM Graphiti wins convincingly but uses 2.6M characters of retrieved context per query, and after controlling for retrieval budget the lead disappears. On PTr, for the systems where BM25 retrieval can be added cleanly, the sparse-dense hybrid is the single most significant intervention: hybrid variants of Simple RAG, Mem0, and Theoria tie for the lead within 0.03 points. Multi-judge and human side-by-side calibration show that LLM-as-a-judge rankings are consistent across frontier judges and agree with human evaluation, with an effective resolution of roughly one point on a ten-point scale. We argue that scientific memory should be evaluated as budgeted, modality-aware context restoration rather than as an unconstrained architecture leaderboard, and we release the datasets, harness, raw outputs, judgments, and scripts to reproduce our results and serve as tools for such evaluation. Our code is available at http://gitlab.com/quantellence/research/scientific-recall-bench , and the datasets are available at http://huggingface.co/datasets/quantellence/srb-data .",
+      "authors": [
+        "Maksim Sheverev",
+        "David Finkelstein",
+        "Sergey Nikolenko"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-07-18T15:09:58Z",
+      "updated": "2026-07-18T15:09:58Z",
+      "announced_date": "2026-07-18",
+      "first_seen": "2026-07-18",
+      "comment": "40 pages, 6 figures, 8 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.16848v1",
+        "pdf": "https://arxiv.org/pdf/2607.16848v1",
+        "html": "https://arxiv.org/html/2607.16848"
+      },
+      "score": 15,
+      "tags": [
+        "tool-use",
+        "memory",
+        "research",
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2607.16716",
+      "title": "RECON: Benchmarking Agent Memory for Compositional Reasoning over Long Contexts",
+      "abstract": "Large language models and LLM-based agents are widely used as personal chat assistants, enterprise copilots, and autonomous workflow agents. In all these applications, memory (the ability to retain, access, and reason over information accumulated over long contexts and multiple interactions) plays a crucial role in determining the reliability of any agent. We introduce RECON (Reasoning over Extended Contexts with Obfuscated Narratives), a benchmark for evaluating compositional reasoning over long contexts. RECON spans 24 case files across three domains (criminal, medical, and financial), each ranging from 50k to 100k tokens, and tests agents on six memory intensive tasks: reconstructing multi-hop evidence chains, propagating cascading invalidations, resolving source conflicts, counterfactual reasoning, satisfying temporal constraints, and temporal fact retrieval. Recent memory benchmarks evaluate whether agents can retrieve scattered facts or detect if a fact has changed whereas RECON evaluates what happens after the change, whether agents can trace which downstream conclusions are affected, which survive through independent support, and how alternative timelines would have unfolded. Our evaluation reveals substantial limitations across current architectures: even the strongest non-Oracle system reaches only 22.4% Accuracy, with retrieval and reasoning each surfacing as challenges.",
+      "authors": [
+        "Mihir Shriniwas Arya"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-18T09:11:22Z",
+      "updated": "2026-07-18T09:11:22Z",
+      "announced_date": "2026-07-18",
+      "first_seen": "2026-07-18",
+      "comment": "25 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.16716v1",
+        "pdf": "https://arxiv.org/pdf/2607.16716v1",
+        "html": "https://arxiv.org/html/2607.16716"
+      },
+      "score": 10,
+      "tags": [
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.16632",
+      "title": "CLOSER-Bench: Evaluating Budgeted Cross-Stage Design Closure for Hardware Agents",
+      "abstract": "Hardware engineering exposes coding agents to a form of long-horizon work that is difficult to capture with pass-at-k: progress is continuous, tool feedback is delayed and heterogeneous, and a backend failure may require revising RTL rather than tuning another physical-design parameter. Existing benchmarks measure RTL generation, repository repair, verification, PPA evolution, or physical implementation, but their different designs and oracles make it hard to determine where an agent succeeds or fails across abstraction boundaries. We introduce CLOSER-Bench, a controlled evaluation protocol for budgeted cross-stage design closure. For one design and one hidden objective, it pairs spec-to-RTL, RTL-to-GDS, and spec-to-GDS tasks, records every simulator, synthesis, STA, and place-and-route invocation, and measures final quality, anytime progress, tool cost, and cross-stage recovery. The benchmark is built on open-source Verilator, Yosys, OpenROAD, KLayout, Sky130, and the Harbor agent harness. A ten-task pilot spanning RTL repair, mutation-based verification, coverage, PPA optimization, design-space exploration, cross-model debugging, and security establishes the executable harness and exposes a sharp completion--closure gap: three agents solve a localized AXI repair task, while the matched verification-closure task separates a frontier agent from two otherwise successful baselines. We further validate a full RTL-to-GDS flow and construct a macro-based AXI/DMA streaming accelerator for the stage-paired evaluation. These results motivate treating hardware closure as a budgeted sequential decision problem rather than a collection of independent code generation tasks.",
+      "authors": [
+        "Peilong Zhou",
+        "Zhirong Chen",
+        "Cangyuan Li",
+        "Haoyu Gao",
+        "Kaiyan Chang",
+        "Ziming Qu",
+        "Ying Wang"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-07-18T04:28:47Z",
+      "updated": "2026-07-18T04:28:47Z",
+      "announced_date": "2026-07-18",
+      "first_seen": "2026-07-18",
+      "comment": "6 pages, 2 figures, 4 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.16632v1",
+        "pdf": "https://arxiv.org/pdf/2607.16632v1",
+        "html": "https://arxiv.org/html/2607.16632"
+      },
+      "score": 14,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2607.16610",
+      "title": "Just A Rather Very Intelligent Spoken Agent",
+      "abstract": "Long-horizon AI agents are becoming increasingly capable, yet their interaction with users remains surprisingly thin. In most workflows, users give an initial instruction, receive only selective textual updates, and lose a clear sense of what the agent is doing or when to step in. This leaves a missing part in the current agent ecosystem: an always-on Jarvis-style mediator that keeps the agent continuously reachable to the user. Such a mediator should support real-time spoken interaction with the user, answer questions without interrupting the worker, proactively report progress or confusion, and inject user guidance back into the agent's execution when useful. In this work, we introduce JarvisBench, a benchmark for measuring the dual value of mediation in long-horizon agent workflows. JarvisBench contains two complementary tracks: an agent-collaboration track that measures whether mediation improves downstream task completion, and a user-interaction track that measures whether mediation makes ongoing execution more understandable, responsive, and accessible to users. We instantiate the benchmark with a modular reference Jarvis prototype and evaluate it on 34 text-only WildClaw tasks executed in OpenClaw. Preliminary results with GPT-5.5, Claude Opus 4.7, Gemini-based, and GPT-based worker agents suggest that Jarvis-style mediation can provide trace-grounded responses to user questions and improve task performance when sparse user guidance is injected at appropriate moments. The results also show that effectiveness depends strongly on the mediator's LLM brain, highlighting both the promise of this missing middle layer and the need for broader community effort. Demo page https://cchen1436.github.io/jarvis",
+      "authors": [
+        "Chen Chen",
+        "Zhehuai Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-18T03:10:19Z",
+      "updated": "2026-07-18T03:10:19Z",
+      "announced_date": "2026-07-18",
+      "first_seen": "2026-07-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.16610v1",
+        "pdf": "https://arxiv.org/pdf/2607.16610v1",
+        "html": "https://arxiv.org/html/2607.16610"
+      },
+      "score": 9,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

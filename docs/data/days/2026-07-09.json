@@ -1,0 +1,158 @@
+{
+  "date": "2026-07-09",
+  "count": 2,
+  "report": {
+    "date": "2026-07-09",
+    "count": 2,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On July 9, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Planning / reasoning (2), Coding agents (1), Multimodal (1), and Science lab (1).",
+      "highlights": [
+        {
+          "id": "2607.08093",
+          "title": "CausalDS: Benchmarking Causal Reasoning in Data-Science Agents",
+          "blurb": "Large language models (LLMs) increasingly act as integrated data-science agents, combining abstract reasoning with advanced tool use."
+        },
+        {
+          "id": "2607.08964",
+          "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
+          "blurb": "AI agents have become capable of autonomously completing short, well-specified tasks."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年7月9日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在规划 / 推理（2）、代码智能体（1）、多模态（1）、科学实验（1）。",
+      "highlights": [
+        {
+          "id": "2607.08093",
+          "title": "CausalDS: Benchmarking Causal Reasoning in Data-Science Agents",
+          "blurb": "Large language models (LLMs) increasingly act as integrated data-science agents, combining abstract reasoning with advanced tool use."
+        },
+        {
+          "id": "2607.08964",
+          "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
+          "blurb": "AI agents have become capable of autonomously completing short, well-specified tasks."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2607.08964",
+      "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
+      "abstract": "AI agents have become capable of autonomously completing short, well-specified tasks. However, existing terminal benchmarks largely focus on simple problems that finish within minutes and are evaluated only by their final outcome. This setup overlooks intermediate progress and partial solutions, yielding sparse reward signals and an incomplete picture of agent capability. We introduce Long-Horizon-Terminal-Bench, a terminal benchmark of 46 long-horizon tasks spanning nine categories, including experiment reproduction, software engineering, multimodal analysis, interactive games, and scientific computing. Each task follows a Terminal-Bench-style setup with a reference solution or simulation engine, but is further decomposed into fine-grained graded subtasks. This design enables dense intermediate rewards and partial credit, allowing evaluation to capture not only whether an agent reaches the final goal, but also how far it progresses on open-ended workflows. Tasks in Long-Horizon-Terminal-Bench typically require hundreds of episodes and minutes to hours of execution, stressing long-horizon planning, long-context management, and iterative debugging rather than one-shot problem solving. We evaluate 15 frontier models and find that agents consume on average 9.9M tokens per task, with roughly 231 episodes and 85.3 minutes of execution time per run, making Long-Horizon-Terminal-Bench more demanding than prior terminal-based benchmarks. Even the strongest tested model achieves 15.2% pass@1 at a partial-reward threshold of 0.95 and 10.9% at a perfect-reward threshold of 1.0, while the mean pass rate across models is 4.3% and 1.7% under the two thresholds, respectively. These results reveal headroom for improvement. We further analyze failure modes and error patterns, and release Long-Horizon-Terminal-Bench to support future progress on long-horizon terminal agents.",
+      "authors": [
+        "Zongxia Li",
+        "Zhongzhi Li",
+        "Yucheng Shi",
+        "Ruhan Wang",
+        "Junyao Yang",
+        "Zhichao Liu",
+        "Xiyang Wu",
+        "Anhao Li",
+        "Yue Yu",
+        "Ninghao Liu",
+        "Lichao Sun",
+        "Haotao Mi",
+        "Leowei Liang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-09T21:56:37Z",
+      "updated": "2026-07-13T06:00:47Z",
+      "announced_date": "2026-07-09",
+      "first_seen": "2026-07-09",
+      "comment": "17 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.08964v2",
+        "pdf": "https://arxiv.org/pdf/2607.08964v2",
+        "html": "https://arxiv.org/html/2607.08964"
+      },
+      "score": 14,
+      "tags": [
+        "coding",
+        "planning",
+        "multimodal",
+        "science"
+      ],
+      "field": "coding",
+      "citations": 7
+    },
+    {
+      "id": "2607.08093",
+      "title": "CausalDS: Benchmarking Causal Reasoning in Data-Science Agents",
+      "abstract": "Large language models (LLMs) increasingly act as integrated data-science agents, combining abstract reasoning with advanced tool use. Yet the relevant benchmark landscape largely divides into symbolic causal reasoning benchmarks without realistic data analysis or data analysis benchmarks without a principled causal data-generating structure. Furthermore, existing causal evaluation datasets are often restricted to curated examples from existing sources, with diversity coming from limited templatized variations rather than from systematic generation of novel synthetic causal structures. We introduce CausalDS, a benchmark for evaluating causal reasoning in agentic data-science workflows. Each benchmark instance is a scene consisting of a sampled structural causal model (SCM) with generated observational data and an accompanying synthetic natural-language story grounded in a realistic domain. We optionally ground the composition of the benchmark components in empirical distributions obtained from real-world datasets, thus retaining empirical structure while reducing the \"causal parrot\" risk through completely synthetic generation. From each scene, we then derive tasks spanning all three of Pearl's rungs, with typical data-science prediction tasks appearing as Rung 1. Most tasks include a data science coding component, where the model typically needs to use several tools to arrive at the final answer due to the frequent presence of imperfect observations, which are generated by an observation model. Additionally, recognizing when a question admits no warranted answer and abstaining is treated as a first-class scored outcome. The benchmark thus jointly evaluates symbolic causal reasoning, data science, uncertainty quantification, abstention, and tool use/coding.",
+      "authors": [
+        "Andrej Leban",
+        "Yuekai Sun"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-09T04:03:26Z",
+      "updated": "2026-07-09T04:03:26Z",
+      "announced_date": "2026-07-09",
+      "first_seen": "2026-07-09",
+      "comment": "55 pages, 10 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.08093v1",
+        "pdf": "https://arxiv.org/pdf/2607.08093v1",
+        "html": "https://arxiv.org/html/2607.08093"
+      },
+      "score": 15,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

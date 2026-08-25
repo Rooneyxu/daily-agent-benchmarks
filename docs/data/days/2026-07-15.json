@@ -1,0 +1,125 @@
+{
+  "date": "2026-07-15",
+  "count": 2,
+  "report": {
+    "date": "2026-07-15",
+    "count": 2,
+    "themes": [
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On July 15, 2026, arXiv listed 2 new agent benchmarks. Work clustered around GUI agents (1).",
+      "highlights": [
+        {
+          "id": "2607.14004",
+          "title": "Do Agent Optimizers Compound? A Continual-Learning Evaluation on Terminal-Bench 2.0",
+          "blurb": "Most reported gains from agent-optimization methods are one-shot: an agent is optimized against a fixed benchmark and the resulting improvement is reported as if it were a stable property of the method."
+        },
+        {
+          "id": "2607.13465",
+          "title": "DevicesWorld: Benchmarking Cross-Device Agents in Heterogeneous Environments",
+          "blurb": "LLM-based agents have rapidly improved at operating individual digital environments such as mobile applications, desktop systems, and smart homes."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年7月15日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在GUI 智能体（1）。",
+      "highlights": [
+        {
+          "id": "2607.14004",
+          "title": "Do Agent Optimizers Compound? A Continual-Learning Evaluation on Terminal-Bench 2.0",
+          "blurb": "Most reported gains from agent-optimization methods are one-shot: an agent is optimized against a fixed benchmark and the resulting improvement is reported as if it were a stable property of the method."
+        },
+        {
+          "id": "2607.13465",
+          "title": "DevicesWorld: Benchmarking Cross-Device Agents in Heterogeneous Environments",
+          "blurb": "LLM-based agents have rapidly improved at operating individual digital environments such as mobile applications, desktop systems, and smart homes."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2607.14004",
+      "title": "Do Agent Optimizers Compound? A Continual-Learning Evaluation on Terminal-Bench 2.0",
+      "abstract": "Most reported gains from agent-optimization methods are one-shot: an agent is optimized against a fixed benchmark and the resulting improvement is reported as if it were a stable property of the method. This does not test the setting that matters for deployed agents, where optimization is applied recursively as new failures and new tasks appear over time. The central question this raises is whether optimizer-driven gains compound: after an agent has been optimized once, can it be optimized again on newly arrived tasks without eroding the gains the first round produced? We study this question with a two-phase continual-learning evaluation built from hard tasks in Terminal-Bench 2.0, comparing three approaches to agent-harness optimization (GEPA, Meta Harness, and RELAI's Verifiable Continual Learning, RELAI-VCL) under identical optimization budgets. All three methods improve over the baseline agent in the conventional, static, single-phase setting. However, once new tasks are introduced, the methods diverge sharply: GEPA's optimized agent transfers below the unoptimized baseline, Meta Harness transfers well but fails to improve further once given a second optimization budget, and RELAI-VCL is the only method that both transfers positively to unseen tasks and continues improving after those tasks are folded into the optimization objective, reaching the highest pass rate at every evaluated stage and the highest lifelong average pass rate overall (76.4% vs. 66.0% for GEPA, 64.6% for Meta Harness, and 58.7% for the baseline). Our key observation was that optimization gains compounded only when regression control was built into the optimization loop, providing an inductive bias against shortcut solutions that fail to generalize.",
+      "authors": [
+        "Wenxiao Wang",
+        "Priyatham Kattakinda",
+        "Soheil Feizi"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-15T16:36:04Z",
+      "updated": "2026-07-15T16:36:04Z",
+      "announced_date": "2026-07-15",
+      "first_seen": "2026-07-15",
+      "comment": "Technical Report by RELAI (relai.ai)",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.14004v1",
+        "pdf": "https://arxiv.org/pdf/2607.14004v1",
+        "html": "https://arxiv.org/html/2607.14004"
+      },
+      "score": 12,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.13465",
+      "title": "DevicesWorld: Benchmarking Cross-Device Agents in Heterogeneous Environments",
+      "abstract": "LLM-based agents have rapidly improved at operating individual digital environments such as mobile applications, desktop systems, and smart homes. However, real-world user goals often span multiple devices: information may come from a phone, be processed on a desktop, and the result may need to appear on another device. Most existing benchmarks center on a single dominant execution environment, making it difficult to evaluate whether agents can acquire and integrate information across heterogeneous devices and complete end-to-end tasks with cross-device dependencies. We introduce DevicesWorld, a large-scale executable benchmark for cross-device collaborative operation. DevicesWorld contains 6,140 tasks and integrates three classes of device environments -- mobile, desktop, and IoT -- into a unified cross-device interaction and evaluation framework. Each task defines a natural-language user goal, participating devices and initial states, executable actions, rule-based verifiers, and a cleanup procedure. A multi-stage construction and quality-control pipeline keeps tasks close to realistic user needs while allowing final outcomes to be automatically verified from device states and generated files. We evaluate five frontier LLM-agent systems on a fixed evaluation set. All methods achieve low success rates, with the best reaching only 12.5%. Among failed runs, about 28.7% satisfy at least one scoring condition yet still fail the full task. Trajectories show that agents become stuck acquiring information or manipulating interfaces, confuse source and output devices, or terminate before all conditions are jointly satisfied. DevicesWorld turns cross-device collaborative operation into an executable, reproducible, and diagnostically useful evaluation problem for research on reliable cross-device agents.",
+      "authors": [
+        "Huatao Li",
+        "Xinwei Geng",
+        "Yuheng Wang",
+        "Yutong Li",
+        "Runde Yang",
+        "Hantao Chen",
+        "Shu Yao",
+        "Jingru Fan",
+        "Xuhui Ren",
+        "Yuanyuan Zhao",
+        "Fei Huang",
+        "Chen Qian"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.HC",
+        "cs.MA",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-07-15T05:53:27Z",
+      "updated": "2026-07-15T05:53:27Z",
+      "announced_date": "2026-07-15",
+      "first_seen": "2026-07-15",
+      "comment": "https://github.com/AgenticOrgLab/DevicesWorld",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.13465v1",
+        "pdf": "https://arxiv.org/pdf/2607.13465v1",
+        "html": "https://arxiv.org/html/2607.13465"
+      },
+      "score": 10,
+      "tags": [
+        "gui"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    }
+  ]
+}

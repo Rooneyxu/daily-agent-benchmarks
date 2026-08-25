@@ -1,0 +1,349 @@
+{
+  "date": "2026-06-10",
+  "count": 6,
+  "report": {
+    "date": "2026-06-10",
+    "count": 6,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "workplace",
+        "count": 1,
+        "en": "Work / office",
+        "zh": "职场 / 办公"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "6 new agent benchmarks",
+      "summary": "On June 10, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Tool use (3), Safety (2), Planning / reasoning (2), and Coding agents (2).",
+      "highlights": [
+        {
+          "id": "2606.11702",
+          "title": "MedCTA: A Benchmark for Clinical Tool Agents",
+          "blurb": "To make clinically grounded decisions, medical AI agents are expected to go beyond simple recognition and be capable of tool retrieval, evidence acquisition, and integration."
+        },
+        {
+          "id": "2606.12344",
+          "title": "Claw-SWE-Bench: A Benchmark for Evaluating OpenClaw-style Agent Harnesses on Coding Tasks",
+          "blurb": "General-purpose agents such as OpenClaw are increasingly used as autonomous tool users, but their coding ability is difficult to measure under SWE-bench: a generic agent does not by itself satisfy the clean Docker worksp…"
+        },
+        {
+          "id": "2606.11864",
+          "title": "CORE-Bench: A Comprehensive Benchmark for Code Retrieval in the Era of Agentic Coding",
+          "blurb": "Code retrieval is becoming central to coding agents, but agentic coding requires more than matching a natural-language query to an isolated snippet."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 6 篇 Agent Benchmark",
+      "summary": "2026年6月10日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在工具使用（3）、安全（2）、规划 / 推理（2）、代码智能体（2）。",
+      "highlights": [
+        {
+          "id": "2606.11702",
+          "title": "MedCTA: A Benchmark for Clinical Tool Agents",
+          "blurb": "To make clinically grounded decisions, medical AI agents are expected to go beyond simple recognition and be capable of tool retrieval, evidence acquisition, and integration."
+        },
+        {
+          "id": "2606.12344",
+          "title": "Claw-SWE-Bench: A Benchmark for Evaluating OpenClaw-style Agent Harnesses on Coding Tasks",
+          "blurb": "General-purpose agents such as OpenClaw are increasingly used as autonomous tool users, but their coding ability is difficult to measure under SWE-bench: a generic agent does not by itself satisfy the clean Docker worksp…"
+        },
+        {
+          "id": "2606.11864",
+          "title": "CORE-Bench: A Comprehensive Benchmark for Code Retrieval in the Era of Agentic Coding",
+          "blurb": "Code retrieval is becoming central to coding agents, but agentic coding requires more than matching a natural-language query to an isolated snippet."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.12736",
+      "title": "Benchmarking AI Agents for Addressing Scientific Challenges Across Scales",
+      "abstract": "AI agents are increasingly being developed to accelerate scientific discovery, yet their practical capabilities in real research settings remain poorly understood. Existing benchmarks for AI agents rarely capture the complexity, heterogeneity, and extended reasoning required by scientific work, whereas benchmarks for scientific tasks often reduce research to static, direct problems and provide limited support for interactive evaluation. Here, we introduce SciAgentArena, a systematic benchmark for evaluating AI agents in real-world scientific research scenarios drawn from emerging needs across multiple domains. SciAgentArena comprises approximately 200 tasks with stepwise verification and an interactive, agent-agnostic environment for assessing diverse AI agents. Using this benchmark, we find that current agents can contribute effectively to well-specified data-analysis workflows, particularly when the task structure and evaluation criteria are clear. However, their performance remains uneven across scientific contexts: agents struggle to generate genuinely novel insights, sustain self-directed exploration, and formulate robust solutions for open-ended research questions. We further characterize common failure modes across agents and identify opportunities for improving their reliability, autonomy, and scientific reasoning. Together, SciAgentArena provides a practical framework for measuring progress in AI agents for science and for guiding the design of future agents capable of addressing complex scientific challenges. Full codes, tasks, and datasets can be accessed via this link: https://sciagentarena.github.io/.",
+      "authors": [
+        "Tianyu Liu",
+        "Allen Xin Wang",
+        "Antonia Panescu",
+        "Lisa Xinyi Chen",
+        "Wenxin Long",
+        "Xinyu Wei",
+        "Yueqian Jing",
+        "Ziyao Zeng",
+        "Jihang Chen",
+        "Sihan Jiang",
+        "Ziqing Wang",
+        "Siyi Gu",
+        "Siyu Chen",
+        "Xinyang Hu",
+        "Haoran Shao",
+        "Leqi Xu",
+        "Wangjie Zheng",
+        "Zhiyuan Cao",
+        "Ada Fang",
+        "Botao Yu",
+        "Kunyang Sun",
+        "Rex Ying",
+        "Arman Cohan",
+        "Qingyu Chen",
+        "Lingzhou Xue",
+        "Kaize Ding",
+        "Yuanqi Du",
+        "Wengong Jin",
+        "Zhuoran Yang",
+        "Marinka Zitnik",
+        "James Zou",
+        "Hua Xu",
+        "Hongyu Zhao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-10T22:55:30Z",
+      "updated": "2026-06-10T22:55:30Z",
+      "announced_date": "2026-06-10",
+      "first_seen": "2026-06-10",
+      "comment": "6 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.12736v1",
+        "pdf": "https://arxiv.org/pdf/2606.12736v1",
+        "html": "https://arxiv.org/html/2606.12736"
+      },
+      "score": 16,
+      "tags": [
+        "safety",
+        "planning",
+        "research",
+        "science"
+      ],
+      "field": "science",
+      "citations": 1
+    },
+    {
+      "id": "2606.13715",
+      "title": "WorkBench Revisited: Workplace Agents Two Years On",
+      "abstract": "The best agent on WorkBench in March 2024, GPT-4, completed just 43% of tasks. We revisit the benchmark in June 2026 and find that the best agent to date, Claude Fable 5, now completes 98%. Beyond this considerable progress in frontier agent performance, three things stand out. First, unintended harmful actions, such as emailing the wrong person, fell from 26% of tasks for GPT-4 to 1.9% for Claude Fable 5; capability and safety go together on WorkBench rather than trade off, so the models that finish the most tasks also do the least unintended damage. Second, the rise of open-weight models has drastically lowered costs for a performance level that was only accessible to proprietary models, while frontier costs have stayed stable. Third, while several classes of error have been eliminated, frontier models still make some basic mistakes that occasionally result in irreversible harm. We release an updated version of the benchmark with data and code quality improvements, new model scores, and analysis of agent progress on WorkBench since 2024.",
+      "authors": [
+        "Olly Styles",
+        "Sam Miller"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-10T21:21:35Z",
+      "updated": "2026-07-01T14:36:06Z",
+      "announced_date": "2026-06-10",
+      "first_seen": "2026-06-10",
+      "comment": "8 pages, 3 figures. Follow-up to arXiv:2405.00823",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.13715v2",
+        "pdf": "https://arxiv.org/pdf/2606.13715v2",
+        "html": "https://arxiv.org/html/2606.13715"
+      },
+      "score": 7,
+      "tags": [
+        "safety",
+        "workplace"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2606.12344",
+      "title": "Claw-SWE-Bench: A Benchmark for Evaluating OpenClaw-style Agent Harnesses on Coding Tasks",
+      "abstract": "General-purpose agents such as OpenClaw are increasingly used as autonomous tool users, but their coding ability is difficult to measure under SWE-bench: a generic agent does not by itself satisfy the clean Docker workspace, patch, and prediction contract required for scoring. We introduce Claw-SWE-Bench, a multilingual SWE-bench-style benchmark and adapter protocol that makes heterogeneous agent harnesses, or claws, comparable under fair settings including a fixed prompt, runtime budget, workspace contract, patch extraction procedure, and evaluator. The full benchmark contains 350 GitHub issue-resolution instances across 8 languages and 43 repositories, drawn from SWE-bench-Multilingual and SWE-bench-Verified-Mini after future-commit cleanup. We also release Claw-SWE-Bench Lite for faster validation, which is an 80-instance subset selected by a cost-aware, rank-aware procedure over 17 calibration columns. On the full benchmark, OpenClaw with a minimal direct-diff adapter scores only $19.1\\%$ Pass@1, whereas the full adapter reaches $73.4\\%$ with the same GLM 5.1 backbone, showing that adapter design is essential for enabling OpenClaw-style harnesses to perform coding tasks effectively. Across an OpenClaw $\\times$ nine-model sweep and a five-claw $\\times$ two-model sweep, model choice changes Pass@1 by $29.4$ pp and harness choice by $27.4$ pp under fixed models; systems with similar accuracy can differ substantially in total API cost. Claw-SWE-Bench therefore treats harness and cost accounting as first-class axes of SWE-style coding-agent evaluation, providing both a full benchmark and a low-cost reference set for reproducible comparison. The data is available at https://github.com/opensquilla/claw-swe-bench and https://huggingface.co/datasets/TokenRhythm/Claw-SWE-Bench.",
+      "authors": [
+        "Mengyu Zheng",
+        "Kai Han",
+        "Boxun Li",
+        "Haiyang Xu",
+        "Yuchuan Tian",
+        "Wei He",
+        "Hang Zhou",
+        "Jianyuan Guo",
+        "Hailin Hu",
+        "Lin Ma",
+        "Chao Xu",
+        "Guohao Dai",
+        "Lixue Xia",
+        "Yunchao Wei",
+        "Yunhe Wang",
+        "Yu Wang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-06-10T17:16:23Z",
+      "updated": "2026-06-10T17:16:23Z",
+      "announced_date": "2026-06-10",
+      "first_seen": "2026-06-10",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.12344v1",
+        "pdf": "https://arxiv.org/pdf/2606.12344v1",
+        "html": "https://arxiv.org/html/2606.12344"
+      },
+      "score": 27,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 3
+    },
+    {
+      "id": "2606.11864",
+      "title": "CORE-Bench: A Comprehensive Benchmark for Code Retrieval in the Era of Agentic Coding",
+      "abstract": "Code retrieval is becoming central to coding agents, but agentic coding requires more than matching a natural-language query to an isolated snippet. Given a user request, a coding agent needs to navigate a concrete repository state, locate relevant files and functions, gather supporting context, and filter similar in-repository distractors. Existing code retrieval benchmarks mainly evaluate docstring-to-function or snippet-level matching, thereby missing this requirement-driven repository search problem. To address this gap, we introduce CORE-Bench, a comprehensive benchmark for code retrieval in the era of agentic coding. CORE-Bench evaluates code retrieval ability at three levels: code understanding, issue-to-edit localization, and broader context retrieval. Built from curated code-search tasks and SWE-bench-series instances, CORE-Bench contains over 180K queries and 106K broader-context relevance labels. Experiments with representative embedding models show a sharp drop from traditional code search to code retrieval in agentic coding settings. Simple supervised fine-tuning of existing embedding models significantly improves performance in this setting, suggesting substantial room for further progress.",
+      "authors": [
+        "Fuwei Zhang",
+        "Yanzhao Zhang",
+        "Mingxin Li",
+        "Dingkun Long",
+        "Lexiang Hu",
+        "Pengjun Xie",
+        "Zhao Zhang",
+        "Fuzhen Zhuang"
+      ],
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-06-10T09:38:41Z",
+      "updated": "2026-08-24T07:53:30Z",
+      "announced_date": "2026-06-10",
+      "first_seen": "2026-06-10",
+      "comment": "Accepted By EMNLP 2026 Main",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.11864v3",
+        "pdf": "https://arxiv.org/pdf/2606.11864v3",
+        "html": "https://arxiv.org/html/2606.11864"
+      },
+      "score": 22,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 4
+    },
+    {
+      "id": "2606.11702",
+      "title": "MedCTA: A Benchmark for Clinical Tool Agents",
+      "abstract": "To make clinically grounded decisions, medical AI agents are expected to go beyond simple recognition and be capable of tool retrieval, evidence acquisition, and integration. Existing benchmarks largely evaluate isolated perception or single-turn question answering, and therefore provide limited visibility into failures of planning, tool recruitment, and rollout reliability. We introduce MedCTA, a benchmark for evaluating medical tool agents on clinician-validated, step-implicit tasks grounded in realistic multimodal clinical inputs, including radiology images, pathology slides, and reports. MedCTA comprises 107 real-world clinical tasks with clinician-verified executable trajectories over 5 deployed tools, and supports process-aware evaluation of tool selection, argument validity, execution stability, trajectory fidelity, and outcome quality. We benchmark 18 open- and closed-source multimodal models and find that even frontier systems remain brittle in multi-step clinical tool use: autonomous rollouts are dominated by protocol failures, premature stopping, and incorrect tool recruitment, while gold-standard tool routing yields large but still incomplete gains. These results show that strong backbone perception does not translate into reliable agentic behavior in clinical settings. MedCTA provides a rigorous testbed for auditing, diagnosing, and advancing trustworthy medical AI agents. The dataset and evaluation suite are available at https://ivul-kaust.github.io/MedCTA/",
+      "authors": [
+        "Tajamul Ashraf",
+        "Hyewon Jeong",
+        "Fida Mohammad Thoker",
+        "Bernard Ghanem"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-06-10T06:26:52Z",
+      "updated": "2026-06-10T06:26:52Z",
+      "announced_date": "2026-06-10",
+      "first_seen": "2026-06-10",
+      "comment": "Project Page: https://ivul-kaust.github.io/MedCTA/ Code: https://github.com/IVUL-KAUST/MedCTA Data: https://huggingface.co/datasets/IVUL-KAUST/MedCTA",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.11702v1",
+        "pdf": "https://arxiv.org/pdf/2606.11702v1",
+        "html": "https://arxiv.org/html/2606.11702"
+      },
+      "score": 29,
+      "tags": [
+        "tool-use",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2607.20491",
+      "title": "DFAH-Bench: Benchmarking Observable Agent Instability in Financial Decision-Making",
+      "abstract": "A financial AI agent can repeat a decision while changing the tools, order, or recorded arguments and results used to reach it. Outcome-only evaluation misses this variation, even when it matters for replay and change control. DFAH-Bench operationalizes the Determinism-Faithfulness Assurance Harness (DFAH), where faithfulness means fidelity of observable execution under replay, not answer correctness. The protocol qualifies comparable, sufficiently observed replays and measures decision agreement (DAR) and tool-path agreement (TAR) over the same eligible groups. We analyze 4,157 retrospective episodes from configurations with observed tool use across 719 synthetic compliance and financial DataOps groups, together with an argument-aware prospective extension comprising 570 eligible episodes across 190 groups. In that extension, decisions agree 94.2-95.1% while exact tool-name paths agree 66.9-69.4%, producing 25.8-27.3 percentage-point gaps; argument-and-result trajectory agreement falls to 45.0-51.5%. Even among unanimous-decision groups, paths vary in 66.7-68.9% under task weighting. DFAH-Bench makes the execution behind a stable decision visible for replay, investigation, and change review.",
+      "authors": [
+        "Raffi Khatchadourian"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-10T03:31:09Z",
+      "updated": "2026-07-24T14:53:06Z",
+      "announced_date": "2026-06-10",
+      "first_seen": "2026-06-10",
+      "comment": "15 pages, 3 figures. Code, sanitized replay logs, one-command reproduction (make reproduce-paper), and an interactive results explorer: https://github.com/ibm-client-engineering/output-drift-financial-llms",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.20491v2",
+        "pdf": "https://arxiv.org/pdf/2607.20491v2",
+        "html": "https://arxiv.org/html/2607.20491"
+      },
+      "score": 18,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

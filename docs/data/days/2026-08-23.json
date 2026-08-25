@@ -1,0 +1,135 @@
+{
+  "date": "2026-08-23",
+  "count": 2,
+  "report": {
+    "date": "2026-08-23",
+    "count": 2,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "workplace",
+        "count": 1,
+        "en": "Work / office",
+        "zh": "职场 / 办公"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On August 23, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Tool use (2), Safety (1), Memory (1), and Work / office (1).",
+      "highlights": [
+        {
+          "id": "2608.22510",
+          "title": "ClawProBench: Trace-Aware Evaluation of AI Agents with Runtime Coverage and Frozen Workplace-Style Holdouts",
+          "blurb": "Agent benchmarks often evaluate only final answers even when agents run on stateful runtimes."
+        },
+        {
+          "id": "2608.22331",
+          "title": "Noise Floor Audit for Agent Benchmarks",
+          "blurb": "We audit measurement variability for 3 native tool-calling endpoints across 2 providers on the official BFCL multiple and parallel categories, using matched AST grading."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年8月23日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在工具使用（2）、安全（1）、记忆（1）、职场 / 办公（1）。",
+      "highlights": [
+        {
+          "id": "2608.22510",
+          "title": "ClawProBench: Trace-Aware Evaluation of AI Agents with Runtime Coverage and Frozen Workplace-Style Holdouts",
+          "blurb": "Agent benchmarks often evaluate only final answers even when agents run on stateful runtimes."
+        },
+        {
+          "id": "2608.22331",
+          "title": "Noise Floor Audit for Agent Benchmarks",
+          "blurb": "We audit measurement variability for 3 native tool-calling endpoints across 2 providers on the official BFCL multiple and parallel categories, using matched AST grading."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.22510",
+      "title": "ClawProBench: Trace-Aware Evaluation of AI Agents with Runtime Coverage and Frozen Workplace-Style Holdouts",
+      "abstract": "Agent benchmarks often evaluate only final answers even when agents run on stateful runtimes. We argue this under-specifies what is being evaluated: the proper unit is a declared model-plus-runtime configuration whose failures can occur in evidence acquisition, runtime routing, safety boundaries, or repeated execution. We present ClawProBench, a trace-aware benchmark for runtime-native agent evaluation instantiated on OpenClaw, a live agent runtime with workspace tools and native surfaces for browsing, memory, messaging, scheduling, skills, and subagents. ClawProBench defines two tracks: a 102-scenario full profile with live workspace and native-runtime routing tasks, and a frozen 68-scenario holdout with closed-world JSON output contracts for robust ranking. Trials are scored from execution traces via a safety-gated formula combining correctness, process quality, and efficiency, preserving failure evidence for audit. Our anonymous artifact includes benchmark definitions, scoring code, manifests and sanitized traces. We evaluate 68 configurations on the full profile and 37 on holdout. The top safety-gated average trace score is 0.7671. Native-runtime tasks underperform workspace-live tasks (0.5238 vs. 0.6415). On holdout, pass@k-any outperforms strict three-trial pass (0.6638 vs. 0.2890), while full-profile and holdout rankings show weak alignment (Spearman 0.1300). Rankings based purely on correctness differ substantially from process-aware, safety-gated and strict-pass views. Final-answer leaderboards may hide native-surface weaknesses, one-off successes and trace-local agent failure modes.",
+      "authors": [
+        "YuanHang Xiao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-23T17:09:02Z",
+      "updated": "2026-08-23T17:09:02Z",
+      "announced_date": "2026-08-23",
+      "first_seen": "2026-08-23",
+      "comment": "29 pages, 4 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.22510v1",
+        "pdf": "https://arxiv.org/pdf/2608.22510v1",
+        "html": "https://arxiv.org/html/2608.22510"
+      },
+      "score": 17,
+      "tags": [
+        "tool-use",
+        "safety",
+        "memory",
+        "workplace"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2608.22331",
+      "title": "Noise Floor Audit for Agent Benchmarks",
+      "abstract": "We audit measurement variability for 3 native tool-calling endpoints across 2 providers on the official BFCL multiple and parallel categories, using matched AST grading. At temperature 0, reruns are nearly deterministic across Groq endpoints and a thinking-enabled Gemini setting: ever-flip fractions are 0.7%, 2.0%, and 2.7%, with mean run correlations of 0.997, 0.966, and 0.961. Semantics-preserving prompt perturbations create the larger floor on all endpoints, with median perturbation paired SDs 11x to 58x larger than rerun paired SDs. The failure character also shifts: malformed-output failures account for 30%, 7%, and <1% of task failures, so marginal accuracy hides not only stability but also failure mode.",
+      "authors": [
+        "Yihang Chen",
+        "Pin Qian",
+        "Su Wang",
+        "Chong Peng",
+        "Huan Xu",
+        "Xiyang Wu",
+        "Yiqi Sun"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-08-23T10:00:11Z",
+      "updated": "2026-08-23T10:00:11Z",
+      "announced_date": "2026-08-23",
+      "first_seen": "2026-08-23",
+      "comment": "10 pages, 1 figure, 6 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.22331v1",
+        "pdf": "https://arxiv.org/pdf/2608.22331v1",
+        "html": "https://arxiv.org/html/2608.22331"
+      },
+      "score": 7,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

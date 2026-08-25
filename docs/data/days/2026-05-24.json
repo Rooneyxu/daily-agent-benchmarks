@@ -1,0 +1,88 @@
+{
+  "date": "2026-05-24",
+  "count": 1,
+  "report": {
+    "date": "2026-05-24",
+    "count": 1,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      }
+    ],
+    "en": {
+      "headline": "1 new agent benchmark",
+      "summary": "On May 24, 2026, arXiv listed 1 new agent benchmark: GroupTravelBench: Benchmarking LLM Agents on Multi-Person Travel Planning.",
+      "highlights": [
+        {
+          "id": "2605.25200",
+          "title": "GroupTravelBench: Benchmarking LLM Agents on Multi-Person Travel Planning",
+          "blurb": "Travel planning in the real world is overwhelmingly a \\textit{group} activity, yet existing LLM travel-planning benchmarks reduce it to a single user, where the field is approaching saturation."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 1 篇 Agent Benchmark",
+      "summary": "2026年5月24日，arXiv 新增 1 篇 Agent Benchmark：GroupTravelBench: Benchmarking LLM Agents on Multi-Person Travel Planning。",
+      "highlights": [
+        {
+          "id": "2605.25200",
+          "title": "GroupTravelBench: Benchmarking LLM Agents on Multi-Person Travel Planning",
+          "blurb": "Travel planning in the real world is overwhelmingly a \\textit{group} activity, yet existing LLM travel-planning benchmarks reduce it to a single user, where the field is approaching saturation."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2605.25200",
+      "title": "GroupTravelBench: Benchmarking LLM Agents on Multi-Person Travel Planning",
+      "abstract": "Travel planning in the real world is overwhelmingly a \\textit{group} activity, yet existing LLM travel-planning benchmarks reduce it to a single user, where the field is approaching saturation. This single-user assumption sidesteps what makes group planning hard for an agent: discovering private preferences across multiple users, surfacing conflicts, and balancing utility against fairness. To bring the task back to its multi-user reality, we introduce \\textbf{\\textit{GroupTravelBench}}, the first benchmark for \\textbf{multi-user, multi-turn} travel planning. Built from real user profiles, POI data, and ticket prices, it comprises 650 tasks across three difficulty levels, each running in a synchronous group-chat sandbox with cached tool data for reproducible offline evaluation. Beyond the multi-step reasoning and tool use that single-user benchmarks already test, GroupTravelBench probes three group-specific capabilities: \\textit{(i) elicitation} of private preferences through multi-turn dialogue; \\textit{(ii) coordination} of inter-user conflicts via compromise or subgrouping; and \\textit{(iii) planning} that balances group utility against fairness. We pair this with a complementary evaluation framework combining rule-based outcome metrics and LLM-judge process metrics. Across a wide range of frontier models, even the strongest agents fall short on all four rule-based outcome metrics, with plan validity below 12\\%, suggesting that group-level outcome quality is a key open challenge for LLM travel-planning agents.",
+      "authors": [
+        "Xiang Cheng",
+        "Yulan Hu",
+        "Lulu Zheng",
+        "Zheng Pan",
+        "Xin Li",
+        "Yong Liu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-24T17:59:58Z",
+      "updated": "2026-06-03T15:23:05Z",
+      "announced_date": "2026-05-24",
+      "first_seen": "2026-05-24",
+      "comment": "work in process",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.25200v2",
+        "pdf": "https://arxiv.org/pdf/2605.25200v2",
+        "html": "https://arxiv.org/html/2605.25200"
+      },
+      "score": 19,
+      "tags": [
+        "tool-use",
+        "planning",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 4
+    }
+  ]
+}

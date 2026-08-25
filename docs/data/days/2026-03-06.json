@@ -1,0 +1,144 @@
+{
+  "date": "2026-03-06",
+  "count": 2,
+  "report": {
+    "date": "2026-03-06",
+    "count": 2,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On March 6, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Coding agents (1), Science lab (1), and Tool use (1).",
+      "highlights": [
+        {
+          "id": "2603.06739",
+          "title": "ResearchEnvBench: Benchmarking Agents on Environment Synthesis for Research Code Execution",
+          "blurb": "Autonomous agents are increasingly expected to support scientific research, and recent benchmarks report progress in code repair and autonomous experimentation."
+        },
+        {
+          "id": "2603.05910",
+          "title": "The World Won't Stay Still: Programmable Evolution for Agent Benchmarks",
+          "blurb": "LLM-powered tool-calling agents fulfill user requests by interacting with environments, querying data, and invoking tools in a multi-turn process."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年3月6日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在代码智能体（1）、科学实验（1）、工具使用（1）。",
+      "highlights": [
+        {
+          "id": "2603.06739",
+          "title": "ResearchEnvBench: Benchmarking Agents on Environment Synthesis for Research Code Execution",
+          "blurb": "Autonomous agents are increasingly expected to support scientific research, and recent benchmarks report progress in code repair and autonomous experimentation."
+        },
+        {
+          "id": "2603.05910",
+          "title": "The World Won't Stay Still: Programmable Evolution for Agent Benchmarks",
+          "blurb": "LLM-powered tool-calling agents fulfill user requests by interacting with environments, querying data, and invoking tools in a multi-turn process."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2603.06739",
+      "title": "ResearchEnvBench: Benchmarking Agents on Environment Synthesis for Research Code Execution",
+      "abstract": "Autonomous agents are increasingly expected to support scientific research, and recent benchmarks report progress in code repair and autonomous experimentation. However, these evaluations typically assume a pre-configured execution environment, which requires resolving complex software dependencies, aligning hardware and framework versions, and configuring distributed execution, yet this capability remains largely unbenchmarked. We introduce ResearchEnvBench, a benchmark for environment synthesis in research code execution. Given a research repository, documentation, and a target execution setting, agents must construct an environment that successfully executes at runtime. Evaluations on diverse research repositories reveal a substantial gap in current SOTA agents, with failures dominated by incomplete dependency resolution and brittle version coupling. ResearchEnvBench provides a realistic testbed for advancing autonomous agents toward reproducible scientific research.",
+      "authors": [
+        "Yubang Wang",
+        "Chenxi Zhang",
+        "Bowen Chen",
+        "Zezheng Huai",
+        "Zihao Dai",
+        "Xinchi Chen",
+        "Yuxin Wang",
+        "Yining Zheng",
+        "Jingjing Gong",
+        "Xipeng Qiu"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-03-06T08:29:08Z",
+      "updated": "2026-03-11T07:59:46Z",
+      "announced_date": "2026-03-06",
+      "first_seen": "2026-03-06",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.06739v2",
+        "pdf": "https://arxiv.org/pdf/2603.06739v2",
+        "html": "https://arxiv.org/html/2603.06739"
+      },
+      "score": 18,
+      "tags": [
+        "coding",
+        "science"
+      ],
+      "field": "coding",
+      "citations": 1
+    },
+    {
+      "id": "2603.05910",
+      "title": "The World Won't Stay Still: Programmable Evolution for Agent Benchmarks",
+      "abstract": "LLM-powered tool-calling agents fulfill user requests by interacting with environments, querying data, and invoking tools in a multi-turn process. Yet, most existing benchmarks evaluate these systems under static environment interfaces, with fixed schemas and toolsets, making it difficult to assess how agents behave as environments evolves -- when capabilities are added, reorganized, or deprecated across successive environment versions. In this paper, we study structured environment evolution as a benchmark-construction problem for tool-calling agents. We propose ProEvolve, a graph-based framework that makes environment evolution programmable. At its core, a typed relational graph provides a unified, explicit representation of the environment - data, tools, and schema. Under this formalism, adding, removing, or modifying capabilities are expressed as graph transformations that coherently propagate updates across tools, schemas, and data access. Building on this, ProEvolve supports (1) automatic generation of evolved executable environments through explicit graph transformations, and (2) graph-grounded construction of task sandboxes via subgraph sampling and instantiation. We validate ProEvolve in two tool-calling domains, e-commerce and airline booking, in terms of quality, implementation validity, and failure modes. Finally, we use the generated benchmark as a downstream diagnostic to study how representative agents behave under structured environment evolution.",
+      "authors": [
+        "Guangrui Li",
+        "Yaochen Xie",
+        "Yi Liu",
+        "Ziwei Dong",
+        "Xingyuan Pan",
+        "Tianqi Zheng",
+        "Jason Choi",
+        "Michael J. Morais",
+        "Binit Jha",
+        "Shaunak Mishra",
+        "Bingrou Zhou",
+        "Chen Luo",
+        "Monica Xiao Cheng",
+        "Dawn Song"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-06T04:56:18Z",
+      "updated": "2026-05-19T17:15:08Z",
+      "announced_date": "2026-03-06",
+      "first_seen": "2026-03-06",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.05910v2",
+        "pdf": "https://arxiv.org/pdf/2603.05910v2",
+        "html": "https://arxiv.org/html/2603.05910"
+      },
+      "score": 7,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 3
+    }
+  ]
+}

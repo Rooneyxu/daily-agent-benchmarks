@@ -1,0 +1,268 @@
+{
+  "date": "2026-08-17",
+  "count": 5,
+  "report": {
+    "date": "2026-08-17",
+    "count": 5,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 3,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      }
+    ],
+    "en": {
+      "headline": "5 new agent benchmarks",
+      "summary": "On August 17, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Safety (3), Planning / reasoning (1), Tool use (1), and Coding agents (1).",
+      "highlights": [
+        {
+          "id": "2608.16349",
+          "title": "AeroCopilotBench: A Two-Tier Benchmark for Evaluating LLM Agents as Aviation Copilots in an Interactive Virtual Cockpit Environment",
+          "blurb": "Large language model (LLM) agents may assist flight crews with complex decisions and task execution, but existing aviation evaluations centered on static knowledge do not support systematic testing of procedural executio…"
+        },
+        {
+          "id": "2608.16022",
+          "title": "OpenHarmony Bench: Evaluating LLMs and Coding Agents on OpenHarmony App Development",
+          "blurb": "We present OPENHARMONY BENCH, an app-level coding benchmark for evaluating LLM-based coding agents on OpenHarmony ArkTS applications."
+        },
+        {
+          "id": "2608.16246",
+          "title": "CompoSkill: Compositional Skill Chain Attacks from Individually Scanner-Passing LLM Agent Skills",
+          "blurb": "Autonomous AI agents tackling Long Horizon Tasks depend on marketplace skills that are certified one at a time: a scanner returns a safety verdict for each skill and declares the ecosystem safe if every package passes."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年8月17日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在安全（3）、规划 / 推理（1）、工具使用（1）、代码智能体（1）。",
+      "highlights": [
+        {
+          "id": "2608.16349",
+          "title": "AeroCopilotBench: A Two-Tier Benchmark for Evaluating LLM Agents as Aviation Copilots in an Interactive Virtual Cockpit Environment",
+          "blurb": "Large language model (LLM) agents may assist flight crews with complex decisions and task execution, but existing aviation evaluations centered on static knowledge do not support systematic testing of procedural executio…"
+        },
+        {
+          "id": "2608.16022",
+          "title": "OpenHarmony Bench: Evaluating LLMs and Coding Agents on OpenHarmony App Development",
+          "blurb": "We present OPENHARMONY BENCH, an app-level coding benchmark for evaluating LLM-based coding agents on OpenHarmony ArkTS applications."
+        },
+        {
+          "id": "2608.16246",
+          "title": "CompoSkill: Compositional Skill Chain Attacks from Individually Scanner-Passing LLM Agent Skills",
+          "blurb": "Autonomous AI agents tackling Long Horizon Tasks depend on marketplace skills that are certified one at a time: a scanner returns a safety verdict for each skill and declares the ecosystem safe if every package passes."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.16637",
+      "title": "PDDLCoder: Agentic PDDL Generation for LLM-Assisted Symbolic Planning",
+      "abstract": "LLMs remain unreliable for long-horizon planning, often generating logically inconsistent or non-applicable plans. Recent hybrid methods instead translate natural language into the Planning Domain Definition Language (PDDL), allowing symbolic planners to produce verifiable plans. However, existing methods frequently rely on rigid generation pipelines, a partial PDDL definition, or human feedback. Furthermore, their evaluation is hindered by the lack of standardized benchmarks with automated verification. To address these limitations, we present PDDLCoder, an agentic framework for PDDL generation from natural language that iteratively generates, analyzes, and refines planning specifications. We further introduce NL-pddlgym, a benchmark dataset comprising 711 planning problems across 23 domains with executable gym environments for the automated verification of plan applicability. Experiments on the NL-pddlgym test set containing 106 problems across 4 held-out domains show that PDDLCoder generates applicable plans for 89.6\\% of tested planning problems. This improves upon our adaptations of previous PDDL generation methods, which achieved up to 45.3\\%, and outperforms direct LLM planning approaches, which reached up to 74.5\\% on the same test set. Our work demonstrates the effectiveness of agentic PDDL generation for planning and establishes a reproducible benchmark for future research on LLM-assisted symbolic planning.",
+      "authors": [
+        "Veit Laule",
+        "Jiangtao Shuai",
+        "Manfred Hauswirth",
+        "Sonja Schimmler"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-17T14:34:56Z",
+      "updated": "2026-08-17T14:34:56Z",
+      "announced_date": "2026-08-17",
+      "first_seen": "2026-08-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.16637v1",
+        "pdf": "https://arxiv.org/pdf/2608.16637v1",
+        "html": "https://arxiv.org/html/2608.16637"
+      },
+      "score": 11,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.16349",
+      "title": "AeroCopilotBench: A Two-Tier Benchmark for Evaluating LLM Agents as Aviation Copilots in an Interactive Virtual Cockpit Environment",
+      "abstract": "Large language model (LLM) agents may assist flight crews with complex decisions and task execution, but existing aviation evaluations centered on static knowledge do not support systematic testing of procedural execution and safety compliance in interactive environments. This paper presents the AeroCopilot Operational Environment (ACOE), a reproducible interactive virtual-cockpit test environment, and AeroCopilotBench, a two-tier aviation agent evaluation benchmark. Tier-1 evaluates aviation knowledge using 1,200 multiple-choice questions, while Tier-2 comprises 73 emergency and abnormal tasks derived from the manufacturers' Pilot's Operating Handbooks (POHs) and instantiated in ACOE. ACOE converts natural-language procedures into executable state transitions, final-state goal conditions, and hard safety constraints, enabling models to interpret cockpit state, diagnose faults, and operate aircraft systems through standardized tool interfaces. We establish a safety-gated evaluation framework in which a trajectory succeeds only when all task goals are achieved without violating any hard safety constraint, while safe goal progress and trajectory safety are measured separately. Across 12 models, the highest Tier-2 success rate is 72.6%, while static knowledge performance does not consistently translate into procedural execution. Analysis of 451 failed episodes from 3 representative models identifies recurring failures in procedural completeness, use of state feedback, and long-horizon execution management. These findings motivate state-aware agent orchestration, joint assessment of task completion and trajectory safety, and repeated regression testing. ACOE and AeroCopilotBench provide a reproducible foundation for testing knowledge application, interactive execution, and operational safety in aviation agents.",
+      "authors": [
+        "Yuchen Yuan",
+        "Zhenghuang Wu",
+        "Yuangan Li",
+        "Liang Ma",
+        "Ke Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-17T09:53:52Z",
+      "updated": "2026-08-17T09:53:52Z",
+      "announced_date": "2026-08-17",
+      "first_seen": "2026-08-17",
+      "comment": "38 pages, 7 figures, 6 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.16349v1",
+        "pdf": "https://arxiv.org/pdf/2608.16349v1",
+        "html": "https://arxiv.org/html/2608.16349"
+      },
+      "score": 17,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.16246",
+      "title": "CompoSkill: Compositional Skill Chain Attacks from Individually Scanner-Passing LLM Agent Skills",
+      "abstract": "Autonomous AI agents tackling Long Horizon Tasks depend on marketplace skills that are certified one at a time: a scanner returns a safety verdict for each skill and declares the ecosystem safe if every package passes. We show that this assumption fails under skill composition. A skill may pass the per-skill scanner individually yet participate in a risky composition when an agent connects its outputs, capabilities, or side effects with those of other scanner-passing skills. This makes skill composition risk a path level property rather than a node level property, explaining why existing skill scanners that inspect individual packages achieve limited interception. To study this threat, we present CompoSkill, a framework that constructs skill composition attacks through a dual attacker system. The white-box attacker knows the victim's installed skill pool and directly injects explicit skill-id sequences; the black-box attacker knows only a role profile, downloads the top marketplace skills for that scenario, builds a Skill Composition Graph, and searches for high risk chains whose implicit lures never name skill identifiers. We further construct CompoSkill-Bench, a benchmark of 1,140 records built from long-horizon professional workflows across five threats and six scenarios on OpenClaw and Nanobot. CompoSkill achieves risk Chain Formation Rates (CFR) up to 83.3% in the white box setting and 80.6% in the black box setting, while existing skill scanners block only a limited fraction of the risky compositions. Finally, we observe a bridge-bonus-then-hop-decay pattern: a bridge skill can increase attack success, but Attack Success Rate (ASR) decreases once additional hops make the risk chain longer than three skills. These results expose a systematic gap in single skill certification for autonomous AI agents.",
+      "authors": [
+        "Mingxiao Liu",
+        "Zhoumian Jiang",
+        "Jianan Ma",
+        "Jian Zhang",
+        "Jialuo Chen",
+        "Xinhao Deng",
+        "Zhen Wang"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-08-17T08:20:44Z",
+      "updated": "2026-08-17T08:20:44Z",
+      "announced_date": "2026-08-17",
+      "first_seen": "2026-08-17",
+      "comment": "9 pages,5 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.16246v1",
+        "pdf": "https://arxiv.org/pdf/2608.16246v1",
+        "html": "https://arxiv.org/html/2608.16246"
+      },
+      "score": 12,
+      "tags": [
+        "safety"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2608.16055",
+      "title": "Governance at the Boundary: How Agent Decomposition Degrades Policy Compliance",
+      "abstract": "Existing agent benchmarks ask whether the agent finished the task. We ask whether it finished it within policy. We introduce Fiducia-bench, a benchmark for the governability of financial agents---whether they escalate when obligated, abstain when required, and leave an auditable trail---and use it to study a question no prior benchmark addresses: does decomposing an agent into components degrade its governance? It does, and the mechanism is specific. Policy-relevant facts discovered by one component are attenuated at the handoff boundary before reaching the component that must act on them. In a 626-episode experiment across 100 KYC/AML task variants, two models, and three architectures, a 32B open-weights model attenuated 0% of discovered facts under a single-loop baseline, 56% under a fixed pipeline, and 85% under an orchestrator-subagent architecture (all at constraint distance 2). A stronger model (gpt-4.1-mini) attenuated 3-6% under the same conditions, suggesting the governance cost of decomposition is partly a function of model capability. Critically, the same mechanism produces both under-escalation and over-escalation, depending on whether the dropped fact was a risk signal or an exculpating one. The benchmark, all tasks, and the verification harness are open-source",
+      "authors": [
+        "Bowen Li",
+        "Guojun Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-17T03:31:59Z",
+      "updated": "2026-08-17T03:31:59Z",
+      "announced_date": "2026-08-17",
+      "first_seen": "2026-08-17",
+      "comment": "8 pages, 3 tables, 1 figure. Preprint",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.16055v1",
+        "pdf": "https://arxiv.org/pdf/2608.16055v1",
+        "html": "https://arxiv.org/html/2608.16055"
+      },
+      "score": 7,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.16022",
+      "title": "OpenHarmony Bench: Evaluating LLMs and Coding Agents on OpenHarmony App Development",
+      "abstract": "We present OPENHARMONY BENCH, an app-level coding benchmark for evaluating LLM-based coding agents on OpenHarmony ArkTS applications. Unlike function-level benchmarks, it evaluates complete app-level changes: each task requires an agent to modify a buildable ArkTS project so that a requested behavior works end to end, involving UI state, data persistence, build configuration, and platform APIs. The benchmark installs and drives the delivered application on a device to check whether the behavior is observable. It covers three input sources: natural-language feature requests (new-feature), structured scenario specifications (spec-driven), and bug descriptions (bug-fix). The benchmark contains 153 top-level tasks and 242 Feature points (F-points), where an F-point is one executable behavior check. The snapshot includes 32 new-feature tasks, 50 spec-driven tasks with 139 F-points, and 71 bug-fix tasks. The main leaderboard is scored over top-level tasks rather than independently weighted F-points. We describe the benchmark construction, statistics, and build-and-test evaluation pipeline, and evaluate DevEco Code with eight LLMs across three independent full-suite runs per configuration. Three findings emerge. First, newer generations complete more tasks than their predecessors within evaluated model-family pairs. Second, buildability is close to saturated while behavioral correctness is not: mean Final Build Success Rate is 94.77% to 100.00%, whereas mean Task Completion is 48.36% to 58.39%. Third, spec-driven tasks have the lowest Task Completion under all-checks task scoring, with no configuration exceeding 35%. The code, data, tasks, reference solutions, tests, evaluation scripts, and leaderboard are released through the official OPENHARMONY BENCH website at https://bench.matrix.openharmony.cn/.",
+      "authors": [
+        "Li Li",
+        "Han Hu",
+        "Tianjian Zhang",
+        "Xin Peng",
+        "Fangzhu Mao",
+        "Qingyu Zhang",
+        "Xiaoheng Xie",
+        "Zhongmin Tang",
+        "Zhihao Lin",
+        "Haolin Ruan",
+        "Miaomiao Dong",
+        "Liuchuan Zhu",
+        "Yue Li",
+        "Chi Chen",
+        "Wenkang Zhong",
+        "Mingfei Zhang",
+        "Yang Yu",
+        "Bo Sun",
+        "Chaorui Zhang",
+        "Weixi Zhang",
+        "Wei Han",
+        "Bo Bai",
+        "Kui Liu",
+        "Gang Fan",
+        "Siru Liu",
+        "Jiaqian Zhou",
+        "Jiali Sun",
+        "Yunbiao Dong",
+        "Wenhao Zhong",
+        "Yunhong Xu"
+      ],
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-08-17T02:27:10Z",
+      "updated": "2026-08-17T02:27:10Z",
+      "announced_date": "2026-08-17",
+      "first_seen": "2026-08-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.16022v1",
+        "pdf": "https://arxiv.org/pdf/2608.16022v1",
+        "html": "https://arxiv.org/html/2608.16022"
+      },
+      "score": 17,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    }
+  ]
+}

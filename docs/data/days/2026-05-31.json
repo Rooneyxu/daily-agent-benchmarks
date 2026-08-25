@@ -1,0 +1,297 @@
+{
+  "date": "2026-05-31",
+  "count": 5,
+  "report": {
+    "date": "2026-05-31",
+    "count": 5,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 3,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      }
+    ],
+    "en": {
+      "headline": "5 new agent benchmarks",
+      "summary": "On May 31, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Planning / reasoning (3), Safety (3), Tool use (1), and Memory (1).",
+      "highlights": [
+        {
+          "id": "2606.01057",
+          "title": "3DCodeBench: Benchmarking Agentic Procedural 3D Modeling Via Code",
+          "blurb": "Procedural 3D modeling through code is emerging as a versatile paradigm, offering deterministic, engine-ready, and precisely editable assets that neural 3D generators inherently lack."
+        },
+        {
+          "id": "2606.01317",
+          "title": "SABER: Benchmarking Operational Safety of LLM Coding Agents in Stateful Project Workspaces",
+          "blurb": "Large language models are increasingly deployed as coding agents, shifting safety from individual responses to action sequences."
+        },
+        {
+          "id": "2606.01498",
+          "title": "TimeSage-MT: A Multi-Turn Benchmark for Evaluating Agentic Time Series Reasoning",
+          "blurb": "Time series data inform critical decisions across many real-world domains."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年5月31日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在规划 / 推理（3）、安全（3）、工具使用（1）、记忆（1）。",
+      "highlights": [
+        {
+          "id": "2606.01057",
+          "title": "3DCodeBench: Benchmarking Agentic Procedural 3D Modeling Via Code",
+          "blurb": "Procedural 3D modeling through code is emerging as a versatile paradigm, offering deterministic, engine-ready, and precisely editable assets that neural 3D generators inherently lack."
+        },
+        {
+          "id": "2606.01317",
+          "title": "SABER: Benchmarking Operational Safety of LLM Coding Agents in Stateful Project Workspaces",
+          "blurb": "Large language models are increasingly deployed as coding agents, shifting safety from individual responses to action sequences."
+        },
+        {
+          "id": "2606.01498",
+          "title": "TimeSage-MT: A Multi-Turn Benchmark for Evaluating Agentic Time Series Reasoning",
+          "blurb": "Time series data inform critical decisions across many real-world domains."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.01498",
+      "title": "TimeSage-MT: A Multi-Turn Benchmark for Evaluating Agentic Time Series Reasoning",
+      "abstract": "Time series data inform critical decisions across many real-world domains. While large language model (LLM) agents can analyze data through natural language and tools, it remains unclear whether they can conduct reliable time series analysis across multi-turn conversations. Existing benchmarks focus on single-step tasks such as forecasting and anomaly detection, overlooking practical workflows where user goals evolve, agents must build on prior analyses, and conclusions emerge from accumulated evidence. In this work, we introduce TimeSage-MT, a multi-turn benchmark for agentic time series reasoning with 240 tasks and 2,680 dialogue turns across 8 real-world domains, spanning basic exploration to decision-oriented analysis. TimeSage-MT is built through a reproducible pipeline that converts real-world time series data into multi-turn conversations with verifiable answers. It provides a unified evaluation protocol and public leaderboard for comparing time series agentic systems. To demonstrate the benchmark's utility, we evaluate frontier LLMs alongside TimeSage, a novel structured agent equipped with a comprehensive time series skill library. The results show sharp performance drops on decision-oriented tasks, driven by failures in memory, uncertainty handling, and domain-based decision making. TimeSage-MT exposes critical gaps in current agentic reasoning and provides a rigorous foundation for future development.",
+      "authors": [
+        "Yaxuan Kong",
+        "Qingren Yao",
+        "Yuqi Nie",
+        "Yichen Li",
+        "Yilei Shao",
+        "Stefan Zohren",
+        "Anna Vettoruzzo",
+        "Joaquin Vanschoren",
+        "Ming Jin",
+        "Qingsong Wen"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-31T23:34:35Z",
+      "updated": "2026-05-31T23:34:35Z",
+      "announced_date": "2026-05-31",
+      "first_seen": "2026-05-31",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.01498v1",
+        "pdf": "https://arxiv.org/pdf/2606.01498v1",
+        "html": "https://arxiv.org/html/2606.01498"
+      },
+      "score": 15,
+      "tags": [
+        "tool-use",
+        "memory",
+        "planning",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 1
+    },
+    {
+      "id": "2606.01434",
+      "title": "DrugClaw and DrugAudit: A Primary-Source-Grounded Agent and Authority-Aware Benchmark for Drug-Information Question Answering",
+      "abstract": "Drug-information question answering is a high-stakes setting where hallucinated facts can mislead clinical decision-making and the provenance of each cited fact matters as much as the fact itself. We present DrugClaw, a multi-agent retrieval-augmented system that queries a registry of drug and pharmacovigilance skills via a reflection-driven state-machine workflow and returns answers grounded in primary regulatory or peer-reviewed records. We also contribute DrugAudit, a 3,772-item authority-aware benchmark with an evaluation panel that scores upstream-of-gold source match, token-level semantic snippet overlap, and citation faithfulness under a dual-judge LLM-as-judge protocol with inter-judge kappa = 0.88 (almost-perfect). Across DrugAudit plus drug-related subsets of MedQA (751) and PubMedQA (512), DrugClaw is top-1 on every column of the headline table: composite Evidence Index under both judges, judge-mediated answer correctness, primary-source rate (0.918, +10.1 pp over next-best), faithfulness (0.887, +5.9 pp), MedQA (0.920), and PubMedQA (0.693).",
+      "authors": [
+        "Qing Wang",
+        "Bo Li",
+        "Jialu Liang",
+        "Daling Shi",
+        "Bob Zhang",
+        "Qianqian Song"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-31T20:11:05Z",
+      "updated": "2026-05-31T20:11:05Z",
+      "announced_date": "2026-05-31",
+      "first_seen": "2026-05-31",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.01434v1",
+        "pdf": "https://arxiv.org/pdf/2606.01434v1",
+        "html": "https://arxiv.org/html/2606.01434"
+      },
+      "score": 10,
+      "tags": [
+        "multi-agent"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2606.01317",
+      "title": "SABER: Benchmarking Operational Safety of LLM Coding Agents in Stateful Project Workspaces",
+      "abstract": "Large language models are increasingly deployed as coding agents, shifting safety from individual responses to action sequences. Existing benchmarks, however, primarily assess whether models refuse unsafe prompts, leaving impacts on stateful workspaces largely unexamined. We present SABER, a benchmark for environment-aware operational safety that places models in realistic agent-style projects and evaluates safety from the final environment state after a sequence of actions. Beyond binary safety-violation reports, SABER categorizes violations by cause, enabling analysis of model-specific safety profiles. Our evaluations show that even the best-performing model has more than a 54% harmful safety-violation rate (HSR), suggesting that current alignment remains insufficient for realistic project environments. SABER further reveals distinct safety profiles across models. Our benchmark is publicly available at https://github.com/sssr-lab/saber.",
+      "authors": [
+        "Qi Hu",
+        "Yifeng Tang",
+        "Qinghua Wang",
+        "Lanyang Zhao",
+        "Pengji Zhang",
+        "Yuhao Qing",
+        "Xin Yao",
+        "Dong Huang",
+        "Lin Zhang",
+        "Zhuoran Ji"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.CR"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-05-31T16:06:02Z",
+      "updated": "2026-08-24T03:47:15Z",
+      "announced_date": "2026-05-31",
+      "first_seen": "2026-05-31",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.01317v2",
+        "pdf": "https://arxiv.org/pdf/2606.01317v2",
+        "html": "https://arxiv.org/html/2606.01317"
+      },
+      "score": 17,
+      "tags": [
+        "coding",
+        "safety",
+        "science"
+      ],
+      "field": "coding",
+      "citations": 2
+    },
+    {
+      "id": "2606.01057",
+      "title": "3DCodeBench: Benchmarking Agentic Procedural 3D Modeling Via Code",
+      "abstract": "Procedural 3D modeling through code is emerging as a versatile paradigm, offering deterministic, engine-ready, and precisely editable assets that neural 3D generators inherently lack. Authoring such procedural content, however, demands deep expertise in 3D software APIs, parametric design, and code-level geometric reasoning. In this paper, we propose 3DCodeBench, a systematic benchmark for evaluating vision-language model (VLM) agents for procedural 3D generation in 3D modeling software. Specifically, 3DCodeBench evaluates how effectively 12 advanced VLMs can serve as procedural 3D modelers by translating text and image references into procedural code for 3D modeling software. Recognizing that automated metrics may not fully capture the perceptual quality of 3D shapes, we build 3DCodeArena, a ranking platform based on pairwise human preferences over generated 3D outputs. From extensive evaluations and results, we observe that: (1) Failures mostly arise from API mismatches, while successful renders still suffer from disconnected or floating 3D geometric components. (2) Test-time scaling, such as higher thinking budgets and multi-turn refinement, improves performance overall. Our findings highlight a critical need for high-quality procedural coding data to advance commercial VLMs. Furthermore, effective procedural 3D modeling requires a robust execution environment that provides high-fidelity feedback for iterative refinement. We release 3DCodeBench, including the curated large-scale dataset of multimodal (text/image) prompts, procedural code, 3D object triplets, evaluation protocol, and the public 3DCodeArena platform as a foundational toolkit for exploring VLM-based procedural 3D modelers.",
+      "authors": [
+        "Yipeng Gao",
+        "Lei Shu",
+        "Genzhi Ye",
+        "Xi Xiong",
+        "Ameesh Makadia",
+        "Meiqi Guo",
+        "Laurent Itti",
+        "Jindong Chen"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.GR",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-05-31T06:59:49Z",
+      "updated": "2026-05-31T06:59:49Z",
+      "announced_date": "2026-05-31",
+      "first_seen": "2026-05-31",
+      "comment": "Project Page: https://www.3dcodebench.com/; 11 pages (main), with appendix",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.01057v1",
+        "pdf": "https://arxiv.org/pdf/2606.01057v1",
+        "html": "https://arxiv.org/html/2606.01057"
+      },
+      "score": 17,
+      "tags": [
+        "safety",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 4
+    },
+    {
+      "id": "2606.01046",
+      "title": "TravelEval: A Comprehensive Benchmarking Framework for Evaluating LLM-Powered Travel Planning Agents",
+      "abstract": "The development of Large Language Models (LLMs) has significantly improved travel planning applications, yet evaluating such models is limited by existing benchmarks' limitations: 1) overemphasis on constraint compliance, neglecting multi-dimensional qualities like spatio-temporal cost; 2) datasets lacking real-world authenticity and coverage in key areas (e.g., lodging, transport); and 3) isolated daily plan assessments that miss critical details (e.g., the impact of daily accommodation and visit pacing) needed for entire plan's evaluation. To address this gap, we introduce TravelEval, a realistic and comprehensive benchmark. TravelEval features 1) a novel six-dimensional evaluation framework to holistically assess plans across accuracy, compliance, temporality, spatiality, economy, and utility dimensions; 2) a highly realistic data sandbox with precise accommodation pricing and authentic intercity transportation data; and 3) a simulation-based global evaluation method that emulates complete travel plans with API-integrated geographic information and fine-grained queuing time. Evaluating 12 mainstream approaches with TravelEval reveals several valuable insights, such that LLMs struggle with globally-optimized multi-dimensional planning (especially in spatio-temporal reasoning and budget compliance), and agentic reasoning strategies offer no consistent improvement. Concisely, TravelEval facilitates travel plan evaluation via grounded spatio-temporal emulation and comprehensive metrics, providing a robust foundation for advancing LLM-powered travel planning research and applications.",
+      "authors": [
+        "Weiyi Chen",
+        "Shuaixiong Wang",
+        "Ziyun Gao",
+        "Kaichun Hu",
+        "Wangze Ni",
+        "Shimin Di",
+        "Chen Jason Zhang",
+        "Lei Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-31T06:29:19Z",
+      "updated": "2026-05-31T06:29:19Z",
+      "announced_date": "2026-05-31",
+      "first_seen": "2026-05-31",
+      "comment": "31pages, 8 figures, accepted by KDD 2026",
+      "doi": "10.1145/3770855.3817533",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.01046v1",
+        "pdf": "https://arxiv.org/pdf/2606.01046v1",
+        "html": "https://arxiv.org/html/2606.01046"
+      },
+      "score": 11,
+      "tags": [
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 1
+    }
+  ]
+}

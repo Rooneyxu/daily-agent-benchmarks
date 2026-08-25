@@ -1,0 +1,264 @@
+{
+  "date": "2026-06-24",
+  "count": 5,
+  "report": {
+    "date": "2026-06-24",
+    "count": 5,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      }
+    ],
+    "en": {
+      "headline": "5 new agent benchmarks",
+      "summary": "On June 24, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Tool use (2), Safety (2), GUI agents (1), and Computer use (1).",
+      "highlights": [
+        {
+          "id": "2606.25819",
+          "title": "Beyond Function Calling: Benchmarking Tool-Using Agents under Tool-Environment Unreliability",
+          "blurb": "Large language models are increasingly deployed as agents that solve tasks by interacting with external tool environments."
+        },
+        {
+          "id": "2606.26216",
+          "title": "CyberChainBench: Can AI Agents Secure Smart Contracts Against Real-World On-Chain Vulnerabilities?",
+          "blurb": "We present CyberChainBench, a benchmark for evaluating LLM-based agents on smart contract security across three complementary tasks: vulnerability detection, exploit generation, and patch synthesis."
+        },
+        {
+          "id": "2607.16229",
+          "title": "FinBench: Time-Gated Calibration and Uncertainty Benchmarking for Agentic Financial Forecasting",
+          "blurb": "Large language models (LLMs) are increasingly used as components of agentic systems that observe, plan, and act."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年6月24日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在工具使用（2）、安全（2）、GUI 智能体（1）、计算机使用（1）。",
+      "highlights": [
+        {
+          "id": "2606.25819",
+          "title": "Beyond Function Calling: Benchmarking Tool-Using Agents under Tool-Environment Unreliability",
+          "blurb": "Large language models are increasingly deployed as agents that solve tasks by interacting with external tool environments."
+        },
+        {
+          "id": "2606.26216",
+          "title": "CyberChainBench: Can AI Agents Secure Smart Contracts Against Real-World On-Chain Vulnerabilities?",
+          "blurb": "We present CyberChainBench, a benchmark for evaluating LLM-based agents on smart contract security across three complementary tasks: vulnerability detection, exploit generation, and patch synthesis."
+        },
+        {
+          "id": "2607.16229",
+          "title": "FinBench: Time-Gated Calibration and Uncertainty Benchmarking for Agentic Financial Forecasting",
+          "blurb": "Large language models (LLMs) are increasingly used as components of agentic systems that observe, plan, and act."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.26216",
+      "title": "CyberChainBench: Can AI Agents Secure Smart Contracts Against Real-World On-Chain Vulnerabilities?",
+      "abstract": "We present CyberChainBench, a benchmark for evaluating LLM-based agents on smart contract security across three complementary tasks: vulnerability detection, exploit generation, and patch synthesis. Built from 541 real-world exploit incidents from DeFiHackLabs spanning 9 EVM chains, the benchmark provides end-to-end on-chain evaluation where agents interact with historical blockchain state through isolated evaluation environments orchestrated by Harbor, using tools to read code, trace transactions, and validate exploits on mainnet forks. Each case is anchored to a specific block and includes structured ground truth covering vulnerability type, localization, and attacker profit. Exploits are graded by economic impact on historical forks; patches are validated by replaying historical attacks and legitimate transactions as fail-to-pass test oracles on a proxy-upgradeable subset. We define a five-type vulnerability taxonomy and evaluate multiple agent--model configurations. Results reveal a clear difficulty gradient: the best configuration scores 37.5% on detection, 43.7% on exploitation, but only 23.4% on patching, with the top agent (Codex with GPT-5.5) realizing \\$57.4M in total exploit profit across the 200-case exploit set at a cost of $2.39 per case.",
+      "authors": [
+        "Jintao Huang",
+        "Fengqing Jiang",
+        "Radha Poovendran",
+        "Zhiqiang Lin"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-06-24T17:58:16Z",
+      "updated": "2026-06-24T17:58:16Z",
+      "announced_date": "2026-06-24",
+      "first_seen": "2026-06-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.26216v1",
+        "pdf": "https://arxiv.org/pdf/2606.26216v1",
+        "html": "https://arxiv.org/html/2606.26216"
+      },
+      "score": 19,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.25819",
+      "title": "Beyond Function Calling: Benchmarking Tool-Using Agents under Tool-Environment Unreliability",
+      "abstract": "Large language models are increasingly deployed as agents that solve tasks by interacting with external tool environments. Although recent tool-use benchmarks increasingly cover complex task settings, they still largely assume clean, stable, and trustworthy tool environments, leaving tool-environment unreliability insufficiently examined. We introduce ToolBench-X, a benchmark for evaluating agents under recoverable reliability hazards. ToolBench-X contains executable multi-step tasks across diverse domains and sequential, parallel, and mixed workflows, each paired with deterministic tools and a canonical final answer for automatic evaluation. Starting from clean tool environments, ToolBench-X injects five structured hazard types: Specification Drift, Invocation Error, Execution Failure, Output Drift, and Cross-source Conflict. Crucially, each injected instance remains solvable through at least one valid recovery path, such as retrying, fallback, verification, or cross-checking. Experiments reveal a substantial reliability gap: agents that perform well with reliable tools often fail under recoverable hazards. Further analysis shows that failures are driven less by tool-use volume or inference budget than by limited hazard diagnosis and ineffective recovery. Targeted recovery hints recover many failed tasks, while test-time scaling yields more limited gains. These results suggest that tool-use evaluation should move beyond function-call accuracy toward task completion under unreliable tool environments. The code and data is available at https://github.com/Foreverskyou/ToolBench-X.",
+      "authors": [
+        "Yang Tian",
+        "Zhengpeng Shi",
+        "Yu Zhou",
+        "Bo Zhao"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-24T13:34:34Z",
+      "updated": "2026-06-27T07:38:41Z",
+      "announced_date": "2026-06-24",
+      "first_seen": "2026-06-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.25819v2",
+        "pdf": "https://arxiv.org/pdf/2606.25819v2",
+        "html": "https://arxiv.org/html/2606.25819"
+      },
+      "score": 27,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 1
+    },
+    {
+      "id": "2606.25760",
+      "title": "Uncertainty Quantification for Computer-Use Agents: A Benchmark across Vision-Language Models and GUI Grounding Datasets",
+      "abstract": "Computer-use agents turn vision-language model (VLM) predictions into executable GUI clicks, so reliable uncertainty estimates are essential for rejection, calibration, miss-severity ranking, and spatial safety regions. Yet evidence on post-hoc uncertainty quantification (UQ) for these agents is fragmented across isolated model and dataset pairs, leaving it unclear whether UQ rankings stay stable when the agent, benchmark, or observable interface changes. We present Argus, a cross-regime benchmark for post-hoc UQ in single-step executable GUI grounding: a 27-method open-weight matrix over 4 VLM agents and 4 datasets, plus an 8-method closed-source matrix across 3 frontier vendors where logits, hidden states, and attention maps are unavailable. Evaluated methods span logit-based scores, sampling and consistency measures, hidden-state and density estimators (Mahalanobis, SAPLMA), attention-based scores, P(True) and verbalised-confidence prompting, and split-conformal prediction. The main finding is selective transfer: UQ rankings are stable across datasets for a fixed model, but degrade across model classes and observable interfaces. Hidden-state and density methods are the most stable open-weight family, while CoCoA-1MCA, Focus, sampling-based scores, and verbalised self-assessment win in specific regimes. Within-model ranking transfer is strong (Spearman rho up to 0.969), but cross-tier transfer to closed-source vendors averages only +0.08, so closed-source UQ should be reranked on the target rather than extrapolated. Conformal click regions show score-level discrimination is not enough for deployment: locally weighted disks shrink radii by 40-60% when the plug-in UQ is calibrated, but coverage degrades under calibration-test or interface mismatch. We release per-item records, calibration/test splits, UQ scores, and analysis scripts for regime-aware UQ selection in GUI agents.",
+      "authors": [
+        "Divake Kumar",
+        "Sina Tayebati",
+        "Devashri Naik",
+        "Amanda Sofie Rios",
+        "Nilesh Ahuja",
+        "Omesh Tickoo",
+        "Ranganath Krishnan",
+        "Amit Ranjan Trivedi"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-06-24T12:34:28Z",
+      "updated": "2026-06-24T12:34:28Z",
+      "announced_date": "2026-06-24",
+      "first_seen": "2026-06-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.25760v1",
+        "pdf": "https://arxiv.org/pdf/2606.25760v1",
+        "html": "https://arxiv.org/html/2606.25760"
+      },
+      "score": 15,
+      "tags": [
+        "gui",
+        "computer-use",
+        "safety",
+        "multimodal"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2606.27397",
+      "title": "SidConArena: An Environment Evaluating Agents in Open-Ended,Positive-Sum Bargaining Game",
+      "abstract": "Evaluating LLM agents requires dynamic environments that go beyond static reasoning and zero-sum games. Real-world economic interaction is often open-ended and mixed-motive: agents must negotiate, create positive-sum surplus, compete for scarce assets, and plan under delayed returns. We introduce SidConArena, a new benchmark framework for evaluating LLM agents in open-ended, positive-sum bargaining. SidConArena formalizes a multi-player economy as a finite-horizon partially observable stochastic game with three coupled phases: natural-language negotiation with binding trades, deterministic converter-based production, and sealed-bid auctions for long-term assets. The framework combines structured observations, phase-aware agent dispatching, a neural-symbolic action interface, and asynchronous execution, enabling free-form interaction while preserving rule-grounded evaluation. Across homogeneous and heterogeneous tournaments, stronger frontier models achieve higher economic outcomes, yet agents still misvalue resources, bargain passively, and remain limited in long-horizon investment planning.",
+      "authors": [
+        "Yeqi Feng",
+        "Yuxin Chen",
+        "Tianxing He"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.GT"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-06-24T10:35:31Z",
+      "updated": "2026-06-24T10:35:31Z",
+      "announced_date": "2026-06-24",
+      "first_seen": "2026-06-24",
+      "comment": "15 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.27397v1",
+        "pdf": "https://arxiv.org/pdf/2606.27397v1",
+        "html": "https://arxiv.org/html/2606.27397"
+      },
+      "score": 12,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.16229",
+      "title": "FinBench: Time-Gated Calibration and Uncertainty Benchmarking for Agentic Financial Forecasting",
+      "abstract": "Large language models (LLMs) are increasingly used as components of agentic systems that observe, plan, and act. In finance, even \"assistive\" systems become decision-relevant once their outputs are used to size trades or allocate risk. A key failure mode is the confidence--competence gap: a model that is only slightly better than chance but consistently overconfident will, under typical bet-sizing rules, generate negative long-run growth. Existing benchmarks emphasize semantic understanding or point accuracy, but do not directly test probabilistic calibration under the temporal constraints and non-stationarity that define real markets. We introduce FinBench, a benchmark designed to evaluate calibration and uncertainty quality for financial forecasting in a setting that is (i) strictly time-gated to avoid look-ahead bias and (ii) evaluated with strictly proper scoring rules that penalize hallucinated confidence. FinBench tasks require models to output (a) a probability of positive return and (b) an 80% prediction interval for realized log return; evaluation uses the Brier score and the Winkler interval score, along with skill scores against hard baselines. This paper describes the benchmark specification and reports a small pilot run (one trading day; three liquid tickers; 33 forecasts) as a sanity check of the pipeline. The pilot illustrates how calibration-sensitive metrics distinguish between \"confident but fragile\" behavior and uncertainty-aware forecasting.",
+      "authors": [
+        "Rishab Ghosh",
+        "Vinay Devarakonda"
+      ],
+      "categories": [
+        "stat.AP",
+        "cs.LG",
+        "q-fin.CP",
+        "q-fin.PM"
+      ],
+      "primary_category": "stat.AP",
+      "published": "2026-06-24T01:27:30Z",
+      "updated": "2026-06-24T01:27:30Z",
+      "announced_date": "2026-06-24",
+      "first_seen": "2026-06-24",
+      "comment": "9 pages, 3 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.16229v1",
+        "pdf": "https://arxiv.org/pdf/2607.16229v1",
+        "html": "https://arxiv.org/html/2607.16229"
+      },
+      "score": 18,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

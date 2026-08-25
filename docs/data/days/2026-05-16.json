@@ -1,0 +1,250 @@
+{
+  "date": "2026-05-16",
+  "count": 4,
+  "report": {
+    "date": "2026-05-16",
+    "count": 4,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On May 16, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Coding agents (2), Tool use (2), Planning / reasoning (2), and Multi-agent (1).",
+      "highlights": [
+        {
+          "id": "2605.16909",
+          "title": "TOBench: A Task-Oriented Omni-Modal Benchmark for Real-World Tool-Using Agents",
+          "blurb": "Tool-using agents are increasingly expected to operate across realistic professional workflows, where they must interpret multimodal inputs, coordinate external tools, inspect intermediate artifacts, and revise their act…"
+        },
+        {
+          "id": "2605.16819",
+          "title": "AgentKernelArena: Generalization-Aware Benchmarking of GPU Kernel Optimization Agents",
+          "blurb": "GPU kernel optimization is increasingly critical for efficient deep learning systems, but writing high-performance kernels still requires substantial low-level expertise."
+        },
+        {
+          "id": "2605.17046",
+          "title": "1GC-7RC: One Graphic Card -- Seven Research Challenges! How Good Are AI Agents at Doing Your Job?",
+          "blurb": "Autonomous AI coding agents are becoming a core tool for ML practitioners in industry and research alike."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年5月16日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在代码智能体（2）、工具使用（2）、规划 / 推理（2）、多智能体（1）。",
+      "highlights": [
+        {
+          "id": "2605.16909",
+          "title": "TOBench: A Task-Oriented Omni-Modal Benchmark for Real-World Tool-Using Agents",
+          "blurb": "Tool-using agents are increasingly expected to operate across realistic professional workflows, where they must interpret multimodal inputs, coordinate external tools, inspect intermediate artifacts, and revise their act…"
+        },
+        {
+          "id": "2605.16819",
+          "title": "AgentKernelArena: Generalization-Aware Benchmarking of GPU Kernel Optimization Agents",
+          "blurb": "GPU kernel optimization is increasingly critical for efficient deep learning systems, but writing high-performance kernels still requires substantial low-level expertise."
+        },
+        {
+          "id": "2605.17046",
+          "title": "1GC-7RC: One Graphic Card -- Seven Research Challenges! How Good Are AI Agents at Doing Your Job?",
+          "blurb": "Autonomous AI coding agents are becoming a core tool for ML practitioners in industry and research alike."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2605.17046",
+      "title": "1GC-7RC: One Graphic Card -- Seven Research Challenges! How Good Are AI Agents at Doing Your Job?",
+      "abstract": "Autonomous AI coding agents are becoming a core tool for ML practitioners in industry and research alike. Despite this growing adoption, no standardized benchmark exists to evaluate their ability to design, implement, and train models from scratch across diverse domains. We introduce **1GC-7RC** (*Single Graphic Card: Seven Research Challenges*), a benchmark comprising seven ML tasks spanning language modeling, image classification, semantic segmentation, graph learning, tabular prediction, time-series forecasting, and text classification. Each task provides a locked data-preparation and evaluation script together with a baseline training script; the agent may only modify the training code, has no access to pretrained weights (with one controlled exception for semantic segmentation), no internet access, and must complete each task within a task-specific wall-clock budget (40-120 minutes) on a single GPU. We evaluate seven coding agents: five proprietary (Claude Code with Sonnet 4.6, Opus 4.6, and Opus 4.7; Codex CLI with GPT 5.5; and OpenCode with Qwen 3.6+) and two open-source (OpenCode with Kimi K2.5, Kimi K2.6). Across 5 runs per agent-task pair, we report substantial performance differences that reveal varying levels of implicit ML knowledge, planning ability, and time-budget management. The benchmark, harness, and all evaluation artifacts are publicly available on GitHub at https://github.com/Strolchii/1GC-7RC-Benchmark to facilitate reproducible comparison of future agents. Because our benchmark design is modular, the benchmark can be extended to new tasks and domains, adapted to different GPU budgets, and used to study multi-agent settings, making it a flexible platform for future research on autonomous research agents.",
+      "authors": [
+        "Robin-Nico Kampa",
+        "Fabian Deuser",
+        "Anna Bößendörfer",
+        "Konrad Habel",
+        "Norbert Oswald"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-05-16T15:35:22Z",
+      "updated": "2026-05-19T07:26:38Z",
+      "announced_date": "2026-05-16",
+      "first_seen": "2026-05-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.17046v2",
+        "pdf": "https://arxiv.org/pdf/2605.17046v2",
+        "html": "https://arxiv.org/html/2605.17046"
+      },
+      "score": 17,
+      "tags": [
+        "coding",
+        "tool-use",
+        "multi-agent",
+        "planning",
+        "research"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2607.18261",
+      "title": "When JSON Is Not Enough: Semantic Reliability of Schema-Constrained LLM Ordering Agents",
+      "abstract": "LLM agents are increasingly used as transaction compilers: a user states an intent in natural language, and the model emits a structured object that an API can execute. JSON Schema and provider-level structured-output modes are useful because they remove a large class of parse failures, but they do not by themselves decide whether the object is a safe, faithful transaction. We introduce OrderBench, a deterministic benchmark for restaurant ordering agents that separates syntactic validity, schema validity, status decisions, exact item semantics, constraint preservation, and unsafe acceptances. Across 2,400 Nebius Token Factory calls to four open models in prompt-only and JSON-schema modes, we find that schema-valid output can still have large semantic error rates. In the strongest model, both modes achieve 100% schema validity, yet semantic success remains near 80%; in weaker models, schema-valid unsafe acceptances occur in double digits. The result is a concrete engineering warning: structured output is a necessary interface layer, not a substitute for domain verification and fail-closed execution.",
+      "authors": [
+        "Yin Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-16T11:13:29Z",
+      "updated": "2026-05-16T11:13:29Z",
+      "announced_date": "2026-05-16",
+      "first_seen": "2026-05-16",
+      "comment": "7 pages, 6 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.18261v1",
+        "pdf": "https://arxiv.org/pdf/2607.18261v1",
+        "html": "https://arxiv.org/html/2607.18261"
+      },
+      "score": 7,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2605.16909",
+      "title": "TOBench: A Task-Oriented Omni-Modal Benchmark for Real-World Tool-Using Agents",
+      "abstract": "Tool-using agents are increasingly expected to operate across realistic professional workflows, where they must interpret multimodal inputs, coordinate external tools, inspect intermediate artifacts, and revise their actions before producing a final result. Existing benchmarks, however, often evaluate tool use, computer use, and multimodal reasoning in isolation, leaving a gap between benchmark settings and end-to-end omni-modal tool use in the real world. To address this gap, we introduce MM-ToolBench, a benchmark and evaluation harness for task-oriented omni-modal tool use. MM-ToolBench contains 100 executable tasks from two macro task families, Customer Service and Intelligent Creation, covering 20 subcategory slices and supported by 27 MCP servers with 324 tools. The central design of MM-ToolBench is closed-loop multimodal verification: agents must execute tools, inspect rendered or transformed artifacts, and self-correct when outputs fail task-specific requirements. To make such evaluation scalable and verifiable, MM-ToolBench couples MCP-based execution with task-specific grounded evaluators and a semi-automated construction pipeline for scenario discovery, task instantiation, evaluator synthesis, and human audit. Experiments on 15 contemporary agentic models show that MM-ToolBench remains highly challenging: Claude Opus 4.6, commonly regarded as one of the strongest coding-agent models, achieves only 32.0% task success, far below the 94.0% human benchmark. We envision MM-ToolBench as a practical foundation for evaluating and advancing next-generation omni-modal tool-using agents through closed-loop multimodal verification.",
+      "authors": [
+        "Zhiqiang Liu",
+        "Wenhui Dong",
+        "Yilang Tan",
+        "Yuwen Qu",
+        "Haochen Yin",
+        "Chenyang Si"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-16T09:49:25Z",
+      "updated": "2026-05-16T09:49:25Z",
+      "announced_date": "2026-05-16",
+      "first_seen": "2026-05-16",
+      "comment": "Github: https://github.com/Pi3AI/TOBench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.16909v1",
+        "pdf": "https://arxiv.org/pdf/2605.16909v1",
+        "html": "https://arxiv.org/html/2605.16909"
+      },
+      "score": 25,
+      "tags": [
+        "tool-use",
+        "computer-use",
+        "planning",
+        "conversation",
+        "multimodal"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2605.16819",
+      "title": "AgentKernelArena: Generalization-Aware Benchmarking of GPU Kernel Optimization Agents",
+      "abstract": "GPU kernel optimization is increasingly critical for efficient deep learning systems, but writing high-performance kernels still requires substantial low-level expertise. Recent AI coding agents can iteratively read code, invoke compilers and profilers, and refine implementations, yet existing kernel benchmarks evaluate single LLM calls rather than full agent workflows, and none include both kernel-to-kernel optimization and unseen-configuration generalization testing. We present AgentKernelArena, an open-source benchmark for measuring AI coding agents on GPU kernel optimization. The benchmark contains 196 tasks spanning HIP-to-HIP optimization, Triton-to-Triton optimization, and PyTorch-to-HIP translation, and evaluates complete agent workflows in isolated workspaces using gated compilation, correctness, and performance checks, centralized scoring and an unseen-configuration generalization protocol that tests whether optimizations transfer to input configurations the agent never observed. Across production agents including Cursor Agent, Claude Code, and Codex Agent, we find near-perfect compilation and high correctness rates on most task categories, with the strongest configurations achieving mean speedups of up to 6.89x on PyTorch-to-HIP, 6.69x on HIP-to-HIP, and 2.13x on Triton-to-Triton tasks. Our unseen-configuration evaluation shows that HIP-to-HIP and Triton-to-Triton optimizations largely transfer to unseen input shapes, while PyTorch-to-HIP exhibits substantial correctness drops, indicating that agents generating kernels from scratch frequently hardcode shape-specific assumptions. AgentKernelArena is designed as a modular, extensible framework for rigorous evaluation of agentic GPU kernel optimization across agents, tasks, and hardware targets.",
+      "authors": [
+        "Sharareh Younesian",
+        "Wenwen Ouyang",
+        "Sina Rafati",
+        "Mehdi Rezagholizadeh",
+        "Sharon Zhou",
+        "Ji Liu",
+        "Yue Liu",
+        "Yuchen Yang",
+        "Hao Li",
+        "Ziqiong Liu",
+        "Dong Li",
+        "Vikram Appia",
+        "Zhenyu Gu",
+        "Emad Barsoum"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-16T05:25:11Z",
+      "updated": "2026-05-16T05:25:11Z",
+      "announced_date": "2026-05-16",
+      "first_seen": "2026-05-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.16819v1",
+        "pdf": "https://arxiv.org/pdf/2605.16819v1",
+        "html": "https://arxiv.org/html/2605.16819"
+      },
+      "score": 18,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    }
+  ]
+}

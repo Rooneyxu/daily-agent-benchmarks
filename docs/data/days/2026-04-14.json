@@ -1,0 +1,146 @@
+{
+  "date": "2026-04-14",
+  "count": 2,
+  "report": {
+    "date": "2026-04-14",
+    "count": 2,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On April 14, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Coding agents (1), Safety (1), and Tool use (1).",
+      "highlights": [
+        {
+          "id": "2604.12290",
+          "title": "Frontier-Eng: Benchmarking Self-Evolving Agents on Real-World Engineering Tasks with Generative Optimization",
+          "blurb": "Current LLM agent benchmarks, which predominantly focus on binary pass/fail tasks such as code generation or search-based question answering, often neglect the value of real-world engineering that is often captured throu…"
+        },
+        {
+          "id": "2604.12177",
+          "title": "Policy-Invisible Violations in LLM-Based Agents",
+          "blurb": "LLM-based agents can execute actions that are syntactically valid, user-sanctioned, and semantically appropriate, yet still violate organizational policy because the facts needed for correct policy judgment are hidden at…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年4月14日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在代码智能体（1）、安全（1）、工具使用（1）。",
+      "highlights": [
+        {
+          "id": "2604.12290",
+          "title": "Frontier-Eng: Benchmarking Self-Evolving Agents on Real-World Engineering Tasks with Generative Optimization",
+          "blurb": "Current LLM agent benchmarks, which predominantly focus on binary pass/fail tasks such as code generation or search-based question answering, often neglect the value of real-world engineering that is often captured throu…"
+        },
+        {
+          "id": "2604.12177",
+          "title": "Policy-Invisible Violations in LLM-Based Agents",
+          "blurb": "LLM-based agents can execute actions that are syntactically valid, user-sanctioned, and semantically appropriate, yet still violate organizational policy because the facts needed for correct policy judgment are hidden at…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.12290",
+      "title": "Frontier-Eng: Benchmarking Self-Evolving Agents on Real-World Engineering Tasks with Generative Optimization",
+      "abstract": "Current LLM agent benchmarks, which predominantly focus on binary pass/fail tasks such as code generation or search-based question answering, often neglect the value of real-world engineering that is often captured through the iterative optimization of feasible designs. To this end, we introduce Frontier-Eng, a human-verified benchmark for generative optimization -- an iterative propose-execute-evaluate loop in which an agent generates candidate artifacts, receives executable verifier feedback, and revises them under a fixed interaction budget -- spanning $47$ tasks across five broad engineering categories. Unlike previous suites, Frontier-Eng tasks are grounded in industrial-grade simulators and verifiers that provide continuous reward signals and enforce hard feasibility constraints under constrained budgets. We evaluate eight frontier language models using representative search frameworks, finding that while GPT 5.4 achieves the most robust performance, the benchmark remains challenging for all models. Our analysis suggests a dual power-law decay in improvement frequency ($\\sim$ 1/iteration) and magnitude ($\\sim$ 1/improvement count). We further show that although width improves parallelism and diversity, depth remains crucial for hard-won improvements under a fixed budget. Frontier-Eng establishes a new standard for assessing the capacity of AI agents to integrate domain knowledge with executable feedback to solve complex, open-ended engineering problems.",
+      "authors": [
+        "Yizhe Chi",
+        "Deyao Hong",
+        "Dapeng Jiang",
+        "Tianwei Luo",
+        "Kaisen Yang",
+        "Boshi Zhang",
+        "Zhe Cao",
+        "Xiaoyan Fan",
+        "Bingxiang He",
+        "Han Hao",
+        "Weiyang Jin",
+        "Dianqiao Lei",
+        "Qingle Liu",
+        "Houde Qian",
+        "Bowen Wang",
+        "Situ Wang",
+        "Youjie Zheng",
+        "Yifan Zhou",
+        "Calvin Xiao",
+        "Eren Cai",
+        "Qinhuai Na"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-14T05:02:06Z",
+      "updated": "2026-04-27T16:57:20Z",
+      "announced_date": "2026-04-14",
+      "first_seen": "2026-04-14",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.12290v2",
+        "pdf": "https://arxiv.org/pdf/2604.12290v2",
+        "html": "https://arxiv.org/html/2604.12290"
+      },
+      "score": 11,
+      "tags": [
+        "coding",
+        "safety"
+      ],
+      "field": "coding",
+      "citations": 8
+    },
+    {
+      "id": "2604.12177",
+      "title": "Policy-Invisible Violations in LLM-Based Agents",
+      "abstract": "LLM-based agents can execute actions that are syntactically valid, user-sanctioned, and semantically appropriate, yet still violate organizational policy because the facts needed for correct policy judgment are hidden at decision time. We call this failure mode policy-invisible violations: cases in which compliance depends on entity attributes, contextual state, or session history absent from the agent's visible context. We present PhantomPolicy, a benchmark spanning eight violation categories with balanced violation and safe-control cases, in which all tool responses contain clean business data without policy metadata. We manually review all 600 model traces produced by five frontier models and evaluate them using human-reviewed trace labels. Manual review changes 32 labels (5.3%) relative to the original case-level annotations, confirming the need for trace-level human review. To demonstrate what world-state-grounded enforcement can achieve under favorable conditions, we introduce Sentinel, an enforcement framework based on counterfactual graph simulation. Sentinel treats every agent action as a proposed mutation to an organizational knowledge graph, performs speculative execution to materialize the post-action world state, and verifies graph-structural invariants to decide Allow/Block/Clarify. Against human-reviewed trace labels, Sentinel substantially outperforms a content-only DLP baseline (68.8% vs. 93.0% accuracy) while maintaining high precision, though it still leaves room for improvement on certain violation categories. These results demonstrate what becomes achievable once policy-relevant world state is made available to the enforcement layer.",
+      "authors": [
+        "Jie Wu",
+        "Ming Gong"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CR",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-14T01:15:15Z",
+      "updated": "2026-04-14T01:15:15Z",
+      "announced_date": "2026-04-14",
+      "first_seen": "2026-04-14",
+      "comment": "26 pages,1 figure, 11 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.12177v1",
+        "pdf": "https://arxiv.org/pdf/2604.12177v1",
+        "html": "https://arxiv.org/html/2604.12177"
+      },
+      "score": 5,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 1
+    }
+  ]
+}

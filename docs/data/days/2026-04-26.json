@@ -1,0 +1,281 @@
+{
+  "date": "2026-04-26",
+  "count": 4,
+  "report": {
+    "date": "2026-04-26",
+    "count": 4,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On April 26, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Coding agents (2), Multimodal (2), Web agents (1), and Safety (1).",
+      "highlights": [
+        {
+          "id": "2604.23580",
+          "title": "PhysCodeBench: Benchmarking Physics-Aware Symbolic Simulation of 3D Scenes via Self-Corrective Multi-Agent Refinement",
+          "blurb": "Physics-aware symbolic simulation of 3D scenes is critical for robotics, embodied AI, and scientific computing, requiring models to understand natural language descriptions of physical phenomena and translate them into e…"
+        },
+        {
+          "id": "2604.23897",
+          "title": "MarketBench: Evaluating AI Agents as Market Participants",
+          "blurb": "Markets are a promising way to coordinate AI agent activity for similar reasons to those used to justify markets more broadly."
+        },
+        {
+          "id": "2604.23781",
+          "title": "ClawMark: A Living-World Benchmark for Multi-Turn, Multi-Day, Multimodal Coworker Agents",
+          "blurb": "Language-model agents are increasingly used as persistent coworkers that assist users across multiple working days."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年4月26日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在代码智能体（2）、多模态（2）、网页智能体（1）、安全（1）。",
+      "highlights": [
+        {
+          "id": "2604.23580",
+          "title": "PhysCodeBench: Benchmarking Physics-Aware Symbolic Simulation of 3D Scenes via Self-Corrective Multi-Agent Refinement",
+          "blurb": "Physics-aware symbolic simulation of 3D scenes is critical for robotics, embodied AI, and scientific computing, requiring models to understand natural language descriptions of physical phenomena and translate them into e…"
+        },
+        {
+          "id": "2604.23897",
+          "title": "MarketBench: Evaluating AI Agents as Market Participants",
+          "blurb": "Markets are a promising way to coordinate AI agent activity for similar reasons to those used to justify markets more broadly."
+        },
+        {
+          "id": "2604.23781",
+          "title": "ClawMark: A Living-World Benchmark for Multi-Turn, Multi-Day, Multimodal Coworker Agents",
+          "blurb": "Language-model agents are increasingly used as persistent coworkers that assist users across multiple working days."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.23897",
+      "title": "MarketBench: Evaluating AI Agents as Market Participants",
+      "abstract": "Markets are a promising way to coordinate AI agent activity for similar reasons to those used to justify markets more broadly. In order to effectively participate in markets, agents need to have informative signals of their own ability to successfully complete a task and the cost of doing so. We propose MarketBench, a benchmark for assessing whether AI agents have these capabilities. We use a 93-task subset of SWE-bench Lite, a software engineering benchmark, with six recently released LLMs as a demonstration. These LLMs are miscalibrated on both success probability and token usage, and auctions built from these self-reports diverge from a full-information allocation. A follow-up intervention where we add information about capabilities from prior experiments to the context improves calibration, but only modestly narrows the gap to a full-information benchmark. We also document the performance of a market-based scaffolding with these LLMs. Our results point to self-assessment as a key bottleneck for market-style coordination of AI agents.",
+      "authors": [
+        "Andrey Fradkin",
+        "Rohit Krishnan"
+      ],
+      "categories": [
+        "cs.AI",
+        "econ.GN"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-26T21:48:01Z",
+      "updated": "2026-04-26T21:48:01Z",
+      "announced_date": "2026-04-26",
+      "first_seen": "2026-04-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.23897v1",
+        "pdf": "https://arxiv.org/pdf/2604.23897v1",
+        "html": "https://arxiv.org/html/2604.23897"
+      },
+      "score": 16,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 1
+    },
+    {
+      "id": "2606.13686",
+      "title": "Benchmarking Web Agent Safety under E-commerce Deceptive Interfaces",
+      "abstract": "As autonomous web agents are increasingly deployed to perform real-world tasks, ensuring their safety has become a critical concern. In this work, we study web agent behavior under realistic deceptive interfaces in the e-commerce domain. We introduce WebDecept, a lightweight and configurable plugin framework that enables controlled injection of deceptive interface patterns into existing web environments. Using WebDecept, we instantiate seven deceptive patterns commonly observed on the open web, including targeted advertisements, domain redirection, and shopping manipulation. By injecting these patterns into the frontend during task execution, we perform controlled evaluation of multiple multimodal web agents. Our results show that current web agents are highly susceptible to multiple classes of deceptive interfaces, and that prompt-based constraints are often insufficient to mitigate these failures. We further analyze how the design choices of deceptive patterns influence the success of such manipulations. These findings highlight safety challenges that should be addressed as web agents are scaled toward real-world deployment.",
+      "authors": [
+        "Zijing Shi",
+        "Meng Fang",
+        "Ling Chen"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CY"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-04-26T17:46:28Z",
+      "updated": "2026-04-26T17:46:28Z",
+      "announced_date": "2026-04-26",
+      "first_seen": "2026-04-26",
+      "comment": "Accepted to ACL 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.13686v1",
+        "pdf": "https://arxiv.org/pdf/2606.13686v1",
+        "html": "https://arxiv.org/html/2606.13686"
+      },
+      "score": 11,
+      "tags": [
+        "web",
+        "safety",
+        "multimodal"
+      ],
+      "field": "web",
+      "citations": 0
+    },
+    {
+      "id": "2604.23781",
+      "title": "ClawMark: A Living-World Benchmark for Multi-Turn, Multi-Day, Multimodal Coworker Agents",
+      "abstract": "Language-model agents are increasingly used as persistent coworkers that assist users across multiple working days. During such workflows, the surrounding environment may change independently of the agent: new emails arrive, calendar entries shift, knowledge-base records are updated, and evidence appears across images, scanned PDFs, audio, video, and spreadsheets. Existing benchmarks do not adequately evaluate this setting because they typically run within a single static episode and remain largely text-centric. We introduce \\bench{}, a benchmark for coworker agents built around multi-turn multi-day tasks, a stateful sandboxed service environment whose state evolves between turns, and rule-based verification. The current release contains 100 tasks across 13 professional scenarios, executed against five stateful sandboxed services (filesystem, email, calendar, knowledge base, spreadsheet) and scored by 1537 deterministic Python checkers over post-execution service state; no LLM-as-judge is invoked during scoring. We benchmark seven frontier agent systems. The strongest model reaches 75.8 weighted score, but the best strict Task Success is only 20.0\\%, indicating that partial progress is common while complete end-to-end workflow completion remains rare. Turn-level analysis shows that performance drops after the first exogenous environment update, highlighting adaptation to changing state as a key open challenge. We release the benchmark, evaluation harness, and construction pipeline to support reproducible coworker-agent evaluation.",
+      "authors": [
+        "Fanqing Meng",
+        "Lingxiao Du",
+        "Zijian Wu",
+        "Guanzheng Chen",
+        "Xiangyan Liu",
+        "Jiaqi Liao",
+        "Chonghe Jiang",
+        "Zhenglin Wan",
+        "Jiawei Gu",
+        "Pengfei Zhou",
+        "Rui Huang",
+        "Ziqi Zhao",
+        "Shengyuan Ding",
+        "Ailing Yu",
+        "Bo Peng",
+        "Bowei Xia",
+        "Hao Sun",
+        "Haotian Liang",
+        "Ji Xie",
+        "Jiajun Chen",
+        "Jiajun Song",
+        "Liu Yang",
+        "Ming Xu",
+        "Qionglin Qiu",
+        "Runhao Fu",
+        "Shengfang Zhai",
+        "Shijian Wang",
+        "Tengfei Ma",
+        "Tianyi Wu",
+        "Weiyang Jin",
+        "Yan Wang",
+        "Yang Dai",
+        "Yao Lai",
+        "Youwei Shu",
+        "Yue Liu",
+        "Yunzhuo Hao",
+        "Yuwei Niu",
+        "Jinkai Huang",
+        "Jiayuan Zhuo",
+        "Zhennan Shen",
+        "Linyu Wu",
+        "Hannah Yao",
+        "Charles Chen",
+        "Cihang Xie",
+        "Yuyin Zhou",
+        "Jiaheng Zhang",
+        "Zeyu Zheng",
+        "Mengkang Hu",
+        "Michael Qizhe Shieh"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-04-26T16:05:02Z",
+      "updated": "2026-05-05T15:32:46Z",
+      "announced_date": "2026-04-26",
+      "first_seen": "2026-04-26",
+      "comment": "github repo: https://github.com/evolvent-ai/ClawMark",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.23781v2",
+        "pdf": "https://arxiv.org/pdf/2604.23781v2",
+        "html": "https://arxiv.org/html/2604.23781"
+      },
+      "score": 12,
+      "tags": [
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 13
+    },
+    {
+      "id": "2604.23580",
+      "title": "PhysCodeBench: Benchmarking Physics-Aware Symbolic Simulation of 3D Scenes via Self-Corrective Multi-Agent Refinement",
+      "abstract": "Physics-aware symbolic simulation of 3D scenes is critical for robotics, embodied AI, and scientific computing, requiring models to understand natural language descriptions of physical phenomena and translate them into executable simulation environments. While large language models (LLMs) excel at general code generation, they struggle with the semantic gap between physical descriptions and simulation implementation. We introduce PhysCodeBench, the first comprehensive benchmark for evaluating physics-aware symbolic simulation, comprising 700 manually-crafted diverse samples across mechanics, fluid dynamics, and soft-body physics with expert annotations. Our evaluation framework measures both code executability and physical accuracy through automated and visual assessment. Building on this, we propose a Self-Corrective Multi-Agent Refinement Framework (SMRF) with three specialized agents (simulation generator, error corrector, and simulation refiner) that collaborate iteratively with domain-specific validation to produce physically accurate simulations. SMRF achieves 67.7 points overall performance compared to 36.3 points for the best baseline among evaluated SOTA models, representing a 31.4-point improvement. Our analysis demonstrates that error correction is critical for accurate physics-aware symbolic simulation and that specialized multi-agent approaches significantly outperform single-agent methods across the tested physical domains.",
+      "authors": [
+        "Tianyidan Xie",
+        "Peiyu Wang",
+        "Yuyi Qian",
+        "Yuxuan Wang",
+        "Rui Ma",
+        "Ying Tai",
+        "Song Wu",
+        "Qian Wang",
+        "Lanjun Wang",
+        "Zili Yi"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-04-26T07:37:20Z",
+      "updated": "2026-04-26T07:37:20Z",
+      "announced_date": "2026-04-26",
+      "first_seen": "2026-04-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.23580v1",
+        "pdf": "https://arxiv.org/pdf/2604.23580v1",
+        "html": "https://arxiv.org/html/2604.23580"
+      },
+      "score": 17,
+      "tags": [
+        "coding",
+        "multi-agent",
+        "embodied",
+        "science"
+      ],
+      "field": "multi-agent",
+      "citations": 3
+    }
+  ]
+}

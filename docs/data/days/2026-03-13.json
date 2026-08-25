@@ -1,0 +1,148 @@
+{
+  "date": "2026-03-13",
+  "count": 2,
+  "report": {
+    "date": "2026-03-13",
+    "count": 2,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On March 13, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Tool use (2), Safety (1), Planning / reasoning (1), and Dialogue / customer (1).",
+      "highlights": [
+        {
+          "id": "2603.13594",
+          "title": "EnterpriseOps-Gym: Environments and Evaluations for Stateful Agentic Planning and Tool Use in Enterprise Settings",
+          "blurb": "Large language models are shifting from passive information providers to active agents intended for complex workflows."
+        },
+        {
+          "id": "2603.13517",
+          "title": "CTI-REALM: Benchmark to Evaluate Agent Performance on Security Detection Rule Generation Capabilities",
+          "blurb": "CTI-REALM (Cyber Threat Real World Evaluation and LLM Benchmarking) is a benchmark designed to evaluate AI agents' ability to interpret cyber threat intelligence (CTI) and develop detection rules."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年3月13日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在工具使用（2）、安全（1）、规划 / 推理（1）、对话 / 客服（1）。",
+      "highlights": [
+        {
+          "id": "2603.13594",
+          "title": "EnterpriseOps-Gym: Environments and Evaluations for Stateful Agentic Planning and Tool Use in Enterprise Settings",
+          "blurb": "Large language models are shifting from passive information providers to active agents intended for complex workflows."
+        },
+        {
+          "id": "2603.13517",
+          "title": "CTI-REALM: Benchmark to Evaluate Agent Performance on Security Detection Rule Generation Capabilities",
+          "blurb": "CTI-REALM (Cyber Threat Real World Evaluation and LLM Benchmarking) is a benchmark designed to evaluate AI agents' ability to interpret cyber threat intelligence (CTI) and develop detection rules."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2603.13594",
+      "title": "EnterpriseOps-Gym: Environments and Evaluations for Stateful Agentic Planning and Tool Use in Enterprise Settings",
+      "abstract": "Large language models are shifting from passive information providers to active agents intended for complex workflows. However, their deployment as reliable AI workers in enterprise is stalled by benchmarks that fail to capture the intricacies of professional environments, specifically, the need for long-horizon planning amidst persistent state changes and strict access protocols. In this work, we introduce EnterpriseOps-Gym, a benchmark designed to evaluate agentic planning in realistic enterprise settings. Specifically, EnterpriseOps-Gym features a containerized sandbox with 164 database tables and 512 functional tools to mimic real-world search friction. Within this environment, agents are evaluated on 1,150 expert-curated tasks across eight mission-critical verticals (including Customer Service, HR, and IT). Our evaluation of 14 frontier models reveals critical limitations in state-of-the-art models: the top-performing Claude Opus 4.5 achieves only 37.4% success. Further analysis shows that providing oracle human plans improves performance by 14-35 percentage points, pinpointing strategic reasoning as the primary bottleneck. Additionally, agents frequently fail to refuse infeasible tasks (best model achieves 53.9%), leading to unintended and potentially harmful side effects. Our findings underscore that current agents are not yet ready for autonomous enterprise deployment. More broadly, EnterpriseOps-Gym provides a concrete testbed to advance the robustness of agentic planning in professional workflows.",
+      "authors": [
+        "Shiva Krishna Reddy Malay",
+        "Shravan Nayak",
+        "Jishnu Sethumadhavan Nair",
+        "Sagar Davasam",
+        "Aman Tiwari",
+        "Sathwik Tejaswi Madhusudhan",
+        "Sridhar Krishna Nemala",
+        "Srinivas Sunkara",
+        "Sai Rajeswar"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-13T21:09:39Z",
+      "updated": "2026-03-13T21:09:39Z",
+      "announced_date": "2026-03-13",
+      "first_seen": "2026-03-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.13594v1",
+        "pdf": "https://arxiv.org/pdf/2603.13594v1",
+        "html": "https://arxiv.org/html/2603.13594"
+      },
+      "score": 18,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning",
+        "conversation"
+      ],
+      "field": "workplace",
+      "citations": 9
+    },
+    {
+      "id": "2603.13517",
+      "title": "CTI-REALM: Benchmark to Evaluate Agent Performance on Security Detection Rule Generation Capabilities",
+      "abstract": "CTI-REALM (Cyber Threat Real World Evaluation and LLM Benchmarking) is a benchmark designed to evaluate AI agents' ability to interpret cyber threat intelligence (CTI) and develop detection rules. The benchmark provides a realistic environment that replicates the security analyst workflow. This enables agents to examine CTI reports, execute queries, understand schema structures, and construct detection rules. Evaluation involves emulated attacks of varying complexity across Linux systems, cloud platforms, and Azure Kubernetes Service (AKS), with ground truth data for accurate assessment. Agent performance is measured through both final detection results and trajectory-based rewards that capture decision-making effectiveness. This work demonstrates the potential of AI agents to support labor-intensive aspects of detection engineering. Our comprehensive evaluation of 16 frontier models shows that Claude Opus 4.6 (High) achieves the highest overall reward (0.637), followed by Claude Opus 4.5 (0.624) and the GPT-5 family. An ablation study confirms that CTI-specific tools significantly improve agent performance, a variance analysis across repeated runs demonstrates result stability. Finally, a memory augmentation study shows that seeded context can close 33\\% of the performance gap between smaller and larger models.",
+      "authors": [
+        "Arjun Chakraborty",
+        "Sandra Ho",
+        "Adam Cook",
+        "Manuel Meléndez"
+      ],
+      "categories": [
+        "cs.CR"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-03-13T18:48:40Z",
+      "updated": "2026-03-17T15:49:46Z",
+      "announced_date": "2026-03-13",
+      "first_seen": "2026-03-13",
+      "comment": "11 pages, 5 figures, 4 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.13517v2",
+        "pdf": "https://arxiv.org/pdf/2603.13517v2",
+        "html": "https://arxiv.org/html/2603.13517"
+      },
+      "score": 10,
+      "tags": [
+        "tool-use",
+        "memory"
+      ],
+      "field": "other",
+      "citations": 3
+    }
+  ]
+}

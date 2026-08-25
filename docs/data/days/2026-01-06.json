@@ -1,0 +1,150 @@
+{
+  "date": "2026-01-06",
+  "count": 2,
+  "report": {
+    "date": "2026-01-06",
+    "count": 2,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On January 6, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Tool use (1), Multi-agent (1), Safety (1), and Planning / reasoning (1).",
+      "highlights": [
+        {
+          "id": "2601.02941",
+          "title": "SastBench: A Benchmark for Testing Agentic SAST Triage",
+          "blurb": "SAST (Static Application Security Testing) tools are among the most widely used techniques in defensive cybersecurity, employed by commercial and non-commercial organizations to identify potential vulnerabilities in soft…"
+        },
+        {
+          "id": "2601.02854",
+          "title": "M3MAD-Bench: Multi-Dimensional Evaluation of Multi-Agent Debate Across Domains and Modalities",
+          "blurb": "As an agent-level reasoning and coordination paradigm, Multi-Agent Debate (MAD) orchestrates multiple agents through structured debate to improve answer quality and support complex reasoning."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年1月6日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在工具使用（1）、多智能体（1）、安全（1）、规划 / 推理（1）。",
+      "highlights": [
+        {
+          "id": "2601.02941",
+          "title": "SastBench: A Benchmark for Testing Agentic SAST Triage",
+          "blurb": "SAST (Static Application Security Testing) tools are among the most widely used techniques in defensive cybersecurity, employed by commercial and non-commercial organizations to identify potential vulnerabilities in soft…"
+        },
+        {
+          "id": "2601.02854",
+          "title": "M3MAD-Bench: Multi-Dimensional Evaluation of Multi-Agent Debate Across Domains and Modalities",
+          "blurb": "As an agent-level reasoning and coordination paradigm, Multi-Agent Debate (MAD) orchestrates multiple agents through structured debate to improve answer quality and support complex reasoning."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2601.02941",
+      "title": "SastBench: A Benchmark for Testing Agentic SAST Triage",
+      "abstract": "SAST (Static Application Security Testing) tools are among the most widely used techniques in defensive cybersecurity, employed by commercial and non-commercial organizations to identify potential vulnerabilities in software. Despite their great utility, they generate numerous false positives, requiring costly manual filtering (aka triage). While LLM-powered agents show promise for automating cybersecurity tasks, existing benchmarks fail to emulate real-world SAST finding distributions. We introduce SastBench, a benchmark for evaluating SAST triage agents that combines real CVEs as true positives with filtered SAST tool findings as approximate false positives. SastBench features an agent-agnostic design. We evaluate different agents on the benchmark and present a comparative analysis of their performance, provide a detailed analysis of the dataset, and discuss the implications for future development.",
+      "authors": [
+        "Jake Feiglin",
+        "Guy Dar"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-01-06T11:36:30Z",
+      "updated": "2026-01-06T11:36:30Z",
+      "announced_date": "2026-01-06",
+      "first_seen": "2026-01-06",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.02941v1",
+        "pdf": "https://arxiv.org/pdf/2601.02941v1",
+        "html": "https://arxiv.org/html/2601.02941"
+      },
+      "score": 27,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 4
+    },
+    {
+      "id": "2601.02854",
+      "title": "M3MAD-Bench: Multi-Dimensional Evaluation of Multi-Agent Debate Across Domains and Modalities",
+      "abstract": "As an agent-level reasoning and coordination paradigm, Multi-Agent Debate (MAD) orchestrates multiple agents through structured debate to improve answer quality and support complex reasoning. However, existing research on MAD suffers from two fundamental limitations: evaluations are conducted under fragmented and inconsistent settings, making fair comparison difficult, and are largely confined to text-only scenarios, leaving its effectiveness in multimodal settings underexplored. To address these gaps, we introduce M3MAD-Bench, a unified and extensible benchmark for evaluating MAD methods across Multi-domain tasks, Multi-modal inputs, and Multi-dimensional metrics. M3MAD-Bench establishes standardized protocols over five core task domains, including Knowledge, Mathematics, Medicine, Natural Sciences, and Complex Reasoning, covering a total of 13 datasets, and systematically includes both pure text and vision-language data, enabling controlled cross-modality comparison. We evaluate MAD methods on 9 base models spanning different architectures, scales, and modality capabilities. Beyond accuracy, M3MAD-Bench incorporates efficiency-oriented metrics such as token consumption and inference time, providing a holistic view of performance--cost trade-offs. Through extensive experiments, we derive nine key insights, revealing that MAD is not uniformly effective: collaborative methods are generally more robust than adversarial ones, especially on reasoning-intensive and multimodal tasks, but often incur substantial efficiency costs. These findings provide practical guidance for selecting and designing MAD strategies in real-world applications. We believe M3MAD-Bench offers a reliable foundation for future research on standardized and reproducible MAD evaluation. The code is available at https://github.com/liaolea/M3MAD-Bench.",
+      "authors": [
+        "Ao Li",
+        "Jinghui Zhang",
+        "Luyu Li",
+        "Yuxiang Duan",
+        "Lang Gao",
+        "Mingcai Chen",
+        "Weijun Qin",
+        "Shaopeng Li",
+        "Fengxian Ji",
+        "Ning Liu",
+        "Lizhen Cui",
+        "Xiuying Chen",
+        "Yuntao Du"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-01-06T09:33:48Z",
+      "updated": "2026-07-31T04:27:50Z",
+      "announced_date": "2026-01-06",
+      "first_seen": "2026-01-06",
+      "comment": "Accepted by ACMMM 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.02854v2",
+        "pdf": "https://arxiv.org/pdf/2601.02854v2",
+        "html": "https://arxiv.org/html/2601.02854"
+      },
+      "score": 18,
+      "tags": [
+        "multi-agent",
+        "safety",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    }
+  ]
+}

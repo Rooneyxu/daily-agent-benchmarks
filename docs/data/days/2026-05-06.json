@@ -1,0 +1,111 @@
+{
+  "date": "2026-05-06",
+  "count": 2,
+  "report": {
+    "date": "2026-05-06",
+    "count": 2,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On May 6, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Coding agents (1).",
+      "highlights": [
+        {
+          "id": "2605.05379",
+          "title": "Partial Evidence Bench: Benchmarking Authorization-Limited Evidence in Agentic Systems",
+          "blurb": "Enterprise agents increasingly operate inside scoped retrieval systems, delegated workflows, and policy-constrained evidence environments."
+        },
+        {
+          "id": "2605.04637",
+          "title": "SWE-WebDevBench: Evaluating Coding Agent Application Platforms as Virtual Software Agencies",
+          "blurb": "The emergence of \"vibe coding\" platforms, where users describe applications in natural language and AI agents autonomously generate full-stack software, has created a need for rigorous evaluation beyond code-level benchm…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年5月6日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在代码智能体（1）。",
+      "highlights": [
+        {
+          "id": "2605.05379",
+          "title": "Partial Evidence Bench: Benchmarking Authorization-Limited Evidence in Agentic Systems",
+          "blurb": "Enterprise agents increasingly operate inside scoped retrieval systems, delegated workflows, and policy-constrained evidence environments."
+        },
+        {
+          "id": "2605.04637",
+          "title": "SWE-WebDevBench: Evaluating Coding Agent Application Platforms as Virtual Software Agencies",
+          "blurb": "The emergence of \"vibe coding\" platforms, where users describe applications in natural language and AI agents autonomously generate full-stack software, has created a need for rigorous evaluation beyond code-level benchm…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2605.05379",
+      "title": "Partial Evidence Bench: Benchmarking Authorization-Limited Evidence in Agentic Systems",
+      "abstract": "Enterprise agents increasingly operate inside scoped retrieval systems, delegated workflows, and policy-constrained evidence environments. In these settings, access control can be enforced correctly while the system still produces an answer that appears complete even though material evidence lies outside the caller's authorization boundary. This paper introduces Partial Evidence Bench, a deterministic benchmark for measuring that failure mode. The benchmark ships three scenario families -- due diligence, compliance audit, and security incident response -- with 72 tasks total, ACL-partitioned corpora, oracle complete answers, oracle authorized-view answers, oracle completeness judgments, and structured gap-report oracles. It evaluates systems along four surfaces: answer correctness, completeness awareness, gap-report quality, and unsafe completeness behavior. Checked-in baselines show that silent filtering is catastrophically unsafe across all shipped families, while explicit fail-and-report behavior eliminates unsafe completeness without collapsing the task into trivial abstention. Preliminary real-model runs show model-dependent and scenario-sensitive differences in whether systems overclaim completeness, conservatively underclaim, or report incompleteness in an enterprise-usable form. The benchmark's broader contribution is to make a governance-critical agent failure measurable without human judges or contamination-prone static corpora.",
+      "authors": [
+        "Krti Tallam"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CC",
+        "cs.ET"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-06T19:01:29Z",
+      "updated": "2026-05-06T19:01:29Z",
+      "announced_date": "2026-05-06",
+      "first_seen": "2026-05-06",
+      "comment": "Benchmark paper with deterministic synthetic corpora, 14 pages, 6 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.05379v1",
+        "pdf": "https://arxiv.org/pdf/2605.05379v1",
+        "html": "https://arxiv.org/html/2605.05379"
+      },
+      "score": 16,
+      "tags": [],
+      "field": "workplace",
+      "citations": 3
+    },
+    {
+      "id": "2605.04637",
+      "title": "SWE-WebDevBench: Evaluating Coding Agent Application Platforms as Virtual Software Agencies",
+      "abstract": "The emergence of \"vibe coding\" platforms, where users describe applications in natural language and AI agents autonomously generate full-stack software, has created a need for rigorous evaluation beyond code-level benchmarks. In order to assess them as virtual software development agencies on understanding business requirements, making architectural decisions, writing production code, handling iterative modifications, and maintaining business readiness, we introduce SWE-WebDev Bench, a 68-metric evaluation framework spanning 25 primary and 43 diagnostic metrics across seven groups, organized along three dimensions: Interaction Mode (App Creation Request (ACR) vs. App Modification Request (AMR)), Agency Angle (Product Manager (PM), Engineering, Ops), and Complexity Tier (T4 multi-role SaaS, T5 AI-native). Our evaluation (six platforms, three domains, 18 evaluation cells) reveals four recurring shortcomings in the current generation of AI app builders: (1) A specification bottleneck, where platforms compress rich business requirements into oversimplified technical plans, (2) A pervasive frontend-backend decoupling, where visually polished UIs mask absent or broken backend infrastructure, (3) A steep production-readiness cliff, where no platform scores above 60% on engineering quality and post-generation human effort varies substantially across platforms and (4) Widespread security and infrastructure failures, with no platform exceeding 65% Security Score against a 90% target and concurrency handling as low as 6%. These observations are descriptive of our sample and require larger-scale replication to establish generality. We release SWE-WebDev Bench as a community benchmark to enable such replication and help platform builders identify and address these gaps. Code and benchmark resources are available at: https://github.com/snowmountainAi/webdevbench and https://webdevbench.com/.",
+      "authors": [
+        "Siddhant Saxena",
+        "Nilesh Trivedi",
+        "Vinayaka Jyothi"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.SE"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-05-06T08:30:37Z",
+      "updated": "2026-05-06T08:30:37Z",
+      "announced_date": "2026-05-06",
+      "first_seen": "2026-05-06",
+      "comment": "35 pages, 12 figures, 18 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.04637v1",
+        "pdf": "https://arxiv.org/pdf/2605.04637v1",
+        "html": "https://arxiv.org/html/2605.04637"
+      },
+      "score": 15,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    }
+  ]
+}

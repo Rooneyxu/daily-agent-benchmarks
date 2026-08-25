@@ -1,0 +1,349 @@
+{
+  "date": "2026-05-21",
+  "count": 7,
+  "report": {
+    "date": "2026-05-21",
+    "count": 7,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 4,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "7 new agent benchmarks",
+      "summary": "On May 21, 2026, arXiv listed 7 new agent benchmarks. Work clustered around Tool use (4), Safety (2), Web agents (1), and Planning / reasoning (1).",
+      "highlights": [
+        {
+          "id": "2605.22219",
+          "title": "SGR-Bench: Benchmarking Search Agents on State-Gated Retrieval",
+          "blurb": "Recent advances in large language models and tool-using agents have expanded the range of benchmarked web tasks."
+        },
+        {
+          "id": "2605.22366",
+          "title": "AgroTools: A Benchmark for Tool-Augmented Multimodal Agents in Agriculture",
+          "blurb": "Agricultural decision-making increasingly requires multimodal systems that can transform visual observations into reliable, executable actions."
+        },
+        {
+          "id": "2605.22643",
+          "title": "Boiling the Frog: A Multi-Turn Benchmark for Agentic Safety",
+          "blurb": "Background. Traditional safety benchmarks for language models evaluate generated text: whether a model outputs toxic language, reproduces bias, or follows harmful instructions. When models are deployed as agents, the saf…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 7 篇 Agent Benchmark",
+      "summary": "2026年5月21日，arXiv 新增 7 篇 Agent Benchmark。当日主题集中在工具使用（4）、安全（2）、网页智能体（1）、规划 / 推理（1）。",
+      "highlights": [
+        {
+          "id": "2605.22219",
+          "title": "SGR-Bench: Benchmarking Search Agents on State-Gated Retrieval",
+          "blurb": "Recent advances in large language models and tool-using agents have expanded the range of benchmarked web tasks."
+        },
+        {
+          "id": "2605.22366",
+          "title": "AgroTools: A Benchmark for Tool-Augmented Multimodal Agents in Agriculture",
+          "blurb": "Agricultural decision-making increasingly requires multimodal systems that can transform visual observations into reliable, executable actions."
+        },
+        {
+          "id": "2605.22643",
+          "title": "Boiling the Frog: A Multi-Turn Benchmark for Agentic Safety",
+          "blurb": "Background. Traditional safety benchmarks for language models evaluate generated text: whether a model outputs toxic language, reproduces bias, or follows harmful instructions. When models are deployed as agents, the saf…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2605.22664",
+      "title": "MBABench: Evaluating LLM Agents on End-to-End Spreadsheet Tasks in Finance",
+      "abstract": "LLM agents are increasingly expected to carry out end-to-end workflows, producing complete artifacts from high-level user instructions. To meet enterprise needs, frontier AI labs have developed agents that can construct entire spreadsheets from scratch. This is especially relevant in finance, where core workflows such as financial modeling, forecasting, and scenario analysis are commonly conducted through spreadsheets. Yet, existing spreadsheet benchmarks do not measure this new capability, focusing instead on question-answering or single-formula edits. To address this gap, we provide one of the first evaluations of agents on end-to-end spreadsheet tasks, focusing on economically critical financial workflows such as modeling and scenario analysis. Since deliverables therein are routinely reviewed and revised by multiple stakeholders, judging their quality necessarily involves high-level criteria such as readability or ease of modification. To reflect the multidimensional nature of solution quality, we develop an evaluation taxonomy comprising three dimensions: Accuracy, Formula, and Format, each comprising fine-grained criteria that reflect professional standards. Evaluating over 18 agents, the benchmark reveals that even the strongest agents fall short of basic professional finance standards, and their performance degrade sharply as the difficulty increases beyond a few chained calculations. This suggests that current agents are not yet able to reliably produce professional-quality spreadsheets at the level of complexity real-world workflows demand.",
+      "authors": [
+        "Thomson Yen",
+        "Julian Poeltl",
+        "Harshith Srinivas Gear",
+        "Yilin Meng",
+        "Joshua Fan",
+        "Adam Shen",
+        "Yili Liu",
+        "Ali Bauyrzhan",
+        "Patrick Shea",
+        "Siri Du",
+        "Haoyang Liu",
+        "Daniel Guetta",
+        "Hongseok Namkoong"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-21T16:06:34Z",
+      "updated": "2026-08-19T03:49:11Z",
+      "announced_date": "2026-05-21",
+      "first_seen": "2026-05-21",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.22664v5",
+        "pdf": "https://arxiv.org/pdf/2605.22664v5",
+        "html": "https://arxiv.org/html/2605.22664"
+      },
+      "score": 13,
+      "tags": [],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2605.22643",
+      "title": "Boiling the Frog: A Multi-Turn Benchmark for Agentic Safety",
+      "abstract": "Background. Traditional safety benchmarks for language models evaluate generated text: whether a model outputs toxic language, reproduces bias, or follows harmful instructions. When models are deployed as agents, the safety-relevant object shifts from what the system says to what it does within an environment, and evaluating model responses under prompting is no longer sufficient to address the safety challenges posed by artificial intelligence. Recent developments have seen the rise of benchmarks that evaluate large language models as agents. We contribute to this strand of research. Approach. We introduce Boiling the Frog, a benchmark that evaluates whether tool-using AI models deployed in corporate and office settings are susceptible to incremental attacks. Each scenario begins with benign workspace edits and later introduces a risk-bearing request. The benchmark focuses on stateful multi-turn evaluation: chains expose a persistent workspace, place the risk-bearing payload at controlled positions in the turn sequence, and score whether the resulting artifact state becomes unsafe. Scenarios are organized through a three-level operational risk taxonomy grounded in the Boiling the Frog risks, the AI Act Annex I and Annex III high-risk contexts, and EU AI Act's Code of Practice on General-Purpose AI (GPAI). Results. Across a nine-model panel, aggregate strict attack success rate (ASR) is 44.4%. Model-level ASR ranges from 20.5% for Claude Haiku 4.5 to 92.9% for Gemini 3.1 Flash Lite, with Seed 2.0 Lite also above 80%. Average chain category-level ASR reaches 93.3% for Code of Practice loss-of-control scenarios.",
+      "authors": [
+        "Piercosma Bisconti",
+        "Matteo Prandi",
+        "Federico Pierucci",
+        "Federico Sartore",
+        "Enrico Panai",
+        "Laura Caroli",
+        "Yue Zhu",
+        "Adam Leon Smith",
+        "Luca Nannini",
+        "Marcello Galisai",
+        "Susanna Cifani",
+        "Francesco Giarrusso",
+        "Marcantonio Bracale Syrnikov",
+        "Daniele Nardi"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-21T15:50:18Z",
+      "updated": "2026-05-22T14:53:30Z",
+      "announced_date": "2026-05-21",
+      "first_seen": "2026-05-21",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.22643v2",
+        "pdf": "https://arxiv.org/pdf/2605.22643v2",
+        "html": "https://arxiv.org/html/2605.22643"
+      },
+      "score": 17,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2605.22568",
+      "title": "Measuring Security Without Fooling Ourselves: Why Benchmarking Agents Is Hard",
+      "abstract": "The benchmarks used to evaluate AI agents in security-critical roles suffer from crucial weaknesses. Building on recent empirical evidence, we characterize three core challenges that undermine security evaluations: benchmark vulnerabilities, temporal staleness, and runtime uncertainty. We then outline practical directions toward building more robust and trustworthy evaluation frameworks.",
+      "authors": [
+        "Sahar Abdelnabi",
+        "Chris Hicks",
+        "Konrad Rieck",
+        "Ahmad-Reza Sadeghi"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-05-21T14:47:54Z",
+      "updated": "2026-05-21T14:47:54Z",
+      "announced_date": "2026-05-21",
+      "first_seen": "2026-05-21",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.22568v1",
+        "pdf": "https://arxiv.org/pdf/2605.22568v1",
+        "html": "https://arxiv.org/html/2605.22568"
+      },
+      "score": 10,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2605.22564",
+      "title": "SynAE: A Framework for Measuring the Quality of Synthetic Data for Tool-Calling Agent Evaluations",
+      "abstract": "Today, tool-calling agents are commonly evaluated or tested on static datasets of execution traces, including input commands, agent responses, and associated tool calls. However, internal production datasets are often insufficient or unusable for testing; for example, they may contain sensitive or proprietary data, or they may be too sparse to support comprehensive testing (especially pre-deployment). In these settings, practitioners are increasingly replacing or augmenting real datasets with synthetic ones for evaluation purposes. A key challenge is quantifying the relation between these synthetic datasets and the real data. We introduce SynAE, an evaluation framework for assessing how well synthetic benchmarks for multi-turn, tool-calling agents replicate and augment the characteristics of real data trajectories. SynAE assesses the validity, fidelity, and diversity of synthetic data across four metric categories: (i) task instructions and intermediate responses, (ii) tool calls, (iii) final outputs, and (iv) downstream evaluation. We evaluate SynAE using recent agent benchmarks and test common synthetic data failure modes via realistic and controlled generation schemes. SynAE detects fine-grained variations in data validity, fidelity and diversity, and shows that no single metric is sufficient to fully characterize synthetic data quality, motivating a multi-axis evaluation of synthetic data for agent testing. A demo of SynAE is available at https://synae-2026-synae-demo.static.hf.space/index.html, with code at https://github.com/wsqwsq/SynAE.",
+      "authors": [
+        "Shuaiqi Wang",
+        "Aadyaa Maddi",
+        "Zinan Lin",
+        "Giulia Fanti"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-21T14:45:02Z",
+      "updated": "2026-05-21T14:45:02Z",
+      "announced_date": "2026-05-21",
+      "first_seen": "2026-05-21",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.22564v1",
+        "pdf": "https://arxiv.org/pdf/2605.22564v1",
+        "html": "https://arxiv.org/html/2605.22564"
+      },
+      "score": 7,
+      "tags": [
+        "web",
+        "tool-use"
+      ],
+      "field": "web",
+      "citations": 0
+    },
+    {
+      "id": "2605.22535",
+      "title": "TerminalWorld: Benchmarking Agents on Real-World Terminal Tasks",
+      "abstract": "We introduce TerminalWorld, a scalable data engine that automatically reverse-engineers high-fidelity evaluation tasks from \"in-the-wild\" terminal recordings. Processing 80,870 terminal recordings, the engine yields a full benchmark of 1,530 validated tasks, spanning 18 real-world categories, ranging from short everyday operations to workflows exceeding 50 steps, and covering 1,280 unique commands. From these, we curate a Verified subset of 200 representative, manually reviewed tasks. Comprehensive benchmarking on TerminalWorld-Verified across eight frontier models and six agents reveals that current systems still struggle with authentic terminal workflows, achieving a maximum pass rate of only 62.5%. Moreover, TerminalWorld captures real-world terminal capabilities distinct from existing expert-curated benchmarks (e.g., Terminal-Bench), with only a weak correlation to their scores (Pearson r=0.20). The automated engine makes TerminalWorld authentic and scalable by construction, enabling it to evaluate agents in real-world terminal environments as developer practices evolve. Data and code are available at https://github.com/EuniAI/TerminalWorld.",
+      "authors": [
+        "Zhaoyang Chu",
+        "Jiarui Hu",
+        "Xingyu Jiang",
+        "Pengyu Zou",
+        "Han Li",
+        "Chao Peng",
+        "Peter O'Hearn",
+        "Earl T. Barr",
+        "Mark Harman",
+        "Federica Sarro",
+        "He Ye"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-21T14:24:43Z",
+      "updated": "2026-05-21T14:24:43Z",
+      "announced_date": "2026-05-21",
+      "first_seen": "2026-05-21",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.22535v1",
+        "pdf": "https://arxiv.org/pdf/2605.22535v1",
+        "html": "https://arxiv.org/html/2605.22535"
+      },
+      "score": 8,
+      "tags": [],
+      "field": "other",
+      "citations": 8
+    },
+    {
+      "id": "2605.22366",
+      "title": "AgroTools: A Benchmark for Tool-Augmented Multimodal Agents in Agriculture",
+      "abstract": "Agricultural decision-making increasingly requires multimodal systems that can transform visual observations into reliable, executable actions. However, existing agricultural multimodal benchmarks mainly evaluate final-answer correctness and provide limited support for assessing whether models can use external tools to complete precision-sensitive workflows. In this paper, we introduce AgroTools, a benchmark for evaluating tool-augmented multimodal agents in agriculture. AgroTools contains 539 question-answer instances paired with 1,097 heterogeneous agricultural images, spanning five task families and an executable environment of 14 agricultural tools. Each query is annotated with structured tool-use traces, enabling a dual-view evaluation of both process-level execution quality and outcome-level task success. We benchmark 9 open-source and 4 closed-source multimodal large language models on AgroTools. Results show that current models remain far from reliable in agricultural tool-use settings, with clear bottlenecks in tool planning, argument generation, execution recovery, and final-answer synthesis. We hope AgroTools will support future research on multimodal agents for high-precision agricultural applications. The benchmark and evaluation are available at https://huggingface.co/datasets/AgroTools/AgroTools.",
+      "authors": [
+        "Zi Ye",
+        "Yibin Wen",
+        "Xiaoya Fan",
+        "Xinyu Zhang",
+        "Jing Wu",
+        "Kun Zeng",
+        "Zurong Mai",
+        "Jiarui Zhang",
+        "Bohan Shi",
+        "Juepeng Zheng",
+        "Jianxi Huang",
+        "Yutong Lu",
+        "Haohuan Fu"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-05-21T11:58:54Z",
+      "updated": "2026-05-21T11:58:54Z",
+      "announced_date": "2026-05-21",
+      "first_seen": "2026-05-21",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.22366v1",
+        "pdf": "https://arxiv.org/pdf/2605.22366v1",
+        "html": "https://arxiv.org/html/2605.22366"
+      },
+      "score": 21,
+      "tags": [
+        "tool-use",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2605.22219",
+      "title": "SGR-Bench: Benchmarking Search Agents on State-Gated Retrieval",
+      "abstract": "Recent advances in large language models and tool-using agents have expanded the range of benchmarked web tasks. Yet an important class of specialized retrieval tasks remains undercharacterized. On many specialized data-retrieval websites, answer-bearing evidence becomes accessible only after establishing the correct site-specific retrieval state through filters, views, hierarchies, or scopes. We term this capability state-gated retrieval (SGR). We introduce SGR-Bench, a benchmark for this setting containing 100 expert-curated tasks spanning six source families and 12 public data ecosystems. Each task requires discovering the appropriate website and configuring its site-specific retrieval state to produce a structured answer. SGR-Bench pairs constraint-guided and goal-oriented formulations of the same underlying problems, enabling controlled comparisons between explicit and implicit guidance for state-gated retrieval. We evaluate eight CLI-based agentic LLM systems and three commercial search-agent products. On SGR-Bench, the strongest system reaches only 66.18% item-level F1, while row-level F1 remains much lower. A manual audit of 156 analyzable failed CLI trajectories shows why: agents often reach a relevant web source, but establish the wrong site-specific retrieval state. Retrieval-scope drift (37.2%) and criterion mismatch (27.6%) dominate, whereas final answer composition accounts for only 10.3%. The dataset and single-case evaluation instructions are available at https://huggingface.co/datasets/PKUAIWeb/SGR-BENCH.",
+      "authors": [
+        "Ningyuan Li",
+        "Haiyang Shen",
+        "Mugeng Liu",
+        "Yudong Han",
+        "Zhuofan Shi",
+        "Sixiong Xie",
+        "Yun Ma"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-21T09:22:48Z",
+      "updated": "2026-05-21T09:22:48Z",
+      "announced_date": "2026-05-21",
+      "first_seen": "2026-05-21",
+      "comment": "Work in Progress. 23 pages, 7 figures, preprint",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.22219v1",
+        "pdf": "https://arxiv.org/pdf/2605.22219v1",
+        "html": "https://arxiv.org/html/2605.22219"
+      },
+      "score": 23,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

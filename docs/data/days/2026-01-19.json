@@ -1,0 +1,142 @@
+{
+  "date": "2026-01-19",
+  "count": 2,
+  "report": {
+    "date": "2026-01-19",
+    "count": 2,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On January 19, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Coding agents (1), Safety (1), and Planning / reasoning (1).",
+      "highlights": [
+        {
+          "id": "2601.13295",
+          "title": "CooperBench: Why Coding Agents Cannot be Your Teammates Yet",
+          "blurb": "Resolving team conflicts requires not only task-specific competence, but also social intelligence to find common ground and build consensus."
+        },
+        {
+          "id": "2601.12661",
+          "title": "MedConsultBench: A Full-Cycle, Fine-Grained, Process-Aware Benchmark for Medical Consultation Agents",
+          "blurb": "Current evaluations of medical consultation agents often prioritize outcome-oriented tasks, frequently overlooking the end-to-end process integrity and clinical safety essential for real-world practice."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年1月19日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在代码智能体（1）、安全（1）、规划 / 推理（1）。",
+      "highlights": [
+        {
+          "id": "2601.13295",
+          "title": "CooperBench: Why Coding Agents Cannot be Your Teammates Yet",
+          "blurb": "Resolving team conflicts requires not only task-specific competence, but also social intelligence to find common ground and build consensus."
+        },
+        {
+          "id": "2601.12661",
+          "title": "MedConsultBench: A Full-Cycle, Fine-Grained, Process-Aware Benchmark for Medical Consultation Agents",
+          "blurb": "Current evaluations of medical consultation agents often prioritize outcome-oriented tasks, frequently overlooking the end-to-end process integrity and clinical safety essential for real-world practice."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2601.13295",
+      "title": "CooperBench: Why Coding Agents Cannot be Your Teammates Yet",
+      "abstract": "Resolving team conflicts requires not only task-specific competence, but also social intelligence to find common ground and build consensus. As AI agents increasingly collaborate on complex work, they must develop coordination capabilities to function as effective teammates. Yet we hypothesize that current agents lack these capabilities. To test this, we introduce CooperBench, a benchmark of over 600 collaborative coding tasks across 12 libraries in 4 programming languages. Each task assigns two agents different features that can be implemented independently but may conflict without proper coordination. Tasks are grounded in real open-source repositories with expert-written tests. Evaluating state-of-the-art coding agents, we observe the curse of coordination: agents achieve on average 30% lower success rates when working together compared to performing both tasks individually. This contrasts sharply with human teams, where adding teammates typically improves productivity. Our analysis reveals three key issues: (1) communication channels become jammed with vague, ill-timed, and inaccurate messages; (2) even with effective communication, agents deviate from their commitments; and (3) agents often hold incorrect expectations about others' plans and communication. Through large-scale simulation, we also observe rare but interesting emergent coordination behavior including role division, resource division, and negotiation. Our research presents a novel benchmark for collaborative coding and calls for a shift from pursuing individual agent capability to developing social intelligence.",
+      "authors": [
+        "Arpandeep Khatua",
+        "Hao Zhu",
+        "Peter Tran",
+        "Arya Prabhudesai",
+        "Frederic Sadrieh",
+        "Johann K. Lieberwirth",
+        "Xinkai Yu",
+        "Yicheng Fu",
+        "Michael J. Ryan",
+        "Jiaxin Pei",
+        "Diyi Yang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "cs.MA",
+        "cs.SI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-01-19T18:48:37Z",
+      "updated": "2026-01-26T00:36:33Z",
+      "announced_date": "2026-01-19",
+      "first_seen": "2026-01-19",
+      "comment": "https://cooperbench.com First two authors contribute equally. The 3th - 6th authors contribute equally",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.13295v2",
+        "pdf": "https://arxiv.org/pdf/2601.13295v2",
+        "html": "https://arxiv.org/html/2601.13295"
+      },
+      "score": 16,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 16
+    },
+    {
+      "id": "2601.12661",
+      "title": "MedConsultBench: A Full-Cycle, Fine-Grained, Process-Aware Benchmark for Medical Consultation Agents",
+      "abstract": "Current evaluations of medical consultation agents often prioritize outcome-oriented tasks, frequently overlooking the end-to-end process integrity and clinical safety essential for real-world practice. While recent interactive benchmarks have introduced dynamic scenarios, they often remain fragmented and coarse-grained, failing to capture the structured inquiry logic and diagnostic rigor required in professional consultations. To bridge this gap, we propose MedConsultBench, a comprehensive framework designed to evaluate the complete online consultation cycle by covering the entire clinical workflow from history taking and diagnosis to treatment planning and follow-up Q\\&A. Our methodology introduces Atomic Information Units (AIUs) to track clinical information acquisition at a sub-turn level, enabling precise monitoring of how key facts are elicited through 22 fine-grained metrics. By addressing the underspecification and ambiguity inherent in online consultations, the benchmark evaluates uncertainty-aware yet concise inquiry while emphasizing medication regimen compatibility and the ability to handle realistic post-prescription follow-up Q\\&A via constraint-respecting plan revisions. Systematic evaluation of 19 large language models reveals that high diagnostic accuracy often masks significant deficiencies in information-gathering efficiency and medication safety. These results underscore a critical gap between theoretical medical knowledge and clinical practice ability, establishing MedConsultBench as a rigorous foundation for aligning medical AI with the nuanced requirements of real-world clinical care.",
+      "authors": [
+        "Chuhan Qiao",
+        "Jianghua Huang",
+        "Daxing Zhao",
+        "Ziding Liu",
+        "Yanjun Shen",
+        "Bing Cheng",
+        "Wei Lin",
+        "Kai Wu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-01-19T02:18:10Z",
+      "updated": "2026-01-19T02:18:10Z",
+      "announced_date": "2026-01-19",
+      "first_seen": "2026-01-19",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.12661v1",
+        "pdf": "https://arxiv.org/pdf/2601.12661v1",
+        "html": "https://arxiv.org/html/2601.12661"
+      },
+      "score": 12,
+      "tags": [
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 2
+    }
+  ]
+}

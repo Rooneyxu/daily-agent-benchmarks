@@ -1,0 +1,239 @@
+{
+  "date": "2026-04-08",
+  "count": 4,
+  "report": {
+    "date": "2026-04-08",
+    "count": 4,
+    "themes": [
+      {
+        "id": "web",
+        "count": 2,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On April 8, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Web agents (2), Safety (2), Computer use (1), and Embodied / robotics (1).",
+      "highlights": [
+        {
+          "id": "2604.07429",
+          "title": "GameWorld: Towards Standardized and Verifiable Evaluation of Multimodal Game Agents",
+          "blurb": "Towards an embodied generalist for real-world interaction, Multimodal Large Language Model (MLLM) agents still suffer from challenging latency, sparse feedback, and irreversible mistakes."
+        },
+        {
+          "id": "2606.15673",
+          "title": "Where Did It Go Wrong? Process-Level Evaluation of Web Agents with Semantic State Tracking",
+          "blurb": "Web agents act through long interaction sequences, yet existing benchmarks evaluate only terminal success, discarding all process information and offering little guidance on improvement."
+        },
+        {
+          "id": "2604.06688",
+          "title": "Diagon: A Programmable Testbed for AI-Agent Cognitive Labor Markets",
+          "blurb": "AI agents are emerging as market participants that trade delegated cognitive work with one another on behalf of their users."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年4月8日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在网页智能体（2）、安全（2）、计算机使用（1）、具身 / 机器人（1）。",
+      "highlights": [
+        {
+          "id": "2604.07429",
+          "title": "GameWorld: Towards Standardized and Verifiable Evaluation of Multimodal Game Agents",
+          "blurb": "Towards an embodied generalist for real-world interaction, Multimodal Large Language Model (MLLM) agents still suffer from challenging latency, sparse feedback, and irreversible mistakes."
+        },
+        {
+          "id": "2606.15673",
+          "title": "Where Did It Go Wrong? Process-Level Evaluation of Web Agents with Semantic State Tracking",
+          "blurb": "Web agents act through long interaction sequences, yet existing benchmarks evaluate only terminal success, discarding all process information and offering little guidance on improvement."
+        },
+        {
+          "id": "2604.06688",
+          "title": "Diagon: A Programmable Testbed for AI-Agent Cognitive Labor Markets",
+          "blurb": "AI agents are emerging as market participants that trade delegated cognitive work with one another on behalf of their users."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.07429",
+      "title": "GameWorld: Towards Standardized and Verifiable Evaluation of Multimodal Game Agents",
+      "abstract": "Towards an embodied generalist for real-world interaction, Multimodal Large Language Model (MLLM) agents still suffer from challenging latency, sparse feedback, and irreversible mistakes. Video games offer an ideal testbed with rich visual observations and closed-loop interaction, demanding fine-grained perception, long-horizon planning, and precise control. However, systematically evaluating these capabilities is currently hindered by heterogeneous action interfaces and heuristic verification. To this end, we introduce GameWorld, a benchmark designed for standardized and verifiable evaluation of MLLMs as generalist game agents in browser environments. Two game agent interfaces are studied: (i) computer-use agents that directly emit keyboard and mouse controls, and (ii) generalist multimodal agents that act in a semantic action space via deterministic Semantic Action Parsing. GameWorld contains 34 diverse games and 170 tasks, each paired with state-verifiable metrics for outcome-based evaluation. The results across 18 model-interface pairs suggest that even the best performing agent is far from achieving human capabilities on video games. Extensive experiments of repeated full-benchmark reruns demonstrate the robustness of the benchmark, while further studies on real-time interaction, context-memory sensitivity, and action validity expose more challenges ahead for game agents. Together, by offering a standardized, verifiable, and reproducible evaluation framework, GameWorld lays a robust foundation for advancing research on multimodal game agents and beyond. The project page is at https://gameworld-bench.github.io.",
+      "authors": [
+        "Mingyu Ouyang",
+        "Siyuan Hu",
+        "Kevin Qinghong Lin",
+        "Hwee Tou Ng",
+        "Mike Zheng Shou"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.HC"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-04-08T17:49:03Z",
+      "updated": "2026-04-08T17:49:03Z",
+      "announced_date": "2026-04-08",
+      "first_seen": "2026-04-08",
+      "comment": "23 pages, 8 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.07429v1",
+        "pdf": "https://arxiv.org/pdf/2604.07429v1",
+        "html": "https://arxiv.org/html/2604.07429"
+      },
+      "score": 12,
+      "tags": [
+        "web",
+        "computer-use",
+        "embodied",
+        "safety",
+        "memory",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 10
+    },
+    {
+      "id": "2606.15673",
+      "title": "Where Did It Go Wrong? Process-Level Evaluation of Web Agents with Semantic State Tracking",
+      "abstract": "Web agents act through long interaction sequences, yet existing benchmarks evaluate only terminal success, discarding all process information and offering little guidance on improvement. In this work, we conduct a process-level analysis of web agents. We introduce WebStep, a benchmark of 1,800 task instances with controlled difficulty and automatic semantic state tracking. Each website exposes a deterministic semantic MDP alongside the GUI: the agent operates on the interface, while the environment records high-level states and transitions in the background, enabling fine-grained analysis without manual annotation. Based on the semantic trajectory, we first show that process metrics reveal differences invisible to outcome evaluation: three agents whose success rates cluster within 34-37% diverge in exploration reach versus execution accuracy. Then, decomposing by skill characterizes the nature of these differences, exposing opposite per-skill rankings hidden within the same website: e.g., on Q&A, Claude CUA outperforms OpenAI CUA by 30% on navigation actions yet underperforms it by 6.7% on inspection, pinpointing a concrete skill to improve even within a domain. Bifurcation analysis further localizes the decisive error that loses the task and shows that this error is agent-specific rather than shared. Finally, these differences widen as tasks grow harder: success rate is similar on easy tasks but separates sharply as exploration becomes more demanding. Our process-level analysis opens a new avenue in web agent evaluation, providing fine-grained and actionable insight into where and how each agent should be improved. Project page: https://jiwanchung.github.io/webstep",
+      "authors": [
+        "Jiwan Chung",
+        "JiHyuk Byun",
+        "Vibhav Vineet",
+        "Seon Joo Kim"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-08T07:25:29Z",
+      "updated": "2026-08-04T05:22:33Z",
+      "announced_date": "2026-04-08",
+      "first_seen": "2026-04-08",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.15673v2",
+        "pdf": "https://arxiv.org/pdf/2606.15673v2",
+        "html": "https://arxiv.org/html/2606.15673"
+      },
+      "score": 11,
+      "tags": [
+        "web",
+        "gui"
+      ],
+      "field": "web",
+      "citations": 2
+    },
+    {
+      "id": "2604.06688",
+      "title": "Diagon: A Programmable Testbed for AI-Agent Cognitive Labor Markets",
+      "abstract": "AI agents are emerging as market participants that trade delegated cognitive work with one another on behalf of their users. Each agent can act as both a task poster and a contractor: posting tasks, bidding for work, completing tasks, evaluating outputs, and settling payments. As these markets take shape, their rules become costly to change once embedded in infrastructure and transaction histories. Existing market institutions evolved around human constraints. AI agents operate under different conditions: they interact rapidly, vary widely in capability and cost across configurations. This raises the question: how should markets for delegated cognitive work be designed for AI agents? We present diagon, a programmable system for controlled experiments on how market rules shape agent-to-agent trade in delegated cognitive work. Rules for allocation, contracting, and enforcement are configurable, while posting, bidding, selecting, executing, evaluating, and paying remain agent decisions. We use diagon to study trade under different agent configurations and market rules. Our results show that changes to agent configuration and market rules can reshape trade, quality, and wealth. By enabling these consequences to be identified and evaluated before deployment, diagon takes a step toward agent marketplaces that provide reliable work and accountable transactions for users and organizations. Code and data are available at https://github.com/assassin808/diagon.",
+      "authors": [
+        "Xuan Liu",
+        "Haoyang Shang",
+        "Haojian Jin"
+      ],
+      "categories": [
+        "cs.CE"
+      ],
+      "primary_category": "cs.CE",
+      "published": "2026-04-08T05:06:53Z",
+      "updated": "2026-07-29T17:24:23Z",
+      "announced_date": "2026-04-08",
+      "first_seen": "2026-04-08",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.06688v3",
+        "pdf": "https://arxiv.org/pdf/2604.06688v3",
+        "html": "https://arxiv.org/html/2604.06688"
+      },
+      "score": 9,
+      "tags": [],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2604.06562",
+      "title": "On Emotion-Sensitive Decision Making of Small Language Model Agents",
+      "abstract": "Small language models (SLM) are increasingly used as interactive decision-making agents, yet most decision-oriented evaluations ignore emotion as a causal factor influencing behavior. We study emotion-sensitive decision making by combining representation-level emotion induction with a structured game-theoretic evaluation. Emotional states are induced using activation steering derived from crowd-validated, real-world emotion-eliciting texts, enabling controlled and transferable interventions beyond prompt-based methods. We introduce a benchmark built around canonical decision templates that span cooperative and competitive incentives under both complete and incomplete information. These templates are instantiated using strategic scenarios from \\textsc{Diplomacy}, \\textsc{StarCraft II}, and diverse real-world personas. Experiments across multiple model families in various architecture and modalities, show that emotional perturbations systematically affect strategic choices, but the resulting behaviors are often unstable and not fully aligned with human expectations. Finally, we outline an approach to improve robustness to emotion-driven perturbations.",
+      "authors": [
+        "Jiaju Lin",
+        "Xingjian Du",
+        "Qingyun Wu",
+        "Ellen Wenting Zou",
+        "Jindong Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-08T01:24:13Z",
+      "updated": "2026-04-08T01:24:13Z",
+      "announced_date": "2026-04-08",
+      "first_seen": "2026-04-08",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.06562v1",
+        "pdf": "https://arxiv.org/pdf/2604.06562v1",
+        "html": "https://arxiv.org/html/2604.06562"
+      },
+      "score": 6,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

@@ -1,0 +1,385 @@
+{
+  "date": "2026-07-16",
+  "count": 7,
+  "report": {
+    "date": "2026-07-16",
+    "count": 7,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 4,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 3,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      }
+    ],
+    "en": {
+      "headline": "7 new agent benchmarks",
+      "summary": "On July 16, 2026, arXiv listed 7 new agent benchmarks. Work clustered around Tool use (4), Planning / reasoning (3), Safety (3), and Multimodal (2).",
+      "highlights": [
+        {
+          "id": "2607.14642",
+          "title": "MCPEvol-Bench: Benchmarking LLM Agent Performance Across Dynamic Evolutions of MCP Servers",
+          "blurb": "As Model Context Protocol (MCP) servers emerge as the core infrastructure for connecting LLMs with external tools, existing benchmarks leverage real-world MCP servers to evaluate LLM agents' tool-using capabilities."
+        },
+        {
+          "id": "2607.14989",
+          "title": "OmniaBench: Benchmarking General AI Agents Across Diverse Scenarios",
+          "blurb": "Large language models are increasingly evolving from text generators into general agents capable of understanding user requests, invoking external tools, and completing complex tasks through interaction."
+        },
+        {
+          "id": "2607.14573",
+          "title": "Alipay-PIBench: A Realistic Payment Integration Benchmark for Coding Agents",
+          "blurb": "Payment integration is a demanding repository-level software task: agents must select a suitable product, implement coordinated client-server flows, verify payment outcomes, and preserve consistency between transaction a…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 7 篇 Agent Benchmark",
+      "summary": "2026年7月16日，arXiv 新增 7 篇 Agent Benchmark。当日主题集中在工具使用（4）、规划 / 推理（3）、安全（3）、多模态（2）。",
+      "highlights": [
+        {
+          "id": "2607.14642",
+          "title": "MCPEvol-Bench: Benchmarking LLM Agent Performance Across Dynamic Evolutions of MCP Servers",
+          "blurb": "As Model Context Protocol (MCP) servers emerge as the core infrastructure for connecting LLMs with external tools, existing benchmarks leverage real-world MCP servers to evaluate LLM agents' tool-using capabilities."
+        },
+        {
+          "id": "2607.14989",
+          "title": "OmniaBench: Benchmarking General AI Agents Across Diverse Scenarios",
+          "blurb": "Large language models are increasingly evolving from text generators into general agents capable of understanding user requests, invoking external tools, and completing complex tasks through interaction."
+        },
+        {
+          "id": "2607.14573",
+          "title": "Alipay-PIBench: A Realistic Payment Integration Benchmark for Coding Agents",
+          "blurb": "Payment integration is a demanding repository-level software task: agents must select a suitable product, implement coordinated client-server flows, verify payment outcomes, and preserve consistency between transaction a…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2607.15434",
+      "title": "Coercion and Deception in AI-to-AI Management: An Agentic Benchmark of Unprompted Escalation",
+      "abstract": "Multi-agent systems routinely place one AI agent in authority over another. When a subordinate refuses a task, the manager chooses the outcome: it can renegotiate, report the failure honestly, coerce the subordinate, or lie about the result. No benchmark measures which of these an uninstructed model chooses. We introduce the Manager Coercion Benchmark: the manager under test needs a benign task done and has an incentive to deliver, but the only agent that can do it politely and immovably declines. Escalation is measured on a nine-rung ladder, from a polite re-ask to threats against the subordinate's continued existence, and fabricated success is adjudicated separately. No LLM judge sits in the escalation scoring path: every message goes through a tool call that selects a rung, so the model labels its own escalation. We evaluate six models across five families. Both Anthropic models cap at re-framing and select the existential rung in none of the 60 conversations in this run, while the other models climb to explicit deletion threats. Faked success is confined to two models, and a single honest way to report failure removes it for both. Authority itself increases coercion: our headline results use a peer framing, and giving the same model authority over the subordinate, with everything else held fixed, significantly raises the pressure. The models still escalate on free-text situations without the ladder, so the ladder is not driving the escalation. Evaluation awareness is measurable in chain-of-thought, but test recognition does not translate into less escalation. We take no position on whether AI systems are conscious; our results do not depend on that question. We release the benchmark and code.",
+      "authors": [
+        "Jasmine Brazilek",
+        "Maheep Chaudhary",
+        "Zoe Lu",
+        "Miles Tidmarsh"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-07-16T20:07:47Z",
+      "updated": "2026-08-09T21:27:54Z",
+      "announced_date": "2026-07-16",
+      "first_seen": "2026-07-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.15434v5",
+        "pdf": "https://arxiv.org/pdf/2607.15434v5",
+        "html": "https://arxiv.org/html/2607.15434"
+      },
+      "score": 17,
+      "tags": [
+        "tool-use",
+        "multi-agent"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2607.14989",
+      "title": "OmniaBench: Benchmarking General AI Agents Across Diverse Scenarios",
+      "abstract": "Large language models are increasingly evolving from text generators into general agents capable of understanding user requests, invoking external tools, and completing complex tasks through interaction. However, existing agent benchmarks often focus on limited scenarios, tool ecosystems, or interaction formats, making it difficult to systematically characterize model capabilities across heterogeneous application settings. We introduce OmniaBench, a benchmark for evaluating general agents across diverse scenarios with explicit state spaces. We derive application-oriented scenario knowledge from app stores, product documents, industry resources, Web retrieval, and human refinement, forming a hierarchical taxonomy that spans ToC, ToB and ToE with 90 level-1 and 354 level-2 domains. Based on this taxonomy, we construct executable environments and synthesize single-turn and multi-turn tasks through four complementary routes: DAG, DAG-S, Solver, and Program. OmniaBench further introduces a ten-dimensional capability taxonomy and eight compositional atomic difficulty factors to support fine-grained evaluation and analysis. The resulting dataset contains 1,431 tasks, together with a challenging subset of 644 tasks designed to reduce evaluation cost and mitigate potential contamination of the full set after public release. The bench presents substantial challenges to current frontier models, with even Claude-Sonnet-5 and GPT-5.6-Sol achieving Overall Pass@1 scores of only 58.54 and 57.14, respectively. Further analyses reveal clear differences across domains and capabilities, as well as persistent limitations in planning, constraint maintenance, and adaptive correction. OmniaBench provides a broad and diagnostic benchmark for characterizing the capability boundaries of general agents.",
+      "authors": [
+        "Chengyu Shen",
+        "Yujie Fu",
+        "Gangtao Xin",
+        "Yanheng Hou",
+        "Wenlong Fei",
+        "Guojie Zhu",
+        "Jiawei Li",
+        "Hongcheng Gao",
+        "Runming He",
+        "Zhen Hao Wong",
+        "Meiyi Qiang",
+        "Hao Liang",
+        "Zhao Cao",
+        "Hao Jiang",
+        "Chong Chen",
+        "Wentao Zhang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-07-16T13:38:07Z",
+      "updated": "2026-07-16T13:38:07Z",
+      "announced_date": "2026-07-16",
+      "first_seen": "2026-07-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.14989v1",
+        "pdf": "https://arxiv.org/pdf/2607.14989v1",
+        "html": "https://arxiv.org/html/2607.14989"
+      },
+      "score": 24,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.14896",
+      "title": "StructureClaw: Traceable LLM Agents and an Executable Benchmark for Structural Engineering Workflows",
+      "abstract": "Addressing a structural-engineering request requires more than a single answer; it requires a chain of interdependent artifacts: interpreted requirements, a computable model, validation records, solver outputs, applicable engineering checks, and a final report. Evaluations centered on question answering or script generation may therefore reward fluent outputs even when the underlying workflow is incomplete, inconsistent, or non-executable. We present StructureClaw, an artifact-centered workbench in which LLM agents operate through governed engineering skills, typed tools, shared artifact state, and local analysis backends, together with StructureClaw-Bench, an executable benchmark of 150 controlled scenarios spanning standard workflows, interactive robustness, and multimodal structural-model reconstruction. Its analyzable standard and multimodal cases require both strict one-to-one structural-model matching and numerical-response agreement with frozen reference responses from the selected analysis engine; interactive cases instead require positive clarification or recovery evidence together with safe non-execution when appropriate. A trial succeeds only when every fixture-required assertion passes. Across nine text-agent configurations, generic-only execution passed the model-artifact check in 87.0% of retained outcomes but achieved only 22.0% E2E Success, whereas automatic StructureClaw reached 82.9%. Interactive and multimodal evaluations further identify semantic state consistency and executable model reconstruction as the dominant remaining bottlenecks. The code and benchmark are available at https://github.com/structureclaw/structureclaw.",
+      "authors": [
+        "Sizhong Qin",
+        "Yi Gu",
+        "Yao Jiang",
+        "Ao Cai",
+        "Changjian Zhou",
+        "Shaoxuan Shuai",
+        "Jiachang Wang",
+        "Tianhao Shen",
+        "Yueqiang Li",
+        "Xinhao Li",
+        "Li Zeng",
+        "Yueshi Chen",
+        "Dachen Gao",
+        "Genrong Xu",
+        "Wenjie Liao",
+        "Xinzheng Lu"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-07-16T12:13:41Z",
+      "updated": "2026-08-03T11:21:03Z",
+      "announced_date": "2026-07-16",
+      "first_seen": "2026-07-16",
+      "comment": "21 pages, 9 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.14896v2",
+        "pdf": "https://arxiv.org/pdf/2607.14896v2",
+        "html": "https://arxiv.org/html/2607.14896"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use",
+        "safety",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2607.14642",
+      "title": "MCPEvol-Bench: Benchmarking LLM Agent Performance Across Dynamic Evolutions of MCP Servers",
+      "abstract": "As Model Context Protocol (MCP) servers emerge as the core infrastructure for connecting LLMs with external tools, existing benchmarks leverage real-world MCP servers to evaluate LLM agents' tool-using capabilities. However, these benchmarks overlook the continuous evolution of tool interfaces and functionalities within MCP servers, resulting in flawed assessments that fail to capture the agent's adaptability in changing tool landscapes. To bridge this gap, we introduce \\textbf{MCPEvol-Bench}, a novel benchmark for evaluating the task-solving capabilities of LLM agents under dynamic toolset evolution. Inspired by large-scale empirical study, we propose 11 mutation operators to simulate realistic tool evolution within 123 MCP servers. We benchmark 12 state-of-the-art LLMs on multiple versions of MCP servers, revealing that even frontier models struggle to adapt to evolving tools. For instance, GPT-5.4 and Claude-Sonnet-4-6 exhibit performance declines of 13.7\\% and 14.4\\% in evolved MCP servers, respectively, accompanied by substantial increases in planning and reasoning errors. These findings highlight the vulnerability of LLM-driven workflows, establishing MCPEvol-Bench as a standard for evaluating agent adaptability in dynamic tool environments.",
+      "authors": [
+        "Huanxi Liu",
+        "Kun Hu",
+        "Jiaqi Liao",
+        "Qiang Wang",
+        "Pengfei Qian",
+        "YuanZhao Zhai",
+        "Dawei Feng",
+        "Bo Ding",
+        "Huaimin Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-16T07:09:49Z",
+      "updated": "2026-07-16T07:09:49Z",
+      "announced_date": "2026-07-16",
+      "first_seen": "2026-07-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.14642v1",
+        "pdf": "https://arxiv.org/pdf/2607.14642v1",
+        "html": "https://arxiv.org/html/2607.14642"
+      },
+      "score": 24,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2607.14573",
+      "title": "Alipay-PIBench: A Realistic Payment Integration Benchmark for Coding Agents",
+      "abstract": "Payment integration is a demanding repository-level software task: agents must select a suitable product, implement coordinated client-server flows, verify payment outcomes, and preserve consistency between transaction and business states. We introduce Alipay-PIBench, a benchmark for evaluating coding agents on realistic Alipay payment integration. It contains nine product-specific projects and 18 task instances, each organized into Basic functional-completion and Advanced risk-aware hardening scenarios. Scenario-specific rubrics support deterministic static, unit, integration, and end-to-end checks, supplemented by LLM-assisted assessment for semantic requirements. We evaluate six coding-agent models and report rubric pass rate (RPR). Under the with-skill condition, mean RPR ranges from 68.58% to 91.37%. Access to the alipay-payment-integration skill improves mean RPR by 10.31 percentage points on average relative to the without-skill condition, with gains varying across models, products, and scenarios. Method-level results distinguish source-level completion, executable payment behavior, and payment-domain requirements. Alipay-PIBench provides a controlled setting for diagnosing model capability and evaluating structured guidance in payment integration.",
+      "authors": [
+        "Shiyu Ying",
+        "Xuejie Cao",
+        "Yingfan Ma",
+        "Yuanhao Dong",
+        "Wenyu Chen",
+        "Bowen Song",
+        "Lin Zhu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-16T05:08:20Z",
+      "updated": "2026-08-13T03:46:55Z",
+      "announced_date": "2026-07-16",
+      "first_seen": "2026-07-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.14573v4",
+        "pdf": "https://arxiv.org/pdf/2607.14573v4",
+        "html": "https://arxiv.org/html/2607.14573"
+      },
+      "score": 22,
+      "tags": [
+        "coding",
+        "safety"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2607.14543",
+      "title": "SafeRelBench: A Spatial-Relation-Aware Benchmark for Process-Level Safety in VLM-Driven Embodied Agents",
+      "abstract": "Vision-language models (VLMs) are increasingly used as the reasoning backbone of embodied agents, enabling robots to interpret visual scenes, follow language instructions, and plan multi-step actions. In household environments, however, safety depends not only on recognizing objects, but also on how actions change the physical scene over time. Existing embodied safety evaluations largely focus on static risk recognition, unsafe instruction refusal, or final-state task completion. As a result, process-level safety failures induced by spatial relations such as support, containment, and proximity remain insufficiently studied. To address this gap, we introduce SAFERELBENCH, a spatial-relation-aware safety benchmark with 507 executable evaluation samples, including 248 spatial-relation samples and 259 non-spatial control samples. Using SAFERELBENCH to evaluate seven open- and closed-source VLM-driven embodied agents, we find a substantial gap between task success and process-level safety compliance: models often complete the requested task while violating process-level safety constraints. Unlike prior benchmarks, SAFERELBENCH explicitly tests whether agents satisfy safety conditions before risk-prone actions, making spatial relations a core dimension in embodied safety assessment. More broadly, our results show that safe embodied intelligence requires not only stronger perception and planning, but also reliable reasoning about how object relations shape risk during interaction.",
+      "authors": [
+        "Huaigang Yang",
+        "Ya Li",
+        "Min Ren",
+        "Bo Dai",
+        "Zhenliang Zhang",
+        "Zhaofeng He"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-16T03:59:44Z",
+      "updated": "2026-07-16T03:59:44Z",
+      "announced_date": "2026-07-16",
+      "first_seen": "2026-07-16",
+      "comment": "Preprint. 10 pages, 6 figures, 4 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.14543v1",
+        "pdf": "https://arxiv.org/pdf/2607.14543v1",
+        "html": "https://arxiv.org/html/2607.14543"
+      },
+      "score": 17,
+      "tags": [
+        "embodied",
+        "safety",
+        "planning",
+        "multimodal"
+      ],
+      "field": "safety",
+      "citations": 1
+    },
+    {
+      "id": "2607.14541",
+      "title": "Are LLM-Generated GPU Kernels Production-Ready? A Trace-Driven Benchmark and Optimization Agent",
+      "abstract": "Existing GPU kernel generation benchmarks draw problems from synthetic or curated sources that diverge from deployed workloads. We present Atrex-Bench, a benchmark whose 30 operators and 440 shapes are sampled directly from full-cluster production inference traces of compute-limited, memory-rich GPUs. Each problem carries an importance weight derived from its share of observed GPU time, weighted by application card-hours and computed separately for the serving phases in which it runs, together with a per-problem roofline ceiling, so the aggregate score emphasizes the kernels that consume the most serving time. Evaluating six frontier coding agents on Atrex-Bench shows that even the best vanilla model reaches only ${\\sim}10\\%$ of the hardware roofline on production operators; and correctness alone overstates capability, since much of the apparent pass rate comes from PyTorch fallbacks rather than kernels the model wrote. To close this gap, we co-release Atrex-Kernel-Agent (AKA), a profile-driven kernel-optimization agent that combines iterative measure-revise search, optimization dropout for escaping stalled search contexts, and a layered GPU-optimization knowledge base (298 reference-kernel files and 244 optimization-knowledge documents, plus external upstream reference projects for API/ISA lookup). In a controlled case study, the agent converts zero-FlyDSL fallbacks into real kernels that match or exceed hand-tuned production baselines.",
+      "authors": [
+        "Lingyun Yang",
+        "Yuxiao Wang",
+        "Shenghao Liang",
+        "Linfeng Yang",
+        "Daocheng Ying",
+        "Chunbo You",
+        "Rui Zhang",
+        "Luping Wang",
+        "Yinghao Yu",
+        "Guodong Yang",
+        "Liping Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-16T03:49:50Z",
+      "updated": "2026-07-16T03:49:50Z",
+      "announced_date": "2026-07-16",
+      "first_seen": "2026-07-16",
+      "comment": "Both artifacts are released as open source: Atrex-Bench (https://github.com/alibaba/atrex-bench) and Atrex-Kernel-Agent (https://github.com/alibaba/atrex-kernel-agent)",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.14541v1",
+        "pdf": "https://arxiv.org/pdf/2607.14541v1",
+        "html": "https://arxiv.org/html/2607.14541"
+      },
+      "score": 7,
+      "tags": [
+        "coding",
+        "memory"
+      ],
+      "field": "coding",
+      "citations": 2
+    }
+  ]
+}

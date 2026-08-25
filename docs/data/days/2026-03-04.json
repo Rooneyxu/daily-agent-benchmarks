@@ -1,0 +1,124 @@
+{
+  "date": "2026-03-04",
+  "count": 2,
+  "report": {
+    "date": "2026-03-04",
+    "count": 2,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On March 4, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Tool use (2).",
+      "highlights": [
+        {
+          "id": "2603.03761",
+          "title": "AgentSelect: Benchmark for Narrative Query-to-Agent Recommendation",
+          "blurb": "LLM agents are rapidly becoming the practical interface for task automation, yet the ecosystem lacks a principled way to choose among an exploding space of deployable configurations."
+        },
+        {
+          "id": "2603.04656",
+          "title": "iAgentBench: Benchmarking Sensemaking Capabilities of Information-Seeking Agents on High-Traffic Topics",
+          "blurb": "With the emergence of search-enabled generative QA systems, users are increasingly turning to tools that browse, aggregate, and reconcile evidence across multiple sources on their behalf."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年3月4日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在工具使用（2）。",
+      "highlights": [
+        {
+          "id": "2603.03761",
+          "title": "AgentSelect: Benchmark for Narrative Query-to-Agent Recommendation",
+          "blurb": "LLM agents are rapidly becoming the practical interface for task automation, yet the ecosystem lacks a principled way to choose among an exploding space of deployable configurations."
+        },
+        {
+          "id": "2603.04656",
+          "title": "iAgentBench: Benchmarking Sensemaking Capabilities of Information-Seeking Agents on High-Traffic Topics",
+          "blurb": "With the emergence of search-enabled generative QA systems, users are increasingly turning to tools that browse, aggregate, and reconcile evidence across multiple sources on their behalf."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2603.04656",
+      "title": "iAgentBench: Benchmarking Sensemaking Capabilities of Information-Seeking Agents on High-Traffic Topics",
+      "abstract": "With the emergence of search-enabled generative QA systems, users are increasingly turning to tools that browse, aggregate, and reconcile evidence across multiple sources on their behalf. Yet many widely used QA benchmarks remain answerable by retrieving a single relevant passage, making them poorly suited for measuring cross-source sensemaking, such as integrating evidence, tracking causal links, and resolving dependencies across facets of a topic. We present iAgentBench, a dynamic ODQA benchmark that targets these higher-level information needs while keeping questions natural and grounded in realistic information-seeking behavior. iAgentBench draws seed topics from real-world attention signals and uses common user intent patterns to construct user-like questions whose answers require combining evidence from multiple sources, not just extracting a single snippet. Each instance is released with traceable evidence and auditable intermediate artifacts that support contamination checks and enable fine-grained diagnosis of failures in retrieval versus synthesis. Experiments across multiple LLMs show that retrieval improves accuracy, but retrieval alone does not reliably resolve these questions, underscoring the need to evaluate evidence use, not just evidence access.",
+      "authors": [
+        "Preetam Prabhu Srikar Dammu",
+        "Arnav Palkhiwala",
+        "Tanya Roosta",
+        "Chirag Shah"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.IR",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-03-04T22:40:08Z",
+      "updated": "2026-03-04T22:40:08Z",
+      "announced_date": "2026-03-04",
+      "first_seen": "2026-03-04",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.04656v1",
+        "pdf": "https://arxiv.org/pdf/2603.04656v1",
+        "html": "https://arxiv.org/html/2603.04656"
+      },
+      "score": 11,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2603.03761",
+      "title": "AgentSelect: Benchmark for Narrative Query-to-Agent Recommendation",
+      "abstract": "LLM agents are rapidly becoming the practical interface for task automation, yet the ecosystem lacks a principled way to choose among an exploding space of deployable configurations. Existing LLM leaderboards and tool/agent benchmarks evaluate components in isolation and remain fragmented across tasks, metrics, and candidate pools, leaving a critical research gap: there is little query-conditioned supervision for learning to recommend end-to-end agent configurations that couple a backbone model with a toolkit. We address this gap with AgentSelect, a benchmark that reframes agent selection as narrative query-to-agent recommendation over capability profiles and systematically converts heterogeneous evaluation artifacts into unified, positive-only interaction data. AgentSelectcomprises 111,179 queries, 107,721 deployable agents, and 251,103 interaction records aggregated from 40+ sources, spanning LLM-only, toolkit-only, and compositional agents. Our analyses reveal a regime shift from dense head reuse to long-tail, near one-off supervision, where popularity-based CF/GNN methods become fragile and content-aware capability matching is essential. We further show that Part~III synthesized compositional interactions are learnable, induce capability-sensitive behavior under controlled counterfactual edits, and improve coverage over realistic compositions; models trained on AgentSelect also transfer to a public agent marketplace (MuleRun), yielding consistent gains on an unseen catalog. Overall, AgentSelect provides the first unified data and evaluation infrastructure for agent recommendation, which establishes a reproducible foundation to study and accelerate the emerging agent ecosystem.",
+      "authors": [
+        "Yunxiao Shi",
+        "Wujiang Xu",
+        "Tingwei Chen",
+        "Haoning Shang",
+        "Ling Yang",
+        "Yunfeng Wan",
+        "Zhuo Cao",
+        "Xing Zi",
+        "Dimitris N. Metaxas",
+        "Min Xu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.IR"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-04T06:17:51Z",
+      "updated": "2026-03-04T06:17:51Z",
+      "announced_date": "2026-03-04",
+      "first_seen": "2026-03-04",
+      "comment": "under review by conference",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.03761v1",
+        "pdf": "https://arxiv.org/pdf/2603.03761v1",
+        "html": "https://arxiv.org/html/2603.03761"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 3
+    }
+  ]
+}

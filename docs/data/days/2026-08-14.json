@@ -1,0 +1,230 @@
+{
+  "date": "2026-08-14",
+  "count": 4,
+  "report": {
+    "date": "2026-08-14",
+    "count": 4,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "mobile",
+        "count": 1,
+        "en": "Mobile agents",
+        "zh": "移动智能体"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On August 14, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Planning / reasoning (2), Safety (1), GUI agents (1), and Multimodal (1).",
+      "highlights": [
+        {
+          "id": "2608.14132",
+          "title": "Act2Intention: A Benchmark For Developing Active Mobile Agents Through Inferring User Intention from GUI Actions",
+          "blurb": "Mobile GUI Agents powered by multimodal large language models (MLLMs) show promise in human-computer intelligence."
+        },
+        {
+          "id": "2608.14270",
+          "title": "TimeSage-EV: A Live Benchmark for Agentic Time Series Analysis in Evolving Environments",
+          "blurb": "Time series analysis in high-stakes domains relies on recurring data releases, where new observations can alter the evidence base and the validity of later conclusions."
+        },
+        {
+          "id": "2608.14380",
+          "title": "AgentRewind: Recoverable Execution for Long-Horizon LLM Agents",
+          "blurb": "Many real-world tasks require LLM agents to interact with their environments over long execution horizons."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年8月14日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在规划 / 推理（2）、安全（1）、GUI 智能体（1）、多模态（1）。",
+      "highlights": [
+        {
+          "id": "2608.14132",
+          "title": "Act2Intention: A Benchmark For Developing Active Mobile Agents Through Inferring User Intention from GUI Actions",
+          "blurb": "Mobile GUI Agents powered by multimodal large language models (MLLMs) show promise in human-computer intelligence."
+        },
+        {
+          "id": "2608.14270",
+          "title": "TimeSage-EV: A Live Benchmark for Agentic Time Series Analysis in Evolving Environments",
+          "blurb": "Time series analysis in high-stakes domains relies on recurring data releases, where new observations can alter the evidence base and the validity of later conclusions."
+        },
+        {
+          "id": "2608.14380",
+          "title": "AgentRewind: Recoverable Execution for Long-Horizon LLM Agents",
+          "blurb": "Many real-world tasks require LLM agents to interact with their environments over long execution horizons."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.14380",
+      "title": "AgentRewind: Recoverable Execution for Long-Horizon LLM Agents",
+      "abstract": "Many real-world tasks require LLM agents to interact with their environments over long execution horizons. Errors that occur early in execution may propagate through both the agent context and environment state, and their effects may be difficult to reverse through subsequent actions. Existing methods mainly seek to reduce such errors through plan refinement and safety checks but provide little support after errors occur. To enable recovery during long-horizon execution, we present AgentRewind, a runtime recovery framework that records aligned checkpoints of the agent context and controlled environment, allowing agents to return to an earlier state and resume execution with information from previous attempts. We also construct MettleBench, a benchmark for evaluating task completion and partial progress on long-horizon engineering assignments containing a series of related requirements. Experiments across tasks, multiple models, execution strategies, and agent harnesses show that AgentRewind improves task success rate and average checklist progress over the compared baselines.",
+      "authors": [
+        "Yu Zhuang",
+        "Kefei Chen",
+        "Yitong Duan",
+        "Shuxin Zheng",
+        "Jian Li",
+        "Xu-Yao Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-14T15:20:35Z",
+      "updated": "2026-08-14T15:20:35Z",
+      "announced_date": "2026-08-14",
+      "first_seen": "2026-08-14",
+      "comment": "19 pages, 5 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.14380v1",
+        "pdf": "https://arxiv.org/pdf/2608.14380v1",
+        "html": "https://arxiv.org/html/2608.14380"
+      },
+      "score": 10,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.14270",
+      "title": "TimeSage-EV: A Live Benchmark for Agentic Time Series Analysis in Evolving Environments",
+      "abstract": "Time series analysis in high-stakes domains relies on recurring data releases, where new observations can alter the evidence base and the validity of later conclusions. Existing time series QA benchmarks mostly rely on fixed snapshots, leaving temporal validity and cutoff-aware evidence use unevaluated. We introduce TimeSage-EV, a live benchmark for agentic time series analysis in evolving environments. It tracks 60 real institutional scenarios across 6 domains, comprising 1,485 scenario-period QA pairs from Feb 2023 to May 2026 and spanning monthly, weekly, daily, and irregular release cadences. At each period, large language model (LLM) agents receive time series data and source reports, while the withheld target release provides ground truth. TimeSage-EV evaluates state identification, data summarization, and outlook reasoning. Experiments with frontier LLM agents and TimeSage-1.0, a novel self-evolving agent with a reusable analytical skill library, reveal significant performance gaps across model tiers and recurring failures in temporal validity, exogenous context use, and adaptation. We release TimeSage-EV as a research resource with monthly updates, code, a leaderboard, and failure-mode analyses.",
+      "authors": [
+        "Qingren Yao",
+        "Yaxuan Kong",
+        "Yuqi Nie",
+        "Yichen Li",
+        "Stefan Zohren",
+        "Anna Vettoruzzo",
+        "Qingsong Wen",
+        "Ming Jin",
+        "Joaquin Vanschoren"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-14T12:53:21Z",
+      "updated": "2026-08-14T12:53:21Z",
+      "announced_date": "2026-08-14",
+      "first_seen": "2026-08-14",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.14270v1",
+        "pdf": "https://arxiv.org/pdf/2608.14270v1",
+        "html": "https://arxiv.org/html/2608.14270"
+      },
+      "score": 16,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.14132",
+      "title": "Act2Intention: A Benchmark For Developing Active Mobile Agents Through Inferring User Intention from GUI Actions",
+      "abstract": "Mobile GUI Agents powered by multimodal large language models (MLLMs) show promise in human-computer intelligence. However, current research primarily focuses on reactive task execution while lacking a comprehensive understanding-prediction-execution process for user intentions, which are the core requirements of active agents. In this paper, we propose the Act2Intention framework that builds an active mobile agent by integrating understanding, predicting user intentions, and executing decisions. First, we construct the Act2Intention Bench through data collection and validated generation, comprising 72,511 intentions and over 700,000 actions across 52 apps, thereby establishing the first benchmark for evaluating proactive agents via continuous intention-action trajectories. We further develop the Act2Intention Agent, achieving proactive services through Proactive-oriented Intention Understanding, Personalized Proactive Intention Prediction, and Experience-guided Intention Execution. Experimental results show that supervised fine-tuning on Act2Intention Bench yields absolute improvements of +32.0 Acc-S, +10.25 Acc-S, and +6.9 SSR points over non-fine-tuned counterparts under the same agent framework for intention understanding, prediction, and execution, respectively. This success underscores the necessity and value of the Act2Intention Bench, which establishes a standardized platform for developing and evaluating proactive agents and consequently paves the way for research on intention-driven human-computer interaction.",
+      "authors": [
+        "Xiaokai Yan",
+        "Jingtao Ding",
+        "Yong Li",
+        "Zhiwen Yu"
+      ],
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-08-14T09:36:59Z",
+      "updated": "2026-08-14T09:36:59Z",
+      "announced_date": "2026-08-14",
+      "first_seen": "2026-08-14",
+      "comment": "",
+      "doi": "10.1145/3831658",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.14132v1",
+        "pdf": "https://arxiv.org/pdf/2608.14132v1",
+        "html": "https://arxiv.org/html/2608.14132"
+      },
+      "score": 18,
+      "tags": [
+        "gui",
+        "multimodal",
+        "mobile"
+      ],
+      "field": "mobile",
+      "citations": 0
+    },
+    {
+      "id": "2608.13883",
+      "title": "MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends",
+      "abstract": "Most agent-memory benchmarks test post-hoc recall, whereas MemoryArena evaluates whether memory supports interdependent, multi-session task completion. We compare MemoryLake, a structured multi-track memory backend, with Mem0, text-embedding-3-small vector RAG, and a long-context control across all five MemoryArena domains. The systems share the same agent framework, requested gpt-5-mini model alias, task samples, and scoring code; the memory integration is the intentionally changed component. Because each backend bundles write, retrieval, consolidation, budgeting, and prompt-assembly choices, the study is a matched system-level comparison, not a representation-only ablation or a cost-matched experiment. On the shared evaluation sets, MemoryLake has the highest observed success rate (SR) in mathematics (9/40), physics (12/20), and progressive retrieval (4/20). Every system has zero SR in travel planning, and web shopping yields a single bundle-level success (long context, 1/150); MemoryLake ranks third on both the travel soft process score and shopping step match. Following MemoryArena's suite-level convention, a post-hoc equal-weight average over the five SRs is 20.5% for MemoryLake versus 13.6% for the best comparator. These are point estimates: sample sizes are modest, confidence intervals overlap, and we do not report paired significance tests. A separate MemoryLake-only run over all 221 progressive queries yields a failure-counted SR of 26.7% (59/221) and is not a baseline comparison. The results support a workload-dependent view of memory backends and an observed lead among the four evaluated systems on the shared sets; they do not establish benchmark-wide state of the art or a causal advantage of representation structure.",
+      "authors": [
+        "Chaoqun Zhan",
+        "Qiang Zhou",
+        "Guannan Li",
+        "Zhenqiang Huang",
+        "Qianjin Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-14T02:19:26Z",
+      "updated": "2026-08-14T02:19:26Z",
+      "announced_date": "2026-08-14",
+      "first_seen": "2026-08-14",
+      "comment": "16 pages, 7 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.13883v1",
+        "pdf": "https://arxiv.org/pdf/2608.13883v1",
+        "html": "https://arxiv.org/html/2608.13883"
+      },
+      "score": 8,
+      "tags": [
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

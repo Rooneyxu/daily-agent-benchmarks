@@ -1,0 +1,147 @@
+{
+  "date": "2026-02-20",
+  "count": 2,
+  "report": {
+    "date": "2026-02-20",
+    "count": 2,
+    "themes": [
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On February 20, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Multi-agent (1), Memory (1), and Science lab (1).",
+      "highlights": [
+        {
+          "id": "2602.18008",
+          "title": "Are LLMs Ready for Neural-integrated Mechanistic Modeling? A Benchmark and Agentic Framework",
+          "blurb": "Large language models (LLMs) have shown promise in constructing mechanistic models from data."
+        },
+        {
+          "id": "2604.09568",
+          "title": "EvoDiagram: Agentic Editable Diagram Creation via Design Expertise Evolution",
+          "blurb": "High-fidelity diagram creation requires the complex orchestration of semantic topology, visual styling, and spatial layout, posing a significant challenge for automated systems."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年2月20日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在多智能体（1）、记忆（1）、科学实验（1）。",
+      "highlights": [
+        {
+          "id": "2602.18008",
+          "title": "Are LLMs Ready for Neural-integrated Mechanistic Modeling? A Benchmark and Agentic Framework",
+          "blurb": "Large language models (LLMs) have shown promise in constructing mechanistic models from data."
+        },
+        {
+          "id": "2604.09568",
+          "title": "EvoDiagram: Agentic Editable Diagram Creation via Design Expertise Evolution",
+          "blurb": "High-fidelity diagram creation requires the complex orchestration of semantic topology, visual styling, and spatial layout, posing a significant challenge for automated systems."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.09568",
+      "title": "EvoDiagram: Agentic Editable Diagram Creation via Design Expertise Evolution",
+      "abstract": "High-fidelity diagram creation requires the complex orchestration of semantic topology, visual styling, and spatial layout, posing a significant challenge for automated systems. Existing methods also suffer from a representation gap: pixel-based models often lack precise control, while code-based synthesis limits intuitive flexibility. To bridge this gap, we introduce EvoDiagram, an agentic framework that generates object-level editable diagrams via an intermediate canvas schema. EvoDiagram employs a coordinated multi-agent system to decouple semantic intent from rendering logic, resolving conflicts across heterogeneous design layers. Additionally, we propose a design knowledge evolution mechanism that distills execution traces into a hierarchical memory of domain guidelines, enabling agents to retrieve context-aware expertise adaptively. We further release CanvasBench, a benchmark consisting of both data and metrics for canvas-based diagramming. Extensive experiments demonstrate that EvoDiagram exhibits excellent performance and balance against baselines in generating editable, structurally consistent, and aesthetically coherent diagrams. Our code is available at https://github.com/AuraX-AI/EvoDiagram.",
+      "authors": [
+        "Tianfu Wang",
+        "Leilei Ding",
+        "Ziyang Tao",
+        "Yi Zhan",
+        "Zhiyuan Ma",
+        "Wei Wu",
+        "Yuxuan Lei",
+        "Yuan Feng",
+        "Junyang Wang",
+        "Yin Wu",
+        "Yizhao Xu",
+        "Hongyuan Zhu",
+        "Qi Liu",
+        "Nicholas Jing Yuan",
+        "Yanyong Zhang",
+        "Hui Xiong"
+      ],
+      "categories": [
+        "cs.HC",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-20T11:11:02Z",
+      "updated": "2026-02-20T11:11:02Z",
+      "announced_date": "2026-02-20",
+      "first_seen": "2026-02-20",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.09568v1",
+        "pdf": "https://arxiv.org/pdf/2604.09568v1",
+        "html": "https://arxiv.org/html/2604.09568"
+      },
+      "score": 12,
+      "tags": [
+        "multi-agent",
+        "memory"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2602.18008",
+      "title": "Are LLMs Ready for Neural-integrated Mechanistic Modeling? A Benchmark and Agentic Framework",
+      "abstract": "Large language models (LLMs) have shown promise in constructing mechanistic models from data. However, existing evaluations largely focus on simplified settings and fail to capture the complexity of real-world scientific modeling. In practice, such modeling often involves neural-integrated formulations, where a mechanistic model component and a neural network component are jointly constructed, leading to a significantly more complex search space. Motivated by this gap, we introduce the Neural-Integrated Mechanistic Modeling (NIMM) benchmark, which evaluates LLM-generated neural-integrated mechanistic models across three scientific domains. Experiments on NIMM reveal that existing LLM-based approaches struggle to effectively explore this complex space, resulting in limited search stability and solution quality. To address this challenge, we propose NIMMGen, a tree-guided agentic framework that enables diversified exploration via branch-level search and improves solutions through atomic model refinement. Extensive experiments demonstrate that NIMMGen achieves state-of-the-art performance on NIMM, significantly improving search stability and solution quality.",
+      "authors": [
+        "Zihan Guan",
+        "Rituparna Datta",
+        "Mengxuan Hu",
+        "Shunshun Liu",
+        "Aiying Zhang",
+        "Prasanna Balachandran",
+        "Sheng Li",
+        "Anil Vullikanti"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-20T05:46:54Z",
+      "updated": "2026-05-31T04:45:46Z",
+      "announced_date": "2026-02-20",
+      "first_seen": "2026-02-20",
+      "comment": "25 pages, 8 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.18008v2",
+        "pdf": "https://arxiv.org/pdf/2602.18008v2",
+        "html": "https://arxiv.org/html/2602.18008"
+      },
+      "score": 12,
+      "tags": [
+        "science"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

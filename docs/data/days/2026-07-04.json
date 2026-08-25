@@ -1,0 +1,132 @@
+{
+  "date": "2026-07-04",
+  "count": 2,
+  "report": {
+    "date": "2026-07-04",
+    "count": 2,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On July 4, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Planning / reasoning (2), Web agents (1), and Tool use (1).",
+      "highlights": [
+        {
+          "id": "2607.20510",
+          "title": "Telco-GAIA: Bilingual Benchmark for Agents in Telecom Domain",
+          "blurb": "We introduce Telco-GAIA, a bilingual, multi-modal benchmark for evaluating tool-using agents on the data of a real-world telecommunications operator."
+        },
+        {
+          "id": "2607.03730",
+          "title": "ProACT: Towards Breakdown-Aware Proactive Agent in Multi-User Collaboration",
+          "blurb": "Conversational agents are increasingly embedded in human collaborative work, yet they remain fundamentally passive and reactive: they respond to explicit user requests rather than proactively recognizing moments when a t…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年7月4日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在规划 / 推理（2）、网页智能体（1）、工具使用（1）。",
+      "highlights": [
+        {
+          "id": "2607.20510",
+          "title": "Telco-GAIA: Bilingual Benchmark for Agents in Telecom Domain",
+          "blurb": "We introduce Telco-GAIA, a bilingual, multi-modal benchmark for evaluating tool-using agents on the data of a real-world telecommunications operator."
+        },
+        {
+          "id": "2607.03730",
+          "title": "ProACT: Towards Breakdown-Aware Proactive Agent in Multi-User Collaboration",
+          "blurb": "Conversational agents are increasingly embedded in human collaborative work, yet they remain fundamentally passive and reactive: they respond to explicit user requests rather than proactively recognizing moments when a t…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2607.03730",
+      "title": "ProACT: Towards Breakdown-Aware Proactive Agent in Multi-User Collaboration",
+      "abstract": "Conversational agents are increasingly embedded in human collaborative work, yet they remain fundamentally passive and reactive: they respond to explicit user requests rather than proactively recognizing moments when a team would benefit from timely intervention as human collaborators often do. This reactive design substantially limits the use of agents as active participants in multi-user collaboration, where disagreements, ambiguous goals, forgotten constraints, underspecified plans, discussion loops, and imbalanced participation can gradually undermine group progress. To move agents from passive assistants toward active participants in multi-user collaboration, we introduce ProACT, a breakdown-aware agent framework grounded in theories of common ground, collaborative planning, and coordination work. ProACT observes the speaker-attributed conversation history, determines whether the current turn contains a collaboration breakdown requiring intervention, decides whether the agent should stay silent or speak, and, when speaking is needed, routes the case to a targeted collaboration skill. We further introduce the first multi-user collaboration benchmark for evaluating proactive agents across project planning, product design, research collaboration, logistics, education, and resource-constrained decision making. Across 3,244 turn-level examples and five LLM backbones, ProACT consistently improves collaborative appropriateness, non-interruptiveness, conciseness, and judged intervention quality over direct chat.",
+      "authors": [
+        "Shu Yang",
+        "Difei Xu",
+        "Jiaxin Pei",
+        "Di Wang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-07-04T06:36:06Z",
+      "updated": "2026-07-04T06:36:06Z",
+      "announced_date": "2026-07-04",
+      "first_seen": "2026-07-04",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.03730v1",
+        "pdf": "https://arxiv.org/pdf/2607.03730v1",
+        "html": "https://arxiv.org/html/2607.03730"
+      },
+      "score": 5,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.20510",
+      "title": "Telco-GAIA: Bilingual Benchmark for Agents in Telecom Domain",
+      "abstract": "We introduce Telco-GAIA, a bilingual, multi-modal benchmark for evaluating tool-using agents on the data of a real-world telecommunications operator. Telco-GAIA comprises 100 human-verified question-answering tasks, in English and Arabic, that each demand multi-hop reasoning (4.2 hops on average) over three heterogeneous sources: a static website snapshot (HTML, images, and linked PDFs), a synthetic relational SQL database, and external web archives, spanning text, image, and tabular modalities. The benchmark is delivered as a sandboxed Docker environment and scored by normalized exact string matching, making evaluation objective, deterministic, and reproducible over time without any LLM-as-a-Judge. Evaluating a purpose-built reference agent across twelve commercial and open LLMs, we find Telco-GAIA challenging: even the strongest model solves only 71% of tasks; under a moderate cost budget, this falls to about 40%, and the visually grounded categories remain the weakest, where the average backend scores below 30%, leaving substantial headroom in document and image understanding. Telco-GAIA offers a rigorous, reproducible testbed for enterprise agents and a template for constructing closed-domain benchmarks.",
+      "authors": [
+        "Dmitrii Khizbullin",
+        "Zaid Alyafeai",
+        "Abdelrahman Eldesokey",
+        "Nourah AlSultan",
+        "Raghad Alshalan",
+        "Bernard Ghanem",
+        "David R. Pugh"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-04T04:34:38Z",
+      "updated": "2026-08-24T09:21:40Z",
+      "announced_date": "2026-07-04",
+      "first_seen": "2026-07-04",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.20510v2",
+        "pdf": "https://arxiv.org/pdf/2607.20510v2",
+        "html": "https://arxiv.org/html/2607.20510"
+      },
+      "score": 18,
+      "tags": [
+        "web",
+        "tool-use",
+        "planning"
+      ],
+      "field": "workplace",
+      "citations": 0
+    }
+  ]
+}

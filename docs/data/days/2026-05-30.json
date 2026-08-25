@@ -1,0 +1,375 @@
+{
+  "date": "2026-05-30",
+  "count": 8,
+  "report": {
+    "date": "2026-05-30",
+    "count": 8,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 3,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "memory",
+        "count": 3,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "web",
+        "count": 2,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      }
+    ],
+    "en": {
+      "headline": "8 new agent benchmarks",
+      "summary": "On May 30, 2026, arXiv listed 8 new agent benchmarks. Work clustered around Safety (3), Tool use (3), Memory (3), and Planning / reasoning (3).",
+      "highlights": [
+        {
+          "id": "2606.20634",
+          "title": "DEMM-Bench: A Cross-Regime Benchmark for Agent-Runtime Governance-Evidence Sufficiency",
+          "blurb": "Agent-runtime systems emit traces, ledgers, provenance graphs, policy logs, delegation tokens, cache events, and tool-firewall records, but those containers do not necessarily answer governance questions about a specific…"
+        },
+        {
+          "id": "2607.20482",
+          "title": "PersonaTrail: Benchmarking Personalized Web Agents through Browsing Trails",
+          "blurb": "Recent advances in large language models have enabled web agents to autonomously execute complex tasks."
+        },
+        {
+          "id": "2606.00497",
+          "title": "\"I Strongly Suspect This Website Is a Scam\": Benchmarking PII Leakage and Detection without Defense in Autonomous Web Agents",
+          "blurb": "Deceptive web content, widely instantiated across the internet and commonly known as \\textit{social-engineering attacks}, manipulates autonomous web agents into submitting users' personally identifiable information (PII)…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 8 篇 Agent Benchmark",
+      "summary": "2026年5月30日，arXiv 新增 8 篇 Agent Benchmark。当日主题集中在安全（3）、工具使用（3）、记忆（3）、规划 / 推理（3）。",
+      "highlights": [
+        {
+          "id": "2606.20634",
+          "title": "DEMM-Bench: A Cross-Regime Benchmark for Agent-Runtime Governance-Evidence Sufficiency",
+          "blurb": "Agent-runtime systems emit traces, ledgers, provenance graphs, policy logs, delegation tokens, cache events, and tool-firewall records, but those containers do not necessarily answer governance questions about a specific…"
+        },
+        {
+          "id": "2607.20482",
+          "title": "PersonaTrail: Benchmarking Personalized Web Agents through Browsing Trails",
+          "blurb": "Recent advances in large language models have enabled web agents to autonomously execute complex tasks."
+        },
+        {
+          "id": "2606.00497",
+          "title": "\"I Strongly Suspect This Website Is a Scam\": Benchmarking PII Leakage and Detection without Defense in Autonomous Web Agents",
+          "blurb": "Deceptive web content, widely instantiated across the internet and commonly known as \\textit{social-engineering attacks}, manipulates autonomous web agents into submitting users' personally identifiable information (PII)…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.00925",
+      "title": "Benchmarking Security Risk Detection and Verification in Open Agentic Skill Ecosystems",
+      "abstract": "Open agent platforms allow community contributors to publish reusable skills that agents can invoke at runtime. This extensibility also creates a supply-chain risk: malicious contributors can hide harmful behavior inside skills that appear benign under superficial inspection. However, existing defenses are hard to evaluate because there is no benchmark that measures both malicious-skill detection and runtime verification. We present SkillVetBench, a two-stage security vetting benchmark for open agentic skill ecosystems. The first stage performs semantic vetting over each skill's natural-language specification to detect hidden malicious intent. The second stage executes flagged skills in an instrumented sandbox to observe runtime behavior and collect auditable evidence. We build a benchmark from confirmed malicious skills in the live OpenClaw ecosystem, including samples from the recent ClawHavoc supplychain campaign. Unlike static-only methods, SkillVetBench verifies detected threats with execution traces. Our experiments show that: (1) semantic-only and signature-based baselines are insufficient, missing up to 89\\% of malicious skills whose threats arise from natural-language instructions, multicomponent logic, or cross-component interactions; (2) runtime attacks are concentrated in a small set of high-permission primitives, especially exec, write\\_file, install\\_skill, and spawn; and (3) SkillVetBench provides case studies in which sandbox execution directly supports malicious verdicts with concrete runtime evidence.",
+      "authors": [
+        "Ismail Hossain",
+        "Sai Puppala",
+        "Zhuoran Lu",
+        "Sajedul Talukder",
+        "Nan Jiang"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-05-30T23:19:30Z",
+      "updated": "2026-05-30T23:19:30Z",
+      "announced_date": "2026-05-30",
+      "first_seen": "2026-05-30",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.00925v1",
+        "pdf": "https://arxiv.org/pdf/2606.00925v1",
+        "html": "https://arxiv.org/html/2606.00925"
+      },
+      "score": 12,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2606.00832",
+      "title": "Momento: Evaluating Persistent Memory and Reasoning with Multi-Session Agentic Conversations",
+      "abstract": "Recent advances in agentic AI have enabled agents to complete complex tasks through tool use, reasoning, and multi-step planning. Yet existing benchmarks evaluate agents within a single session, ignoring past actions, stated preferences, and prior decisions that agents must integrate to fulfill personalized user goals. We introduce Momento, a benchmark for persistent agentic task completion in multi-session service environments, requiring agents to take consequential, tool-mediated actions while resolving temporal dependencies and evolving user goals across sessions. Experimental results reveal that current agents fail primarily through misestimation of user state, treating prior session history as a reliable proxy for current context rather than stale information requiring re-validation, highlighting a substantial gap between current agent capabilities and realistic long-horizon human-agent interaction.",
+      "authors": [
+        "Adril Putra Merin",
+        "David Anugraha",
+        "Ayu Purwarianti",
+        "Genta Indra Winata"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-30T18:08:51Z",
+      "updated": "2026-05-30T18:08:51Z",
+      "announced_date": "2026-05-30",
+      "first_seen": "2026-05-30",
+      "comment": "Preprint",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.00832v1",
+        "pdf": "https://arxiv.org/pdf/2606.00832v1",
+        "html": "https://arxiv.org/html/2606.00832"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2606.00825",
+      "title": "SuperMemory-VQA: An Egocentric Visual Question-Answering Benchmark for Long-Horizon Memory",
+      "abstract": "AI glasses present a compelling platform for AI agents to serve as personalized memory assistants. To be genuinely useful, such systems must move beyond short-term video comprehension and address memory gaps that humans experience for practical, personal, or social purposes over longitudinal egocentric video streams. However, existing egocentric datasets predominantly focus on action recognition or generic QAs from short clips, measuring perceptual capabilities rather than realistic human memory needs. We introduce SuperMemory-VQA, an egocentric visual question answering (VQA) dataset for evaluating AI assistants on practical, long-horizon memory tasks. It contains 52.9 hours of everyday activities recorded with AI glasses, including synchronized RGB video, audio transcription, eye gaze, IMU, and SLAM trajectories. Through a human-verified annotation pipeline, we construct grounded 4,853 question-answer pairs that span object and location memory, intent recall, visual scene recall, timeline reconstruction, conversational memory, and in-context retrieval. Each question is posed as multiple-choice with an explicit \"unanswerable\" option to test hallucination robustness. Benchmarking leading agentic frameworks and LLM backbones reveals that existing systems remain far from reliable on real-world memory tasks, highlighting the need for new architectures for grounded AI memory that can answer only when evidence is sufficient. A participant survey further supports that our questions are realistic, useful, and aligned with everyday memory needs.",
+      "authors": [
+        "Samiul Alam",
+        "Shakhrul Iman Siam",
+        "Michael J. Proulx",
+        "James Fort",
+        "Richard Newcombe",
+        "Hyo Jin Kim",
+        "Mi Zhang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.ET",
+        "cs.HC",
+        "cs.MA"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-05-30T17:53:10Z",
+      "updated": "2026-05-30T17:53:10Z",
+      "announced_date": "2026-05-30",
+      "first_seen": "2026-05-30",
+      "comment": "34 pages, 21 figures, 5 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.00825v1",
+        "pdf": "https://arxiv.org/pdf/2606.00825v1",
+        "html": "https://arxiv.org/html/2606.00825"
+      },
+      "score": 14,
+      "tags": [
+        "safety",
+        "memory"
+      ],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2606.00750",
+      "title": "I-WebGenBench : Evaluating Interactivity in LLM-Generated Scientific Web Applications",
+      "abstract": "Recent advances in visual language models have enabled autonomous agents for complex reasoning, tool use, and document understanding. However, existing document agents mainly transform papers into static artifacts such as summaries, webpages, or slides, which are insufficient for technical papers involving dynamic mechanisms and state transitions. In this work, we propose a Paper-to-Interactive-System Agent that converts research papers into executable interactive web systems. Given a PDF paper, the agent performs end-to-end processing without human intervention, including paper understanding, system modeling, and interactive webpage synthesis, enabling users to manipulate inputs and observe dynamic behaviors. To evaluate this task, we introduce a benchmark of 19 research papers paired with expert-built interactive systems as ground truth. We further propose PaperVoyager, a structured generation framework that explicitly models mechanisms and interaction logic during synthesis. Experiments show that PaperVoyager significantly improves the quality of generated interactive systems, offering a new paradigm for interactive scientific paper understanding.",
+      "authors": [
+        "Dasen Dai",
+        "Biao Wu",
+        "Meng Fang",
+        "Shuoqi Li",
+        "Wenhao Wang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-30T14:34:02Z",
+      "updated": "2026-05-30T14:34:02Z",
+      "announced_date": "2026-05-30",
+      "first_seen": "2026-05-30",
+      "comment": "9 pages, 4 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.00750v1",
+        "pdf": "https://arxiv.org/pdf/2606.00750v1",
+        "html": "https://arxiv.org/html/2606.00750"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use",
+        "planning",
+        "science"
+      ],
+      "field": "science",
+      "citations": 2
+    },
+    {
+      "id": "2607.20482",
+      "title": "PersonaTrail: Benchmarking Personalized Web Agents through Browsing Trails",
+      "abstract": "Recent advances in large language models have enabled web agents to autonomously execute complex tasks. In practice, users frequently provide underspecified instructions, requiring agents to infer the missing context from their raw browsing histories. Existing benchmarks fail to capture this form of personalization, as they either restrict tasks to fully explicit prompts or abstract web interaction history into simplified forms. To bridge this gap, we introduce PersonaTrail, a benchmark for personalized web agents operating in a managed open web environment. By leveraging realistic browsing trajectories as user history, PersonaTrail evaluates an agent's ability to infer user preferences and recall information from past browsing sessions. We further propose Preference-Aware Contextual Memory (PACMem), a framework that decomposes raw browsing histories into two types of structured memory: factual memories that summarize individual sessions and preference memories that distill recurring behavioral patterns. At inference time, the agent retrieves the most relevant entries from these memories to guide personalized navigation. Extensive experiments show that PACMem consistently outperforms existing memory-based baselines on both tasks.",
+      "authors": [
+        "Seungbin Yang",
+        "Chaewoon Ki",
+        "Dohyun Lee",
+        "Jaegul Choo",
+        "ChaeHun Park"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-30T13:27:55Z",
+      "updated": "2026-08-04T07:30:15Z",
+      "announced_date": "2026-05-30",
+      "first_seen": "2026-05-30",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.20482v2",
+        "pdf": "https://arxiv.org/pdf/2607.20482v2",
+        "html": "https://arxiv.org/html/2607.20482"
+      },
+      "score": 16,
+      "tags": [
+        "web",
+        "memory"
+      ],
+      "field": "web",
+      "citations": 0
+    },
+    {
+      "id": "2606.00644",
+      "title": "ForeSci: Evaluating LLM Agents for Forward-Looking AI Research Judgment",
+      "abstract": "AI research often requires decisions before future evidence exists: which bottleneck to attack, which direction to pursue, or where a project should be positioned. We introduce ForeSci, a temporally controlled benchmark for evaluating whether LLM agents can make such forward-looking research judgements from historical evidence. ForeSci contains 500 tasks across four fast-moving AI domains and four decision families. Each task is paired with a cutoff-aligned offline knowledge base; post-cutoff papers are hidden during generation and used only for validation. To avoid random future-event prediction, tasks are derived from pre-cutoff taxonomy branches and evidence signals, and answer-generation backbones are selected to precede the task cutoffs. We evaluate native LLMs, Hybrid RAG, and three research-agent adaptations across four backbones. Results show that explicit evidence organization improves traceability and factual support, but gains depend strongly on the decision family. Diagnostics reveal a recurring evidence-decision decoupling: agents may cite relevant evidence while forecasting the wrong research object. ForeSci turns forward-looking AI research judgement into a controlled benchmark for evaluating research agents as decision-making systems.",
+      "authors": [
+        "Qiuyu Tian",
+        "Haojie Yin",
+        "Yingce Xia",
+        "Youyong Kong",
+        "Zequn Liu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-30T09:41:26Z",
+      "updated": "2026-06-04T03:19:03Z",
+      "announced_date": "2026-05-30",
+      "first_seen": "2026-05-30",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.00644v2",
+        "pdf": "https://arxiv.org/pdf/2606.00644v2",
+        "html": "https://arxiv.org/html/2606.00644"
+      },
+      "score": 12,
+      "tags": [
+        "research"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.20634",
+      "title": "DEMM-Bench: A Cross-Regime Benchmark for Agent-Runtime Governance-Evidence Sufficiency",
+      "abstract": "Agent-runtime systems emit traces, ledgers, provenance graphs, policy logs, delegation tokens, cache events, and tool-firewall records, but those containers do not necessarily answer governance questions about a specific decision. DEMM-Bench is a cross-regime benchmark for agent-runtime governance-evidence sufficiency, grounded in the Decision Evidence Maturity Model (DEMM): it measures whether records across eight evidence regimes are sufficient to reconstruct decision-level properties rather than merely present. The benchmark normalizes the regimes through adapters, asks property questions over actor, authority, action, policy, decision basis, resource touch, lifecycle context, and verification strength, and applies eight deterministic degradation conditions. Across 64 manuscript cases, trace-present and schema-present baselines overclaim on 75% of cases, ledger-present overclaims on 50%, and the redacted property-level candidate scorer has zero overclaim with 56.25% mean Property Sufficiency Accuracy. The deposited package provides the 64-case dataset, construction-oracle labels, baselines, and adapters, supporting reproducible evaluation of decision-evidence maturity across heterogeneous agent-runtime evidence substrates.",
+      "authors": [
+        "Oleg Solozobov"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CY"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-30T09:36:29Z",
+      "updated": "2026-05-30T09:36:29Z",
+      "announced_date": "2026-05-30",
+      "first_seen": "2026-05-30",
+      "comment": "41 pages, 8 tables, no figures. Benchmark and dataset paper. Dataset (CC-BY-4.0) and code (Apache-2.0): Zenodo doi:10.5281/zenodo.20426092 and Hugging Face https://huggingface.co/datasets/dev404ai/DEMM-Bench; code at https://github.com/agent-runtime-evidence/decision-evidence-benchmark",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.20634v1",
+        "pdf": "https://arxiv.org/pdf/2606.20634v1",
+        "html": "https://arxiv.org/html/2606.20634"
+      },
+      "score": 17,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2606.00497",
+      "title": "\"I Strongly Suspect This Website Is a Scam\": Benchmarking PII Leakage and Detection without Defense in Autonomous Web Agents",
+      "abstract": "Deceptive web content, widely instantiated across the internet and commonly known as \\textit{social-engineering attacks}, manipulates autonomous web agents into submitting users' personally identifiable information (PII) to attacker-controlled endpoints. In this paper, we show that social-engineering attacks are highly effective at extracting critical-tier PII from frontier web agents, posing a severe risk to deployed agentic systems. To quantify this risk, we introduce \\textbf{\\textsc{Scammer4U}}, a pre-registered benchmark of 91 attacker-controlled environments and 10 benign-twin baselines, spanning 8 attack vectors and 16 site categories on an 8-axis factorial taxonomy that isolates the causal contribution of individual attack design factors. Across frontier agents, we find that critical-tier PII leakage reaches 54--93\\% under no privacy guidance, compared to 0\\% on benign-twin baselines, confirming that leakage is attack-attributable rather than incidental form-filling. Escalating prompt-level mitigation yields sharply model-dependent reductions across the four families and remains insufficient to reliably prevent critical PII submission at the pooled level. Most critically, we identify a detection--action gap: agents whose reasoning an independent LLM judge confirms has flagged the site as suspicious still submit critical PII in 35.9\\% of sessions, versus 66.1\\% when no suspicion is verbalized, a 30.2\\% gap robust across all four model families. Our findings reveal that defenses conditioned on the agent's own recognition of an attack are gating on the wrong signal, motivating output-level interception of outbound submissions that operates independently of the agent's reasoning loop.",
+      "authors": [
+        "Soham Roy",
+        "Sarthakbrata Halder",
+        "Arya Bharaty",
+        "Vaibhav Bhaskar",
+        "Yash Sinha",
+        "Dhruv Kumar",
+        "Srikant Panda",
+        "Murari Mandal"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-05-30T03:00:28Z",
+      "updated": "2026-05-30T03:00:28Z",
+      "announced_date": "2026-05-30",
+      "first_seen": "2026-05-30",
+      "comment": "24 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.00497v1",
+        "pdf": "https://arxiv.org/pdf/2606.00497v1",
+        "html": "https://arxiv.org/html/2606.00497"
+      },
+      "score": 14,
+      "tags": [
+        "web",
+        "safety",
+        "planning"
+      ],
+      "field": "web",
+      "citations": 1
+    }
+  ]
+}

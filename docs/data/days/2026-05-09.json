@@ -1,0 +1,408 @@
+{
+  "date": "2026-05-09",
+  "count": 8,
+  "report": {
+    "date": "2026-05-09",
+    "count": 8,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 5,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 4,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multi-agent",
+        "count": 4,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "science",
+        "count": 2,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      }
+    ],
+    "en": {
+      "headline": "8 new agent benchmarks",
+      "summary": "On May 9, 2026, arXiv listed 8 new agent benchmarks. Work clustered around Planning / reasoning (5), Tool use (4), Multi-agent (4), and Safety (2).",
+      "highlights": [
+        {
+          "id": "2605.08761",
+          "title": "Beyond the All-in-One Agent: Benchmarking Role-Specialized Multi-Agent Collaboration in Enterprise Workflows",
+          "blurb": "Large language model (LLM) agents are increasingly expected to operate in enterprise environments, where work is distributed across specialized roles, permission-controlled systems, and cross-departmental procedures."
+        },
+        {
+          "id": "2605.08904",
+          "title": "OPT-BENCH: Evaluating the Iterative Self-Optimization of LLM Agents in Large-Scale Search Spaces",
+          "blurb": "Large Language Models (LLMs) have demonstrated remarkable capabilities in reasoning and tool use."
+        },
+        {
+          "id": "2605.08828",
+          "title": "When Agents Overtrust Environmental Evidence: An Extensible Agentic Framework for Benchmarking Evidence-Grounding Defects in LLM Agents",
+          "blurb": "Large language model agents increasingly operate through environment-facing scaffolds that expose files, web pages, APIs, and logs."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 8 篇 Agent Benchmark",
+      "summary": "2026年5月9日，arXiv 新增 8 篇 Agent Benchmark。当日主题集中在规划 / 推理（5）、工具使用（4）、多智能体（4）、安全（2）。",
+      "highlights": [
+        {
+          "id": "2605.08761",
+          "title": "Beyond the All-in-One Agent: Benchmarking Role-Specialized Multi-Agent Collaboration in Enterprise Workflows",
+          "blurb": "Large language model (LLM) agents are increasingly expected to operate in enterprise environments, where work is distributed across specialized roles, permission-controlled systems, and cross-departmental procedures."
+        },
+        {
+          "id": "2605.08904",
+          "title": "OPT-BENCH: Evaluating the Iterative Self-Optimization of LLM Agents in Large-Scale Search Spaces",
+          "blurb": "Large Language Models (LLMs) have demonstrated remarkable capabilities in reasoning and tool use."
+        },
+        {
+          "id": "2605.08828",
+          "title": "When Agents Overtrust Environmental Evidence: An Extensible Agentic Framework for Benchmarking Evidence-Grounding Defects in LLM Agents",
+          "blurb": "Large language model agents increasingly operate through environment-facing scaffolds that expose files, web pages, APIs, and logs."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2605.09163",
+      "title": "FORTIS: Benchmarking Over-Privilege in Agent Skills",
+      "abstract": "Large language model agents increasingly operate through an intermediate skill layer that mediates between user intent and concrete task execution. This layer is widely treated as an organizational abstraction, but we argue it is also a privilege boundary that current models routinely exceed. We present \\textbf{FORTIS}, a benchmark that evaluates over-privilege in agent skills across two stages: whether a model selects the minimally sufficient skill from a large overlapping library, and whether it executes that skill without expanding into broader tools or actions than the skill permits. Across ten frontier models and three domains, we find that over-privileged behavior is the norm rather than the exception. Models consistently reach for higher-privilege skills and tools than the task requires, failing at both stages at rates that remain high even for the strongest available models. Failure is especially severe under the ordinary conditions of real user interaction: incomplete specification, convenience framing, and proximity to skill boundaries. None of these requires adversarial construction. The results indicate that the skill layer, far from containing agent behavior, is itself a primary source of privilege escalation in current systems.",
+      "authors": [
+        "Shawn Li",
+        "Chenxiao Yu",
+        "Han Wang",
+        "Wei Yang",
+        "Ryan Rossi",
+        "Franck Dernoncourt",
+        "Xiyang Hu",
+        "Philip Yu",
+        "Chaowei Xiao",
+        "Huan Zhang",
+        "Yue Zhao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-09T20:57:18Z",
+      "updated": "2026-06-14T19:18:08Z",
+      "announced_date": "2026-05-09",
+      "first_seen": "2026-05-09",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.09163v3",
+        "pdf": "https://arxiv.org/pdf/2605.09163v3",
+        "html": "https://arxiv.org/html/2605.09163"
+      },
+      "score": 9,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 7
+    },
+    {
+      "id": "2605.09027",
+      "title": "GAMBIT: A Three-Mode Benchmark for Adversarial Robustness in Multi-Agent LLM Collectives",
+      "abstract": "In multi-agent systems (MAS), a single deceptive agent can nullify all gains of an agentic AI collective and evade deployed defenses. However, existing adversarial studies on MAS target only shallow tasks and do not consider adaptive adversaries, which evolve their strategies to evade the very detectors trained to catch them. To address that gap, we introduce GAMBIT, a benchmark with three evaluation modes and two independent scores for evaluating imposter detectors: the first two modes measure zero-shot detection under increasing distribution shift, and a third recalibration mode measures how quickly a detector adapts to novel attacks from just 20 labeled examples. The benchmark comes with a dataset of 27,804 labeled instances spanning 240 co-evolved imposter strategies. Our contributions are threefold: (1) Using chess as a substrate deep reasoning problem and Gemini 3.1 Pro for agents, we release GAMBIT and its dataset to evaluate imposter detectors under realistic constraints against a stealthy adaptive imposter; (2) We introduce an adaptive imposter agent based on an efficient evolutionary framework, generalizable beyond chess, that collapses collective task performance while remaining essentially undetectable (50.5% F1-score with a Gemini-based detector); (3) We show that zero-shot evaluation can be highly misleading for adaptive adversaries: two detectors with near-identical zero-shot scores differ by 8x on few-shot adaptation, while the meta-learned variant converges 20x faster, a gap only visible in the recalibration mode. Altogether, GAMBIT provides the first multi-agent benchmark where adversarial attacks and defenses co-evolve, with an imposter framework generalizable beyond our use case, and promising techniques for fast recalibration in a rapidly evolving adversarial system. Code and data: https://anonymous.4open.science/r/gambit.",
+      "authors": [
+        "Alexandre Le Mercier",
+        "Chris Develder",
+        "Thomas Demeester"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-09T16:07:23Z",
+      "updated": "2026-05-13T07:49:42Z",
+      "announced_date": "2026-05-09",
+      "first_seen": "2026-05-09",
+      "comment": "46 pages, 16 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.09027v2",
+        "pdf": "https://arxiv.org/pdf/2605.09027v2",
+        "html": "https://arxiv.org/html/2605.09027"
+      },
+      "score": 18,
+      "tags": [
+        "multi-agent",
+        "safety",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2605.08941",
+      "title": "MDGYM: Benchmarking AI Agents on Molecular Simulations",
+      "abstract": "The promise of AI-driven scientific discovery hinges on whether AI agents can autonomously design and execute the computational workflows that underpin modern science. Molecular dynamics (MD) simulation presents a natural test bed to stress-test this claim; it requires translating physical intuition into syntactically and semantically correct input scripts, reasoning about initial and boundary conditions, diagnosing numerically unstable trajectories, and interpreting outputs against known physical behavior and laws. We introduce MDGYM, a benchmark of 169 expert-curated MD simulations spanning LAMMPS and GROMACS, two widely used MD packages, across three increasing difficulty levels. We evaluate three agentic frameworks -- Claude Code, Codex, and OpenHands -- with four LLMs, and find that all perform poorly: even the strongest agent solves only 21\\% of easy-level tasks, with less than 10\\% at higher difficulties. Trajectory analysis reveals a characteristic pattern of failure -- agents successfully invoke simulation machinery but produce physically unstable configurations, fabricate numerical outputs without executing the underlying computation, or abandon tasks prematurely rather than iterating through simulation-specific errors. These failure modes are qualitatively distinct from those observed in general software engineering benchmarks, indicating that fluent code generation does not transfer to grounded physical reasoning.",
+      "authors": [
+        "Vinay Kumar",
+        "Satyendra Rajput",
+        "Mausam",
+        "N. M. Anoop Krishnan"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-09T13:21:51Z",
+      "updated": "2026-05-09T13:21:51Z",
+      "announced_date": "2026-05-09",
+      "first_seen": "2026-05-09",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.08941v1",
+        "pdf": "https://arxiv.org/pdf/2605.08941v1",
+        "html": "https://arxiv.org/html/2605.08941"
+      },
+      "score": 18,
+      "tags": [
+        "coding",
+        "planning",
+        "research",
+        "science"
+      ],
+      "field": "coding",
+      "citations": 1
+    },
+    {
+      "id": "2605.08904",
+      "title": "OPT-BENCH: Evaluating the Iterative Self-Optimization of LLM Agents in Large-Scale Search Spaces",
+      "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities in reasoning and tool use. However, the fundamental cognitive faculties essential for problem solving, including perception, reasoning, and memory, remain the stable core of intelligence. Unlike memorizing specific patterns, humans succeed in novel environments by applying these intrinsic faculties to adapt and optimize. Yet, whether LLMs possess this essential capacity, namely the ability to continuously refine solutions in response to dynamic environmental feedback, remains underexplored. To address this challenge, we introduce OPT-BENCH, a benchmark for evaluating self-improvement capabilities in large-scale search spaces. By combining 20 machine learning tasks with 10 classic NP-hard problems, OPT-BENCH provides a rigorous setting to assess whether agents can adapt through intrinsic self-reflection rather than rote tool application. We further propose OPT-Agent, a framework that emulates human-like cognitive adaptation. It operates through a general perception, memory, and reasoning loop, iteratively refining solutions based on environmental feedback. Through extensive experiments on 19 LLMs from 7 model families, including reasoning models, general models, and open-source models ranging from 3B to 235B parameters, we demonstrate that stronger models are more effective at leveraging feedback signals for self-improvement. However, this upper-bound adaptability remains fundamentally constrained by the models' base capacity, and even the most advanced LLMs still fall short of human expert performance.",
+      "authors": [
+        "Xiaozhe Li",
+        "Jixuan Chen",
+        "Xinyu Fang",
+        "Shengyuan Ding",
+        "Haodong Duan",
+        "Qingwen Liu",
+        "Kai Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-09T11:51:34Z",
+      "updated": "2026-05-09T11:51:34Z",
+      "announced_date": "2026-05-09",
+      "first_seen": "2026-05-09",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.08904v1",
+        "pdf": "https://arxiv.org/pdf/2605.08904v1",
+        "html": "https://arxiv.org/html/2605.08904"
+      },
+      "score": 20,
+      "tags": [
+        "tool-use",
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2605.08828",
+      "title": "When Agents Overtrust Environmental Evidence: An Extensible Agentic Framework for Benchmarking Evidence-Grounding Defects in LLM Agents",
+      "abstract": "Large language model agents increasingly operate through environment-facing scaffolds that expose files, web pages, APIs, and logs. These observations influence tool use, state tracking, and action sequencing, yet their reliability and authority are often uncertain. Environmental grounding is therefore a systems-level problem involving context admission, evidence provenance, freshness checking, verification policy, action gating, and model reasoning. Existing agent benchmarks mainly evaluate task capability or specific attacks such as prompt injection and memory poisoning, but they under-specify a fundamental reliability question: whether agents remain grounded in the true environment state when observations are stale, incorrect, or malicious. We introduce EnvTrustBench, an agentic framework for benchmarking this failure mode. We define an evidence-grounding defect (EGD) as a behavioral failure in which an agent treats an environment-facing claim as sufficient evidence for action without resolving it against available current evidence, leading to a task-incorrect false path under the true environment state. Given a task scenario, EnvTrustBench generates the workspace, environment, agent-facing objective, and validation oracle, executes the evaluated agent, records its action-observation trajectory and final state, and applies the oracle to produce a verdict. Using 6 LLM backbones and 5 widely used scaffolds, we evaluate 55 generated cases across 11 task scenarios, with each scenario expanded through five feedback-guided generation iterations. Results show that EGDs consistently emerge across operational workflows, highlighting environmental grounding as a core agent reliability problem with important security implications.",
+      "authors": [
+        "Strick Sheng",
+        "Ziyue Wang",
+        "Liyi Zhou"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-09T09:32:27Z",
+      "updated": "2026-05-12T08:22:21Z",
+      "announced_date": "2026-05-09",
+      "first_seen": "2026-05-09",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.08828v2",
+        "pdf": "https://arxiv.org/pdf/2605.08828v2",
+        "html": "https://arxiv.org/html/2605.08828"
+      },
+      "score": 19,
+      "tags": [
+        "tool-use",
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2605.08761",
+      "title": "Beyond the All-in-One Agent: Benchmarking Role-Specialized Multi-Agent Collaboration in Enterprise Workflows",
+      "abstract": "Large language model (LLM) agents are increasingly expected to operate in enterprise environments, where work is distributed across specialized roles, permission-controlled systems, and cross-departmental procedures. However, existing enterprise benchmarks largely evaluate single agents with broad tool access, while existing multi-agent benchmarks rarely capture realistic enterprise constraints such as role specialization, access control, stateful business systems, and policy-based approvals. We introduce \\textsc{EntCollabBench}, a benchmark for evaluating enterprise multi-agent collaboration. \\textsc{EntCollabBench} simulates a permission-isolated organization with 11 role-specialized agents across six departments and contains two evaluation subsets: a Workflow subset, where agents collaboratively modify enterprise system states, and an Approval subset, where agents make policy-grounded decisions. Evaluation is based on execution traces, database state verification, and deterministic policy adjudication rather than natural-language response judging. Experiments with representative LLM agents show that current models still struggle with end-to-end enterprise collaboration, especially in delegation, context transfer, parameter grounding, workflow closure, and decision commitment. \\textsc{EntCollabBench} provides a reproducible testbed for measuring and improving agent systems intended for realistic organizational environments.",
+      "authors": [
+        "Tao Yu",
+        "Hao Wang",
+        "Changyu Li",
+        "Shenghua Chai",
+        "Minghui Zhang",
+        "Zhongtian Luo",
+        "Yuxuan Zhou",
+        "Haopeng Jin",
+        "Zhaolu Kang",
+        "Jiabing Yang",
+        "YiFan Zhang",
+        "Xinming Wang",
+        "Hongzhu Yi",
+        "Zheqi He",
+        "Jing-Shu Zheng",
+        "Xi Yang",
+        "Yan Huang",
+        "Liang Wang"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.LG"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-05-09T07:47:07Z",
+      "updated": "2026-05-09T07:47:07Z",
+      "announced_date": "2026-05-09",
+      "first_seen": "2026-05-09",
+      "comment": "45 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.08761v1",
+        "pdf": "https://arxiv.org/pdf/2605.08761v1",
+        "html": "https://arxiv.org/html/2605.08761"
+      },
+      "score": 23,
+      "tags": [
+        "tool-use",
+        "multi-agent"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2605.08647",
+      "title": "AgentCollabBench: Diagnosing When Good Agents Make Bad Collaborators",
+      "abstract": "Multi-agent systems achieve state-of-the-art outcomes through peer collaboration. However, when an agent in the pipeline silently drops a constraint, the system's final output may look correct even though the reasoning chain was quietly corrupted, and existing outcome-based evaluations are blind to such multi-hop process failures. To make these vulnerabilities measurable before deployment, we introduce AgentCollabBench, a diagnostic benchmark of 900 human-validated tasks spanning software engineering, DevOps, and data engineering. Each task isolates one of four behavioral risks: instruction decay (does a constraint survive peer pressure?), false-belief contagion (does a falsehood spread through consensus?), context leakage (does information bleed between tasks?), and tracer durability (does marked data reach the final agent?). Evaluating four modern LLMs (GPT 4.1 mini, Gemini 2.5 Flash Lite, Qwen-3.5-35B-A3B, and Llama 3.1 8B Instruct), we expose model-specific vulnerability profiles invisible to outcome-only evaluation; Qwen-3.5-35B-A3B, for example, leads on tracer durability and instruction stability, while GPT 4.1 mini leads on leakage containment and false-belief resistance. Beyond per-model differences, communication topology emerges as a primary risk factor that explains 7-40% of the variance in multi-hop information survival. The effect traces to a synthesis bottleneck specific to converging-DAG nodes: an agent weighing competing parent inputs discards constraints carried by a minority branch, a bottleneck structurally absent from linear chains. AgentCollabBench demonstrates that suboptimal topology can silently erase the safeguards of highly capable models, arguing that multi-agent reliability is fundamentally a structural problem and that scaling model intelligence alone is no substitute for architecture.",
+      "authors": [
+        "Aritra Mazumder",
+        "Shubhashis Roy Dipta",
+        "Nusrat Jahan Lia",
+        "Tanzila Khan",
+        "Kainat Raisa Hossain",
+        "Nehaa Shri",
+        "Shubhrangshu Debsarkar",
+        "Humayra Tasnim",
+        "Gour Gupal Talukder Shawon",
+        "Debjoty Mitra",
+        "Sumaiya Ahmed Rani",
+        "Al Jami Islam Anik",
+        "Al Nafeu Khan"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-09T03:35:09Z",
+      "updated": "2026-05-09T03:35:09Z",
+      "announced_date": "2026-05-09",
+      "first_seen": "2026-05-09",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.08647v1",
+        "pdf": "https://arxiv.org/pdf/2605.08647v1",
+        "html": "https://arxiv.org/html/2605.08647"
+      },
+      "score": 10,
+      "tags": [
+        "coding",
+        "multi-agent",
+        "safety",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 1
+    },
+    {
+      "id": "2605.08583",
+      "title": "Source or It Didn't Happen: A Multi-Agent Framework for Citation Hallucination Detection",
+      "abstract": "Large language models are increasingly used in scientific writing, yet they can fabricate citation-shaped references that appear plausible but fail bibliographic verification. Existing detectors often reduce verification to binary found/not-found decisions and rely on brittle parsing or incomplete retrieval, offering little field-level signal to auditors. We reframe citation hallucination detection as taxonomy-aligned field-level adjudication and introduce a 12-code taxonomy spanning Real, Potential, and Hallucinated citations. Based on this taxonomy, we build CiteTracer, a cascading multi-agent detector that extracts structured citations from PDF and BibTeX, retrieves evidence through cache lookup, URL fetch, scholar connectors, and web search, applies deterministic field matching, and routes ambiguous cases to class-specialist judgers. We release a benchmark of 2,450 synthetic citations built from real seeds with controlled LLM mutations, paired with 957 real-world fabricated citations drawn from ICLR 2026 and an anonymous conference desk-rejected submissions. CiteTracer reaches 97.1% accuracy on the synthetic benchmark, with class-level F1 scores of 97.0, 95.8, and 98.5 for Real, Potential, and Hallucinated, respectively, and detects 97.1% of fabrications on the real-world set without abstaining. Code: https://github.com/aaFrostnova/CiteTracer.",
+      "authors": [
+        "Mingzhe Li",
+        "Zhiqiang Lin",
+        "Shiqing Ma"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-09T00:53:24Z",
+      "updated": "2026-07-14T18:45:18Z",
+      "announced_date": "2026-05-09",
+      "first_seen": "2026-05-09",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.08583v2",
+        "pdf": "https://arxiv.org/pdf/2605.08583v2",
+        "html": "https://arxiv.org/html/2605.08583"
+      },
+      "score": 10,
+      "tags": [
+        "multi-agent",
+        "science"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    }
+  ]
+}

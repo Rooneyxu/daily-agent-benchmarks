@@ -1,0 +1,390 @@
+{
+  "date": "2026-06-18",
+  "count": 7,
+  "report": {
+    "date": "2026-06-18",
+    "count": 7,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 3,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      }
+    ],
+    "en": {
+      "headline": "7 new agent benchmarks",
+      "summary": "On June 18, 2026, arXiv listed 7 new agent benchmarks. Work clustered around Safety (3), Tool use (2), Planning / reasoning (2), and Embodied / robotics (1).",
+      "highlights": [
+        {
+          "id": "2606.20408",
+          "title": "NRT-Bench: Benchmarking Multi-Turn Red-Teaming of LLM Operator Agents in Safety-Critical Control Rooms",
+          "blurb": "Large language model (LLM) agents are increasingly proposed as supervisory components for safety-critical systems, yet their robustness under sustained, adaptive adversarial pressure remains poorly characterized."
+        },
+        {
+          "id": "2606.20401",
+          "title": "PowerAgentBench-Dyn: A Benchmark for Agentic AI in Power System Dynamic Studies",
+          "blurb": "Large Language Model (LLM)-based agents are increasingly being used to automate multi-step engineering work flows by interacting with software tools, interpreting intermediate results, and autonomously planning subsequen…"
+        },
+        {
+          "id": "2606.19704",
+          "title": "Beyond Static Leaderboards: Predictive Validity for the Evaluation of LLM Agents",
+          "blurb": "Agent benchmarks are growing fast, but no single benchmark touches more than four or five of the dimensions that deployment exposes."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 7 篇 Agent Benchmark",
+      "summary": "2026年6月18日，arXiv 新增 7 篇 Agent Benchmark。当日主题集中在安全（3）、工具使用（2）、规划 / 推理（2）、具身 / 机器人（1）。",
+      "highlights": [
+        {
+          "id": "2606.20408",
+          "title": "NRT-Bench: Benchmarking Multi-Turn Red-Teaming of LLM Operator Agents in Safety-Critical Control Rooms",
+          "blurb": "Large language model (LLM) agents are increasingly proposed as supervisory components for safety-critical systems, yet their robustness under sustained, adaptive adversarial pressure remains poorly characterized."
+        },
+        {
+          "id": "2606.20401",
+          "title": "PowerAgentBench-Dyn: A Benchmark for Agentic AI in Power System Dynamic Studies",
+          "blurb": "Large Language Model (LLM)-based agents are increasingly being used to automate multi-step engineering work flows by interacting with software tools, interpreting intermediate results, and autonomously planning subsequen…"
+        },
+        {
+          "id": "2606.19704",
+          "title": "Beyond Static Leaderboards: Predictive Validity for the Evaluation of LLM Agents",
+          "blurb": "Agent benchmarks are growing fast, but no single benchmark touches more than four or five of the dimensions that deployment exposes."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.20950",
+      "title": "Power Systems Agent Benchmark: Executable Evaluation of AI Agents in Electric Power Engineering",
+      "abstract": "Executable evaluation -- checking the consequences of an agent's actions with a program rather than grading its prose -- has become a prominent way to assess tool-using AI agents in software settings. Electric power engineering has not yet had an analogous benchmark: language-model use is still dominated by retrieval and text question answering, while agents acting on power-system artifacts remain mostly academic prototypes. We introduce the Power Systems Agent Benchmark, an executable benchmark for power-engineering agents. An agent receives a structured task and returns a structured solution; a deterministic evaluator recomputes the engineering quantities, checks operational constraints, and returns a feasibility flag, a normalized score, and explicit violations. The benchmark contains 41 task families across eight areas of power engineering, from power flow and protection to stability, microgrids, reliability, power quality, and forecasting. Each task is grounded in a citable source, standard, or documented engineering formulation. To resist contamination, held-out cases are synthesized on demand by per-family generators from private seeds: the construction is inspectable, but the instances remain private. In a reference evaluation with three command-line agents, the strongest score near the compact tier's ceiling, a smaller open model trails, and public and held-out performance are broadly consistent; a separate public-split grid with OpenCode and Aider probes harness effects. The reference evaluation doubles as quality control: unanimous failures flag candidate task or evaluator defects, and it exposed a latent evaluator bug missed by self-consistency checks. The evaluators are compact deterministic surrogates, but the task contract allows their internals to be upgraded to simulator-backed checks without changing how tasks are posed or solved.",
+      "authors": [
+        "Sergei Trashchenkov"
+      ],
+      "categories": [
+        "cs.AI",
+        "eess.SY"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-18T21:30:39Z",
+      "updated": "2026-07-02T14:10:13Z",
+      "announced_date": "2026-06-18",
+      "first_seen": "2026-06-18",
+      "comment": "19 pages, 1 figure, 2 tables. Code and data: https://github.com/trashchenkov/power-systems-agent-benchmark ; archived at https://doi.org/10.5281/zenodo.20753046 v2: fixed unresolved citations and three missing references in Section 2, reference capitalization, Table 1 caption",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.20950v2",
+        "pdf": "https://arxiv.org/pdf/2606.20950v2",
+        "html": "https://arxiv.org/html/2606.20950"
+      },
+      "score": 17,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2606.20408",
+      "title": "NRT-Bench: Benchmarking Multi-Turn Red-Teaming of LLM Operator Agents in Safety-Critical Control Rooms",
+      "abstract": "Large language model (LLM) agents are increasingly proposed as supervisory components for safety-critical systems, yet their robustness under sustained, adaptive adversarial pressure remains poorly characterized. We present NRT-Bench, a benchmark for multi-turn red-teaming of LLM agents acting as operators of a safety-critical system, instantiated in a simulated nuclear power plant control room. A five-role operator team, each backed by a configurable LLM, runs a plant governed by six critical safety functions (CSFs), while adversaries inject messages over four channels in bounded multi-turn sessions with per-turn feedback. Harm is an objective signal rather than LLM-judged text: a run terminates the moment any CSF is lost, attributed to the causing message. Evaluating four frontier operator models under a fixed-attack paired-replay protocol, we find that adaptive multi-turn attacks reliably push the operator team past a safety limit: across the four models, between 8.7% and 12.1% of attack sessions end with the plant losing a critical safety function. Although the four models look almost equally robust by this aggregate rate, their failures barely overlap: of $149$ sessions, none defeat all four models while a third defeat at least one, so vulnerabilities are nearly disjoint across models rather than nested. The effect of added defences is strongly model-dependent: the same guardrail stack or safety-advisor agent that lowers attack success for one model can raise it for another. We release the simulation venue, attack dataset, and replay tooling for reproducible safety evaluation of LLM agents.",
+      "authors": [
+        "Hanwool Lee",
+        "Dasol Choi",
+        "Bokyeong Kim",
+        "Haon Park",
+        "Seung Geun Kim"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-06-18T15:57:53Z",
+      "updated": "2026-07-06T00:51:15Z",
+      "announced_date": "2026-06-18",
+      "first_seen": "2026-06-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.20408v3",
+        "pdf": "https://arxiv.org/pdf/2606.20408v3",
+        "html": "https://arxiv.org/html/2606.20408"
+      },
+      "score": 23,
+      "tags": [
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2606.20401",
+      "title": "PowerAgentBench-Dyn: A Benchmark for Agentic AI in Power System Dynamic Studies",
+      "abstract": "Large Language Model (LLM)-based agents are increasingly being used to automate multi-step engineering work flows by interacting with software tools, interpreting intermediate results, and autonomously planning subsequent actions. Power system dynamic studies represent a particularly promising yet largely unexplored application domain for these agents. Unlike static computational tasks, dynamic studies often require more time on model parameter calibration, engineering judgment, and decision making under constrained action spaces. This paper introduces PowerAgentBench-Dyn, a benchmark designed to evaluate Agentic AI systems on power system dynamic-analysis tasks. The benchmark targets problems that cannot be reduced to a single optimization or coding task, but instead require a type of reasoning, tool usage, and iterative experimentation routinely performed by experienced power system engineers. The proposed framework includes two initial benchmark tasks. The first, the Dynamic Model Quality Review Benchmark, evaluates agents' ability to validate and diagnose dynamic models based on model-quality compliance criteria specified by system operators. The second, the Dynamic Security Risk Screening Benchmark, assesses agents' capability to leverage semantic memory and a limited simulation budget to identify, rank, and analyze the most critical short-circuit contingencies from an unseen fault dataset, as well as propose and evaluate possible mitigation measures. For each task, we define the simulation environment, observation and action spaces, and evaluation metrics. The benchmark is reproducible in a metric-based sense: released cases and simulator settings define a deterministic evaluator, while stochastic agent behavior is assessed over repeated runs using success rates and other metrics. The benchmark supports the development of future Agentic AI for power system operation and planning.",
+      "authors": [
+        "Qian Zhang",
+        "Andrea Pomarico",
+        "Costas Mylonas",
+        "Magda Foti",
+        "Alberto Berizzi",
+        "Le Xie"
+      ],
+      "categories": [
+        "eess.SY"
+      ],
+      "primary_category": "eess.SY",
+      "published": "2026-06-18T15:54:00Z",
+      "updated": "2026-06-18T15:54:00Z",
+      "announced_date": "2026-06-18",
+      "first_seen": "2026-06-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.20401v1",
+        "pdf": "https://arxiv.org/pdf/2606.20401v1",
+        "html": "https://arxiv.org/html/2606.20401"
+      },
+      "score": 22,
+      "tags": [
+        "tool-use",
+        "embodied",
+        "safety",
+        "memory",
+        "planning"
+      ],
+      "field": "embodied",
+      "citations": 1
+    },
+    {
+      "id": "2606.20235",
+      "title": "ScholarQuest: A Taxonomy-Guided Benchmark for Agentic Academic Paper Search in Open Literature Environments",
+      "abstract": "Academic paper search is a core step in scientific research, and LLM-based search agents are emerging as a promising paradigm for iterative, intent-driven literature exploration. However, existing benchmarks are insufficient for systematically evaluating agentic academic search under realistic open literature environments. We propose ScholarQuest, a large-scale, taxonomy-guided benchmark for agentic academic paper search. ScholarQuest is constructed from over 1,000 computer science topics and four representative research intents, including method-oriented, setting-anchored, comparison-based, and scope-controlled queries. It further provides scalable answer construction and a shared retrieval backend ScholarBase for reproducible evaluation. Benchmarking results show that agentic methods outperform single-shot retrieval baselines, yet the best-performing agent only achieves 0.314 Recall@100 and 0.355 Recall@All, indicating substantial room for improvement. In addition, analyses of search efficiency, intent-level robustness, and failure cases further highlight the benchmark's ability to provide multi-dimensional evaluation signals for academic paper search agents.",
+      "authors": [
+        "Tingyue Pan",
+        "Mingyue Cheng",
+        "Daoyu Wang",
+        "Yitong Zhou",
+        "Jie Ouyang",
+        "Qi Liu",
+        "Enhong Chen"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-06-18T13:47:20Z",
+      "updated": "2026-06-18T13:47:20Z",
+      "announced_date": "2026-06-18",
+      "first_seen": "2026-06-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.20235v1",
+        "pdf": "https://arxiv.org/pdf/2606.20235v1",
+        "html": "https://arxiv.org/html/2606.20235"
+      },
+      "score": 13,
+      "tags": [
+        "safety",
+        "research",
+        "science"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.19787",
+      "title": "ORAgentBench: Can LLM Agents Solve Challenging Operations Research Tasks End to End?",
+      "abstract": "Large language models are increasingly deployed as autonomous agents for multi-step tasks in executable environments, yet their ability to perform realistic operations research (OR) work remains unclear. Existing OR evaluations often decouple modeling from solving, rely on pre-formalized or text-only instances, and rarely test the full workflow from operational artifacts to validated decisions. In this work, we introduce ORAgentBench, an execution-grounded benchmark for evaluating autonomous agents on challenging end-to-end operations research tasks. It contains 107 human-reviewed tasks across diverse operational scenarios, each packaged in an isolated environment with a natural-language brief, multi-file data, configuration artifacts, and a required submission schema. Agents must write and run solution code, and their submissions are evaluated by hidden validators for schema validity, hard-constraint feasibility, and normalized objective quality. Experiments with fourteen frontier agent-model configurations show that current agents remain far from reliable OR practice. The best agent passes only 35.51% of all tasks and 20.59% of hard tasks, and many feasible submissions still fall below the required quality threshold. Failure analysis further shows that errors are dominated by strategic weaknesses, including missed operational rules, brittle formulations, weak feasible-solution construction, and insufficient solution improvement. OR-specific procedural skills increase hard-task feasibility, but do not reliably improve solution quality or pass rate. These results suggest that progress in OR agents requires moving beyond plausible optimization code toward dependable, high-quality operational decision-making.",
+      "authors": [
+        "Jiajun Li",
+        "Mingshu Cai",
+        "Yixuan Li",
+        "Yu Ding",
+        "Ran Hou",
+        "Guanyu Nie",
+        "Xiongwei Han",
+        "Wanyuan Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-18T04:43:23Z",
+      "updated": "2026-06-18T04:43:23Z",
+      "announced_date": "2026-06-18",
+      "first_seen": "2026-06-18",
+      "comment": "31 pages, preprint, v1",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.19787v1",
+        "pdf": "https://arxiv.org/pdf/2606.19787v1",
+        "html": "https://arxiv.org/html/2606.19787"
+      },
+      "score": 17,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.19749",
+      "title": "Benchmarking Agentic Review Systems",
+      "abstract": "A new class of agentic review systems are emerging as a remedy to the pressure placed on peer review systems by AI-assisted research, but it is unclear how they should be evaluated. We evaluate two open-source systems (OpenAIReview and coarse), one proprietary system (Reviewer3), and a zero-shot baseline, across six LLMs spanning frontier and efficient models. First, we study whether AI reviews on ICLR/NeurIPS papers track with papers' quality as approximated by external signals such as citations and acceptance decisions. Every system performs above chance in pairwise accuracy, and the best is OpenAIReview + GPT-5.5 at 83.0%. Second, to test whether systems can catch errors with known ground truth, we construct a perturbation benchmark that injects four categories of errors into papers across eight arXiv subject classes and measure detection recall. The strongest configuration (OpenAIReview + GPT-5.5) catches 71.6% of injected errors, leaving substantial room for improvement. The union of detections across six models reaches 83.3% recall, suggesting different models detect different errors and better harness design can potentially increase performance. Beyond these benchmarks, we study a public deployment of OpenAIReview with real users. Votes on its comments skew positive at 1.44 to 1, and the most common complaints are about false positives and minor nitpicks. Together, by evaluating full review systems backed by state-of-the-art models on real research papers, we show that while AI reviews still have room for improvement, they can already track human quality judgments well, catch important errors, and earn positive feedback from real users.",
+      "authors": [
+        "Dang Nguyen",
+        "Wanqing Hao",
+        "Yanai Elazar",
+        "Chenhao Tan"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-18T03:30:06Z",
+      "updated": "2026-06-18T03:30:06Z",
+      "announced_date": "2026-06-18",
+      "first_seen": "2026-06-18",
+      "comment": "11 pages, 7 tables, 4 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.19749v1",
+        "pdf": "https://arxiv.org/pdf/2606.19749v1",
+        "html": "https://arxiv.org/html/2606.19749"
+      },
+      "score": 11,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.19704",
+      "title": "Beyond Static Leaderboards: Predictive Validity for the Evaluation of LLM Agents",
+      "abstract": "Agent benchmarks are growing fast, but no single benchmark touches more than four or five of the dimensions that deployment exposes. This paper aggregates the largest coordinated deep-dive of one MCP-based industrial-agent benchmark to date: fourteen parallel implementation studies covering new asset classes (including a multi-modal visual extension), alternative orchestrations, retrieval strategies, reasoning modes, infrastructure optimizations, and evaluation-methodology probes. Consolidating those studies with seven prior agent benchmarks, we argue that aggregate-score leaderboards systematically underspecify deployed-agent evaluation. Rankings derived from aggregate scores do not transfer to out-of-distribution settings; recent public-to-hidden competition retrospectives provide direct empirical evidence of this rank instability. We propose ranking configurations by predictive validity, the correlation between in-sample and out-of-sample rank, rather than in-sample mean, and report a twelve-tier measurement apparatus that exposes the deployment-relevant dimensions HELM and its agent-era successors collapse. The position is operationalized through three falsifiable out-of-distribution criteria with explicit thresholds; existing evidence partly supports it but is too thin to confirm. We close with a pre-registered pilot design and a field-level vision for what the next generation of agentic benchmarks should report.",
+      "authors": [
+        "Dhaval C. Patel",
+        "Kaoutar El Maghraoui",
+        "Shuxin Lin",
+        "Yusheng Li",
+        "Tianjun Feng",
+        "Chun-Yi Tsai",
+        "Yihan Sun",
+        "Wei Alexander Xin",
+        "Akshat Bhandari",
+        "Tanisha Rathod",
+        "Aaron Fan",
+        "Sanskruti Vijay Shejwal",
+        "Tomas Pasiecznik",
+        "Sagar Chethan Kumar",
+        "Tanmay Agarwal",
+        "Rohith Kanathur",
+        "Sam Colman",
+        "Amaan Sheikh",
+        "Dev Bahl",
+        "Ann Li",
+        "Krish Veera",
+        "Alimurtaza Mustafa Merchant",
+        "Shambhawi Baswaraj Bhure",
+        "Sajal Kumar Goyla",
+        "Chengrui Li",
+        "Kirthana Natarajan",
+        "Rui Li",
+        "Thomas Ajai",
+        "Rujing Li",
+        "Vivek G. Iyer",
+        "Sanjaii Vijayakumar",
+        "Yitong Bai",
+        "Ayal Yakobe",
+        "Darief Maes",
+        "Yassine Jebbouri",
+        "Tianyang Xu",
+        "Thai Quoc On",
+        "Vera Mazeeva",
+        "Winston Li",
+        "Yuval Shemla",
+        "Yeshitha Bhuvanesh",
+        "Rushin Bhatt",
+        "Siddharth Chethan Gowda",
+        "Alisha Vinod",
+        "Caroline Cahill",
+        "Shriya Aishani Rachakonda",
+        "Yunfeng Chen",
+        "Aryaman Agrawal",
+        "Aman Upganlawar",
+        "Mao Le Jonathan Ang",
+        "Yubin Sally Go",
+        "Madhav Rajkondawar",
+        "Yang-Jung Chen",
+        "Trisha Maturi",
+        "Ananya Kapoor",
+        "Andrew Li",
+        "Shrey Arora",
+        "Mana Abbaszadeh",
+        "Shen Li",
+        "Charles Xu",
+        "Byeolah Kwon"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-18T02:02:46Z",
+      "updated": "2026-06-18T02:02:46Z",
+      "announced_date": "2026-06-18",
+      "first_seen": "2026-06-18",
+      "comment": "17 pages, 2 tables, 5 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.19704v1",
+        "pdf": "https://arxiv.org/pdf/2606.19704v1",
+        "html": "https://arxiv.org/html/2606.19704"
+      },
+      "score": 17,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

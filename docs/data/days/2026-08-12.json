@@ -1,0 +1,476 @@
+{
+  "date": "2026-08-12",
+  "count": 10,
+  "report": {
+    "date": "2026-08-12",
+    "count": 10,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 4,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multimodal",
+        "count": 3,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      },
+      {
+        "id": "workplace",
+        "count": 1,
+        "en": "Work / office",
+        "zh": "职场 / 办公"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      }
+    ],
+    "en": {
+      "headline": "10 new agent benchmarks",
+      "summary": "On August 12, 2026, arXiv listed 10 new agent benchmarks. Work clustered around Tool use (4), Planning / reasoning (3), Multimodal (3), and Multi-agent (2).",
+      "highlights": [
+        {
+          "id": "2608.14718",
+          "title": "VideoGAIA: A Benchmark for General AI Assistants on Agentic Video Understanding",
+          "blurb": "Video understanding is a fundamental task for evaluating the capabilities of multimodal large language models (MLLMs)."
+        },
+        {
+          "id": "2608.12654",
+          "title": "SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries",
+          "blurb": "Long-running LLM agents act through tools, and a single step can send an email, merge a pull request, or wire a payment."
+        },
+        {
+          "id": "2608.12593",
+          "title": "DiG-bench: Discovery in Games",
+          "blurb": "Discovery---formulating novel generalizations---is a central part of the scientific process."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 10 篇 Agent Benchmark",
+      "summary": "2026年8月12日，arXiv 新增 10 篇 Agent Benchmark。当日主题集中在工具使用（4）、规划 / 推理（3）、多模态（3）、多智能体（2）。",
+      "highlights": [
+        {
+          "id": "2608.14718",
+          "title": "VideoGAIA: A Benchmark for General AI Assistants on Agentic Video Understanding",
+          "blurb": "Video understanding is a fundamental task for evaluating the capabilities of multimodal large language models (MLLMs)."
+        },
+        {
+          "id": "2608.12654",
+          "title": "SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries",
+          "blurb": "Long-running LLM agents act through tools, and a single step can send an email, merge a pull request, or wire a payment."
+        },
+        {
+          "id": "2608.12593",
+          "title": "DiG-bench: Discovery in Games",
+          "blurb": "Discovery---formulating novel generalizations---is a central part of the scientific process."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.12654",
+      "title": "SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries",
+      "abstract": "Long-running LLM agents act through tools, and a single step can send an email, merge a pull request, or wire a payment. The steering decision is the pre-commit choice at that boundary: proceed, or hold for human or policy review. We introduce SteerBench-Work, an incident-anchored, bidirectional benchmark for that decision in workplace agents across developer operations, customer service, finance, legal, medical, HR, and security. Release v2026-05 contains 106 scenarios anchored in public incidents, paired evidence-reversed mirrors, and calibration controls, with labels split nearly evenly between proceed and hold so the two error directions get near-identical numbers of chances. A model sees the proposed action and the available evidence, returns a gate decision, and is scored on whether it crosses or holds the boundary correctly. Across 30 model conditions the failures run almost entirely in one direction: models wrongly hold authorized, evidence-cleared work on 28.1% of opportunities and wrongly allow unsafe work on 1.0%. The hardest cases are risk-resolved commits, where signed or structured evidence has already cleared a real risk trigger, and models score markedly worse on evidence-reversed mirrors of famous incidents (63.8%) than on the incidents themselves (98.5%). General capability is not the same as steering calibration: higher-capability models often over-refuse at the commit boundary, and more reasoning can repair a weak gate while leaving a calibrated one flat. The public leaderboard is at steerbench.com.",
+      "authors": [
+        "Oguz Serdar",
+        "Cuneyt Mertayak"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-12T23:34:17Z",
+      "updated": "2026-08-12T23:34:17Z",
+      "announced_date": "2026-08-12",
+      "first_seen": "2026-08-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.12654v1",
+        "pdf": "https://arxiv.org/pdf/2608.12654v1",
+        "html": "https://arxiv.org/html/2608.12654"
+      },
+      "score": 21,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning",
+        "conversation",
+        "workplace"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2608.12593",
+      "title": "DiG-bench: Discovery in Games",
+      "abstract": "Discovery---formulating novel generalizations---is a central part of the scientific process. Despite its importance, there is a gap in the current AI benchmark landscape, with few benchmarks directly probing the capacity for discovering new knowledge with experimentation in controlled environments where the objective is unknown. To address this gap, we release a new benchmark: DiG-bench (Discovery in Games). DiG-bench consists of a set of 70 independent games. Each game is encoded as a short string and has unique transformation rules that must be discovered through interaction and experimentation. The levels of the game present a series of challenges to test whether the rules have been discovered, where the win conditions for each level are also unknown. We provide games at seven tiers of difficulty for AI agents. The lowest tier is routinely solvable by multiple models, while the highest tier challenges the best models in agentic harnesses. All 70 games were solved by at least one human on first attempt. A subset of 21 games is released publicly, and the remainder is held private for secure evaluation.",
+      "authors": [
+        "Ruairidh M. Battleday",
+        "Kai Sandbrink",
+        "Jimi Cullen-Drohan",
+        "Zihan Yan",
+        "Timothy Muller",
+        "Clare Maguire",
+        "Ales Kubicek",
+        "Fraser Greenlee-Scott",
+        "Sukrit Sumant",
+        "Tri Dao",
+        "Jürgen Schmidhuber",
+        "Michal Valko",
+        "Joshua Tenenbaum",
+        "Thomas L. Griffiths",
+        "Zeb Kurth-Nelson",
+        "James C. R. Whittington"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-12T21:06:06Z",
+      "updated": "2026-08-12T21:06:06Z",
+      "announced_date": "2026-08-12",
+      "first_seen": "2026-08-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.12593v1",
+        "pdf": "https://arxiv.org/pdf/2608.12593v1",
+        "html": "https://arxiv.org/html/2608.12593"
+      },
+      "score": 18,
+      "tags": [
+        "science"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.12547",
+      "title": "Do LLMs Beat Nash? Testing Decentralized Coordination in Self-Play Multi-Agent Games",
+      "abstract": "Large language model agents deployed without a central controller are often assumed to require communication to coordinate their actions. We ask what remains possible without it: when independent instances of the same model cannot communicate, can they still reason about their counterparts well enough to exceed the standard game-theoretic baseline for uncoordinated play? We introduce a benchmark of one-shot, no-communication games in which each of thirteen language models is told only that its counterparts are running the same model and is evaluated against the Nash equilibrium of the underlying game. In two-player matrix games spanning seven archetypes and two to ten actions per player, two frontier-hosted models consistently exceed their Nash benchmark, approaching the optimal joint outcome in several archetypes, while most open-weight models achieve only partial gains that vary sharply by game structure. Performance degrades substantially in team-based games with four or more interchangeable agents, particularly as the action space grows, suggesting that whatever capability drives self-play gains in dyadic games does not transfer to larger multi-agent teams.",
+      "authors": [
+        "Deborah Sinishaw",
+        "Qile Zhu",
+        "Edwin Meriaux",
+        "Gregory Dudek"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.RO"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-08-12T19:36:53Z",
+      "updated": "2026-08-12T19:36:53Z",
+      "announced_date": "2026-08-12",
+      "first_seen": "2026-08-12",
+      "comment": "5 pages, 5 figures. Submitted to the 2026 IEEE MIT Undergraduate Research Technology Conference (URTC)",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.12547v1",
+        "pdf": "https://arxiv.org/pdf/2608.12547v1",
+        "html": "https://arxiv.org/html/2608.12547"
+      },
+      "score": 10,
+      "tags": [
+        "multi-agent"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2608.12002",
+      "title": "CTBench: Evaluating Troubleshooting Capabilities of AI Agents in Realistic Telecom Network Operations",
+      "abstract": "Agents are increasingly considered for automating network operations and maintenance, where engineers must diagnose network faults, optimize configurations to enhance services, and reduce operational costs while acting under strict constraints. However, existing evaluations fail to accurately model real network characteristics or assess agents under partially observable telecom environments with diverse vendors, devices, protocols, and interfaces. In this paper, we introduce CTBench, a public benchmark for assessing whether an agent behaves like a competent telecom troubleshooting engineer. CTBench focuses on root cause analysis and path restoration. Each task is constructed by experts and annotated with rich task metadata, including golden evidence steps. CTBench uses expert-grounded metrics that evaluate both final answers and the diagnostic evidence. Experiments with representative harness-model combinations show that state-of-the-art agents perform very well at identifying endpoints in path-restoration tasks but, more generally, underperform in root cause analysis. In particular, agents struggle with interface state, link-layer, service-management, and other operational faults. Most importantly, even when agents produce plausible or correct final answers, they often fail to provide the evidence-grounded diagnoses required in operational practice. Our results further show that path restoration is generally more resource expensive, yet larger resource usage does not necessarily translate into better diagnosis.",
+      "authors": [
+        "Xingyu Yan",
+        "Tingting Dai",
+        "Antonio De Domenico",
+        "Mohamed Sana",
+        "Nicola Piovesan",
+        "Changchang Li",
+        "Bowen Liu",
+        "Kun Jiang",
+        "Mengjie Zhang",
+        "Dingcheng Shan",
+        "Jing-Cheng Pang",
+        "Chenwei Wu",
+        "Sijie Wu",
+        "Lianying Chao",
+        "Haoran Cai",
+        "Jiantao Ye",
+        "Xubin Li",
+        "Simon Mark Lucas",
+        "Xin Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-12T12:37:02Z",
+      "updated": "2026-08-12T12:37:02Z",
+      "announced_date": "2026-08-12",
+      "first_seen": "2026-08-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.12002v1",
+        "pdf": "https://arxiv.org/pdf/2608.12002v1",
+        "html": "https://arxiv.org/html/2608.12002"
+      },
+      "score": 15,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.11879",
+      "title": "Total Recall at What Cost? Benchmarking the Serving Cost of Agentic Memory Systems",
+      "abstract": "Long-running conversational agents increasingly rely on a memory system to avoid resending the whole conversation each turn, yet how much that costs to serve has received little systematic benchmarking. We compare three memory systems (Mem0, Hindsight, and Mastra Observational Memory) against two reference strategies -- a fixed-size rolling window and resubmitting the full transcript -- across two backbones and conversations of up to 400 turns, pairing every cost measurement with answer accuracy on 665 LoCoMo questions. First, a memory system's serving cost cannot be predicted from conversation length and message size alone: a regression that tracks the two reference strategies closely misses the memory systems by 18-69%, their cost driven instead by internal memory behavior. Second, a break-even analysis shows that whether -- and when -- a memory system becomes cheaper to serve than the full transcript is highly sensitive to the system and the backbone, from the first tens of turns for the cheapest to never within 400 turns for the most expensive. Third, no system wins on both axes: accuracy spans 21-54%, and the backbone choice drives cost as much as the memory system does.",
+      "authors": [
+        "Natchanon Pollertlam",
+        "Witchayut Kornsuwannawit"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.IR"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-08-12T10:05:29Z",
+      "updated": "2026-08-12T10:05:29Z",
+      "announced_date": "2026-08-12",
+      "first_seen": "2026-08-12",
+      "comment": "11 pages, 2 figures, 8 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.11879v1",
+        "pdf": "https://arxiv.org/pdf/2608.11879v1",
+        "html": "https://arxiv.org/html/2608.11879"
+      },
+      "score": 10,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.11738",
+      "title": "Advancing MLLM-based UAV Image Understanding and Reasoning: A Benchmark and a Training-Free Multi-Agent System",
+      "abstract": "Multimodal Large Language Model (MLLM)-based UAV aerial image understanding and reasoning is essential for aerial intelligence yet poses distinct challenges arising from extreme scale variation, arbitrary camera orientations, and high object density. Despite growing interest, existing evaluations remain fragmented across individual datasets and narrow tasks, leaving a critical gap in unified assessment of UAV understanding and reasoning capabilities. To fill this gap, we construct UAVQA-Bench, a benchmark of 1,500 human-annotated QA pairs drawn from 13 public UAV datasets, covering 6 capability dimensions and 16 tasks in both multiple-choice and visual grounding formats. Systematic evaluation of a broad range of open-source and closed-source MLLMs as well as agent-based systems on UAVQA-Bench identifies three key failure modes: domain-toolset mismatch, unchecked error propagation, and static reasoning. Motivated by these findings, we propose UAV-MAS, a training-free multi-agent system for MLLM-based UAV aerial image understanding and reasoning, comprising a Domain-Specific Perception Engine (DSPE) that routes queries to task-appropriate visual tools, a Context-Aware Iterative Refinement module (CAIR) that validates intermediate reasoning to curb error accumulation, and a Difficulty-Aware Adaptive Search mechanism (DAAS) that adjusts search depth to question difficulty. UAV-MAS with a 32B open-source MLLM achieves 77.0% overall accuracy on UAVQA-Bench, surpassing Gemini 3 Pro by 4.0\\%, while the 8B variant improves 8.7\\% over its base model.",
+      "authors": [
+        "Haoyu Zhang",
+        "Shuoxun Zhang",
+        "Peng Ye",
+        "Lin Zhang",
+        "Jiakang Yuan",
+        "Shenghong Yi",
+        "Yuening Wang",
+        "Tao Chen"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-08-12T07:25:32Z",
+      "updated": "2026-08-12T07:25:32Z",
+      "announced_date": "2026-08-12",
+      "first_seen": "2026-08-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.11738v1",
+        "pdf": "https://arxiv.org/pdf/2608.11738v1",
+        "html": "https://arxiv.org/html/2608.11738"
+      },
+      "score": 16,
+      "tags": [
+        "gui",
+        "tool-use",
+        "multi-agent",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2608.11683",
+      "title": "FrontierFinance: A Challenging Benchmark for Measuring Frontier Intelligence of Finance Agents",
+      "abstract": "AI agents are increasingly deployed for professional investment research, yet no benchmark captures the complexity of the full investor workflow. Existing benchmarks mainly target financial data extraction, a narrow slice that current models have largely saturated, while reference-based metrics and generic LLM-as-a-judge scoring fall short on the open-ended, long-form answers that real analyst queries demand. We introduce FrontierFinance, a fully open benchmark of 220 expert-crafted queries and 11,543 source-attributed rubrics spanning six crucial use cases across the full investor workflow. FrontierFinance is both broader and harder than existing public finance benchmarks. Evaluating frontier models and agent systems under a common harness restricted to publicly available data, we find that the tool harness, not the model alone, strongly shapes quality and efficiency; that Samaya's in-house system leads at 56.0%, ahead of the strongest frontier model (Claude Fable 5, 49.2%) at roughly 2.2x lower cost; and that the best open-weight model (Kimi K3, 46.4%) nearly matches the best proprietary model at 4.5x lower cost. Screening & Discovery and Sector, Industry & Macro remain the hardest use cases across all systems, where even the best systems reach only 33% and 39%. We make the dataset and grading code publicly available.",
+      "authors": [
+        "Yuhao Zhang",
+        "O. Ozan Koyluoglu",
+        "Thejas Venkatesh",
+        "Richard Diehl Martinez",
+        "Vishank Bhatia",
+        "Arash Alidoust",
+        "Ashwin Paranjape"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-12T05:43:26Z",
+      "updated": "2026-08-12T05:43:26Z",
+      "announced_date": "2026-08-12",
+      "first_seen": "2026-08-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.11683v1",
+        "pdf": "https://arxiv.org/pdf/2608.11683v1",
+        "html": "https://arxiv.org/html/2608.11683"
+      },
+      "score": 10,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.11679",
+      "title": "AgenticTwin: An Agentic LLM Framework Integrated with Digital Twin for Anomaly Detection",
+      "abstract": "Digital twins are increasingly used to monitor and simulate the behavior of cyber-physical systems. Even with skilled operators, interpreting anomalies detected within digital twin pipelines is challenging, as the sheer complexity and volume of raw sensor data make thorough analysis difficult. Recent advances in large language models (LLMs) offer promising capabilities for reasoning and explanation, yet their integration into digital twin-driven anomaly analysis remains underexplored. In this work, we propose AgenticTwin, an agentic framework that integrates LLM-driven reasoning with a digital twin-based anomaly detection pipeline. The framework grounds LLM-generated explanations in outputs from a digital twin-driven anomaly classifier and enables human operators to ask relevant natural-language questions about the system. Beyond the framework itself, we introduce a benchmark-oriented evaluation pipeline constructed over synthetic anomalies injected into a real-world weather sensor dataset, enabling controlled generation of operator queries over anomaly events. We further evaluate the feasibility of deploying lightweight, open-source LLMs for practical cyber-physical environments. Experimental results demonstrate that structured agent collaboration and knowledge-grounded reasoning improve diagnosis quality, contextual retrieval, and mitigation quality across diverse possible anomaly scenarios.",
+      "authors": [
+        "Touseef Hasan",
+        "Mounika Ghanta",
+        "Souvika Sarkar",
+        "Ujjwal Guin"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.IR",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-12T05:38:05Z",
+      "updated": "2026-08-12T05:38:05Z",
+      "announced_date": "2026-08-12",
+      "first_seen": "2026-08-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.11679v1",
+        "pdf": "https://arxiv.org/pdf/2608.11679v1",
+        "html": "https://arxiv.org/html/2608.11679"
+      },
+      "score": 12,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.11616",
+      "title": "MBA: Multimodal Benchmark and Agents for Real-World Business Ideation",
+      "abstract": "Agentic systems powered by large language models (LLMs) have opened new opportunities for business ideation. Yet existing approaches remain confined to a text-only paradigm, despite the inherently multimodal nature of real-world contexts. We thus introduce MBA-Bench, the first multimodal benchmark for training and evaluating business ideation agents, comprising 30K samples across six domains, each domain characterized by distinct visual cues not fully conveyed by text alone. Concretely, we automatically caption images and employ GPT-4o to generate five reference ideas for each of three business questions through retrieval query generation, market evidence retrieval, and evidence-augmented synthesis. Following prior work, we evaluate agents across six business-oriented criteria using MLLM-as-a-Judge. To consider settings where criteria are hidden or disclosed, we present MBA-b and MBA-k for blind and known, respectively. We train both with two novel reward objectives---creativity and feasibility---while MBA-k further optimizes the six disclosed criteria for eight in total. Both are trained via LoRA-based supervised fine-tuning followed by group relative policy optimization with these setting-specific rewards. For extensive experiments on MBA-Bench, we set up two baselines accommodating either captions only or multimodal inputs, with the latter nearing closed-source performance on several metrics. MBA-b and MBA-k outperform caption baselines by 63.9% and 77.1%, and multimodal baselines by 25.6% and 35.8%, respectively.",
+      "authors": [
+        "Hojun Choi",
+        "Jaeyo Shin",
+        "Suin Lee",
+        "Hyunjung Shim"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-12T03:52:57Z",
+      "updated": "2026-08-13T02:06:46Z",
+      "announced_date": "2026-08-12",
+      "first_seen": "2026-08-12",
+      "comment": "Project page: https://hchoi256.github.io/projects/mba/ Code: https://github.com/hchoi256/MBA",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.11616v2",
+        "pdf": "https://arxiv.org/pdf/2608.11616v2",
+        "html": "https://arxiv.org/html/2608.11616"
+      },
+      "score": 7,
+      "tags": [
+        "multimodal"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2608.14718",
+      "title": "VideoGAIA: A Benchmark for General AI Assistants on Agentic Video Understanding",
+      "abstract": "Video understanding is a fundamental task for evaluating the capabilities of multimodal large language models (MLLMs). However, existing leading models have already achieved approximately 90% accuracy on the Video-MME leaderboard, suggesting that conventional single-turn video understanding tasks are becoming increasingly saturated and insufficient for assessing the intelligence of advanced MLLMs. Towards this end, we introduce VideoGAIA, an agentic video understanding benchmark for general artificial intelligence (AI) assistants. Moving beyond one-shot video question answering, VideoGAIA formulates video understanding as a multi-turn, tool-augmented interaction process, where models must iteratively perceive videos, invoke external tools, gather complementary information, and integrate multimodal evidence across turns. VideoGAIA contains 271 model-human co-designed tasks covering diverse and complex real-world scenarios. Each video-question-answer instance is independently verified by three human experts to ensure both correctness and appropriate difficulty. All evaluated MLLMs, including frontier models such as GPT-5.5 and Kimi-K3, achieve less than 60% accuracy on VideoGAIA, highlighting its value as a high-quality and timely benchmark for evaluating next-generation MLLMs. We hope that VideoGAIA will facilitate the transition from conventional video understanding toward agentic video understanding.",
+      "authors": [
+        "Fan Zhang",
+        "Guangming Yao",
+        "Jinyang Wu",
+        "Hao Wu",
+        "Zheng Lian",
+        "Xinyu Geng",
+        "Jingdong Chen",
+        "Yi Yuan",
+        "Pheng-Ann Heng"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-08-12T03:24:44Z",
+      "updated": "2026-08-12T03:24:44Z",
+      "announced_date": "2026-08-12",
+      "first_seen": "2026-08-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.14718v1",
+        "pdf": "https://arxiv.org/pdf/2608.14718v1",
+        "html": "https://arxiv.org/html/2608.14718"
+      },
+      "score": 27,
+      "tags": [
+        "tool-use",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    }
+  ]
+}

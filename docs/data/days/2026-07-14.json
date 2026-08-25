@@ -1,0 +1,242 @@
+{
+  "date": "2026-07-14",
+  "count": 4,
+  "report": {
+    "date": "2026-07-14",
+    "count": 4,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On July 14, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Tool use (2), Multimodal (2), Memory (1), and Coding agents (1).",
+      "highlights": [
+        {
+          "id": "2607.12385",
+          "title": "PM-Bench: Evaluating Prospective Memory in LLM Agents",
+          "blurb": "A significant challenge in agentic AI is prospective memory: the ability to execute an intention at a specific future cue or state while other activities are ongoing."
+        },
+        {
+          "id": "2607.16311",
+          "title": "Seeing What Is Actually There: PriVE-Bench and PriVE-Tools for Counterfactual Evaluation of Agentic Visual Evidence in VLMs",
+          "blurb": "Vision-language models (VLMs) often answer visual questions using learned language and category priors rather than grounding their predictions in the image itself."
+        },
+        {
+          "id": "2607.12338",
+          "title": "How Many Tasks Are Enough for Agent Benchmark Decisions? A Replay Analysis of Public LLM Agent Benchmarks",
+          "blurb": "Agent benchmarks often compare two agents after all tasks have run, but costly evaluations make partial runs tempting."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年7月14日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在工具使用（2）、多模态（2）、记忆（1）、代码智能体（1）。",
+      "highlights": [
+        {
+          "id": "2607.12385",
+          "title": "PM-Bench: Evaluating Prospective Memory in LLM Agents",
+          "blurb": "A significant challenge in agentic AI is prospective memory: the ability to execute an intention at a specific future cue or state while other activities are ongoing."
+        },
+        {
+          "id": "2607.16311",
+          "title": "Seeing What Is Actually There: PriVE-Bench and PriVE-Tools for Counterfactual Evaluation of Agentic Visual Evidence in VLMs",
+          "blurb": "Vision-language models (VLMs) often answer visual questions using learned language and category priors rather than grounding their predictions in the image itself."
+        },
+        {
+          "id": "2607.12338",
+          "title": "How Many Tasks Are Enough for Agent Benchmark Decisions? A Replay Analysis of Public LLM Agent Benchmarks",
+          "blurb": "Agent benchmarks often compare two agents after all tasks have run, but costly evaluations make partial runs tempting."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2607.16311",
+      "title": "Seeing What Is Actually There: PriVE-Bench and PriVE-Tools for Counterfactual Evaluation of Agentic Visual Evidence in VLMs",
+      "abstract": "Vision-language models (VLMs) often answer visual questions using learned language and category priors rather than grounding their predictions in the image itself. Counterfactual images provide a natural diagnostic setting for this failure mode: when visible evidence contradicts what is usually true, a grounded model should answer from the pixels, while a prior-following model will produce a canonical but visually incorrect response. However, existing counterfactual benchmarks mainly ask whether such prior-following behavior exists. In this paper, we ask a further question motivated by the rise of tool-augmented and agentic vision systems: can additional visual evidence views help VLMs reason against their priors? We introduce PriVE-Bench, a Prior-vs-Visual Evidence Benchmark that uses paired original and counterfactual images to distinguish visually grounded answers from prior-consistent errors. We further introduce PriVE-Tools, a controlled agentic-vision-inspired extension that evaluates whether tool-derived visual evidence -- including bounding boxes, crops, zoom panels, and contours -- improves grounding under the same counterfactual conflicts. Across open- and closed-source VLMs, we compare raw, paired-image, and tool-conditioned inputs using accuracy, prior-following error rate, and other-response rate. Our results show that visual evidence tools can help in some settings, especially when models can use localized evidence effectively, but they are not a universal remedy: several models continue to follow language and category priors even when relevant visual evidence is explicitly provided.",
+      "authors": [
+        "Jingyu Sun",
+        "Jiachen Tu",
+        "Yuyang Xue",
+        "Yaoxin Jiang",
+        "Guoyi Xu",
+        "Zhengtao Yao",
+        "Rui Qian",
+        "Yizheng Sun",
+        "Hongpeng Zhou",
+        "Jingyuan Sun",
+        "Yan Lin"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-07-14T16:45:02Z",
+      "updated": "2026-07-14T16:45:02Z",
+      "announced_date": "2026-07-14",
+      "first_seen": "2026-07-14",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.16311v1",
+        "pdf": "https://arxiv.org/pdf/2607.16311v1",
+        "html": "https://arxiv.org/html/2607.16311"
+      },
+      "score": 16,
+      "tags": [
+        "tool-use",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2607.12385",
+      "title": "PM-Bench: Evaluating Prospective Memory in LLM Agents",
+      "abstract": "A significant challenge in agentic AI is prospective memory: the ability to execute an intention at a specific future cue or state while other activities are ongoing. We introduce PM-Bench, a text-based benchmark for measuring prospective memory capabilities in modern LLM agents. Inspired by the Virtual Week paradigm from cognitive science, PM-Bench evaluates how well LLM agents maintain user intentions, execute delayed intentions, and monitor latent environment changes. Over the course of a simulated seven-day week, agents must continue an ongoing activity while deciding whether any deferred task is due. We compare eight state-of-the-art LLMs on PM-Bench under eight different agent configurations. PM-Bench proves challenging across all settings: the best method, a GPT-5.4 agent, reaches only 65.1\\% F1 score under our evaluation. Furthermore, no single strategy for improving prospective memory dominates across models. We release PM-Bench as a controlled testbed for diagnosing these failures and developing training or inference-time interventions that support reliable prospective behavior.",
+      "authors": [
+        "Genglin Liu",
+        "Saadia Gabriel"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-14T05:57:32Z",
+      "updated": "2026-07-14T05:57:32Z",
+      "announced_date": "2026-07-14",
+      "first_seen": "2026-07-14",
+      "comment": "Published as a conference paper at COLM 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.12385v1",
+        "pdf": "https://arxiv.org/pdf/2607.12385v1",
+        "html": "https://arxiv.org/html/2607.12385"
+      },
+      "score": 23,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.12338",
+      "title": "How Many Tasks Are Enough for Agent Benchmark Decisions? A Replay Analysis of Public LLM Agent Benchmarks",
+      "abstract": "Agent benchmarks often compare two agents after all tasks have run, but costly evaluations make partial runs tempting. A task fraction alone does not show whether a partial run supports the same pairwise conclusion as the completed benchmark. We study this question by replaying completed public task-level records from SWE-bench, AppWorld, and tau-bench. A partial budget counts as enough only when it supports the completed benchmark's decision, covers required task groups, and leaves no more than a target fraction of comparisons unresolved. The required task fraction varies sharply. At the strict 0 percentage point threshold on a 5 percentage point budget grid, AppWorld first meets all targets at 15 percent, tau-bench at 25 percent, and SWE-bench Verified at 90 percent; SWE-bench Lite does not meet all targets by 95 percent under the primary coverage rule. Partial-evaluation reports should state how much one agent must outperform another, how tasks are selected, what coverage rule is required, what decision rule is used, and how many comparisons may remain unresolved.",
+      "authors": [
+        "Wei-Jung Huang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-14T04:36:41Z",
+      "updated": "2026-07-14T04:36:41Z",
+      "announced_date": "2026-07-14",
+      "first_seen": "2026-07-14",
+      "comment": "KDD 2026 Workshop Agentic AI Evaluation and Trustworthiness",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.12338v1",
+        "pdf": "https://arxiv.org/pdf/2607.12338v1",
+        "html": "https://arxiv.org/html/2607.12338"
+      },
+      "score": 13,
+      "tags": [
+        "coding",
+        "conversation"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2607.12310",
+      "title": "LakeQuest: A Three-Domain Benchmark for Grounded Question Answering across Data Lakes",
+      "abstract": "While modern question answering (QA) systems excel on clean, schema-aligned corpora, real-world knowledge is rarely so neatly packaged. Answering questions over enterprise and scientific data lakes requires systems to navigate heterogeneous, weakly structured collections of tables, passages, and linked metadata. Current benchmarks abstract away this noisy discovery process, failing to evaluate end-to-end performance. To bridge this gap, we introduce LakeQuest, a human-validated benchmark of 9,846 QA pairs designed to evaluate the end-to-end retrieve-and-synthesize pipeline over realistic data lakes. LakeQuest spans three diverse domains (AI/ML metadata, retail banking, and multimodal biomedical drug information) and pairs every question with exact, modality-aware evidence pointers. By isolating source discovery from cross-modal synthesis, LakeQuest exposes critical failure modes in modern QA systems. Our baseline evaluations, including standard Retrieval-Augmented Generation (RAG) and agentic tool-use methods, reveal that high-quality retrieval does not guarantee correct reasoning. Systems consistently struggle with relation chaining in metadata graphs, policy grounding in bank ledgers, and joint tabular QA in biomedical contexts, highlighting the need for robust discovery and faithful cross-file composition mechanisms in future agentic QA systems.",
+      "authors": [
+        "Michael Solodko",
+        "Steven Gong",
+        "Guangwei Yu",
+        "Satya Krishna Gorti",
+        "Jesse C. Cresswell",
+        "Victor Zhong"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-07-14T03:33:00Z",
+      "updated": "2026-08-11T18:46:12Z",
+      "announced_date": "2026-07-14",
+      "first_seen": "2026-07-14",
+      "comment": "24 pages, 4 figures, 18 tables. Accepted at the Conference on Language Modeling (COLM) 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.12310v3",
+        "pdf": "https://arxiv.org/pdf/2607.12310v3",
+        "html": "https://arxiv.org/html/2607.12310"
+      },
+      "score": 11,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning",
+        "multimodal",
+        "science"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    }
+  ]
+}

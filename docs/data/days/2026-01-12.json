@@ -1,0 +1,130 @@
+{
+  "date": "2026-01-12",
+  "count": 2,
+  "report": {
+    "date": "2026-01-12",
+    "count": 2,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On January 12, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Tool use (2), Science lab (1), and Planning / reasoning (1).",
+      "highlights": [
+        {
+          "id": "2601.07606",
+          "title": "Proof of Time: A Benchmark for Evaluating Scientific Idea Judgments",
+          "blurb": "Large language models are increasingly being used to assess and forecast research ideas, yet we lack scalable ways to evaluate the quality of models' judgments about these scientific ideas."
+        },
+        {
+          "id": "2601.07367",
+          "title": "FOCAL: A Novel Benchmarking Technique for Multi-modal Agents",
+          "blurb": "With the recent advancements in reasoning capabilities, tool calling using MCP servers and Audio Language Models (ALMs), development and integration of multi-modal agents (with voice and text support) has come to the ind…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年1月12日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在工具使用（2）、科学实验（1）、规划 / 推理（1）。",
+      "highlights": [
+        {
+          "id": "2601.07606",
+          "title": "Proof of Time: A Benchmark for Evaluating Scientific Idea Judgments",
+          "blurb": "Large language models are increasingly being used to assess and forecast research ideas, yet we lack scalable ways to evaluate the quality of models' judgments about these scientific ideas."
+        },
+        {
+          "id": "2601.07367",
+          "title": "FOCAL: A Novel Benchmarking Technique for Multi-modal Agents",
+          "blurb": "With the recent advancements in reasoning capabilities, tool calling using MCP servers and Audio Language Models (ALMs), development and integration of multi-modal agents (with voice and text support) has come to the ind…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2601.07606",
+      "title": "Proof of Time: A Benchmark for Evaluating Scientific Idea Judgments",
+      "abstract": "Large language models are increasingly being used to assess and forecast research ideas, yet we lack scalable ways to evaluate the quality of models' judgments about these scientific ideas. Towards this goal, we introduce PoT, a semi-verifiable benchmarking framework that links scientific idea judgments to downstream signals that become observable later (e.g., citations and shifts in researchers' agendas). PoT freezes a pre-cutoff snapshot of evidence in an offline sandbox and asks models to forecast post-cutoff outcomes, enabling verifiable evaluation when ground truth arrives, scalable benchmarking without exhaustive expert annotation, and analysis of human-model misalignment against signals such as peer-review awards. In addition, PoT provides a controlled testbed for agent-based research judgments that evaluate scientific ideas, comparing tool-using agents to non-agent baselines under prompt ablations and budget scaling. Across 30,000+ instances spanning four benchmark domains, we find that, compared with non-agent baselines, higher interaction budgets generally improve agent performance, while the benefit of tool use is strongly task-dependent. By combining time-partitioned, future-verifiable targets with an offline sandbox for tool use, PoT supports scalable evaluation of agents on future-facing scientific idea judgment tasks.",
+      "authors": [
+        "Bingyang Ye",
+        "Shan Chen",
+        "Jingxuan Tu",
+        "Chen Liu",
+        "Zidi Xiong",
+        "Samuel Schmidgall",
+        "Danielle S. Bitterman"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-01-12T14:55:37Z",
+      "updated": "2026-01-12T14:55:37Z",
+      "announced_date": "2026-01-12",
+      "first_seen": "2026-01-12",
+      "comment": "under review",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.07606v1",
+        "pdf": "https://arxiv.org/pdf/2601.07606v1",
+        "html": "https://arxiv.org/html/2601.07606"
+      },
+      "score": 18,
+      "tags": [
+        "tool-use",
+        "science"
+      ],
+      "field": "science",
+      "citations": 2
+    },
+    {
+      "id": "2601.07367",
+      "title": "FOCAL: A Novel Benchmarking Technique for Multi-modal Agents",
+      "abstract": "With the recent advancements in reasoning capabilities, tool calling using MCP servers and Audio Language Models (ALMs), development and integration of multi-modal agents (with voice and text support) has come to the industry forefront. Cascading pipelines for voice agents still play a central role in the industry owing to their superior reasoning capabilities facilitated by LLMs. Although, cascading pipelines often present error propagation through the pipeline. We propose a framework, FOCAL to benchmark end-to-end reasoning, component-wise error propagation and error analysis for automated as well as human-assisted testing of multi-modal agents (voice to voice + text input). We also share two novel metrics viz. Reasoning and Semantic scores to evaluate efficacy of the agent in having meaningful conversations in voice mode.",
+      "authors": [
+        "Anupam Purwar",
+        "Aditya Choudhary"
+      ],
+      "categories": [
+        "cs.SD"
+      ],
+      "primary_category": "cs.SD",
+      "published": "2026-01-12T09:46:06Z",
+      "updated": "2026-03-02T09:44:51Z",
+      "announced_date": "2026-01-12",
+      "first_seen": "2026-01-12",
+      "comment": "We present a framework for evaluation of Multi-modal Agents consisting of Voice-to-voice model components viz. Text to Speech (TTS), Retrieval Augmented Generation (RAG) and Speech-to-text (STT)",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.07367v2",
+        "pdf": "https://arxiv.org/pdf/2601.07367v2",
+        "html": "https://arxiv.org/html/2601.07367"
+      },
+      "score": 9,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 1
+    }
+  ]
+}

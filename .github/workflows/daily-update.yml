@@ -1,0 +1,46 @@
+name: Daily arXiv update
+
+on:
+  schedule:
+    # After the arXiv announcement window (Sun–Thu evenings ET).
+    - cron: "30 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/daily-update.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-arxiv-update
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Fetch and classify new agent benchmarks
+        run: python scripts/update.py --days 4
+
+      - name: Commit data if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data
+          if git diff --cached --quiet; then
+            echo "No data changes"
+          else
+            git commit -m "chore: daily agent benchmark index"
+            git push
+          fi

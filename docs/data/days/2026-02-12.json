@@ -1,0 +1,254 @@
+{
+  "date": "2026-02-12",
+  "count": 4,
+  "report": {
+    "date": "2026-02-12",
+    "count": 4,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On February 12, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Safety (2), Multi-agent (2), Planning / reasoning (1), and GUI agents (1).",
+      "highlights": [
+        {
+          "id": "2602.11510",
+          "title": "AgentLeak: A Benchmark for Internal-Channel Privacy Leakage in Multi-Agent LLM Systems",
+          "blurb": "Multi-agent Large Language Model (LLM) systems create privacy risks that current output-only benchmarks cannot measure."
+        },
+        {
+          "id": "2602.11750",
+          "title": "AmbiBench: Benchmarking Mobile GUI Agents Beyond One-Shot Instructions in the Wild",
+          "blurb": "Benchmarks are paramount for gauging progress in the domain of Mobile GUI Agents."
+        },
+        {
+          "id": "2602.11964",
+          "title": "Gaia2: Benchmarking LLM Agents on Dynamic and Asynchronous Environments",
+          "blurb": "We introduce Gaia2, a benchmark for evaluating large language model agents in realistic, asynchronous environments."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年2月12日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在安全（2）、多智能体（2）、规划 / 推理（1）、GUI 智能体（1）。",
+      "highlights": [
+        {
+          "id": "2602.11510",
+          "title": "AgentLeak: A Benchmark for Internal-Channel Privacy Leakage in Multi-Agent LLM Systems",
+          "blurb": "Multi-agent Large Language Model (LLM) systems create privacy risks that current output-only benchmarks cannot measure."
+        },
+        {
+          "id": "2602.11750",
+          "title": "AmbiBench: Benchmarking Mobile GUI Agents Beyond One-Shot Instructions in the Wild",
+          "blurb": "Benchmarks are paramount for gauging progress in the domain of Mobile GUI Agents."
+        },
+        {
+          "id": "2602.11964",
+          "title": "Gaia2: Benchmarking LLM Agents on Dynamic and Asynchronous Environments",
+          "blurb": "We introduce Gaia2, a benchmark for evaluating large language model agents in realistic, asynchronous environments."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2602.12315",
+      "title": "AgenticShop: Benchmarking Agentic Product Curation for Personalized Web Shopping",
+      "abstract": "The proliferation of e-commerce has made web shopping platforms key gateways for customers navigating the vast digital marketplace. Yet this rapid expansion has led to a noisy and fragmented information environment, increasing cognitive burden as shoppers explore and purchase products online. With promising potential to alleviate this challenge, agentic systems have garnered growing attention for automating user-side tasks in web shopping. Despite significant advancements, existing benchmarks fail to comprehensively evaluate how well agentic systems can curate products in open-web settings. Specifically, they have limited coverage of shopping scenarios, focusing only on simplified single-platform lookups rather than exploratory search. Moreover, they overlook personalization in evaluation, leaving unclear whether agents can adapt to diverse user preferences in realistic shopping contexts. To address this gap, we present AgenticShop, the first benchmark for evaluating agentic systems on personalized product curation in open-web environment. Crucially, our approach features realistic shopping scenarios, diverse user profiles, and a verifiable, checklist-driven personalization evaluation framework. Through extensive experiments, we demonstrate that current agentic systems remain largely insufficient, emphasizing the need for user-side systems that effectively curate tailored products across the modern web.",
+      "authors": [
+        "Sunghwan Kim",
+        "Ryang Heo",
+        "Yongsik Seo",
+        "Jinyoung Yeo",
+        "Dongha Lee"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-12T17:25:45Z",
+      "updated": "2026-02-12T17:25:45Z",
+      "announced_date": "2026-02-12",
+      "first_seen": "2026-02-12",
+      "comment": "Accepted at WWW 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.12315v1",
+        "pdf": "https://arxiv.org/pdf/2602.12315v1",
+        "html": "https://arxiv.org/html/2602.12315"
+      },
+      "score": 13,
+      "tags": [],
+      "field": "other",
+      "citations": 9
+    },
+    {
+      "id": "2602.11964",
+      "title": "Gaia2: Benchmarking LLM Agents on Dynamic and Asynchronous Environments",
+      "abstract": "We introduce Gaia2, a benchmark for evaluating large language model agents in realistic, asynchronous environments. Unlike prior static or synchronous evaluations, Gaia2 introduces scenarios where environments evolve independently of agent actions, requiring agents to operate under temporal constraints, adapt to noisy and dynamic events, resolve ambiguity, and collaborate with other agents. Each scenario is paired with a write-action verifier, enabling fine-grained, action-level evaluation and making Gaia2 directly usable for reinforcement learning from verifiable rewards. Our evaluation of state-of-the-art proprietary and open-source models shows that no model dominates across capabilities: GPT-5 (high) reaches the strongest overall score of 42% pass@1 but fails on time-sensitive tasks, Claude-4 Sonnet trades accuracy and speed for cost, Kimi-K2 leads among open-source models with 21% pass@1. These results highlight fundamental trade-offs between reasoning, efficiency, robustness, and expose challenges in closing the \"sim2real\" gap. Gaia2 is built on a consumer environment with the open-source Agents Research Environments platform and designed to be easy to extend. By releasing Gaia2 alongside the foundational ARE framework, we aim to provide the community with a flexible infrastructure for developing, benchmarking, and training the next generation of practical agent systems.",
+      "authors": [
+        "Romain Froger",
+        "Pierre Andrews",
+        "Matteo Bettini",
+        "Amar Budhiraja",
+        "Ricardo Silveira Cabral",
+        "Virginie Do",
+        "Emilien Garreau",
+        "Jean-Baptiste Gaya",
+        "Hugo Laurençon",
+        "Maxime Lecanu",
+        "Kunal Malkan",
+        "Dheeraj Mekala",
+        "Pierre Ménard",
+        "Gerard Moreno-Torres Bertran",
+        "Ulyana Piterbarg",
+        "Mikhail Plekhanov",
+        "Mathieu Rita",
+        "Andrey Rusakov",
+        "Vladislav Vorotilov",
+        "Mengjue Wang",
+        "Ian Yu",
+        "Amine Benhalloum",
+        "Grégoire Mialon",
+        "Thomas Scialom"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-12T13:58:27Z",
+      "updated": "2026-02-12T13:58:27Z",
+      "announced_date": "2026-02-12",
+      "first_seen": "2026-02-12",
+      "comment": "Accepted as Oral at ICLR 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.11964v1",
+        "pdf": "https://arxiv.org/pdf/2602.11964v1",
+        "html": "https://arxiv.org/html/2602.11964"
+      },
+      "score": 19,
+      "tags": [
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 19
+    },
+    {
+      "id": "2602.11750",
+      "title": "AmbiBench: Benchmarking Mobile GUI Agents Beyond One-Shot Instructions in the Wild",
+      "abstract": "Benchmarks are paramount for gauging progress in the domain of Mobile GUI Agents. In practical scenarios, users frequently fail to articulate precise directives containing full task details at the onset, and their expressions are typically ambiguous. Consequently, agents are required to converge on the user's true intent via active clarification and interaction during execution. However, existing benchmarks predominantly operate under the idealized assumption that user-issued instructions are complete and unequivocal. This paradigm focuses exclusively on assessing single-turn execution while overlooking the alignment capability of the agent. To address this limitation, we introduce AmbiBench, the first benchmark incorporating a taxonomy of instruction clarity to shift evaluation from unidirectional instruction following to bidirectional intent alignment. Grounded in Cognitive Gap theory, we propose a taxonomy of four clarity levels: Detailed, Standard, Incomplete, and Ambiguous. We construct a rigorous dataset of 240 ecologically valid tasks across 25 applications, subject to strict review protocols. Furthermore, targeting evaluation in dynamic environments, we develop MUSE (Mobile User Satisfaction Evaluator), an automated framework utilizing an MLLM-as-a-judge multi-agent architecture. MUSE performs fine-grained auditing across three dimensions: Outcome Effectiveness, Execution Quality, and Interaction Quality. Empirical results on AmbiBench reveal the performance boundaries of SoTA agents across different clarity levels, quantify the gains derived from active interaction, and validate the strong correlation between MUSE and human judgment. This work redefines evaluation standards, laying the foundation for next-generation agents capable of truly understanding user intent.",
+      "authors": [
+        "Jiazheng Sun",
+        "Mingxuan Li",
+        "Yingying Zhang",
+        "Jiayang Niu",
+        "Yachen Wu",
+        "Ruihan Jin",
+        "Shuyu Lei",
+        "Pengrongrui Tan",
+        "Zongyu Zhang",
+        "Ruoyi Wang",
+        "Jiachen Yang",
+        "Boyu Yang",
+        "Jiacheng Liu",
+        "Xin Peng"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.HC"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-12T09:25:15Z",
+      "updated": "2026-02-12T09:25:15Z",
+      "announced_date": "2026-02-12",
+      "first_seen": "2026-02-12",
+      "comment": "21 pages, 7 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.11750v1",
+        "pdf": "https://arxiv.org/pdf/2602.11750v1",
+        "html": "https://arxiv.org/html/2602.11750"
+      },
+      "score": 20,
+      "tags": [
+        "gui",
+        "multi-agent"
+      ],
+      "field": "computer-use",
+      "citations": 6
+    },
+    {
+      "id": "2602.11510",
+      "title": "AgentLeak: A Benchmark for Internal-Channel Privacy Leakage in Multi-Agent LLM Systems",
+      "abstract": "Multi-agent Large Language Model (LLM) systems create privacy risks that current output-only benchmarks cannot measure. When agents coordinate on tasks, sensitive data may pass through inter-agent messages, shared memory, and tool arguments, all pathways that final-output audits typically do not inspect. We introduce AgentLeak, a benchmark for evaluating internal-channel privacy leakage in multi-agent LLM systems. AgentLeak instruments seven privacy-relevant communication pathways and provides a large-scale empirical evaluation focused on final outputs, inter-agent messages, and shared memory. Across 1,000 scenarios spanning healthcare, finance, legal, and corporate domains, five production LLMs (GPT-4o, GPT-4o-mini, Claude 3.5 Sonnet, Mistral Large, and Llama 3.3 70B), and 4,979 validated execution traces, we find that multi-agent configurations reduce final-output leakage (C1: 27.2% vs 43.2% in single-agent mode) compared with single-agent baselines but introduce internal channels that raise total system exposure to 68.9% (aggregated across C1, C2, C5). Inter-agent messages (C2) leak at 68.8%, compared with 27.2% for final outputs (C1), meaning that output-only audits miss 41.7% of violations. Across all five models and four domains, the pattern C2 $\\geq$ C1 holds consistently. These results suggest, within the evaluated coordinator-worker setting, that privacy risk in multi-agent systems is strongly shaped by architectural coordination channels rather than final-output behavior alone: it arises from internal channels that remain invisible to standard output-level defenses.",
+      "authors": [
+        "Faouzi El Yagoubi",
+        "Godwin Badu-Marfo",
+        "Ranwa Al Mallah"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-12T03:10:44Z",
+      "updated": "2026-06-15T09:43:49Z",
+      "announced_date": "2026-02-12",
+      "first_seen": "2026-02-12",
+      "comment": "19 pages, 9 figures, 16 tables. Code and dataset available at https://github.com/Privatris/AgentLeak",
+      "doi": "10.1109/ACCESS.2026.3704541",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.11510v3",
+        "pdf": "https://arxiv.org/pdf/2602.11510v3",
+        "html": "https://arxiv.org/html/2602.11510"
+      },
+      "score": 21,
+      "tags": [
+        "tool-use",
+        "multi-agent",
+        "safety",
+        "memory"
+      ],
+      "field": "multi-agent",
+      "citations": 9
+    }
+  ]
+}

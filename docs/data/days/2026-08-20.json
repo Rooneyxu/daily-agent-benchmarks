@@ -1,0 +1,266 @@
+{
+  "date": "2026-08-20",
+  "count": 5,
+  "report": {
+    "date": "2026-08-20",
+    "count": 5,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "rsi",
+        "count": 1,
+        "en": "RSI / AI4AI",
+        "zh": "RSI / AI4AI"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      }
+    ],
+    "en": {
+      "headline": "5 new agent benchmarks",
+      "summary": "On August 20, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Coding agents (2), Planning / reasoning (1), RSI / AI4AI (1), and Science lab (1).",
+      "highlights": [
+        {
+          "id": "2608.19799",
+          "title": "SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?",
+          "blurb": "Software increasingly functions as part of the scientific instrument itself, making failures in scientific code capable of compromising not only program behavior but also the evidence underlying scientific conclusions."
+        },
+        {
+          "id": "2608.20318",
+          "title": "AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for Recursive Self-Improvement",
+          "blurb": "Recursive self-improvement (RSI) asks whether an AI system can improve the process that produces AI systems, so that the next system inherits the improvement."
+        },
+        {
+          "id": "2608.19901",
+          "title": "MaliciousSkillBench: A Comprehensive Benchmark for Malicious Agent Skill Detection",
+          "blurb": "Agent Skills extend LLM agents with reusable instruction packages that may also include scripts, resources, and service configuration."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年8月20日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在代码智能体（2）、规划 / 推理（1）、RSI / AI4AI（1）、科学实验（1）。",
+      "highlights": [
+        {
+          "id": "2608.19799",
+          "title": "SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?",
+          "blurb": "Software increasingly functions as part of the scientific instrument itself, making failures in scientific code capable of compromising not only program behavior but also the evidence underlying scientific conclusions."
+        },
+        {
+          "id": "2608.20318",
+          "title": "AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for Recursive Self-Improvement",
+          "blurb": "Recursive self-improvement (RSI) asks whether an AI system can improve the process that produces AI systems, so that the next system inherits the improvement."
+        },
+        {
+          "id": "2608.19901",
+          "title": "MaliciousSkillBench: A Comprehensive Benchmark for Malicious Agent Skill Detection",
+          "blurb": "Agent Skills extend LLM agents with reusable instruction packages that may also include scripts, resources, and service configuration."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.20318",
+      "title": "AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for Recursive Self-Improvement",
+      "abstract": "Recursive self-improvement (RSI) asks whether an AI system can improve the process that produces AI systems, so that the next system inherits the improvement. That process is the training algorithm: a better objective or update rule improves the compute\\mbox{-}capability exchange rate for every subsequent run, including the one that produces the next agent. Whether RSI is feasible therefore turns on whether an agent can design training algorithms. No benchmark isolates that ability: existing suites are won by collecting data or by tuning hyperparameters, and none tells a change to how a run is executed apart from a change to how the model learns. We present AI4AI\\mbox{-}Bench, 10 frozen research repositories spanning 10 training algorithm families. In each task, an agent has 4 hours on one B300 to rewrite the training algorithm; its code is then rerun from scratch for up to 12 hours and scored by a fixed evaluator hidden from the agent, against the repository's original algorithm under the same procedure. Because the 10 metrics are incommensurable, every task is mapped onto one scale on which $0$ is an uninformative model, $0.1$ is the algorithm the repository ships, and $1.0$ is the task optimum. Across 29 configurations of 6 systems on all 10 tasks the mean score is $0.166$, and the best system reaches $0.250$: even the strongest closes under a fifth of the distance between the algorithm that was already there and the optimum. The submissions show where that distance went: most never change how the model learns at all, and the minority that do average $0.226$ against $0.126$ for the rest. More reasoning effort mostly buys the willingness to go there, taking that minority from $8\\%$ of submissions to $64\\%$ and the mean score from $0.094$ to $0.196$. We release the task suite, the evaluators and every scored submission, so that the measurement can be repeated as these systems change.",
+      "authors": [
+        "Yizhe Chi",
+        "Wenyi Li",
+        "Deyao Hong",
+        "Xiaoqiu Wang",
+        "Mingju Gao",
+        "Kaisen Yang",
+        "Bingxiang He",
+        "Youjie Zheng",
+        "Calvin Xiao",
+        "Qinhuai Na"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-20T17:56:59Z",
+      "updated": "2026-08-20T17:56:59Z",
+      "announced_date": "2026-08-20",
+      "first_seen": "2026-08-20",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.20318v1",
+        "pdf": "https://arxiv.org/pdf/2608.20318v1",
+        "html": "https://arxiv.org/html/2608.20318"
+      },
+      "score": 20,
+      "tags": [
+        "coding",
+        "planning",
+        "rsi"
+      ],
+      "field": "rsi",
+      "citations": 0
+    },
+    {
+      "id": "2608.19901",
+      "title": "MaliciousSkillBench: A Comprehensive Benchmark for Malicious Agent Skill Detection",
+      "abstract": "Agent Skills extend LLM agents with reusable instruction packages that may also include scripts, resources, and service configuration. This creates a direct distribution channel for malicious behavior, yet existing malicious-Skill datasets are fragmented across sources, artifact formats, evidence regimes, and benign coverage; duplicated and structurally related content further complicates direct aggregation and evaluation. We present MaliciousSkillBench, a comprehensive benchmark for malicious Agent Skill detection. We consolidate 13 public sources, 11 of which contribute Core malicious artifacts, and reduce 8,414 raw malicious records to 7,539 normalized-unique identities in 4,588 operational structural families. After conservative cross-label conflict exclusion, the primary benchmark contains 9,740 Skills: 7,505 malicious and 2,235 benign. To characterize its coverage, we harmonize 11 attack categories for 4,983 malicious identities with supported source-native mappings and find substantial differences in threat composition across sources. We then evaluate three learned text detectors and three off-the-shelf Skill scanners. Learned detectors achieve 0.882-0.932 Random Macro-F1 but only 0.653-0.665 under Source-Disjoint evaluation; the strongest word TF-IDF SVM scores 0.932/0.916/0.665 on Random/structural-disjoint/Source-Disjoint while retaining 95.6% malicious recall but producing 62.4% benign FPR on held-out sources. Off-the-shelf scanners occupy different but also unsatisfactory operating regimes, reducing false positives only at the cost of sharply lower malicious recall. Together, these results show that reliable malicious-Skill detection requires both broader cross-source benchmark coverage and evaluation that jointly measures attack detection and benign over-flagging.",
+      "authors": [
+        "Yue Wang",
+        "Yi Liu",
+        "Gelei Deng",
+        "Ying Zhang",
+        "Yuekang Li",
+        "Zhenyu Chen",
+        "Leo Zhang"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-08-20T11:13:00Z",
+      "updated": "2026-08-20T11:13:00Z",
+      "announced_date": "2026-08-20",
+      "first_seen": "2026-08-20",
+      "comment": "Project page: https://protectskills.github.io/MaliciousSkillBench/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.19901v1",
+        "pdf": "https://arxiv.org/pdf/2608.19901v1",
+        "html": "https://arxiv.org/html/2608.19901"
+      },
+      "score": 17,
+      "tags": [],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2608.19799",
+      "title": "SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?",
+      "abstract": "Software increasingly functions as part of the scientific instrument itself, making failures in scientific code capable of compromising not only program behavior but also the evidence underlying scientific conclusions. Yet existing evaluations of coding agents largely emphasize aggregate task success, providing limited insight into why agents fail when repairing scientific software. We introduce \\textbf{SWE-bench Science}, a repository-level benchmark for scientific software engineering comprising 119 tasks from 98 GitHub repositories across 20 scientific domains. Each task is organized into one of three paradigms: Issue-driven, Expert-exploratory, and Engineering-integration. Even the best-performing agent, \\textbf{Claude Code with Opus-5 (max), achieves a pass@1 below 50\\%}, highlighting the substantial challenges posed by scientific software engineering. We identify four recurring failure mechanisms: deficits in scientific knowledge or abstraction, misguided exploration or surface-level repair, incomplete repair coverage or system integration, and failures to generalize scientific knowledge beyond observed cases in our analysis. We further conduct a paired ablation that removes explicit scientific guidance while preserving the repository and executable engineering context. The results show that scientific knowledge is not uniformly beneficial: well-grounded information can constrain repair and improve average performance and token efficiency, whereas poorly aligned guidance can induce anchoring and does not necessarily improve exact repair success. Together, SWE-bench Science provides a broad testbed for studying both the capabilities and failure mechanisms of coding agents in scientific software engineering.",
+      "authors": [
+        "Zhipeng Xu",
+        "Jiahao Lu",
+        "Yining Zheng",
+        "Yuxin Wang",
+        "Xipeng Qiu"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-08-20T08:53:15Z",
+      "updated": "2026-08-20T08:53:15Z",
+      "announced_date": "2026-08-20",
+      "first_seen": "2026-08-20",
+      "comment": "26 pages, 7 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.19799v1",
+        "pdf": "https://arxiv.org/pdf/2608.19799v1",
+        "html": "https://arxiv.org/html/2608.19799"
+      },
+      "score": 23,
+      "tags": [
+        "coding",
+        "science"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2608.19741",
+      "title": "One Success Isn't Reliability: Thinkingbox, a Sandbox and Benchmark for Agents in Stateful Business Workflows",
+      "abstract": "Recent agent benchmarks increasingly ground evaluation in executable environments, from code repair to web navigation, app APIs, and function calling. Yet completing consequential work beyond code requires more than producing a plausible response or valid tool call: agents must gather missing information over multiple turns, follow domain policies, coordinate dependent tools, and realize the correct persistent state transition without collateral effects. In this paper, we introduce Thinkingbox, a sandbox for tool-agent-user interaction that provides isolated MCP-compatible tool sessions, complete execution traces, and outcome evaluation over terminal backend state. Built on this sandbox, Thinkingbox-bench contains 507 policy-conditioned workflows across numerous scenarios, including retail, hospitality, auto insurance, neobank internal IT, and consulting IT/HR support. Each attempt is evaluated by task-specific executable checks that accept valid trajectories while rejecting wrong, missing, or extra effects; designated tasks additionally check required properties of the final response. Across proprietary and open-weight models, the strongest achieves 65.36% pass@1, but only 25.25% pass^20. Moreover, many failed trials show clean termination and valid state-changing actions, showing that response or tool-call-level signals are not clear proxies for end-to-end task completion. Thinkingbox-bench reveals a large gap between occasionally finding a successful trajectory and reliably completing stateful business tasks. We release both Thinkingbox and Thinkingbox-Bench: https://github.com/microsoft/thinkingbox",
+      "authors": [
+        "Zhuochun Li",
+        "Youngmin Ko",
+        "Ali Keramati",
+        "Nicola Ferri",
+        "Susana Palmaz Lopez Pelaez",
+        "Liang-Chun Tsai",
+        "Calvin Wang",
+        "Mirco Milletari",
+        "Tuhin Kundu",
+        "Vadim Smolyakov",
+        "Kjartan Olafsson",
+        "Tommy Guy"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.DB"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-08-20T07:37:57Z",
+      "updated": "2026-08-20T07:37:57Z",
+      "announced_date": "2026-08-20",
+      "first_seen": "2026-08-20",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.19741v1",
+        "pdf": "https://arxiv.org/pdf/2608.19741v1",
+        "html": "https://arxiv.org/html/2608.19741"
+      },
+      "score": 10,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.19653",
+      "title": "DeltaML-Bench: Evaluating Machine Learning Agents on Real-World Research Repositories",
+      "abstract": "Autonomous agents for machine learning experimentation must navigate heterogeneous repositories, repair training pipelines, and evaluate candidate improvements under realistic compute constraints. Existing benchmarks only partially capture these conditions. We introduce DeltaML-Bench, a benchmark comprising 48 tasks sourced from research papers that require agents to improve published baselines within imperfect, open-source repositories. We evaluate GPT-5 and Claude Sonnet 4 with a standard Modular agent and a search-based ARG scaffolding. In the 4 x 6h allocation, ARG raises GPT-5's per-run success rate from 9.4% to 33.9%; in the 2 x 12h allocation, GPT-5 ARG reaches 49.0%. Modular configurations exhibit specification gaming rates as high as 47.9%, while no gaming is observed in the evaluated ARG configurations. These results indicate that scaffolding design and integrity checks are important considerations when deploying agents for autonomous ML experimentation.",
+      "authors": [
+        "Josias Moukpe",
+        "Priyanka Aryal",
+        "Matthew Kenney"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-08-20T05:42:39Z",
+      "updated": "2026-08-20T05:42:39Z",
+      "announced_date": "2026-08-20",
+      "first_seen": "2026-08-20",
+      "comment": "18 pages, 3 figures, 12 tables. Code and benchmark: https://github.com/AlgorithmicResearchGroup/deltaml-bench-public",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.19653v1",
+        "pdf": "https://arxiv.org/pdf/2608.19653v1",
+        "html": "https://arxiv.org/html/2608.19653"
+      },
+      "score": 15,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

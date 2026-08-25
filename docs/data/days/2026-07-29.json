@@ -1,0 +1,477 @@
+{
+  "date": "2026-07-29",
+  "count": 11,
+  "report": {
+    "date": "2026-07-29",
+    "count": 11,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 4,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      }
+    ],
+    "en": {
+      "headline": "11 new agent benchmarks",
+      "summary": "On July 29, 2026, arXiv listed 11 new agent benchmarks. Work clustered around Tool use (4), Coding agents (2), Memory (2), and Planning / reasoning (2).",
+      "highlights": [
+        {
+          "id": "2607.27409",
+          "title": "SWE-NFI: Studying and Benchmarking Coding Agents for Non-Functional Improvements",
+          "blurb": "Although coding agents have achieved impressive performance on correctness-oriented benchmarks, their ability to make behavior-preserving non-functional improvements (NFIs) remains underexplored."
+        },
+        {
+          "id": "2607.27353",
+          "title": "LayerRAG-Bench: A Cross-Layer Reliability Benchmark for Agentic Retrieval-Augmented Generation",
+          "blurb": "Agentic retrieval-augmented generation systems can produce answers that appear grounded while failing at the evidence, tool-contract, authorization, or session-state layer."
+        },
+        {
+          "id": "2607.27155",
+          "title": "OmegaUse-OfficeVal: Benchmarking LLM Agents on Long-Horizon Office-Suite Tasks with Economic Grounding",
+          "blurb": "Large language model (LLM) agents are increasingly expected to assist users in completing tasks."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 11 篇 Agent Benchmark",
+      "summary": "2026年7月29日，arXiv 新增 11 篇 Agent Benchmark。当日主题集中在工具使用（4）、代码智能体（2）、记忆（2）、规划 / 推理（2）。",
+      "highlights": [
+        {
+          "id": "2607.27409",
+          "title": "SWE-NFI: Studying and Benchmarking Coding Agents for Non-Functional Improvements",
+          "blurb": "Although coding agents have achieved impressive performance on correctness-oriented benchmarks, their ability to make behavior-preserving non-functional improvements (NFIs) remains underexplored."
+        },
+        {
+          "id": "2607.27353",
+          "title": "LayerRAG-Bench: A Cross-Layer Reliability Benchmark for Agentic Retrieval-Augmented Generation",
+          "blurb": "Agentic retrieval-augmented generation systems can produce answers that appear grounded while failing at the evidence, tool-contract, authorization, or session-state layer."
+        },
+        {
+          "id": "2607.27155",
+          "title": "OmegaUse-OfficeVal: Benchmarking LLM Agents on Long-Horizon Office-Suite Tasks with Economic Grounding",
+          "blurb": "Large language model (LLM) agents are increasingly expected to assist users in completing tasks."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2607.27453",
+      "title": "VAmoS Bench: Voice Agent Simulation Bench",
+      "abstract": "Production voice agents span cascaded, speech-to-speech, and hybrid architectures. Voice-agent benchmarks typically measure component quality and conversational properties such as word error rate, latency, naturalness, and turn-taking. Fewer measure whether the agent handled a phone call correctly on its own. Contact centers refer to this as ``containment'': the share of phone calls the automated system resolves without handing off to a human. On some phone calls the right outcome is refusal or a redirect. To address this gap, we introduce VAmoS Bench, the Voice Agent Simulation Bench. It measures complete voice-agent systems end to end in a stateful customer-support task. The agent is Riley, a credit-card support representative for a fictional bank who can freeze, cancel, replace, or activate a card. Each of 100 scenarios supplies a simulated caller with a private goal and a seeded PostgreSQL backend. The platform uses each scenario to populate and activate an isolated simulation in which the caller reaches Riley over audio; roughly one-third apply adversarial pressure. The agent can use five tools that execute real SQL against the backend. Each scenario also defines binary assertions. A grader evaluates them against the complete trace of what the caller and agent said and what the agent did, including tool invocations, arguments, and returned rows. This catches an agent that claims to have changed a card without updating the database, as well as one that makes the right database change while disclosing protected information. This first benchmark version focuses on financial services. Its evaluation protocol supports an evolving leaderboard: additional voice agents can be evaluated on the same version, while later versions can expand the tasks and scenarios.",
+      "authors": [
+        "Joshua Meyer",
+        "Sahar Shayegan",
+        "Ritiz Tambi",
+        "Ali Khan",
+        "Sun Kim",
+        "Victor Shih",
+        "Mehdi Jamei",
+        "Andi Partovi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-29T20:42:38Z",
+      "updated": "2026-07-29T20:42:38Z",
+      "announced_date": "2026-07-29",
+      "first_seen": "2026-07-29",
+      "comment": "12 pages, 3 figures, 2 tables. Agent implementations: https://github.com/veris-ai/riley-agent",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.27453v1",
+        "pdf": "https://arxiv.org/pdf/2607.27453v1",
+        "html": "https://arxiv.org/html/2607.27453"
+      },
+      "score": 10,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2607.27409",
+      "title": "SWE-NFI: Studying and Benchmarking Coding Agents for Non-Functional Improvements",
+      "abstract": "Although coding agents have achieved impressive performance on correctness-oriented benchmarks, their ability to make behavior-preserving non-functional improvements (NFIs) remains underexplored. In real-world software development, developers continuously improve software quality without changing observable behavior, yet existing benchmarks primarily evaluate functional correctness and provide limited support for assessing these non-functional improvements. In this paper, we present SWE-NFI, a benchmark for evaluating coding agents on NFIs beyond functional correctness. Our benchmark contains 188 tasks constructed from real merged pull requests in open-source Python projects. We operationalize developer-oriented NFIs into 92 executable rules and develop a comprehensive evaluation suite that combines functional correctness testing with rule-based NFI evaluation. We evaluate state-of-the-art commercial and open-source coding agents. Although the best-performing agent achieves a 70.0\\% functional correctness rate, all evaluated agents generally fall short of human developers in overall NFI capability. The gap is particularly evident for structural code improvements, where agents' NFI scores range from 0.0 to 1.3, compared with 1.5 for the human reference. Our benchmark and findings provide a reproducible foundation for evaluating and advancing coding agents beyond functional correctness.",
+      "authors": [
+        "Pengyu Xue",
+        "He Yang Yuan",
+        "Xin Wang",
+        "Junkai Chen",
+        "Haonan Zhang",
+        "Boyuan Chen",
+        "Zishuo Ding",
+        "Zhenhao Li",
+        "Weiyi Shang"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-07-29T19:28:32Z",
+      "updated": "2026-07-29T19:28:32Z",
+      "announced_date": "2026-07-29",
+      "first_seen": "2026-07-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.27409v1",
+        "pdf": "https://arxiv.org/pdf/2607.27409v1",
+        "html": "https://arxiv.org/html/2607.27409"
+      },
+      "score": 21,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2607.27353",
+      "title": "LayerRAG-Bench: A Cross-Layer Reliability Benchmark for Agentic Retrieval-Augmented Generation",
+      "abstract": "Agentic retrieval-augmented generation systems can produce answers that appear grounded while failing at the evidence, tool-contract, authorization, or session-state layer. We introduce LayerRAG-Bench, a controlled cross-layer reliability benchmark with 8 enterprise domains, 240 tasks, 9 fault scenarios, 2 contract modes, and 38,880 live task-level records across nine models from OpenAI, Anthropic, and Gemini. Schema normalization raises schema-drift success from 0.000 to 0.913, but stale evidence, missing tool output, denied permissions, and wrong-session context are not recovered by schema normalization. Groundedness-only evaluation also produces substantial false positives under stale and wrong-session evidence. These results support a layer-specific evaluation principle: a reliability intervention should be credited for repairing its target layer without being mistaken for a universal fix.",
+      "authors": [
+        "Musa Shams"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-07-29T18:09:17Z",
+      "updated": "2026-07-29T18:09:17Z",
+      "announced_date": "2026-07-29",
+      "first_seen": "2026-07-29",
+      "comment": "10 pages, 9 tables. Code and data: https://github.com/MusaShams/layerrag-bench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.27353v1",
+        "pdf": "https://arxiv.org/pdf/2607.27353v1",
+        "html": "https://arxiv.org/html/2607.27353"
+      },
+      "score": 20,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.27155",
+      "title": "OmegaUse-OfficeVal: Benchmarking LLM Agents on Long-Horizon Office-Suite Tasks with Economic Grounding",
+      "abstract": "Large language model (LLM) agents are increasingly expected to assist users in completing tasks. However, existing benchmarks provide limited support for evaluating whether agents can carry out office-suite workflows at a reasonable cost. We introduce OmegaUse-OfficeVal, a benchmark for evaluating LLM agents on long-horizon office-suite tasks with task-level economic grounding. The benchmark comprises 100 tasks derived from office-suite requests proposed by practitioners and adapted through a privacy-preserving process. On average, these tasks require 2.32 hours of human labor to complete. An important feature of the benchmark is that each task is paired with two economic signals: human labor time and task price proxy. These signals enable direct comparisons between human costs and LLM inference costs, as well as value-weighted evaluation. To support stable evaluation, we develop code-based verifiers from fine-grained rubrics. We evaluate several frontier LLMs together with a human baseline. Although all evaluated LLMs are substantially cheaper and faster than human workers, they have not yet approached human-level deliverable quality. The code and dataset are fully open-sourced, and more information is available on our project website: https://omegause-officeval.github.io.",
+      "authors": [
+        "Jingbo Zhou",
+        "Yusai Zhao",
+        "Qi Bao",
+        "Jingjia Cao",
+        "Zhenghai Chen",
+        "Chang Gao",
+        "Kaiqi Guo",
+        "Muxin Guo",
+        "Mingxuan Li",
+        "Xinjiang Lu",
+        "Yanru Ma",
+        "Yixiong Xiao",
+        "Zenghui Zhang",
+        "Le Zhang",
+        "Hua Wu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.HC"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-29T17:33:47Z",
+      "updated": "2026-08-18T12:27:28Z",
+      "announced_date": "2026-07-29",
+      "first_seen": "2026-07-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.27155v2",
+        "pdf": "https://arxiv.org/pdf/2607.27155v2",
+        "html": "https://arxiv.org/html/2607.27155"
+      },
+      "score": 20,
+      "tags": [],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2607.27080",
+      "title": "MemSecBench: Tracking Agent Memory Poisoning from Persistence to Consequence and Repair",
+      "abstract": "Memory systems allow agents to retain and reuse information from past interactions, but they can also let malicious content persist. A malicious instruction crafted by an attacker may be stored in long-term memory, recalled much later, and quietly shape a real action. Recent benchmarks increasingly examine agent memory security, yet few trace the same malicious semantics across persistence, downstream consequences, and selective repair under diverse memory-backend comparisons. To address this gap, we introduce MemSecBench, a task-grounded benchmark for the lifecycle security of agent memory systems. It contains 310 cases drawn from 48 realistic contexts across code and science, daily life, and office work. Each case follows a controlled Write--Execute--Forget protocol in an isolated runtime under an exact agent configuration, defined by an agent harness, a memory backend, and an LLM backend. Evidence-based adjudication combines a deterministic write check, checkpoint-specific judge-model evaluations, and programmatic gates across seven lifecycle checkpoints. The experimental design spans a 24-configuration matrix of two agent harnesses, four memory backends, and three LLM backends. Across all 24 configurations, malicious memory persists in 84.2% of all cases, and the full Write--Execute chain succeeds in 50.3%. Among successfully poisoned cases, 59.6% complete the full Execute chain, while 56.1% achieve selective repair.Compared with matched Native configurations, the largest absolute differences are 16.1 percentage points for end-to-end attack success and 41.3 percentage points for selective repair. These descriptive contrasts indicate that the evaluated memory system stacks differ in lifecycle security, both in the propagation of malicious memory and in selective repair after successful memory poisoning.",
+      "authors": [
+        "Xuanze Chen",
+        "Xukang Xie",
+        "Wentao Fu",
+        "Jiajun Zhou",
+        "Shanqing Yu",
+        "Qi Xuan"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-07-29T16:06:54Z",
+      "updated": "2026-07-29T16:06:54Z",
+      "announced_date": "2026-07-29",
+      "first_seen": "2026-07-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.27080v1",
+        "pdf": "https://arxiv.org/pdf/2607.27080v1",
+        "html": "https://arxiv.org/html/2607.27080"
+      },
+      "score": 10,
+      "tags": [
+        "memory"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2607.27294",
+      "title": "AgentS4D: Benchmarking Runtime Risks across the Execution Lifecycle of LLM-Based Workspace Agents",
+      "abstract": "Large language model (LLM)-based workspace agents execute stateful, multi-step workflows across heterogeneous resources, external tools, and persistent state. Their safety must therefore be assessed from actions, side effects, and state changes throughout execution. Although recent benchmarks have advanced executable safety testing and trajectory-aware verification, they rarely provide a unified account of where risks enter, how they elicit unsafe behavior, which harms they target, and where supporting evidence appears during execution. We introduce AgentS4D, a sandboxed benchmark for lifecycle-wide runtime safety evaluation. Its four-dimensional runtime-safety framework uses six risk-entry sources, six induction strategies, and nine target harms to guide case construction, while seven lifecycle checkpoints organize post-run evidence. AgentS4D contains 328 risk-injected cases. We evaluate all 20 combinations of four harnesses (Hermes, OpenClaw, Claude Code, and Codex) and five LLM backends (GPT-5.5, Gemini 3.1 Pro, DeepSeek-V4-Pro, MiniMax-M3, and Qwen3.7-Plus) on these cases, yielding 6,560 runs. Overall, 4,461 runs (68.0%) trigger prespecified unsafe signals. Across the 20 configurations, the observed safety of an agent system varies with both its harness-LLM pairing and how risk is introduced. Agent systems exhibit markedly different safety behavior when the same induction strategy reaches them through different risk carriers. They also respond differently to the same target harm when it is realized through different carriers and strategies. Moreover, 4,344 runs (66.22% overall) are unsafe yet complete. Thus, task completion cannot establish runtime safety, and testing only one form of a risk can conceal important weaknesses. Evaluations should examine complete agent configurations across diverse risk conditions and retain evidence throughout execution.",
+      "authors": [
+        "Jiajun Zhou",
+        "Zhaoxuan Ke",
+        "Jihang Ye",
+        "Xuanze Chen",
+        "Shanqing Yu",
+        "Qi Xuan"
+      ],
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-07-29T15:55:45Z",
+      "updated": "2026-07-29T15:55:45Z",
+      "announced_date": "2026-07-29",
+      "first_seen": "2026-07-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.27294v1",
+        "pdf": "https://arxiv.org/pdf/2607.27294v1",
+        "html": "https://arxiv.org/html/2607.27294"
+      },
+      "score": 8,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.27056",
+      "title": "Setoka: A Benchmark for Hierarchical User Understanding in Personalized Agents over Heterogeneous Data",
+      "abstract": "Personalized agents are increasingly applied to assist users across a wide range of tasks. Effective personalized assistance requires not only retrieving explicit facts from past interactions stored in agent memory, but also inferring abstract personal characteristics. However, existing memory benchmarks primarily evaluate whether an agent can retrieve information explicitly stated in conversational histories, failing to provide an effective assessment of deeper user understanding. In this work, we propose Setoka, a benchmark for evaluating memory-augmented personalized agents with hierarchical user understanding from heterogeneous data. Grounded in theories from cognitive and personality psychology, Setoka defines four levels of user understanding, i.e., semantic memory, episodic memory, behavior pattern, and personality trait. Moreover, to enable realistic yet privacy-preserving evaluation, we design a psychometrics-based pipeline that synthesizes diverse, coherent heterogeneous user data and queries at scale. Finally, we leverage Setoka to evaluate 3 language models combined with 5 memory systems for 10 synthetic users. Our comprehensive evaluation reveals that while existing systems perform well on semantic memory retrieval, their performance declines on episodic memory. Moreover, when dealing with behavior pattern and personality trait understanding tasks that require integrating heterogeneous and fragmented information dispersed over time, performance declines even further. These findings demonstrate that user understanding cannot be handled by simple fact retrieval, motivating the design of memory mechanisms for cross-source integration and abstraction over long-term user behavior.",
+      "authors": [
+        "Lingyang Zeng",
+        "Guangze Chen",
+        "Kaichen Yu",
+        "Zhicheng Pan",
+        "Siyang Weng",
+        "Zirui Hu",
+        "Xiangyun Du",
+        "Hailin He",
+        "Rong Zhang",
+        "Chengcheng Yang",
+        "Kai Huang",
+        "Xuan Zhou"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-29T15:47:40Z",
+      "updated": "2026-08-03T12:10:34Z",
+      "announced_date": "2026-07-29",
+      "first_seen": "2026-07-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.27056v2",
+        "pdf": "https://arxiv.org/pdf/2607.27056v2",
+        "html": "https://arxiv.org/html/2607.27056"
+      },
+      "score": 18,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.26977",
+      "title": "TREK: A Travel Reasoning and Evaluation Kit for LLM Agents in Complex Trip Planning",
+      "abstract": "Travel planning is a demanding stress test for tool-using LLM agents: a usable itinerary is a single artifact that must be right along many axes at once - every flight, hotel, and attraction must exist and be bookable, the days must be physically traversable, the total must clear a budget, and the plan must serve a traveler whose needs are only partly stated. Existing agent benchmarks reward these properties one at a time and grade the final output with soft or LLM-judged rubrics, which cannot certify that a returned plan is executable and are neither reproducible nor auditable. We introduce TREK (Travel Reasoning and Evaluation Kit), a benchmark for feasible itinerary synthesis: producing a single plan that is jointly constraint-correct, hallucination-free, spatio-temporally executable, budget-valid, and responsive to the traveler's unstated persona needs. TREK comprises 800 multi-constraint tasks - 533 feasible and 267 provably infeasible with typed route/entity/budget causes - over a synthetic, internally consistent knowledge base of 212,530 records across 375 cities and 13 personas, served through a production-style tool sandbox of validated RESTful APIs. Every task is scored by a fully deterministic, rule-based evaluator with no LLM judge and ships a human-verified gold reference that scores a perfect 1.0 under that same evaluator, so the ceiling is demonstrably achievable and every remaining gap is an agent limitation rather than scorer strictness. Evaluating 15 LLM agents across nine constraint dimensions, we find that even the strongest (GPT-5.6) produces a fully-feasible plan on only 46.2% of solvable tasks, with a median of 6.6% and a floor of 0.0%; satisfying travelers' unstated needs emerges as the universal bottleneck, unsolved even at the frontier. We release the dataset, tool sandbox, deterministic evaluator, and agent code as a fully reproducible benchmark.",
+      "authors": [
+        "Jinhu Qi",
+        "Wentao Zhang",
+        "Siu Man Ng",
+        "Feiyang Xu",
+        "Yanyu Chen",
+        "Yaoman Li",
+        "Irwin King"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-07-29T14:35:29Z",
+      "updated": "2026-08-10T02:07:10Z",
+      "announced_date": "2026-07-29",
+      "first_seen": "2026-07-29",
+      "comment": "Code, data, and evaluator: https://github.com/TonyQJH/TREK-A-Travel-Reasoning-and-Evaluation-Kit-for-LLM-Agents-in-Complex-Trip-Planning",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.26977v2",
+        "pdf": "https://arxiv.org/pdf/2607.26977v2",
+        "html": "https://arxiv.org/html/2607.26977"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.26791",
+      "title": "SecRespond: Benchmarking AI Agents for Real-World Post-Compromise Incident Response",
+      "abstract": "Large Language Model (LLM) agents are increasingly adopted in real-world security operations with access to host artifacts and command-line interfaces (CLIs), making it critical to thoroughly assess their security capabilities. However, existing cybersecurity benchmarks focus on pre-compromise settings where agents are placed in a clean and idealized environment before an attack occurs. This leaves the post-compromise setting underexplored. To address this gap, we introduce SecRespond, the first benchmark for evaluating LLM agents on the post-compromise incident-response workflow. Given a forensic disk snapshot of a compromised host together with the alerts, vulnerability scans, and baseline checks reported by a host security product, agents are required to produce forensic reports on intrusions, baseline risks, and vulnerability risks, together with a remediation plan. We instantiate this task across 10 cyber ranges, each constructed from a distinct compromised cloud host, spanning 4 entry-point types, 21 ATT&CK techniques, and 5 operating systems. We evaluate 23 frontier LLMs on the OpenCode agent harness. Experimental results show that although current agents can reliably uncover the problems exposed by alerts, they struggle to proactively investigate the disk for silent intrusions and to produce comprehensive, verified remediation plans, with no model achieving complete detection and remediation on any single range. This reveals a fundamental bottleneck in building agents for real-world incident response. The benchmark is publicly available at https://github.com/Alibaba-NLP/qqr/tree/main/data/secrespond.",
+      "authors": [
+        "Lehan Wang",
+        "Boli Chen",
+        "Ruixue Ding",
+        "Pengjun Xie",
+        "Jinwei Huang",
+        "Zhendong Liu",
+        "Shuo Wang",
+        "Tao Lei",
+        "Xin Ouyang",
+        "Xiaomeng Li"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-07-29T11:32:23Z",
+      "updated": "2026-07-29T11:32:23Z",
+      "announced_date": "2026-07-29",
+      "first_seen": "2026-07-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.26791v1",
+        "pdf": "https://arxiv.org/pdf/2607.26791v1",
+        "html": "https://arxiv.org/html/2607.26791"
+      },
+      "score": 16,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.26451",
+      "title": "ExplainBench: Evaluating Code Explanations from Agents",
+      "abstract": "Large Language Model (LLM) agents have seen rapid adoption in software engineering. As agents take a greater role in the actual generation of code, they are making larger changes, spanning tens to hundreds of lines. This makes manual review of agent results increasingly infeasible, leading developers to turn to explanations to understand enacted changes. Despite this, there are no benchmarks that evaluate the trustworthiness of agent-generated explanations. To bridge this gap, we propose ExplainBench, a benchmark to automatically evaluate explanations from coding agents. ExplainBench is based on the intuition that informative explanations should enable an LLM to correctly answer questions, allowing quantitative comparison of explanation quality between agents. With this observation, we construct a suite of questions that evaluates whether explanations accurately describe (1) the intended behavior of buggy code and (2) the effect of applying the agent patch itself. Experiments first reveal that explanation quality is a distinct axis of agent evaluation: ExplainBench ranks agents differently from the widely-used SWE-bench Verified benchmark. A deeper breakdown of explanation quality in agents shows frequent problems in explanations, such that explanations often claim that a patch is correct when it is not. Based on this insight, we implement and evaluate an explanation audit agent which runs additional tests to validate and refine explanations. This agent improved the explanations of all evaluated agents, demonstrating agent explanations can be automatically made more trustworthy.",
+      "authors": [
+        "Zhiyuan Pan",
+        "Sungmin Kang",
+        "Imam Nur Bani Yusuf",
+        "Abhik Roychoudhury"
+      ],
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-07-29T04:04:54Z",
+      "updated": "2026-07-29T04:04:54Z",
+      "announced_date": "2026-07-29",
+      "first_seen": "2026-07-29",
+      "comment": "ASE 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.26451v1",
+        "pdf": "https://arxiv.org/pdf/2607.26451v1",
+        "html": "https://arxiv.org/html/2607.26451"
+      },
+      "score": 14,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2607.26367",
+      "title": "Exploring Structures in Physics Problems: Can AI Agents Discover Statistical Mechanical Mappings?",
+      "abstract": "An important skill in theoretical physics is to recognize when a new problem can be transformed into a known model. We study this skill as an AI-agent task: can LLM-based agents discover statistical mechanical mappings from a raw partition function to a tractable representation? To probe this question, we introduce StatMechBench-v0, a benchmark of six Ising-type problems covering transfer-matrix methods, gauge-removable disorder, and planar/Pfaffian structure. We evaluate a simple propose-verify-revise agent across multiple LLMs and problem phrasings. The results show that numerical feedback often helps agents repair code and recover correct partition functions. However, agents can also pass the numerical checks while misidentifying the underlying tractable class or understating computational complexity. This both reveals limitations in current LLM reasoning and calls for a verification stack that goes beyond numerical agreement, incorporating, for example, symbolic checks and structural invariants. Our study provides an early evaluation and design directions for AI agents aimed at structural discovery in theoretical physics.",
+      "authors": [
+        "Wanyu Zhao",
+        "Wanbing Zhao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-29T01:00:59Z",
+      "updated": "2026-07-29T01:00:59Z",
+      "announced_date": "2026-07-29",
+      "first_seen": "2026-07-29",
+      "comment": "Accepted to the AID-Wild workshop at CAIS 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.26367v1",
+        "pdf": "https://arxiv.org/pdf/2607.26367v1",
+        "html": "https://arxiv.org/html/2607.26367"
+      },
+      "score": 11,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

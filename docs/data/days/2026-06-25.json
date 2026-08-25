@@ -1,0 +1,126 @@
+{
+  "date": "2026-06-25",
+  "count": 2,
+  "report": {
+    "date": "2026-06-25",
+    "count": 2,
+    "themes": [
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On June 25, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Web agents (1), Memory (1), and Multimodal (1).",
+      "highlights": [
+        {
+          "id": "2606.27499",
+          "title": "DMV-Bench: Diagnosing Long-Horizon Multimodal Agents' Visual Memory with Incidental Cue Injection",
+          "blurb": "Research on agent memory has matured rapidly, but almost entirely on the text side: few existing benchmarks ask, in an interactive environment, when an agent genuinely needs to remember what it saw rather than what it co…"
+        },
+        {
+          "id": "2606.27595",
+          "title": "Ko-WideSearch: A Korean Breadth-Search Benchmark for Exhaustive Set Enumeration by Web Agents",
+          "blurb": "Web-agent benchmarks overwhelmingly measure depth -- pinning one obscure answer behind a chain of constraints -- while breadth, exhaustively enumerating a closed set and filling each item's attributes, is barely evaluate…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年6月25日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在网页智能体（1）、记忆（1）、多模态（1）。",
+      "highlights": [
+        {
+          "id": "2606.27499",
+          "title": "DMV-Bench: Diagnosing Long-Horizon Multimodal Agents' Visual Memory with Incidental Cue Injection",
+          "blurb": "Research on agent memory has matured rapidly, but almost entirely on the text side: few existing benchmarks ask, in an interactive environment, when an agent genuinely needs to remember what it saw rather than what it co…"
+        },
+        {
+          "id": "2606.27595",
+          "title": "Ko-WideSearch: A Korean Breadth-Search Benchmark for Exhaustive Set Enumeration by Web Agents",
+          "blurb": "Web-agent benchmarks overwhelmingly measure depth -- pinning one obscure answer behind a chain of constraints -- while breadth, exhaustively enumerating a closed set and filling each item's attributes, is barely evaluate…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.27595",
+      "title": "Ko-WideSearch: A Korean Breadth-Search Benchmark for Exhaustive Set Enumeration by Web Agents",
+      "abstract": "Web-agent benchmarks overwhelmingly measure depth -- pinning one obscure answer behind a chain of constraints -- while breadth, exhaustively enumerating a closed set and filling each item's attributes, is barely evaluated, especially outside English. Breadth is also hard to build: certifying that a gold set is complete and every cell correct is far costlier than checking a single answer. I introduce \\textsc{Ko-WideSearch}, a Korean breadth-search benchmark built by an automated synthesize-and-verify pipeline. Each task names a set-parent entity -- a TV season, a dynasty, a league, an administrative region, an election -- and asks for its full membership plus a per-item attribute table, graded by Item-, Column-, and Row-F1. It spans 228 tables over 190 entities and sixteen categories across three difficulty tiers, set by two structural knobs I dial independently -- table width and a 2-D composite key -- so cross-product membership climbs from 0\\% to 100\\% across the tiers. A single normalization-aware comparator is shared between gold construction and grading, so stable date and count columns are not over-dropped on formatting alone. Across twenty web agents, the failure is consistent: agents recover the set but not the rows (e.g.\\ Item-F1 92.8 against Row-F1 53.7), accuracy falls steadily as the knobs harden, and neither more search nor more spend closes the gap. Broken down by cell, the hard part is finding the right value, not formatting it: open-ended free-text cells fail most, while cells with a standard answer such as a date or a name usually come out right.",
+      "authors": [
+        "Minbyul Jeong"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-25T22:51:59Z",
+      "updated": "2026-06-25T22:51:59Z",
+      "announced_date": "2026-06-25",
+      "first_seen": "2026-06-25",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.27595v1",
+        "pdf": "https://arxiv.org/pdf/2606.27595v1",
+        "html": "https://arxiv.org/html/2606.27595"
+      },
+      "score": 12,
+      "tags": [
+        "web"
+      ],
+      "field": "web",
+      "citations": 0
+    },
+    {
+      "id": "2606.27499",
+      "title": "DMV-Bench: Diagnosing Long-Horizon Multimodal Agents' Visual Memory with Incidental Cue Injection",
+      "abstract": "Research on agent memory has matured rapidly, but almost entirely on the text side: few existing benchmarks ask, in an interactive environment, when an agent genuinely needs to remember what it saw rather than what it could write down. We introduce DMV-Bench (Code: https://github.com/yyyujintang/DMV-Bench), the first interactive benchmark for multimodal-agent visual memory. DMV-Bench is built on a controlled home-furnishing e-commerce catalogue of 1,000 product variants in which a text-leakage contract keeps the discriminative signal of each task in the pixels alone. Across a chain of autonomous shopping sessions, every visited product image carries a unique, pre-rendered incidental cue, and the agent is later asked to recall a particular cued product and navigate to its URL. Inspired by dual-coding theory, we propose DualMem, a memory architecture that maintains a visual and a verbal code in parallel. On DMV-Bench, DualMem outperforms a caption baseline and three recent multimodal agent-memory systems at every chain length J in {5, 10, 15, 50} on both Gemini 2.5 Flash and Qwen2.5-VL-7B, with the lead surviving controls for memory-bank size and encoding-position bias, and an asymmetric dual-coding regime in which vision carries the cue end-to-end while the verbal channel plays a smaller query-grounding role.",
+      "authors": [
+        "Yujin Tang",
+        "Chenming Shang",
+        "Ruize Xu",
+        "Nikhil Singh"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-06-25T19:34:25Z",
+      "updated": "2026-06-25T19:34:25Z",
+      "announced_date": "2026-06-25",
+      "first_seen": "2026-06-25",
+      "comment": "16 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.27499v1",
+        "pdf": "https://arxiv.org/pdf/2606.27499v1",
+        "html": "https://arxiv.org/html/2606.27499"
+      },
+      "score": 13,
+      "tags": [
+        "memory",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    }
+  ]
+}

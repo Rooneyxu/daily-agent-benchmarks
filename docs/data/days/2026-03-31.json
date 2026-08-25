@@ -1,0 +1,363 @@
+{
+  "date": "2026-03-31",
+  "count": 7,
+  "report": {
+    "date": "2026-03-31",
+    "count": 7,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 5,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multimodal",
+        "count": 3,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      }
+    ],
+    "en": {
+      "headline": "7 new agent benchmarks",
+      "summary": "On March 31, 2026, arXiv listed 7 new agent benchmarks. Work clustered around Planning / reasoning (5), Multimodal (3), Memory (2), and Tool use (2).",
+      "highlights": [
+        {
+          "id": "2603.29199",
+          "title": "AEC-Bench: A Multimodal Benchmark for Agentic Systems in Architecture, Engineering, and Construction",
+          "blurb": "The AEC-Bench is a multimodal benchmark for evaluating agentic systems on real-world tasks in the Architecture, Engineering, and Construction (AEC) domain."
+        },
+        {
+          "id": "2603.29139",
+          "title": "SciVisAgentBench: A Benchmark for Evaluating Scientific Data Analysis and Visualization Agents",
+          "blurb": "Recent advances in large language models (LLMs) have enabled agentic systems to translate natural-language intent into executable scientific visualization (SciVis) tasks."
+        },
+        {
+          "id": "2603.29902",
+          "title": "ATP-Bench: Towards Agentic Tool Planning for MLLM Interleaved Generation",
+          "blurb": "Interleaved text-and-image generation represents a significant frontier for Multimodal Large Language Models (MLLMs), offering a more intuitive way to convey complex information."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 7 篇 Agent Benchmark",
+      "summary": "2026年3月31日，arXiv 新增 7 篇 Agent Benchmark。当日主题集中在规划 / 推理（5）、多模态（3）、记忆（2）、工具使用（2）。",
+      "highlights": [
+        {
+          "id": "2603.29199",
+          "title": "AEC-Bench: A Multimodal Benchmark for Agentic Systems in Architecture, Engineering, and Construction",
+          "blurb": "The AEC-Bench is a multimodal benchmark for evaluating agentic systems on real-world tasks in the Architecture, Engineering, and Construction (AEC) domain."
+        },
+        {
+          "id": "2603.29139",
+          "title": "SciVisAgentBench: A Benchmark for Evaluating Scientific Data Analysis and Visualization Agents",
+          "blurb": "Recent advances in large language models (LLMs) have enabled agentic systems to translate natural-language intent into executable scientific visualization (SciVis) tasks."
+        },
+        {
+          "id": "2603.29902",
+          "title": "ATP-Bench: Towards Agentic Tool Planning for MLLM Interleaved Generation",
+          "blurb": "Interleaved text-and-image generation represents a significant frontier for Multimodal Large Language Models (MLLMs), offering a more intuitive way to convey complex information."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.00284",
+      "title": "Improvisational Games as a Benchmark for Social Intelligence of AI Agents: The Case of Connections",
+      "abstract": "We formally introduce a improvisational wordplay game called Connections to explore reasoning capabilities of AI agents. Playing Connections combines skills in knowledge retrieval, summarization and awareness of cognitive states of other agents. We show how the game serves as a good benchmark for social intelligence abilities of language model based agents that go beyond the agents' own memory and deductive reasoning and also involve gauging the understanding capabilities of other agents. Finally, we show how through communication with other agents in a constrained environment, AI agents must demonstrate social awareness and intelligence in games involving collaboration.",
+      "authors": [
+        "Gaurav Rajesh Parikh",
+        "Angikar Ghosal"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-31T22:16:25Z",
+      "updated": "2026-03-31T22:16:25Z",
+      "announced_date": "2026-03-31",
+      "first_seen": "2026-03-31",
+      "comment": "https://wordplay-workshop.github.io/wordplay2024/pdfs/16.pdf",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.00284v1",
+        "pdf": "https://arxiv.org/pdf/2604.00284v1",
+        "html": "https://arxiv.org/html/2604.00284"
+      },
+      "score": 16,
+      "tags": [
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2604.19787",
+      "title": "LLM Agents Predict Social Media Reactions but Do Not Outperform Text Classifiers: Benchmarking Simulation Accuracy Using 120K+ Personas of 1511 Humans",
+      "abstract": "Social media platforms mediate how billions form opinions and engage with public discourse. As autonomous AI agents increasingly participate in these spaces, understanding their behavioral fidelity becomes critical for platform governance and democratic resilience. Previous work demonstrates that LLM-powered agents can replicate aggregate survey responses, yet few studies test whether agents can predict specific individuals' reactions to specific content. This study benchmarks LLM-based agents' accuracy in predicting human social media reactions (like, dislike, comment, share, no reaction) across 120,000+ unique agent-persona combinations derived from 1,511 Serbian participants and 27 large language models. In Study 1, agents achieved 70.7% overall accuracy, with LLM choice producing a 13 percentage-point performance spread. Study 2 employed binary forced-choice (like/dislike) evaluation with chance-corrected metrics. Agents achieved Matthews Correlation Coefficient (MCC) of 0.29, indicating genuine predictive signal beyond chance. However, conventional text-based supervised classifiers using TF-IDF representations outperformed LLM agents (MCC of 0.36), suggesting predictive gains reflect semantic access rather than uniquely agentic reasoning. The genuine predictive validity of zero-shot persona-prompted agents warns against potential manipulation through easily deploying swarms of behaviorally distinct AI agents on social media, while simultaneously offering opportunities to use such agents in simulations for predicting polarization dynamics and informing AI policy. The advantage of using zero-shot agents is that they require no task-specific training, making their large-scale deployment easy across diverse contexts. Limitations include single-country sampling. Future research should explore multilingual testing and fine-tuning approaches.",
+      "authors": [
+        "Ljubisa Bojic",
+        "Alexander Felfernig",
+        "Bojana Dinic",
+        "Velibor Ilic",
+        "Achim Rettinger",
+        "Vera Mevorah",
+        "Damian Trilling"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-03-31T19:27:59Z",
+      "updated": "2026-03-31T19:27:59Z",
+      "announced_date": "2026-03-31",
+      "first_seen": "2026-03-31",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.19787v1",
+        "pdf": "https://arxiv.org/pdf/2604.19787v1",
+        "html": "https://arxiv.org/html/2604.19787"
+      },
+      "score": 17,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2603.29902",
+      "title": "ATP-Bench: Towards Agentic Tool Planning for MLLM Interleaved Generation",
+      "abstract": "Interleaved text-and-image generation represents a significant frontier for Multimodal Large Language Models (MLLMs), offering a more intuitive way to convey complex information. Current paradigms rely on either image generation or retrieval augmentation, yet they typically treat the two as mutually exclusive paths, failing to unify factuality with creativity. We argue that the next milestone in this field is Agentic Tool Planning, where the model serves as a central controller that autonomously determines when, where, and which tools to invoke to produce interleaved responses for visual-critical queries. To systematically evaluate this paradigm, we introduce ATP-Bench, a novel benchmark comprising 7,702 QA pairs (including 1,592 VQA pairs) across eight categories and 25 visual-critical intents, featuring human-verified queries and ground truths. Furthermore, to evaluate agentic planning independent of end-to-end execution and changing tool backends, we propose a Multi-Agent MLLM-as-a-Judge (MAM) system. MAM evaluates tool-call precision, identifies missed opportunities for tool use, and assesses overall response quality without requiring ground-truth references. Our extensive experiments on 10 state-of-the-art MLLMs reveal that models struggle with coherent interleaved planning and exhibit significant variations in tool-use behavior, highlighting substantial room for improvement and providing actionable guidance for advancing interleaved generation. Dataset and code are available at https://github.com/Qwen-Applications/ATP-Bench.",
+      "authors": [
+        "Yinuo Liu",
+        "Zi Qian",
+        "Heng Zhou",
+        "Jiahao Zhang",
+        "Yajie Zhang",
+        "Zhihang Li",
+        "Mengyu Zhou",
+        "Erchao Zhao",
+        "Xiaoxi Jiang",
+        "Guanjun Jiang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-31T15:47:59Z",
+      "updated": "2026-08-22T08:28:51Z",
+      "announced_date": "2026-03-31",
+      "first_seen": "2026-03-31",
+      "comment": "Accepted at the European Conference on Computer Vision (ECCV) 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.29902v2",
+        "pdf": "https://arxiv.org/pdf/2603.29902v2",
+        "html": "https://arxiv.org/html/2603.29902"
+      },
+      "score": 21,
+      "tags": [
+        "tool-use",
+        "multi-agent",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2603.29399",
+      "title": "ELT-Bench-Verified: Benchmark Quality Issues Underestimate AI Agent Capabilities",
+      "abstract": "Constructing Extract-Load-Transform (ELT) pipelines is a labor-intensive data engineering task and a high-impact target for AI automation. On ELT-Bench, the first benchmark for end-to-end ELT pipeline construction, AI agents initially showed low success rates, suggesting they lacked practical utility. We revisit these results and identify two factors causing a substantial underestimation of agent capabilities. First, re-evaluating ELT-Bench with upgraded large language models reveals that the extraction and loading stage is largely solved, while transformation performance improves significantly. Second, we develop an Auditor-Corrector methodology that combines scalable LLM-driven root-cause analysis with rigorous human validation (inter-annotator agreement Fleiss' kappa = 0.85) to audit benchmark quality. Applying this to ELT-Bench uncovers that most failed transformation tasks contain benchmark-attributable errors -- including rigid evaluation scripts, ambiguous specifications, and incorrect ground truth -- that penalize correct agent outputs. Based on these findings, we construct ELT-Bench-Verified, a revised benchmark with refined evaluation logic and corrected ground truth. Re-evaluating on this version yields significant improvement attributable entirely to benchmark correction. Our results show that both rapid model improvement and benchmark quality issues contributed to underestimating agent capabilities. More broadly, our findings echo observations of pervasive annotation errors in text-to-SQL benchmarks, suggesting quality issues are systemic in data engineering evaluation. Systematic quality auditing should be standard practice for complex agentic tasks. We release ELT-Bench-Verified to provide a more reliable foundation for progress in AI-driven data engineering automation.",
+      "authors": [
+        "Christopher Zanoli",
+        "Andrea Giovannini",
+        "Tengjun Jin",
+        "Ana Klimovic",
+        "Yotam Perlitz"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.DB"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-31T08:02:16Z",
+      "updated": "2026-04-02T17:59:44Z",
+      "announced_date": "2026-03-31",
+      "first_seen": "2026-03-31",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.29399v2",
+        "pdf": "https://arxiv.org/pdf/2603.29399v2",
+        "html": "https://arxiv.org/html/2603.29399"
+      },
+      "score": 19,
+      "tags": [],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2603.29318",
+      "title": "PSPA-Bench: A Personalized Benchmark for Smartphone GUI Agent",
+      "abstract": "Smartphone GUI agents execute tasks by operating directly on app interfaces, offering a path to broad capability without deep system integration. However, real-world smartphone use is highly personalized: users adopt diverse workflows and preferences, challenging agents to deliver customized assistance rather than generic solutions. Existing GUI agent benchmarks cannot adequately capture this personalization dimension due to sparse user-specific data and the lack of fine-grained evaluation metrics. To address this gap, we present PSPA-Bench, the benchmark dedicated to evaluating personalization in smartphone GUI agents. PSPA-Bench comprises over 12,855 personalized instructions aligned with real-world user behaviors across 10 representative daily-use scenarios and 22 mobile apps, and introduces a structure-aware process evaluation method that measures agents' personalized capabilities at a fine-grained level. Through PSPA-Bench, we benchmark 11 state-of-the-art GUI agents. Results reveal that current methods perform poorly under personalized settings, with even the strongest agent achieving limited success. Our analysis further highlights three directions for advancing personalized GUI agents: (1) reasoning-oriented models consistently outperform general LLMs, (2) perception remains a simple yet critical capability, and (3) reflection and long-term memory mechanisms are key to improving adaptation. Together, these findings establish PSPA-Bench as a foundation for systematic study and future progress in personalized GUI agents.",
+      "authors": [
+        "Hongyi Nie",
+        "Xunyuan Liu",
+        "Yudong Bai",
+        "Yaqing Wang",
+        "Yang Liu",
+        "Quanming Yao",
+        "Zhen Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-31T06:37:12Z",
+      "updated": "2026-03-31T06:37:12Z",
+      "announced_date": "2026-03-31",
+      "first_seen": "2026-03-31",
+      "comment": "28 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.29318v1",
+        "pdf": "https://arxiv.org/pdf/2603.29318v1",
+        "html": "https://arxiv.org/html/2603.29318"
+      },
+      "score": 21,
+      "tags": [
+        "gui",
+        "memory",
+        "planning"
+      ],
+      "field": "computer-use",
+      "citations": 3
+    },
+    {
+      "id": "2603.29199",
+      "title": "AEC-Bench: A Multimodal Benchmark for Agentic Systems in Architecture, Engineering, and Construction",
+      "abstract": "The AEC-Bench is a multimodal benchmark for evaluating agentic systems on real-world tasks in the Architecture, Engineering, and Construction (AEC) domain. The benchmark covers tasks requiring drawing understanding, cross-sheet reasoning, and construction project-level coordination. This report describes the benchmark motivation, dataset taxonomy, evaluation protocol, and baseline results across several domain-specific foundation model harnesses. We use AEC-Bench to identify consistent tools and harness design techniques that uniformly improve performance across foundation models in their own base harnesses, such as Claude Code and Codex. We openly release our benchmark dataset, agent harness, and evaluation code for full replicability at https://github.com/nomic-ai/aec-bench under an Apache 2 license.",
+      "authors": [
+        "Harsh Mankodiya",
+        "Chase Gallik",
+        "Theodoros Galanos",
+        "Andriy Mulyar"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-31T03:10:28Z",
+      "updated": "2026-03-31T03:10:28Z",
+      "announced_date": "2026-03-31",
+      "first_seen": "2026-03-31",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.29199v1",
+        "pdf": "https://arxiv.org/pdf/2603.29199v1",
+        "html": "https://arxiv.org/html/2603.29199"
+      },
+      "score": 22,
+      "tags": [
+        "tool-use",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 3
+    },
+    {
+      "id": "2603.29139",
+      "title": "SciVisAgentBench: A Benchmark for Evaluating Scientific Data Analysis and Visualization Agents",
+      "abstract": "Recent advances in large language models (LLMs) have enabled agentic systems to translate natural-language intent into executable scientific visualization (SciVis) tasks. Despite rapid progress, the community lacks a principled and reproducible benchmark for evaluating these emerging SciVis agents in realistic, multi-step analysis settings. We present SciVisAgentBench, a comprehensive and extensible benchmark for evaluating scientific data analysis and visualization agents. Our benchmark is grounded in a structured taxonomy spanning four dimensions: application domain, data type, complexity level, and visualization operation. It currently comprises 108 expert-crafted cases covering diverse SciVis scenarios. To enable reliable assessment, we introduce a multimodal outcome-centric evaluation pipeline that combines LLM-based judging with deterministic evaluators, including image-based metrics, code checkers, rule-based verifiers, and case-specific evaluators. We also conduct a validity study with 12 SciVis experts to examine the agreement between human and LLM judges. Using this framework, we evaluate representative SciVis agents and general-purpose coding agents to establish initial baselines and reveal capability gaps. SciVisAgentBench is designed as a living benchmark to support systematic comparison, diagnose failure modes, and drive progress in agentic SciVis. The benchmark is available at https://scivisagentbench.github.io/.",
+      "authors": [
+        "Kuangshi Ai",
+        "Haichao Miao",
+        "Kaiyuan Tang",
+        "Nathaniel Gorski",
+        "Jianxin Sun",
+        "Guoxi Liu",
+        "Helgi I. Ingolfsson",
+        "David Lenz",
+        "Hanqi Guo",
+        "Hongfeng Yu",
+        "Teja Leburu",
+        "Michael Molash",
+        "Bei Wang",
+        "Tom Peterka",
+        "Chaoli Wang",
+        "Shusen Liu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.GR",
+        "cs.HC"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-31T01:41:28Z",
+      "updated": "2026-08-09T04:03:34Z",
+      "announced_date": "2026-03-31",
+      "first_seen": "2026-03-31",
+      "comment": "IEEE Transactions on Visualization and Computer Graphics (IEEE VIS '26)",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.29139v4",
+        "pdf": "https://arxiv.org/pdf/2603.29139v4",
+        "html": "https://arxiv.org/html/2603.29139"
+      },
+      "score": 22,
+      "tags": [
+        "coding",
+        "multimodal",
+        "science"
+      ],
+      "field": "science",
+      "citations": 8
+    }
+  ]
+}

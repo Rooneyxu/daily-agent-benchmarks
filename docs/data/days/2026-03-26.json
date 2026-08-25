@@ -1,0 +1,333 @@
+{
+  "date": "2026-03-26",
+  "count": 6,
+  "report": {
+    "date": "2026-03-26",
+    "count": 6,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      }
+    ],
+    "en": {
+      "headline": "6 new agent benchmarks",
+      "summary": "On March 26, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Planning / reasoning (3), Safety (2), Memory (1), and Dialogue / customer (1).",
+      "highlights": [
+        {
+          "id": "2603.24943",
+          "title": "FinMCP-Bench: Benchmarking LLM Agents for Real-World Financial Tool Use under the Model Context Protocol",
+          "blurb": "This paper introduces \\textbf{FinMCP-Bench}, a novel benchmark for evaluating large language models (LLMs) in solving real-world financial problems through tool invocation of financial model context protocols."
+        },
+        {
+          "id": "2603.25253",
+          "title": "MolQuest: A Benchmark for Agentic Evaluation of Abductive Reasoning in Chemical Structure Elucidation",
+          "blurb": "Large language models (LLMs) hold considerable potential for advancing scientific discovery, yet systematic assessment of their dynamic reasoning in real-world research remains limited."
+        },
+        {
+          "id": "2603.25645",
+          "title": "Colon-Bench: An Agentic Workflow for Scalable Dense Lesion Annotation in Full-Procedure Colonoscopy Videos",
+          "blurb": "Early screening via colonoscopy is critical for colon cancer prevention, yet developing robust AI systems for this domain is hindered by the lack of densely annotated, long-sequence video datasets."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 6 篇 Agent Benchmark",
+      "summary": "2026年3月26日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在规划 / 推理（3）、安全（2）、记忆（1）、对话 / 客服（1）。",
+      "highlights": [
+        {
+          "id": "2603.24943",
+          "title": "FinMCP-Bench: Benchmarking LLM Agents for Real-World Financial Tool Use under the Model Context Protocol",
+          "blurb": "This paper introduces \\textbf{FinMCP-Bench}, a novel benchmark for evaluating large language models (LLMs) in solving real-world financial problems through tool invocation of financial model context protocols."
+        },
+        {
+          "id": "2603.25253",
+          "title": "MolQuest: A Benchmark for Agentic Evaluation of Abductive Reasoning in Chemical Structure Elucidation",
+          "blurb": "Large language models (LLMs) hold considerable potential for advancing scientific discovery, yet systematic assessment of their dynamic reasoning in real-world research remains limited."
+        },
+        {
+          "id": "2603.25645",
+          "title": "Colon-Bench: An Agentic Workflow for Scalable Dense Lesion Annotation in Full-Procedure Colonoscopy Videos",
+          "blurb": "Early screening via colonoscopy is critical for colon cancer prevention, yet developing robust AI systems for this domain is hindered by the lack of densely annotated, long-sequence video datasets."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2603.25973",
+      "title": "MemoryCD: Benchmarking Long-Context User Memory of LLM Agents for Lifelong Cross-Domain Personalization",
+      "abstract": "Recent advancements in Large Language Models (LLMs) have expanded context windows to million-token scales, yet benchmarks for evaluating memory remain limited to short-session synthetic dialogues. We introduce \\textsc{MemoryCD}, the first large-scale, user-centric, cross-domain memory benchmark derived from lifelong real-world behaviors in the Amazon Review dataset. Unlike existing memory datasets that rely on scripted personas to generate synthetic user data, \\textsc{MemoryCD} tracks authentic user interactions across years and multiple domains. We construct a multi-faceted long-context memory evaluation pipeline of 14 state-of-the-art LLM base models with 6 memory method baselines on 4 distinct personalization tasks over 12 diverse domains to evaluate an agent's ability to simulate real user behaviors in both single and cross-domain settings. Our analysis reveals that existing memory methods are far from user satisfaction in various domains, offering the first testbed for cross-domain life-long personalization evaluation.",
+      "authors": [
+        "Weizhi Zhang",
+        "Xiaokai Wei",
+        "Wei-Chieh Huang",
+        "Zheng Hui",
+        "Chen Wang",
+        "Michelle Gong",
+        "Philip S. Yu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-03-26T23:28:47Z",
+      "updated": "2026-03-26T23:28:47Z",
+      "announced_date": "2026-03-26",
+      "first_seen": "2026-03-26",
+      "comment": "Published as a workshop paper in Lifelong Agent @ ICLR 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.25973v1",
+        "pdf": "https://arxiv.org/pdf/2603.25973v1",
+        "html": "https://arxiv.org/html/2603.25973"
+      },
+      "score": 16,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 15
+    },
+    {
+      "id": "2603.25821",
+      "title": "Doctorina MedBench: A Dialogue-Based Benchmark and Evaluation Framework for Agent-Based Medical AI",
+      "abstract": "We present Doctorina MedBench, an evaluation framework for agent-based medical AI based on the simulation of physician-patient interactions. Unlike traditional medical benchmarks that rely on solving standardized test questions, the proposed approach models a multi-step clinical dialogue in which an AI system must collect medical history, analyze available synthetic attachments when present, formulate differential diagnoses, and provide diagnostic and management recommendations. System performance is evaluated across separate task-level domains, including diagnosis, differential diagnosis, treatment, safety-critical condition handling, and dialogue-step behavior; the broader D.O.T.S. framework is used as a supplementary summary for diagnosis, observations/investigations, treatment, and step count. The framework also supports testing and quality-monitoring workflows intended to identify changes in model behavior during development. It supports safety-oriented cases, category-based sampling of synthetic clinical scenarios, and regression-style comparisons across system versions. In the reported study, the analyzed paired complete-case cohort consisted of 254 physician-authored synthetic clinical cases retained from 261 attempted case identifiers. The evaluation metrics are intended for comparative research on interactive medical AI systems and for studying clinical reasoning workflows in synthetic dialogue settings. Our results suggest that simulated clinical dialogue can provide a complementary assessment setting to traditional examination-style benchmarks, while the reported findings do not establish independent clinical validity, clinical effectiveness, or readiness for real-world deployment.",
+      "authors": [
+        "Anna Kozlova",
+        "Stanislau Salavei",
+        "Pavel Satalkin",
+        "Hanna Plotnitskaya",
+        "Sergey Parfenyuk",
+        "Andy Nkansah"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-03-26T18:38:25Z",
+      "updated": "2026-08-13T17:57:32Z",
+      "announced_date": "2026-03-26",
+      "first_seen": "2026-03-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.25821v3",
+        "pdf": "https://arxiv.org/pdf/2603.25821v3",
+        "html": "https://arxiv.org/html/2603.25821"
+      },
+      "score": 8,
+      "tags": [
+        "safety",
+        "planning",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 0
+    },
+    {
+      "id": "2603.25645",
+      "title": "Colon-Bench: An Agentic Workflow for Scalable Dense Lesion Annotation in Full-Procedure Colonoscopy Videos",
+      "abstract": "Early screening via colonoscopy is critical for colon cancer prevention, yet developing robust AI systems for this domain is hindered by the lack of densely annotated, long-sequence video datasets. Existing datasets predominantly focus on single-class polyp detection and lack the rich spatial, temporal, and linguistic annotations required to evaluate modern Multimodal Large Language Models (MLLMs). To address this critical gap, we introduce Colon-Bench, generated via a novel multi-stage agentic workflow. Our pipeline seamlessly integrates temporal proposals, bounding-box tracking, AI-driven visual confirmation, and human-in-the-loop review to scalably annotate full-procedure videos. The resulting verified benchmark is unprecedented in scope, encompassing 528 videos, 14 distinct lesion categories (including polyps, ulcers, and bleeding), over 300,000 bounding boxes, 213,000 segmentation masks, and 133,000 words of clinical descriptions. We utilize Colon-Bench to rigorously evaluate state-of-the-art MLLMs across lesion classification, Open-Vocabulary Video Object Segmentation (OV-VOS), and video Visual Question Answering (VQA). The MLLM results demonstrate surprisingly high localization performance in medical domains compared to SAM-3. Finally, we analyze common VQA errors from MLLMs to introduce a novel \"colon-skill\" prompting strategy, improving zero-shot MLLM performance by up to 9.7% across most MLLMs. The dataset and the code are available at https://abdullahamdi.com/colon-bench .",
+      "authors": [
+        "Abdullah Hamdi",
+        "Changchun Yang",
+        "Xin Gao"
+      ],
+      "categories": [
+        "eess.IV",
+        "cs.CV",
+        "cs.HC"
+      ],
+      "primary_category": "eess.IV",
+      "published": "2026-03-26T16:58:43Z",
+      "updated": "2026-06-28T15:36:28Z",
+      "announced_date": "2026-03-26",
+      "first_seen": "2026-03-26",
+      "comment": "published at MICCAI 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.25645v3",
+        "pdf": "https://arxiv.org/pdf/2603.25645v3",
+        "html": "https://arxiv.org/html/2603.25645"
+      },
+      "score": 16,
+      "tags": [
+        "safety",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 1
+    },
+    {
+      "id": "2603.25253",
+      "title": "MolQuest: A Benchmark for Agentic Evaluation of Abductive Reasoning in Chemical Structure Elucidation",
+      "abstract": "Large language models (LLMs) hold considerable potential for advancing scientific discovery, yet systematic assessment of their dynamic reasoning in real-world research remains limited. Current scientific evaluation benchmarks predominantly rely on static, single-turn Question Answering (QA) formats, which are inadequate for measuring model performance in complex scientific tasks that require multi-step iteration and experimental interaction. To address this gap, we introduce MolQuest, a novel agent-based evaluation framework for molecular structure elucidation built upon authentic chemical experimental data. Unlike existing datasets, MolQuest formalizes molecular structure elucidation as a multi-turn interactive task, requiring models to proactively plan experimental steps, integrate heterogeneous spectral sources (e.g., NMR, MS), and iteratively refine structural hypotheses. This framework systematically evaluates LLMs' abductive reasoning and strategic decision-making abilities within a vast and complex chemical space. Empirical results reveal that contemporary frontier models exhibit significant limitations in authentic scientific scenarios: notably, even state-of-the-art (SOTA) models achieve an accuracy of only approximately 50%, while the performance of most other models remains below the 30% threshold. This work provides a reproducible and extensible framework for science-oriented LLM evaluation, our findings highlight the critical gap in current LLMs' strategic scientific reasoning, setting a clear direction for future research toward AI that can actively participate in the scientific process.",
+      "authors": [
+        "Taolin Han",
+        "Shuang Wu",
+        "Jinghang Wang",
+        "Yuhao Zhou",
+        "Renquan Lv",
+        "Bing Zhao",
+        "Wei Hu"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-03-26T09:57:17Z",
+      "updated": "2026-03-26T09:57:17Z",
+      "announced_date": "2026-03-26",
+      "first_seen": "2026-03-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.25253v1",
+        "pdf": "https://arxiv.org/pdf/2603.25253v1",
+        "html": "https://arxiv.org/html/2603.25253"
+      },
+      "score": 18,
+      "tags": [
+        "planning",
+        "research",
+        "science"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2603.25226",
+      "title": "WebTestBench: Evaluating Computer-Use Agents towards End-to-End Automated Web Testing",
+      "abstract": "The emergence of Large Language Models (LLMs) has catalyzed a paradigm shift in programming, giving rise to \"vibe coding\", where users can build complete projects and even control computers using natural language instructions. This paradigm has driven automated webpage development, but it introduces a new requirement about how to automatically verify whether the web functionalities are reliably implemented. Existing works struggle to adapt, relying on static visual similarity or predefined checklists that constrain their utility in open-ended environments. Furthermore, they overlook a vital aspect of software quality, namely latent logical constraints. To address these gaps, we introduce WebTestBench, a benchmark for evaluating end-to-end automated web testing. WebTestBench encompasses comprehensive dimensions across diverse web application categories. We decompose the testing process into two cascaded sub-tasks, checklist generation and defect detection, and propose WebTester, a baseline framework for this task. Evaluating popular LLMs with WebTester reveals severe challenges, including insufficient test completeness, detection bottlenecks, and long-horizon interaction unreliability. These findings expose a substantial gap between current computer-use agent capabilities and industrial-grade deployment demands. We hope that WebTestBench provides valuable insights and guidance for advancing end-to-end automated web testing. Our dataset and code are available at https://github.com/friedrichor/WebTestBench.",
+      "authors": [
+        "Fanheng Kong",
+        "Jingyuan Zhang",
+        "Yang Yue",
+        "Chenxi Sun",
+        "Yang Tian",
+        "Shi Feng",
+        "Xiaocui Yang",
+        "Daling Wang",
+        "Yu Tian",
+        "Jun Du",
+        "Wenchong Zeng",
+        "Han Li",
+        "Kun Gai"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-03-26T09:27:29Z",
+      "updated": "2026-03-26T09:27:29Z",
+      "announced_date": "2026-03-26",
+      "first_seen": "2026-03-26",
+      "comment": "24 pages, code: https://github.com/friedrichor/WebTestBench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.25226v1",
+        "pdf": "https://arxiv.org/pdf/2603.25226v1",
+        "html": "https://arxiv.org/html/2603.25226"
+      },
+      "score": 15,
+      "tags": [
+        "computer-use"
+      ],
+      "field": "computer-use",
+      "citations": 4
+    },
+    {
+      "id": "2603.24943",
+      "title": "FinMCP-Bench: Benchmarking LLM Agents for Real-World Financial Tool Use under the Model Context Protocol",
+      "abstract": "This paper introduces \\textbf{FinMCP-Bench}, a novel benchmark for evaluating large language models (LLMs) in solving real-world financial problems through tool invocation of financial model context protocols. FinMCP-Bench contains 613 samples spanning 10 main scenarios and 33 sub-scenarios, featuring both real and synthetic user queries to ensure diversity and authenticity. It incorporates 65 real financial MCPs and three types of samples, single tool, multi-tool, and multi-turn, allowing evaluation of models across different levels of task complexity. Using this benchmark, we systematically assess a range of mainstream LLMs and propose metrics that explicitly measure tool invocation accuracy and reasoning capabilities. FinMCP-Bench provides a standardized, practical, and challenging testbed for advancing research on financial LLM agents.",
+      "authors": [
+        "Jie Zhu",
+        "Yimin Tian",
+        "Boyang Li",
+        "Kehao Wu",
+        "Zhongzhi Liang",
+        "Junhui Li",
+        "Xianyin Zhang",
+        "Lifan Guo",
+        "Feng Chen",
+        "Yong Liu",
+        "Chi Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-26T02:20:04Z",
+      "updated": "2026-03-26T02:20:04Z",
+      "announced_date": "2026-03-26",
+      "first_seen": "2026-03-26",
+      "comment": "Accepted by ICASSP 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.24943v1",
+        "pdf": "https://arxiv.org/pdf/2603.24943v1",
+        "html": "https://arxiv.org/html/2603.24943"
+      },
+      "score": 28,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "tool-use",
+      "citations": 4
+    }
+  ]
+}

@@ -1,0 +1,459 @@
+{
+  "date": "2026-05-10",
+  "count": 10,
+  "report": {
+    "date": "2026-05-10",
+    "count": 10,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 5,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 5,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "coding",
+        "count": 3,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 3,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "web",
+        "count": 2,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      }
+    ],
+    "en": {
+      "headline": "10 new agent benchmarks",
+      "summary": "On May 10, 2026, arXiv listed 10 new agent benchmarks. Work clustered around Planning / reasoning (5), Tool use (5), Coding agents (3), and Multimodal (3).",
+      "highlights": [
+        {
+          "id": "2606.14715",
+          "title": "MiroBench: Benchmarking Realism in Agentic Simulation of Real-world Discussions",
+          "blurb": "LLM agents are increasingly used to simulate real world interactions, but it remains unclear whether simulated behaviors preserve the content patterns and interaction dynamics of real human behaviors."
+        },
+        {
+          "id": "2605.09823",
+          "title": "CalBench: Evaluating Coordination-Privacy Trade-offs in Multi-Agent LLMs",
+          "blurb": "Personal AI assistants are beginning to act as delegates with access to calendars, inboxes, and user preferences."
+        },
+        {
+          "id": "2605.09703",
+          "title": "MOTOR-Bench: A Real-world Dataset and Multi-agent Framework for Zero-shot Human Mental State Understanding",
+          "blurb": "Understanding human mental states from natural behavior is crucial for intelligent systems in the real world."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 10 篇 Agent Benchmark",
+      "summary": "2026年5月10日，arXiv 新增 10 篇 Agent Benchmark。当日主题集中在规划 / 推理（5）、工具使用（5）、代码智能体（3）、多模态（3）。",
+      "highlights": [
+        {
+          "id": "2606.14715",
+          "title": "MiroBench: Benchmarking Realism in Agentic Simulation of Real-world Discussions",
+          "blurb": "LLM agents are increasingly used to simulate real world interactions, but it remains unclear whether simulated behaviors preserve the content patterns and interaction dynamics of real human behaviors."
+        },
+        {
+          "id": "2605.09823",
+          "title": "CalBench: Evaluating Coordination-Privacy Trade-offs in Multi-Agent LLMs",
+          "blurb": "Personal AI assistants are beginning to act as delegates with access to calendars, inboxes, and user preferences."
+        },
+        {
+          "id": "2605.09703",
+          "title": "MOTOR-Bench: A Real-world Dataset and Multi-agent Framework for Zero-shot Human Mental State Understanding",
+          "blurb": "Understanding human mental states from natural behavior is crucial for intelligent systems in the real world."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2605.09823",
+      "title": "CalBench: Evaluating Coordination-Privacy Trade-offs in Multi-Agent LLMs",
+      "abstract": "Personal AI assistants are beginning to act as delegates with access to calendars, inboxes, and user preferences. Calendar scheduling makes the trust problem concrete: an assistant must coordinate with other assistants while deciding what to reveal about the person it represents. We introduce CalBench, a controlled benchmark for multi-agent calendar scheduling under private information. In each task, $N$ agents manage separate private calendars and schedule a stream of $M$ incoming meetings while minimizing disruption costs. Because no agent can inspect another agent's calendar, success requires language-mediated coordination rather than centralized planning. CalBench generates solvable scenarios with CP-SAT oracle solutions and decentralized non-LLM reference protocols, enabling evaluation of task success, excess cost, communication efficiency, burden fairness, and privacy leakage under matched information constraints. Across seven model families, we find that completion alone misses important failures: agents leave avoidable cost on the table, communication volume does not predict lower regret, and privacy-preserving silence can deprive teammates of cost information needed for fair burden allocation. CalBench provides a reproducible testbed for studying whether autonomous assistants can coordinate on behalf of users before deployment at scale.",
+      "authors": [
+        "Chelsea Zou",
+        "Yiheng Yao",
+        "Selena She",
+        "Noah Goodman",
+        "Robert D. Hawkins"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-05-10T23:56:02Z",
+      "updated": "2026-06-05T23:10:13Z",
+      "announced_date": "2026-05-10",
+      "first_seen": "2026-05-10",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.09823v3",
+        "pdf": "https://arxiv.org/pdf/2605.09823v3",
+        "html": "https://arxiv.org/html/2605.09823"
+      },
+      "score": 19,
+      "tags": [
+        "multi-agent",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 3
+    },
+    {
+      "id": "2605.11030",
+      "title": "An Executable Benchmarking Suite for Tool-Using Agents",
+      "abstract": "Closed-loop tool-using agents are increasingly evaluated in executable web, code, and micro-task environments, but benchmark reports often conflate workloads, action-generating drivers, and the evidence admitted for systems-facing claims. We present an executable benchmarking suite that makes these objects explicit under a shared evidence-admission contract. The suite connects WebArena Verified, a SWE-Gym slice with SWE-bench-compatible verification, and MiniWoB++ through common workload adapters, task manifests, event schemas, replay/freeze policy, declared drivers, and reporting pipelines. In the canonical release, the gate separates paper-facing evidence from preflight, fixture, smoke, and diagnostic rows while preserving non-admitted artifacts for audit and onboarding. The admitted evidence records latency, invalid-action behavior, patch-generation cost, verifier metadata, replay bindings, and provenance under one auditable contract. The gate is decision-relevant rather than merely clerical: in a separate WebArena Verified controller study, clean-baseline and medium live-stressed evaluation select different fixed controller variants under the same workload and admission contract. The release is scoped as a benchmarking suite and admitted evidence, not a new agent policy, model leaderboard, backend comparison, or autonomous SWE-bench solver.",
+      "authors": [
+        "Zhiqing Zhong",
+        "Zhijing Ye",
+        "Jiamin Wang",
+        "Xiaodong Yu"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-05-10T21:24:53Z",
+      "updated": "2026-06-30T03:38:58Z",
+      "announced_date": "2026-05-10",
+      "first_seen": "2026-05-10",
+      "comment": "Withdrawn by the authors. The authors identified substantive errors that affect the interpretation of the results and the support for the main conclusions. The current version should not be relied upon",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.11030v2",
+        "pdf": "https://arxiv.org/pdf/2605.11030v2",
+        "html": "https://arxiv.org/html/2605.11030"
+      },
+      "score": 15,
+      "tags": [
+        "web",
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2605.09703",
+      "title": "MOTOR-Bench: A Real-world Dataset and Multi-agent Framework for Zero-shot Human Mental State Understanding",
+      "abstract": "Understanding human mental states from natural behavior is crucial for intelligent systems in the real world. However, most current research focuses on predicting isolated mental state labels, lacking structured annotations of complex interpersonal interactions. To support structured analysis, we introduce MOTOR-Bench, a carefully-designed benchmark with a real-world dataset MOTOR-dataset, containing 1,440 multimodal video clips in collaborative learning scenarios, reflecting key real-world data challenges including natural class imbalance, visual noise, and domain-specific language. Each sample is labeled by educational experts based on self-regulated learning theory. We further evaluate several state-of-the-art multimodal large language models and multi-agent systems in a zero-shot setting on our MOTOR-Bench. However, their performance on this task remains limited, suggesting that existing methods still struggle with structured reasoning from observable behavior to deeper mental states. To address this challenge, we propose a reasoning multi-agent framework, named MOTOR-MAS. It coordinates multiple agents through a structured agent coordination mechanism to infer explicit behaviors, internal cognitions, and psychological emotions. Experimental results show that our MOTOR-MAS outperforms the best single-model benchmark by 15.93 points in Macro-F1 scores for the three labels of behavior, cognition, and emotion, and outperforms the general multi-agent benchmark by 10.2 points in internal cognition prediction.",
+      "authors": [
+        "Xiaoyu Yuan",
+        "Niklas Heikkala",
+        "Tiina Törmänen",
+        "Hanna Järvenoja",
+        "Guoying Zhao",
+        "Haoyu Chen"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-05-10T18:51:34Z",
+      "updated": "2026-05-10T18:51:34Z",
+      "announced_date": "2026-05-10",
+      "first_seen": "2026-05-10",
+      "comment": "Accepted by CVPR 2026 workshop AI4RWC",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.09703v1",
+        "pdf": "https://arxiv.org/pdf/2605.09703v1",
+        "html": "https://arxiv.org/html/2605.09703"
+      },
+      "score": 17,
+      "tags": [
+        "multi-agent",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multi-agent",
+      "citations": 1
+    },
+    {
+      "id": "2605.09698",
+      "title": "Ambig-DS: A Benchmark for Task-Framing Ambiguity in Data-Science Agents",
+      "abstract": "As data-science agents shift from co-pilots to auto-pilots, silent misframing becomes a critical failure mode. Agents quietly commit to plausible but unintended task framings, producing clean, executable artifacts that hide their incorrect assessment of the task. Existing benchmarks score whether the pipeline runs, ignoring whether the agent recognized the task was underspecified. We introduce Ambig-DS, two diagnostic suites: one for prediction-target ambiguity (Ambig-DS-Target, 51 tasks built on DSBench, a tabular modeling benchmark) and one for evaluation-objective ambiguity (Ambig-DS-Objective, 61 tasks built on MLE-bench, a Kaggle-style ML competition benchmark), constructed so that scoring uses each source benchmark's original evaluator. For every task we pair the original, fully specified version with an ambiguous variant produced by controlled edits; a human-and-LLM verification pipeline confirms each variant admits multiple plausible interpretations with decision-relevant consequences. The suites are analyzed independently and ambiguity lowers performance in both. Across five agents spanning efficient to frontier-class models, we find in our controlled diagnostic setting: (i) failures are silent commitments: wrong-target submissions on Target, wrong-metric or non-committal baseline submissions on Objective, rather than execution errors; (ii) allowing the agent to ask one clarifying question recovers much of the loss under idealized conditions, suggesting missing framing information drives a substantial part of the observed degradation; but (iii) agents cannot reliably tell when to use it: permissive prompts induce over-asking on clear tasks, while conservative prompts induce silent defaulting on ambiguous ones. Recognizing target and objective underspecification, not pipeline execution, is the bottleneck missing from standard DS-agent evaluations.",
+      "authors": [
+        "Josefa Lia Stoisser",
+        "Marc Boubnovski Martell",
+        "Sidsel Boldsen",
+        "Kaspar Märtens",
+        "Robert Kitchen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-10T18:34:12Z",
+      "updated": "2026-05-10T18:34:12Z",
+      "announced_date": "2026-05-10",
+      "first_seen": "2026-05-10",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.09698v1",
+        "pdf": "https://arxiv.org/pdf/2605.09698v1",
+        "html": "https://arxiv.org/html/2605.09698"
+      },
+      "score": 12,
+      "tags": [],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2605.09684",
+      "title": "MonitoringBench: Semi-Automated Red-Teaming for Agent Monitoring",
+      "abstract": "We introduce a red-teaming methodology that exposes harder-to-catch attacks for coding-agent monitors, suggesting that current practices may under-elicit attacks and overstate monitor performance. We identify three challenges with current red-teaming. First, mode collapse in attack generation, which we reduce with a novel attack taxonomy for broader coverage. Second, a conceive-execute gap: frontier LLMs can propose strong attack ideas or execute them, but not all at once. We mitigate this by decomposing attack construction into strategy generation, execution, and post-hoc trajectory refinement. Third, manual elicitation is costly to scale, which we address with our semi-automated red-teaming pipeline. Applied to BashArena, an AI control setting for tool-using coding agents, this pipeline produces MonitoringBench, a benchmark of 2,644 attack trajectories for evaluating monitor capabilities and failure modes. Our pipeline produces more diverse and stronger attacks: Opus-4.5 monitor's catch rate falls from 94.9\\% on elicited-only Opus attacks to 60.3\\% on our best refined attacks, with larger drops for several mid-tier monitors. Attacks optimized against three development monitors generalize to ten held-out monitors, with catch rates generally increasing with monitor capability. Using this benchmark, we provide a snapshot of the current monitor capabilities and find that frontier monitors often detect suspicious actions but fall for persuasion or fail to calibrate suspiciousness scores appropriately, suggesting tractable paths for improvement. MonitoringBench provides both a static benchmark for current tool-use monitors and a reusable methodology for refreshing these evaluations as agents and monitors improve.",
+      "authors": [
+        "Monika Jotautaitė",
+        "Maria Angelica Martinez",
+        "Ollie Matthews",
+        "Tyler Tracy"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-05-10T18:04:31Z",
+      "updated": "2026-05-10T18:04:31Z",
+      "announced_date": "2026-05-10",
+      "first_seen": "2026-05-10",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.09684v1",
+        "pdf": "https://arxiv.org/pdf/2605.09684v1",
+        "html": "https://arxiv.org/html/2605.09684"
+      },
+      "score": 14,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 2
+    },
+    {
+      "id": "2605.09679",
+      "title": "DeepTumorVQA: A Hierarchical 3D CT Benchmark for Stage-Wise Evaluation of Medical VLMs and Tool-Augmented Agents",
+      "abstract": "Medical vision-language models (VLMs) and AI agents have made significant progress in learning to analyze and reason about clinical images. However, existing medical visual question answering (VQA) benchmarks collapse model capabilities into a single accuracy score, obscuring where and why models fail. We propose DeepTumorVQA, a hierarchical benchmark that follows the multi-stage evidence chain in tumor diagnosis and decomposes 3D CT reasoning into four stages: recognition, measurement, visual reasoning, and medical reasoning. Higher-level questions remain independently scorable, while their ground-truth evidence chains are defined over lower-level primitives. The benchmark contains 476K questions across 42 clinical subtypes on 9,262 3D CT volumes. In addition to a direct reasoning mode for VLMs, DeepTumorVQA provides tool-interaction environments for agent evaluation, where a model can call external tools, including segmentation models, measurement programs, and medical knowledge modules, before answering the question. Evaluating over 30 model configurations, we find that reliable quantitative measurement is the primary bottleneck, making later-stage visual and medical reasoning harder for VLMs, while tool augmentation substantially mitigates this issue. When tools are available, leveraging medical knowledge and tools to reason about medical images becomes a new challenge. We further show that ground-truth step-by-step tool-use traces from DeepTumorVQA can supervise agents and reduce tool-use and reasoning failures. This stage-wise progression from recognition to measurement to visual and medical reasoning provides a concrete roadmap for future medical VLM and AI agent studies. All data and code are released at https://github.com/Schuture/DeepTumorVQA.",
+      "authors": [
+        "Yixiong Chen",
+        "Wenjie Xiao",
+        "Pedro R. A. S. Bassi",
+        "Boyan Wang",
+        "Liang He",
+        "Xinze Zhou",
+        "Sezgin Er",
+        "Ibrahim Ethem Hamamci",
+        "Zongwei Zhou",
+        "Alan Yuille"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-05-10T17:57:57Z",
+      "updated": "2026-05-10T17:57:57Z",
+      "announced_date": "2026-05-10",
+      "first_seen": "2026-05-10",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.09679v1",
+        "pdf": "https://arxiv.org/pdf/2605.09679v1",
+        "html": "https://arxiv.org/html/2605.09679"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 2
+    },
+    {
+      "id": "2605.09675",
+      "title": "CodeClinic: Evaluating Automation of Coding Skills for Clinical Reasoning Agents",
+      "abstract": "Clinical reasoning agents based on large language models (LLMs) aim to automate tasks such as intensive care unit (ICU) monitoring and patient state tracking from electronic health records (EHRs). Existing systems typically rely on manually curated clinical tools or skills for concepts such as sepsis detection and organ failure assessment. However, maintaining these tool libraries requires substantial expert effort, while zero-shot querying or code generation often produces inefficient and unreliable reasoning chains, especially under institution-specific clinical policies. We introduce CodeClinic, a benchmark built on MIMIC-IV for evaluating whether LLM agents can synthesize and compose reusable clinical skills instead of relying on fixed toolboxes. The benchmark contains two complementary tasks: longitudinal ICU surveillance and compositional information seeking. The longitudinal setting simulates monitoring patient trajectories with structured decisions every four hours across 25 findings and eight clinical families, while the compositional setting spans 63k instances across 259 tasks in nine domains and is stratified by compositional dependency depth to evaluate increasingly complex multi-step reasoning. We further propose an offline autoformalization pipeline that converts natural-language clinical guidelines into reusable and verified Python skill libraries through iterative LLM refinement. Compared with zero-shot code generation, the resulting libraries improve consistency while reducing per-query token usage by up to 40%.",
+      "authors": [
+        "Timothy Ossowski",
+        "Xinchi Liu",
+        "Danyal Maqbool",
+        "Vaibhav Dhanuka",
+        "Sheng Zhang",
+        "Hoifung Poon",
+        "Majid Afshar",
+        "Tyler Bradshaw",
+        "Junjie Hu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-10T17:45:01Z",
+      "updated": "2026-05-10T17:45:01Z",
+      "announced_date": "2026-05-10",
+      "first_seen": "2026-05-10",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.09675v1",
+        "pdf": "https://arxiv.org/pdf/2605.09675v1",
+        "html": "https://arxiv.org/html/2605.09675"
+      },
+      "score": 9,
+      "tags": [
+        "coding",
+        "tool-use",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2605.09497",
+      "title": "Don't Click That: Teaching Web Agents to Resist Deceptive Interfaces",
+      "abstract": "Vision-language model (VLM) based web agents demonstrate impressive autonomous GUI interaction but remain vulnerable to deceptive interface elements. Existing approaches either detect deception without task integration or document attacks without proposing defenses. We formalize deception-aware web agent defense and propose DUDE (Deceptive UI Detector & Evaluator), a two-stage framework combining hybrid-reward learning with asymmetric penalties and experience summarization to distill failure patterns into transferable guidance. We introduce RUC (Real UI Clickboxes), a benchmark of 1,407 scenarios spanning four domains and deception categories. Experiments show DUDE reduces deception susceptibility by 53.8% while maintaining task performance, establishing an effective foundation for robust web agent deployment.",
+      "authors": [
+        "Yilin Zhang",
+        "Yingkai Hua",
+        "Chunyu Wei",
+        "Xin Wang",
+        "Yueguo Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-10T12:11:52Z",
+      "updated": "2026-05-10T12:11:52Z",
+      "announced_date": "2026-05-10",
+      "first_seen": "2026-05-10",
+      "comment": "Accepted to ACL 2026 Main Conference. 23 pages, 8 figures, 19 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.09497v1",
+        "pdf": "https://arxiv.org/pdf/2605.09497v1",
+        "html": "https://arxiv.org/html/2605.09497"
+      },
+      "score": 10,
+      "tags": [
+        "web",
+        "gui",
+        "safety",
+        "multimodal"
+      ],
+      "field": "web",
+      "citations": 0
+    },
+    {
+      "id": "2606.14715",
+      "title": "MiroBench: Benchmarking Realism in Agentic Simulation of Real-world Discussions",
+      "abstract": "LLM agents are increasingly used to simulate real world interactions, but it remains unclear whether simulated behaviors preserve the content patterns and interaction dynamics of real human behaviors. Existing evaluations remain fragmented, which makes it difficult to compare systems or measure progress. In this paper, we focus on Reddit discussions as a concrete first step toward evaluating real-world social simulation. Reddit threads provide public, topic-grounded, multi-party interactions where people share experiences, debate, seek advice, express emotion, and collectively respond to products, events, and social issues. These discussions offer an observable window into broader social behavior, making them a useful setting for testing whether LLM agents can reproduce not only fluent text, but also the distributional patterns and interaction dynamics of real online communities. We introduce MiroBench, a benchmark for Reddit discussion simulation built from 4,292 real Reddit threads. MiroBench uses statistical tests to compare generated and real discussions across four major aspects: repetition and semantic uniformity, narrative content, toxicity and aggression, and structural complexity. Experiments across five domains and five models show that current simulators remain distributionally mismatched with real Reddit threads, while a lightweight prompt-based improvement procedure provides only limited gains. MiroBench offers a concrete benchmark for measuring, diagnosing, and improving realism in LLM-based social simulation.",
+      "authors": [
+        "Yaoning Yu",
+        "Ye Yu",
+        "Haojing Luo",
+        "Haohan Wang"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.SI"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-05-10T04:03:47Z",
+      "updated": "2026-05-10T04:03:47Z",
+      "announced_date": "2026-05-10",
+      "first_seen": "2026-05-10",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.14715v1",
+        "pdf": "https://arxiv.org/pdf/2606.14715v1",
+        "html": "https://arxiv.org/html/2606.14715"
+      },
+      "score": 21,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2605.09252",
+      "title": "LLM Agents Already Know When to Call Tools -- Even Without Reasoning",
+      "abstract": "Tool-augmented LLM agents tend to call tools indiscriminately, even when the model can answer directly. Each unnecessary call wastes API fees and latency, yet no existing benchmark systematically studies when a tool call is actually needed. We propose When2Tool, a benchmark of 18 environments (15 single-hop, 3 multi-hop) spanning three categories of tool necessity -- computational scale, knowledge boundaries, and execution reliability -- each with controlled difficulty levels that create a clear decision boundary between tool-necessary and tool-unnecessary tasks. We evaluate two families of training-free baselines: Prompt-only (varying the prompt to discourage unnecessary calls) and Reason-then-Act (requiring the model to reason about tool necessity before acting). Both provide limited control: Prompt-only suppresses necessary calls alongside unnecessary ones, and Reason-then-Act still incurs a disproportionate accuracy cost on hard tasks. To understand why these baselines fail, we probe the models' hidden states and find that tool necessity is linearly decodable from the pre-generation representation with AUROC 0.89--0.96 across six models, substantially exceeding the model's own verbalized reasoning. This reveals that models already know when tools are needed, but fail to act on this knowledge during generation. Building on this finding, we propose Probe&Prefill, which uses a lightweight linear probe to read the hidden-state signal and prefills the model's response with a steering sentence. Across all models tested, Probe&Prefill reduces tool calls by 48% with only 1.7% accuracy loss, while the best baseline at comparable accuracy only reduces 6% of tool calls, or achieves a similar tool call reduction but incurs a 5$\\times$ higher accuracy loss. Our code is available at https://github.com/Trustworthy-ML-Lab/when2tool",
+      "authors": [
+        "Chung-En Sun",
+        "Linbo Liu",
+        "Ge Yan",
+        "Zimo Wang",
+        "Tsui-Wei Weng"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-10T01:37:40Z",
+      "updated": "2026-05-20T19:57:19Z",
+      "announced_date": "2026-05-10",
+      "first_seen": "2026-05-10",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.09252v2",
+        "pdf": "https://arxiv.org/pdf/2605.09252v2",
+        "html": "https://arxiv.org/html/2605.09252"
+      },
+      "score": 10,
+      "tags": [
+        "tool-use",
+        "planning",
+        "science"
+      ],
+      "field": "other",
+      "citations": 13
+    }
+  ]
+}

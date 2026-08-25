@@ -1,0 +1,319 @@
+{
+  "date": "2026-02-05",
+  "count": 6,
+  "report": {
+    "date": "2026-02-05",
+    "count": 6,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 5,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      }
+    ],
+    "en": {
+      "headline": "6 new agent benchmarks",
+      "summary": "On February 5, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Planning / reasoning (5), Safety (2), Tool use (1), and Research agents (1).",
+      "highlights": [
+        {
+          "id": "2602.05892",
+          "title": "ContextBench: A Benchmark for Context Retrieval in Coding Agents",
+          "blurb": "LLM-based coding agents have shown strong performance on automated issue resolution benchmarks, yet existing evaluations largely focus on final task success, providing limited insight into how agents retrieve and use cod…"
+        },
+        {
+          "id": "2602.13272",
+          "title": "TemporalBench: A Benchmark for Evaluating LLM-Based Agents on Contextual and Event-Informed Time Series Tasks",
+          "blurb": "It is unclear whether strong forecasting performance reflects genuine temporal understanding or the ability to reason under contextual and event-driven conditions."
+        },
+        {
+          "id": "2602.05302",
+          "title": "PieArena: Ranking and Profiling Language Agents in Realistic Negotiation Scenarios",
+          "blurb": "We present an in-depth evaluation of LLMs' ability to negotiate, a central business task requiring strategic reasoning, theory of mind, and economic value creation."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 6 篇 Agent Benchmark",
+      "summary": "2026年2月5日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在规划 / 推理（5）、安全（2）、工具使用（1）、科研智能体（1）。",
+      "highlights": [
+        {
+          "id": "2602.05892",
+          "title": "ContextBench: A Benchmark for Context Retrieval in Coding Agents",
+          "blurb": "LLM-based coding agents have shown strong performance on automated issue resolution benchmarks, yet existing evaluations largely focus on final task success, providing limited insight into how agents retrieve and use cod…"
+        },
+        {
+          "id": "2602.13272",
+          "title": "TemporalBench: A Benchmark for Evaluating LLM-Based Agents on Contextual and Event-Informed Time Series Tasks",
+          "blurb": "It is unclear whether strong forecasting performance reflects genuine temporal understanding or the ability to reason under contextual and event-driven conditions."
+        },
+        {
+          "id": "2602.05302",
+          "title": "PieArena: Ranking and Profiling Language Agents in Realistic Negotiation Scenarios",
+          "blurb": "We present an in-depth evaluation of LLMs' ability to negotiate, a central business task requiring strategic reasoning, theory of mind, and economic value creation."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2602.05975",
+      "title": "SAGE: Benchmarking and Improving Retrieval for Deep Research Agents",
+      "abstract": "Deep research agents have emerged as powerful systems for addressing complex queries. Meanwhile, LLM-based retrievers have demonstrated strong capability in following instructions or reasoning. This raises a critical question: can LLM-based retrievers effectively contribute to deep research agent workflows? To investigate this, we introduce SAGE, a benchmark for scientific literature retrieval comprising 1,200 queries across four scientific domains, with a 200,000 paper retrieval corpus. We evaluate six deep research agents and find that all systems struggle with reasoning-intensive retrieval. Using DR Tulu as backbone, we further compare BM25 and LLM-based retrievers (i.e., ReasonIR and gte-Qwen2-7B-instruct) as alternative search tools. Surprisingly, BM25 significantly outperforms LLM-based retrievers by approximately 30%, as existing agents generate keyword-oriented sub-queries. To improve performance, we propose a corpus-level test-time scaling framework that uses LLMs to augment documents with metadata and keywords, making retrieval easier for off-the-shelf retrievers. This yields 8% and 2% gains on short-form and open-ended questions, respectively.",
+      "authors": [
+        "Tiansheng Hu",
+        "Yilun Zhao",
+        "Canyu Zhang",
+        "Arman Cohan",
+        "Chen Zhao"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.CL"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-05T18:25:24Z",
+      "updated": "2026-02-06T04:59:37Z",
+      "announced_date": "2026-02-05",
+      "first_seen": "2026-02-05",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.05975v2",
+        "pdf": "https://arxiv.org/pdf/2602.05975v2",
+        "html": "https://arxiv.org/html/2602.05975"
+      },
+      "score": 15,
+      "tags": [
+        "tool-use",
+        "planning",
+        "research",
+        "science"
+      ],
+      "field": "science",
+      "citations": 4
+    },
+    {
+      "id": "2602.05892",
+      "title": "ContextBench: A Benchmark for Context Retrieval in Coding Agents",
+      "abstract": "LLM-based coding agents have shown strong performance on automated issue resolution benchmarks, yet existing evaluations largely focus on final task success, providing limited insight into how agents retrieve and use code context during problem solving. We introduce ContextBench, a process-oriented evaluation of context retrieval in coding agents. ContextBench consists of 1,136 issue-resolution tasks from 66 repositories across eight programming languages, each augmented with human-annotated gold contexts. We further implement an automated evaluation framework that tracks agent trajectories and measures context recall, precision, and efficiency throughout issue resolution. Using ContextBench, we evaluate four frontier LLMs and five coding agents. Our results show that sophisticated agent scaffolding yields only marginal gains in context retrieval (\"The Bitter Lesson\" of coding agents), LLMs consistently favor recall over precision, and substantial gaps exist between explored and utilized context. ContextBench augments existing end-to-end benchmarks with intermediate gold-context metrics that unbox the issue-resolution process. These contexts offer valuable intermediate signals for guiding LLM reasoning in software tasks.",
+      "authors": [
+        "Han Li",
+        "Letian Zhu",
+        "Bohan Zhang",
+        "Rili Feng",
+        "Jiaming Wang",
+        "Yue Pan",
+        "Earl T. Barr",
+        "Federica Sarro",
+        "Zhaoyang Chu",
+        "He Ye"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-05T17:10:26Z",
+      "updated": "2026-02-11T04:58:49Z",
+      "announced_date": "2026-02-05",
+      "first_seen": "2026-02-05",
+      "comment": "36 pages, 6 figures, 4 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.05892v3",
+        "pdf": "https://arxiv.org/pdf/2602.05892v3",
+        "html": "https://arxiv.org/html/2602.05892"
+      },
+      "score": 21,
+      "tags": [
+        "coding",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 20
+    },
+    {
+      "id": "2602.05843",
+      "title": "OdysseyArena: Benchmarking Large Language Models For Long-Horizon, Active and Inductive Interactions",
+      "abstract": "The rapid advancement of Large Language Models (LLMs) has catalyzed the development of autonomous agents capable of navigating complex environments. However, existing evaluations primarily adopt a deductive paradigm, where agents execute tasks based on explicitly provided rules and static goals, often within limited planning horizons. Crucially, this neglects the inductive necessity for agents to discover latent transition laws from experience autonomously, which is the cornerstone for enabling agentic foresight and sustaining strategic coherence. To bridge this gap, we introduce OdysseyArena, which re-centers agent evaluation on long-horizon, active, and inductive interactions. We formalize and instantiate four primitives, translating abstract transition dynamics into concrete interactive environments. Building upon this, we establish OdysseyArena-Lite for standardized benchmarking, providing a set of 120 tasks to measure an agent's inductive efficiency and long-horizon discovery. Pushing further, we introduce OdysseyArena-Challenge to stress-test agent stability across extreme interaction horizons (e.g., > 200 steps). Extensive experiments on 15+ leading LLMs reveal that even frontier models exhibit a deficiency in inductive scenarios, identifying a critical bottleneck in the pursuit of autonomous discovery in complex environments. Our code and data are available at https://github.com/xufangzhi/Odyssey-Arena",
+      "authors": [
+        "Hang Yan",
+        "Fangzhi Xu",
+        "Qiushi Sun",
+        "Jinyang Wu",
+        "Zixian Huang",
+        "Muye Huang",
+        "Jingyang Gong",
+        "Zichen Ding",
+        "Kanzhi Cheng",
+        "Yian Wang",
+        "Xinyu Che",
+        "Zeyi Sun",
+        "Jian Zhang",
+        "Zhangyue Yin",
+        "Haoran Luo",
+        "Ben Kao",
+        "Qika Lin"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-05T16:31:43Z",
+      "updated": "2026-06-04T17:59:52Z",
+      "announced_date": "2026-02-05",
+      "first_seen": "2026-02-05",
+      "comment": "34 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.05843v2",
+        "pdf": "https://arxiv.org/pdf/2602.05843v2",
+        "html": "https://arxiv.org/html/2602.05843"
+      },
+      "score": 16,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 7
+    },
+    {
+      "id": "2602.18456",
+      "title": "Beyond single-channel agentic benchmarking",
+      "abstract": "Contemporary benchmarks for agentic artificial intelligence (AI) frequently evaluate safety through isolated task-level accuracy thresholds, implicitly treating autonomous systems as single points of failure. This single-channel paradigm diverges from established principles in safety-critical engineering, where risk mitigation is achieved through redundancy, diversity of error modes, and joint system reliability. This paper argues that evaluating AI agents in isolation systematically mischaracterizes their operational safety when deployed within human-in-the-loop environments. Using a recent laboratory safety benchmark as a case study demonstrates that even imperfect AI systems can nonetheless provide substantial safety utility by functioning as redundant audit layers against well-documented sources of human failure, including vigilance decrement, inattentional blindness, and normalization of deviance. This perspective reframes agentic safety evaluation around the reliability of the human-AI dyad rather than absolute agent accuracy, with a particular emphasis on uncorrelated error modes as the primary determinant of risk reduction. Such a shift aligns AI benchmarking with established practices in other safety-critical domains and offers a path toward more ecologically valid safety assessments.",
+      "authors": [
+        "Nelu D. Radpour"
+      ],
+      "categories": [
+        "cs.CY",
+        "cs.AI",
+        "cs.HC"
+      ],
+      "primary_category": "cs.CY",
+      "published": "2026-02-05T08:22:02Z",
+      "updated": "2026-02-05T08:22:02Z",
+      "announced_date": "2026-02-05",
+      "first_seen": "2026-02-05",
+      "comment": "8 pages; 1 figure; 1 table",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.18456v1",
+        "pdf": "https://arxiv.org/pdf/2602.18456v1",
+        "html": "https://arxiv.org/html/2602.18456"
+      },
+      "score": 15,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2602.05302",
+      "title": "PieArena: Ranking and Profiling Language Agents in Realistic Negotiation Scenarios",
+      "abstract": "We present an in-depth evaluation of LLMs' ability to negotiate, a central business task requiring strategic reasoning, theory of mind, and economic value creation. To do so, we introduce PieArena, a large-scale negotiation benchmark grounded in multi-agent interactions over realistic scenarios adapted from MBA negotiation courses at an elite business school. We evaluate language agents across three pairing regimes: mirror-play, cross-play, and human-LM play. We develop a ranking model for continuous negotiation payoffs that yields order-invariant, uncertainty-quantified leaderboards while correcting for systematic experimental asymmetries. We further study the effects of joint-intentionality agentic scaffolding and find asymmetric gains, with large improvements for mid- and lower-tier LMs and diminishing returns for frontier LMs. As calibration anchors, we collect human-human and human-LM negotiation data from trained business school students, finding that a representative frontier language agent (GPT-5) matches or exceeds this human baseline in our evaluation settings. Beyond deal outcomes, PieArena provides a multi-dimensional behavioral profile that reveals cross-model heterogeneity in instruction compliance, computation accuracy, as well as judge-assessed deception and reputation, illustrating the value of evaluation beyond outcome-only leaderboards.",
+      "authors": [
+        "Chris Zhu",
+        "Sasha Cui",
+        "Will Sanok Dufallo",
+        "Runzhi Jin",
+        "Zhen Xu",
+        "Linjun Zhang",
+        "Daylian Cain"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-05T04:52:20Z",
+      "updated": "2026-06-01T20:15:55Z",
+      "announced_date": "2026-02-05",
+      "first_seen": "2026-02-05",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.05302v3",
+        "pdf": "https://arxiv.org/pdf/2602.05302v3",
+        "html": "https://arxiv.org/html/2602.05302"
+      },
+      "score": 19,
+      "tags": [
+        "multi-agent",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 1
+    },
+    {
+      "id": "2602.13272",
+      "title": "TemporalBench: A Benchmark for Evaluating LLM-Based Agents on Contextual and Event-Informed Time Series Tasks",
+      "abstract": "It is unclear whether strong forecasting performance reflects genuine temporal understanding or the ability to reason under contextual and event-driven conditions. We introduce TemporalBench, a multi-domain benchmark designed to evaluate temporal reasoning behavior under progressively richer informational settings. TemporalBench adopts a four-tier task taxonomy that examines historical structure interpretation, context-free forecasting, contextual temporal reasoning, and event-conditioned prediction across four real-world domains: retail, healthcare, energy, and physical systems. By controlling access to future targets and contextual information, the benchmark enables a diagnostic analysis of whether models can correctly interpret temporal patterns, align them with external context, and adapt predictions when conditions change. Extensive baseline experiments show that strong numerical forecasting accuracy does not reliably translate into robust contextual or event-aware temporal reasoning; instead, existing agent frameworks exhibit fragmented strengths and systematic failure modes that remain largely hidden under forecasting-only benchmarks. The TemporalBench dataset is publicly available at https://huggingface.co/datasets/Melady/TemporalBench, and we additionally provide a public leaderboard at https://huggingface.co/spaces/Melady/TemporalBench_Leaderboard.",
+      "authors": [
+        "Muyan Weng",
+        "Defu Cao",
+        "Wei Yang",
+        "Yashaswi Sharma",
+        "Yan Liu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-05T01:02:19Z",
+      "updated": "2026-02-05T01:02:19Z",
+      "announced_date": "2026-02-05",
+      "first_seen": "2026-02-05",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.13272v1",
+        "pdf": "https://arxiv.org/pdf/2602.13272v1",
+        "html": "https://arxiv.org/html/2602.13272"
+      },
+      "score": 20,
+      "tags": [
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 10
+    }
+  ]
+}

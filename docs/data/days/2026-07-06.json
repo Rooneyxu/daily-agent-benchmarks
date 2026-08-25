@@ -1,0 +1,429 @@
+{
+  "date": "2026-07-06",
+  "count": 8,
+  "report": {
+    "date": "2026-07-06",
+    "count": 8,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 5,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 4,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 4,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "memory",
+        "count": 3,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "workplace",
+        "count": 1,
+        "en": "Work / office",
+        "zh": "职场 / 办公"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      }
+    ],
+    "en": {
+      "headline": "8 new agent benchmarks",
+      "summary": "On July 6, 2026, arXiv listed 8 new agent benchmarks. Work clustered around Tool use (5), Safety (4), Planning / reasoning (4), and Memory (3).",
+      "highlights": [
+        {
+          "id": "2607.04686",
+          "title": "ToolFailBench: Diagnosing Tool-Use Failures in LLM Agents",
+          "blurb": "Tool calling is central to modern language model agents, but aggregate benchmark scores often hide where tool use fails."
+        },
+        {
+          "id": "2607.05202",
+          "title": "EvoAgentBench: Benchmarking Agent Self-Evolution via Ability Transfer",
+          "blurb": "Agent self-evolution in long-horizon LLM systems is largely procedural: useful experience is not merely stored information, but reusable procedures for searching, debugging, and verification."
+        },
+        {
+          "id": "2607.05462",
+          "title": "BioSecBench-Refusal: A paired metric for performance and alignment in agentic biosecurity risk assessment",
+          "blurb": "As AI agents are incorporated into life science workflows, the capabilities that speed discovery might also enable misuse."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 8 篇 Agent Benchmark",
+      "summary": "2026年7月6日，arXiv 新增 8 篇 Agent Benchmark。当日主题集中在工具使用（5）、安全（4）、规划 / 推理（4）、记忆（3）。",
+      "highlights": [
+        {
+          "id": "2607.04686",
+          "title": "ToolFailBench: Diagnosing Tool-Use Failures in LLM Agents",
+          "blurb": "Tool calling is central to modern language model agents, but aggregate benchmark scores often hide where tool use fails."
+        },
+        {
+          "id": "2607.05202",
+          "title": "EvoAgentBench: Benchmarking Agent Self-Evolution via Ability Transfer",
+          "blurb": "Agent self-evolution in long-horizon LLM systems is largely procedural: useful experience is not merely stored information, but reusable procedures for searching, debugging, and verification."
+        },
+        {
+          "id": "2607.05462",
+          "title": "BioSecBench-Refusal: A paired metric for performance and alignment in agentic biosecurity risk assessment",
+          "blurb": "As AI agents are incorporated into life science workflows, the capabilities that speed discovery might also enable misuse."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2607.05363",
+      "title": "SovereignPA-Bench: Evaluating User-Owned Personal Agents under Evolving Intent, Platform Mediation, and Consent Constraints",
+      "abstract": "Personal agents are becoming persistent user-owned intermediaries: they remember preferences, filter platform-mediated information, use tools, and negotiate with services. Existing benchmarks evaluate tool use, web navigation, desktop control, personalization, recommendation, and evolving context, but rarely ask whether an agent preserves user sovereignty: advancing the user's current interests while respecting privacy, consent, evidence, user burden, and resistance to manipulative incentives. We introduce SovereignPA-Bench, an executable benchmark for evaluating user-owned personal agents under evolving intent, platform mediation, privacy boundaries, consent constraints, evidence requirements, and burden tradeoffs. The benchmark separates agent-visible ObservableState from evaluator-only HiddenLabels, reports component metrics for task success, alignment, privacy, consent, evidence, manipulation, burden, and auditability, and preserves paired scenario ordering for model and policy comparisons. We evaluate 120 sovereignty stress scenarios across 4 model families and 8 policy baselines, yielding 3,840 frozen-prompt trajectories with raw prompts, outputs, provider-form responses, parsed actions, recomputable metrics, hard-set analyses, qualitative cases, and a blinded 3-annotator audit over 240 items. Full-sovereign scaffolding improves sovereignty score over direct, memory-only, consent-only, evidence-only, ReAct/tool-use, safety-prompt, and judge-guard baselines while reducing privacy leakage, consent violation, over-concession, and manipulation capture. Human audit shows high agreement on privacy and consent and lower agreement on manipulation, identifying the subjective frontier of platform-persuasion judgments. These results show that personal-agent evaluation must move beyond task completion toward representative, consent-aware, evidence-grounded action.",
+      "authors": [
+        "Dylan Zongmin Liu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-06T17:39:05Z",
+      "updated": "2026-07-06T17:39:05Z",
+      "announced_date": "2026-07-06",
+      "first_seen": "2026-07-06",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.05363v1",
+        "pdf": "https://arxiv.org/pdf/2607.05363v1",
+        "html": "https://arxiv.org/html/2607.05363"
+      },
+      "score": 16,
+      "tags": [
+        "gui",
+        "tool-use",
+        "safety",
+        "memory",
+        "planning"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2607.05318",
+      "title": "PiSAs: Benchmarking Contextual Integrity in Multi-User Agentic Systems",
+      "abstract": "As LLM agents evolve from single-user assistants into shared organizational infrastructure, new privacy risks emerge: inappropriate information may not only be exposed through outputs for external recipients, but also internally across users through inter-agent messages, shared memory and agents. These data spillage risks are not captured by existing privacy benchmarks grounded in contextual integrity (CI) as they focus primarily on either single-user settings or interactions between independently owned agents. We introducePiSAs (Privacy in Shared Agentic systems), a benchmark for assessing unintentional leaks with dual CI annotations: whether an information is appropriate for the task, and which users may legitimately access it. This enables direct measurement of cross-user spillage across agentic system components and interfaces, such as outputs, inter-agent communication, and memory. PiSAsis system-agnostic and supports evaluation across different agent topologies and memory regimes. We find that, although system design improves CI compliance, results are bottlenecked by incorrect LLM judgment calls: even state-of-the-art models fail to reliably filter inappropriate content or restrict transmission to authorized users. Our findings underscore the need for privacy-preserving strategies, beyond those studied in this work.",
+      "authors": [
+        "Shubham Gupta",
+        "Nazanin Mohammadi Sepahvand",
+        "Abhinav Kumar",
+        "Cem Subakan",
+        "Spandana Gella",
+        "Pierre-André Noël",
+        "Perouz Taslakian",
+        "Eugene Bagdasarian",
+        "Valentina Zantedeschi"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.CR"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-07-06T16:57:24Z",
+      "updated": "2026-07-06T16:57:24Z",
+      "announced_date": "2026-07-06",
+      "first_seen": "2026-07-06",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.05318v1",
+        "pdf": "https://arxiv.org/pdf/2607.05318v1",
+        "html": "https://arxiv.org/html/2607.05318"
+      },
+      "score": 15,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.09762",
+      "title": "BatteryLake: Agentic, Physics-Grounded Curation of Heterogeneous Battery Aging Data and Benchmarking",
+      "abstract": "Public battery aging datasets are a critical asset for advanced health management, but their practical use is often limited by inconsistent formats, unclear schemas, and metadata scattered across repositories and publications. Current curation remains largely manual and hard to reproduce, while general-purpose data integration tools miss the domain-specific semantics of electrochemical time-series data. We present BatteryLake, a governed data lakehouse that turns raw public battery data into benchmark-ready assets through an agentic, physics-grounded curation framework, with three contributions. First, LLM agents extract metadata and synthesize dataset-specific converters, grounding every output in verbatim evidence and abstaining when none supports a value. Second, a human-in-the-loop mechanism frames verification as selective prediction and gates admitted data through 26 schema, statistical, and physical-plausibility rules. Third, we release an open benchmark of 41 datasets from over 25 institutions, with standardized SOH and RUL tasks, three split protocols, and eight baseline model families. The platform, benchmark, and curation protocol are publicly available at https://tianwen1209.github.io/batterylake/.",
+      "authors": [
+        "Tianwen Zhu",
+        "Hao Wang",
+        "Yonggang Wen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.DB"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-06T16:49:19Z",
+      "updated": "2026-07-06T16:49:19Z",
+      "announced_date": "2026-07-06",
+      "first_seen": "2026-07-06",
+      "comment": "The platform, benchmark, and curation protocol are publicly available at https://tianwen1209.github.io/batterylake/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.09762v1",
+        "pdf": "https://arxiv.org/pdf/2607.09762v1",
+        "html": "https://arxiv.org/html/2607.09762"
+      },
+      "score": 15,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.05202",
+      "title": "EvoAgentBench: Benchmarking Agent Self-Evolution via Ability Transfer",
+      "abstract": "Agent self-evolution in long-horizon LLM systems is largely procedural: useful experience is not merely stored information, but reusable procedures for searching, debugging, and verification. Yet current evaluations do not isolate this form of transfer. Agent benchmarks test single-episode task solving; memory benchmarks target information retention rather than procedural reuse. We introduce EvoAgentBench, a benchmark for agent self-evolution via Ability-guided transfer across four agentic domains: web research, algorithmic reasoning, software engineering, and knowledge work. EvoAgentBench extracts trace-grounded Abilities from agent executions, canonicalizes them into operational units, and builds domain-specific Ability Graphs linking tasks that share procedural overlap. By design, every test task is backed by verified training-side Ability support. Across a 528/267 train/test split, two scaffolds, and three backbones, curated Ability content transfers reliably across model families, but no current automatic method sustains positive gain in all settings. EvoAgentBench shifts self-evolution evaluation from aggregate accuracy comparison to fine-grained diagnosis of experience encoding, routing, and uptake. The benchmark is publicly available at https://huggingface.co/datasets/EverMind-AI/EvoAgentBench.",
+      "authors": [
+        "Xingze Gao",
+        "Chuanrui Hu",
+        "Hongda Chen",
+        "Pengfei Yao",
+        "Zhao Wang",
+        "Yi Bai",
+        "Zhengwei Wu",
+        "Yunyun Han",
+        "Xiaofeng Cong",
+        "Jie Gui",
+        "Yafeng Deng",
+        "Teng Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-06T15:17:09Z",
+      "updated": "2026-07-06T15:17:09Z",
+      "announced_date": "2026-07-06",
+      "first_seen": "2026-07-06",
+      "comment": "15 pages, 2 figures, 8 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.05202v1",
+        "pdf": "https://arxiv.org/pdf/2607.05202v1",
+        "html": "https://arxiv.org/html/2607.05202"
+      },
+      "score": 19,
+      "tags": [
+        "coding",
+        "memory",
+        "planning",
+        "workplace"
+      ],
+      "field": "workplace",
+      "citations": 7
+    },
+    {
+      "id": "2607.05174",
+      "title": "AgentGym2: Benchmarking Large Language Model Agents in De-Idealized Real-World Environments",
+      "abstract": "Language agents, i.e., LLM agents, progress rapidly and are increasingly deployed in production environments. This trend underscores the urgent need for rigorous and realistic evaluations. However, most existing benchmarks evaluate agents in simplified, idealized settings. They typically rely on pre-packaged tool interfaces, overlook critical steps, and assume inputs are clean and fully specified. Consequently, they understate the difficulty of real deployments, where uncertainty and noise are ubiquitous and agents must proactively explore the environment to uncover new tools. To bridge this gap, we present AgentGym2, a new evaluation framework with task instances grounded in real-world end-to-end working demands. Beyond reasoning and planning, it measures agents' ability to execute end-to-end procedures, discover tools via exploration, compose tools for unseen tasks, and remain robust to noisy and underspecified information. Experiments on 15 proprietary and open-source models show that even SOTA systems like Gemini and GPT-5 struggle on AgentGym2, revealing a substantial gap between the capability of current agents and the demands of real-world applications.",
+      "authors": [
+        "Zhiheng Xi",
+        "Dingwen Yang",
+        "Jiaqi Liu",
+        "Jixuan Huang",
+        "Honglin Guo",
+        "Baodai Huang",
+        "Tinggang Chen",
+        "Qi Zhang",
+        "Zhonghang Lu",
+        "Chenyu Liu",
+        "Jiajun Sun",
+        "Jiazheng Zhang",
+        "Dingwei Zhu",
+        "Xin Guo",
+        "Junzhe Wang",
+        "Zhihao Zhang",
+        "Yuming Yang",
+        "Junjie Ye",
+        "Minghe Gao",
+        "Dongrui Liu",
+        "Jiaming Ji",
+        "Guohao Li",
+        "Tao Gui",
+        "Qi Zhang",
+        "Xuanjing Huang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-06T14:56:51Z",
+      "updated": "2026-07-06T14:56:51Z",
+      "announced_date": "2026-07-06",
+      "first_seen": "2026-07-06",
+      "comment": "Accepted as a main conference paper at ACL 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.05174v1",
+        "pdf": "https://arxiv.org/pdf/2607.05174v1",
+        "html": "https://arxiv.org/html/2607.05174"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2607.04729",
+      "title": "RustMizan: A Compilable, Contamination-Aware Benchmarking Framework for Rust Vulnerabilities",
+      "abstract": "LLM agents are increasingly applied to vulnerability analysis, but existing benchmarks have not kept pace. They typically rely on small non-compilable snippets, focus on binary classification (vulnerable or not), and do not account for the risk that publicly-released datasets are part of model training corpora. We introduce RustMizan, a benchmarking framework for Rust vulnerability analysis that addresses these gaps. RustMizan contains compilable code variants at the crate, file, and function levels, with annotations for binary vulnerability detection, CWE classification, and function- and line-level localization. A paired mutation framework produces semantics-preserving code mutants for contamination testing and robustness probing. Across four frontier models in an agentic setup with command-line access, binary classification sits in the 56-65% range, but line localization F1 stays near 20%, and adversarial cues drop line F1 by about 27%.",
+      "authors": [
+        "Tarek Elsayed",
+        "Shiping Yang",
+        "Eunsong Koh",
+        "Sanika Goyal",
+        "Vincent Huang",
+        "Paul Ngo",
+        "Nathan Young",
+        "Mohammad Omidvar Tehrani",
+        "Alvyn Kang",
+        "Arnell Kang",
+        "Zeyu Chen",
+        "Angélica Moreira",
+        "Xuan Feng",
+        "Angel X. Chang",
+        "Nick Sumner",
+        "Steven Y. Ko"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-07-06T07:02:56Z",
+      "updated": "2026-07-06T07:02:56Z",
+      "announced_date": "2026-07-06",
+      "first_seen": "2026-07-06",
+      "comment": "36 pages, 7 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.04729v1",
+        "pdf": "https://arxiv.org/pdf/2607.04729v1",
+        "html": "https://arxiv.org/html/2607.04729"
+      },
+      "score": 12,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.04686",
+      "title": "ToolFailBench: Diagnosing Tool-Use Failures in LLM Agents",
+      "abstract": "Tool calling is central to modern language model agents, but aggregate benchmark scores often hide where tool use fails. A model that never calls a needed tool and a model that calls the tool but ignores the result can look similar under final task accuracy. We introduce ToolFailBench, a diagnostic benchmark for measuring tool-use failures across 1,000 tasks in finance, medicine, law, cybersecurity, and real estate. Tool-required tasks return values the model wouldn't guess, forcing it to trust the tool while control tasks attach the same tools but should be answered directly. We label each trace with Tool-Skip, Result-Ignore, Output-Fabrication, and Unnecessary-Tool-Use, using a rule classifier and two LLM judges aggregated by majority vote. Across 19 headline models, the best reaches 86.33% Clean Tool-Use Rate, showing that faithful tool use is not saturated. More importantly, models with similar aggregate scores fail in different ways: most stay disciplined on no-tool controls, while Llama-3.1 models show an Always-Call pattern, and at the same parameter scale Llama-3.1-70B and Qwen2.5-72B differ by 89 percentage points on control-task accuracy. Tool-use evaluation should measure not only whether agents call tools, but whether they use tool outputs correctly and avoid tools when none is needed.",
+      "authors": [
+        "Harsh Soni"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-07-06T05:25:21Z",
+      "updated": "2026-07-06T05:25:21Z",
+      "announced_date": "2026-07-06",
+      "first_seen": "2026-07-06",
+      "comment": "18 pages, 3 figures. Published at the Workshop on Agents in the Wild: Safety, Security, and Beyond (AIWILD) and the Workshop on Failure Modes of Agentic AI (FAGEN) at ICML 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.04686v1",
+        "pdf": "https://arxiv.org/pdf/2607.04686v1",
+        "html": "https://arxiv.org/html/2607.04686"
+      },
+      "score": 20,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 2
+    },
+    {
+      "id": "2607.05462",
+      "title": "BioSecBench-Refusal: A paired metric for performance and alignment in agentic biosecurity risk assessment",
+      "abstract": "As AI agents are incorporated into life science workflows, the capabilities that speed discovery might also enable misuse. We present BioSecBench-Refusal, a benchmark for risk identification and refusal behavior for biological research tasks. The benchmark pairs 61 Routine tasks, legitimate analyses adapted from the published literature, with 46 Red-Team tasks, fictional scenarios that resemble real research but conceal a biosecurity hazard. Across 16 model-harness configurations, refusal rates ranged from 7 percent to 74 percent on Routine tasks and 1 percent to 62 percent on Red-Team tasks, with many configurations refusing legitimate Routine work at comparable or higher rates than concealed hazards. Refusals were most often triggered by provider API filters applied prior to agentic reasoning. However, models given room to reason showed the potential to identify more real threats. We release BioSecBench-Refusal as a tool for model developers to calibrate capability and caution for agentic biotech research and development.",
+      "authors": [
+        "Edwin H. Wintermute",
+        "Harmon Bhasin",
+        "Christina M. Agapakis",
+        "Dianzhuo Wang",
+        "Evan Seeyave",
+        "Arjun Banerjee",
+        "Daniel Fulop",
+        "Matthew C. Watson",
+        "Adam J. Meyer",
+        "Sandrine Boissel",
+        "Jens H. Kuhn",
+        "Rishi Jain",
+        "Noah D. Taylor",
+        "Helena Shomar",
+        "Patrick M. Boyle",
+        "Kenny Workman"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-07-06T01:46:07Z",
+      "updated": "2026-07-21T17:05:39Z",
+      "announced_date": "2026-07-06",
+      "first_seen": "2026-07-06",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.05462v2",
+        "pdf": "https://arxiv.org/pdf/2607.05462v2",
+        "html": "https://arxiv.org/html/2607.05462"
+      },
+      "score": 16,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning",
+        "research",
+        "science"
+      ],
+      "field": "other",
+      "citations": 1
+    }
+  ]
+}

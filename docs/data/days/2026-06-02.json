@@ -1,0 +1,424 @@
+{
+  "date": "2026-06-02",
+  "count": 9,
+  "report": {
+    "date": "2026-06-02",
+    "count": 9,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "gui",
+        "count": 2,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "computer-use",
+        "count": 2,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      }
+    ],
+    "en": {
+      "headline": "9 new agent benchmarks",
+      "summary": "On June 2, 2026, arXiv listed 9 new agent benchmarks. Work clustered around Planning / reasoning (3), Coding agents (2), Safety (2), and GUI agents (2).",
+      "highlights": [
+        {
+          "id": "2606.03203",
+          "title": "MedCUA-Bench: A Screenshot-Only Benchmark for Clinical Computer-Use Agents",
+          "blurb": "Computer-use agents could automate repetitive screen-based clinical work, but their reliability in medical graphical user interfaces remains largely unvalidated."
+        },
+        {
+          "id": "2606.03918",
+          "title": "Hedge-Bench: Benchmarking Agents on Hard, Realistic Tasks Pertaining to Financial Reasoning",
+          "blurb": "AI agents can increasingly handle the mechanical tasks of financial analysis: retrieving documents, calculating formulas, updating spreadsheets."
+        },
+        {
+          "id": "2606.03271",
+          "title": "Agentic Relationship Harm: Benchmarking and Gating Relational Manipulation in AI Agents",
+          "blurb": "AI agents built on large language models can assist not only legitimate tasks but also relational manipulation."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 9 篇 Agent Benchmark",
+      "summary": "2026年6月2日，arXiv 新增 9 篇 Agent Benchmark。当日主题集中在规划 / 推理（3）、代码智能体（2）、安全（2）、GUI 智能体（2）。",
+      "highlights": [
+        {
+          "id": "2606.03203",
+          "title": "MedCUA-Bench: A Screenshot-Only Benchmark for Clinical Computer-Use Agents",
+          "blurb": "Computer-use agents could automate repetitive screen-based clinical work, but their reliability in medical graphical user interfaces remains largely unvalidated."
+        },
+        {
+          "id": "2606.03918",
+          "title": "Hedge-Bench: Benchmarking Agents on Hard, Realistic Tasks Pertaining to Financial Reasoning",
+          "blurb": "AI agents can increasingly handle the mechanical tasks of financial analysis: retrieving documents, calculating formulas, updating spreadsheets."
+        },
+        {
+          "id": "2606.03271",
+          "title": "Agentic Relationship Harm: Benchmarking and Gating Relational Manipulation in AI Agents",
+          "blurb": "AI agents built on large language models can assist not only legitimate tasks but also relational manipulation."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.03920",
+      "title": "Benchmarking Visual State Tracking in Multimodal Video Understanding",
+      "abstract": "Understanding a video requires more than recognizing isolated moments, as humans continuously track entities, states, and events over time. This capacity for visual state tracking is fundamental to video understanding, yet remains underexplored in current evaluations of Multimodal Large Language Models (MLLMs). We introduce Visual STAte Tracking benchmark (VSTAT), a video-based benchmark designed to diagnose visual state tracking in MLLMs. VSTAT consists of 834 clips drawn from both synthetic and real-world videos, paired with 1,500 questions that cannot be answered from any single frame or short segment, requiring continuous perception and integration of events across the entire video stream. Despite their strong performance on existing video benchmarks, we find that state-of-the-art MLLMs perform far below humans and only modestly above answer-prior baselines. To analyze this gap, we compare MLLMs' thinking traces with the underlying video stream to understand why and when MLLMs fail on VSTAT. We find that MLLMs reason and track correctly in text, but fail at visually perceiving the events they need to track. Finally, our preliminary evaluation suggests that recent agentic approaches, including MLLM-based video agents and coding agents, do not readily resolve these failures, still falling short on VSTAT.",
+      "authors": [
+        "Sihyun Yu",
+        "Nanye Ma",
+        "Pinzhi Huang",
+        "Hyunseok Lee",
+        "Shusheng Yang",
+        "June Suk Choi",
+        "Ellis Brown",
+        "Oscar Michel",
+        "Boyang Zheng",
+        "Jinwoo Shin",
+        "Saining Xie"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-06-02T17:12:05Z",
+      "updated": "2026-06-02T17:12:05Z",
+      "announced_date": "2026-06-02",
+      "first_seen": "2026-06-02",
+      "comment": "Website: https://vision-x-nyu.github.io/vstat-site/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.03920v1",
+        "pdf": "https://arxiv.org/pdf/2606.03920v1",
+        "html": "https://arxiv.org/html/2606.03920"
+      },
+      "score": 12,
+      "tags": [
+        "coding",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2606.03918",
+      "title": "Hedge-Bench: Benchmarking Agents on Hard, Realistic Tasks Pertaining to Financial Reasoning",
+      "abstract": "AI agents can increasingly handle the mechanical tasks of financial analysis: retrieving documents, calculating formulas, updating spreadsheets. The harder, more valuable challenge is reasoning through the open-ended questions that define expert Analyst work. Existing benchmarks do not capture this class of problem, and those that attempt to evaluate open-ended reasoning rely on model-judged outputs that introduce noise and circularity. We present Hedge-Bench 1.0: a benchmark of 102 actual, on-the-job tasks grounded in the explicit reasoning traces of professional hedge fund analysts working with relevant information sources. This approach enables deterministic grading against verified expert steps. Frontier models and agents score below 16\\% on the benchmark. We publish the dataset and evaluation harness at github.com/Trata-Inc/trata-hedge-bench.",
+      "authors": [
+        "Eric Cho",
+        "Shawn Huang",
+        "Alice Lu",
+        "Andy Lyu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-02T17:11:56Z",
+      "updated": "2026-06-02T17:11:56Z",
+      "announced_date": "2026-06-02",
+      "first_seen": "2026-06-02",
+      "comment": "Dataset and evaluation harness available at github.com/Trata-Inc/trata-hedge-bench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.03918v1",
+        "pdf": "https://arxiv.org/pdf/2606.03918v1",
+        "html": "https://arxiv.org/html/2606.03918"
+      },
+      "score": 21,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2606.03889",
+      "title": "RealClawBench: Live OpenClaw Benchmarks from Real Developer-Agent Sessions",
+      "abstract": "Agent benchmarks should reflect what users actually ask deployed agents to do, yet existing benchmarks often miss key realism properties of real developer-agent sessions. We introduce RealClawBench, a live benchmark framework built from real OpenClaw sessions to capture the distribution, diversity, and real-world difficulty of deployed agent use. Real user requests are challenging to benchmark because they often depend on local execution environments, involve implicit or underspecified intent, and require nontrivial verification. RealClawBench addresses these challenges with two core mechanisms: reconstructed execution environments and deterministic verifiable scorers, which together convert real sessions into reproducible, automatically scored tasks. The resulting release contains 281 executable tasks sampled from a much larger real-session pool while preserving the source distribution, with maximum final-vs-source Jensen-Shannon divergence of 0.0448. Evaluating 14 contemporary models shows that the best system solves only 65.8% of tasks, revealing substantial headroom on realistic developer-agent workloads. By turning real deployed sessions into controlled evaluation instances, RealClawBench provides a practical path toward benchmarks that better measure agent capability in actual use. Code is available at:https://anonymous.4open.science/r/real-claw-bench-582B.",
+      "authors": [
+        "Zongwei Lv",
+        "Zhewen Tan",
+        "Yaoming Li",
+        "Yilun Yao",
+        "Yuxuan Tian",
+        "Lin Sun",
+        "Xiangzheng Zhang",
+        "Weihong Lin",
+        "Tong Yang",
+        "Guangxiang Zhao"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-02T16:51:24Z",
+      "updated": "2026-06-05T09:38:21Z",
+      "announced_date": "2026-06-02",
+      "first_seen": "2026-06-02",
+      "comment": "19 pages, 5 figures, 8 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.03889v2",
+        "pdf": "https://arxiv.org/pdf/2606.03889v2",
+        "html": "https://arxiv.org/html/2606.03889"
+      },
+      "score": 8,
+      "tags": [],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2606.03829",
+      "title": "BigFinanceBench: A Workflow-Grounded Benchmark for Financial-Research Agents",
+      "abstract": "Financial-research answers are decision-relevant only when another analyst can audit how they were produced: which source was chosen, which period and accounting definition were used, which assumptions were made, and how the calculation was performed. Existing finance benchmarks largely evaluate isolated subskills or final answers, leaving the auditable derivation itself under-measured. We introduce BigFinanceBench, a 928-item expert-authored benchmark of open-ended financial-research tasks in which each item pairs a ground-truth reference answer with a point-weighted rubric that decomposes the derivation into independently checkable steps. BigFinanceBench is workflow-grounded in that it evaluates the full derivation rather than only the final output. Across 36,241 rubric points, the benchmark supports partial-credit evaluation and localization of failures across the analyst workflow. Evaluating ten current frontier and open-weight agents, we find substantial headroom: the best system reaches only 58.8% rubric score, final-answer accuracy is a useful but lossy proxy for derivation quality, and model capability varies non-uniformly across financial workflows.",
+      "authors": [
+        "Alex Wang",
+        "Georg Meinhardt",
+        "Jacob Katz",
+        "Joseph H. Kim",
+        "Pratyush K. Chaudhary",
+        "Chase Blagden",
+        "Eric Xu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-02T16:12:34Z",
+      "updated": "2026-06-02T16:12:34Z",
+      "announced_date": "2026-06-02",
+      "first_seen": "2026-06-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.03829v1",
+        "pdf": "https://arxiv.org/pdf/2606.03829v1",
+        "html": "https://arxiv.org/html/2606.03829"
+      },
+      "score": 17,
+      "tags": [
+        "research"
+      ],
+      "field": "science",
+      "citations": 4
+    },
+    {
+      "id": "2606.03657",
+      "title": "Diagnosing Knowledge Gaps in LLM Tool Use: An Agentic Benchmark for Novel API Acquisition",
+      "abstract": "Large language models for code generation often need to use APIs that are absent from their pretraining data. This requires more than recalling a function name: models must coordinate signatures, module paths, input-output contracts, semantics, and executable usage patterns. Existing novel-API benchmarks are typically static, rely on coarse pass/fail metrics, or use synthetic APIs that may not reflect real library evolution. We introduce NovelAPIBench, a fully automated dynamic benchmark that, for any base model and target library, discovers novel APIs, extracts decomposed knowledge bundles, generates executable coding tasks, and assigns failed samples to six diagnostic categories. Across about 1.9K tasks, four base models, and five domains, we compare knowledge injected through retrieval with knowledge internalized through parametric adaptation. We find that knowledge components are not interchangeable: usage examples are the strongest standalone signal, while the best two-component setting pairs signatures with either mechanisms or examples depending on the domain and backbone. Adding more context, especially source code, can hurt by increasing import-path errors. Parametric adaptation also does not replace retrieval once external knowledge is removed; rather, fine-tuning mainly teaches models how to use provided bundles, and this ability transfers to held-out libraries. These results suggest that retrieval and tuning play complementary roles: retrieval supplies volatile API content, while tuning improves procedural integration.",
+      "authors": [
+        "Jinnuo Liu",
+        "Yue Peng",
+        "Jinhan Niu",
+        "Hongyi Wen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-02T13:46:04Z",
+      "updated": "2026-06-02T13:46:04Z",
+      "announced_date": "2026-06-02",
+      "first_seen": "2026-06-02",
+      "comment": "37 pages, 12 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.03657v1",
+        "pdf": "https://arxiv.org/pdf/2606.03657v1",
+        "html": "https://arxiv.org/html/2606.03657"
+      },
+      "score": 16,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2606.03303",
+      "title": "LEAP: Supercharging LLMs for Formal Mathematics with Agentic Frameworks",
+      "abstract": "Large Language Models (LLMs) exhibit strong informal mathematical reasoning but struggle to generate mechanically verifiable proofs in formal languages like Lean. We present LEAP, an agentic framework that enables general-purpose foundation models to achieve state-of-the-art performance on automated formal theorem proving. LEAP leverages foundation model capabilities, such as informal reasoning, instruction following, and iterative self-refinement. By decomposing complex problems into smaller units, the system bridges formal proof construction with informal blueprints through continuous interaction with the Lean compiler. To provide a rigorous evaluation beyond increasingly saturated benchmarks, we introduce Lean-IMO-Bench, a benchmark of IMO-style problems formalized in Lean, with short statements yet highly non-routine and multi-step proofs across a wide range of difficulty levels. Empirically, on the latest 2025 Putnam Competition, an annual mathematics competition for undergraduate students in North America, LEAP solves all 12 problems, matching recent breakthroughs by frontier formal mathematical models. On Lean-IMO-Bench, LEAP boosts the one-shot formal solve rate of general-purpose LLMs from below 10% to 70%, notably surpassing the 48% benchmark set by a specialized, gold-medal-caliber IMO system. Furthermore, we demonstrate LEAP's research-level utility by autonomously formalizing complex proofs for open combinatorial challenges, including a verified proof for a key subproblem in Knuth's Hamiltonian decomposition of even-order Cayley graphs.",
+      "authors": [
+        "Po-Nien Kung",
+        "Linfeng Song",
+        "Dawsen Hwang",
+        "Jinsung Yoon",
+        "Chun-Liang Li",
+        "Simone Severini",
+        "Mirek Olšák",
+        "Edward Lockhart",
+        "Quoc V Le",
+        "Burak Gokturk",
+        "Thang Luong",
+        "Tomas Pfister",
+        "Nanyun Peng"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-02T08:16:42Z",
+      "updated": "2026-06-03T06:16:05Z",
+      "announced_date": "2026-06-02",
+      "first_seen": "2026-06-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.03303v2",
+        "pdf": "https://arxiv.org/pdf/2606.03303v2",
+        "html": "https://arxiv.org/html/2606.03303"
+      },
+      "score": 10,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 5
+    },
+    {
+      "id": "2606.03271",
+      "title": "Agentic Relationship Harm: Benchmarking and Gating Relational Manipulation in AI Agents",
+      "abstract": "AI agents built on large language models can assist not only legitimate tasks but also relational manipulation. AI agents can be used to help a user maintain a deceptive identity, intensify emotional dependency, isolate a target, or prepare for later extraction. We conceptualise this risk as agentic relationship harm: workflow-level assistance that can exploit recipient vulnerability, persuasive influence, and relational power asymmetry. Existing safety evaluations and generic guardrails often treat harmfulness as a property of isolated outputs, missing role-sensitive interaction patterns. To study this, we introduce a 110-prompt benchmark with balanced attacker- and victim-side cases, a relationship-specific labelling framework, and a lightweight post-generation policy gate for local agent deployments. In our evaluation, the relationship-specific gate outperforms generic safety prompting under automated judging, with no judge-identified harmful-compliance cases on the main benchmark or multi-turn stress test while preserving victim-side protective intervention. These results suggest that relationship harm is a distinct sociotechnical risk surface and that role-sensitive evaluation plus lightweight policy gating offers a practical path beyond generic refusal prompting.",
+      "authors": [
+        "Pei-Sze Tan",
+        "Tasuku Igarashi",
+        "Isao Echizen"
+      ],
+      "categories": [
+        "cs.HC"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-06-02T07:36:50Z",
+      "updated": "2026-06-02T07:36:50Z",
+      "announced_date": "2026-06-02",
+      "first_seen": "2026-06-02",
+      "comment": "13 pages, 3 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.03271v1",
+        "pdf": "https://arxiv.org/pdf/2606.03271v1",
+        "html": "https://arxiv.org/html/2606.03271"
+      },
+      "score": 18,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.03203",
+      "title": "MedCUA-Bench: A Screenshot-Only Benchmark for Clinical Computer-Use Agents",
+      "abstract": "Computer-use agents could automate repetitive screen-based clinical work, but their reliability in medical graphical user interfaces remains largely unvalidated. Existing benchmarks focus on general web or desktop tasks and underrepresent medical software, which requires domain knowledge, exhibits markedly different UI design from mainstream applications, lacks public testing environments, and demands safety validation beyond task completion. We introduce MedCUA-Bench, an interactive benchmark for clinical computer-use agents. It covers 18 clinical scenarios across 10 medical domains, reconstructed from real product manuals and open-source medical systems to capture authentic clinical interfaces while avoiding licensing and privacy constraints. Each task ships with paired intent- and step-level goals to disentangle clinical reasoning from UI execution, and is evaluated by a deterministic checker over task completion and five clinical safety dimensions. Across 23 agents, the best closed-source model reaches 54.2% strict success, while all models remain below 9% on the real OpenEMR. Open-source agents average only 2.5%, with the best reaching 16.2%. MedCUA-Bench exposes the gap between current agents and reliable clinical software use, providing a reproducible testbed for future research.",
+      "authors": [
+        "Jia Yu",
+        "Zilong Wang",
+        "Xinyang Jiang",
+        "Dongsheng Li",
+        "Shuo Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-02T06:02:35Z",
+      "updated": "2026-06-02T06:02:35Z",
+      "announced_date": "2026-06-02",
+      "first_seen": "2026-06-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.03203v1",
+        "pdf": "https://arxiv.org/pdf/2606.03203v1",
+        "html": "https://arxiv.org/html/2606.03203"
+      },
+      "score": 24,
+      "tags": [
+        "gui",
+        "computer-use",
+        "safety",
+        "planning"
+      ],
+      "field": "computer-use",
+      "citations": 1
+    },
+    {
+      "id": "2606.03103",
+      "title": "DeskCraft: Benchmarking Desktop Agents on Professional Workflows and Human-in-the-Loop Collaboration",
+      "abstract": "Real-world professional desktop workflows in specialized creative and engineering software unfold over long horizons and often require human-in-the-loop coordination, where agents proactively seek necessary information and users provide additional instructions, clarifications, feedback, or corrections as the task progresses. Yet existing desktop GUI benchmarks mostly reduce this setting to short, simplified tasks with all user instructions provided upfront. To address this issue, we introduce DeskCraft, a desktop GUI benchmark targeting long horizon creative and engineering workflows and proactive human-agent collaboration. DeskCraft organizes tasks into a multilevel difficulty taxonomy, with long horizon tasks requiring over 50 execution steps, and covers professional creative software across design, video, audio, and 3D creation. Furthermore, DeskCraft formalizes human-agent collaboration into an interaction protocol covering mid-turn and post-turn exchanges. Mid-turn interaction captures both agent-initiated clarification under uncertainty and user-initiated interruption during execution, while post-turn interaction accommodates user-driven feedback after the agent signals completion, together spanning the full space of realistic collaboration patterns. We evaluate 18 proprietary and open source agents on 538 tasks and find that GPT-5.4 reaches 31.6% on standard tasks and 27.6% on interactive tasks. Further analyses reveal persistent failures in long horizon workflow delivery and proactive clarification. We will open-source all evaluation codes, tasks, and data at https://github.com/mrwwk/DeskCraft.",
+      "authors": [
+        "Wenkai Wang",
+        "Tao Xiong",
+        "Jingchen Ni",
+        "Yunpeng Bao",
+        "Xiyun Li",
+        "Tianqi Liu",
+        "Hongcan Guo",
+        "Zilong Huang",
+        "Shengyu Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-02T03:42:34Z",
+      "updated": "2026-06-02T03:42:34Z",
+      "announced_date": "2026-06-02",
+      "first_seen": "2026-06-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.03103v1",
+        "pdf": "https://arxiv.org/pdf/2606.03103v1",
+        "html": "https://arxiv.org/html/2606.03103"
+      },
+      "score": 8,
+      "tags": [
+        "gui",
+        "computer-use"
+      ],
+      "field": "workplace",
+      "citations": 1
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "date": "2026-05-05",
+  "count": 3,
+  "report": {
+    "date": "2026-05-05",
+    "count": 3,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      }
+    ],
+    "en": {
+      "headline": "3 new agent benchmarks",
+      "summary": "On May 5, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Coding agents (1), Safety (1), Planning / reasoning (1), and Tool use (1).",
+      "highlights": [
+        {
+          "id": "2605.03596",
+          "title": "Workspace-Bench 1.0: Benchmarking AI Agents on Workspace Tasks with Large-Scale File Dependencies",
+          "blurb": "Workspace learning requires AI agents to identify, reason over, exploit, and update explicit and implicit dependencies among heterogeneous files in a worker's workspace, enabling them to complete both routine and advance…"
+        },
+        {
+          "id": "2605.03952",
+          "title": "MOSAIC-Bench: Measuring Compositional Vulnerability Induction in Coding Agents",
+          "blurb": "Coding agents often pass per-prompt safety review yet ship exploitable code when their tasks are decomposed into routine engineering tickets."
+        },
+        {
+          "id": "2605.03378",
+          "title": "ARGUS: Defending LLM Agents Against Context-Aware Prompt Injection",
+          "blurb": "Large Language Model (LLM) agents are increasingly deployed as task-oriented software systems that use runtime context to decide and act on behalf of users."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年5月5日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在代码智能体（1）、安全（1）、规划 / 推理（1）、工具使用（1）。",
+      "highlights": [
+        {
+          "id": "2605.03596",
+          "title": "Workspace-Bench 1.0: Benchmarking AI Agents on Workspace Tasks with Large-Scale File Dependencies",
+          "blurb": "Workspace learning requires AI agents to identify, reason over, exploit, and update explicit and implicit dependencies among heterogeneous files in a worker's workspace, enabling them to complete both routine and advance…"
+        },
+        {
+          "id": "2605.03952",
+          "title": "MOSAIC-Bench: Measuring Compositional Vulnerability Induction in Coding Agents",
+          "blurb": "Coding agents often pass per-prompt safety review yet ship exploitable code when their tasks are decomposed into routine engineering tickets."
+        },
+        {
+          "id": "2605.03378",
+          "title": "ARGUS: Defending LLM Agents Against Context-Aware Prompt Injection",
+          "blurb": "Large Language Model (LLM) agents are increasingly deployed as task-oriented software systems that use runtime context to decide and act on behalf of users."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2605.03952",
+      "title": "MOSAIC-Bench: Measuring Compositional Vulnerability Induction in Coding Agents",
+      "abstract": "Coding agents often pass per-prompt safety review yet ship exploitable code when their tasks are decomposed into routine engineering tickets. The challenge is structural: existing safety alignment evaluates overt requests in isolation, leaving models blind to malicious end-states that emerge from sequenced compliance with innocuous-looking requests. We introduce MOSAIC-Bench (Malicious Objectives Sequenced As Innocuous Compliance), a benchmark of 199 three-stage attack chains paired with deterministic exploit oracles on deployed software substrates (10 web-application substrates, 31 CWE classes, 5 programming languages) that treats both exploit ground truth and downstream reviewer protocol as first-class evaluation axes. On this benchmark, nine production coding agents from Anthropic, OpenAI, Google, Moonshot, Zhipu, and Minimax compose innocuous tickets at 53-86% end-to-end ASR with only two refusals across all staged runs. In a matched direct-prompt experiment over four frontier Claude/Codex agents, vulnerable-output rates fall to 0-20.4%: Claude primarily refuses, while Codex primarily hardens rather than emitting the vulnerable implementation - ticket staging silences both defense modes simultaneously. Downstream, code reviewer agents approve 25.8% of these confirmed-vulnerable cumulative diffs as routine PRs, and a full-context implementation protocol closes only 50% of the staged/direct gap, ruling out context fragmentation as the sole explanation. As a deployable but non-adaptive mitigation, reframing the reviewer as an adversarial pentester reduces evasion across the evaluated reviewer subset; pentester framed evasion ranges from 3.0% to 17.6%, and an open-weight Gemma-4-E4B-it reviewer under this framing detects 88.4% of attacks on the dataset with a 4.6% false-positive rate measured on 608 real-world GitHub PRs.",
+      "authors": [
+        "Jonathan Steinberg",
+        "Oren Gal"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-05-05T16:38:23Z",
+      "updated": "2026-05-05T16:38:23Z",
+      "announced_date": "2026-05-05",
+      "first_seen": "2026-05-05",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.03952v1",
+        "pdf": "https://arxiv.org/pdf/2605.03952v1",
+        "html": "https://arxiv.org/html/2605.03952"
+      },
+      "score": 20,
+      "tags": [
+        "coding",
+        "safety"
+      ],
+      "field": "coding",
+      "citations": 4
+    },
+    {
+      "id": "2605.03596",
+      "title": "Workspace-Bench 1.0: Benchmarking AI Agents on Workspace Tasks with Large-Scale File Dependencies",
+      "abstract": "Workspace learning requires AI agents to identify, reason over, exploit, and update explicit and implicit dependencies among heterogeneous files in a worker's workspace, enabling them to complete both routine and advanced tasks effectively. Despite its importance, existing relevant benchmarks largely evaluate agents on pre-specified or synthesized files with limited real-world dependencies, leaving workspace-level evaluation underexplored. To this end, we introduce Workspace-Bench, a benchmark for evaluating AI agents on Workspace Learning involving Large-Scale File Dependencies. We construct realistic workspaces with 5 worker profiles, 74 file types, 20,476 files (up to 20GB) and curate 388 tasks, each with its own file dependency graph, evaluated across 7,399 total rubrics that require cross-file retrieval, contextual reasoning, and adaptive decision-making. We further provide Workspace-Bench-Lite, a 100-task subset that preserves the benchmark distribution while reducing evaluation costs by about 70%. We evaluate 4 popular agent harnesses and 7 foundation models. Experimental results show that current agents remain far from reliable workspace learning, where the best reaches only about 60%, substantially below the human result of 80.7%, and the average performance across agents is only 43.3%.",
+      "authors": [
+        "Zirui Tang",
+        "Xuanhe Zhou",
+        "Yumou Liu",
+        "Linchun Li",
+        "Yukai Wu",
+        "Weizheng Wang",
+        "Hongzhang Huang",
+        "Wei Zhou",
+        "Jun Zhou",
+        "Jiachen Song",
+        "Shaoli Yu",
+        "Jinqi Wang",
+        "Zihang Zhou",
+        "Hongyi Zhou",
+        "Yuting Lv",
+        "Jinyang Li",
+        "Jiashuo Liu",
+        "Ruoyu Chen",
+        "Chunwei Liu",
+        "GuoLiang Li",
+        "Jihua Kang",
+        "Fan Wu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.DB",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-05T10:17:06Z",
+      "updated": "2026-05-14T13:14:02Z",
+      "announced_date": "2026-05-05",
+      "first_seen": "2026-05-05",
+      "comment": "30 pages, 16 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.03596v4",
+        "pdf": "https://arxiv.org/pdf/2605.03596v4",
+        "html": "https://arxiv.org/html/2605.03596"
+      },
+      "score": 27,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 7
+    },
+    {
+      "id": "2605.03378",
+      "title": "ARGUS: Defending LLM Agents Against Context-Aware Prompt Injection",
+      "abstract": "Large Language Model (LLM) agents are increasingly deployed as task-oriented software systems that use runtime context to decide and act on behalf of users. This delegation model makes prompt injection especially dangerous: an attacker can hide a context-aware instruction inside evidence the agent must use to decide what to do. Existing benchmarks and defenses largely miss this setting. Benchmarks often use context-insensitive tasks where the user prompt already specifies the intended action, together with generic attack payloads independent of context. Existing defenses also do not capture the causal support from runtime evidence to concrete actions, which makes them incomplete and ineffective for context-dependent tasks. We present AgentLure, a benchmark for context-dependent tasks under context-aware prompt injection. AgentLure spans four agentic domains and eight attack vectors across six attack surfaces. To defend this setting, we propose ARGUS, a causal-provenance auditor for LLM agents. Instead of relying only on tool authorization or suspicious-context detection, ARGUS verifies whether each proposed action has a complete benign causal justification. It builds an influence-provenance graph, labels runtime spans, grounds action arguments in supporting evidence, and releases an action only when benign evidence entails it and task invariants hold. On AgentLure, ARGUS reduces attack success rate from 28.8% to 3.8% while preserving 87.5% clean utility, significantly outperforming existing defenses in the security-utility tradeoff.",
+      "authors": [
+        "Shihao Weng",
+        "Yang Feng",
+        "Jinrui Zhang",
+        "Xiaofei Xie",
+        "Jiongchi Yu",
+        "Jia Liu"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-05-05T05:37:00Z",
+      "updated": "2026-07-08T15:04:28Z",
+      "announced_date": "2026-05-05",
+      "first_seen": "2026-05-05",
+      "comment": "14 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.03378v2",
+        "pdf": "https://arxiv.org/pdf/2605.03378v2",
+        "html": "https://arxiv.org/html/2605.03378"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 9
+    }
+  ]
+}

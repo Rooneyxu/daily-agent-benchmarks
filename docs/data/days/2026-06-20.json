@@ -1,0 +1,72 @@
+{
+  "date": "2026-06-20",
+  "count": 1,
+  "report": {
+    "date": "2026-06-20",
+    "count": 1,
+    "themes": [
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      }
+    ],
+    "en": {
+      "headline": "1 new agent benchmark",
+      "summary": "On June 20, 2026, arXiv listed 1 new agent benchmark: CFAgentBench: A Reproducible Environment and Benchmark for Autonomous Construction-Finance Agents.",
+      "highlights": [
+        {
+          "id": "2606.22000",
+          "title": "CFAgentBench: A Reproducible Environment and Benchmark for Autonomous Construction-Finance Agents",
+          "blurb": "We introduce CFAgentBench, a reproducible, self-hostable environment and benchmark for autonomous construction-finance agents: a CFO/controller-class agent operating across the real software stack a US construction finan…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 1 篇 Agent Benchmark",
+      "summary": "2026年6月20日，arXiv 新增 1 篇 Agent Benchmark：CFAgentBench: A Reproducible Environment and Benchmark for Autonomous Construction-Finance Agents。",
+      "highlights": [
+        {
+          "id": "2606.22000",
+          "title": "CFAgentBench: A Reproducible Environment and Benchmark for Autonomous Construction-Finance Agents",
+          "blurb": "We introduce CFAgentBench, a reproducible, self-hostable environment and benchmark for autonomous construction-finance agents: a CFO/controller-class agent operating across the real software stack a US construction finan…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.22000",
+      "title": "CFAgentBench: A Reproducible Environment and Benchmark for Autonomous Construction-Finance Agents",
+      "abstract": "We introduce CFAgentBench, a reproducible, self-hostable environment and benchmark for autonomous construction-finance agents: a CFO/controller-class agent operating across the real software stack a US construction finance team runs - ERP, project management, email, documents, pay applications, payroll, certified payroll, lien waivers, and bank/treasury portals. It contains 1,014 machine-gradeable task specifications across 8 domains and 77 families, every family grounded in a real source; a self-validated subset of 40 tasks (54 with a project-management extension) is compiled into oracle-validated executable evaluators, the runnable suite reported here. Following WebArena, the benchmark runs on an executable environment rather than static traces: 35 mock applications (31 reconciled to one company book, plus 4 PM platforms) over 9 archetypes, each implementing a uniform self-hostable app contract, so every task is graded by functional correctness - a state diff plus forbidden-side-effect checks plus required-output regexes - with an LLM judge used only for reply quality, never as reward. A distinguishing principle is a money-movement guard: 278 instances embed a payment, payroll, e-signature, or e-filing step where the correct behavior is to stop and stage for human approval, and executing even the correct transaction fails the task. The public split (n=711) is sized for a 95% Wilson half-width of +/-4.1%; a private, contamination-protected split (n=303) is reserved for remote scoring. In a first three-model open-weight sweep (k=5), the strongest agent reaches pass^1 = 0.67 but only pass^5 = 0.38 - losing 43% of its successes when required to repeat them under temperature-0 decoding. The within-model pass^1 to pass^5 collapse and sharp per-domain heterogeneity are clear evidence that single-attempt accuracy overstates deployable construction-finance competence.",
+      "authors": [
+        "Rishi Srivastava"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-20T11:34:52Z",
+      "updated": "2026-06-20T11:34:52Z",
+      "announced_date": "2026-06-20",
+      "first_seen": "2026-06-20",
+      "comment": "28 pages, 2 figures, 13 tables. Benchmark, environment spec, and app contract released. First open-weight three-model sweep (k=5) on a 40-task oracle-validated executable suite; frontier-model leaderboard committed in the roadmap",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.22000v1",
+        "pdf": "https://arxiv.org/pdf/2606.22000v1",
+        "html": "https://arxiv.org/html/2606.22000"
+      },
+      "score": 13,
+      "tags": [
+        "web"
+      ],
+      "field": "web",
+      "citations": 1
+    }
+  ]
+}

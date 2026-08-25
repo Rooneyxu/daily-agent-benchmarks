@@ -1,0 +1,376 @@
+{
+  "date": "2026-03-24",
+  "count": 8,
+  "report": {
+    "date": "2026-03-24",
+    "count": 8,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      }
+    ],
+    "en": {
+      "headline": "8 new agent benchmarks",
+      "summary": "On March 24, 2026, arXiv listed 8 new agent benchmarks. Work clustered around Tool use (3), Planning / reasoning (3), Safety (2), and Coding agents (1).",
+      "highlights": [
+        {
+          "id": "2603.23749",
+          "title": "Efficient Benchmarking of AI Agents",
+          "blurb": "Evaluating AI agents on comprehensive benchmarks is expensive because each evaluation requires interactive rollouts with tool use and multi-step reasoning."
+        },
+        {
+          "id": "2603.22651",
+          "title": "Benchmarking Multi-Agent LLM Architectures for Financial Document Processing: A Comparative Study of Orchestration Patterns, Cost-Accuracy Tradeoffs and Production Scaling Strategies",
+          "blurb": "The adoption of large language models (LLMs) for structured information extraction from financial documents has accelerated rapidly, yet production deployments face fundamental architectural decisions with limited empiri…"
+        },
+        {
+          "id": "2603.22767",
+          "title": "Can LLM Agents Generate Real-World Evidence? Evaluating Observational Studies in Medical Databases",
+          "blurb": "Observational studies can yield clinically actionable evidence at scale, but executing them on real-world databases is open-ended and requires coherent decisions across cohort construction, analysis, and reporting."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 8 篇 Agent Benchmark",
+      "summary": "2026年3月24日，arXiv 新增 8 篇 Agent Benchmark。当日主题集中在工具使用（3）、规划 / 推理（3）、安全（2）、代码智能体（1）。",
+      "highlights": [
+        {
+          "id": "2603.23749",
+          "title": "Efficient Benchmarking of AI Agents",
+          "blurb": "Evaluating AI agents on comprehensive benchmarks is expensive because each evaluation requires interactive rollouts with tool use and multi-step reasoning."
+        },
+        {
+          "id": "2603.22651",
+          "title": "Benchmarking Multi-Agent LLM Architectures for Financial Document Processing: A Comparative Study of Orchestration Patterns, Cost-Accuracy Tradeoffs and Production Scaling Strategies",
+          "blurb": "The adoption of large language models (LLMs) for structured information extraction from financial documents has accelerated rapidly, yet production deployments face fundamental architectural decisions with limited empiri…"
+        },
+        {
+          "id": "2603.22767",
+          "title": "Can LLM Agents Generate Real-World Evidence? Evaluating Observational Studies in Medical Databases",
+          "blurb": "Observational studies can yield clinically actionable evidence at scale, but executing them on real-world databases is open-ended and requires coherent decisions across cohort construction, analysis, and reporting."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2603.23749",
+      "title": "Efficient Benchmarking of AI Agents",
+      "abstract": "Evaluating AI agents on comprehensive benchmarks is expensive because each evaluation requires interactive rollouts with tool use and multi-step reasoning. We study whether small task subsets can preserve agent rankings at substantially lower cost. Unlike static language model benchmarks, agent evaluation is subject to scaffold-driven distribution shift, since performance depends on the framework wrapping the underlying model. Across eight benchmarks, 33 agent scaffolds, and 70+ model configurations, we find that absolute score prediction degrades under this shift, while rank-order prediction remains stable. Exploiting this asymmetry, we propose a simple optimization-free protocol: evaluate new agents only on tasks with intermediate historical pass rates (30-70%). This mid-range difficulty filter, motivated by Item Response Theory, reduces the number of evaluation tasks by 44-70% while maintaining high rank fidelity under scaffold and temporal shifts. It provides more reliable rankings than random sampling, which exhibits high variance across seeds, and outperforms greedy task selection under distribution shift. These results suggest that reliable leaderboard ranking does not require full-benchmark evaluation.",
+      "authors": [
+        "Franck Ndzomga"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-24T22:17:11Z",
+      "updated": "2026-03-24T22:17:11Z",
+      "announced_date": "2026-03-24",
+      "first_seen": "2026-03-24",
+      "comment": "22 pages, 7 figures, 5 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.23749v1",
+        "pdf": "https://arxiv.org/pdf/2603.23749v1",
+        "html": "https://arxiv.org/html/2603.23749"
+      },
+      "score": 17,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 8
+    },
+    {
+      "id": "2603.23638",
+      "title": "Can LLM Agents Be CFOs? Benchmarking Long-Horizon Resource Allocation in an Uncertain Enterprise Environment",
+      "abstract": "Large language model (LLM) agents are increasingly tested on complex tasks, but their ability to allocate scarce resources over long horizons remains unclear. Unlike reactive tasks with immediate feedback, this setting requires agents to make binding commitments under partial observability, delayed consequences, hard resource budgets, and shifting dynamics. We introduce EnterpriseArena, a 132-month CFO simulator that evaluates long-horizon resource allocation under uncertainty in a FinTech lending firm. Agents must manage liquidity, close books, gather costly signals, and request equity or debt financing across changing macroeconomic regimes. The simulator is built from transformed firm-level financial data, anonymized business documents, decade-scale macroeconomic and industry signals, and expert-validated operating rules. Experiments across 23 LLMs and four agent frameworks show that current agents remain far from robust: only 15.4% of trials survive the full horizon, larger models do not reliably outperform smaller ones, and failures cascade across observation, action timing, and capital sizing. These findings establish long-horizon resource allocation under uncertainty as a distinct capability gap for LLM agents.",
+      "authors": [
+        "Yi Han",
+        "Yan Wang",
+        "Lingfei Qian",
+        "Haohang Li",
+        "Yupeng Cao",
+        "Yueru He",
+        "Xueqing Peng",
+        "Nanhan Shen",
+        "Yitao Xu",
+        "Yankai Chen",
+        "Dongji Feng",
+        "Jimin Huang",
+        "Xue Liu",
+        "Jian-Yun Nie",
+        "Sophia Ananiadou"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-24T18:25:00Z",
+      "updated": "2026-05-16T06:55:59Z",
+      "announced_date": "2026-03-24",
+      "first_seen": "2026-03-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.23638v2",
+        "pdf": "https://arxiv.org/pdf/2603.23638v2",
+        "html": "https://arxiv.org/html/2603.23638"
+      },
+      "score": 10,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2603.23448",
+      "title": "Code Review Agent Benchmark",
+      "abstract": "Software engineering agents have shown significant promise in writing code. As AI agents permeate code writing, and generate huge volumes of code automatically -- the matter of code quality comes front and centre. As the automatically generated code gets integrated into huge code-bases -- the issue of code review and broadly quality assurance becomes important. In this paper, we take a fresh look at the problem and curate a code review dataset for AI agents to work with. Our dataset called c-CRAB (pronounced see-crab) can evaluate agents for code review tasks. Specifically given a pull-request (which could be coming from code generation agents or humans), if a code review agent produces a review, our evaluation framework can asses the reviewing capability of the code review agents. Our evaluation framework is used to evaluate the state of the art today -- the open-source PR-agent, as well as commercial code review agents from Devin, Claude Code, and Codex. Our c-CRAB dataset is systematically constructed from human reviews -- given a human review of a pull request instance we generate corresponding tests to evaluate the code review agent generated reviews. Such a benchmark construction gives us several insights. Firstly, the existing review agents taken together can solve only around 40% of the c-CRAB tasks, indicating the potential to close this gap by future research. Secondly, we observe that the agent reviews often consider different aspects from the human reviews -- indicating the potential for human-agent collaboration for code review that could be deployed in future software teams. Last but not the least, the agent generated tests from our data-set act as a held out test-suite and hence quality gate for agent generated reviews. What this will mean for future collaboration of code generation agents, test generation agents and code review agents -- remains to be investigated.",
+      "authors": [
+        "Yuntong Zhang",
+        "Zhiyuan Pan",
+        "Imam Nur Bani Yusuf",
+        "Haifeng Ruan",
+        "Ridwan Shariffdeen",
+        "Abhik Roychoudhury"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-03-24T17:19:32Z",
+      "updated": "2026-04-07T08:07:13Z",
+      "announced_date": "2026-03-24",
+      "first_seen": "2026-03-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.23448v3",
+        "pdf": "https://arxiv.org/pdf/2603.23448v3",
+        "html": "https://arxiv.org/html/2603.23448"
+      },
+      "score": 11,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 7
+    },
+    {
+      "id": "2603.23231",
+      "title": "PERMA: Benchmarking Personalized Memory Agents via Event-Driven Preference and Realistic Task Environments",
+      "abstract": "Empowering large language models with long-term memory is crucial for building agents that adapt to users' evolving needs. Existing evaluations of this capability typically interleave preference-related dialogues with irrelevant conversations, reducing the task to needle-in-a-haystack retrieval while ignoring relationships between events driving user preference evolution. Such settings overlook a fundamental characteristic of real-world personalization: preferences emerge gradually and accumulate across interactions within noisy contexts. To bridge this gap, we introduce PERMA, a benchmark designed to evaluate persona consistency over time beyond static preference recall. Additionally, we incorporate (1) text variability and (2) linguistic alignment to simulate erratic user inputs and individual idiolects in real-world data. PERMA consists of temporally ordered interaction events spanning multiple sessions and domains, with preference-related queries inserted over time. We design both multiple-choice and interactive tasks to probe the model's understanding of persona along the interaction timeline. Experiments demonstrate that by linking related interactions, advanced memory systems extract precise preferences and reduce token consumption, outperforming traditional semantic retrieval of raw dialogues. Nevertheless, they still struggle to maintain a coherent persona across temporal depth and cross-domain interference, highlighting the need for more robust personalized memory management in agents. Our code and data are open-sourced at https://github.com/PolarisLiu1/PERMA.",
+      "authors": [
+        "Shuochen Liu",
+        "Junyi Zhu",
+        "Long Shu",
+        "Junda Lin",
+        "Yuhao Chen",
+        "Haotian Zhang",
+        "Chao Zhang",
+        "Derong Xu",
+        "Jia Li",
+        "Bo Tang",
+        "Zhiyu Li",
+        "Feiyu Xiong",
+        "Enhong Chen",
+        "Tong Xu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-24T14:04:11Z",
+      "updated": "2026-05-17T13:59:13Z",
+      "announced_date": "2026-03-24",
+      "first_seen": "2026-03-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.23231v2",
+        "pdf": "https://arxiv.org/pdf/2603.23231v2",
+        "html": "https://arxiv.org/html/2603.23231"
+      },
+      "score": 10,
+      "tags": [
+        "safety",
+        "memory"
+      ],
+      "field": "other",
+      "citations": 10
+    },
+    {
+      "id": "2603.22999",
+      "title": "PaperVoyager : Building Interactive Web with Visual Language Models",
+      "abstract": "Recent advances in visual language models have enabled autonomous agents for complex reasoning, tool use, and document understanding. However, existing document agents mainly transform papers into static artifacts such as summaries, webpages, or slides, which are insufficient for technical papers involving dynamic mechanisms and state transitions. In this work, we propose a Paper-to-Interactive-System Agent that converts research papers into executable interactive web systems. Given a PDF paper, the agent performs end-to-end processing without human intervention, including paper understanding, system modeling, and interactive webpage synthesis, enabling users to manipulate inputs and observe dynamic behaviors. To evaluate this task, we introduce a benchmark of 19 research papers paired with expert-built interactive systems as ground truth. We further propose PaperVoyager, a structured generation framework that explicitly models mechanisms and interaction logic during synthesis. Experiments show that PaperVoyager significantly improves the quality of generated interactive systems, offering a new paradigm for interactive scientific paper understanding.",
+      "authors": [
+        "Dasen Dai",
+        "Biao Wu",
+        "Meng Fang",
+        "Wenhao Wang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-03-24T09:42:27Z",
+      "updated": "2026-05-30T14:33:06Z",
+      "announced_date": "2026-03-24",
+      "first_seen": "2026-03-24",
+      "comment": "9 pages, 5 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.22999v3",
+        "pdf": "https://arxiv.org/pdf/2603.22999v3",
+        "html": "https://arxiv.org/html/2603.22999"
+      },
+      "score": 9,
+      "tags": [
+        "tool-use",
+        "planning",
+        "science"
+      ],
+      "field": "other",
+      "citations": 3
+    },
+    {
+      "id": "2603.22767",
+      "title": "Can LLM Agents Generate Real-World Evidence? Evaluating Observational Studies in Medical Databases",
+      "abstract": "Observational studies can yield clinically actionable evidence at scale, but executing them on real-world databases is open-ended and requires coherent decisions across cohort construction, analysis, and reporting. Prior evaluations of LLM agents emphasize isolated steps or single answers, missing the integrity and internal structure of the resulting evidence bundle. To address this gap, we introduce RWE-bench, a benchmark grounded in MIMIC-IV and derived from peer-reviewed observational studies. Each task provides the corresponding study protocol as the reference standard, requiring agents to execute experiments in a real database and iteratively generate tree-structured evidence bundles. We evaluate six LLMs (three open-source, three closed-source) under three agent scaffolds using both question-level correctness and end-to-end task metrics. Across 162 tasks, task success is low: the best agent reaches 39.9%, and the best open-source model reaches 30.4%. Agent scaffolds also matter substantially, causing over 30% variation in performance metrics. Furthermore, we implement an automated cohort evaluation method to rapidly localize errors and identify agent failure modes. Overall, the results highlight persistent limitations in agents' ability to produce end-to-end evidence bundles, and efficient validation remains an important direction for future work. Code and data are available at https://github.com/somewordstoolate/RWE-bench.",
+      "authors": [
+        "Dubai Li",
+        "Yuxiang He",
+        "Yan Hu",
+        "Yu Tian",
+        "Jingsong Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-24T03:50:34Z",
+      "updated": "2026-03-24T03:50:34Z",
+      "announced_date": "2026-03-24",
+      "first_seen": "2026-03-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.22767v1",
+        "pdf": "https://arxiv.org/pdf/2603.22767v1",
+        "html": "https://arxiv.org/html/2603.22767"
+      },
+      "score": 11,
+      "tags": [],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2603.22744",
+      "title": "LH-Bench: Skill-Grounded Evaluation of Long-Horizon Agents on Subjective Enterprise Tasks",
+      "abstract": "Large language models excel on objectively verifiable tasks such as math and programming, where evaluation reduces to unit tests or a single correct answer. In contrast, real-world enterprise work is often subjective and context-dependent: success hinges on organizational goals, user intent, and the quality of intermediate artifacts produced across long, multi-tool workflows. We introduce LH-Bench, a three-pillar evaluation design that moves beyond binary correctness to score autonomous, long-horizon execution on subjective enterprise tasks. The pillars are: (i) expert-grounded rubrics that give LLM judges the domain context needed to score subjective work, (ii) curated ground-truth artifacts that enable stepwise reward signals (e.g., chapter-level annotation for content tasks), and (iii) pairwise human preference evaluation for convergent validation. We show that domain-authored rubrics provide substantially more reliable evaluation signals than LLM-authored rubrics (kappa = 0.60 vs. 0.46), and that human preference judgments confirm the same top-tier separation (p < 0.05), evidence that expert-grounded evaluation can scale without sacrificing reliability. We release public datasets and report results on two environments: Figma-to-code (33 real .fig tasks against the Figma API via MCP) and Programmatic content (41 courses comprising 183 individually-evaluated chapters on a course platform serving 30+ daily users).",
+      "authors": [
+        "Abhishek Chandwani",
+        "Ishan Gupta"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-24T03:16:32Z",
+      "updated": "2026-05-29T00:35:02Z",
+      "announced_date": "2026-03-24",
+      "first_seen": "2026-03-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.22744v2",
+        "pdf": "https://arxiv.org/pdf/2603.22744v2",
+        "html": "https://arxiv.org/html/2603.22744"
+      },
+      "score": 11,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2603.22651",
+      "title": "Benchmarking Multi-Agent LLM Architectures for Financial Document Processing: A Comparative Study of Orchestration Patterns, Cost-Accuracy Tradeoffs and Production Scaling Strategies",
+      "abstract": "The adoption of large language models (LLMs) for structured information extraction from financial documents has accelerated rapidly, yet production deployments face fundamental architectural decisions with limited empirical guidance. We present a systematic benchmark comparing four multi-agent orchestration architectures: sequential pipeline, parallel fan-out with merge, hierarchical supervisor-worker and reflexive self-correcting loop. These are evaluated across five frontier and open-weight LLMs on a corpus of 10,000 SEC filings (10-K, 10-Q and 8-K forms). Our evaluation spans 25 extraction field types covering governance structures, executive compensation and financial metrics, measured along five axes: field-level F1, document-level accuracy, end-to-end latency, cost per document and token efficiency. We find that reflexive architectures achieve the highest field-level F1 (0.943) but at 2.3x the cost of sequential baselines, while hierarchical architectures occupy the most favorable position on the cost-accuracy Pareto frontier (F1 0.921 at 1.4x cost). We further present ablation studies on semantic caching, model routing and adaptive retry strategies, demonstrating that hybrid configurations can recover 89\\% of the reflexive architecture's accuracy gains at only 1.15x baseline cost. Our scaling analysis from 1K to 100K documents per day reveals non-obvious throughput-accuracy degradation curves that inform capacity planning. These findings provide actionable guidance for practitioners deploying multi-agent LLM systems in regulated financial environments.",
+      "authors": [
+        "Siddhant Kulkarni",
+        "Yukta Kulkarni"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-24T00:02:47Z",
+      "updated": "2026-03-24T00:02:47Z",
+      "announced_date": "2026-03-24",
+      "first_seen": "2026-03-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.22651v1",
+        "pdf": "https://arxiv.org/pdf/2603.22651v1",
+        "html": "https://arxiv.org/html/2603.22651"
+      },
+      "score": 13,
+      "tags": [
+        "multi-agent",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 6
+    }
+  ]
+}

@@ -1,0 +1,489 @@
+{
+  "date": "2026-02-11",
+  "count": 10,
+  "report": {
+    "date": "2026-02-11",
+    "count": 10,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 5,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 5,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 4,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "memory",
+        "count": 3,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "research",
+        "count": 2,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      }
+    ],
+    "en": {
+      "headline": "10 new agent benchmarks",
+      "summary": "On February 11, 2026, arXiv listed 10 new agent benchmarks. Work clustered around Safety (5), Planning / reasoning (5), Tool use (4), and Memory (3).",
+      "highlights": [
+        {
+          "id": "2602.11348",
+          "title": "AgentNoiseBench: Benchmarking Robustness of Tool-Using LLM Agents Under Noisy Condition",
+          "blurb": "Recent advances in large language models have enabled LLM-based agents to achieve strong performance on a variety of benchmarks."
+        },
+        {
+          "id": "2602.11354",
+          "title": "ReplicatorBench: Benchmarking LLM Agents for Replicability in Social and Behavioral Sciences",
+          "blurb": "The literature has witnessed an emerging interest in AI agents for automated assessment of scientific papers."
+        },
+        {
+          "id": "2602.10975",
+          "title": "FeatureBench: Benchmarking Agentic Coding for Complex Feature Development",
+          "blurb": "Agents powered by large language models (LLMs) are increasingly adopted in the software industry, contributing code as collaborators or even autonomous developers."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 10 篇 Agent Benchmark",
+      "summary": "2026年2月11日，arXiv 新增 10 篇 Agent Benchmark。当日主题集中在安全（5）、规划 / 推理（5）、工具使用（4）、记忆（3）。",
+      "highlights": [
+        {
+          "id": "2602.11348",
+          "title": "AgentNoiseBench: Benchmarking Robustness of Tool-Using LLM Agents Under Noisy Condition",
+          "blurb": "Recent advances in large language models have enabled LLM-based agents to achieve strong performance on a variety of benchmarks."
+        },
+        {
+          "id": "2602.11354",
+          "title": "ReplicatorBench: Benchmarking LLM Agents for Replicability in Social and Behavioral Sciences",
+          "blurb": "The literature has witnessed an emerging interest in AI agents for automated assessment of scientific papers."
+        },
+        {
+          "id": "2602.10975",
+          "title": "FeatureBench: Benchmarking Agentic Coding for Complex Feature Development",
+          "blurb": "Agents powered by large language models (LLMs) are increasingly adopted in the software industry, contributing code as collaborators or even autonomous developers."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2602.11354",
+      "title": "ReplicatorBench: Benchmarking LLM Agents for Replicability in Social and Behavioral Sciences",
+      "abstract": "The literature has witnessed an emerging interest in AI agents for automated assessment of scientific papers. Existing benchmarks focus primarily on the computational aspect of this task, testing agents' ability to reproduce or replicate research outcomes when having access to the code and data. This setting, while foundational, (1) fails to capture the inconsistent availability of new data for replication as opposed to reproduction, and (2) lacks ground-truth diversity by focusing only on reproducible papers, thereby failing to evaluate an agent's ability to identify non-replicable research. Furthermore, most benchmarks only evaluate outcomes rather than the replication process. In response, we introduce ReplicatorBench, an end-to-end benchmark, including human-verified replicable and non-replicable research claims in social and behavioral sciences for evaluating AI agents in research replication across three stages: (1) extraction and retrieval of replication data; (2) design and execution of computational experiments; and (3) interpretation of results, allowing a test of AI agents' capability to mimic the activities of human replicators in real world. To set a baseline of AI agents' capability, we develop ReplicatorAgent, an agentic framework equipped with necessary tools, like web search and iterative interaction with sandboxed environments, to accomplish tasks in ReplicatorBench. We evaluate ReplicatorAgent across four underlying large language models (LLMs), as well as different design choices of programming language and levels of code access. Our findings reveal that while current LLM agents are capable of effectively designing and executing computational experiments, they struggle with retrieving resources, such as new data, necessary to replicate a claim. All code and data are publicly available at https://github.com/CenterForOpenScience/llm-benchmarking.",
+      "authors": [
+        "Bang Nguyen",
+        "Dominik Soós",
+        "Qian Ma",
+        "Rochana R. Obadage",
+        "Zack Ranjan",
+        "Sai Koneru",
+        "Timothy M. Errington",
+        "Shakhlo Nematova",
+        "Sarah Rajtmajer",
+        "Jian Wu",
+        "Meng Jiang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-11T20:42:10Z",
+      "updated": "2026-06-29T19:08:09Z",
+      "announced_date": "2026-02-11",
+      "first_seen": "2026-02-11",
+      "comment": "Accepted to KDD 2026 AI4Sciences Track, Camera-ready version",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.11354v3",
+        "pdf": "https://arxiv.org/pdf/2602.11354v3",
+        "html": "https://arxiv.org/html/2602.11354"
+      },
+      "score": 20,
+      "tags": [
+        "tool-use",
+        "research",
+        "science"
+      ],
+      "field": "other",
+      "citations": 6
+    },
+    {
+      "id": "2602.11348",
+      "title": "AgentNoiseBench: Benchmarking Robustness of Tool-Using LLM Agents Under Noisy Condition",
+      "abstract": "Recent advances in large language models have enabled LLM-based agents to achieve strong performance on a variety of benchmarks. However, their performance in real-world deployments often that observed on benchmark settings, especially in complex and imperfect environments. This discrepancy largely arises because prevailing training and evaluation paradigms are typically built on idealized assumptions, overlooking the inherent stochasticity and noise present in real-world interactions. To bridge this gap, we introduce AgentNoiseBench, a framework for systematically evaluating the robustness of agentic models under noisy environments. We first conduct an in-depth analysis of biases and uncertainties in real-world scenarios and categorize environmental noise into two primary types: user-noise and tool-noise. Building on this analysis, we develop an automated pipeline that injects controllable noise into existing agent-centric benchmarks while preserving task solvability. Leveraging this pipeline, we perform extensive evaluations across a wide range of models with diverse architectures and parameter scales. Our results reveal consistent performance variations under different noise conditions, highlighting the sensitivity of current agentic models to realistic environmental perturbations.",
+      "authors": [
+        "Ruipeng Wang",
+        "Yuxin Chen",
+        "Yukai Wang",
+        "Chang Wu",
+        "Junfeng Fang",
+        "Xiaodong Cai",
+        "Qi Gu",
+        "Hui Su",
+        "An Zhang",
+        "Xiang Wang",
+        "Xunliang Cai",
+        "Tat-Seng Chua"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-11T20:33:10Z",
+      "updated": "2026-02-18T01:36:58Z",
+      "announced_date": "2026-02-11",
+      "first_seen": "2026-02-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.11348v2",
+        "pdf": "https://arxiv.org/pdf/2602.11348v2",
+        "html": "https://arxiv.org/html/2602.11348"
+      },
+      "score": 24,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "other",
+      "citations": 12
+    },
+    {
+      "id": "2602.11243",
+      "title": "Evaluating Memory Structure in LLM Agents",
+      "abstract": "Modern LLM-based agents and chat assistants rely on long-term memory frameworks to store reusable knowledge, recall user preferences, and augment reasoning. As researchers create more complex memory architectures, it becomes increasingly difficult to analyze their capabilities and guide future memory designs. Most long-term memory benchmarks focus on simple fact retention, multi-hop recall, and time-based changes. While undoubtedly important, these capabilities can often be achieved with simple retrieval-augmented LLMs and do not test complex memory hierarchies. To bridge this gap, we propose StructMemEval - a benchmark that tests the agent's ability to organize its long-term memory, not just factual recall. We gather a suite of tasks that humans solve by organizing their knowledge in a specific structure: transaction ledgers, to-do lists, trees and others. Our initial experiments show that simple retrieval-augmented LLMs struggle with these tasks, whereas memory agents can reliably solve them if prompted how to organize their memory. However, we also find that modern LLMs do not always recognize the memory structure when not prompted to do so. This highlights an important direction for future improvements in both LLM training and memory frameworks.",
+      "authors": [
+        "Alina Shutova",
+        "Alexandra Olenina",
+        "Ivan Vinogradov",
+        "Anton Sinitsin"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T17:32:23Z",
+      "updated": "2026-05-22T11:17:25Z",
+      "announced_date": "2026-02-11",
+      "first_seen": "2026-02-11",
+      "comment": "Preprint, work in progress",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.11243v2",
+        "pdf": "https://arxiv.org/pdf/2602.11243v2",
+        "html": "https://arxiv.org/html/2602.11243"
+      },
+      "score": 10,
+      "tags": [
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 9
+    },
+    {
+      "id": "2602.10975",
+      "title": "FeatureBench: Benchmarking Agentic Coding for Complex Feature Development",
+      "abstract": "Agents powered by large language models (LLMs) are increasingly adopted in the software industry, contributing code as collaborators or even autonomous developers. As their presence grows, it becomes important to assess the current boundaries of their coding abilities. Existing agentic coding benchmarks, however, cover a limited task scope, e.g., bug fixing within a single pull request (PR), and often rely on non-executable evaluations or lack an automated approach for continually updating the evaluation coverage. To address such issues, we propose FeatureBench, a benchmark designed to evaluate agentic coding performance in end-to-end, feature-oriented software development. FeatureBench incorporates an execution-based evaluation protocol and a scalable test-driven method that automatically derives tasks from code repositories with minimal human effort. By tracing from unit tests along a dependency graph, our approach can identify feature-level coding tasks spanning multiple commits and PRs scattered across the development timeline, while ensuring the proper functioning of other features after the separation. Using this framework, we curated 200 challenging evaluation tasks and 3825 executable environments from 24 open-source repositories in the first version of our benchmark. Empirical evaluation reveals that the state-of-the-art agentic model, such as Claude 4.5 Opus, which achieves a 74.4% resolved rate on SWE-bench, succeeds on only 11.0% of tasks, opening new opportunities for advancing agentic coding. Moreover, benefiting from our automated task collection toolkit, FeatureBench can be easily scaled and updated over time to mitigate data leakage. The inherent verifiability of constructed environments also makes our method potentially valuable for agent training.",
+      "authors": [
+        "Qixing Zhou",
+        "Jiacheng Zhang",
+        "Haiyang Wang",
+        "Rui Hao",
+        "Jiahe Wang",
+        "Minghao Han",
+        "Yuxue Yang",
+        "Shuzhe Wu",
+        "Feiyang Pan",
+        "Lue Fan",
+        "Dandan Tu",
+        "Zhaoxiang Zhang"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-11T16:06:32Z",
+      "updated": "2026-02-11T16:06:32Z",
+      "announced_date": "2026-02-11",
+      "first_seen": "2026-02-11",
+      "comment": "Accepted by ICLR 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.10975v1",
+        "pdf": "https://arxiv.org/pdf/2602.10975v1",
+        "html": "https://arxiv.org/html/2602.10975"
+      },
+      "score": 19,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 26
+    },
+    {
+      "id": "2602.11224",
+      "title": "Agent-Diff: Benchmarking LLM Agents on Enterprise API Tasks via Code Execution with State-Diff-Based Evaluation",
+      "abstract": "We present Agent-Diff, a novel benchmarking framework for evaluating agentic Large Language Models (LLMs) on real-world productivity software API tasks via code execution. Agentic LLM performance varies due to differences in models, external tool access, prompt structures, and agentic frameworks. Benchmarks must make fundamental trade-offs between a sandboxed approach that controls for variation in software environments and more ecologically valid approaches employing real services. Agent-Diff attempts to capture the desirable features of both of these approaches by including access to the real API interfaces for software services while sandboxing the environment in which calls are made, processed, and evaluated. This approach relies on two key innovations. The first is a novel state-diff contract, which separates process from outcome - rather than fuzzy trace or parameter matching, we define task success as whether the expected change in environment state was achieved. The second is a novel sandbox built on containerized replicas of enterprise APIs, allowing all models to interact with the same service interfaces through code execution. This enables controlled evaluation against a common set of state-diff contracts while preserving the structure of real-world API interaction. Using the Agent-Diff framework, we provide benchmarks for nine LLMs across 224 tasks utilizing enterprise software workflows. In addition, we evaluate the robustness of the framework with ablation experiments to assess the contribution of access to API documentation on benchmark performance. Code and data: https://github.com/agent-diff-bench/agent-diff.",
+      "authors": [
+        "Hubert M. Pysklo",
+        "Artem Zhuravel",
+        "Patrick D. Watson"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-11T13:31:18Z",
+      "updated": "2026-04-28T16:08:25Z",
+      "announced_date": "2026-02-11",
+      "first_seen": "2026-02-11",
+      "comment": "Pre-Print. Under review for KDD 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.11224v3",
+        "pdf": "https://arxiv.org/pdf/2602.11224v3",
+        "html": "https://arxiv.org/html/2602.11224"
+      },
+      "score": 15,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "other",
+      "citations": 4
+    },
+    {
+      "id": "2602.10814",
+      "title": "See, Plan, Snap: Evaluating Multimodal GUI Agents in Scratch",
+      "abstract": "Block-based programming environments such as Scratch play a central role in low-code education, yet evaluating the capabilities of AI agents to construct programs through Graphical User Interfaces (GUIs) remains underexplored. We introduce ScratchWorld, a benchmark for evaluating multimodal GUI agents on program-by-construction tasks in Scratch. Grounded in the Use-Modify-Create pedagogical framework, ScratchWorld comprises 83 curated tasks spanning four distinct problem categories: Create, Debug, Extend, and Compute. To rigorously diagnose the source of agent failures, the benchmark employs two complementary interaction modes: primitive mode requires fine-grained drag-and-drop manipulation to directly assess visuomotor control, while composite mode uses high-level semantic APIs to disentangle program reasoning from GUI execution. To ensure reliable assessment, we propose an execution-based evaluation protocol that validates the functional correctness of the constructed Scratch programs through runtime tests within the browser environment. Extensive experiments across state-of-the-art multimodal language models and GUI agents reveal a substantial reasoning--acting gap, highlighting persistent challenges in fine-grained GUI manipulation despite strong planning capabilities.",
+      "authors": [
+        "Xingyi Zhang",
+        "Yulei Ye",
+        "Kaifeng Huang",
+        "Wenhao Li",
+        "Xiangfeng Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-11T12:54:53Z",
+      "updated": "2026-02-11T12:54:53Z",
+      "announced_date": "2026-02-11",
+      "first_seen": "2026-02-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.10814v1",
+        "pdf": "https://arxiv.org/pdf/2602.10814v1",
+        "html": "https://arxiv.org/html/2602.10814"
+      },
+      "score": 17,
+      "tags": [
+        "web",
+        "gui",
+        "planning",
+        "multimodal"
+      ],
+      "field": "computer-use",
+      "citations": 1
+    },
+    {
+      "id": "2602.10809",
+      "title": "DeepImageSearch: Benchmarking Multimodal Agents for Context-Aware Image Retrieval in Visual Histories",
+      "abstract": "Existing multimodal retrieval systems excel at semantic matching but implicitly assume that query-image relevance can be measured in isolation. This paradigm overlooks the rich dependencies inherent in realistic visual streams, where information is distributed across temporal sequences rather than confined to single snapshots. To bridge this gap, we introduce DeepImageSearch, a novel agentic paradigm that reformulates image retrieval as an autonomous exploration task. Models must plan and perform multi-step reasoning over raw visual histories to locate targets based on implicit contextual cues. We construct DISBench, a challenging benchmark built on interconnected visual data. To address the scalability challenge of creating context-dependent queries, we propose a human-model collaborative pipeline that employs vision-language models to mine latent spatiotemporal associations, effectively offloading intensive context discovery before human verification. Furthermore, we build a robust baseline using a modular agent framework equipped with fine-grained tools and a dual-memory system for long-horizon navigation. Extensive experiments demonstrate that DISBench poses significant challenges to state-of-the-art models, highlighting the necessity of incorporating agentic reasoning into next-generation retrieval systems.",
+      "authors": [
+        "Chenlong Deng",
+        "Mengjie Deng",
+        "Junjie Wu",
+        "Dun Zeng",
+        "Teng Wang",
+        "Qingsong Xie",
+        "Jiadeng Huang",
+        "Shengjie Ma",
+        "Changwang Zhang",
+        "Zhaoxiang Wang",
+        "Jun Wang",
+        "Yutao Zhu",
+        "Zhicheng Dou"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.IR"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-11T12:51:10Z",
+      "updated": "2026-05-29T06:07:43Z",
+      "announced_date": "2026-02-11",
+      "first_seen": "2026-02-11",
+      "comment": "18 pages, 6 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.10809v2",
+        "pdf": "https://arxiv.org/pdf/2602.10809v2",
+        "html": "https://arxiv.org/html/2602.10809"
+      },
+      "score": 9,
+      "tags": [
+        "tool-use",
+        "safety",
+        "memory",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 4
+    },
+    {
+      "id": "2602.10715",
+      "title": "Locomo-Plus: Beyond-Factual Cognitive Memory Evaluation Framework for LLM Agents",
+      "abstract": "Long-term conversational memory is a core capability for LLM-based dialogue systems, yet existing benchmarks and evaluation protocols primarily focus on surface-level factual recall. In realistic interactions, appropriate responses often depend on implicit constraints such as user state, goals, or values that are not explicitly queried later. To evaluate this setting, we introduce \\textbf{LoCoMo-Plus}, a benchmark for assessing cognitive memory under cue--trigger semantic disconnect, where models must retain and apply latent constraints across long conversational contexts. We further show that conventional string-matching metrics and explicit task-type prompting are misaligned with such scenarios, and propose a unified evaluation framework based on constraint consistency. Experiments across diverse backbone models, retrieval-based methods, and memory systems demonstrate that cognitive memory remains challenging and reveals failures not captured by existing benchmarks. Our code and evaluation framework are publicly available at: https://github.com/xjtuleeyf/Locomo-Plus.",
+      "authors": [
+        "Yifei Li",
+        "Weidong Guo",
+        "Lingling Zhang",
+        "Rongman Xu",
+        "Muye Huang",
+        "Hui Liu",
+        "Lijiao Xu",
+        "Yu Xu",
+        "Jun Liu"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-11T10:22:35Z",
+      "updated": "2026-02-11T10:22:35Z",
+      "announced_date": "2026-02-11",
+      "first_seen": "2026-02-11",
+      "comment": "16 pages, 8 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.10715v1",
+        "pdf": "https://arxiv.org/pdf/2602.10715v1",
+        "html": "https://arxiv.org/html/2602.10715"
+      },
+      "score": 11,
+      "tags": [
+        "memory",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 6
+    },
+    {
+      "id": "2602.10620",
+      "title": "ISD-Agent-Bench: A Comprehensive Benchmark for Evaluating LLM-based Instructional Design Agents",
+      "abstract": "Large Language Model (LLM) agents have shown promising potential in automating Instructional Systems Design (ISD), a systematic approach to developing educational programs. However, evaluating these agents remains challenging due to the lack of standardized benchmarks and the risk of LLM-as-judge bias. We present ISD-Agent-Bench, a comprehensive benchmark comprising 25,795 scenarios generated via a Context Matrix framework that combines 51 contextual variables across 5 categories with 33 ISD sub-steps derived from the ADDIE model. To ensure evaluation reliability, we employ a multi-judge protocol using diverse LLMs from different providers, achieving high inter-judge reliability. We compare existing ISD agents with novel agents grounded in classical ISD theories such as ADDIE, Dick \\& Carey, and Rapid Prototyping ISD. Experiments on 1,017 test scenarios demonstrate that integrating classical ISD frameworks with modern ReAct-style reasoning achieves the highest performance, outperforming both pure theory-based agents and technique-only approaches. Further analysis reveals that theoretical quality strongly correlates with benchmark performance, with theory-based agents showing significant advantages in problem-centered design and objective-assessment alignment. Our work provides a foundation for systematic LLM-based ISD research.",
+      "authors": [
+        "YoungHoon Jeon",
+        "Suwan Kim",
+        "Haein Son",
+        "Sookbun Lee",
+        "Yeil Jeong",
+        "Unggi Lee"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-11T08:11:31Z",
+      "updated": "2026-02-11T08:11:31Z",
+      "announced_date": "2026-02-11",
+      "first_seen": "2026-02-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.10620v1",
+        "pdf": "https://arxiv.org/pdf/2602.10620v1",
+        "html": "https://arxiv.org/html/2602.10620"
+      },
+      "score": 16,
+      "tags": [
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2602.10453",
+      "title": "The Landscape of Prompt Injection Threats in LLM Agents: From Taxonomy to Analysis",
+      "abstract": "The evolution of Large Language Models (LLMs) has resulted in a paradigm shift towards autonomous agents, necessitating robust security against Prompt Injection (PI) vulnerabilities where untrusted inputs hijack agent behaviors. This SoK presents a comprehensive overview of the PI landscape, covering attacks, defenses, and their evaluation practices. Through a systematic literature review and quantitative analysis, we establish taxonomies that categorize PI attacks by payload generation strategies (heuristic vs. optimization) and defenses by intervention stages (text, model, and execution levels). Our analysis reveals a key limitation shared by many existing defenses and benchmarks: they largely overlook context-dependent tasks, in which agents are authorized to rely on runtime environmental observations to determine actions. To address this gap, we introduce AgentPI, a new benchmark designed to systematically evaluate agent behavior under context-dependent interaction settings. Using AgentPI, we empirically evaluate representative defenses and show that no single approach can simultaneously achieve high trustworthiness, high utility, and low latency. Moreover, we show that many defenses appear effective under existing benchmarks by suppressing contextual inputs, yet fail to generalize to realistic agent settings where context-dependent reasoning is essential. This SoK distills key takeaways and open research problems, offering structured guidance for future research and practical deployment of secure LLM agents.",
+      "authors": [
+        "Peiran Wang",
+        "Xinfeng Li",
+        "Chong Xiang",
+        "Jinghuai Zhang",
+        "Ying Li",
+        "Lixia Zhang",
+        "Xiaofeng Wang",
+        "Yuan Tian"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-02-11T02:47:10Z",
+      "updated": "2026-02-11T02:47:10Z",
+      "announced_date": "2026-02-11",
+      "first_seen": "2026-02-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.10453v1",
+        "pdf": "https://arxiv.org/pdf/2602.10453v1",
+        "html": "https://arxiv.org/html/2602.10453"
+      },
+      "score": 13,
+      "tags": [
+        "safety",
+        "planning",
+        "research"
+      ],
+      "field": "other",
+      "citations": 24
+    }
+  ]
+}

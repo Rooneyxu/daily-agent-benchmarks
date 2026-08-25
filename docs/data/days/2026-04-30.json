@@ -1,0 +1,232 @@
+{
+  "date": "2026-04-30",
+  "count": 4,
+  "report": {
+    "date": "2026-04-30",
+    "count": 4,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On April 30, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Tool use (1), GUI agents (1), Multi-agent (1), and Computer use (1).",
+      "highlights": [
+        {
+          "id": "2604.28139",
+          "title": "Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows",
+          "blurb": "LLM agents are expected to complete end-to-end units of work across software tools, business services, and local workspaces."
+        },
+        {
+          "id": "2604.27776",
+          "title": "WindowsWorld: A Process-Centric Benchmark of Autonomous GUI Agents in Professional Cross-Application Environments",
+          "blurb": "While GUI agents have shown impressive capabilities in common computer-use tasks such as OSWorld, current benchmarks mainly focus on isolated and single-application tasks."
+        },
+        {
+          "id": "2604.27445",
+          "title": "Context as Prior: Bayesian-Inspired Intent Inference for Non-Speaking Agents with a Household Cat Testbed",
+          "blurb": "Many agents in real-world environments cannot reliably communicate their goals through language, including household pets, pre-verbal infants, and other non-speaking embodied agents."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年4月30日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在工具使用（1）、GUI 智能体（1）、多智能体（1）、计算机使用（1）。",
+      "highlights": [
+        {
+          "id": "2604.28139",
+          "title": "Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows",
+          "blurb": "LLM agents are expected to complete end-to-end units of work across software tools, business services, and local workspaces."
+        },
+        {
+          "id": "2604.27776",
+          "title": "WindowsWorld: A Process-Centric Benchmark of Autonomous GUI Agents in Professional Cross-Application Environments",
+          "blurb": "While GUI agents have shown impressive capabilities in common computer-use tasks such as OSWorld, current benchmarks mainly focus on isolated and single-application tasks."
+        },
+        {
+          "id": "2604.27445",
+          "title": "Context as Prior: Bayesian-Inspired Intent Inference for Non-Speaking Agents with a Household Cat Testbed",
+          "blurb": "Many agents in real-world environments cannot reliably communicate their goals through language, including household pets, pre-verbal infants, and other non-speaking embodied agents."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.28139",
+      "title": "Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows",
+      "abstract": "LLM agents are expected to complete end-to-end units of work across software tools, business services, and local workspaces. Yet many agent benchmarks freeze a curated task set at release time and grade mainly the final response, making it difficult to evaluate agents against evolving workflow demand or verify whether a task was executed. We introduce Claw-Eval-Live, a live benchmark for workflow agents that separates a refreshable signal layer, updated across releases from public workflow-demand signals, from a reproducible, time-stamped release snapshot. Each release is constructed from public workflow-demand signals, with ClawHub Top-500 skills used in the current release, and materialized as controlled tasks with fixed fixtures, services, workspaces, and graders. For grading, Claw-Eval-Live records execution traces, audit logs, service state, and post-run workspace artifacts, using deterministic checks when evidence is sufficient and structured LLM judging only for semantic dimensions. The release contains 105 tasks spanning controlled business services and local workspace repair, and evaluates 13 frontier models under a shared public pass rule. Experiments reveal that reliable workflow automation remains far from solved: the leading model passes only 66.7% of tasks and no model reaches 70%. Failures are structured by task family and execution surface, with HR, management, and multi-system business workflows as persistent bottlenecks and local workspace repair comparatively easier but unsaturated. Leaderboard rank alone is insufficient because models with similar pass rates can diverge in overall completion, and task-level discrimination concentrates in a middle band of tasks. Claw-Eval-Live suggests that workflow-agent evaluation should be grounded twice, in fresh external demand and in verifiable agent action.",
+      "authors": [
+        "Chenxin Li",
+        "Zhengyang Tang",
+        "Mingxin Huang",
+        "Yunlong Lin",
+        "Shijue Huang",
+        "Shengyuan Liu",
+        "Bowen Ye",
+        "Rang Li",
+        "Lei Li",
+        "Benyou Wang",
+        "Yixuan Yuan"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-04-30T17:23:19Z",
+      "updated": "2026-05-01T09:39:37Z",
+      "announced_date": "2026-04-30",
+      "first_seen": "2026-04-30",
+      "comment": "Project page: https://claw-eval-live.github.io",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.28139v2",
+        "pdf": "https://arxiv.org/pdf/2604.28139v2",
+        "html": "https://arxiv.org/html/2604.28139"
+      },
+      "score": 19,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 12
+    },
+    {
+      "id": "2604.28093",
+      "title": "What Makes a Good Terminal-Agent Benchmark Task: A Guideline for Adversarial, Difficult, and Legible Evaluation Design",
+      "abstract": "Terminal-agent benchmarks have become a primary signal for measuring the coding and system-administration capabilities of large language models. As the market for evaluation environments grows, so does the pressure to ship tasks quickly, often without thorough adversarial review of the verification logic. This paper is a guideline for writing good benchmark tasks, drawn from over a year of contributing to and reviewing tasks for Terminal Bench. Most people write benchmark tasks the way they write prompts. They shouldn't. A prompt is designed to help the agent succeed; a benchmark is designed to find out if it can. We argue that good tasks are adversarial, difficult, and legible, and that a large class of common failure modes -- AI-generated instructions, over-prescriptive specifications, clerical difficulty, oracle solutions that assume hidden knowledge, tests that validate the wrong things, and reward-hackable environments -- are predictable consequences of treating task authoring as prompt authoring. We catalog these failure modes, argue that real difficulty is conceptual rather than environmental, and discuss recent empirical evidence that over 15% of tasks in popular terminal-agent benchmarks are reward-hackable. We hope this serves as a useful reference for benchmark maintainers, task contributors, and researchers using benchmark scores as evidence.",
+      "authors": [
+        "Ivan Bercovich"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-30T16:37:37Z",
+      "updated": "2026-04-30T16:37:37Z",
+      "announced_date": "2026-04-30",
+      "first_seen": "2026-04-30",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.28093v1",
+        "pdf": "https://arxiv.org/pdf/2604.28093v1",
+        "html": "https://arxiv.org/html/2604.28093"
+      },
+      "score": 8,
+      "tags": [],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2604.27776",
+      "title": "WindowsWorld: A Process-Centric Benchmark of Autonomous GUI Agents in Professional Cross-Application Environments",
+      "abstract": "While GUI agents have shown impressive capabilities in common computer-use tasks such as OSWorld, current benchmarks mainly focus on isolated and single-application tasks. This overlooks a critical real-world requirement of coordinating across multiple applications to accomplish complex profession-specific workflows. To bridge this gap, we present a computer-use benchmark in cross-application workflows, named WindowsWorld, designed to systematically assess GUI Agents on complex multi-step tasks that mirror real-world professional activities. Our methodology uses a multi-agent framework steered by 16 occupations to generate four difficulty-level tasks with intermediate inspection, which are then refined by human review and executed in a simulated environment. The resulting benchmark contains 181 tasks with an average of 5.0 sub-goals across 17 common desktop applications, of which 78% are inherently multi-application. Experimental results of leading large models and agents show that: 1) All computer-use agents perform poorly on multi-application tasks (< 21% success rate), far below the performance of simple single-app tasks; 2) They largely fail at tasks requiring conditional judgment and reasoning across $\\geq$ 3 applications, stalling at early sub-goals; 3) Low execution efficiency, where tasks often fail despite far exceeding human step limits. Code, benchmark data, and evaluation resources are available at github.com/HITsz-TMG/WindowsWorld.",
+      "authors": [
+        "Jinchao Li",
+        "Yunxin Li",
+        "Chenrui Zhao",
+        "Zhenran Xu",
+        "Baotian Hu",
+        "Min Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-30T12:13:27Z",
+      "updated": "2026-04-30T12:13:27Z",
+      "announced_date": "2026-04-30",
+      "first_seen": "2026-04-30",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.27776v1",
+        "pdf": "https://arxiv.org/pdf/2604.27776v1",
+        "html": "https://arxiv.org/html/2604.27776"
+      },
+      "score": 17,
+      "tags": [
+        "gui",
+        "multi-agent",
+        "computer-use",
+        "planning"
+      ],
+      "field": "workplace",
+      "citations": 8
+    },
+    {
+      "id": "2604.27445",
+      "title": "Context as Prior: Bayesian-Inspired Intent Inference for Non-Speaking Agents with a Household Cat Testbed",
+      "abstract": "Many agents in real-world environments cannot reliably communicate their goals through language, including household pets, pre-verbal infants, and other non-speaking embodied agents. In such settings, intent must be inferred from incomplete behavioral observations in context-rich environments. This creates a core ambiguity: observable behavior is often noisy or underspecified, while context provides strong prior information but can also induce brittle shortcut predictions if used naively. We present CatSignal, a Bayesian-inspired probabilistic framework for multimodal intent inference that models spatial context as a prior-like constraint and behavioral observations as evidence. Rather than treating context as an ordinary input feature, our method uses a context-gated Product-of-Experts formulation to compute posterior-like intent distributions from context, pose dynamics, and acoustic cues. We instantiate this formulation in a household cat setting as a focused proof-of-concept for intent inference in non-speaking agents. Under Leave-One-Video-Out evaluation on a multimodal domestic cat dataset, the proposed prior-guided fusion achieves the best overall accuracy of 77.72%, outperforming feature concatenation (71.83%) and stronger late-fusion baselines. More importantly, it substantially reduces context-driven shortcut failures in ambiguous cases. While simpler fusion strategies remain competitive in Macro-F1 and selective prediction, the proposed model provides the strongest overall accuracy and the best suppression of context-based shortcut collapse.",
+      "authors": [
+        "Wenqian Zhang",
+        "Zehao Wang"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-04-30T05:32:13Z",
+      "updated": "2026-04-30T05:32:13Z",
+      "announced_date": "2026-04-30",
+      "first_seen": "2026-04-30",
+      "comment": "Accepted to the CVPR 2026 Animal Workshop",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.27445v1",
+        "pdf": "https://arxiv.org/pdf/2604.27445v1",
+        "html": "https://arxiv.org/html/2604.27445"
+      },
+      "score": 11,
+      "tags": [
+        "embodied",
+        "multimodal"
+      ],
+      "field": "embodied",
+      "citations": 0
+    }
+  ]
+}

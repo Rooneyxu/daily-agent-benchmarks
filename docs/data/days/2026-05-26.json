@@ -1,0 +1,441 @@
+{
+  "date": "2026-05-26",
+  "count": 9,
+  "report": {
+    "date": "2026-05-26",
+    "count": 9,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 5,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 5,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "memory",
+        "count": 3,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "coding",
+        "count": 3,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "gui",
+        "count": 2,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "mobile",
+        "count": 1,
+        "en": "Mobile agents",
+        "zh": "移动智能体"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      }
+    ],
+    "en": {
+      "headline": "9 new agent benchmarks",
+      "summary": "On May 26, 2026, arXiv listed 9 new agent benchmarks. Work clustered around Planning / reasoning (5), Tool use (5), Memory (3), and Coding agents (3).",
+      "highlights": [
+        {
+          "id": "2605.27705",
+          "title": "AgenticVBench: Can AI Agents Complete Real-World Post-Production Tasks?",
+          "blurb": "Video production workflows offer a rich and demanding arena for evaluating multimodal AI agents: they require composite capabilities across text, image, audio, and video understanding, along with long-horizon planning, a…"
+        },
+        {
+          "id": "2605.27240",
+          "title": "ENPMR-Bench: Benchmarking Proactive Memory Retrieval for Emotional Support Agents",
+          "blurb": "Memory-augmented language agents are increasingly deployed in affective applications such as emotional support, where understanding and responding to users' latent emotional needs is critical."
+        },
+        {
+          "id": "2605.27141",
+          "title": "VitaBench 2.0: Evaluating Personalized and Proactive Agents in Long-Term User Interactions",
+          "blurb": "Large language models (LLMs) have evolved into interactive agents that collaborate with users in real-world tasks."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 9 篇 Agent Benchmark",
+      "summary": "2026年5月26日，arXiv 新增 9 篇 Agent Benchmark。当日主题集中在规划 / 推理（5）、工具使用（5）、记忆（3）、代码智能体（3）。",
+      "highlights": [
+        {
+          "id": "2605.27705",
+          "title": "AgenticVBench: Can AI Agents Complete Real-World Post-Production Tasks?",
+          "blurb": "Video production workflows offer a rich and demanding arena for evaluating multimodal AI agents: they require composite capabilities across text, image, audio, and video understanding, along with long-horizon planning, a…"
+        },
+        {
+          "id": "2605.27240",
+          "title": "ENPMR-Bench: Benchmarking Proactive Memory Retrieval for Emotional Support Agents",
+          "blurb": "Memory-augmented language agents are increasingly deployed in affective applications such as emotional support, where understanding and responding to users' latent emotional needs is critical."
+        },
+        {
+          "id": "2605.27141",
+          "title": "VitaBench 2.0: Evaluating Personalized and Proactive Agents in Long-Term User Interactions",
+          "blurb": "Large language models (LLMs) have evolved into interactive agents that collaborate with users in real-world tasks."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2605.27761",
+      "title": "AndroidDaily: A Verifiable Benchmark for Mobile GUI Agents on Real-World Closed-Source Applications",
+      "abstract": "The rapid development of GUI foundation models and mobile GUI agents has spurred numerous evaluation benchmarks, yet most rely on simulated environments or open-source applications, leaving real-world closed-source applications largely unevaluated. The core difficulty is that closed-source applications do not expose internal states, making traditional automatic verification inapplicable. To bridge this gap, we introduce AndroidDaily, a large-scale benchmark comprising 350 realistic daily-use tasks across 94 high-frequency Android applications spanning transportation, shopping, local services, entertainment, content creation, social media, and everyday utilities. To enable automatic and verifiable assessment in these opaque environments, we propose Guideline-grounded Reviewer for Automatic Diagnostic Evaluation (GRADE), a process-aware evaluator built on a three-tiered system of observable external guidelines: operational obligations, output quality, and negative constraints. GRADE tracks the agent's visual trajectory against these criteria and produces step-level diagnostic judgments, turning long-horizon, open-ended mobile interactions into verifiable evaluation without relying on hidden internal states. Experiments show that GRADE achieves 87.37\\% agreement with human evaluators. The strongest model reaches a 62.0\\% success rate on AndroidDaily, highlighting a substantial gap between current reasoning capabilities and practical execution in realistic mobile workflows.",
+      "authors": [
+        "Yifan Sui",
+        "Xin Huang",
+        "Hongbing Li",
+        "Fang Xu",
+        "Jiahe Lv",
+        "Haolong Yan",
+        "Yeqing Shen",
+        "Litao Liu",
+        "Zhimin Fan",
+        "Ziyang Meng",
+        "Jia Wang",
+        "Junbo Qi",
+        "Kaijun Tan",
+        "Zheng Ge",
+        "Xiangyu Zhang",
+        "Daxin Jiang",
+        "Osamu Yoshie"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-05-26T23:19:42Z",
+      "updated": "2026-05-26T23:19:42Z",
+      "announced_date": "2026-05-26",
+      "first_seen": "2026-05-26",
+      "comment": "11 pages, 6 figures. Preprint",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.27761v1",
+        "pdf": "https://arxiv.org/pdf/2605.27761v1",
+        "html": "https://arxiv.org/html/2605.27761"
+      },
+      "score": 13,
+      "tags": [
+        "gui",
+        "planning",
+        "mobile"
+      ],
+      "field": "computer-use",
+      "citations": 2
+    },
+    {
+      "id": "2605.27705",
+      "title": "AgenticVBench: Can AI Agents Complete Real-World Post-Production Tasks?",
+      "abstract": "Video production workflows offer a rich and demanding arena for evaluating multimodal AI agents: they require composite capabilities across text, image, audio, and video understanding, along with long-horizon planning, and tool use. To this end, we introduce AgenticVBench, a benchmark of 100 agentic tasks across 4 task families spanning the real world post-production workflow, constructed from real production workflows contributed by 20 industry experts averaging 6 years of professional experience. Tasks are paired with evaluation specifications that combine programmatic verifiers and expert rubrics. We evaluate frontier vision-language models (VLMs) with both vendor-native and open-source harnesses. The best evaluated agent stack barely crosses 30%, far below human expert performance on the same tasks. We further find that the choice of harness substantially affects model behavior, including scores, tool-use patterns, and failure modes. AgenticVBench provides a foundation for diagnosing and improving both models and harnesses for agentic video production. Benchmark website: https://agenticvbench.com.",
+      "authors": [
+        "Zongheng Cao",
+        "Yi Zheng",
+        "Rui Song",
+        "Xinyu Hu"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.MM"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-05-26T21:27:16Z",
+      "updated": "2026-05-26T21:27:16Z",
+      "announced_date": "2026-05-26",
+      "first_seen": "2026-05-26",
+      "comment": "22 pages, 6 figures. Benchmark website: https://agenticvbench.com",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.27705v1",
+        "pdf": "https://arxiv.org/pdf/2605.27705v1",
+        "html": "https://arxiv.org/html/2605.27705"
+      },
+      "score": 21,
+      "tags": [
+        "tool-use",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 2
+    },
+    {
+      "id": "2605.27566",
+      "title": "DynaSchedBench: Calibrated Dynamic Scheduling Benchmarks and Observability Paradox in LLM-based Scheduling Agents",
+      "abstract": "Progress in neural combinatorial optimization for Dynamic Flexible Job Shop Scheduling Problem (DFJSP) is currently hindered by a methodological tension: static benchmarks encourage benchmark overfitting, while uncalibrated generators obscure algorithmic capability with stochastic noise. To resolve this, we introduce \\textbf{DynaSchedBench}, a diagnostic framework for DFJSP that rigorously controls the instance-generation process. Instead of relying on parameter sampling, our approach utilizes Sequential Event-Space Calibrator (SESC) that computes a novel Schedule Stress Index (SSI) to stratify instances by difficulty. We demonstrate that SESC is substantially more computationally efficient than evolutionary baselines while converging reliably to the target metrics. The framework integrates modular components for instance generation, snapshot-based simulation, agents, evaluation, and visualization, thereby enabling rigorous testing of reactive and lookahead-based policies. Leveraging this calibrated environment, we identify key limitations of LLM-based scheduling agents. Specifically, in step-wise online decision-making for dynamic scheduling, we identify an ``Observability Paradox'': providing agents with oracle access to full structural information can degrade policy performance, underperforming concise information. Furthermore, despite substantial token overhead, tool-augmented and refinement strategies fail to reliably improve performance, and most LLM agents fail to consistently surpass strong dispatching baselines-behaving more like robust heuristic approximators than superior optimizers.",
+      "authors": [
+        "Shijie Cao",
+        "Yuan Yuan",
+        "Jing Liu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-26T18:36:54Z",
+      "updated": "2026-05-26T18:36:54Z",
+      "announced_date": "2026-05-26",
+      "first_seen": "2026-05-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.27566v1",
+        "pdf": "https://arxiv.org/pdf/2605.27566v1",
+        "html": "https://arxiv.org/html/2605.27566"
+      },
+      "score": 10,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2605.27240",
+      "title": "ENPMR-Bench: Benchmarking Proactive Memory Retrieval for Emotional Support Agents",
+      "abstract": "Memory-augmented language agents are increasingly deployed in affective applications such as emotional support, where understanding and responding to users' latent emotional needs is critical. However, existing research often treats memory as a tool for factual retrieval, overlooking its role in shaping users' emotional experiences. In this work, we introduce ENPMR-Bench, a benchmark for evaluating Emotional Need-aware Proactive Memory Retrieval (ENPMR), a core capability that enables agents to infer users' latent emotional needs and proactively retrieve appropriate memories to support empathetic interaction. Grounded in Maslow's hierarchy of needs, ENPMR-Bench includes over 1,800 memory-augmented dialogues and defines structured mappings between emotional needs and supportive memory types. Experimental results demonstrate that current retrieval paradigms, including both embedding-based and LLM-driven approaches, exhibit substantial deficiencies, with empathy scores significantly lagging behind golden memory conditions. While chain-of-thought prompting improves the alignment between inferred emotional needs and retrieved memories to some extent, a notable performance gap remains. Together, these findings reveal critical limitations in current agents and outline directions for advancing personalized emotional support through need-sensitive memory retrieval.",
+      "authors": [
+        "Xing Fu",
+        "Yulin Hu",
+        "Mengtong Ji",
+        "Haozhen Li",
+        "Yixin Sun",
+        "Weixiang Zhao",
+        "Yanyan Zhao",
+        "Bing Qin"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-26T16:22:35Z",
+      "updated": "2026-05-26T16:22:35Z",
+      "announced_date": "2026-05-26",
+      "first_seen": "2026-05-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.27240v1",
+        "pdf": "https://arxiv.org/pdf/2605.27240v1",
+        "html": "https://arxiv.org/html/2605.27240"
+      },
+      "score": 19,
+      "tags": [
+        "tool-use",
+        "memory"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2605.27141",
+      "title": "VitaBench 2.0: Evaluating Personalized and Proactive Agents in Long-Term User Interactions",
+      "abstract": "Large language models (LLMs) have evolved into interactive agents that collaborate with users in real-world tasks. Effective collaboration in such settings increasingly depends on understanding the user beyond what is explicitly stated, as user intent is often reflected in fragmented daily interactions and requires both personalized modeling and proactive interaction. However, existing agent benchmarks primarily evaluate reasoning and tool use, largely overlooking the challenges of inferring and leveraging user preferences in realistic scenarios. To address this gap, we introduce VitaBench 2.0, a benchmark for evaluating personalized and proactive agent behavior in long-term user interactions. In VitaBench 2.0, tasks are organized as temporally ordered sequences for individual users, where preferences are embedded in fragmented and heterogeneous interactions. Successful completion of tasks requires the agent to continuously extract, utilize, and update user preferences from these interactions. We further evaluate proactiveness through tasks that require agents to recognize missing information and actively acquire it from users or environments before making decisions. To support systematic analysis, we provide an extensible memory interface that enables controlled comparison across different memory architectures. We benchmark a diverse set of frontier proprietary and open-source LLMs. Results show that real-world personalization remains highly challenging even for state-of-the-art models, revealing a substantial gap between current capabilities and practical requirements. Extensive analysis further reveals the failure modes and capability bottlenecks of current agents in real-world personalized decision-making, providing insights for future model improvements.",
+      "authors": [
+        "Yuxin Chen",
+        "Yi Zhang",
+        "Zhengzhou Cai",
+        "Yaorui Shi",
+        "Zhiyuan Yao",
+        "Chenhang Cui",
+        "Jingnan Zheng",
+        "Yaqi Huo",
+        "Xi Su",
+        "Qi Gu",
+        "Xunliang Cai",
+        "Xiang Wang",
+        "An Zhang",
+        "Tat-Seng Chua"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-26T15:07:38Z",
+      "updated": "2026-05-26T15:07:38Z",
+      "announced_date": "2026-05-26",
+      "first_seen": "2026-05-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.27141v1",
+        "pdf": "https://arxiv.org/pdf/2605.27141v1",
+        "html": "https://arxiv.org/html/2605.27141"
+      },
+      "score": 17,
+      "tags": [
+        "tool-use",
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 4
+    },
+    {
+      "id": "2605.27134",
+      "title": "Scaling, Benchmarking, and Reasoning of Vision-Language Agents for Mobile GUI Navigation",
+      "abstract": "Vision-Language Models (VLMs) have shown rapid progress in mobile GUI navigation. This paper presents a systematic study of data scaling, benchmarking, and reasoning for VLM-based agents in this domain. To facilitate rigorous evaluation, we introduce HyperTrack, a large-scale dataset with over 16000 real-world tasks across more than 650 Chinese mobile applications, along with GUIEvalKit, an open-source toolkit for unified benchmarking of VLMs on offline GUI navigation tasks. Using HyperTrack, we analyze the effects of training data scale on both supervised and reinforcement-based finetuning. Our results show that reinforcement-based finetuning consistently outperforms supervised finetuning, particularly in out-of-domain settings, highlighting the synergy between data scaling and reinforcement learning. Leveraging GUIEvalKit, we further benchmark state-of-the-art (SOTA) VLMs and analyze how interaction history and reasoning capabilities influence task completion. Together, HyperTrack and GUIEvalKit provide a comprehensive platform for developing and evaluating VLM agents in mobile GUI navigation tasks.",
+      "authors": [
+        "Heng Qu",
+        "Yike Liu",
+        "Renren Jin",
+        "Wenzong Zhang",
+        "Pengzhi Gao",
+        "Wei Liu",
+        "Jian Luan"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-26T15:03:56Z",
+      "updated": "2026-05-26T15:03:56Z",
+      "announced_date": "2026-05-26",
+      "first_seen": "2026-05-26",
+      "comment": "Accepted at ICML 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.27134v1",
+        "pdf": "https://arxiv.org/pdf/2605.27134v1",
+        "html": "https://arxiv.org/html/2605.27134"
+      },
+      "score": 14,
+      "tags": [
+        "gui",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 1
+    },
+    {
+      "id": "2605.26835",
+      "title": "Helicase: Uncertainty-Guided Supply Chain Knowledge Graph Construction with Autonomous Multi-Agent LLMs",
+      "abstract": "LLM-based multi-agent systems have been widely adopted for knowledge retrieval and report generation, synthesizing known information through web search and textual reasoning. However, many critical information tasks in supply chains are not simple one-shot queries: they are structural inference problems requiring multi-hop reasoning across complex, fragmented web resources. Questions such as \\textit{``Which Tesla components use lithium from Australian mines?''} have no answer in any single document; answers must be computationally synthesized through the autonomous construction and analysis of dynamic knowledge graphs assembled from fragmented, heterogeneous sources. Moreover, such discovery processes must be uncertainty-aware: decisions depend not only on answers but on calibrated confidence in their reliability, traceable to source quality and reasoning consistency. To address this capability gap, we propose \\textit{Helicase}, an autonomous multi-agent LLM system for uncertainty-guided supply chain knowledge graph construction. \\textit{Helicase} decomposes high-level supply-chain queries into executable investigation plans, coordinates specialized web-search, reasoning, and coding agents through iterative verification loops, and incrementally constructs query-specific supply chain knowledge graphs with per-fact uncertainty annotations. Its three-layer uncertainty framework tracks uncertainty at the action, trajectory, and memory layers, enabling both structural inference and calibrated confidence assessment. To evaluate autonomous reasoning across the full complexity spectrum, we introduce SCQA (Supply Chain Query Assessment), a benchmark of 80 supply chain queries organized into four quadrants spanning single-hop to multi-hop inference under both high and low data visibility.",
+      "authors": [
+        "Yunbo Long",
+        "Haolang Zhao",
+        "Ge Zheng",
+        "Alexandra Brintrup"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-26T10:53:00Z",
+      "updated": "2026-05-26T10:53:00Z",
+      "announced_date": "2026-05-26",
+      "first_seen": "2026-05-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.26835v1",
+        "pdf": "https://arxiv.org/pdf/2605.26835v1",
+        "html": "https://arxiv.org/html/2605.26835"
+      },
+      "score": 12,
+      "tags": [
+        "coding",
+        "multi-agent",
+        "memory",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2605.28876",
+      "title": "LogDx-CI: Benchmarking Log Reduction Tools for LLM Root-Cause Diagnosis",
+      "abstract": "CI failure logs are large (median 5k lines, max 200k in this corpus) and noisy. Coding agents that try to debug them depend on an upstream tool to reduce the log to a manageable context, but the field has had no public empirical comparison of which reductions preserve enough evidence for downstream LLM diagnosis. We introduce LogDx-CI, a benchmark that compares 11 context-reduction tools (raw, tail, grep, three RTK modes, two real LLM map-reduce summarizers, three hybrid routers) on 35 real GitHub Actions failure cases, scored by 3 LLM debugger families (Claude Haiku 4.5, Claude Sonnet 4.6, OpenAI gpt-5-mini) plus a Sonnet 4.6 tool-using agent. We report three load-bearing findings. (1)~Hybrid grep+tail routers dominate the cost-quality Pareto frontier; the top two methods score 0.670 / 0.666 at $\\sim$ \\$0.03 per case, same-ballpark quality as standalone grep at $4.5\\times$ fewer tokens. (2)~In the agent-loop regime, the quality range across reduction tools collapses $7\\times$ (single-shot spread 0.42 $\\to$ agent-loop spread 0.059); the agent rescues weak contexts via follow-up tool calls. However, cost differences persist: weak contexts force the agent to issue 2--4$\\times$ more tool calls to recover. (3)~A cross-family LLM-summary pair (gpt-5-mini summarizer feeding a Claude Haiku debugger) beats the same-family pair by $+0.071$ averaged across four diagnoser variants, falsifying the self-call-bias hypothesis on this task. The gpt-5-mini summarizer is also the agent-loop \\#1 method (score 0.749) at $0.37$ tool-calls per case and $10\\times$ lower reducer cost than the Haiku summarizer (\\$0.18 vs \\$1.75 per case). All data, code, per-case bundles, and reproducibility infrastructure are public.",
+      "authors": [
+        "Bowen Qin"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-05-26T06:34:47Z",
+      "updated": "2026-05-26T06:34:47Z",
+      "announced_date": "2026-05-26",
+      "first_seen": "2026-05-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.28876v1",
+        "pdf": "https://arxiv.org/pdf/2605.28876v1",
+        "html": "https://arxiv.org/html/2605.28876"
+      },
+      "score": 13,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2605.26457",
+      "title": "Verus-SpecGym: An Agentic Environment for Evaluating Specification Autoformalization",
+      "abstract": "AI coding agents are increasingly used to write real-world software, but ensuring that their outputs are correct remains a fundamental challenge. Formal verification offers a promising path: an agent generates code together with a machine-checked proof, guaranteeing that the code satisfies a formal specification. However, there is no guarantee that the formal spec itself matches the user's intent. In this work, we study specification autoformalization: whether LLM agents can translate informal programming problems into faithful formal specifications. We introduce Verus-SpecBench, a benchmark of 581 spec-writing tasks derived from Codeforces problems targeting Verus, a verifier for Rust, and Verus-SpecGym, an agentic environment in which models interact with Verus, bash, & the filesystem to develop these specs. The central challenge is evaluation: expert-written reference specs are expensive to write, & LLM judges can miss subtle mistakes. We address this by (a) extending Verus's exec_spec mechanism so that generated specs can be executed as Rust code, & (b) testing them against official Codeforces tests & adversarial cases extracted from Codeforces \"hacks\", which are edge cases written by competitors to break incorrect solutions. On Verus-SpecBench, the strongest model, Gemini 3.1 Pro, solves 77.8% of tasks, other frontier models solve 51.1--57.8% & OSS models reach only 21.5--25.5%. Our analysis of failure modes shows that model-generated specs can omit important input assumptions, accept incorrect outputs, & reject valid ones. We also find that LLM-as-a-judge evaluation misses 26% of the failures our evaluator catches. Overall, our results suggest that spec autoformalization is within reach for frontier agents but remains brittle even on problems where they can already generate correct code. The code, data, & logs can be found at https://github.com/formal-verif-is-cool/verus-spec-gym",
+      "authors": [
+        "Anmol Agarwal",
+        "Natalie Neamtu",
+        "Pranjal Aggarwal",
+        "Seungone Kim",
+        "Jannis Limperg",
+        "Cedric Flamant",
+        "Kanna Shimizu",
+        "Bryan Parno",
+        "Sean Welleck"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL",
+        "cs.PL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-05-26T02:12:48Z",
+      "updated": "2026-05-26T02:12:48Z",
+      "announced_date": "2026-05-26",
+      "first_seen": "2026-05-26",
+      "comment": "Preprint",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.26457v1",
+        "pdf": "https://arxiv.org/pdf/2605.26457v1",
+        "html": "https://arxiv.org/html/2605.26457"
+      },
+      "score": 15,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 3
+    }
+  ]
+}

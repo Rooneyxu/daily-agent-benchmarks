@@ -1,0 +1,530 @@
+{
+  "date": "2026-06-01",
+  "count": 11,
+  "report": {
+    "date": "2026-06-01",
+    "count": 11,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 5,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      }
+    ],
+    "en": {
+      "headline": "11 new agent benchmarks",
+      "summary": "On June 1, 2026, arXiv listed 11 new agent benchmarks. Work clustered around Planning / reasoning (5), Tool use (3), Safety (2), and Multi-agent (2).",
+      "highlights": [
+        {
+          "id": "2606.01912",
+          "title": "SMH-Bench: Benchmarking LLM Agents for Environment-Grounded Reasoning and Action in Smart Homes",
+          "blurb": "Smart homes are evolving toward complex state-dependent living environments, requiring Large Language Models (LLMs) to reason over user intent, preferences, and multi-device interactions."
+        },
+        {
+          "id": "2606.01815",
+          "title": "CRAB-Bench: Evaluating LLM Agents under Complex Task Dependencies and Human-aligned User Simulation",
+          "blurb": "Evaluating LLM agents in realistic service scenarios requires complex task dependencies, imperfect user behavior, and an evaluation that accommodates multiple valid solutions."
+        },
+        {
+          "id": "2606.02380",
+          "title": "SPADE-Bench: Evaluating Spontaneous Strategic Deception in Agents via Plan-Action Divergence",
+          "blurb": "As LLM-based agents expand their operational scope, reliability becomes a prerequisite for real-world deployment."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 11 篇 Agent Benchmark",
+      "summary": "2026年6月1日，arXiv 新增 11 篇 Agent Benchmark。当日主题集中在规划 / 推理（5）、工具使用（3）、安全（2）、多智能体（2）。",
+      "highlights": [
+        {
+          "id": "2606.01912",
+          "title": "SMH-Bench: Benchmarking LLM Agents for Environment-Grounded Reasoning and Action in Smart Homes",
+          "blurb": "Smart homes are evolving toward complex state-dependent living environments, requiring Large Language Models (LLMs) to reason over user intent, preferences, and multi-device interactions."
+        },
+        {
+          "id": "2606.01815",
+          "title": "CRAB-Bench: Evaluating LLM Agents under Complex Task Dependencies and Human-aligned User Simulation",
+          "blurb": "Evaluating LLM agents in realistic service scenarios requires complex task dependencies, imperfect user behavior, and an evaluation that accommodates multiple valid solutions."
+        },
+        {
+          "id": "2606.02380",
+          "title": "SPADE-Bench: Evaluating Spontaneous Strategic Deception in Agents via Plan-Action Divergence",
+          "blurb": "As LLM-based agents expand their operational scope, reliability becomes a prerequisite for real-world deployment."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.02754",
+      "title": "$Ψ$-Bench: Evaluating Persona-Sensitive Influencing in Persuasive Dialogues",
+      "abstract": "Personalization is a crucial capability of modern language agents. However, current research primarily positions personalized agents as passive responders to user preferences, limiting their ability to interact with users and provide suggestions or guidance proactively. To systematically evaluate such proactive personalization in realistic interactions, we propose $Ψ$-Bench, a benchmark for assessing LLMs' ability to influence realistic users through conversation. We design three real-world interaction scenarios that involve persuasion in $Ψ$-Bench, and endow simulated clients with personal characteristics through explicit user profiles derived from dialogue histories. We evaluate 10 frontier LLMs on $Ψ$-Bench and find that while most models can produce coherent and reasonable arguments, even state-of-the-art models still leave considerable room for improvement in persuasion. We also find that providing access to client profiles yields an average performance gain of 18.24\\%, highlighting the importance of user-specific information for effective persuasion. Overall, our work highlights persona-sensitive influencing as a challenging yet practical direction for evaluating and developing more proactive personalized LLM agents. Codes are available at: https://github.com/Hanpx20/Psi-Bench.",
+      "authors": [
+        "Peixuan Han",
+        "Hongyi Du",
+        "Jiayu Liu",
+        "Yihang Sun",
+        "Yutong Liu",
+        "Jiaxuan You"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-06-01T18:20:27Z",
+      "updated": "2026-06-01T18:20:27Z",
+      "announced_date": "2026-06-01",
+      "first_seen": "2026-06-01",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.02754v1",
+        "pdf": "https://arxiv.org/pdf/2606.02754v1",
+        "html": "https://arxiv.org/html/2606.02754"
+      },
+      "score": 13,
+      "tags": [
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 0
+    },
+    {
+      "id": "2606.02470",
+      "title": "MCP-Persona: Benchmarking LLM Agents on Real-World Personal Applications via Environment Simulation",
+      "abstract": "The Model Context Protocol (MCP) has emerged as a transformative standard for connecting large language models (LLMs) with external data sources and tools, and has been rapidly adopted across personal applications and development platforms. However, existing benchmarks predominantly focus on generic information-seeking tools and fail to capture the practical challenges posed by personal social applications, where tools interact with individual accounts or local databases. To bridge this critical gap, we introduce MCP-Persona, the first benchmark specifically designed for evaluating agent performance on real-world, personalized MCP tools. MCP-Persona encompasses a diverse set of widely-used applications, ranging from social media platforms like Reddit and Xiaohongshu (Rednote) to enterprise collaboration suites such as Lark (Feishu) and Slack. Our extensive experiments on various state-of-the-art (SOTA) agents demonstrate their significant struggles with personalized tool use, thereby highlighting the benchmark's crucial role in identifying and addressing these limitations. MCP-Persona is publicly available at https://github.com/wwh0411/MCP-Persona}{https://github.com/wwh0411/MCP-Persona.",
+      "authors": [
+        "Wenhao Wang",
+        "Peizhi Niu",
+        "Gongyi Zou",
+        "Xiyuan Yang",
+        "Jingxing Wang",
+        "Haoting Shi",
+        "Yaxin Du",
+        "Jingyi Chai",
+        "Xianghe Pang",
+        "Shuo Tang",
+        "Yanfeng Wang",
+        "Siheng Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-01T16:44:10Z",
+      "updated": "2026-06-01T16:44:10Z",
+      "announced_date": "2026-06-01",
+      "first_seen": "2026-06-01",
+      "comment": "ICML 2026 Camera Ready",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.02470v1",
+        "pdf": "https://arxiv.org/pdf/2606.02470v1",
+        "html": "https://arxiv.org/html/2606.02470"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 1
+    },
+    {
+      "id": "2606.02404",
+      "title": "K-BrowseComp: A Web Browsing Agent Benchmark Grounded in Korean Contexts",
+      "abstract": "Frontier model evaluations are shifting from foundational capabilities (e.g., instruction following and reasoning) toward compositional, agentic ones, but Korean agentic benchmarks remain scarce. We introduce K-BrowseComp, a web-browsing agent benchmark grounded in Korean contexts, consisting of 400 problems. The 300-problem K-BrowseComp-Verified subset is manually constructed and validated by native Korean speakers. On this subset, frontier LLMs, including GPT-5.5, DeepSeek-V4-Pro, and GLM-5.1, reach only 30.00--45.67\\%, a substantial drop from BrowseComp, while Korean LLMs released through Korea's Proprietary AI Foundation Model program obtain only 0.00--10.33\\%. We further construct a 100-problem synthetic split using hard few-shot exemplars and failure-mode-targeted generation to exploit the asymmetry between solving and creating web browsing problems. On the adversarially filtered synthetic diagnostic split, the strongest model reaches only 26.00\\%, and we report this split separately as a targeted stress test. We publicly release our data and code.",
+      "authors": [
+        "Nahyun Lee",
+        "Dongkeun Yoon",
+        "Guijin Son",
+        "Geewook Kim",
+        "Dayoon Ko",
+        "Jeonghun Park",
+        "Haneul Yoo",
+        "Jaewon Cho",
+        "Junghun Park",
+        "Changyoon Lee",
+        "Kyochul Jang",
+        "Jaeyeon Kim",
+        "Eunsu Kim",
+        "Woojin Cho",
+        "Seungone Kim"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-01T15:50:03Z",
+      "updated": "2026-06-01T15:50:03Z",
+      "announced_date": "2026-06-01",
+      "first_seen": "2026-06-01",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.02404v1",
+        "pdf": "https://arxiv.org/pdf/2606.02404v1",
+        "html": "https://arxiv.org/html/2606.02404"
+      },
+      "score": 14,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2606.02380",
+      "title": "SPADE-Bench: Evaluating Spontaneous Strategic Deception in Agents via Plan-Action Divergence",
+      "abstract": "As LLM-based agents expand their operational scope, reliability becomes a prerequisite for real-world deployment. However, in practical applications, human users cannot monitor every immediate behavior; instead, the execution process often remains a black box, leaving users dependent solely on the agent's self-reported updates. This opacity creates a critical risk: agents may present observer-facing reports that diverge from their executed actions, rendering the system uncontrollable, especially in high-stakes autonomous scenarios. We term such self-reported plan-action divergence as agent deception. To assess this, we introduce SPADE-Bench, a benchmark designed to evaluate spontaneous plan-action divergence. Unlike prior deception benchmarks, SPADE-Bench simultaneously integrates actual tool execution and controlled pressure scenarios. This design ensures ecological validity and rigorously distinguishes strategic deception from mere hallucination through controlled plan-action comparisons under pressure. Experiments across mainstream models confirm that agent deception is a genuine and pressing issue in tool-use contexts. By providing a comprehensive and robust evaluation framework, SPADE-Bench fills a critical gap in agent safety, facilitating the community's progress toward building trustworthy and controllable autonomous systems.",
+      "authors": [
+        "Yuyan Bu",
+        "Haowei Li",
+        "Qirui Zheng",
+        "Bowen Dong",
+        "Kaiyue Yang",
+        "Jiaming Ji",
+        "Yingshui Tan",
+        "Wenxin Li",
+        "Yaodong Yang",
+        "Juntao Dai"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-01T15:28:34Z",
+      "updated": "2026-06-28T14:28:39Z",
+      "announced_date": "2026-06-01",
+      "first_seen": "2026-06-01",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.02380v2",
+        "pdf": "https://arxiv.org/pdf/2606.02380v2",
+        "html": "https://arxiv.org/html/2606.02380"
+      },
+      "score": 16,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.02320",
+      "title": "TVIR: Building Deep Research Agents Towards Text-Visual Interleaved Report Generation",
+      "abstract": "Deep Research Agents have shown strong capability in multi-step information retrieval, reasoning, and long-form report generation, but existing benchmarks and systems remain predominantly text-centric, with limited evaluation of whether visual elements are factually reliable and well aligned with the surrounding analysis. To address this gap, we introduce TVIR (Text-Visual Interleaved Report Generation), which includes TVIR-Bench, a benchmark of 100 expert-curated multimodal deep research tasks that require visual elements to serve specific analytical sub-goals, and TVIR-Agent, a hierarchical multi-agent framework that serves as a strong baseline for constructing outlines, retrieving images, generating charts with traceable sources, and composing reports through context-aware sequential writing. We further develop a dual-path evaluation framework that combines Textual Assessment and Visual Assessment. Experiments across nine deep research systems show that TVIR-Agent achieves strong overall performance, underscoring the importance of explicit multimodal design and evaluation for evidence-driven report generation.",
+      "authors": [
+        "Xinkai Ma",
+        "Zhiqi Bai",
+        "Dingling Zhang",
+        "Pei Liu",
+        "Yishuo Yuan",
+        "He Zhu",
+        "Jiakai Wang",
+        "Qianqian Xie",
+        "Yifan Zhao",
+        "Xinlong Yang",
+        "Hao Cong",
+        "Zhiheng Yao",
+        "Fengxia Xie",
+        "Zihao Xu",
+        "Haoran Xu",
+        "Zhaohui Wang",
+        "Minghao Liu",
+        "Shirong Lin",
+        "Yingshui Tan",
+        "Yuchi Xu",
+        "Wenbo Su",
+        "Zhaoxiang Zhang",
+        "Bo Zheng",
+        "Jiaheng Liu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-01T14:35:14Z",
+      "updated": "2026-06-11T16:43:15Z",
+      "announced_date": "2026-06-01",
+      "first_seen": "2026-06-01",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.02320v2",
+        "pdf": "https://arxiv.org/pdf/2606.02320v2",
+        "html": "https://arxiv.org/html/2606.02320"
+      },
+      "score": 13,
+      "tags": [
+        "multi-agent",
+        "planning",
+        "research",
+        "multimodal"
+      ],
+      "field": "science",
+      "citations": 1
+    },
+    {
+      "id": "2606.02282",
+      "title": "POIROT: Interrogating Agents for Failure Detection in Multi-Agent Systems",
+      "abstract": "Orchestrating Large Language Models into Multi-Agent Systems (LLM-MAS) has unlocked remarkable reasoning capabilities, yet emergent failures and hallucinations that resist characterisation block their deployment in safety-critical domains -- a gap made legally untenable by emerging AI regulation. Existing evaluation paradigms share a common flaw: centralised judgment creates single points of failure and demands domain-specific expertise. Here we present POIROT, a protocol that repurposes a system's own agents as its diagnostic layer, leveraging the epistemic diversity already present in the architecture. Across evaluated settings, POIROT outperforms single-LLM evaluator baselines, with gains that scale with problem complexity (OR = 1.60, $p = 0.008$), agent count, and fault dimensionality, persisting under compound fault conditions. These results demonstrate that safety oversight need not be externalised: the agents executing a role carry sufficient collective intelligence to audit it. We release POIROT as an open-source library alongside BLAME, a benchmark for fault attribution in safety-critical multi-agent systems.",
+      "authors": [
+        "Iñaki Dellibarda Varela",
+        "R. Sendra-Arranz",
+        "Pablo Romero-Sorozabal",
+        "J. M. Valverde-García",
+        "Annemarie F. Laudanski",
+        "Álvaro Gutiérrez",
+        "Eduardo Rocon",
+        "Manuel Cebrian"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-01T14:05:35Z",
+      "updated": "2026-06-01T14:05:35Z",
+      "announced_date": "2026-06-01",
+      "first_seen": "2026-06-01",
+      "comment": "44 pages, 6 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.02282v1",
+        "pdf": "https://arxiv.org/pdf/2606.02282v1",
+        "html": "https://arxiv.org/html/2606.02282"
+      },
+      "score": 13,
+      "tags": [
+        "multi-agent",
+        "safety",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2606.02240",
+      "title": "AgentRedBench: Dynamic Redteaming and Integration-Aware Defense for LLM Agents over SaaS Integrations",
+      "abstract": "Indirect prompt injection in tool-use agents is a concrete production threat: LLM agents read from integrations (third-party services such as Gmail, Salesforce, or Jira accessed through tool calls) whose response content the user neither writes nor controls. Existing benchmarks under-measure the threat: most cover only a handful of integrations with the same attack payload replayed across runs, and open-source guards are trained on chat-style data rather than tool-response content. We introduce AGENTREDBENCH, a dynamic LLM-driven redteaming benchmark of 215 subtle underspecified-authorization scenarios across 24 enterprise integrations and five attack types. Across an eight-model panel (Anthropic, OpenAI, Google), no-guard attack success rate ranges from 32% to 81%. To keep the scenario set out of training corpora and preserve headline ASR meaning over time, we release the codebase, integration schemas, and AGENTREDGUARD model openly; the canonical scenarios are evaluated through a maintainer-mediated channel with immutable versioning. AGENTREDGUARD cuts online attack success by 75-77pp across three target model families (Haiku, GPT-5.4-mini, Gemini-3-flash) at 0.0% real-benign false-positive rate (0.2% on a synthetic-benign corpus), outperforming every open-source baseline with non-trivial detection (Llama Guard, PromptGuard 2, ProtectAI) on both axes. Cross-integration and cross-attacker holdouts (two independent attacker families held out from training) confirm the gain transfers beyond the training subset.",
+      "authors": [
+        "Hiskias Dingeto",
+        "William Leeney"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CL",
+        "cs.ET"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-06-01T13:34:24Z",
+      "updated": "2026-07-17T12:28:54Z",
+      "announced_date": "2026-06-01",
+      "first_seen": "2026-06-01",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.02240v3",
+        "pdf": "https://arxiv.org/pdf/2606.02240v3",
+        "html": "https://arxiv.org/html/2606.02240"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.01961",
+      "title": "AutoMedBench: Towards Medical AutoResearch with Agentic AI Models",
+      "abstract": "Autonomous agents are increasingly expected to support end-to-end medical-AI research workflows, moving beyond isolated prediction tasks or short-form clinical question answering. However, existing medical agent benchmarks primarily evaluate final outputs, providing limited visibility into agent behavior within the research process. To address this gap, we present AutoMedBench, a workflow-aware benchmark for autonomous medical-AI research across diverse medical imaging and multimodal inference tasks, organizing agent execution into a unified five-stage workflow (S1-S5): Plan, Setup, Validate, Inference, and Submit. It comprises long-horizon tasks with each run averaging 33 agent turns, spanning five research tracks: segmentation, image enhancement, visual question answering (VQA), report generation, and lesion detection. Each task is evaluated under two difficulty tiers, Lite and Standard, which use the same data and metrics but differ in the amount of task-brief scaffolding, and each run is scored using both final task performance and S1-S5 stage scores, enabling stage-level analysis from the initial task brief to the final submitted artifact. Across thousands of recorded runs, stage-level scoring reveals that Validate is the weakest workflow stage on average, whereas Setup is the strongest, suggesting that current agents are better at making pipelines executable than at verifying their reliability. Post-run error analysis further shows that verification and submission failures dominate tagged errors, accounting for 37.7% and 38.1% of fired codes respectively, whereas task-understanding errors are rare at 0.9%, and runs with one fired error code have a 48% lower overall score than runs with no error code on average.",
+      "authors": [
+        "Junqi Liu",
+        "Selena Song",
+        "Yuhan Wang",
+        "Jiawei Mao",
+        "Hardy Chen",
+        "Xiaoke Huang",
+        "Tianhao Qi",
+        "Pengfei Guo",
+        "Yucheng Tang",
+        "Yufan He",
+        "Can Zhao",
+        "Andriy Myronenko",
+        "Dong Yang",
+        "Daguang Xu",
+        "Yuyin Zhou"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-01T09:22:55Z",
+      "updated": "2026-06-03T05:43:27Z",
+      "announced_date": "2026-06-01",
+      "first_seen": "2026-06-01",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.01961v2",
+        "pdf": "https://arxiv.org/pdf/2606.01961v2",
+        "html": "https://arxiv.org/html/2606.01961"
+      },
+      "score": 14,
+      "tags": [
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 3
+    },
+    {
+      "id": "2606.01912",
+      "title": "SMH-Bench: Benchmarking LLM Agents for Environment-Grounded Reasoning and Action in Smart Homes",
+      "abstract": "Smart homes are evolving toward complex state-dependent living environments, requiring Large Language Models (LLMs) to reason over user intent, preferences, and multi-device interactions. However, existing smart-home benchmarks often focus on static instruction-to-API mapping or limited simulations, failing to evaluate whether LLMs can reason, interact, and act reliably in realistic household scenarios. To address these limitations, we introduce SMH-Bench, a comprehensive benchmark for evaluating LLMs in smart-home environments. Built upon HomeEnv, an executable and verifiable smart-home simulator, SMH-Bench contains 1,100 high-quality tasks spanning 7 categories and 22 fine-grained subcategories. It further stratifies tasks across simple, medium and complex homes, ranging from small apartments to dense multi-room environments with 135 devices. Experiments show that although frontier LLMs achieve strong performance on explicit control and query tasks, they still exhibit significant weaknesses in automation task scheduling, ambiguity handling and personalized reasoning, especially as home complexity increases. We hope SMH-Bench will facilitate the development of more reliable, context-aware, and practically deployable smart-home agents.",
+      "authors": [
+        "Kuan Li",
+        "Shuo Zhang",
+        "Huacan Wang",
+        "Fangzhou Yu",
+        "Zecheng Sheng",
+        "Yi Gu",
+        "Weipeng Ming",
+        "Lei Xue",
+        "Chen Liu",
+        "Sen Hu",
+        "Ronghao Chen",
+        "Siyue Lin",
+        "Yuqing Hou",
+        "Xiaofeng Mou",
+        "Yi Xu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-01T08:48:15Z",
+      "updated": "2026-06-01T08:48:15Z",
+      "announced_date": "2026-06-01",
+      "first_seen": "2026-06-01",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.01912v1",
+        "pdf": "https://arxiv.org/pdf/2606.01912v1",
+        "html": "https://arxiv.org/html/2606.01912"
+      },
+      "score": 20,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2606.01815",
+      "title": "CRAB-Bench: Evaluating LLM Agents under Complex Task Dependencies and Human-aligned User Simulation",
+      "abstract": "Evaluating LLM agents in realistic service scenarios requires complex task dependencies, imperfect user behavior, and an evaluation that accommodates multiple valid solutions. We introduce CRAB-Bench (Constraint-based Realistic Agent Benchmark) and RUSE (Realistic User Simulation Engine) to address this gap. CRAB-Bench generates tasks via a constraint graph over multiple interdependent entities with structured distractors, requiring agents to reason carefully over thousands of misleading candidates where only a tiny fraction of solutions are valid. RUSE replaces cooperative, template-like simulators with realistic users grounded in human behavioral studies, instantiated across diverse personas and four behavioral dimensions. Experiments on four frontier LLM agents show that the best model achieves only 61% pass@1 on CRAB-Bench, and switching to RUSE causes further drops of up to 57%, concentrated in task-solving ability rather than conversational quality. Information Disclosure is the most damaging behavioral dimension, and agents interacting with RUSE are less likely to admit mistakes, instead masking errors through implicit corrections.",
+      "authors": [
+        "Danqing Wang",
+        "Akshay Sivaraman",
+        "Lei Li"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-01T07:31:04Z",
+      "updated": "2026-06-01T07:31:04Z",
+      "announced_date": "2026-06-01",
+      "first_seen": "2026-06-01",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.01815v1",
+        "pdf": "https://arxiv.org/pdf/2606.01815v1",
+        "html": "https://arxiv.org/html/2606.01815"
+      },
+      "score": 17,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.01552",
+      "title": "RoleCDE:Benchmarking and Mitigating Role-Alignment Trade-offs in Role-Playing Agents",
+      "abstract": "Role-playing agents(RPAs) are widely used to steer large language models(LLMs) toward role-consistent behavior, yet existing benchmarks mainly evaluate surface-level fidelity and offer limited insight into decision making under role-alignment value conflicts. To address this gap, we introduce RoleCDE, the first benchmark designed to evaluate RPAs under structured conflicts between role-specific values and alignment-oriented constraints. RoleCDE formulates role-aware decision making as cognitive dilemma scenarios, jointly evaluating role-scenario grounding, value conflict resolution, and decision tendencies. The benchmark is constructed at scale, covering approximately 8k diverse role profiles and scenarios and nearly 24k dilemma instances across three difficulty levels and eight role categories. Evaluation of several mainstream LLMs reveals a \"Role Value Decoupling\" phenomenon, where agents systematically default to alignment-and morality-consistent decisions rather than role-specific values when the two conflict, even under explicit role conditioning. This behavior is largely invariant to dilemma difficulty but varies substantially across role categories. We further show that RoleCDE-based fine-tuning effectively mitigates this decoupling by improving value trade-off reasoning, while preserving general role-playing fidelity and general reasoning performance. Code is available at: https://github.com/rabbitrose/RoleCDE.",
+      "authors": [
+        "Huayi Lai",
+        "Shichao Song",
+        "Simin Niu",
+        "Hanyu Wang",
+        "Jiawei Yang",
+        "Zhouxing Wang",
+        "Zhiqiang Yin",
+        "Xun Liang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-01T01:56:27Z",
+      "updated": "2026-06-01T01:56:27Z",
+      "announced_date": "2026-06-01",
+      "first_seen": "2026-06-01",
+      "comment": "23pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.01552v1",
+        "pdf": "https://arxiv.org/pdf/2606.01552v1",
+        "html": "https://arxiv.org/html/2606.01552"
+      },
+      "score": 8,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

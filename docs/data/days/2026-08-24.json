@@ -1,0 +1,376 @@
+{
+  "date": "2026-08-24",
+  "count": 7,
+  "report": {
+    "date": "2026-08-24",
+    "count": 7,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 4,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 4,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "memory",
+        "count": 3,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      }
+    ],
+    "en": {
+      "headline": "7 new agent benchmarks",
+      "summary": "On August 24, 2026, arXiv listed 7 new agent benchmarks. Work clustered around Tool use (4), Planning / reasoning (4), Memory (3), and Coding agents (1).",
+      "highlights": [
+        {
+          "id": "2608.23035",
+          "title": "MobilePA-Bench: Benchmarking Mobile Planner Agents on Complex Real-World Tasks",
+          "blurb": "As on-device LLM agents evolve into personal copilots, the mobile operating system has become a key testbed for this paradigm, making rigorous capability evaluation essential."
+        },
+        {
+          "id": "2608.23179",
+          "title": "NetConfArena: An Executable Benchmark for LLM Agents in Closed-Loop Network Configuration",
+          "blurb": "Large language model (LLM) agents are increasingly attractive for automating network configuration, yet their reliability and failure patterns are poorly understood."
+        },
+        {
+          "id": "2608.23564",
+          "title": "SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration?",
+          "blurb": "Modern software systems accumulate technical debt over decades of development, which makes migration expensive and largely manual."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 7 篇 Agent Benchmark",
+      "summary": "2026年8月24日，arXiv 新增 7 篇 Agent Benchmark。当日主题集中在工具使用（4）、规划 / 推理（4）、记忆（3）、代码智能体（1）。",
+      "highlights": [
+        {
+          "id": "2608.23035",
+          "title": "MobilePA-Bench: Benchmarking Mobile Planner Agents on Complex Real-World Tasks",
+          "blurb": "As on-device LLM agents evolve into personal copilots, the mobile operating system has become a key testbed for this paradigm, making rigorous capability evaluation essential."
+        },
+        {
+          "id": "2608.23179",
+          "title": "NetConfArena: An Executable Benchmark for LLM Agents in Closed-Loop Network Configuration",
+          "blurb": "Large language model (LLM) agents are increasingly attractive for automating network configuration, yet their reliability and failure patterns are poorly understood."
+        },
+        {
+          "id": "2608.23564",
+          "title": "SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration?",
+          "blurb": "Modern software systems accumulate technical debt over decades of development, which makes migration expensive and largely manual."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.23564",
+      "title": "SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration?",
+      "abstract": "Modern software systems accumulate technical debt over decades of development, which makes migration expensive and largely manual. As coding agents become increasingly capable at bug fixing, can they autonomously perform such migrations? Existing benchmarks cannot answer this question because they evaluate only behavioural correctness, not whether the migration actually occurred. This leads an easy hack: agents copy the original implementation to make tests pass. We call this Blindness. To address this problem, we introduce SWE Refactor Bench, a benchmark comprising 20 whole-repository migrations, covering 4 kinds of technical debt. A three-stage evaluation protocol measures both migration completeness and behavioural correctness. (1) Migration Audit verifies that the migration occurred. (2) Behavioural Tests measure correctness with a fixed test suite. (3) Agentic Verification uses 6 independent coding agents to generate targeted tests for hidden behavioural differences. Across 520 runs from 8 frontier models and 26 model-effort configurations, only 28 of 520 runs ($5.4\\%$) pass all three stages, 13 of the 20 tasks receive no accepted solution, and the best model (claude-opus-5) scores $47.0/100$. Migration completeness and behavioural correctness are distinct abilities: a few runs preserve behaviour by skipping the migration and are stopped at Migration Audit; most attempt it and break behaviour, and are stopped at Behavioural Tests. Agents cannot deliver a perfect migration: among the 340 runs that pass Migration Audit, $58\\%$ reach $99\\%$ of the fixed checks, yet only $26\\%$ reach $100\\%$. Agent capability differs across migration categories: agents score $31.4$ on build toolchain rewrites but only $5.6$ on language rewrites. Together, these findings position SWE Refactor Bench as a rigorous testbed for developing coding agents for reliable whole-repository migrations.",
+      "authors": [
+        "Deyao Hong",
+        "Yizhe Chi",
+        "Wenyi Li",
+        "Xiaoqiu Wang",
+        "Mingju Gao",
+        "Kaisen Yang",
+        "Bingxiang He",
+        "Youjie Zheng",
+        "Calvin Xiao",
+        "Qinhuai Na"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-08-24T17:59:04Z",
+      "updated": "2026-08-24T17:59:04Z",
+      "announced_date": "2026-08-24",
+      "first_seen": "2026-08-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.23564v1",
+        "pdf": "https://arxiv.org/pdf/2608.23564v1",
+        "html": "https://arxiv.org/html/2608.23564"
+      },
+      "score": 19,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2608.23525",
+      "title": "EarthVerse: Benchmarking Scientific Agents Across Dynamic Earth Systems and Natural Hazards",
+      "abstract": "Earth-system analysis reconstructs changing physical processes from observations that differ in source, scale, timing, and modality. Natural hazards make this work consequential because incomplete evidence can change estimates of severity, exposure, and mechanism. We introduce EarthVerse, a benchmark that evaluates scientific agents through package-scoped investigations. Its 405 reproducible tasks are grounded in 199 documented events and 19 hazard families. Agents inspect heterogeneous event packages, choose compatible evidence, execute transparent calculations, reconcile source differences, and preserve provenance in the final answer. We provide executable ground truth that decomposes each task into fine-grained answer units, together with task-specific rubrics that assess the supporting research process while allowing multiple valid paths. We evaluate 25 model and agent systems under a controlled tool-using protocol, then use controlled studies to locate failures in evidence access, tool selection, memory, reasoning, interaction, and scientific execution. Across systems, the best mean answer-unit accuracy is 84.65%, while the highest Strict@95 is only 34.81%. The gap shows that current agents often complete individual steps without maintaining a consistent chain across evidence, scales, units, calculations, and physical interpretation. EarthVerse provides a reproducible basis for measuring end-to-end scientific reliability in dynamic Earth systems.",
+      "authors": [
+        "Zhiqing Cui",
+        "Xinxiang Yin",
+        "Yihong Tang",
+        "Xinglang Zhang",
+        "Yuanzhe Hu",
+        "Siru Zhong",
+        "Weidong Tang",
+        "Yuxuan Liang",
+        "Weijia Li",
+        "Ming Jin",
+        "Shirui Pan",
+        "Yuhao Kang",
+        "Dingyi Zhuang",
+        "Jinhua Zhao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-24T17:29:16Z",
+      "updated": "2026-08-24T17:29:16Z",
+      "announced_date": "2026-08-24",
+      "first_seen": "2026-08-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.23525v1",
+        "pdf": "https://arxiv.org/pdf/2608.23525v1",
+        "html": "https://arxiv.org/html/2608.23525"
+      },
+      "score": 11,
+      "tags": [
+        "tool-use",
+        "memory",
+        "planning",
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2608.23329",
+      "title": "Thinking Beyond Videos: Unifying Video Reasoning and Deep Research for Open-World Video Agents",
+      "abstract": "Open-world video understanding often requires a model to locate sparse visual evidence and acquire external knowledge that is absent from the video and its parametric memory. While Thinking-with-Videos enables active temporal perception and Deep Research supports multi-step information seeking, the two capabilities are typically developed in isolation. We introduce VideoRover, a unified Video Deep Research framework that iteratively coordinates video cropping, multimodal search, and webpage browsing. Given a video-question pair, VideoRover uses each tool result to select the next action, so localized video clips guide external retrieval and retrieved evidence triggers further video inspection and verification. To develop this capability, we construct an automated data curation pipeline, producing 26K verified SFT trajectories and 3K challenging RL instances. We also introduce VideoRover-Bench, a benchmark stratified by video duration and research difficulty. Experiments on VideoDR and VideoRover-Bench show that our VideoRover-8B-RL achieves performance comparable to proprietary models in the direct-answer setting without tool use while outperforming larger open-source models equipped with the same tool suite. Ablation studies and training dynamics further validate the complementary roles of active video grounding, external retrieval, and long-horizon reinforcement learning.",
+      "authors": [
+        "Wenqi Liu",
+        "Shijie Ma",
+        "Yunxiao Wang",
+        "Meng Liu",
+        "Qile Su",
+        "Han Liu",
+        "Bohan Hou",
+        "Xuanyu Zheng",
+        "Changyi Liu",
+        "Tianke Zhang",
+        "Haonan Fan",
+        "Kaiyu Jiang",
+        "Yingxin Li",
+        "Jiankang Chen",
+        "Xu Wang",
+        "Bin Wen",
+        "Tingting Gao",
+        "Han Li",
+        "Jianhua Yin",
+        "Yinwei Wei",
+        "Xuemeng Song"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-08-24T14:42:23Z",
+      "updated": "2026-08-24T14:42:23Z",
+      "announced_date": "2026-08-24",
+      "first_seen": "2026-08-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.23329v1",
+        "pdf": "https://arxiv.org/pdf/2608.23329v1",
+        "html": "https://arxiv.org/html/2608.23329"
+      },
+      "score": 7,
+      "tags": [
+        "tool-use",
+        "memory",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2608.23179",
+      "title": "NetConfArena: An Executable Benchmark for LLM Agents in Closed-Loop Network Configuration",
+      "abstract": "Large language model (LLM) agents are increasingly attractive for automating network configuration, yet their reliability and failure patterns are poorly understood. An essential prerequisite is to assess such agents in a realistic but risk-free environment. Existing benchmarks, however, fall short: they often treat configuration as static command generation or rely on overly simplified settings. Such evaluations understate the core challenges of network configuration, where correctness requires reasoning about protocol complexity and topology dependence. We present NetConfArena, an executable benchmark for evaluating LLM agents in closed-loop network configuration. NetConfArena places agents in emulated multi-device networks, provides a standardized and compact action interface for task execution, and evaluates the resulting network behavior with hidden task-specific executable test cases. The benchmark relies on an LLM-assisted, emulation-grounded pipeline, which converts human-oriented network materials into reusable parameterized task templates. We evaluate representative LLM agents on 480 task instances instantiated from 96 protocol-focused task templates, yielding 3840 execution trajectories, and show that failures are not limited to command errors. The failures also reveal gaps in task-specification adherence and robust planning and execution. These findings suggest two future directions: using validated trajectories as supervision signals to improve foundation models, and designing harness mechanisms that make agent execution more reliable and accountable.",
+      "authors": [
+        "Chang Liu",
+        "Xiaohui Xie",
+        "Xinyi Chen",
+        "Yong Cui"
+      ],
+      "categories": [
+        "cs.NI",
+        "cs.AI"
+      ],
+      "primary_category": "cs.NI",
+      "published": "2026-08-24T12:26:37Z",
+      "updated": "2026-08-24T12:26:37Z",
+      "announced_date": "2026-08-24",
+      "first_seen": "2026-08-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.23179v1",
+        "pdf": "https://arxiv.org/pdf/2608.23179v1",
+        "html": "https://arxiv.org/html/2608.23179"
+      },
+      "score": 19,
+      "tags": [
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.23067",
+      "title": "Signal or Noise? A Benchmark Study of Agent Skills in Web Development",
+      "abstract": "Agent Skills are reusable procedural modules that are increasingly injected into coding-agent sessions to encode framework conventions, anti-patterns, and reusable tools. However, because each injected Skill expands the prompt of every query, an effective Skill benchmark must determine not only whether an agent can solve a task, but whether the Skill should have been injected at all. We introduce WebDev-Skills-Bench and use it for a controlled empirical study of 31 public WebDev Skills on 50 Web-Bench projects and 1,000 ordered tasks. The benchmark compares four matched conditions, including a length-matched irrelevant control and leave-one-out component ablations. To isolate Skill effects from prompt-length artifacts, we place only SKILL.md in the prompt while mounting auxiliary files into the agent workspace. Across four models, target Skill injection reduces mean Pass@2 by 1.3% to 4.2%, lowers task completion depth, and increases token cost by 72% to 394%, with gains in only 17% to 36% of Skill-project pairs. Length-matched controls reveal two failure modes: some models are length-distracted, where an equally long irrelevant Skill reproduces most of the loss, while others are content-misled, where prompt length is neutral but Skill content still lowers Pass@2 by 1.1% to 1.4%. Further analysis shows that losses concentrate on easy early tasks, Skill rankings transfer weakly across models, and anti-pattern rules outperform example-heavy content within helpful Skills. These findings recast a matched Skill as a hypothesis about a particular Skill-project-model triple rather than a portable asset, reframing injection as a per-deployment routing decision and making length-matched controls and per-model audits a minimum standard for Agent-Skill evaluation.",
+      "authors": [
+        "Ziyue Yang",
+        "Fan Ding"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-08-24T10:13:07Z",
+      "updated": "2026-08-24T10:13:07Z",
+      "announced_date": "2026-08-24",
+      "first_seen": "2026-08-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.23067v1",
+        "pdf": "https://arxiv.org/pdf/2608.23067v1",
+        "html": "https://arxiv.org/html/2608.23067"
+      },
+      "score": 8,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.23035",
+      "title": "MobilePA-Bench: Benchmarking Mobile Planner Agents on Complex Real-World Tasks",
+      "abstract": "As on-device LLM agents evolve into personal copilots, the mobile operating system has become a key testbed for this paradigm, making rigorous capability evaluation essential. Yet existing benchmarks fall into two camps, each with a critical blind spot: GUI-centric benchmarks test surface-level screen manipulation while overlooking background tool use and long-horizon planning, whereas static function-calling benchmarks rely on offline API matching that is detached from real runtime constraints. To close this gap, we present \\textbf{MobilePA-Bench}, an interactive, stateful, and tool-centric benchmark for evaluating the tool-calling and planning abilities of mobile planning agents. MobilePA-Bench runs on an executable sandbox that maintains live application databases and returns structured feedback, spanning $13$ functional domains and $212$ realistic mobile tools. Beyond basic tool use, it evaluates a central planning agent along three advanced dimensions: \\emph{(1)~Sub-agent Collaboration}---decomposing a complex task and delegating specialized work to capable sub-agents; \\emph{(2)~Memory Usage}---recalling stored memories, user profiles, and past preferences to resolve implicit requests; and \\emph{(3)~Skill Usage}---invoking pre-packaged composite skills instead of planning every step from scratch. Extensive experiments show that current frontier LLMs remain unreliable in mobile settings: performance drops sharply under strict tool ordering, permission limits, and unexpected runtime errors. By pairing an interactive function-calling sandbox with evidence-based verification, MobilePA-Bench serves as both a practical diagnostic benchmark and an interactive foundation for agentic reinforcement learning---accelerating the development of dependable mobile agents.",
+      "authors": [
+        "Yi Zhu",
+        "Xiongwei Wu",
+        "Qiyi Wang",
+        "Tingyu Qu",
+        "Jiajun Liu",
+        "Sihan Cao",
+        "Long Chen",
+        "Weigao Sun",
+        "Feida Zhu",
+        "Yiran Zhong",
+        "Steven Hoi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-24T09:38:24Z",
+      "updated": "2026-08-24T09:38:24Z",
+      "announced_date": "2026-08-24",
+      "first_seen": "2026-08-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.23035v1",
+        "pdf": "https://arxiv.org/pdf/2608.23035v1",
+        "html": "https://arxiv.org/html/2608.23035"
+      },
+      "score": 26,
+      "tags": [
+        "gui",
+        "tool-use",
+        "memory",
+        "planning",
+        "mobile"
+      ],
+      "field": "mobile",
+      "citations": 0
+    },
+    {
+      "id": "2608.22808",
+      "title": "CatchBench: When Can an Agent Failure Be Caught?",
+      "abstract": "When can an agent failure be caught? An audit is usually limited by the record rather than by the method. CatchBench therefore puts one auditor's question to three information states: the declared configuration before a run (PRE), a growing prefix of its trace (LIVE), and the finished trace (POST). Prior benchmarks fix one of these states or vary the telemetry; to our knowledge none scores all three under one task-method interface. Each state admits different questions, so seven task contracts carry their own labels and metrics rather than one leaderboard. Four are evidential; three are Gold-derived mechanism diagnostics. The release scores 72 entrants, from rule scanners and structural models to eleven LLM judges across nine model families (GPT, Claude, Gemini, Gemma, Llama, Qwen, DeepSeek, Mistral, Nova), over 1187 declared configurations and 1162 recorded runs. Most of the arena does not order: 47 of 118 pre-declared contrasts separate, and the rest are published unresolved rather than ranked. The two sharpest results cut against our own data. One rule ignores every name and permission; it flags each capability declared after the first. On one of six configuration sources it reaches a perfect F1, so a score there measures how the corpus was built rather than how well a method reasons. Our admissibility bar then rejected one injected substrate and withheld evidential status from the other. A benchmark number is therefore not interpretable until the process behind its labels is published and tested for the shortcut it may leave. We report both, and regenerate every ordering from released predictions with no model call.",
+      "authors": [
+        "Yue Zhao"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.MA",
+        "cs.PF"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-08-24T05:09:41Z",
+      "updated": "2026-08-24T05:09:41Z",
+      "announced_date": "2026-08-24",
+      "first_seen": "2026-08-24",
+      "comment": "39 pages, 6 figures, 21 tables. Work in progress. Code and data: https://github.com/yzhao062/catchbench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.22808v1",
+        "pdf": "https://arxiv.org/pdf/2608.22808v1",
+        "html": "https://arxiv.org/html/2608.22808"
+      },
+      "score": 11,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

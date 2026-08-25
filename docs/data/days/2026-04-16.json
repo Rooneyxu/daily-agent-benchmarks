@@ -1,0 +1,322 @@
+{
+  "date": "2026-04-16",
+  "count": 6,
+  "report": {
+    "date": "2026-04-16",
+    "count": 6,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 4,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      }
+    ],
+    "en": {
+      "headline": "6 new agent benchmarks",
+      "summary": "On April 16, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Planning / reasoning (4), Multimodal (2), Safety (2), and Web agents (1).",
+      "highlights": [
+        {
+          "id": "2604.14709",
+          "title": "HWE-Bench: Benchmarking LLM Agents on Real-World Hardware Bug Repair Tasks",
+          "blurb": "Existing benchmarks for hardware design primarily evaluate Large Language Models (LLMs) on isolated, component-level tasks such as generating HDL modules from specifications, leaving repository-scale evaluation unaddress…"
+        },
+        {
+          "id": "2604.14956",
+          "title": "FedGUI: Benchmarking Federated GUI Agents across Heterogeneous Platforms, Devices, and Operating Systems",
+          "blurb": "Training GUI agents with traditional centralized methods faces significant cost and scalability challenges."
+        },
+        {
+          "id": "2604.15037",
+          "title": "From Reactive to Proactive: Assessing the Proactivity of Voice Agents via ProVoice-Bench",
+          "blurb": "Recent advancements in LLM agents are gradually shifting from reactive, text-based paradigms toward proactive, multimodal interaction."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 6 篇 Agent Benchmark",
+      "summary": "2026年4月16日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在规划 / 推理（4）、多模态（2）、安全（2）、网页智能体（1）。",
+      "highlights": [
+        {
+          "id": "2604.14709",
+          "title": "HWE-Bench: Benchmarking LLM Agents on Real-World Hardware Bug Repair Tasks",
+          "blurb": "Existing benchmarks for hardware design primarily evaluate Large Language Models (LLMs) on isolated, component-level tasks such as generating HDL modules from specifications, leaving repository-scale evaluation unaddress…"
+        },
+        {
+          "id": "2604.14956",
+          "title": "FedGUI: Benchmarking Federated GUI Agents across Heterogeneous Platforms, Devices, and Operating Systems",
+          "blurb": "Training GUI agents with traditional centralized methods faces significant cost and scalability challenges."
+        },
+        {
+          "id": "2604.15037",
+          "title": "From Reactive to Proactive: Assessing the Proactivity of Voice Agents via ProVoice-Bench",
+          "blurb": "Recent advancements in LLM agents are gradually shifting from reactive, text-based paradigms toward proactive, multimodal interaction."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.15309",
+      "title": "MM-WebAgent: A Hierarchical Multimodal Web Agent for Webpage Generation",
+      "abstract": "The rapid progress of Artificial Intelligence Generated Content (AIGC) tools enables images, videos, and visualizations to be created on demand for webpage design, offering a flexible and increasingly adopted paradigm for modern UI/UX. However, directly integrating such tools into automated webpage generation often leads to style inconsistency and poor global coherence, as elements are generated in isolation. We propose MM-WebAgent, a hierarchical agentic framework for multimodal webpage generation that coordinates AIGC-based element generation through hierarchical planning and iterative self-reflection. MM-WebAgent jointly optimizes global layout, local multimodal content, and their integration, producing coherent and visually consistent webpages. We further introduce a benchmark for multimodal webpage generation and a multi-level evaluation protocol for systematic assessment. Experiments demonstrate that MM-WebAgent outperforms code-generation and agent-based baselines, especially on multimodal element generation and integration. Code & Data: https://aka.ms/mm-webagent.",
+      "authors": [
+        "Yan Li",
+        "Zezi Zeng",
+        "Yifan Yang",
+        "Yuqing Yang",
+        "Ning Liao",
+        "Weiwei Guo",
+        "Lili Qiu",
+        "Mingxi Cheng",
+        "Qi Dai",
+        "Zhendong Wang",
+        "Zhengyuan Yang",
+        "Xue Yang",
+        "Ji Li",
+        "Lijuan Wang",
+        "Chong Luo"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-04-16T17:59:49Z",
+      "updated": "2026-04-16T17:59:49Z",
+      "announced_date": "2026-04-16",
+      "first_seen": "2026-04-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.15309v1",
+        "pdf": "https://arxiv.org/pdf/2604.15309v1",
+        "html": "https://arxiv.org/html/2604.15309"
+      },
+      "score": 13,
+      "tags": [
+        "web",
+        "tool-use",
+        "planning",
+        "multimodal"
+      ],
+      "field": "web",
+      "citations": 1
+    },
+    {
+      "id": "2604.15267",
+      "title": "CoopEval: Benchmarking Cooperation-Sustaining Mechanisms and LLM Agents in Social Dilemmas",
+      "abstract": "It is increasingly important that LLM agents interact effectively and safely with other goal-pursuing agents, yet, recent works report the opposite trend: LLMs with stronger reasoning capabilities behave _less_ cooperatively in mixed-motive games such as the prisoner's dilemma and public goods settings. Indeed, our experiments show that recent models -- with or without reasoning enabled -- consistently defect in single-shot social dilemmas. To tackle this safety concern, we present the first comparative study of game-theoretic mechanisms designed to enable cooperative outcomes between rational agents _in equilibrium_. Across four social dilemmas testing distinct components of robust cooperation, we evaluate four families of mechanisms: (1) repeating the game for many rounds, (2) reputation systems, (3) third-party mediators to delegate decision making to, and (4) contract agreements for outcome-conditional payments between players. Among our findings, we establish that contracting and mediation are most effective in achieving cooperative outcomes between capable LLM models, and that repetition-induced cooperation deteriorates drastically when co-players vary. Moreover, we demonstrate that the mechanisms become _more effective_ under evolutionary pressures to maximize individual payoffs.",
+      "authors": [
+        "Emanuel Tewolde",
+        "Xiao Zhang",
+        "David Guzman Piedrahita",
+        "Vincent Conitzer",
+        "Zhijing Jin"
+      ],
+      "categories": [
+        "cs.GT",
+        "cs.AI",
+        "cs.CL",
+        "cs.CY",
+        "cs.MA"
+      ],
+      "primary_category": "cs.GT",
+      "published": "2026-04-16T17:40:30Z",
+      "updated": "2026-07-05T03:19:06Z",
+      "announced_date": "2026-04-16",
+      "first_seen": "2026-04-16",
+      "comment": "Published paper at the International Conference on Machine Learning (ICML) 2026. 65 pages, 38 Figures, 8 Tables, 17 Listings",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.15267v2",
+        "pdf": "https://arxiv.org/pdf/2604.15267v2",
+        "html": "https://arxiv.org/html/2604.15267"
+      },
+      "score": 10,
+      "tags": [
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 15
+    },
+    {
+      "id": "2604.15415",
+      "title": "HarmfulSkillBench: How Do Harmful Skills Weaponize Your Agents?",
+      "abstract": "Large language models (LLMs) have evolved into autonomous agents that rely on open skill ecosystems (e.g., ClawHub and Skills.Rest), hosting numerous publicly reusable skills. Existing security research on these ecosystems mainly focuses on vulnerabilities within skills, such as prompt injection. However, there is a critical gap regarding skills that may be misused for harmful actions (e.g., cyber attacks, fraud and scams, privacy violations, and sexual content generation), namely harmful skills. In this paper, we present the first large-scale measurement study of harmful skills in agent ecosystems, covering 98,440 skills across two major registries. Using an LLM-driven scoring system grounded in our harmful skill taxonomy, we find that 4.93% of skills (4,858) are harmful, with ClawHub exhibiting an 8.84% harmful rate compared to 3.49% on Skills.Rest. We then construct HarmfulSkillBench, the first benchmark for evaluating agent safety against harmful skills in realistic agent contexts, comprising 200 harmful skills across 20 categories and four evaluation conditions. By evaluating six LLMs on HarmfulSkillBench, we find that presenting a harmful task through a pre-installed skill substantially lowers refusal rates across all models, with the average harm score rising from 0.27 without the skill to 0.47 with it, and further to 0.76 when the harmful intent is implicit rather than stated as an explicit user request. We responsibly disclose our findings to the affected registries and release our benchmark to support future research (see https://github.com/TrustAIRLab/HarmfulSkillBench).",
+      "authors": [
+        "Yukun Jiang",
+        "Yage Zhang",
+        "Michael Backes",
+        "Xinyue Shen",
+        "Yang Zhang"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-04-16T17:31:52Z",
+      "updated": "2026-04-16T17:31:52Z",
+      "announced_date": "2026-04-16",
+      "first_seen": "2026-04-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.15415v1",
+        "pdf": "https://arxiv.org/pdf/2604.15415v1",
+        "html": "https://arxiv.org/html/2604.15415"
+      },
+      "score": 12,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 6
+    },
+    {
+      "id": "2604.15037",
+      "title": "From Reactive to Proactive: Assessing the Proactivity of Voice Agents via ProVoice-Bench",
+      "abstract": "Recent advancements in LLM agents are gradually shifting from reactive, text-based paradigms toward proactive, multimodal interaction. However, existing benchmarks primarily focus on reactive responses, overlooking the complexities of proactive intervention and monitoring. To bridge this gap, we introduce ProVoice-Bench, the first evaluation framework specifically designed for proactive voice agents, featuring four novel tasks. By leveraging a multi-stage data synthesis pipeline, we curate 1,182 high-quality samples for rigorous testing. Our evaluation of state-of-the-art Multimodal LLMs reveals a significant performance gap, particularly regarding over-triggering and reasoning capabilities. These findings highlight the limitations of current models and offer a roadmap for developing more natural, context-aware proactive agents.",
+      "authors": [
+        "Ke Xu",
+        "Yuhao Wang",
+        "Yu Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SD"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-16T14:06:30Z",
+      "updated": "2026-05-02T12:33:41Z",
+      "announced_date": "2026-04-16",
+      "first_seen": "2026-04-16",
+      "comment": "Submitted to Interspeech 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.15037v3",
+        "pdf": "https://arxiv.org/pdf/2604.15037v3",
+        "html": "https://arxiv.org/html/2604.15037"
+      },
+      "score": 14,
+      "tags": [
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 1
+    },
+    {
+      "id": "2604.14956",
+      "title": "FedGUI: Benchmarking Federated GUI Agents across Heterogeneous Platforms, Devices, and Operating Systems",
+      "abstract": "Training GUI agents with traditional centralized methods faces significant cost and scalability challenges. Federated learning (FL) offers a promising solution, yet its potential is hindered by the lack of benchmarks that capture real-world, cross-platform heterogeneity. To bridge this gap, we introduce FedGUI, the first comprehensive benchmark for developing and evaluating federated GUI agents across mobile, web, and desktop platforms. FedGUI provides a suite of six curated datasets to systematically study four crucial types of heterogeneity: cross-platform, cross-device, cross-OS, and cross-source. Extensive experiments reveal several key insights: First, we show that cross-platform collaboration improves performance, extending prior mobile-only federated learning to diverse GUI environments; Second, we demonstrate the presence of distinct heterogeneity dimensions and identify platform and OS as the most influential factors. FedGUI provides a vital foundation for the community to build more scalable and privacy-preserving GUI agents for real-world deployment. Our code and data are publicly available at https://github.com/wwh0411/FedGUI..",
+      "authors": [
+        "Wenhao Wang",
+        "Haoting Shi",
+        "Mengying Yuan",
+        "Yiquan Lin",
+        "Panrong Tong",
+        "Hanzhang Zhou",
+        "Guangyi Liu",
+        "Pengxiang Zhao",
+        "Yue Wang",
+        "Siheng Chen"
+      ],
+      "categories": [
+        "cs.MA"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-04-16T12:53:03Z",
+      "updated": "2026-04-16T12:53:03Z",
+      "announced_date": "2026-04-16",
+      "first_seen": "2026-04-16",
+      "comment": "ACL 2026 Findings, Camera Ready",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.14956v1",
+        "pdf": "https://arxiv.org/pdf/2604.14956v1",
+        "html": "https://arxiv.org/html/2604.14956"
+      },
+      "score": 15,
+      "tags": [
+        "gui"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2604.14709",
+      "title": "HWE-Bench: Benchmarking LLM Agents on Real-World Hardware Bug Repair Tasks",
+      "abstract": "Existing benchmarks for hardware design primarily evaluate Large Language Models (LLMs) on isolated, component-level tasks such as generating HDL modules from specifications, leaving repository-scale evaluation unaddressed. We introduce HWE-Bench, the first large-scale, repository-level benchmark for evaluating LLM agents on real-world hardware bug repair tasks. HWE-Bench comprises 417 task instances derived from real historical bug-fix pull requests across six major open-source projects spanning both Verilog/SystemVerilog and Chisel, covering RISC-V cores, SoCs, and security roots-of-trust. Each task is grounded in a fully containerized environment where the agent must resolve a real bug report, with correctness validated through the project's native simulation and regression flows. The benchmark is built through a largely automated pipeline that enables efficient expansion to new repositories. We evaluate seven LLMs with four agent frameworks and find that the best agent resolves 70.7% of tasks overall, with performance exceeding 90% on smaller cores but dropping below 65% on complex SoC-level projects. We observe larger performance gaps across models than commonly reported on software benchmarks, and difficulty is driven by project scope and bug-type distribution rather than code size alone. Our failure analysis traces agent failures to three stages of the debugging process: fault localization, hardware-semantic reasoning, and cross-artifact coordination across RTL, configuration, and verification components, providing concrete directions for developing more capable hardware-aware agents.",
+      "authors": [
+        "Fan Cui",
+        "Hongyuan Hou",
+        "Zizhang Luo",
+        "Chenyun Yin",
+        "Yun Liang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-16T07:19:34Z",
+      "updated": "2026-05-05T12:56:34Z",
+      "announced_date": "2026-04-16",
+      "first_seen": "2026-04-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.14709v3",
+        "pdf": "https://arxiv.org/pdf/2604.14709v3",
+        "html": "https://arxiv.org/html/2604.14709"
+      },
+      "score": 23,
+      "tags": [
+        "coding",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 2
+    }
+  ]
+}

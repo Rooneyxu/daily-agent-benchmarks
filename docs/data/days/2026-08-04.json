@@ -1,0 +1,538 @@
+{
+  "date": "2026-08-04",
+  "count": 12,
+  "report": {
+    "date": "2026-08-04",
+    "count": 12,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 4,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "memory",
+        "count": 4,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "planning",
+        "count": 4,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "rsi",
+        "count": 1,
+        "en": "RSI / AI4AI",
+        "zh": "RSI / AI4AI"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      }
+    ],
+    "en": {
+      "headline": "12 new agent benchmarks",
+      "summary": "On August 4, 2026, arXiv listed 12 new agent benchmarks. Work clustered around Tool use (4), Memory (4), Planning / reasoning (4), and Multimodal (2).",
+      "highlights": [
+        {
+          "id": "2608.03206",
+          "title": "EduClaw-Bench: A Long-Horizon Benchmark for Pedagogical LLM Agents with Simulated Learners",
+          "blurb": "Large language models (LLMs) power educational applications from tutoring to essay scoring, but each is a point solution to a single task, and only recently have these point solutions been integrated into agents operatin…"
+        },
+        {
+          "id": "2608.04003",
+          "title": "PAST-Bench: Benchmarking the Foundations of Recursive Self-Improvement in Personal Agents",
+          "blurb": "Recursive self-improvement requires agents to turn accumulated experience into better future behavior."
+        },
+        {
+          "id": "2608.04077",
+          "title": "FinProBench: Evaluating Financial AI Agents with Role-Grounded Rubrics Derived from Professional Deliverables",
+          "blurb": "Evaluating financial AI agents requires criteria aligned with real professional work."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 12 篇 Agent Benchmark",
+      "summary": "2026年8月4日，arXiv 新增 12 篇 Agent Benchmark。当日主题集中在工具使用（4）、记忆（4）、规划 / 推理（4）、多模态（2）。",
+      "highlights": [
+        {
+          "id": "2608.03206",
+          "title": "EduClaw-Bench: A Long-Horizon Benchmark for Pedagogical LLM Agents with Simulated Learners",
+          "blurb": "Large language models (LLMs) power educational applications from tutoring to essay scoring, but each is a point solution to a single task, and only recently have these point solutions been integrated into agents operatin…"
+        },
+        {
+          "id": "2608.04003",
+          "title": "PAST-Bench: Benchmarking the Foundations of Recursive Self-Improvement in Personal Agents",
+          "blurb": "Recursive self-improvement requires agents to turn accumulated experience into better future behavior."
+        },
+        {
+          "id": "2608.04077",
+          "title": "FinProBench: Evaluating Financial AI Agents with Role-Grounded Rubrics Derived from Professional Deliverables",
+          "blurb": "Evaluating financial AI agents requires criteria aligned with real professional work."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.14680",
+      "title": "When Agentic Executions Fail: Detecting and Localizing Runtime Faults from Telemetry",
+      "abstract": "Reliability in LLM-based agentic systems is a property of the whole execution (its tool calls, model calls, guardrails, and inter-agent messages), not of the final answer alone, yet evaluating only task outcomes reveals little about how or why a run fails. We present AGENTCHAOSBENCH, a benchmark for detecting and localizing runtime faults in agentic systems from their execution telemetry. We run five heterogeneous applications that coordinate agents over the Agent-to-Agent protocol and call tools through the Model Context Protocol, and inject ten types of operational fault (unavailable or slow tools, corrupted or oversized responses, and delayed, looped, or misrouted delegations and bypassed guardrails) at their tool, model, guardrail, and inter-agent boundaries, alongside a no-fault control. The resulting dataset contains 275 sanitized traces: 250 faulty executions spanning ten fault types and 25 no-fault controls. Each faulty trace is aligned with the no-fault execution of the same input; fault-type labels and, where applicable, location labels are held out from diagnosis. On structured single-trace inputs, a first set of zero-shot LLM baselines shows the task is far from solved: local detectors up to 14B parameters reach only 13.6-19.2% top-1 fault-type accuracy and the frontier DeepSeek-v4-pro only 24.8%, while jointly identifying the fault type and its location tops out at 22%; reference-dependent faults (above all a bypassed guardrail) stay near-unsolved from a single trace. An aligned reference improves selected relative faults but does not resolve guardrail bypass. The held-out labels and compact prediction format support reproducible comparison of LLM-based and non-LLM diagnosis methods.",
+      "authors": [
+        "Chenkai Zhang",
+        "Yiran Li",
+        "Yifang Tian",
+        "Michalis Bachras",
+        "Hans-Arno Jacobsen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-04T20:47:37Z",
+      "updated": "2026-08-04T20:47:37Z",
+      "announced_date": "2026-08-04",
+      "first_seen": "2026-08-04",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.14680v1",
+        "pdf": "https://arxiv.org/pdf/2608.14680v1",
+        "html": "https://arxiv.org/html/2608.14680"
+      },
+      "score": 11,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.04095",
+      "title": "FinPerMA: A Theory-Informed, Event-Grounded Personalized-Memory Benchmark for LLM Agents",
+      "abstract": "Large language model (LLM) agents are increasingly used as personalized assistants in high-stakes domains such as financial advising, yet it remains unclear whether they can maintain and update an individualized user model over long horizons. Existing personalized-memory benchmarks primarily test factual retention or rely on weakly constrained model-generated trajectories, leaving event-driven preference adaptation underexplored. We introduce FinPerMA, an event-grounded benchmark that evaluates personalized memory against frozen longitudinal investor trajectories. Its generation pipeline combines deterministic, theory-informed impact rules, controlled LLM narration, and automated quality screening; a Post-Shock checkpoint isolates whether an agent has integrated a material event into its persistent user model. On 2,994 questions from 276 personas, seven frontier LLMs and up to seven memory configurations remain far from saturated: no full-context configuration exceeds approximately 0.47 overall accuracy or approximately 39% on multiple-choice questions. Attribution analysis shows that summary-based memory often preserves factual details while losing the preference signals needed for personalization; simple retrieval can therefore outperform purpose-built memory systems, with the gap widening after shocks.",
+      "authors": [
+        "Ben Wang",
+        "Kang Zhou",
+        "Lifan Guo",
+        "Feng Chen",
+        "Chi Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-04T18:00:04Z",
+      "updated": "2026-08-04T18:00:04Z",
+      "announced_date": "2026-08-04",
+      "first_seen": "2026-08-04",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.04095v1",
+        "pdf": "https://arxiv.org/pdf/2608.04095v1",
+        "html": "https://arxiv.org/html/2608.04095"
+      },
+      "score": 12,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.04077",
+      "title": "FinProBench: Evaluating Financial AI Agents with Role-Grounded Rubrics Derived from Professional Deliverables",
+      "abstract": "Evaluating financial AI agents requires criteria aligned with real professional work. Existing rubric methods typically derive criteria from task prompts or model outputs, overlooking tacit standards visible only in practitioner deliverables. We introduce FinProBench, a benchmark for professional financial tasks, and Role-Grounded Rubric Construction (RGRC), a reusable pipeline that derives rubrics from deliverables produced by practitioners in the same role. RGRC comprises four stages: Deliverable Collection, Competency Extraction, Rubric Synthesis, and Validation. Its rubrics capture tacit standards, distinguish quality levels, and transfer across tasks within a role. Before analysis, we classified 57 occupations by deliverable genre into 30 prior-rich conventional roles and 27 prior-sparse role-specialized roles. Across all roles, Prompt-only nearly matches RGRC for conventional roles (89.2% vs. 90.7%), but RGRC substantially outperforms it for role-specialized roles (99.1% vs. 78.0%). This split indicates that prompt engineering can approximate rubrics when conventions are well represented in model priors, while professional grounding is essential for standards beyond those priors. FinProBench is built from 1,723 curated deliverables spanning 57 occupations, 8 financial sub-industries, and 161 deliverable types, and releases an initial evaluation set of 20 complete tasks covering 20 roles in 7 sub-industries. With heterogeneous LLM judges and role-level rubrics, human deliverables rank first on average (73.7 vs. 70.3, 70.2, and 69.6 out of 100), while all four systems show overlapping 95% confidence intervals and complementary strengths. Reusing rubrics at the role level reduces estimated per-task construction effort by 6.7 times relative to authoring each rubric from scratch.",
+      "authors": [
+        "Ben Wang",
+        "Kang Zhou",
+        "Lifan Guo",
+        "Feng Chen",
+        "Chi Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-04T18:00:00Z",
+      "updated": "2026-08-04T18:00:00Z",
+      "announced_date": "2026-08-04",
+      "first_seen": "2026-08-04",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.04077v1",
+        "pdf": "https://arxiv.org/pdf/2608.04077v1",
+        "html": "https://arxiv.org/html/2608.04077"
+      },
+      "score": 15,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.04003",
+      "title": "PAST-Bench: Benchmarking the Foundations of Recursive Self-Improvement in Personal Agents",
+      "abstract": "Recursive self-improvement requires agents to turn accumulated experience into better future behavior. Personal AI agents offer a concrete setting for studying this capability because they retain preferences, task histories, tool routines, and learned skills across sessions. Yet whether retained experience actually improves them over time has not been systematically tested. We introduce PAST-Bench, a benchmark designed to isolate this question. Each agent runs through ordered sequences of fresh-session tasks under matched conditions that turn retained experience on and off. It spans 26 scenarios and 204 episodes across memory, procedural reuse, information gathering, and update. We report both later-task gains and whether those gains follow the intended save, retrieve, and update pathway. Across seven base models and four agent frameworks, improvement is real but uneven across capabilities. Agents with the same headline gain can differ markedly in whether that gain is supported by evidence of the intended pathway. Guided by these findings, we develop Hermes+, which extends Hermes with five targeted interventions across stages of the agent loop. Hermes+ raises the average gain from retained experience and provides clearer pathway evidence, with its strongest improvement on tasks requiring outdated state to be replaced, although the effect remains capability- and model-dependent. Together, PAST-Bench and Hermes+ provide an evaluation and diagnostic foundation for studying how persistent agents can progress from retaining experience to systematically improving through it. Code: https://github.com/Gen-Verse/PAST-Bench",
+      "authors": [
+        "Shuhan Xue",
+        "Zixin Ding",
+        "Yichen Shen",
+        "Yinjie Wang",
+        "Zhenfei Yin",
+        "Yingcheng Wu",
+        "Yuxin Chen",
+        "Mengdi Wang",
+        "Ling Yang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-08-04T17:58:05Z",
+      "updated": "2026-08-04T17:58:05Z",
+      "announced_date": "2026-08-04",
+      "first_seen": "2026-08-04",
+      "comment": "Code: https://github.com/Gen-Verse/PAST-Bench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.04003v1",
+        "pdf": "https://arxiv.org/pdf/2608.04003v1",
+        "html": "https://arxiv.org/html/2608.04003"
+      },
+      "score": 20,
+      "tags": [
+        "tool-use",
+        "memory",
+        "rsi"
+      ],
+      "field": "rsi",
+      "citations": 0
+    },
+    {
+      "id": "2608.03882",
+      "title": "MultiGlobeQA: A Multilingual and Globally Diverse Benchmark for Geospatial Reasoning",
+      "abstract": "Geospatial reasoning, i.e., computing distances, containment, and other spatial relations over real-world entities, is central to navigation and logistics, yet large language models (LLMs) struggle with the required geometric and topological computation despite storing considerable geographic knowledge. Existing benchmarks localize these failures only partially: they are synthetic or smallscale, largely monolingual, and offer limited control over geographic coverage. We introduce MultiGlobeQA, a multilingual benchmark of 46,060 question-answer pairs spanning 14 spatial-function families and 15 answer formats, with execution-based ground truth over three knowledge graphs. It covers 201 countries and territories via income- and density-stratified sampling, with parallel questions in English and 16 additional high- and low-resource languages. Across parametric, reasoning, and agentic settings, LLMs collapse on tasks requiring grid indexing and shape computation, while topological relations and directions fare best. Retrieval and tool use yield considerable gains, yet performance plateaus below two thirds even when gold facts are supplied, indicating that computation, not access to knowledge, is the bottleneck. Models also underperform on low-income regions, a gap that gold facts widen rather than close.",
+      "authors": [
+        "Martin Böckling",
+        "Elizaveta Nosova",
+        "Heiko Paulheim",
+        "Andreea Iana"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-08-04T16:18:52Z",
+      "updated": "2026-08-04T16:18:52Z",
+      "announced_date": "2026-08-04",
+      "first_seen": "2026-08-04",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.03882v1",
+        "pdf": "https://arxiv.org/pdf/2608.03882v1",
+        "html": "https://arxiv.org/html/2608.03882"
+      },
+      "score": 10,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.03700",
+      "title": "When Agents Learn to Be You: Benchmarking Privacy Leakage, Impersonation Risk, and Defenses in Persona Skills",
+      "abstract": "Persona skills distill personal interaction histories into portable and executable artifacts for downstream agents. While enabling flexible personalization, this process concentrates fragmented personal signals, amplifies their impact through reuse, and challenges defenses designed for individual records or retrieval-based memory. To systematically investigate the safety of the persona-skill pipeline, we introduce AntiSkillBench, an end-to-end benchmark for evaluating risks and defenses across the persona-skill pipeline. It comprises: (i) a dataset of 7,500 persona-grounded dialogue traces, constructed from 50 behaviorally rich profiles spanning diverse task scenarios; (ii) an evaluation suite that measures skill-level privacy leakage and agent-level attribute disclosure and behavioral impersonation across three skill-distillation strategies; and (iii) a defense evaluation covering four configurations across online and post-hoc interventions, including active risk suppression and passive provenance protection. Experiments across three frontier agents show that persona-skill risks persist across agent backbones and distillation protocols, extending from explicit attributes to communication styles and personality traits. Existing defenses exhibit limited and distillation-dependent effectiveness, failing to generalize across risk and distillation strategies. These results highlight AntiSkillBench as a challenging benchmark for developing privacy-preserving and authenticity-aware persona skills.",
+      "authors": [
+        "Yongli Xiang",
+        "Zhifang Zhang",
+        "Bojun Yang",
+        "Ziming Hong",
+        "Lei Feng",
+        "Miao Xu",
+        "Tongliang Liu"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.CL",
+        "cs.CY"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-08-04T14:04:56Z",
+      "updated": "2026-08-04T14:04:56Z",
+      "announced_date": "2026-08-04",
+      "first_seen": "2026-08-04",
+      "comment": "Project page: https://yonglixiang.github.io/AntiSkillBench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.03700v1",
+        "pdf": "https://arxiv.org/pdf/2608.03700v1",
+        "html": "https://arxiv.org/html/2608.03700"
+      },
+      "score": 11,
+      "tags": [
+        "safety",
+        "memory",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 0
+    },
+    {
+      "id": "2608.03699",
+      "title": "TARL: Transaction-Aware Reliable Ledgers for Executable Memory Management in Long-Term Agents",
+      "abstract": "Persistent memory helps long-term agents retain knowledge, yet a single update error can repeatedly distort future retrieval and reasoning. Most existing systems reduce memory updating to a binary Write/Hold decision, which cannot distinguish whether new information should be added, ignored, used to revise an outdated belief, rejected as unreliable, or deferred for verification. These choices may share the same binary label while producing fundamentally different memory states. We introduce TARL, a memory state update framework that maps each statement to one of five executable actions. TARL identifies the affected memory, resolves its temporal scope, compares source reliability, and updates accepted, pending, and rejected ledgers. It is further trained by comparing the memory states produced by alternative update operations, encouraging the model to select the operation that leads to the correct result. We also introduce TARL-Mem, a benchmark with fine-grained action labels and next-state targets. Across in-domain, cross-source, temporal, counterfactual, and sequential evaluations, TARL improves action prediction and state recovery, reduces memory pollution, preserves conflicting evidence, and limits cumulative corruption.",
+      "authors": [
+        "Han Xiao",
+        "Hongjun Xu",
+        "Xin Zhang",
+        "Yidong Chen",
+        "Xiaodong Shi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-04T14:02:55Z",
+      "updated": "2026-08-11T12:23:39Z",
+      "announced_date": "2026-08-04",
+      "first_seen": "2026-08-04",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.03699v2",
+        "pdf": "https://arxiv.org/pdf/2608.03699v2",
+        "html": "https://arxiv.org/html/2608.03699"
+      },
+      "score": 6,
+      "tags": [
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.03591",
+      "title": "DiagChain: A Diagnostic Benchmark for Evaluating LLM Agents on Evidence-Grounded Attack Chain Reconstruction",
+      "abstract": "Large Language Model (LLM) agents offer a promising approach to attack chain reconstruction by retrieving and interpreting heterogeneous telemetry to infer ordered attacker actions. However, existing benchmarks mainly evaluate final outputs or aggregate accuracy, providing limited insight into how errors arise and propagate across intermediate reasoning stages. We present DiagChain, a diagnostic benchmark for evidence-grounded attack chain reconstruction that enables stage-wise evaluation of LLM agents. DiagChain includes MAIN-69, a suite of 69 scenarios spanning multiple operating systems, evidence noise levels, and chain lengths. It further introduces Evidence-Centric Retrieval-Augmented Generation (ECRAG), which couples evidence retrieval with an evolving structured representation of the reconstructed chain. Five complementary metrics are introduced to assess distinct stages of the reconstruction process and support systematic failure diagnosis. Based on evaluations using 6 LLMs, DiagChain reveals that even the strongest configuration succeeds on only 39.6% of the 849 reference steps in MAIN-69. Our analysis further shows that smaller models struggle with the more basic task of incorporating retrieved evidence into their outputs, whereas larger models can proceed to later steps, where correctly ordering that evidence becomes the main bottleneck. These results validate the importance of diagnostic evaluation beyond end-to-end accuracy and provide actionable insights for improving evidence-grounded cybersecurity agents.",
+      "authors": [
+        "Xuyang Liu",
+        "Yibin Han",
+        "Zhenwei Zhang",
+        "Kai Chang",
+        "Zhiwei Xu",
+        "Tian Qiu",
+        "Weixian Deng",
+        "Jiabao Gao",
+        "Xiaolin Peng",
+        "Hai Wan",
+        "Xibin Zhao"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-08-04T12:43:47Z",
+      "updated": "2026-08-04T12:43:47Z",
+      "announced_date": "2026-08-04",
+      "first_seen": "2026-08-04",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.03591v1",
+        "pdf": "https://arxiv.org/pdf/2608.03591v1",
+        "html": "https://arxiv.org/html/2608.03591"
+      },
+      "score": 13,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.03474",
+      "title": "MT-Web2Code: Benchmarking Coding Agents on Multi-Turn Regional Reconstruction and Localized Modification",
+      "abstract": "Recent advances in Large Vision-Language Models (LVLMs) have demonstrated impressive capabilities in web UI generation. However, existing benchmarks predominantly focus on single-turn full-page generation from scratch, overlooking the iterative workflow of real-world frontend engineering, where developers repeatedly reconstruct missing regions and modify localized elements within existing codebases. To bridge this gap, we introduce MT-Web2Code, the first multimodal coding benchmark for multi-turn Macro-Level Regional Reconstruction and Micro-Level Localized Modification, which contains 102 tasks spanning 16 vertical domains. To construct deterministic repair trajectories without costly turn-level human annotation, we develop a scalable Reverse-Corruption Trajectory Engine that iteratively injects structural and stylistic defects into golden pages. We further propose a dual-axis evaluation protocol that measures target-region fidelity and the preservation of unaffected content, where regional reconstruction is assessed by a 5-dimensional VLM-based rubric and localized modification by deterministic pixel-grounded alignment. Experiments on 13 frontier coding agents reveal that current agents struggle to faithfully reconstruct target regions while preserving unaffected content, lack fine-grained visual-code alignment for localized edits, and suffer from error snowballing over multiple turns. Beyond benchmarking, our deterministic evaluation metrics provide fine-grained feedback signals that may facilitate future research on training iterative UI coding agents. Our evaluation code and data will soon be released.",
+      "authors": [
+        "Qiming Li",
+        "Shujie Hu",
+        "Haohan Liu",
+        "Xiaocheng Feng",
+        "Songxiang Liu",
+        "Guanglu Wan"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-08-04T11:14:00Z",
+      "updated": "2026-08-04T11:14:00Z",
+      "announced_date": "2026-08-04",
+      "first_seen": "2026-08-04",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.03474v1",
+        "pdf": "https://arxiv.org/pdf/2608.03474v1",
+        "html": "https://arxiv.org/html/2608.03474"
+      },
+      "score": 13,
+      "tags": [
+        "coding",
+        "multimodal"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2608.03451",
+      "title": "DataSpace: Benchmarking Data Agents for Verifiable Analytics over Heterogeneous Workspaces",
+      "abstract": "Data agents enable natural-language analytics over organizational workspaces, where relevant evidence may be scattered across databases, structured files, long documents, and multimedia. Existing benchmarks largely isolate structured querying, retrieval, or open-ended analysis, leaving heterogeneous evidence discovery, complete tabular outputs, and deterministic evaluation insufficiently unified. We introduce DataSpace, a benchmark in which data agents produce verifiable tabular results from task-local heterogeneous workspaces. It contains 410 cross-language tasks and 7,439 artifacts totaling 15.01 GB across CSV, JSON, SQLite, Markdown, PDF, and video. DataSpace also served as the official evaluation benchmark for the KDD Cup 2026 Data Agents for Complex Data Analysis competition. Each agent receives only a question and workspace and returns the complete requested tabular result. We construct DataSpace with DataSpace-Builder, an execution-grounded framework comprising cross-language transformation, constraint-aware relational sampling, modality routing and artifact rendering, and human review and task repair by 11 domain experts. A deterministic evaluator performs header-invariant column alignment, type- and precision-aware normalization, and order-aware row comparison. Across six recently released frontier multimodal models and five widely used agent harnesses, the best accuracy reaches 66.34%, while harness choice creates a 15.36-point spread with the backbone fixed. Multimodal evidence integration and joins consistently reduce accuracy across all six backbones. These results show that DataSpace remains unsaturated and identify key challenges for improving data-agent reliability.",
+      "authors": [
+        "Boyan Li",
+        "Zhuowen Liang",
+        "Yupeng Xie",
+        "Xiaotian Lin",
+        "Tianqi Luo",
+        "Xinyu Liu",
+        "Yizhang Zhu",
+        "Zhangyang Peng",
+        "Yuan Li",
+        "Zhengxuan Zhang",
+        "Jiayi Zhang",
+        "Nan Tang",
+        "Guoliang Li",
+        "Yuyu Luo"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-04T10:48:11Z",
+      "updated": "2026-08-04T10:48:11Z",
+      "announced_date": "2026-08-04",
+      "first_seen": "2026-08-04",
+      "comment": "8 pages of main text, 7 figures, with a supplementary appendix",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.03451v1",
+        "pdf": "https://arxiv.org/pdf/2608.03451v1",
+        "html": "https://arxiv.org/html/2608.03451"
+      },
+      "score": 10,
+      "tags": [
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 1
+    },
+    {
+      "id": "2608.03206",
+      "title": "EduClaw-Bench: A Long-Horizon Benchmark for Pedagogical LLM Agents with Simulated Learners",
+      "abstract": "Large language models (LLMs) power educational applications from tutoring to essay scoring, but each is a point solution to a single task, and only recently have these point solutions been integrated into agents operating over a learning management system (LMS). Yet tutoring is long-horizon, since a learner improves over days and weeks rather than in a single turn, and no benchmark evaluates an agent tutor across a sustained relationship. We introduce EduClaw-Bench, a benchmark that places an agent tutor in a continuous 30-day relationship with a simulated learner grounded in knowledge tracing (KT), whose knowledge-concept mastery, from a KT model trained on real-student data, drives its answers and is probed for learning gain across 55 scenarios. Each agent is scored on three primary axes (learning gain, responsiveness, and helpfulness) and two curriculum-design axes (Gagné and Rosenshine), with helpfulness and the curriculum axes judged by a cross-family panel of three LLM judges. Evaluating 10 agent adapters over three base-model tiers yields two findings that single-tier, single-session evaluation cannot reach. First, tutoring quality belongs to the base model and the agent harness together rather than either alone. Second, almost no combination sustains good tutoring over the full horizon. A calibration check ($\\text{ECE}=0.049$) and a live-classroom field study confirm that the simulated learner and its measurements track reality. Our work is a step toward trustworthy AI tutors for future education.",
+      "authors": [
+        "Unggi Lee",
+        "Sookbun Lee",
+        "Yeil Jeong",
+        "Eunjoo Lee",
+        "Minchul Shin",
+        "Hoilym Kwon"
+      ],
+      "categories": [
+        "cs.CY",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CY",
+      "published": "2026-08-04T06:47:26Z",
+      "updated": "2026-08-04T06:47:26Z",
+      "announced_date": "2026-08-04",
+      "first_seen": "2026-08-04",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.03206v1",
+        "pdf": "https://arxiv.org/pdf/2608.03206v1",
+        "html": "https://arxiv.org/html/2608.03206"
+      },
+      "score": 23,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.03018",
+      "title": "UrbanAgent: A Tool-Augmented Agent for Cross-System Urban Tasks",
+      "abstract": "Modern cities rely on an increasing number of digital services to operate, but residents' daily needs are still difficult to meet. Services are fragmented and have little interoperability, placing a heavy operational burden on users. Existing digital platforms, urban foundation models, and intelligent assistants each address only isolated aspects of an urban task. But they struggle to reliably convert complex natural-language requests into executable cross-system workflows. We propose Urban-Agent, a tool-augmented agent framework for cross-system urban tasks. It couples the cognitive and reasoning capabilities of a large language model with a tool-set supporting code execution, API calls, and Model Context Protocol. Through one adaptive closed loop, it clarifies missing information before acting, grounds tool use in live observations, and aligns the final response with observed evidence and task constraints. To address the evaluation gap, we introduce Urban-Eval, a benchmark specifically designed for cross-system urban request. Unlike prior benchmarks that assess either general tool use or urban knowledge and reasoning, Urban-Eval evaluates both task results and execution quality, including required tool coverage, dependency validity, and evidence traceability. Experimental results indicate that Urban-Agent reaches a 71% task success rate, 10 points above the strongest baseline. This lead holds across GPT-5-mini, Gemini-2.5-flash, DeepSeek-V4-flash, and Qwen3-235B-A22B.",
+      "authors": [
+        "Jiayu Cao",
+        "Xingyuan Zeng",
+        "feiyu Li",
+        "Zhijing Huang",
+        "Xujie Yuan",
+        "Rongxiang Chen",
+        "Shimin Di",
+        "Libin Zheng",
+        "Jian Yin"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-04T02:04:44Z",
+      "updated": "2026-08-04T02:04:44Z",
+      "announced_date": "2026-08-04",
+      "first_seen": "2026-08-04",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.03018v1",
+        "pdf": "https://arxiv.org/pdf/2608.03018v1",
+        "html": "https://arxiv.org/html/2608.03018"
+      },
+      "score": 9,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

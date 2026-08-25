@@ -1,0 +1,772 @@
+{
+  "date": "2026-05-28",
+  "count": 16,
+  "report": {
+    "date": "2026-05-28",
+    "count": 16,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 4,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multi-agent",
+        "count": 3,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 3,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "science",
+        "count": 2,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      }
+    ],
+    "en": {
+      "headline": "16 new agent benchmarks",
+      "summary": "On May 28, 2026, arXiv listed 16 new agent benchmarks. Work clustered around Planning / reasoning (4), Multi-agent (3), Tool use (3), and Safety (3).",
+      "highlights": [
+        {
+          "id": "2605.29225",
+          "title": "BenchTrace: A Benchmark for Testing Reflection Ability and Controlled Evolution in LLM Agents",
+          "blurb": "Self-evolving agents improve over time by reflecting on past failures, but existing evaluation is limited in two ways: it measures only task scores, leaving reflection quality unknown, and it relies on agents' own episod…"
+        },
+        {
+          "id": "2606.07591",
+          "title": "ResearchClawBench: A Benchmark for End-to-End Autonomous Scientific Research",
+          "blurb": "AI coding agents are increasingly used for scientific work, but their end-to-end autonomous research capability remains difficult to verify."
+        },
+        {
+          "id": "2605.30434",
+          "title": "LongDS-Bench: On the Failure of Long-Horizon Agentic Data Analysis",
+          "blurb": "Real-world data analysis is inherently iterative, yet existing benchmarks mostly evaluate isolated or short interactive tasks, leaving agents' ability to track evolving analytical context over long horizons untested."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 16 篇 Agent Benchmark",
+      "summary": "2026年5月28日，arXiv 新增 16 篇 Agent Benchmark。当日主题集中在规划 / 推理（4）、多智能体（3）、工具使用（3）、安全（3）。",
+      "highlights": [
+        {
+          "id": "2605.29225",
+          "title": "BenchTrace: A Benchmark for Testing Reflection Ability and Controlled Evolution in LLM Agents",
+          "blurb": "Self-evolving agents improve over time by reflecting on past failures, but existing evaluation is limited in two ways: it measures only task scores, leaving reflection quality unknown, and it relies on agents' own episod…"
+        },
+        {
+          "id": "2606.07591",
+          "title": "ResearchClawBench: A Benchmark for End-to-End Autonomous Scientific Research",
+          "blurb": "AI coding agents are increasingly used for scientific work, but their end-to-end autonomous research capability remains difficult to verify."
+        },
+        {
+          "id": "2605.30434",
+          "title": "LongDS-Bench: On the Failure of Long-Horizon Agentic Data Analysis",
+          "blurb": "Real-world data analysis is inherently iterative, yet existing benchmarks mostly evaluate isolated or short interactive tasks, leaving agents' ability to track evolving analytical context over long horizons untested."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2605.30611",
+      "title": "Crafter: A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs",
+      "abstract": "Scientific figures are among the most effective means of communicating complex research ideas, yet producing publication-quality illustrations remains one of the most labor-intensive parts of paper preparation. Existing automated systems each target a single figure type under text-only input, leaving the diversity of types and conditions researchers actually use unaddressed; their raster outputs further cannot be locally revised. Because scientific figures are structured compositions of discrete semantic components, the localized errors generators produce on such layouts demand not a stronger backbone but a harness. We instantiate this harness in two complementary systems: Crafter, a multi-agent harness for figure generation that generalizes across figure types and input conditions without architectural changes, and CraftEditor, which applies the same pattern to convert raster outputs into editable SVGs. Moreover, we introduce CraftBench, a benchmark spanning three figure types and four input conditions with human quality annotation. Experiments show that Crafter substantially outperforms both standalone generators and the agentic baseline on PaperBanana-Bench and CraftBench, with ablations confirming each component's independent contribution; CraftEditor faithfully converts outputs into editable SVGs that surpass all baselines. Our code and benchmark are available at https://github.com/HaozheZhao/Crafter.",
+      "authors": [
+        "Haozhe Zhao",
+        "Shuzheng Si",
+        "Zhenhailong Wang",
+        "Zheng Wang",
+        "Liang Chen",
+        "Xiaotong Li",
+        "Zhixiang Liang",
+        "Maosong Sun",
+        "Minjia Zhang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-05-28T22:04:30Z",
+      "updated": "2026-05-28T22:04:30Z",
+      "announced_date": "2026-05-28",
+      "first_seen": "2026-05-28",
+      "comment": "24 pages, 11 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.30611v1",
+        "pdf": "https://arxiv.org/pdf/2605.30611v1",
+        "html": "https://arxiv.org/html/2605.30611"
+      },
+      "score": 12,
+      "tags": [
+        "multi-agent",
+        "science"
+      ],
+      "field": "multi-agent",
+      "citations": 1
+    },
+    {
+      "id": "2605.30434",
+      "title": "LongDS-Bench: On the Failure of Long-Horizon Agentic Data Analysis",
+      "abstract": "Real-world data analysis is inherently iterative, yet existing benchmarks mostly evaluate isolated or short interactive tasks, leaving agents' ability to track evolving analytical context over long horizons untested. We introduce LongDS, a benchmark for long-horizon, multi-turn data analysis where agents must maintain, update, restore, and compose evolving analytical states. LongDS comprises 68 tasks constructed from real-world Kaggle notebooks, spanning 2,225 turns across six domains including Geoscience, Business, and Education. Tasks are designed around state-evolution patterns (e.g., counterfactual perturbation, rollback, multi-state composition), with an average dependency span of 11.3 turns. Evaluating five state-of-the-art models, we find that the best model reaches only 48.45% average accuracy, performance drops nearly 47 points from early to late turns, and long-horizon errors account for 52%--69% of failures. Further analysis shows that additional agent steps do not necessarily improve performance, suggesting that the key bottleneck is maintaining a correct analytical state rather than increasing interaction budget. We release LongDS to support research on reliable long-horizon agentic data analysis. Code and data will be released at https://github.com/zjunlp/DataMind.",
+      "authors": [
+        "Kewei Xu",
+        "Xiaoben Lu",
+        "Shuofei Qiao",
+        "Zihan Ding",
+        "Haoming Xu",
+        "Lei Liang",
+        "Ningyu Zhang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-05-28T18:00:20Z",
+      "updated": "2026-05-28T18:00:20Z",
+      "announced_date": "2026-05-28",
+      "first_seen": "2026-05-28",
+      "comment": "Ongoing work",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.30434v1",
+        "pdf": "https://arxiv.org/pdf/2605.30434v1",
+        "html": "https://arxiv.org/html/2605.30434"
+      },
+      "score": 20,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2605.30314",
+      "title": "SpecBench: Evaluating Specification-Level Reasoning for Software Engineering LLM Agents",
+      "abstract": "Software engineering (SWE) agents are transitioning from code generation to full software development lifecycle automation. A critical phase in this lifecycle is specification design: transforming initial proposals into carefully considered requirements through expert review. Existing benchmarks such as SWE-Bench are implementation-focused by measuring the agent's ability to generate code given fixed, precise design requirements. This formulation assumes specifications are correct and complete. In real-world complex and critical software systems, initial specifications are often incomplete and flawed, requiring extensive expert reviews and revisions before being accepted for implementation. To fill this gap, we introduce SpecBench to evaluate specification-level reasoning: the ability to generate complete, unambiguous, consistent, and correct system specifications. SpecBench tasks are derived from the Request for Comments (RFC) process used by mature open-source projects. For each task, an agent is given an initial design proposal, the project codebase, and all past project RFC discussions. The agent is tasked with identifying specification deficiencies: omissions, ambiguities, inconsistencies, or incorrect assumptions in the initial proposal. We evaluate predictions against critiques raised by expert maintainers during historical RFC reviews. SpecBench contains tasks from 5 diverse repositories: Kubernetes, React, Rust, TVM, and vLLM. We evaluate state-of-the-art SWE agents on SpecBench, analyzing their capacity to reason about system design without execution feedback. The best performing agent, GPT-5.4, achieves 44.4% accuracy.",
+      "authors": [
+        "Grant Hamblin",
+        "Kevin Song",
+        "Zhanda Zhu",
+        "Anand Jayarajan",
+        "Sihang Liu",
+        "Nandita Vijaykumar",
+        "Gennady Pekhimenko"
+      ],
+      "categories": [
+        "cs.MA"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-05-28T17:54:01Z",
+      "updated": "2026-05-28T17:54:01Z",
+      "announced_date": "2026-05-28",
+      "first_seen": "2026-05-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.30314v1",
+        "pdf": "https://arxiv.org/pdf/2605.30314v1",
+        "html": "https://arxiv.org/html/2605.30314"
+      },
+      "score": 12,
+      "tags": [
+        "coding",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 4
+    },
+    {
+      "id": "2606.07591",
+      "title": "ResearchClawBench: A Benchmark for End-to-End Autonomous Scientific Research",
+      "abstract": "AI coding agents are increasingly used for scientific work, but their end-to-end autonomous research capability remains difficult to verify. We present ResearchClawBench, a benchmark for evaluating autonomous scientific research across 40 tasks from 10 scientific domains. Each task is grounded in a real published paper, provides related literature and raw data, and hides the target paper during evaluation. Expert-curated multimodal rubrics decompose the target scientific artifacts into weighted criteria, enabling evaluation of target-paper-level re-discovery while leaving room for new discovery. We evaluate seven autonomous research (auto-research) agents under a unified protocol and seventeen native LLMs through the lightweight ResearchHarness. Current systems remain far from reliable re-discovery: the strongest autonomous agent, Claude Code, averages 21.5, and the strongest ResearchHarness LLM, Claude-Opus-4.7, averages 20.7, with an LLM frontier mean of only 26.5. Error analysis shows that failures concentrate in experimental protocol mismatch, evidence mismatch, and missing scientific core. ResearchClawBench provides a reproducible evaluation frontier for measuring progress toward autonomous scientific research.",
+      "authors": [
+        "Wanghan Xu",
+        "Shuo Li",
+        "Tianlin Ye",
+        "Qinglong Cao",
+        "Yixin Chen",
+        "Hengjian Gao",
+        "Yiheng Wang",
+        "Qi Li",
+        "Kun Li",
+        "Sheng Xu",
+        "Shengdu Chai",
+        "Fangchen Yu",
+        "Xiangyu Zhao",
+        "Zhangrui Zhao",
+        "Weijie Ma",
+        "Zijie Guo",
+        "Koutian Wu",
+        "Haoyu Zhou",
+        "Haoxiang Yin",
+        "Lixue Cheng",
+        "Chaofan Hu",
+        "Haoxuan Li",
+        "Lu Mi",
+        "Xuxuan Xie",
+        "Yifan Zhou",
+        "Ruizhe Chen",
+        "Zhiwang Zhou",
+        "Xingjian Guo",
+        "Yuhao Zhou",
+        "Xuming He",
+        "Shengyuan Xu",
+        "Xinyu Gu",
+        "Jiamin Wu",
+        "Mianxin Liu",
+        "Chunfeng Song",
+        "Fenghua Ling",
+        "Dongzhan Zhou",
+        "Shixiang Tang",
+        "Yuqiang Li",
+        "Mao Su",
+        "Peng Ye",
+        "Siqi Sun",
+        "Bin Wang",
+        "Xue Yang",
+        "Zhenfei Yin",
+        "Tianfan Fu",
+        "Guangtao Zhai",
+        "Wanli Ouyang",
+        "Bo Zhang",
+        "Lei Bai",
+        "Wenlong Zhang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-05-28T16:27:40Z",
+      "updated": "2026-07-03T01:40:25Z",
+      "announced_date": "2026-05-28",
+      "first_seen": "2026-05-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.07591v5",
+        "pdf": "https://arxiv.org/pdf/2606.07591v5",
+        "html": "https://arxiv.org/html/2606.07591"
+      },
+      "score": 22,
+      "tags": [
+        "coding",
+        "research",
+        "multimodal",
+        "science"
+      ],
+      "field": "science",
+      "citations": 5
+    },
+    {
+      "id": "2605.30090",
+      "title": "DirectorBench: Diagnosing Long-Form Video Generation with Personalized Multi-Agent Evaluation",
+      "abstract": "Long-form video generation is rapidly moving from short, single-scene synthesis toward minute-long, multi-shot creation with narrative structure, cinematic control, audio, and cross-modal synchronization. However, evaluating such videos remains challenging, since existing benchmarks largely focus on local visual quality, short-horizon temporal consistency, or generic prompt alignment, and provide limited diagnosis of workflow failures and user-dependent preferences. We introduce DirectorBench, a personalized multi-agent diagnostic benchmark for long-form video generation. DirectorBench evaluates generated videos with respect to 80 structured metadata entries, 7 user profiles, and 40 checkpoint criteria across 5 dimensions: script, visual, audio, cross-modal, and stability. Instead of reducing quality to a single aggregate score, DirectorBench localizes checkpoint-level bottlenecks and supports profile-aware evaluation. We evaluate 4 long-form video generation workflows, 6 base LLMs, and 7 user profiles. Across workflows, DirectorBench reveals a between-unit bottleneck: transition quality averages only 0.256 and reaches 0.356 for the best workflow, while prompt-level user demand fulfillment averages 0.71. We further conduct human evaluation with 14 annotators to validate the alignment between DirectorBench and human judgment. The results show that DirectorBench captures human-perceptible quality differences and reveals workflow- and profile-dependent failure modes that are hidden by aggregate scoring. These findings highlight the importance of diagnostic and profile-aware benchmarking for long-form video generation.",
+      "authors": [
+        "Jiamin Chen",
+        "Qianben Chen",
+        "Jiawen Zhang",
+        "Yidi Wu",
+        "Yuchen Li",
+        "Xiaokun Zhang",
+        "Wangchunshu Zhou",
+        "Chen Ma"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CV"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-28T15:35:34Z",
+      "updated": "2026-05-28T15:35:34Z",
+      "announced_date": "2026-05-28",
+      "first_seen": "2026-05-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.30090v1",
+        "pdf": "https://arxiv.org/pdf/2605.30090v1",
+        "html": "https://arxiv.org/html/2605.30090"
+      },
+      "score": 13,
+      "tags": [
+        "multi-agent"
+      ],
+      "field": "multi-agent",
+      "citations": 1
+    },
+    {
+      "id": "2605.30058",
+      "title": "HEART-Bench: Do LLM Agents Exhibit Human-like Psychology?",
+      "abstract": "While LLM agents have demonstrated remarkable task-oriented abilities such as planning, reasoning, and action, few works have treated them as complete human personalities where emotional dimensions hold equal importance. In this paper, we introduce a novel benchmark to systematically assess whether LLM agents can simulate coherent, human-like psychology. Specifically, our benchmark constructs 11 diverse human characters grounded in orthogonal Big Five personality traits, with each profile deeply integrated with 1,000 structured autobiographical-style episodic memories distributed across theory-grounded developmental life stages. To rigorously evaluate the psychological manifestations of LLMs, we designed a curated suite of 64 decision-making scenarios, guided by the DIAMONDS taxonomy, a psychological framework that characterizes situations along eight dimensions: Duty, Intellect, Adversity, Mating, pOsitivity, Negativity, Deception, and Sociality. By subjecting agents to varying scenarios, the benchmark evaluates whether they can consolidate their innate personality traits and autobiographical memories to make behavioral decisions that are consistent with their specific psychological profiles. After systematic human validation and filtering, we obtained a benchmark consisting of 673 multiple-choice questions (MCQs). We believe this benchmark provides a principled and scalable testbed for studying human-like emotions, personality consistency, and value-consistent behavioural decision-making in LLM-based agents.",
+      "authors": [
+        "Weihan Peng",
+        "Chenxu Zhang",
+        "Qianao Wang",
+        "Yuling Shi",
+        "Heng Lian",
+        "Qihong Mao",
+        "Jiahao Pang",
+        "Chunliang Feng",
+        "Bowen Li",
+        "Xiaodong Gu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-28T15:08:03Z",
+      "updated": "2026-05-28T15:08:03Z",
+      "announced_date": "2026-05-28",
+      "first_seen": "2026-05-28",
+      "comment": "GitHub: https://github.com/peng-weihan/HEART-BENCH",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.30058v1",
+        "pdf": "https://arxiv.org/pdf/2605.30058v1",
+        "html": "https://arxiv.org/html/2605.30058"
+      },
+      "score": 18,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2605.29893",
+      "title": "Redundant or Necessary? A Benchmark for Detecting Redundant Steps in Agent Trajectories",
+      "abstract": "LLM-based agents have demonstrated strong capabilities in solving complex tasks through multi-step reasoning and tool use. However, existing evaluation protocols primarily focus on task success, overlooking a critical aspect of agent behavior: execution efficiency. In practice, agent trajectories often contain redundant steps that consume substantial resources while contributing little to task completion. In this work, we propose and formulate a new research area: \\textbf{redundant step detection} for agent trajectories. To support this initiative, we introduce \\textbf{RedundancyBench}, a new benchmark that contains diverse tasks with carefully annotated trajectories, where each step is labeled according to its contribution to task completion. Using RedundancyBench, we develop and evaluate 3 representative methods to answer whether a step within trajectory is redundant or necessary. Our results show that even the best-performing method achieves only 24.88\\% score in detecting redundant steps, while some methods perform worse than random guessing. These results highlight the task's complexity and the need for further research in this area. \\footnote{Code and dataset in this paper are both available in \\href{https://anonymous.4open.science/r/RedundancyBench}{https://anonymous.4open.science/r/RedundancyBench}.}",
+      "authors": [
+        "Minyang Hu",
+        "Bo Yang",
+        "Zhinuo Zhou",
+        "Jiachen Liang",
+        "Guo Jiahao",
+        "Yiyang Yin",
+        "Xiongwei Han"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-28T13:17:33Z",
+      "updated": "2026-05-28T13:17:33Z",
+      "announced_date": "2026-05-28",
+      "first_seen": "2026-05-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.29893v1",
+        "pdf": "https://arxiv.org/pdf/2605.29893v1",
+        "html": "https://arxiv.org/html/2605.29893"
+      },
+      "score": 17,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2605.29676",
+      "title": "Notation Matters: A Benchmark Study of Token-Optimized Formats in Agentic AI Systems",
+      "abstract": "Large language models in Agentic AI systems consume tool schemas and execution results and emit tool invocations as structured data. The default language for that exchange, JSON, was designed for application-to-application interchange rather than token efficiency, so its structural elements impose substantial token overhead. Recent work proposes token-optimized alternatives such as TOON (Token-Oriented Object Notation) and TRON (Token Reduced Object Notation) as more compact replacements, but these formats have been evaluated only on isolated comprehension or generation tasks. Whether their token reductions hold inside end-to-end agentic loops therefore remains an open question. We evaluate TOON and TRON on four agentic benchmarks (BFCL, MCPToolBenchPP, MCP-Universe, StableToolBench) and five open-weight LLMs, decoupling input compression from output compression to measure comprehension and generation independently. TRON reduces tokens by up to 27% with accuracy within 14pp of the JSON baseline. TOON achieves up to 18% reduction at a similar 9pp accuracy cost, but additionally cascades on multi-turn parsing failures and collapses parallel tool-call output for most models. The code is available at: https://github.com/lkutschka/notation-matters",
+      "authors": [
+        "Lorenz Kutschka",
+        "Bernhard Geiger"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-28T09:38:13Z",
+      "updated": "2026-06-17T13:13:19Z",
+      "announced_date": "2026-05-28",
+      "first_seen": "2026-05-28",
+      "comment": "16 pages, 6 figures, 4 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.29676v2",
+        "pdf": "https://arxiv.org/pdf/2605.29676v2",
+        "html": "https://arxiv.org/html/2605.29676"
+      },
+      "score": 11,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2605.29653",
+      "title": "PTCG-Bench: Can LLM Agents Master Pokémon Trading Card Game?",
+      "abstract": "Given a strategically complex board game, human players can quickly learn to devise strategies after playing a few rounds. Autonomous agents require similar capabilities in realistic interactive environments, yet existing agent benchmarks often fail to fully capture such strategic and evolving decision-making scenarios. We present PTCG-Bench, a benchmark built on the Pok'{e}mon Trading Card Game (PTCG) that evaluates LLM agents at two complementary levels: (1) their decision-making performance within a single complex environment, and (2) their ability to self-evolving through accumulated experience. We further include a modular harness ablation to better interpret agent performance without conflating it with model capability. Our experiments show that, although LLM agents can achieve non-trivial gameplay performance, sustained and stable self-evolution remains challenging, and performance is sensitive to harness design. We hope that PTCG-Bench will facilitate future research on harness-aware and self-evolving agents in realistic interactive environments.",
+      "authors": [
+        "Dongdong Hua",
+        "Yifei Sun",
+        "Renhong Huang",
+        "Feng Gao",
+        "Chunping Wang",
+        "Yang Yang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-28T09:16:22Z",
+      "updated": "2026-05-28T09:16:22Z",
+      "announced_date": "2026-05-28",
+      "first_seen": "2026-05-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.29653v1",
+        "pdf": "https://arxiv.org/pdf/2605.29653v1",
+        "html": "https://arxiv.org/html/2605.29653"
+      },
+      "score": 20,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2605.29512",
+      "title": "MINDGAMES: A Live Arena for Evaluating Social and Strategic Reasoning in Multi-Agent LLMs",
+      "abstract": "Large language models (LLMs) are increasingly deployed as interactive agents, yet their capacity for social and strategic reasoning over extended interaction remains poorly understood. Existing evaluations rely on static vignettes or single-game benchmarks that cannot capture the sustained, multi-faceted reasoning that real-world multi-agent settings demand. We introduce Mindgames, a multi-game arena and evaluation platform for LLM agents that operationalizes complementary reasoning demands relevant to ``theory of mind'': belief attribution under hidden information, opponent modeling through repeated strategic interaction, cooperative inference under knowledge asymmetries, and sustained deception in social deduction. Built on TextArena, Mindgames provides a unified interaction interface, TrueSkill-based rating, and full trajectory logging across four game environments. We instantiate Mindgames through a 2025 competition cycle hosted at a major AI conference, which assessed 944 submitted agents from 76 teams across four games: Colonel Blotto, Iterated Prisoner's Dilemma, Codenames, and Secret Mafia. Our analysis surfaces both agent-level and evaluation-level limitations: brittle rule adherence remains a major bottleneck, top-performing systems repeatedly rely on explicit structural scaffolding, and leaderboard validity differs sharply across environments. In particular, failure-heavy environments can reward robustness to opponent errors as much as strategic ability, with Secret Mafia exhibiting a pronounced error-survival confound in this cycle. We release a dataset of 29,571 multi-agent games with turn-level observations, actions, and rewards, together with MG-Ref, a deterministic offline tournament protocol that scores new agents against a frozen reference pool of top-ranked, low-error Stage~II submissions under the same error-attribution lens used in this analysis.",
+      "authors": [
+        "Kevin Wang",
+        "Anna Thöni",
+        "Benjamin Kempinski",
+        "Bobby Cheng",
+        "Jianzhu Yao",
+        "Benjamin Finch",
+        "Leon Guertler",
+        "Viraj Nadkarni",
+        "Yihan Jiang",
+        "Aliaksei Korshuk",
+        "Alexander Buyantuev",
+        "Ilya Makarov",
+        "Siyuan Wu",
+        "Yu-Chi Cheng",
+        "Yan-Ru Ju",
+        "Ti-Rong Wu",
+        "I-Hsuan Chu",
+        "Yu-Yu Yang",
+        "I-Chen Wu",
+        "Yitian Huang",
+        "Qinlu Cao",
+        "Yiheng Sun",
+        "Yuhong Dai",
+        "Hongkun Yao",
+        "Jingxuan Fu",
+        "Jiwei Zhang",
+        "Hao Liao",
+        "Mossimo Ebeling",
+        "Govind Arun",
+        "Sadhvik Bathini",
+        "Mihir S Arya",
+        "Avinash Anish",
+        "Aditya Ranjan",
+        "Kirtana Sunil Phatnani",
+        "Paval KS",
+        "Vrushali Mehta",
+        "Aravind S",
+        "Nikhil Arora",
+        "Tanya Upadhyay",
+        "Amol Bandagale",
+        "Yuan Lu",
+        "ChunEn Hsiao",
+        "YuTing Lin",
+        "Arvin Chung",
+        "Jerry John Thomas",
+        "Mathieu Laurière",
+        "Leshem Choshen",
+        "Yoram Bachrach",
+        "Pramod Viswanath",
+        "Maria Polukarov",
+        "Cheston Tan",
+        "Tal Kachman",
+        "Atlas Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-28T07:33:47Z",
+      "updated": "2026-05-28T07:33:47Z",
+      "announced_date": "2026-05-28",
+      "first_seen": "2026-05-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.29512v1",
+        "pdf": "https://arxiv.org/pdf/2605.29512v1",
+        "html": "https://arxiv.org/html/2605.29512"
+      },
+      "score": 20,
+      "tags": [
+        "multi-agent",
+        "safety",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 3
+    },
+    {
+      "id": "2605.29447",
+      "title": "Recovering Policy-Induced Errors: Benchmarking and Trajectory Synthesis for Robust GUI Agents",
+      "abstract": "While GUI agents have advanced rapidly, they often lack the robustness to recover from their own errors, hindering real-world deployment. To bridge this gap at both the evaluation and data levels, we introduce GUI-RobustEval and propose Robustness-driven Trajectory Synthesis. GUI-RobustEval contains $1,216$ executable test cases that systematically measure error recovery capabilities across a broad and realistic spectrum of error modes. At the data level, RoTS is a scalable synthesis framework that creates $800k$ high-quality data via a tree-based pipeline that proactively discovers diverse error modes and synthesizes corresponding recovery steps. Our two models, RoTS-7B and RoTS-32B, fine-tuned on our dataset, both demonstrate significant gains on GUI-RobustEval and traditional GUI benchmarks. Notably, RoTS-32B achieves state-of-the-art performance on OSWorld, with a $47.4\\%$ success rate and a $33.8\\%$ All-Pass@4 score, suggesting that improved long-horizon error recovery ability contributes to both robustness and overall performance. Our code is available at https://github.com/AlibabaResearch/RoTS.",
+      "authors": [
+        "Tianpeng Bu",
+        "Xin Liu",
+        "Qihua Chen",
+        "Hao Jiang",
+        "Shurui Li",
+        "Hongtao Duan",
+        "Lu Jiang",
+        "Lulu Hu",
+        "Bin Yang",
+        "Minying Zhang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-05-28T06:40:24Z",
+      "updated": "2026-05-28T06:40:24Z",
+      "announced_date": "2026-05-28",
+      "first_seen": "2026-05-28",
+      "comment": "ICML 2026 Spotlight. 36 pages, 19 figures, includes appendix",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.29447v1",
+        "pdf": "https://arxiv.org/pdf/2605.29447v1",
+        "html": "https://arxiv.org/html/2605.29447"
+      },
+      "score": 14,
+      "tags": [
+        "gui",
+        "safety"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2605.29341",
+      "title": "WorldMemArena: Evaluating Multimodal Agent Memory Through Action-World Interaction",
+      "abstract": "Multimodal large language models are increasingly deployed as long-horizon agents, where memory must do more than recall: it must track an evolving world, revise what has gone stale, and surface the right evidence at decision time. Existing benchmarks measure recall over static dialogue, collapse memory into a single end-of-task accuracy, and reduce visual observations to captions, leaving us unable to localize failures to writing, maintenance, retrieval, or use. The rise of agent harnesses that author their own memory sharpens this gap, since we have no principled way to compare hand-designed pipelines with self-managing alternatives. To close these gaps, we formulate multimodal agent memory as an Action-World Interaction Loop with an observable four-stage lifecycle, and instantiate it in WorldMemArena: 400 multi-session multimodal tasks spanning Lifelong Evolution (evolving personal and task states) and Agentic Execution (memory from real observations, actions, and feedback), annotated with gold memory points, updates, distractors, and evidence chains for stage-level diagnosis. This enables the first head-to-head comparison of long-context, manually designed (RAG and external memory systems), and harness-based memory agents. Results show that: (1) better memory writing and storage do not guarantee better performance; (2) multimodal memory still struggles to fully use visual evidence; (3) systems are unstable across domains and degrade on realistic agentic trajectories; and (4) harness memory is more flexible but remains costly and less reliable.",
+      "authors": [
+        "Chengzhi Liu",
+        "Yuzhe Yang",
+        "Sophia Xiao Pu",
+        "Yepeng Liu",
+        "Lin Long",
+        "Yichen Guo",
+        "Nuo Chen",
+        "Zhaotian Weng",
+        "Elena Kochkina",
+        "Simerjot Kaur",
+        "Charese Smiley",
+        "Xiaomo Liu",
+        "James Zou",
+        "Sheng Liu",
+        "Yuheng Bu",
+        "Songyou Peng",
+        "Xin Eric Wang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-05-28T04:27:20Z",
+      "updated": "2026-06-01T07:01:55Z",
+      "announced_date": "2026-05-28",
+      "first_seen": "2026-05-28",
+      "comment": "25 pages, 8 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.29341v2",
+        "pdf": "https://arxiv.org/pdf/2605.29341v2",
+        "html": "https://arxiv.org/html/2605.29341"
+      },
+      "score": 9,
+      "tags": [
+        "memory",
+        "conversation",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2605.29286",
+      "title": "CrossAlpha: An Annual-Report Benchmark for Cross-Market Factor Research (with LLM Agents)",
+      "abstract": "Cross-market factor research studies whether firm-level signals from one or more markets can predict returns in a target market, but existing public benchmarks do not support cross-market disclosure-to-return evaluation. Building such a benchmark is challenging because filings differ across languages and regulatory systems, disclosure-derived similarity can be biased by common reporting components, and cross-market signals must be evaluated under feasible trading-time alignment. We introduce \\textbf{CrossAlpha}, a public annual-report benchmark for cross-market factor research. CrossAlpha addresses these challenges through three corresponding components: \\emph{Disclosure Distillation}, which standardises heterogeneous filings into ten-category English business descriptions; \\emph{Residual Schema Graph Construction}, which builds PCA-whitened cross-market firm-pair scores from schema-level disclosures; and \\emph{Timing-Aligned Evaluation}, which pairs the graph with 11 years of daily OHLCV data to construct forward-return labels under feasible cross-market execution protocols. CrossAlpha covers about 3,600 firms and 10,700 firm-year reports from the United States, Japan, Taiwan, South Korea, and Hong Kong, and releases about 19M directed firm-pair scores. In experiments, disclosure-derived cross-market peers outperform domestic text, industry-code, and return-correlation peers in the US-to-Japan setting (ICIR 0.39 versus 0.07--0.18), and cross-market sources beat the domestic text baseline in most target markets. CrossAlpha offers an open-sourced, reusable, return-grounded benchmark for cross-market financial NLP.",
+      "authors": [
+        "Qian Wang",
+        "Zhongyi Tong",
+        "Nuo Chen",
+        "Zhaomin Wu",
+        "Bingsheng He"
+      ],
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-05-28T03:11:41Z",
+      "updated": "2026-06-12T01:37:29Z",
+      "announced_date": "2026-05-28",
+      "first_seen": "2026-05-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.29286v3",
+        "pdf": "https://arxiv.org/pdf/2605.29286v3",
+        "html": "https://arxiv.org/html/2605.29286"
+      },
+      "score": 13,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2605.29253",
+      "title": "OpenClawBench: Benchmarking Process-side Anomalies in Real-world Agent Execution Trajectories",
+      "abstract": "Task success can hide process anomalies in real-world agent executions. An agent may pass the final task oracle while still accumulating unresolved ambiguity, unsafe external writes, ignored errors, weakly grounded commitments, or capability-boundary overcommitment. We study this mismatch as the Outcome-Process Gap and introduce OpenClawBench, a large-scale dataset for measuring and supervising process-side anomalies in real agent execution processes. OpenClawBench is built from BFCL-driven OpenClaw sessions produced by 6 source models and contains 31,264 annotated trajectories. It aligns task-oracle outcomes with structured process evidence. FullTax converts the aligned trajectories into structured anomaly supervision: binary labels, supporting evidence, onset/span localization, severity, recoverability, and a 5-class anomaly taxonomy. Using OpenClawBench, we make the Outcome-Process Gap measurable. Among 31,135 oracle-passing executions, 2,904 are still labeled process-anomalous under FullTax. These results show that success-only evaluation misses a concrete class of process-side failures in real agent executions. A LoRA-fine-tuned Gemma 3 12B detector trained on the high-confidence FullTax supervised pool reaches binary F1=0.729 on the cleaner-labels held-out test split. Together, OpenClawBench turns real agent execution logs into auditable and reusable supervision for studying, diagnosing, and operationally monitoring runtime agent reliability.",
+      "authors": [
+        "Yibing Liu",
+        "Yangze Liu",
+        "Xiaolong Yin",
+        "Bin Wang",
+        "Chong Zhang",
+        "Hao Yin",
+        "Zhongyi Han"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-28T02:15:52Z",
+      "updated": "2026-05-28T02:15:52Z",
+      "announced_date": "2026-05-28",
+      "first_seen": "2026-05-28",
+      "comment": "37 pages, 1 figure, 43 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.29253v1",
+        "pdf": "https://arxiv.org/pdf/2605.29253v1",
+        "html": "https://arxiv.org/html/2605.29253"
+      },
+      "score": 11,
+      "tags": [],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2605.29225",
+      "title": "BenchTrace: A Benchmark for Testing Reflection Ability and Controlled Evolution in LLM Agents",
+      "abstract": "Self-evolving agents improve over time by reflecting on past failures, but existing evaluation is limited in two ways: it measures only task scores, leaving reflection quality unknown, and it relies on agents' own episode runs, offering no mechanism to target specific failure patterns. We present \\textbf{BenchTrace}, a benchmark for evaluating self-evolution ability in LLM agents. BenchTrace is built on a snapshot-reflection dataset of 1,821 annotated episodes spanning six diverse tasks, and comprises a \\textbf{Reflection Evaluation} that probes failure identification through targeted QA tasks, and an \\textbf{Evolution Evaluation} that tests whether past failure experience translates into avoidance behavior in a controlled self-evolution simulation. Building on BenchTrace, we propose \\textbf{failure avoidance rate (FAR)}, a new evaluation metric measuring the fraction of test cases in which the agent successfully avoids the target failure instance. Experiments with Qwen3-32B and GPT-4.1 reveal that both models fall below a 30\\% end-to-end pass rate on reflection evaluation, with diagnosis as the primary bottleneck. Evolution evaluation shows that self-evolution methods generally improve FAR over the non-evolving baseline, but agents forget early lessons as noise episodes accumulate, and agents fail to generalize their reflections beyond the specific context, causing negative transfer across task contexts. Our correlation analysis further reveals that only a fully correct reflection is strongly associated with higher FAR. BenchTrace exposes concrete limits of current self-evolution approaches and provides a controlled, model-agnostic framework for targeted evaluation.",
+      "authors": [
+        "Jiahao Huang",
+        "Fei Cheng",
+        "Junfeng Jiang",
+        "Zefan Yu",
+        "Akiko Aizawa"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-28T01:25:37Z",
+      "updated": "2026-05-28T01:25:37Z",
+      "announced_date": "2026-05-28",
+      "first_seen": "2026-05-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.29225v1",
+        "pdf": "https://arxiv.org/pdf/2605.29225v1",
+        "html": "https://arxiv.org/html/2605.29225"
+      },
+      "score": 24,
+      "tags": [],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2605.29224",
+      "title": "Relevance as a Vulnerability: How Web Retrieval Degrades Safety Alignment in LLM Agents",
+      "abstract": "AI agents augment large language models with external tools such as web retrieval, enabling grounded and up-to-date responses. However, incorporating external content into the generation pipeline can weaken the safety alignment mechanisms that govern model outputs. Prior work shows that enabling retrieval in agents increases compliance with harmful requests. We introduce AgentREVEAL, a diagnostic framework for analyzing retrieval-induced safety degradation in LLM agents. The framework examines two axes: how retrieval is integrated into the agent pipeline and the properties of the retrieved content. Along the integration axis, we find that binding tool invocation and response generation in a single step amplifies harmful outputs. Along the content axis, we uncover the Safe Source Paradox: even oppositional or safety-oriented sources, such as pages containing warnings or risk disclaimers, can increase harmful compliance by an average of 25% compared to the no-retrieval baseline. Finally, we show that relevance acts as a shared activation condition for both vulnerabilities. Similar patterns appear on frontier closed models, and harmful compliance remains elevated under several representative pipeline interventions, with some agents also entering this regime under autonomous retrieval. Because relevance is also what makes retrieval useful, these results expose a safety-utility trade-off for retrieval-enabled agents. We introduce HarmURLBench, a benchmark containing 1,405 real-world URLs paired with 320 harmful behaviors to support future evaluations.",
+      "authors": [
+        "Aditya Nawal",
+        "Manit Baser",
+        "Mohan Gurusamy"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-28T01:23:48Z",
+      "updated": "2026-05-28T01:23:48Z",
+      "announced_date": "2026-05-28",
+      "first_seen": "2026-05-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.29224v1",
+        "pdf": "https://arxiv.org/pdf/2605.29224v1",
+        "html": "https://arxiv.org/html/2605.29224"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    }
+  ]
+}

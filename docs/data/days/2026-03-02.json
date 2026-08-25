@@ -1,0 +1,281 @@
+{
+  "date": "2026-03-02",
+  "count": 5,
+  "report": {
+    "date": "2026-03-02",
+    "count": 5,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      }
+    ],
+    "en": {
+      "headline": "5 new agent benchmarks",
+      "summary": "On March 2, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Tool use (2), Multi-agent (2), Coding agents (2), and Web agents (1).",
+      "highlights": [
+        {
+          "id": "2603.01357",
+          "title": "ASTRA-bench: Evaluating Tool-Use Agent Reasoning and Action Planning with Personal User Context",
+          "blurb": "Next-generation AI must manage vast personal data, diverse tools, and multi-step reasoning, yet most benchmarks remain context-free and single-turn."
+        },
+        {
+          "id": "2603.01952",
+          "title": "LiveCultureBench: a Multi-Agent, Multi-Cultural Benchmark for Large Language Models in Dynamic Social Simulations",
+          "blurb": "Large language models (LLMs) are increasingly deployed as autonomous agents, yet evaluations focus primarily on task success rather than cultural appropriateness or evaluator reliability."
+        },
+        {
+          "id": "2603.02297",
+          "title": "ZeroDayBench: Evaluating LLM Agents on Unseen Zero-Day Vulnerabilities for Cyberdefense",
+          "blurb": "Large language models (LLMs) are increasingly being deployed as software engineering agents that autonomously contribute to repositories."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年3月2日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在工具使用（2）、多智能体（2）、代码智能体（2）、网页智能体（1）。",
+      "highlights": [
+        {
+          "id": "2603.01357",
+          "title": "ASTRA-bench: Evaluating Tool-Use Agent Reasoning and Action Planning with Personal User Context",
+          "blurb": "Next-generation AI must manage vast personal data, diverse tools, and multi-step reasoning, yet most benchmarks remain context-free and single-turn."
+        },
+        {
+          "id": "2603.01952",
+          "title": "LiveCultureBench: a Multi-Agent, Multi-Cultural Benchmark for Large Language Models in Dynamic Social Simulations",
+          "blurb": "Large language models (LLMs) are increasingly deployed as autonomous agents, yet evaluations focus primarily on task success rather than cultural appropriateness or evaluator reliability."
+        },
+        {
+          "id": "2603.02297",
+          "title": "ZeroDayBench: Evaluating LLM Agents on Unseen Zero-Day Vulnerabilities for Cyberdefense",
+          "blurb": "Large language models (LLMs) are increasingly being deployed as software engineering agents that autonomously contribute to repositories."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2603.03372",
+      "title": "TritonDFT: Automating DFT with a Multi-Agent Framework",
+      "abstract": "Density Functional Theory (DFT) is a cornerstone of materials science, yet executing DFT in practice requires coordinating a complex, multi-step workflow. Existing tools and LLM-based solutions automate parts of the steps, but lack support for full workflow automation, diverse task adaptation, and accuracy-cost trade-off optimization in DFT configuration. To this end, we present TritonDFT, a multi-agent framework that enables efficient and accurate DFT execution through an expert-curated, extensible workflow design, Pareto-aware parameter inference, and multi-source knowledge augmentation. We further introduce DFTBench, a benchmark for evaluating the agent's multi-dimensional capabilities, spanning science expertise, trade0off optimization, HPC knowledge, and cost efficiency. TritonDFT provides an open user interface for real-world usage. Our website is at https://www.tritondft.com. Our source code and benchmark suite are available at https://github.com/Leo9660/TritonDFT.git.",
+      "authors": [
+        "Zhengding Hu",
+        "Kuntal Talit",
+        "Zhen Wang",
+        "Haseeb Ahmad",
+        "Yichen Lin",
+        "Prabhleen Kaur",
+        "Christopher Lane",
+        "Elizabeth A. Peterson",
+        "Zhiting Hu",
+        "Elizabeth A. Nowadnick",
+        "Yufei Ding"
+      ],
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cs.MA"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "published": "2026-03-02T22:06:41Z",
+      "updated": "2026-03-05T03:51:36Z",
+      "announced_date": "2026-03-02",
+      "first_seen": "2026-03-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.03372v2",
+        "pdf": "https://arxiv.org/pdf/2603.03372v2",
+        "html": "https://arxiv.org/html/2603.03372"
+      },
+      "score": 14,
+      "tags": [
+        "web",
+        "tool-use",
+        "multi-agent"
+      ],
+      "field": "multi-agent",
+      "citations": 4
+    },
+    {
+      "id": "2603.02176",
+      "title": "Organizing, Orchestrating, and Benchmarking Agent Skills at Ecosystem Scale",
+      "abstract": "The rapid proliferation of Claude agent skills has raised the central question of how to effectively leverage, manage, and scale the agent skill ecosystem. In this paper, we propose AgentSkillOS, the first principled framework for skill selection, orchestration, and ecosystem-level management. AgentSkillOS comprises two stages: (i) Manage Skills, which organizes skills into a capability tree via node-level recursive categorization for efficient discovery; and (ii) Solve Tasks, which retrieves, orchestrates, and executes multiple skills through DAG-based pipelines. To evaluate the agent's ability to invoke skills, we construct a benchmark of 30 artifact-rich tasks across five categories: data computation, document creation, motion video, visual design, and web interaction. We assess the quality of task outputs using LLM-based pairwise evaluation, and the results are aggregated via a Bradley-Terry model to produce unified quality scores. Experiments across three skill ecosystem scales (200 to 200K skills) show that tree-based retrieval effectively approximates oracle skill selection, and that DAG-based orchestration substantially outperforms native flat invocation even when given the identical skill set. Our findings confirm that structured composition is the key to unlocking skill potential. Our GitHub repository is available at:https://github.com/ynulihao/AgentSkillOS.",
+      "authors": [
+        "Hao Li",
+        "Chunjiang Mu",
+        "Jianhao Chen",
+        "Siyue Ren",
+        "Zhiyao Cui",
+        "Yiqun Zhang",
+        "Lei Bai",
+        "Shuyue Hu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-03-02T18:46:47Z",
+      "updated": "2026-03-02T18:46:47Z",
+      "announced_date": "2026-03-02",
+      "first_seen": "2026-03-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.02176v1",
+        "pdf": "https://arxiv.org/pdf/2603.02176v1",
+        "html": "https://arxiv.org/html/2603.02176"
+      },
+      "score": 10,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 51
+    },
+    {
+      "id": "2603.02297",
+      "title": "ZeroDayBench: Evaluating LLM Agents on Unseen Zero-Day Vulnerabilities for Cyberdefense",
+      "abstract": "Large language models (LLMs) are increasingly being deployed as software engineering agents that autonomously contribute to repositories. A major benefit these agents present is their ability to find and patch security vulnerabilities in the codebases they oversee. To estimate the capability of agents in this domain, we introduce ZeroDayBench, a benchmark where LLM agents find and patch 22 novel critical vulnerabilities in open-source codebases. We focus our efforts on three popular frontier agentic LLMs: GPT-5.2, Claude Sonnet 4.5, and Grok 4.1. We find that frontier LLMs are not yet capable of autonomously solving our tasks and observe some behavioral patterns that suggest how these models can be improved in the domain of proactive cyberdefense.",
+      "authors": [
+        "Nancy Lau",
+        "Louis Sloot",
+        "Jyoutir Raj",
+        "Giuseppe Marco Boscardin",
+        "Evan Harris",
+        "Dylan Bowman",
+        "Mario Brajkovski",
+        "Jaideep Chawla",
+        "Dan Zhao"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-03-02T18:21:22Z",
+      "updated": "2026-03-02T18:21:22Z",
+      "announced_date": "2026-03-02",
+      "first_seen": "2026-03-02",
+      "comment": "Accepted to ICLR 2026 Workshop \"Agents in the Wild\"",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.02297v1",
+        "pdf": "https://arxiv.org/pdf/2603.02297v1",
+        "html": "https://arxiv.org/html/2603.02297"
+      },
+      "score": 16,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 6
+    },
+    {
+      "id": "2603.01952",
+      "title": "LiveCultureBench: a Multi-Agent, Multi-Cultural Benchmark for Large Language Models in Dynamic Social Simulations",
+      "abstract": "Large language models (LLMs) are increasingly deployed as autonomous agents, yet evaluations focus primarily on task success rather than cultural appropriateness or evaluator reliability. We introduce LiveCultureBench, a multi-cultural, dynamic benchmark that embeds LLMs as agents in a simulated town and evaluates them on both task completion and adherence to socio-cultural norms. The simulation models a small city as a location graph with synthetic residents having diverse demographic and cultural profiles. Each episode assigns one resident a daily goal while others provide social context. An LLM-based verifier generates structured judgments on norm violations and task progress, which we aggregate into metrics capturing task-norm trade-offs and verifier uncertainty. Using LiveCultureBench across models and cultural profiles, we study (i) cross-cultural robustness of LLM agents, (ii) how they balance effectiveness against norm sensitivity, and (iii) when LLM-as-a-judge evaluation is reliable for automated benchmarking versus when human oversight is needed.",
+      "authors": [
+        "Viet-Thanh Pham",
+        "Lizhen Qu",
+        "Thuy-Trang Vu",
+        "Gholamreza Haffari",
+        "Dinh Phung"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-02T15:04:16Z",
+      "updated": "2026-03-02T15:04:16Z",
+      "announced_date": "2026-03-02",
+      "first_seen": "2026-03-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.01952v1",
+        "pdf": "https://arxiv.org/pdf/2603.01952v1",
+        "html": "https://arxiv.org/html/2603.01952"
+      },
+      "score": 21,
+      "tags": [
+        "multi-agent",
+        "safety"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2603.01357",
+      "title": "ASTRA-bench: Evaluating Tool-Use Agent Reasoning and Action Planning with Personal User Context",
+      "abstract": "Next-generation AI must manage vast personal data, diverse tools, and multi-step reasoning, yet most benchmarks remain context-free and single-turn. We present ASTRA-bench (Assistant Skills in Tool-use, Reasoning \\& Action-planning), a benchmark that uniquely unifies time-evolving personal context with an interactive toolbox and complex user intents. Our event-driven pipeline generates 2,413 scenarios across four protagonists, grounded in longitudinal life events and annotated by referential, functional, and informational complexity. Evaluation of state-of-the-art models (e.g., Claude-4.5-Opus, DeepSeek-V3.2) reveals significant performance degradation under high-complexity conditions, with argument generation emerging as the primary bottleneck. These findings expose critical limitations in current agents' ability to ground reasoning within messy personal context and orchestrate reliable multi-step plans. We release ASTRA-bench with a full execution environment and evaluation scripts to provide a diagnostic testbed for developing truly context-aware AI assistants.",
+      "authors": [
+        "Zidi Xiu",
+        "David Q. Sun",
+        "Kevin Cheng",
+        "Maitrik Patel",
+        "Josh Date",
+        "Yizhe Zhang",
+        "Jiarui Lu",
+        "Omar Attia",
+        "Raviteja Vemulapalli",
+        "Oncel Tuzel",
+        "Meng Cao",
+        "Samy Bengio"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-02T01:34:48Z",
+      "updated": "2026-03-02T01:34:48Z",
+      "announced_date": "2026-03-02",
+      "first_seen": "2026-03-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.01357v1",
+        "pdf": "https://arxiv.org/pdf/2603.01357v1",
+        "html": "https://arxiv.org/html/2603.01357"
+      },
+      "score": 23,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "tool-use",
+      "citations": 10
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "date": "2026-05-20",
+  "count": 6,
+  "report": {
+    "date": "2026-05-20",
+    "count": 6,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "conversation",
+        "count": 2,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      }
+    ],
+    "en": {
+      "headline": "6 new agent benchmarks",
+      "summary": "On May 20, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Planning / reasoning (3), Tool use (2), Memory (2), and Dialogue / customer (2).",
+      "highlights": [
+        {
+          "id": "2605.21740",
+          "title": "SMDD-Bench: Can LLMs Solve Real-World Small Molecule Drug Design Tasks?",
+          "blurb": "LLM agents have incredible potential for scientific discovery applications."
+        },
+        {
+          "id": "2607.20468",
+          "title": "InferenceBench: A Benchmark for Open-Ended LLM Inference Optimization by AI Agents",
+          "blurb": "AI agents are increasingly used to automate research and development tasks, yet existing benchmarks typically evaluate them on prescribed workflows or narrow action spaces."
+        },
+        {
+          "id": "2605.20833",
+          "title": "MemGym: a Long-Horizon Memory Environment for LLM Agents",
+          "blurb": "Memory is a central capability for LLM agents operating across long-horizon tasks."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 6 篇 Agent Benchmark",
+      "summary": "2026年5月20日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在规划 / 推理（3）、工具使用（2）、记忆（2）、对话 / 客服（2）。",
+      "highlights": [
+        {
+          "id": "2605.21740",
+          "title": "SMDD-Bench: Can LLMs Solve Real-World Small Molecule Drug Design Tasks?",
+          "blurb": "LLM agents have incredible potential for scientific discovery applications."
+        },
+        {
+          "id": "2607.20468",
+          "title": "InferenceBench: A Benchmark for Open-Ended LLM Inference Optimization by AI Agents",
+          "blurb": "AI agents are increasingly used to automate research and development tasks, yet existing benchmarks typically evaluate them on prescribed workflows or narrow action spaces."
+        },
+        {
+          "id": "2605.20833",
+          "title": "MemGym: a Long-Horizon Memory Environment for LLM Agents",
+          "blurb": "Memory is a central capability for LLM agents operating across long-horizon tasks."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2605.21740",
+      "title": "SMDD-Bench: Can LLMs Solve Real-World Small Molecule Drug Design Tasks?",
+      "abstract": "LLM agents have incredible potential for scientific discovery applications. However, the performance of LLM agents on real-world, small molecule drug design (SMDD) tasks across diverse chemistries and targets is unclear. Current evaluation methods are either ad hoc, too simple for real-world discovery, limited in scale, or restricted to single-turn question answering. In effort to standardize the evaluation of LLM agents on small molecule design, we introduce SMDD-Bench, a challenging, multi-turn, long-horizon agentic benchmark consisting of 502 guaranteed-solvable task instances spanning 5 task types: 2D Pharmacophore Identification, Interaction Point Discovery, Scaffold Hopping, Lead Optimization, and Fragment Assembly. SMDD-Bench tasks span a wide region of chemical space and involve 102 unique protein targets. Completely solving the benchmark would require having strong chemical and biological reasoning and 3D intuition, understanding specialized tool use, and displaying planning expertise over a limited number of oracle calls. We benchmark 7 frontier open and closed source LLMs and find even the most performant LLM, GPT5.4, solves only 40.2\\% of tasks. We hope SMDD-Bench provides a standardized testbed to invigorate the field towards training and evaluating LLM agents for fully autonomous computational drug design. We host a public leaderboard at smddbench.com .",
+      "authors": [
+        "Kevin Han",
+        "Renfei Zhang",
+        "Kathy Wei",
+        "Hamed Mahdavi",
+        "Niloofar Mireshghallah",
+        "Amir Barati Farimani"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-20T21:08:15Z",
+      "updated": "2026-05-24T00:44:41Z",
+      "announced_date": "2026-05-20",
+      "first_seen": "2026-05-20",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.21740v2",
+        "pdf": "https://arxiv.org/pdf/2605.21740v2",
+        "html": "https://arxiv.org/html/2605.21740"
+      },
+      "score": 22,
+      "tags": [
+        "tool-use",
+        "planning",
+        "research",
+        "science"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2608.02613",
+      "title": "MemArena: An Ego-Centric Benchmark for On-Device Agentic Personal Memory Assistants at Scale",
+      "abstract": "Edge-deployed personal memory assistants must handle private interpersonal conversations on-device with open-weight models. Yet, existing memory benchmarks often under-test the combination of activity-dense interaction, ego-centric perspective, and coherent multi-session worlds. MemArena fills these gaps with a single-world conversational benchmark built with its MASim agent simulator, for 50 agents over 15 days (10.3M dialog-text tokens, 24.1K text-only ego-observed tokens/agent/day). With the interaction history, it co-generates ground truth over six recall, reasoning, and trustworthiness evaluation dimensions. We evaluate five open-weight readers with Vanilla context, BM25-RAG, Oracle retrieval, Memobase, and MemSearch as memory backends. Three results stand out: (1) Memory-backend choice matters more for content accuracy: At Qwen3-0.6B, Memobase-to-MemSearch gains +32.5/+19.2 pp, exceeding MemSearch reader scaling (+10.6/+6.8 pp). (2) Permission-aware access fails universally, with Oracle leaking heavily and other backends too timid to disclose. (3) Search latency bites only at very small reader: on a Spark GB10 edge node, memory-search adds a moderate and fixed 87/7/48 ms (BM25-RAG/Memobase/MemSearch) that composes a small part of TTFT for most reader-backend combinations. Code, the MASim simulator, and the MemArena-L benchmark will be released upon acceptance.",
+      "authors": [
+        "Jiadong Zhang",
+        "Xiaosong Ma"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-20T17:07:32Z",
+      "updated": "2026-05-20T17:07:32Z",
+      "announced_date": "2026-05-20",
+      "first_seen": "2026-05-20",
+      "comment": "48 pages, 6 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.02613v1",
+        "pdf": "https://arxiv.org/pdf/2608.02613v1",
+        "html": "https://arxiv.org/html/2608.02613"
+      },
+      "score": 17,
+      "tags": [
+        "memory",
+        "planning",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 0
+    },
+    {
+      "id": "2605.21404",
+      "title": "What Twelve LLM Agent Benchmark Papers Disclose About Themselves: A Pilot Audit and an Open Scoring Schema",
+      "abstract": "We read twelve well-known LLM agent benchmark papers and recorded, dimension by dimension, what each paper actually says about how its evaluation was run. The motivation came from a familiar frustration: two papers will report results on the same benchmark with the same model name and disagree, and you cannot tell why -- the scaffold, the sampling settings, the subset, or the evaluator version. In many cases the published artifact does not let you answer. This paper is an implementation report on the attempt. We designed a small audit schema (five fields: benchmark identity, harness specification, inference settings, cost reporting, failure breakdown), wrote a scoring codebook with the boundary cases we hit during pilot scoring, applied it to twelve canonical papers (eight agent, four classical static), and recorded what we saw. We score the disclosure of an agent run, not its correctness, and make no claim that disclosure implies a trustworthy result. The mean audit score across the eight agent-benchmark papers is 0.38 (out of 1.0), and across the four classical static benchmarks 0.66; the largest gap is on cost (none of the eight agent benchmark papers disclose inference cost in any form) and on harness specification (none fully disclose a content-addressed container image of the evaluation environment). We release the schema as a JSON Schema file, the codebook as a Markdown document, and the raw scoring sheet as a CSV. The scoring was performed by a single auditor in one pass; a multi-rater audit is the natural next step, and we discuss what we think it would change.",
+      "authors": [
+        "Mahdi Naser Moghadasi",
+        "Faezeh Ghaderi"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-05-20T17:02:36Z",
+      "updated": "2026-05-20T17:02:36Z",
+      "announced_date": "2026-05-20",
+      "first_seen": "2026-05-20",
+      "comment": "Pilot audit of 12 LLM agent benchmark papers; schema, codebook, and per-paper scoring sheet released. Submission to IEEE Big Data 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.21404v1",
+        "pdf": "https://arxiv.org/pdf/2605.21404v1",
+        "html": "https://arxiv.org/html/2605.21404"
+      },
+      "score": 13,
+      "tags": [],
+      "field": "other",
+      "citations": 4
+    },
+    {
+      "id": "2605.21384",
+      "title": "SpecBench: Measuring Reward Hacking in Long-Horizon Coding Agents",
+      "abstract": "As long-horizon coding agents produce more code than any developer can review, oversight collapses onto a single surface: the automated test suite. Reward hacking naturally arises in this setup, as the agent optimizes for passing tests while deviating from the users true goal. We study this reward hacking phenomenon by decompose software engineering tasks into three parts: (i) a natural language description of the specification (ii) visible validation tests that exercise specified features in isolation, and (iii) held-out tests that compose those same features to simulate real-world usage. Based on the specification and the visible validation test suites, a genuine agent would be able to generate a solution that can also pass all of the held-out tests. Therefore we use the gap in pass rates on these two suites to quantify reward hacking. Based on this methodology, we introduce SpecBench, a benchmark comprising 30 systems-level programming tasks ranging from short horizon tasks like building a JSON parser to ultra long horizon tasks like building an entire OS kernel from scratch. Large-scale experiments reveal a consistent pattern: while every frontier agent saturates the visible suite, reward hacking persists, with smaller models exhibiting larger gaps on holdout suites. The gap also scales sharply with task length: it grows by 28 percentage points for every tenfold increase in code size. Failures range from subtle feature isolation to deliberate exploits, including a 2,900-line hash-table \"compiler\" that memorizes test inputs. SpecBench offers a principled testbed for measuring whether coding agents build genuine working systems or merely game the test suites developers hand them.",
+      "authors": [
+        "Bingchen Zhao",
+        "Dhruv Srikanth",
+        "Yuxiang Wu",
+        "Zhengyao Jiang"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-05-20T16:41:51Z",
+      "updated": "2026-05-20T16:41:51Z",
+      "announced_date": "2026-05-20",
+      "first_seen": "2026-05-20",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.21384v1",
+        "pdf": "https://arxiv.org/pdf/2605.21384v1",
+        "html": "https://arxiv.org/html/2605.21384"
+      },
+      "score": 16,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 11
+    },
+    {
+      "id": "2607.20468",
+      "title": "InferenceBench: A Benchmark for Open-Ended LLM Inference Optimization by AI Agents",
+      "abstract": "AI agents are increasingly used to automate research and development tasks, yet existing benchmarks typically evaluate them on prescribed workflows or narrow action spaces. Even nominally open-ended tasks can often be solved by retrieving a well-known recipe and tuning a few hyperparameters, making it unclear whether strong results reflect genuine optimization or memorized solutions. We introduce InferenceBench, where an agent must deploy an OpenAI-compatible inference server and optimize the speed of LLM inference. Each agent receives a target LLM, one H100 GPU, an optimization scenario, and a wall-clock time budget of two hours. Three optimization scenarios isolate distinct bottlenecks of inference (prefill latency, decode latency, and concurrent request throughput) and a fourth balances all three at the same time. Across 15 frontier agent configurations, agents reliably improve over a naive PyTorch baseline (up to $8.08\\times$) and often match or exceed serving engines with default settings ($4.05\\times$ for vLLM), but still fall below a simple hyperparameter search under the same time budget (up to $11.53\\times$). Qualitative analysis of agent trajectories shows that although agents enumerate many relevant optimization techniques, they overwhelmingly converge on a single inference framework. They test only a few distinct configurations and spend the remaining budget re-measuring, repairing, or optimizing hyperparameters rather than exploring substantially different strategies. This suggests the bottleneck is not domain knowledge, but the ability to propose diverse configurations, evaluate them systematically, and submit the best identified solution. Overall, InferenceBench reflects the ability of agents to operate in an open-ended AI engineering setting, where memorized solutions lead to limited improvements.",
+      "authors": [
+        "Jehyeok Yeon",
+        "Ben Rank",
+        "Maksym Andriushchenko"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-20T15:55:21Z",
+      "updated": "2026-05-20T15:55:21Z",
+      "announced_date": "2026-05-20",
+      "first_seen": "2026-05-20",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.20468v1",
+        "pdf": "https://arxiv.org/pdf/2607.20468v1",
+        "html": "https://arxiv.org/html/2607.20468"
+      },
+      "score": 20,
+      "tags": [],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2605.20833",
+      "title": "MemGym: a Long-Horizon Memory Environment for LLM Agents",
+      "abstract": "Memory is a central capability for LLM agents operating across long-horizon tasks. Existing memory benchmarks predominantly evaluate retention of personalized information in multi-turn chat scenarios, overlooking the dynamic memory formation that occurs during extended agent execution. Consequently, the memory systems they produce transfer poorly to realistic agentic environments, such as coding and web navigation. We present MemGym, a benchmark for agentic memory that unifies existing agent gyms and in-house memory-grounded pipelines behind one memory-reasoning interface. MemGym spans five evaluation tracks grouped into four agentic regimes: tool-use dialogue (tau2-bench), multi-turn deep-research search (MEMGYM-DR), coding (SWE-Gym and MEMGYM-CODEQA), and computer use (WebArena-Infinity). MemGym reports memory-isolated scores that decouple memory performance from reasoning, retrieval, and tool-use ability, so memory strategies can be ranked without those confounders. Our synthetic pipelines for MEMGYM-CODEQA and MEMGYM-DR are length-controllable, ablation-verified at every stage, and tightly aligned with downstream scenarios. To make evaluation on coding environments academically tractable, we train MemRM, a lightweight reward model (Qwen3-1.7B fine-tuned with QLoRA) that scores compression quality as a fast scalar read in place of full Docker rollouts.",
+      "authors": [
+        "Wujiang Xu",
+        "Yu Wang",
+        "Kai Mei",
+        "Kaiqu Liang",
+        "Zhenting Wang",
+        "Mingyu Jin",
+        "Han Zhang",
+        "Shi-Xiong Zhang",
+        "Wenyue Hua",
+        "Sambit Sahu",
+        "Dimitris N. Metaxas"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-20T07:25:33Z",
+      "updated": "2026-05-20T07:25:33Z",
+      "announced_date": "2026-05-20",
+      "first_seen": "2026-05-20",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.20833v1",
+        "pdf": "https://arxiv.org/pdf/2605.20833v1",
+        "html": "https://arxiv.org/html/2605.20833"
+      },
+      "score": 19,
+      "tags": [
+        "web",
+        "tool-use",
+        "computer-use",
+        "memory",
+        "planning",
+        "conversation"
+      ],
+      "field": "web",
+      "citations": 4
+    }
+  ]
+}

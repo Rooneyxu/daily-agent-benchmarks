@@ -1,0 +1,130 @@
+{
+  "date": "2026-03-15",
+  "count": 2,
+  "report": {
+    "date": "2026-03-15",
+    "count": 2,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On March 15, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Tool use (2), and Planning / reasoning (2).",
+      "highlights": [
+        {
+          "id": "2603.14468",
+          "title": "LongVidSearch: An Agentic Benchmark for Multi-hop Evidence Retrieval Planning in Long Videos",
+          "blurb": "Long video question answering (Long-Video QA) increasingly relies on agentic tool use to retrieve evidence from long videos."
+        },
+        {
+          "id": "2603.14465",
+          "title": "AgentProcessBench: Diagnosing Step-Level Process Quality in Tool-Using Agents",
+          "blurb": "While Large Language Models (LLMs) have evolved into tool-using agents, they remain brittle in long-horizon interactions."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年3月15日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在工具使用（2）、规划 / 推理（2）。",
+      "highlights": [
+        {
+          "id": "2603.14468",
+          "title": "LongVidSearch: An Agentic Benchmark for Multi-hop Evidence Retrieval Planning in Long Videos",
+          "blurb": "Long video question answering (Long-Video QA) increasingly relies on agentic tool use to retrieve evidence from long videos."
+        },
+        {
+          "id": "2603.14465",
+          "title": "AgentProcessBench: Diagnosing Step-Level Process Quality in Tool-Using Agents",
+          "blurb": "While Large Language Models (LLMs) have evolved into tool-using agents, they remain brittle in long-horizon interactions."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2603.14468",
+      "title": "LongVidSearch: An Agentic Benchmark for Multi-hop Evidence Retrieval Planning in Long Videos",
+      "abstract": "Long video question answering (Long-Video QA) increasingly relies on agentic tool use to retrieve evidence from long videos. In realistic settings, this process often requires multi-hop retrieval, where agents must iteratively gather multiple discontinuous evidence clips. However, existing long-video benchmarks are largely static: they rarely enforce strict multi-hop retrieval and typically lack a standardized evidence-access interface, making it difficult to separate failures in retrieval planning from those in answer generation. To address this gap, we introduce LongVidSearch, a benchmark for evaluating agentic multi-hop evidence retrieval planning in long videos under standardized access constraints. LongVidSearch enforces retrieval necessity: a Hop-k question requires exactly k necessary evidence clips, and removing any single clip renders the question unsolvable. The benchmark contains 3,000 questions over 447 long videos (average length 26 minutes), covering four reasoning categories: State Mutation, Causal Inference, Global Summary, and Visual Tracking, with 2-hop, 3-hop, and 4-hop evidence requirements. To ensure fair and controlled evaluation, all agents interact with LongVidSearch through a unified tool interface, which fixes the retrieval backend and isolates the agent's ability to formulate queries and plan iterative retrieval. In addition to answer accuracy, we measure tool-call cost to analyze the accuracy-efficiency trade-off under identical access conditions. We evaluate VideoAgent-style QA agents with multiple backbone LLMs using three-judge majority voting. GPT-5 achieves the highest accuracy (42.43), outperforming Gemini 3 Pro (30.97) and GPT-4o (19.20), yet remaining below 50 %, highlighting the difficulty of multi-hop retrieval planning. With gold evidence clips, performance becomes near-perfect, confirming retrieval planning as the primary bottleneck.",
+      "authors": [
+        "Rongyi Yu",
+        "Chenyuan Duan",
+        "Wentao Zhang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.IR"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-03-15T16:20:23Z",
+      "updated": "2026-03-15T16:20:23Z",
+      "announced_date": "2026-03-15",
+      "first_seen": "2026-03-15",
+      "comment": "12 pages, 2 figures, appendix included",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.14468v1",
+        "pdf": "https://arxiv.org/pdf/2603.14468v1",
+        "html": "https://arxiv.org/html/2603.14468"
+      },
+      "score": 17,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 3
+    },
+    {
+      "id": "2603.14465",
+      "title": "AgentProcessBench: Diagnosing Step-Level Process Quality in Tool-Using Agents",
+      "abstract": "While Large Language Models (LLMs) have evolved into tool-using agents, they remain brittle in long-horizon interactions. Unlike mathematical reasoning where errors are often rectifiable via backtracking, tool-use failures frequently induce irreversible side effects, making accurate step-level verification critical. However, existing process-level benchmarks are predominantly confined to closed-world mathematical domains, failing to capture the dynamic and open-ended nature of tool execution. To bridge this gap, we introduce AgentProcessBench, the first benchmark dedicated to evaluating step-level effectiveness in realistic, tool-augmented trajectories. The benchmark comprises 1,000 diverse trajectories and 8,509 human-labeled step annotations with 89.1% inter-annotator agreement. It features a ternary labeling scheme to capture exploration and an error propagation rule to reduce labeling ambiguity. Extensive experiments reveal key insights: (1) weaker policy models exhibit inflated ratios of correct steps due to early termination; (2) distinguishing neutral and erroneous actions remains a significant challenge for current models; and (3) process-derived signals provide complementary value to outcome supervision, significantly enhancing test-time scaling. We hope AgentProcessBench can foster future research in reward models and pave the way toward general agents. The code and data are available at https://github.com/RUCBM/AgentProcessBench.",
+      "authors": [
+        "Shengda Fan",
+        "Xuyan Ye",
+        "Yupeng Huo",
+        "Zhi-Yuan Chen",
+        "Yiju Guo",
+        "Shenzhi Yang",
+        "Wenkai Yang",
+        "Shuqi Ye",
+        "Jingwen Chen",
+        "Haotian Chen",
+        "Xin Cong",
+        "Yankai Lin"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-15T16:13:58Z",
+      "updated": "2026-06-01T10:03:07Z",
+      "announced_date": "2026-03-15",
+      "first_seen": "2026-03-15",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.14465v2",
+        "pdf": "https://arxiv.org/pdf/2603.14465v2",
+        "html": "https://arxiv.org/html/2603.14465"
+      },
+      "score": 15,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 18
+    }
+  ]
+}

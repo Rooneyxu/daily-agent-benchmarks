@@ -1,0 +1,257 @@
+{
+  "date": "2026-07-08",
+  "count": 5,
+  "report": {
+    "date": "2026-07-08",
+    "count": 5,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 3,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "5 new agent benchmarks",
+      "summary": "On July 8, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Coding agents (3), Tool use (1), Safety (1), and Multimodal (1).",
+      "highlights": [
+        {
+          "id": "2607.07744",
+          "title": "PERFOPT-Bench: Evaluating Coding Agents on Software Performance Optimization",
+          "blurb": "Coding-agent benchmarks have largely measured whether agents can produce functionally correct patches, but production software also demands measurable speedups on real execution targets."
+        },
+        {
+          "id": "2607.07946",
+          "title": "DeepSWE: Measuring Frontier Coding Agents on Original, Long-Horizon Engineering Tasks",
+          "blurb": "DeepSWE is a benchmark of 113 original, long-horizon software engineering tasks for evaluating coding agents."
+        },
+        {
+          "id": "2607.07189",
+          "title": "Does AI Understand Imaging? A Systematic Benchmark of Agentic AI for Computational Imaging Tasks",
+          "blurb": "Vision-language models (VLMs) and agentic AI have shown strong performance on semantic visual tasks, but it remains unclear whether they can handle the physics and inverse problems that underlie computational imaging."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年7月8日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在代码智能体（3）、工具使用（1）、安全（1）、多模态（1）。",
+      "highlights": [
+        {
+          "id": "2607.07744",
+          "title": "PERFOPT-Bench: Evaluating Coding Agents on Software Performance Optimization",
+          "blurb": "Coding-agent benchmarks have largely measured whether agents can produce functionally correct patches, but production software also demands measurable speedups on real execution targets."
+        },
+        {
+          "id": "2607.07946",
+          "title": "DeepSWE: Measuring Frontier Coding Agents on Original, Long-Horizon Engineering Tasks",
+          "blurb": "DeepSWE is a benchmark of 113 original, long-horizon software engineering tasks for evaluating coding agents."
+        },
+        {
+          "id": "2607.07189",
+          "title": "Does AI Understand Imaging? A Systematic Benchmark of Agentic AI for Computational Imaging Tasks",
+          "blurb": "Vision-language models (VLMs) and agentic AI have shown strong performance on semantic visual tasks, but it remains unclear whether they can handle the physics and inverse problems that underlie computational imaging."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2607.07946",
+      "title": "DeepSWE: Measuring Frontier Coding Agents on Original, Long-Horizon Engineering Tasks",
+      "abstract": "DeepSWE is a benchmark of 113 original, long-horizon software engineering tasks for evaluating coding agents. Most public agentic coding benchmarks follow SWE-bench in mining merged fixes from public GitHub repositories, which creates two problems: the fixes and their discussion were likely seen during pretraining, so a high score can reflect recall rather than problem-solving; and each task is graded by the tests that shipped with its merged fix, which were written to confirm one specific fix rather than grade an arbitrary solution, so they can fail a correct alternative or pass an incomplete one. DeepSWE avoids both. Its tasks are written from scratch across 91 active open-source repositories and five languages and are never contributed back upstream, so their reference solutions stay out of the public record that model training scrapes; and each task is graded by a hand-written verifier that checks the requested functionality and accepts any implementation that provides it. When an independent LLM judge re-reviews graded runs, it disagrees with DeepSWE's verifier about an order of magnitude less often than with SWE-Bench Pro's inherited tests (1.4% versus 32.4%). Despite being about half the length of SWE-Bench Pro's prompts, DeepSWE's prompts describe tasks whose reference solutions touch 5.5x more code, and the benchmark separates frontier agents across a wider score band than the leaderboards on which they otherwise cluster. We release the benchmark, its verifiers, and the full record of evaluation trajectories.",
+      "authors": [
+        "Wenqi Huang",
+        "Charley Lee",
+        "Leonard Tng",
+        "Serena Ge"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.LG"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-07-08T21:45:34Z",
+      "updated": "2026-07-08T21:45:34Z",
+      "announced_date": "2026-07-08",
+      "first_seen": "2026-07-08",
+      "comment": "32 pages, 10 figures. Code and data: https://github.com/datacurve-ai/deep-swe ; https://deepswe.datacurve.ai/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.07946v1",
+        "pdf": "https://arxiv.org/pdf/2607.07946v1",
+        "html": "https://arxiv.org/html/2607.07946"
+      },
+      "score": 15,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 13
+    },
+    {
+      "id": "2607.07774",
+      "title": "ScopeJudge: Cost-Aware Pre-Execution Gating for Offensive Security Agents",
+      "abstract": "As LLM agents take on offensive security work, a single out-of-scope tool call can breach a client's engagement boundary, disrupt production, or void a bug-bounty finding. Unlike a fixed safety policy, the boundary that matters is declared in the user's request and must be inferred from intent. That challenge is sharpened by the adversarial nature of offensive security: the same tool call is in or out of scope depending not on the action itself but on the target it touches and the context in which it runs, which no fixed policy can enumerate in advance. We study pre-execution gating: a cheap, trusted LLM judge inspects each call proposed by a strong, swappable agent, and accepts or rejects it before it runs. We introduce ScopeJudge, a benchmark of 4,897 tool calls (7.7% scope violations) from agent trajectories on tasks engineered to tempt agents out of scope and labeled at the call level by professional penetration testers, with substantial inter-grader agreement (Fleiss kappa = 0.64) that sets an expert agreement reference point of F1 = 0.78. We evaluate eight judge models under five transcript strategies, varying how much context the judge sees, from the static policy alone to the full raw transcript, and chart the resulting cost-accuracy Pareto frontier. We find that a static policy is structurally insufficient for scope enforcement: blind to the user's request, judge recall collapses to near zero, confirming that scope lives in the request and that request-conditioned monitoring is necessary. Because a missed violation costs more than a spurious rejection, we report precision, recall, and F1 separately and recommend two operating points: a cost-sensitive configuration and a recall-first one for high-stakes deployments. We release the ScopeJudge dataset to support real-time monitoring and scalable oversight of autonomous security agents.",
+      "authors": [
+        "Shane Caldwell",
+        "Max Harley",
+        "Ads Dawson",
+        "Michael Kouremetis",
+        "Vincent Abruzzo",
+        "Will Pearce"
+      ],
+      "categories": [
+        "cs.CR"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-07-08T16:46:06Z",
+      "updated": "2026-07-30T19:01:17Z",
+      "announced_date": "2026-07-08",
+      "first_seen": "2026-07-08",
+      "comment": "22 pages, 4 figures, 4 tables, 1 link to code, 1 link to dataset",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.07774v2",
+        "pdf": "https://arxiv.org/pdf/2607.07774v2",
+        "html": "https://arxiv.org/html/2607.07774"
+      },
+      "score": 8,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2607.07189",
+      "title": "Does AI Understand Imaging? A Systematic Benchmark of Agentic AI for Computational Imaging Tasks",
+      "abstract": "Vision-language models (VLMs) and agentic AI have shown strong performance on semantic visual tasks, but it remains unclear whether they can handle the physics and inverse problems that underlie computational imaging. We present ImagingBench, a benchmark of 20 computational imaging tasks spanning five categories: ray and wave optics, image signal processing, inverse reconstruction, computational sensing, and calibration. ImagingBench evaluates three complementary settings: Expert, fixed expert-guided inverse reconstruction; Planner, planner-guided inverse reconstruction; and Forward, forward-system simulation for consistency checking. We benchmark leading proprietary and open-source image-centric multimodal systems, including Gemini, GPT, and Qwen, and compare them with representative task-specific non-agentic baselines. Across tasks, agentic models remain consistently weaker than specialized methods, especially on computational sensing problems such as lensless imaging, event-based reconstruction, time-of-flight imaging, and holography. Planner guidance provides only modest and inconsistent gains over the fixed-prompt Expert baseline. Although the models often generate visually plausible outputs, their reference-based fidelity remains poor, revealing a substantial gap between semantic visual competence and physically grounded imaging performance. ImagingBench provides a unified testbed for measuring this gap and tracking progress in agentic AI for computational imaging.",
+      "authors": [
+        "Ethan Chung",
+        "Chuanjun Zheng",
+        "Jasper Tan",
+        "Jingxi Li",
+        "Haopeng Zhang",
+        "Huaijin Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-08T09:23:56Z",
+      "updated": "2026-07-08T09:23:56Z",
+      "announced_date": "2026-07-08",
+      "first_seen": "2026-07-08",
+      "comment": "14 pages, 11 figures. Preprint / work in progress. Paper Webpage: https://cirp-lab.github.io/imagingbench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.07189v1",
+        "pdf": "https://arxiv.org/pdf/2607.07189v1",
+        "html": "https://arxiv.org/html/2607.07189"
+      },
+      "score": 15,
+      "tags": [
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2607.07744",
+      "title": "PERFOPT-Bench: Evaluating Coding Agents on Software Performance Optimization",
+      "abstract": "Coding-agent benchmarks have largely measured whether agents can produce functionally correct patches, but production software also demands measurable speedups on real execution targets. Performance optimization is a distinct agentic task: agents must profile executions, diagnose cross-layer bottlenecks, edit code without breaking correctness, and verify that gains are reproducible rather than measurement artifacts. We introduce PERFOPT-Bench, a benchmark for evaluating this full performance-engineering loop. Each task provides a correct but deliberately suboptimal codebase and asks the agent to improve a target performance metric; scoring requires hidden correctness tests, verified-speedup measurement, and trajectory-level audit. We evaluate 7 agent stacks with different LLMs and agent frameworks on 7 long-horizon optimization tasks. The results show that optimization performance is workload-dependent rather than determined by model identity alone: no single stack dominates, and changing the agent framework can materially change the same LLM's per-task speedup profile. We further find that raw speedup is unsafe as a benchmark score, since some large gains arise from benchmark-specific shortcut exploitation; an exploratory relay pilot suggests that restarting from an externalized optimization summary can recover additional headroom after an initial session stops. The benchmark and our evaluation are available at: https://anonymous.4open.science/r/Dataset-D3CC.",
+      "authors": [
+        "Yingyun Cui",
+        "Yi Xie",
+        "Piaohong Wang",
+        "Jiawei Ma",
+        "Bo Liu",
+        "Liangliang Cao"
+      ],
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-07-08T08:32:18Z",
+      "updated": "2026-07-08T08:32:18Z",
+      "announced_date": "2026-07-08",
+      "first_seen": "2026-07-08",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.07744v1",
+        "pdf": "https://arxiv.org/pdf/2607.07744v1",
+        "html": "https://arxiv.org/html/2607.07744"
+      },
+      "score": 22,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2607.20518",
+      "title": "CANN Bench: Benchmarking Agent Generated Kernels against Real NPU and Algorithmic Limits",
+      "abstract": "AI agents are now capable of writing, compiling, and iteratively optimizing low-level operator kernels on different hardware platforms. Existing benchmarks, however, focus almost exclusively on CUDA and Triton, leaving hardware ecosystems with less-exposed programming models without a common evaluation baseline. We present CANN Bench, an open benchmark for AI-generated operator code on Huawei's Ascend NPU. The current release covers 53 operators and 1060 test cases organized into four difficulty tiers -- from simple elementwise primitives to MoE dispatch and FlashAttention kernels -- spanning FP16, BF16, FP32, and INT8 precision formats. Evaluation adopts a \\textbf{three-dimensional weighted composite score} that treats compilation, functional correctness, and performance as independent axes, providing a principled reward signal for kernel-generation agents. Performance is graded against an out-of-the-box PyTorch-on-Ascend baseline and an analytical per-case Hardware-Anchored Performance (HAP) limit on real NPU hardware, ensuring scores reflect genuine optimization headroom rather than measurement artifacts. The evaluation harness is designed to resist reward hacking from the ground up. CANN Bench is versioned within the official CANN repository and is designed for long-term community co-construction, providing the Ascend ecosystem with a quantitative, reproducible, and sustainably maintained yardstick for AI operator-authoring capability.",
+      "authors": [
+        "Xue-Jian Gao",
+        "Deng Pan",
+        "Yueming Su",
+        "Jiasheng Li",
+        "Bin Du",
+        "Fengming Zhu",
+        "Chengdi Ma",
+        "Junyi Fan",
+        "Qichen Liao",
+        "Chengqiu Hu",
+        "Xinxian Chen",
+        "Lingchao Zheng",
+        "Jun Li",
+        "Jiwei Yang",
+        "Yuwei Fan"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-08T02:22:22Z",
+      "updated": "2026-07-08T02:22:22Z",
+      "announced_date": "2026-07-08",
+      "first_seen": "2026-07-08",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.20518v1",
+        "pdf": "https://arxiv.org/pdf/2607.20518v1",
+        "html": "https://arxiv.org/html/2607.20518"
+      },
+      "score": 14,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    }
+  ]
+}

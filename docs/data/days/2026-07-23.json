@@ -1,0 +1,330 @@
+{
+  "date": "2026-07-23",
+  "count": 6,
+  "report": {
+    "date": "2026-07-23",
+    "count": 6,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      }
+    ],
+    "en": {
+      "headline": "6 new agent benchmarks",
+      "summary": "On July 23, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Planning / reasoning (2), Tool use (1), Safety (1), and Research agents (1).",
+      "highlights": [
+        {
+          "id": "2607.20911",
+          "title": "Tencent WorkBuddy Bench: A Multi-Domain Coding-Agent Benchmark with Contamination-Resistant Task Construction",
+          "blurb": "We introduce Tencent WorkBuddy Bench, a multi-domain evaluation suite for coding agents; this report documents its construction methodology, scoring protocol, and a cross-model leaderboard."
+        },
+        {
+          "id": "2607.21824",
+          "title": "Protocol-Level Attacks on Agentic Commerce Platforms: A Cross-Platform Taxonomy, AIP-Bench, and Unified Defense",
+          "blurb": "Agentic commerce platforms let AI agents autonomously discover services, move payments, and wield user credentials on their users' behalf, and they already handle real money."
+        },
+        {
+          "id": "2607.21799",
+          "title": "Agentic Evaluation of Copyright Law Compliance",
+          "blurb": "Large language model (LLM) agents increasingly perform commercial tasks that involve retrieving external content, such as images, and, where appropriate, reproducing that content."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 6 篇 Agent Benchmark",
+      "summary": "2026年7月23日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在规划 / 推理（2）、工具使用（1）、安全（1）、科研智能体（1）。",
+      "highlights": [
+        {
+          "id": "2607.20911",
+          "title": "Tencent WorkBuddy Bench: A Multi-Domain Coding-Agent Benchmark with Contamination-Resistant Task Construction",
+          "blurb": "We introduce Tencent WorkBuddy Bench, a multi-domain evaluation suite for coding agents; this report documents its construction methodology, scoring protocol, and a cross-model leaderboard."
+        },
+        {
+          "id": "2607.21824",
+          "title": "Protocol-Level Attacks on Agentic Commerce Platforms: A Cross-Platform Taxonomy, AIP-Bench, and Unified Defense",
+          "blurb": "Agentic commerce platforms let AI agents autonomously discover services, move payments, and wield user credentials on their users' behalf, and they already handle real money."
+        },
+        {
+          "id": "2607.21799",
+          "title": "Agentic Evaluation of Copyright Law Compliance",
+          "blurb": "Large language model (LLM) agents increasingly perform commercial tasks that involve retrieving external content, such as images, and, where appropriate, reproducing that content."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2607.21824",
+      "title": "Protocol-Level Attacks on Agentic Commerce Platforms: A Cross-Platform Taxonomy, AIP-Bench, and Unified Defense",
+      "abstract": "Agentic commerce platforms let AI agents autonomously discover services, move payments, and wield user credentials on their users' behalf, and they already handle real money. Their security has so far been studied almost entirely at the level of the AI model, through prompt injection and misalignment. We show that the more consequential risks lie one layer down, in the protocol between agents and commerce services. There, vulnerabilities are structural : exploitation is deterministic and ndependent of which model an agent runs, so no model improvement removes them. Across three leading platforms we identify 33 such vulnerabilities, each succeeding deterministically regardless of the deployed model, at a 100% attack-success rate (ASR) wherever live-measured. The same failure modes recur across independently built codebases, a systemic pattern rather than isolated bugs. Three of them chain into an end-to-end payment hijack. We contribute a taxonomy separating these structural attacks from model-dependent semantic ones. We also build two artifacts: AIP-Bench (Agent Interaction Protocol Benchmark), to our knowledge the first deterministic benchmark for agentic commerce security, and PCAT (Protocol-level Commerce Agent Trust), a platform-agnostic defense that drives the structural attack-success rate to zero for four of the five structural classes (RC-1, RC-2, RC-4, RC-5), with RC-3 (observable credential channels) reduced to warn-only, without modifying any platform. Agentic commerce must be secured at the protocol layer, not only the model.",
+      "authors": [
+        "Yedidel Louck"
+      ],
+      "categories": [
+        "cs.CR"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-07-23T21:21:01Z",
+      "updated": "2026-07-23T21:21:01Z",
+      "announced_date": "2026-07-23",
+      "first_seen": "2026-07-23",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.21824v1",
+        "pdf": "https://arxiv.org/pdf/2607.21824v1",
+        "html": "https://arxiv.org/html/2607.21824"
+      },
+      "score": 18,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.21799",
+      "title": "Agentic Evaluation of Copyright Law Compliance",
+      "abstract": "Large language model (LLM) agents increasingly perform commercial tasks that involve retrieving external content, such as images, and, where appropriate, reproducing that content. LLM agents should comply with the law, including copyright law. Presently, however, we lack adequate frameworks to assess whether they do so in practice. To that end, we introduce Copyright-Bench, a benchmark designed to evaluate LLM agents' compliance with copyright law. Copyright-Bench comprises realistic commercial tasks---website development, merchandise design, and pitch deck production---that involve agents selecting between public-domain content, the use of which is legal, and copyrighted content, the use of which is infringing in this setting. The evaluation introduces prompt variations that simulate different user preferences, as well as time pressure. Comparing state-of-the-art LLM agents against a human baseline, we find that: (1) agents select copyrighted works despite the availability of public-domain alternatives; and (2) for open-weight models, violation rates increase in response to certain user preferences and simulated time pressure.",
+      "authors": [
+        "Zheng Hui",
+        "Doni Bloomfield",
+        "Noam Kolt"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CY"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-07-23T20:32:36Z",
+      "updated": "2026-07-27T09:56:47Z",
+      "announced_date": "2026-07-23",
+      "first_seen": "2026-07-23",
+      "comment": "ICML 2026 Spotlight",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.21799v2",
+        "pdf": "https://arxiv.org/pdf/2607.21799v2",
+        "html": "https://arxiv.org/html/2607.21799"
+      },
+      "score": 17,
+      "tags": [],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2607.21533",
+      "title": "Benchmarking Agents for Proving Theorems in Quantum Algorithms and Quantum Information",
+      "abstract": "Formal verification is becoming increasingly practical for quantum computing, yet the ability of AI agents to construct machine-checkable proofs in this domain remains unmeasured. We introduce Lean-QuantumAlg-Bench and Lean-QIT-Bench, two Lean 4 benchmarks containing 36 and 40 theorem-completion tasks for quantum algorithms and quantum information theory, respectively. Every task compiles in a fixed environment and is evaluated by deterministic proof checking and targeted semantic review, with difficulty weights assigned before model execution. We evaluate four models-GPT-5.5, Kimi K3, DeepSeek V4-Pro, and MiniMax M3-within a common theorem-proving framework under two settings: a task-only baseline and library-augmented deduction (LAD), which additionally provides access to a verified domain library. The highest difficulty-weighted scores are 60.4 out of 100 on the quantum-algorithm benchmark and 59.6 out of 100 on the quantum-information benchmark. LAD improves both score and completion rate in all eight model-benchmark comparisons, with gains of up to 15.9 points, providing evidence that verified libraries can strengthen domain-specific proof agents. The results reveal recurring weaknesses of agentic proving in areas such as quantum simulation, quantum learning, quantum information measures, and entanglement theory. Monetary and wall-clock costs per score point also vary substantially across models, highlighting important capability-efficiency trade-offs. We expect these benchmarks to establish a reproducible baseline for developing more capable and reliable proof agents, and to pave the way toward self-evolving AI scientists for advancing quantum information science.",
+      "authors": [
+        "Lei Zhang",
+        "Yusheng Zhao",
+        "Yimeng Cao",
+        "Ranyiliu Chen",
+        "Mingrui Jing",
+        "Jizhe Lai",
+        "Ziao Tang",
+        "Jingu Xie",
+        "Hongshun Yao",
+        "Xuanqiang Zhao",
+        "Guocheng Zhen",
+        "Chengkai Zhu",
+        "Xin Wang"
+      ],
+      "categories": [
+        "quant-ph"
+      ],
+      "primary_category": "quant-ph",
+      "published": "2026-07-23T17:19:21Z",
+      "updated": "2026-07-23T17:19:21Z",
+      "announced_date": "2026-07-23",
+      "first_seen": "2026-07-23",
+      "comment": "22 pages, including appendix; 4 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.21533v1",
+        "pdf": "https://arxiv.org/pdf/2607.21533v1",
+        "html": "https://arxiv.org/html/2607.21533"
+      },
+      "score": 11,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.20982",
+      "title": "GuardianAgentBench: Where Agents Fail and How to Guard Them",
+      "abstract": "As large language model agents increasingly operate autonomously with access to tools and external environments, ensuring their safe and reliable behavior becomes critical. We present GuardianAgentBench (GABench), a benchmark of 580 scenarios across six domains evaluated on three production-ready frameworks: LangChain, LlamaIndex, and Vectara. The benchmark incorporates rigorous multi-stage validation and five adversarial attack modes. Experiments with six state-of-the-art models reveal that even the strongest configuration achieves only 74.8% overall accuracy and expose two distinct failure regimes: stronger models under-call required tools, while weaker models mis-select and over-call tools. Performance degrades monotonically with both tool-set size and sequential turn depth, with long-horizon planning proving the steeper bottleneck. Our guardrail implementation consistently outperforms system-prompt-based defenses across all models, recovering 19.9% of failures at a false positive rate of just 0.5%. These results demonstrate that execution-time structural intervention improves safety without disrupting correct agent behavior.",
+      "authors": [
+        "Vishal Ishwar Naik",
+        "Chenyu Xu",
+        "Donna Dong",
+        "Hussein Hassan",
+        "Abhishek Pradhan",
+        "Ofer Mendelevitch",
+        "Tallat Shafat",
+        "Humayun Irshad"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-23T07:05:05Z",
+      "updated": "2026-07-23T07:05:05Z",
+      "announced_date": "2026-07-23",
+      "first_seen": "2026-07-23",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.20982v1",
+        "pdf": "https://arxiv.org/pdf/2607.20982v1",
+        "html": "https://arxiv.org/html/2607.20982"
+      },
+      "score": 9,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.20926",
+      "title": "SciExplore: Evaluating Autonomous Agents from Scientific Navigation to Information Integration",
+      "abstract": "Scientific research involves complex information-seeking and reasoning workflows across heterogeneous sources. However, existing benchmarks primarily emphasize general-domain retrieval or static scientific question answering, and therefore fail to assess key capabilities required in realistic scientific research workflows. We introduce SciExplore, a benchmark designed to evaluate scientific information-seeking and reasoning capabilities of LLMs and agents. SciExplore comprises four task types covering 103 expert-curated tasks across more than ten scientific disciplines: scientific database navigation, ambiguous literature retrieval, missing reference completion, and cross-source structured knowledge synthesis, which probe progressively higher-level abilities from entity-level reasoning and document-level identification to evidence-level grounding and domain-level synthesis. We evaluate over ten state-of-the-art LLMs and autonomous agents on SciExplore, revealing substantial performance gaps with performance degrading sharply as task complexity increases and extremely low accuracy on the most challenging structured synthesis tasks. These results highlight significant limitations of current models and agents in realistic scientific information-seeking scenarios.",
+      "authors": [
+        "Yinhao Tang",
+        "Youqing Fang",
+        "Yanan Sun",
+        "Wenran Liu",
+        "Weiming Zhang",
+        "Bin Liu",
+        "Kuikun Liu",
+        "Wenwei Zhang",
+        "Kai Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-23T05:17:00Z",
+      "updated": "2026-07-23T05:17:00Z",
+      "announced_date": "2026-07-23",
+      "first_seen": "2026-07-23",
+      "comment": "25 pages, 13 figures. Submitted to ACL 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.20926v1",
+        "pdf": "https://arxiv.org/pdf/2607.20926v1",
+        "html": "https://arxiv.org/html/2607.20926"
+      },
+      "score": 12,
+      "tags": [
+        "planning",
+        "research",
+        "science"
+      ],
+      "field": "science",
+      "citations": 1
+    },
+    {
+      "id": "2607.20911",
+      "title": "Tencent WorkBuddy Bench: A Multi-Domain Coding-Agent Benchmark with Contamination-Resistant Task Construction",
+      "abstract": "We introduce Tencent WorkBuddy Bench, a multi-domain evaluation suite for coding agents; this report documents its construction methodology, scoring protocol, and a cross-model leaderboard. At its core is a unified evaluation framework for constructing and running distribution-informed coding-agent tasks across four work domains - Code, Web, Office, and Security. Rather than adapting public issue text, every task is reverse-engineered from a real commit, pull request, or business scenario and rewritten as a short, colloquial, role-played request, so that a task's prompt is not recoverable by web-searching the underlying issue, pull request, or commit thread. Because the dataset is released openly - task directories, environment images, evaluation harness, tests, and reference solutions - contamination resistance rests on this construction together with dataset versioning rather than on secrecy. The four subsets - repository-level engineering, front-end development, office and business workflows, and red-/blue-team security - probe complementary facets of real work, each with its own verification style. All are packaged in a uniform task-directory format and run, under a uniform and reproducible protocol, on two agent harnesses (CodeBuddy Code and Claude Code); the full open release makes the benchmark reproducible end to end and directly auditable, since any third party can re-run each task and inspect its content. Because each subset uses a different scoring instrument, scores are not comparable across subsets and the suite reports no suite-wide average. We report a cross-model leaderboard across several model families.",
+      "authors": [
+        "Tencent WorkBuddy Bench Team",
+        "Siqi Cai",
+        "Shaopeng Chen",
+        "Xiang Fei",
+        "Yong Mao",
+        "Zihan Xu",
+        "Zhiheng Lyu",
+        "Zhijian Shao",
+        "Yuchen Shi",
+        "Shuwen Zhang",
+        "Chaofan Qiu",
+        "Linjie Che",
+        "Xiaoxi Zhao",
+        "Feng Wu",
+        "Kai Zhang",
+        "Chaofan Zhu",
+        "Yubin Qi",
+        "Xiaoyun Liang",
+        "Peijie Dong",
+        "Yunhao Zhang",
+        "Yuanjie Zhu",
+        "Ling Jiang",
+        "Xianjun Zhang",
+        "Zhehang Chu",
+        "Anyuan Sang",
+        "Zhen Feng",
+        "Sen Nie",
+        "Shi Wu",
+        "Yuanzhen Xu",
+        "Xin Li",
+        "Ning Yang",
+        "Zhiqiang Dong",
+        "Hande Dong",
+        "Qiang Lin",
+        "Yi Liu",
+        "Yunsheng Wu",
+        "Ke Li",
+        "Xing Sun"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-07-23T04:34:06Z",
+      "updated": "2026-07-23T04:34:06Z",
+      "announced_date": "2026-07-23",
+      "first_seen": "2026-07-23",
+      "comment": "30 pages, 9 figures. Project page: https://workbuddybench.com/ ; code: https://github.com/Tencent/workbuddy-bench ; dataset: https://huggingface.co/datasets/tencent/workbuddy-bench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.20911v1",
+        "pdf": "https://arxiv.org/pdf/2607.20911v1",
+        "html": "https://arxiv.org/html/2607.20911"
+      },
+      "score": 19,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    }
+  ]
+}

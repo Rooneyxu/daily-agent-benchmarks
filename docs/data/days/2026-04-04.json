@@ -1,0 +1,77 @@
+{
+  "date": "2026-04-04",
+  "count": 1,
+  "report": {
+    "date": "2026-04-04",
+    "count": 1,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      }
+    ],
+    "en": {
+      "headline": "1 new agent benchmark",
+      "summary": "On April 4, 2026, arXiv listed 1 new agent benchmark: Squeez: Task-Conditioned Tool-Output Pruning for Coding Agents.",
+      "highlights": [
+        {
+          "id": "2604.04979",
+          "title": "Squeez: Task-Conditioned Tool-Output Pruning for Coding Agents",
+          "blurb": "Coding agents repeatedly consume long tool observations even though only a small fraction of each observation matters for the next step."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 1 篇 Agent Benchmark",
+      "summary": "2026年4月4日，arXiv 新增 1 篇 Agent Benchmark：Squeez: Task-Conditioned Tool-Output Pruning for Coding Agents。",
+      "highlights": [
+        {
+          "id": "2604.04979",
+          "title": "Squeez: Task-Conditioned Tool-Output Pruning for Coding Agents",
+          "blurb": "Coding agents repeatedly consume long tool observations even though only a small fraction of each observation matters for the next step."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.04979",
+      "title": "Squeez: Task-Conditioned Tool-Output Pruning for Coding Agents",
+      "abstract": "Coding agents repeatedly consume long tool observations even though only a small fraction of each observation matters for the next step. We study task-conditioned tool-output pruning: given a focused query and one tool output, return the smallest verbatim evidence block the agent should inspect next. We introduce a benchmark of 11,477 examples built from SWE-bench repository interactions and synthetic multi-ecosystem tool outputs, with a manually curated 618-example test set. We fine-tune Qwen 3.5 2B with LoRA and compare it against larger zero-shot models and heuristic pruning baselines. Our model reaches 0.86 recall and 0.80 F1 while removing 92% of input tokens, outperforming zero-shot Qwen 3.5 35B A3B by 11 recall points and all heuristic baselines by a wide margin.",
+      "authors": [
+        "Ádám Kovács"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-04-04T18:52:44Z",
+      "updated": "2026-04-04T18:52:44Z",
+      "announced_date": "2026-04-04",
+      "first_seen": "2026-04-04",
+      "comment": "7 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.04979v1",
+        "pdf": "https://arxiv.org/pdf/2604.04979v1",
+        "html": "https://arxiv.org/html/2604.04979"
+      },
+      "score": 10,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 2
+    }
+  ]
+}

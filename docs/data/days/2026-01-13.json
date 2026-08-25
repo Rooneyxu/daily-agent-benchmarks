@@ -1,0 +1,412 @@
+{
+  "date": "2026-01-13",
+  "count": 9,
+  "report": {
+    "date": "2026-01-13",
+    "count": 9,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 3,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "workplace",
+        "count": 1,
+        "en": "Work / office",
+        "zh": "职场 / 办公"
+      }
+    ],
+    "en": {
+      "headline": "9 new agent benchmarks",
+      "summary": "On January 13, 2026, arXiv listed 9 new agent benchmarks. Work clustered around Planning / reasoning (3), Safety (3), Tool use (2), and Multi-agent (1).",
+      "highlights": [
+        {
+          "id": "2601.19935",
+          "title": "Mem2ActBench: A Benchmark for Evaluating Long-Term Memory Utilization in Task-Oriented Autonomous Agents",
+          "blurb": "Large Language Model (LLM)-based agents are increasingly deployed for complex, tool-based tasks where long-term memory is critical to driving actions."
+        },
+        {
+          "id": "2601.08235",
+          "title": "MPCI-Bench: A Benchmark for Multimodal Pairwise Contextual Integrity Evaluation of Language Model Agents",
+          "blurb": "As language-model agents evolve from passive chatbots into proactive assistants that handle personal data, evaluating their adherence to social norms becomes increasingly critical, often through the lens of Contextual In…"
+        },
+        {
+          "id": "2601.08462",
+          "title": "M3-BENCH: Process-Aware Evaluation of LLM Agents' Social Behaviors in Mixed-Motive Games",
+          "blurb": "Existing benchmarks for LLM agents' social behavior typically focus on a single capability dimension and evaluate only behavioral outcomes, overlooking process signals from reasoning and communication."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 9 篇 Agent Benchmark",
+      "summary": "2026年1月13日，arXiv 新增 9 篇 Agent Benchmark。当日主题集中在规划 / 推理（3）、安全（3）、工具使用（2）、多智能体（1）。",
+      "highlights": [
+        {
+          "id": "2601.19935",
+          "title": "Mem2ActBench: A Benchmark for Evaluating Long-Term Memory Utilization in Task-Oriented Autonomous Agents",
+          "blurb": "Large Language Model (LLM)-based agents are increasingly deployed for complex, tool-based tasks where long-term memory is critical to driving actions."
+        },
+        {
+          "id": "2601.08235",
+          "title": "MPCI-Bench: A Benchmark for Multimodal Pairwise Contextual Integrity Evaluation of Language Model Agents",
+          "blurb": "As language-model agents evolve from passive chatbots into proactive assistants that handle personal data, evaluating their adherence to social norms becomes increasingly critical, often through the lens of Contextual In…"
+        },
+        {
+          "id": "2601.08462",
+          "title": "M3-BENCH: Process-Aware Evaluation of LLM Agents' Social Behaviors in Mixed-Motive Games",
+          "blurb": "Existing benchmarks for LLM agents' social behavior typically focus on a single capability dimension and evaluate only behavioral outcomes, overlooking process signals from reasoning and communication."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2601.08988",
+      "title": "ART: Action-based Reasoning Task Benchmarking for Medical AI Agents",
+      "abstract": "Reliable clinical decision support requires medical AI agents capable of safe, multi-step reasoning over structured electronic health records (EHRs). While large language models (LLMs) show promise in healthcare, existing benchmarks inadequately assess performance on action-based tasks involving threshold evaluation, temporal aggregation, and conditional logic. We introduce ART, an Action-based Reasoning clinical Task benchmark for medical AI agents, which mines real-world EHR data to create challenging tasks targeting known reasoning weaknesses. Through analysis of existing benchmarks, we identify three dominant error categories: retrieval failures, aggregation errors, and conditional logic misjudgments. Our four-stage pipeline -- scenario identification, task generation, quality audit, and evaluation -- produces diverse, clinically validated tasks grounded in real patient data. Evaluating GPT-4o-mini and Claude 3.5 Sonnet on 600 tasks shows near-perfect retrieval after prompt refinement, but substantial gaps in aggregation (28--64%) and threshold reasoning (32--38%). By exposing failure modes in action-oriented EHR reasoning, ART advances toward more reliable clinical agents, an essential step for AI systems that reduce cognitive load and administrative burden, supporting workforce capacity in high-demand care settings",
+      "authors": [
+        "Ananya Mantravadi",
+        "Shivali Dalmia",
+        "Abhishek Mukherji"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-01-13T21:26:11Z",
+      "updated": "2026-01-13T21:26:11Z",
+      "announced_date": "2026-01-13",
+      "first_seen": "2026-01-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.08988v1",
+        "pdf": "https://arxiv.org/pdf/2601.08988v1",
+        "html": "https://arxiv.org/html/2601.08988"
+      },
+      "score": 15,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2601.08676",
+      "title": "Advancing ESG Intelligence: An Expert-level Agent and Comprehensive Benchmark for Sustainable Finance",
+      "abstract": "Environmental, social, and governance (ESG) criteria are essential for evaluating corporate sustainability and ethical performance. However, professional ESG analysis is hindered by data fragmentation across unstructured sources, and existing large language models (LLMs) often struggle with the complex, multi-step workflows required for rigorous auditing. To address these limitations, we introduce ESGAgent, a hierarchical multi-agent system empowered by a specialized toolset, including retrieval augmentation, web search and domain-specific functions, to generate in-depth ESG analysis. Complementing this agentic system, we present a comprehensive three-level benchmark derived from 310 corporate sustainability reports, designed to evaluate capabilities ranging from atomic common-sense questions to the generation of integrated, in-depth analysis. Empirical evaluations demonstrate that ESGAgent outperforms state-of-the-art closed-source LLMs with an average accuracy of 84.15% on atomic question-answering tasks, and excels in professional report generation by integrating rich charts and verifiable references. These findings confirm the diagnostic value of our benchmark, establishing it as a vital testbed for assessing general and advanced agentic capabilities in high-stakes vertical domains.",
+      "authors": [
+        "Yilei Zhao",
+        "Wentao Zhang",
+        "Lei Xiao",
+        "Yandan Zheng",
+        "Mengpu Liu",
+        "Wei Yang Bryan Lim"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-01-13T15:58:29Z",
+      "updated": "2026-01-14T06:29:01Z",
+      "announced_date": "2026-01-13",
+      "first_seen": "2026-01-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.08676v2",
+        "pdf": "https://arxiv.org/pdf/2601.08676v2",
+        "html": "https://arxiv.org/html/2601.08676"
+      },
+      "score": 14,
+      "tags": [
+        "multi-agent"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2601.08536",
+      "title": "DeepResearch Bench II: Diagnosing Deep Research Agents via Rubrics from Expert Report",
+      "abstract": "Deep Research Systems (DRS) aim to help users search the web, synthesize information, and deliver comprehensive investigative reports. However, how to rigorously evaluate these systems remains under-explored. Existing deep-research benchmarks often fall into two failure modes. Some do not adequately test a system's ability to analyze evidence and write coherent reports. Others rely on evaluation criteria that are either overly coarse or directly defined by LLMs (or both), leading to scores that can be biased relative to human experts and are hard to verify or interpret. To address these issues, we introduce Deep Research Bench II, a new benchmark for evaluating DRS-generated reports. It contains 132 grounded research tasks across 22 domains; for each task, a system must produce a long-form research report that is evaluated by a set of 9430 fine-grained binary rubrics in total, covering three dimensions: information recall, analysis, and presentation. All rubrics are derived from carefully selected expert-written investigative articles and are constructed through a four-stage LLM+human pipeline that combines automatic extraction with over 400 human-hours of expert review, ensuring that the criteria are atomic, verifiable, and aligned with human expert judgment. We evaluate several state-of-the-art deep-research systems on Deep Research Bench II and find that even the strongest models satisfy fewer than 50% of the rubrics, revealing a substantial gap between current DRSs and human experts.",
+      "authors": [
+        "Ruizhe Li",
+        "Mingxuan Du",
+        "Benfeng Xu",
+        "Chiwei Zhu",
+        "Xiaorui Wang",
+        "Zhendong Mao"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-01-13T13:18:39Z",
+      "updated": "2026-01-30T14:15:10Z",
+      "announced_date": "2026-01-13",
+      "first_seen": "2026-01-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.08536v2",
+        "pdf": "https://arxiv.org/pdf/2601.08536v2",
+        "html": "https://arxiv.org/html/2601.08536"
+      },
+      "score": 15,
+      "tags": [
+        "research"
+      ],
+      "field": "science",
+      "citations": 23
+    },
+    {
+      "id": "2601.08462",
+      "title": "M3-BENCH: Process-Aware Evaluation of LLM Agents' Social Behaviors in Mixed-Motive Games",
+      "abstract": "Existing benchmarks for LLM agents' social behavior typically focus on a single capability dimension and evaluate only behavioral outcomes, overlooking process signals from reasoning and communication. We present M3-BENCH, a benchmark of 24 mixed-motive games with a process-aware evaluation framework spanning three complementary views: Behavioral Trajectory Analysis (BTA), Reasoning Process Analysis (RPA), and Communication Content Analysis (CCA). Evaluating 11 frontier LLMs and a human baseline, M3-BENCH reveals substantial differences in social competence that outcome-only evaluation misses. In particular, we identify an \"overthink-undercommunicate\" pattern: reasoning models achieve strong internal deliberation scores but often fail to translate them into effective social communication. Although top models can surpass humans on task outcomes, humans exhibit markedly higher cross-view consistency, suggesting that current LLM agents still lack the behavioral coherence characteristic of human social competence. Our analysis further shows that the three-view decomposition surfaces safety-relevant risks, such as cooperative behavior paired with latent opportunistic reasoning, that remain hidden under outcome-only metrics.",
+      "authors": [
+        "Sixiong Xie",
+        "Zhuofan Shi",
+        "Haiyang Shen",
+        "Yun Ma",
+        "Xiang Jing"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-01-13T11:38:51Z",
+      "updated": "2026-04-02T06:16:11Z",
+      "announced_date": "2026-01-13",
+      "first_seen": "2026-01-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.08462v2",
+        "pdf": "https://arxiv.org/pdf/2601.08462v2",
+        "html": "https://arxiv.org/html/2601.08462"
+      },
+      "score": 19,
+      "tags": [
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 8
+    },
+    {
+      "id": "2601.19935",
+      "title": "Mem2ActBench: A Benchmark for Evaluating Long-Term Memory Utilization in Task-Oriented Autonomous Agents",
+      "abstract": "Large Language Model (LLM)-based agents are increasingly deployed for complex, tool-based tasks where long-term memory is critical to driving actions. Existing benchmarks, however, primarily test a angent's ability to passively retrieve isolated facts in response to explicit questions. They fail to evaluate the more crucial capability of actively applying memory to execute tasks. To address this gap, we introduce \\textsc{Mem2ActBench}, a benchmark for evaluating whether agents can proactively leverage long-term memory to execute tool-based actions by selecting appropriate tools and grounding their parameters. The benchmark simulates persistent assistant usage, where users mention the same topic across long, interrupted interactions and expect previously established preferences and task states to be implicitly applied. We build the dataset with an automated pipeline that merges heterogeneous sources (ToolACE, BFCL, Oasst1), resolves conflicts via consistency modeling, and synthesizes 2,029 sessions with 12 user--assistant--tool turns on average. From these memory chains, a reverse-generation method produces 400 tool-use tasks, with human evaluation confirming 91.3\\% are strongly memory-dependent. Experiments on seven memory frameworks show that current systems remain inadequate at actively utilizing memory for parameter grounding, highlighting the need for more effective approaches to evaluate and improve memory application in task execution.",
+      "authors": [
+        "Yiting Shen",
+        "Kun Li",
+        "Wei Zhou",
+        "Songlin Hu"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-01-13T06:22:32Z",
+      "updated": "2026-01-13T06:22:32Z",
+      "announced_date": "2026-01-13",
+      "first_seen": "2026-01-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.19935v1",
+        "pdf": "https://arxiv.org/pdf/2601.19935v1",
+        "html": "https://arxiv.org/html/2601.19935"
+      },
+      "score": 30,
+      "tags": [
+        "tool-use",
+        "memory"
+      ],
+      "field": "other",
+      "citations": 25
+    },
+    {
+      "id": "2601.08235",
+      "title": "MPCI-Bench: A Benchmark for Multimodal Pairwise Contextual Integrity Evaluation of Language Model Agents",
+      "abstract": "As language-model agents evolve from passive chatbots into proactive assistants that handle personal data, evaluating their adherence to social norms becomes increasingly critical, often through the lens of Contextual Integrity (CI). However, existing CI benchmarks are largely text-centric and primarily emphasize negative refusal scenarios, overlooking multimodal privacy risks and the fundamental trade-off between privacy and utility. In this paper, we introduce MPCI-Bench, the first Multimodal Pairwise Contextual Integrity benchmark for evaluating privacy behavior in agentic settings. MPCI-Bench consists of paired positive and negative instances derived from the same visual source and instantiated across three tiers: normative Seed judgments, context-rich Story reasoning, and executable agent action Traces. Data quality is ensured through a Tri-Principle Iterative Refinement pipeline. Evaluations of state-of-the-art multimodal models reveal systematic failures to balance privacy and utility and a pronounced modality leakage gap, where sensitive visual information is leaked more frequently than textual information. We will open-source MPCI-Bench to facilitate future research on agentic CI.",
+      "authors": [
+        "Shouju Wang",
+        "Haopeng Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-01-13T05:39:43Z",
+      "updated": "2026-01-26T06:30:36Z",
+      "announced_date": "2026-01-13",
+      "first_seen": "2026-01-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.08235v3",
+        "pdf": "https://arxiv.org/pdf/2601.08235v3",
+        "html": "https://arxiv.org/html/2601.08235"
+      },
+      "score": 24,
+      "tags": [
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 2
+    },
+    {
+      "id": "2601.08196",
+      "title": "Evaluating Implicit Regulatory Compliance in LLM Tool Invocation via Logic-Guided Synthesis",
+      "abstract": "The integration of large language models (LLMs) into autonomous agents has enabled complex tool use, yet in high-stakes domains, these systems must strictly adhere to regulatory standards beyond simple functional correctness. However, existing benchmarks often overlook implicit regulatory compliance, thus failing to evaluate whether LLMs can autonomously enforce mandatory safety constraints. To fill this gap, we introduce LogiSafetyGen, a framework that converts unstructured regulations into Linear Temporal Logic oracles and employs logic-guided fuzzing to synthesize valid, safety-critical traces. Building on this framework, we construct LogiSafetyBench, a benchmark comprising 240 human-verified tasks that require LLMs to generate Python programs that satisfy both functional objectives and latent compliance rules. Evaluations of 13 state-of-the-art (SOTA) LLMs reveal that larger models, despite achieving better functional correctness, frequently prioritize task completion over safety, which results in non-compliant behavior.",
+      "authors": [
+        "Da Song",
+        "Yuheng Huang",
+        "Boqi Chen",
+        "Tianshuo Cong",
+        "Randy Goebel",
+        "Lei Ma",
+        "Foutse Khomh"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CR",
+        "cs.LO",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-01-13T03:55:18Z",
+      "updated": "2026-01-13T03:55:18Z",
+      "announced_date": "2026-01-13",
+      "first_seen": "2026-01-13",
+      "comment": "11 pages, 3 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.08196v1",
+        "pdf": "https://arxiv.org/pdf/2601.08196v1",
+        "html": "https://arxiv.org/html/2601.08196"
+      },
+      "score": 10,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2601.08173",
+      "title": "The Agent's First Day: Benchmarking Learning, Exploration, and Scheduling in the Workplace Scenarios",
+      "abstract": "The rapid evolution of Multi-modal Large Language Models (MLLMs) has advanced workflow automation; however, existing research mainly targets performance upper bounds in static environments, overlooking robustness for stochastic real-world deployment. We identify three key challenges: dynamic task scheduling, active exploration under uncertainty, and continuous learning from experience. To bridge this gap, we introduce \\method{}, a dynamic evaluation environment that simulates a \"trainee\" agent continuously exploring a novel setting. Unlike traditional benchmarks, \\method{} evaluates agents along three dimensions: (1) context-aware scheduling for streaming tasks with varying priorities; (2) prudent information acquisition to reduce hallucination via active exploration; and (3) continuous evolution by distilling generalized strategies from rule-based, dynamically generated tasks. Experiments show that cutting-edge agents have significant deficiencies in dynamic environments, especially in active exploration and continual learning. Our work establishes a framework for assessing agent reliability, shifting evaluation from static tests to realistic, production-oriented scenarios. Our codes are available at https://github.com/KnowledgeXLab/EvoEnv",
+      "authors": [
+        "Daocheng Fu",
+        "Jianbiao Mei",
+        "Rong Wu",
+        "Xuemeng Yang",
+        "Jia Xu",
+        "Ding Wang",
+        "Pinlong Cai",
+        "Yong Liu",
+        "Licheng Wen",
+        "Botian Shi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-01-13T03:09:18Z",
+      "updated": "2026-06-02T11:13:10Z",
+      "announced_date": "2026-01-13",
+      "first_seen": "2026-01-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.08173v2",
+        "pdf": "https://arxiv.org/pdf/2601.08173v2",
+        "html": "https://arxiv.org/html/2601.08173"
+      },
+      "score": 8,
+      "tags": [
+        "safety",
+        "workplace"
+      ],
+      "field": "workplace",
+      "citations": 1
+    },
+    {
+      "id": "2601.08118",
+      "title": "MirrorBench: A Benchmark to Evaluate Conversational User-Proxy Agents for Human-Likeness",
+      "abstract": "Large language models (LLMs) are increasingly used as human simulators, both for evaluating conversational systems and for generating fine-tuning data. However, naive \"act-as-a-user\" prompting often yields verbose, unrealistic utterances, motivating principled evaluation of *user proxy agents*. We present **MirrorBench**, a reproducible and extensible benchmarking framework that evaluates user proxies solely on their ability to produce human-like user utterances across diverse conversational regimes, explicitly decoupled from downstream task success. **MirrorBench** combines three lexical-diversity metrics (**MATTR**, **Yule's~$K$**, and **HD-D**) with three LLM-judge-based metrics (**GTEval**, **Pairwise Indistinguishability**, and **Rubric-and-Reason**), and contextualizes judge scores using Human-Human and Proxy-Proxy calibration controls. Across four public datasets, **MirrorBench** yields variance-aware comparisons and reveals systematic gaps between user proxies and real human users. The framework is open sourced at https://github.com/SAP/mirrorbench and includes a command-line interface for running and managing user-proxy benchmarking experiments.",
+      "authors": [
+        "Ashutosh Hathidara",
+        "Julien Yu",
+        "Vaishali Senthil",
+        "Sebastian Schreiber",
+        "Anil Babu Ankisettipalli"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-01-13T01:16:13Z",
+      "updated": "2026-05-17T19:02:46Z",
+      "announced_date": "2026-01-13",
+      "first_seen": "2026-01-13",
+      "comment": "KDD 2026 (Dataset & Benchmark Track)",
+      "doi": "10.1145/3770855",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.08118v3",
+        "pdf": "https://arxiv.org/pdf/2601.08118v3",
+        "html": "https://arxiv.org/html/2601.08118"
+      },
+      "score": 15,
+      "tags": [],
+      "field": "other",
+      "citations": 5
+    }
+  ]
+}

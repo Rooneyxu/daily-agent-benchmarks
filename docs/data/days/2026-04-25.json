@@ -1,0 +1,90 @@
+{
+  "date": "2026-04-25",
+  "count": 1,
+  "report": {
+    "date": "2026-04-25",
+    "count": 1,
+    "themes": [
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      }
+    ],
+    "en": {
+      "headline": "1 new agent benchmark",
+      "summary": "On April 25, 2026, arXiv listed 1 new agent benchmark: CUJBench: Benchmarking LLM-Agent on Cross-Modal Failure Diagnosis from Browser to Backend.",
+      "highlights": [
+        {
+          "id": "2604.23455",
+          "title": "CUJBench: Benchmarking LLM-Agent on Cross-Modal Failure Diagnosis from Browser to Backend",
+          "blurb": "Automated failure diagnosis requires correlating browser-visible symptoms with backend observability signals, yet existing benchmarks do not evaluate this cross-modal reasoning task."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 1 篇 Agent Benchmark",
+      "summary": "2026年4月25日，arXiv 新增 1 篇 Agent Benchmark：CUJBench: Benchmarking LLM-Agent on Cross-Modal Failure Diagnosis from Browser to Backend。",
+      "highlights": [
+        {
+          "id": "2604.23455",
+          "title": "CUJBench: Benchmarking LLM-Agent on Cross-Modal Failure Diagnosis from Browser to Backend",
+          "blurb": "Automated failure diagnosis requires correlating browser-visible symptoms with backend observability signals, yet existing benchmarks do not evaluate this cross-modal reasoning task."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.23455",
+      "title": "CUJBench: Benchmarking LLM-Agent on Cross-Modal Failure Diagnosis from Browser to Backend",
+      "abstract": "Automated failure diagnosis requires correlating browser-visible symptoms with backend observability signals, yet existing benchmarks do not evaluate this cross-modal reasoning task. Constructing one is non-trivial: multi-modal failure scenarios are costly to annotate, and live-environment capture introduces stochasticity that makes cross-run agent comparison unreliable. We present CUJBench, to our knowledge, the first benchmark to combine browser-visible failure evidence with backend observability in a diagnostic framing. CUJBench addresses annotation cost through an LLM-assisted generation pipeline with a multi-agent review loop and a three-layer annotation scheme, producing 87 labeled scenarios across five fault families, and ensures reproducibility by packaging each failure as a deterministic multi-modal snapshot with a fixed tool interface. Evaluating six frontier models under retrieval, browser-only, and full-toolset baselines, the benchmark yields an overall accuracy of 19.7% with a ceiling of 52%, well below saturation. Contrary to expectation, browser-only agents outperform full-toolset agents in aggregate, with expanded evidence access inducing unfocused exploration rather than improved synthesis. Trajectory analysis identifies cross-modal synthesis as the primary bottleneck: agents retrieve the decisive evidence but fail to attribute it correctly - a structural limitation uniform across all six models that model scale and richer tool access alone cannot resolve.",
+      "authors": [
+        "Haoming Meng"
+      ],
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-04-25T22:10:53Z",
+      "updated": "2026-05-01T07:18:53Z",
+      "announced_date": "2026-04-25",
+      "first_seen": "2026-04-25",
+      "comment": "10 pages, 1 figure; updated source code url",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.23455v2",
+        "pdf": "https://arxiv.org/pdf/2604.23455v2",
+        "html": "https://arxiv.org/html/2604.23455"
+      },
+      "score": 18,
+      "tags": [
+        "web",
+        "tool-use",
+        "multi-agent",
+        "planning"
+      ],
+      "field": "web",
+      "citations": 0
+    }
+  ]
+}

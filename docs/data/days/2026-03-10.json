@@ -1,0 +1,249 @@
+{
+  "date": "2026-03-10",
+  "count": 4,
+  "report": {
+    "date": "2026-03-10",
+    "count": 4,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On March 10, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Planning / reasoning (3), Multi-agent (2), Coding agents (1), and Tool use (1).",
+      "highlights": [
+        {
+          "id": "2603.09827",
+          "title": "MA-EgoQA: Question Answering over Egocentric Videos from Multiple Embodied Agents",
+          "blurb": "As embodied models become powerful, humans will collaborate with multiple embodied AI agents at their workplace or home in the future."
+        },
+        {
+          "id": "2603.09157",
+          "title": "Real-Time Trust Verification for Safe Agentic Actions using TrustBench",
+          "blurb": "As large language models evolve from conversational assistants to autonomous agents, ensuring trustworthiness requires a fundamental shift from post-hoc evaluation to real-time action verification."
+        },
+        {
+          "id": "2603.11078",
+          "title": "CR-Bench: Evaluating the Real-World Utility of AI Code Review Agents",
+          "blurb": "Recent advances in frontier large language models have enabled code review agents that operate in open-ended, reasoning-intensive settings."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年3月10日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在规划 / 推理（3）、多智能体（2）、代码智能体（1）、工具使用（1）。",
+      "highlights": [
+        {
+          "id": "2603.09827",
+          "title": "MA-EgoQA: Question Answering over Egocentric Videos from Multiple Embodied Agents",
+          "blurb": "As embodied models become powerful, humans will collaborate with multiple embodied AI agents at their workplace or home in the future."
+        },
+        {
+          "id": "2603.09157",
+          "title": "Real-Time Trust Verification for Safe Agentic Actions using TrustBench",
+          "blurb": "As large language models evolve from conversational assistants to autonomous agents, ensuring trustworthiness requires a fundamental shift from post-hoc evaluation to real-time action verification."
+        },
+        {
+          "id": "2603.11078",
+          "title": "CR-Bench: Evaluating the Real-World Utility of AI Code Review Agents",
+          "blurb": "Recent advances in frontier large language models have enabled code review agents that operate in open-ended, reasoning-intensive settings."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2603.11078",
+      "title": "CR-Bench: Evaluating the Real-World Utility of AI Code Review Agents",
+      "abstract": "Recent advances in frontier large language models have enabled code review agents that operate in open-ended, reasoning-intensive settings. However, the lack of standardized benchmarks and granular evaluation protocols makes it difficult to assess behavior of code review agents beyond coarse success metrics, particularly for tasks where false positives are costly. To address this gap, we introduce CR-Bench, a benchmarking dataset, and CR-Evaluator, a fine-grained evaluation pipeline for code review agents. Using these tools, we conduct a preliminary study evaluating both a single-shot agent and a Reflexion-based agent across two frontier models. We find that code review agents can exhibit a low signal-to-noise ratio when designed to identify all hidden issues, obscuring true progress and developer productivity when measured solely by resolution rates. Our analysis identifies the hidden trade-off between issue resolution and spurious findings, revealing a frontier that constrains effective agent design. Together, CR-Bench and CR-Evaluator provide a timely foundation for studying and developing code review agents as LLM-based systems transition from controlled benchmarks to real-world software engineering workflows.",
+      "authors": [
+        "Kristen Pereira",
+        "Neelabh Sinha",
+        "Rajat Ghosh",
+        "Debojyoti Dutta"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-03-10T21:29:42Z",
+      "updated": "2026-03-10T21:29:42Z",
+      "announced_date": "2026-03-10",
+      "first_seen": "2026-03-10",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.11078v1",
+        "pdf": "https://arxiv.org/pdf/2603.11078v1",
+        "html": "https://arxiv.org/html/2603.11078"
+      },
+      "score": 13,
+      "tags": [
+        "coding",
+        "tool-use",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 7
+    },
+    {
+      "id": "2603.09909",
+      "title": "MedMASLab: A Unified Orchestration Framework for Benchmarking Multimodal Medical Multi-Agent Systems",
+      "abstract": "While Multi-Agent Systems (MAS) show potential for complex clinical decision support, the field remains hindered by architectural fragmentation and the lack of standardized multimodal integration. Current medical MAS research suffers from non-uniform data ingestion pipelines, inconsistent visual-reasoning evaluation, and a lack of cross-specialty benchmarking. To address these challenges, we present MedMASLab, a unified framework and benchmarking platform for multimodal medical multi-agent systems. MedMASLab introduces: (1) A standardized multimodal agent communication protocol that enables seamless integration of 11 heterogeneous MAS architectures across 24 medical modalities. (2) An automated clinical reasoning evaluator, a zero-shot semantic evaluation paradigm that overcomes the limitations of lexical string-matching by leveraging large vision-language models to verify diagnostic logic and visual grounding. (3) The most extensive benchmark to date, spanning 11 organ systems and 473 diseases, standardizing data from 11 clinical benchmarks. Our systematic evaluation reveals a critical domain-specific performance gap: while MAS improves reasoning depth, current architectures exhibit significant fragility when transitioning between specialized medical sub-domains. We provide a rigorous ablation of interaction mechanisms and cost-performance trade-offs, establishing a new technical baseline for future autonomous clinical systems. The source code and data is publicly available at: https://github.com/NUS-Project/MedMASLab/",
+      "authors": [
+        "Yunhang Qian",
+        "Xiaobin Hu",
+        "Jiaquan Yu",
+        "Siyang Xin",
+        "Xiaokun Chen",
+        "Jiangning Zhang",
+        "Peng-Tao Jiang",
+        "Jiawei Liu",
+        "Hongwei Bran Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-10T17:03:11Z",
+      "updated": "2026-03-18T19:17:16Z",
+      "announced_date": "2026-03-10",
+      "first_seen": "2026-03-10",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.09909v2",
+        "pdf": "https://arxiv.org/pdf/2603.09909v2",
+        "html": "https://arxiv.org/html/2603.09909"
+      },
+      "score": 13,
+      "tags": [
+        "gui",
+        "multi-agent",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multi-agent",
+      "citations": 4
+    },
+    {
+      "id": "2603.09827",
+      "title": "MA-EgoQA: Question Answering over Egocentric Videos from Multiple Embodied Agents",
+      "abstract": "As embodied models become powerful, humans will collaborate with multiple embodied AI agents at their workplace or home in the future. To ensure better communication between human users and the multi-agent system, it is crucial to interpret incoming information from agents in parallel and refer to the appropriate context for each query. Existing challenges include effectively compressing and communicating high volumes of individual sensory inputs in the form of video and correctly aggregating multiple egocentric videos to construct system-level memory. In this work, we first formally define a novel problem of understanding multiple long-horizon egocentric videos simultaneously collected from embodied agents. To facilitate research in this direction, we introduce MultiAgent-EgoQA (MA-EgoQA), a benchmark designed to systemically evaluate existing models in our scenario. MA-EgoQA provides 1.7k questions unique to multiple egocentric streams, spanning five categories: social interaction, task coordination, theory-of-mind, temporal reasoning, and environmental interaction. We further propose a simple baseline model for MA-EgoQA named EgoMAS, which leverages shared memory across embodied agents and agent-wise dynamic retrieval. Through comprehensive evaluation across diverse baselines and EgoMAS on MA-EgoQA, we find that current approaches are unable to effectively handle multiple egocentric streams, highlighting the need for future advances in system-level understanding across the agents. The code and benchmark are available at https://ma-egoqa.github.io.",
+      "authors": [
+        "Kangsan Kim",
+        "Yanlai Yang",
+        "Suji Kim",
+        "Woongyeong Yeo",
+        "Youngwan Lee",
+        "Mengye Ren",
+        "Sung Ju Hwang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-03-10T15:48:35Z",
+      "updated": "2026-03-11T02:13:29Z",
+      "announced_date": "2026-03-10",
+      "first_seen": "2026-03-10",
+      "comment": "Under review",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.09827v2",
+        "pdf": "https://arxiv.org/pdf/2603.09827v2",
+        "html": "https://arxiv.org/html/2603.09827"
+      },
+      "score": 17,
+      "tags": [
+        "multi-agent",
+        "embodied",
+        "memory",
+        "planning",
+        "workplace"
+      ],
+      "field": "workplace",
+      "citations": 5
+    },
+    {
+      "id": "2603.09157",
+      "title": "Real-Time Trust Verification for Safe Agentic Actions using TrustBench",
+      "abstract": "As large language models evolve from conversational assistants to autonomous agents, ensuring trustworthiness requires a fundamental shift from post-hoc evaluation to real-time action verification. Current frameworks like AgentBench evaluate task completion, while TrustLLM and HELM assess output quality after generation. However, none of these prevent harmful actions during agent execution. We present TrustBench, a dual-mode framework that (1) benchmarks trust across multiple dimensions using both traditional metrics and LLM-as-a-Judge evaluations, and (2) provides a toolkit agents invoke before taking actions to verify safety and reliability. Unlike existing approaches, TrustBench intervenes at the critical decision point: after an agent formulates an action but before execution. Domain-specific plugins encode specialized safety requirements for healthcare, finance, and technical domains. Across multiple agentic tasks, TrustBench reduced harmful actions by 87%. Domain-specific plugins outperformed generic verification, achieving 35% greater harm reduction. With sub-200ms latency, TrustBench enables practical real-time trust verification for autonomous agents.",
+      "authors": [
+        "Tavishi Sharma",
+        "Vinayak Sharma",
+        "Pragya Sharma"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-10T03:46:22Z",
+      "updated": "2026-03-10T03:46:22Z",
+      "announced_date": "2026-03-10",
+      "first_seen": "2026-03-10",
+      "comment": "Accepted at the AAAI 2026 Workshop on Trust and Control in Agentic AI (TrustAgent)",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.09157v1",
+        "pdf": "https://arxiv.org/pdf/2603.09157v1",
+        "html": "https://arxiv.org/html/2603.09157"
+      },
+      "score": 15,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "date": "2026-08-21",
+  "count": 4,
+  "report": {
+    "date": "2026-08-21",
+    "count": 4,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "mobile",
+        "count": 1,
+        "en": "Mobile agents",
+        "zh": "移动智能体"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On August 21, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Planning / reasoning (2), Science lab (1), Coding agents (1), and Multimodal (1).",
+      "highlights": [
+        {
+          "id": "2608.20851",
+          "title": "BC-Bench: Evaluating Agentic Engineering in a Domain-Specific Language for ERP",
+          "blurb": "Agentic engineering systems have shown strong performance on general-purpose benchmarks, yet their effectiveness in enterprise resource planning (ERP) domain-specific languages (DSLs) remains underexplored."
+        },
+        {
+          "id": "2608.20664",
+          "title": "DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents",
+          "blurb": "DreamBench-SWE is a multi-session benchmark for software-agent memory hygiene in which later software tasks depend on non-inferable evidence from earlier sessions and are scored by executable hidden oracles."
+        },
+        {
+          "id": "2608.21601",
+          "title": "K-Bench: measuring model performance on real scientific agent requests",
+          "blurb": "Benchmarks for scientific artificial intelligence are mostly written to be scored: multiple-choice questions, curated agent tasks with reference solutions, or simulators with a known generative structure."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年8月21日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在规划 / 推理（2）、科学实验（1）、代码智能体（1）、多模态（1）。",
+      "highlights": [
+        {
+          "id": "2608.20851",
+          "title": "BC-Bench: Evaluating Agentic Engineering in a Domain-Specific Language for ERP",
+          "blurb": "Agentic engineering systems have shown strong performance on general-purpose benchmarks, yet their effectiveness in enterprise resource planning (ERP) domain-specific languages (DSLs) remains underexplored."
+        },
+        {
+          "id": "2608.20664",
+          "title": "DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents",
+          "blurb": "DreamBench-SWE is a multi-session benchmark for software-agent memory hygiene in which later software tasks depend on non-inferable evidence from earlier sessions and are scored by executable hidden oracles."
+        },
+        {
+          "id": "2608.21601",
+          "title": "K-Bench: measuring model performance on real scientific agent requests",
+          "blurb": "Benchmarks for scientific artificial intelligence are mostly written to be scored: multiple-choice questions, curated agent tasks with reference solutions, or simulators with a known generative structure."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.21601",
+      "title": "K-Bench: measuring model performance on real scientific agent requests",
+      "abstract": "Benchmarks for scientific artificial intelligence are mostly written to be scored: multiple-choice questions, curated agent tasks with reference solutions, or simulators with a known generative structure. Real scientific requests arrive differently. They are underspecified, they carry attachments, and lack ground truth. We report K-Bench 01, an evaluation built from first-turn requests sampled from live user traffic on K-Dense Web and run end to end by nine frontier models in identical sandboxes, yielding 1,602 completed agent runs. Three blinded language-model judges scored every run against an eight-dimension rubric. On a rubric whose 8-anchor instructs judges that a domain scientist would accept the work with minor edits, no model clears the line under all three judges. gpt-5.6-sol has the highest pooled mean, 8.04, but its 95% interval [7.80, 8.23] spans the threshold, and two of the three judges rank claude-opus-5 first instead. We therefore report the ordering of systems as the reproducible quantity, the absolute level as an attribute of the instrument, and the top of the table as unresolved. Across all 39,934 scored judgments -- the eight dimension scores plus a holistic overall for each assessment, excluding not-applicable cells -- 47.6% fall below the 8-point threshold. Difficulty is not uniform across the rubric: scientific accuracy averages 6.22 against 7.33 for communication, on identical denominators and in the same direction within every one of the nine models. The single leading failure tag is overclaiming, on 31.4% of assessments. We argue that the informative quantity for scientific agents is not a leaderboard position but the joint distribution of what was delivered, what was claimed, and what artifacts were produced.",
+      "authors": [
+        "Aubrey Brueckner",
+        "Darshil Patel",
+        "Yuhuan He",
+        "Timothy Kassis"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-21T20:06:08Z",
+      "updated": "2026-08-21T20:06:08Z",
+      "announced_date": "2026-08-21",
+      "first_seen": "2026-08-21",
+      "comment": "48 pages, 17 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.21601v1",
+        "pdf": "https://arxiv.org/pdf/2608.21601v1",
+        "html": "https://arxiv.org/html/2608.21601"
+      },
+      "score": 14,
+      "tags": [
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2608.20851",
+      "title": "BC-Bench: Evaluating Agentic Engineering in a Domain-Specific Language for ERP",
+      "abstract": "Agentic engineering systems have shown strong performance on general-purpose benchmarks, yet their effectiveness in enterprise resource planning (ERP) domain-specific languages (DSLs) remains underexplored. We introduce BC-Bench, a benchmark designed to evaluate agentic engineering on real-world tasks in AL, the DSL for Microsoft Dynamics 365 Business Central. BC-Bench comprises 101 manually curated tasks extracted from two Microsoft-owned production repositories, reflecting authentic ERP development workflows. Adapting the SWE-Bench methodology, we address the unique constraints of the AL ecosystem---including limited public resources and complex environment provisioning. Beyond generating functional code, BC-Bench evaluates test generation and supports multimodal problem statements where visual context is commonly present. We evaluate multiple frontier models across two agent harnesses, utilizing multi-run metrics to account for nondeterminism. In the Bug Fixing category, under our evaluated settings, between-model differences in resolution rate are larger than differences between the two evaluated agent harnesses, and improvements reported on general-purpose benchmarks do not consistently transfer to AL. These results highlight the need for domain-specific evaluation.",
+      "authors": [
+        "Haoran Sun",
+        "Klaus Marius Hansen"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-08-21T08:16:21Z",
+      "updated": "2026-08-21T08:16:21Z",
+      "announced_date": "2026-08-21",
+      "first_seen": "2026-08-21",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.20851v1",
+        "pdf": "https://arxiv.org/pdf/2608.20851v1",
+        "html": "https://arxiv.org/html/2608.20851"
+      },
+      "score": 19,
+      "tags": [
+        "coding",
+        "planning",
+        "multimodal"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2608.21470",
+      "title": "Structural Inference in Undocumented Mobile Databases: A Reproducible Benchmark for Evaluating Agentic Reasoning in Digital Forensics",
+      "abstract": "Agentic large language models are increasingly used in digital forensic analysis, yet their ability to infer relational structure inside undocumented mobile application databases remains poorly understood. In forensic contexts, structurally incorrect inferences can yield results that appear plausible while remaining evidentially unsound. This work evaluates agentic structural inference as an isolated capability, treating execution success and structural correctness as distinct evaluation axes. It examines how an agent reconstructs table relationships, linking attributes, and executable join paths when given only a raw database and a natural-language investigative prompt. We apply a fixed, deterministic evaluation pipeline to two contrasting SQLite repositories: Android's SMS database with stable identifier propagation, and Snapchat's database with irregular schemas, ephemeral identifiers, and polymorphic relationships. Using expert-verified SQL ground truth, we evaluate (i) structural correctness of inferred relational links, (ii) execution coherence under multi-table reasoning, and (iii) robustness and failure modes of inferred structure when execution succeeds but relational interpretation diverges from expert ground truth. Evaluation is performed independently of semantic interpretation, with full queries and execution traces provided in the Appendix. Results show that structural inference remains reliable in regular schemas but degrades sharply as schema ambiguity increases, frequently producing structurally plausible yet incorrect joins that execute successfully. These findings clarify where schema-agnostic agentic reasoning can support forensic analysis, how its robustness degrades under realistic schema irregularities, and why additional verification remains essential before inferred relationships can be treated as reliable evidence.",
+      "authors": [
+        "Jeel Piyushkumar Khatiwala",
+        "Divyangkumar Patel",
+        "Weifeng Xu"
+      ],
+      "categories": [
+        "cs.CR"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-08-21T03:41:58Z",
+      "updated": "2026-08-21T03:41:58Z",
+      "announced_date": "2026-08-21",
+      "first_seen": "2026-08-21",
+      "comment": "10 pages, 2 figures. Published in Proc. 50th IEEE Annual Computers, Software, and Applications Conference (COMPSAC), Madrid, Spain, July 2026",
+      "doi": "10.1109/COMPSAC69091.2026.00463",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.21470v1",
+        "pdf": "https://arxiv.org/pdf/2608.21470v1",
+        "html": "https://arxiv.org/html/2608.21470"
+      },
+      "score": 13,
+      "tags": [
+        "safety",
+        "planning",
+        "mobile"
+      ],
+      "field": "mobile",
+      "citations": 2
+    },
+    {
+      "id": "2608.20664",
+      "title": "DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents",
+      "abstract": "DreamBench-SWE is a multi-session benchmark for software-agent memory hygiene in which later software tasks depend on non-inferable evidence from earlier sessions and are scored by executable hidden oracles. We report the original scaled v2 fold and a separately preregistered v2.1 successor audit designed after that study but frozen before successor outcome inspection. The successor run completed 360/360 work units and 720/720 S3 cells across four conditions. In the original fold, the primary DF-hybrid--B5 contrast was null (95/180 versus 89/180; clustered p=.518, Holm p=1), not evidence of equivalence, and C9/C10 retained B0-headroom limitations. In the successor, no external memory achieved 21/180 passes (rate 0.1167), deterministic verbatim event memory 82/180 (rate 0.4556), the typed-plus-raw reference probe 83/180 (rate 0.4611), and one pinned hosted Mem0 literal-storage configuration 97/180 (rate 0.5389). The registered six-slot Family A retained unavailable slots at p=1; all three available comparisons against no memory rejected after Holm correction. Both preregistered mechanism contrasts were unavailable after pre-evaluation conformance rejection. The secondary literal-storage-versus-verbatim comparison was nonconfirmatory and sensitivity-dependent, while the comparison with the reference probe did not reject. The audit therefore supports DreamBench-SWE as a discriminating executable profile benchmark and characterizes one exact hosted-memory configuration, but it does not establish an external-system mechanism, superiority among memory-bearing conditions, equivalence, or broad product generality. The original v2.0.5 findings and artifacts remain unchanged.",
+      "authors": [
+        "Sarthak Singh"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-21T01:48:57Z",
+      "updated": "2026-08-21T01:48:57Z",
+      "announced_date": "2026-08-21",
+      "first_seen": "2026-08-21",
+      "comment": "67 pages. Public benchmark and evidence release: https://github.com/iroiro147/dreambench-swe/releases/tag/v2.1.0",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.20664v1",
+        "pdf": "https://arxiv.org/pdf/2608.20664v1",
+        "html": "https://arxiv.org/html/2608.20664"
+      },
+      "score": 17,
+      "tags": [
+        "memory"
+      ],
+      "field": "coding",
+      "citations": 0
+    }
+  ]
+}

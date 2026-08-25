@@ -1,0 +1,215 @@
+{
+  "date": "2026-03-05",
+  "count": 4,
+  "report": {
+    "date": "2026-03-05",
+    "count": 4,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On March 5, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Tool use (2), Safety (2), Coding agents (1), and Web agents (1).",
+      "highlights": [
+        {
+          "id": "2603.05764",
+          "title": "TML-Bench: Benchmark for Data Science Agents on Tabular ML Tasks",
+          "blurb": "Autonomous coding agents can produce strong tabular baselines quickly on Kaggle-style tasks."
+        },
+        {
+          "id": "2603.05578",
+          "title": "Tool-Genesis: A Task-Driven Tool Creation Benchmark for Self-Evolving Language Agent",
+          "blurb": "Research on self-evolving language agents has accelerated, drawing increasing attention to their ability to create, adapt, and maintain tools from task requirements."
+        },
+        {
+          "id": "2603.04902",
+          "title": "AgentSCOPE: Evaluating Contextual Privacy Across Agentic Workflows",
+          "blurb": "Agentic systems are increasingly acting on users' behalf, accessing calendars, email, and personal files to complete everyday tasks."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年3月5日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在工具使用（2）、安全（2）、代码智能体（1）、网页智能体（1）。",
+      "highlights": [
+        {
+          "id": "2603.05764",
+          "title": "TML-Bench: Benchmark for Data Science Agents on Tabular ML Tasks",
+          "blurb": "Autonomous coding agents can produce strong tabular baselines quickly on Kaggle-style tasks."
+        },
+        {
+          "id": "2603.05578",
+          "title": "Tool-Genesis: A Task-Driven Tool Creation Benchmark for Self-Evolving Language Agent",
+          "blurb": "Research on self-evolving language agents has accelerated, drawing increasing attention to their ability to create, adapt, and maintain tools from task requirements."
+        },
+        {
+          "id": "2603.04902",
+          "title": "AgentSCOPE: Evaluating Contextual Privacy Across Agentic Workflows",
+          "blurb": "Agentic systems are increasingly acting on users' behalf, accessing calendars, email, and personal files to complete everyday tasks."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2603.05764",
+      "title": "TML-Bench: Benchmark for Data Science Agents on Tabular ML Tasks",
+      "abstract": "Autonomous coding agents can produce strong tabular baselines quickly on Kaggle-style tasks. Practical value depends on end-to-end correctness and reliability under time limits. This paper introduces TML-Bench, a tabular benchmark for data science agents on Kaggle-style tasks. This paper evaluates 10 OSS LLMs on four Kaggle competitions and three time budgets (240s, 600s, and 1200s). Each model is run five times per task and budget. A run is successful if it produces a valid submission and a private-holdout score on hidden labels that are not accessible to the agent. This paper reports median performance, success rates, and run-to-run variability. MiniMax-M2.1 model achieves the best aggregate performance score on all four competitions under the paper's primary aggregation. Average performance improves with larger time budgets. Scaling is noisy for some individual models at the current run count. Code and materials are available at https://github.com/MykolaPinchuk/TML-bench/tree/master.",
+      "authors": [
+        "Mykola Pinchuk"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-03-05T23:48:41Z",
+      "updated": "2026-03-05T23:48:41Z",
+      "announced_date": "2026-03-05",
+      "first_seen": "2026-03-05",
+      "comment": "19 pages, 16 tables and figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.05764v1",
+        "pdf": "https://arxiv.org/pdf/2603.05764v1",
+        "html": "https://arxiv.org/html/2603.05764"
+      },
+      "score": 17,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 2
+    },
+    {
+      "id": "2603.05578",
+      "title": "Tool-Genesis: A Task-Driven Tool Creation Benchmark for Self-Evolving Language Agent",
+      "abstract": "Research on self-evolving language agents has accelerated, drawing increasing attention to their ability to create, adapt, and maintain tools from task requirements. However, existing benchmarks predominantly rely on predefined specifications, which limits scalability and hinders truly autonomous evolution. While recent studies attempt to dynamically generate tools, they primarily emphasize downstream performance, resulting in a \"black-box\" evaluation that makes it difficult to attribute failures to specific causes. To address this, we propose Tool-Genesis, a diagnostic benchmark designed to quantify agent capabilities across multiple dimensions, including interface compliance, functional correctness, and downstream utility. Tool-Genesis evaluates whether agents can construct task-relevant tools solely from abstract requirements (without preset specifications) and use them to solve realistic problems. Crucially, we find that even state-of-the-art models struggle to produce precise tool interfaces or executable logic in a one-shot setting. These minor initial flaws are amplified through the pipeline, leading to a sharp degradation in downstream metrics. We hope Tool-Genesis will guide future research toward training and steering models to synthesize persistent, general-purpose tools that better address real-world challenges.",
+      "authors": [
+        "Bowei Xia",
+        "Mengkang Hu",
+        "Shijian Wang",
+        "Jiarui Jin",
+        "Wenxiang Jiao",
+        "Yuan Lu",
+        "Kexin Li",
+        "Ping Luo"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-03-05T17:44:29Z",
+      "updated": "2026-03-05T17:44:29Z",
+      "announced_date": "2026-03-05",
+      "first_seen": "2026-03-05",
+      "comment": "25 pages, 10 figures, 2 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.05578v1",
+        "pdf": "https://arxiv.org/pdf/2603.05578v1",
+        "html": "https://arxiv.org/html/2603.05578"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 4
+    },
+    {
+      "id": "2603.04949",
+      "title": "TimeWarp: Evaluating Web Agents by Revisiting the Past",
+      "abstract": "The improvement of web agents on current benchmarks raises the question: Do today's agents perform just as well when the web changes? We introduce TimeWarp, a benchmark that emulates the evolving web using containerized environments that vary in UI, design, and layout. TimeWarp consists of three web environments, each with six UI versions spanning different eras of the internet, paired with a set of complex, realistic tasks requiring different forms of web navigation. Our experiments reveal web agents' vulnerability to changes and the limitations of behavior cloning (BC) on single-version trajectories. To address this, we propose TimeTraj, a simple yet effective algorithm that uses plan distillation to collect trajectories across multiple versions. By training agents on teacher rollouts using our BC-variant, we achieve substantial performance gains: $20.4\\%\\rightarrow37.7\\%$ for Qwen-3 4B and $0\\%\\rightarrow27.0\\%$ for Llama-3.1 8B models. We hope our work helps researchers study generalization across web designs and unlock a new paradigm for collecting plans rather than trajectories, thereby improving the robustness of web agents.",
+      "authors": [
+        "Md Farhan Ishmam",
+        "Kenneth Marino"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-05T08:43:06Z",
+      "updated": "2026-03-05T08:43:06Z",
+      "announced_date": "2026-03-05",
+      "first_seen": "2026-03-05",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.04949v1",
+        "pdf": "https://arxiv.org/pdf/2603.04949v1",
+        "html": "https://arxiv.org/html/2603.04949"
+      },
+      "score": 10,
+      "tags": [
+        "web",
+        "safety"
+      ],
+      "field": "web",
+      "citations": 4
+    },
+    {
+      "id": "2603.04902",
+      "title": "AgentSCOPE: Evaluating Contextual Privacy Across Agentic Workflows",
+      "abstract": "Agentic systems are increasingly acting on users' behalf, accessing calendars, email, and personal files to complete everyday tasks. Privacy evaluation for these systems has focused on the input and output boundaries, but each task involves several intermediate information flows, from agent queries to tool responses, that are not currently evaluated. We argue that every boundary in an agentic pipeline is a site of potential privacy violation and must be assessed independently. To support this, we introduce the Privacy Flow Graph, a Contextual Integrity-grounded framework that decomposes agentic execution into a sequence of information flows, each annotated with the five CI parameters, and traces violations to their point of origin. We present AgentSCOPE, a benchmark of 62 multi-tool scenarios across eight regulatory domains with ground truth at every pipeline stage. Our evaluation across seven state-of-the-art LLMs show that privacy violations in the pipeline occur in over 80% of scenarios, even when final outputs appear clean (24%), with most violations arising at the tool-response stage where APIs return sensitive data indiscriminately. These results indicate that output-level evaluation alone substantially underestimates the privacy risk of agentic systems.",
+      "authors": [
+        "Ivoline C. Ngong",
+        "Keerthiram Murugesan",
+        "Swanand Kadhe",
+        "Justin D. Weisz",
+        "Amit Dhurandhar",
+        "Karthikeyan Natesan Ramamurthy"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-03-05T07:45:31Z",
+      "updated": "2026-03-05T07:45:31Z",
+      "announced_date": "2026-03-05",
+      "first_seen": "2026-03-05",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.04902v1",
+        "pdf": "https://arxiv.org/pdf/2603.04902v1",
+        "html": "https://arxiv.org/html/2603.04902"
+      },
+      "score": 11,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "other",
+      "citations": 9
+    }
+  ]
+}

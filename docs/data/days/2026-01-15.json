@@ -1,0 +1,198 @@
+{
+  "date": "2026-01-15",
+  "count": 3,
+  "report": {
+    "date": "2026-01-15",
+    "count": 3,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      }
+    ],
+    "en": {
+      "headline": "3 new agent benchmarks",
+      "summary": "On January 15, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Planning / reasoning (2), Research agents (1), Coding agents (1), and Tool use (1).",
+      "highlights": [
+        {
+          "id": "2601.10343",
+          "title": "OctoBench: Benchmarking Scaffold-Aware Instruction Following in Repository-Grounded Agentic Coding",
+          "blurb": "Modern coding scaffolds turn LLMs into capable software agents, but their ability to follow scaffold-specified instructions remains under-examined, especially when constraints are heterogeneous and persist across interac…"
+        },
+        {
+          "id": "2601.10504",
+          "title": "DR-Arena: an Automated Evaluation Framework for Deep Research Agents",
+          "blurb": "As Large Language Models (LLMs) increasingly operate as Deep Research (DR) Agents capable of autonomous investigation and information synthesis, reliable evaluation of their task performance has become a critical bottlen…"
+        },
+        {
+          "id": "2601.10156",
+          "title": "ToolSafe: Enhancing Tool Invocation Safety of LLM-based agents via Proactive Step-level Guardrail and Feedback",
+          "blurb": "While LLM-based agents can interact with environments via invoking external tools, their expanded capabilities also amplify security risks."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年1月15日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在规划 / 推理（2）、科研智能体（1）、代码智能体（1）、工具使用（1）。",
+      "highlights": [
+        {
+          "id": "2601.10343",
+          "title": "OctoBench: Benchmarking Scaffold-Aware Instruction Following in Repository-Grounded Agentic Coding",
+          "blurb": "Modern coding scaffolds turn LLMs into capable software agents, but their ability to follow scaffold-specified instructions remains under-examined, especially when constraints are heterogeneous and persist across interac…"
+        },
+        {
+          "id": "2601.10504",
+          "title": "DR-Arena: an Automated Evaluation Framework for Deep Research Agents",
+          "blurb": "As Large Language Models (LLMs) increasingly operate as Deep Research (DR) Agents capable of autonomous investigation and information synthesis, reliable evaluation of their task performance has become a critical bottlen…"
+        },
+        {
+          "id": "2601.10156",
+          "title": "ToolSafe: Enhancing Tool Invocation Safety of LLM-based agents via Proactive Step-level Guardrail and Feedback",
+          "blurb": "While LLM-based agents can interact with environments via invoking external tools, their expanded capabilities also amplify security risks."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2601.10504",
+      "title": "DR-Arena: an Automated Evaluation Framework for Deep Research Agents",
+      "abstract": "As Large Language Models (LLMs) increasingly operate as Deep Research (DR) Agents capable of autonomous investigation and information synthesis, reliable evaluation of their task performance has become a critical bottleneck. Current benchmarks predominantly rely on static datasets, which suffer from several limitations: limited task generality, temporal misalignment, and data contamination. To address these, we introduce DR-Arena, a fully automated evaluation framework that pushes DR agents to their capability limits through dynamic investigation. DR-Arena constructs real-time Information Trees from fresh web trends to ensure the evaluation rubric is synchronized with the live world state, and employs an automated Examiner to generate structured tasks testing two orthogonal capabilities: Deep reasoning and Wide coverage. DR-Arena further adopts Adaptive Evolvement Loop, a state-machine controller that dynamically escalates task complexity based on real-time performance, demanding deeper deduction or wider aggregation until a decisive capability boundary emerges. Experiments with six advanced DR agents demonstrate that DR-Arena achieves a Spearman correlation of 0.94 with the LMSYS Search Arena leaderboard. This represents the state-of-the-art alignment with human preferences without any manual efforts, validating DR-Arena as a reliable alternative for costly human adjudication.",
+      "authors": [
+        "Yiwen Gao",
+        "Ruochen Zhao",
+        "Yang Deng",
+        "Wenxuan Zhang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-01-15T15:28:21Z",
+      "updated": "2026-07-12T05:28:34Z",
+      "announced_date": "2026-01-15",
+      "first_seen": "2026-01-15",
+      "comment": "22 pages, 8 figures. Accepted to ACL 2026 as an oral presentation and selected as an SAC Highlight",
+      "doi": "10.18653/v1/2026.acl-long.1249",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.10504v3",
+        "pdf": "https://arxiv.org/pdf/2601.10504v3",
+        "html": "https://arxiv.org/html/2601.10504"
+      },
+      "score": 20,
+      "tags": [
+        "planning",
+        "research"
+      ],
+      "field": "science",
+      "citations": 3
+    },
+    {
+      "id": "2601.10343",
+      "title": "OctoBench: Benchmarking Scaffold-Aware Instruction Following in Repository-Grounded Agentic Coding",
+      "abstract": "Modern coding scaffolds turn LLMs into capable software agents, but their ability to follow scaffold-specified instructions remains under-examined, especially when constraints are heterogeneous and persist across interactions. To fill this gap, we introduce OctoBench, which benchmarks scaffold-aware instruction following in repository-grounded agentic coding. OctoBench includes 34 environments and 217 tasks instantiated under three scaffold types, and is paired with 7,098 objective checklist items. To disentangle solving the task from following the rules, we provide an automated observation-and-scoring toolkit that captures full trajectories and performs fine-grained checks. Experiments on eight representative models reveal a systematic gap between task-solving and scaffold-aware compliance, underscoring the need for training and evaluation that explicitly targets heterogeneous instruction following. We release the benchmark to support reproducible benchmarking and to accelerate the development of more scaffold-aware coding agents.",
+      "authors": [
+        "Deming Ding",
+        "Shichun Liu",
+        "Enhui Yang",
+        "Jiahang Lin",
+        "Ziying Chen",
+        "Shihan Dou",
+        "Honglin Guo",
+        "Weiyu Cheng",
+        "Pengyu Zhao",
+        "Chengjun Xiao",
+        "Qunhong Zeng",
+        "Qi Zhang",
+        "Xuanjing Huang",
+        "Qidi Xu",
+        "Tao Gui"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-01-15T12:36:08Z",
+      "updated": "2026-01-16T02:10:35Z",
+      "announced_date": "2026-01-15",
+      "first_seen": "2026-01-15",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.10343v2",
+        "pdf": "https://arxiv.org/pdf/2601.10343v2",
+        "html": "https://arxiv.org/html/2601.10343"
+      },
+      "score": 21,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 13
+    },
+    {
+      "id": "2601.10156",
+      "title": "ToolSafe: Enhancing Tool Invocation Safety of LLM-based agents via Proactive Step-level Guardrail and Feedback",
+      "abstract": "While LLM-based agents can interact with environments via invoking external tools, their expanded capabilities also amplify security risks. Monitoring step-level tool invocation behaviors in real time and proactively intervening before unsafe execution is critical for agent deployment, yet remains under-explored. In this work, we first construct TS-Bench, a novel benchmark for step-level tool invocation safety detection in LLM agents. We then develop a guardrail model, TS-Guard, using multi-task reinforcement learning. The model proactively detects unsafe tool invocation actions before execution by reasoning over the interaction history. It assesses request harmfulness and action-attack correlations, producing interpretable and generalizable safety judgments and feedback. Furthermore, we introduce TS-Flow, a guardrail-feedback-driven reasoning framework for LLM agents, which reduces harmful tool invocations of ReAct-style agents by 65 percent on average and improves benign task completion by approximately 10 percent under prompt injection attacks.",
+      "authors": [
+        "Yutao Mou",
+        "Zhangchi Xue",
+        "Lijun Li",
+        "Peiyang Liu",
+        "Shikun Zhang",
+        "Wei Ye",
+        "Jing Shao"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-01-15T07:54:32Z",
+      "updated": "2026-01-15T07:54:32Z",
+      "announced_date": "2026-01-15",
+      "first_seen": "2026-01-15",
+      "comment": "Work in Progress. Code available: https://github.com/MurrayTom/ToolSafe",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.10156v1",
+        "pdf": "https://arxiv.org/pdf/2601.10156v1",
+        "html": "https://arxiv.org/html/2601.10156"
+      },
+      "score": 7,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "safety",
+      "citations": 44
+    }
+  ]
+}

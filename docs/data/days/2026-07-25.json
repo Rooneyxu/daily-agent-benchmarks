@@ -1,0 +1,123 @@
+{
+  "date": "2026-07-25",
+  "count": 2,
+  "report": {
+    "date": "2026-07-25",
+    "count": 2,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On July 25, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Tool use (2), Safety (1), and Planning / reasoning (1).",
+      "highlights": [
+        {
+          "id": "2607.23123",
+          "title": "SQBench: A Benchmark for Evaluating Task Delivery by Language-Model Agents in Production-Oriented Workflows",
+          "blurb": "Existing evaluations of large language models cover knowledge, reasoning, coding, and tool use, but they rarely treat a verifiable deliverable produced within a constrained workflow as the unit of evaluation."
+        },
+        {
+          "id": "2607.23332",
+          "title": "AllocBench: Measuring Online Tool Allocation Capability in LLM Agents",
+          "blurb": "Creating a reusable tool is an investment: an agent pays a fixed cost now in exchange for the potential of future reuse."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年7月25日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在工具使用（2）、安全（1）、规划 / 推理（1）。",
+      "highlights": [
+        {
+          "id": "2607.23123",
+          "title": "SQBench: A Benchmark for Evaluating Task Delivery by Language-Model Agents in Production-Oriented Workflows",
+          "blurb": "Existing evaluations of large language models cover knowledge, reasoning, coding, and tool use, but they rarely treat a verifiable deliverable produced within a constrained workflow as the unit of evaluation."
+        },
+        {
+          "id": "2607.23332",
+          "title": "AllocBench: Measuring Online Tool Allocation Capability in LLM Agents",
+          "blurb": "Creating a reusable tool is an investment: an agent pays a fixed cost now in exchange for the potential of future reuse."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2607.23332",
+      "title": "AllocBench: Measuring Online Tool Allocation Capability in LLM Agents",
+      "abstract": "Creating a reusable tool is an investment: an agent pays a fixed cost now in exchange for the potential of future reuse. Therefore, a user should prefer an agent that creates a small number of highly reusable tools, rather than many one-offs. We introduce a paired benchmark that tests whether LLM agents exhibit conscious allocation behavior under a fixed budget in two contexts: an abstract text-based formulation and a code-construction task. We find that every frontier model we test---Claude Haiku, Claude Opus, GPT-5.4-mini, and GPT-5.6 Sol---acts near-optimally in the abstract framing but fails to transfer this ability to script-writing. Through further experiments, we identify the particular failure modes for each model. Notably, the first three models fail even when the scripts are not evaluated, while GPT-5.6 Sol stays selective under that weaker manipulation and collapses only at full construction. Furthermore, an open-source Qwen model policy-trained for abstract allocation generalizes this ability across held-out lexical variations, but sees no improvement at script allocation. Together, these results establish online tool allocation as a significant capability boundary, even for modern frontier models.",
+      "authors": [
+        "Daniel Wang",
+        "Andrew Xu"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-07-25T19:05:29Z",
+      "updated": "2026-07-31T16:23:16Z",
+      "announced_date": "2026-07-25",
+      "first_seen": "2026-07-25",
+      "comment": "24 pages, 6 figures, 8 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.23332v2",
+        "pdf": "https://arxiv.org/pdf/2607.23332v2",
+        "html": "https://arxiv.org/html/2607.23332"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.23123",
+      "title": "SQBench: A Benchmark for Evaluating Task Delivery by Language-Model Agents in Production-Oriented Workflows",
+      "abstract": "Existing evaluations of large language models cover knowledge, reasoning, coding, and tool use, but they rarely treat a verifiable deliverable produced within a constrained workflow as the unit of evaluation. We introduce SQBench, a benchmark for evaluating production-oriented task delivery by language-model agents. SQBench v1.0 contains 220 standardized tasks organized into L1 atomic capabilities, L2 composite skills, and L3 business scenarios. Each task requires an agent to process input assets, use available tools, and produce an explicitly specified deliverable. The evaluation first computes functional Completion and then derives Risk Penalty and Performance from independently evidenced triggers in a 10D Risk Matrix. A Strict Pass requires Completion = 1 and Risk Penalty = 0. We evaluate 27 model configurations under a common protocol, with one run per configuration-task pair. The highest prespecified Weighted Pass@1 is 60.5%. Mean Strict Pass@1 on L3 is 18.5%, and every configuration performs worse on L3 than on both L1 and L2, indicating that delivery under domain constraints is a shared weakness within the current task set. Of 2,348 results with Completion = 1, 113 (4.8%) fail the Strict Pass criterion because of risks such as unverifiable citations, inappropriate resource use, or format violations. These results show that functional completion alone does not fully characterize delivery quality and that risk determinations should be reported separately.",
+      "authors": [
+        "Summer Sun"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-25T09:55:31Z",
+      "updated": "2026-07-25T09:55:31Z",
+      "announced_date": "2026-07-25",
+      "first_seen": "2026-07-25",
+      "comment": "17 pages, 8 figures. Code and aggregate results: https://github.com/shaqiu-ai/SQBench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.23123v1",
+        "pdf": "https://arxiv.org/pdf/2607.23123v1",
+        "html": "https://arxiv.org/html/2607.23123"
+      },
+      "score": 24,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

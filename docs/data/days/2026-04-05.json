@@ -1,0 +1,286 @@
+{
+  "date": "2026-04-05",
+  "count": 5,
+  "report": {
+    "date": "2026-04-05",
+    "count": 5,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "5 new agent benchmarks",
+      "summary": "On April 5, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Planning / reasoning (3), Tool use (2), Coding agents (1), and Multi-agent (1).",
+      "highlights": [
+        {
+          "id": "2604.04226",
+          "title": "SW-$A^2$-Bench: Benchmarking Autonomous Software Agent Generation for Agentic Web",
+          "blurb": "The Agentic Web is emerging as a paradigm in which autonomous software agents interact with online resources and with each other to accomplish user goals."
+        },
+        {
+          "id": "2604.04202",
+          "title": "ClawArena: Benchmarking AI Agents in Evolving Information Environments",
+          "blurb": "AI agents deployed as persistent assistants must maintain correct beliefs as their information environment evolves."
+        },
+        {
+          "id": "2604.04017",
+          "title": "GeoBrowse: A Geolocation Benchmark for Agentic Tool Use with Expert-Annotated Reasoning Traces",
+          "blurb": "Deep research agents integrate fragmented evidence through multi-step tool use."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年4月5日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在规划 / 推理（3）、工具使用（2）、代码智能体（1）、多智能体（1）。",
+      "highlights": [
+        {
+          "id": "2604.04226",
+          "title": "SW-$A^2$-Bench: Benchmarking Autonomous Software Agent Generation for Agentic Web",
+          "blurb": "The Agentic Web is emerging as a paradigm in which autonomous software agents interact with online resources and with each other to accomplish user goals."
+        },
+        {
+          "id": "2604.04202",
+          "title": "ClawArena: Benchmarking AI Agents in Evolving Information Environments",
+          "blurb": "AI agents deployed as persistent assistants must maintain correct beliefs as their information environment evolves."
+        },
+        {
+          "id": "2604.04017",
+          "title": "GeoBrowse: A Geolocation Benchmark for Agentic Tool Use with Expert-Annotated Reasoning Traces",
+          "blurb": "Deep research agents integrate fragmented evidence through multi-step tool use."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.04226",
+      "title": "SW-$A^2$-Bench: Benchmarking Autonomous Software Agent Generation for Agentic Web",
+      "abstract": "The Agentic Web is emerging as a paradigm in which autonomous software agents interact with online resources and with each other to accomplish user goals. However, the capacity of Agentic Web is still limited by insufficient autonomous software agent population, which has become a crucial challenge for scaling Agentic Web. In order to alleviate this, we study the task of automatically converting existing code repositories into autonomous software agents via coding agents, decompose the process into critical stages, and identify key technical hurdles. To systematically evaluate this capability, we propose SoftWare Agent generation for Agentic Web Bench (SW-$A^2$-Bench), the first benchmark designed for software agent generation. SW-$A^2$-Bench evaluates not only whether software agents can be generated, but also whether generated software agents are faithful to the source repositories and interoperable with other agents in multi-agent workflows. Our experiments demonstrate that our approach effectively activates the functional capabilities of code repositories and enables interoperable multi-agent collaboration in Agentic Web. We believe that this work will provide a standardized evaluation for software agent generation and will contribute to the future of scaling the capacity of Agentic Web.",
+      "authors": [
+        "Linyao Chen",
+        "Bo Huang",
+        "Qinlao Zhao",
+        "Shuai Shao",
+        "Zhi Han",
+        "Zicai Cui",
+        "Ziheng Zhang",
+        "Guangtao Zeng",
+        "Wenzheng Tang",
+        "Yikun Wang",
+        "Yuanjian Zhou",
+        "Zimian Peng",
+        "Yong Yu",
+        "Weiwen Liu",
+        "Hiroki Kobayashi",
+        "Weinan Zhang"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-04-05T19:01:27Z",
+      "updated": "2026-06-05T12:24:24Z",
+      "announced_date": "2026-04-05",
+      "first_seen": "2026-04-05",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.04226v2",
+        "pdf": "https://arxiv.org/pdf/2604.04226v2",
+        "html": "https://arxiv.org/html/2604.04226"
+      },
+      "score": 26,
+      "tags": [
+        "coding",
+        "multi-agent"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2604.04220",
+      "title": "TimeSeek: Temporal Reliability of Agentic Forecasters",
+      "abstract": "We introduce TimeSeek, a benchmark for studying how the reliability of agentic LLM forecasters changes over a prediction market's lifecycle. We evaluate 10 frontier models on 150 CFTC-regulated Kalshi binary markets at five temporal checkpoints, with and without web search, for 15,000 forecasts total. Models are most competitive early in a market's life and on high-uncertainty markets, but much less competitive near resolution and on strong-consensus markets. Web search improves pooled Brier Skill Score (BSS) for every model overall, yet hurts in 12% of model-checkpoint pairs, indicating that retrieval is helpful on average but not uniformly so. Simple two-model ensembles reduce error without surpassing the market overall. These descriptive results motivate time-aware evaluation and selective-deference policies rather than a single market snapshot or a uniform tool-use setting.",
+      "authors": [
+        "Hamza Mostafa",
+        "Om Shastri",
+        "Dennis Lee"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-05T18:38:39Z",
+      "updated": "2026-04-05T18:38:39Z",
+      "announced_date": "2026-04-05",
+      "first_seen": "2026-04-05",
+      "comment": "Workshop paper. 11 pages including references",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.04220v1",
+        "pdf": "https://arxiv.org/pdf/2604.04220v1",
+        "html": "https://arxiv.org/html/2604.04220"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2604.04211",
+      "title": "LOCARD: An Agentic Framework for Blockchain Forensics",
+      "abstract": "Blockchain forensics inherently involves dynamic and iterative investigations, while many existing approaches primarily model it through static inference pipelines. We propose a paradigm shift towards Agentic Blockchain Forensics (ABF), modeling forensic investigation as a sequential decision-making process. To instantiate this paradigm, we introduce LOCARD, the first agentic framework for blockchain forensics. LOCARD operationalizes this perspective through a Tri-Core Cognitive Architecture that decouples strategic planning, operational execution, and evaluative validation. Unlike generic LLM-based agents, it incorporates a Structured Belief State mechanism to enforce forensic rigor and guide exploration under explicit state constraints. To demonstrate the efficacy of the ABF paradigm, we apply LOCARD to the inherently complex domain of cross-chain transaction tracing. We introduce Thor25, a benchmark dataset comprising over 151k real-world cross-chain forensic records, and evaluate LOCARD on the Group-Transfer Tracing task for dismantling Sybil clusters. Validated against representative laundering sub-flows from the Bybit hack, LOCARD achieves high-fidelity tracing results, providing empirical evidence that modeling blockchain forensics as an autonomous agentic task is both viable and effective. These results establish a concrete foundation for future agentic approaches to large-scale blockchain forensic analysis. Code and dataset are publicly available at https://github.com/xhyumiracle/locard and https://github.com/xhyumiracle/thorchain-crosschain-data.",
+      "authors": [
+        "Xiaohang Yu",
+        "William Knottenbelt"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-04-05T18:04:50Z",
+      "updated": "2026-05-06T17:37:50Z",
+      "announced_date": "2026-04-05",
+      "first_seen": "2026-04-05",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.04211v2",
+        "pdf": "https://arxiv.org/pdf/2604.04211v2",
+        "html": "https://arxiv.org/html/2604.04211"
+      },
+      "score": 11,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2604.04202",
+      "title": "ClawArena: Benchmarking AI Agents in Evolving Information Environments",
+      "abstract": "AI agents deployed as persistent assistants must maintain correct beliefs as their information environment evolves. In practice, evidence is scattered across heterogeneous sources that often contradict one another, new information can invalidate earlier conclusions, and user preferences surface through corrections rather than explicit instructions. Existing benchmarks largely assume static, single-authority settings and do not evaluate whether agents can keep up with this complexity. We introduce ClawArena, a benchmark for evaluating AI agents in evolving information environments. Each scenario maintains a complete hidden ground truth while exposing the agent only to noisy, partial, and sometimes contradictory traces across multi-channel sessions, workspace files, and staged updates. Evaluation is organized around three coupled challenges: multi-source conflict reasoning, dynamic belief revision, and implicit personalization, whose interactions yield a 14-category question taxonomy. Two question formats, multi-choice (set-selection) and shell-based executable checks, test both reasoning and workspace grounding. ClawArena comprises 12 multi-turn scenarios spanning 337 evaluation rounds with 45 dynamic updates, evaluated across five agent frameworks and 18 language models from proprietary, community-accessible, and self-hosted sources. Experiments show that model capability accounts for a 29-point score range across models while framework design accounts for up to a 24-point range, that MetaClaw's skill overlay reliably improves score without degrading accuracy, and that belief revision difficulty is determined by update design strategy rather than update volume. Code is available at https://github.com/aiming-lab/ClawArena.",
+      "authors": [
+        "Haonian Ji",
+        "Kaiwen Xiong",
+        "Siwei Han",
+        "Peng Xia",
+        "Shi Qiu",
+        "Yiyang Zhou",
+        "Jiaqi Liu",
+        "Jinlong Li",
+        "Bingzhou Li",
+        "Zeyu Zheng",
+        "Cihang Xie",
+        "Huaxiu Yao"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-04-05T17:55:23Z",
+      "updated": "2026-05-16T15:44:46Z",
+      "announced_date": "2026-04-05",
+      "first_seen": "2026-04-05",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.04202v2",
+        "pdf": "https://arxiv.org/pdf/2604.04202v2",
+        "html": "https://arxiv.org/html/2604.04202"
+      },
+      "score": 23,
+      "tags": [
+        "planning",
+        "science"
+      ],
+      "field": "other",
+      "citations": 8
+    },
+    {
+      "id": "2604.04017",
+      "title": "GeoBrowse: A Geolocation Benchmark for Agentic Tool Use with Expert-Annotated Reasoning Traces",
+      "abstract": "Deep research agents integrate fragmented evidence through multi-step tool use. BrowseComp offers a text-only testbed for such agents, but existing multimodal benchmarks rarely require both weak visual cues composition and BrowseComp-style multi-hop verification. Geolocation is a natural testbed because answers depend on combining multiple ambiguous visual cues and validating them with open-web evidence. Thus, we introduce GeoBrowse, a geolocation benchmark that combines visual reasoning with knowledge-intensive multi-hop queries. Level 1 tests extracting and composing fragmented visual cues, and Level 2 increases query difficulty by injecting long-tail knowledge and obfuscating key entities. To support evaluation, we provide an agentic workflow GATE with five think-with-image tools and four knowledge-intensive tools, and release expert-annotated stepwise traces grounded in verifiable evidence for trajectory-level analysis. Experiments show that GATE outperforms direct inference and open-source agents, indicating that no-tool, search-only or image-only setups are insufficient. Gains come from coherent, level-specific tool-use plans rather than more tool calls, as they more reliably reach annotated key evidence steps and make fewer errors when integrating into the final decision. The GeoBrowse bernchmark and codes are provided in https://github.com/ornamentt/GeoBrowse",
+      "authors": [
+        "Xinyu Geng",
+        "Yanjing Xiao",
+        "Yuyang Zhang",
+        "Hanwen Wang",
+        "Xinyan Liu",
+        "Rui Min",
+        "Tianqing Fang",
+        "Yi R. Fung"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-04-05T08:29:52Z",
+      "updated": "2026-04-05T08:29:52Z",
+      "announced_date": "2026-04-05",
+      "first_seen": "2026-04-05",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.04017v1",
+        "pdf": "https://arxiv.org/pdf/2604.04017v1",
+        "html": "https://arxiv.org/html/2604.04017"
+      },
+      "score": 22,
+      "tags": [
+        "tool-use",
+        "planning",
+        "research",
+        "multimodal"
+      ],
+      "field": "tool-use",
+      "citations": 2
+    }
+  ]
+}

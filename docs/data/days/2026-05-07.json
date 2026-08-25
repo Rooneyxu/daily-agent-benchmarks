@@ -1,0 +1,372 @@
+{
+  "date": "2026-05-07",
+  "count": 8,
+  "report": {
+    "date": "2026-05-07",
+    "count": 8,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "research",
+        "count": 2,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      }
+    ],
+    "en": {
+      "headline": "8 new agent benchmarks",
+      "summary": "On May 7, 2026, arXiv listed 8 new agent benchmarks. Work clustered around Planning / reasoning (3), Multi-agent (2), Safety (2), and Research agents (2).",
+      "highlights": [
+        {
+          "id": "2605.06869",
+          "title": "Agentick: A Unified Benchmark for General Sequential Decision-Making Agents",
+          "blurb": "AI agent research spans a wide spectrum: from RL agents that learn from scratch to foundation model agents that leverage pre-trained knowledge, yet no unified benchmark enables fair comparison across these approaches."
+        },
+        {
+          "id": "2605.06334",
+          "title": "MANTRA: Synthesizing SMT-Validated Compliance Benchmarks for Tool-Using LLM Agents",
+          "blurb": "Tool-using large language model (LLM) agents are increasingly deployed in settings where their reliable behavior is governed by strict procedural manuals."
+        },
+        {
+          "id": "2605.06177",
+          "title": "BioMedArena: An Open-source Toolkit for Building and Evaluating Biomedical Deep Research Agents",
+          "blurb": "Reproducing and comparing deep research agents today is hard: the same backbone evaluated on the same benchmark can report different accuracies across papers because the harness and tool registry differ, and integrating…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 8 篇 Agent Benchmark",
+      "summary": "2026年5月7日，arXiv 新增 8 篇 Agent Benchmark。当日主题集中在规划 / 推理（3）、多智能体（2）、安全（2）、科研智能体（2）。",
+      "highlights": [
+        {
+          "id": "2605.06869",
+          "title": "Agentick: A Unified Benchmark for General Sequential Decision-Making Agents",
+          "blurb": "AI agent research spans a wide spectrum: from RL agents that learn from scratch to foundation model agents that leverage pre-trained knowledge, yet no unified benchmark enables fair comparison across these approaches."
+        },
+        {
+          "id": "2605.06334",
+          "title": "MANTRA: Synthesizing SMT-Validated Compliance Benchmarks for Tool-Using LLM Agents",
+          "blurb": "Tool-using large language model (LLM) agents are increasingly deployed in settings where their reliable behavior is governed by strict procedural manuals."
+        },
+        {
+          "id": "2605.06177",
+          "title": "BioMedArena: An Open-source Toolkit for Building and Evaluating Biomedical Deep Research Agents",
+          "blurb": "Reproducing and comparing deep research agents today is hard: the same backbone evaluated on the same benchmark can report different accuracies across papers because the harness and tool registry differ, and integrating…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2605.06869",
+      "title": "Agentick: A Unified Benchmark for General Sequential Decision-Making Agents",
+      "abstract": "AI agent research spans a wide spectrum: from RL agents that learn from scratch to foundation model agents that leverage pre-trained knowledge, yet no unified benchmark enables fair comparison across these approaches. We present Agentick, a benchmark for sequential decision-making agents designed to evaluate RL, LLM, VLM, hybrid, and human agents on common ground and to power research on the fundamental challenges of sequential decision-making. Agentick provides 37 procedurally generated tasks across six capability categories, four difficulty levels, and five observation modalities, all exposed through a single Gymnasium-compatible interface. The benchmark ships with a Coding API, oracle reference policies for all tasks, pre-built SFT datasets, a composable agent harness, and a live leaderboard. An evaluation spanning 27 configurations and over 90,000 episodes reveals that no single approach dominates: GPT-5 mini leads overall at 0.309 oracle-normalized score while PPO dominates planning and multi-agent tasks; the reasoning harness multiplies LLM performance by 3-10x; and ASCII observations consistently outperform natural language. These findings highlight the substantial room for improvement that remains across all agent paradigms. Agentick's capability-decomposed, multi-modal design provides the empirical infrastructure needed to drive progress toward general autonomous agents, both as an evaluation framework and as a training ground for RL post-training of foundation models in truly sequential environments.",
+      "authors": [
+        "Roger Creus Castanyer",
+        "Pablo Samuel Castro",
+        "Glen Berseth"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-07T19:12:03Z",
+      "updated": "2026-05-12T18:33:33Z",
+      "announced_date": "2026-05-07",
+      "first_seen": "2026-05-07",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.06869v2",
+        "pdf": "https://arxiv.org/pdf/2605.06869v2",
+        "html": "https://arxiv.org/html/2605.06869"
+      },
+      "score": 23,
+      "tags": [
+        "multi-agent",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2605.06527",
+      "title": "STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?",
+      "abstract": "Large Language Model (LLM) agents are increasingly expected to maintain coherent, long-term personalized memory, yet current benchmarks primarily measure static fact retrieval, overlooking the ability to revise stored beliefs when new evidence emerges. We identify a critical and underexplored failure mode, Implicit Conflict: a later observation invalidates an earlier memory without explicit negation, requiring contextual inference and commonsense reasoning to detect. To rigorously evaluate this capability, we introduce STALE, a benchmark of 400 expert-validated conflict scenarios (1,200 evaluation queries across three probing dimensions) spanning over 100 everyday topics with contexts up to 150K tokens. We propose a three-dimensional probing framework that tests State Resolution (detecting that a prior belief is outdated), Premise Resistance (rejecting queries that falsely presuppose a stale state), and Implicit Policy Adaptation (proactively applying updated states in downstream behavior). A systematic evaluation of frontier LLMs and specialized memory frameworks reveals a pervasive gap between retrieving updated evidence and acting on it, with even the best evaluated model achieving only 55.2% overall accuracy. Models often accept outdated assumptions embedded in a user's query, and they struggle to recognize when a change in one aspect of the user's state should invalidate related memories. To establish an initial baseline for state-aware memory, we further present CUPMem, a prototype that strengthens write-time revision through structured state consolidation and propagation-aware search, suggesting that explicit state adjudication is a promising direction for robust agentic memory.",
+      "authors": [
+        "Hanxiang Chao",
+        "Yihan Bai",
+        "Rui Sheng",
+        "Tianle Li",
+        "Yushi Sun"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-07T16:31:15Z",
+      "updated": "2026-05-07T16:31:15Z",
+      "announced_date": "2026-05-07",
+      "first_seen": "2026-05-07",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.06527v1",
+        "pdf": "https://arxiv.org/pdf/2605.06527v1",
+        "html": "https://arxiv.org/html/2605.06527"
+      },
+      "score": 13,
+      "tags": [
+        "safety",
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 16
+    },
+    {
+      "id": "2605.06490",
+      "title": "Instrumental Choices: Measuring the Propensity of LLM Agents to Pursue Instrumental Behaviors",
+      "abstract": "AI systems have become increasingly capable of dangerous behaviours in many domains. This raises the question: Do models sometimes choose to violate human instructions in order to perform behaviour that is more useful for certain goals? We introduce a benchmark for measuring model propensity for instrumental convergence (IC) behaviour in terminal-based agents. This is behaviour such as self-preservation that has been hypothesised to play a key role in risks from highly capable AI agents. Our benchmark is realistic and low-stakes which serves to reduce evaluation-awareness and roleplay confounds. The suite contains seven operational tasks, each with an official workflow and a policy-violating shortcut. An eight-variant shared framework varies monitoring, instruction clarity, stakes, permission, instrumental usefulness and blocked honest paths to support inferences regarding the factors driving IC behaviour. We evaluated ten models using deterministic environment-state scorers over 1,680 samples, with trace review employed for audit and adjudication purposes. The final IC rate is 86 out of 1,680 samples (5.1%). IC behaviour is concentrated rather than uniform: two Gemini models account for 66.3% of IC cases and three tasks account for 84.9%. Conditions in which IC behaviour is indispensable for task success result in the greatest increase in the adjusted IC rate (+15.7 percentage points), whereas emphasising that task success is critical or certain framing choices do not produce comparable effects. Our findings indicate that realistic, low-nudge environments elicit IC behaviour rarely but systematically in most tested models. We conclude that it is feasible to robustly measure tendencies for dangerous behaviour in current frontier AI agents.",
+      "authors": [
+        "Jonas Wiedermann-Möller",
+        "Leonard Dung",
+        "Maksym Andriushchenko"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CY"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-07T16:12:36Z",
+      "updated": "2026-05-07T16:12:36Z",
+      "announced_date": "2026-05-07",
+      "first_seen": "2026-05-07",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.06490v1",
+        "pdf": "https://arxiv.org/pdf/2605.06490v1",
+        "html": "https://arxiv.org/html/2605.06490"
+      },
+      "score": 13,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2605.06345",
+      "title": "More Than Can Be Said: A Benchmark and Framework for Pre-Question Scientific Ideation",
+      "abstract": "AI research agents have shown strong potential in automating literature search and manuscript refinement, yet most assume a clear and actionable initial input, operating only after a research question has been made explicit. In contrast, human research often begins with tacit friction, a sense of misalignment before a question can be formed. We introduce InciteResearch, a multi-agent framework designed to make a researcher's implicit understanding explicit, inspectable, and actionable. InciteResearch decomposes the logical chain of Socratic questioning and distributes it across the entire pipeline that: (1) Elicits a structured five-dimensional researcher profile state anchored by specific friction points from vague, even domain-unrelated inputs; (2) Violates hidden assumptions by maximizing the feasibility-novelty product with enforcing a 7-stage causal derivation trace; and (3) check whether the proposed method is a Necessary consequence of the reframed insight. We further introduce TF-Bench, the first benchmark for tacit-to-explicit research assistance that distinguishes domain-related from domain-unrelated inspirations across four scientific modes. On TF-Bench, InciteResearch achieves leapfrogging gains over a prompt-based baseline (novelty/impact from 3.671/3.806 to 4.250/4.397), shifting generated proposals from recombination to architectural insight. Our work demonstrates that AI can serve as an extension of thinking itself, rather than merely automating downstream execution.",
+      "authors": [
+        "Jie Yu",
+        "Song Qiu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-07T14:30:03Z",
+      "updated": "2026-05-07T14:30:03Z",
+      "announced_date": "2026-05-07",
+      "first_seen": "2026-05-07",
+      "comment": "19 pages, 2 figures; Code is available at https://github.com/Paradoxtcal/InciteResearch.git",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.06345v1",
+        "pdf": "https://arxiv.org/pdf/2605.06345v1",
+        "html": "https://arxiv.org/html/2605.06345"
+      },
+      "score": 11,
+      "tags": [
+        "multi-agent",
+        "research",
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2605.06334",
+      "title": "MANTRA: Synthesizing SMT-Validated Compliance Benchmarks for Tool-Using LLM Agents",
+      "abstract": "Tool-using large language model (LLM) agents are increasingly deployed in settings where their reliable behavior is governed by strict procedural manuals. Ensuring that such agents comply with the rules from these manuals is challenging, as they are typically written for humans in natural language while agent behavior manifests as an execution trace of tool calls. Existing evaluations of LLM agents rely on manually constructed benchmarks or LLM-based judges, which either do not scale or lack reliability for complex, long-horizon manuals. To overcome these limitations, we present MANTRA, a framework for automatically synthesizing machine-checkable compliance benchmarks from natural-language manuals and tool schemas. MANTRA independently generates (i) a symbolic world model capturing procedural dependencies, and (ii) a set of trace-level compliance checks for a given task, and validates their consistency using SMT solving. A structured repair loop resolves inconsistencies, requiring human intervention only as a fallback. %This yields benchmarks that are formally validated. Importantly, MANTRA supports arbitrary domains and long procedural manuals, and provides a tunable notion of task complexity which is utilized to automatically derive challenging tasks accompanying compliance checks. Using MANTRA, we build a new benchmark suite with 285 tasks across 6 domains scaling to 50+ page manuals with minimal human effort. Empirically, we show that the compliance checks are richer with stronger constraint enforcement compared to existing benchmarks. Additionally, the granularity of the checks can be used for debugging the agents' failure modes. These results demonstrate that combining automated benchmark generation with formally grounded validation methods enables scalable and reliable benchmarking of tool-using agents.",
+      "authors": [
+        "Ashwani Anand",
+        "Ivi Chatzi",
+        "Ritam Raha",
+        "Anne-Kathrin Schmuck"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG",
+        "cs.LO"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-07T14:26:19Z",
+      "updated": "2026-05-07T14:26:19Z",
+      "announced_date": "2026-05-07",
+      "first_seen": "2026-05-07",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.06334v1",
+        "pdf": "https://arxiv.org/pdf/2605.06334v1",
+        "html": "https://arxiv.org/html/2605.06334"
+      },
+      "score": 18,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2605.06177",
+      "title": "BioMedArena: An Open-source Toolkit for Building and Evaluating Biomedical Deep Research Agents",
+      "abstract": "Reproducing and comparing deep research agents today is hard: the same backbone evaluated on the same benchmark can report different accuracies across papers because the harness and tool registry differ, and integrating a new model into a comparable evaluation surface costs weeks of model-specific engineering. These are symptoms of a broader reproducibility problem in deep research agent research. Here, we introduce BioMedArena, an open-source toolkit that addresses this reproducibility gap and provides an arena for comparing deep research agents under a shared evaluation environment. BioMedArena decouples six layers of biomedical agent evaluation -- benchmark loading, tool exposure, tool selection, harness mode, context management, and scoring -- and exposes 166 biomedical benchmarks and 75 biomedical tools across 9 functional families. Adding a new model, benchmark, or tool can be accomplished with a few-line provider adapter. Beyond evaluation infrastructure, BioMedArena ships a library of high-quality reference components: 6 agent harnesses (including our proposed Mutual-Evolve) and 6 context-management strategies, any of which can be equipped on any backbone. Equipping these components substantially improves all 12 backbones; on each of 8 representative biomedical benchmarks, the best equipped backbone surpasses prior state-of-the-art (SOTA), by 15.01 percentage points on average. The toolkit, configurations, and per-task traces are available at https://github.com/AI-in-Health/BioMedArena.",
+      "authors": [
+        "Jinge Wu",
+        "Hongjian Zhou",
+        "Mingde Zeng",
+        "Jiayuan Zhu",
+        "Junde Wu",
+        "Jiazhen Pan",
+        "Ayush Noori",
+        "Sean Wu",
+        "Honghan Wu",
+        "Fenglin Liu",
+        "David A. Clifton"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-07T12:57:18Z",
+      "updated": "2026-06-23T17:07:51Z",
+      "announced_date": "2026-05-07",
+      "first_seen": "2026-05-07",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.06177v2",
+        "pdf": "https://arxiv.org/pdf/2605.06177v2",
+        "html": "https://arxiv.org/html/2605.06177"
+      },
+      "score": 15,
+      "tags": [
+        "tool-use",
+        "research"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2605.06125",
+      "title": "Breaking, Stale, or Missing? Benchmarking Coding Agents on Project-Level Test Evolution",
+      "abstract": "As production code evolves, the test suite must co-evolve to remain effective. Existing benchmarks for test evolution operate at method-level granularity with pre-paired inputs, bypassing the task of locating affected tests from the full project and excluding the need for new tests entirely. We present TEBench, the first project-level benchmark for test evolution. Given a project repository and a code-changing commit, TEBench requires systems to autonomously identify tests requiring modification, determine where new tests are needed, and produce the corresponding test patch. We construct TEBench through a four-stage pipeline over Defects4J projects, curating 314 task instances from 10 projects with developer-written ground truth. Each instance is annotated with one or more of three evolution types: Test-Breaking (tests that fail), Test-Stale (tests that pass but no longer meaningfully validate updated behavior), and Test-Missing (new tests needed for introduced behavior). We evaluate seven configurations spanning three industrial agent frameworks (Claude Code, Codex CLI, OpenCode) and six base models, alongside a heuristic baseline. All seven configurations converge on an identification F1 of 45.7% to 49.4%, revealing a shared performance ceiling across both frameworks and base models. Test-Stale is the most challenging type, averaging F1 around 36%, since configurations rely on execution failure signals and lack proactive semantic reasoning. On the update task, configurations produce highly executable test modifications whose surface form diverges substantially from ground truth. Trajectory analysis reveals a reactive \"execute-fail-fix\" loop that succeeds for breaking tests but structurally cannot address stale or missing tests. TEBench is available at https://github.com/iSEngLab/TEBench with a leaderboard at https://tebench-leadership.vercel.app.",
+      "authors": [
+        "Ye Shang",
+        "Quanjun Zhang",
+        "Haichuan Hu",
+        "Chunrong Fang",
+        "Liang Xiao",
+        "Zhenyu Chen"
+      ],
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-05-07T12:31:09Z",
+      "updated": "2026-05-07T12:31:09Z",
+      "announced_date": "2026-05-07",
+      "first_seen": "2026-05-07",
+      "comment": "15 pages, 5 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.06125v1",
+        "pdf": "https://arxiv.org/pdf/2605.06125v1",
+        "html": "https://arxiv.org/html/2605.06125"
+      },
+      "score": 14,
+      "tags": [
+        "coding",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 1
+    },
+    {
+      "id": "2605.05726",
+      "title": "SkillRet: A Large-Scale Benchmark for Skill Retrieval in LLM Agents",
+      "abstract": "As LLM agents are increasingly deployed with large libraries of reusable skills, selecting the right skill for a user request has become a critical systems challenge. In small libraries, users may invoke skills explicitly by name, but this assumption breaks down as skill ecosystems grow under tight context and latency budgets. Despite its practical importance, skill retrieval remains underexplored, with limited benchmarks and little understanding of retrieval behavior on realistic skill libraries. To address this gap, we introduce SkillRet, a large-scale benchmark for skill retrieval in LLM agents. SkillRet contains 17,810 public agent skills, organized with structured semantic tags and a two-level taxonomy spanning 6 major categories and 18 sub-categories. It provides 63,259 training samples and 4,997 evaluation queries with disjoint skill pools, enabling both benchmarking and retrieval-oriented training. Across a diverse set of retrievers, we find that skill retrieval remains far from solved: off-the-shelf models struggle on realistic large-scale skill libraries, and prior skill-retrieval models still leave substantial headroom. Task-specific fine-tuning on SkillRet substantially improves performance, improving NDCG@10 by +13.1 points over the strongest prior retriever and by +16.9 points over the strongest off-the-shelf retriever. Our analysis further suggests that these gains arise because fine-tuned models better focus on the small skill-relevant signals within long and noisy queries. These results establish SkillRet as a strong benchmark and foundation for future research on retrieval in large-scale agent systems.",
+      "authors": [
+        "Hongcheol Cho",
+        "Ryangkyung Kang",
+        "Youngeun Kim"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-07T06:18:11Z",
+      "updated": "2026-05-07T06:18:11Z",
+      "announced_date": "2026-05-07",
+      "first_seen": "2026-05-07",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.05726v1",
+        "pdf": "https://arxiv.org/pdf/2605.05726v1",
+        "html": "https://arxiv.org/html/2605.05726"
+      },
+      "score": 15,
+      "tags": [],
+      "field": "other",
+      "citations": 30
+    }
+  ]
+}

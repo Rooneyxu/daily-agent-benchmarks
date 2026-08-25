@@ -1,0 +1,239 @@
+{
+  "date": "2026-06-21",
+  "count": 4,
+  "report": {
+    "date": "2026-06-21",
+    "count": 4,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On June 21, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Tool use (3), Planning / reasoning (2), Safety (2), and Coding agents (1).",
+      "highlights": [
+        {
+          "id": "2606.22557",
+          "title": "MacAgentBench: Benchmarking AI Agents on Real-World macOS Desktop",
+          "blurb": "Computer use agents (CUAs) have advanced rapidly in desktop automation, and a growing number of users deploy CUAs such as OpenClaw on Mac Mini for always-on automation."
+        },
+        {
+          "id": "2606.22678",
+          "title": "RigorBench: Benchmarking Engineering Process Discipline in Autonomous AI Coding Agents",
+          "blurb": "Agentic coding harnesses - such as Agent-Skills, Superpowers, and Agent-Rigor - are increasingly deployed to augment underlying LLMs for real-world software engineering tasks."
+        },
+        {
+          "id": "2606.22388",
+          "title": "PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems",
+          "blurb": "LLM agents increasingly operate in large tool ecosystems, where real-world tasks require discovering relevant tools, inferring implicit sub-goals, and adapting to dynamic environments over long horizons."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年6月21日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在工具使用（3）、规划 / 推理（2）、安全（2）、代码智能体（1）。",
+      "highlights": [
+        {
+          "id": "2606.22557",
+          "title": "MacAgentBench: Benchmarking AI Agents on Real-World macOS Desktop",
+          "blurb": "Computer use agents (CUAs) have advanced rapidly in desktop automation, and a growing number of users deploy CUAs such as OpenClaw on Mac Mini for always-on automation."
+        },
+        {
+          "id": "2606.22678",
+          "title": "RigorBench: Benchmarking Engineering Process Discipline in Autonomous AI Coding Agents",
+          "blurb": "Agentic coding harnesses - such as Agent-Skills, Superpowers, and Agent-Rigor - are increasingly deployed to augment underlying LLMs for real-world software engineering tasks."
+        },
+        {
+          "id": "2606.22388",
+          "title": "PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems",
+          "blurb": "LLM agents increasingly operate in large tool ecosystems, where real-world tasks require discovering relevant tools, inferring implicit sub-goals, and adapting to dynamic environments over long horizons."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.22678",
+      "title": "RigorBench: Benchmarking Engineering Process Discipline in Autonomous AI Coding Agents",
+      "abstract": "Agentic coding harnesses - such as Agent-Skills, Superpowers, and Agent-Rigor - are increasingly deployed to augment underlying LLMs for real-world software engineering tasks. Existing benchmarks evaluate these agents almost exclusively on outcome correctness: whether generated code passes tests or resolves issues. We argue that this outcome-only lens is insufficient: an agent that arrives at a correct solution through reckless trial-and-error, without planning, verification, or graceful recovery, is fundamentally less reliable than one that follows sound engineering discipline. We introduce RigorBench, the first benchmark designed to measure process discipline in AI coding agents. RigorBench evaluates these harnesses across five pillars: Planning Fidelity, Verification Coverage, Recovery Efficiency, Abstention Quality, and Atomic Transition Integrity. A composite RigorScore aggregates these dimensions into a single metric via a weighted sum. We curate a suite of 30 tasks spanning five categories - Plan-Then-Build, Verify-Or-Die, Doom Loop Gauntlet, Know When to Fold, and Don't Break the Build-and evaluate leading harnesses in a controlled with/without experimental design against baseline coding assistants. Our results show that structured process discipline not only improves process quality scores by an average of 41% but also raises downstream outcome correctness by 17%, providing the first quantitative evidence that how agents code matters as much as what they produce. We release the full benchmark, scoring rubrics, and trajectory analysis tools as open-source artifacts.",
+      "authors": [
+        "Meher Bhaskar Madiraju",
+        "Meher Sai Preetam Madiraju"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-06-21T21:41:34Z",
+      "updated": "2026-06-29T19:02:41Z",
+      "announced_date": "2026-06-21",
+      "first_seen": "2026-06-21",
+      "comment": "9 pages, 7 tables, 1 figure",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.22678v2",
+        "pdf": "https://arxiv.org/pdf/2606.22678v2",
+        "html": "https://arxiv.org/html/2606.22678"
+      },
+      "score": 20,
+      "tags": [
+        "coding",
+        "tool-use",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 1
+    },
+    {
+      "id": "2606.22557",
+      "title": "MacAgentBench: Benchmarking AI Agents on Real-World macOS Desktop",
+      "abstract": "Computer use agents (CUAs) have advanced rapidly in desktop automation, and a growing number of users deploy CUAs such as OpenClaw on Mac Mini for always-on automation. However, existing benchmarks, including those for macOS, evaluate agents without framework augmentation and rely on binary evaluation. As a result, they fail to capture both the framework capabilities leveraged by modern CUAs and the partial progress on long-horizon, multi-application tasks. We present MacAgentBench, a comprehensive macOS agent benchmark comprising 676 tasks across 25 applications, with nearly 60% involving both GUI and CLI interaction. The benchmark adopts deterministic rule-based evaluation and introduces fine-grained multi-checkpoint scoring with capability annotations for multi-application tasks. Experiments across three frameworks and 16 models show that the best configuration, Claude Opus 4.6 on OpenClaw, attains 73.7% Pass@1, while this advantage is primarily driven by the skill library rather than by framework design. Fine-grained metrics further reveal that models with similar Pass@1 can differ substantially in sub-goal completion. Our code and data are publicly available at https://github.com/JetAstra/MacAgentBench.",
+      "authors": [
+        "Yikun Fu",
+        "Bowen Fu",
+        "Zhenyu Wu",
+        "Shuang Cheng",
+        "Xiaowei Sun",
+        "Bowen Yang",
+        "Zehao Li",
+        "Yibo Zhao",
+        "Zichen Ding",
+        "Zhoumianze Liu",
+        "Shijie Wang",
+        "Biqing Qi",
+        "Bowen Zhou"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.HC"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-21T15:32:57Z",
+      "updated": "2026-06-21T15:32:57Z",
+      "announced_date": "2026-06-21",
+      "first_seen": "2026-06-21",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.22557v1",
+        "pdf": "https://arxiv.org/pdf/2606.22557v1",
+        "html": "https://arxiv.org/html/2606.22557"
+      },
+      "score": 21,
+      "tags": [
+        "gui",
+        "computer-use"
+      ],
+      "field": "computer-use",
+      "citations": 1
+    },
+    {
+      "id": "2606.22528",
+      "title": "Governance Decay: How Context Compaction Silently Erases Safety Constraints in Long-Horizon LLM Agents",
+      "abstract": "Modern LLM agents increasingly rely on context compaction, summarization, or eviction to keep long-running sessions within a token budget. We show that this context-management layer is a safety-critical failure surface: in-context governance constraints that agents reliably obey while visible can be silently removed by compaction, causing the same agent to perform prohibited tool actions later in the session. We call this failure mode Governance Decay. We introduce ConstraintRot, a benchmark of long-horizon agent scenarios with deterministic tool-call grading, and measure compaction-induced violations across seven model families. Across 1,323 episodes, violation rises from 0% with the policy in full context to 30% after compaction, reaching 59% for some models; when the constraint survives the summary, violation remains 0%, but when it is dropped, violation reaches 38%. We further study a Compaction-Eviction Attack, in which adversarial in-context content biases the summarizer to omit a legitimate policy, and show that optimized injections defeat every evaluated model. Finally, we propose Constraint Pinning, a simple training-free mitigation that quarantines governance constraints from lossy compaction and restores violation to 0% in our benchmark. These results identify context management as a first-class governance surface for deployed LLM agents.",
+      "authors": [
+        "Shiyang Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-21T14:30:20Z",
+      "updated": "2026-06-27T08:35:20Z",
+      "announced_date": "2026-06-21",
+      "first_seen": "2026-06-21",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.22528v2",
+        "pdf": "https://arxiv.org/pdf/2606.22528v2",
+        "html": "https://arxiv.org/html/2606.22528"
+      },
+      "score": 10,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 3
+    },
+    {
+      "id": "2606.22388",
+      "title": "PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems",
+      "abstract": "LLM agents increasingly operate in large tool ecosystems, where real-world tasks require discovering relevant tools, inferring implicit sub-goals, and adapting to dynamic environments over long horizons. However, existing benchmarks rarely evaluate planning under retrieval-limited tool visibility. To address this gap, we introduce PlanBench-XL, an interactive benchmark of 327 retail tasks over 1,665 tools that tests whether agents can iteratively retrieve usable tools, invoke them to uncover intermediate evidence for subsequent calls toward the final goal. PlanBench-XL further features an optional blocking mechanism that simulates real-world unpredictability through missing, failing, or distracting tool functions, forcing agents to detect disrupted paths and adapt at runtime. Experiments on ten leading LLMs show that massive-tool planning remains challenging: while GPT-5.4 achieves 51.90% accuracy in block-free settings, it collapses to 11.36% under the most severe blocking condition. Further analysis shows that agents are especially vulnerable when failures lack explicit error signals or when recovery requires longer alternative tool-use paths. These results establish PlanBench-XL as a testbed for diagnosing agentic planning failures and highlight the need for robust adaptive planning in long-horizon tasks with large, imperfect tool environments.",
+      "authors": [
+        "Jiayu Liu",
+        "Qihan Lin",
+        "Cheng Qian",
+        "Rui Wang",
+        "Emre Can Acikgoz",
+        "Xiaocheng Yang",
+        "Jiateng Liu",
+        "Zhenhailong Wang",
+        "Xiusi Chen",
+        "Heng Ji",
+        "Dilek Hakkani-Tür"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-21T08:29:12Z",
+      "updated": "2026-06-21T08:29:12Z",
+      "announced_date": "2026-06-21",
+      "first_seen": "2026-06-21",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.22388v1",
+        "pdf": "https://arxiv.org/pdf/2606.22388v1",
+        "html": "https://arxiv.org/html/2606.22388"
+      },
+      "score": 18,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "tool-use",
+      "citations": 7
+    }
+  ]
+}

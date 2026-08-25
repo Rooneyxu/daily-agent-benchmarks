@@ -1,0 +1,452 @@
+{
+  "date": "2026-03-16",
+  "count": 9,
+  "report": {
+    "date": "2026-03-16",
+    "count": 9,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 5,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multimodal",
+        "count": 3,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      }
+    ],
+    "en": {
+      "headline": "9 new agent benchmarks",
+      "summary": "On March 16, 2026, arXiv listed 9 new agent benchmarks. Work clustered around Tool use (5), Multimodal (3), Coding agents (2), and Planning / reasoning (2).",
+      "highlights": [
+        {
+          "id": "2604.06209",
+          "title": "TelcoAgent-Bench: A Multilingual Benchmark for Telecom AI Agents",
+          "blurb": "The integration of large language model (LLM) agents into telecom networks introduces new challenges, related to intent recognition, tool execution, and resolution generation, while taking into consideration different op…"
+        },
+        {
+          "id": "2603.15309",
+          "title": "CCTU: A Benchmark for Tool Use under Complex Constraints",
+          "blurb": "Solving problems through tool use under explicit constraints constitutes a highly challenging yet unavoidable scenario for large language models (LLMs), requiring capabilities such as function calling, instruction follow…"
+        },
+        {
+          "id": "2603.15030",
+          "title": "VTC-Bench: Evaluating Agentic Multimodal Models via Compositional Visual Tool Chaining",
+          "blurb": "Recent advancements extend Multimodal Large Language Models (MLLMs) beyond standard visual question answering to utilizing external tools for advanced visual tasks."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 9 篇 Agent Benchmark",
+      "summary": "2026年3月16日，arXiv 新增 9 篇 Agent Benchmark。当日主题集中在工具使用（5）、多模态（3）、代码智能体（2）、规划 / 推理（2）。",
+      "highlights": [
+        {
+          "id": "2604.06209",
+          "title": "TelcoAgent-Bench: A Multilingual Benchmark for Telecom AI Agents",
+          "blurb": "The integration of large language model (LLM) agents into telecom networks introduces new challenges, related to intent recognition, tool execution, and resolution generation, while taking into consideration different op…"
+        },
+        {
+          "id": "2603.15309",
+          "title": "CCTU: A Benchmark for Tool Use under Complex Constraints",
+          "blurb": "Solving problems through tool use under explicit constraints constitutes a highly challenging yet unavoidable scenario for large language models (LLMs), requiring capabilities such as function calling, instruction follow…"
+        },
+        {
+          "id": "2603.15030",
+          "title": "VTC-Bench: Evaluating Agentic Multimodal Models via Compositional Visual Tool Chaining",
+          "blurb": "Recent advancements extend Multimodal Large Language Models (MLLMs) beyond standard visual question answering to utilizing external tools for advanced visual tasks."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2603.16011",
+      "title": "FormulaCode: Evaluating Agentic Optimization on Large Codebases",
+      "abstract": "Large language model (LLM) coding agents increasingly operate at the repository level, motivating benchmarks that evaluate their ability to optimize entire codebases under realistic constraints. Existing code benchmarks largely rely on synthetic tasks, binary correctness signals, or single-objective evaluation, limiting their ability to assess holistic optimization behavior. We introduce FormulaCode, a benchmark for evaluating agentic optimization on large, real-world codebases with fine-grained, multi-objective performance metrics. FormulaCode comprises 957 performance bottlenecks mined from scientific Python repositories on GitHub, each paired with expert-authored patches and, on average, 264.6 community-maintained performance workloads per task, enabling the holistic ability of LLM agents to optimize codebases under realistic correctness and performance constraints. Our evaluations reveal that repository-scale, multi-objective optimization remains a major challenge for frontier LLM agents. Project website at: https://formula-code.github.io",
+      "authors": [
+        "Atharva Sehgal",
+        "James Hou",
+        "Akanksha Sarkar",
+        "Ishaan Mantripragada",
+        "Swarat Chaudhuri",
+        "Jennifer J. Sun",
+        "Yisong Yue"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-03-16T23:40:19Z",
+      "updated": "2026-07-17T23:45:52Z",
+      "announced_date": "2026-03-16",
+      "first_seen": "2026-03-16",
+      "comment": "ICML Camera Ready Version",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.16011v3",
+        "pdf": "https://arxiv.org/pdf/2603.16011v3",
+        "html": "https://arxiv.org/html/2603.16011"
+      },
+      "score": 15,
+      "tags": [
+        "coding",
+        "science"
+      ],
+      "field": "coding",
+      "citations": 3
+    },
+    {
+      "id": "2603.15798",
+      "title": "CUBE: A Standard for Unifying Agent Benchmarks",
+      "abstract": "The proliferation of agent benchmarks has created critical fragmentation that threatens research productivity. Each new benchmark requires substantial custom integration, creating an \"integration tax\" that limits comprehensive evaluation. We propose CUBE (Common Unified Benchmark Environments), a universal protocol standard built on MCP and Gym that allows benchmarks to be wrapped once and used everywhere. By separating task, benchmark, package, and registry concerns into distinct API layers, CUBE enables any compliant platform to access any compliant benchmark for evaluation, RL training, or data generation without custom integration. We call on the community to contribute to the development of this standard before platform-specific implementations deepen fragmentation as benchmark production accelerates through 2026.",
+      "authors": [
+        "Alexandre Lacoste",
+        "Nicolas Gontier",
+        "Oleh Shliazhko",
+        "Aman Jaiswal",
+        "Kusha Sareen",
+        "Shailesh Nanisetty",
+        "Joan Cabezas",
+        "Manuel Del Verme",
+        "Omar G. Younis",
+        "Simone Baratta",
+        "Matteo Avalle",
+        "Imene Kerboua",
+        "Xing Han Lù",
+        "Elron Bandel",
+        "Michal Shmueli-Scheuer",
+        "Asaf Yehudai",
+        "Leshem Choshen",
+        "Jonathan Lebensold",
+        "Sean Hughes",
+        "Massimo Caccia",
+        "Alexandre Drouin",
+        "Siva Reddy",
+        "Tao Yu",
+        "Yu Su",
+        "Graham Neubig",
+        "Dawn Song"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-16T18:31:37Z",
+      "updated": "2026-03-16T18:31:37Z",
+      "announced_date": "2026-03-16",
+      "first_seen": "2026-03-16",
+      "comment": "Position paper. 10 pages. Reference implementation: https://github.com/The-AI-Alliance/cube-standard",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.15798v1",
+        "pdf": "https://arxiv.org/pdf/2603.15798v1",
+        "html": "https://arxiv.org/html/2603.15798"
+      },
+      "score": 8,
+      "tags": [],
+      "field": "other",
+      "citations": 3
+    },
+    {
+      "id": "2603.15401",
+      "title": "SWE-Skills-Bench: Do Agent Skills Actually Help in Real-World Software Engineering?",
+      "abstract": "Agent skills, structured procedural knowledge packages injected at inference time, are increasingly used to augment LLM agents on software engineering tasks. However, their real utility in end-to-end development settings remains unclear. We present SWE-Skills-Bench, the first requirement-driven benchmark that isolates the marginal utility of agent skills in real-world software engineering (SWE). It pairs 49 public SWE skills with authentic GitHub repositories pinned at fixed commits and requirement documents with explicit acceptance criteria, yielding approximately 565 task instances across six SWE subdomains. We introduce a deterministic verification framework that maps each task's acceptance criteria to execution-based tests, enabling controlled paired evaluation with and without the skill. Our results show that skill injection benefits are far more limited than rapid adoption suggests: 39 of 49 skills yield zero pass-rate improvement, and the average gain is only +1.2%. Token overhead varies from modest savings to a 451% increase while pass rates remain unchanged. Only seven specialized skills produce meaningful gains (up to +30%), while three degrade performance (up to -10%) due to version-mismatched guidance conflicting with project context. These findings suggest that agent skills are a narrow intervention whose utility depends strongly on domain fit, abstraction level, and contextual compatibility. SWE-Skills-Bench provides a testbed for evaluating the design, selection, and deployment of skills in software engineering agents. SWE-Skills-Bench is available at https://github.com/GeniusHTX/SWE-Skills-Bench.",
+      "authors": [
+        "Tingxu Han",
+        "Yi Zhang",
+        "Wei Song",
+        "Chunrong Fang",
+        "Zhenyu Chen",
+        "Youcheng Sun",
+        "Lijie Hu"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-03-16T15:16:31Z",
+      "updated": "2026-03-16T15:16:31Z",
+      "announced_date": "2026-03-16",
+      "first_seen": "2026-03-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.15401v1",
+        "pdf": "https://arxiv.org/pdf/2603.15401v1",
+        "html": "https://arxiv.org/html/2603.15401"
+      },
+      "score": 16,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 52
+    },
+    {
+      "id": "2603.15309",
+      "title": "CCTU: A Benchmark for Tool Use under Complex Constraints",
+      "abstract": "Solving problems through tool use under explicit constraints constitutes a highly challenging yet unavoidable scenario for large language models (LLMs), requiring capabilities such as function calling, instruction following, and self-refinement. However, progress has been hindered by the absence of dedicated evaluations. To address this, we introduce CCTU, a benchmark for evaluating LLM tool use under complex constraints. CCTU is grounded in a taxonomy of 12 constraint categories spanning four dimensions (i.e., resource, behavior, toolset, and response). The benchmark comprises 200 carefully curated and challenging test cases across diverse tool-use scenarios, each involving an average of seven constraint types and an average prompt length exceeding 4,700 tokens. To enable reliable evaluation, we develop an executable constraint validation module that performs step-level validation and enforces compliance during multi-turn interactions between models and their environments. We evaluate nine state-of-the-art LLMs in both thinking and non-thinking modes. Results indicate that when strict adherence to all constraints is required, no model achieves a task completion rate above 20%. Further analysis reveals that models violate constraints in over 50% of cases, particularly in the resource and response dimensions. Moreover, LLMs demonstrate limited capacity for self-refinement even after receiving detailed feedback on constraint violations, highlighting a critical bottleneck in the development of robust tool-use agents. To facilitate future research, we release the data and code.",
+      "authors": [
+        "Junjie Ye",
+        "Guoqiang Zhang",
+        "Wenjie Fu",
+        "Tao Gui",
+        "Qi Zhang",
+        "Xuanjing Huang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-03-16T14:05:13Z",
+      "updated": "2026-03-16T14:05:13Z",
+      "announced_date": "2026-03-16",
+      "first_seen": "2026-03-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.15309v1",
+        "pdf": "https://arxiv.org/pdf/2603.15309v1",
+        "html": "https://arxiv.org/html/2603.15309"
+      },
+      "score": 21,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "tool-use",
+      "citations": 6
+    },
+    {
+      "id": "2603.15039",
+      "title": "GUI-CEval: A Hierarchical and Comprehensive Chinese Benchmark for Mobile GUI Agents",
+      "abstract": "Recent progress in Multimodal Large Language Models (MLLMs) has enabled mobile GUI agents capable of visual perception, cross-modal reasoning, and interactive control. However, existing benchmarks are largely English-centric and fail to capture the linguistic and interaction characteristics of the Chinese mobile ecosystem. They also focus on isolated skills such as GUI grounding or offline agent, lacking a unified and fine-grained framework to assess the full capability chain from perception to execution. To address this gap, we introduce GUI-CEval, the first comprehensive benchmark for Chinese mobile GUI agents, built entirely on physical device environments. GUI-CEval spans 201 mainstream apps across four device types and adopts a two-level structure that evaluates both atomic abilities and realistic application-level performance along five dimensions: perception, planning, reflection, execution, and evaluation. All data are collected and verified through multi-stage manual processes to ensure authenticity and reproducibility. Extensive experiments on 20 representative MLLMs and multi-agent systems show that while models such as Qwen2.5-VL and UI-TARS perform competitively, most MLLMs still exhibit clear weaknesses in reflective decision-making and post-action self-evaluation, limiting their reliability in real-world interactions. We hope GUI-CEval provides a comprehensive and interpretable benchmark to guide capability diagnosis and advance the development of Chinese mobile GUI agents.",
+      "authors": [
+        "Yang Li",
+        "Yuchen Liu",
+        "Haoyu Lu",
+        "Zhiqiang Xia",
+        "Hongzhen Wang",
+        "Kaiyang Han",
+        "Changpeng Yang",
+        "Jinyang Wu",
+        "Jiaming Xu",
+        "Runyu Shi",
+        "Ying Huang"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-03-16T09:45:33Z",
+      "updated": "2026-03-16T09:45:33Z",
+      "announced_date": "2026-03-16",
+      "first_seen": "2026-03-16",
+      "comment": "accepted by CVPR 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.15039v1",
+        "pdf": "https://arxiv.org/pdf/2603.15039v1",
+        "html": "https://arxiv.org/html/2603.15039"
+      },
+      "score": 17,
+      "tags": [
+        "gui",
+        "multi-agent",
+        "planning",
+        "multimodal"
+      ],
+      "field": "computer-use",
+      "citations": 3
+    },
+    {
+      "id": "2603.15030",
+      "title": "VTC-Bench: Evaluating Agentic Multimodal Models via Compositional Visual Tool Chaining",
+      "abstract": "Recent advancements extend Multimodal Large Language Models (MLLMs) beyond standard visual question answering to utilizing external tools for advanced visual tasks. Despite this progress, precisely executing and effectively composing diverse tools for complex tasks remain persistent bottleneck. Constrained by sparse tool-sets and simple tool-use trajectories, existing benchmarks fail to capture complex and diverse tool interactions, falling short in evaluating model performance under practical, real-world conditions. To bridge this gap, we introduce VisualToolChain-Bench(VTC-Bench), a comprehensive benchmark designed to evaluate tool-use proficiency in MLLMs. To align with realistic computer vision pipelines, our framework features 32 diverse OpenCV-based visual operations. This rich tool-set enables extensive combinations, allowing VTC-Bench to rigorously assess multi-tool composition and long-horizon, multi-step plan execution. For precise evaluation, we provide 680 curated problems structured across a nine-category cognitive hierarchy, each with ground-truth execution trajectories. Extensive experiments on 19 leading MLLMs reveal critical limitations in current models' visual agentic capabilities. Specifically, models struggle to adapt to diverse tool-sets and generalize to unseen operations, with the leading model Gemini-3.0-Pro only achieving 51% on our benchmark. Furthermore, multi-tool composition remains a persistent challenge. When facing complex tasks, models struggle to formulate efficient execution plans, relying heavily on a narrow, suboptimal subset of familiar functions rather than selecting the optimal tools. By identifying these fundamental challenges, VTC-Bench establishes a rigorous baseline to guide the development of more generalized visual agentic models.",
+      "authors": [
+        "Xuanyu Zhu",
+        "Yuhao Dong",
+        "Rundong Wang",
+        "Yang Shi",
+        "Zhipeng Wu",
+        "Yinlun Peng",
+        "YiFan Zhang",
+        "Yihang Lou",
+        "Yuanxing Zhang",
+        "Ziwei Liu",
+        "Yan Bai",
+        "Yuan Zhou"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-16T09:31:44Z",
+      "updated": "2026-03-19T12:48:14Z",
+      "announced_date": "2026-03-16",
+      "first_seen": "2026-03-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.15030v2",
+        "pdf": "https://arxiv.org/pdf/2603.15030v2",
+        "html": "https://arxiv.org/html/2603.15030"
+      },
+      "score": 18,
+      "tags": [
+        "tool-use",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 11
+    },
+    {
+      "id": "2604.06209",
+      "title": "TelcoAgent-Bench: A Multilingual Benchmark for Telecom AI Agents",
+      "abstract": "The integration of large language model (LLM) agents into telecom networks introduces new challenges, related to intent recognition, tool execution, and resolution generation, while taking into consideration different operational constraints. In this paper, we introduce TelcoAgent-Bench and TelcoAgent-Metrics, a Telecom-specific benchmarking framework for evaluating multilingual telecom LLM agents. The proposed framework assesses the semantic understanding as well as process-level alignment with structured troubleshooting flows and stability across repeated scenario variations. Our contribution includes a structured suite of metrics that assess intent recognition, ordered tool execution, resolution correctness, and stability across scenario variations, with the aim of quantifying the reliability and operational consistency of LLM agents in telecom environments. The framework is designed to operate in both English and Arabic, to address the need for multilingual agent deployment in operational network environments. Our experimental results show that although recent instruct-tuned models can understand telecom problems in a reasonable way, they usually struggle to consistently follow the required troubleshooting steps and to maintain stable behavior when exposed to different variations of the same scenario. This performance gap becomes more pronounced in unconstrained and bilingual settings.",
+      "authors": [
+        "Lina Bariah",
+        "Brahim Mefgouda",
+        "Farbod Tavakkoli",
+        "Enrique Molero",
+        "Louis Powell",
+        "Merouane Debbah"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-03-16T07:02:30Z",
+      "updated": "2026-03-16T07:02:30Z",
+      "announced_date": "2026-03-16",
+      "first_seen": "2026-03-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.06209v1",
+        "pdf": "https://arxiv.org/pdf/2604.06209v1",
+        "html": "https://arxiv.org/html/2604.06209"
+      },
+      "score": 22,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 3
+    },
+    {
+      "id": "2603.14864",
+      "title": "Shopping Companion: Benchmarking and Training LLM Agents for Long-Horizon Preference-Grounded E-Commerce Tasks",
+      "abstract": "In e-commerce, LLM agents show promise for shopping tasks such as recommendations, budget management, and bundle deals, where accurately capturing user preferences from long-horizon conversations is critical. However, progress is limited by two key challenges: (1) the absence of benchmarks for evaluating long-term preference-aware shopping tasks, and (2) the lack of fine-grained supervision for shopping agent training. To fill the benchmark gap, we introduce Shopping Companion Bench, a novel benchmark comprising two shopping tasks that require cross-session preference memory, grounded in a product pool of over 1.2 million real-world items. Our analysis further identifies two major sources of failure on this benchmark: cascading errors caused by preference hallucination, and insufficient verification of product attributes against user requirements. To address these failure modes, we design annotation-free, tool-wise rewards that provide process supervision for each tool call, alleviating reward sparsity in long-horizon tasks. Experimental results demonstrate that even state-of-the-art models such as GPT-5 achieve success rates below 70%, highlighting the difficulty of our benchmark. Notably, our fine-tuned lightweight 4B model consistently outperforms strong baselines in both preference capture and task performance, suggesting the effectiveness of our reward design.",
+      "authors": [
+        "Zijian Yu",
+        "Kejun Xiao",
+        "Huaipeng Zhao",
+        "Tao Luo",
+        "Xiaoyi Zeng"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-03-16T06:07:52Z",
+      "updated": "2026-05-27T02:20:13Z",
+      "announced_date": "2026-03-16",
+      "first_seen": "2026-03-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.14864v3",
+        "pdf": "https://arxiv.org/pdf/2603.14864v3",
+        "html": "https://arxiv.org/html/2603.14864"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "memory"
+      ],
+      "field": "other",
+      "citations": 4
+    },
+    {
+      "id": "2603.14733",
+      "title": "A Skill-augmented Agentic Framework and Benchmark for Multi-Video Understanding",
+      "abstract": "Multimodal Large Language Models have achieved strong performance in single-video understanding, yet their ability to reason across multiple videos remains limited. Existing approaches typically concatenate multiple videos into a single input and perform direct inference, which introduces training-inference mismatch, information loss from frame compression, and a lack of explicit cross-video coordination. Meanwhile, current multi-video benchmarks primarily emphasize event-level comparison, leaving identity-level matching, fine-grained discrimination, and structured multi-step reasoning underexplored. To address these gaps, we introduce MVX-Bench, a Multi-Video Cross-Dimension Benchmark that reformulates 11 classical computer vision tasks into a unified multi-video question-answering framework, comprising 1,442 questions over 4,255 videos from diverse real-world datasets. We further propose SAMA, a Skill-Augmented Agentic Framework for Multi-Video Understanding, which integrates visual tools, task-specific skills, and a conflict-aware verification mechanism to enable iterative and structured reasoning. Experimental results show that SAMA outperforms strong open-source baselines and GPT on MVX-Bench, and ablations validate the effectiveness of skill design and conflict resolution.",
+      "authors": [
+        "Yue Zhang",
+        "Liqiang Jing",
+        "Jia Li",
+        "Yapeng Tian",
+        "Xinya Du",
+        "Yunhui Guo",
+        "Vibhav Gogate"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-03-16T02:09:48Z",
+      "updated": "2026-03-16T02:09:48Z",
+      "announced_date": "2026-03-16",
+      "first_seen": "2026-03-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.14733v1",
+        "pdf": "https://arxiv.org/pdf/2603.14733v1",
+        "html": "https://arxiv.org/html/2603.14733"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 1
+    }
+  ]
+}

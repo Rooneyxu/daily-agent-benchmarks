@@ -1,0 +1,262 @@
+{
+  "date": "2026-08-05",
+  "count": 5,
+  "report": {
+    "date": "2026-08-05",
+    "count": 5,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      }
+    ],
+    "en": {
+      "headline": "5 new agent benchmarks",
+      "summary": "On August 5, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Planning / reasoning (3), Tool use (2), Multi-agent (1), and Memory (1).",
+      "highlights": [
+        {
+          "id": "2608.04682",
+          "title": "Active-SWE: Benchmarking Coding Agents for Proactive Bug Fixing without Issue Reports",
+          "blurb": "Coding agents powered by large language models (LLMs) are increasingly adopted in software engineering (SWE) scenarios, capable of fixing a specific bug in large-scale codebase."
+        },
+        {
+          "id": "2608.05263",
+          "title": "OrchestraBench: Evaluating Multi-Agent Orchestration Failure Modes, Recovery, and Decomposition Quality",
+          "blurb": "Multi-agent orchestration frameworks are moving from demos to production, yet benchmarks typically report task accuracy without diagnosing why a pipeline failed, where a cascade began, or which routing decision caused th…"
+        },
+        {
+          "id": "2608.04828",
+          "title": "Skill-Use: Can LLMs Actually Use Skills in Agentic Harnesses?",
+          "blurb": "Large language model (LLM) agents increasingly rely on skills, structured documents that specify when to act, which procedure to follow, and which tools are allowed."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年8月5日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在规划 / 推理（3）、工具使用（2）、多智能体（1）、记忆（1）。",
+      "highlights": [
+        {
+          "id": "2608.04682",
+          "title": "Active-SWE: Benchmarking Coding Agents for Proactive Bug Fixing without Issue Reports",
+          "blurb": "Coding agents powered by large language models (LLMs) are increasingly adopted in software engineering (SWE) scenarios, capable of fixing a specific bug in large-scale codebase."
+        },
+        {
+          "id": "2608.05263",
+          "title": "OrchestraBench: Evaluating Multi-Agent Orchestration Failure Modes, Recovery, and Decomposition Quality",
+          "blurb": "Multi-agent orchestration frameworks are moving from demos to production, yet benchmarks typically report task accuracy without diagnosing why a pipeline failed, where a cascade began, or which routing decision caused th…"
+        },
+        {
+          "id": "2608.04828",
+          "title": "Skill-Use: Can LLMs Actually Use Skills in Agentic Harnesses?",
+          "blurb": "Large language model (LLM) agents increasingly rely on skills, structured documents that specify when to act, which procedure to follow, and which tools are allowed."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.05263",
+      "title": "OrchestraBench: Evaluating Multi-Agent Orchestration Failure Modes, Recovery, and Decomposition Quality",
+      "abstract": "Multi-agent orchestration frameworks are moving from demos to production, yet benchmarks typically report task accuracy without diagnosing why a pipeline failed, where a cascade began, or which routing decision caused the breakdown. OrchestraBench evaluates failure, recovery, and decomposition through a controlled, seed-reproducible failure-injection harness over templated enterprise workflows. It introduces cascade radius and per-failure-mode recovery as primary metrics and compares routing policies with bootstrap confidence intervals and paired tests. On a 26-case gold-labelled diagnostic, a keyword/flag router scored 0% on adversarial cases with misleading or missing surface flags, whereas an intent-reasoning model router scored 100%, matching the oracle. Controlled mechanism probes with a real Claude agent over a verifiable arithmetic dependency chain revealed three failure-handling tiers across five MAST modes: tool faults recovered fully (1.0), ambiguous delegation recovered partially (0.30), and three latent or semantic modes never recovered (0.0). This ordering persisted when the computation was reframed as a loan-approval workflow and across Sonnet, Opus, and Haiku, although absolute rates shifted with context. Blind retry reproduced latent faults and increased time to detection, indicating that detection and attribution are necessary for containment. Cascade radius increased with pipeline depth (mean 0.9 to 4.7 across depths 3-7). A trusted-state repair ablation showed that apparent containment gains primarily came from the trusted-state signal rather than autonomous detection. These results are controlled-chain mechanism probes, not domain-workload claims.",
+      "authors": [
+        "Yidian Chen",
+        "Yingzi Gu",
+        "Natan Vidra",
+        "Spurthi Setty",
+        "Sharon Zheng"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-05T17:27:15Z",
+      "updated": "2026-08-05T17:27:15Z",
+      "announced_date": "2026-08-05",
+      "first_seen": "2026-08-05",
+      "comment": "8 pages, 4 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.05263v1",
+        "pdf": "https://arxiv.org/pdf/2608.05263v1",
+        "html": "https://arxiv.org/html/2608.05263"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "multi-agent",
+        "planning"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2608.04828",
+      "title": "Skill-Use: Can LLMs Actually Use Skills in Agentic Harnesses?",
+      "abstract": "Large language model (LLM) agents increasingly rely on skills, structured documents that specify when to act, which procedure to follow, and which tools are allowed. Existing evaluations mostly judge the quality of a skill or its contribution to task success, leaving unexamined whether an agent can recognize a relevant skill and apply it on its own. We introduce Skill-Use, a benchmark that evaluates skill use under progressive disclosure, where an agent sees only a skill's name and short description and must retrieve the full procedure before following it. Skill-Use separates three facets of skill use. Trigger measures whether the agent invokes the relevant skill, Compliance measures how faithfully it follows the prescribed procedure, and Boundary measures whether it avoids forbidden operations. A Skill-Use (SU) score combines the three and credits execution only after the skill is triggered. Skill-Use pairs 79 real skills with 177 executable tasks across nine domains, each grounded in real files, run in an isolated Docker sandbox, and scored by a trajectory-based rubric. Evaluating eight LLMs under two agent harnesses, we find that reliable skill use remains out of reach, as the strongest configuration reaches an SU of only 0.613. Triggering and procedural compliance fail as independent bottlenecks, and both scores and model rankings shift with the harness, so skill use behaves as a capability conditioned on the harness rather than a fixed property of the model.",
+      "authors": [
+        "Jinyi Han",
+        "Yuanjian Xu",
+        "Ying Liao",
+        "Xinyi Wang",
+        "Zishang Jiang",
+        "Zixiang Di",
+        "Fanyang Lu",
+        "Zhichao Hu",
+        "Yanghua Xiao"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-08-05T13:29:16Z",
+      "updated": "2026-08-05T13:29:16Z",
+      "announced_date": "2026-08-05",
+      "first_seen": "2026-08-05",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.04828v1",
+        "pdf": "https://arxiv.org/pdf/2608.04828v1",
+        "html": "https://arxiv.org/html/2608.04828"
+      },
+      "score": 11,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2608.04746",
+      "title": "Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems",
+      "abstract": "LLM agents that persist across sessions accumulate stored memories whose validity varies enormously by content type, yet existing memory architectures treat all memories as equally persistent and systematically contaminate retrieved context with outdated facts. We show that per-memory, type-conditioned temporal decay, a property of western scrub jay episodic memory, can be operationalized as an auto-classified coefficient $π_i$ in an external LLM-agent memory store, yielding ScrubJay-MEM: each memory is encoded as a jointly-bound What--Where--When tuple with an estimated perishability $π_i$ and utility horizon $τ_i$, retrieved by query-adaptive scoring, and revised retroactively at $O(1)$ LLM calls per update. We introduce the Temporal Generalization Test (TGT), a benchmark with held-out retention intervals and a Generalization Gap (GenGap) metric. On TGT, ScrubJay-MEM is the only retrieval-based system with substantially positive GenGap ($+0.108$); on MemoryAgentBench EventQA-64k it improves F1 by $+2.66$ over Mem0 and $+3.09$ over Qwen3-Embedding-4B under a llm backbone. A decay ablation collapses GenGap by $5.7\\times$, establishing type-conditioned decay as necessary for the result. Gains narrow under stronger backbones and reverse on fact-consolidation tasks, scoping the contribution to temporal reasoning over perishable facts.",
+      "authors": [
+        "Kartikey Singh Bhandari",
+        "Aarya Wadhwani",
+        "Dhruv Kumar",
+        "Pratik Narang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.IR"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-08-05T12:12:44Z",
+      "updated": "2026-08-05T12:12:44Z",
+      "announced_date": "2026-08-05",
+      "first_seen": "2026-08-05",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.04746v1",
+        "pdf": "https://arxiv.org/pdf/2608.04746v1",
+        "html": "https://arxiv.org/html/2608.04746"
+      },
+      "score": 7,
+      "tags": [
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.04682",
+      "title": "Active-SWE: Benchmarking Coding Agents for Proactive Bug Fixing without Issue Reports",
+      "abstract": "Coding agents powered by large language models (LLMs) are increasingly adopted in software engineering (SWE) scenarios, capable of fixing a specific bug in large-scale codebase. However, existing SWE benchmarks typically assume that high-quality issue reports with detailed information are always available, which is easily violated in practice due to the complexity of report acquisition and curation. To address this, we introduce Active-SWE, a benchmark for evaluating coding agents on proactively discovering and fixing multiple bugs without report guidance, covering 1,663 tasks across six bug categories and eight languages. Beyond shifting the focus from existing reactive bug fixing to proactive bug fixing, Active-SWE enables a more in-depth evaluation by expanding the scope from fixing a specific recorded bug to multiple-bug fixing and potential bug discovery scenarios. To construct Active-SWE, we propose a novel difficulty-aware task formulation pipeline with a dual-track evaluation framework, facilitating comprehensive evaluation of proactive bug-fixing capability. Extensive experiments reveal that most state-of-the-art coding agents struggle with proactive bug-fixing tasks, demonstrating limited performance in locating and resolving recorded bugs, handling multiple bug fixing scenarios, and discovering valid potential bugs.",
+      "authors": [
+        "Haobin Li",
+        "Ping Deng",
+        "Weizhong Qian",
+        "Liang Jiang",
+        "Zhenyu Huang",
+        "Mouxing Yang",
+        "Xi Peng"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-08-05T10:50:01Z",
+      "updated": "2026-08-05T10:50:01Z",
+      "announced_date": "2026-08-05",
+      "first_seen": "2026-08-05",
+      "comment": "24 pages, 17 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.04682v1",
+        "pdf": "https://arxiv.org/pdf/2608.04682v1",
+        "html": "https://arxiv.org/html/2608.04682"
+      },
+      "score": 19,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2608.05212",
+      "title": "SearchAuditor: Auditing and Attributing Failures in Long-Horizon Search Agents",
+      "abstract": "Deep search agents tackle challenging questions through long-horizon web interactions, a process that is both complex and fragile: small reasoning errors may propagate through long, noisy trajectories into fluent but incorrect answers. Diagnosing such failures is difficult, requiring the manual inspection of extremely long execution traces, which could be beyond human capacity. We therefore introduce SearchAuditBench, a benchmark that evaluates whether LLM auditors can localize, attribute, and repair these failures, thereby reducing the human burden. SearchAuditBench comprises 1,243 failed trajectories, averaging 73.1 messages and 65.1K tokens, collected from eight open-weight models on five deep-search benchmarks, each expert-annotated with the critical error step, a search-specific root cause, and a reference repair with grading rubrics. We further propose SearchAuditor, a multi-perspective auditing framework that effectively localizes, attributes, and repairs search-agent failures through evidence-grounded adjudication. Experimental results show that even the strongest baseline, when powered by a frontier model like GPT-5.5, attains only a 26.6% end-to-end pass rate. In contrast, our SearchAuditor consistently outperforms all baselines across different frontier models, achieving an end-to-end pass rate of 32.3%, and resuming failed runs with its repairs enables agents to better recover from errors.",
+      "authors": [
+        "Zhixiang Liang",
+        "Yifei Liu",
+        "Yidan Huang",
+        "Haozhe Zhao",
+        "Beichen Huang",
+        "Jiaqi Wang",
+        "Nan Duan",
+        "Qiong Cao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-05T09:09:00Z",
+      "updated": "2026-08-05T09:09:00Z",
+      "announced_date": "2026-08-05",
+      "first_seen": "2026-08-05",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.05212v1",
+        "pdf": "https://arxiv.org/pdf/2608.05212v1",
+        "html": "https://arxiv.org/html/2608.05212"
+      },
+      "score": 5,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

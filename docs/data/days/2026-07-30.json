@@ -1,0 +1,354 @@
+{
+  "date": "2026-07-30",
+  "count": 7,
+  "report": {
+    "date": "2026-07-30",
+    "count": 7,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      }
+    ],
+    "en": {
+      "headline": "7 new agent benchmarks",
+      "summary": "On July 30, 2026, arXiv listed 7 new agent benchmarks. Work clustered around Coding agents (2), Planning / reasoning (2), Safety (2), and Multi-agent (1).",
+      "highlights": [
+        {
+          "id": "2608.00102",
+          "title": "Can LLM Agents Price Competitively? A Dynamic Multi-Attribute Auction Benchmark for Agentic Commerce",
+          "blurb": "Agentic commerce is moving from concept to deployed infrastructure: payment networks, retailers, and AI platforms are setting the stage for agents to transact on behalf of merchants and consumers."
+        },
+        {
+          "id": "2607.28545",
+          "title": "ORCA-bench: How Ready Are Language Model Agents for Oncall?",
+          "blurb": "Large language models can write, patch, and search code, but oncall root cause analysis (RCA) demands something different: reasoning over noisy metrics, logs, traces, and source code, starting from ambiguous user-facing…"
+        },
+        {
+          "id": "2607.28587",
+          "title": "PAIChecker: Uncovering and Checking PR-Issue Misalignment in SWE-Bench-Like Benchmarks",
+          "blurb": "SWE-bench-like benchmarks are widely used for evaluating LLM's issue resolution capability."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 7 篇 Agent Benchmark",
+      "summary": "2026年7月30日，arXiv 新增 7 篇 Agent Benchmark。当日主题集中在代码智能体（2）、规划 / 推理（2）、安全（2）、多智能体（1）。",
+      "highlights": [
+        {
+          "id": "2608.00102",
+          "title": "Can LLM Agents Price Competitively? A Dynamic Multi-Attribute Auction Benchmark for Agentic Commerce",
+          "blurb": "Agentic commerce is moving from concept to deployed infrastructure: payment networks, retailers, and AI platforms are setting the stage for agents to transact on behalf of merchants and consumers."
+        },
+        {
+          "id": "2607.28545",
+          "title": "ORCA-bench: How Ready Are Language Model Agents for Oncall?",
+          "blurb": "Large language models can write, patch, and search code, but oncall root cause analysis (RCA) demands something different: reasoning over noisy metrics, logs, traces, and source code, starting from ambiguous user-facing…"
+        },
+        {
+          "id": "2607.28587",
+          "title": "PAIChecker: Uncovering and Checking PR-Issue Misalignment in SWE-Bench-Like Benchmarks",
+          "blurb": "SWE-bench-like benchmarks are widely used for evaluating LLM's issue resolution capability."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.00102",
+      "title": "Can LLM Agents Price Competitively? A Dynamic Multi-Attribute Auction Benchmark for Agentic Commerce",
+      "abstract": "Agentic commerce is moving from concept to deployed infrastructure: payment networks, retailers, and AI platforms are setting the stage for agents to transact on behalf of merchants and consumers. Yet whether the LLMs behind these agents can price competently in real markets, where customer preferences are hidden, competitors adapt in real time, and demand can shift without warning, has not been systematically tested. We introduce Bazaar, a dynamic sealed-bid benchmark for multi-attribute auction under these conditions. Despite its dynamics, the benchmark is grounded in closed-form customer utilities, enabling exact evaluation. Across 11 frontier LLMs from four providers, the leading agents on customer acquisition (e.g. Gemini 3.1 Pro) are often not the leading agents on profit (e.g. Opus 4.6). The ranking shifts again under demand shocks: agents that learned fastest pre-shock are typically the slowest to revise their beliefs afterwards, while Gemini 3.1 Pro recovers fastest despite not leading on profit. However, even the strongest agent captures less than a third of hindsight-optimal profit, suggesting current LLMs are progressing in agentic commerce but leave substantial headroom.",
+      "authors": [
+        "Shimaa Ahmed",
+        "Yiwei Cai",
+        "Mohsen Minaei",
+        "Rahul Rachuri"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-30T23:18:47Z",
+      "updated": "2026-07-30T23:18:47Z",
+      "announced_date": "2026-07-30",
+      "first_seen": "2026-07-30",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.00102v1",
+        "pdf": "https://arxiv.org/pdf/2608.00102v1",
+        "html": "https://arxiv.org/html/2608.00102"
+      },
+      "score": 18,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.28587",
+      "title": "PAIChecker: Uncovering and Checking PR-Issue Misalignment in SWE-Bench-Like Benchmarks",
+      "abstract": "SWE-bench-like benchmarks are widely used for evaluating LLM's issue resolution capability. They typically follow a common construction pipeline: each PR (Pull Request) is paired with its linked issue by extracting issue references from the PR description; the issue description is used as the problem statement, and the PR patch serves as the test oracle. However, due to the inherent complexity of developing and maintaining large repositories, such PR-Issue pairings are often misaligned in practice. In this work, we systematically study SWE-bench Verified instances, finding that 13.6% exhibit misalignment across five patterns in eleven fine-grained scenarios. To enable reliable and scalable construction of those benchmarks in the future, we propose PAIChecker, a multi-agent system for checking PR-Issue misalignment in SWE-bench-like benchmarks. Specifically, PAIChecker adopts a three-phase design that combines specific pattern identification, cross-agent label synthesis, and code-level validation, thereby enabling more accurate, generalizable, and progressively verified detection. Experiments on SWE-Gym and SWE-bench Multilingual show that PAIchecker achieves the best performance across all four LLM backbones, reaching up to 92.12% and 91.67% binary accuracy, respectively.",
+      "authors": [
+        "Manyi Wang",
+        "Junjielong Xu",
+        "Pinjia He"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-07-30T17:42:44Z",
+      "updated": "2026-08-04T09:26:35Z",
+      "announced_date": "2026-07-30",
+      "first_seen": "2026-07-30",
+      "comment": "Accepted at the 41st IEEE/ACM International Conference on Automated Software Engineering (ASE 2026). Github Repo: https://github.com/manyiResearch/PAIChecker",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.28587v2",
+        "pdf": "https://arxiv.org/pdf/2607.28587v2",
+        "html": "https://arxiv.org/html/2607.28587"
+      },
+      "score": 17,
+      "tags": [
+        "coding",
+        "multi-agent"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2607.28545",
+      "title": "ORCA-bench: How Ready Are Language Model Agents for Oncall?",
+      "abstract": "Large language models can write, patch, and search code, but oncall root cause analysis (RCA) demands something different: reasoning over noisy metrics, logs, traces, and source code, starting from ambiguous user-facing reports, often hours after the incident began. We introduce ORCA-bench, a benchmark that puts general-purpose coding agents in a production-fidelity oncall setting. ORCA-bench pairs a live OpenTelemetry-instrumented microservice system--exposing six days of metrics, logs, and traces through real telemetry interfaces (Prometheus, Jaeger, and OpenSearch via Grafana) and full source-code access--with 1,079 RCA tasks that systematically vary report specificity, time-to-detection, and co-occurring fault scenarios. Ground-truth symptoms are curated and signed off by expert SREs, and our LLM-as-judge is independently re-scored by humans (Cohen's $κ_w=0.90$). Across five frontier agents, the best RCA Accuracy is 25.3% on Medium-difficulty tasks (the realistic-input setting) and 10.0% on Hard--a gap that remains even with Claude Fable 5. The weakest model hallucinates an implausible root cause in 40% of incident reports, and removing source-code access degrades every metric. Crucially, these are performances on a curated 50 GB / six-day testbed with tasks investigated in isolation on a system whose code and instrumentation are public. Since real production systems are order of magnitudes larger, more dynamic, and more idiosyncratic, the gap we report is a lower bound on the engineering investment required before frontier coding agents can be safely entrusted with production reliability. We release the public set at https://hub.harborframework.com/datasets/orca-bench/orca-bench.",
+      "authors": [
+        "Albert Gong",
+        "Kyuseong Choi",
+        "Abhineet Agarwal",
+        "Jason Schechner",
+        "Ryan Huang",
+        "Raj Agrawal",
+        "Anish Agarwal",
+        "Raaz Dwivedi"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-07-30T17:14:07Z",
+      "updated": "2026-08-05T12:21:27Z",
+      "announced_date": "2026-07-30",
+      "first_seen": "2026-07-30",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.28545v2",
+        "pdf": "https://arxiv.org/pdf/2607.28545v2",
+        "html": "https://arxiv.org/html/2607.28545"
+      },
+      "score": 18,
+      "tags": [
+        "coding",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2607.28146",
+      "title": "Can Agents Deceive? Evaluating Reasoning and Deception in ParliamentBench using a Social Deduction Game",
+      "abstract": "As large language models (LLMs) are deployed as agents in high-stakes settings, such as medical and legal systems, understanding their deceptive capabilities is fundamental to safety. Controlled social deduction games provide a reproducible proxy for isolating and evaluating these complex adversarial behaviors. We present the open-source benchmark framework ParliamentBench based on the game Secret Hitler to evaluate LLMs in scenarios that require deception, persuasion, and reasoning under information asymmetry. We evaluate 16 LLMs across 1,600 simulated matches playing each other, playing against humans, and compare them against a large set of online games. We introduce three novel metrics that isolate social deduction, reasoning, and deceptive consistency. Our experiments reveal that frontier models achieve strong performance across cooperative and deceptive roles, with a strong top-four cluster (GPT-5.4, Kimi K2.5, Grok 4.1 Fast, and DeepSeek 3.1 Terminus), whereas the weakest models fall short of random (33%) and simple algorithmic (45%) baselines. Most LLMs struggle to maintain a consistent deceptive persona throughout an entire game, with deception retention dropping below 50%.",
+      "authors": [
+        "Niklas Bauer",
+        "Lars Benedikt Kaesberg",
+        "Akiko Aizawa",
+        "Jan Philip Wahle",
+        "Bela Gipp",
+        "Terry Ruas"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-07-30T12:54:17Z",
+      "updated": "2026-07-30T12:54:17Z",
+      "announced_date": "2026-07-30",
+      "first_seen": "2026-07-30",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.28146v1",
+        "pdf": "https://arxiv.org/pdf/2607.28146v1",
+        "html": "https://arxiv.org/html/2607.28146"
+      },
+      "score": 7,
+      "tags": [
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.28074",
+      "title": "Echoverse: Deep, Evolving Environments for Training Computer-Use Agents at Scale",
+      "abstract": "Computer-use agents learn from what their actions change, so training one needs applications it can act on, break and reset. The applications that matter most are login-gated and stateful, so synthetic environments stand in for them. Recent pipelines generate such environments in bulk, which moves the bottleneck from how many exist to what is inside each one. The returns, we find, come from three properties: how much behavioural depth an environment carries, whether it targets the interaction an agent actually fails, and whether it improves alongside the model. We present Echoverse, which compiles specifications into stateful applications whose tasks are graded against the application's own database, and a co-evolution loop that reads every graded rollout twice: as repairs to the environment, its tasks and its verifier, and as training signal for the model. Trained on twelve such environments, a 9B model improves from $36.5\\%$ to $67.1\\%$ across fourteen evaluation splits, within fourteen points of the much larger frontier model that taught it. We examine each property in turn. On the same domains, shallow environments push live-site accuracy below the base model ($80.0 \\to 75.0$) while deep ones raise it ($80.0 \\to 85.0$ and $48.0 \\to 65.0$); drilling one interface control across many renderings transfers to held-out widget families and to the open web; and repairing a single environment lifts the model trained on it from $16.2\\%$ to $38.5\\%$. The same worlds serve as reinforcement-learning environments, where a reward combining the grounded verifier with a dense per-step judge raises held-out score from $58.8\\%$ to $68.0\\%$. We release four environments as a benchmark, with their applications, seed data and grounded graders. Code: https://aka.ms/echoverse",
+      "authors": [
+        "Yash Pandya",
+        "Sahil Gupta",
+        "Sarthak Harne",
+        "Archana Yadav",
+        "Kavyansh Chourasia",
+        "Hussein Mozannar",
+        "Vibhav Vineet",
+        "Sara Abdali",
+        "Corby Rosset",
+        "Yash Lara",
+        "Ahmed Awadallah",
+        "Ece Kamar",
+        "Akshay Nambi"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-30T11:48:22Z",
+      "updated": "2026-07-30T11:48:22Z",
+      "announced_date": "2026-07-30",
+      "first_seen": "2026-07-30",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.28074v1",
+        "pdf": "https://arxiv.org/pdf/2607.28074v1",
+        "html": "https://arxiv.org/html/2607.28074"
+      },
+      "score": 11,
+      "tags": [
+        "computer-use"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2607.28033",
+      "title": "DataClawEval: A Benchmark for Data Engineering Agents in Real Industrial Harness",
+      "abstract": "Large language models (LLMs) and LLM-based agents are increasingly being deployed to automate complex workflows, promising to revolutionize data management and processing. However, existing benchmarks predominantly focus on simplified Text-to-SQL translation or data analysis, leaving the critical and complex domain of end-to-end data engineering largely unexplored. To bridge this gap, we introduce DataClawEval, the first comprehensive benchmark designed specifically to evaluate the end-to-end task completion capabilities of autonomous agents in real-world data engineering scenarios. Built upon production-grade code authored by professional enterprise data engineers, it comprises 100 rigorous, end-to-end tasks spanning five execution engines: PySpark, MySQL, HiveSQL, PrestoSQL/Trino, and FlinkSQL. Rather than non-deterministic LLM-as-a-judge scoring, each task is executed within a case-specific, isolated sandbox and graded by deterministic, rule-based scripts. Evaluating 16 frontier agents exposes critical limitations: The strongest model attains only 74.9 overall, and no single model dominates, as each excels on a different engine, revealing strict domain specialization rather than omnipotent proficiency. Thus, autonomous data engineering remains a formidable, unresolved challenge. We release our dataset, containerized environments, and deterministic evaluation scripts at https://github.com/Dicemy/DataClawEval/tree/master",
+      "authors": [
+        "Debin Meng",
+        "Jiaming Yang",
+        "Zefang Zong",
+        "Tengyue Xu",
+        "Haining Xie",
+        "Yang Li",
+        "Peng Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-30T11:17:27Z",
+      "updated": "2026-07-30T11:17:27Z",
+      "announced_date": "2026-07-30",
+      "first_seen": "2026-07-30",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.28033v1",
+        "pdf": "https://arxiv.org/pdf/2607.28033v1",
+        "html": "https://arxiv.org/html/2607.28033"
+      },
+      "score": 15,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.28692",
+      "title": "SciToolAgent-Evo: An Ontology-Aware Self-Evolving Agent for Open-World Scientific Tool Acquisition",
+      "abstract": "Large language model (LLM) agents have been increasingly adopted in scientific research for organizing and invoking specialized computational tools. However, their reliance on predefined tool spaces with static semantics limits their applicability to open-world scientific workflows, where tool requirements, capabilities, and boundaries evolve dynamically. To this end, we propose SciToolAgent-Evo, an ontology-aware self-evolving agent for open-world scientific tool acquisition. Driven by an evolving memory of skills, experiences, and an ontologized tool graph, it distills generalizable knowledge from contrastive trajectories during accumulation, whereas during inference, it formulates active requests and utilizes a LinUCB-based bandit gate to dynamically balance exploration and exploitation. Once a novel tool is acquired, its scientific ontology is completed online for seamless integration into the known graph. Moreover, we introduce OpenSciToolBench, a benchmark containing 900 realistic tasks across four difficulty levels. Extensive evaluations show that SciToolAgent-Evo achieves state-of-the-art performance, validating its robustness and generalization.",
+      "authors": [
+        "Yuqi Tang",
+        "Chenyi Zhou",
+        "Libin Wang",
+        "Keyan Ding",
+        "Qiang Zhang",
+        "Huajun Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-30T08:47:11Z",
+      "updated": "2026-07-30T08:47:11Z",
+      "announced_date": "2026-07-30",
+      "first_seen": "2026-07-30",
+      "comment": "19 pages, 4 figures, under review",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.28692v1",
+        "pdf": "https://arxiv.org/pdf/2607.28692v1",
+        "html": "https://arxiv.org/html/2607.28692"
+      },
+      "score": 6,
+      "tags": [
+        "tool-use",
+        "safety",
+        "memory",
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    }
+  ]
+}

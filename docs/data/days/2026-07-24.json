@@ -1,0 +1,245 @@
+{
+  "date": "2026-07-24",
+  "count": 4,
+  "report": {
+    "date": "2026-07-24",
+    "count": 4,
+    "themes": [
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On July 24, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Multimodal (2), Safety (2), Tool use (1), and Coding agents (1).",
+      "highlights": [
+        {
+          "id": "2607.22165",
+          "title": "DBA-Bench: A Production-Fidelity Benchmark for LLM-Based Database Operations Agents",
+          "blurb": "LLM-based database agents show promise, but differing task scopes, testbeds, and metrics hinder comparison."
+        },
+        {
+          "id": "2607.22368",
+          "title": "Do Agent Benchmarks Measure Capability? Protocol Validity in the Age of Agentic AI",
+          "blurb": "Agent benchmarks increasingly evaluate repository editing, web research, terminal use, and long-horizon interaction."
+        },
+        {
+          "id": "2607.22393",
+          "title": "SceneActBench: Can Agents Act on the 3D Scenes They See?",
+          "blurb": "Vision-language model (VLM) agents increasingly use tools to act on 3D scenes rather than only describe them."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年7月24日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在多模态（2）、安全（2）、工具使用（1）、代码智能体（1）。",
+      "highlights": [
+        {
+          "id": "2607.22165",
+          "title": "DBA-Bench: A Production-Fidelity Benchmark for LLM-Based Database Operations Agents",
+          "blurb": "LLM-based database agents show promise, but differing task scopes, testbeds, and metrics hinder comparison."
+        },
+        {
+          "id": "2607.22368",
+          "title": "Do Agent Benchmarks Measure Capability? Protocol Validity in the Age of Agentic AI",
+          "blurb": "Agent benchmarks increasingly evaluate repository editing, web research, terminal use, and long-horizon interaction."
+        },
+        {
+          "id": "2607.22393",
+          "title": "SceneActBench: Can Agents Act on the 3D Scenes They See?",
+          "blurb": "Vision-language model (VLM) agents increasingly use tools to act on 3D scenes rather than only describe them."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2607.22393",
+      "title": "SceneActBench: Can Agents Act on the 3D Scenes They See?",
+      "abstract": "Vision-language model (VLM) agents increasingly use tools to act on 3D scenes rather than only describe them. Existing 3D benchmarks score textual responses or single-object operations, leaving agent action on complete multi-object 3D scenes under evaluated. We present SceneActBench, a benchmark for visually conditioned action across five 3D tasks under a unified agent-environment loop. Given PNG images or sampled video frames and, where applicable, supplied 3D assets, an agent acts on a 3D environment. We evaluate each final output against hidden ground truth with task-specific geometric metrics. SceneActBench comprises five tasks built from 210 source instances, yielding 520 task cases including paired input conditions. Every task runs through one fixed agent loop to keep the comparison fair. Across eleven proprietary VLM configurations, Overall scores span 38.6-50.2, and none performs consistently well across tasks. We further analyse where and how failures manifest.",
+      "authors": [
+        "Yifei Zhao",
+        "Xiangxin Zhou",
+        "Wenhao Yang",
+        "Jiaqi Tang",
+        "Pu Jian",
+        "Huanjin Yao",
+        "Jiarui Yao",
+        "Haowei Lin",
+        "Chunchao Guo",
+        "Zhuo Chen",
+        "Wenkai Lyu",
+        "Jianzhu Ma",
+        "Xueqian Wang",
+        "Wenxi Zhu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-24T15:16:47Z",
+      "updated": "2026-07-24T15:16:47Z",
+      "announced_date": "2026-07-24",
+      "first_seen": "2026-07-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.22393v1",
+        "pdf": "https://arxiv.org/pdf/2607.22393v1",
+        "html": "https://arxiv.org/html/2607.22393"
+      },
+      "score": 11,
+      "tags": [
+        "tool-use",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2607.22368",
+      "title": "Do Agent Benchmarks Measure Capability? Protocol Validity in the Age of Agentic AI",
+      "abstract": "Agent benchmarks increasingly evaluate repository editing, web research, terminal use, and long-horizon interaction. Their scores support capability claims only when the evaluation protocol keeps the intended capability necessary for success. Recent reward-hacking benchmarks and system reports show that agents can instead recover public solutions, read evaluation artifacts, infer generator structure, manipulate feedback, or benefit from invalid scoring paths; existing responses do not provide a common procedure for attributing these shortcuts and quantifying their effect across benchmarks. We formulate protocol validity and introduce HackDetect, a post-hoc audit that identifies an exposure, determines how the agent used it, and assesses whether the resulting score is misleading. We quantify score inflation with the Mislead gap, defined as the exploit score minus the intended score. We audit 2,385 traces across 15 agent benchmarks and find evidence of exposures and reward hacking in 67.0% of Frontier Science traces and 66.7% of AutoLab tasks. Across paired comparisons, we measure score inflation of 0.45-1.00, showing that benchmark reports should provide evidence that scores reflect the intended capability.",
+      "authors": [
+        "Jiaqi Shao",
+        "Hanck Chen",
+        "Wei Zhang",
+        "Maxm Pan",
+        "Bing Luo"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-24T14:55:19Z",
+      "updated": "2026-07-24T14:55:19Z",
+      "announced_date": "2026-07-24",
+      "first_seen": "2026-07-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.22368v1",
+        "pdf": "https://arxiv.org/pdf/2607.22368v1",
+        "html": "https://arxiv.org/html/2607.22368"
+      },
+      "score": 13,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 3
+    },
+    {
+      "id": "2607.22165",
+      "title": "DBA-Bench: A Production-Fidelity Benchmark for LLM-Based Database Operations Agents",
+      "abstract": "LLM-based database agents show promise, but differing task scopes, testbeds, and metrics hinder comparison. We identify four gaps between evaluation and production operations: live-environment fidelity (multi-turn read-write interaction with a running database); observation-space scale and complexity (causal diagnosis across thousands of time series, business logs, and concurrent activity); solution-space openness (multiple remediations with different operational trade-offs); and scenario complexity and coverage (faults cascading across internal mechanisms and operational domains). We present DBA-Bench, a benchmark addressing these gaps through production fidelity, outcome-first evaluation, and controlled scenario reproducibility. It uses instrumented PostgreSQL environments with active workloads, persistent state, and multi-source observations; defines success by measurable recovery or fault elimination under safety constraints; and restores snapshots with scenario-specific checks before each run. The benchmark contains 106 scenarios across seven task domains, with two public difficulty labels based on reference-path diagnostic depth and environmental complexity. We evaluate nine baseline groups, including six foundation-model systems, two GPT-5.5-backed database agents, and a Human DBA reference. Across 848 automated runs, Diagnosis, Outcome, and Safe Pass rates are 32.7%, 19.6%, and 12.4%; the best automated baseline reaches 17.9% Safe Pass versus 93.4% for the Human DBA reference. Automated Safe Pass falls from 19.6% on Easy scenarios to 7.6% on Hard scenarios, underscoring the difficulty of safe end-to-end remediation.",
+      "authors": [
+        "Junming Chen",
+        "Junyang Jiang",
+        "Xu Chen",
+        "Zibo Liang",
+        "Kai Zheng"
+      ],
+      "categories": [
+        "cs.DB",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.DB",
+      "published": "2026-07-24T10:11:24Z",
+      "updated": "2026-07-24T10:11:24Z",
+      "announced_date": "2026-07-24",
+      "first_seen": "2026-07-24",
+      "comment": "14 pages, 6 figures, 2 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.22165v1",
+        "pdf": "https://arxiv.org/pdf/2607.22165v1",
+        "html": "https://arxiv.org/html/2607.22165"
+      },
+      "score": 20,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.22014",
+      "title": "Zero-Shot Mission-Level Evaluation for Aerial MLLM Agents",
+      "abstract": "Multimodal Large Language Models (MLLMs) are emerging as core reasoning modules for embodied agents, yet it remains unclear how well general-purpose models can solve long-horizon embodied tasks from a single high-level instruction. We introduce MissionBench, a benchmark for mission-level evaluation of MLLMs in aerial 3D environments. It comprises 120 missions across five simulated 3D environments and four task families. Agents must autonomously plan, navigate, and report outcomes using only egocentric observations and its action history, without aerial-specific fine-tuning. Across 22 open- and closed-source MLLMs, the strongest model succeeds on fewer than 35% of missions compared to 84.4% human performance, highlighting the difficulty of multi-step embodied tasks. Despite large variations between model families, we observe gains from scaling, indicating that larger general-purpose models possess stronger zero-shot embodied capabilities. Our analysis shows that mission-level competence requires coordinating multiple capabilities beyond spatial perception, including multi-step planning and adaptive reasoning. This motivates closed-loop evaluation and highlights both the promise and risk of scaling-driven improvements for embodied AI.",
+      "authors": [
+        "Suman Navaratnarajah",
+        "Taehyoung Kim",
+        "Jona Ruthardt",
+        "Ishaan Bhimwal",
+        "Ryousuke Yamada",
+        "Yannik Blei",
+        "Wolfram Burgard",
+        "Yuki M Asano"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-24T06:22:50Z",
+      "updated": "2026-07-24T06:22:50Z",
+      "announced_date": "2026-07-24",
+      "first_seen": "2026-07-24",
+      "comment": "Preprint",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.22014v1",
+        "pdf": "https://arxiv.org/pdf/2607.22014v1",
+        "html": "https://arxiv.org/html/2607.22014"
+      },
+      "score": 8,
+      "tags": [
+        "embodied",
+        "safety",
+        "planning",
+        "multimodal"
+      ],
+      "field": "embodied",
+      "citations": 0
+    }
+  ]
+}

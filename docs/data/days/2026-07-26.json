@@ -1,0 +1,142 @@
+{
+  "date": "2026-07-26",
+  "count": 2,
+  "report": {
+    "date": "2026-07-26",
+    "count": 2,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On July 26, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Safety (1), Planning / reasoning (1), Multimodal (1), and Tool use (1).",
+      "highlights": [
+        {
+          "id": "2607.23722",
+          "title": "E-Bench: Benchmarking Multi-Step Tool-Use Agents in Real-World Product Scenarios",
+          "blurb": "Large Language Models (LLMs) are increasingly deployed as agents that interact with stateful environments over multiple steps: gathering hidden information, composing tool calls, and committing state changes."
+        },
+        {
+          "id": "2607.23870",
+          "title": "MulRobBench: A Decision-Level Benchmark for Safe and Security-Policy-Compliant Multimodal UAV Agents",
+          "blurb": "Smart-city airspace is transforming Uncrewed Aerial Vehicles (UAVs) from passive sensing platforms into cyber-physical decision makers that must follow operational rules under degraded observations and ambiguous language."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年7月26日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在安全（1）、规划 / 推理（1）、多模态（1）、工具使用（1）。",
+      "highlights": [
+        {
+          "id": "2607.23722",
+          "title": "E-Bench: Benchmarking Multi-Step Tool-Use Agents in Real-World Product Scenarios",
+          "blurb": "Large Language Models (LLMs) are increasingly deployed as agents that interact with stateful environments over multiple steps: gathering hidden information, composing tool calls, and committing state changes."
+        },
+        {
+          "id": "2607.23870",
+          "title": "MulRobBench: A Decision-Level Benchmark for Safe and Security-Policy-Compliant Multimodal UAV Agents",
+          "blurb": "Smart-city airspace is transforming Uncrewed Aerial Vehicles (UAVs) from passive sensing platforms into cyber-physical decision makers that must follow operational rules under degraded observations and ambiguous language."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2607.23870",
+      "title": "MulRobBench: A Decision-Level Benchmark for Safe and Security-Policy-Compliant Multimodal UAV Agents",
+      "abstract": "Smart-city airspace is transforming Uncrewed Aerial Vehicles (UAVs) from passive sensing platforms into cyber-physical decision makers that must follow operational rules under degraded observations and ambiguous language. Existing UAV and multimodal benchmarks evaluate perception, navigation, collaboration, and reasoning, but few assess whether physical evidence, protocol constraints, and action risk remain coupled during critical decisions. We introduce MulRobBench, an offline, protocol-conditioned benchmark for Vision-Language-Action (VLA) UAV agents in smart-city environments. MulRobBench integrates real UAV multimodal observations, protocol-level security policies, and action-level cyber-physical safety into a unified evaluation framework. The benchmark contains 3,024 samples spanning 17 task taxonomy nodes and 12 scoring dimensions across four stages: operational context understanding, multimodal evidence arbitration, degradation-aware reasoning, and risk-aware action planning. Evaluation combines semantic scoring with structural diagnostics, including policy compliance, format compliance, unsafe actions, parsing failures, and dimension-level validity. Across 17 multimodal models, the best semantic protocol-decision score reaches only 0.5141, while the best strict mean scoring-dimension accuracy is 0.1599. A controlled 20-anchor modality-ablation study changes 4-15 action selections per model, confirming that both visual and textual inputs influence decisions. Analysis identifies modality-trust selection, constraint extraction, glare, missing data, and operator shorthand as the primary causes of decision instability. MulRobBench provides a reproducible benchmark for trustworthy multimodal UAV decision making under realistic operational constraints.",
+      "authors": [
+        "Belal S. Alsinglawi",
+        "Weizheng Wang",
+        "Junyi Wu",
+        "Yi Jiang",
+        "Lianhai Lin",
+        "Merouane Debbah",
+        "Izzat Alsmadi"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-07-26T22:23:43Z",
+      "updated": "2026-07-26T22:23:43Z",
+      "announced_date": "2026-07-26",
+      "first_seen": "2026-07-26",
+      "comment": "22 pages, 18 figures, 17 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.23870v1",
+        "pdf": "https://arxiv.org/pdf/2607.23870v1",
+        "html": "https://arxiv.org/html/2607.23870"
+      },
+      "score": 14,
+      "tags": [
+        "safety",
+        "planning",
+        "multimodal"
+      ],
+      "field": "embodied",
+      "citations": 0
+    },
+    {
+      "id": "2607.23722",
+      "title": "E-Bench: Benchmarking Multi-Step Tool-Use Agents in Real-World Product Scenarios",
+      "abstract": "Large Language Models (LLMs) are increasingly deployed as agents that interact with stateful environments over multiple steps: gathering hidden information, composing tool calls, and committing state changes. We refer to this capability as multi-step tool use. Existing benchmarks have advanced tool-use agent evaluation, but often focus on isolated API calls, short trajectories, or settings that are difficult to scale or control. We introduce E-Bench, a fully synthetic benchmark with 323 state-changing tasks across three product domains: Honor of Kings, QQ Music, and Tencent Meeting. E-Bench decouples environment synthesis from task synthesis: graph-guided database filling builds reusable, orphan-free product environments, while generator-solver asymmetry creates tasks with both an information gap and a tool gap, requiring agents to discover hidden data and compose multiple tool calls before changing state. Outcomes are graded deterministically by database-state diffs. Since both environments and tasks are synthetic, E-Bench is controllable at the environment level and scalable at the task level. Benchmarking 11 cutting-edge LLMs shows that multi-step tool use remains challenging: Pass^3 stays below 60% for the strongest models, and even with code execution in the E-Bench-Code extension, reliability (Pass^3) remains below 70%.",
+      "authors": [
+        "Weihuang Zheng",
+        "Tianyuan Zou",
+        "Eileen Ye",
+        "Alphet Liu",
+        "Youyong Kong",
+        "Ya-Qin Zhang",
+        "Duran Zheng",
+        "Maxm Pan"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-26T15:38:28Z",
+      "updated": "2026-07-26T15:38:28Z",
+      "announced_date": "2026-07-26",
+      "first_seen": "2026-07-26",
+      "comment": "29 pages, 14 figures, 6 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.23722v1",
+        "pdf": "https://arxiv.org/pdf/2607.23722v1",
+        "html": "https://arxiv.org/html/2607.23722"
+      },
+      "score": 21,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 1
+    }
+  ]
+}

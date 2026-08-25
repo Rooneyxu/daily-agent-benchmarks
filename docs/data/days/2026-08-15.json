@@ -1,0 +1,145 @@
+{
+  "date": "2026-08-15",
+  "count": 2,
+  "report": {
+    "date": "2026-08-15",
+    "count": 2,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On August 15, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Tool use (1), and Memory (1).",
+      "highlights": [
+        {
+          "id": "2608.15127",
+          "title": "From LLM Inference to Agentic Workloads: Characterization and Implications for Serving Systems",
+          "blurb": "Agentic applications are shifting AI serving from isolated model inference to long-running workloads in which LLMs coordinate tools, environments, and persistent state."
+        },
+        {
+          "id": "2608.15242",
+          "title": "LongRCA Bench: Diagnosing Responsible Roles and Root Causes in Long-Horizon Agent Failures",
+          "blurb": "When a long-horizon agent execution fails, outcome-level evaluation reveals the unsuccessful result but not where the decisive error entered the trajectory."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年8月15日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在工具使用（1）、记忆（1）。",
+      "highlights": [
+        {
+          "id": "2608.15127",
+          "title": "From LLM Inference to Agentic Workloads: Characterization and Implications for Serving Systems",
+          "blurb": "Agentic applications are shifting AI serving from isolated model inference to long-running workloads in which LLMs coordinate tools, environments, and persistent state."
+        },
+        {
+          "id": "2608.15242",
+          "title": "LongRCA Bench: Diagnosing Responsible Roles and Root Causes in Long-Horizon Agent Failures",
+          "blurb": "When a long-horizon agent execution fails, outcome-level evaluation reveals the unsuccessful result but not where the decisive error entered the trajectory."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.15242",
+      "title": "LongRCA Bench: Diagnosing Responsible Roles and Root Causes in Long-Horizon Agent Failures",
+      "abstract": "When a long-horizon agent execution fails, outcome-level evaluation reveals the unsuccessful result but not where the decisive error entered the trajectory. Developers must then inspect the full execution to identify the responsible role and localize the earliest decisive root-cause step. Existing failure-attribution benchmarks largely focus on shorter traces, leaving diagnosis across hundreds of recorded steps underexplored. We introduce LongRCA Bench, comprising 1,140 failed trajectories across five domains without injected errors. It provides independently scored human labels for the responsible role and earliest decisive root-cause step. The median trajectory contains 145 steps, and the strongest baseline reaches only 13.2% exact root-step accuracy. We further present Root-Cause Trajectory Attribution (RCTA), a training-free method that retrieves candidate error steps from segment summaries and traces them to available earlier handoff instructions. Using the same backbone, benchmark instances, and scoring protocol, RCTA reaches 51.1% responsible-role accuracy and 24.1% exact root-step accuracy. These results highlight the need to evaluate responsible-role attribution and exact root-step localization as separate targets in long-trajectory failure diagnosis.",
+      "authors": [
+        "Yunfei Zhang",
+        "Boyu Feng",
+        "Changhua Pei",
+        "Zexin Wang",
+        "Zhihuang Peng",
+        "Xinlong Liu",
+        "Hengyue Jiang",
+        "Difeng Ma",
+        "Jiayi Zhang",
+        "Yongzhou Yao",
+        "Yanan Zhao",
+        "Fei Sun",
+        "Yintong Huo",
+        "Zhaoyang Liu",
+        "Jingjing Li",
+        "Gaogang Xie",
+        "Dan Pei"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-15T14:06:02Z",
+      "updated": "2026-08-21T12:55:49Z",
+      "announced_date": "2026-08-15",
+      "first_seen": "2026-08-15",
+      "comment": "18 pages, 6 figures. Yunfei Zhang and Boyu Feng contributed equally. Changhua Pei is the corresponding author",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.15242v3",
+        "pdf": "https://arxiv.org/pdf/2608.15242v3",
+        "html": "https://arxiv.org/html/2608.15242"
+      },
+      "score": 8,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.15127",
+      "title": "From LLM Inference to Agentic Workloads: Characterization and Implications for Serving Systems",
+      "abstract": "Agentic applications are shifting AI serving from isolated model inference to long-running workloads in which LLMs coordinate tools, environments, and persistent state. However, the system behavior of these workloads---where latency, cost, and bottlenecks arise---remains poorly characterized, leaving serving systems to rely on assumptions built for conventional inference. We present AgentSysBench, a benchmark suite and measurement toolkit with ten representative agentic applications and unified systems-level instrumentation. Across controlled deployments and production traces, we identify six properties that distinguish agentic workloads from conventional LLM serving: (1) execution is heavyweight and stateful, with non-LLM components dominating latency in 5 of 10 applications and sandbox working-set memory peaking at 28 GB per session; (2) applications compose components with heterogeneous resource affinity---GPU-bound inference, memory-bound retrieval, CPU-bound sandboxes---whose task latencies diverge by up to 32x; (3) bottlenecks shift across requests, models, and deployments; (4) production sessions hold state idle for minutes to hours between active steps; (5) a control-plane tax---auxiliary LLM calls and context overhead from tool schemas and observations---crowds out productive compute and context; and (6) production traces from three applications reveal heavy cross-request redundancy in search queries and web fetches, exposing a large caching opportunity. Four design explorations demonstrate that these findings are actionable: task-aware serving reduces latency by 29--40%, communication-aware placement by up to 4.5x, state offloading reduces memory usage by 4.6x, and tool-result caching removes 35.2% of redundant search calls and saves 19.3% of aggregate search latency.",
+      "authors": [
+        "Chaokun Chang",
+        "Yukun Zhou",
+        "Kaihua Fu",
+        "Dakai An",
+        "Tianyu Feng",
+        "Hanfeng Lu",
+        "Sheng Yao",
+        "Pu Guo",
+        "Yinghao Yu",
+        "Yizhou Shan",
+        "Bo Li",
+        "Binhang Yuan",
+        "Wei Wang"
+      ],
+      "categories": [
+        "cs.OS",
+        "cs.AI",
+        "cs.DC",
+        "cs.MA"
+      ],
+      "primary_category": "cs.OS",
+      "published": "2026-08-15T09:02:16Z",
+      "updated": "2026-08-15T09:02:16Z",
+      "announced_date": "2026-08-15",
+      "first_seen": "2026-08-15",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.15127v1",
+        "pdf": "https://arxiv.org/pdf/2608.15127v1",
+        "html": "https://arxiv.org/html/2608.15127"
+      },
+      "score": 9,
+      "tags": [
+        "tool-use",
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

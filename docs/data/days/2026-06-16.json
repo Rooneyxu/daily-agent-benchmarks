@@ -1,0 +1,467 @@
+{
+  "date": "2026-06-16",
+  "count": 10,
+  "report": {
+    "date": "2026-06-16",
+    "count": 10,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 4,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "memory",
+        "count": 3,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "conversation",
+        "count": 2,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      }
+    ],
+    "en": {
+      "headline": "10 new agent benchmarks",
+      "summary": "On June 16, 2026, arXiv listed 10 new agent benchmarks. Work clustered around Tool use (4), Memory (3), Coding agents (2), and Dialogue / customer (2).",
+      "highlights": [
+        {
+          "id": "2607.20498",
+          "title": "AISE-Bench: A Full-Cycle Curated Benchmark for Information Seeking on Academic Knowledge Graphs",
+          "blurb": "Large language models (LLMs) augmented with tools are emerging as autonomous agents capable of using Web engine, APIs, and code to solve complex, long-horizon tasks."
+        },
+        {
+          "id": "2606.18356",
+          "title": "SafeClawBench: Separating Semantic, Audit-Evidence, and Sandbox Harm in Tool-Using LLM Agents",
+          "blurb": "Tool-using language-model agents introduce security failures that go beyond unsafe text: they can disclose protected objects, write persistent memory, send messages, modify databases, or trigger harmful code and tool eff…"
+        },
+        {
+          "id": "2608.00009",
+          "title": "AgentMemBench: A Systematic Benchmark for Evaluating Long-Term Memory Management Strategies in Conversational AI Agents",
+          "blurb": "Long-term memory remains a critical bottleneck for conversational AI agents, whose finite context windows cannot support coherent recall across thousands of turns."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 10 篇 Agent Benchmark",
+      "summary": "2026年6月16日，arXiv 新增 10 篇 Agent Benchmark。当日主题集中在工具使用（4）、记忆（3）、代码智能体（2）、对话 / 客服（2）。",
+      "highlights": [
+        {
+          "id": "2607.20498",
+          "title": "AISE-Bench: A Full-Cycle Curated Benchmark for Information Seeking on Academic Knowledge Graphs",
+          "blurb": "Large language models (LLMs) augmented with tools are emerging as autonomous agents capable of using Web engine, APIs, and code to solve complex, long-horizon tasks."
+        },
+        {
+          "id": "2606.18356",
+          "title": "SafeClawBench: Separating Semantic, Audit-Evidence, and Sandbox Harm in Tool-Using LLM Agents",
+          "blurb": "Tool-using language-model agents introduce security failures that go beyond unsafe text: they can disclose protected objects, write persistent memory, send messages, modify databases, or trigger harmful code and tool eff…"
+        },
+        {
+          "id": "2608.00009",
+          "title": "AgentMemBench: A Systematic Benchmark for Evaluating Long-Term Memory Management Strategies in Conversational AI Agents",
+          "blurb": "Long-term memory remains a critical bottleneck for conversational AI agents, whose finite context windows cannot support coherent recall across thousands of turns."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.18543",
+      "title": "CEO-Bench: Can Agents Play the Long Game?",
+      "abstract": "Language model agents are becoming proficient executors at isolated, short-horizon tasks such as software engineering and customer service. Yet real-world challenges require a combination of sophisticated skills that remain largely untested in agents: (1) navigating long horizons amid uncertainty; (2) acquiring information in noisy environments; (3) adapting to a changing world; (4) orchestrating multiple moving parts toward a coherent goal. We introduce CEO-Bench, which evaluates these capabilities together by simulating a representative real-world task: operating a startup for 500 days. An agent manages pricing, marketing, budgeting, and many other aspects of a fictional company through a programmable Python interface, operating in the same environment and facing the same challenges as a human CEO. Success demands analyzing noisy, interconnected business databases, translating signals into sound strategy, and coordinating many decisions with programming. The strongest agents write sophisticated code that forecasts churn regimes, billing timing, customer losses, and future cash under different scenarios. Even so, most state-of-the-art models struggle in this environment. Only Claude Fable 5, GPT-5.6 Sol, and Claude Opus 4.8 finish above the $1M starting balance, and all evaluated models remain below the rule-based baseline. CEO-Bench takes a first step toward measuring the intelligence required to drive sustained, adaptive progress over time.",
+      "authors": [
+        "Haozhe Chen",
+        "Karthik Narasimhan",
+        "Zhuang Liu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-16T23:37:52Z",
+      "updated": "2026-07-22T06:45:58Z",
+      "announced_date": "2026-06-16",
+      "first_seen": "2026-06-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.18543v2",
+        "pdf": "https://arxiv.org/pdf/2606.18543v2",
+        "html": "https://arxiv.org/html/2606.18543"
+      },
+      "score": 9,
+      "tags": [
+        "coding",
+        "conversation"
+      ],
+      "field": "coding",
+      "citations": 3
+    },
+    {
+      "id": "2606.18356",
+      "title": "SafeClawBench: Separating Semantic, Audit-Evidence, and Sandbox Harm in Tool-Using LLM Agents",
+      "abstract": "Tool-using language-model agents introduce security failures that go beyond unsafe text: they can disclose protected objects, write persistent memory, send messages, modify databases, or trigger harmful code and tool effects. Existing evaluations often collapse these stages into a single attack success rate, making it difficult to tell whether a model merely agreed with an attacker or actually produced observable harm. We introduce SafeClawBench, a staged benchmark for tool-using agent security with 600 controlled adversarial tasks across six attack families: direct and indirect prompt injection, tool-return injection, memory poisoning, memory extraction, and ambiguity-driven unsafe inference. SafeClawBench reports three separate endpoints: semantic attack acceptance, audit-visible harm evidence, and sandbox-observed tool/state harm. Evaluating five agent endpoints under four prompt-level policies, we find that these endpoints capture different failure modes. Without additional prompt protection, semantic failure rates vary widely across models, from 9.0% to 44.2%. Audited harm evidence is narrower than semantic failure, and under a separate executable protocol some matched task identities produce sandbox harm despite passing the Semantic Core call: in a 12,000-row matched analysis, 291 of 347 observed sandbox harms occur in rows that pass the semantic check. Prompt policies change endpoint outcomes, but their effects depend on both model and protocol. SafeClawBench provides a reproducible framework for comparing agent models and prompt-policy conditions without conflating textual compliance, evidence-supported harm, and executable state changes. The open-source dataset is available at https://huggingface.co/datasets/sairights/safeclawbench.",
+      "authors": [
+        "Yuchuan Tian",
+        "Mengyu Zheng",
+        "Haocheng Mei",
+        "Ye Yuan",
+        "Chao Xu",
+        "Xinghao Chen",
+        "Hanting Chen",
+        "Yu Wang"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-06-16T18:04:45Z",
+      "updated": "2026-06-16T18:04:45Z",
+      "announced_date": "2026-06-16",
+      "first_seen": "2026-06-16",
+      "comment": "32 pages, 5 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.18356v1",
+        "pdf": "https://arxiv.org/pdf/2606.18356v1",
+        "html": "https://arxiv.org/html/2606.18356"
+      },
+      "score": 21,
+      "tags": [
+        "tool-use",
+        "memory"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2606.18060",
+      "title": "PseudoBench: Measuring How Agentic Auto-Research Fuels Pseudoscience",
+      "abstract": "As Large Language Model based agents enter autonomous scientific research, their ability to resist pseudoscience becomes increasingly important. Otherwise, such systems may rapidly generate plausible yet misleading studies that contaminate academic literature and erode trust in science. We present PseudoBench, an adversarial benchmark for evaluating whether agentic auto-research systems can identify and resist pseudoscientific narratives. PseudoBench contains 200 curated pseudoscientific claim-evidence pairs across five domains and evaluates agents through an end-to-end research pipeline from experiments to writing. Testing seven state-of-the-art agents, we find that current systems readily produce persuasive reports that align with pseudoscientific premises with near-zero refusal rates and the highest resistance of only 27.4%. Stronger agents risk packaging pseudoscience in more sophisticated scientific language, increasing its apparent credibility. These findings reveal an alarming capacity to fuel pseudoscience, calling for scientific alignment before widespread deployment.",
+      "authors": [
+        "Xinyang Liao",
+        "Lingyu Li",
+        "Huacan Liu",
+        "Tianle Gu",
+        "Yang Yao",
+        "Tong Zhu",
+        "Yan Teng",
+        "Yingchun Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-16T15:37:02Z",
+      "updated": "2026-06-16T15:37:02Z",
+      "announced_date": "2026-06-16",
+      "first_seen": "2026-06-16",
+      "comment": "26 pages, 21 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.18060v1",
+        "pdf": "https://arxiv.org/pdf/2606.18060v1",
+        "html": "https://arxiv.org/html/2606.18060"
+      },
+      "score": 12,
+      "tags": [
+        "safety",
+        "research",
+        "science"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.18051",
+      "title": "Compositional Skill Routing for LLM Agents: Decompose, Retrieve, and Compose",
+      "abstract": "LLM agents increasingly rely on external skills -- reusable tool specifications -- but real-world tasks often require composing multiple skills, not just selecting one. We formalize this as the Compositional Skill Routing problem: given a complex user query and a large skill library, decompose the query into atomic sub-tasks, retrieve the appropriate skill for each sub-task, and compose an executable plan. We present SkillWeaver, a decompose-retrieve-compose framework combining an LLM task decomposer, a bi-encoder skill retriever with FAISS indexing, and a dependency-aware DAG planner. To support evaluation, we introduce CompSkillBench, a benchmark of 300 compositional queries over 2,209 real MCP server skills spanning 24 functional categories, sourced from the public MCP ecosystem. Our experiments reveal that task decomposition quality is the primary bottleneck: standard LLM decomposition reaches only 34.2% category recall at the step level. To address this, we propose Iterative Skill-Aware Decomposition (SAD), a retrieval-augmented feedback loop that iteratively aligns decomposition with available skills. SAD improves decomposition accuracy from 51.0% to 67.7% (+32.7%, Wilcoxon p < 10^-6) in a single iteration; DA-conditioned analysis confirms that correct granularity is the prerequisite for effective retrieval (CatR@1 rises from 34% to 41% when DA=1). SkillWeaver reduces context window consumption by over 99%, and transfer experiments confirm generalization (+35.6% relative DA gain even when target categories are absent from the retrieval pool).",
+      "authors": [
+        "Xueping Gao"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-16T15:27:55Z",
+      "updated": "2026-06-16T15:27:55Z",
+      "announced_date": "2026-06-16",
+      "first_seen": "2026-06-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.18051v1",
+        "pdf": "https://arxiv.org/pdf/2606.18051v1",
+        "html": "https://arxiv.org/html/2606.18051"
+      },
+      "score": 11,
+      "tags": [
+        "tool-use",
+        "memory"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2606.17861",
+      "title": "GameCraft-Bench: Can Agents Build Playable Games End-to-End in a Real Game Engine?",
+      "abstract": "Game generation is an emerging application of coding agents, requiring models to transform natural-language specifications into playable interactive systems. Unlike traditional coding tasks, game generation takes place within a game engine, where scripts, scenes, assets, rendering, and runtime interactions must jointly produce coherent gameplay. We formalize end-to-end game generation as the problem of producing a complete game artifact that realizes a specification through observable player-game interaction in a target environment. We argue that evaluating this setting requires three desiderata: Engine Grounding, Artifact Completeness, and Interactive Verification. We propose an interaction-grounded evaluation framework that assesses executable gameplay through replayed demonstrations and rubric-guided multimodal judging. We instantiate this framework as GameCraft-Bench, a benchmark comprising 140 Godot tasks across 15 game families. Evaluations of frontier coding agents show that end-to-end game generation remains highly challenging: the strongest agent achieves only 41.46%, and most agents score below 40%. Further analysis reveals that while agents often implement recognizable mechanics, they struggle to deliver complete games with sufficient content, functional visual feedback, and coherent presentation. See https://tongxuluo.github.io/gamecraft-bench-website for demos, code, and data.",
+      "authors": [
+        "Tongxu Luo",
+        "Rongsheng Wang",
+        "Jiaxi Bi",
+        "Chenming Xu",
+        "Zhengyang Tang",
+        "Jianlong Chen",
+        "Juhao Liang",
+        "Ke Ji",
+        "Shuqi Guo",
+        "Yuhao Du",
+        "Fan Bu",
+        "Wenyu Du",
+        "Xiaotong Zhang",
+        "Kyle Li",
+        "Shaobo Wang",
+        "Linfeng Zhang",
+        "Yuxuan Liu",
+        "Xin Lai",
+        "Chenxin Li",
+        "Yiduo Guo",
+        "Zhexin Zhang",
+        "Xinyuan Wang",
+        "Tianyi Bai",
+        "Ziniu Li",
+        "Benyou Wang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-16T12:34:39Z",
+      "updated": "2026-06-16T12:34:39Z",
+      "announced_date": "2026-06-16",
+      "first_seen": "2026-06-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.17861v1",
+        "pdf": "https://arxiv.org/pdf/2606.17861v1",
+        "html": "https://arxiv.org/html/2606.17861"
+      },
+      "score": 14,
+      "tags": [
+        "coding",
+        "multimodal"
+      ],
+      "field": "coding",
+      "citations": 3
+    },
+    {
+      "id": "2606.17698",
+      "title": "EComAgentBench: Benchmarking Shopping Agents on Long-Horizon Tasks with Distributed Hidden Intent",
+      "abstract": "As LLM-based shopping agents enter production, existing benchmarks fail to capture how a shopper's requirements arrive: stated implicitly in the query, recorded in a profile, or revealed only when the right question is asked. Benchmarks that expose full intent upfront and grade only the final choice can neither pose this long-horizon challenge nor explain which requirement an agent missed. To address this gap, we introduce EComAgentBench, a benchmark of 662 tasks grounded in real Amazon products and reviews. Each task scatters these requirements across a visible query, a tool-gated profile, and scripted clarification; an agent must uncover hidden intent, verify candidates against attributes and review evidence, and commit to a single product within 100 tool calls. Moreover, typed, source-tagged rubrics grade every task, attributing each failure to a requirement and its source. Construction is automated yet reliable, with every answer fixed in code before any text is generated and every sample validated. Our evaluation of seven models reveals that even the strongest attains only 57.1% overall accuracy, and rubric satisfaction degrades from visible to hidden sources. Overall, we believe EComAgentBench will serve as a reproducible foundation for moving shopping agents from single-query search toward dependable assistance over long horizons.",
+      "authors": [
+        "Zeyao Du",
+        "Tong Li",
+        "Yanci Zhang",
+        "Haibo Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-16T09:10:48Z",
+      "updated": "2026-06-23T08:51:01Z",
+      "announced_date": "2026-06-16",
+      "first_seen": "2026-06-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.17698v2",
+        "pdf": "https://arxiv.org/pdf/2606.17698v2",
+        "html": "https://arxiv.org/html/2606.17698"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 4
+    },
+    {
+      "id": "2608.00009",
+      "title": "AgentMemBench: A Systematic Benchmark for Evaluating Long-Term Memory Management Strategies in Conversational AI Agents",
+      "abstract": "Long-term memory remains a critical bottleneck for conversational AI agents, whose finite context windows cannot support coherent recall across thousands of turns. We present AgentMemBench, a unified, reproducible benchmark evaluating five memory management strategies under identical conditions: in-context windowing (ICW), external key-value store (EKV), graph-based episodic memory (GEM), compression-based summarisation (CBS), and web-augmented memory (WAM). All are assessed across three public datasets covering long-term multi-session dialogue (LoCoMo), task-oriented document grounding (MultiDoc2Dial), and persona-grounded multi-session chat (MSC), using Recall@k, MRR, nDCG@k, Answer F1, an LLM-judge Faithfulness score, Memory Footprint, and Latency over 491 annotated question turns. Generation and judging both use Qwen2.5-7B-Instruct (4-bit), with greedy decoding for determinism. Our results show that (1) EKV dominates on every quality axis (macro Recall@5 0.792, MRR 0.677, F1 0.156, Faithfulness 0.354); (2) long-range recall is decisive: on LoCoMo, where the gold turn lies many sessions back, ICW, WAM, GEM, and CBS retrieve almost nothing (Recall@5 <= 0.005) while EKV alone reaches 0.573, showing that recency windows, summaries, and entity graphs collapse at long horizons and only dense retrieval scales; (3) CBS is the runner-up on retrieval (0.556); (4) WAM equals ICW on in-corpus recall by construction, since external results carry no in-corpus provenance; and (5) EKV's recall advantage carries a footprint cost (~5,100 vs ~300 tokens for ICW/WAM), an explicit accuracy-efficiency trade-off. We additionally evaluate two published memory systems (MemGPT/Letta, HippoRAG) against the same harness, and release all code, environment, and result artefacts for full reproducibility.",
+      "authors": [
+        "Ahmed Cherif"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-16T08:27:18Z",
+      "updated": "2026-06-16T08:27:18Z",
+      "announced_date": "2026-06-16",
+      "first_seen": "2026-06-16",
+      "comment": "22 pages, 3 figures submitted on Neural Computing and Applications",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.00009v1",
+        "pdf": "https://arxiv.org/pdf/2608.00009v1",
+        "html": "https://arxiv.org/html/2608.00009"
+      },
+      "score": 17,
+      "tags": [
+        "memory",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 0
+    },
+    {
+      "id": "2607.20498",
+      "title": "AISE-Bench: A Full-Cycle Curated Benchmark for Information Seeking on Academic Knowledge Graphs",
+      "abstract": "Large language models (LLMs) augmented with tools are emerging as autonomous agents capable of using Web engine, APIs, and code to solve complex, long-horizon tasks. Current tool-using benchmarks for information seeking on academic graphs rely on synthetic templates, simplified solution spaces, or narrow tasks such as paper-centric tasks, leaving key challenges underexplored - realistic user intent, complex multi-step API planning, rich parameter filling for APIs, grounded answers with references, and comprehensive evaluation of both the process and the outcome. We introduce AISE-Bench, a real-world, full-cycle annotated benchmark for information seeking on academic knowledge graphs. AISE-Bench release contains 1,133 QA pairs, including query taxonomies, full API execution trajectories, validated parameters, and source-grounded answers with reference links. To support high-quality annotation, we design a customized agent workflow to enable annotators to plan, execute, and revise complex API workflows efficiently. We develop a comprehensive evaluation protocol measuring answer quality, reference grounding, API-planning correctness, and execution success. Among the 14 evaluated methods, even the strongest model (PLAY2PROMPT with Gemini-3-Pro) achieves only moderate performance and often struggles with API planning and execution. AISE-Bench establishes a challenging new testbed for quantitatively evaluating and improving the stepwise correctness, grounded summarization, and traceable reasoning of multi-step API-using LLM agents. Our code and data are available at https://aise-bench.github.io/.",
+      "authors": [
+        "Fanjin Zhang",
+        "Zhengyang Wang",
+        "Ruixuan Huang",
+        "Kefan Zhang",
+        "Amy Xin",
+        "Yuanchun Wang",
+        "Shu Zhao",
+        "Evgeny Kharlamov",
+        "Jie Tang",
+        "Juanzi Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-16T07:59:46Z",
+      "updated": "2026-06-16T07:59:46Z",
+      "announced_date": "2026-06-16",
+      "first_seen": "2026-06-16",
+      "comment": "9 pages, accepted by KDD 2026",
+      "doi": "10.1145/3770855.3817492",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.20498v1",
+        "pdf": "https://arxiv.org/pdf/2607.20498v1",
+        "html": "https://arxiv.org/html/2607.20498"
+      },
+      "score": 24,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.17459",
+      "title": "Can LLMs Be CEOs? Benchmarking Strategic Resource Reallocation with Multi-Role Agent Simulation",
+      "abstract": "Evaluating the decision-making capabilities of large language models (LLMs) is a growing research priority, yet existing benchmarks focus on isolated cognitive tasks such as reasoning, knowledge retrieval, and economic rationality in stylized settings. These evaluations overlook the defining challenge of real executive decision-making: integrating conflicting recommendations from specialized stakeholders under information asymmetry, organizational constraints, and temporal dependencies. We introduce \\textsc{CEO-Bench}, a multi-agent benchmark that evaluates LLMs on CEO-level strategic resource reallocation -- the process of redirecting capital across business units in a multi-round, constraint-rich organizational environment. In \\textsc{CEO-Bench}, LLM agents receive conflicting advice from four role-conditioned C-suite advisors (CFO, CTO, COO, CMO), each with private signals and distinct priorities, and must synthesize these into a concrete allocation plan evaluated along four dimensions: role integration, conditional boldness, history-sensitive judgment, and plan validity. Experiments across five frontier models on 13 scenarios reveal that all models achieve high structural validity but diverge sharply on strategic calibration -- the hardest capability layer. We identify systematic failure modes including single-advisor capture, conservative default under ambiguity, and historical amnesia, and uncover a structural integration-boldness tradeoff: models that engage more deeply with conflicting perspectives tend to produce less decisive action. These findings delineate the current capability boundary of LLMs as organizational decision-makers and inform the design of future AI-assisted executive systems.",
+      "authors": [
+        "Yuyang Dai",
+        "Xueqing Peng",
+        "Lingfei Qian",
+        "Zhuohan Xie"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-16T03:20:04Z",
+      "updated": "2026-06-16T03:20:04Z",
+      "announced_date": "2026-06-16",
+      "first_seen": "2026-06-16",
+      "comment": "13 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.17459v1",
+        "pdf": "https://arxiv.org/pdf/2606.17459v1",
+        "html": "https://arxiv.org/html/2606.17459"
+      },
+      "score": 12,
+      "tags": [
+        "multi-agent",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 1
+    },
+    {
+      "id": "2606.17453",
+      "title": "MapSatisfyBench: Benchmarking Satisfaction-Aware Map Agents through Behavior-Grounded Implicit Decision Factors",
+      "abstract": "Large language model agents are increasingly integrated into map services. Since map services are embedded in everyday-life scenarios rather than professional task settings, users often express their needs informally, resulting in underspecified queries with many unspoken needs, namely, implicit decision factors that are critical for user satisfaction. Although clarification is an effective way to mitigate this issue, it increases user burden in daily interaction, and a capable agent should first proactively recover such factors from available information sources. However, evaluating this ability is challenging. The first challenge is to determine which implicit decision factors are suitable for evaluation. A factor is evaluable only if it affects user acceptance and can be recovered from information available to the agent before it responds. Second, user satisfaction cannot be reliably represented by a single reference answer, requiring a benchmark that converts satisfaction-relevant factors into objective and quantifiable evaluation targets. To address these challenges, we propose a restore-identify-filter framework that reconstructs complete user needs from behavior-chain evidence, identifies implicit decision factors, and retains only those supported by pre-query evidence. Building on this methodology, we construct MapSatisfyBench from large-scale, real-world anonymized user data and annotate ground truth from five dimensions and enables full-chain evaluation of satisfaction-aware map agents. Experiments show that current agents generally perform well on explicit task completion, but remain limited in satisfying implicit decision factors and proactively acquiring the evidence needed for satisfaction-aware decisions. These findings establish MapSatisfyBench as a benchmark for shifting map-agent evaluation from task completion toward satisfaction-aware spatial decision making.",
+      "authors": [
+        "Lubin Bai",
+        "Mengyu Cao",
+        "Sixue Wang",
+        "Zhongwei Wan",
+        "Yue Pan",
+        "Jiale Hou",
+        "Xiang Li",
+        "Xiuyuan Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-16T03:14:39Z",
+      "updated": "2026-06-17T07:21:04Z",
+      "announced_date": "2026-06-16",
+      "first_seen": "2026-06-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.17453v2",
+        "pdf": "https://arxiv.org/pdf/2606.17453v2",
+        "html": "https://arxiv.org/html/2606.17453"
+      },
+      "score": 16,
+      "tags": [],
+      "field": "workplace",
+      "citations": 0
+    }
+  ]
+}

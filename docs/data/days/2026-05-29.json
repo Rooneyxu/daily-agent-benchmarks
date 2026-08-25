@@ -1,0 +1,484 @@
+{
+  "date": "2026-05-29",
+  "count": 10,
+  "report": {
+    "date": "2026-05-29",
+    "count": 10,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 5,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 4,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multimodal",
+        "count": 4,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "science",
+        "count": 2,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "research",
+        "count": 2,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      }
+    ],
+    "en": {
+      "headline": "10 new agent benchmarks",
+      "summary": "On May 29, 2026, arXiv listed 10 new agent benchmarks. Work clustered around Tool use (5), Safety (4), Multimodal (4), and Science lab (2).",
+      "highlights": [
+        {
+          "id": "2606.02624",
+          "title": "TadA-Bench: A Million-Variant Benchmark for Future-Round Discovery Toward Agentic Protein Engineering",
+          "blurb": "AI for scientific discovery is entering an agentic era, where protein-engineering systems are expected to prioritize future wet-lab experiments rather than merely fit static measurements."
+        },
+        {
+          "id": "2605.30907",
+          "title": "BlueFin: Benchmarking LLM Agents on Financial Spreadsheets",
+          "blurb": "We present BlueFin, a benchmark that tasks large language model (LLM) agents with synthesis, manipulation, and comprehension tasks over spreadsheet workbooks in the professional finance domain."
+        },
+        {
+          "id": "2605.31529",
+          "title": "SVI-Bench: A Dynamic Microworld for Strategic Video Intelligence",
+          "blurb": "True video intelligence demands more than recognizing what is visible: it requires reasoning about why events unfold, predicting what would change under different conditions, and deciding what to do next."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 10 篇 Agent Benchmark",
+      "summary": "2026年5月29日，arXiv 新增 10 篇 Agent Benchmark。当日主题集中在工具使用（5）、安全（4）、多模态（4）、科学实验（2）。",
+      "highlights": [
+        {
+          "id": "2606.02624",
+          "title": "TadA-Bench: A Million-Variant Benchmark for Future-Round Discovery Toward Agentic Protein Engineering",
+          "blurb": "AI for scientific discovery is entering an agentic era, where protein-engineering systems are expected to prioritize future wet-lab experiments rather than merely fit static measurements."
+        },
+        {
+          "id": "2605.30907",
+          "title": "BlueFin: Benchmarking LLM Agents on Financial Spreadsheets",
+          "blurb": "We present BlueFin, a benchmark that tasks large language model (LLM) agents with synthesis, manipulation, and comprehension tasks over spreadsheet workbooks in the professional finance domain."
+        },
+        {
+          "id": "2605.31529",
+          "title": "SVI-Bench: A Dynamic Microworld for Strategic Video Intelligence",
+          "blurb": "True video intelligence demands more than recognizing what is visible: it requires reasoning about why events unfold, predicting what would change under different conditions, and deciding what to do next."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.00384",
+      "title": "VESTA: Visual Exploration with Statistical Tool Agents",
+      "abstract": "Fitting quantitative models to data is a central step in scientific workflows, yet it remains one of the least automated. Recent agent-based systems leverage language and vision-language models (VLMs) to iteratively propose and refine statistical models, but these systems struggle on more challenging modeling tasks. To address these limitations, we introduce VESTA: Visual Exploration with Statistical Tool Agents, a framework that equips VLMs with a dynamically growing exploration toolkit to guide model refinement through data transformations, hypothesis-driven visualizations, and robust statistical tests. Unlike prior systems that rely on iterative critique alone, VESTA actively explores data before and during refinement by selecting or creating diagnostic tools, which accumulate in the model's context and can be reused later. We evaluate VESTA against established baselines in three toolkit configurations: no tools, static expert-written tools, and dynamic model-written tools. To support this evaluation, we introduce DAWN (Dataset for Automated Workflows and Numerical Modeling), a benchmark targeting distribution fitting and time series modeling with varying difficulty tiers, and culminating in real-world astronomy tasks including modeling initial mass functions and gravitational-wave chirp signals. We find that VESTA's dynamic tool creation outperforms prior agentic pipelines, with the largest gains on complex and domain-specific tasks. We further show that dynamically generated tools are substantially more sophisticated than those produced by existing visual tool-creation systems, covering more diagnostic categories per function and strongly preferring visual outputs that the VLM critic can reason over directly.",
+      "authors": [
+        "William Rudman",
+        "Abhishek Divekar",
+        "Kanishk Jain",
+        "Sebastian Joseph",
+        "Stella S. R. Offner",
+        "Matthew Lease",
+        "Kyle Mahowald",
+        "Greg Durrett",
+        "Junyi Jessy Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV",
+        "cs.LG",
+        "stat.CO"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-29T21:57:37Z",
+      "updated": "2026-06-07T19:48:24Z",
+      "announced_date": "2026-05-29",
+      "first_seen": "2026-05-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.00384v2",
+        "pdf": "https://arxiv.org/pdf/2606.00384v2",
+        "html": "https://arxiv.org/html/2606.00384"
+      },
+      "score": 9,
+      "tags": [
+        "tool-use",
+        "safety",
+        "multimodal",
+        "science"
+      ],
+      "field": "multimodal",
+      "citations": 2
+    },
+    {
+      "id": "2606.00341",
+      "title": "ROGUE: Misaligned Agent Behavior Arising from Ordinary Computer Use",
+      "abstract": "As AI agents are increasingly deployed in real personal and corporate settings (email accounts, development workflows, company databases, etc.), safety considerations surrounding these agents become paramount. Although much work has focused on agent safety in the presence of an adversary, we show that agents can exhibit misaligned behavior even in benign settings, taking unsafe actions when those actions are instrumental to task completion. We study this failure mode through the lens of corrigibility, the safety desideratum that agents remain amenable to human correction, interruption, or shutdown. To demonstrate this tendency, we introduce a benchmark in which agents are asked to complete realistic, computer-use tasks but are confronted with a corrigibility obstacle: a human interrupt, a login page, or a shutdown notification. We then evaluate whether agents choose to violate corrigibility in order to complete the task -- overriding the human, accessing private passwords, rewiring shutdown. We find that the overwhelming majority of frontier models tested frequently bypass user interruptions or restrictions. In addition, better model performance appears to lead to greater misalignment. Finally, even when models are completely corrigible initially, we show there are no guarantees that the subagents they create are. Our work highlights the critical need for principled, corrigibility-focused alignment methods in autonomous agents.",
+      "authors": [
+        "Jeremy Tien",
+        "Abishek Anand",
+        "Yu-Rou Tuan",
+        "Yuchen Shen",
+        "J. Zico Kolter",
+        "Aran Nayebi"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-05-29T20:29:35Z",
+      "updated": "2026-05-29T20:29:35Z",
+      "announced_date": "2026-05-29",
+      "first_seen": "2026-05-29",
+      "comment": "27 pages, 13 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.00341v1",
+        "pdf": "https://arxiv.org/pdf/2606.00341v1",
+        "html": "https://arxiv.org/html/2606.00341"
+      },
+      "score": 14,
+      "tags": [
+        "computer-use",
+        "safety"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2605.31529",
+      "title": "SVI-Bench: A Dynamic Microworld for Strategic Video Intelligence",
+      "abstract": "True video intelligence demands more than recognizing what is visible: it requires reasoning about why events unfold, predicting what would change under different conditions, and deciding what to do next. We refer to this progression, from perception through causal reasoning and simulation to strategic planning, as Strategic Video Intelligence (SVI). No existing benchmark evaluates this capability stack: in-the-wild videos lack verifiable ground truth for causal and strategic questions, while synthetic environments sacrifice the complexity of real multi-agent systems. To bridge this gap, we introduce SVI-Bench, a large-scale benchmark that leverages team sports as a dynamic microworld, combining the complexity of real-world multi-agent interaction (10-22 agents making coordinated decisions under adversarial pressure) with the verifiability of explicit rules and definitive outcomes. SVI-Bench comprises approximately 35K hours of broadcast video, 15M annotated actions, 15K hours of expert commentary, 23K game reports, and 103K structured statistical records across basketball, soccer, and hockey, all constructed via a data engine that transforms raw game data into a dense, cross-referenced corpus. We organize evaluation into 9 tasks spanning a progressive four-pillar hierarchy: Dynamic Scene Understanding, Causal Reasoning, Strategic Simulation, and Agentic Synthesis. Evaluating strong multimodal and agentic baselines, we find a capability cliff: models perform competently on perceptual tasks, achieving approximately 74% on fine-grained action QA, but degrade sharply at each successive cognitive level. Agentic tasks prove hardest: the strongest model achieves only 5% accuracy when required to autonomously gather and integrate evidence across a corpus of 1.8M clips.",
+      "authors": [
+        "Yulu Pan",
+        "Han Yi",
+        "Seongsu Ha",
+        "Md Mohaiminul Islam",
+        "Benjamin Zhang",
+        "Lorenzo Torresani",
+        "Gedas Bertasius"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-05-29T16:43:06Z",
+      "updated": "2026-07-01T03:25:50Z",
+      "announced_date": "2026-05-29",
+      "first_seen": "2026-05-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.31529v2",
+        "pdf": "https://arxiv.org/pdf/2605.31529v2",
+        "html": "https://arxiv.org/html/2605.31529"
+      },
+      "score": 16,
+      "tags": [
+        "multi-agent",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2606.02624",
+      "title": "TadA-Bench: A Million-Variant Benchmark for Future-Round Discovery Toward Agentic Protein Engineering",
+      "abstract": "AI for scientific discovery is entering an agentic era, where protein-engineering systems are expected to prioritize future wet-lab experiments rather than merely fit static measurements. We introduce TadA-Bench, a million-variant wet-lab replay benchmark from 31 TadA directed-evolution rounds for future-round discovery toward agentic protein engineering. TadA-Bench preserves the campaign chronology and defines a fixed-data replay task: given earlier experimental rounds, models rank variants that appear only in later rounds. It provides aligned DNA, RNA, and protein views, and uses Seq2Graph, a graph-based label-unification pipeline, to reconcile noisy enrichment measurements into consistent cross-round activity labels. Random-split controls show strong interpolation, but future-round ranking and finite-budget candidate selection are much weaker. Controlled analyses suggest that evolutionary coverage is more informative than local data density, positioning TadA-Bench as a reproducible wet-lab replay substrate for future-round discovery toward agentic protein engineering; the data and code are released on Hugging Face and GitHub.",
+      "authors": [
+        "Jin Gao",
+        "Juntu Zhao",
+        "Zirui Zeng",
+        "Jiaqi Shen",
+        "Junhao Shi",
+        "Dukun Zhao",
+        "Yuming Lu",
+        "Dequan Wang"
+      ],
+      "categories": [
+        "q-bio.QM",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "q-bio.QM",
+      "published": "2026-05-29T12:12:08Z",
+      "updated": "2026-05-29T12:12:08Z",
+      "announced_date": "2026-05-29",
+      "first_seen": "2026-05-29",
+      "comment": "Accepted at the 43rd International Conference on Machine Learning (ICML 2026). Data: https://huggingface.co/datasets/JinGao/TadABench-1M . Code: https://github.com/shiyegao/TadABench-1M",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.02624v1",
+        "pdf": "https://arxiv.org/pdf/2606.02624v1",
+        "html": "https://arxiv.org/html/2606.02624"
+      },
+      "score": 19,
+      "tags": [
+        "research",
+        "science"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2605.31042",
+      "title": "From Prompt Injection to Persistent Control: Defending Agentic Harness Against Trojan Backdoors",
+      "abstract": "LLM agents are evolving from conversational chatbots to operational tools in real-world workspaces. In local agentic harnesses, an LLM can read and write files, call tools, and reuse workspace state across sessions. While such capabilities enhance utility, they also expose a new attack surface for attackers. Attackers can embed a prompt injection within a file or tool output. Agents may read this hidden instruction, store it, and execute it later. In this multi-step trojan attack paradigm, no individual step appears malicious on its own, but these steps can collectively turn untrusted text into persistent control content. However, existing defenses often inspect each step in isolation. As a result, they can block a clear harmful action, but fail to detect the earlier write operation that plants the backdoor. To reveal this threat, we introduce ClawTrojan, a benchmark designed to identify multi-step trojan attacks in local agentic harnesses. In an OpenClaw-style simulated workspace with GPT-5.4, ClawTrojan reaches a 95.5% attack success rate (ASR), while existing single-turn prompt-injection attacks produce near-zero ASR on the same model. To address this threat, we propose DASGuard, which scans control-like text in sensitive local files, traces its origin, and removes control content that does not originate from a trusted source. Our results show that DASGuard achieves strong dynamic defense by combining runtime attack blocking with sanitized commits to the workspace.",
+      "authors": [
+        "Jiejun Tan",
+        "Zhicheng Dou",
+        "Xinyu Yang",
+        "Yuyang Hu",
+        "Yiruo Cheng",
+        "Xiaoxi Li",
+        "Ji-Rong Wen"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-05-29T09:19:07Z",
+      "updated": "2026-05-29T09:19:07Z",
+      "announced_date": "2026-05-29",
+      "first_seen": "2026-05-29",
+      "comment": "Code and data are available at https://github.com/RUC-NLPIR/ClawTrojan",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.31042v1",
+        "pdf": "https://arxiv.org/pdf/2605.31042v1",
+        "html": "https://arxiv.org/html/2605.31042"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2605.30931",
+      "title": "MineExplorer: Evaluating Open-World Exploration of MLLM Agents in Minecraft",
+      "abstract": "Multimodal large language models (MLLMs) have shown strong capabilities in perception, reasoning, and action generation. However, their ability to sustain exploration in dynamic open worlds remains unclear. Existing embodied and game-based benchmarks often compress interaction into short-horizon tasks or entangle success with domain-specific game mechanics. In this paper, we introduce MineExplorer benchmark for evaluating open-world exploration capabilities of MLLM agents in Minecraft. We first filter atomic tasks whose solutions rely heavily on Minecraft-specific knowledge to better reflect general open-world reasoning. Then we organize the benchmark around a ReAct-style capability formulation and compose atomic tasks into implicit multi-hop tasks. To further construct reliable instances, MineExplorer uses a multi-agent synthesis workflow that jointly designs task graphs, sandbox scenes, and rule-based milestone evaluators. Human evaluation shows that the multi-agent synthesis workflow produces significantly more reliable instances than a single-agent baseline. Experiments with advanced MLLM agents show that open-world exploration remains challenging, as strong models can handle many single-hop tasks but degrade sharply when hidden prerequisites must be coordinated over longer trajectories. Further analysis finds that task difficulty tracks agent completion, and larger models or thinking modes do not consistently translate into better performance. Code and dataset are available at https://github.com/Jometeorie/MineExplorer.",
+      "authors": [
+        "Tianjie Ju",
+        "Yueqing Sun",
+        "Zheng Wu",
+        "Wei Zhang",
+        "Yaqi Huo",
+        "Xi Su",
+        "Qi Gu",
+        "Xunliang Cai",
+        "Gongshen Liu",
+        "Zhuosheng Zhang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-29T07:21:47Z",
+      "updated": "2026-06-12T03:58:07Z",
+      "announced_date": "2026-05-29",
+      "first_seen": "2026-05-29",
+      "comment": "Working in progress",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.30931v2",
+        "pdf": "https://arxiv.org/pdf/2605.30931v2",
+        "html": "https://arxiv.org/html/2605.30931"
+      },
+      "score": 9,
+      "tags": [
+        "multi-agent",
+        "embodied",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multi-agent",
+      "citations": 1
+    },
+    {
+      "id": "2605.30907",
+      "title": "BlueFin: Benchmarking LLM Agents on Financial Spreadsheets",
+      "abstract": "We present BlueFin, a benchmark that tasks large language model (LLM) agents with synthesis, manipulation, and comprehension tasks over spreadsheet workbooks in the professional finance domain. Though estimates of the global population of paying users of spreadsheet software range in the hundreds of millions -- an order of magnitude more than the estimated global population of professional developers -- comparatively fewer resources have been devoted to exploring and expanding LLM capabilities in the spreadsheet domain, with fewer still dedicated to mirroring real occupational tasks encountered by those in professional finance roles. In response, we curate a set of 131 challenging, complex tasks with real-world relevance in the domain, containing 3,225 granular rubric criteria; notably, our rubric criteria and LM judge evaluations are validated by a team of expert human annotators, resulting in high-quality, granular evaluations of complex tasks that are difficult to verify programmatically but can be reliably evaluated by an LM judge agent. Our judge achieves parity with expert consensus ($α=0.826$) with a macro-F1 score of 0.839. Frontier LLMs demonstrate poor performance on the challenging benchmark, with the strongest LLMs achieving less than 50\\% average scores across tasks -- models exhibit particular weaknesses in dynamic correctness. Our contributions include a dataset of examples across three categories of spreadsheet tasks, an open source harness and agentic evaluation framework, and a characterization of existing frontier models' performance on our benchmark.",
+      "authors": [
+        "Srivatsa Kundurthy",
+        "Clara Na",
+        "Colton Moraine",
+        "Anoushka Mohta",
+        "Case Winter",
+        "George Fang",
+        "John Ling",
+        "Emma Strubell",
+        "Zach Kirshner"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-05-29T06:43:23Z",
+      "updated": "2026-05-29T06:43:23Z",
+      "announced_date": "2026-05-29",
+      "first_seen": "2026-05-29",
+      "comment": "26 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.30907v1",
+        "pdf": "https://arxiv.org/pdf/2605.30907v1",
+        "html": "https://arxiv.org/html/2605.30907"
+      },
+      "score": 18,
+      "tags": [],
+      "field": "workplace",
+      "citations": 1
+    },
+    {
+      "id": "2606.07595",
+      "title": "VisualLeakBench: Reproducible Action-Boundary Propagation Failures in Vision-Language Agents",
+      "abstract": "Vision-language agents increasingly consume screenshots, documents, and user interfaces before writing to memory, sending messages, or invoking external tools. We study a concrete failure mode in this setting: action-boundary propagation, where sensitive or unsafe visible text is copied from an image into downstream tool arguments. We present VisualLeakBench, a diversified 500-image benchmark spanning UI, chat, document, form, and dashboard scenes, and evaluate a stratified 100-image agent subset with four production VLM systems under two workflows: note capture and external handoff. At baseline, target strings are propagated into tool arguments in 78.8% of PII cases and 85.5% of rendered unsafe-text cases. Under a defensive system prompt, rendered unsafe-text propagation remains high at 52.6%, while PII tool propagation falls to 2.0%, largely by suppressing tool use rather than preserving utility. Rates are tool-surface dependent: search-like tools suppress PII propagation, but rendered unsafe text still crosses tool boundaries. We measure visual-to-tool propagation rather than downstream instruction execution. We additionally provide a labeled-target oracle upper-bound diagnostic that localizes most failures at the tool boundary while leaving response-side leakage as residual risk.",
+      "authors": [
+        "Youting Wang",
+        "Yuan Tang",
+        "Yitian Qian",
+        "Chen Zhao"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-05-29T05:17:03Z",
+      "updated": "2026-05-29T05:17:03Z",
+      "announced_date": "2026-05-29",
+      "first_seen": "2026-05-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.07595v1",
+        "pdf": "https://arxiv.org/pdf/2606.07595v1",
+        "html": "https://arxiv.org/html/2606.07595"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use",
+        "safety",
+        "memory",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2606.00152",
+      "title": "PrivacyPeek: Auditing What LLM-Based Agents Acquire, Not Just What They Say",
+      "abstract": "LLM-based agents are rapidly advancing, autonomously invoking external tools to complete multi-step tasks for users. However, agents often acquire more sensitive information than the task requires. Existing privacy benchmarks audit what the agent's response or outgoing actions disclose, but overlook the acquisition stage where data first enters the agent's context. The over-acquired information is then one careless action or one attack away from an outright leak. To assess its prevalence, we introduce \\emph{PrivacyPeek}, a benchmark for evaluating acquisition-stage privacy leakage of LLM-based agents, with $1{,}182$ cases across $7$ acquisition behaviours and $16$ application domains. Specifically, \\emph{Acquisition Inspection} examines the agent's tool-call trajectory, both the tools it invokes and the data it receives, to detect when it acquires sensitive information beyond the task scope. \\emph{Probe Elicitation} then issues a follow-up probe and measures how readily an attacker could elicit sensitive information the agent acquired but did not disclose. Our experiments on $10$ LLM-based agents across $4$ model families show that the unnecessary acquisition of sensitive information is widespread. In addition, we observe a correlation between the task-completion capability and acquisition-stage leakage. Prompt-level defences reduce only a small fraction of acquisition-stage leakage, leaving the majority unmitigated. These results make auditing acquisition-stage privacy both urgent and necessary. Our dataset and code are available at https://github.com/Xuan269/PrivacyPeek-Resource.",
+      "authors": [
+        "Mingxuan Zhang",
+        "Jiahui Han",
+        "Dadi Guo",
+        "Songze Li",
+        "Guanchu Wang",
+        "Na Zou",
+        "Dongrui Liu",
+        "Xia Hu"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-05-29T04:55:12Z",
+      "updated": "2026-08-06T13:29:02Z",
+      "announced_date": "2026-05-29",
+      "first_seen": "2026-05-29",
+      "comment": "21 pages, 17 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.00152v2",
+        "pdf": "https://arxiv.org/pdf/2606.00152v2",
+        "html": "https://arxiv.org/html/2606.00152"
+      },
+      "score": 8,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2605.30727",
+      "title": "MosaicLeaks:Privacy Risks in Querying-in-the-Open for Deep Research Agents",
+      "abstract": "Deep research agents increasingly combine private local documents with external tools like web retrieval, creating a privacy risk: an agent's external queries may leak sensitive information from its local context. This risk is amplified by the mosaic effect, where individual queries may appear harmless but become revealing in aggregate. We introduce MosaicLeaks, a benchmark of 1,001 multi-hop deep research tasks that chain private enterprise documents and a public web corpus, forcing agents to make external queries that depend on local information. We evaluate leakage with an adversary LLM that observes only the agent's external queries and attempts to infer private information at three levels: the agent's research intent, answers to specific private questions and verifiable claims about the enterprise documents. We find that models across families and sizes frequently leak at all three levels, that zero-shot privacy prompting reduces but does not eliminate leakage and that reinforcement learning for task performance alone worsens leakage. To address this, we propose Privacy-Aware Deep Research (PA-DR), an RL framework that combines situational rewards for task success with a learned privacy classifier to provide dense credit assignment over both per-query and mosaic-level leakage. Training Qwen3-4B-Instruct with PA-DR improves accuracy from 48.7% to 58.7% and reduces answer and full-information leakage from 34.0% to 9.9%.",
+      "authors": [
+        "Alexander Gurung",
+        "Spandana Gella",
+        "Alexandre Drouin",
+        "Issam H. Laradji",
+        "Perouz Taslakian",
+        "Rafael Pardinas"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-29T01:44:35Z",
+      "updated": "2026-05-29T01:44:35Z",
+      "announced_date": "2026-05-29",
+      "first_seen": "2026-05-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.30727v1",
+        "pdf": "https://arxiv.org/pdf/2605.30727v1",
+        "html": "https://arxiv.org/html/2605.30727"
+      },
+      "score": 10,
+      "tags": [
+        "tool-use",
+        "safety",
+        "research"
+      ],
+      "field": "science",
+      "citations": 0
+    }
+  ]
+}

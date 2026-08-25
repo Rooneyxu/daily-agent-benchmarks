@@ -1,0 +1,430 @@
+{
+  "date": "2026-04-10",
+  "count": 8,
+  "report": {
+    "date": "2026-04-10",
+    "count": 8,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 5,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "gui",
+        "count": 2,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "research",
+        "count": 2,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      }
+    ],
+    "en": {
+      "headline": "8 new agent benchmarks",
+      "summary": "On April 10, 2026, arXiv listed 8 new agent benchmarks. Work clustered around Planning / reasoning (5), GUI agents (2), Research agents (2), and Multimodal (2).",
+      "highlights": [
+        {
+          "id": "2604.08987",
+          "title": "PilotBench: A Benchmark for General Aviation Agents with Safety Constraints",
+          "blurb": "As Large Language Models (LLMs) advance toward embodied AI agents operating in physical environments, a fundamental question emerges: can models trained on text corpora reliably reason about complex physics while adherin…"
+        },
+        {
+          "id": "2604.09937",
+          "title": "HealthAdminBench: Evaluating Computer-Use Agents on Healthcare Administration Tasks",
+          "blurb": "Healthcare administration accounts for over $1 trillion in annual spending, making it a promising target for LLM-based computer-use agents (CUAs)."
+        },
+        {
+          "id": "2604.08988",
+          "title": "SEA-Eval: A Benchmark for Evaluating Self-Evolving Agents Beyond Episodic Assessment",
+          "blurb": "Current LLM-based agents demonstrate strong performance in episodic task execution but remain constrained by static toolsets and episodic amnesia, failing to accumulate experience across task boundaries."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 8 篇 Agent Benchmark",
+      "summary": "2026年4月10日，arXiv 新增 8 篇 Agent Benchmark。当日主题集中在规划 / 推理（5）、GUI 智能体（2）、科研智能体（2）、多模态（2）。",
+      "highlights": [
+        {
+          "id": "2604.08987",
+          "title": "PilotBench: A Benchmark for General Aviation Agents with Safety Constraints",
+          "blurb": "As Large Language Models (LLMs) advance toward embodied AI agents operating in physical environments, a fundamental question emerges: can models trained on text corpora reliably reason about complex physics while adherin…"
+        },
+        {
+          "id": "2604.09937",
+          "title": "HealthAdminBench: Evaluating Computer-Use Agents on Healthcare Administration Tasks",
+          "blurb": "Healthcare administration accounts for over $1 trillion in annual spending, making it a promising target for LLM-based computer-use agents (CUAs)."
+        },
+        {
+          "id": "2604.08988",
+          "title": "SEA-Eval: A Benchmark for Evaluating Self-Evolving Agents Beyond Episodic Assessment",
+          "blurb": "Current LLM-based agents demonstrate strong performance in episodic task execution but remain constrained by static toolsets and episodic amnesia, failing to accumulate experience across task boundaries."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.09937",
+      "title": "HealthAdminBench: Evaluating Computer-Use Agents on Healthcare Administration Tasks",
+      "abstract": "Healthcare administration accounts for over $1 trillion in annual spending, making it a promising target for LLM-based computer-use agents (CUAs). While clinical applications of LLMs have received significant attention, no benchmark exists for evaluating CUAs on end-to-end administrative workflows. To address this gap, we introduce HealthAdminBench, a benchmark comprising four realistic GUI environments: an EHR, two payer portals, and a fax system, and 135 expert-defined tasks spanning three administrative task types: Prior Authorization, Appeals and Denials Management, and Durable Medical Equipment (DME) Order Processing. Each task is decomposed into fine-grained, verifiable subtasks, yielding 1,698 evaluation points. We evaluate seven agent configurations under multiple prompting and observation settings and find that, despite strong subtask performance, end-to-end reliability remains low: the best-performing agent (Claude Opus 4.6 CUA) achieves only 36.3 percent task success, while GPT-5.4 CUA attains the highest subtask success rate (82.8 percent). These results reveal a substantial gap between current agent capabilities and the demands of real-world administrative workflows. HealthAdminBench provides a rigorous foundation for evaluating progress toward safe and reliable automation of healthcare administrative workflows.",
+      "authors": [
+        "Suhana Bedi",
+        "Ryan Welch",
+        "Ethan Steinberg",
+        "Michael Wornow",
+        "Taeil Matthew Kim",
+        "Haroun Ahmed",
+        "Peter Sterling",
+        "Bravim Purohit",
+        "Qurat Akram",
+        "Angelic Acosta",
+        "Esther Nubla",
+        "Pritika Sharma",
+        "Michael A. Pfeffer",
+        "Sanmi Koyejo",
+        "Nigam H. Shah"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-10T22:33:39Z",
+      "updated": "2026-04-10T22:33:39Z",
+      "announced_date": "2026-04-10",
+      "first_seen": "2026-04-10",
+      "comment": "24 pages, 5 figures, 5 tables. Benchmark paper introducing 4 simulated environments, 135 tasks, and 1,698 evaluation points for healthcare administrative computer-use agents",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.09937v1",
+        "pdf": "https://arxiv.org/pdf/2604.09937v1",
+        "html": "https://arxiv.org/html/2604.09937"
+      },
+      "score": 15,
+      "tags": [
+        "gui",
+        "computer-use"
+      ],
+      "field": "computer-use",
+      "citations": 7
+    },
+    {
+      "id": "2604.09836",
+      "title": "COMPOSITE-Stem",
+      "abstract": "AI agents hold growing promise for accelerating scientific discovery; yet, a lack of frontier evaluations hinders adoption into real workflows. Expert-written benchmarks have proven effective at measuring AI reasoning, but most at this stage have become saturated and only measure performance on constrained outputs. To help address this gap, we introduce COMPOSITE-STEM, a benchmark of 70 expert-written tasks in physics, biology, chemistry, and mathematics, curated by doctoral-level researchers. Our benchmark combines exact-match grading and criterion-based rubrics with an LLM-as-a-jury grading protocol, allowing more flexible assessment of scientifically meaningful outputs. Using an adapted multimodal Terminus-2 agent harness within the Harbor agentic evaluation framework, we evaluate four frontier models. The top-performing model achieves 21%, demonstrating that COMPOSITE-STEM captures capabilities beyond current agent reach. All tasks are open-sourced with contributor permission to support reproducibility and to promote additional research towards AI's acceleration of scientific progress in these domains.",
+      "authors": [
+        "Kyle Waters",
+        "Lucas Nuzzi",
+        "Tadhg Looram",
+        "Alessandro Tomasiello",
+        "Ariel Ghislain Kemogne Kamdoum",
+        "Bikun Li",
+        "Damien Sileo",
+        "Egor Kretov",
+        "Francesco Fournier-Facio",
+        "Georgios Soloupis",
+        "Haile Kassahun",
+        "Hew Wolff",
+        "Jiaqi Cai",
+        "Lianghui Li",
+        "Marc Roth",
+        "Mohinder Naiya",
+        "Naixu Guo",
+        "Qicheng Tang",
+        "Richard Wheeler",
+        "Samuele Sala",
+        "Serguei Popov",
+        "Steven Dillmann",
+        "Yuqi Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-10T19:08:50Z",
+      "updated": "2026-04-16T21:01:25Z",
+      "announced_date": "2026-04-10",
+      "first_seen": "2026-04-10",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.09836v2",
+        "pdf": "https://arxiv.org/pdf/2604.09836v2",
+        "html": "https://arxiv.org/html/2604.09836"
+      },
+      "score": 10,
+      "tags": [
+        "planning",
+        "research",
+        "multimodal",
+        "science"
+      ],
+      "field": "multimodal",
+      "citations": 1
+    },
+    {
+      "id": "2604.09791",
+      "title": "Pioneer Agent: Continual Improvement of Small Language Models in Production",
+      "abstract": "Small language models are attractive for production deployment due to their low cost, fast inference, and ease of specialization. However, adapting them to a specific task remains a challenging engineering loop, driven not by training itself but by surrounding decisions: data curation, failure diagnosis, regression avoidance, and iteration control. We present Pioneer Agent, a closed-loop system that automates this lifecycle. In cold-start mode, given only a natural-language task description, the agent acquires data, constructs evaluation sets, and iteratively trains models by jointly optimizing data, hyperparameters, and learning strategy. In production mode, given a deployed model with labeled failures, it diagnoses error patterns, constructs targeted training data, and retrains under explicit regression constraints. To evaluate this setting, we introduce AdaptFT-Bench, a benchmark of synthetic inference logs with progressively increasing noise, designed to test the full adaptation loop: diagnosis, curriculum synthesis, retraining, and verification. Across eight cold-start benchmarks spanning reasoning, math, code generation, summarization, and classification, Pioneer Agent improves over base models by 1.6-83.8 points. On AdaptFT-Bench, it improves or preserves performance in all seven scenarios, while naive retraining degrades by up to 43 points. On two production-style deployments built from public benchmark tasks, it raises intent classification from 84.9% to 99.3% and Entity F1 from 0.345 to 0.810. Beyond performance gains, the agent often discovers effective training strategies, including chain-of-thought supervision, task-specific optimization, and quality-focused data curation, purely from downstream feedback.",
+      "authors": [
+        "Dhruv Atreja",
+        "Julia White",
+        "Nikhil Nayak",
+        "Kelton Zhang",
+        "Henrijs Princis",
+        "George Hurn-Maloney",
+        "Ash Lewis",
+        "Urchade Zaratiana"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-10T18:13:09Z",
+      "updated": "2026-04-10T18:13:09Z",
+      "announced_date": "2026-04-10",
+      "first_seen": "2026-04-10",
+      "comment": "43 pages, 10 figures, 14 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.09791v1",
+        "pdf": "https://arxiv.org/pdf/2604.09791v1",
+        "html": "https://arxiv.org/html/2604.09791"
+      },
+      "score": 6,
+      "tags": [
+        "coding",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 1
+    },
+    {
+      "id": "2604.09408",
+      "title": "HiL-Bench (Human-in-Loop Benchmark): Do Agents Know When to Ask for Help?",
+      "abstract": "Frontier coding agents solve complex tasks when given complete context but collapse when specifications are incomplete or ambiguous. The bottleneck is not raw capability, but judgment: knowing when to act autonomously and when to ask for help. Current benchmarks are blind to this failure mode. They supply unambiguous detailed instructions and solely reward execution correctness, so an agent that makes a lucky guess for a missing requirement will score identically to one that would have asked to be certain. We present HiL-Bench (Human-in-the-Loop Benchmark) to measure this selective escalation skill. Each task contains human-validated blockers (missing information, ambiguous requests, contradictory information) that surface only through progressive exploration, not upfront inspection. Our core metric, Ask-F1, the harmonic mean of question precision and blocker recall, captures the tension between over-asking and silent guessing; its structure architecturally prevents gaming through question spam. Evaluation across SWE and text-to-SQL domains reveals a large universal judgment gap: no frontier model recovers more than a fraction of its full-information performance when deciding whether to ask. Failure analysis identifies three key help-seeking patterns: overconfident wrong beliefs with no gap detection; high uncertainty detection yet persistent errors; broad, imprecise escalation without self-correction. These consistent patterns confirm poor help-seeking is a model-level flaw, not task-specific. RL training on shaped Ask-F1 reward shows judgment is trainable: a 32B model improves both help-seeking quality and task pass rate, with gains that transfer across domains. The model does not learn domain-specific heuristics for when to ask; it learns to detect unresolvable uncertainty and act on it.",
+      "authors": [
+        "Tu Trinh",
+        "Mohamed Elfeki",
+        "Guangze Luo",
+        "Kelvin Luu",
+        "Nathan Hunt",
+        "Ernesto Hernandez",
+        "Nandan Marwaha",
+        "Yannis Yiming He",
+        "Charles Wang",
+        "Fernando Carabedo",
+        "Alessa Castillo",
+        "Bing Liu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-10T15:21:44Z",
+      "updated": "2026-05-04T23:00:33Z",
+      "announced_date": "2026-04-10",
+      "first_seen": "2026-04-10",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.09408v4",
+        "pdf": "https://arxiv.org/pdf/2604.09408v4",
+        "html": "https://arxiv.org/html/2604.09408"
+      },
+      "score": 14,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 7
+    },
+    {
+      "id": "2604.09155",
+      "title": "CORA: Conformal Risk-Controlled Agents for Safeguarded Mobile GUI Automation",
+      "abstract": "Graphical user interface (GUI) agents powered by vision language models (VLMs) are rapidly moving from passive assistance to autonomous operation. However, this unrestricted action space exposes users to severe and irreversible financial, privacy or social harm. Existing safeguards rely on prompt engineering, brittle heuristics and VLM-as-critic lack formal verification and user-tunable guarantees. We propose CORA (COnformal Risk-controlled GUI Agent), a post-policy, pre-action safeguarding framework that provides statistical guarantees on harmful executed actions. CORA reformulates safety as selective action execution: we train a Guardian model to estimate action-conditional risk for each proposed step. Rather than thresholding raw scores, we leverage Conformal Risk Control to calibrate an execute/abstain boundary that satisfies a user-specified risk budget and route rejected actions to a trainable Diagnostician model, which performs multimodal reasoning over rejected actions to recommend interventions (e.g., confirm, reflect, or abort) to minimize user burden. A Goal-Lock mechanism anchors assessment to a clarified, frozen user intent to resist visual injection attacks. To rigorously evaluate this paradigm, we introduce Phone-Harm, a new benchmark of mobile safety violations with step-level harm labels under real-world settings. Experiments on Phone-Harm and public benchmarks against diverse baselines validate that CORA improves the safety--helpfulness--interruption Pareto frontier, offering a practical, statistically grounded safety paradigm for autonomous GUI execution. Code and benchmark are available at cora-agent.github.io.",
+      "authors": [
+        "Yushi Feng",
+        "Junye Du",
+        "Qifan Wang",
+        "Zizhan Ma",
+        "Qian Niu",
+        "Yutaka Matsuo",
+        "Long Feng",
+        "Lequan Yu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-04-10T09:41:21Z",
+      "updated": "2026-04-10T09:41:21Z",
+      "announced_date": "2026-04-10",
+      "first_seen": "2026-04-10",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.09155v1",
+        "pdf": "https://arxiv.org/pdf/2604.09155v1",
+        "html": "https://arxiv.org/html/2604.09155"
+      },
+      "score": 7,
+      "tags": [
+        "gui",
+        "safety",
+        "planning",
+        "multimodal"
+      ],
+      "field": "computer-use",
+      "citations": 3
+    },
+    {
+      "id": "2604.08988",
+      "title": "SEA-Eval: A Benchmark for Evaluating Self-Evolving Agents Beyond Episodic Assessment",
+      "abstract": "Current LLM-based agents demonstrate strong performance in episodic task execution but remain constrained by static toolsets and episodic amnesia, failing to accumulate experience across task boundaries. This paper formalizes the Self-Evolving Agent (SEA) from the perspective of digital embodiment and continuous cross-task evolution, introduces the Evolutionary Flywheel as its minimal sufficient architecture, and presents SEA-Eval -- the first benchmark designed specifically for evaluating SEAs. Grounded in Flywheel theory, SEA-Eval establishes SR and T as primary metrics and, through sequential task stream design, is designed to quantify evolutionary gain, evolutionary stability, and implicit alignment convergence. Empirical evaluation reveals that, under comparable success rates, token consumption differs by up to 31.2 times between frameworks on individual tasks, with divergent evolutionary trajectories emerging under sequential analysis -- demonstrating that success rate alone creates a capability illusion and that the sequential convergence of $T$ is the key criterion for distinguishing genuine evolution from pseudo-evolution.",
+      "authors": [
+        "Sihang Jiang",
+        "Lipeng Ma",
+        "Zhonghua Hong",
+        "Keyi Wang",
+        "Zhiyu Lu",
+        "Tengfei Wang",
+        "Shisong Chen",
+        "Jinghao Zhang",
+        "Tianjun Pan",
+        "Weijia Li",
+        "Jiaqing Liang",
+        "Yanghua Xiao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-10T05:49:50Z",
+      "updated": "2026-05-24T11:57:07Z",
+      "announced_date": "2026-04-10",
+      "first_seen": "2026-04-10",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.08988v3",
+        "pdf": "https://arxiv.org/pdf/2604.08988v3",
+        "html": "https://arxiv.org/html/2604.08988"
+      },
+      "score": 15,
+      "tags": [],
+      "field": "other",
+      "citations": 8
+    },
+    {
+      "id": "2604.08987",
+      "title": "PilotBench: A Benchmark for General Aviation Agents with Safety Constraints",
+      "abstract": "As Large Language Models (LLMs) advance toward embodied AI agents operating in physical environments, a fundamental question emerges: can models trained on text corpora reliably reason about complex physics while adhering to safety constraints? We address this through PilotBench, a benchmark evaluating LLMs on safety-critical flight trajectory and attitude prediction. Built from 708 real-world general aviation trajectories spanning nine operationally distinct flight phases with synchronized 34-channel telemetry, PilotBench systematically probes the intersection of semantic understanding and physics-governed prediction through comparative analysis of LLMs and traditional forecasters. We introduce Pilot-Score, a composite metric balancing 60% regression accuracy with 40% instruction adherence and safety compliance. Comparative evaluation across 41 models uncovers a Precision-Controllability Dichotomy: traditional forecasters achieve superior MAE of 7.01 but lack semantic reasoning capabilities, while LLMs gain controllability with 86--89% instruction-following at the cost of 11--14 MAE precision. Phase-stratified analysis further exposes a Dynamic Complexity Gap-LLM performance degrades sharply in high-workload phases such as Climb and Approach, suggesting brittle implicit physics models. These empirical discoveries motivate hybrid architectures combining LLMs' symbolic reasoning with specialized forecasters' numerical precision. PilotBench provides a rigorous foundation for advancing embodied AI in safety-constrained domains.",
+      "authors": [
+        "Yalun Wu",
+        "Haotian Liu",
+        "Zhoujun Li",
+        "Boyang Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-10T05:48:38Z",
+      "updated": "2026-04-10T05:48:38Z",
+      "announced_date": "2026-04-10",
+      "first_seen": "2026-04-10",
+      "comment": "Accepted at the 2026 IEEE International Joint Conference on Neural Networks (IJCNN 2026). 6 pages, 7 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.08987v1",
+        "pdf": "https://arxiv.org/pdf/2604.08987v1",
+        "html": "https://arxiv.org/html/2604.08987"
+      },
+      "score": 18,
+      "tags": [
+        "embodied",
+        "safety",
+        "planning"
+      ],
+      "field": "safety",
+      "citations": 1
+    },
+    {
+      "id": "2604.08970",
+      "title": "Litmus (Re)Agent: A Benchmark and Agentic System for Predictive Evaluation of Multilingual Models",
+      "abstract": "We study predictive multilingual evaluation: estimating how well a model will perform on a task in a target language when direct benchmark results are missing. This problem is common in multilingual deployment, where evaluation coverage is sparse and published evidence is uneven across languages, tasks, and model families. We introduce a controlled benchmark of 1,500 questions spanning six tasks and five evidence scenarios. The benchmark separates accessible evidence from ground truth, enabling evaluation of systems that must infer missing results from incomplete literature evidence. We also present Litmus (Re)Agent, a DAG-orchestrated agentic system that decomposes queries into hypotheses, retrieves evidence, and synthesises predictions through feature-aware aggregation. Across six systems, Litmus (Re)Agent achieves the best overall performance, with the largest gains in transfer-heavy scenarios where direct evidence is weak or absent. These results show that structured agentic reasoning is a promising approach to multilingual performance estimation under incomplete evidence.",
+      "authors": [
+        "Avni Mittal",
+        "Shanu Kumar",
+        "Sandipan Dandapat",
+        "Monojit Choudhury"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.HC",
+        "cs.MA"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-04-10T05:16:33Z",
+      "updated": "2026-04-10T05:16:33Z",
+      "announced_date": "2026-04-10",
+      "first_seen": "2026-04-10",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.08970v1",
+        "pdf": "https://arxiv.org/pdf/2604.08970v1",
+        "html": "https://arxiv.org/html/2604.08970"
+      },
+      "score": 13,
+      "tags": [
+        "planning",
+        "research"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

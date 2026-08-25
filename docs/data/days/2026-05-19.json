@@ -1,0 +1,458 @@
+{
+  "date": "2026-05-19",
+  "count": 10,
+  "report": {
+    "date": "2026-05-19",
+    "count": 10,
+    "themes": [
+      {
+        "id": "multimodal",
+        "count": 5,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "gui",
+        "count": 4,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "planning",
+        "count": 4,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 4,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "embodied",
+        "count": 2,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      }
+    ],
+    "en": {
+      "headline": "10 new agent benchmarks",
+      "summary": "On May 19, 2026, arXiv listed 10 new agent benchmarks. Work clustered around Multimodal (5), GUI agents (4), Planning / reasoning (4), and Tool use (4).",
+      "highlights": [
+        {
+          "id": "2605.19484",
+          "title": "CutVerse: A Compositional GUI Agents Benchmark for Media Post-Production Editing",
+          "blurb": "While GUI agents have made significant progress in web navigation and basic operating system tasks, their capabilities in professional creative workflows remain largely underexplored."
+        },
+        {
+          "id": "2605.19399",
+          "title": "HSCO-Bench: An Agent-Driven End-to-End Hardware-Software Co-design Benchmark for Systems-on-Chip",
+          "blurb": "Large language models (LLMs) are adopted for software and hardware design, yet these domains are still evaluated separately."
+        },
+        {
+          "id": "2605.20306",
+          "title": "WildRoadBench: A Wild Aerial Road-Damage Grounding Benchmark for Vision-Language Models and Autonomous Agents",
+          "blurb": "We introduce WildRoadBench, a wild aerial road-damage grounding benchmark that couples direct visual grounding by vision-language models with autonomous research-and-engineering by LLM-driven agents on a single professio…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 10 篇 Agent Benchmark",
+      "summary": "2026年5月19日，arXiv 新增 10 篇 Agent Benchmark。当日主题集中在多模态（5）、GUI 智能体（4）、规划 / 推理（4）、工具使用（4）。",
+      "highlights": [
+        {
+          "id": "2605.19484",
+          "title": "CutVerse: A Compositional GUI Agents Benchmark for Media Post-Production Editing",
+          "blurb": "While GUI agents have made significant progress in web navigation and basic operating system tasks, their capabilities in professional creative workflows remain largely underexplored."
+        },
+        {
+          "id": "2605.19399",
+          "title": "HSCO-Bench: An Agent-Driven End-to-End Hardware-Software Co-design Benchmark for Systems-on-Chip",
+          "blurb": "Large language models (LLMs) are adopted for software and hardware design, yet these domains are still evaluated separately."
+        },
+        {
+          "id": "2605.20306",
+          "title": "WildRoadBench: A Wild Aerial Road-Damage Grounding Benchmark for Vision-Language Models and Autonomous Agents",
+          "blurb": "We introduce WildRoadBench, a wild aerial road-damage grounding benchmark that couples direct visual grounding by vision-language models with autonomous research-and-engineering by LLM-driven agents on a single professio…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2605.20544",
+      "title": "The Yes-Man Syndrome: Benchmarking Abstention in Embodied Robotic Agents",
+      "abstract": "Vision-language models (VLMs) are used as high-level planners for embodied agents, translating natural language instructions and visual observations into action plans. While prior work has studied abstention in LLMs, existing benchmarks are largely text-only and do not capture the perceptual grounding and physical constraints inherent to embodied robotics environments. In such settings, abstention requires recognizing when instructions are ambiguous, physically infeasible, based on false premises, or otherwise unresolvable given the available sensory modalities and context. To address this gap, we introduce a taxonomy to categorize abstention in the context of embodied robotics and present RoboAbstention, a scalable and auditable framework for generating abstention instructions grounded in images gathered from five robotics datasets. RoboAbstention instantiates the taxonomy through a three-phase pipeline: (1) structured visual grounding, (2) deterministic constraint derivation, and (3) controlled instruction generation via category-specific templates. This enables the construction of a diverse dataset with verifiable abstention conditions. We evaluate several frontier VLMs and find that all models exhibit significant weaknesses in abstention, including those with advanced reasoning capabilities. The best-performing model, Gemini 2.5 Flash, abstains on only 39.0% of our 6,069 benchmark instructions, while the embodied planner Gemini Robotics ER 1.6 Preview abstains on just 16.5%. We further explore methods for improving abstention in VLM planners, such as defensive prompting and in-context learning, and find that these interventions substantially improve performance, reaching 93.6% abstention rate for Gemini Robotics ER 1.6 Preview and 88.6% for GPT 5.4 Mini, yet no approach fully solves the problem. We open-source RoboAbstention at https://purseclab.github.io/RoboAbstention/.",
+      "authors": [
+        "Doguhan Yeke",
+        "Elif Su Temirel",
+        "Ananth Shreekumar",
+        "Brandon Lee",
+        "Dongyan Xu",
+        "Z Berkay Celik"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-05-19T22:32:44Z",
+      "updated": "2026-05-19T22:32:44Z",
+      "announced_date": "2026-05-19",
+      "first_seen": "2026-05-19",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.20544v1",
+        "pdf": "https://arxiv.org/pdf/2605.20544v1",
+        "html": "https://arxiv.org/html/2605.20544"
+      },
+      "score": 10,
+      "tags": [
+        "gui",
+        "embodied",
+        "planning",
+        "multimodal"
+      ],
+      "field": "embodied",
+      "citations": 0
+    },
+    {
+      "id": "2605.20530",
+      "title": "AgentAtlas: Beyond Outcome Leaderboards for LLM Agents",
+      "abstract": "Large language model agents now act on codebases, browsers, operating systems, calendars, files, and tool ecosystems, but their evaluations often collapse behavior into final task success. AgentAtlas reframes agent evaluation as a diagnostic vocabulary and audit protocol for separating outcome success from control-decision quality and trajectory quality. The paper contributes: (i) a six-state control-decision taxonomy (Act / Ask / Refuse / Stop / Confirm / Recover); (ii) a trajectory-failure vocabulary with primary error source and downstream impact; (iii) a 0/1/2 benchmark-coverage audit over fifteen agent benchmarks; and (iv) an illustrative protocol study on a synthetic 1,342-item set evaluated with eight models under taxonomy-aware and taxonomy-blind prompt formats. The synthetic demonstration is not a public benchmark release and should not be read as a definitive model comparison. Instead, it illustrates two measurement risks: mapped label agreement can change substantially when the explicit label menu is removed, and axis choice can change apparent rankings. AgentAtlas is intended to help benchmark designers state what behavior they cover, and to help evaluators diagnose failures that outcome-only leaderboards hide.",
+      "authors": [
+        "Parsa Mazaheri",
+        "Kasra Mazaheri"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-19T22:05:12Z",
+      "updated": "2026-05-26T15:53:21Z",
+      "announced_date": "2026-05-19",
+      "first_seen": "2026-05-19",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.20530v2",
+        "pdf": "https://arxiv.org/pdf/2605.20530v2",
+        "html": "https://arxiv.org/html/2605.20530"
+      },
+      "score": 15,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 3
+    },
+    {
+      "id": "2605.20306",
+      "title": "WildRoadBench: A Wild Aerial Road-Damage Grounding Benchmark for Vision-Language Models and Autonomous Agents",
+      "abstract": "We introduce WildRoadBench, a wild aerial road-damage grounding benchmark that couples direct visual grounding by vision-language models with autonomous research-and-engineering by LLM-driven agents on a single professionally annotated UAV corpus. The same image set and the same per-class AP_50 metric are evaluated under two protocols. The VLM Track measures whether a fixed VLM can localise domain-specific damage from one image and one short prompt under a unified prompting, decoding and parsing pipeline. The Agent Track measures whether an autonomous agent, given only a written task brief, a small exploratory slice and a fixed interaction budget, can search the public web, adapt pretrained components, write training and inference code, and submit predictions through a scalar-feedback oracle on a hidden holdout. We benchmark a broad pool of closed-source frontier models and open-source VLMs together with several frontier LLM-driven agents. Both routes remain far from reliable performance in this wild setting: closed-source frontier models lead the VLM leaderboard but still leave more than half of the metric on the table; open-source grounders plateau well below them, and newer generations or reasoning-style variants do not consistently improve grounding; small targets collapse for every open-source model; agents lag the strongest VLM despite richer affordances, and several fail to land a valid submission within the budget. We release the code and data at https://anonymous.4open.science/r/wildroadbench-0607 to support reproducible follow-up research.",
+      "authors": [
+        "Bingnan Liu",
+        "Chenhang Cui",
+        "Rui Huang",
+        "Jiani Luo",
+        "Zhirong Shen",
+        "Tinghao Wang",
+        "Xiande Huang",
+        "Lingbei Meng",
+        "Fei Shen",
+        "An Zhang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-05-19T15:08:34Z",
+      "updated": "2026-06-02T14:01:21Z",
+      "announced_date": "2026-05-19",
+      "first_seen": "2026-05-19",
+      "comment": "Preprint. Under review. 4 figures, 6 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.20306v2",
+        "pdf": "https://arxiv.org/pdf/2605.20306v2",
+        "html": "https://arxiv.org/html/2605.20306"
+      },
+      "score": 18,
+      "tags": [
+        "gui",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2605.19743",
+      "title": "EngiAI: A Multi-Agent Framework and Benchmark Suite for LLM-Driven Engineering Design",
+      "abstract": "Large Language Model (LLM) agents are increasingly applied to engineering design tasks, yet existing evaluation frameworks do not adequately address multi-agent systems that combine simulation, retrieval, and manufacturing preparation. We introduce a benchmark suite with three evaluation dimensions: (1) a workflow benchmark with seven prompt styles targeting distinct cognitive demands-including direct tool use, semantic disambiguation, conditional branching, and working-memory tasks; (2) a Retrieval-Augmented Generation (RAG) benchmark with gated scoring isolating retrieval contributions to parameter selection; and (3) an High Performance Computing (HPC) benchmark evaluating end-to-end ML training orchestration on a SLURM cluster. Alongside the benchmark we present EngiAI, a Multi-Agent System (MAS) reference implementation built on LangGraph that operationalizes the benchmark by coordinating seven specialized agents through a supervisor architecture, unifying topology optimization, document retrieval, HPC job orchestration, and 3D printer control. Across four LLM backends and two EngiBench problems, proprietary models achieve 96-97% average task completion on Beams2D, while open-source 4B-parameter models reach 55-78%, with clear generational improvement. Conditional branching proves most challenging, with task completion dropping to 20-53% for the conditional style on Photonics2D. RAG gating confirms near-perfect retrieval-augmented scores (about 1.0) versus near-zero without retrieval, validating the evaluation design. On HPC orchestration, one model completes all pipeline steps in 100% of runs while another drops to 50%, revealing that multi-step instruction following degrades over long-running workflows.",
+      "authors": [
+        "Gioele Molinari",
+        "Florian Felten",
+        "Soheyl Massoudi",
+        "Mark Fuge"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-19T12:12:09Z",
+      "updated": "2026-05-27T12:23:43Z",
+      "announced_date": "2026-05-19",
+      "first_seen": "2026-05-19",
+      "comment": "26 pages, 10 figures, to be published at IDETC 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.19743v2",
+        "pdf": "https://arxiv.org/pdf/2605.19743v2",
+        "html": "https://arxiv.org/html/2605.19743"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use",
+        "multi-agent",
+        "memory"
+      ],
+      "field": "multi-agent",
+      "citations": 1
+    },
+    {
+      "id": "2605.19717",
+      "title": "Physics-in-the-Loop: A Hybrid Agentic Architecture for Validated CAD Engineering Design",
+      "abstract": "Large Language Models (LLMs) can generate Computer-Aided Design (CAD), yet lack physical comprehension required for reliable engineering design. Instead of attempting to implicitly learn physical laws from data, we propose a Hybrid Agentic-Physical Architecture that embeds validated knowledge-based engineering tools directly into the decision making loop of autonomous AI agents. In this framework, engineering design is formulated as a closed-loop, sequential decision making process guided by explicit physical verification. Based on a load case, dedicated agents iteratively plan, generate, evaluate, and revise engineering designs using knowledge-based tools as a feedback signal. We introduce a benchmark dataset and metrics for assessing functional validity in generative CAD. Our system generates more complex and physically verified designs, with a 4.2 increase in structural complexity and improving compile rate by 3.5% compared to similar agentic methods. The codebase, prompts and dataset will be made publicly available to support reproducibility and future research.",
+      "authors": [
+        "Elias Berger",
+        "Muhammad Usama",
+        "Jan Mehlstäubl",
+        "Bernhard Saske",
+        "Kristin Paetzold-Byhain"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-05-19T11:52:42Z",
+      "updated": "2026-05-19T11:52:42Z",
+      "announced_date": "2026-05-19",
+      "first_seen": "2026-05-19",
+      "comment": "Accepted in IJCAI-ECAI 2026 (Special Track on AI4Tech)",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.19717v1",
+        "pdf": "https://arxiv.org/pdf/2605.19717v1",
+        "html": "https://arxiv.org/html/2605.19717"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2605.19484",
+      "title": "CutVerse: A Compositional GUI Agents Benchmark for Media Post-Production Editing",
+      "abstract": "While GUI agents have made significant progress in web navigation and basic operating system tasks, their capabilities in professional creative workflows remain largely underexplored. To bridge this gap, we introduce Cutverse, a benchmark designed to systematically evaluate autonomous GUI agents in realistic media post-production environments. We curate expert demonstrations across 7 professional applications (e.g., Premiere Pro, Photoshop), covering 186 complex, long-horizon tasks grounded in authentic editing workflows, involving dense multimodal interfaces and tightly coupled interaction sequences. To support scalable evaluation, we develop a lightweight parser that transforms raw screen recordings and low-level interaction logs into structured, compositional GUI action trajectories with precise grounding. Extensive evaluations reveal that existing agents achieve only 36.0\\% task success on realistic media editing tasks, underscoring the challenges posed by complex, long-horizon media post-production workflows in our benchmark.While current models demonstrate promising spatial grounding, multimodal alignment, and coordinated action execution, they remain limited in long-horizon reliability and domain-specific planning.",
+      "authors": [
+        "Haobo Hu",
+        "Xiangwu Guo",
+        "Zhiheng Chen",
+        "Difei Gao",
+        "Haotian Liu",
+        "Libiao Jin",
+        "Qi Mao"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.GR",
+        "cs.HC"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-05-19T07:35:22Z",
+      "updated": "2026-05-19T07:35:22Z",
+      "announced_date": "2026-05-19",
+      "first_seen": "2026-05-19",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.19484v1",
+        "pdf": "https://arxiv.org/pdf/2605.19484v1",
+        "html": "https://arxiv.org/html/2605.19484"
+      },
+      "score": 21,
+      "tags": [
+        "gui",
+        "planning",
+        "multimodal"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2605.19410",
+      "title": "Vision Harnessing Agent for Open Ad-hoc Segmentation",
+      "abstract": "Segmentation has become easy when the concept is known, requiring retrieval of a learned visual grounding from text. It remains hard for open ad-hoc concepts, where the grounding may not exist as one learned mask and must often be constructed from image evidence through parts, relations, exclusions, and collections. We propose a Vision-guided Ad-hoc Segmentation Agent (VASA), the first vision harnessing agent for open ad-hoc segmentation. VASA is training-free and couples a VLM agent, a segmentation foundation model, and a visually grounded workflow. Rather than revising text prompts alone, VASA uses a persistent working mask to reason, construct, and validate a solution. It plans visual operations, invokes segmentation tools, inspects results, edits the mask, and recovers from errors. We construct PARS, a new benchmark that turns part-level labels in PartImageNet into open ad-hoc concepts through long-form definition queries. On PARS, VASA outperforms open-vocabulary, reasoning-based, and agentic baselines, surpassing SAM3 Agent by 14-25%. On RefCOCOm, a standard multi-granularity referring segmentation benchmark, VASA improves over SAM3 Agent by 5-9% and over other agentic baselines by up to 20%. These results validate agentic visual construction for open ad-hoc segmentation. Our work points to a path for AI agents beyond wrapping foundation models as tools: Programming them with task knowledge, VLM behavior, visual routines, working memory, and failure-aware workflows.",
+      "authors": [
+        "Zilin Wang",
+        "Stella X. Yu"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-05-19T06:04:23Z",
+      "updated": "2026-05-19T06:04:23Z",
+      "announced_date": "2026-05-19",
+      "first_seen": "2026-05-19",
+      "comment": "23 pages, 11 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.19410v1",
+        "pdf": "https://arxiv.org/pdf/2605.19410v1",
+        "html": "https://arxiv.org/html/2605.19410"
+      },
+      "score": 9,
+      "tags": [
+        "gui",
+        "tool-use",
+        "memory",
+        "planning",
+        "multimodal"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2605.19399",
+      "title": "HSCO-Bench: An Agent-Driven End-to-End Hardware-Software Co-design Benchmark for Systems-on-Chip",
+      "abstract": "Large language models (LLMs) are adopted for software and hardware design, yet these domains are still evaluated separately. Software benchmarks typically assume fixed hardware targets, while hardware benchmarks focus on component-level optimization without considering the full hardware-software stack. Consequently, no existing benchmark evaluates whether an LLM agent can perform end-to-end, system-level hardware-software co-design. Such a process requires: 1) analyzing applications to identify kernels requiring acceleration, 2) designing and integrating heterogeneous accelerators into a System-on-Chip (SoC) under resource constraints, and 3) mapping kernels onto the generated accelerators. We present HSCO-Bench, an end-to-end hardware-software co-design benchmark for accelerator-rich heterogeneous SoC generation. Built upon an open-source SoC platform with a curated repository structure, HSCO-Bench evaluates the ability of LLMs to jointly optimize software and hardware stacks, producing SoC prototypes deployed on the AMD Virtex-7 FPGA VC707 Evaluation Kit. Experimental results show that end-to-end integration remains challenging for current models. Among the five frontier models evaluated, only two of them could successfully generate valid SoC prototypes. Yet, even in these successful instances, the generated designs are far from optimal. While we observe a promising peak speedup of 16.22X, the maximum additional resource utilization reaches only 23.67%. This highlights that while state-of-the-art models demonstrate an emerging capability for hardware acceleration, they still heavily underutilize the available hardware capacity, leaving room for future optimization. To the best of our knowledge, HSCO-Bench is the first benchmark targeting this complete co-design flow, enabling LLMs to jointly reason about and modify both the software and hardware stacks of heterogeneous SoCs.",
+      "authors": [
+        "Pei-Huan Tsai",
+        "Kuan-Lin Chiu",
+        "William Baisi",
+        "Pin-Yu Chen",
+        "Luca P. Carloni"
+      ],
+      "categories": [
+        "cs.AR"
+      ],
+      "primary_category": "cs.AR",
+      "published": "2026-05-19T05:51:28Z",
+      "updated": "2026-05-19T05:51:28Z",
+      "announced_date": "2026-05-19",
+      "first_seen": "2026-05-19",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.19399v1",
+        "pdf": "https://arxiv.org/pdf/2605.19399v1",
+        "html": "https://arxiv.org/html/2605.19399"
+      },
+      "score": 18,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 2
+    },
+    {
+      "id": "2605.22855",
+      "title": "PrefBench: Evaluating Zero-Shot LLM Agents in Hidden-Preference Personalized Pricing Negotiations",
+      "abstract": "Personalized pricing negotiations are a challenging testbed for LLM agents because successful interaction does not guarantee profitable decision making. A seller may produce valid actions and close many deals while still pricing poorly when buyer willingness to pay and bargaining traits remain hidden. This paper presents PrefBench, a simulator-based benchmark for hidden-preference personalized pricing negotiations. Each episode pairs a simulated buyer with a fixed vehicle-customization bundle; the seller observes public persona descriptors, bundle information, and negotiation history, while latent buyer variables govern valuation, patience, counter-offer behavior, and walkaway decisions. PrefBench evaluates this setting through an LLM-facing state-summary protocol that constrains agents to return strict JSON actions under a fixed hidden-information boundary. We evaluate zero-shot LLM sellers against heuristic references over 7,500 episodes. The tested LLMs follow the protocol reliably and achieve deal rates above 0.99, but their seller-profit outcomes remain weak: the best LLM average profit is only slightly above the random baseline and far below a simple concession heuristic under the same episode stream. These results show that structured action compliance and agreement-seeking behavior can coexist with weak profit-sensitive bargaining. PrefBench provides a controlled benchmark for evaluating pricing-agent behavior under hidden buyer preferences.",
+      "authors": [
+        "Yingjie Lei"
+      ],
+      "categories": [
+        "cs.GT",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.GT",
+      "published": "2026-05-19T04:10:05Z",
+      "updated": "2026-05-19T04:10:05Z",
+      "announced_date": "2026-05-19",
+      "first_seen": "2026-05-19",
+      "comment": "24 pages, 3 figures, 5 tables. Code is available at https://github.com/ChaosTheProducer/PrefBench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.22855v1",
+        "pdf": "https://arxiv.org/pdf/2605.22855v1",
+        "html": "https://arxiv.org/html/2605.22855"
+      },
+      "score": 14,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2605.19328",
+      "title": "RoboJailBench: Benchmarking Adversarial Attacks and Defenses in Embodied Robotic Agents",
+      "abstract": "Recent advances in Vision-Language Models (VLMs) facilitate a new class of embodied AI systems, where these models are integrated into physical platforms, e.g. robots and autonomous vehicles, to interpret visual scenes and execute natural language commands in diverse environments. Previous research has introduced jailbreak attacks and defenses for embodied AI. Their evaluations, however, rely on ad-hoc datasets, limited metrics, and emphasize attack success while neglecting the trade-off between security and the ability to follow benign commands. Existing benchmarks and evaluation frameworks either target traditional chat-based models or focus on non-adversarial safety evaluation for embodied AI; neither captures the adversarial risks, inputs, consequences, and evaluation criteria necessary for jailbreak attacks in embodied AI systems. In this paper, we address this gap with RoboJailBench, which consists of three core components. We establish a security taxonomy derived from ISO standards, regulatory rules, and documented incidents. This effort yields 18 categories of security violation consequences for embodied AI. We introduce an intent contrast dataset pipeline that augments existing datasets with paired adversarial and benign goals to measure both security and utility. Lastly, we provide an evolving repository with standardized metrics and a unified process for assessing and integrating new attacks and defenses. With this benchmark, we construct a new taxonomy-balanced dataset and augment five existing datasets. We integrate four attacks and two defenses to evaluate their performance on leading embodied VLMs. This benchmark provides the first standardized evaluation framework for jailbreak attacks in embodied AI and supports future research. We release our code, datasets, and artifacts, and maintain a leaderboard at https://purseclab.github.io/benchmark-for-robotics-security.",
+      "authors": [
+        "Doguhuan Yeke",
+        "Yanming Zhou",
+        "Leo Y. Lin",
+        "Hongyu Cai",
+        "Antonio Bianchi",
+        "Z. Berkay Celik"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.RO"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-05-19T04:07:24Z",
+      "updated": "2026-05-19T04:07:24Z",
+      "announced_date": "2026-05-19",
+      "first_seen": "2026-05-19",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.19328v1",
+        "pdf": "https://arxiv.org/pdf/2605.19328v1",
+        "html": "https://arxiv.org/html/2605.19328"
+      },
+      "score": 15,
+      "tags": [
+        "coding",
+        "embodied",
+        "safety",
+        "multimodal"
+      ],
+      "field": "embodied",
+      "citations": 1
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "date": "2026-06-26",
+  "count": 5,
+  "report": {
+    "date": "2026-06-26",
+    "count": 5,
+    "themes": [
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      }
+    ],
+    "en": {
+      "headline": "5 new agent benchmarks",
+      "summary": "On June 26, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Multimodal (2), Planning / reasoning (2), Computer use (1), and Science lab (1).",
+      "highlights": [
+        {
+          "id": "2606.28480",
+          "title": "TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents",
+          "blurb": "As large language models and harness frameworks continue to advance, agents operating in terminals are increasingly capable of performing a broader range of general computer-use tasks beyond coding."
+        },
+        {
+          "id": "2606.28061",
+          "title": "ToolPrivacyBench: Benchmarking Purpose-Bound Privacy in Tool-Using LLM Agents",
+          "blurb": "Large language models (LLMs) have increasingly moved from standalone text generation systems to agents that invoke external tools, access environments, and execute multi-step tasks."
+        },
+        {
+          "id": "2606.27826",
+          "title": "NormAct: Benchmarking Embodied Agents' Proactive Compliance with Unspoken Social Norms",
+          "blurb": "Embodied agents driven by multimodal large language models (MLLMs) can often complete everyday tasks from visual observations, but goal achievement does not establish whether they proactively respect unstated social norm…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年6月26日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在多模态（2）、规划 / 推理（2）、计算机使用（1）、科学实验（1）。",
+      "highlights": [
+        {
+          "id": "2606.28480",
+          "title": "TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents",
+          "blurb": "As large language models and harness frameworks continue to advance, agents operating in terminals are increasingly capable of performing a broader range of general computer-use tasks beyond coding."
+        },
+        {
+          "id": "2606.28061",
+          "title": "ToolPrivacyBench: Benchmarking Purpose-Bound Privacy in Tool-Using LLM Agents",
+          "blurb": "Large language models (LLMs) have increasingly moved from standalone text generation systems to agents that invoke external tools, access environments, and execute multi-step tasks."
+        },
+        {
+          "id": "2606.27826",
+          "title": "NormAct: Benchmarking Embodied Agents' Proactive Compliance with Unspoken Social Norms",
+          "blurb": "Embodied agents driven by multimodal large language models (MLLMs) can often complete everyday tasks from visual observations, but goal achievement does not establish whether they proactively respect unstated social norm…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.28514",
+      "title": "GPTNT: Benchmarking Real-Time Collaboration Between Multimodal Agents on Keep Talking And Nobody Explodes",
+      "abstract": "Multimodal models are increasingly deployed to solve tasks collaboratively with humans or other artificial agents. Existing benchmarks show that these models possess many of the required component capabilities, but the conditions that coincide in collaboration, including time pressure, information asymmetry, and imperfect communication, are usually studied in isolation. We introduce GPTNT, a benchmark built on the cooperative video game Keep Talking and Nobody Explodes, in which two agents must coordinate to defuse procedurally generated bomb puzzles against a live countdown. One agent can see and manipulate the bomb but does not have the defusal instructions; the other has the instructions but cannot see or manipulate the bomb. Neither agent can succeed alone: success requires effective and efficient communication. Unlike turn-based proxies, GPTNT requires agents to act asynchronously and communicate in real time. GPTNT is designed to separate collaboration from reliance on memorized solutions: the instruction manual, the partner, or both can be withheld to isolate what a model derives in the moment from what it already knows. We show that GPTNT poses a substantial challenge for state-of-the-art systems: none of the closed- or open-source models we test defuses a single bomb in real time, a bar that human players clear. Through controlled experiments, we identify critical weaknesses in state tracking, efficient action under time pressure, ambiguity handling, and error recovery. We release GPTNT as a benchmark for collaborative performance that current evaluations leave unmeasured. Because it runs on the real game, GPTNT benefits from procedural generation and inherits a living modding community, allowing the benchmark to evolve as models improve rather than being solved once and retired.",
+      "authors": [
+        "Amit Parekh",
+        "Sabrina McCallum",
+        "Kareem Al-Hasan",
+        "Malvina Nikandrou",
+        "Alessandro Suglia",
+        "Ioannis Konstas"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-26T18:09:36Z",
+      "updated": "2026-06-26T18:09:36Z",
+      "announced_date": "2026-06-26",
+      "first_seen": "2026-06-26",
+      "comment": "Project website and code at https://gptnt.github.io",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.28514v1",
+        "pdf": "https://arxiv.org/pdf/2606.28514v1",
+        "html": "https://arxiv.org/html/2606.28514"
+      },
+      "score": 10,
+      "tags": [
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2606.28480",
+      "title": "TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents",
+      "abstract": "As large language models and harness frameworks continue to advance, agents operating in terminals are increasingly capable of performing a broader range of general computer-use tasks beyond coding. However, existing benchmarks do not adequately evaluate general-purpose terminal computer-use agents (TUAs): general computer-use benchmarks primarily target graphical user interfaces (GUIs), whereas terminal-based benchmarks largely emphasize technical and programming-centric workflows historically native to the shell. We introduce TUA-Bench, a general-purpose benchmark for terminal-use agents. TUA-Bench includes 120 real-world tasks across five task families, covering routine digital activities-including document editing, email management, and live-web information seeking-as well as scientific and engineering workflows co-designed with PhD-level domain experts that require specialized software. This breadth distinguishes TUA-Bench from prior shell-focused or domain-specific benchmarks. Each task is manually designed, runs in a real terminal with a deterministic setup script, and is evaluated by an execution-based scoring protocol. We find that the strongest frontier agent, Claude Code with Claude Opus 4.8 max reasoning effort, achieves 65.8% overall performance, with substantial gaps across both tracks. By providing a broad and realistic evaluation of terminal-use capabilities, TUA-Bench aims to accelerate the transition from narrow, task-specific assistants to general-purpose agents capable of operating reliably across diverse digital environments.",
+      "authors": [
+        "Shoufa Chen",
+        "Luyuan Wang",
+        "Xuan Yang",
+        "Zhiheng Liu",
+        "Yuren Cong",
+        "Yuanfeng Ji",
+        "Feiyan Zhou",
+        "Xiaohui Zhang",
+        "Fanny Yang",
+        "Belinda Zeng"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-06-26T17:59:51Z",
+      "updated": "2026-06-26T17:59:51Z",
+      "announced_date": "2026-06-26",
+      "first_seen": "2026-06-26",
+      "comment": "Website: https://www.tuabench.ai",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.28480v1",
+        "pdf": "https://arxiv.org/pdf/2606.28480v1",
+        "html": "https://arxiv.org/html/2606.28480"
+      },
+      "score": 24,
+      "tags": [
+        "computer-use",
+        "planning",
+        "science"
+      ],
+      "field": "computer-use",
+      "citations": 2
+    },
+    {
+      "id": "2606.28061",
+      "title": "ToolPrivacyBench: Benchmarking Purpose-Bound Privacy in Tool-Using LLM Agents",
+      "abstract": "Large language models (LLMs) have increasingly moved from standalone text generation systems to agents that invoke external tools, access environments, and execute multi-step tasks. However, conventional function-calling benchmarks mainly evaluate task completion and API correctness, while privacy evaluation benchmarks typically focus on final responses or privacy judgments. Neither perspective captures purpose-bound information flow across an executed multi-tool trajectory. Motivated by this limitation in current agent evaluation, ToolPrivacyBench audits whether task-private atoms are routed only to authorized tools and downstream sinks, thereby evaluating both task completion and privacy over-disclosure during tool use. The benchmark contains 2,150 cases, including 1,150 fully synthetic privacy-sensitive business workflows and 1,000 cases adapted from existing multi-tool and function-calling benchmarks. Each case is represented by a policy knowledge base. After an agent executes against mock business backends, the evaluator compares recorded tool arguments and backend audit logs with this policy knowledge base. The evaluation covers nine widely used agents to characterize purpose-bound privacy over-disclosure. The results show that successful tool execution does not imply appropriate privacy disclosure: an agent may complete a task while transmitting unnecessary private information through intermediate tool calls. ToolPrivacyBench therefore formalizes a need-to-know disclosure boundary, under which each tool should receive only the information necessary for its stated purpose, and uses trajectory-level auditing to identify privacy over-disclosure in multi-tool workflows.",
+      "authors": [
+        "Shijing Hu",
+        "Liang Liu",
+        "Zhu Meng",
+        "Zhicheng Zhao"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-06-26T13:08:46Z",
+      "updated": "2026-06-26T13:08:46Z",
+      "announced_date": "2026-06-26",
+      "first_seen": "2026-06-26",
+      "comment": "24 pages, 7 figures, 15 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.28061v1",
+        "pdf": "https://arxiv.org/pdf/2606.28061v1",
+        "html": "https://arxiv.org/html/2606.28061"
+      },
+      "score": 24,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 3
+    },
+    {
+      "id": "2606.27826",
+      "title": "NormAct: Benchmarking Embodied Agents' Proactive Compliance with Unspoken Social Norms",
+      "abstract": "Embodied agents driven by multimodal large language models (MLLMs) can often complete everyday tasks from visual observations, but goal achievement does not establish whether they proactively respect unstated social norms. Existing benchmarks assess explicit norm judgments or constrained behavior, but rarely test whether agents infer and apply scene-relevant norms during ordinary tasks. We introduce NormAct, a benchmark of 550 TongSim scenarios in which the same goal permits norm-compliant or norm-violating action sequences. Norm-relevant evidence is embedded in each scenario while the applicable rule is omitted from the goal instruction. By progressively increasing normative guidance while holding the goal and scene fixed, NormAct tests whether compliant behavior emerges autonomously or only after prompting. Across three MLLM planners, goal achievement substantially exceeds norm compliance without guidance (67.4% versus 24.7%), while both broad and rule-specific guidance improve compliance, indicating that planners can often comply when prompted but not reliably on their own. With a fixed planner, general-norm retrieval is less effective than norm-relevant scene descriptions or generated norm cues, suggesting that identifying relevant visual evidence is a greater challenge than accessing general norm knowledge. NormAct therefore supports the development of embodied agents that pursue everyday goals while proactively respecting unstated social norms.",
+      "authors": [
+        "Shiyun Zhao",
+        "Xinwei Song",
+        "Tianyu Guo",
+        "Xiaomeng Gao",
+        "Mingyuan Liu",
+        "Xu Han",
+        "Yuanyuan Zhang",
+        "Zhenliang Zhang",
+        "Xue Feng",
+        "Bo Dai"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-26T08:10:39Z",
+      "updated": "2026-08-10T02:19:01Z",
+      "announced_date": "2026-06-26",
+      "first_seen": "2026-06-26",
+      "comment": "This version revises the paper content and adds substantial details on the benchmark design and experimental setup",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.27826v3",
+        "pdf": "https://arxiv.org/pdf/2606.27826v3",
+        "html": "https://arxiv.org/html/2606.27826"
+      },
+      "score": 14,
+      "tags": [
+        "embodied",
+        "multimodal"
+      ],
+      "field": "embodied",
+      "citations": 0
+    },
+    {
+      "id": "2606.27669",
+      "title": "When Search Agents Should Ask: DiscoBench for Clarification-Aware Deep Search",
+      "abstract": "Search agents powered by large language models (LLMs) are increasingly used to solve complex information-seeking tasks, requiring multi-step retrieval and reasoning to fulfill user goals. However, existing benchmarks often assume that user queries are complete and explicit, overlooking the fact that real-world search requests are frequently vague, underspecified, or even factually incorrect. In deep search scenarios, such ambiguity can propagate along multi-step reasoning chains and lead agents toward incorrect search trajectories. To address this gap, we introduce DiscoBench, a benchmark for clarification-aware deep search, designed to evaluate whether search agents can proactively identify ambiguity, ask effective clarification questions, and recover correct reasoning paths through user interaction. DiscoBench contains 211 samples and 463 ambiguity instances across 11 real-world domains, covering four ambiguity types. We further design a user simulator for multi-turn interaction and evaluate model performance from four perspectives: task utility, ambiguity detection, interaction strategy, and cost efficiency. Experiments on representative LLMs show that ambiguity detection and effective clarification are distinct capabilities, and that repeatedly searching instead of asking for clarification often performs worse than direct guessing, highlighting a critical gap between retrieval ability and interactive problem-solving in current search agents.",
+      "authors": [
+        "Yiling Tao",
+        "Shihan Deng",
+        "Meiling Tao",
+        "Pengzhi Wei",
+        "Zhichao Hu",
+        "Zhihao Zhu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-26T02:57:15Z",
+      "updated": "2026-07-01T06:56:27Z",
+      "announced_date": "2026-06-26",
+      "first_seen": "2026-06-26",
+      "comment": "26 pages, 7 figures, 12 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.27669v2",
+        "pdf": "https://arxiv.org/pdf/2606.27669v2",
+        "html": "https://arxiv.org/html/2606.27669"
+      },
+      "score": 13,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

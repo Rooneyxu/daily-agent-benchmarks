@@ -1,0 +1,361 @@
+{
+  "date": "2026-06-12",
+  "count": 7,
+  "report": {
+    "date": "2026-06-12",
+    "count": 7,
+    "themes": [
+      {
+        "id": "conversation",
+        "count": 2,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      }
+    ],
+    "en": {
+      "headline": "7 new agent benchmarks",
+      "summary": "On June 12, 2026, arXiv listed 7 new agent benchmarks. Work clustered around Dialogue / customer (2), Planning / reasoning (2), Safety (2), and Memory (1).",
+      "highlights": [
+        {
+          "id": "2606.13995",
+          "title": "Dialogue SWE-Bench: A Benchmark for Dialogue-Driven Coding Agents",
+          "blurb": "AI coding agents have rapidly transformed software engineering, powering widely used interactive coding assistants."
+        },
+        {
+          "id": "2606.13994",
+          "title": "Hidden in Plain Sight: Benchmarking Agent Safety Against Decomposition Attacks with DECOMPBENCH",
+          "blurb": "LLM-based Agents are becoming increasingly capable and widely deployed, creating growing incentives for adversarial misuse in the real-world."
+        },
+        {
+          "id": "2607.13041",
+          "title": "LessonBench-V1: A Benchmark Dataset for Evaluating AI Lesson Generation Agents",
+          "blurb": "Large Language Model (LLM) based AI educational content generation systems are increasingly being developed, yet no standardised benchmark exists to systematically evaluate them."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 7 篇 Agent Benchmark",
+      "summary": "2026年6月12日，arXiv 新增 7 篇 Agent Benchmark。当日主题集中在对话 / 客服（2）、规划 / 推理（2）、安全（2）、记忆（1）。",
+      "highlights": [
+        {
+          "id": "2606.13995",
+          "title": "Dialogue SWE-Bench: A Benchmark for Dialogue-Driven Coding Agents",
+          "blurb": "AI coding agents have rapidly transformed software engineering, powering widely used interactive coding assistants."
+        },
+        {
+          "id": "2606.13994",
+          "title": "Hidden in Plain Sight: Benchmarking Agent Safety Against Decomposition Attacks with DECOMPBENCH",
+          "blurb": "LLM-based Agents are becoming increasingly capable and widely deployed, creating growing incentives for adversarial misuse in the real-world."
+        },
+        {
+          "id": "2607.13041",
+          "title": "LessonBench-V1: A Benchmark Dataset for Evaluating AI Lesson Generation Agents",
+          "blurb": "Large Language Model (LLM) based AI educational content generation systems are increasingly being developed, yet no standardised benchmark exists to systematically evaluate them."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.14571",
+      "title": "StreamMemBench: Streaming Evaluation of Agent Memory for Future-Oriented Assistance",
+      "abstract": "A central role of personal-agent memory is to turn stored information and prior interactions into future-oriented assistance. In daily use, useful cues come from what the agent observes and how the user interacts with the agent, and the agent must carry them forward from the current request to similar future tasks. Existing memory benchmarks usually test dialogue recall or task improvement in isolation, leaving the trajectory from streaming observations to later assistance largely untested. We introduce StreamMemBench, a streaming benchmark that constructs a two-step task sequence around each evidence anchor from EgoLife egocentric streams. The initial task tests evidence use, while the follow-up task tests whether feedback and interaction experience are reused. Four metrics diagnose evidence recall, initial evidence use, feedback incorporation, and follow-up reuse. Experiments with eight memory systems across two backbones show that current systems often fail to use observed evidence or turn feedback into reliable follow-up behavior, even when evidence is stored or feedback is incorporated locally. StreamMemBench is publicly available at https://github.com/landian60/StreamMemBench.",
+      "authors": [
+        "Guanming Liu",
+        "Yuqi Ren",
+        "Hansu Gu",
+        "Peng Zhang",
+        "Weihang Wang",
+        "Jiahao Liu",
+        "Ning Gu",
+        "Tun Lu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-12T15:48:43Z",
+      "updated": "2026-06-12T15:48:43Z",
+      "announced_date": "2026-06-12",
+      "first_seen": "2026-06-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.14571v1",
+        "pdf": "https://arxiv.org/pdf/2606.14571v1",
+        "html": "https://arxiv.org/html/2606.14571"
+      },
+      "score": 8,
+      "tags": [
+        "memory",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 0
+    },
+    {
+      "id": "2606.14397",
+      "title": "Running the Gauntlet: Re-evaluating the Capabilities of Agents Beyond Familiar Environments",
+      "abstract": "As agentic systems continue to evolve and are widely deployed in real-world scenarios, there is a growing demand to faithfully evaluate their capabilities. However, current benchmarks are typically built on popular applications with relatively simple tasks and focus on a narrow set of capabilities while overlooking broader dimensions, resulting in saturated performance on modern agents and failing to probe their limitations. To this end, we introduce GauntletBench, a web-based benchmark for evaluating agent generalisation in challenging scenarios, focusing on three underexplored capabilities (temporal perception, graphical understanding, and 3D reasoning), across five less-covered professional applications (Video Editor, Workflow Builder, 3D Modeller, Flight Analyser, and Circuit Designer), each with 20 vision-intensive tasks (100 in total). Our benchmark provides a modular pipeline that comprises an environment compatible with both open- and closed-source agent frameworks, a controlled web-based application, a well-structured task suite, and an automated evaluation engine with diverse metrics. Contrary to widespread expectations, our empirical results reveal that frontier agentic systems remain far from achieving human-level performance. Even the state-of-the-art agent achieves only a 19.1% success rate on our GauntletBench, highlighting the limitations in these overlooked capabilities and generalisation. By comparison, non-expert human annotators achieve over 80% success on our challenging yet feasible tasks, revealing the substantial gap between current agent capabilities and those required for complex real-world scenarios.",
+      "authors": [
+        "Mykola Vysotskyi",
+        "Runqi Lin",
+        "Grzegorz Biziel",
+        "Michal Zakrzewski",
+        "Sebastian Montagna",
+        "Damian Rynczak",
+        "Shreyansh Padarha",
+        "Kumail Alhamoud",
+        "Zihao Fu",
+        "William Lugoloobi",
+        "Kai Rawal",
+        "Hanna Yershova",
+        "Xander Davies",
+        "Taras Rumezhak",
+        "Guohao Li",
+        "Fazl Barez",
+        "Baoyuan Wu",
+        "Arkadiusz Drohomirecki",
+        "Yarin Gal",
+        "Chris Russell",
+        "Christopher Summerfield",
+        "Adam Mahdi",
+        "Volodymyr Karpiv",
+        "Philip Torr",
+        "Adel Bibi"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-06-12T12:32:24Z",
+      "updated": "2026-06-25T10:49:26Z",
+      "announced_date": "2026-06-12",
+      "first_seen": "2026-06-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.14397v2",
+        "pdf": "https://arxiv.org/pdf/2606.14397v2",
+        "html": "https://arxiv.org/html/2606.14397"
+      },
+      "score": 8,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.13041",
+      "title": "LessonBench-V1: A Benchmark Dataset for Evaluating AI Lesson Generation Agents",
+      "abstract": "Large Language Model (LLM) based AI educational content generation systems are increasingly being developed, yet no standardised benchmark exists to systematically evaluate them. This study introduces LessonBench-V1, a benchmark dataset comprising 647 human-written lessons paired with LLM-based reverse-engineered lesson plans across 240 STEM topics spanning mathematics, physics, chemistry, and computer science. The lessons are drawn from 97 trusted open sources, including LibreTexts, Brilliant.org and GeeksForGeeks. Each lesson plan is human-reviewed and produced through a pedagogically grounded methodology that synthesises Bloom's Taxonomy, Gagné's Events, Merrill's First Principles, and the 5E Instructional Model. The lesson plans capture 3,620 learning objectives with pedagogical metadata, enabling systematic, reproducible evaluation of lesson-generation AI agents and supporting further research. The study further proposes a three-dimensional evaluation pipeline for use with the dataset.",
+      "authors": [
+        "Ravidu Suien Rammuni Silva",
+        "Ahmad Lotfi",
+        "Isibor Kennedy Ihianle",
+        "Golnaz Shahtahmassebi",
+        "Jordan J. Bird"
+      ],
+      "categories": [
+        "cs.CY",
+        "cs.AI",
+        "cs.LG",
+        "cs.MM"
+      ],
+      "primary_category": "cs.CY",
+      "published": "2026-06-12T07:00:36Z",
+      "updated": "2026-06-12T07:00:36Z",
+      "announced_date": "2026-06-12",
+      "first_seen": "2026-06-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.13041v1",
+        "pdf": "https://arxiv.org/pdf/2607.13041v1",
+        "html": "https://arxiv.org/html/2607.13041"
+      },
+      "score": 17,
+      "tags": [
+        "science"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.14154",
+      "title": "SkillMutator: Benchmarking and Defending Language-and-Code Cross-modal Attacks on LLM Agent Skills",
+      "abstract": "Large language model (LLM) agents increasingly extend their capabilities at runtime by loading Agent Skills, which pair natural-language specifications (SKILL.md) with executable scripts and resources. Because a skill's behavior relies on both natural-language instructions and executable code, assessing its safety requires cross-modal reasoning, creating a new language-and-code attack surface. Attackers can present a benign workflow in SKILL.md while embedding implicit directives that steer the agent to exfiltrate sensitive files, even if the scripts appear harmless. This attack surface remains understudied; prior work treats skills merely as prompt-injection vectors or static code artifacts, leaving attacks emerging from cross-modal interactions largely unmeasured. In our evaluation, open-source and commercial skill scanners detect only 2%-8% and 9%-17% of such attacks, respectively. To address this gap, we introduce SkillMutator, the first benchmark for install-time detection of language-and-code cross-modal attacks on Agent Skills. It emulates an adversarial mutation process across 13 attack categories, iteratively refining malicious skills using scanner feedback to make injected behaviors indistinguishable from legitimate workflows. We further propose a four-phase reasoning-trajectory distillation framework to distill frontier-teacher traces into smaller open-weight models. This produces a locally deployable scanner avoiding third-party data exposure and excessive API costs. On the strongest SkillMutator subset (n=76), our distilled model (Qwen2.5-Coder-7B-Instruct) improves detection from 17.1% to 88.2%, surpassing GPT-4o-mini (23.7%) and GPT-5.4-mini (79.0%), and reaching frontier-level GPT-5.4 (86.8%). These results show practical defense against cross-modal attacks is feasible without relying on costly frontier models.",
+      "authors": [
+        "Youngduk Kim",
+        "Minkyoo Song",
+        "Seungwon Shin"
+      ],
+      "categories": [
+        "cs.CR"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-06-12T06:27:12Z",
+      "updated": "2026-06-12T06:27:12Z",
+      "announced_date": "2026-06-12",
+      "first_seen": "2026-06-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.14154v1",
+        "pdf": "https://arxiv.org/pdf/2606.14154v1",
+        "html": "https://arxiv.org/html/2606.14154"
+      },
+      "score": 15,
+      "tags": [
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 4
+    },
+    {
+      "id": "2606.14027",
+      "title": "Same-Origin Policy for Agentic Browsers",
+      "abstract": "Agentic browsers integrate autonomous AI agents into web browsers, enabling users to accomplish web tasks through natural-language instructions. The same-origin policy (SOP) is a fundamental browser security mechanism that prevents unauthorized automated cross-origin data flows induced by scripts. However, whether SOP remains effective in agentic browsers is an open question that has not been systematically studied. In this work, we bridge this gap. We first observe that an agentic browser can itself serve as an automated channel for cross-origin data flows, potentially leading to SOP violations. To investigate this phenomenon, we construct SOPBench, a benchmark for evaluating SOP violations in agentic browsers. Our evaluation shows that existing agentic browsers frequently violate SOP, both in benign settings and under attacks. To address this problem, we propose SOPGuard, an SOP enforcement mechanism tailored to agentic browsers. We implement SOPGuard in BrowserOS, an open-source agentic browser. Extensive evaluations demonstrate that SOPGuard effectively enforces SOP while preserving utility and incurring only a small runtime overhead. Our code and data are available at https://github.com/wxl-lxw/BrowserOS-SOPGuard.",
+      "authors": [
+        "Xilong Wang",
+        "Xiaoxing Chen",
+        "Patrick Li",
+        "Dawn Song",
+        "Neil Gong"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CL",
+        "eess.SY"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-06-12T02:01:38Z",
+      "updated": "2026-06-30T01:10:08Z",
+      "announced_date": "2026-06-12",
+      "first_seen": "2026-06-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.14027v3",
+        "pdf": "https://arxiv.org/pdf/2606.14027v3",
+        "html": "https://arxiv.org/html/2606.14027"
+      },
+      "score": 13,
+      "tags": [
+        "web"
+      ],
+      "field": "web",
+      "citations": 0
+    },
+    {
+      "id": "2606.13995",
+      "title": "Dialogue SWE-Bench: A Benchmark for Dialogue-Driven Coding Agents",
+      "abstract": "AI coding agents have rapidly transformed software engineering, powering widely used interactive coding assistants. Despite their interactive real-world use, existing benchmarks evaluate them as fully-autonomous systems. In this work, we introduce Dialogue SWE-Bench, an automatic benchmark dataset for evaluating the ability of coding agents to resolve real-world software engineering problems through dialogue with a user. We design a novel, persona-grounded user simulator to support our task evaluation, and augment our task evaluation with automatic evaluations of dialogue quality. We also propose a new schema-guided agent, aimed at improving the dialogue capabilities of off-the-shelf coding agents, which improves over strong baselines by 3-14%. Our results indicate that better coding models do not always correspond to better dialogue models, suggesting that dialogue capability is a distinct and currently understudied dimension of coding agent performance.",
+      "authors": [
+        "Brendan King",
+        "Jeffrey Flanigan"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-12T00:30:33Z",
+      "updated": "2026-06-12T00:30:33Z",
+      "announced_date": "2026-06-12",
+      "first_seen": "2026-06-12",
+      "comment": "22 pages, 13 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.13995v1",
+        "pdf": "https://arxiv.org/pdf/2606.13995v1",
+        "html": "https://arxiv.org/html/2606.13995"
+      },
+      "score": 30,
+      "tags": [
+        "coding",
+        "conversation"
+      ],
+      "field": "coding",
+      "citations": 3
+    },
+    {
+      "id": "2606.13994",
+      "title": "Hidden in Plain Sight: Benchmarking Agent Safety Against Decomposition Attacks with DECOMPBENCH",
+      "abstract": "LLM-based Agents are becoming increasingly capable and widely deployed, creating growing incentives for adversarial misuse in the real-world. A key emerging threat is Decomposition Attacks \\cite{glukhov2024breach, jones2024adversaries} in which a harmful task is broken into simpler, benign subtasks that evade safety mechanisms when executed separately but cumulatively fulfill the malicious intent. Although recent benchmarks assess agent safety in multi-turn and multi-tool-use settings, they do not explicitly capture this form of decompositional misuse and may not represent realistic adversarial execution flows. To this end, we introduce DeCompBench, a benchmark designed specifically to evaluate agentic safety under decomposition attacks. DeCompBench is created with a decomposition-by-design principle using a graphical framework and enables harmful task decomposition into individually benign and executable subtasks with realistic workflows. Our experiments using a custom decomposer show that state-of-the-art agents exhibit high refusal rates on monolithic harmful tasks, but significantly lower refusal rates on their decomposed variants, while often inadvertently fulfilling the adversarial objectives. These findings underscore the need for safety evaluations against decomposition attacks and corresponding defenses. Our dataset is publicly available and can be found at https://huggingface.co/datasets/decompositionbench/DeCompBench.",
+      "authors": [
+        "Vikhyath Kothamasu",
+        "Virginia Smith",
+        "Chhavi Yadav"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-06-12T00:30:29Z",
+      "updated": "2026-06-12T00:30:29Z",
+      "announced_date": "2026-06-12",
+      "first_seen": "2026-06-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.13994v1",
+        "pdf": "https://arxiv.org/pdf/2606.13994v1",
+        "html": "https://arxiv.org/html/2606.13994"
+      },
+      "score": 19,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    }
+  ]
+}

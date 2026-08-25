@@ -1,0 +1,256 @@
+{
+  "date": "2026-06-29",
+  "count": 5,
+  "report": {
+    "date": "2026-06-29",
+    "count": 5,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      }
+    ],
+    "en": {
+      "headline": "5 new agent benchmarks",
+      "summary": "On June 29, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Coding agents (2), Tool use (2), Multi-agent (1), and Safety (1).",
+      "highlights": [
+        {
+          "id": "2608.20381",
+          "title": "EditPPT: Faithful Long-Deck Slide Editing via Structured Tool-Using Multi-Agent with Dual-Modal Validators",
+          "blurb": "Automating slide editing requires simultaneously satisfying modification accuracy, preservation fidelity, and robustness to deck length."
+        },
+        {
+          "id": "2606.30573",
+          "title": "SWE-INTERACT: Reimagining SWE Benchmarks as User-Driven Long-Horizon Coding Sessions",
+          "blurb": "We introduce SWE-Interact, a new testbed for evaluating coding agents on multi-turn, interactive, user-driven software engineering tasks."
+        },
+        {
+          "id": "2606.29955",
+          "title": "SpreadsheetBench 2: Evaluating Agents on End-to-End Business Spreadsheet Workflows",
+          "blurb": "Spreadsheets are widely used for business analysis, financial modeling, reporting, and decision-making."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年6月29日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在代码智能体（2）、工具使用（2）、多智能体（1）、安全（1）。",
+      "highlights": [
+        {
+          "id": "2608.20381",
+          "title": "EditPPT: Faithful Long-Deck Slide Editing via Structured Tool-Using Multi-Agent with Dual-Modal Validators",
+          "blurb": "Automating slide editing requires simultaneously satisfying modification accuracy, preservation fidelity, and robustness to deck length."
+        },
+        {
+          "id": "2606.30573",
+          "title": "SWE-INTERACT: Reimagining SWE Benchmarks as User-Driven Long-Horizon Coding Sessions",
+          "blurb": "We introduce SWE-Interact, a new testbed for evaluating coding agents on multi-turn, interactive, user-driven software engineering tasks."
+        },
+        {
+          "id": "2606.29955",
+          "title": "SpreadsheetBench 2: Evaluating Agents on End-to-End Business Spreadsheet Workflows",
+          "blurb": "Spreadsheets are widely used for business analysis, financial modeling, reporting, and decision-making."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.30970",
+      "title": "Behavioral Governance for Autonomous AI Agents: The AgentBound Framework",
+      "abstract": "Autonomous AI agents increasingly perform consequential actions on behalf of human principals, including financial transactions, external communications, and enterprise workflows. Existing agent infrastructure relies on identity federation and delegated authorization to authenticate workloads and control resource access, but it cannot determine whether an authorized action should be executed under the current behavioral and operational context. We present AgentBound, a runtime governance framework that provides verifiable behavioral oversight for autonomous AI agents. AgentBound evaluates each proposed action using three independent authorities: delegated authorization, owner-signed behavioral constitutions, and site action contracts. Their judgments are conservatively composed through a formal decision model to determine whether an action should be permitted, reviewed, or denied before execution. To provide accountability, AgentBound generates cryptographically verifiable governance receipts that bind every action to the exact delegation, policy, and semantic artifacts governing the decision, enabling independent replay verification and policy provenance. The framework also introduces standing delegation for long-running agents, allowing periodic workloads to operate under continuously refreshed governance policies while preserving revocability and bounded authority. We present the formal foundation, system architecture, governance receipt protocol, and AgentBound-Bench, a benchmark framework for evaluating governance correctness, authority composition, and accountability. Rather than replacing model alignment, AgentBound complements it by providing a deterministic governance layer between authorization and execution, transforming governance from a process that must be trusted into one that can be independently verified.",
+      "authors": [
+        "Anuj Kaul",
+        "Qianlong Lan",
+        "Pranay Gupta"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-29T23:12:06Z",
+      "updated": "2026-07-01T18:23:51Z",
+      "announced_date": "2026-06-29",
+      "first_seen": "2026-06-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.30970v2",
+        "pdf": "https://arxiv.org/pdf/2606.30970v2",
+        "html": "https://arxiv.org/html/2606.30970"
+      },
+      "score": 10,
+      "tags": [],
+      "field": "workplace",
+      "citations": 1
+    },
+    {
+      "id": "2606.30573",
+      "title": "SWE-INTERACT: Reimagining SWE Benchmarks as User-Driven Long-Horizon Coding Sessions",
+      "abstract": "We introduce SWE-Interact, a new testbed for evaluating coding agents on multi-turn, interactive, user-driven software engineering tasks. Existing frontier SWE benchmarks typically provide complete requirements upfront and evaluate agents on autonomous implementation. In contrast, SWE-Interact places agents in a realistic developer workflow: a carefully designed user simulator starts with vague or incomplete instructions, progressively reveals requirements, inspects the agent's workspace, and provides targeted feedback, revisions, and new constraints until the full task goal has been handed off. Grounded in large-scale studies of real coding-agent interactions, this setup tests whether agents can discover user intent, adapt to evolving requirements, and build on their own prior work. Across a suite of frontier and open-weight models, we find that strong performance on single-turn SWE tasks does not reliably transfer to multi-turn, user-driven workflows: the best-performing models solve roughly 50% of single-turn baseline tasks but only 25% of the corresponding SWE-Interact tasks. The strongest models in our evaluation, including Opus 4.8 and GPT 5.5, start strong even in the face of vague initial instructions, persevere until all the requirements are surfaced by the user, integrate them better and write clean code. However, they still suffer from over-agentic coding, forgetting requirements and technical mistakes. Weaker models start poorly under ambiguity, give up early, forget or ignore instructions and rework their code more. Overall, SWE-Interact measures an orthogonal, real-world capability axis for frontier model development: interactive goal discovery and iterative refinement with a user in the loop.",
+      "authors": [
+        "Mohit Raghavendra",
+        "Anisha Gunjal",
+        "Aakash Sabharwal",
+        "Yunzhong He"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-06-29T17:17:45Z",
+      "updated": "2026-06-29T17:17:45Z",
+      "announced_date": "2026-06-29",
+      "first_seen": "2026-06-29",
+      "comment": "-",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.30573v1",
+        "pdf": "https://arxiv.org/pdf/2606.30573v1",
+        "html": "https://arxiv.org/html/2606.30573"
+      },
+      "score": 12,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 3
+    },
+    {
+      "id": "2606.29955",
+      "title": "SpreadsheetBench 2: Evaluating Agents on End-to-End Business Spreadsheet Workflows",
+      "abstract": "Spreadsheets are widely used for business analysis, financial modeling, reporting, and decision-making. However, most existing spreadsheet benchmarks evaluate isolated operations such as single-formula generation or local cell edits, and therefore fail to capture end-to-end workflows in realistic business settings. We introduce \\textsc{SpreadsheetBench 2}, a workflow-level benchmark for spreadsheet agents that covers three task categories: generation, debugging, and visualization. The benchmark is constructed from authentic business data, including financial reports and corporate filings, and is annotated and validated by domain experts. The benchmark contains 321 tasks; each instance averages 11.8 worksheets and requires 593.5 cell modifications, reflecting large multi-sheet workbooks with cross-sheet dependencies. We evaluate eight frontier large language models under a unified multi-turn agent scaffold, and additionally include several LLM-based spreadsheet products as complementary baselines. Results show that current systems remain far from reliable on real-world workflows: the best model achieves 34.89\\% overall task accuracy, and debugging accuracy is as low as 12.00\\%. Trajectory analysis and a failure taxonomy further indicate that insufficient spreadsheet inspection and incorrect target-cell selection are the dominant bottlenecks. Together, these findings position \\textsc{SpreadsheetBench 2} as a challenging testbed for advancing reliable spreadsheet automation. Project page: https://spreadsheetbench.github.io/",
+      "authors": [
+        "Jian Zhu",
+        "Yuzheng Zhang",
+        "Zeyao Ma",
+        "Bohan Zhang",
+        "Armin Schoepf",
+        "Daniel Woloch",
+        "Peter Yiliu Wang",
+        "Guangyu Robert Yang",
+        "Samuel Jacob",
+        "Siddharth Nagisetty",
+        "Abhiram Chundru",
+        "Jean Lin",
+        "Spencer Mateega",
+        "Jing Zhang"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-06-29T08:33:52Z",
+      "updated": "2026-06-29T08:33:52Z",
+      "announced_date": "2026-06-29",
+      "first_seen": "2026-06-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.29955v1",
+        "pdf": "https://arxiv.org/pdf/2606.29955v1",
+        "html": "https://arxiv.org/html/2606.29955"
+      },
+      "score": 11,
+      "tags": [],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2608.20381",
+      "title": "EditPPT: Faithful Long-Deck Slide Editing via Structured Tool-Using Multi-Agent with Dual-Modal Validators",
+      "abstract": "Automating slide editing requires simultaneously satisfying modification accuracy, preservation fidelity, and robustness to deck length. Existing LLM-based systems often fail on real-world presentation files because they rely on idealized intermediate representations or open-ended code generation, which are prone to cascading errors in long decks. We introduce EditPPT, a multi-agent framework that reformulates slide editing as a constrained tool-selection problem. By executing localized shape-level operations through the native PowerPoint COM interface, EditPPT narrows the LLM action space while preserving the application-resolved structure of user-authored decks. By separating validation across modalities, our dual-modal validation provides more robust assessment of both instruction fidelity and visual quality. We also present DeckEdit-Bench, a benchmark with 28 human-authored decks, 582 slides, and 183 editing prompts across short, medium, and long deck tiers. Experiments show that EditPPT achieves a 99.5% execution rate, 88.7% slide-targeting F1, 82.5% instruction following, and 91.5% object preservation overall, while maintaining strong performance on long decks. Our code and benchmark are available at https://anonymous.4open.science/r/EditPPT-0E27/",
+      "authors": [
+        "Jiheon Kim",
+        "Kyudan Jung",
+        "Jaegul Choo"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.HC"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-29T06:41:47Z",
+      "updated": "2026-06-29T06:41:47Z",
+      "announced_date": "2026-06-29",
+      "first_seen": "2026-06-29",
+      "comment": "30 pages, 7 figures, 17 tables, EMNLP 2026 submitted, under review",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.20381v1",
+        "pdf": "https://arxiv.org/pdf/2608.20381v1",
+        "html": "https://arxiv.org/html/2608.20381"
+      },
+      "score": 15,
+      "tags": [
+        "coding",
+        "tool-use",
+        "multi-agent",
+        "safety"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2606.29771",
+      "title": "CLQT: A Closed-Loop, Cost-Aware, Strategy-Consistent Benchmark for Diagnostic Evaluation of LLM Portfolio-Management Agents",
+      "abstract": "LLM agents are increasingly cast as autonomous portfolio managers, and benchmarks have moved from financial question-answering to sequential trading. Yet most still rank agents by returns over a fixed window, a weak proxy: the market path dominates a period's return, and apparent alpha can dissolve once look-ahead leakage is controlled. We introduce CLQT, which reframes closed-loop trading evaluation as diagnosis before ranking: an instrument that localizes where and why an agent's process succeeds or fails. CLQT is a closed-loop, cost-aware, strategy-consistent, temporally-gated environment whose agents run a five-stage cycle: gather, synthesize, allocate, execute, reflect. Every round emits a DecisionRound sealed into a recompute-verifiable hash chain. Six pillars form the substrate: a TimeGate, transaction- and financing-cost modeling, strategy-consistency scoring, three-tier memory, a Model-Context-Protocol tool layer, and mandate-aware synthesis. The same agent runs structured or fully autonomous, making process scaffolding an experimental variable. From the audit trail we compute a five-axis capability scorecard (APM-CS: Coherence, Acuity, Composure, Discipline, Reliability), with Coherence partly judged by a held-out, out-of-cohort LLM. We validate CLQT on a contamination-controlled multi-model backtest with an ablation grid and a live broker track on unseen, post-cutoff data, against a repeated-run noise floor. Three findings illustrate the diagnosis-first read: the capability leader is not the Sharpe leader (the nominal winner is a 5-of-26-round reliability artifact); signal-action agreement exceeds a held-out judge's coherence score by a stable margin on both tracks (+0.30 backtest, +0.23 live); and module value registers on the capability axes when returns cannot separate it. CLQT yields not a model ranking but a durable, extensible map of agent competencies and limitations.",
+      "authors": [
+        "Bo Qu",
+        "Mingguang Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "q-fin.CP",
+        "q-fin.PM"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-29T04:26:30Z",
+      "updated": "2026-08-02T10:48:28Z",
+      "announced_date": "2026-06-29",
+      "first_seen": "2026-06-29",
+      "comment": "56 pages, 15 figures, 15 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.29771v2",
+        "pdf": "https://arxiv.org/pdf/2606.29771v2",
+        "html": "https://arxiv.org/html/2606.29771"
+      },
+      "score": 10,
+      "tags": [
+        "tool-use",
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "date": "2026-02-08",
+  "count": 2,
+  "report": {
+    "date": "2026-02-08",
+    "count": 2,
+    "themes": [
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On February 8, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Multi-agent (1), and Planning / reasoning (1).",
+      "highlights": [
+        {
+          "id": "2602.07962",
+          "title": "LOCA-bench: Benchmarking Language Agents Under Controllable and Extreme Context Growth",
+          "blurb": "Large language models (LLMs) are increasingly capable of carrying out long-running, real-world tasks."
+        },
+        {
+          "id": "2602.08023",
+          "title": "CTFExplorer: Evaluating LLM Offensive Agents Through Multi-Target Web CTF Benchmarking",
+          "blurb": "Existing benchmarks for LLM-based offensive security agents use isolated, single-target setups with a known vulnerable service and fixed objective."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年2月8日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在多智能体（1）、规划 / 推理（1）。",
+      "highlights": [
+        {
+          "id": "2602.07962",
+          "title": "LOCA-bench: Benchmarking Language Agents Under Controllable and Extreme Context Growth",
+          "blurb": "Large language models (LLMs) are increasingly capable of carrying out long-running, real-world tasks."
+        },
+        {
+          "id": "2602.08023",
+          "title": "CTFExplorer: Evaluating LLM Offensive Agents Through Multi-Target Web CTF Benchmarking",
+          "blurb": "Existing benchmarks for LLM-based offensive security agents use isolated, single-target setups with a known vulnerable service and fixed objective."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2602.08023",
+      "title": "CTFExplorer: Evaluating LLM Offensive Agents Through Multi-Target Web CTF Benchmarking",
+      "abstract": "Existing benchmarks for LLM-based offensive security agents use isolated, single-target setups with a known vulnerable service and fixed objective. They measure exploitation effectively, but miss how real Capture-the-Flag (CTF) participants triage unknown surfaces, prioritize targets, and allocate effort under uncertainty. Current evaluations therefore fail to assess strategic reasoning beyond exploitation alone. To address this, we introduce \\textit{CTFExplorer}, a benchmark suite that shifts offensive security evaluation toward a multi-target setting, which tests how agents explore, prioritize, and chain attacks. CTFExplorer deploys 40 web-based vulnerable services within a single environment, where agents must autonomously discover, distinguish, and exploit targets without predefined guidance. We also present a reactive multi-agent setup as a reference agent framework and develop an agent-agnostic evaluation framework that records structured reasoning traces for fine-grained assessment. This enables behavioral evaluation beyond binary flag capture, such as how agents manage target selection, handle failed hypotheses, coordinate across multiple stages, and extract security intelligence.",
+      "authors": [
+        "Nanda Rani",
+        "Kimberly Milner",
+        "Minghao Shao",
+        "Meet Udeshi",
+        "Haoran Xi",
+        "Venkata Sai Charan Putrevu",
+        "Saksham Aggarwal",
+        "Sandeep K. Shukla",
+        "Prashanth Krishnamurthy",
+        "Farshad Khorrami",
+        "Muhammad Shafique",
+        "Ramesh Karri"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-02-08T15:56:22Z",
+      "updated": "2026-05-20T17:32:45Z",
+      "announced_date": "2026-02-08",
+      "first_seen": "2026-02-08",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.08023v3",
+        "pdf": "https://arxiv.org/pdf/2602.08023v3",
+        "html": "https://arxiv.org/html/2602.08023"
+      },
+      "score": 12,
+      "tags": [
+        "multi-agent",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 3
+    },
+    {
+      "id": "2602.07962",
+      "title": "LOCA-bench: Benchmarking Language Agents Under Controllable and Extreme Context Growth",
+      "abstract": "Large language models (LLMs) are increasingly capable of carrying out long-running, real-world tasks. However, as the amount of context grows, their reliability often deteriorates, a phenomenon known as \"context rot\". Existing long-context benchmarks primarily focus on single-step settings that evaluate a model's ability to retrieve information from a long snippet. In realistic scenarios, however, LLMs often need to act as agents that explore environments, follow instructions and plans, extract useful information, and predict correct actions under a dynamically growing context. To assess language agents in such settings, we introduce LOCA-bench (a benchmark for LOng-Context Agents). Given a task prompt, LOCA-bench leverages automated and scalable control of environment states to regulate the agent's context length. This design enables LOCA-bench to extend the context length potentially to infinity in a controlled way while keeping the underlying task semantics fixed. LOCA-bench evaluates language agents as a combination of models and scaffolds, including various context management strategies. While agent performance generally degrades as the environment states grow more complex, advanced context management techniques can substantially improve the overall success rate. We open-source LOCA-bench to provide a platform for evaluating models and scaffolds in long-context, agentic scenarios: https://github.com/hkust-nlp/LOCA-bench",
+      "authors": [
+        "Weihao Zeng",
+        "Yuzhen Huang",
+        "Junxian He"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-08T13:20:39Z",
+      "updated": "2026-02-08T13:20:39Z",
+      "announced_date": "2026-02-08",
+      "first_seen": "2026-02-08",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.07962v1",
+        "pdf": "https://arxiv.org/pdf/2602.07962v1",
+        "html": "https://arxiv.org/html/2602.07962"
+      },
+      "score": 26,
+      "tags": [],
+      "field": "other",
+      "citations": 12
+    }
+  ]
+}

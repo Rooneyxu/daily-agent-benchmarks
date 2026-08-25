@@ -1,0 +1,185 @@
+{
+  "date": "2026-02-18",
+  "count": 3,
+  "report": {
+    "date": "2026-02-18",
+    "count": 3,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      }
+    ],
+    "en": {
+      "headline": "3 new agent benchmarks",
+      "summary": "On February 18, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Tool use (2), Memory (1), and Planning / reasoning (1).",
+      "highlights": [
+        {
+          "id": "2602.16313",
+          "title": "MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks",
+          "blurb": "Existing evaluations of agents with memory typically assess memorization and action in isolation."
+        },
+        {
+          "id": "2602.16953",
+          "title": "LLM4Cov: Execution-Aware Agentic Learning for High-coverage Testbench Generation",
+          "blurb": "Execution-aware LLM agents offer a promising paradigm for learning from tool feedback, but such feedback can be expensive and slow to obtain, making online reinforcement learning (RL) less practical in certain scenarios."
+        },
+        {
+          "id": "2602.16179",
+          "title": "EnterpriseBench Corecraft: Training Generalizable Agents on High-Fidelity RL Environments",
+          "blurb": "We show that training AI agents on high-fidelity reinforcement learning environments produces capabilities that generalize beyond the training distribution."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年2月18日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在工具使用（2）、记忆（1）、规划 / 推理（1）。",
+      "highlights": [
+        {
+          "id": "2602.16313",
+          "title": "MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks",
+          "blurb": "Existing evaluations of agents with memory typically assess memorization and action in isolation."
+        },
+        {
+          "id": "2602.16953",
+          "title": "LLM4Cov: Execution-Aware Agentic Learning for High-coverage Testbench Generation",
+          "blurb": "Execution-aware LLM agents offer a promising paradigm for learning from tool feedback, but such feedback can be expensive and slow to obtain, making online reinforcement learning (RL) less practical in certain scenarios."
+        },
+        {
+          "id": "2602.16179",
+          "title": "EnterpriseBench Corecraft: Training Generalizable Agents on High-Fidelity RL Environments",
+          "blurb": "We show that training AI agents on high-fidelity reinforcement learning environments produces capabilities that generalize beyond the training distribution."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2602.16953",
+      "title": "LLM4Cov: Execution-Aware Agentic Learning for High-coverage Testbench Generation",
+      "abstract": "Execution-aware LLM agents offer a promising paradigm for learning from tool feedback, but such feedback can be expensive and slow to obtain, making online reinforcement learning (RL) less practical in certain scenarios. High-coverage hardware verification exemplifies this challenge due to its reliance on industrial simulators and non-differentiable execution signals. We propose LLM4Cov, an offline agent-learning framework that models verification as single-step state transitions guided by deterministic evaluators. Building on this formulation, we introduce execution-validated data curation, policy-aware agentic data synthesis, and worst-state-prioritized sampling to enable scalable learning under execution constraints. We further curate a reality-aligned benchmark adapted from an existing verification suite through a revised evaluation protocol. Using the proposed pipeline, a compact 4B-parameter model achieves 69.2% pass rate and 90.4% average coverage in CVDP-ECov under agentic evaluation, outperforming its teacher by 5.3% and 10.5%, demonstrating competitive performance against models an order of magnitude larger.",
+      "authors": [
+        "Hejia Zhang",
+        "Zhongming Yu",
+        "Chia-Tung Ho",
+        "Haoxing Ren",
+        "Brucek Khailany",
+        "Jishen Zhao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-18T23:36:46Z",
+      "updated": "2026-05-29T19:21:13Z",
+      "announced_date": "2026-02-18",
+      "first_seen": "2026-02-18",
+      "comment": "ICML'26 Camera Ready version",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.16953v3",
+        "pdf": "https://arxiv.org/pdf/2602.16953v3",
+        "html": "https://arxiv.org/html/2602.16953"
+      },
+      "score": 15,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 4
+    },
+    {
+      "id": "2602.16313",
+      "title": "MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks",
+      "abstract": "Existing evaluations of agents with memory typically assess memorization and action in isolation. One class of benchmarks evaluates memorization by testing recall of past conversations or text but fails to capture how memory is used to guide future decisions. Another class focuses on agents acting in single-session tasks without the need for long-term memory. However, in realistic settings, memorization and action are tightly coupled: agents acquire memory while interacting with the environment, and subsequently rely on that memory to solve future tasks. To capture this setting, we introduce MemoryArena, a unified evaluation gym for benchmarking agent memory in multi-session Memory-Agent-Environment loops. The benchmark consists of human-crafted agentic tasks with explicitly interdependent subtasks, where agents must learn from earlier actions and feedback by distilling experiences into memory, and subsequently use that memory to guide later actions to solve the overall task. MemoryArena supports evaluation across web navigation, preference-constrained planning, progressive information search, and sequential formal reasoning, and reveals that agents with near-saturated performance on existing long-context memory benchmarks like LoCoMo perform poorly in our agentic setting, exposing a gap in current evaluations for agents with memory.",
+      "authors": [
+        "Zexue He",
+        "Yu Wang",
+        "Churan Zhi",
+        "Yuanzhe Hu",
+        "Tzu-Ping Chen",
+        "Lang Yin",
+        "Ze Chen",
+        "Tong Arthur Wu",
+        "Siru Ouyang",
+        "Zihan Wang",
+        "Jiaxin Pei",
+        "Julian McAuley",
+        "Yejin Choi",
+        "Alex Pentland"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-18T09:49:14Z",
+      "updated": "2026-02-18T09:49:14Z",
+      "announced_date": "2026-02-18",
+      "first_seen": "2026-02-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.16313v1",
+        "pdf": "https://arxiv.org/pdf/2602.16313v1",
+        "html": "https://arxiv.org/html/2602.16313"
+      },
+      "score": 17,
+      "tags": [
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 61
+    },
+    {
+      "id": "2602.16179",
+      "title": "EnterpriseBench Corecraft: Training Generalizable Agents on High-Fidelity RL Environments",
+      "abstract": "We show that training AI agents on high-fidelity reinforcement learning environments produces capabilities that generalize beyond the training distribution. We introduce CoreCraft, the first environment in EnterpriseBench, Surge AI's suite of agentic RL environments. CoreCraft is a fully operational enterprise simulation of a customer support organization, comprising over 2,500 entities across 14 entity types with 23 unique tools, designed to measure whether AI agents can perform the multi-step, domain-specific work that real jobs demand. Frontier models such as GPT-5.2 and Claude Opus 4.6 solve fewer than 30% of tasks when all expert-authored rubric criteria must be satisfied. Using this environment, we train GLM 4.6 with Group Relative Policy Optimization (GRPO) and adaptive clipping. After a single epoch of training, the model improves from 25.37% to 36.76% task pass rate on held-out evaluation tasks. More importantly, these gains transfer to out-of-distribution benchmarks: +4.5% on BFCL Parallel, +7.4% on Tau2-Bench Retail, and +6.8% on Tool Decathlon (Pass@1). We believe three environment properties are consistent with the observed transfer: task-centric world building that optimizes for diverse, challenging tasks; expert-authored rubrics enabling reliable reward computation; and enterprise workflows that reflect realistic professional patterns. Our results suggest that environment quality, diversity, and realism are key factors enabling generalizable agent capabilities.",
+      "authors": [
+        "Sushant Mehta",
+        "Logan Ritchie",
+        "Suhaas Garre",
+        "Ian Niebres",
+        "Nick Heiner",
+        "Edwin Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-18T04:35:46Z",
+      "updated": "2026-03-02T05:48:19Z",
+      "announced_date": "2026-02-18",
+      "first_seen": "2026-02-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.16179v5",
+        "pdf": "https://arxiv.org/pdf/2602.16179v5",
+        "html": "https://arxiv.org/html/2602.16179"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "workplace",
+      "citations": 7
+    }
+  ]
+}

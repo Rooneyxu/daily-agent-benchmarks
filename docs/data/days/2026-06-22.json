@@ -1,0 +1,297 @@
+{
+  "date": "2026-06-22",
+  "count": 6,
+  "report": {
+    "date": "2026-06-22",
+    "count": 6,
+    "themes": [
+      {
+        "id": "workplace",
+        "count": 2,
+        "en": "Work / office",
+        "zh": "职场 / 办公"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      }
+    ],
+    "en": {
+      "headline": "6 new agent benchmarks",
+      "summary": "On June 22, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Work / office (2), Safety (2), Multi-agent (1), and Tool use (1).",
+      "highlights": [
+        {
+          "id": "2606.23927",
+          "title": "RIFT-Bench: Dynamic Red-teaming For Agentic AI Systems",
+          "blurb": "Agentic AI systems powered by large language models (LLMs) are rapidly evolving into autonomous decision-making systems, exposing attack vectors beyond those of traditional LLM vulnerabilities."
+        },
+        {
+          "id": "2606.23032",
+          "title": "IPO Finance Agent: Benchmark of LLM Financial Analysts Beyond Finance Agent v2, with Automated Rubric Generation, on the SpaceX (SPCX) IPO",
+          "blurb": "Finance Agent v2 (by Vals AI) has emerged as the reference benchmark for evaluating both Anthropic Claude and OpenAI ChatGPT frontier language models on financial tasks."
+        },
+        {
+          "id": "2606.23654",
+          "title": "EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions",
+          "blurb": "Enterprise agents increasingly operate inside workspaces: they read heterogeneous files, invoke tools, and deliver business artifacts."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 6 篇 Agent Benchmark",
+      "summary": "2026年6月22日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在职场 / 办公（2）、安全（2）、多智能体（1）、工具使用（1）。",
+      "highlights": [
+        {
+          "id": "2606.23927",
+          "title": "RIFT-Bench: Dynamic Red-teaming For Agentic AI Systems",
+          "blurb": "Agentic AI systems powered by large language models (LLMs) are rapidly evolving into autonomous decision-making systems, exposing attack vectors beyond those of traditional LLM vulnerabilities."
+        },
+        {
+          "id": "2606.23032",
+          "title": "IPO Finance Agent: Benchmark of LLM Financial Analysts Beyond Finance Agent v2, with Automated Rubric Generation, on the SpaceX (SPCX) IPO",
+          "blurb": "Finance Agent v2 (by Vals AI) has emerged as the reference benchmark for evaluating both Anthropic Claude and OpenAI ChatGPT frontier language models on financial tasks."
+        },
+        {
+          "id": "2606.23654",
+          "title": "EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions",
+          "blurb": "Enterprise agents increasingly operate inside workspaces: they read heterogeneous files, invoke tools, and deliver business artifacts."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.23927",
+      "title": "RIFT-Bench: Dynamic Red-teaming For Agentic AI Systems",
+      "abstract": "Agentic AI systems powered by large language models (LLMs) are rapidly evolving into autonomous decision-making systems, exposing attack vectors beyond those of traditional LLM vulnerabilities. Existing security evaluations are often tied to specific implementations or domains, limiting unified comparison across heterogeneous systems. To address this gap, we introduce RIFT-Bench, a graph representation-driven methodology for dynamic red-teaming that enables unified evaluations across diverse agentic architectures. Building on a novel hierarchical representation, RIFT-Bench operates in two automated phases: Discovery, which extracts system structure, and Scanning, which deploys adaptive adversarial attacks and produces a comprehensive evaluation report. It evaluates the examined system itself, leveraging a broad set of dynamically adaptable adversarial probes across diverse attack vectors and objectives. We demonstrate the effectiveness of the proposed evaluation pipeline across 45 agentic systems spanning a diverse range of implementations, showing that the approach generalizes effectively to heterogeneous agentic architectures. Beyond systems and attacks, RIFT-Bench also supports direct evaluation of mitigation strategies. These key capabilities make RIFT-Bench a scalable foundation for security evaluation of agentic AI systems.",
+      "authors": [
+        "Yarin Yerushalmi Levi",
+        "Roy Betser",
+        "Amit Giloni",
+        "Lidor Erez",
+        "Itay Gershon",
+        "Oren Rachmil",
+        "Sindhu Padakandla",
+        "Roman Vainshtein"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-22T20:46:56Z",
+      "updated": "2026-06-22T20:46:56Z",
+      "announced_date": "2026-06-22",
+      "first_seen": "2026-06-22",
+      "comment": "Preprint",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.23927v1",
+        "pdf": "https://arxiv.org/pdf/2606.23927v1",
+        "html": "https://arxiv.org/html/2606.23927"
+      },
+      "score": 14,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.23664",
+      "title": "MAS-PromptBench: When Does Prompt Optimization Improve Multi-Agent LLM Systems?",
+      "abstract": "Multi-agent systems (MAS) offer a scalable path forward for agentic AI, comprising multiple LLM-based agents, each assigned a system prompt and a position within a workflow that governs inter-agent coordination and output aggregation. System prompts thus form a critical and accessible optimization surface: they specify agents' roles and behaviors, enabling system-level improvements without model finetuning. Although prompt optimization has shown substantial potential for single LLMs, extending it to MAS poses distinct challenges, notably an exponentially growing search space. It remains unclear whether, when, and by how much prompt optimization improves MAS performance, and how sensitive such gains are to system configuration. In this work, we systematically study system-prompt optimization across a broad range of MAS setups varying in task, workflow, communication protocol, and team size, benchmarking two prompt optimizers that naturally extend state-of-the-art single-agent methods. The results reveal its potential to unlock significant gains while exposing open challenges, characterizing when and how much prompt optimization helps across diverse MAS settings.",
+      "authors": [
+        "Juyang Bai",
+        "Laixi Shi"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.MA"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-06-22T17:48:40Z",
+      "updated": "2026-06-22T17:48:40Z",
+      "announced_date": "2026-06-22",
+      "first_seen": "2026-06-22",
+      "comment": "Project page: https://juyangbai.github.io/MAS-PromptBench/ ; Code: https://github.com/juyangbai/MAS-PromptBench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.23664v1",
+        "pdf": "https://arxiv.org/pdf/2606.23664v1",
+        "html": "https://arxiv.org/html/2606.23664"
+      },
+      "score": 12,
+      "tags": [
+        "multi-agent"
+      ],
+      "field": "multi-agent",
+      "citations": 1
+    },
+    {
+      "id": "2606.23654",
+      "title": "EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions",
+      "abstract": "Enterprise agents increasingly operate inside workspaces: they read heterogeneous files, invoke tools, and deliver business artifacts. We introduce EnterpriseClawBench, an enterprise agent benchmark constructed from proprietary, real-world agent sessions. Starting from a large archive of workplace sessions, the EnterpriseClawBench produces 852 reproducible tasks, each paired with recovered fixtures, rewritten prompts, role classes, skill subclasses, hard rules, and semantic rubrics. Because the sessions contain internal enterprise content, we do not release the benchmark data; instead, our reusable contribution is the construction and evaluation protocol. On EnterpriseClawBench, the best configuration reaches only 0.663 (Codex with GPT-5.5). These results show that enterprise agent evaluation must report harness--model combinations, artifact delivery, visual quality, cost, runtime, and skill-transfer behavior, rather than collapsing performance into a single score. Code: https://github.com/FrontisAI/EnterpriseClawBench",
+      "authors": [
+        "Jincheng Zhong",
+        "Weizhi Wang",
+        "Che Jiang",
+        "Kai Tian",
+        "Zhenzhao Yuan",
+        "Junlin Yang",
+        "Dianqiao Lei",
+        "Kaiyan Zhang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-22T17:39:43Z",
+      "updated": "2026-06-22T17:39:43Z",
+      "announced_date": "2026-06-22",
+      "first_seen": "2026-06-22",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.23654v1",
+        "pdf": "https://arxiv.org/pdf/2606.23654v1",
+        "html": "https://arxiv.org/html/2606.23654"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "workplace"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2606.23301",
+      "title": "EHR-Complex: Benchmarking Medical Agents for Complex Clinical Reasoning",
+      "abstract": "Clinical agents promise to democratize access to electronic health records (EHRs), yet existing benchmarks fail to reflect the complexity of practical EHR analysis, e.g., often operating on idealized, clean EHRs via static SQL generation rather than interactive execution. In this work, we introduce EHR-Complex, a large-scale benchmark designed for interactive clinical database reasoning. Built on the large MIMIC-IV substrate (365K patients, 31 tables, 500M+ records), EHR-Complex comprises about 52K tasks spanning six clinical intents, supporting both patient-level and population-level queries, where each task requires an agent to interact with a sandboxed environment by executing SQL queries or Python code. Notably, EHR-Complex considers the real-world SQL task complexity for longitudinal multi-table aggregation and compositional reasoning, resulting in 31.93 SQL structural components per query on average. Evaluation results on EHR-Complex reveal the clinical difficulty of these EHR reasoning scenarios, with the top-performing model achieving only 62.3% exact-match accuracy. Pass^k consistency drops below 50% for nearly all evaluated models at k=4, exposing broad stochastic fragility. A fine-grained analysis of more than 3,800 failed trajectories for representative LLMs reveals three dominant failure modes: SQL logic errors, medical-code lookup failures, and semantic misunderstandings. EHR-Complex provides a rigorous testbed for clinical agents and highlights remaining gaps in robust reasoning for large-scale EHR analysis.",
+      "authors": [
+        "Yitong Qiao",
+        "Lei Liu",
+        "Yue Shen",
+        "Jian Wang",
+        "Jinjie Gu",
+        "Zhixuan Chu",
+        "Kui Ren"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-22T13:14:21Z",
+      "updated": "2026-06-22T13:14:21Z",
+      "announced_date": "2026-06-22",
+      "first_seen": "2026-06-22",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.23301v1",
+        "pdf": "https://arxiv.org/pdf/2606.23301v1",
+        "html": "https://arxiv.org/html/2606.23301"
+      },
+      "score": 10,
+      "tags": [
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2606.23127",
+      "title": "Managing Procedural Memory in LLM Agents: Control, Adaptation, and Evaluation",
+      "abstract": "Procedural memory is increasingly used to improve LLM agents on recurring workplace tasks, yet its ability to produce reusable skills remains poorly understood. We introduce AFTER, a benchmark of 382 realistic enterprise tasks spanning six professional roles and 22 procedural skills, designed to evaluate how skills transfer across tasks, roles, and model backbones. The benchmark includes controlled evaluation settings for local improvement, cross-task transfer, cross-role transfer, and cross-model generalization. Experiments show that procedural memory delivers consistent gains in industrial workflows: a single refinement round improves aggregate performance by 3.7-6.7 points, while skills evolved from diverse multi-model execution traces achieve 73.1% cross-model test accuracy, outperforming all single-model trace sources. We further find that some skills generalize broadly across tasks and models, whereas others become specialized to role-specific workflows and lose effectiveness under transfer. These results provide practical guidance for building, evaluating, and deploying procedural memory systems in production agent platforms.",
+      "authors": [
+        "Julia Belikova",
+        "Rauf Parchiev",
+        "Evgeny Egorov",
+        "Grigorii Davydenko",
+        "Gleb Gusev",
+        "Andrey Savchenko",
+        "Maksim Makarenko"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-22T10:14:11Z",
+      "updated": "2026-06-22T10:14:11Z",
+      "announced_date": "2026-06-22",
+      "first_seen": "2026-06-22",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.23127v1",
+        "pdf": "https://arxiv.org/pdf/2606.23127v1",
+        "html": "https://arxiv.org/html/2606.23127"
+      },
+      "score": 11,
+      "tags": [
+        "memory",
+        "workplace"
+      ],
+      "field": "workplace",
+      "citations": 3
+    },
+    {
+      "id": "2606.23032",
+      "title": "IPO Finance Agent: Benchmark of LLM Financial Analysts Beyond Finance Agent v2, with Automated Rubric Generation, on the SpaceX (SPCX) IPO",
+      "abstract": "Finance Agent v2 (by Vals AI) has emerged as the reference benchmark for evaluating both Anthropic Claude and OpenAI ChatGPT frontier language models on financial tasks. However, it narrowly deals with periodic reporting from publicly traded companies (SEC 10-K and 10-Q filings), and its agentic harness relies on naive, unenriched chunk retrieval. Neither the task design nor the retrieval approach addresses the distinct challenges of IPO due diligence. SEC S-1 filings combine historical financial statements, governance structures, pro forma and common-control accounting treatments, capital-formation narratives, and underwriting-sensitive risk disclosures within substantially longer documents than typical periodic filings. That is why we introduce IPO Finance Agent, which extends the Finance Agent v2 framework along two directions: task domain and retrieval architecture. During our experiments, the original Finance Agent v2 harness basically failed to deliver any output related to the SpaceX S-1 filing, due to document length. We therefore had to improve the agentic harness with contextual retrieval, a more realistic and industry-standard approach for long documents. We also built a dataset of 1,000 IPO-diligence questions, and publicly release 70 questions on the SpaceX (SPCX) S-1 filing to support reproducibility, while the remainder are held private to guard against benchmark contamination. In addition, we introduce an evaluator-optimizer pipeline to automatically generate evaluation rubrics for the benchmark: candidate facts are extracted from model answers, consolidated into draft criteria, then automatically audited for omissions, hallucinations, mistiered items, and redundancy, with LLM feedback driving iterative repair, targeted enrichment, and deduplication. Human experts only review final rubrics before deployment. Results show that the best-performing evaluated model, Zhipu GLM-5.2, reaches 79.8% accuracy, and the most cost-efficient model on the resulting Pareto frontier, Xiaomi MiMo-2.5 Pro, reaches slightly lower accuracy (77.2%) at 0.05 USD per query, while exceeding the current Finance Agent v2 leaderboard ceiling, Google Gemini 3.5 Flash at 57.9% for 2.51 USD per query, and undercutting even FABv2's cheapest entry (MiniMax M3: 48.3% at 0.32 USD) on cost-efficiency. Code and data are released on GitHub https://github.com/benstaf/ipoagent",
+      "authors": [
+        "Mostapha Benhenda"
+      ],
+      "categories": [
+        "cs.AI",
+        "q-fin.GN"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-22T08:42:19Z",
+      "updated": "2026-06-30T10:07:05Z",
+      "announced_date": "2026-06-22",
+      "first_seen": "2026-06-22",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.23032v3",
+        "pdf": "https://arxiv.org/pdf/2606.23032v3",
+        "html": "https://arxiv.org/html/2606.23032"
+      },
+      "score": 13,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

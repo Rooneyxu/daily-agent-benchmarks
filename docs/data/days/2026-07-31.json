@@ -1,0 +1,435 @@
+{
+  "date": "2026-07-31",
+  "count": 9,
+  "report": {
+    "date": "2026-07-31",
+    "count": 9,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 5,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "science",
+        "count": 2,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "9 new agent benchmarks",
+      "summary": "On July 31, 2026, arXiv listed 9 new agent benchmarks. Work clustered around Coding agents (5), Tool use (3), Science lab (2), and Safety (2).",
+      "highlights": [
+        {
+          "id": "2608.11232",
+          "title": "Backtrader-Bench: Benchmarking LLM Agents on Algorithmic Trading with Self-Generated MCQs",
+          "blurb": "Evaluating LLM coding agents in algorithmic trading is difficult because static benchmarks risk data contamination and numerical backtest outputs require ground truth from actual code execution."
+        },
+        {
+          "id": "2607.29677",
+          "title": "ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction",
+          "blurb": "Enterprise workflows increasingly rely on agents for \\emph{schema-guided extraction}: given a document and a user-defined schema, the agent faithfully follows the schema to produce the correct output with source evidence…"
+        },
+        {
+          "id": "2607.29626",
+          "title": "AgentHPOBench: A Benchmark For Evaluating LLM Agents as Sequential Hyperparameter Optimizers",
+          "blurb": "As LLMs evolve from code completion systems into autonomous scientific agents, evaluating their ability to conduct experiments has become increasingly important."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 9 篇 Agent Benchmark",
+      "summary": "2026年7月31日，arXiv 新增 9 篇 Agent Benchmark。当日主题集中在代码智能体（5）、工具使用（3）、科学实验（2）、安全（2）。",
+      "highlights": [
+        {
+          "id": "2608.11232",
+          "title": "Backtrader-Bench: Benchmarking LLM Agents on Algorithmic Trading with Self-Generated MCQs",
+          "blurb": "Evaluating LLM coding agents in algorithmic trading is difficult because static benchmarks risk data contamination and numerical backtest outputs require ground truth from actual code execution."
+        },
+        {
+          "id": "2607.29677",
+          "title": "ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction",
+          "blurb": "Enterprise workflows increasingly rely on agents for \\emph{schema-guided extraction}: given a document and a user-defined schema, the agent faithfully follows the schema to produce the correct output with source evidence…"
+        },
+        {
+          "id": "2607.29626",
+          "title": "AgentHPOBench: A Benchmark For Evaluating LLM Agents as Sequential Hyperparameter Optimizers",
+          "blurb": "As LLMs evolve from code completion systems into autonomous scientific agents, evaluating their ability to conduct experiments has become increasingly important."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.00267",
+      "title": "LoopsBench: From Harness Engineering to Loop Engineering in Coding Agent Evaluation",
+      "abstract": "Coding agent infrastructure is shifting from harness engineering toward loop engineering as coding agents are deployed for sustained long-horizon software development. Existing benchmarks often center on localized tasks or end-state outcomes, offering limited insight into sustained execution. We introduce LOOPSBENCH, a long-horizon benchmark for loop engineering in coding agent evaluation. Each task is a dependency DAG over separately testable development units with source-evidenced prerequisite edges. LOOPSBENCH comprises 112 tasks from authentic sources spanning 8 programming languages and 9 domains. Its flow-aware runtime releases tests along the ready frontier and retains completed nodes as regression obligations. We evaluate frontier coding agents paired with widely used loop implementations. The strongest configuration, Opus-4.7 with Claude Code and outer continuation, resolves 25.00% of tasks. Recorded plans recover only part of the source-recovered prerequisite DAG, and regression events remain visible across the evaluated loop profiles. We open source the benchmark data and code, including all tasks, more than 5,300 development units, and executable tests, at microsoft/Loopsbench.",
+      "authors": [
+        "Han Li",
+        "Zhemin Fang",
+        "Rili Feng",
+        "Yingqi Zhao",
+        "Jiaheng Liu",
+        "Pengfei Gao",
+        "He Ye",
+        "Dayi Lin",
+        "Qingwei Lin",
+        "Saravan Rajmohan",
+        "Dongmei Zhang"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-07-31T20:18:25Z",
+      "updated": "2026-08-10T12:29:11Z",
+      "announced_date": "2026-07-31",
+      "first_seen": "2026-07-31",
+      "comment": "Project page: https://loopsbench.ai/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.00267v2",
+        "pdf": "https://arxiv.org/pdf/2608.00267v2",
+        "html": "https://arxiv.org/html/2608.00267"
+      },
+      "score": 15,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2607.29677",
+      "title": "ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction",
+      "abstract": "Enterprise workflows increasingly rely on agents for \\emph{schema-guided extraction}: given a document and a user-defined schema, the agent faithfully follows the schema to produce the correct output with source evidence as grounding metadata. We present ExtractBench, a benchmark for schema-guided extraction and, to our knowledge, the first to score value accuracy, record completeness at scale, grounding, and measured cost together. The evaluation system contains 4,869 pages across 370 enterprise documents, 8 business domains, and 67 document types, with clear tags differentiating their challenge scenarios. The scalable schema and ground-truth curation pipeline combines independent-system agreement for real documents, known values for synthetic lists, and human verification for forms. We report order-insensitive value F1 for value accuracy, plus two grounding metrics for source traceability: word- and page-level F1. Commercial VLMs perform well on short documents but often truncate record lists on long ones, while coding agents retain higher accuracy at much higher cost. LlamaExtract Agentic Plus ranks first on all three metrics, with accuracy comparable to coding agents at a fraction of the cost. Dataset and evaluation code are available on \\href{https://huggingface.co/datasets/llamaindex/ExtractBench}{HuggingFace} and \\href{https://github.com/run-llama/ExtractBench}{GitHub}.",
+      "authors": [
+        "Boyang Zhang",
+        "Adrian Lyjak",
+        "Eli Stewart",
+        "Zhaoqi Li",
+        "Simon Suo"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-31T17:55:58Z",
+      "updated": "2026-08-05T17:48:49Z",
+      "announced_date": "2026-07-31",
+      "first_seen": "2026-07-31",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.29677v2",
+        "pdf": "https://arxiv.org/pdf/2607.29677v2",
+        "html": "https://arxiv.org/html/2607.29677"
+      },
+      "score": 23,
+      "tags": [
+        "coding"
+      ],
+      "field": "workplace",
+      "citations": 1
+    },
+    {
+      "id": "2607.29626",
+      "title": "AgentHPOBench: A Benchmark For Evaluating LLM Agents as Sequential Hyperparameter Optimizers",
+      "abstract": "As LLMs evolve from code completion systems into autonomous scientific agents, evaluating their ability to conduct experiments has become increasingly important. Existing benchmarks typically focus on static code generation, paper replication, or final answer correctness, but do not directly assess whether agents can interpret experimental evidence and use it to guide subsequent hyperparameter decisions. To address this gap, we introduce AgentHPOBench, a sequential benchmark comprising 30 executable machine learning tasks across seven research categories. Each task begins with a validated baseline run, after which an agent performs several sequential interventions. At each step, the agent observes the accumulated configurations, metrics, and logs before proposing the next valid configuration. We evaluate 12 widely used agents and conventional HPO baselines under a unified protocol. The results show that current agents exhibit measurable experimental optimization ability across domains, but still face clear limitations in sustained iterative refinement, complex log diagnosis, and consistent progress toward reported reference performance.",
+      "authors": [
+        "Tianyu Huai",
+        "Tingshuo Fan",
+        "Xinchi Chen",
+        "Yining Zheng",
+        "Yuxin Wang",
+        "Shuang Chen",
+        "Jie Zhou",
+        "Xuanjing Huang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-31T16:58:00Z",
+      "updated": "2026-07-31T16:58:00Z",
+      "announced_date": "2026-07-31",
+      "first_seen": "2026-07-31",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.29626v1",
+        "pdf": "https://arxiv.org/pdf/2607.29626v1",
+        "html": "https://arxiv.org/html/2607.29626"
+      },
+      "score": 22,
+      "tags": [
+        "coding",
+        "science"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2608.02642",
+      "title": "MDArena: Evaluating Coding Agents on Realistic Molecular Dynamics Workflows",
+      "abstract": "Accelerating scientific discovery is among the most consequential applications of AI, and computational biomolecular simulation stands out as a particularly promising target within this broader effort. Coding agents promise to automate significant portions of this workflow, yet their reliability on realistic molecular dynamics (MD) tasks remains poorly characterized. To address this issue, we introduce MDArena, a benchmark of 50 containerized tasks drawn from active biomolecular simulation projects, spanning 29 molecular systems and 14 broad research protocols, including trajectory analysis, complex system preparation, free-energy protocols, and enhanced sampling. We evaluate six model/harness configurations spanning Codex and OpenCode. Among the evaluated configurations, Codex GPT-5.5 at extra-high reasoning effort performs best, reaching 24/50 Strict-Pass@1 successes (48%), followed by Codex GPT-5.5 Medium with 21/50, and OpenCode Gemini Flash 3.5 with 20/50. Average correctness and process rewards are substantially higher than strict success rates across all configurations, indicating that agents frequently make meaningful partial progress but fail on the fine-grained details required for reproducible scientific workflows. Hard tasks remain largely unsolved, particularly membrane-protein system preparation and alchemical free-energy setup, both unsolved or near-unsolved by every evaluated configuration. MDArena thus exposes a substantial gap between the usefulness of coding agents as supervised assistants and their reliability as autonomous MD researchers, while providing a reproducible and extensible platform for tracking progress toward closing it.",
+      "authors": [
+        "Nithishwer Mouroug Anand",
+        "Wei-Tse Hsu",
+        "Kyle Vaccaro",
+        "Eden James Gage",
+        "Jonathan David Colburn",
+        "Linda Xi Phan",
+        "Minjoon Seo",
+        "Kevin Guan",
+        "Philip C. Biggin"
+      ],
+      "categories": [
+        "physics.chem-ph",
+        "cs.AI"
+      ],
+      "primary_category": "physics.chem-ph",
+      "published": "2026-07-31T13:48:07Z",
+      "updated": "2026-07-31T13:48:07Z",
+      "announced_date": "2026-07-31",
+      "first_seen": "2026-07-31",
+      "comment": "17 pages including appendices, 4 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.02642v1",
+        "pdf": "https://arxiv.org/pdf/2608.02642v1",
+        "html": "https://arxiv.org/html/2608.02642"
+      },
+      "score": 14,
+      "tags": [
+        "coding",
+        "planning",
+        "research",
+        "science"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2608.00107",
+      "title": "MetaRoute-Bench: Evaluating Meta-Decision Policies for Agentic Workflow Routing",
+      "abstract": "Agentic systems must repeatedly decide whether to answer directly, decompose a task, invoke a tool, execute code, delegate to a specialist, verify an intermediate result, or recover from failure. These meta-decisions affect not only task success but also operating cost and latency, yet they are often embedded inside an orchestration framework and evaluated only through aggregate task accuracy. We present MetaRoute-Bench, an open, inspectable framework for comparing meta-decision policies under a shared execution model. The initial benchmark contains 180 synthetic task profiles spanning data analysis, research, and document processing, eight routing policies, and 30 paired random seeds. Across 43,200 traces, a task-aware compositional policy achieves 79.4% success compared with 76.7% for a strong workload-specific static policy, 67.4% for one-shot task routing, and 52.9% for direct answering. Relative to the static policy, this is a 2.7 percentage-point improvement with paired 95% CI of plus or minus 2.0 points, at 4.7% higher mean cost and 6.4% higher latency. Ablations show the largest losses when route composition is restricted to one operation and when verification is removed. These results are generated by a seeded offline execution model rather than a live deployment; accordingly, the primary contribution is a reproducible evaluation method and an analysis of routing-policy tradeoffs, not evidence of production effectiveness. We release task generation, policies, traces, tests, and analysis artifacts to support live-system validation.",
+      "authors": [
+        "Natan Vidra",
+        "Alina Kapanova",
+        "Arun Kanhai",
+        "Spurthi Setty"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-07-31T07:01:21Z",
+      "updated": "2026-07-31T07:01:21Z",
+      "announced_date": "2026-07-31",
+      "first_seen": "2026-07-31",
+      "comment": "6 pages, 1 figure; DAI 2026 submission",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.00107v1",
+        "pdf": "https://arxiv.org/pdf/2608.00107v1",
+        "html": "https://arxiv.org/html/2608.00107"
+      },
+      "score": 16,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.29002",
+      "title": "MMShopBench: A Real-Log Benchmark for Multimodal, Multi-Turn Shopping Agents",
+      "abstract": "Online shoppers increasingly turn to AI shopping assistants, using images and multi-turn dialogue to express and refine product needs that are difficult to articulate in text alone. However, existing benchmarks largely rely on text-only or synthetic requests, underrepresenting complex real-world shopping requirements jointly expressed through images and language. We introduce MMShopBench, the first real-log benchmark for multimodal, multi-turn shopping agents. Built from carefully cleaned and manually annotated shopping logs, MMShopBench provides ground-truth annotations of each request's purchase intent and mandatory product requirements. Agents must infer these requirements jointly from user images and multi-turn dialogue, retrieve candidate products through image and text search, and verify that each candidate satisfies all requirements using its product images and structured attributes. We evaluate representative open-source and proprietary models using an evidence-grounded multimodal protocol and construct a companion training set for fine-tuning an open-source model. To ensure reproducible experimentation, we build an offline shopping sandbox, where fine-tuning substantially narrows the performance gap between our open-source model and leading proprietary models, demonstrating the effectiveness of our training data.",
+      "authors": [
+        "Zeying Hao",
+        "Hao Guo",
+        "Mengtao Xu",
+        "Yimin Hu",
+        "Yuheng Song",
+        "Zesheng Zhou",
+        "Jinsong Lan",
+        "Xiaoyong Zhu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-31T04:00:15Z",
+      "updated": "2026-07-31T04:00:15Z",
+      "announced_date": "2026-07-31",
+      "first_seen": "2026-07-31",
+      "comment": "16 pages, 6 figures, including appendix",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.29002v1",
+        "pdf": "https://arxiv.org/pdf/2607.29002v1",
+        "html": "https://arxiv.org/html/2607.29002"
+      },
+      "score": 13,
+      "tags": [
+        "conversation",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2608.11234",
+      "title": "InfraBench: Evaluating Infrastructure Agents Across Layers, Lifecycle, and Risk",
+      "abstract": "Managing modern computing infrastructure has become a steadily harder problem due to the ever-increasing complexity. Recent advances in AI agents create a timely opportunity to automate infrastructure management tasks, but it remains unclear how well such agents can handle real-world infrastructure complexity. We present InfraBench, a benchmark suite for evaluating AI agents on realistic infrastructure tasks across the full system stack and full operational lifecycle with fine-grained risk assessment. Experiments with 15 agent-model configurations show that even the strongest agent cannot secure a full score across all tasks. Mean effective scores range from roughly 40% to 88% (with per-configuration standard errors of 6-12 points), repeating every task three times reveals that top configurations still pass only a fraction of their attempts, and per-check scoring exposes a general failure pattern: agents may routinely satisfy short-term objectives while leaving non-durable changes, broken distributed invariants, unsafe side effects, and uncleaned state behind. INFRABENCH, including its live leaderboard, tasks, and evaluation harness, is publicly available at infraben.ch.",
+      "authors": [
+        "Yuan Gao",
+        "Zeren Yang",
+        "Junnan Li",
+        "Shawn",
+        "Zhong",
+        "Ahmed Dajani",
+        "Mai Zheng",
+        "Andrea Arpaci-Dusseau",
+        "Remzi Arpaci-Dusseau"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.OS"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-31T03:53:11Z",
+      "updated": "2026-08-24T03:46:17Z",
+      "announced_date": "2026-07-31",
+      "first_seen": "2026-07-31",
+      "comment": "17 pages, 6 figures. Preprint",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.11234v2",
+        "pdf": "https://arxiv.org/pdf/2608.11234v2",
+        "html": "https://arxiv.org/html/2608.11234"
+      },
+      "score": 16,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.11232",
+      "title": "Backtrader-Bench: Benchmarking LLM Agents on Algorithmic Trading with Self-Generated MCQs",
+      "abstract": "Evaluating LLM coding agents in algorithmic trading is difficult because static benchmarks risk data contamination and numerical backtest outputs require ground truth from actual code execution. We present Backtrader-Bench, a framework with two complementary pipelines. A deterministic multiple-choice question (MCQ) pipeline generates questions from backtest configurations across five trading strategies, 33 templates, and three difficulty tiers, with an independent checker that re-derives every answer. A generator-solver filtering pipeline autonomously mines harder questions: a generator writes questions verified by executable code, converts them to MCQs, and discards any that a no-tool solver can answer without code execution. We evaluate 11 models without tools (10 runs each) and four with-tools configurations on a 30-question curated set. Tool-augmented agents reach 90.0% accuracy in a single pass (GPT-5.5 and Opus 4.7), outperforming the best no-tools baselines (73.0%, averaged over 10 runs) by 17 percentage points. On 38 separately mined questions, no-tools accuracy drops further, with half the models falling to roughly random-chance level (25%). Beyond evaluation, the scalable MCQ infrastructure is designed to produce a training corpus for reinforcement learning, with the ultimate goal of building a specialized agent for quantitative trading workflows.",
+      "authors": [
+        "Ruoxi Zhao",
+        "Maziar Raissi"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-07-31T02:37:57Z",
+      "updated": "2026-07-31T02:37:57Z",
+      "announced_date": "2026-07-31",
+      "first_seen": "2026-07-31",
+      "comment": "Accepted to the FinLLM Workshop at IJCAI 2026. Code and data: https://github.com/rzhao999/Backtrader-Bench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.11232v1",
+        "pdf": "https://arxiv.org/pdf/2608.11232v1",
+        "html": "https://arxiv.org/html/2608.11232"
+      },
+      "score": 23,
+      "tags": [
+        "coding",
+        "tool-use",
+        "safety"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2607.28956",
+      "title": "MerchantBench: Benchmarking LLM Agents for Long-Term Coherence in E-Commerce Operations",
+      "abstract": "Large language model agents are increasingly evaluated as autonomous tool users, yet most benchmarks focus on bounded tasks with immediate success criteria. Real-world deployments often require Long-Term Coherence, the capacity to preserve purposeful behavior across extended horizons while adapting decisions to accumulated evidence. Evaluating this capacity requires a persistent environment in which actions constrain future choices, feedback arrives at heterogeneous delays, and incoherent behavior produces measurable cumulative effects. Seller-side e-commerce provides a suitable setting for this evaluation through recurrent and interdependent decisions over Product Sourcing, Listing and Pricing Control, Cash-Flow Management, and Mixed-Latency Feedback Adaptation. We introduce MerchantBench, a 365-day order-level simulation grounded in 98,843 real e-commerce product records and equipped with 26 tools for agent interaction. MerchantBench couples promptly observable Upstream Supplier Events with delayed Downstream Order Outcomes, requiring agents to follow individual order lifecycles and revisit earlier decisions. We evaluate eight LLMs under two agent frameworks in 48 runs, each spanning 365 simulated days. Our results reveal a substantial gap between even the latest LLMs and human participants, with the best LLM configuration attaining only 27.3\\% of the mean final net assets achieved by human participants.",
+      "authors": [
+        "Qiming Shi",
+        "Yulong Tao",
+        "Linbo Jin",
+        "Zhaolu Kang",
+        "Yibo Dou",
+        "Jiawen Zhu",
+        "Tianjun Pan",
+        "Shaokang Fu",
+        "Chengyu Wang",
+        "Siyue Li",
+        "Yaping Cheng",
+        "Di Weng",
+        "Chengfu Huo"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-31T02:20:24Z",
+      "updated": "2026-08-04T11:17:07Z",
+      "announced_date": "2026-07-31",
+      "first_seen": "2026-07-31",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.28956v2",
+        "pdf": "https://arxiv.org/pdf/2607.28956v2",
+        "html": "https://arxiv.org/html/2607.28956"
+      },
+      "score": 17,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 1
+    }
+  ]
+}

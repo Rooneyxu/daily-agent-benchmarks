@@ -1,0 +1,418 @@
+{
+  "date": "2026-01-28",
+  "count": 8,
+  "report": {
+    "date": "2026-01-28",
+    "count": 8,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      }
+    ],
+    "en": {
+      "headline": "8 new agent benchmarks",
+      "summary": "On January 28, 2026, arXiv listed 8 new agent benchmarks. Work clustered around Tool use (3), Planning / reasoning (2), Safety (2), and Coding agents (2).",
+      "highlights": [
+        {
+          "id": "2602.00133",
+          "title": "PredictionMarketBench: A SWE-bench-Style Framework for Backtesting Trading Agents on Prediction Markets",
+          "blurb": "Prediction markets offer a natural testbed for trading agents: contracts have binary payoffs, prices can be interpreted as probabilities, and realized performance depends critically on market microstructure, fees, and se…"
+        },
+        {
+          "id": "2601.20335",
+          "title": "MobileBench-OL: A Comprehensive Chinese Benchmark for Evaluating Mobile GUI Agents in Real-World Environment",
+          "blurb": "Recent advances in mobile Graphical User Interface (GUI) agents highlight the growing need for comprehensive evaluation benchmarks."
+        },
+        {
+          "id": "2601.20613",
+          "title": "AgentIF-OneDay: A Task-level Instruction-Following Benchmark for General AI Agents in Daily Scenarios",
+          "blurb": "The capacity of AI agents to effectively handle tasks of increasing duration and complexity continues to grow, demonstrating exceptional performance in coding, deep research, and complex problem-solving evaluations."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 8 篇 Agent Benchmark",
+      "summary": "2026年1月28日，arXiv 新增 8 篇 Agent Benchmark。当日主题集中在工具使用（3）、规划 / 推理（2）、安全（2）、代码智能体（2）。",
+      "highlights": [
+        {
+          "id": "2602.00133",
+          "title": "PredictionMarketBench: A SWE-bench-Style Framework for Backtesting Trading Agents on Prediction Markets",
+          "blurb": "Prediction markets offer a natural testbed for trading agents: contracts have binary payoffs, prices can be interpreted as probabilities, and realized performance depends critically on market microstructure, fees, and se…"
+        },
+        {
+          "id": "2601.20335",
+          "title": "MobileBench-OL: A Comprehensive Chinese Benchmark for Evaluating Mobile GUI Agents in Real-World Environment",
+          "blurb": "Recent advances in mobile Graphical User Interface (GUI) agents highlight the growing need for comprehensive evaluation benchmarks."
+        },
+        {
+          "id": "2601.20613",
+          "title": "AgentIF-OneDay: A Task-level Instruction-Following Benchmark for General AI Agents in Daily Scenarios",
+          "blurb": "The capacity of AI agents to effectively handle tasks of increasing duration and complexity continues to grow, demonstrating exceptional performance in coding, deep research, and complex problem-solving evaluations."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2601.20730",
+      "title": "AgentLongBench: A Controllable Long Benchmark For Long-Contexts Agents via Environment Rollouts",
+      "abstract": "The evolution of Large Language Models (LLMs) into autonomous agents necessitates the management of extensive, dynamic contexts. Current benchmarks, however, remain largely static, relying on passive retrieval tasks that fail to simulate the complexities of agent-environment interaction, such as non-linear reasoning and iterative feedback. To address this, we introduce \\textbf{AgentLongBench}, which evaluates agents through simulated environment rollouts based on Lateral Thinking Puzzles. This framework generates rigorous interaction trajectories across knowledge-intensive and knowledge-free scenarios. Experiments with state-of-the-art models and memory systems (32K to 4M tokens) expose a critical weakness: while adept at static retrieval, agents struggle with the dynamic information synthesis essential for workflows. Our analysis indicates that this degradation is driven by the minimum number of tokens required to resolve a query. This factor explains why the high information density inherent in massive tool responses poses a significantly greater challenge than the memory fragmentation typical of long-turn dialogues.",
+      "authors": [
+        "Shicheng Fang",
+        "Yuxin Wang",
+        "Xiaoran Liu",
+        "Jiahao Lu",
+        "Chuanyuan Tan",
+        "Xinchi Chen",
+        "Yining Zheng",
+        "Xuanjing Huang",
+        "Xipeng Qiu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-01-28T16:05:44Z",
+      "updated": "2026-01-30T09:18:17Z",
+      "announced_date": "2026-01-28",
+      "first_seen": "2026-01-28",
+      "comment": "26 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.20730v3",
+        "pdf": "https://arxiv.org/pdf/2601.20730v3",
+        "html": "https://arxiv.org/html/2601.20730"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use",
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 7
+    },
+    {
+      "id": "2601.20650",
+      "title": "OS-Marathon: Benchmarking Computer-Use Agents on Long-Horizon Repetitive Tasks",
+      "abstract": "Long-horizon, repetitive workflows are common in professional settings, such as processing expense reports from receipts and entering student grades from exam papers. These tasks are often tedious for humans since they can extend to extreme lengths proportional to the size of the data to process. However, they are ideal for Computer-Use Agents (CUAs) due to their structured, recurring sub-workflows with logic that can be systematically learned. Identifying the absence of an evaluation benchmark as a primary bottleneck, we establish OS-Marathon, comprising 242 long-horizon, repetitive tasks across 2 domains to evaluate state-of-the-art (SOTA) agents. We then introduce a cost-effective method to construct a condensed demonstration using only few-shot examples to teach agents the underlying workflow logic, enabling them to execute similar workflows effectively on larger, unseen data collections. Extensive experiments demonstrate both the inherent challenges of these tasks and the effectiveness of our proposed method. Project website: https://os-marathon.github.io/.",
+      "authors": [
+        "Jing Wu",
+        "Daphne Barretto",
+        "Yiye Chen",
+        "Nicholas Gydé",
+        "Yanan Jian",
+        "Yuhang He",
+        "Vibhav Vineet"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-01-28T14:35:23Z",
+      "updated": "2026-02-02T12:28:52Z",
+      "announced_date": "2026-01-28",
+      "first_seen": "2026-01-28",
+      "comment": "22 Pages, Project Page: https://os-marathon.github.io/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.20650v2",
+        "pdf": "https://arxiv.org/pdf/2601.20650v2",
+        "html": "https://arxiv.org/html/2601.20650"
+      },
+      "score": 13,
+      "tags": [
+        "computer-use"
+      ],
+      "field": "computer-use",
+      "citations": 5
+    },
+    {
+      "id": "2601.20617",
+      "title": "Agent Benchmarks Fail Public Sector Requirements",
+      "abstract": "Deploying Large Language Model-based agents (LLM agents) in the public sector requires assuring that they meet the stringent legal, procedural, and structural requirements of public-sector institutions. Practitioners and researchers often turn to benchmarks for such assessments. However, it remains unclear what criteria benchmarks must meet to ensure they adequately reflect public-sector requirements, or how many existing benchmarks do so. In this paper, we first define such criteria based on a first-principles survey of public administration literature: benchmarks must be \\emph{process-based}, \\emph{realistic}, \\emph{public-sector-specific} and report \\emph{metrics} that reflect the unique requirements of the public sector. We analyse more than 1,300 benchmark papers for these criteria using an expert-validated LLM-assisted pipeline. Our results show that no single benchmark meets all of the criteria. Our findings provide a call to action for both researchers to develop public sector-relevant benchmarks and for public-sector officials to apply these criteria when evaluating their own agentic use cases.",
+      "authors": [
+        "Jonathan Rystrøm",
+        "Chris Schmitz",
+        "Karolina Korgul",
+        "Jan Batzner",
+        "Chris Russell"
+      ],
+      "categories": [
+        "cs.CY",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CY",
+      "published": "2026-01-28T13:51:30Z",
+      "updated": "2026-01-28T13:51:30Z",
+      "announced_date": "2026-01-28",
+      "first_seen": "2026-01-28",
+      "comment": "Forthcoming @ IASEAI 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.20617v1",
+        "pdf": "https://arxiv.org/pdf/2601.20617v1",
+        "html": "https://arxiv.org/html/2601.20617"
+      },
+      "score": 11,
+      "tags": [
+        "research"
+      ],
+      "field": "other",
+      "citations": 3
+    },
+    {
+      "id": "2601.20613",
+      "title": "AgentIF-OneDay: A Task-level Instruction-Following Benchmark for General AI Agents in Daily Scenarios",
+      "abstract": "The capacity of AI agents to effectively handle tasks of increasing duration and complexity continues to grow, demonstrating exceptional performance in coding, deep research, and complex problem-solving evaluations. However, in daily scenarios, the perception of these advanced AI capabilities among general users remains limited. We argue that current evaluations prioritize increasing task difficulty without sufficiently addressing the diversity of agentic tasks necessary to cover the daily work, life, and learning activities of a broad demographic. To address this, we propose AgentIF-OneDay, aimed at determining whether general users can utilize natural language instructions and AI agents to complete a diverse array of daily tasks. These tasks require not only solving problems through dialogue but also understanding various attachment types and delivering tangible file-based results. The benchmark is structured around three user-centric categories: Open Workflow Execution, which assesses adherence to explicit and complex workflows; Latent Instruction, which requires agents to infer implicit instructions from attachments; and Iterative Refinement, which involves modifying or expanding upon ongoing work. We employ instance-level rubrics and a refined evaluation pipeline that aligns LLM-based verification with human judgment, achieving an 80.1% agreement rate using Gemini-3-Pro. AgentIF-OneDay comprises 104 tasks covering 767 scoring points. We benchmarked four leading general AI agents and found that agent products built based on APIs and ChatGPT agents based on agent RL remain in the first tier simultaneously. Leading LLM APIs and open-source models have internalized agentic capabilities, enabling AI application teams to develop cutting-edge Agent products.",
+      "authors": [
+        "Kaiyuan Chen",
+        "Qimin Wu",
+        "Taiyu Hou",
+        "Tianhao Tang",
+        "Xueyu Hu",
+        "Yuchen Hou",
+        "Bikun Li",
+        "Chengming Qian",
+        "Guoyin Wang",
+        "Haolin Chen",
+        "Haotong Tian",
+        "Haoye Zhang",
+        "Haoyu Bian",
+        "Hongbing Pan",
+        "Hongkang Zhang",
+        "Hongyi Zhou",
+        "Jiaqi Cai",
+        "Jiewu Rao",
+        "Jiyuan Ren",
+        "Keduan Huang",
+        "Lucia Zhu Huang",
+        "Mingyu Yuan",
+        "Naixu Guo",
+        "Qicheng Tang",
+        "Qinyan Zhang",
+        "Shuai Chen",
+        "Siheng Chen",
+        "Ting Ting Li",
+        "Xiaoxing Guo",
+        "Yaocheng Zuo",
+        "Yaoqi Guo",
+        "Yinan Wang",
+        "Yinzhou Yu",
+        "Yize Wang",
+        "Yuan Jiang",
+        "Yuan Tian",
+        "Yuanshuo Zhang",
+        "Yuxuan Liu",
+        "Yvette Yan Zeng",
+        "Zenyu Shan",
+        "Zihan Yin",
+        "Xiaobo Hu",
+        "Yang Liu",
+        "Yixin Ren",
+        "Yuan Gong"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-01-28T13:49:18Z",
+      "updated": "2026-01-30T13:36:46Z",
+      "announced_date": "2026-01-28",
+      "first_seen": "2026-01-28",
+      "comment": "17 pages, 8 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.20613v2",
+        "pdf": "https://arxiv.org/pdf/2601.20613v2",
+        "html": "https://arxiv.org/html/2601.20613"
+      },
+      "score": 15,
+      "tags": [
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 4
+    },
+    {
+      "id": "2601.20335",
+      "title": "MobileBench-OL: A Comprehensive Chinese Benchmark for Evaluating Mobile GUI Agents in Real-World Environment",
+      "abstract": "Recent advances in mobile Graphical User Interface (GUI) agents highlight the growing need for comprehensive evaluation benchmarks. While new online benchmarks offer more realistic testing than offline ones, they tend to focus on the agents' task instruction-following ability while neglecting their reasoning and exploration ability. Moreover, these benchmarks do not consider the random noise in real-world mobile environments. This leads to a gap between benchmarks and real-world environments. To addressing these limitations, we propose MobileBench-OL, an online benchmark with 1080 tasks from 80 Chinese apps. It measures task execution, complex reasoning, and noise robustness of agents by including 5 subsets, which set multiple evaluation dimensions. We also provide an auto-eval framework with a reset mechanism, enabling stable and repeatable real-world benchmarking. Evaluating 12 leading GUI agents on MobileBench-OL shows significant room for improvement to meet real-world requirements. Human evaluation further confirms that MobileBench-OL can reliably measure the performance of leading GUI agents in real environments. Our data and code will be released upon acceptance.",
+      "authors": [
+        "Qinzhuo Wu",
+        "Zhizhuo Yang",
+        "Hanhao Li",
+        "Pengzhi Gao",
+        "Wei Liu",
+        "Jian Luan"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-01-28T07:49:48Z",
+      "updated": "2026-01-29T02:32:46Z",
+      "announced_date": "2026-01-28",
+      "first_seen": "2026-01-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.20335v2",
+        "pdf": "https://arxiv.org/pdf/2601.20335v2",
+        "html": "https://arxiv.org/html/2601.20335"
+      },
+      "score": 18,
+      "tags": [
+        "gui",
+        "safety",
+        "planning"
+      ],
+      "field": "computer-use",
+      "citations": 3
+    },
+    {
+      "id": "2601.20316",
+      "title": "Less is More: Benchmarking LLM Based Recommendation Agents",
+      "abstract": "Large Language Models (LLMs) are increasingly deployed for personalized product recommendations, with practitioners commonly assuming that longer user purchase histories lead to better predictions. We challenge this assumption through a systematic benchmark of four state of the art LLMs GPT-4o-mini, DeepSeek-V3, Qwen2.5-72B, and Gemini 2.5 Flash across context lengths ranging from 5 to 50 items using the REGEN dataset. Surprisingly, our experiments with 50 users in a within subject design reveal no significant quality improvement with increased context length. Quality scores remain flat across all conditions (0.17--0.23). Our findings have significant practical implications: practitioners can reduce inference costs by approximately 88\\% by using context (5--10 items) instead of longer histories (50 items), without sacrificing recommendation quality. We also analyze latency patterns across providers and find model specific behaviors that inform deployment decisions. This work challenges the existing ``more context is better'' paradigm and provides actionable guidelines for cost effective LLM based recommendation systems.",
+      "authors": [
+        "Kargi Chauhan",
+        "Mahalakshmi Venkateswarlu"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.LG"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-01-28T07:08:51Z",
+      "updated": "2026-01-28T07:08:51Z",
+      "announced_date": "2026-01-28",
+      "first_seen": "2026-01-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.20316v1",
+        "pdf": "https://arxiv.org/pdf/2601.20316v1",
+        "html": "https://arxiv.org/html/2601.20316"
+      },
+      "score": 8,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2602.00133",
+      "title": "PredictionMarketBench: A SWE-bench-Style Framework for Backtesting Trading Agents on Prediction Markets",
+      "abstract": "Prediction markets offer a natural testbed for trading agents: contracts have binary payoffs, prices can be interpreted as probabilities, and realized performance depends critically on market microstructure, fees, and settlement risk. We introduce PredictionMarketBench, a SWE-bench-style benchmark for evaluating algorithmic and LLM-based trading agents on prediction markets via deterministic, event-driven replay of historical limit-order-book and trade data. PredictionMarketBench standardizes (i) episode construction from raw exchange streams (orderbooks, trades, lifecycle, settlement), (ii) an execution-realistic simulator with maker/taker semantics and fee modeling, and (iii) a tool-based agent interface that supports both classical strategies and tool-calling LLM agents with reproducible trajectories. We release four Kalshi-based episodes spanning cryptocurrency, weather, and sports. Baseline results show that naive trading agents can underperform due to transaction costs and settlement losses, while fee-aware algorithmic strategies remain competitive in volatile episodes.",
+      "authors": [
+        "Avi Arora",
+        "Ritesh Malpani"
+      ],
+      "categories": [
+        "q-fin.ST",
+        "cs.AI"
+      ],
+      "primary_category": "q-fin.ST",
+      "published": "2026-01-28T06:41:12Z",
+      "updated": "2026-01-28T06:41:12Z",
+      "announced_date": "2026-01-28",
+      "first_seen": "2026-01-28",
+      "comment": "10 pages, 5 figures. Code available at https://github.com/oddpool/PredictionMarketBench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.00133v1",
+        "pdf": "https://arxiv.org/pdf/2602.00133v1",
+        "html": "https://arxiv.org/html/2602.00133"
+      },
+      "score": 21,
+      "tags": [
+        "coding",
+        "tool-use",
+        "safety"
+      ],
+      "field": "coding",
+      "citations": 2
+    },
+    {
+      "id": "2601.20886",
+      "title": "IDE-Bench: Evaluating Large Language Models as IDE Agents on Real-World Software Engineering Tasks",
+      "abstract": "IDE-Bench is a comprehensive framework for evaluating AI IDE agents on real-world software engineering tasks through an IDE-native tool interface. We present a Dockerized test harness that goes beyond raw terminal execution, granting models a structured tool ecosystem that represents AI-native IDEs like Cursor and Windsurf. By providing high-level abstractions for codebase search, structured file editing, and tools for testing full-stack applications, IDE-Bench evaluates an agent's ability to act as a true engineering collaborator. For evaluation and to prevent training data contamination, we created 80 tasks across eight never-published repositories spanning C/C++, Java, and MERN stacks, representing modern tech stack production scenarios, including feature implementation, bug fixing, refactoring, and performance optimization that mirror daily developer workflows in private codebases. Our benchmark is the first to systematically correlate agent-reported intent with successful project-level modifications in a multi-language, full-stack environment on completely uncontaminated code. We release IDE-Bench and a public leaderboard at: https://ide-bench.com.",
+      "authors": [
+        "Spencer Mateega",
+        "Jeff Yang",
+        "Tiana Costello",
+        "Shaurya Jadhav",
+        "Nicole Tian",
+        "Agustin Garcinuño"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.LG"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-01-28T02:06:37Z",
+      "updated": "2026-01-30T03:43:06Z",
+      "announced_date": "2026-01-28",
+      "first_seen": "2026-01-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.20886v2",
+        "pdf": "https://arxiv.org/pdf/2601.20886v2",
+        "html": "https://arxiv.org/html/2601.20886"
+      },
+      "score": 14,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 2
+    }
+  ]
+}

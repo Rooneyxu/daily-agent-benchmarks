@@ -1,0 +1,267 @@
+{
+  "date": "2026-07-03",
+  "count": 5,
+  "report": {
+    "date": "2026-07-03",
+    "count": 5,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      }
+    ],
+    "en": {
+      "headline": "5 new agent benchmarks",
+      "summary": "On July 3, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Tool use (2), Coding agents (2), Memory (1), and Science lab (1).",
+      "highlights": [
+        {
+          "id": "2607.03525",
+          "title": "GameEngineBench: Evaluating Coding Agents on Real C++ Runtime Environments",
+          "blurb": "Game engines provide real-time simulation, rendering, physics, interaction, networking, and asset pipelines, making them valuable not only for games but also for 3D applications in healthcare, robotics, architecture, man…"
+        },
+        {
+          "id": "2607.03105",
+          "title": "ORBIT-Q: Dual-axis benchmarking of autonomous agents in scientific quantum programming",
+          "blurb": "Autonomous coding agents perform well on many conventional programming tasks, but scientific computing demands a rigorous validation paradigm that extends beyond simple functional test completion: generated code must pre…"
+        },
+        {
+          "id": "2607.03601",
+          "title": "ArchEval: Measuring AI Agents as Computer Architects",
+          "blurb": "Computer architecture has long used benchmarks to make progress measurable."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年7月3日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在工具使用（2）、代码智能体（2）、记忆（1）、科学实验（1）。",
+      "highlights": [
+        {
+          "id": "2607.03525",
+          "title": "GameEngineBench: Evaluating Coding Agents on Real C++ Runtime Environments",
+          "blurb": "Game engines provide real-time simulation, rendering, physics, interaction, networking, and asset pipelines, making them valuable not only for games but also for 3D applications in healthcare, robotics, architecture, man…"
+        },
+        {
+          "id": "2607.03105",
+          "title": "ORBIT-Q: Dual-axis benchmarking of autonomous agents in scientific quantum programming",
+          "blurb": "Autonomous coding agents perform well on many conventional programming tasks, but scientific computing demands a rigorous validation paradigm that extends beyond simple functional test completion: generated code must pre…"
+        },
+        {
+          "id": "2607.03601",
+          "title": "ArchEval: Measuring AI Agents as Computer Architects",
+          "blurb": "Computer architecture has long used benchmarks to make progress measurable."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2607.03601",
+      "title": "ArchEval: Measuring AI Agents as Computer Architects",
+      "abstract": "Computer architecture has long used benchmarks to make progress measurable. LLM agents create a different measurement problem: success is not merely writing code or tuning parameters. The agent must interpret workloads, choose mechanisms, use simulators, predict performance, satisfy hard constraints, and decide which feasible design is worth evaluating. This paper introduces ArchEval, a benchmark and platform for evaluating LLM agents on computer architecture design and optimization. It contains 20 challenges across CPU core mechanisms, system architecture, memory systems, accelerators, and compute-in-memory, backed by eight simulators. Each challenge is posed under three settings: L1 full harness, with repeated simulator feedback; L2 simulator-code container, where simulator source is available but the agent must assemble its own workflow; and L3 agent-only, with no runnable feedback before submission. Each run reports baseline-normalized verifier performance and records the full trajectory, connecting results to workload analysis, simulator-tool use, prediction, constraint handling, and artifact integrity. Initial results show a sharp boundary in current agents. With L1 support, all four evaluated agents reach or exceed baseline and improve real designs across diverse simulators. Removing support exposes weaknesses: many agents fail to turn simulator source into useful experiments, and L3 predictions often disagree with verifier results. In L3, only GPT-5.5 + Codex remains above baseline, reaching 1.21x geomean performance and a 65% win rate; the other three fall below baseline. Even GPT-5.5 + Codex has only a 15% performance-modeling pass rate. ArchEval frames today's agents as useful optimization assistants rather than autonomous architects, and identifies capabilities needed next: simulator-tool use, calibrated prediction, pre-feedback judgment, and useful mechanism discovery.",
+      "authors": [
+        "Chenyu Wang",
+        "Zishen Wan",
+        "Jeffrey Ma",
+        "Shvetank Prakash",
+        "Zhenting Qi",
+        "Haebin Do",
+        "Andy Cheng",
+        "Arya Tschand",
+        "Jiahe Shi",
+        "Yilun Du",
+        "Vijay Janapa Reddi"
+      ],
+      "categories": [
+        "cs.AR"
+      ],
+      "primary_category": "cs.AR",
+      "published": "2026-07-03T20:58:29Z",
+      "updated": "2026-07-03T20:58:29Z",
+      "announced_date": "2026-07-03",
+      "first_seen": "2026-07-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.03601v1",
+        "pdf": "https://arxiv.org/pdf/2607.03601v1",
+        "html": "https://arxiv.org/html/2607.03601"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use",
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.03525",
+      "title": "GameEngineBench: Evaluating Coding Agents on Real C++ Runtime Environments",
+      "abstract": "Game engines provide real-time simulation, rendering, physics, interaction, networking, and asset pipelines, making them valuable not only for games but also for 3D applications in healthcare, robotics, architecture, manufacturing, and related domains. Because game development is where these systems are most mature and publicly available, it offers a practical testbed for evaluating coding agents that must modify C++ code within stateful, interactive, real-time systems. We present GameEngineBench, a benchmark for evaluating coding agents on scoped C++ implementation tasks inside Unreal Engine 5 projects, built from nine real-world game repositories. The evaluation set consists of 110 tasks spanning gameplay mechanics, multiplayer behavior, AI and world orchestration, animation and movement, UI and session code, loading behavior, online-service integration, persistence, data serialization, XR behavior, and rendering-oriented plugins. These tasks require models to make native C++ changes that compile and satisfy behavioral tests within executable Unreal Engine projects. Across twelve evaluated configurations, the strongest model reaches 55.5\\% pass@1, while 31 tasks remain unsolved by every configuration. Our results demonstrate that frontier coding agents continue to struggle with deeply integrated C++ development for real-time interactive software, highlighting game-engine benchmarks as a valuable complement to existing software engineering evaluations.",
+      "authors": [
+        "Brian La",
+        "Sejoon Chang",
+        "Ben Kim",
+        "Junyoung Bae",
+        "Aamish Ahmad Beg",
+        "Sei Chang",
+        "Gonzalo Gonzalez-Pumariega",
+        "Kanav Goyal"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-07-03T17:56:26Z",
+      "updated": "2026-07-15T03:41:26Z",
+      "announced_date": "2026-07-03",
+      "first_seen": "2026-07-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.03525v2",
+        "pdf": "https://arxiv.org/pdf/2607.03525v2",
+        "html": "https://arxiv.org/html/2607.03525"
+      },
+      "score": 21,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 1
+    },
+    {
+      "id": "2607.03162",
+      "title": "APeB: Benchmarking Personalization Ability of Large Language Model Agents",
+      "abstract": "LLM-powered agents struggle with personalization when users issue raw, underspecified queries. In this setting, agents must infer latent intent, extract preferences from noisy interaction histories, and select among competing alternatives. Existing benchmarks rarely test this capability, as they often rely on user-refined queries or simplified histories. We introduce personalized product search (PPS), a testbed for agentic personalization under raw queries and diverse histories. We construct Agent Personalized Benchmark (APeB) from action logs, pairing underspecified intents with rich histories and user-viewed candidate items. Evaluating state-of-the-art LLMs with multi-step agent workflows, we find that models handle explicit queries well but struggle with early-stage queries requiring intent and preference discovery. Rubric analysis attributes this gap mainly to ineffective history use. A simple history-aware query-refinement pipeline, VQRA, yields consistent gains, highlighting the need for dedicated history-utilization modules in personalized agents.",
+      "authors": [
+        "Garry Yang",
+        "Zizhe Chen",
+        "Xinru Chen",
+        "Yongqiang Chen",
+        "Jianxiang Wang",
+        "Deyu Zou",
+        "Linyi Ding",
+        "Jialiang Wu",
+        "Yunzhong He",
+        "Yu Gong",
+        "James Cheng",
+        "Huaixiao Tou"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.HC"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-03T10:03:35Z",
+      "updated": "2026-07-03T10:03:35Z",
+      "announced_date": "2026-07-03",
+      "first_seen": "2026-07-03",
+      "comment": "NA",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.03162v1",
+        "pdf": "https://arxiv.org/pdf/2607.03162v1",
+        "html": "https://arxiv.org/html/2607.03162"
+      },
+      "score": 11,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.03105",
+      "title": "ORBIT-Q: Dual-axis benchmarking of autonomous agents in scientific quantum programming",
+      "abstract": "Autonomous coding agents perform well on many conventional programming tasks, but scientific computing demands a rigorous validation paradigm that extends beyond simple functional test completion: generated code must preserve physical fidelity, differentiable workflows, framework-native semantics, and scalable representations. We introduce Open Research Benchmark for Integrated Tasks in Quantum Computing (ORBIT-Q) to address this gap. At its core, ORBIT-Q contributes a carefully curated suite of complex, research-level quantum workflows that serves as a challenging testbed for modern scientific programming. ORBIT-Q combines a rigorous multi-tier verification pipeline to support two orthogonal comparisons: different agent harness and model configurations at a fixed quantum software framework, and different quantum software frameworks at a fixed agent. In our systematic evaluations, TensorCircuit-NG (TC) exhibits the highest capability and performance efficiency among the evaluated quantum software frameworks under agent-driven programming, and Codex with GPT-5.5 is the strongest tested agent configuration on TC. However, a significant performance and design gap remains between frontier autonomous agents and human expert reference implementations. We further evaluate two efficiency dimensions: agent-side resource use and artifact-side runtime. Together, these results establish ORBIT-Q as a rigorous benchmark for autonomous scientific programming, framework-agent synergy, and quantum software performance.",
+      "authors": [
+        "Shi-Xin Zhang",
+        "Yu-Qin Chen"
+      ],
+      "categories": [
+        "quant-ph"
+      ],
+      "primary_category": "quant-ph",
+      "published": "2026-07-03T08:39:46Z",
+      "updated": "2026-07-03T08:39:46Z",
+      "announced_date": "2026-07-03",
+      "first_seen": "2026-07-03",
+      "comment": "7.5 pages, 4 figures with references and supplementary information",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.03105v1",
+        "pdf": "https://arxiv.org/pdf/2607.03105v1",
+        "html": "https://arxiv.org/html/2607.03105"
+      },
+      "score": 19,
+      "tags": [
+        "coding",
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2608.09946",
+      "title": "HoosierHelp: Benchmarking LLM Agents for Social Service Navigation",
+      "abstract": "Social service navigation requires connecting help-seeking individuals to resources that satisfy their needs and specific constraints. Although LLM agents offer a promising interface for conversational resource navigation, existing benchmarks do not capture the interaction complexity and constraint-grounding demands of this setting. We introduce HoosierHelp, an interactive benchmark grounded in 3,971 Indiana public social service resources. Agents interact with simulated users, issue structured resource-search calls, handle non-ideal interactions, and select the final resources returned by the tool. HoosierHelp enhances the realism of simulated users by varying their need structure, constraint satisfiability, and behavior patterns, including impatience, rambling, unsupported requests, and self-contradiction. Experiments on 240 samples across seven LLMs show that current LLM agents remain substantially unreliable for social service navigation. Performance drops sharply on fallback-required and self-contradictory conversations, highlighting the need for agents that are more robust to complex and non-ideal user interactions.",
+      "authors": [
+        "Yiyang Li",
+        "Weixiang Sun",
+        "Tianyi Ma",
+        "Kaiwen Shi",
+        "Zheyuan Zhang",
+        "Yanfang Ye"
+      ],
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-07-03T00:39:26Z",
+      "updated": "2026-07-03T00:39:26Z",
+      "announced_date": "2026-07-03",
+      "first_seen": "2026-07-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.09946v1",
+        "pdf": "https://arxiv.org/pdf/2608.09946v1",
+        "html": "https://arxiv.org/html/2608.09946"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

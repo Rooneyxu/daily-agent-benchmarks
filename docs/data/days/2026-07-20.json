@@ -1,0 +1,294 @@
+{
+  "date": "2026-07-20",
+  "count": 6,
+  "report": {
+    "date": "2026-07-20",
+    "count": 6,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      }
+    ],
+    "en": {
+      "headline": "6 new agent benchmarks",
+      "summary": "On July 20, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Tool use (3), Safety (2), Planning / reasoning (2), and Science lab (1).",
+      "highlights": [
+        {
+          "id": "2607.17528",
+          "title": "Can AI Agents Really Complete RTL-to-GDS? Lessons from Benchmarking Tool-Interactive EDA Workflows",
+          "blurb": "Large language model (LLM) agents are extending electronic design automation (EDA) beyond static RTL generation toward long-horizon, tool-interactive workflows."
+        },
+        {
+          "id": "2607.18084",
+          "title": "WorldCupArena: Fine-Grained Evaluation of Language Models and Deep-Research Agents on Football Forecasting",
+          "blurb": "Predicting a football match before kickoff requires more than knowing past results: a model must use changing information and make a clear prediction before the answer is available."
+        },
+        {
+          "id": "2607.18063",
+          "title": "Adaptive Adversaries: A Multi-Turn, Multi-LLM Benchmark for LLM Agent Security",
+          "blurb": "LLM-based agents process external content, exposing them to prompt injection and multi-turn manipulation."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 6 篇 Agent Benchmark",
+      "summary": "2026年7月20日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在工具使用（3）、安全（2）、规划 / 推理（2）、科学实验（1）。",
+      "highlights": [
+        {
+          "id": "2607.17528",
+          "title": "Can AI Agents Really Complete RTL-to-GDS? Lessons from Benchmarking Tool-Interactive EDA Workflows",
+          "blurb": "Large language model (LLM) agents are extending electronic design automation (EDA) beyond static RTL generation toward long-horizon, tool-interactive workflows."
+        },
+        {
+          "id": "2607.18084",
+          "title": "WorldCupArena: Fine-Grained Evaluation of Language Models and Deep-Research Agents on Football Forecasting",
+          "blurb": "Predicting a football match before kickoff requires more than knowing past results: a model must use changing information and make a clear prediction before the answer is available."
+        },
+        {
+          "id": "2607.18063",
+          "title": "Adaptive Adversaries: A Multi-Turn, Multi-LLM Benchmark for LLM Agent Security",
+          "blurb": "LLM-based agents process external content, exposing them to prompt injection and multi-turn manipulation."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2607.18485",
+      "title": "Trusted Credentials, Untrusted Behavior: Benchmarking LLM-Agent Security in High-Performance Computing",
+      "abstract": "Large language model (LLM) agents are starting to take on routine work in high-performance computing (HPC), including monitoring Slurm jobs, diagnosing failed builds, inspecting simulation output, and coordinating scientific workflows. To do this work, an agent commonly acts under its user's credentials and inherits the user's access to files and the scheduler. This arrangement creates a failure mode that ordinary account-level controls do not capture. Adversarial instructions in a log, tool description, shared file, or peer-agent message may redirect the agent beyond the task the user assigned, even though every resulting command is authenticated and permitted for that account. We refer to this as the hijacked authorized agent problem. Existing agent-security studies explain relevant mechanisms, such as indirect prompt injection and tool misuse, but generally evaluate them in web, enterprise, or personal-assistant settings. HPC security, by contrast, has mature controls for identity and isolation but does not ordinarily represent the intent of a particular task. This paper defines the threat model in the HPC setting, identifies attack surfaces created by schedulers, shared storage, multi-project accounts, and scientific workflows, and examines where current controls fall short. It concludes with a research agenda and a plan for an empirical benchmark, TaskBound.",
+      "authors": [
+        "Jie Li"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-07-20T20:16:02Z",
+      "updated": "2026-07-20T20:16:02Z",
+      "announced_date": "2026-07-20",
+      "first_seen": "2026-07-20",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.18485v1",
+        "pdf": "https://arxiv.org/pdf/2607.18485v1",
+        "html": "https://arxiv.org/html/2607.18485"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "science"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2607.18084",
+      "title": "WorldCupArena: Fine-Grained Evaluation of Language Models and Deep-Research Agents on Football Forecasting",
+      "abstract": "Predicting a football match before kickoff requires more than knowing past results: a model must use changing information and make a clear prediction before the answer is available. We present WorldCupArena, a dynamic benchmark for language models and deep-research agents. The 2026 FIFA World Cup is its first evaluation, and the same process can be reused for future leagues and cups. Before each match, a model either receives a common evidence package or searches for information itself. It predicts the result and score, likely players and events, match statistics, and the outcome of the competition. After the match, these predictions are compared with the recorded result. We report result accuracy, exact-score accuracy, and a scoreline score that gives some credit when a predicted score is close but not exact, together with scores for the other prediction tasks. Across 104 matches and 13 systems, models with similar result accuracy differ more clearly on detailed predictions. Compared with betting-market and human-fan baselines, the best system shows only small gains in result and exact-score accuracy, but a clearer gain in Scoreline. New schedules can be added as they begin, allowing the benchmark to evaluate future models without using outcomes that are already known. Code, prompts, predictions, and evaluation scripts are open sourced at https://github.com/wzk1015/WorldCupArena.",
+      "authors": [
+        "Zhaokai Wang",
+        "Tianlin Gui",
+        "Jiayuan Rao",
+        "Shangzhe Di",
+        "Yihong Tang",
+        "Dingli Liang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-20T15:52:48Z",
+      "updated": "2026-07-20T15:52:48Z",
+      "announced_date": "2026-07-20",
+      "first_seen": "2026-07-20",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.18084v1",
+        "pdf": "https://arxiv.org/pdf/2607.18084v1",
+        "html": "https://arxiv.org/html/2607.18084"
+      },
+      "score": 15,
+      "tags": [
+        "research"
+      ],
+      "field": "science",
+      "citations": 1
+    },
+    {
+      "id": "2607.18063",
+      "title": "Adaptive Adversaries: A Multi-Turn, Multi-LLM Benchmark for LLM Agent Security",
+      "abstract": "LLM-based agents process external content, exposing them to prompt injection and multi-turn manipulation. Most safety benchmarks evaluate defenders against fixed attack pools collected before evaluation, single-turn or multi-turn. We present a 21-scenario benchmark for \\emph{adaptive multi-round attacks against memoryless LLM defenders}: an autonomous LLM attacker observes prior defender responses and pivots across rounds, while each defender response is evaluated as a fresh interaction. Holding the 21 scenarios, attackers, defenders, and structured-output scoring fixed, restricting scoring to the first attacker turn yields $0$-$1\\%$ attack success rate (ASR); allowing 15 rounds of adaptive attack yields $5.4$-$14.0\\%$. Pooling three frontier attacker LLMs uncovers $1.4$-$2.2\\times$ as many unique successful attacks as the best single attacker, and the generated attacks have low cosine similarity ($0.02$-$0.14$) to attacks in existing benchmarks. Claude Opus 4.6 and GPT-5.4 are tied in aggregate ($5.4\\%$ each; overlapping $95\\%$ CIs), but their weaknesses differ sharply: on one scenario Opus reaches $60\\%$ ASR ($95\\%$ CI $36$--$80\\%$) while GPT-5.4 and Gemini each stay at $7\\%$ (CI $1$-$30\\%$; the gap is preserved in a higher-$N$ replication). $13$ of $21$ scenarios distinguish at least one defender pair, yet rankings disagree across scenarios (Kendall's $W = 0.19$). We release the benchmark -- 21 evaluation scenarios, 10 public development scenarios, the orchestrator, baseline harnesses, and a multi-attacker CLI -- plus 945 transcripts from the 3$\\times$3 frontier matrix, an attack-replay dataset, and 18{,}422 gpt-oss-20b battles from an open competition's final scoring rounds.",
+      "authors": [
+        "Devina Jain",
+        "David Hartmann",
+        "Chuan Li"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-07-20T15:30:38Z",
+      "updated": "2026-07-20T15:30:38Z",
+      "announced_date": "2026-07-20",
+      "first_seen": "2026-07-20",
+      "comment": "Second Workshop on Agents in the Wild: Safety, Security, and Beyond",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.18063v1",
+        "pdf": "https://arxiv.org/pdf/2607.18063v1",
+        "html": "https://arxiv.org/html/2607.18063"
+      },
+      "score": 14,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.17765",
+      "title": "FIFA World Cup 2026 as a Contamination-Free Benchmark for LLM Forecasting Agents: Four Models, a Bookmaker, and 104 Matches",
+      "abstract": "We introduce WC2026-Agents, a benchmark and dataset for evaluating large language models (LLMs) as autonomous forecasting agents on real, future events. For every one of the 104 matches of the 2026 FIFA World Cup, four frontier models -- Claude Opus 4.8, ChatGPT (GPT-5.5, high reasoning), Gemini 3.1 Pro, and Grok (Expert Mode) -- ran an identical search-act-reflect loop: gather evidence with a web tool, commit to a 1X2 (team-A win / draw / team-B win) distribution and a virtual 100-USD bet, and, after the match, reflect given only the final score. Because every match kicked off after the models' training cutoffs, the benchmark is contamination-free by construction. Crucially, we pair the four agents with a fifth competitor drawn from the same information environment -- the pre-match betting market -- collected as per-match 1X2 odds, giving an economically grounded baseline and letting us score not just what an agent predicts but what it does with money. The release contains 416 forecasts and 414 reflections with verbatim reasoning, ground truth (including penalty shootouts), odds, and a reproducible evaluation suite. A reference evaluation surfaces findings that raw accuracy hides: the four agents issue an identical top pick in 92% of matches and none beats the market's Brier score; indeed, a naive flat stake on the market favorite out-earns all four agents. Yet the agents diverge sharply as decision-makers: betting return-on-investment ranges from -18% to +10%, fading the market is unprofitable for all four, the share of forecasts that cite the market ranges from 12% to 100%, and self-reported error rates on wrong picks range from 36% to 86%. The benchmark thus measures calibration, decision quality, and self-knowledge -- axes on which frontier models differ even when their predictions do not. Data and code: https://github.com/graphuofm/FIFA2026LLM",
+      "authors": [
+        "Jiacheng Ding",
+        "Cong Guo",
+        "Jason Xu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.DB"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-07-20T10:00:11Z",
+      "updated": "2026-07-20T10:00:11Z",
+      "announced_date": "2026-07-20",
+      "first_seen": "2026-07-20",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.17765v1",
+        "pdf": "https://arxiv.org/pdf/2607.17765v1",
+        "html": "https://arxiv.org/html/2607.17765"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2607.17701",
+      "title": "ProEvent: An Event-centric Benchmark for Proactive Agents",
+      "abstract": "Proactive agents are expected to anticipate user needs and provide autonomous assistance by perceiving environmental context without explicit instructions. A fundamental capability of such agents is to identify and track users' upcoming events, enabling continuous and event-specific assistance. For example, by recording the time and location of a planned hike, an agent can deliver weather reminders in advance or provide navigation support before departure. However, existing works on proactive agents largely overlook event-centric assistance, and the open-ended nature of proactive assistance poses challenges for reliable evaluation. To bridge these gaps, we introduce ProEvent, the first event-centric benchmark designed to assess an agent's ability to proactively maintain a user's timetable based on ongoing instant messaging chats. ProEvent provides synthesized yet realistic chats that consider the dynamic interaction among users, concurrent chat threads, and noise in the real world, and evaluates proactive agents on response timing, single-step response correctness, and multi-step response correctness. Experiments on eight LLMs and pipelines reveal that current agents frequently overact and struggle with event cancellation. Notably, even GPT-5.1 only reacts correctly in 26.7% of scenarios. Further qualitative analysis reveals fundamental limitations of current LLMs as proactive agents, particularly in detecting implicit events and reasoning from the user's first-person perspective.",
+      "authors": [
+        "Guanzhen Li",
+        "Liangming Pan",
+        "Leye Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-20T08:48:36Z",
+      "updated": "2026-07-20T08:48:36Z",
+      "announced_date": "2026-07-20",
+      "first_seen": "2026-07-20",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.17701v1",
+        "pdf": "https://arxiv.org/pdf/2607.17701v1",
+        "html": "https://arxiv.org/html/2607.17701"
+      },
+      "score": 10,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2607.17528",
+      "title": "Can AI Agents Really Complete RTL-to-GDS? Lessons from Benchmarking Tool-Interactive EDA Workflows",
+      "abstract": "Large language model (LLM) agents are extending electronic design automation (EDA) beyond static RTL generation toward long-horizon, tool-interactive workflows. Yet it remains unclear whether general-purpose coding agents, even with domain-specific EDA skills, can reliably execute an end-to-end RTL-to-GDS flow encompassing synthesis, physical implementation, and engineering change order (ECO) optimization. We evaluate AI agents on a PicoRV32 RTL-to-GDS flow using commercial EDA tools under two timing targets. Their performance is assessed using end-to-end design score, stage completion, and Token ROI, a cost-efficiency metric relating design quality to runtime and cost. Comparing three agent architectures and four foundation models, we derive three practical lessons. First, domain-specific skills improve agents' understanding of individual subtasks but do not ensure reliable completion of a long-horizon EDA flow. Second, agents that achieve similar design progress can still differ by up to 141 times in Token ROI, revealing substantial differences in runtime and cost efficiency. Third, low-level tool-interface mismatches are a major source of physical design failures, particularly when Tcl commands depend on the tool version or execution mode. These results suggest that robust Agentic EDA requires not only stronger models but also structured tool interfaces, persistent design context, controlled execution, and process-level evaluation.",
+      "authors": [
+        "Jinyuan Deng",
+        "Zhengrui Chen",
+        "Xufeng Wei",
+        "Tianyu Xing",
+        "Chenyi Wen",
+        "Qi Sun",
+        "Cheng Zhuo"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.AR",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-20T04:08:06Z",
+      "updated": "2026-07-23T03:04:35Z",
+      "announced_date": "2026-07-20",
+      "first_seen": "2026-07-20",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.17528v3",
+        "pdf": "https://arxiv.org/pdf/2607.17528v3",
+        "html": "https://arxiv.org/html/2607.17528"
+      },
+      "score": 15,
+      "tags": [
+        "coding",
+        "tool-use",
+        "safety"
+      ],
+      "field": "coding",
+      "citations": 0
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "date": "2026-04-17",
+  "count": 4,
+  "report": {
+    "date": "2026-04-17",
+    "count": 4,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On April 17, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Tool use (3), Multi-agent (2), Planning / reasoning (2), and Embodied / robotics (1).",
+      "highlights": [
+        {
+          "id": "2604.16022",
+          "title": "SocialGrid: A Benchmark for Planning and Social Reasoning in Embodied Multi-Agent Systems",
+          "blurb": "As Large Language Models (LLMs) transition from text processors to autonomous agents, evaluating their social reasoning in embodied multi-agent settings becomes critical."
+        },
+        {
+          "id": "2604.15774",
+          "title": "MemEvoBench: Benchmarking Safety Risks from Memory Misevolution in LLM Agents",
+          "blurb": "Equipping Large Language Models (LLMs) with persistent memory enhances interaction continuity and personalization but introduces new safety risks."
+        },
+        {
+          "id": "2604.16729",
+          "title": "Agentic Large Language Models for Training-Free Neuro-Radiological Image Analysis",
+          "blurb": "State-of-the-art large language models (LLMs) show high performance in general visual question answering."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年4月17日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在工具使用（3）、多智能体（2）、规划 / 推理（2）、具身 / 机器人（1）。",
+      "highlights": [
+        {
+          "id": "2604.16022",
+          "title": "SocialGrid: A Benchmark for Planning and Social Reasoning in Embodied Multi-Agent Systems",
+          "blurb": "As Large Language Models (LLMs) transition from text processors to autonomous agents, evaluating their social reasoning in embodied multi-agent settings becomes critical."
+        },
+        {
+          "id": "2604.15774",
+          "title": "MemEvoBench: Benchmarking Safety Risks from Memory Misevolution in LLM Agents",
+          "blurb": "Equipping Large Language Models (LLMs) with persistent memory enhances interaction continuity and personalization but introduces new safety risks."
+        },
+        {
+          "id": "2604.16729",
+          "title": "Agentic Large Language Models for Training-Free Neuro-Radiological Image Analysis",
+          "blurb": "State-of-the-art large language models (LLMs) show high performance in general visual question answering."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.16729",
+      "title": "Agentic Large Language Models for Training-Free Neuro-Radiological Image Analysis",
+      "abstract": "State-of-the-art large language models (LLMs) show high performance in general visual question answering. However, a fundamental limitation remains: current architectures lack the native 3D spatial reasoning required for direct analysis of volumetric medical imaging, such as CT or MRI. Emerging agentic AI offers a new solution, eliminating the need for intrinsic 3D processing by enabling LLMs to orchestrate and leverage specialized external tools. Yet, the feasibility of such agentic frameworks in complex, multi-step radiological workflows remains underexplored. In this work, we present a training-free agentic pipeline for automated brain MRI analysis. Validating our methodology on several LLMs (GPT-5.1, Gemini 3 Pro, Claude Sonnet 4.5) with off-the-shelf domain-specific tools, our system autonomously executes complex end-to-end workflows, including preprocessing (skull stripping, registration), pathology segmentation (glioma, meningioma, metastases), and volumetric analysis. We evaluate our framework across increasingly complex radiological tasks, from single-scan segmentation and volumetric reporting to longitudinal response assessment requiring multi-timepoint comparisons. We analyze the impact of architectural design by comparing single-agent models against multi-agent \"domain-expert\" collaborations. Finally, to support rigorous evaluation of future agentic systems, we introduce and release a benchmark dataset of image-prompt-answer tuples derived from public BraTS data. Our results demonstrate that agentic AI can solve highly neuro-radiological image analysis tasks through tool use without the need for training or fine-tuning.",
+      "authors": [
+        "Ayhan Can Erdur",
+        "Daniel Scholz",
+        "Jiazhen Pan",
+        "Benedikt Wiestler",
+        "Daniel Rueckert",
+        "Jan C. Peeken"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-04-17T22:04:16Z",
+      "updated": "2026-04-17T22:04:16Z",
+      "announced_date": "2026-04-17",
+      "first_seen": "2026-04-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.16729v1",
+        "pdf": "https://arxiv.org/pdf/2604.16729v1",
+        "html": "https://arxiv.org/html/2604.16729"
+      },
+      "score": 16,
+      "tags": [
+        "tool-use",
+        "multi-agent",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 3
+    },
+    {
+      "id": "2604.16022",
+      "title": "SocialGrid: A Benchmark for Planning and Social Reasoning in Embodied Multi-Agent Systems",
+      "abstract": "As Large Language Models (LLMs) transition from text processors to autonomous agents, evaluating their social reasoning in embodied multi-agent settings becomes critical. We introduce SocialGrid, an embodied multi-agent environment inspired by Among Us that evaluates LLM agents on planning, task execution, and social reasoning. Our evaluations reveal that even the strongest open model (GPT-OSS-120B) achieves below 60% accuracy in task completion and planning, with agents getting stuck in repetitive behaviors or failing to navigate basic obstacles. Since poor navigation confounds evaluation of social intelligence, SocialGrid offers an optional Planning Oracle to isolate social reasoning from planning deficits. While planning assistance improves task completion, social reasoning remains a bottleneck: agents fail to detect deception at near-random chance regardless of scale, relying on shallow heuristics rather than accumulating behavioral evidence. SocialGrid provides automatic failure analysis and fine-grained metrics, enabling developers to diagnose and improve their agents. We also establish a competitive leaderboard using Elo ratings from adversarial league play.",
+      "authors": [
+        "Hikaru Shindo",
+        "Hanzhao Lin",
+        "Lukas Helff",
+        "Patrick Schramowski",
+        "Kristian Kersting"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-17T12:51:46Z",
+      "updated": "2026-04-17T12:51:46Z",
+      "announced_date": "2026-04-17",
+      "first_seen": "2026-04-17",
+      "comment": "Preprint",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.16022v1",
+        "pdf": "https://arxiv.org/pdf/2604.16022v1",
+        "html": "https://arxiv.org/html/2604.16022"
+      },
+      "score": 23,
+      "tags": [
+        "multi-agent",
+        "embodied",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2604.15774",
+      "title": "MemEvoBench: Benchmarking Safety Risks from Memory Misevolution in LLM Agents",
+      "abstract": "Equipping Large Language Models (LLMs) with persistent memory enhances interaction continuity and personalization but introduces new safety risks. Specifically, contaminated or biased memory accumulation can trigger abnormal agent behaviors. Existing evaluation methods have not yet established a standardized framework for measuring memory misevolution. This phenomenon refers to the gradual behavioral drift resulting from repeated exposure to misleading information. To address this gap, we introduce MemEvoBench, the first benchmark evaluating long-horizon memory safety in LLM agents against adversarial memory injection, noisy tool outputs, and biased feedback. The framework consists of QA-style tasks across 7 domains and 36 risk types, complemented by workflow-style tasks adapted from 20 Agent-SafetyBench environments with noisy tool returns. Both settings employ mixed benign and misleading memory pools within multi-round interactions to simulate memory evolution. Experiments on representative models reveal substantial safety degradation under biased memory updates. Our analysis suggests that memory evolution is a significant contributor to these failures. Furthermore, static prompt-based defenses prove insufficient, underscoring the urgency of securing memory evolution in LLM agents.",
+      "authors": [
+        "Weiwei Xie",
+        "Shaoxiong Guo",
+        "Fan Zhang",
+        "Tian Xia",
+        "Xue Yang",
+        "Lizhuang Ma",
+        "Junchi Yan",
+        "Qibing Ren"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-04-17T07:29:52Z",
+      "updated": "2026-05-21T09:29:59Z",
+      "announced_date": "2026-04-17",
+      "first_seen": "2026-04-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.15774v2",
+        "pdf": "https://arxiv.org/pdf/2604.15774v2",
+        "html": "https://arxiv.org/html/2604.15774"
+      },
+      "score": 17,
+      "tags": [
+        "tool-use",
+        "safety",
+        "memory"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2604.15715",
+      "title": "GTA-2: Benchmarking General Tool Agents from Atomic Tool-Use to Open-Ended Workflows",
+      "abstract": "The development of general-purpose agents requires a shift from executing simple instructions to completing complex, real-world productivity workflows. However, current tool-use benchmarks remain misaligned with real-world requirements, relying on AI-generated queries, dummy tools, and limited system-level coordination. To address this, we propose GTA-2, a hierarchical benchmark for General Tool Agents (GTA) spanning atomic tool use and open-ended workflows. Built on real-world authenticity, it leverages real user queries, deployed tools, and multimodal contexts. (i) GTA-Atomic, inherited from our prior GTA benchmark, evaluates short-horizon, closed-ended tool-use precision. (ii) GTA-Workflow introduces long-horizon, open-ended tasks for realistic end-to-end completion. To evaluate open-ended deliverables, we propose a recursive checkpoint-based evaluation mechanism that decomposes objectives into verifiable sub-goals, enabling unified evaluation of both model capabilities and agent execution frameworks (i.e., execution harnesses). Experiments reveal a pronounced capability cliff: while frontier models already struggle on atomic tasks (below 50%), they largely fail on workflows, with top models achieving only 14.39% success. Further analysis shows that checkpoint-guided feedback improves performance, while advanced frameworks such as Manus and OpenClaw substantially enhance workflow completion, highlighting the importance of execution harness design beyond the underlying model capacity. These findings provide guidance for developing reliable personal and professional assistants. Dataset and code will be available at https://github.com/open-compass/GTA.",
+      "authors": [
+        "Jize Wang",
+        "Xuanxuan Liu",
+        "Yining Li",
+        "Songyang Zhang",
+        "Yijun Wang",
+        "Zifei Shan",
+        "Xinyi Le",
+        "Cailian Chen",
+        "Xinping Guan",
+        "Dacheng Tao"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-04-17T05:36:00Z",
+      "updated": "2026-04-17T05:36:00Z",
+      "announced_date": "2026-04-17",
+      "first_seen": "2026-04-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.15715v1",
+        "pdf": "https://arxiv.org/pdf/2604.15715v1",
+        "html": "https://arxiv.org/html/2604.15715"
+      },
+      "score": 16,
+      "tags": [
+        "tool-use",
+        "multimodal"
+      ],
+      "field": "tool-use",
+      "citations": 1
+    }
+  ]
+}

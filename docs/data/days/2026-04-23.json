@@ -1,0 +1,245 @@
+{
+  "date": "2026-04-23",
+  "count": 4,
+  "report": {
+    "date": "2026-04-23",
+    "count": 4,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 4,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "science",
+        "count": 2,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "workplace",
+        "count": 1,
+        "en": "Work / office",
+        "zh": "职场 / 办公"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On April 23, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Planning / reasoning (4), Multimodal (2), Science lab (2), and Safety (1).",
+      "highlights": [
+        {
+          "id": "2604.21304",
+          "title": "PaperMind: Benchmarking Agentic Reasoning and Critique over Scientific Papers in Multimodal LLMs",
+          "blurb": "Understanding scientific papers requires more than answering isolated questions or summarizing content."
+        },
+        {
+          "id": "2604.21308",
+          "title": "CI-Work: Benchmarking Contextual Integrity in Enterprise LLM Agents",
+          "blurb": "Enterprise LLM agents can dramatically improve workplace productivity, but their core capability, retrieving and using internal context to act on a user's behalf, also creates new risks for sensitive information leakage."
+        },
+        {
+          "id": "2604.21461",
+          "title": "Do MLLMs Understand Pointing? Benchmarking and Enhancing Referential Reasoning in Egocentric Vision",
+          "blurb": "Egocentric AI agents, such as smart glasses, rely on pointing gestures to resolve referential ambiguities in natural language commands."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年4月23日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在规划 / 推理（4）、多模态（2）、科学实验（2）、安全（1）。",
+      "highlights": [
+        {
+          "id": "2604.21304",
+          "title": "PaperMind: Benchmarking Agentic Reasoning and Critique over Scientific Papers in Multimodal LLMs",
+          "blurb": "Understanding scientific papers requires more than answering isolated questions or summarizing content."
+        },
+        {
+          "id": "2604.21308",
+          "title": "CI-Work: Benchmarking Contextual Integrity in Enterprise LLM Agents",
+          "blurb": "Enterprise LLM agents can dramatically improve workplace productivity, but their core capability, retrieving and using internal context to act on a user's behalf, also creates new risks for sensitive information leakage."
+        },
+        {
+          "id": "2604.21461",
+          "title": "Do MLLMs Understand Pointing? Benchmarking and Enhancing Referential Reasoning in Egocentric Vision",
+          "blurb": "Egocentric AI agents, such as smart glasses, rely on pointing gestures to resolve referential ambiguities in natural language commands."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.21461",
+      "title": "Do MLLMs Understand Pointing? Benchmarking and Enhancing Referential Reasoning in Egocentric Vision",
+      "abstract": "Egocentric AI agents, such as smart glasses, rely on pointing gestures to resolve referential ambiguities in natural language commands. However, despite advancements in Multimodal Large Language Models (MLLMs), current systems often fail to precisely ground the spatial semantics of pointing. Instead, they rely on spurious correlations with visual proximity or object saliency, a phenomenon we term \"Referential Hallucination.\" To address this gap, we introduce EgoPoint-Bench, a comprehensive question-answering benchmark designed to evaluate and enhance multimodal pointing reasoning in egocentric views. Comprising over 11k high-fidelity simulated and real-world samples, the benchmark spans five evaluation dimensions and three levels of referential complexity. Extensive experiments demonstrate that while state-of-the-art proprietary and open-source models struggle with egocentric pointing, models fine-tuned on our synthetic data achieve significant performance gains and robust sim-to-real generalization. This work highlights the importance of spatially aware supervision and offers a scalable path toward precise egocentric AI assistants. Project page: https://guyyyug.github.io/EgoPoint-Bench/",
+      "authors": [
+        "Chentao Li",
+        "Zirui Gao",
+        "Mingze Gao",
+        "Yinglian Ren",
+        "Jianjiang Feng",
+        "Jie Zhou"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.HC"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-04-23T09:15:42Z",
+      "updated": "2026-04-23T09:15:42Z",
+      "announced_date": "2026-04-23",
+      "first_seen": "2026-04-23",
+      "comment": "20 pages, 14 figures. Committed to ACL 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.21461v1",
+        "pdf": "https://arxiv.org/pdf/2604.21461v1",
+        "html": "https://arxiv.org/html/2604.21461"
+      },
+      "score": 12,
+      "tags": [
+        "safety",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 1
+    },
+    {
+      "id": "2604.21308",
+      "title": "CI-Work: Benchmarking Contextual Integrity in Enterprise LLM Agents",
+      "abstract": "Enterprise LLM agents can dramatically improve workplace productivity, but their core capability, retrieving and using internal context to act on a user's behalf, also creates new risks for sensitive information leakage. We introduce CI-Work, a Contextual Integrity (CI)-grounded benchmark that simulates enterprise workflows across five information-flow directions and evaluates whether agents can convey essential content while withholding sensitive context in dense retrieval settings. Our evaluation of frontier models reveals that privacy failures are prevalent (violation rates range from 15.8%-50.9%, with leakage reaching up to 26.7%) and uncovers a counterintuitive trade-off critical for industrial deployment: higher task utility often correlates with increased privacy violations. Moreover, the massive scale of enterprise data and potential user behavior further amplify this vulnerability. Simply increasing model size or reasoning depth fails to address the problem. We conclude that safeguarding enterprise workflows requires a paradigm shift, moving beyond model-centric scaling toward context-centric architectures.",
+      "authors": [
+        "Wenjie Fu",
+        "Xiaoting Qin",
+        "Jue Zhang",
+        "Qingwei Lin",
+        "Lukas Wutschitz",
+        "Robert Sim",
+        "Saravan Rajmohan",
+        "Dongmei Zhang"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-04-23T06:00:22Z",
+      "updated": "2026-04-23T06:00:22Z",
+      "announced_date": "2026-04-23",
+      "first_seen": "2026-04-23",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.21308v1",
+        "pdf": "https://arxiv.org/pdf/2604.21308v1",
+        "html": "https://arxiv.org/html/2604.21308"
+      },
+      "score": 13,
+      "tags": [
+        "planning",
+        "workplace"
+      ],
+      "field": "workplace",
+      "citations": 7
+    },
+    {
+      "id": "2604.21304",
+      "title": "PaperMind: Benchmarking Agentic Reasoning and Critique over Scientific Papers in Multimodal LLMs",
+      "abstract": "Understanding scientific papers requires more than answering isolated questions or summarizing content. It involves an integrated reasoning process that grounds textual and visual information, interprets experimental evidence, synthesizes information across sources, and critically evaluates scientific claims. However, existing benchmarks typically assess these abilities in isolation, making it difficult to evaluate scientific paper understanding as a unified set of interacting cognitive abilities. In this work, we introduce PaperMind, a benchmark designed to evaluate integrated and agent-oriented scientific reasoning over research papers. PaperMind is constructed from real scientific papers across seven domains, including agriculture, biology, chemistry, computer science, medicine, physics, and economics. It comprises four complementary task families that collectively operationalize distinct cognitive facets of scientific paper reasoning, including multimodal grounding, experimental interpretation, cross-source evidence reasoning, and critical assessment. By analyzing model behavior across multiple tasks, PaperMind enables a diagnostic evaluation of integrated scientific reasoning behaviors that are difficult to assess through isolated task evaluations. Extensive experiments on both opensource and closed-source multimodal LLMs reveal consistent performance gaps across tasks, highlighting persistent challenges in integrated scientific reasoning and critique. Our benchmark and dataset are available at https:// github.com/Yanjun-Zhao/PaperMind.",
+      "authors": [
+        "Yanjun Zhao",
+        "Tianxin Wei",
+        "Jiaru Zou",
+        "Xuying Ning",
+        "Yuanchen Bei",
+        "Lingjie Chen",
+        "Simmi Rana",
+        "Wendy H. Yang",
+        "Hanghang Tong",
+        "Jingrui He"
+      ],
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-04-23T05:42:39Z",
+      "updated": "2026-04-27T19:05:57Z",
+      "announced_date": "2026-04-23",
+      "first_seen": "2026-04-23",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.21304v2",
+        "pdf": "https://arxiv.org/pdf/2604.21304v2",
+        "html": "https://arxiv.org/html/2604.21304"
+      },
+      "score": 20,
+      "tags": [
+        "planning",
+        "multimodal",
+        "science"
+      ],
+      "field": "science",
+      "citations": 2
+    },
+    {
+      "id": "2604.22861",
+      "title": "IntrAgent: An LLM Agent for Content-Grounded Information Retrieval through Literature Review",
+      "abstract": "Scientific research relies on accurate information retrieval from literature to support analytical decisions. In this work, we introduce a new task, INformation reTRieval through literAture reVIEW (IntraView), which aims to automate fine-grained information retrieval faithfully grounded in the provided content in response to research-driven queries, and propose IntrAgent, an LLM-based agent that addresses this challenging task. In particular, IntrAgent is designed to mimic human behaviors when reading literature for information retrieval -- identifying relevant sections and then iteratively extracting key details to refine the retrieved information. It follows a two-stage pipeline: a Section Ranking stage that prioritizes relevant literature sections through structural-knowledge-enabled reasoning, and an Iterative Reading stage that continuously extracts details and synthesizes them into concise, contextually grounded answers. To support rigorous evaluation, we introduce IntraBench, a new benchmark consisting of 315 test instances built from expert-authored questions paired with literature spanning five STEM domains. Across seven backbone LLMs, IntrAgent achieves on average 13.2% higher cross-domain accuracy than state-of-the-art RAG and research-agent baselines.",
+      "authors": [
+        "Fengbo Ma",
+        "Zixin Rao",
+        "Xiaoting Li",
+        "Zhetao Chen",
+        "Hongyue Sun",
+        "Yiping Zhao",
+        "Xianyan Chen",
+        "Zhen Xiang"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-04-23T01:55:08Z",
+      "updated": "2026-04-23T01:55:08Z",
+      "announced_date": "2026-04-23",
+      "first_seen": "2026-04-23",
+      "comment": "Accepted to ACL 2026 main conference",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.22861v1",
+        "pdf": "https://arxiv.org/pdf/2604.22861v1",
+        "html": "https://arxiv.org/html/2604.22861"
+      },
+      "score": 11,
+      "tags": [
+        "planning",
+        "research",
+        "science"
+      ],
+      "field": "other",
+      "citations": 2
+    }
+  ]
+}

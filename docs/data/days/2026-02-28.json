@@ -1,0 +1,281 @@
+{
+  "date": "2026-02-28",
+  "count": 5,
+  "report": {
+    "date": "2026-02-28",
+    "count": 5,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 3,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "mobile",
+        "count": 1,
+        "en": "Mobile agents",
+        "zh": "移动智能体"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "5 new agent benchmarks",
+      "summary": "On February 28, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Safety (3), Planning / reasoning (3), GUI agents (1), and Mobile agents (1).",
+      "highlights": [
+        {
+          "id": "2603.00468",
+          "title": "Cloud-OpsBench: A Reproducible Benchmark for Agentic Root Cause Analysis in Cloud Systems",
+          "blurb": "The transition to agentic Root Cause Analysis (RCA) necessitates benchmarks that evaluate active reasoning rather than passive classification."
+        },
+        {
+          "id": "2603.00501",
+          "title": "WirelessAgent++: Automated Agentic Workflow Design and Benchmarking for Wireless Networks",
+          "blurb": "The integration of large language models (LLMs) into wireless networks has sparked growing interest in building autonomous AI agents for wireless tasks."
+        },
+        {
+          "id": "2604.09587",
+          "title": "MobiFlow: Real-World Mobile Agent Benchmarking through Trajectory Fusion",
+          "blurb": "Mobile agents can autonomously complete user-assigned tasks through GUI interactions."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年2月28日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在安全（3）、规划 / 推理（3）、GUI 智能体（1）、移动智能体（1）。",
+      "highlights": [
+        {
+          "id": "2603.00468",
+          "title": "Cloud-OpsBench: A Reproducible Benchmark for Agentic Root Cause Analysis in Cloud Systems",
+          "blurb": "The transition to agentic Root Cause Analysis (RCA) necessitates benchmarks that evaluate active reasoning rather than passive classification."
+        },
+        {
+          "id": "2603.00501",
+          "title": "WirelessAgent++: Automated Agentic Workflow Design and Benchmarking for Wireless Networks",
+          "blurb": "The integration of large language models (LLMs) into wireless networks has sparked growing interest in building autonomous AI agents for wireless tasks."
+        },
+        {
+          "id": "2604.09587",
+          "title": "MobiFlow: Real-World Mobile Agent Benchmarking through Trajectory Fusion",
+          "blurb": "Mobile agents can autonomously complete user-assigned tasks through GUI interactions."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.09587",
+      "title": "MobiFlow: Real-World Mobile Agent Benchmarking through Trajectory Fusion",
+      "abstract": "Mobile agents can autonomously complete user-assigned tasks through GUI interactions. However, existing mainstream evaluation benchmarks, such as AndroidWorld, operate by connecting to a system-level Android emulator and provide evaluation signals based on the state of system resources. In real-world mobile-agent scenarios, however, many third-party applications do not expose system-level APIs to determine whether a task has succeeded, leading to a mismatch between benchmarks and real-world usage and making it difficult to evaluate model performance accurately. To address these issues, we propose MobiFlow, an evaluation framework built on tasks drawn from arbitrary third-party applications. Using an efficient graph-construction algorithm based on multi-trajectory fusion, MobiFlow can effectively compress the state space, support dynamic interaction, and better align with real-world third-party application scenarios. MobiFlow covers 20 widely used third-party applications and comprises 240 diverse real-world tasks, with enriched evaluation metrics. Compared with AndroidWorld, MobiFlow's evaluation results show higher alignment with human assessments and can guide the training of future GUI-based models under real workloads.",
+      "authors": [
+        "Yunfei Feng",
+        "Xi Zhao",
+        "Cheng Zhang",
+        "Dahu Feng",
+        "Daolin Cheng",
+        "Jianqi Yu",
+        "Yubin Xia",
+        "Erhu Feng"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-28T14:30:33Z",
+      "updated": "2026-02-28T14:30:33Z",
+      "announced_date": "2026-02-28",
+      "first_seen": "2026-02-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.09587v1",
+        "pdf": "https://arxiv.org/pdf/2604.09587v1",
+        "html": "https://arxiv.org/html/2604.09587"
+      },
+      "score": 13,
+      "tags": [
+        "gui",
+        "mobile"
+      ],
+      "field": "mobile",
+      "citations": 0
+    },
+    {
+      "id": "2603.00601",
+      "title": "Theory of Code Space: Do Code Agents Understand Software Architecture?",
+      "abstract": "AI code agents excel at isolated tasks yet struggle with multi-file software engineering requiring architectural understanding. We introduce Theory of Code Space (ToCS), a benchmark that evaluates whether agents can construct, maintain, and update coherent architectural beliefs during codebase exploration. Agents explore procedurally generated codebases under partial observability -- opening files under a budget -- and periodically externalize their belief state as structured JSON, producing a time-series of architectural understanding. Three findings emerge from experiments with four baselines and six frontier LLMs. First, the Active-Passive Gap is model-dependent: one model builds better maps through active exploration than from seeing all files at once, while another shows the opposite -- revealing that active exploration is itself a non-trivial capability absent from some models. Second, retaining structured belief maps in context acts as self-scaffolding for some models but not others, showing that the mechanism is model-dependent. Third, belief state maintenance varies dramatically: a smaller model maintains perfectly stable beliefs across probes while its larger sibling suffers catastrophic belief collapse -- forgetting previously-discovered components between probes. We release ToCS as open-source software. Code: https://github.com/che-shr-cat/tocs",
+      "authors": [
+        "Grigory Sapunov"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-28T11:40:17Z",
+      "updated": "2026-03-18T22:36:55Z",
+      "announced_date": "2026-02-28",
+      "first_seen": "2026-02-28",
+      "comment": "updated figures and numbers",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.00601v4",
+        "pdf": "https://arxiv.org/pdf/2603.00601v4",
+        "html": "https://arxiv.org/html/2603.00601"
+      },
+      "score": 5,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2603.00501",
+      "title": "WirelessAgent++: Automated Agentic Workflow Design and Benchmarking for Wireless Networks",
+      "abstract": "The integration of large language models (LLMs) into wireless networks has sparked growing interest in building autonomous AI agents for wireless tasks. However, existing approaches rely heavily on manually crafted prompts and static agentic workflows, a process that is labor-intensive, unscalable, and often suboptimal. In this paper, we propose WirelessAgent++, a framework that automates the design of agentic workflows for various wireless tasks. By treating each workflow as an executable code composed of modular operators, WirelessAgent++ casts agent design as a program search problem and solves it with a domain-adapted Monte Carlo Tree Search (MCTS) algorithm. Moreover, we establish WirelessBench, a standardized multi-dimensional benchmark suite comprising Wireless Communication Homework (WCHW), Network Slicing (WCNS), and Mobile Service Assurance (WCMSA), covering knowledge reasoning, code-augmented tool use, and multi-step decision-making. Experiments demonstrate that \\wap{} autonomously discovers superior workflows, achieving test scores of $78.37\\%$ (WCHW), $90.95\\%$ (WCNS), and $97.07\\%$ (WCMSA), with a total search cost below $\\$ 5$ per task. Notably, our approach outperforms state-of-the-art prompting baselines by up to $31\\%$ and general-purpose workflow optimizers by $11.1\\%$, validating its effectiveness in generating robust, self-evolving wireless agents. The code is available at https://github.com/jwentong/WirelessAgent-R2.",
+      "authors": [
+        "Jingwen Tong",
+        "Zijian Li",
+        "Fang Liu",
+        "Wei Guo",
+        "Jun Zhang"
+      ],
+      "categories": [
+        "cs.NI",
+        "cs.AI",
+        "eess.SP"
+      ],
+      "primary_category": "cs.NI",
+      "published": "2026-02-28T06:52:52Z",
+      "updated": "2026-02-28T06:52:52Z",
+      "announced_date": "2026-02-28",
+      "first_seen": "2026-02-28",
+      "comment": "This manuscript has submitted to a possible Journal for publication",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.00501v1",
+        "pdf": "https://arxiv.org/pdf/2603.00501v1",
+        "html": "https://arxiv.org/html/2603.00501"
+      },
+      "score": 16,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 7
+    },
+    {
+      "id": "2603.00476",
+      "title": "Atomicity for Agents: Exposing, Exploiting, and Mitigating TOCTOU Vulnerabilities in Browser-Use Agents",
+      "abstract": "Browser-use agents are widely used for everyday tasks. They enable automated interaction with web pages through structured DOM based interfaces or vision language models operating on page screenshots. However, web pages often change between planning and execution, causing agents to execute actions based on stale assumptions. We view this temporal mismatch as a time of check to time of use (TOCTOU) vulnerability in browser-use agents. Dynamic or adversarial web content can exploit this window to induce unintended actions. We present a large scale empirical study of TOCTOU vulnerabilities in browser-use agents using a benchmark that spans synthesized and real world websites. Using this benchmark, we evaluate 10 popular open source agents and show that TOCTOU vulnerabilities are widespread. We design a lightweight mitigation based on pre-execution validation. It monitors DOM and layout changes during planning and validates the page state immediately before action execution. This approach reduces the risk of insecure execution and mitigates unintended side effects in browser-use agents.",
+      "authors": [
+        "Linxi Jiang",
+        "Zhijie Liu",
+        "Haotian Luo",
+        "Zhiqiang Lin"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-02-28T05:25:03Z",
+      "updated": "2026-02-28T05:25:03Z",
+      "announced_date": "2026-02-28",
+      "first_seen": "2026-02-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.00476v1",
+        "pdf": "https://arxiv.org/pdf/2603.00476v1",
+        "html": "https://arxiv.org/html/2603.00476"
+      },
+      "score": 7,
+      "tags": [
+        "web",
+        "safety",
+        "planning",
+        "multimodal"
+      ],
+      "field": "web",
+      "citations": 5
+    },
+    {
+      "id": "2603.00468",
+      "title": "Cloud-OpsBench: A Reproducible Benchmark for Agentic Root Cause Analysis in Cloud Systems",
+      "abstract": "The transition to agentic Root Cause Analysis (RCA) necessitates benchmarks that evaluate active reasoning rather than passive classification. However, current frameworks fail to reconcile ecological validity with reproducibility. We introduce Cloud-OpsBench, a large-scale benchmark that employs a State Snapshot Paradigm to construct a deterministic digital twin of the cloud, featuring 452 distinct fault cases across 40 root cause types spanning the full Kubernetes stack. Crucially, Cloud-OpsBench serves as an enabling infrastructure for next-generation SRE research: (1) As a Data Engine, it harvests high-quality reasoning trajectories to bootstrap Supervised Fine-Tuning (SFT) for Small Language Models; (2) As an Reinforcement Learning (RL) environment, it transforms high-risk operations into a safe low-latency sandbox for training policy optimization agents; and (3) As a Diagnostic Standard, its process-centric protocol uncovers architectural bottlenecks guiding the design of robust specialized multi-agent system for RCA.",
+      "authors": [
+        "Yilun Wang",
+        "Guangba Yu",
+        "Haiyu Huang",
+        "Zirui Wang",
+        "Yujie Huang",
+        "Pengfei Chen",
+        "Michael R. Lyu"
+      ],
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-28T05:04:42Z",
+      "updated": "2026-02-28T05:04:42Z",
+      "announced_date": "2026-02-28",
+      "first_seen": "2026-02-28",
+      "comment": "22 pages, 4 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.00468v1",
+        "pdf": "https://arxiv.org/pdf/2603.00468v1",
+        "html": "https://arxiv.org/html/2603.00468"
+      },
+      "score": 18,
+      "tags": [
+        "multi-agent",
+        "safety",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 10
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "date": "2026-02-06",
+  "count": 2,
+  "report": {
+    "date": "2026-02-06",
+    "count": 2,
+    "themes": [
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On February 6, 2026, arXiv listed 2 new agent benchmarks. Work clustered around GUI agents (1), Safety (1), Memory (1), and Science lab (1).",
+      "highlights": [
+        {
+          "id": "2604.06182",
+          "title": "VenusBench-Mobile: A Challenging and User-Centric Benchmark for Mobile GUI Agents with Capability Diagnostics",
+          "blurb": "Existing online benchmarks for mobile GUI agents remain largely app-centric and task-homogeneous, failing to reflect the diversity and instability of real-world mobile usage."
+        },
+        {
+          "id": "2602.06855",
+          "title": "AIRS-Bench: a Suite of Tasks for Frontier AI Research Science Agents",
+          "blurb": "LLM agents hold significant promise for advancing scientific research."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年2月6日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在GUI 智能体（1）、安全（1）、记忆（1）、科学实验（1）。",
+      "highlights": [
+        {
+          "id": "2604.06182",
+          "title": "VenusBench-Mobile: A Challenging and User-Centric Benchmark for Mobile GUI Agents with Capability Diagnostics",
+          "blurb": "Existing online benchmarks for mobile GUI agents remain largely app-centric and task-homogeneous, failing to reflect the diversity and instability of real-world mobile usage."
+        },
+        {
+          "id": "2602.06855",
+          "title": "AIRS-Bench: a Suite of Tasks for Frontier AI Research Science Agents",
+          "blurb": "LLM agents hold significant promise for advancing scientific research."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.06182",
+      "title": "VenusBench-Mobile: A Challenging and User-Centric Benchmark for Mobile GUI Agents with Capability Diagnostics",
+      "abstract": "Existing online benchmarks for mobile GUI agents remain largely app-centric and task-homogeneous, failing to reflect the diversity and instability of real-world mobile usage. To this end, we introduce VenusBench-Mobile, a challenging online benchmark for evaluating general-purpose mobile GUI agents under realistic, user-centric conditions. VenusBench-Mobile builds two core evaluation pillars: defining what to evaluate via user-intent-driven task design that reflects real mobile usage, and how to evaluate through a capability-oriented annotation scheme for fine-grained agent behavior analysis. Extensive evaluation of state-of-the-art mobile GUI agents reveals large performance gaps relative to prior benchmarks, indicating that VenusBench-Mobile poses substantially more challenging and realistic tasks and that current agents remain far from reliable real-world deployment. Diagnostic analysis further shows that failures are dominated by deficiencies in perception and memory, which are largely obscured by coarse-grained evaluations. Moreover, even the strongest agents exhibit near-zero success under environment variations, highlighting their brittleness in realistic settings. Based on these insights, we believe VenusBench-Mobile provides an important stepping stone toward robust real-world deployment of mobile GUI agents. Code and data are available at https://github.com/inclusionAI/UI-Venus/tree/VenusBench-Mobile.",
+      "authors": [
+        "Yichen Gong",
+        "Zhuohan Cai",
+        "Sunhao Dai",
+        "Yuqi Zhou",
+        "Zhangxuan Gu",
+        "Changhua Meng",
+        "Shuheng Shen"
+      ],
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-06T18:54:42Z",
+      "updated": "2026-02-06T18:54:42Z",
+      "announced_date": "2026-02-06",
+      "first_seen": "2026-02-06",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.06182v1",
+        "pdf": "https://arxiv.org/pdf/2604.06182v1",
+        "html": "https://arxiv.org/html/2604.06182"
+      },
+      "score": 19,
+      "tags": [
+        "gui",
+        "safety",
+        "memory"
+      ],
+      "field": "computer-use",
+      "citations": 1
+    },
+    {
+      "id": "2602.06855",
+      "title": "AIRS-Bench: a Suite of Tasks for Frontier AI Research Science Agents",
+      "abstract": "LLM agents hold significant promise for advancing scientific research. To accelerate this progress, we introduce AIRS-Bench (the AI Research Science Benchmark), a suite of 20 tasks sourced from state-of-the-art machine learning papers. These tasks span diverse domains, including language modeling, mathematics, bioinformatics, and time series forecasting. AIRS-Bench tasks assess agentic capabilities over the full research lifecycle -- including idea generation, experiment analysis and iterative refinement -- without providing baseline code. The AIRS-Bench task format is versatile, enabling easy integration of new tasks and rigorous comparison across different agentic frameworks. We establish baselines using frontier models paired with both sequential and parallel scaffolds. Our results show that agents exceed human SOTA in four tasks but fail to match it in sixteen others. Even when agents surpass human benchmarks, they do not reach the theoretical performance ceiling for the underlying tasks. These findings indicate that AIRS-Bench is far from saturated and offers substantial room for improvement. We open-source the AIRS-Bench task definitions and evaluation code to catalyze further development in autonomous scientific research.",
+      "authors": [
+        "Alisia Lupidi",
+        "Bhavul Gauri",
+        "Thomas Simon Foster",
+        "Bassel Al Omari",
+        "Despoina Magka",
+        "Alberto Pepe",
+        "Alexis Audran-Reiss",
+        "Muna Aghamelu",
+        "Nicolas Baldwin",
+        "Lucia Cipolina-Kun",
+        "Jean-Christophe Gagnon-Audet",
+        "Chee Hau Leow",
+        "Sandra Lefdal",
+        "Hossam Mossalam",
+        "Abhinav Moudgil",
+        "Saba Nazir",
+        "Emanuel Tewolde",
+        "Isabel Urrego",
+        "Jordi Armengol Estape",
+        "Amar Budhiraja",
+        "Gaurav Chaurasia",
+        "Abhishek Charnalia",
+        "Derek Dunfield",
+        "Karen Hambardzumyan",
+        "Daniel Izcovich",
+        "Martin Josifoski",
+        "Ishita Mediratta",
+        "Kelvin Niu",
+        "Parth Pathak",
+        "Michael Shvartsman",
+        "Edan Toledo",
+        "Anton Protopopov",
+        "Roberta Raileanu",
+        "Alexander Miller",
+        "Tatiana Shavrina",
+        "Jakob Foerster",
+        "Yoram Bachrach"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-06T16:45:02Z",
+      "updated": "2026-02-16T17:43:19Z",
+      "announced_date": "2026-02-06",
+      "first_seen": "2026-02-06",
+      "comment": "49 pages, 14 figures, 10 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.06855v3",
+        "pdf": "https://arxiv.org/pdf/2602.06855v3",
+        "html": "https://arxiv.org/html/2602.06855"
+      },
+      "score": 16,
+      "tags": [
+        "science"
+      ],
+      "field": "other",
+      "citations": 19
+    }
+  ]
+}

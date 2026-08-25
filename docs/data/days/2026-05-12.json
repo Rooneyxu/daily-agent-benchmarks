@@ -1,0 +1,536 @@
+{
+  "date": "2026-05-12",
+  "count": 11,
+  "report": {
+    "date": "2026-05-12",
+    "count": 11,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 5,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "coding",
+        "count": 4,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 4,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "memory",
+        "count": 3,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "web",
+        "count": 2,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "gui",
+        "count": 2,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      }
+    ],
+    "en": {
+      "headline": "11 new agent benchmarks",
+      "summary": "On May 12, 2026, arXiv listed 11 new agent benchmarks. Work clustered around Safety (5), Coding agents (4), Tool use (4), and Memory (3).",
+      "highlights": [
+        {
+          "id": "2605.11874",
+          "title": "RecRM-Bench: Benchmarking Multidimensional Reward Modeling for Agentic Recommender Systems",
+          "blurb": "The integration of Large Language Model (LLM) agents is transforming recommender systems from simple query-item matching towards deeply personalized and interactive recommendations."
+        },
+        {
+          "id": "2605.11633",
+          "title": "Can LLM Agents Respond to Disasters? Benchmarking Heterogeneous Geospatial Reasoning in Emergency Operations",
+          "blurb": "Operational disaster response goes beyond damage assessment, requiring responders to integrate multi-sensor signals, reason over road networks, populations and key facilities, plan evacuations, and produce actionable rep…"
+        },
+        {
+          "id": "2605.12673",
+          "title": "Do Androids Dream of Breaking the Game? Systematically Auditing AI Agent Benchmarks with BenchJack",
+          "blurb": "Agent benchmarks have become the de facto measure of frontier AI competence, guiding model selection, investment, and deployment."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 11 篇 Agent Benchmark",
+      "summary": "2026年5月12日，arXiv 新增 11 篇 Agent Benchmark。当日主题集中在安全（5）、代码智能体（4）、工具使用（4）、记忆（3）。",
+      "highlights": [
+        {
+          "id": "2605.11874",
+          "title": "RecRM-Bench: Benchmarking Multidimensional Reward Modeling for Agentic Recommender Systems",
+          "blurb": "The integration of Large Language Model (LLM) agents is transforming recommender systems from simple query-item matching towards deeply personalized and interactive recommendations."
+        },
+        {
+          "id": "2605.11633",
+          "title": "Can LLM Agents Respond to Disasters? Benchmarking Heterogeneous Geospatial Reasoning in Emergency Operations",
+          "blurb": "Operational disaster response goes beyond damage assessment, requiring responders to integrate multi-sensor signals, reason over road networks, populations and key facilities, plan evacuations, and produce actionable rep…"
+        },
+        {
+          "id": "2605.12673",
+          "title": "Do Androids Dream of Breaking the Game? Systematically Auditing AI Agent Benchmarks with BenchJack",
+          "blurb": "Agent benchmarks have become the de facto measure of frontier AI competence, guiding model selection, investment, and deployment."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2605.12808",
+      "title": "Neurodata Without Boredom: Benchmarking Agentic AI for Data Reuse",
+      "abstract": "Neuroscience data are highly fragmented across labs, formats, and experimental paradigms, and reuse often requires substantial manual effort. A persistent roadblock to data reuse and integration is the need to decipher bespoke and diverse data formatting choices. Common data formats have been proposed in response, but the field continues to struggle with a fundamental tension: formats flexible enough to accommodate diverse experiments are rarely descriptive enough to be self-explanatory, and sufficiently descriptive formats demand detailed documentation and curation effort that few labs can sustain. Agentic AI is a natural candidate to solve this problem: LLMs read code and text faster and with sustained attention to the low-level details humans tend to skim over. To measure how well agentic AI performs on this task, we selected eight recent papers studying large-scale mouse neural population recordings that shared both data and code, spanning diverse recording modalities, behavioral paradigms, and dataset formats (e.g., NWB, specialized APIs, and general-purpose Python or MATLAB files). We provided agents with the data, code, and paper, and prompted them to load, understand, and reformat the data for a common downstream task: training a decoder from neural activity to task or behavioral variables. General-purpose coding agents commonly used by scientists performed well on each sub-task, but rarely strung together a fully error-free end-to-end solution. We characterize the types of mistakes agents made and the dataset properties that elicited them, and propose data-sharing best practices for the agentic-AI era. We further find that agents-as-judges are unreliable at catching errors, especially without ground-truth references, so interactive, human-in-the-loop coding remains necessary.",
+      "authors": [
+        "Ling-Qi Zhang",
+        "Kristin Branson"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-05-12T23:00:18Z",
+      "updated": "2026-05-14T01:55:46Z",
+      "announced_date": "2026-05-12",
+      "first_seen": "2026-05-12",
+      "comment": "v2: Added forgotten acknowledgments section",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.12808v2",
+        "pdf": "https://arxiv.org/pdf/2605.12808v2",
+        "html": "https://arxiv.org/html/2605.12808"
+      },
+      "score": 13,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2605.12673",
+      "title": "Do Androids Dream of Breaking the Game? Systematically Auditing AI Agent Benchmarks with BenchJack",
+      "abstract": "Agent benchmarks have become the de facto measure of frontier AI competence, guiding model selection, investment, and deployment. However, reward hacking, where agents maximize a score without performing the intended task, emerges spontaneously in frontier models without overfitting. We argue that benchmarks must be secure by design. From past incidents of reward hacks, we derive a taxonomy of eight recurring flaw patterns and compile them into the Agent-Eval Checklist for benchmark designers. We condense the insights into BenchJack, an automated red-teaming system that drives coding agents to audit benchmarks and identify possible reward-hacking exploits in a clairvoyant manner. Moreover, we extend BenchJack to an iterative generative-adversarial pipeline that discovers new flaws and patches them iteratively to improve benchmark robustness. We apply BenchJack to 10 popular agent benchmarks spanning software engineering, web navigation, desktop computing, and terminal operations. BenchJack synthesizes reward-hacking exploits that achieve near-perfect scores on most of the benchmarks without solving a single task, surfacing 219 distinct flaws across the eight classes. Moreover, BenchJack's extended pipeline reduces the hackable-task ratio from near 100% to under 10% on four benchmarks without fatal design flaws, fully patching WebArena and OSWorld within three iterations. Our results show that evaluation pipelines have not internalized an adversarial mindset, and that proactive auditing could help close the security gap for the fast-paced benchmarking space.",
+      "authors": [
+        "Hao Wang",
+        "Hanchen Li",
+        "Qiuyang Mang",
+        "Alvin Cheung",
+        "Koushik Sen",
+        "Dawn Song"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-12T19:22:45Z",
+      "updated": "2026-05-12T19:22:45Z",
+      "announced_date": "2026-05-12",
+      "first_seen": "2026-05-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.12673v1",
+        "pdf": "https://arxiv.org/pdf/2605.12673v1",
+        "html": "https://arxiv.org/html/2605.12673"
+      },
+      "score": 16,
+      "tags": [
+        "web",
+        "gui",
+        "coding",
+        "safety"
+      ],
+      "field": "coding",
+      "citations": 7
+    },
+    {
+      "id": "2605.12501",
+      "title": "Covering Human Action Space for Computer Use: Data Synthesis and Benchmark",
+      "abstract": "Computer-use agents (CUAs) automate on-screen work, as illustrated by GPT-5.4 and Claude. Yet their reliability on complex, low-frequency interactions is still poor, limiting user trust. Our analysis of failure cases from advanced models suggests a long-tail pattern in GUI operations, where a relatively small fraction of complex and diverse interactions accounts for a disproportionate share of task failures. We hypothesize that this issue largely stems from the scarcity of data for complex interactions. To address this problem, we propose a new benchmark CUActSpot for evaluating models' capabilities on complex interactions across five modalities: GUI, text, table, canvas, and natural image, as well as a variety of actions (click, drag, draw, etc.), covering a broader range of interaction types than prior click-centric benchmarks that focus mainly on GUI widgets. We also design a renderer-based data-synthesis pipeline: scenes are automatically generated for each modality, screenshots and element coordinates are recorded, and an LLM produces matching instructions and action traces. After training on this corpus, our Phi-Ground-Any-4B outperforms open-source models with fewer than 32B parameters. We will release our benchmark, data, code, and models at https://github.com/microsoft/Phi-Ground.git",
+      "authors": [
+        "Miaosen Zhang",
+        "Xiaohan Zhao",
+        "Zhihong Tan",
+        "Zhou Huoshen",
+        "Yijia Fan",
+        "Yifan Yang",
+        "Kai Qiu",
+        "Bei Liu",
+        "Justin Wagle",
+        "Chenzhong Yin",
+        "Mingxi Cheng",
+        "Ji Li",
+        "Qi Dai",
+        "Chong Luo",
+        "Xu Yang",
+        "Xin Geng",
+        "Baining Guo"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-05-12T17:59:58Z",
+      "updated": "2026-05-12T17:59:58Z",
+      "announced_date": "2026-05-12",
+      "first_seen": "2026-05-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.12501v1",
+        "pdf": "https://arxiv.org/pdf/2605.12501v1",
+        "html": "https://arxiv.org/html/2605.12501"
+      },
+      "score": 10,
+      "tags": [
+        "gui",
+        "computer-use"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2605.12493",
+      "title": "LongMemEval-V2: Evaluating Long-Term Agent Memory Toward Experienced Colleagues",
+      "abstract": "Long-term memory is crucial for agents in specialized web environments, where success depends on recalling interface affordances, state dynamics, workflows, and recurring failure modes. However, existing memory benchmarks for agents mostly focus on user histories, short traces, or downstream task success, leaving open how to directly evaluate whether memory systems effectively internalize environment-specific experience. To address this gap, we introduce LongMemEval-V2 (LME-V2), a benchmark for evaluating whether memory systems can help agents acquire the experience needed to become knowledgeable colleagues in customized environments. LME-V2 contains 451 manually curated questions covering five core memory abilities for web agents: static state recall, dynamic state tracking, workflow knowledge, environment gotchas, and premise awareness. Questions are paired with history trajectories containing up to 500 trajectories and 115M tokens. We use a context gathering formulation: memory systems consume history trajectories and return compact evidence for downstream question answering. We propose a suite of two memory methods: AgentRunbook-R, an efficient RAG-based memory with knowledge pools for raw state observations, events, and strategy notes, and AgentRunbook-C, which stores trajectories as files and invokes a coding agent to gather evidence in an augmented sandbox. Experiments show that AgentRunbook-C achieves the best performance with 72.5% average accuracy, outperforming the strongest RAG baseline (48.5%) and the off-the-shelf coding agent baseline (69.3%). Despite the strong performance gains, coding agent based methods have high latency costs. While AgentRunbook-C advances the accuracy-latency Pareto frontier, substantial room for improvement remains. Together, these results establish LME-V2 as a challenging testbed for developing long-term memory systems for environment experience.",
+      "authors": [
+        "Di Wu",
+        "Zixiang Ji",
+        "Asmi Kawatkar",
+        "Bryan Kwan",
+        "Jia-Chen Gu",
+        "Nanyun Peng",
+        "Kai-Wei Chang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-12T17:59:34Z",
+      "updated": "2026-05-12T17:59:34Z",
+      "announced_date": "2026-05-12",
+      "first_seen": "2026-05-12",
+      "comment": "Work in Progress",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.12493v1",
+        "pdf": "https://arxiv.org/pdf/2605.12493v1",
+        "html": "https://arxiv.org/html/2605.12493"
+      },
+      "score": 15,
+      "tags": [
+        "web",
+        "coding",
+        "memory"
+      ],
+      "field": "coding",
+      "citations": 8
+    },
+    {
+      "id": "2605.12015",
+      "title": "SkillSafetyBench: Evaluating Agent Safety under Skill-Facing Attack Surfaces",
+      "abstract": "Reusable skills are becoming a common interface for extending large language model agents, packaging procedural guidance with access to files, tools, memory, and execution environments. However, this modularity introduces attack surfaces that are largely missed by existing safety evaluations: even when the user request is benign, unsafe influence may reside in skill guidance, local artifacts, or execution-environment files that steer the agent toward unsafe actions. We present SkillSafetyBench, a runnable benchmark for evaluating such skill-mediated safety failures. SkillSafetyBench includes 155 adversarial cases across 47 tasks, 6 risk domains, and 30 safety categories, each evaluated with a case-specific rule-based verifier. Experiments with multiple CLI agents and model backends show that non-user attacks can consistently induce unsafe behavior, with distinct failure patterns across domains, attack methods, and scaffold-model pairings. Our findings suggest that agent safety depends not only on model-level alignment, but also on how agents interpret skills, trust workflow context, and act through executable environments.",
+      "authors": [
+        "Chang Jin",
+        "An Wang",
+        "Zeming Wei",
+        "Kai Wang",
+        "Biaojie Zeng",
+        "Qiaosheng Zhang",
+        "Chao Yang",
+        "Jingjing Qu",
+        "Xia Hu",
+        "Xingcheng Xu"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-05-12T12:03:54Z",
+      "updated": "2026-05-27T06:26:15Z",
+      "announced_date": "2026-05-12",
+      "first_seen": "2026-05-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.12015v2",
+        "pdf": "https://arxiv.org/pdf/2605.12015v2",
+        "html": "https://arxiv.org/html/2605.12015"
+      },
+      "score": 8,
+      "tags": [
+        "tool-use",
+        "safety",
+        "memory"
+      ],
+      "field": "safety",
+      "citations": 10
+    },
+    {
+      "id": "2605.11874",
+      "title": "RecRM-Bench: Benchmarking Multidimensional Reward Modeling for Agentic Recommender Systems",
+      "abstract": "The integration of Large Language Model (LLM) agents is transforming recommender systems from simple query-item matching towards deeply personalized and interactive recommendations. Reinforcement Learning (RL) provides an essential framework for the optimization of these agents in recommendation tasks. However, current methodologies remain limited by a reliance on single dimensional outcome-based rewards that focus exclusively on final user interactions, overlooking critical intermediate capabilities, such as instruction following and complex intent understanding. Despite the necessity for designing multi-dimensional reward, the field lacks a standardized benchmark to facilitate this development. To bridge this gap, we introduce RecRM-Bench, the largest and most comprehensive benchmark to date for agentic recommender systems. It comprises over 1 million structured entries across four core evaluation dimensions: instruction following, factual consistency, query-item relevance, and fine-grained user behavior prediction. By supporting comprehensive assessment from syntactic compliance to complex intent grounding and preference modeling, RecRM-Bench provides a foundational dataset for training sophisticated reward models. Furthermore, we propose a systematic framework for the construction of multi-dimensional reward models and the integration of a hybrid reward function, establishing a robust foundation for developing reliable and highly capable agentic recommender systems. The complete RecRM-Bench dataset is publicly available at https://huggingface.co/datasets/wwzeng/RecRM-Bench.",
+      "authors": [
+        "Wenwen Zeng",
+        "Jinhui Zhang",
+        "Hao Chen",
+        "Zhaoyu Hu",
+        "Yongqi Liang",
+        "Jiajun Chai",
+        "Dengcan Liu",
+        "Zhenfeng Liu",
+        "Shurui Yan",
+        "Minglong Xue",
+        "Xiaohan Wang",
+        "Wei Lin",
+        "Guojun Yin"
+      ],
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-05-12T09:52:21Z",
+      "updated": "2026-05-12T09:52:21Z",
+      "announced_date": "2026-05-12",
+      "first_seen": "2026-05-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.11874v1",
+        "pdf": "https://arxiv.org/pdf/2605.11874v1",
+        "html": "https://arxiv.org/html/2605.11874"
+      },
+      "score": 22,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2605.11814",
+      "title": "MedMemoryBench: Benchmarking Agent Memory in Personalized Healthcare",
+      "abstract": "The large-scale deployment of personalized healthcare agents demands memory mechanisms that are exceptionally precise, safe, and capable of long-term clinical tracking. However, existing benchmarks primarily focus on daily open-domain conversations, failing to capture the high-stakes complexity of real-world medical applications. Motivated by the stringent production requirements of an industry-leading health management agent serving tens of millions of active users, we introduce MedMemoryBench. We develop a human-agent collaborative pipeline to synthesize highly realistic, long-horizon medical trajectories based on clinically grounded, synthetic patient archetypes. This process yields a massive, expertly validated dataset comprising approximately 2,000 sessions and 16,000 interaction turns. Crucially, MedMemoryBench departs from traditional static evaluations by pioneering an \"evaluate-while-constructing\" streaming assessment protocol, which precisely mirrors dynamic memory accumulation in production environments. Furthermore, we formalize and systematically investigate the critical phenomenon of memory saturation, where sustained information influx actively degrades retrieval and reasoning robustness. Comprehensive benchmarking reveals severe bottlenecks in mainstream architectures, particularly concerning complex medical reasoning and noise resilience. By exposing these fundamental flaws, MedMemoryBench establishes a vital foundation for developing robust, production-ready medical agents.",
+      "authors": [
+        "Yihao Wang",
+        "Haoran Xu",
+        "Renjie Gu",
+        "Yixuan Ye",
+        "Xinyi Chen",
+        "Xinyu Mu",
+        "Yuan Gao",
+        "Chunxiao Guo",
+        "Peng Wei",
+        "Jinjie Gu",
+        "Huan Li",
+        "Ke Chen",
+        "Lidan Shou"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-12T09:06:40Z",
+      "updated": "2026-05-12T09:06:40Z",
+      "announced_date": "2026-05-12",
+      "first_seen": "2026-05-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.11814v1",
+        "pdf": "https://arxiv.org/pdf/2605.11814v1",
+        "html": "https://arxiv.org/html/2605.11814"
+      },
+      "score": 13,
+      "tags": [
+        "safety",
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2605.11732",
+      "title": "AgentDisCo: Towards Disentanglement and Collaboration in Open-ended Deep Research Agents",
+      "abstract": "In this paper, we present AgentDisCo, a novel Disentangled and Collaborative agentic architecture that formulates deep research as an adversarial optimization problem between information exploration and exploitation. Unlike existing approaches that conflate these two processes into a single module, AgentDisCo employs a critic agent to evaluate generated outlines and refine search queries, and a generator agent to retrieve updated results and revise outlines accordingly. The iteratively refined outline is then passed to a downstream report writer that synthesizes a comprehensive research report. The overall workflow supports both handcrafted and automatically discovered design strategies via a meta-optimization harness, in which the generator agent is repurposed as a scoring agent to evaluate critic outputs and generate quality signals. Powerful code-generation agents (e.g., Claude-Code, Codex) systematically explore agent configurations and construct a policy bank, a structured repository of reusable design strategies, enabling the framework to self-refine without extensive human intervention. We evaluate AgentDisCo on three established deep research benchmarks (DeepResearchBench, DeepConsult, DeepResearchGym) using Gemini-2.5-Pro, achieving performance comparable to or surpassing leading closed-source systems. Observing that existing benchmarks inadequately reflect real-world user needs, we introduce GALA (General AI Life Assistants), a benchmark that mines latent research interests from users' historical browsing behavior. We further develop a rendering agent that converts research reports into visually rich poster presentations, and demonstrate an end-to-end product, AutoResearch Your Interest, which delivers personalized deep research recommendations derived from individual browsing histories.",
+      "authors": [
+        "Jiarui Jin",
+        "Zexuan Yan",
+        "Shijian Wang",
+        "Wenxiang Jiao",
+        "Yuan Lu"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.CL",
+        "cs.MA",
+        "cs.MM"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-05-12T08:14:15Z",
+      "updated": "2026-06-04T05:47:57Z",
+      "announced_date": "2026-05-12",
+      "first_seen": "2026-05-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.11732v2",
+        "pdf": "https://arxiv.org/pdf/2605.11732v2",
+        "html": "https://arxiv.org/html/2605.11732"
+      },
+      "score": 12,
+      "tags": [
+        "coding",
+        "research"
+      ],
+      "field": "science",
+      "citations": 2
+    },
+    {
+      "id": "2605.11633",
+      "title": "Can LLM Agents Respond to Disasters? Benchmarking Heterogeneous Geospatial Reasoning in Emergency Operations",
+      "abstract": "Operational disaster response goes beyond damage assessment, requiring responders to integrate multi-sensor signals, reason over road networks, populations and key facilities, plan evacuations, and produce actionable reports. However, prior work largely isolates remote-sensing perception or evaluates generic tool use, leaving the end-to-end workflows of emergency operations underexplored. In this paper, we introduce Disaster Operational Response Agent benchmark (DORA), the first agentic benchmark for end-to-end disaster response: 515 expert-authored tasks across 45 real-world disaster events spanning 10 types, paired with expert-verified, replayable gold trajectories totaling 3,500 tool-call steps. Tasks span five dimensions that cover the operational disaster-response pipeline: disaster perception, spatial relational analysis, rescue and evacuation planning, temporal evolution reasoning, and multi-modal report synthesis. Agents compose calls from a 108-tool MCP library over heterogeneous geospatial data: optical, SAR, and multi-spectral imagery across single-, bi-, and multi-temporal sequences (0.015-10m GSD), complemented by elevation and social vector layers. We comprehensively evaluate 13 frontier LLMs on our benchmark, revealing three persistent challenges: 1) disaster-domain grounding exposes unique failure modes (damage-semantic grounding, sensor-modality mismatch, and disaster-pipeline composition); 2) agents are doubly bottlenecked by tool selection and argument grounding, where gold tool-order hints improve accuracy by only 1.08-4.40%, and alternative scaffolds yield at most a 3.24% gain; 3) compositional fragility scales with trajectory length, the agent-to-gold gap widening from 7% to 56% on long pipelines. DORA establishes a rigorous testbed for operationally reliable disaster-response agents.",
+      "authors": [
+        "Junjue Wang",
+        "Weihao Xuan",
+        "Heli Qi",
+        "Pengyu Dai",
+        "Kunyi Liu",
+        "Hongruixuan Chen",
+        "Zhuo Zheng",
+        "Junshi Xia",
+        "Stefano Ermon",
+        "Naoto Yokoya"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-12T06:57:41Z",
+      "updated": "2026-05-12T06:57:41Z",
+      "announced_date": "2026-05-12",
+      "first_seen": "2026-05-12",
+      "comment": "DORA stress-tests LLM agents on real-world disaster operations that demand comprehensive orchestration of 108 specialized tools over heterogeneous geospatial data",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.11633v1",
+        "pdf": "https://arxiv.org/pdf/2605.11633v1",
+        "html": "https://arxiv.org/html/2605.11633"
+      },
+      "score": 18,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2605.11504",
+      "title": "CTFusion: A CTF-based Benchmark for LLM Agent Evaluation",
+      "abstract": "Recent advances in Large Language Models (LLMs) have enabled agentic systems for complex, multi-step tasks; cybersecurity is emerging as a prominent application. To evaluate such agents, researchers widely adopt Capture The Flag (CTF) benchmarks. However, current CTF benchmarks reuse existing challenges, which exposes them to data contamination and potential cheating. Notably, we confirmed these issues in practice by integrating web search tools into an existing agent. To address these limitations, we present CTFusion, a streaming evaluation framework built on Live CTFs. To achieve this, CTFusion preserves per-agent independence under a single team account and reduces competition impact by forwarding only the first correct flag per challenge. Moreover, we implement CTFusion as a Model Context Protocol (MCP) server on the widely used CTFd platform, which offers broad applicability to diverse CTF events and agent types. Through experiments with three LLMs, two agents, and five Live CTFs, we demonstrate that existing CTF benchmarks can be unreliable in assessing LLM-based agents, while CTFusion can serve as a robust solution for evaluating cybersecurity agents. We release CTFusion as open source to foster future research in this area.",
+      "authors": [
+        "Dongjun Lee",
+        "Ga-eun Bae",
+        "Insu Yun"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CR"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-05-12T04:23:42Z",
+      "updated": "2026-07-11T11:49:33Z",
+      "announced_date": "2026-05-12",
+      "first_seen": "2026-05-12",
+      "comment": "Accepted at the Second Workshop on Agents in the Wild: Safety, Security, and Beyond (AIWILD), ICML 2026. Revised to match the camera-ready version. OpenReview: https://openreview.net/forum?id=aUSUvS4dPL",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.11504v2",
+        "pdf": "https://arxiv.org/pdf/2605.11504v2",
+        "html": "https://arxiv.org/html/2605.11504"
+      },
+      "score": 15,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "other",
+      "citations": 3
+    },
+    {
+      "id": "2605.11378",
+      "title": "An Empirical Study of Automating Agent Evaluation",
+      "abstract": "Agent evaluation requires assessing complex multi-step behaviors involving tool use and intermediate reasoning, making it costly and expertise-intensive. A natural question arises: can frontier coding assistants reliably automate this evaluation process? Our study shows that simply prompting coding assistants is insufficient for this task. Without domain-specific evaluation knowledge, frontier coding assistants achieve only a 30% execution success rate and produce over-engineered evaluations averaging 12+ metrics per agent, indicating that strong coding ability does not automatically translate to reliable agent evaluation. We introduce EvalAgent, an AI assistant that automates the end-to-end agent evaluation pipeline. EvalAgent encodes evaluation domain expertise as evaluation skills (procedural instructions, reusable code and templates, and dynamically retrieved API documentation) that compose into a trace-based pipeline producing complete evaluation artifacts including metrics, executable code, and reports. To systematically assess generated evaluations, we introduce a meta-evaluation framework alongside AgentEvalBench, a benchmark comprising 20 agents, each paired with evaluation requirements and test scenarios. We further propose the Eval@1 metric to measure whether generated evaluation code both executes and yields meaningful results on the first run. Our experiments show that EvalAgent produces focused evaluations, improving Eval@1 from 17.5% to 65%, and achieving 79.5% human expert preference over baseline approaches. Further ablation studies show that evaluation skills are critical for handling complex evaluation: removing them causes Eval@1 to drop significantly from 65% to 30%.",
+      "authors": [
+        "Kang Zhou",
+        "Sangmin Woo",
+        "Haibo Ding",
+        "Kiran Ramnath",
+        "Subramanian Chidambaram",
+        "Aosong Feng",
+        "Vinayak Arannil",
+        "Muhyun Kim",
+        "Ishan Singh",
+        "Darren Wang",
+        "Zhichao Xu",
+        "Megha Gandhi",
+        "Nirmal Prabhu",
+        "Soumya Smruti Mishra",
+        "Vivek Singh",
+        "Gouri Pandeshwar",
+        "Lin Lee Cheong"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-12T01:06:34Z",
+      "updated": "2026-06-11T21:00:11Z",
+      "announced_date": "2026-05-12",
+      "first_seen": "2026-05-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.11378v2",
+        "pdf": "https://arxiv.org/pdf/2605.11378v2",
+        "html": "https://arxiv.org/html/2605.11378"
+      },
+      "score": 11,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

@@ -1,0 +1,482 @@
+{
+  "date": "2026-05-15",
+  "count": 9,
+  "report": {
+    "date": "2026-05-15",
+    "count": 9,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 4,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "coding",
+        "count": 3,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "science",
+        "count": 2,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      }
+    ],
+    "en": {
+      "headline": "9 new agent benchmarks",
+      "summary": "On May 15, 2026, arXiv listed 9 new agent benchmarks. Work clustered around Planning / reasoning (4), Coding agents (3), Tool use (2), and Safety (2).",
+      "highlights": [
+        {
+          "id": "2605.16626",
+          "title": "SLEIGHT-Bench: A Benchmark of Evasion Attacks Against Agent Monitors",
+          "blurb": "Since autonomous coding agents generate complex behaviors at high-volume, we may want to use other LLMs to monitor actions to reduce the risk from dangerous misaligned behavior."
+        },
+        {
+          "id": "2605.15766",
+          "title": "BioXArena: Benchmarking LLM Agents on Multi-Modal Biomedical Machine Learning Tasks",
+          "blurb": "Large language model (LLM) agents are increasingly capable of automating components of machine learning development, yet existing biomedical benchmarks mainly focus on question answering, reasoning, and tool usage, or ev…"
+        },
+        {
+          "id": "2605.15777",
+          "title": "SaaS-Bench: Can Computer-Use Agents Leverage Real-World SaaS to Solve Professional Workflows?",
+          "blurb": "Computer-Using Agents (CUAs) are rapidly extending large language models (LLMs) beyond text-based reasoning toward action execution in more complex environments, such as web browsers and graphical user interfaces (GUIs)."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 9 篇 Agent Benchmark",
+      "summary": "2026年5月15日，arXiv 新增 9 篇 Agent Benchmark。当日主题集中在规划 / 推理（4）、代码智能体（3）、工具使用（2）、安全（2）。",
+      "highlights": [
+        {
+          "id": "2605.16626",
+          "title": "SLEIGHT-Bench: A Benchmark of Evasion Attacks Against Agent Monitors",
+          "blurb": "Since autonomous coding agents generate complex behaviors at high-volume, we may want to use other LLMs to monitor actions to reduce the risk from dangerous misaligned behavior."
+        },
+        {
+          "id": "2605.15766",
+          "title": "BioXArena: Benchmarking LLM Agents on Multi-Modal Biomedical Machine Learning Tasks",
+          "blurb": "Large language model (LLM) agents are increasingly capable of automating components of machine learning development, yet existing biomedical benchmarks mainly focus on question answering, reasoning, and tool usage, or ev…"
+        },
+        {
+          "id": "2605.15777",
+          "title": "SaaS-Bench: Can Computer-Use Agents Leverage Real-World SaaS to Solve Professional Workflows?",
+          "blurb": "Computer-Using Agents (CUAs) are rapidly extending large language models (LLMs) beyond text-based reasoning toward action execution in more complex environments, such as web browsers and graphical user interfaces (GUIs)."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2605.16679",
+      "title": "CHI-Bench: Can AI Agents Automate End-to-End, Long-Horizon, Policy-Rich Healthcare Workflows?",
+      "abstract": "End-to-end automation of realistic healthcare operations stresses three capabilities underrepresented in current benchmarks: policy density, decisions must be grounded in a large library of medical, insurance, and operational rules; Multi-role composition: a single task requires the agent to play multiple roles with handoffs; and multilateral interaction: intermediate workflow steps are multi-turn dialogs, such as peer-to-peer review and patient outreach. We introduce $χ$-Bench, a benchmark of long-horizon healthcare workflows across three domains: provider prior authorization, payer utilization management, and care management. Each task hands the agent a clinical case in a high-fidelity simulator of 20 healthcare apps exposed via 87 MCP tools, which it must drive to a terminal status through tool calls and writing the role's artifacts, guided by a 1,290+ document managed-care operations handbook skill. Across 30 agent harness/models configurations, the best agent resolves only 28.0% of tasks, no agent clears 20% on strict pass^3, and executing all tasks in a single session slumps the performance to 3.8%. These results raise the hypothesis that similar gaps are likely to surface in other policy-dense, role-composed, irreversible enterprise domains.",
+      "authors": [
+        "Haolin Chen",
+        "Deon Metelski",
+        "Leon Qi",
+        "Tao Xia",
+        "Joonyul Lee",
+        "Steve Brown",
+        "Kevin Riley",
+        "Frank Wang",
+        "T. Y. Alvin Liu",
+        "Hank Capps MD",
+        "Zeyu Tang",
+        "Xiangchen Song",
+        "Lingjing Kong",
+        "Fan Feng",
+        "Tianyi Zeng",
+        "Zhiwei Liu",
+        "Zixian Ma",
+        "Hang Jiang",
+        "Fangli Geng",
+        "Yuan Yuan",
+        "Chenyu You",
+        "Qingsong Wen",
+        "Hua Wei",
+        "Yanjie Fu",
+        "Yue Zhao",
+        "Carl Yang",
+        "Biwei Huang",
+        "Kun Zhang",
+        "Caiming Xiong",
+        "Sanmi Koyejo",
+        "Eric P. Xing",
+        "Philip S. Yu",
+        "Weiran Yao"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-15T22:34:31Z",
+      "updated": "2026-05-19T05:51:20Z",
+      "announced_date": "2026-05-15",
+      "first_seen": "2026-05-15",
+      "comment": "Website: https://actava.ai/benchmarks Code: https://github.com/actava-ai/chi-bench Dataset: https://huggingface.co/datasets/actava/chi-bench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.16679v2",
+        "pdf": "https://arxiv.org/pdf/2605.16679v2",
+        "html": "https://arxiv.org/html/2605.16679"
+      },
+      "score": 18,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 5
+    },
+    {
+      "id": "2605.16626",
+      "title": "SLEIGHT-Bench: A Benchmark of Evasion Attacks Against Agent Monitors",
+      "abstract": "Since autonomous coding agents generate complex behaviors at high-volume, we may want to use other LLMs to monitor actions to reduce the risk from dangerous misaligned behavior. To better understand the limitations of such monitors against the diverse attack strategies that a coding agent could use, we present SLEIGHT-Bench (Subtle Low-itEration Insight-Guided Harmful Transcripts), a benchmark of synthetic transcripts containing 40 attacks across 11 categories, each showing a coding agent covertly pursuing a harmful objective (e.g. weight exfiltration, credential theft, unmonitored rogue deployment). We find that 20 of 40 attacks are never caught by an Opus 4.6 monitor with extended thinking across 10 trials at a 1% false-positive rate, while the overall catch rate is 32%. We identify several evasion strategies such as exploiting model priors, user instruction ambiguity, and state manipulation, which facilitate creating attacks that evade frontier monitors. We also elicit stronger monitor performance using coding agents as monitors versus regular prompted monitors, and for some evasion strategies show improved catch rates with targeted monitor prompts. Our dataset and evaluation framework are available at https://github.com/safety-research/sleight-bench and https://huggingface.co/datasets/sleightbench/SLEIGHT-Bench.",
+      "authors": [
+        "Elle Najt",
+        "Colin Toft",
+        "Tyler Tracy",
+        "Fabien Roger",
+        "Joe Benton"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-05-15T20:46:46Z",
+      "updated": "2026-05-19T00:46:42Z",
+      "announced_date": "2026-05-15",
+      "first_seen": "2026-05-15",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.16626v2",
+        "pdf": "https://arxiv.org/pdf/2605.16626v2",
+        "html": "https://arxiv.org/html/2605.16626"
+      },
+      "score": 25,
+      "tags": [
+        "coding",
+        "safety"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2605.16207",
+      "title": "Confirming Correct, Missing the Rest: LLM Tutoring Agents Struggle Where Feedback Matters Most",
+      "abstract": "Effective tutoring requires distinguishing optimal, valid but suboptimal, and incorrect student solutions, a distinction central to intelligent tutoring systems (ITS) but untested for LLM-based tutors. As LLMs are increasingly explored as conversational complements to ITS, evaluating their diagnostic precision is essential. We present a benchmark of seven LLM feedback agents in propositional logic using knowledge-graph-derived ground truth across 10,836 solution--feedback pairs and three feedback conditions. Models achieved near-ceiling performance on optimal steps but systematically over-rejected valid but suboptimal reasoning and over-validated incorrect solutions, precisely where adaptive tutoring matters most. These failures persisted across models regardless of solution context, suggesting architectural rather than informational limits. Moreover, accurate diagnosis did not reliably produce pedagogically actionable feedback, revealing a gap between diagnostic judgment and instructional effectiveness. Our findings suggest that LLMs are better suited for hybrid architectures where KG-grounded models handle diagnosis while LLMs support open-ended scaffolding and dialogue.",
+      "authors": [
+        "Tahreem Yasir",
+        "Wenbo Li",
+        "Sam Gilson",
+        "Sutapa Dey Tithi",
+        "Xiaoyi Tian",
+        "Tiffany Barnes"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-15T17:24:42Z",
+      "updated": "2026-05-15T17:24:42Z",
+      "announced_date": "2026-05-15",
+      "first_seen": "2026-05-15",
+      "comment": "22 pages, 20 fgures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.16207v1",
+        "pdf": "https://arxiv.org/pdf/2605.16207v1",
+        "html": "https://arxiv.org/html/2605.16207"
+      },
+      "score": 5,
+      "tags": [
+        "planning",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 0
+    },
+    {
+      "id": "2605.16116",
+      "title": "ShopGym: An Integrated Framework for Realistic Simulation and Scalable Benchmarking of E-Commerce Web Agents",
+      "abstract": "Developing and evaluating e-commerce web agents requires environments that preserve meaningful task structure while enabling controllable, reproducible, and scalable scientific comparison. Existing methodologies force a tradeoff: live storefronts provide realism but are non-stationary, difficult to inspect, and irreproducible, while hand-built sandbox benchmarks provide control but cover only a narrow range of layouts, catalogs, policies, and interaction patterns. We argue that the core bottleneck is methodological: the field lacks a scalable way to construct evaluation settings that are simultaneously realistic, diverse, controllable, inspectable, and reproducible. We introduce ShopGym, an integrated framework for realistic simulation and scalable benchmarking of e-commerce web agents. ShopGym is a framework for constructing e-commerce simulation environments and grounded benchmark tasks. Its simulation layer, ShopArena, converts live seed storefronts into self-contained sandbox shops through anonymized shop specifications and a staged, validated generation process. On top of these simulated storefronts, ShopGuru synthesizes benchmark tasks across seven skill categories, grounding each task in the shop's catalog, navigation structure, policies, and interaction affordances. Together, ShopArena and ShopGuru produce self-contained, resettable, inspectable, and stable evaluation artifacts that preserve structural properties and agent-evaluation signals relevant to shopping tasks. We validate the framework through graph-based structural analysis and agent-based behavioral evaluation with 224 generated tasks across six sandbox shops: three constructed with synthetic data and three with real data. Our results show that the synthetic shops preserve key structural properties of live storefronts, with agent performance on synthetic shops positively correlated with performance on live storefronts.",
+      "authors": [
+        "Chinmay Savadikar",
+        "Mingyu Zhao",
+        "Yuanzheng Zhu",
+        "Han Li",
+        "Shuang Xie",
+        "Alberto Castelo",
+        "Tianfu Wu",
+        "Lingyun Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-15T16:00:38Z",
+      "updated": "2026-05-15T16:00:38Z",
+      "announced_date": "2026-05-15",
+      "first_seen": "2026-05-15",
+      "comment": "32 pages, 10 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.16116v1",
+        "pdf": "https://arxiv.org/pdf/2605.16116v1",
+        "html": "https://arxiv.org/html/2605.16116"
+      },
+      "score": 13,
+      "tags": [
+        "web",
+        "science"
+      ],
+      "field": "web",
+      "citations": 3
+    },
+    {
+      "id": "2605.15846",
+      "title": "RoadmapBench: Evaluating Long-Horizon Agentic Software Development Across Version Upgrades",
+      "abstract": "Coding agents are increasingly deployed in real software development, where a single version iteration requires months of coordinated work across many files. However, most existing benchmarks focus predominantly on single-issue bug fixes from Python repositories, with coarse pass/fail evaluation outcomes, and thus fail to capture long-horizon, multi-target development at real engineering scale. To address this gap, we present RoadmapBench, a benchmark of 115 long-horizon coding tasks grounded in real open-source version upgrades across 17 repositories and 5 programming languages. Each task places the agent on a source-version code snapshot and provides a multi-target roadmap instruction requiring it to implement the functionality introduced in the target version, with a median modification of 3,700 lines across 51 files. We conduct a systematic evaluation on thirteen frontier models and find that even the strongest, Claude-Opus-4.7, resolves only 39.1% of tasks, while the weakest achieves merely 5.2%, in stark contrast to existing bug-fix benchmarks, suggesting that long-horizon software development remains a largely unsolved problem.",
+      "authors": [
+        "Xinbo Xu",
+        "Ruihan Yang",
+        "Haiyang Shen",
+        "Wendong Xu",
+        "Bofei Gao",
+        "Ruoyu Wu",
+        "Kean Shi",
+        "Weichu Xie",
+        "Xuanzhong Chen",
+        "Ming Wu",
+        "Jason Zeng",
+        "Michael Heinrich",
+        "Elvis Zhang",
+        "Liang Chen",
+        "Kuan Li",
+        "Baobao Chang"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-05-15T11:00:33Z",
+      "updated": "2026-05-19T08:10:44Z",
+      "announced_date": "2026-05-15",
+      "first_seen": "2026-05-15",
+      "comment": "30 pages, 15 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.15846v2",
+        "pdf": "https://arxiv.org/pdf/2605.15846v2",
+        "html": "https://arxiv.org/html/2605.15846"
+      },
+      "score": 17,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 2
+    },
+    {
+      "id": "2605.15777",
+      "title": "SaaS-Bench: Can Computer-Use Agents Leverage Real-World SaaS to Solve Professional Workflows?",
+      "abstract": "Computer-Using Agents (CUAs) are rapidly extending large language models (LLMs) beyond text-based reasoning toward action execution in more complex environments, such as web browsers and graphical user interfaces (GUIs). However, existing web and GUI agent benchmarks often rely on simplified settings, isolated tasks, or short-horizon interactions, making it difficult to assess capabilities of agents in realistic professional workflows. Software-as-a-Service (SaaS) environments are a natural choice for CUA evaluation, as they host a large share of modern digital work and naturally involve dynamic system states, cross-application coordination, domain-specific knowledge, and long-horizon dependencies. To this end, we introduce SaaS-Bench, a benchmark built on 23 deployable SaaS systems across six professional domains, containing 106 tasks grounded in realistic work scenarios. These tasks require long-horizon execution, cover both text-only and multimodal settings, and are evaluated with weighted verification checkpoints that measure strict task completion and partial progress. Experiments show that representative LLM-based agents struggle on SaaS-Bench, with even the strongest model completing fewer than 4% of tasks end-to-end, exposing limitations in planning, state tracking, cross-application context maintenance, and error recovery. Code are available at https://github.com/UniPat-AI/SaaS-Bench for reproduction.",
+      "authors": [
+        "Kean Shi",
+        "Zihang Li",
+        "Tianyi Ma",
+        "Zengji Tu",
+        "Jialong Wu",
+        "Xinbo Xu",
+        "Qingyao Yang",
+        "Ruoyu Wu",
+        "Weichu Xie",
+        "Ming Wu",
+        "Jason Zeng",
+        "Michael Heinrich",
+        "Elvis Zhang",
+        "Liang Chen",
+        "Kuan Li",
+        "Baobao Chang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-15T09:35:15Z",
+      "updated": "2026-05-24T16:35:56Z",
+      "announced_date": "2026-05-15",
+      "first_seen": "2026-05-15",
+      "comment": "24 pages, 11 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.15777v2",
+        "pdf": "https://arxiv.org/pdf/2605.15777v2",
+        "html": "https://arxiv.org/html/2605.15777"
+      },
+      "score": 21,
+      "tags": [
+        "gui",
+        "computer-use",
+        "planning",
+        "multimodal"
+      ],
+      "field": "workplace",
+      "citations": 2
+    },
+    {
+      "id": "2605.15766",
+      "title": "BioXArena: Benchmarking LLM Agents on Multi-Modal Biomedical Machine Learning Tasks",
+      "abstract": "Large language model (LLM) agents are increasingly capable of automating components of machine learning development, yet existing biomedical benchmarks mainly focus on question answering, reasoning, and tool usage, or evaluate only narrow aspects of biomedical ML coding. We present BioXArena, a biomedical machine learning benchmark designed to evaluate whether agents can generate task-specific model training pipelines for heterogeneous and multi-modal biomedical datasets. BioXArena contains 76 end-to-end tasks across 9 domains, including sequence modeling, single-cell analysis, structural biology, network biology, chemical biology, perturbation dynamics, phenotype-disease modeling, biomedical imaging, and text-integrated learning. Each task is curated from primary biomedical sources into a unified evaluation framework with hidden labels, held-out graders, and biology-aware metrics normalized to a 0 to 1 scale. Agents are required to write executable code, train predictive models, and generate submissions for private test samples. Most tasks involve multiple input modalities, including tabular data, images, natural language, molecular sequences, omics matrices, and protein structures. We evaluate 11 agent configurations in a standardized 2-hour single-GPU environment. MLEvolve with Gemini-3.1-Pro achieves the highest average score of 0.666, followed by GPT-5.4 with 0.636, while no single agent consistently dominates across all domains. We additionally perform extensive ablation studies, robustness evaluations, scaling analyses, cost analyses, and failure-mode investigations to better understand how model backbones, agent scaffolds, inference budgets, and biomedical domains influence BioML coding performance. We will publicly release all benchmark tasks, graders, execution runners, leaderboard results, and agent trajectories.",
+      "authors": [
+        "Loka Li",
+        "Duzhen Zhang",
+        "Xingbo Du",
+        "Leonard Song",
+        "Zixiao Wang",
+        "Assanali Aukenov",
+        "Noel Thomas",
+        "Shakhnazar Sailaukan",
+        "Yonghan Yang",
+        "Feilong Chen",
+        "Jiahua Dong",
+        "Kun Zhang",
+        "Bin Zhang",
+        "Le Song"
+      ],
+      "categories": [
+        "cs.CE"
+      ],
+      "primary_category": "cs.CE",
+      "published": "2026-05-15T09:24:55Z",
+      "updated": "2026-05-15T09:24:55Z",
+      "announced_date": "2026-05-15",
+      "first_seen": "2026-05-15",
+      "comment": "69 pages, 13 figures, 34 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.15766v1",
+        "pdf": "https://arxiv.org/pdf/2605.15766v1",
+        "html": "https://arxiv.org/html/2605.15766"
+      },
+      "score": 24,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning",
+        "science"
+      ],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2605.15710",
+      "title": "SMMBench: A Benchmark for Source-Distributed Multimodal Agent Memory",
+      "abstract": "Existing benchmarks for multimodal memory reasoning largely evaluate systems within pre-assembled contexts, but under-evaluate whether agents can use evidence distributed across independently originated sources. We argue that source-distributed memory composition is an important and under-examined bottleneck in multimodal agent memory, especially when relevant evidence is fragmented across heterogeneous artifacts such as conversations, profiles, screenshots, tables, images, and documents. To address this gap, we introduce Source-distributed Multimodal Memory Benchmark(SMMBench), which measures whether agents can retrieve, align, and compose multimodal evidence scattered across multiple sources rather than reason within a single curated context. SMMBench evaluates four core capabilities: (1) cross-source multimodal reasoning; (2) conflict resolution; (3) preference reasoning; (4) memory-grounded action prediction. The benchmark contains 1877 samples grounded in 264 sources. Experiments on representative memory-style and retrieval-based baselines show that current systems still struggle on these capabilities, positioning source-distributed multimodal memory as an important and still under-evaluated challenge for multimodal agents. Our data are available at https://huggingface.co/datasets/HuacanChai/SMMBench.",
+      "authors": [
+        "Huacan Chai",
+        "Yukai Wang",
+        "Yingxuan Yang",
+        "Dan Peng",
+        "Yuanyi Song",
+        "Zhihui Fu",
+        "Weiwen Liu",
+        "Jianghao Lin",
+        "Jun Wang",
+        "Weinan Zhang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-15T08:00:46Z",
+      "updated": "2026-05-15T08:00:46Z",
+      "announced_date": "2026-05-15",
+      "first_seen": "2026-05-15",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.15710v1",
+        "pdf": "https://arxiv.org/pdf/2605.15710v1",
+        "html": "https://arxiv.org/html/2605.15710"
+      },
+      "score": 16,
+      "tags": [
+        "memory",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 1
+    },
+    {
+      "id": "2605.15669",
+      "title": "Rule2DRC: Benchmarking LLM Agents for DRC Script Synthesis with Execution-Guided Test Generation",
+      "abstract": "Manufacturable chip layouts must satisfy thousands of geometry-based design rules, and design rule checking (DRC) enforces them by running executable DRC scripts on layouts. Translating natural language rules into correct DRC scripts is labor-intensive and requires specialized expertise, motivating LLM agents for DRC script synthesis and debugging. However, existing benchmarks have small evaluation sets and often evaluate scripts by code similarity rather than execution correctness, and prior machine learning-based methods either ignore execution feedback or require labeled test layouts as agent's input. To this end, we introduce Rule2DRC, a large-scale benchmark for DRC script coding agents with 1,000 rule-to-script tasks and 13,921 evaluation chip layouts for execution-based scoring. Rule2DRC provides an evaluation pipeline that measures functional correctness via DRC execution outcomes without requiring evaluation layouts as input to the agent. We also propose SplitTester, a tester agent for program selection that uses execution feedback to generate discriminative test cases and separate previously indistinguishable candidate scripts, substantially improving Best-of-N selection performance in this domain. We release the code at https://github.com/snu-mllab/Rule2DRC.",
+      "authors": [
+        "Jinuk Kim",
+        "Junsoo Byun",
+        "Donghwi Hwang",
+        "Seong-Jin Park",
+        "Hyun Oh Song"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-05-15T06:46:14Z",
+      "updated": "2026-05-15T06:46:14Z",
+      "announced_date": "2026-05-15",
+      "first_seen": "2026-05-15",
+      "comment": "ICML 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.15669v1",
+        "pdf": "https://arxiv.org/pdf/2605.15669v1",
+        "html": "https://arxiv.org/html/2605.15669"
+      },
+      "score": 17,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 1
+    }
+  ]
+}

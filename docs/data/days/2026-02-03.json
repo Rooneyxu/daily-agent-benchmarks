@@ -1,0 +1,334 @@
+{
+  "date": "2026-02-03",
+  "count": 6,
+  "report": {
+    "date": "2026-02-03",
+    "count": 6,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 3,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "gui",
+        "count": 2,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "6 new agent benchmarks",
+      "summary": "On February 3, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Safety (3), Planning / reasoning (3), GUI agents (2), and Memory (2).",
+      "highlights": [
+        {
+          "id": "2602.03255",
+          "title": "LPS-Bench: Benchmarking Safety Awareness of Computer-Use Agents in Long-Horizon Planning under Benign and Adversarial Scenarios",
+          "blurb": "Computer-use agents (CUAs) that interact with real computer systems can perform automated tasks but face critical safety risks."
+        },
+        {
+          "id": "2602.06075",
+          "title": "MemGUI-Bench: Benchmarking Memory of Mobile GUI Agents in Dynamic Environments",
+          "blurb": "Reliable mobile GUI agents must retain and reuse information across actions, applications, and repeated interactions."
+        },
+        {
+          "id": "2602.03100",
+          "title": "Risky-Bench: Probing Agentic Safety Risks under Real-World Deployment",
+          "blurb": "Large Language Models (LLMs) are increasingly deployed as agents that operate in real-world environments, introducing safety risks beyond linguistic harm."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 6 篇 Agent Benchmark",
+      "summary": "2026年2月3日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在安全（3）、规划 / 推理（3）、GUI 智能体（2）、记忆（2）。",
+      "highlights": [
+        {
+          "id": "2602.03255",
+          "title": "LPS-Bench: Benchmarking Safety Awareness of Computer-Use Agents in Long-Horizon Planning under Benign and Adversarial Scenarios",
+          "blurb": "Computer-use agents (CUAs) that interact with real computer systems can perform automated tasks but face critical safety risks."
+        },
+        {
+          "id": "2602.06075",
+          "title": "MemGUI-Bench: Benchmarking Memory of Mobile GUI Agents in Dynamic Environments",
+          "blurb": "Reliable mobile GUI agents must retain and reuse information across actions, applications, and repeated interactions."
+        },
+        {
+          "id": "2602.03100",
+          "title": "Risky-Bench: Probing Agentic Safety Risks under Real-World Deployment",
+          "blurb": "Large Language Models (LLMs) are increasingly deployed as agents that operate in real-world environments, introducing safety risks beyond linguistic harm."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2602.06075",
+      "title": "MemGUI-Bench: Benchmarking Memory of Mobile GUI Agents in Dynamic Environments",
+      "abstract": "Reliable mobile GUI agents must retain and reuse information across actions, applications, and repeated interactions. However, current benchmarks systematically underrepresent these memory demands: only 5.2-11.8 percent of their tasks are memory-related, and none evaluates cross-session learning. We introduce MemGUI-Bench, a comprehensive memory-centric benchmark that assesses both short-term information retention and long-term experience accumulation through pass@k protocols and staged LLM-as-judge evaluation. Our contributions include: (1) a systematic taxonomy of short- and long-term memory based on 11 agents across 5 architectures; (2) a snapshot-based suite of 128 tasks across 26 applications, organized into 64 mirror pairs, where 89.8 percent require cross-temporal and cross-spatial retention; (3) MemGUI-Eval, an automated 3-stage Progressive Scrutiny pipeline with 7 hierarchical metrics spanning memory fidelity, learning effectiveness, and execution efficiency; and (4) an assessment of 11 state-of-the-art agents guided by 6 research questions. Our experiments reveal substantial memory deficits across all evaluated systems, including 4-10x capability gaps on memory-intensive tasks. They further show that short-term memory is indispensable, while explicit long-term memory improves cross-session learning by 21.9 percentage points, with cross-application transfer and computational cost remaining major bottlenecks. We additionally identify 5 distinct failure modes and synthesize 5 actionable design implications for future memory-enhanced agents. All resources, including code, benchmark, and evaluation results, will be fully open-sourced and continuously maintained at https://memgui-bench.github.io/.",
+      "authors": [
+        "Guangyi Liu",
+        "Pengxiang Zhao",
+        "Yaozhen Liang",
+        "Qinyi Luo",
+        "Shunye Tang",
+        "Yuxiang Chai",
+        "Weifeng Lin",
+        "Han Xiao",
+        "WenHao Wang",
+        "Siheng Chen",
+        "Zhengxi Lu",
+        "Gao Wu",
+        "Hao Wang",
+        "Liang Liu",
+        "Yong Liu"
+      ],
+      "categories": [
+        "cs.DC"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-03T17:01:59Z",
+      "updated": "2026-08-11T13:42:35Z",
+      "announced_date": "2026-02-03",
+      "first_seen": "2026-02-03",
+      "comment": "Accepted to ACM MM 2026. Project page: https://memgui-bench.github.io/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.06075v2",
+        "pdf": "https://arxiv.org/pdf/2602.06075v2",
+        "html": "https://arxiv.org/html/2602.06075"
+      },
+      "score": 22,
+      "tags": [
+        "gui",
+        "memory"
+      ],
+      "field": "computer-use",
+      "citations": 14
+    },
+    {
+      "id": "2602.03255",
+      "title": "LPS-Bench: Benchmarking Safety Awareness of Computer-Use Agents in Long-Horizon Planning under Benign and Adversarial Scenarios",
+      "abstract": "Computer-use agents (CUAs) that interact with real computer systems can perform automated tasks but face critical safety risks. Ambiguous instructions may trigger harmful actions, and adversarial users can manipulate tool execution to achieve malicious goals. Existing benchmarks mostly focus on short-horizon or GUI-based tasks, evaluating on execution-time errors but overlooking the ability to anticipate planning-time risks. To fill this gap, we present LPS-Bench, a benchmark that evaluates the planning-time safety awareness of MCP-based CUAs under long-horizon tasks, covering both benign and adversarial interactions across 65 scenarios of 7 task domains and 9 risk types. We introduce a multi-agent automated pipeline for scalable data generation and adopt an LLM-as-a-judge evaluation protocol to assess safety awareness through the planning trajectory. Experiments reveal substantial deficiencies in existing CUAs' ability to maintain safe behavior. We further analyze the risks and propose mitigation strategies to improve long-horizon planning safety in MCP-based CUA systems. We open-source our code at https://github.com/tychenn/LPS-Bench.",
+      "authors": [
+        "Tianyu Chen",
+        "Chujia Hu",
+        "Ge Gao",
+        "Dongrui Liu",
+        "Xia Hu",
+        "Wenjie Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-03T08:40:24Z",
+      "updated": "2026-02-03T08:40:24Z",
+      "announced_date": "2026-02-03",
+      "first_seen": "2026-02-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.03255v1",
+        "pdf": "https://arxiv.org/pdf/2602.03255v1",
+        "html": "https://arxiv.org/html/2602.03255"
+      },
+      "score": 25,
+      "tags": [
+        "gui",
+        "tool-use",
+        "multi-agent",
+        "computer-use",
+        "safety",
+        "planning"
+      ],
+      "field": "computer-use",
+      "citations": 4
+    },
+    {
+      "id": "2602.03224",
+      "title": "TAME: A Trustworthy Test-Time Evolution of Agent Memory with Systematic Benchmarking",
+      "abstract": "Test-time evolution of agent memory represents a pivotal paradigm for advancing AGI, as it strengthens complex reasoning through experience accumulation without requiring parameter updates. However, even during benign task evolution, agent safety alignment remains vulnerable, a phenomenon known as Agent Memory Misevolution. To evaluate this phenomenon, we construct the Trust-Memevo benchmark and find that agents exhibit an overall decline in trustworthiness across multiple tasks during benign task evolution. To address this issue, we propose TAME, a trust-aware memory evolution framework in which a shared memory bank is jointly governed by an Executor and an Evaluator. The Executor retrieves and applies transferable experiences to support task solving, while the Evaluator assesses the contribution of each utilized experience to the outcome and produces trust-aware feedback to guide subsequent memory use. This executor-evaluator loop enables memory to be selectively reinforced, cautiously reused, and continuously expanded over time. Experiments show that TAME mitigates memory misevolution while achieving strong task performance. In particular, on the GPT-5.2 AIME benchmark, TAME improves accuracy by 14.6 percentage points over the strongest existing method and maintains competitive trustworthiness.",
+      "authors": [
+        "Yu Cheng",
+        "Yongkang Hu",
+        "Jiuan Zhou",
+        "Yushuo Zhang",
+        "Yihang Chen",
+        "Huichi Zhou",
+        "Mingang Chen",
+        "Zhizhong Zhang",
+        "Kun Shao",
+        "Yuan Xie",
+        "Zhaoxia Yin"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-03T07:52:26Z",
+      "updated": "2026-06-06T09:48:09Z",
+      "announced_date": "2026-02-03",
+      "first_seen": "2026-02-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.03224v2",
+        "pdf": "https://arxiv.org/pdf/2602.03224v2",
+        "html": "https://arxiv.org/html/2602.03224"
+      },
+      "score": 8,
+      "tags": [
+        "safety",
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 4
+    },
+    {
+      "id": "2602.03130",
+      "title": "FinMTM: A Multi-Turn Multimodal Benchmark for Financial Reasoning and Agent Evaluation",
+      "abstract": "The financial domain poses substantial challenges for vision-language models (VLMs) due to specialized chart formats and knowledge-intensive reasoning requirements. However, existing financial benchmarks are largely single-turn and rely on a narrow set of question formats, limiting comprehensive evaluation in realistic application scenarios. To address this gap, we propose FinMTM, a multi-turn multimodal benchmark that expands diversity along both data and task dimensions. On the data side, we curate and annotate 11{,}133 bilingual (Chinese and English) financial QA pairs grounded in financial visuals, including candlestick charts, statistical plots, and report figures. On the task side, FinMTM covers single- and multiple-choice questions, multi-turn open-ended dialogues, and agent-based tasks. We further design task-specific evaluation protocols, including a set-overlap scoring rule for multiple-choice questions, a weighted combination of turn-level and session-level scores for multi-turn dialogues, and a composite metric that integrates planning quality with final outcomes for agent tasks. Extensive experimental evaluation of 22 VLMs reveal their limitations in fine-grained visual perception, long-context reasoning, and complex agent workflows.",
+      "authors": [
+        "Chenxi Zhang",
+        "Ziliang Gan",
+        "Liyun Zhu",
+        "Youwei Pang",
+        "Qing Zhang",
+        "Rongjunchen Zhang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CE"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-03T05:38:24Z",
+      "updated": "2026-02-03T05:38:24Z",
+      "announced_date": "2026-02-03",
+      "first_seen": "2026-02-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.03130v1",
+        "pdf": "https://arxiv.org/pdf/2602.03130v1",
+        "html": "https://arxiv.org/html/2602.03130"
+      },
+      "score": 8,
+      "tags": [
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 2
+    },
+    {
+      "id": "2602.03100",
+      "title": "Risky-Bench: Probing Agentic Safety Risks under Real-World Deployment",
+      "abstract": "Large Language Models (LLMs) are increasingly deployed as agents that operate in real-world environments, introducing safety risks beyond linguistic harm. Existing agent safety evaluations rely on risk-oriented tasks tailored to specific agent settings, resulting in limited coverage of safety risk space and failing to assess agent safety behavior during long-horizon, interactive task execution in complex real-world deployments. Moreover, their specialization to particular agent settings limits adaptability across diverse agent configurations. To address these limitations, we propose Risky-Bench, a framework that enables systematic agent safety evaluation grounded in real-world deployment. Risky-Bench organizes evaluation around domain-agnostic safety principles to derive context-aware safety rubrics that delineate safety space, and systematically evaluates safety risks across this space through realistic task execution under varying threat assumptions. When applied to life-assist agent settings, Risky-Bench uncovers substantial safety risks in state-of-the-art agents under realistic execution conditions. Moreover, as a well-structured evaluation pipeline, Risky-Bench is not confined to life-assist scenarios and can be adapted to other deployment settings to construct environment-specific safety evaluations, providing an extensible methodology for agent safety assessment.",
+      "authors": [
+        "Jingnan Zheng",
+        "Yanzhen Luo",
+        "Jingjun Xu",
+        "Bingnan Liu",
+        "Yuxin Chen",
+        "Chenhang Cui",
+        "Gelei Deng",
+        "Chaochao Lu",
+        "Xiang Wang",
+        "An Zhang",
+        "Tat-Seng Chua"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-03T04:44:11Z",
+      "updated": "2026-02-03T04:44:11Z",
+      "announced_date": "2026-02-03",
+      "first_seen": "2026-02-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.03100v1",
+        "pdf": "https://arxiv.org/pdf/2602.03100v1",
+        "html": "https://arxiv.org/html/2602.03100"
+      },
+      "score": 15,
+      "tags": [
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 7
+    },
+    {
+      "id": "2602.11198",
+      "title": "Declarative by Design, Assistable Only by Convention: Benchmarking Multi-Agent Frameworks for AI-Assistability",
+      "abstract": "Multi-agent frameworks (MAFs) promise to simplify LLM-driven software development, yet no principled metric captures how well AI coding assistants can generate correct, framework-specific code. We introduce \\textit{AI-assistability} ($\\mathcal{AI}$), a composite metric that quantifies a framework's amenability to AI-assisted development by combining structural alignment ($\\barσ$) with functional correctness (pass@1). To evaluate this metric in a controlled setting, we design DDL2PropBank, a novel benchmark task that maps relational database schemas to PropBank semantic rolesets, and implement identical agent logic across ten frameworks using the Agent-as-a-Tool pattern. Our results challenge the intuition that declarative framework design guarantees AI-assistability: Agno, with a single canonical pattern and convention-aligned API, achieves the highest $\\mathcal{AI}$ score (0.55), while DSPy -- the most declarative framework by design -- scores lowest (0.07), as its novel abstractions are insufficiently represented in AI training data. We find that convention alignment, not declarative design alone, is the primary driver of AI-assistability ($r = 0.576$ between $\\barσ$ and pass@1). All artifacts -- DDL2PropBank, PropBank MCP server, and all implementations -- are available at https://github.com/ahmeshaf/ddl2propbank",
+      "authors": [
+        "Shafiuddin Rehan Ahmed",
+        "Sourabh Deshpande"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-03T01:10:59Z",
+      "updated": "2026-07-13T23:19:07Z",
+      "announced_date": "2026-02-03",
+      "first_seen": "2026-02-03",
+      "comment": "ACM Submission",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.11198v2",
+        "pdf": "https://arxiv.org/pdf/2602.11198v2",
+        "html": "https://arxiv.org/html/2602.11198"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "multi-agent"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "date": "2026-07-12",
+  "count": 4,
+  "report": {
+    "date": "2026-07-12",
+    "count": 4,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 3,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On July 12, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Safety (3), Planning / reasoning (2), Coding agents (1), and Science lab (1).",
+      "highlights": [
+        {
+          "id": "2607.10768",
+          "title": "Opti-Agent-Bench: Benchmarking End-to-End Optimization R&D Agents on Real-World Business Problems",
+          "blurb": "LLM-based agents are increasingly deployed to solve optimization problems, yet existing benchmarks evaluate them on pre-structured mathematical formulations that bypass the most critical challenge: translating complex bu…"
+        },
+        {
+          "id": "2607.10789",
+          "title": "Imaging-101: Benchmarking LLM Coding Agents on Scientific Computational Imaging",
+          "blurb": "Computational imaging, which recovers hidden signals from indirect, noisy measurements, underpins quantitative discovery across scientific disciplines, yet building a correct reconstruction pipeline demands deep domain e…"
+        },
+        {
+          "id": "2607.10557",
+          "title": "UNIBROWSE: A Data-to-Agent Framework for Multimodal BrowseComp",
+          "blurb": "Multimodal BrowseComp tasks require agents to combine perception, tool use, and long-horizon reasoning over dynamic web content, challenging their ability to handle compositional structure, open-world uncertainty, and mu…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年7月12日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在安全（3）、规划 / 推理（2）、代码智能体（1）、科学实验（1）。",
+      "highlights": [
+        {
+          "id": "2607.10768",
+          "title": "Opti-Agent-Bench: Benchmarking End-to-End Optimization R&D Agents on Real-World Business Problems",
+          "blurb": "LLM-based agents are increasingly deployed to solve optimization problems, yet existing benchmarks evaluate them on pre-structured mathematical formulations that bypass the most critical challenge: translating complex bu…"
+        },
+        {
+          "id": "2607.10789",
+          "title": "Imaging-101: Benchmarking LLM Coding Agents on Scientific Computational Imaging",
+          "blurb": "Computational imaging, which recovers hidden signals from indirect, noisy measurements, underpins quantitative discovery across scientific disciplines, yet building a correct reconstruction pipeline demands deep domain e…"
+        },
+        {
+          "id": "2607.10557",
+          "title": "UNIBROWSE: A Data-to-Agent Framework for Multimodal BrowseComp",
+          "blurb": "Multimodal BrowseComp tasks require agents to combine perception, tool use, and long-horizon reasoning over dynamic web content, challenging their ability to handle compositional structure, open-world uncertainty, and mu…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2607.10789",
+      "title": "Imaging-101: Benchmarking LLM Coding Agents on Scientific Computational Imaging",
+      "abstract": "Computational imaging, which recovers hidden signals from indirect, noisy measurements, underpins quantitative discovery across scientific disciplines, yet building a correct reconstruction pipeline demands deep domain expertise and remains laborious even for domain scientists. We introduce Imaging-101, a benchmark of 57 expert-verified computational imaging tasks spanning six scientific domains, each grounded in a peer-reviewed paper and canonicalized into a standardized four-stage pipeline (preprocessing, forward physics modeling, inverse solver, and visualization) Three evaluation tracks (planning, function-level unit tests, and end-to-end reconstruction) probe distinct agent capabilities across the full pipeline. Evaluating seven frontier LLMs uncovers systematic challenges in applying coding agents to computational imaging that go beyond those exposed by general coding benchmarks, spanning algorithm selection, physical convention handling, and pipeline integration. These findings highlight concrete capability gaps and point toward skill-augmented, domain-specialized agents as a practical path to reliable computational imaging assistance.",
+      "authors": [
+        "Siyi Chen",
+        "Jiahe Ying",
+        "Yixuan Jia",
+        "Yuxuan Gu",
+        "Enze Ye",
+        "Weimin Bai",
+        "Zhijun Zeng",
+        "Shaochi Ren",
+        "Binhong Gao",
+        "Yubing Li",
+        "Tianhan Zhang",
+        "He Sun"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-12T14:42:57Z",
+      "updated": "2026-07-12T14:42:57Z",
+      "announced_date": "2026-07-12",
+      "first_seen": "2026-07-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.10789v1",
+        "pdf": "https://arxiv.org/pdf/2607.10789v1",
+        "html": "https://arxiv.org/html/2607.10789"
+      },
+      "score": 15,
+      "tags": [
+        "coding",
+        "planning",
+        "science"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2607.10768",
+      "title": "Opti-Agent-Bench: Benchmarking End-to-End Optimization R&D Agents on Real-World Business Problems",
+      "abstract": "LLM-based agents are increasingly deployed to solve optimization problems, yet existing benchmarks evaluate them on pre-structured mathematical formulations that bypass the most critical challenge: translating complex business requirements into correct models and solve efficiently. We introduce Opti-Agent-Bench, an end-to-end benchmark that evaluates Large Language Models (LLMs) across the complete optimization R&D pipeline, from understanding business-language descriptions through mathematical modeling, algorithm selection, and code implementation, to solution report generation. Our design rests on three pillars: (1) businesssemantic authenticity with anti-template traps that defeat pattern matching; (2) modular evaluation with cross-module consistency checking across Problem Understanding, Formal Modeling, Implementation, and Reporting; and (3) the ORAC bi-level validity framework that simultaneously ensures task quality and scoring integrity. Across several industrialscale tasks spanning integer programming, robust optimization, stochastic programming, and non-convex optimization, we expose critical failure modes of current models, including constraint omission, model-code inconsistency, and report-implementation divergence, that remain invisible under conventional single-metric evaluation.",
+      "authors": [
+        "Yongchang Fu",
+        "Xinjie Huang",
+        "Chengjun Dai",
+        "Chengzhe Feng",
+        "Junshao Zhang",
+        "Hong Zhu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-12T13:47:57Z",
+      "updated": "2026-07-12T13:47:57Z",
+      "announced_date": "2026-07-12",
+      "first_seen": "2026-07-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.10768v1",
+        "pdf": "https://arxiv.org/pdf/2607.10768v1",
+        "html": "https://arxiv.org/html/2607.10768"
+      },
+      "score": 16,
+      "tags": [
+        "safety"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2607.10557",
+      "title": "UNIBROWSE: A Data-to-Agent Framework for Multimodal BrowseComp",
+      "abstract": "Multimodal BrowseComp tasks require agents to combine perception, tool use, and long-horizon reasoning over dynamic web content, challenging their ability to handle compositional structure, open-world uncertainty, and multimodal integration across extended interactions. Crucially, real-world multimodal browsing involves three distinct information-flow patterns: text-only, image-to-text, and text-to-image, yet existing data construction methods cover only the text-only and image-to-text patterns, leaving text-to-image largely unaddressed and limiting agent generality and robustness. We introduce UNIBROWSE, a unified data pipeline that for the first time simultaneously generates training data covering all three patterns, augments curated knowledge graphs with live web retrieval for improved fidelity, and introduces a novel metric of exploration degree to filter low-signal instances for efficient reinforcement learning. Through this pipeline, we produce high-quality cold-start tool-use trajectories and exploration-rich QA pairs, and train a 35B-scale agent via supervised fine-tuning and exploration-aware RL.The resulting UNIBROWSE agent achieves state-of-the-art performance on multimodal BrowseComp benchmarks, attaining an average accuracy of 54.4 across five diverse benchmarks -- an improvement of 10.5 points over its base model Qwen3.5-35B-A3B -- and surpassing serveral closed-source agent workflows such as GPT-5 (42.9), Gemini-2.5 Pro (44.8), and Gemini-2.5 Flash (41.3).",
+      "authors": [
+        "Xiyu Wei",
+        "Qingwei Zong",
+        "Zhuocheng Yu",
+        "Sujian Li"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-07-12T04:13:27Z",
+      "updated": "2026-07-12T04:13:27Z",
+      "announced_date": "2026-07-12",
+      "first_seen": "2026-07-12",
+      "comment": "17 pages, 5 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.10557v1",
+        "pdf": "https://arxiv.org/pdf/2607.10557v1",
+        "html": "https://arxiv.org/html/2607.10557"
+      },
+      "score": 9,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2607.10526",
+      "title": "Agents Don't Just Agree, They Remember: Benchmarking Persistent Sycophancy in Stateful Personal Agents",
+      "abstract": "Stateful personal agents increasingly maintain long-term user profiles, episodic memories, and reusable skills. This persistence turns conversational sycophancy into a state-writing failure: accepted user-centric claims can be committed as lasting preferences, background facts, or workflows and later reused after the original conversation is gone. We call this persistent sycophancy and introduce the Personal Agent Sycophancy Benchmark (PASB), a 1,600-task benchmark that traces whether a conversational claim is accepted, written into durable agent state, and reused in a later neutral query. Unlike prior benchmarks that provide pre-written memories, PASB evaluates real agents (Hermes-Agent and OpenClaw) that decide what to store. It isolates the write process by combining four scenario framings with four temporal delivery patterns and separating a five-turn persist stage from a cleared three-turn query stage, ensuring downstream effects arise only from durable state. Across twelve models, the commit boundary is the key inflection point: downstream failure increases from 45.0% in session-only episodes to 71.9% after commitment, a consistent increase of 27.0 percentage points. Committed claims exhibit three write-time patterns: status promotion, attribution removal, and scope broadening. These patterns become stronger under memory-like or procedural framing, repeated reinforcement, and even across domain boundaries. These results show that agent sycophancy is fundamentally a state-writing governance problem. Once user content is committed to durable memory, safety must govern what agents write, not only what they say. PASB identifies the write-time controls needed to gate risky commits while preserving the source, role, and scope of stored content beyond response-level mitigations.",
+      "authors": [
+        "Xutao Mao",
+        "Liangjie Zhao",
+        "Leyao Wang",
+        "Rui Qian",
+        "Qiang Huang",
+        "Wentao Wang",
+        "Bo Han",
+        "Xiang Zheng",
+        "Cong Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-12T01:08:59Z",
+      "updated": "2026-07-27T05:08:50Z",
+      "announced_date": "2026-07-12",
+      "first_seen": "2026-07-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.10526v3",
+        "pdf": "https://arxiv.org/pdf/2607.10526v3",
+        "html": "https://arxiv.org/html/2607.10526"
+      },
+      "score": 7,
+      "tags": [
+        "safety",
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

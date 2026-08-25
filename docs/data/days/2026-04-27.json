@@ -1,0 +1,225 @@
+{
+  "date": "2026-04-27",
+  "count": 4,
+  "report": {
+    "date": "2026-04-27",
+    "count": 4,
+    "themes": [
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On April 27, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Web agents (1), Computer use (1), Planning / reasoning (1), and Science lab (1).",
+      "highlights": [
+        {
+          "id": "2604.24964",
+          "title": "Odysseys: Benchmarking Web Agents on Realistic Long Horizon Tasks",
+          "blurb": "Existing web agent benchmarks have largely converged on short, single-site tasks that frontier models are approaching saturation on."
+        },
+        {
+          "id": "2604.24929",
+          "title": "GAIA-v2-LILT: Multilingual Adaptation of Agent Benchmark beyond Translation",
+          "blurb": "Agent benchmarks remain largely English-centric, while their multilingual versions are often built with machine translation (MT) and limited post-editing."
+        },
+        {
+          "id": "2604.24477",
+          "title": "GAMMAF: A Common Framework for Graph-Based Anomaly Monitoring Benchmarking in LLM Multi-Agent Systems",
+          "blurb": "The rapid integration of Large Language Models (LLMs) into Multi-Agent Systems (MAS) has significantly enhanced their collaborative problem-solving capabilities, but it has also expanded their attack surfaces, exposing t…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年4月27日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在网页智能体（1）、计算机使用（1）、规划 / 推理（1）、科学实验（1）。",
+      "highlights": [
+        {
+          "id": "2604.24964",
+          "title": "Odysseys: Benchmarking Web Agents on Realistic Long Horizon Tasks",
+          "blurb": "Existing web agent benchmarks have largely converged on short, single-site tasks that frontier models are approaching saturation on."
+        },
+        {
+          "id": "2604.24929",
+          "title": "GAIA-v2-LILT: Multilingual Adaptation of Agent Benchmark beyond Translation",
+          "blurb": "Agent benchmarks remain largely English-centric, while their multilingual versions are often built with machine translation (MT) and limited post-editing."
+        },
+        {
+          "id": "2604.24477",
+          "title": "GAMMAF: A Common Framework for Graph-Based Anomaly Monitoring Benchmarking in LLM Multi-Agent Systems",
+          "blurb": "The rapid integration of Large Language Models (LLMs) into Multi-Agent Systems (MAS) has significantly enhanced their collaborative problem-solving capabilities, but it has also expanded their attack surfaces, exposing t…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.24964",
+      "title": "Odysseys: Benchmarking Web Agents on Realistic Long Horizon Tasks",
+      "abstract": "Existing web agent benchmarks have largely converged on short, single-site tasks that frontier models are approaching saturation on. However, real world web use consists of long-horizon, multi-site workflows. Common web navigation tasks, such as comparing products across different domains, planning trips across multiple services, or summarizing information from multiple search queries, require sustained context and cross-site reasoning over potentially hours of browsing. To capture and evaluate such behaviors, we introduce Odysseys: a benchmark of 200 long-horizon web tasks derived from real world browsing sessions evaluated on the live Internet. We find that binary pass/fail evaluation is inadequate for long-horizon settings and introduce a rubric-based evaluation, annotating each Odysseys task with an average of 6.1 graded rubrics. We demonstrate that this yields higher agreement with humans and provides a more fine-grained signal than commonly used trajectory-level LLM-as-a-judge evaluation metrics. We tested several leading frontier models and find that the strongest models achieve a success rate of 44.5%, which leaves substantial room for future improvements. Beyond task success, we argue that efficiency is a first-class concern for long-horizon agents. We introduce a Trajectory Efficiency metric (rubric score per step) and find that even frontier agents achieve only 1.15%, marking an evident need for agents that can succeed efficiently and not simply eventually. Odysseys isolates the critical evaluation of long-horizon proficiency in open-web environments, providing a realistic benchmark to measure progress towards computer-use agents that can potentially productively operate for hours. We release our tasks, evaluation scripts, and other results at https://odysseys-website.pages.dev",
+      "authors": [
+        "Lawrence Keunho Jang",
+        "Jing Yu Koh",
+        "Daniel Fried",
+        "Ruslan Salakhutdinov"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-04-27T20:05:41Z",
+      "updated": "2026-04-27T20:05:41Z",
+      "announced_date": "2026-04-27",
+      "first_seen": "2026-04-27",
+      "comment": "29 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.24964v1",
+        "pdf": "https://arxiv.org/pdf/2604.24964v1",
+        "html": "https://arxiv.org/html/2604.24964"
+      },
+      "score": 17,
+      "tags": [
+        "web",
+        "computer-use",
+        "planning"
+      ],
+      "field": "web",
+      "citations": 12
+    },
+    {
+      "id": "2604.24955",
+      "title": "BenchGuard: Who Guards the Benchmarks? Automated Auditing of LLM Agent Benchmarks",
+      "abstract": "As benchmarks grow in complexity, many apparent agent failures are not failures of the agent at all - they are failures of the benchmark itself: broken specifications, implicit assumptions, and rigid evaluation scripts that penalize valid alternative approaches. We propose employing frontier LLMs as systematic auditors of evaluation infrastructure, and realize this vision through BenchGuard, the first automated auditing framework for task-oriented, execution-based agent benchmarks. BenchGuard cross-verifies all benchmark artifacts via structured LLM protocols, optionally incorporating agent solutions or execution traces as additional diagnostic evidence. Deployed on two prominent scientific benchmarks, BenchGuard identified 12 author-confirmed issues in ScienceAgentBench - including fatal errors rendering tasks unsolvable - and exactly matched 83.3% of expert-identified issues on the BIXBench Verified-50 subset, catching defects that prior human review missed entirely. A full audit of 50 complex bioinformatics tasks costs under USD 15, making automated benchmark auditing a practical and valuable complement to human review. These findings point toward AI-assisted benchmark development, where frontier models serve not only as subjects of evaluation but as active participants in validating the evaluation infrastructure itself.",
+      "authors": [
+        "Xinming Tu",
+        "Tianze Wang",
+        "Yingzhou",
+        "Lu",
+        "Kexin Huang",
+        "Yuanhao Qu",
+        "Sara Mostafavi"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-04-27T19:51:25Z",
+      "updated": "2026-04-27T19:51:25Z",
+      "announced_date": "2026-04-27",
+      "first_seen": "2026-04-27",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.24955v1",
+        "pdf": "https://arxiv.org/pdf/2604.24955v1",
+        "html": "https://arxiv.org/html/2604.24955"
+      },
+      "score": 13,
+      "tags": [
+        "science"
+      ],
+      "field": "other",
+      "citations": 7
+    },
+    {
+      "id": "2604.24929",
+      "title": "GAIA-v2-LILT: Multilingual Adaptation of Agent Benchmark beyond Translation",
+      "abstract": "Agent benchmarks remain largely English-centric, while their multilingual versions are often built with machine translation (MT) and limited post-editing. We argue that, for agentic tasks, this minimal workflow can easily break benchmark validity through query-answer misalignment or culturally off-target context. We propose a refined workflow for adapting English benchmarks into multiple languages with explicit functional alignment, cultural alignment, and difficulty calibration using both automated checks and human review. Using this workflow, we introduce GAIA-v2-LILT, a re-audited multilingual extension of GAIA covering five non-English languages. In experiments, our workflow improves agent success rates by up to 32.7% over minimally translated versions, bringing the closest audited setting to within 3.1% of English performance while substantial gaps remain in many other cases. This indicates that a substantial share of the multilingual performance gap is benchmark-induced measurement error, motivating task-level alignment when adapting English benchmarks across languages. The data is available as part of the MAPS package at https://huggingface.co/datasets/Fujitsu-FRE/MAPS/viewer/GAIA-v2-LILT. We also release the code used in our experiments at https://github.com/lilt/gaia-v2-lilt.",
+      "authors": [
+        "Yunsu Kim",
+        "Kaden Uhlig",
+        "Joern Wuebker"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-04-27T19:11:21Z",
+      "updated": "2026-04-27T19:11:21Z",
+      "announced_date": "2026-04-27",
+      "first_seen": "2026-04-27",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.24929v1",
+        "pdf": "https://arxiv.org/pdf/2604.24929v1",
+        "html": "https://arxiv.org/html/2604.24929"
+      },
+      "score": 14,
+      "tags": [],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2604.24477",
+      "title": "GAMMAF: A Common Framework for Graph-Based Anomaly Monitoring Benchmarking in LLM Multi-Agent Systems",
+      "abstract": "The rapid integration of Large Language Models (LLMs) into Multi-Agent Systems (MAS) has significantly enhanced their collaborative problem-solving capabilities, but it has also expanded their attack surfaces, exposing them to vulnerabilities such as prompt infection and compromised inter-agent communication. While emerging graph-based anomaly detection methods show promise in protecting these networks, the field currently lacks a standardized, reproducible environment to train these models and evaluate their efficacy. To address this gap, we introduce Gammaf (Graph-based Anomaly Monitoring for LLM Multi-Agent systems Framework), an open-source benchmarking platform. Gammaf is not a novel defense mechanism itself, but rather a comprehensive evaluation architecture designed to generate synthetic multi-agent interaction datasets and benchmark the performance of existing and future defense models. The proposed framework operates through two interdependent pipelines: a Training Data Generation stage, which simulates debates across varied network topologies to capture interactions as robust attributed graphs, and a Defense System Benchmarking stage, which actively evaluates defense models by dynamically isolating flagged adversarial nodes during live inference rounds. Through rigorous evaluation using established defense baselines (XG-Guard and BlindGuard) across multiple knowledge tasks (such as MMLU-Pro and GSM8K), we demonstrate Gammaf's high utility, topological scalability, and execution efficiency. Furthermore, our experimental results reveal that equipping an LLM-MAS with effective attack remediation not only recovers system integrity but also substantially reduces overall operational costs by facilitating early consensus and cutting off the extensive token generation typical of adversarial agents.",
+      "authors": [
+        "Pablo Mateo-Torrejón",
+        "Alfonso Sánchez-Macián"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-04-27T13:45:14Z",
+      "updated": "2026-04-27T13:45:14Z",
+      "announced_date": "2026-04-27",
+      "first_seen": "2026-04-27",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.24477v1",
+        "pdf": "https://arxiv.org/pdf/2604.24477v1",
+        "html": "https://arxiv.org/html/2604.24477"
+      },
+      "score": 14,
+      "tags": [
+        "multi-agent",
+        "safety"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    }
+  ]
+}

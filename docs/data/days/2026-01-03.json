@@ -1,0 +1,83 @@
+{
+  "date": "2026-01-03",
+  "count": 1,
+  "report": {
+    "date": "2026-01-03",
+    "count": 1,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      }
+    ],
+    "en": {
+      "headline": "1 new agent benchmark",
+      "summary": "On January 3, 2026, arXiv listed 1 new agent benchmark: ReliabilityBench: Evaluating LLM Agent Reliability Under Production-Like Stress Conditions.",
+      "highlights": [
+        {
+          "id": "2601.06112",
+          "title": "ReliabilityBench: Evaluating LLM Agent Reliability Under Production-Like Stress Conditions",
+          "blurb": "Existing benchmarks for tool-using LLM agents primarily report single-run success rates and miss reliability properties required in production."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 1 篇 Agent Benchmark",
+      "summary": "2026年1月3日，arXiv 新增 1 篇 Agent Benchmark：ReliabilityBench: Evaluating LLM Agent Reliability Under Production-Like Stress Conditions。",
+      "highlights": [
+        {
+          "id": "2601.06112",
+          "title": "ReliabilityBench: Evaluating LLM Agent Reliability Under Production-Like Stress Conditions",
+          "blurb": "Existing benchmarks for tool-using LLM agents primarily report single-run success rates and miss reliability properties required in production."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2601.06112",
+      "title": "ReliabilityBench: Evaluating LLM Agent Reliability Under Production-Like Stress Conditions",
+      "abstract": "Existing benchmarks for tool-using LLM agents primarily report single-run success rates and miss reliability properties required in production. We introduce \\textbf{ReliabilityBench}, a benchmark for evaluating agent reliability across three dimensions: (i) consistency under repeated execution using $\\mathrm{pass}^k$, (ii) robustness to semantically equivalent task perturbations at intensity $ε$, and (iii) fault tolerance under controlled tool/API failures at intensity $λ$. ReliabilityBench contributes a unified reliability surface $R(k,ε,λ)$, \\textit{action metamorphic relations} that define correctness via end-state equivalence rather than text similarity, and a chaos-engineering-style fault injection framework (timeouts, rate limits, partial responses, schema drift). We evaluate two models (Gemini 2.0 Flash, GPT-4o) and two agent architectures (ReAct, Reflexion) across four domains (scheduling, travel, customer support, e-commerce) over 1,280 episodes. Perturbations alone reduce success from 96.9% at $ε=0$ to 88.1% at $ε=0.2$. Rate limiting is the most damaging fault in ablations. ReAct is more robust than Reflexion under combined stress, and Gemini 2.0 Flash achieves comparable reliability to GPT-4o at much lower cost. ReliabilityBench provides a systematic framework for assessing production readiness of LLM agents.",
+      "authors": [
+        "Aayush Gupta"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-01-03T13:41:33Z",
+      "updated": "2026-01-03T13:41:33Z",
+      "announced_date": "2026-01-03",
+      "first_seen": "2026-01-03",
+      "comment": "18 pages, 5 figures, 8 tables. Evaluates ReAct vs Reflexion across four tool-using domains with perturbation (epsilon) and fault-injection (lambda) stress testing; 1,280 total episodes",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.06112v1",
+        "pdf": "https://arxiv.org/pdf/2601.06112v1",
+        "html": "https://arxiv.org/html/2601.06112"
+      },
+      "score": 20,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 26
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "date": "2026-06-07",
+  "count": 1,
+  "report": {
+    "date": "2026-06-07",
+    "count": 1,
+    "themes": [
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      }
+    ],
+    "en": {
+      "headline": "1 new agent benchmark",
+      "summary": "On June 7, 2026, arXiv listed 1 new agent benchmark: PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting.",
+      "highlights": [
+        {
+          "id": "2606.08878",
+          "title": "PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting",
+          "blurb": "Real-world LLM applications are moving beyond single-agent workflows toward orchestrated multi-agent systems, yet current models still struggle to determine what each sub-agent needs to know."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 1 篇 Agent Benchmark",
+      "summary": "2026年6月7日，arXiv 新增 1 篇 Agent Benchmark：PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting。",
+      "highlights": [
+        {
+          "id": "2606.08878",
+          "title": "PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting",
+          "blurb": "Real-world LLM applications are moving beyond single-agent workflows toward orchestrated multi-agent systems, yet current models still struggle to determine what each sub-agent needs to know."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.08878",
+      "title": "PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting",
+      "abstract": "Real-world LLM applications are moving beyond single-agent workflows toward orchestrated multi-agent systems, yet current models still struggle to determine what each sub-agent needs to know. To measure this, we introduce PerspectiveGap, a benchmark for evaluating LLMs' ability to compose orchestration prompts for multi-agent systems. PerspectiveGap contains 110 scenarios, each evaluated through two distractor-mixed task formats: role-fragment assignment and free-form prompt writing. These scenarios are organized into 10 topologies, which are distilled from the authors' real-world engineering practice and framed by the Prompt Economy principle: building loop-centered orchestrations that maximize utility with minimal role and engineering overhead. In experiments with 33 commercial models from 10 companies, GPT-5.5 substantially outperforms all competitors, whereas Opus 4.8 shows a notable weakness in orchestration prompting despite its strong coding performance. Nevertheless, PerspectiveGap remains challenging: the evaluated models achieve an average combined pass rate of only 17.2\\% (GPT-5.5 62.0\\%) and an average overall leakage rate of 217.9\\% (a per-scenario information leak-event count, not a proportion; GPT-5.5 49.1\\%). These findings suggest that multi-agent orchestration prompting is a distinct and under-evaluated capability, and PerspectiveGap provides a foundation for measuring and improving it systematically.",
+      "authors": [
+        "Youran Sun",
+        "Xingyu Ren",
+        "Kejia Zhang",
+        "Xinpeng Liu",
+        "Jiaxuan Guo"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.MA"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-07T23:26:12Z",
+      "updated": "2026-07-12T03:03:28Z",
+      "announced_date": "2026-06-07",
+      "first_seen": "2026-06-07",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.08878v2",
+        "pdf": "https://arxiv.org/pdf/2606.08878v2",
+        "html": "https://arxiv.org/html/2606.08878"
+      },
+      "score": 20,
+      "tags": [
+        "multi-agent"
+      ],
+      "field": "multi-agent",
+      "citations": 7
+    }
+  ]
+}

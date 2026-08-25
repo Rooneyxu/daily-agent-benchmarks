@@ -1,0 +1,272 @@
+{
+  "date": "2026-04-06",
+  "count": 5,
+  "report": {
+    "date": "2026-04-06",
+    "count": 5,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      }
+    ],
+    "en": {
+      "headline": "5 new agent benchmarks",
+      "summary": "On April 6, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Planning / reasoning (3), Tool use (2), Safety (1), and Multi-agent (1).",
+      "highlights": [
+        {
+          "id": "2604.04847",
+          "title": "Full-Duplex-Bench-v3: Benchmarking Tool Use for Full-Duplex Voice Agents Under Real-World Disfluency",
+          "blurb": "We introduce Full-Duplex-Bench-v3 (FDB-v3), a benchmark for evaluating spoken language models under naturalistic speech conditions and multi-step tool use."
+        },
+        {
+          "id": "2604.05172",
+          "title": "ClawsBench: Evaluating Capability and Safety of LLM Productivity Agents in Simulated Workspaces",
+          "blurb": "Large language model (LLM) agents are increasingly deployed to automate productivity tasks (e.g., email, scheduling, document management), but evaluating them on live services is risky due to potentially irreversible cha…"
+        },
+        {
+          "id": "2605.02910",
+          "title": "CreativityBench: Evaluating Agent Creative Reasoning via Affordance-Based Tool Repurposing",
+          "blurb": "Recent advances in large language models have led to strong performance on reasoning and environment-interaction tasks, yet their ability for creative problem-solving remains underexplored."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年4月6日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在规划 / 推理（3）、工具使用（2）、安全（1）、多智能体（1）。",
+      "highlights": [
+        {
+          "id": "2604.04847",
+          "title": "Full-Duplex-Bench-v3: Benchmarking Tool Use for Full-Duplex Voice Agents Under Real-World Disfluency",
+          "blurb": "We introduce Full-Duplex-Bench-v3 (FDB-v3), a benchmark for evaluating spoken language models under naturalistic speech conditions and multi-step tool use."
+        },
+        {
+          "id": "2604.05172",
+          "title": "ClawsBench: Evaluating Capability and Safety of LLM Productivity Agents in Simulated Workspaces",
+          "blurb": "Large language model (LLM) agents are increasingly deployed to automate productivity tasks (e.g., email, scheduling, document management), but evaluating them on live services is risky due to potentially irreversible cha…"
+        },
+        {
+          "id": "2605.02910",
+          "title": "CreativityBench: Evaluating Agent Creative Reasoning via Affordance-Based Tool Repurposing",
+          "blurb": "Recent advances in large language models have led to strong performance on reasoning and environment-interaction tasks, yet their ability for creative problem-solving remains underexplored."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.05172",
+      "title": "ClawsBench: Evaluating Capability and Safety of LLM Productivity Agents in Simulated Workspaces",
+      "abstract": "Large language model (LLM) agents are increasingly deployed to automate productivity tasks (e.g., email, scheduling, document management), but evaluating them on live services is risky due to potentially irreversible changes. Existing benchmarks rely on simplified environments and fail to capture realistic, stateful, multi-service workflows. We introduce ClawsBench, a benchmark for evaluating and improving LLM agents in realistic productivity settings. It includes five high-fidelity mock services (Gmail, Slack, Google Calendar, Google Docs, Google Drive) with full state management and deterministic snapshot/restore, along with 44 structured tasks covering single-service, cross-service, and safety-critical scenarios. We decompose agent scaffolding into two independent levers (domain skills that inject API knowledge via progressive disclosure, and a meta prompt that coordinates behavior across services) and vary both to measure their separate and combined effects. Experiments across 6 models, 4 agent harnesses, and 33 conditions show that with full scaffolding, agents achieve task success rates of 39-64% but exhibit unsafe action rates of 7-33%. On OpenClaw, the top five models fall within a 10 percentage-point band on task success (53-63%), with unsafe action rates from 7% to 23% and no consistent ordering between the two metrics. We identify eight recurring patterns of unsafe behavior, including multi-step sandbox escalation and silent contract modification. We release the trajectories and future dataset at https://clawsbench.com.",
+      "authors": [
+        "Xiangyi Li",
+        "Kyoung Whan Choe",
+        "Yimin Liu",
+        "Xiaokun Chen",
+        "Chujun Tao",
+        "Bingran You",
+        "Wenbo Chen",
+        "Zonglin Di",
+        "Jiankai Sun",
+        "Shenghan Zheng",
+        "Jiajun Bao",
+        "Yuanli Wang",
+        "Weixiang Yan",
+        "Yiyuan Li",
+        "Han-chung Lee"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-06T21:09:06Z",
+      "updated": "2026-04-08T09:27:21Z",
+      "announced_date": "2026-04-06",
+      "first_seen": "2026-04-06",
+      "comment": "25 pages, 5 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.05172v2",
+        "pdf": "https://arxiv.org/pdf/2604.05172v2",
+        "html": "https://arxiv.org/html/2604.05172"
+      },
+      "score": 16,
+      "tags": [
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 20
+    },
+    {
+      "id": "2604.05076",
+      "title": "GLANCE: A Global-Local Coordination Multi-Agent Framework for Music-Grounded Non-Linear Video Editing",
+      "abstract": "Music-grounded mashup video creation is a challenging form of video non-linear editing, where a system must compose a coherent timeline from large collections of source videos while aligning with music rhythm, user intent, story completeness, and long-range structural constraints. Existing approaches typically rely on fixed pipelines or simplified retrieval-and-concatenation paradigms, limiting their ability to adapt to diverse prompts and heterogeneous source materials. In this paper, we present GLANCE, a global-local coordination multi-agent framework for music-grounded nonlinear video editing. GLANCE adopts a bi-loop architecture for better editing practice: an outer loop performs long-horizon planning and task-graph construction, and an inner loop adopts the \"Observe-Think-Act-Verify\" flow for segment-wise editing tasks and their refinements. To address the cross-segment and global conflict emerging after subtimelines composition, we introduce a dedicated global-local coordination mechanism with both preventive and corrective components, which includes a novelly designed context controller, conflict region decomposition module, and a bottom-up dynamic negotiation mechanism. To support rigorous evaluation, we construct MVEBench, a new benchmark that factorizes editing difficulty along task type, prompt specificity, and music length, and propose an agent-as-a-judge evaluation framework for scalable multi-dimensional assessment. Experimental results show that GLANCE consistently outperforms prior research baselines and open-source product baselines under the same backbone models. With GPT-4o-mini as the backbone, GLANCE improves over the strongest baseline by 33.2% and 15.6% on two task settings, respectively. Human evaluation further confirms the quality of the generated videos and validates the effectiveness of the proposed evaluation framework.",
+      "authors": [
+        "Zihao Lin",
+        "Haibo Wang",
+        "Zhiyang Xu",
+        "Siyao Dai",
+        "Huanjie Dong",
+        "Xiaohan Wang",
+        "Yolo Y. Tang",
+        "Yixin Wang",
+        "Qifan Wang",
+        "Lifu Huang"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.MM",
+        "cs.SD"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-04-06T18:21:32Z",
+      "updated": "2026-04-06T18:21:32Z",
+      "announced_date": "2026-04-06",
+      "first_seen": "2026-04-06",
+      "comment": "14 pages, 4 figures, under review",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.05076v1",
+        "pdf": "https://arxiv.org/pdf/2604.05076v1",
+        "html": "https://arxiv.org/html/2604.05076"
+      },
+      "score": 11,
+      "tags": [
+        "multi-agent",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2604.04847",
+      "title": "Full-Duplex-Bench-v3: Benchmarking Tool Use for Full-Duplex Voice Agents Under Real-World Disfluency",
+      "abstract": "We introduce Full-Duplex-Bench-v3 (FDB-v3), a benchmark for evaluating spoken language models under naturalistic speech conditions and multi-step tool use. Unlike prior work, our dataset consists entirely of real human audio annotated for five disfluency categories, paired with scenarios requiring chained API calls across four task domains. We evaluate six model configurations -- GPT-Realtime, Gemini Live 2.5, Gemini Live 3.1, Grok, Ultravox v0.7, and a traditional Cascaded pipeline (Whisper$\\rightarrow$GPT-4o$\\rightarrow$TTS) -- across accuracy, latency, and turn-taking dimensions. GPT-Realtime leads on Pass@1 (0.600) and interruption avoidance (13.5\\%); Gemini Live 3.1 achieves the fastest latency (4.25~s) but the lowest turn-take rate (78.0\\%); and the Cascaded baseline, despite a perfect turn-take rate, incurs the highest latency (10.12~s). Across all systems, self-correction handling and multi-step reasoning under hard scenarios remain the most consistent failure modes.",
+      "authors": [
+        "Guan-Ting Lin",
+        "Chen Chen",
+        "Zhehuai Chen",
+        "Hung-yi Lee"
+      ],
+      "categories": [
+        "eess.AS",
+        "cs.CL"
+      ],
+      "primary_category": "eess.AS",
+      "published": "2026-04-06T16:46:52Z",
+      "updated": "2026-04-06T16:46:52Z",
+      "announced_date": "2026-04-06",
+      "first_seen": "2026-04-06",
+      "comment": "Work in progress. Demo at https://daniellin94144.github.io/FDB-v3-demo",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.04847v1",
+        "pdf": "https://arxiv.org/pdf/2604.04847v1",
+        "html": "https://arxiv.org/html/2604.04847"
+      },
+      "score": 23,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "tool-use",
+      "citations": 13
+    },
+    {
+      "id": "2605.02910",
+      "title": "CreativityBench: Evaluating Agent Creative Reasoning via Affordance-Based Tool Repurposing",
+      "abstract": "Recent advances in large language models have led to strong performance on reasoning and environment-interaction tasks, yet their ability for creative problem-solving remains underexplored. We study this capability through the lens of creative tool use, where a model repurposes available objects by reasoning about their affordances and attributes rather than relying on canonical usage. As a first step, we introduce CreativityBench, a benchmark for evaluating affordance-based creativity in LLMs. To this end, we build a large-scale affordance knowledge base (KB) with 4K entities and 150K+ affordance annotations, explicitly linking objects, parts, attributes, and actionable uses. Building on this KB, we generate 14K grounded tasks that require identifying non-obvious yet physically plausible solutions under constraints. Evaluations across 10 state-of-the-art LLMs, including closed and open-source models, show that models can often select a plausible object, but fail to identify the correct parts, their affordances, and the underlying physical mechanism needed to solve the task, leading to a significant drop in performance. Furthermore, improvements from model scaling quickly saturate, strong general reasoning does not reliably translate to creative affordance discovery, and common inference-time strategies such as Chain-of-Thought yield limited gains. These results suggest that creative tool use remains a major challenge for current models, and that CreativityBench provides a useful testbed for studying this missing dimension of intelligence, with potential implications for planning and reasoning modules in future agents.",
+      "authors": [
+        "Cheng Qian",
+        "Hyeonjeong Ha",
+        "Jiayu Liu",
+        "Jeonghwan Kim",
+        "Jiateng Liu",
+        "Bingxuan Li",
+        "Aditi Tiwari",
+        "Dwip Dalal",
+        "Zhenhailong Wang",
+        "Xiusi Chen",
+        "Mahdi Namazifar",
+        "Yunzhu Li",
+        "Heng Ji"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-06T16:33:23Z",
+      "updated": "2026-05-06T05:10:39Z",
+      "announced_date": "2026-04-06",
+      "first_seen": "2026-04-06",
+      "comment": "57 Pages, 14 Tables, 27 Figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.02910v2",
+        "pdf": "https://arxiv.org/pdf/2605.02910v2",
+        "html": "https://arxiv.org/html/2605.02910"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2604.04323",
+      "title": "How Well Do Agentic Skills Work in the Wild: Benchmarking LLM Skill Usage in Realistic Settings",
+      "abstract": "Agent skills, which are reusable, domain-specific knowledge artifacts, have become a popular mechanism for extending LLM-based agents, yet formally benchmarking skill usage performance remains scarce. Existing skill benchmarking efforts focus on overly idealized conditions, where LLMs are directly provided with hand-crafted, narrowly-tailored task-specific skills for each task, whereas in many realistic settings, the LLM agent may have to search for and select relevant skills on its own, and even the closest matching skills may not be well-tailored for the task. In this paper, we conduct the first comprehensive study of skill utility under progressively challenging realistic settings, where agents must retrieve skills from a large collection of 34k real-world skills and may not have access to any hand-curated skills. Our findings reveal that the benefits of skills are fragile: performance gains degrade consistently as settings become more realistic, with pass rates approaching no-skill baselines in the most challenging scenarios. To narrow this gap, we study skill refinement strategies, including query-specific and query-agnostic approaches, and we show that query-specific refinement substantially recovers lost performance when the initial skills are of reasonable relevance and quality. We further demonstrate the generality of retrieval and refinement on Terminal-Bench 2.0, where they improve the pass rate of Claude Opus 4.6 from 57.7% to 65.5%. Our results, consistent across multiple models, highlight both the promise and the current limitations of skills for LLM-based agents. Our code is available at https://github.com/UCSB-NLP-Chang/Skill-Usage.",
+      "authors": [
+        "Yujian Liu",
+        "Jiabao Ji",
+        "Li An",
+        "Tommi Jaakkola",
+        "Yang Zhang",
+        "Shiyu Chang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-04-06T00:10:30Z",
+      "updated": "2026-04-06T00:10:30Z",
+      "announced_date": "2026-04-06",
+      "first_seen": "2026-04-06",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.04323v1",
+        "pdf": "https://arxiv.org/pdf/2604.04323v1",
+        "html": "https://arxiv.org/html/2604.04323"
+      },
+      "score": 12,
+      "tags": [],
+      "field": "other",
+      "citations": 45
+    }
+  ]
+}

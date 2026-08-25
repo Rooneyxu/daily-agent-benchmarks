@@ -1,0 +1,136 @@
+{
+  "date": "2026-05-04",
+  "count": 2,
+  "report": {
+    "date": "2026-05-04",
+    "count": 2,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On May 4, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Planning / reasoning (2), and Tool use (1).",
+      "highlights": [
+        {
+          "id": "2605.02503",
+          "title": "DataClawBench: An Agent Benchmark for Exploratory Real-World Financial Data Analysis",
+          "blurb": "Autonomous data analysis agents are increasingly expected to conduct exploratory analysis with limited human guidance about data."
+        },
+        {
+          "id": "2605.02240",
+          "title": "PhysicianBench: Evaluating LLM Agents in Real-World EHR Environments",
+          "blurb": "We introduce PhysicianBench, a benchmark for evaluating LLM agents on physician tasks grounded in real clinical setting within electronic health record (EHR) environments."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年5月4日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在规划 / 推理（2）、工具使用（1）。",
+      "highlights": [
+        {
+          "id": "2605.02503",
+          "title": "DataClawBench: An Agent Benchmark for Exploratory Real-World Financial Data Analysis",
+          "blurb": "Autonomous data analysis agents are increasingly expected to conduct exploratory analysis with limited human guidance about data."
+        },
+        {
+          "id": "2605.02240",
+          "title": "PhysicianBench: Evaluating LLM Agents in Real-World EHR Environments",
+          "blurb": "We introduce PhysicianBench, a benchmark for evaluating LLM agents on physician tasks grounded in real clinical setting within electronic health record (EHR) environments."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2605.02503",
+      "title": "DataClawBench: An Agent Benchmark for Exploratory Real-World Financial Data Analysis",
+      "abstract": "Autonomous data analysis agents are increasingly expected to conduct exploratory analysis with limited human guidance about data. However, existing benchmarks typically evaluate such agents in prior-guided settings, providing selected data sources, explicit data schemas, or cleaned data, thereby understating the exploratory burden. To evaluate this realistic exploratory data analysis task, we introduce DataClawBench, a benchmark built from financial think-tank consulting scenarios where agents must independently explore unfamiliar, noisy, cross-domain data and produce verifiable conclusions. DataClawBench provides a unified real-world data environment with approximately 2.06 million records across enterprise, industry, and policy domains, with native data noise preserved. On top of this data environment, it defines 492 multi-step cross-domain tasks, each annotated with intermediate milestones that diagnose exploration and reasoning failures beyond outcome accuracy. A systematic evaluation of eight advanced LLMs under the OpenClaw agent reveals that exploratory data analysis breaks agent reliability: more exploration does not reliably translate into task-relevant progress or correct final answers.",
+      "authors": [
+        "Qiaohong Zhang",
+        "Weihao Ye",
+        "Jialong Chen",
+        "Yi Luo",
+        "BoYuan Li",
+        "Bowen Deng",
+        "Zibin Zheng",
+        "Jianhao Lin",
+        "Wei-Shi Zheng",
+        "Chuan Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-04T11:57:09Z",
+      "updated": "2026-05-27T09:45:47Z",
+      "announced_date": "2026-05-04",
+      "first_seen": "2026-05-04",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.02503v3",
+        "pdf": "https://arxiv.org/pdf/2605.02503v3",
+        "html": "https://arxiv.org/html/2605.02503"
+      },
+      "score": 18,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2605.02240",
+      "title": "PhysicianBench: Evaluating LLM Agents in Real-World EHR Environments",
+      "abstract": "We introduce PhysicianBench, a benchmark for evaluating LLM agents on physician tasks grounded in real clinical setting within electronic health record (EHR) environments. Existing medical agent benchmarks primarily focus on static knowledge recall, single-step atomic actions, or action intent without verifiable execution against the environment. As a result, they fail to capture the long-horizon, composite workflows that characterize real clinical systems. PhysicianBench comprises 100 long-horizon tasks adapted from real consultation cases between primary care and subspecialty physicians, with each task independently reviewed by a separate panel of physicians. Tasks are instantiated in an EHR environment with real patient records and accessed through the same standard APIs used by commercial EHR vendors. Tasks span 21 specialties (e.g., cardiology, endocrinology, oncology, psychiatry) and diverse workflow types (e.g., diagnosis interpretation, medication prescribing, treatment planning), requiring an average of 27 tool calls per task. Solving each task requires retrieving data across encounters, reasoning over heterogeneous clinical information, executing consequential clinical actions, and producing clinical documentation. Each task is decomposed into structured checkpoints (670 in total across the benchmark) capturing distinct stages of completion graded by task-specific scripts with execution-grounded verification. Across 13 proprietary and open-source LLM agents, the best-performing model achieves only 46% success rate (pass@1), while open-source models reach at most 19%, revealing a substantial gap between current agent capabilities and the demands of real-world clinical workflows. PhysicianBench provides a realistic and execution-grounded benchmark for measuring progress toward autonomous clinical agents.",
+      "authors": [
+        "Ruoqi Liu",
+        "Imran Q. Mohiuddin",
+        "Austin J. Schoeffler",
+        "Kavita Renduchintala",
+        "Ashwin Nayak",
+        "Prasantha L. Vemu",
+        "Shivam C. Vedak",
+        "Kameron C. Black",
+        "John L. Havlik",
+        "Isaac Ogunmola",
+        "Stephen P. Ma",
+        "Roopa Dhatt",
+        "Jonathan H. Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-04T05:32:25Z",
+      "updated": "2026-05-04T05:32:25Z",
+      "announced_date": "2026-05-04",
+      "first_seen": "2026-05-04",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.02240v1",
+        "pdf": "https://arxiv.org/pdf/2605.02240v1",
+        "html": "https://arxiv.org/html/2605.02240"
+      },
+      "score": 18,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 10
+    }
+  ]
+}

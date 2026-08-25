@@ -1,0 +1,307 @@
+{
+  "date": "2026-07-01",
+  "count": 6,
+  "report": {
+    "date": "2026-07-01",
+    "count": 6,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      }
+    ],
+    "en": {
+      "headline": "6 new agent benchmarks",
+      "summary": "On July 1, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Tool use (2), Safety (2), Memory (2), and Planning / reasoning (2).",
+      "highlights": [
+        {
+          "id": "2607.00547",
+          "title": "EgoGapBench: Benchmarking Egocentric Action Selection in Multi-Agent Scenes",
+          "blurb": "Existing egocentric benchmarks have primarily constructed the egocentric setting from first-person-view data, which makes it difficult to evaluate egocentric perspective itself in isolation."
+        },
+        {
+          "id": "2607.01071",
+          "title": "MemSyco-Bench: Benchmarking Sycophancy in Agent Memory",
+          "blurb": "Memory has emerged as a cornerstone of modern LLM-based agents, supporting their evolution from single-turn assistants to long-term collaborators."
+        },
+        {
+          "id": "2607.02606",
+          "title": "ChainSWE: Benchmarking Coding Agents on Multi-Bug Software Maintenance",
+          "blurb": "Language model (LM) agents are increasingly deployed to maintain codebases over extended periods, fixing streams of related defects while carrying context from one fix to the next."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 6 篇 Agent Benchmark",
+      "summary": "2026年7月1日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在工具使用（2）、安全（2）、记忆（2）、规划 / 推理（2）。",
+      "highlights": [
+        {
+          "id": "2607.00547",
+          "title": "EgoGapBench: Benchmarking Egocentric Action Selection in Multi-Agent Scenes",
+          "blurb": "Existing egocentric benchmarks have primarily constructed the egocentric setting from first-person-view data, which makes it difficult to evaluate egocentric perspective itself in isolation."
+        },
+        {
+          "id": "2607.01071",
+          "title": "MemSyco-Bench: Benchmarking Sycophancy in Agent Memory",
+          "blurb": "Memory has emerged as a cornerstone of modern LLM-based agents, supporting their evolution from single-turn assistants to long-term collaborators."
+        },
+        {
+          "id": "2607.02606",
+          "title": "ChainSWE: Benchmarking Coding Agents on Multi-Bug Software Maintenance",
+          "blurb": "Language model (LM) agents are increasingly deployed to maintain codebases over extended periods, fixing streams of related defects while carrying context from one fix to the next."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.09944",
+      "title": "Navigation Alone Is Not Enough: Evaluating Explanatory Assistive UI Agents",
+      "abstract": "Modern web interfaces are increasingly difficult to use with screen readers, particularly when pages update dynamically or hide important structure behind visual layout. Recent UI agents can act on such interfaces; however, for assistive agents to be truly useful, they must behave as collaborators that keep users informed and in control, rather than as tools that simply take actions on users' behalf. Most existing benchmarks judge systems primarily by task completion, without assessing how well they explain their actions or support user oversight. We introduce NeXUI, a benchmark for assistive agents that must navigate interfaces while explaining each step in clear language for nonvisual use. NeXUI pairs realistic user goals with instrumented interface states, enabling agents to reason from both visual context and structural information. Its evaluation measures safety, efficiency, and task success, while also checking whether explanations are grounded in the interface state. In our experiments, we find that NeXUI remains challenging even for state-of-the-art foundation models, with % Gemini-3.5-Flash achieving only a 44\\% success rate and poor explanation scores, making it a useful foundation for future research and development. By focusing on navigation, explanation, and user control, NeXUI provides a clearer way to study agents that can support blind and visually impaired users in modern computing environments.",
+      "authors": [
+        "Santosh Patapati"
+      ],
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-07-01T16:24:07Z",
+      "updated": "2026-07-01T16:24:07Z",
+      "announced_date": "2026-07-01",
+      "first_seen": "2026-07-01",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.09944v1",
+        "pdf": "https://arxiv.org/pdf/2608.09944v1",
+        "html": "https://arxiv.org/html/2608.09944"
+      },
+      "score": 8,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.01071",
+      "title": "MemSyco-Bench: Benchmarking Sycophancy in Agent Memory",
+      "abstract": "Memory has emerged as a cornerstone of modern LLM-based agents, supporting their evolution from single-turn assistants to long-term collaborators. However, memory is not always beneficial: retrieved memories often induce a critical issue of sycophancy, causing agents to over-align with the user at the cost of factual accuracy or objective reasoning. Despite this emerging risk, existing memory benchmarks primarily evaluate whether memories are correctly stored, retrieved, or updated, while overlooking how retrieved memories influence downstream reasoning and decision-making. To bridge this gap, we propose MemSyco-Bench, a comprehensive benchmark for evaluating memory-induced sycophancy in agent systems. MemSyco-Bench measures when memory should influence a decision and how valid memory should be used. Specifically, it covers five tasks that assess whether agents can reject memory as factual evidence, respect its applicable scope, resolve conflicts between memory and objective evidence, track memory updates, and use valid memory for personalization. All related resources are collected for the community at https://github.com/XMUDeepLIT/MemSyco-Bench.",
+      "authors": [
+        "Zhishang Xiang",
+        "Zerui Chen",
+        "Yunbo Tang",
+        "Zhimin Wei",
+        "Ruqin Ning",
+        "Yujie Lin",
+        "Qinggang Zhang",
+        "Jinsong Su"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-07-01T15:30:33Z",
+      "updated": "2026-07-02T15:40:30Z",
+      "announced_date": "2026-07-01",
+      "first_seen": "2026-07-01",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.01071v2",
+        "pdf": "https://arxiv.org/pdf/2607.01071v2",
+        "html": "https://arxiv.org/html/2607.01071"
+      },
+      "score": 17,
+      "tags": [
+        "safety",
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2607.02606",
+      "title": "ChainSWE: Benchmarking Coding Agents on Multi-Bug Software Maintenance",
+      "abstract": "Language model (LM) agents are increasingly deployed to maintain codebases over extended periods, fixing streams of related defects while carrying context from one fix to the next. Yet existing software engineering (SWE) benchmarks evaluate models one bug at a time: the repository is reset, the codebase is re-read, and a single self-contained issue is graded in isolation. This setting collapses a continuous maintenance workflow into a series of independent sessions, ignoring the cumulative dependencies that make real-world bug fixing challenging. To bridge this gap, we introduce ChainSWE, the first benchmark for evaluating agents on sequential, dependent bug fixes within a shared codebase. We collect chronological chains of 304 issues across 54 Python projects, mined from six SWE-bench-family datasets. Our evaluation across a range of agents and models reveals a consistent performance drop by up to 70% as the chain length increases.",
+      "authors": [
+        "Qirui Jin",
+        "Lingching Tung",
+        "Kenan Li",
+        "Qiyang Shi",
+        "Yushi She",
+        "Huanzhong Jia",
+        "Harrison Zhao",
+        "Kejing Xia",
+        "Zhenbang Du",
+        "Yikai Zhang",
+        "Jiaxin Pei",
+        "Zhenyu Zhang",
+        "Zhen Qi",
+        "Yuyan Duan",
+        "Wenke Lee",
+        "Zijian Jin"
+      ],
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-07-01T13:32:15Z",
+      "updated": "2026-07-01T13:32:15Z",
+      "announced_date": "2026-07-01",
+      "first_seen": "2026-07-01",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.02606v1",
+        "pdf": "https://arxiv.org/pdf/2607.02606v1",
+        "html": "https://arxiv.org/html/2607.02606"
+      },
+      "score": 16,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 1
+    },
+    {
+      "id": "2607.00627",
+      "title": "AGI Maze as a Benchmark Framework for World-Modeling Agents",
+      "abstract": "Large language models (LLMs) are powerful pattern-completion systems, but their default operating mode - predicting the next token from a static context - does not reliably produce persistent, manipulable representations of an external world. Many tasks that look like \"reasoning\" in text become substantially harder once the environment is partially observable, stateful, and requires memory and structured hypotheses about hidden state. AGI Maze is a lightweight framework for building such environments without requiring high-dimensional sensory inputs. It provides a family of grid-based maze tasks with a clean API and multiple difficulty regimes. The goal is to create benchmarks where agents must learn and use world state representations, not just infer a local rule over readily provided observations. We provide an initial evaluation of several vanilla LLMs on simple mazes showing that they fail to represent mazes internally at LLM inference time. We also introduce a baseline agent, which is allowed to use its message history as a working memory to construct descriptions of observations at agentic runtime. Although this can improve performance, it is still insufficient for an LLM agent to reliably solve even small mazes within a step budget that is more than enough for humans.",
+      "authors": [
+        "Alexey Potapov"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-01T08:43:08Z",
+      "updated": "2026-07-01T08:43:08Z",
+      "announced_date": "2026-07-01",
+      "first_seen": "2026-07-01",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.00627v1",
+        "pdf": "https://arxiv.org/pdf/2607.00627v1",
+        "html": "https://arxiv.org/html/2607.00627"
+      },
+      "score": 12,
+      "tags": [
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2607.00547",
+      "title": "EgoGapBench: Benchmarking Egocentric Action Selection in Multi-Agent Scenes",
+      "abstract": "Existing egocentric benchmarks have primarily constructed the egocentric setting from first-person-view data, which makes it difficult to evaluate egocentric perspective itself in isolation. However, understanding first-person-view input and taking an egocentric perspective are separable abilities, especially when first-person body cues are absent or when other agents are present. To isolate egocentric perspective understanding, we introduce EgoGapBench, a diagnostic benchmark for measuring action selection in multi-agent egocentric scenes. We define the ability measured by this benchmark as Egocentric Action Selection (EAS): selecting an appropriate action from the agent's perspective in the presence of other agents. On EgoGapBench, humans answer reliably, whereas both open-source and proprietary MLLMs perform substantially worse and systematically select actions performed by other visible agents. Fine-tuning on existing egocentric data fails to close this gap and can even be detrimental. In contrast, fine-tuning on EgoGapBench training data improves accuracy but does not reach human performance. These results show that EAS is difficult to acquire from first-person-view data alone, and that MLLMs should be evaluated and trained not only for scene understanding but also for egocentric action selection.",
+      "authors": [
+        "Jihyeok Jung",
+        "Jeewu Lee",
+        "Sanghyeop Kim",
+        "Chanhee Han",
+        "Seong Joon Oh"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-07-01T07:39:14Z",
+      "updated": "2026-07-01T07:39:14Z",
+      "announced_date": "2026-07-01",
+      "first_seen": "2026-07-01",
+      "comment": "15 pages, 2 figures, 8 tables. Code and benchmark are available at https://github.com/jhCOR/EgoGapBench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.00547v1",
+        "pdf": "https://arxiv.org/pdf/2607.00547v1",
+        "html": "https://arxiv.org/html/2607.00547"
+      },
+      "score": 18,
+      "tags": [
+        "multi-agent"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2607.00436",
+      "title": "PHREEQC-MCQ-200: A Diagnostic Benchmark for Tool-Augmented Scientific Simulator Agents",
+      "abstract": "Large language model agents are increasingly connected to scientific software, yet it remains unclear when tool access makes scientific computation more reliable rather than merely more complex. We introduce PHREEQC-MCQ-200, a benchmark for evaluating tool-augmented agents on deterministic aqueous-geochemistry simulations. The benchmark contains 200 multiple-choice questions derived from 21 validated PHREEQC scenarios, requiring agents to construct simulator inputs, execute PHREEQC, inspect structured outputs, and commit to final answers. Across multiple frontier and mid-tier model families, simulator access substantially improves aggregate accuracy, confirming that grounded execution is necessary for many scientific-computation tasks. However, the gains are not monotonic: tool-augmented agents also lose items they answered correctly without tools, revealing regressions that average accuracy alone hides. We further show that output-access protocol matters. A table-of-contents interface can reduce token cost while preserving or improving accuracy for stronger models, but it degrades performance for mid-tier models that cannot reliably navigate structured simulator outputs. PHREEQC-MCQ-200 therefore frames scientific tool use as an end-to-end diagnostic problem rather than a simple tool-calling capability. We argue that evaluations of scientific agents should report not only accuracy, but also item-level retention, output-access sensitivity, trajectory failures, and where the computation chain breaks.",
+      "authors": [
+        "Ke Zhang",
+        "Sahchit Chundur",
+        "Mohammad Javad Qomi",
+        "Maziar Raissi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-01T04:51:37Z",
+      "updated": "2026-07-01T04:51:37Z",
+      "announced_date": "2026-07-01",
+      "first_seen": "2026-07-01",
+      "comment": "30 pages, 2 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.00436v1",
+        "pdf": "https://arxiv.org/pdf/2607.00436v1",
+        "html": "https://arxiv.org/html/2607.00436"
+      },
+      "score": 16,
+      "tags": [
+        "tool-use",
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    }
+  ]
+}

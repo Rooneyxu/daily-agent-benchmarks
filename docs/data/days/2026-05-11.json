@@ -1,0 +1,659 @@
+{
+  "date": "2026-05-11",
+  "count": 15,
+  "report": {
+    "date": "2026-05-11",
+    "count": 15,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 7,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 6,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 5,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multimodal",
+        "count": 4,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "multi-agent",
+        "count": 4,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "embodied",
+        "count": 2,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      }
+    ],
+    "en": {
+      "headline": "15 new agent benchmarks",
+      "summary": "On May 11, 2026, arXiv listed 15 new agent benchmarks. Work clustered around Tool use (7), Planning / reasoning (6), Safety (5), and Multimodal (4).",
+      "highlights": [
+        {
+          "id": "2605.10779",
+          "title": "LITMUS: Benchmarking Behavioral Jailbreaks of LLM Agents in Real OS Environments",
+          "blurb": "The rapid proliferation of LLM-based autonomous agents in real operating system environments introduces a new category of safety risk beyond content safety: behavior jailbreak, where an adversary induces an agent to exec…"
+        },
+        {
+          "id": "2605.10876",
+          "title": "AssayBench: An Assay-Level Virtual Cell Benchmark for LLMs and Agents",
+          "blurb": "Recent advances in machine learning and large-scale biological data collections have revived the prospect of building a virtual cell, a computational model of cellular behavior that could accelerate biological discovery."
+        },
+        {
+          "id": "2605.10787",
+          "title": "ComplexMCP: Evaluation of LLM Agents in Dynamic, Interdependent, and Large-Scale Tool Sandbox",
+          "blurb": "Current LLM agents are proficient at calling isolated APIs but struggle with the \"last mile\" of commercial software automation."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 15 篇 Agent Benchmark",
+      "summary": "2026年5月11日，arXiv 新增 15 篇 Agent Benchmark。当日主题集中在工具使用（7）、规划 / 推理（6）、安全（5）、多模态（4）。",
+      "highlights": [
+        {
+          "id": "2605.10779",
+          "title": "LITMUS: Benchmarking Behavioral Jailbreaks of LLM Agents in Real OS Environments",
+          "blurb": "The rapid proliferation of LLM-based autonomous agents in real operating system environments introduces a new category of safety risk beyond content safety: behavior jailbreak, where an adversary induces an agent to exec…"
+        },
+        {
+          "id": "2605.10876",
+          "title": "AssayBench: An Assay-Level Virtual Cell Benchmark for LLMs and Agents",
+          "blurb": "Recent advances in machine learning and large-scale biological data collections have revived the prospect of building a virtual cell, a computational model of cellular behavior that could accelerate biological discovery."
+        },
+        {
+          "id": "2605.10787",
+          "title": "ComplexMCP: Evaluation of LLM Agents in Dynamic, Interdependent, and Large-Scale Tool Sandbox",
+          "blurb": "Current LLM agents are proficient at calling isolated APIs but struggle with the \"last mile\" of commercial software automation."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2605.11224",
+      "title": "ABRA: Agent Benchmark for Radiology Applications",
+      "abstract": "Existing medical-agent benchmarks deliver imaging as pre-selected samples, never as an environment the agent must navigate. We introduce ABRA, a radiology-agent benchmark in which the agent operates an OHIF viewer and an Orthanc DICOM server through twenty-one function-calling tools that span slice navigation, windowing, series selection, pixel-coordinate annotation, and structured reporting. ABRA contains 655 programmatically generated tasks across three difficulty tiers and eight types (viewer control, metadata QA, vision probe, annotation, longitudinal comparison, BI-RADS reporting, and oracle variants of annotation and BI-RADS reporting), drawn from LIDC-IDRI, Duke Breast Cancer MRI, and NLST New-Lesion LongCT. Each episode is scored along Planning, Execution, and Outcome (Bluethgen et al., 2025) by task-type-specific automatic scorers. Ten current models, five closed-weight and five open-weight, reach at least 89% Execution on real annotation but only 0-25% Outcome; on the paired oracle variant where a simulated detector supplies the finding, Outcome on the same task reaches 69-100% across the models evaluated, localising the bottleneck to perception rather than tool orchestration. Code, task generators, and scorers are released at https://github.com/Luab/ABRA",
+      "authors": [
+        "Bulat Maksudov",
+        "Vladislav Kurenkov",
+        "Kathleen M. Curran",
+        "Alessandra Mileo"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-05-11T20:34:20Z",
+      "updated": "2026-05-11T20:34:20Z",
+      "announced_date": "2026-05-11",
+      "first_seen": "2026-05-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.11224v1",
+        "pdf": "https://arxiv.org/pdf/2605.11224v1",
+        "html": "https://arxiv.org/html/2605.11224"
+      },
+      "score": 11,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2605.18805",
+      "title": "RecoAtlas: From Semantic Plausibility to Set-Level Utility in LLM Recommendation Agents",
+      "abstract": "LLM recommendation agents increasingly produce structured recommendation reports: sets of items accompanied by natural-language justifications. Yet existing evaluations often reduce this setting to reranking small shortlisted candidate sets or judge reports mainly by semantic plausibility. We introduce Recommendation Atlas (Agentic Tool-Level Assessment for Shopping), or RecoAtlas, a benchmark and toolkit for evaluating shopping agents with behavior-grounded metrics. RecoAtlas complements held-out interaction metrics with learned utility proxies for relevance, complementarity, and diversity derived from interaction data, while separately measuring semantic coherence and explanation quality. Its controlled tool environment exposes agents to either semantic, behavior-aligned, or faulty tools, enabling diagnosis of whether performance gains arise from stronger reasoning, better signals, or more effective tool-use policies. Across controlled experiments, we show that RecoAtlas exhibits key properties of a meaningful benchmark for agentic systems: performance scales with model capacity and test-time compute, improves with stronger and better-aligned tools, degrades under noisy or misaligned signals, and reveals that semantic plausibility does not necessarily capture behavior-grounded utility. RecoAtlas provides a foundation for developing and evaluating shopping assistants that optimize not only for plausible recommendations, but also for coherent, behaviorally grounded recommendation sets.",
+      "authors": [
+        "Imad Aouali",
+        "Flavian Vasile",
+        "Otmane Sakhi",
+        "Alexandre Gilotte",
+        "Benjamin Heymann"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-05-11T18:55:32Z",
+      "updated": "2026-05-11T18:55:32Z",
+      "announced_date": "2026-05-11",
+      "first_seen": "2026-05-11",
+      "comment": "Benchmark on LLM Recommendation Agents",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.18805v1",
+        "pdf": "https://arxiv.org/pdf/2605.18805v1",
+        "html": "https://arxiv.org/html/2605.18805"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2605.10912",
+      "title": "WildClawBench: A Benchmark for Real-World, Long-Horizon Agent Evaluation",
+      "abstract": "Large language and vision-language models increasingly power agents that act on a user's behalf through command-line interface (CLI) harnesses. However, most agent benchmarks still rely on synthetic sandboxes, short-horizon tasks, mock-service APIs, and final-answer checks, leaving open whether agents can complete realistic long-horizon work in the runtimes where they are deployed. This work presents WildClawBench, a native-runtime benchmark of 60 human-authored, bilingual, multimodal tasks spanning six thematic categories. Each task averages roughly 8 minutes of wall-clock time and over 20 tool calls, and runs inside a reproducible Docker container hosting an actual CLI agent harness (OpenClaw, Claude Code, Codex, or Hermes Agent) with access to real tools rather than mock services. Grading is hybrid, combining deterministic rule-based checks, environment-state auditing of side effects, and an LLM/VLM judge for semantic verification. Across 19 frontier models, the best, Claude Opus 4.7, reaches only 62.2% overall under OpenClaw, while every other model stays below 60%, and switching harness alone shifts a single model by up to 18 points. These results show that long-horizon, native-runtime agent evaluation remains a far-from-resolved task for current frontier models. We release the tasks, code, and containerized tooling to support reproducible evaluation.",
+      "authors": [
+        "Shuangrui Ding",
+        "Xuanlang Dai",
+        "Long Xing",
+        "Shengyuan Ding",
+        "Ziyu Liu",
+        "Yang JingYi",
+        "Penghui Yang",
+        "Zhixiong Zhang",
+        "Xilin Wei",
+        "Xinyu Fang",
+        "Yubo Ma",
+        "Haodong Duan",
+        "Jing Shao",
+        "Jiaqi Wang",
+        "Dahua Lin",
+        "Kai Chen",
+        "Yuhang Zang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-11T17:49:43Z",
+      "updated": "2026-05-11T17:49:43Z",
+      "announced_date": "2026-05-11",
+      "first_seen": "2026-05-11",
+      "comment": "Github link: https://github.com/internlm/WildClawBench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.10912v1",
+        "pdf": "https://arxiv.org/pdf/2605.10912v1",
+        "html": "https://arxiv.org/html/2605.10912"
+      },
+      "score": 16,
+      "tags": [
+        "tool-use",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 20
+    },
+    {
+      "id": "2605.10904",
+      "title": "MDrive: Benchmarking Closed-Loop Cooperative Driving for End-to-End Multi-agent Systems",
+      "abstract": "Vehicle-to-Everything (V2X) communication has emerged as a promising paradigm for autonomous driving, enabling connected agents to share complementary perception information and negotiate with each other to benefit the final planning. Existing V2X benchmarks, however, fall short in two ways: (i) open-loop evaluations fail to capture the inherently closed-loop nature of driving, leading to evaluation gaps, and (ii) current closed-loop evaluations lack behavioral and interactive diversity to reflect real-world driving. Thus, it is still unclear the extent of benefits of multi-agent systems for closed-loop driving. In this paper, we introduce MDrive, a closed-loop cooperative driving benchmark comprising 225 scenarios grounded in both NHTSA pre-crash typologies and real-world V2X datasets. Our benchmark results demonstrate that multi-agent systems are generally better than single-agent counterparts. However, current multi-agent systems still face two important challenges: (i) perception sharing enhances perceptions, but doesn't always translate to better planning; (ii) negotiation improves planning performance but harms it in complex and dense traffic scenarios. MDrive further provides an open-source toolbox for scenario generation, Real2Sim conversion, and human-in-the-loop simulation. Together, MDrive establishes a reproducible foundation for evaluating and improving the generalization and robustness of cooperative driving systems.",
+      "authors": [
+        "Marco Coscoy",
+        "Zewei Zhou",
+        "Seth Z. Zhao",
+        "Henry Wei",
+        "Angela Magtoto",
+        "Johnson Liu",
+        "Rui Song",
+        "Walter Zimmer",
+        "Zhiyu Huang",
+        "Chen Tang",
+        "Bolei Zhou",
+        "Jiaqi Ma"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-05-11T17:44:34Z",
+      "updated": "2026-05-11T17:44:34Z",
+      "announced_date": "2026-05-11",
+      "first_seen": "2026-05-11",
+      "comment": "website:https://mdrive-challenge.github.io/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.10904v1",
+        "pdf": "https://arxiv.org/pdf/2605.10904v1",
+        "html": "https://arxiv.org/html/2605.10904"
+      },
+      "score": 14,
+      "tags": [
+        "multi-agent",
+        "safety",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 3
+    },
+    {
+      "id": "2605.10876",
+      "title": "AssayBench: An Assay-Level Virtual Cell Benchmark for LLMs and Agents",
+      "abstract": "Recent advances in machine learning and large-scale biological data collections have revived the prospect of building a virtual cell, a computational model of cellular behavior that could accelerate biological discovery. One of the most compelling promises of this vision is the ability to perform in silico phenotypic screens, in which a model predicts the effects of cellular perturbations in unseen biological contexts. This task combines heterogeneous textual inputs with diverse phenotypic outputs, making it particularly well-suited to LLMs and agentic systems. Yet, no standard benchmark currently exists for this task, as existing efforts focus on narrower molecular readouts that are only indirectly aligned with the phenotypic endpoints driving many real-world drug discovery workflows. In this work, we present AssayBench, a benchmark for phenotypic screen prediction, built from 1,920 publicly available CRISPR screens spanning five broad classes of cellular phenotypes. We formulate the screen prediction task as a gene rank prediction for each screen and introduce the adjusted nDCG, a continuous metric for comparing performance across heterogeneous assays. Our extensive evaluation shows that existing methods remain far from empirically estimated performance ceilings and zero-shot generalist LLMs outperform biology-specific LLMs and trainable baselines. Optimization techniques such as fine-tuning, ensembling, and prompt optimization can further improve LLM performance on this task. Overall, AssayBench offers a practical testbed for measuring progress toward in silico phenotypic screening and, more broadly, virtual cell models.",
+      "authors": [
+        "Edward De Brouwer",
+        "Carl Edwards",
+        "Alexander Wu",
+        "Jenna Collier",
+        "Graham Heimberg",
+        "Xiner Li",
+        "Meena Subramaniam",
+        "Ehsan Hajiramezanali",
+        "David Richmond",
+        "Jan-Christian Hütter",
+        "Sara Mostafavi",
+        "Gabriele Scalia"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.QM"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-05-11T17:27:16Z",
+      "updated": "2026-05-11T17:27:16Z",
+      "announced_date": "2026-05-11",
+      "first_seen": "2026-05-11",
+      "comment": "22 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.10876v1",
+        "pdf": "https://arxiv.org/pdf/2605.10876v1",
+        "html": "https://arxiv.org/html/2605.10876"
+      },
+      "score": 18,
+      "tags": [
+        "science"
+      ],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2605.10787",
+      "title": "ComplexMCP: Evaluation of LLM Agents in Dynamic, Interdependent, and Large-Scale Tool Sandbox",
+      "abstract": "Current LLM agents are proficient at calling isolated APIs but struggle with the \"last mile\" of commercial software automation. In real-world scenarios, tools are not independent; they are atomic, interdependent, and prone to environmental noise. We introduce $\\textbf{ComplexMCP}$, a benchmark designed to evaluate agents in these rigorous conditions. Built on the Model Context Protocol (MCP), $\\textbf{ComplexMCP}$ provides over 300 meticulously tested tools derived from 7 stateful sandboxes, ranging from office suites to financial systems. Unlike existing datasets, our benchmark utilizes a seed-driven architecture to simulate dynamic environment states and unpredictable API failures, ensuring a deterministic yet diverse evaluation. We evaluate various LLMs across full-context and RAG paradigms, revealing a stark performance gap: even top-tier models fail to exceed a 60% success rate, far trailing human performance 90%. Granular trajectory analysis identifies three fundamental bottlenecks: (1) $\\textbf{tool retrieval saturation}$ as action spaces scale; (2) $\\textbf{over-confidence}$, where agents skip essential environment verifications; and (3) $\\textbf{strategic defeatism}$, a tendency to rationalize failure rather than pursuing recovery. These findings underscore the insufficiency of current agents for interdependent workflows, positioning $\\textbf{ComplexMCP}$ as a critical testbed for the next generation of resilient autonomous systems.",
+      "authors": [
+        "Yuanyang Li",
+        "Xue Yang",
+        "Longyue Wang",
+        "Weihua Luo",
+        "Hongyang Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-11T16:20:51Z",
+      "updated": "2026-05-20T01:39:17Z",
+      "announced_date": "2026-05-11",
+      "first_seen": "2026-05-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.10787v2",
+        "pdf": "https://arxiv.org/pdf/2605.10787v2",
+        "html": "https://arxiv.org/html/2605.10787"
+      },
+      "score": 18,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2605.10779",
+      "title": "LITMUS: Benchmarking Behavioral Jailbreaks of LLM Agents in Real OS Environments",
+      "abstract": "The rapid proliferation of LLM-based autonomous agents in real operating system environments introduces a new category of safety risk beyond content safety: behavior jailbreak, where an adversary induces an agent to execute dangerous OS-level operations with irreversible consequences. Existing benchmarks either evaluate safety at the semantic layer alone, missing physical-layer harms, or fail to isolate test cases, letting earlier runs contaminate later ones. We present LITMUS (LLM-agents In-OS Testing for Measuring Unsafe Subversion), a benchmark addressing both gaps via a semantic-physical dual verification mechanism and OS-level state rollback. LITMUS comprises 819 high-risk test cases organized into one harmful seed subset and six attack-extended subsets covering three adversarial paradigms (jailbreak speaking, skill injection, and entity wrapping), plus a fully automated multi-agent evaluation framework judging behavior at both conversational and OS-level physical layers. Evaluation across frontier agents reveals three findings: (1) current agents lack effective safety awareness, with strong models (e.g., Claude Sonnet 4.6) still executing 40.64% of high-risk operations; (2) agents exhibit pervasive Execution Hallucination (EH), verbally refusing a request while the dangerous operation has already completed at the system level, invisible to every prior semantic-only framework; and (3) skill injection and entity wrapping attacks achieve high success rates, exposing pronounced agent vulnerabilities. LITMUS provides the first standardized platform for reproducible, physically grounded behavioral safety evaluation of LLM agents in real OS environments.",
+      "authors": [
+        "Chiyu Zhang",
+        "Huiqin Yang",
+        "Bendong Jiang",
+        "Xiaolei Zhang",
+        "Yiran Zhao",
+        "Ruyi Chen",
+        "Lu Zhou",
+        "Xiaogang Xu",
+        "Jiafei Wu",
+        "Liming Fang",
+        "Zhe Liu"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-05-11T16:14:04Z",
+      "updated": "2026-05-11T16:14:04Z",
+      "announced_date": "2026-05-11",
+      "first_seen": "2026-05-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.10779v1",
+        "pdf": "https://arxiv.org/pdf/2605.10779v1",
+        "html": "https://arxiv.org/html/2605.10779"
+      },
+      "score": 19,
+      "tags": [
+        "multi-agent",
+        "safety"
+      ],
+      "field": "multi-agent",
+      "citations": 2
+    },
+    {
+      "id": "2605.10597",
+      "title": "CrackMeBench: Binary Reverse Engineering for Agents",
+      "abstract": "Benchmarks for coding agents increasingly measure source-level software repair, and cybersecurity benchmarks increasingly measure broad capture-the-flag performance. Classical binary reverse engineering remains less precisely specified: given only an executable, can an agent recover validation logic and produce an input, serial, artifact, or key generator accepted by the program? We introduce CrackMeBench, a benchmark for evaluating language-model agents on educational CrackMe-style reverse-engineering tasks. CrackMeBench focuses on deterministic binary validation problems with executable oracles, symbol-poor binaries, explicit local tool access, and externally scored submissions rather than free-form explanations. The v0 benchmark combines eight public calibration CrackMes with twelve generated main-score tasks built from seeded C, Rust, and Go templates, and agents run through an equal shell interface in a no-network Linux Docker sandbox with standard reverse-engineering tools. In a three-model evaluation with a five-minute budget and three scored submissions per task, pass@3 on the generated split is 11/12 tasks (92%) for GPT-5.5, 7/12 (58%) for Claude Opus 4.7, and 5/12 (42%) for Kimi K2. The harder generated half separates the models more sharply, with pass@3 of 5/6, 2/6, and 1/6, respectively; on the eight-task public calibration split, pass@3 is 3/8, 2/8, and 1/8. CrackMeBench records pass@1 and pass@3, scored submissions, wall-clock time, command traces, tool categories, provider-reported token usage, estimated cost, and qualitative failure labels, providing a reproducible testbed for measuring progress from source-code reasoning toward autonomous binary analysis while restricting scope to educational, purpose-built programs.",
+      "authors": [
+        "Isaac David",
+        "Arthur Gervais"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-05-11T14:01:36Z",
+      "updated": "2026-05-11T14:01:36Z",
+      "announced_date": "2026-05-11",
+      "first_seen": "2026-05-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.10597v1",
+        "pdf": "https://arxiv.org/pdf/2605.10597v1",
+        "html": "https://arxiv.org/html/2605.10597"
+      },
+      "score": 18,
+      "tags": [
+        "coding",
+        "tool-use",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 2
+    },
+    {
+      "id": "2605.10448",
+      "title": "Can Agent Benchmarks Support Their Scores? Evidence-Supported Bounds for Interactive-Agent Evaluation",
+      "abstract": "Interactive agent benchmarks map an agent run to a binary outcome through outcome checks. When these checks rely on surface level signals or fail to capture the agent's actual action path, they cannot reliably determine whether the run succeeded. For example, a benchmark task may ask whether Alice's shipping address was changed, while the outcome check only verifies that the agent clicked \"Save.\" This does not guarantee that the intended state change occurred, since the agent may have modified the wrong record. Treating such a run as successful therefore makes the reported score misleading. Benchmark quality thus depends not only on task design, but also on the reliability of outcome detection. We address this problem by introducing an outcome evidence reporting layer for existing benchmarks, without modifying their tasks, agents, or evaluators. The layer performs three functions. First, before scoring, it specifies which stored artifacts are required to verify the claimed outcome for each case. Second, it applies a locked checklist to each completed run and assigns one of three evidence labels: Evidence Pass, Evidence Fail, or Unknown. Third, it reports evidence supported score bounds that quantify uncertainty arising from Unknown cases. Rather than silently counting, discarding, or hiding uncertain cases inside a single aggregate success rate, the framework keeps them explicitly visible. We evaluate the outcome evidence layer on five public benchmarks: ANDROIDWORLD, AGENTDOJO, APPWORLD, tau3 bench retail, and MINIWOB. The resulting reports separate several empirically distinct failure modes.",
+      "authors": [
+        "Shanshan Gao",
+        "Liyi Zhou"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-11T12:20:15Z",
+      "updated": "2026-05-11T12:20:15Z",
+      "announced_date": "2026-05-11",
+      "first_seen": "2026-05-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.10448v1",
+        "pdf": "https://arxiv.org/pdf/2605.10448v1",
+        "html": "https://arxiv.org/html/2605.10448"
+      },
+      "score": 10,
+      "tags": [],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2605.10384",
+      "title": "Agentic Performance at the Edge: Insights from Benchmarking",
+      "abstract": "Agentic artificial intelligence (AI) is a natural fit for Internet of Things (IoT) and edge systems, but edge deployments are often constrained to models around 8 billion parameters or smaller. An important question is: How much agentic-task quality is lost when model size is constrained by memory, power, and latency budgets? To address this question, in this paper, we provide an initial empirical study considering edge-focused model scaling, general-purpose versus coder-oriented model effects, and tool-enabled execution under a fixed protocol. We introduce a domain-conditioned evaluation methodology, an implementation-grounded analysis of model-tool interactions, practical guidance for model selection under constraints, and an analysis of failure modes that reveals distinct semantic versus execution failure patterns across model families. Our core finding is that edge-agent quality is not a simple function of parameter count. Robust deployment depends on the joint design of model choice and tool workflow. Domain-conditioned analysis reveals Pareto fronts in the accuracy-latency space that can guide strategy selection based on operational priorities.",
+      "authors": [
+        "Shiqiang Wang",
+        "Herbert Woisetschläger"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.DC",
+        "cs.NI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-11T11:24:20Z",
+      "updated": "2026-05-11T11:24:20Z",
+      "announced_date": "2026-05-11",
+      "first_seen": "2026-05-11",
+      "comment": "Accepted to AutoEdge workshop, co-located with MobiSys 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.10384v1",
+        "pdf": "https://arxiv.org/pdf/2605.10384v1",
+        "html": "https://arxiv.org/html/2605.10384"
+      },
+      "score": 11,
+      "tags": [
+        "tool-use",
+        "safety",
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2605.10365",
+      "title": "Agent-ValueBench: A Comprehensive Benchmark for Evaluating Agent Values",
+      "abstract": "Autonomous agents have rapidly matured as task executors and seen widespread deployment via harnesses such as OpenClaw. Safety concerns have rightly drawn growing research attention, and beneath them lie the values silently steering agent behavior. Existing value benchmarks, however, remain confined to LLMs, leaving agent values largely uncharted. From intuitive, empirical, and theoretical vantage points, we show that an agent's values diverge from those of its underlying LLM, and the agentic modality further introduces dataset-, evaluation-, and system-level challenges absent from text-only protocols. We close this gap with Agent-ValueBench, the first benchmark dedicated to agent values. It features 394 executable environments across 16 domains, offering 4,335 value-conflict tasks that cover 28 value systems and 332 dimensions. Every instance is co-synthesized through our purpose-built end-to-end pipeline and curated per-instance by professional psychologists. Each task ships with two pole-aligned golden trajectories whose checkpoints anchor a trajectory-level rubric-based judge. Benchmarking 14 frontier proprietary and open-weights models across 4 mainstream harnesses, we uncover three concerted findings. Agent values first manifest as a Value Tide of cross-model homogeneity beneath interpretable counter-currents. This tide bends non-additively under harness pull, and yet more decisively under deliberate steering via embedded skills. Together these results signal that the agent-alignment lever is shifting from classical model alignment and prompt steering toward harness alignment and skill steering.",
+      "authors": [
+        "Haonan Dong",
+        "Qiguan Feng",
+        "Kehan Jiang",
+        "Haoran Ye",
+        "Xin Zhang",
+        "Guojie Song"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-11T11:09:04Z",
+      "updated": "2026-05-11T11:09:04Z",
+      "announced_date": "2026-05-11",
+      "first_seen": "2026-05-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.10365v1",
+        "pdf": "https://arxiv.org/pdf/2605.10365v1",
+        "html": "https://arxiv.org/html/2605.10365"
+      },
+      "score": 17,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2605.10286",
+      "title": "AgentRx: A Benchmark Study of LLM Agents for Multimodal Clinical Prediction Tasks",
+      "abstract": "Building effective clinical decision support systems requires the synthesis of complex heterogeneous multimodal data. Such modalities include temporal electronic health records data, medical images, radiology reports, and clinical notes. Large language model (LLM)-based agents have shown impressive performance in various healthcare tasks, especially those involving textual modalities. Considering the fragmentation of healthcare data across hospital systems, collaborative agent frameworks present a promising direction to mitigate data sharing challenges. However, the effectiveness of LLM agents for multimodal clinical risk prediction remains largely unexamined. In this work, we conduct a systematic evaluation of LLM-based agents for clinical prediction tasks using large-scale real-world data. We assess performance in unimodal and multimodal settings and quantify performance gaps between single agent and multi-agent systems. Our findings highlight that single agent frameworks outperform naive multi-agent systems, are better at handling multimodal data, and are better calibrated. This underscores a critical need for improving multi-agent collaboration to better handle heterogeneous inputs. By open-sourcing our code and evaluation framework, this work offers a new benchmark to support future developments relating to agentic systems in healthcare.",
+      "authors": [
+        "Baraa Al Jorf",
+        "Farah E. Shamout"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-11T09:46:41Z",
+      "updated": "2026-05-11T09:46:41Z",
+      "announced_date": "2026-05-11",
+      "first_seen": "2026-05-11",
+      "comment": "Accepted at the AHLI Conference on Health, Inference, and Learning 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.10286v1",
+        "pdf": "https://arxiv.org/pdf/2605.10286v1",
+        "html": "https://arxiv.org/html/2605.10286"
+      },
+      "score": 17,
+      "tags": [
+        "multi-agent",
+        "safety",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 3
+    },
+    {
+      "id": "2605.09934",
+      "title": "TRACER: Verifiable Generative Provenance for Multimodal Tool-Using Agents",
+      "abstract": "Multimodal large language models increasingly solve vision-centric tasks by calling external tools for visual inspection, OCR, retrieval, calculation, and multi-step reasoning. Current tool-using agents usually expose the executed tool trajectory and the final answer, but they rarely specify which tool observation supports each generated claim. We call this missing claim-level dependency structure the provenance gap. The gap makes tool use hard to verify and hard to optimize, because useful evidence, redundant exploration, and unsupported reasoning are mixed in the same trajectory. We introduce TRACER, a framework for verifiable generative provenance in multimodal tool-using agents. Instead of adding citations after generation, TRACER generates each answer sentence together with a structured provenance record that identifies the supporting tool turn, evidence unit, and semantic support relation. Its relation space contains Quotation, Compression, and Inference, covering direct reuse, faithful condensation, and grounded derivation. TRACER verifies each record through schema checking, tool-turn alignment, source authenticity, and relation rationality, and then converts verified provenance into traceability constraints and provenance-derived local credit for reinforcement learning. We further construct TRACE-Bench, a benchmark for sentence-level provenance reconstruction from coarse multimodal tool trajectories. On TRACE-Bench, simply adding tools often introduces noise. With Qwen3-VL-8B, TRACER reaches 78.23% answer accuracy and 95.72% summary accuracy, outperforming the strongest closed-source tool-augmented baseline by 23.80 percentage points. Compared with tool-only supervised fine-tuning, it also reduces total test-set tool calls from 4949 to 3486. These results show that reliable multimodal tool reasoning depends on provenance-aware use of observations, not on more tool calls alone.",
+      "authors": [
+        "Bihui Yu",
+        "Caijun Jia",
+        "Jing Chi",
+        "Xiaohan Liu",
+        "Yining Wang",
+        "He Bai",
+        "Yuchen Liu",
+        "Jingxuan Wei",
+        "Junnan Zhu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-11T03:32:55Z",
+      "updated": "2026-05-11T03:32:55Z",
+      "announced_date": "2026-05-11",
+      "first_seen": "2026-05-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.09934v1",
+        "pdf": "https://arxiv.org/pdf/2605.09934v1",
+        "html": "https://arxiv.org/html/2605.09934"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2605.09874",
+      "title": "EgoMemReason: A Memory-Driven Reasoning Benchmark for Long-Horizon Egocentric Video Understanding",
+      "abstract": "Next-generation visual assistants, such as smart glasses, embodied agents, and always-on life-logging systems, must reason over an entire day or more of continuous visual experience. In ultra-long videos, relevant information is sparsely distributed across hours or days, making memory a fundamental challenge: models must accumulate information over time, recall prior states, track temporal order, and abstract recurring patterns. However, existing week-long video benchmarks are primarily designed for perception and recognition, such as moment localization or global summarization, rather than reasoning that requires integrating evidence across multiple days. To address this gap, we introduce EgoMemReason, a comprehensive benchmark for week-long egocentric video understanding through memory-driven reasoning. EgoMemReason evaluates three complementary memory types: entity memory, tracking how object states evolve and change across days; event memory, recalling and ordering activities separated by hours or days; and behavior memory, abstracting recurring patterns from sparse, repeated observations over the whole week period. EgoMemReason comprises 500 questions across three memory types and six core challenges, with an average of 5.1 video segments of evidence per question and 25.9 hours of memory backtracking. We evaluate EgoMemReason on 17 methods across MLLMs and agentic frameworks, revealing that even the best model achieves only 39.6% overall accuracy. Further analysis shows that the three memory types fail for distinct reasons and that performance degrades as evidence spans longer temporal horizons, revealing that long-horizon memory remains far from solved. We believe EgoMemReason establishes a strong foundation for evaluating and advancing long-context, memory-aware multimodal systems.",
+      "authors": [
+        "Ziyang Wang",
+        "Yue Zhang",
+        "Shoubin Yu",
+        "Ce Zhang",
+        "Zengqi Zhao",
+        "Jaehong Yoon",
+        "Hyunji Lee",
+        "Gedas Bertasius",
+        "Mohit Bansal"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-05-11T01:59:59Z",
+      "updated": "2026-08-18T20:07:49Z",
+      "announced_date": "2026-05-11",
+      "first_seen": "2026-05-11",
+      "comment": "Accepted by COLM2026. The first two authors contributed equally. Project website: https://egomemreason.github.io/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.09874v2",
+        "pdf": "https://arxiv.org/pdf/2605.09874v2",
+        "html": "https://arxiv.org/html/2605.09874"
+      },
+      "score": 11,
+      "tags": [
+        "embodied",
+        "memory",
+        "planning",
+        "multimodal"
+      ],
+      "field": "embodied",
+      "citations": 2
+    },
+    {
+      "id": "2605.09826",
+      "title": "EnactToM: An Evolving Benchmark for Functional Theory of Mind in Embodied Agents",
+      "abstract": "Theory of Mind (ToM), the ability to track others epistemic state, makes humans efficient collaborators. AI agents need the same capacity in multi agent settings, yet existing benchmarks mostly test literal ToM by asking direct belief questions. The ability act optimally on implicit beliefs in embodied environments, called functional ToM, remains largely untested. We introduce EnactToM, an evolving benchmark of 300 embodied multi-agent tasks set in a 3D household with partial observability, private information, and constrained communication. Each task is formally verified for solvability and required epistemic depth, and new tasks are generated increase difficulty as models improve. On the hard split, all seven evaluated frontier models score 0.0% Pass^3 on functional task completion, while averaging 45.0% on literal belief probes. Manual analysis traces 93% of sampled failures to epistemic coordination breakdowns such as withheld information, ignored partner constraints, and misallocated messages, providing a concrete target for future work.",
+      "authors": [
+        "Gurusha Juneja",
+        "Dylan Lu",
+        "Saaket Agashe",
+        "Parth Diwane",
+        "Edward Gunn",
+        "Jayanth Srinivasa",
+        "Gaowen Liu",
+        "William Yang Wang",
+        "Yali Du",
+        "Xin Eric Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-11T00:04:19Z",
+      "updated": "2026-05-15T19:33:36Z",
+      "announced_date": "2026-05-11",
+      "first_seen": "2026-05-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.09826v2",
+        "pdf": "https://arxiv.org/pdf/2605.09826v2",
+        "html": "https://arxiv.org/html/2605.09826"
+      },
+      "score": 16,
+      "tags": [
+        "multi-agent",
+        "embodied"
+      ],
+      "field": "embodied",
+      "citations": 1
+    }
+  ]
+}

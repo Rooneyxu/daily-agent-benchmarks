@@ -1,0 +1,249 @@
+{
+  "date": "2026-02-26",
+  "count": 4,
+  "report": {
+    "date": "2026-02-26",
+    "count": 4,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On February 26, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Tool use (3), Planning / reasoning (3), Multimodal (2), and Memory (1).",
+      "highlights": [
+        {
+          "id": "2602.22638",
+          "title": "MobilityBench: A Benchmark for Evaluating Route-Planning Agents in Real-World Mobility Scenarios",
+          "blurb": "Route-planning agents powered by large language models (LLMs) have emerged as a promising paradigm for supporting everyday human mobility through natural language interaction and tool-mediated decision making."
+        },
+        {
+          "id": "2602.22769",
+          "title": "AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications",
+          "blurb": "Large Language Models (LLMs) are increasingly used as autonomous agents in complex, long-horizon applications, where effective memory is critical for sustained performance."
+        },
+        {
+          "id": "2602.22897",
+          "title": "OmniGAIA: Towards Native Omni-Modal AI Agents",
+          "blurb": "Human intelligence naturally intertwines omni-modal perception -- spanning vision, audio, and language -- with complex reasoning and tool usage to interact with the world."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年2月26日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在工具使用（3）、规划 / 推理（3）、多模态（2）、记忆（1）。",
+      "highlights": [
+        {
+          "id": "2602.22638",
+          "title": "MobilityBench: A Benchmark for Evaluating Route-Planning Agents in Real-World Mobility Scenarios",
+          "blurb": "Route-planning agents powered by large language models (LLMs) have emerged as a promising paradigm for supporting everyday human mobility through natural language interaction and tool-mediated decision making."
+        },
+        {
+          "id": "2602.22769",
+          "title": "AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications",
+          "blurb": "Large Language Models (LLMs) are increasingly used as autonomous agents in complex, long-horizon applications, where effective memory is critical for sustained performance."
+        },
+        {
+          "id": "2602.22897",
+          "title": "OmniGAIA: Towards Native Omni-Modal AI Agents",
+          "blurb": "Human intelligence naturally intertwines omni-modal perception -- spanning vision, audio, and language -- with complex reasoning and tool usage to interact with the world."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2602.22897",
+      "title": "OmniGAIA: Towards Native Omni-Modal AI Agents",
+      "abstract": "Human intelligence naturally intertwines omni-modal perception -- spanning vision, audio, and language -- with complex reasoning and tool usage to interact with the world. However, current multi-modal LLMs are primarily confined to bi-modal interactions (e.g., vision-language), lacking the unified cognitive capabilities required for general AI assistants. To bridge this gap, we introduce OmniGAIA, a comprehensive benchmark designed to evaluate omni-modal agents on tasks necessitating deep reasoning and multi-turn tool execution across video, audio, and image modalities. Constructed via a novel omni-modal event graph approach, OmniGAIA synthesizes complex, multi-hop queries derived from real-world data that require cross-modal reasoning and external tool integration. Furthermore, we propose OmniAtlas, a native omni-modal foundation agent under tool-integrated reasoning paradigm with active omni-modal perception. Trained on trajectories synthesized via a hindsight-guided tree exploration strategy and OmniDPO for fine-grained error correction, OmniAtlas effectively enhances the tool-use capabilities of existing open-source models. This work marks a step towards next-generation native omni-modal AI assistants for real-world scenarios.",
+      "authors": [
+        "Xiaoxi Li",
+        "Wenxiang Jiao",
+        "Jiarui Jin",
+        "Haoxuan Li",
+        "Hao Wang",
+        "Shijian Wang",
+        "Guanting Dong",
+        "Jiajie Jin",
+        "Yinuo Wang",
+        "Yuan Lu",
+        "Ji-Rong Wen",
+        "Zhicheng Dou",
+        "Zhouchen Lin"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV",
+        "cs.LG",
+        "cs.MM"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-26T11:35:04Z",
+      "updated": "2026-07-02T15:39:17Z",
+      "announced_date": "2026-02-26",
+      "first_seen": "2026-02-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.22897v3",
+        "pdf": "https://arxiv.org/pdf/2602.22897v3",
+        "html": "https://arxiv.org/html/2602.22897"
+      },
+      "score": 16,
+      "tags": [
+        "tool-use",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 21
+    },
+    {
+      "id": "2602.22769",
+      "title": "AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications",
+      "abstract": "Large Language Models (LLMs) are increasingly used as autonomous agents in complex, long-horizon applications, where effective memory is critical for sustained performance. Yet existing memory benchmarks are largely dialogue-centric, while real agent memory consists of continuous agent-environment interaction trajectories composed of states, actions, observations, and tool outputs. To address this gap, we introduce **AMA-Bench** (**A**gent **M**emory with **A**ny length), a benchmark for evaluating long-horizon memory in realistic agentic settings. AMA-Bench combines real-world agent trajectories from representative applications with expert-curated QA, as well as synthetic trajectories that scale to arbitrary horizons with rule-based QA. Our study shows that existing memory systems underperform because they fail to capture causal and objective information and rely heavily on lossy similarity-based retrieval. We further propose **AMA-Agent**, a memory system based on causality-graph construction and tool-augmented retrieval. AMA-Agent achieves **57.22%** accuracy on AMA-Bench, outperforming the strongest baseline by **11.16%**. Resources are available at: [https://ama-bench.github.io/](https://ama-bench.github.io/).",
+      "authors": [
+        "Yujie Zhao",
+        "Boqin Yuan",
+        "Junbo Huang",
+        "Haocheng Yuan",
+        "Zhongming Yu",
+        "Haozhou Xu",
+        "Lanxiang Hu",
+        "Abhilash Shankarampeta",
+        "Zimeng Huang",
+        "Wentao Ni",
+        "Yuandong Tian",
+        "Jishen Zhao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-26T08:59:31Z",
+      "updated": "2026-05-27T09:28:43Z",
+      "announced_date": "2026-02-26",
+      "first_seen": "2026-02-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.22769v4",
+        "pdf": "https://arxiv.org/pdf/2602.22769v4",
+        "html": "https://arxiv.org/html/2602.22769"
+      },
+      "score": 20,
+      "tags": [
+        "tool-use",
+        "memory",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 41
+    },
+    {
+      "id": "2602.22683",
+      "title": "SUPERGLASSES: Benchmarking Vision Language Models as Intelligent Agents for AI Smart Glasses",
+      "abstract": "The rapid advancement of AI-powered smart glasses-one of the hottest wearable devices-has unlocked new frontiers for multimodal interaction, with Visual Question Answering (VQA) over external knowledge sources emerging as a core application. Existing Vision Language Models (VLMs) adapted to smart glasses are typically trained and evaluated on traditional multimodal datasets; however, these datasets lack the variety and realism needed to reflect smart glasses usage scenarios and diverge from their specific challenges, where accurately identifying the object of interest must precede any external knowledge retrieval. To bridge this gap, we introduce SUPER- GLASSES, the first comprehensive VQA benchmark built on real-world data entirely collected by smart glasses devices. SUPERGLASSES comprises 2,422 egocentric image-question pairs spanning 14 image domains and 8 query categories, enriched with full search trajectories and reasoning annotations. We evaluate 26 representative VLMs on this benchmark, revealing significant performance gaps. To address the limitations of existing models, we further propose the SUPERLENS, a multimodal smart glasses agent that enables retrieval-augmented answer generation by integrating automatic object detection, query decoupling, and multimodal web search. SUPERLENS achieves state-of-the-art performance, outperforming GPT-4o by 2.19%, underscoring the need for task-specific solutions in smart glasses VQA. Our dataset is publicly available at https://huggingface.co/datasets/xandery/SuperGlasses.",
+      "authors": [
+        "Zhuohang Jiang",
+        "Xu Yuan",
+        "Haohao Qu",
+        "Shanru Lin",
+        "Kanglong Liu",
+        "Wenqi Fan",
+        "Qing Li"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-26T06:55:48Z",
+      "updated": "2026-04-09T08:16:21Z",
+      "announced_date": "2026-02-26",
+      "first_seen": "2026-02-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.22683v2",
+        "pdf": "https://arxiv.org/pdf/2602.22683v2",
+        "html": "https://arxiv.org/html/2602.22683"
+      },
+      "score": 8,
+      "tags": [
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 7
+    },
+    {
+      "id": "2602.22638",
+      "title": "MobilityBench: A Benchmark for Evaluating Route-Planning Agents in Real-World Mobility Scenarios",
+      "abstract": "Route-planning agents powered by large language models (LLMs) have emerged as a promising paradigm for supporting everyday human mobility through natural language interaction and tool-mediated decision making. However, systematic evaluation in real-world mobility settings is hindered by diverse routing demands, non-deterministic mapping services, and limited reproducibility. In this study, we introduce MobilityBench, a scalable benchmark for evaluating LLM-based route-planning agents in real-world mobility scenarios. MobilityBench is constructed from large-scale, anonymized real user queries collected from Amap and covers a broad spectrum of route-planning intents across multiple cities worldwide. To enable reproducible, end-to-end evaluation, we design a deterministic API-replay sandbox that eliminates environmental variance from live services. We further propose a multi-dimensional evaluation protocol centered on outcome validity, complemented by assessments of instruction understanding, planning, tool use, and efficiency. Using MobilityBench, we evaluate multiple LLM-based route-planning agents across diverse real-world mobility scenarios and provide an in-depth analysis of their behaviors and performance. Our findings reveal that current models perform competently on Basic information retrieval and Route Planning tasks, yet struggle considerably with Preference-Constrained Route Planning, underscoring significant room for improvement in personalized mobility applications. We publicly release the benchmark data, evaluation toolkit, and documentation at https://github.com/AMAP-ML/MobilityBench.",
+      "authors": [
+        "Zhiheng Song",
+        "Jingshuai Zhang",
+        "Chuan Qin",
+        "Chao Wang",
+        "Chao Chen",
+        "Longfei Xu",
+        "Kaikui Liu",
+        "Xiangxiang Chu",
+        "Hengshu Zhu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-26T05:39:38Z",
+      "updated": "2026-06-10T08:57:04Z",
+      "announced_date": "2026-02-26",
+      "first_seen": "2026-02-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.22638v2",
+        "pdf": "https://arxiv.org/pdf/2602.22638v2",
+        "html": "https://arxiv.org/html/2602.22638"
+      },
+      "score": 22,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 6
+    }
+  ]
+}

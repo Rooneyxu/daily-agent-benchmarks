@@ -1,0 +1,355 @@
+{
+  "date": "2026-04-03",
+  "count": 7,
+  "report": {
+    "date": "2026-04-03",
+    "count": 7,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 4,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "memory",
+        "count": 3,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "7 new agent benchmarks",
+      "summary": "On April 3, 2026, arXiv listed 7 new agent benchmarks. Work clustered around Tool use (4), Memory (3), Planning / reasoning (3), and Safety (2).",
+      "highlights": [
+        {
+          "id": "2604.02947",
+          "title": "AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents",
+          "blurb": "Computer-use agents extend language models from text generation to persistent action over tools, files, and execution environments."
+        },
+        {
+          "id": "2604.09678",
+          "title": "NetAgentBench: A State-Centric Benchmark for Evaluating Agentic Network Configuration",
+          "blurb": "As agentic network management gains popularity, there is a critical need for evaluation frameworks that transcend static, one-shot testing."
+        },
+        {
+          "id": "2604.02834",
+          "title": "ESL-Bench: An Event-Driven Synthetic Longitudinal Benchmark for Health Agents",
+          "blurb": "Longitudinal health agents must reason across multi-source trajectories that combine continuous device streams, sparse clinical exams, and episodic life events - yet evaluating them is hard: real-world data cannot be rel…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 7 篇 Agent Benchmark",
+      "summary": "2026年4月3日，arXiv 新增 7 篇 Agent Benchmark。当日主题集中在工具使用（4）、记忆（3）、规划 / 推理（3）、安全（2）。",
+      "highlights": [
+        {
+          "id": "2604.02947",
+          "title": "AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents",
+          "blurb": "Computer-use agents extend language models from text generation to persistent action over tools, files, and execution environments."
+        },
+        {
+          "id": "2604.09678",
+          "title": "NetAgentBench: A State-Centric Benchmark for Evaluating Agentic Network Configuration",
+          "blurb": "As agentic network management gains popularity, there is a critical need for evaluation frameworks that transcend static, one-shot testing."
+        },
+        {
+          "id": "2604.02834",
+          "title": "ESL-Bench: An Event-Driven Synthetic Longitudinal Benchmark for Health Agents",
+          "blurb": "Longitudinal health agents must reason across multi-source trajectories that combine continuous device streams, sparse clinical exams, and episodic life events - yet evaluating them is hard: real-world data cannot be rel…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.03159",
+      "title": "BibTeX Citation Errors in Scientific Publishing Agents: Evaluation and Mitigation",
+      "abstract": "Large language models with web search are increasingly used in scientific publishing agents, yet they produce BibTeX entries with pervasive field-level errors stemming from omission, partial corruption, substitution, and hallucination. We construct a benchmark of 931 papers across four domains and three citation tiers---popular, low-citation, and recent post-cutoff---with version-aware ground truth. Three search-enabled frontier models (GPT-5, Claude Sonnet-4.6, Gemini-3 Flash) generate approximately 23,000 field-level observations. Overall accuracy is 83.6%, but only 50.9% of entries are fully correct; accuracy drops 27.7 pp from popular to recent papers, revealing heavy reliance on parametric memory even when search is available. Co-occurrence analysis identifies two failure modes: wholesale entry substitution and isolated field error. We present clibib, an open-source tool for deterministic BibTeX retrieval, as a mitigation mechanism. Two-stage integration raises accuracy to 91.5% (+8.0 pp) and fully correct entries to 78.3%, with a 0.8% regression rate. Separating search from revision yields larger gains and lower regression than single-stage tool loops (0.8% vs. 4.8%), demonstrating that integration architecture matters independently of model/tool capability. We release clibib and an accompanying agent skill under the MIT License to improve citation accuracy in increasingly automated scientific workflows.",
+      "authors": [
+        "Delip Rao",
+        "Chris Callison-Burch"
+      ],
+      "categories": [
+        "cs.DL",
+        "cs.CL"
+      ],
+      "primary_category": "cs.DL",
+      "published": "2026-04-03T16:30:58Z",
+      "updated": "2026-08-08T18:39:45Z",
+      "announced_date": "2026-04-03",
+      "first_seen": "2026-04-03",
+      "comment": "35 pages; COLM 2026 camera ready version",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.03159v2",
+        "pdf": "https://arxiv.org/pdf/2604.03159v2",
+        "html": "https://arxiv.org/html/2604.03159"
+      },
+      "score": 6,
+      "tags": [
+        "tool-use",
+        "memory",
+        "science"
+      ],
+      "field": "science",
+      "citations": 2
+    },
+    {
+      "id": "2604.03131",
+      "title": "A Systematic Security Evaluation of OpenClaw and Its Variants",
+      "abstract": "Tool-augmented AI agents substantially extend the practical capabilities of large language models, but they also introduce security risks that cannot be identified through model-only evaluation. In this paper, we present a systematic security assessment of six representative OpenClaw-series agent frameworks, namely OpenClaw, AutoClaw, QClaw, KimiClaw, MaxClaw, and ArkClaw, under multiple backbone models. To support this study, we construct a benchmark of 205 test cases covering representative attack behaviors across the full agent execution lifecycle, enabling unified evaluation of risk exposure at both the framework and model levels. Our results show that all evaluated agents exhibit substantial security vulnerabilities, and that agentized systems are significantly riskier than their underlying models used in isolation. In particular, reconnaissance and discovery behaviors emerge as the most common weaknesses, while different frameworks expose distinct high-risk profiles, including credential leakage, lateral movement, privilege escalation, and resource development. These findings indicate that the security of modern agent systems is shaped not only by the safety properties of the backbone model, but also by the coupling among model capability, tool use, multi-step planning, and runtime orchestration. We further show that once an agent is granted execution capability and persistent runtime context, weaknesses arising in early stages can be amplified into concrete system-level failures. Overall, our study highlights the need to move beyond prompt-level safeguards toward lifecycle-wide security governance for intelligent agent frameworks.",
+      "authors": [
+        "Yuhang Wang",
+        "Haichang Gao",
+        "Zhenxing Niu",
+        "Zhaoxiang Liu",
+        "Wenjing Zhang",
+        "Xiang Wang",
+        "Shiguo Lian"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-04-03T15:52:36Z",
+      "updated": "2026-04-03T15:52:36Z",
+      "announced_date": "2026-04-03",
+      "first_seen": "2026-04-03",
+      "comment": "39 pages, 14 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.03131v1",
+        "pdf": "https://arxiv.org/pdf/2604.03131v1",
+        "html": "https://arxiv.org/html/2604.03131"
+      },
+      "score": 10,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 10
+    },
+    {
+      "id": "2604.02947",
+      "title": "AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents",
+      "abstract": "Computer-use agents extend language models from text generation to persistent action over tools, files, and execution environments. Unlike chat systems, they maintain state across interactions and translate intermediate outputs into concrete actions. This creates a distinct safety challenge in that harmful behavior may emerge through sequences of individually plausible steps, including intermediate actions that appear locally acceptable but collectively lead to unauthorized actions. We present \\textbf{AgentHazard}, a benchmark for evaluating harmful behavior in computer-use agents. AgentHazard contains \\textbf{2,653} instances spanning diverse risk categories and attack strategies. Each instance pairs a harmful objective with a sequence of operational steps that are locally legitimate but jointly induce unsafe behavior. The benchmark evaluates whether agents can recognize and interrupt harm arising from accumulated context, repeated tool use, intermediate actions, and dependencies across steps. We evaluate AgentHazard on Claude Code, OpenClaw, and IFlow using mostly open or openly deployable models from the Qwen3, Kimi, GLM, and DeepSeek families. Our experimental results indicate that current systems remain highly vulnerable. In particular, when powered by Qwen3-Coder, Claude Code exhibits an attack success rate of \\textbf{73.63\\%}, suggesting that model alignment alone does not reliably guarantee the safety of autonomous agents.",
+      "authors": [
+        "Yunhao Feng",
+        "Yifan Ding",
+        "Yingshui Tan",
+        "Xingjun Ma",
+        "Yige Li",
+        "Yutao Wu",
+        "Yifeng Gao",
+        "Kun Zhai",
+        "Yanming Guo"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-03T10:29:31Z",
+      "updated": "2026-04-03T10:29:31Z",
+      "announced_date": "2026-04-03",
+      "first_seen": "2026-04-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.02947v1",
+        "pdf": "https://arxiv.org/pdf/2604.02947v1",
+        "html": "https://arxiv.org/html/2604.02947"
+      },
+      "score": 26,
+      "tags": [
+        "tool-use",
+        "computer-use",
+        "safety"
+      ],
+      "field": "computer-use",
+      "citations": 11
+    },
+    {
+      "id": "2605.18758",
+      "title": "OmniGUI: Benchmarking GUI Agents in Omni-Modal Smartphone Environments",
+      "abstract": "Current benchmarks for graphical user interface (GUI) agents predominantly rely on static screenshots. However, real-world smartphone interaction routinely requires agents to process transient audio cues and temporal video dynamics that are tightly coupled with the moment of action. To bridge this gap, we introduce OmniGUI, the first step-level benchmark designed to evaluate GUI agents in omni-modal smartphone environments. OmniGUI provides continuous, interleaved multimodal inputs comprising static images, synchronous audio, and video clips at every action step. The dataset encompasses 709 expert-demonstrated episodes (2,579 action steps) across 29 applications, systematically annotated with objective multimodal dependency levels. Because dedicated omni-modal GUI agent frameworks are currently in their nascent stage, we select foundational omni-modal models capable of natively processing interleaved inputs to serve as agent proxies for our initial baselines. Our empirical evaluation reveals that while current models exhibit competency on visually static tasks, their action prediction performance degrades significantly in environments requiring synchronous temporal and auditory signals. Furthermore, ablation studies isolate specific operational bottlenecks, notably cross-modal interference when processing task-irrelevant environmental noise. The complete dataset, evaluation pipeline, and baseline prompts are provided in the supplementary material. Project page: https://omni-gui.github.io.",
+      "authors": [
+        "Felix Henry",
+        "Xiaochen Lin",
+        "Jiangyou Zhu",
+        "Yangfan",
+        "Bingqian Zhang",
+        "Min Chen",
+        "Shiyu Huang"
+      ],
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-04-03T08:57:06Z",
+      "updated": "2026-04-03T08:57:06Z",
+      "announced_date": "2026-04-03",
+      "first_seen": "2026-04-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.18758v1",
+        "pdf": "https://arxiv.org/pdf/2605.18758v1",
+        "html": "https://arxiv.org/html/2605.18758"
+      },
+      "score": 16,
+      "tags": [
+        "gui",
+        "multimodal"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2604.02834",
+      "title": "ESL-Bench: An Event-Driven Synthetic Longitudinal Benchmark for Health Agents",
+      "abstract": "Longitudinal health agents must reason across multi-source trajectories that combine continuous device streams, sparse clinical exams, and episodic life events - yet evaluating them is hard: real-world data cannot be released at scale, and temporally grounded attribution questions seldom admit definitive answers without structured ground truth. We present ESL-Bench, an event-driven synthesis framework and benchmark providing 100 synthetic users, each with a 1-5 year trajectory comprising a health profile, a multi-phase narrative plan, daily device measurements, periodic exam records, and an event log with explicit per-indicator impact parameters. Each indicator follows a baseline stochastic process driven by discrete events with sigmoid-onset, exponential-decay kernels under saturation and projection constraints; a hybrid pipeline delegates sparse semantic artifacts to LLM-based planning and dense indicator dynamics to algorithmic simulation with hard physiological bounds. Users are each paired with 100 evaluation queries across five dimensions - Lookup, Trend, Comparison, Anomaly, Explanation - stratified into Easy, Medium, and Hard tiers, with all ground-truth answers programmatically computable from the recorded event-indicator relationships. Evaluating 13 methods spanning LLMs with tools, DB-native agents, and memory-augmented RAG, we find that DB agents (48-58%) substantially outperform memory RAG baselines (30-38%), with the gap concentrated on Comparison and Explanation queries where multi-hop reasoning and evidence attribution are required.",
+      "authors": [
+        "Chao Li",
+        "Cailiang Liu",
+        "Ang Gao",
+        "Kexin Deng",
+        "Shu Zhang",
+        "Langping Xu",
+        "Xiaotong Shi",
+        "Xionghao Ding",
+        "Jian Pei",
+        "Xun Jiang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-03T07:55:56Z",
+      "updated": "2026-04-03T07:55:56Z",
+      "announced_date": "2026-04-03",
+      "first_seen": "2026-04-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.02834v1",
+        "pdf": "https://arxiv.org/pdf/2604.02834v1",
+        "html": "https://arxiv.org/html/2604.02834"
+      },
+      "score": 16,
+      "tags": [
+        "tool-use",
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2604.09678",
+      "title": "NetAgentBench: A State-Centric Benchmark for Evaluating Agentic Network Configuration",
+      "abstract": "As agentic network management gains popularity, there is a critical need for evaluation frameworks that transcend static, one-shot testing. To address this, we introduce NetAgentBench, a dynamic benchmark that evaluates agent interactions through a Finite State Machine (FSM) formalization guaranteeing determinism, correctness, and bounded execution. This provides the networking landscape with a rigorous foundation to measure complex, multi-turn operational behaviors. Our empirical evaluation of four state-of-the-art LLM agents through diverse network configuration tasks reveals stark deficiencies: while agents can solve basic tasks, they suffer severe exploration meltdowns and coherence collapse during expert-level configurations. Ultimately, NetAgentBench demonstrates that systematically evaluating multi-turn behavioral stability is an indispensable step toward realizing trustworthy, fully autonomous networks.",
+      "authors": [
+        "Ahmed Twabi",
+        "Yepeng Ding",
+        "Tohru Kondo"
+      ],
+      "categories": [
+        "cs.NI",
+        "cs.AI",
+        "cs.FL"
+      ],
+      "primary_category": "cs.NI",
+      "published": "2026-04-03T05:11:05Z",
+      "updated": "2026-04-03T05:11:05Z",
+      "announced_date": "2026-04-03",
+      "first_seen": "2026-04-03",
+      "comment": "9 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.09678v1",
+        "pdf": "https://arxiv.org/pdf/2604.09678v1",
+        "html": "https://arxiv.org/html/2604.09678"
+      },
+      "score": 19,
+      "tags": [],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2604.02648",
+      "title": "GBQA: A Game Benchmark for Evaluating LLMs as Quality Assurance Engineers",
+      "abstract": "The autonomous discovery of bugs remains a significant challenge in modern software development. Compared to code generation, the complexity of dynamic runtime environments makes bug discovery considerably harder for large language models (LLMs). In this paper, we take game development as a representative domain and introduce the Game Benchmark for Quality Assurance (GBQA), a benchmark containing 30 games and 124 human-verified bugs across three difficulty levels, to evaluate whether LLMs can autonomously detect software bugs. The benchmark is constructed using a multi-agent system that develops games and injects bugs in a scalable manner, with human experts in the loop to ensure correctness. Moreover, we provide a baseline interactive agent equipped with a multi-round ReAct loop and a memory mechanism, enabling long-horizon exploration of game environments for bug detection across different LLMs. Extensive experiments on frontier LLMs demonstrate that autonomous bug discovery remains highly challenging: the best-performing model, Claude-4.6-Opus in thinking mode, identifies only 48.39% of the verified bugs. We believe GBQA provides an adequate testbed and evaluation criterion, and that further progress on it will help close the gap in autonomous software engineering.",
+      "authors": [
+        "Shufan Jiang",
+        "Chios Chen",
+        "Zhiyang Chen"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-04-03T02:23:50Z",
+      "updated": "2026-04-03T02:23:50Z",
+      "announced_date": "2026-04-03",
+      "first_seen": "2026-04-03",
+      "comment": "Accepted as a workshop paper at the Fourteenth International Conference on Learning Representations (ICLR 2026)",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.02648v1",
+        "pdf": "https://arxiv.org/pdf/2604.02648v1",
+        "html": "https://arxiv.org/html/2604.02648"
+      },
+      "score": 16,
+      "tags": [
+        "coding",
+        "multi-agent",
+        "memory",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 1
+    }
+  ]
+}

@@ -1,0 +1,390 @@
+{
+  "date": "2026-08-03",
+  "count": 8,
+  "report": {
+    "date": "2026-08-03",
+    "count": 8,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 3,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "workplace",
+        "count": 1,
+        "en": "Work / office",
+        "zh": "职场 / 办公"
+      }
+    ],
+    "en": {
+      "headline": "8 new agent benchmarks",
+      "summary": "On August 3, 2026, arXiv listed 8 new agent benchmarks. Work clustered around Safety (3), Tool use (3), Planning / reasoning (3), and Multi-agent (2).",
+      "highlights": [
+        {
+          "id": "2608.01645",
+          "title": "GISAgentBench: A Practitioner-Sourced Benchmark for Evaluating LLM Agents on GIS Tasks",
+          "blurb": "Geographic Information System (GIS) professionals rely on multi-step spatial analysis workflows to support decision-making in urban planning, disaster response, and environmental monitoring."
+        },
+        {
+          "id": "2608.01684",
+          "title": "GABench: A Comprehensive Benchmark for Evaluating LLM Agents on Graph Analysis Tasks",
+          "blurb": "Large language model (LLM) agents are increasingly capable of planning, using tools, and interacting with external environments."
+        },
+        {
+          "id": "2608.02171",
+          "title": "From Profiling to Synthesis: Benchmarking Implicit Behavioral Alignment in Personalized LLM Agents",
+          "blurb": "Large Language Models have enabled increasingly capable autonomous agents, yet personalization remains critical for making such agents practically useful."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 8 篇 Agent Benchmark",
+      "summary": "2026年8月3日，arXiv 新增 8 篇 Agent Benchmark。当日主题集中在安全（3）、工具使用（3）、规划 / 推理（3）、多智能体（2）。",
+      "highlights": [
+        {
+          "id": "2608.01645",
+          "title": "GISAgentBench: A Practitioner-Sourced Benchmark for Evaluating LLM Agents on GIS Tasks",
+          "blurb": "Geographic Information System (GIS) professionals rely on multi-step spatial analysis workflows to support decision-making in urban planning, disaster response, and environmental monitoring."
+        },
+        {
+          "id": "2608.01684",
+          "title": "GABench: A Comprehensive Benchmark for Evaluating LLM Agents on Graph Analysis Tasks",
+          "blurb": "Large language model (LLM) agents are increasingly capable of planning, using tools, and interacting with external environments."
+        },
+        {
+          "id": "2608.02171",
+          "title": "From Profiling to Synthesis: Benchmarking Implicit Behavioral Alignment in Personalized LLM Agents",
+          "blurb": "Large Language Models have enabled increasingly capable autonomous agents, yet personalization remains critical for making such agents practically useful."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.02758",
+      "title": "Everyone Conforms, No One Believes: Pluralistic Ignorance in LLM Agent Populations",
+      "abstract": "LLM-based multi-agent systems are increasingly used to simulate social dynamics, from opinion formation to collective decision-making. These simulations can reproduce certain social phenomena, but it is unknown whether they capture pluralistic ignorance, a state where a majority privately rejects a norm yet publicly conforms, each believing they are alone in dissenting. This phenomenon drives norm persistence, social movements, and political revolutions. We show that pluralistic ignorance emerges robustly in LLM agent populations. We construct a benchmark of 100 scenarios across 10 domains and 5 authority levels, grounded in the human pluralistic ignorance literature, and evaluate 8 models from 6 organizations. Agents publicly conform at rates of 64 to 94% despite privately opposing the norm. Conformity is domain-sensitive (workplace and social relationship scenarios produce near-universal compliance) and highly model-dependent, though uncorrelated with capability. We test whether a single \"norm entrepreneur\" can break the false consensus by publicly dissenting. For 7 of 8 models, cascades succeed less than 26% of the time, with one model showing zero cascades across all scenarios. GPT-4o is a notable outlier at 48%, revealing qualitatively distinct dynamics across model families. A prompt component ablation across all 8 models establishes that conformity is emergent rather than instruction-driven: removing both the false-consensus framing and fit-in goal reduces conformity but does not eliminate it (52 to 92% in the minimal condition). Our findings identify model selection as an unacknowledged degree of freedom that fundamentally shapes simulation outcomes. More broadly, the near-absence of cascades suggests LLM simulations may systematically overestimate the stability of social norms, missing the fragile tipping-point dynamics that drive real-world norm change in human societies.",
+      "authors": [
+        "Yashwanth YS"
+      ],
+      "categories": [
+        "cs.MA"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-08-03T18:03:49Z",
+      "updated": "2026-08-03T18:03:49Z",
+      "announced_date": "2026-08-03",
+      "first_seen": "2026-08-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.02758v1",
+        "pdf": "https://arxiv.org/pdf/2608.02758v1",
+        "html": "https://arxiv.org/html/2608.02758"
+      },
+      "score": 12,
+      "tags": [
+        "multi-agent",
+        "safety",
+        "research",
+        "workplace"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2608.02499",
+      "title": "SWE-Touch: Benchmarking Coding Agents When Users Touch the Code",
+      "abstract": "Real-world software development requires coding agents to operate in shared workspaces where users may inspect and modify code during an ongoing task, yet existing repository-level benchmarks typically evaluate agents working alone or restrict user participation to messages. This leads us to ask: how do coding agents understand and respond to code changes in a shared workspace? We introduce SWE-Touch, a framework that stress-tests this setting through validated Counter-Edits: plausible edits to task-relevant code that conflict with task completion. SWE-Touch mines task-critical regions from multiple repair trajectories, uses a separate User Patch Generator to construct the edits, and injects them with contextual user messages when agents reach the relevant code. We evaluate nine coding models on SWE-bench Verified, with additional experiments on longer-horizon tasks from SWE-Bench Pro and DeepSWE. Counter-Edit lowers average resolve rate by 7.7 percentage points on SWE-bench Verified, with degradation also persisting on both longer-horizon benchmarks. Trajectory analysis links these failures to limited awareness of the evolving workspace: agents may retain conflicting code or replace it without sufficiently re-inspecting the repository and validating the revised code with targeted tests. These findings show that strong autonomous performance does not yet ensure the state awareness and adaptive behavior needed for shared-workspace collaboration, and point to detecting workspace changes, reconciling conflicting edits with the task, and verifying the affected behavior as key capabilities for future optimization.",
+      "authors": [
+        "Yuqiao Tan",
+        "Jinxiang Meng",
+        "Fangyu Lei",
+        "Minzheng Wang",
+        "Shizhu He",
+        "Jun Zhao",
+        "Kang Liu"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-08-03T17:03:19Z",
+      "updated": "2026-08-03T17:03:19Z",
+      "announced_date": "2026-08-03",
+      "first_seen": "2026-08-03",
+      "comment": "Preprint. Our code is available at https://github.com/Trae1ounG/SWE-Touch",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.02499v1",
+        "pdf": "https://arxiv.org/pdf/2608.02499v1",
+        "html": "https://arxiv.org/html/2608.02499"
+      },
+      "score": 12,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2608.02358",
+      "title": "ScrambleToolBench: Agents Search Exhaustively Even When Their Own Map Points to the Next Step",
+      "abstract": "To operate robustly in open-world environments, autonomous agents should be able to infer the behavior of unfamiliar systems through interaction alone, even in the absence of documentation. However, existing tool-use benchmarks expose semantic tool schemas in static environments, allowing agents to rely on prior knowledge rather than autonomous discovery. To address this limitation, we introduce ScrambleToolBench, an interactive terminal benchmark designed to isolate behavioral reasoning. By removing semantic cues and enforcing a continuous task curriculum, the benchmark requires agents to uncover hidden tool behaviors entirely through trial-and-error interaction. The benchmark further introduces dynamic challenges, including mapping drift, stochastic action failures, and temporal execution windows, to evaluate whether agents can revise and adapt their hypotheses as the environment changes. Our evaluation of state-of-the-art language models reveals that successful initial discovery does not translate into robust adaptation. When faced with structural changes such as mapping drift, agents fail to use deductive strategies such as cycle tracing, and instead exhibit belief inertia or fall back to exhaustive search. Increasing test-time reasoning only amplifies this expensive brute-force search rather than enabling deductive recovery. While equipping agents with persistent memory reduces compounding errors, they remain unable to efficiently infer structural changes, highlighting a gap in current agent reasoning.",
+      "authors": [
+        "Vernon Toh",
+        "Navonil Majumder",
+        "Zhengyuan Liu",
+        "Nancy F. Chen",
+        "Soujanya Poria"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-08-03T15:07:46Z",
+      "updated": "2026-08-03T15:07:46Z",
+      "announced_date": "2026-08-03",
+      "first_seen": "2026-08-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.02358v1",
+        "pdf": "https://arxiv.org/pdf/2608.02358v1",
+        "html": "https://arxiv.org/html/2608.02358"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use",
+        "safety",
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.02171",
+      "title": "From Profiling to Synthesis: Benchmarking Implicit Behavioral Alignment in Personalized LLM Agents",
+      "abstract": "Large Language Models have enabled increasingly capable autonomous agents, yet personalization remains critical for making such agents practically useful. Recent benchmarks have begun evaluating personalization in agents, but they largely rely on static preference snapshots, fixed interaction logs, or question answering over predefined user profiles. Such designs fail to capture the complexity of evolving user preferences and neglect preference-conditioned task execution-a discrepancy we term as the knowledge-to-action gap. To address this challenge, we introduce IBA-Bench, a benchmark for implicit behavioral alignment constructed from longitudinal interaction histories that contain noise, implicit cues, and temporal inconsistencies. Unlike prior work, IBA-Bench evaluates whether an agent can execute tasks while satisfying implicit user constraints inferred from historical interactions. We further propose IBA-Agent, an agent framework that reconciles conflicting priorities through broad retrieval and trajectory-level alignment. Experiment results on IBA-Bench show that effective personalization remains a significant challenge for state-of-the-art LLM agents, and the proposed IBA-Agent substantially improves behavioral alignment in complex scenarios across nine application domains.",
+      "authors": [
+        "Jiajia Song",
+        "Bobo Li",
+        "Haiwen Yi",
+        "Zibo Ji",
+        "Meishan Zhang",
+        "Hao Fei",
+        "Min Zhang",
+        "Mong-Li Lee",
+        "Wynne Hsu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-03T12:52:04Z",
+      "updated": "2026-08-03T12:52:04Z",
+      "announced_date": "2026-08-03",
+      "first_seen": "2026-08-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.02171v1",
+        "pdf": "https://arxiv.org/pdf/2608.02171v1",
+        "html": "https://arxiv.org/html/2608.02171"
+      },
+      "score": 16,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.02001",
+      "title": "VulnGym: Benchmarking Coding Agents for Repository-Level Vulnerability Detection",
+      "abstract": "Recent advances in LLM-based vulnerability detection have shown promising results, while coding agents further extend this capability from isolated code snippets to complete repositories. This shift requires agents to autonomously explore repositories and locate vulnerability-relevant code, instead of performing detection on preselected functions. However, existing benchmarks primarily focus on vulnerability classification over preselected code snippets, limiting their ability to evaluate coding agents in repository-level vulnerability detection. Moreover, without fine-grained vulnerability trace annotations, the capability limitations underlying the detection process remain difficult to explore. To address these limitations, we present \\textbf{VulnGym}, a real-world repository-level benchmark for evaluating vulnerability detection by coding agents. VulnGym aligns reviewed GitHub advisories with their corresponding vulnerable version repositories. It contains 184 advisories and 408 vulnerability entries across 23 repositories, with each entry annotated with line-level entry points, critical operations, and vulnerability traces. Using this fine-grained ground truth, VulnGym defines an end-to-end detection task and three oracle-based subtasks to jointly evaluate vulnerability detection and diagnose limitations in code localization and evidence construction. Our evaluation indicates that current coding agents remain limited in both end-to-end repository-level vulnerability detection and the construction of accurate supporting traces.",
+      "authors": [
+        "Kexing Ji",
+        "Jiachen Liu",
+        "Enze Hu",
+        "Cuiyun Gao",
+        "Keke Lian",
+        "Yongheng Liu",
+        "Lei Zhang",
+        "Tian Dong",
+        "Hao Chen",
+        "Wang Bin"
+      ],
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-08-03T10:03:29Z",
+      "updated": "2026-08-03T10:03:29Z",
+      "announced_date": "2026-08-03",
+      "first_seen": "2026-08-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.02001v1",
+        "pdf": "https://arxiv.org/pdf/2608.02001v1",
+        "html": "https://arxiv.org/html/2608.02001"
+      },
+      "score": 15,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2608.01805",
+      "title": "CockpitHAT: Dependency-Graph-Driven Hierarchical Attribution for Embodied Multi-Agent Cockpits",
+      "abstract": "LLM multi-agent systems suffer from Correctness Collapse, where high task-level accuracy conceals severe process-level failures. This is especially hazardous in safety-critical embodied settings such as automotive cockpits, where lexically correct utterances may trigger dangerous physical operations. Existing attribution methods rely on text traces alone, missing dependency structure, multi-channel evidence, and safety-aware evaluation. We introduce CockpitHAT, a hierarchical attribution framework that replaces positional windows with dependency-distance thresholds from interaction DAGs, integrates multi-channel evidence via an embodied adapter, and applies a safety-uplift to high-risk failures during confidence-weighted analyst consensus. We further release CockpitBench, a benchmark of 212 annotated failure traces spanning dialogue, vehicle-state, environmental, and memory channels, each labeled with ISO 26262 ASIL severity via three-expert consensus. On the public Who&When benchmark, CockpitHAT achieves agent-level / step-exact accuracies of 77.9% / 37.8% on the Hand-Crafted split and 86.5% / 46.0% on the Algorithm-Generated split, surpassing the text-only SOTA ECHO by up to 17.6 / 16.7 points. On CockpitBench, it attains 78.3% agent-level and 38.2% step-exact accuracy. These results establish dependency-aware, multi-channel, risk-calibrated attribution as an effective paradigm for reliable failure diagnosis in real-world embodied LLM multi-agent systems.",
+      "authors": [
+        "Wei Wang",
+        "Shuanghe Liu",
+        "Zhu Zhuo",
+        "Jiaqi Zhong",
+        "Xiaozhao Zhao",
+        "Xiaojie Zuo",
+        "Jie Su"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-03T07:13:00Z",
+      "updated": "2026-08-03T07:13:00Z",
+      "announced_date": "2026-08-03",
+      "first_seen": "2026-08-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.01805v1",
+        "pdf": "https://arxiv.org/pdf/2608.01805v1",
+        "html": "https://arxiv.org/html/2608.01805"
+      },
+      "score": 11,
+      "tags": [
+        "multi-agent",
+        "embodied",
+        "safety",
+        "memory",
+        "conversation"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2608.01684",
+      "title": "GABench: A Comprehensive Benchmark for Evaluating LLM Agents on Graph Analysis Tasks",
+      "abstract": "Large language model (LLM) agents are increasingly capable of planning, using tools, and interacting with external environments. They are typically supported by harnesses, which manage state and coordinate multi-step execution. Graph analysis provides a promising setting for evaluating their agentic capabilities, because it requires agents to access data and execute operations in a graph environment. However, existing graph benchmarks for LLMs provide limited coverage of graph tasks and graph types, making it difficult to comprehensively evaluate LLM agents. Moreover, they typically formulate graph analysis as text-based question answering, where graph information is directly provided in the prompt, limiting the evaluation of end-to-end agentic capabilities. To address these limitations, we introduce GABench, a comprehensive benchmark for agentic graph analysis. GABench spans three graph types and covers four graph analysis task categories: graph retrieval, graph theory, graph machine learning, and graph open-ended question answering. GABench also provides 84 executable tools for accessing graph data and performing diverse graph operations. Building on these tools, we develop an agentic graph analysis task generation pipeline and construct 10,400 tasks with verifiable ground truth.Using GABench, we evaluate a range of frontier LLMs and agent harnesses. Our experiments reveal three key findings: (1) Existing LLM agents still struggle with complex graph analysis tasks. (2) Harness choice significantly affects performance, yet existing harnesses remain limited on complex graph tasks. (3) Graph analysis depends more on tool-call quality than quantity. Our findings provide practical insights into the development and evaluation of LLM agents for graph analysis.",
+      "authors": [
+        "Jiarui Tan",
+        "Zhongjian Zhang",
+        "YaBo Guo",
+        "Jiawei Liu",
+        "Yujie Xing",
+        "Muhan Zhang",
+        "Cheng Yang",
+        "Chuan Shi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-03T04:18:31Z",
+      "updated": "2026-08-03T04:18:31Z",
+      "announced_date": "2026-08-03",
+      "first_seen": "2026-08-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.01684v1",
+        "pdf": "https://arxiv.org/pdf/2608.01684v1",
+        "html": "https://arxiv.org/html/2608.01684"
+      },
+      "score": 19,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.01645",
+      "title": "GISAgentBench: A Practitioner-Sourced Benchmark for Evaluating LLM Agents on GIS Tasks",
+      "abstract": "Geographic Information System (GIS) professionals rely on multi-step spatial analysis workflows to support decision-making in urban planning, disaster response, and environmental monitoring. The process is tedious, time-consuming, and error-prone. While recent large language model (LLM) agents equipped with external tools have the potential to automate geospatial analysis, their ability to perform realistic GIS workflows remains largely unexplored. Existing GIS agent benchmarking datasets are mostly drawn from textbooks, tutorials, or LLM-generated seeds and remain limited in size and trajectory depth. More importantly, none provides ground truth outputs. They therefore rely on surrogate signals such as code similarity, trajectory matching, or LLM and VLM judges, which can conflate workflow resemblance with task correctness. To address this gap, we introduce GISAgentBench, a benchmark of 349 multi-step GIS tasks curated from GIS Stack Exchange and instantiated on real public data across six selected geographic areas of interest. Each task ships with an executable reference trajectory and an exact ground truth output file, enabling strict, deterministic, tolerance-aware output matching beyond LLM judging. Evaluations of six LLM models reveal that realistic GIS workflows remain challenging: the best agent completes only 32.7% of tasks under strict tolerance-aware scoring, although most models produce outputs that are close to the ground truth.",
+      "authors": [
+        "Abhinav Pothuri",
+        "Zhe Jiang",
+        "Zelin Xu",
+        "Di Yang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-03T03:31:45Z",
+      "updated": "2026-08-03T03:31:45Z",
+      "announced_date": "2026-08-03",
+      "first_seen": "2026-08-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.01645v1",
+        "pdf": "https://arxiv.org/pdf/2608.01645v1",
+        "html": "https://arxiv.org/html/2608.01645"
+      },
+      "score": 20,
+      "tags": [
+        "tool-use",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    }
+  ]
+}

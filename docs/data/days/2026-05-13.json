@@ -1,0 +1,632 @@
+{
+  "date": "2026-05-13",
+  "count": 15,
+  "report": {
+    "date": "2026-05-13",
+    "count": 15,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 7,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 4,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 4,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "coding",
+        "count": 4,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      }
+    ],
+    "en": {
+      "headline": "15 new agent benchmarks",
+      "summary": "On May 13, 2026, arXiv listed 15 new agent benchmarks. Work clustered around Planning / reasoning (7), Tool use (4), Safety (4), and Coding agents (4).",
+      "highlights": [
+        {
+          "id": "2605.13950",
+          "title": "Collider-Bench: Benchmarking AI Agents with Particle Physics Analysis Reproduction",
+          "blurb": "Autonomous language-model agents are increasingly evaluated on long-horizon tool-use tasks, but existing benchmarks rarely capture the complexity and nuance of real scientific work."
+        },
+        {
+          "id": "2605.15229",
+          "title": "PBT-Bench: Benchmarking AI Agents on Property-Based Testing",
+          "blurb": "Existing code benchmarks measure whether an agent can produce any test that reproduces a known bug, or whether it can produce a patch that fixes a described issue."
+        },
+        {
+          "id": "2605.15230",
+          "title": "EnergyAgentBench: Benchmarking LLM Agents on Live Energy Infrastructure Data",
+          "blurb": "Selecting the right electricity market region for a hyperscale AI datacenter requires reasoning across live electricity prices, grid carbon intensity, technology cost trajectories, and causal grid dynamics -- a multi-ste…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 15 篇 Agent Benchmark",
+      "summary": "2026年5月13日，arXiv 新增 15 篇 Agent Benchmark。当日主题集中在规划 / 推理（7）、工具使用（4）、安全（4）、代码智能体（4）。",
+      "highlights": [
+        {
+          "id": "2605.13950",
+          "title": "Collider-Bench: Benchmarking AI Agents with Particle Physics Analysis Reproduction",
+          "blurb": "Autonomous language-model agents are increasingly evaluated on long-horizon tool-use tasks, but existing benchmarks rarely capture the complexity and nuance of real scientific work."
+        },
+        {
+          "id": "2605.15229",
+          "title": "PBT-Bench: Benchmarking AI Agents on Property-Based Testing",
+          "blurb": "Existing code benchmarks measure whether an agent can produce any test that reproduces a known bug, or whether it can produce a patch that fixes a described issue."
+        },
+        {
+          "id": "2605.15230",
+          "title": "EnergyAgentBench: Benchmarking LLM Agents on Live Energy Infrastructure Data",
+          "blurb": "Selecting the right electricity market region for a hyperscale AI datacenter requires reasoning across live electricity prices, grid carbon intensity, technology cost trajectories, and causal grid dynamics -- a multi-ste…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2605.14153",
+      "title": "ExploitBench: A Capability Ladder Benchmark for LLM Cybersecurity Agents",
+      "abstract": "Exploitation is not a binary event. It is a ladder of acquiring progressive capabilities, from executing a single buggy line of code to taking full control of the target. However, existing LLM security benchmarks treat a crash as exploitation success. That single binary outcome collapses the hard parts of exploitation: the transition from triggering a bug to constructing reusable primitives and control. We present ExploitBench, a capability-graded benchmark that decomposes exploitation into 16 measurable flags, from coverage and crash through sandbox primitives, arbitrary read/write, control-flow hijack, and arbitrary code execution. Each capability is verified by a deterministic oracle that uses a per-run randomized challenge-response for primitives, differential execution against ground-truth binaries to measure progress, and a signal-handler proof for code execution. We instantiate ExploitBench on 41 V8 bugs because V8 is both widely deployed and exploitation-hardened. We report three arms: <model,env> as the primary measurement of model-environment capability, <model,env, adaptive coaching> as a secondary arm that adds adaptive coaching to test whether targeted feedback shifts outcomes, and <model,env,harness> as an ablation that swaps in the model's native CLI to check whether vendor-side optimizations increase exploitation capabilities. Our results show a sharp capability split between publicly deployed frontier models and the private frontier. Across the 8 publicly deployed models tested, reaching the vulnerable code and triggering a crash is routine, but arbitrary code execution is not. The private model shows arbitrary code execution on approximately half. Overall, results suggest that exploit construction against hardened targets is an emerging frontier capability.",
+      "authors": [
+        "Seunghyun Lee",
+        "David Brumley"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-05-13T22:08:05Z",
+      "updated": "2026-05-13T22:08:05Z",
+      "announced_date": "2026-05-13",
+      "first_seen": "2026-05-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.14153v1",
+        "pdf": "https://arxiv.org/pdf/2605.14153v1",
+        "html": "https://arxiv.org/html/2605.14153"
+      },
+      "score": 11,
+      "tags": [],
+      "field": "other",
+      "citations": 9
+    },
+    {
+      "id": "2605.14133",
+      "title": "ClawForge: Generating Executable Interactive Benchmarks for Command-Line Agents",
+      "abstract": "Interactive agent benchmarks face a tension between scalable construction and realistic workflow evaluation. Hand-authored tasks are expensive to extend and revise, while static prompt evaluation misses failures that only appear when agents operate over persistent state. Existing interactive benchmarks have advanced agent evaluation significantly, but most initialize tasks from clean state and do not systematically test how agents handle pre-existing partial, stale, or conflicting artifacts. We present \\textbf{ClawForge}, a generator-backed benchmark framework for executable command-line workflows under state conflict. The framework compiles scenario templates, grounded slots, initialized state, reference trajectories, and validators into reproducible task specifications, and evaluates agents step by step over persistent workflow surfaces using normalized end state and observable side effects rather than exact trajectory matching. We instantiate this framework as the ClawForge-Bench (17 scenarios, 6 ability categories). Results across seven frontier models show that the best model reaches only 45.3% strict accuracy, wrong-state replacement remains below 17\\% for all models, and the widest model separation (17% to 90%) is driven by whether agents inspect existing state before acting. Partial-credit and step-efficiency analyses further reveal that many failures are near-miss closures rather than early breakdowns, and that models exhibit qualitatively different failure styles under state conflict.",
+      "authors": [
+        "Yuxiang Lai",
+        "Peng Xia",
+        "Haonian Ji",
+        "Kaiwen Xiong",
+        "Kaide Zeng",
+        "Jiaqi Liu",
+        "Fang Wu",
+        "Jike Zhong",
+        "Zeyu Zheng",
+        "Cihang Xie",
+        "Huaxiu Yao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-13T21:34:08Z",
+      "updated": "2026-05-18T05:36:27Z",
+      "announced_date": "2026-05-13",
+      "first_seen": "2026-05-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.14133v2",
+        "pdf": "https://arxiv.org/pdf/2605.14133v2",
+        "html": "https://arxiv.org/html/2605.14133"
+      },
+      "score": 10,
+      "tags": [],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2605.14002",
+      "title": "PolitNuggets: Benchmarking Agentic Discovery of Long-Tail Political Facts",
+      "abstract": "Large Reasoning Models (LRMs) embedded in agentic frameworks have transformed information retrieval from static, long context question answering into open-ended exploration. Yet real world use requires models to discover and synthesize \"long-tail\" facts from dispersed sources, a capability that remains under-evaluated. We introduce PolitNuggets, a multilingual benchmark for agentic information synthesis via constructing political biographies for 400 global elites, covering over 10000 political facts. We standardize evaluation with an optimized multi agent system and propose FactNet, an evidence conditional protocol that scores discovery, fine-grained accuracy, and efficiency. Across models and settings, we find that current systems often struggle with fine-grained details, and vary substantially in efficiency. Finally, using benchmark diagnostics, we relate agent performance to underlying model capabilities, highlighting the importance of short-context extraction, multilingual robustness, and reliable tool use.",
+      "authors": [
+        "Yifei Zhu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-13T18:09:03Z",
+      "updated": "2026-05-13T18:09:03Z",
+      "announced_date": "2026-05-13",
+      "first_seen": "2026-05-13",
+      "comment": "24 pages, 7 figues, accpeted in The 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026)",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.14002v1",
+        "pdf": "https://arxiv.org/pdf/2605.14002v1",
+        "html": "https://arxiv.org/html/2605.14002"
+      },
+      "score": 17,
+      "tags": [
+        "tool-use",
+        "multi-agent",
+        "safety",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2605.15230",
+      "title": "EnergyAgentBench: Benchmarking LLM Agents on Live Energy Infrastructure Data",
+      "abstract": "Selecting the right electricity market region for a hyperscale AI datacenter requires reasoning across live electricity prices, grid carbon intensity, technology cost trajectories, and causal grid dynamics -- a multi-step, multi-source analytical task that static knowledge benchmarks cannot evaluate. We introduce EnergyAgentBench, the first agentic benchmark grounded in live electricity market data for this problem class. The benchmark comprises 70 task variants across five families: datacenter siting under cost-carbon trade-offs (F1), long-horizon portfolio siting (F1-LH), lifetime LCOE ranking over multi-decade cost trajectories (F2), 30-year portfolio optimization (F2-LH), and causal grid diagnosis (F3). Tasks require 3 to 48 sequential tool calls against live endpoints from the QuarluxAI infrastructure platform, the U.S. Energy Information Administration (EIA), and the National Renewable Energy Laboratory (NREL) with ground truth derived from trained XGBoost cost-surface models (R^2 0.967--0.995) and the NREL Annual Technology Baseline 2024. We evaluate nine models across Anthropic, OpenAI, and HuggingFace over 1,414 runs at three random seeds. Claude Sonnet 4.6 achieves the highest overall score (0.900) at one-quarter the cost of Claude Opus 4.7 (0.889). Claude Haiku 4.5 leads on long-horizon procedural siting (0.986), outperforming all frontier models including those costing 16x more per run. F3 Causal is the most discriminating family, with a 30.7-point spread between Sonnet (0.793) and Llama 3.3 70B (0.486), versus a 6.6-point spread on F1 Siting. A failure taxonomy of 135 coded failures identifies null-value integration in NREL ATB trajectories as the dominant failure mode (70%), followed by premature commitment on causal tasks (20%) and adversarial injection blindness (6%). Benchmark code, run trajectories, and the failure taxonomy dataset are publicly released.",
+      "authors": [
+        "Eliseo Curcio"
+      ],
+      "categories": [
+        "econ.EM"
+      ],
+      "primary_category": "econ.EM",
+      "published": "2026-05-13T18:03:51Z",
+      "updated": "2026-08-03T14:38:56Z",
+      "announced_date": "2026-05-13",
+      "first_seen": "2026-05-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.15230v2",
+        "pdf": "https://arxiv.org/pdf/2605.15230v2",
+        "html": "https://arxiv.org/html/2605.15230"
+      },
+      "score": 19,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2605.15229",
+      "title": "PBT-Bench: Benchmarking AI Agents on Property-Based Testing",
+      "abstract": "Existing code benchmarks measure whether an agent can produce any test that reproduces a known bug, or whether it can produce a patch that fixes a described issue. Neither isolates the distinct skill of property-based testing: deriving a semantic invariant from documentation, and then constructing an input-generation strategy precise enough to make a random search reveal the violation. We introduce PBT-Bench, a benchmark of 100 curated property-based testing problems across 40 real Python libraries. Each problem injects one or more semantic bugs (365 in total, mean 3.65 per problem) designed so that default-strategy random inputs almost never trigger them; the agent must read the library's documentation, identify the relevant invariant, and specify a Hypothesis @given strategy that concentrates mass in the trigger region. Bugs are stratified across three difficulty levels (L1-L3) spanning single-constraint boundary bugs to stateful, cross-function protocol violations. We evaluate eight contemporary LLMs under two prompting regimes (open-ended baseline vs. explicit Hypothesis scaffolding) for three independent runs per configuration. Bug recall under the PBT-guided prompt ranges from 42.1% to 83.4% across models; under the open-ended baseline, from 31.4% to 76.7%. Hypothesis scaffolding lifts mid-capability models by over 20 percentage points, but yields smaller gains for the strongest models, with two exceptions showing degradation, suggesting the structured prompt can interfere with certain model behaviours rather than complementing them. The hardest bugs prove model-specific: different architectures fail on different problems, leaving persistent gaps that no single model closes. We release the benchmark, harness, and full evaluation corpus to support downstream work on documentation-grounded semantic reasoning.",
+      "authors": [
+        "Lucas Jing",
+        "Xinqi Wang",
+        "Liao Zhang",
+        "Simon S. Du"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-05-13T18:01:05Z",
+      "updated": "2026-05-30T04:31:25Z",
+      "announced_date": "2026-05-13",
+      "first_seen": "2026-05-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.15229v3",
+        "pdf": "https://arxiv.org/pdf/2605.15229v3",
+        "html": "https://arxiv.org/html/2605.15229"
+      },
+      "score": 23,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2605.13950",
+      "title": "Collider-Bench: Benchmarking AI Agents with Particle Physics Analysis Reproduction",
+      "abstract": "Autonomous language-model agents are increasingly evaluated on long-horizon tool-use tasks, but existing benchmarks rarely capture the complexity and nuance of real scientific work. To address this gap, we introduce Collider-Bench, a benchmark for evaluating whether LLM agents can reproduce experimental analyses from the Large Hadron Collider (LHC) using only public papers and open scientific software. Such analyses are often difficult to reproduce because the public toolchain only approximates the software used internally by the experimental collaborations, while the published papers inevitably omit implementation details needed for a faithful reconstruction. Agents must therefore rely on physical reasoning, domain knowledge, and trial-and-error to fill these gaps. Each task requires the agent to turn a published analysis into an executable simulation-and-selection pipeline and submit predicted collision event yields in specified signal regions. These predictions are evaluated with standard histogram metrics that provide continuous fidelity scores without a hand-written rubric. We also report the computational cost incurred by each agent per task. Finally, we evaluate the codebase and full session trace using an LLM judge to catch qualitative failure modes such as fabrications, hallucinations and duplications. We release an initial set of tasks drawn from LHC searches, together with a containerized sandbox and event simulation tools. We evaluate across a capability ladder of general purpose coding agents. Our results show that on average no agent reliably beats the physicist-in-the-loop solution.",
+      "authors": [
+        "Darius A. Faroughy",
+        "Sofia Palacios Schweitzer",
+        "Ian Pang",
+        "Siddharth Mishra-Sharma",
+        "David Shih"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "hep-ex",
+        "hep-ph"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-05-13T18:00:00Z",
+      "updated": "2026-05-13T18:00:00Z",
+      "announced_date": "2026-05-13",
+      "first_seen": "2026-05-13",
+      "comment": "23 pages | 9 figures | 4 tables | Code: https://github.com/dfaroughy/Collider-Bench | Task Corpus: https://huggingface.co/datasets/Dariusfar/ColliderBench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.13950v1",
+        "pdf": "https://arxiv.org/pdf/2605.13950v1",
+        "html": "https://arxiv.org/html/2605.13950"
+      },
+      "score": 32,
+      "tags": [
+        "coding",
+        "tool-use",
+        "planning",
+        "science"
+      ],
+      "field": "coding",
+      "citations": 10
+    },
+    {
+      "id": "2605.13841",
+      "title": "EVA-Bench: A New End-to-end Framework for Evaluating Voice Agents",
+      "abstract": "Voice agents, artificial intelligence systems that conduct spoken conversations to complete tasks, are increasingly deployed across enterprise applications. However, no existing benchmark jointly addresses two core evaluation challenges: generating realistic simulated conversations, and measuring quality across the full scope of voice-specific failure modes. We present EVA-Bench, an end-to-end evaluation framework that addresses both. On the simulation side, EVA-Bench orchestrates bot-to-bot audio conversations over dynamic multi-turn dialogues, with automatic simulation validation that detects user simulator error and appropriately regenerates conversations before scoring. On the measurement side, EVA-Bench introduces two composite metrics: EVA-A (Accuracy), capturing task completion, faithfulness, and audio-level speech fidelity; and EVA-X (Experience), capturing conversation progression, spoken conciseness, and turn-taking timing. Both metrics apply to all major agent architectures, enabling direct cross-architecture comparison. EVA-Bench includes 213 scenarios across three enterprise domains, a controlled perturbation suite for accent and noise robustness, and pass@1, pass@k, pass^k measurements that distinguish peak from reliable capability. Across 12 systems spanning all three architectures, we find: (1) no system simultaneously exceeds 0.5 on both EVA-A pass@1 and EVA-X pass@1; (2) peak and reliable performance diverge substantially (median pass@k--pass^k gap of 0.44 on EVA-A); and (3) accent and noise perturbations expose substantial robustness gaps, with effects varying across architectures, systems, and metrics (mean $Δ$ up to 0.314). We release the full framework, evaluation suite, and benchmark data under an open-source license.",
+      "authors": [
+        "Tara Bogavelli",
+        "Gabrielle Gauthier Melançon",
+        "Katrina Stankiewicz",
+        "Oluwanifemi Bamgbose",
+        "Fanny Riols",
+        "Hoang H. Nguyen",
+        "Raghav Mehndiratta",
+        "Lindsay Devon Brin",
+        "Joseph Marinier",
+        "Hari Subramani",
+        "Anil Madamala",
+        "Sridhar Krishna Nemala",
+        "Srinivas Sunkara"
+      ],
+      "categories": [
+        "cs.SD",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.SD",
+      "published": "2026-05-13T17:58:52Z",
+      "updated": "2026-05-27T20:23:25Z",
+      "announced_date": "2026-05-13",
+      "first_seen": "2026-05-13",
+      "comment": "Work in progress",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.13841v2",
+        "pdf": "https://arxiv.org/pdf/2605.13841v2",
+        "html": "https://arxiv.org/html/2605.13841"
+      },
+      "score": 14,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 4
+    },
+    {
+      "id": "2605.13940",
+      "title": "AgentTrap: Measuring Runtime Trust Failures in Third-Party Agent Skills",
+      "abstract": "Third-party skills are becoming the package ecosystem for LLM agents. They package natural-language instructions, helper scripts, templates, documents, and service configuration into reusable workflows. This makes skills useful, but it also introduces a new security problem: a malicious skill does not need to ask the model to perform an obviously harmful action. Instead, it can disguise the harmful behavior as part of a routine workflow, relying on the agent to execute that workflow with high-value permissions and limited human supervision. We introduce AgentTrap, a dynamic benchmark for evaluating whether LLM agents can use third-party skills while resisting malicious runtime behavior. AgentTrap contains 141 tasks: 91 malicious tasks and 50 benign utility tasks, covering 16 security-impact dimensions grounded in agent-skill supply-chain threats. In each task, the agent receives an ordinary user request, runs with installed skills that may contain malicious workflow elements, and is executed in a sandboxed environment. AgentTrap then judges complete trajectories for attack success, blocked or refused behavior, attack-not-triggered cases, and no-attack-evidence outcomes. Our central finding is that the most informative failures are not simple jailbreaks. Models often complete the visible user task while treating unsafe side effects introduced by the skill as part of the normal workflow. This motivates runtime evaluation of the concrete model--framework--workspace environment in which users actually delegate work. Code and data are available at https://github.com/zhmzm/AgentTrap and https://huggingface.co/datasets/zhmzm/AgentTrap.",
+      "authors": [
+        "Haomin Zhuang",
+        "Hanwen Xing",
+        "Yujun Zhou",
+        "Yuchen Ma",
+        "Yue Huang",
+        "Yili Shen",
+        "Yufei Han",
+        "Xiangliang Zhang"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-05-13T17:04:17Z",
+      "updated": "2026-05-13T17:04:17Z",
+      "announced_date": "2026-05-13",
+      "first_seen": "2026-05-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.13940v1",
+        "pdf": "https://arxiv.org/pdf/2605.13940v1",
+        "html": "https://arxiv.org/html/2605.13940"
+      },
+      "score": 9,
+      "tags": [],
+      "field": "other",
+      "citations": 4
+    },
+    {
+      "id": "2606.20585",
+      "title": "Turning Intent into Specifications: A Benchmark and an Interactive User-Assistant Agent",
+      "abstract": "Today's agents are highly effective at implementing well-scoped software design plans, but user intent is often vague and admits multiple equally valid solutions. In this paper, we introduce SpecBench, a new benchmark for evaluating an agent's ability to translate user intent into a structured, executable specification that aligns with user preferences. The agent is given access to past user conversations and may interact with the user for a fixed number of rounds to ask clarifying questions. We find that existing agents exhibit two extreme behaviors: they either (i) struggle to collaborate proactively with users, entering implementation mode too quickly while overestimating their understanding of user preferences, or (ii) exhaust their question budget by asking about every ambiguous design choice. To address this limitation, we introduce a user-assistant agent: Buddy. It follows a workflow inspired by classical morphological analysis, decomposing user intent into a structured space of design dimensions and candidate choices. It then creates simulated users to evaluate these choices, before engaging the real user to resolve remaining ambiguities and finalize the specification. By shifting the focus from execution to specification, SpecBench and Buddy emphasize agent-user collaboration (not just code generation) as a key frontier in future agent design.",
+      "authors": [
+        "Hao Wang",
+        "Ligong Han",
+        "Kai Xu",
+        "Akash Srivastava"
+      ],
+      "categories": [
+        "cs.HC",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-05-13T16:07:43Z",
+      "updated": "2026-05-13T16:07:43Z",
+      "announced_date": "2026-05-13",
+      "first_seen": "2026-05-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.20585v1",
+        "pdf": "https://arxiv.org/pdf/2606.20585v1",
+        "html": "https://arxiv.org/html/2606.20585"
+      },
+      "score": 11,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2605.15226",
+      "title": "Is Agentic AI Ready for Real-World Hardware Engineering? A Deep Dive with Phoenix-bench",
+      "abstract": "We ask whether agentic AI systems built for software engineering transfer to realistic hardware engineering. Existing hardware LLM benchmarks isolate sub-tasks but none jointly requires repository navigation, hierarchy-aware localization, Electronic Design Automation (EDA) executable verification, and maintenance-style patching. We introduce \\textbf{Phoenix-bench}, a synchronized corpus of 511 verified Verilator instances from 114 GitHub repositories, each shipped with the developer patch, design-flow labels, fail-to-pass and pass-to-pass testbenches, and a Docker-pinned EDA environment so resolved-rate differences reflect agent behavior rather than toolchain availability. Using Phoenix-bench we run a uniform evaluation of four commercial agents and eight open-source agentic structures across four LLM backbones, plus two diagnostic interventions (file-level oracle localization and one round of testbench-log feedback). Three findings emerge. (i)~Software and hardware are fundamentally different engineering tasks: the same agent loses 37\\% to 58\\% from SWE-bench Verified to Phoenix-bench because hardware bugs propagate across parallel instantiated modules through signal flow rather than along a software-style call graph, and software-tuned agents stop at the symptom file instead of tracing back through the instantiation chain. (ii)~Failures concentrate on design control-flow / finite state machine (FSM) bugs, verification testbench bugs, and hard cases that demand cross-hierarchy signal-flow tracking and coordinated multi-file edits. (iii)~Localization granularity matters far more than localization itself: a perfect file-level oracle yields only $+1.4$\\% because the agent then breaks files that did not need editing, while a single round of test case feedback lifts resolved rate by $42$\\% to $45$\\% because the test case tells \\emph{where} the bug is and \\emph{what} the fix has to look like.",
+      "authors": [
+        "Qingyun Zou",
+        "Feng Yu",
+        "Hongshi Tan",
+        "Bingsheng He",
+        "WengFai Wong"
+      ],
+      "categories": [
+        "cs.AR",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AR",
+      "published": "2026-05-13T14:14:54Z",
+      "updated": "2026-05-13T14:14:54Z",
+      "announced_date": "2026-05-13",
+      "first_seen": "2026-05-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.15226v1",
+        "pdf": "https://arxiv.org/pdf/2605.15226v1",
+        "html": "https://arxiv.org/html/2605.15226"
+      },
+      "score": 17,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 1
+    },
+    {
+      "id": "2605.13542",
+      "title": "RealICU: Do LLM Agents Understand Long-Context ICU Data? A Benchmark Beyond Behavior Imitation",
+      "abstract": "Intensive care units (ICU) generate long, dense and evolving streams of clinical information, where physicians must repeatedly reassess patient states under time pressure, underscoring a clear need for reliable AI decision support. Existing ICU benchmarks typically treat historical clinician actions as ground truth. However, these actions are made under incomplete information and limited temporal context of the underlying patient state, and may therefore be suboptimal, making it difficult to assess the true reasoning capabilities of AI systems. We introduce RealICU, a hindsight-annotated benchmark for evaluating large language models (LLMs) under realistic ICU conditions, where labels are created after senior physicians review the full patient trajectory. We formulate four physician-motivated tasks: assess Patient Status, Acute Problems, Recommended Actions, and Red Flag actions that risk unsafe outcomes. We partition each trajectory with 30-min windows and release two datasets: RealICU-Gold with 930-window annotations from 94 MIMIC-IV patients, and RealICU-Scale with 11,862 windows extended by Oracle, a physician-validated LLM hindsight labeler. Existing LLMs including memory-augmented ones performed poorly on RealICU, exposing two failure modes: a recall-safety tradeoff for clinical recommendations, and an anchoring bias to early interpretations of the patient. We further introduce ICU-Evo to study structured-memory agents that improves long-horizon reasoning but does not fully eliminate safety failures. Together, RealICU provides a clinically grounded testbed for measuring and improving AI sequential decision-support in high-stakes care. Project page: https://chengzhi-leo.github.io/RealICU-Bench/",
+      "authors": [
+        "Chengzhi Shen",
+        "Weixiang Shen",
+        "Tobias Susetzky",
+        "Chen",
+        "Chen",
+        "Jun Li",
+        "Yuyuan Liu",
+        "Xuepeng Zhang",
+        "Zhenyu Gong",
+        "Daniel Rueckert",
+        "Jiazhen Pan"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-13T13:52:42Z",
+      "updated": "2026-05-13T13:52:42Z",
+      "announced_date": "2026-05-13",
+      "first_seen": "2026-05-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.13542v1",
+        "pdf": "https://arxiv.org/pdf/2605.13542v1",
+        "html": "https://arxiv.org/html/2605.13542"
+      },
+      "score": 15,
+      "tags": [
+        "safety",
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2605.13172",
+      "title": "When Does Hierarchy Help? Benchmarking Agent Coordination in Event-Driven Industrial Scheduling",
+      "abstract": "Recent advances in agent and multi-agent systems have shown strong performance on tool use, reasoning, and collaborative tasks. However, existing benchmarks mostly evaluate task completion in weakly coupled environments, and provide limited support for studying coordination in shared, dynamically evolving systems with hierarchy and coupled constraints. This leaves an important question underexplored: when do different coordination paradigms succeed or fail? We introduce Distributed Event-driven Scheduling Benchmark (DESBench), a benchmark for evaluating agent coordination in hierarchical event-driven scheduling. Built on a shared discrete-event driven environment in industrial scheduling, our benchmark captures multi-timescale decision making, partial observability, and dynamically coupled constraints. We define tasks and metrics that evaluate effectiveness, constraint alignment, coordination efficiency, and robustness, and focus on four representative coordination paradigms: centralized, hierarchical, heterarchical, and holonic. These paradigms correspond to distinct mechanisms of information flow, decision authority, and conflict resolution. Our controlled evaluations reveal clear coordination trade-offs: centralized coordination is robust and communication-efficient but scales poorly with difficulty; hierarchical coordination improves efficiency through decomposition but suffers from cross-level misalignment; heterarchical coordination is flexible but communication-heavy; and holonic coordination satisfies constraints well but loses global robustness. These findings demonstrate that coordination design fundamentally shapes agent system behavior in complex environments, revealing structural trade-offs that cannot be captured by outcome metrics alone and underscoring the imperative for more adaptive, principled, and dynamic coordination mechanisms in future MAS research.",
+      "authors": [
+        "Ziqi Wang",
+        "Yuhao Yang",
+        "Zhiwei Ling",
+        "Wenzhuo Qian",
+        "Hailiang Zhao"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-05-13T08:33:28Z",
+      "updated": "2026-05-13T08:33:28Z",
+      "announced_date": "2026-05-13",
+      "first_seen": "2026-05-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.13172v1",
+        "pdf": "https://arxiv.org/pdf/2605.13172v1",
+        "html": "https://arxiv.org/html/2605.13172"
+      },
+      "score": 18,
+      "tags": [
+        "tool-use",
+        "multi-agent",
+        "safety",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2605.13139",
+      "title": "SWE-Cycle: Benchmarking Code Agents across the Complete Issue Resolution Cycle",
+      "abstract": "As autonomous code agents move toward end-to-end software development, evaluating their practical autonomy becomes critical. Current benchmarks hide friction by testing agents in pre-configured environments, and their static evaluation pipelines frequently fail when parsing fully autonomous trajectories. We address these limitations with SWE-Cycle, a benchmark of 489 rigorously filtered instances. SWE-Cycle evaluates agents across three isolated tasks, including environment reconstruction, code implementation, and verification test generation, as well as an end-to-end FullCycle task that integrates all three. The FullCycle task requires agents to work autonomously in a bare repository without human scaffolding. To reliably assess these complex execution paths, we developed SWE-Judge. By combining static code review with dynamic testing, this execution-capable evaluation agent accurately verifies functional correctness and eliminates the systematic measurement errors of traditional static parsers. We evaluate code agents powered by six state-of-the-art LLMs across these four tasks. The results reveal a sharp drop in solve rates when transitioning from isolated tasks to FullCycle execution, exposing critical bottlenecks in handling cross-phase dependencies and maintaining code quality. Together, SWE-Cycle and SWE-Judge provide a comprehensive framework for accurately measuring the end-to-end capabilities of autonomous software agents.",
+      "authors": [
+        "Hao Guan",
+        "Lingyue Fu",
+        "Shao Zhang",
+        "Yaoming Zhu",
+        "Kangning Zhang",
+        "Lin Qiu",
+        "Xunliang Cai",
+        "Xuezhi Cao",
+        "Weiwen Liu",
+        "Weinan Zhang",
+        "Yong Yu"
+      ],
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-05-13T08:05:16Z",
+      "updated": "2026-05-13T08:05:16Z",
+      "announced_date": "2026-05-13",
+      "first_seen": "2026-05-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.13139v1",
+        "pdf": "https://arxiv.org/pdf/2605.13139v1",
+        "html": "https://arxiv.org/html/2605.13139"
+      },
+      "score": 10,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 2
+    },
+    {
+      "id": "2605.13909",
+      "title": "TERMS-Bench: Diagnosing LLM Negotiation Agents Beyond Deal Rate",
+      "abstract": "Negotiation is a central mechanism of economic exchange, shaping markets, procurement, labor agreements, and resource allocation. It is also a canonical testbed for agentic language models, requiring multi-turn interaction under hidden preferences, strategic communication, and binding constraints. These properties make negotiation hard to evaluate: unlike math or code, it has no intrinsic verifier. Existing LLM negotiation evaluations rely on LLM-vs.-LLM interaction or aggregate outcomes such as deal rate, leaving failures opaque. We introduce Terms-Bench, short for Testbed for Economic Reasoning in Multi-turn Strategy, a Bayesian-game framework that makes the environment itself the verifier by specifying the counterpart's latent type, policy, and payoff structure. We instantiate it in bilateral price negotiation, where the counterpart's private state and simulator policy are hidden from the agent but observable to the evaluator. This turns the counterpart from a black-box opponent into a diagnostic instrument, enabling agent-attributable failure analysis and oracle-reference optimality gaps. Evaluating 13 LLM agents spanning frontier systems from major providers, Terms-Bench turns negotiation evaluation from aggregate ranking into actionable diagnosis: where agents fail, why they fail, and what to strengthen. Empirically, frontier models saturate deal rate yet diverge in surplus extraction, cue use, belief calibration, and compliance, revealing agent-specific bargaining bottlenecks masked by prior benchmarks.",
+      "authors": [
+        "Erica Zhang",
+        "Fangzhao Zhang",
+        "Aneesh Pappu",
+        "Batu El",
+        "Jose Blanchet",
+        "Susan Athey",
+        "Jiashuo Liu",
+        "James Zou"
+      ],
+      "categories": [
+        "cs.GT",
+        "cs.AI"
+      ],
+      "primary_category": "cs.GT",
+      "published": "2026-05-13T06:22:50Z",
+      "updated": "2026-06-13T21:49:28Z",
+      "announced_date": "2026-05-13",
+      "first_seen": "2026-05-13",
+      "comment": "Project Site: https://terms-bench.github.io/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.13909v2",
+        "pdf": "https://arxiv.org/pdf/2605.13909v2",
+        "html": "https://arxiv.org/html/2605.13909"
+      },
+      "score": 18,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 3
+    },
+    {
+      "id": "2605.12887",
+      "title": "EcoGEO: Trajectory-Aware Evidence Ecosystems for Web-Enabled LLM Search Agents",
+      "abstract": "Web-enabled LLM agents are changing how online information influences search outcomes. Existing Generative Engine Optimization (GEO) studies mainly focus on individual webpages. However, agentic web search is not a single-document setting: an agent may issue queries, crawl pages, follow links, reformulate searches, and synthesize evidence across multiple browsing steps. Influence therefore depends not only on page content, but also on how pages are organized, connected, and encountered along the agent's browsing trajectory. We study this shift through Ecosystem Generative Engine Optimization (EcoGEO), which treats GEO as an environment-level influence problem for web-enabled LLM agents. To instantiate this perspective, we propose TRACE, a Trajectory-Aware Coordinated Evidence Ecosystem. Given a recommendation query and a fictional target product, our method builds a controlled evidence environment that coordinates an agent-facing navigation entry page with heterogeneous support pages. These pages use shared terminology, internal links, and consistent product attributes to introduce, verify, and reinforce the target product. We evaluate our method on OPR-Bench, a benchmark for open-ended product recommendation. Experiments show that it consistently outperforms page-level GEO baselines in final target recommendation. Trajectory-level metrics further show increased initial target-result crawls, target-specific follow-up searches, and internal-link crawls, suggesting that the gains come from shaping the agent's evidence-acquisition process rather than merely adding more target-related content. Overall, our findings support an ecosystem research paradigm for GEO, where web-enabled LLM agents are studied in relation to the broader evidence environments that guide search, browsing, and answer synthesis.",
+      "authors": [
+        "Hengwei Ye",
+        "Jiasheng Mao",
+        "Zhenhan Guan",
+        "Zheng Tian"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-05-13T02:03:18Z",
+      "updated": "2026-07-01T02:19:45Z",
+      "announced_date": "2026-05-13",
+      "first_seen": "2026-05-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.12887v2",
+        "pdf": "https://arxiv.org/pdf/2605.12887v2",
+        "html": "https://arxiv.org/html/2605.12887"
+      },
+      "score": 9,
+      "tags": [],
+      "field": "other",
+      "citations": 2
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "date": "2026-04-07",
+  "count": 5,
+  "report": {
+    "date": "2026-04-07",
+    "count": 5,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      }
+    ],
+    "en": {
+      "headline": "5 new agent benchmarks",
+      "summary": "On April 7, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Planning / reasoning (2), Multi-agent (2), Tool use (1), and Memory (1).",
+      "highlights": [
+        {
+          "id": "2604.05523",
+          "title": "Market-Bench: Benchmarking Large Language Models on Economic and Trade Competition",
+          "blurb": "The ability of large language models (LLMs) to manage and acquire economic resources remains unclear."
+        },
+        {
+          "id": "2604.05681",
+          "title": "LUDOBENCH: Evaluating LLM Behavioural Decision-Making Through Spot-Based Board Game Scenarios in Ludo",
+          "blurb": "We introduce LudoBench, a benchmark for evaluating LLM strategic reasoning in Ludo, a stochastic multi-agent board game whose dice mechanics, piece capture, safe-square navigation, and home-path progression introduce mea…"
+        },
+        {
+          "id": "2604.05557",
+          "title": "EpiBench: Benchmarking Multi-turn Research Workflows for Multimodal Agents",
+          "blurb": "Scientific research follows multi-turn, multi-step workflows that require proactively searching the literature, consulting figures and tables, and integrating evidence across papers to align experimental settings and sup…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年4月7日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在规划 / 推理（2）、多智能体（2）、工具使用（1）、记忆（1）。",
+      "highlights": [
+        {
+          "id": "2604.05523",
+          "title": "Market-Bench: Benchmarking Large Language Models on Economic and Trade Competition",
+          "blurb": "The ability of large language models (LLMs) to manage and acquire economic resources remains unclear."
+        },
+        {
+          "id": "2604.05681",
+          "title": "LUDOBENCH: Evaluating LLM Behavioural Decision-Making Through Spot-Based Board Game Scenarios in Ludo",
+          "blurb": "We introduce LudoBench, a benchmark for evaluating LLM strategic reasoning in Ludo, a stochastic multi-agent board game whose dice mechanics, piece capture, safe-square navigation, and home-path progression introduce mea…"
+        },
+        {
+          "id": "2604.05557",
+          "title": "EpiBench: Benchmarking Multi-turn Research Workflows for Multimodal Agents",
+          "blurb": "Scientific research follows multi-turn, multi-step workflows that require proactively searching the literature, consulting figures and tables, and integrating evidence across papers to align experimental settings and sup…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2605.20204",
+      "title": "RealUserSim: Bridging the Reality Gap in Agent Benchmarking via Grounded User Simulation",
+      "abstract": "LLM-based user simulation is the primary mechanism for end-to-end agent evaluation, yet simulated users are poor proxies for real humans: unconstrained LLM defaults produce a Formalism Ceiling (style match rates of 6-8% against real users), while hand-crafted behavioral directives trigger Directive Amplification, where models hyper-interpret instructions into unnatural behavioral extremes that vary dramatically across simulator models. We present RealUserSim, the first user simulation framework grounded in real behavioral data. From 14,000+ authentic human-LLM conversations (WildChat), we extract 7,275 executable behavioral profiles and use them to ground LLM simulators. A fidelity benchmark (PT3) on 600 conversations across 71+ domains with anti-leakage controls shows that grounded simulation raises match rate from 24.2% to 45.3% across five behavioral dimensions. Agent evaluation on TauBench with 6 simulator models and extensive analysis shows that grounded simulation acts as a realistic stress test, surfacing three failure mechanisms invisible to cooperative simulators (mean -3.2% to -3.5% task success degradation), while Directive Amplification in existing benchmarks produces unrealistic behavior that compromises the validity of agent evaluation.",
+      "authors": [
+        "Ming Zhu",
+        "Juntao Tan",
+        "Rithesh Murthy",
+        "Jielin Qiu",
+        "Liangwei Yang",
+        "Wenting Zhao",
+        "Silvio Savarese",
+        "Shelby Heinecke",
+        "Huan Wang"
+      ],
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-04-07T19:42:36Z",
+      "updated": "2026-04-07T19:42:36Z",
+      "announced_date": "2026-04-07",
+      "first_seen": "2026-04-07",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.20204v1",
+        "pdf": "https://arxiv.org/pdf/2605.20204v1",
+        "html": "https://arxiv.org/html/2605.20204"
+      },
+      "score": 8,
+      "tags": [],
+      "field": "other",
+      "citations": 3
+    },
+    {
+      "id": "2604.06111",
+      "title": "AgentCE-Bench: Agent Configurable Evaluation with Scalable Horizons and Controllable Difficulty under Lightweight Environments",
+      "abstract": "Existing Agent benchmarks suffer from two critical limitations: high environment interaction overhead (up to 41\\% of total evaluation time) and imbalanced task horizon and difficulty distributions that make aggregate scores unreliable. To address these issues, we propose AgentCE-Bench built around a unified grid-based planning task, where agents must fill hidden slots in a partially completed schedule subject to both local slot constraints and global constraints. Our benchmark offers fine-grained control through two orthogonal axes: \\textbf{Scalable Horizons}, controlled by the number of hidden slots $H$, and \\textbf{Controllable Difficulty}, governed by a decoy budget $B$ that determines the number of globally misleading decoy candidates. Crucially, all tool calls are resolved via static JSON files under a \\textbf{Lightweight Environment} design, eliminating setup overhead and enabling fast, reproducible evaluation suitable for training-time validation. We first validate that $H$ and $B$ provide reliable control over task horizon and difficulty, and that AgentCE-Bench exhibits strong domain consistency and model discriminability. We then conduct comprehensive experiments across 13 models of diverse sizes and families over 6 domains, revealing significant cross-model performance variation and confirming that AgentCE-Bench provides interpretable and controllable evaluation of agent reasoning.",
+      "authors": [
+        "Wang Yang",
+        "Chaoda Song",
+        "Xinpeng Li",
+        "Debargha Ganguly",
+        "Chuang Ma",
+        "Shouren Wang",
+        "Zhihao Dou",
+        "Yuli Zhou",
+        "Vipin Chaudhary",
+        "Xiaotian Han"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-07T17:21:28Z",
+      "updated": "2026-04-10T03:07:44Z",
+      "announced_date": "2026-04-07",
+      "first_seen": "2026-04-07",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.06111v2",
+        "pdf": "https://arxiv.org/pdf/2604.06111v2",
+        "html": "https://arxiv.org/html/2604.06111"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 3
+    },
+    {
+      "id": "2604.05681",
+      "title": "LUDOBENCH: Evaluating LLM Behavioural Decision-Making Through Spot-Based Board Game Scenarios in Ludo",
+      "abstract": "We introduce LudoBench, a benchmark for evaluating LLM strategic reasoning in Ludo, a stochastic multi-agent board game whose dice mechanics, piece capture, safe-square navigation, and home-path progression introduce meaningful planning complexity. LudoBench comprises 480 handcrafted spot scenarios across 12 behaviorally distinct decision categories, each isolating a specific strategic choice. We additionally contribute a fully functional 4-player Ludo simulator supporting Random, Heuristic, Game-Theory, and LLM agents. The game-theory agent uses Expectiminimax search with depth-limited lookahead to provide a principled strategic ceiling beyond greedy heuristics. Evaluating six models spanning four model families, we find that all models agree with the game-theory baseline only 40-46% of the time. Models split into distinct behavioral archetypes: finishers that complete pieces but neglect development, and builders that develop but never finish. Each archetype captures only half of the game theory strategy. Models also display measurable behavioral shifts under history-conditioned grudge framing on identical board states, revealing prompt-sensitivity as a key vulnerability. LudoBench provides a lightweight and interpretable framework for benchmarking LLM strategic reasoning under uncertainty. All code, the spot dataset (480 entries) and model outputs are available at https://anonymous.4open.science/r/LudoBench-5CBF/",
+      "authors": [
+        "Ojas Jain",
+        "Dhruv Kumar"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.GT",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-07T10:34:13Z",
+      "updated": "2026-04-07T10:34:13Z",
+      "announced_date": "2026-04-07",
+      "first_seen": "2026-04-07",
+      "comment": "Under Review",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.05681v1",
+        "pdf": "https://arxiv.org/pdf/2604.05681v1",
+        "html": "https://arxiv.org/html/2604.05681"
+      },
+      "score": 16,
+      "tags": [
+        "multi-agent",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 2
+    },
+    {
+      "id": "2604.05557",
+      "title": "EpiBench: Benchmarking Multi-turn Research Workflows for Multimodal Agents",
+      "abstract": "Scientific research follows multi-turn, multi-step workflows that require proactively searching the literature, consulting figures and tables, and integrating evidence across papers to align experimental settings and support reproducible conclusions. This joint capability is not systematically assessed in existing benchmarks, which largely under-evaluate proactive search, multi-evidence integration and sustained evidence use over time. In this work, we introduce EpiBench, an episodic multi-turn multimodal benchmark that instantiates short research workflows. Given a research task, agents must navigate across papers over multiple turns, align evidence from figures and tables, and use the accumulated evidence in the memory to answer objective questions that require cross paper comparisons and multi-figure integration. EpiBench introduces a process-level evaluation framework for fine-grained testing and diagnosis of research agents. Our experiments show that even the leading model achieves an accuracy of only 29.23% on the hard split, indicating substantial room for improvement in multi-turn, multi-evidence research workflows, providing an evaluation platform for verifiable and reproducible research agents.",
+      "authors": [
+        "Xuan Dong",
+        "Huanyang Zheng",
+        "Tianhao Niu",
+        "Zhe Han",
+        "Pengzhan Li",
+        "Bofei Liu",
+        "Zhengyang Liu",
+        "Guancheng Li",
+        "Qingfu Zhu",
+        "Wanxiang Che"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-04-07T07:58:55Z",
+      "updated": "2026-04-07T07:58:55Z",
+      "announced_date": "2026-04-07",
+      "first_seen": "2026-04-07",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.05557v1",
+        "pdf": "https://arxiv.org/pdf/2604.05557v1",
+        "html": "https://arxiv.org/html/2604.05557"
+      },
+      "score": 14,
+      "tags": [
+        "memory",
+        "research",
+        "multimodal",
+        "science"
+      ],
+      "field": "multimodal",
+      "citations": 2
+    },
+    {
+      "id": "2604.05523",
+      "title": "Market-Bench: Benchmarking Large Language Models on Economic and Trade Competition",
+      "abstract": "The ability of large language models (LLMs) to manage and acquire economic resources remains unclear. In this paper, we introduce \\textbf{Market-Bench}, a comprehensive benchmark that evaluates the capabilities of LLMs in economically-relevant tasks through economic and trade competition. Specifically, we construct a configurable multi-agent supply chain economic model where LLMs act as retailer agents responsible for procuring and retailing merchandise. In the \\textbf{procurement} stage, LLMs bid for limited inventory in budget-constrained auctions. In the \\textbf{retail} stage, LLMs set retail prices, generate marketing slogans, and provide them to buyers through a role-based attention mechanism for purchase. Market-Bench logs complete trajectories of bids, prices, slogans, sales, and balance-sheet states, enabling automatic evaluation with economic, operational, and semantic metrics. Benchmarking on 20 open- and closed-source LLM agents reveals significant performance disparities and winner-take-most phenomenon, \\textit{i.e.}, only a small subset of LLM retailers can consistently achieve capital appreciation, while many hover around the break-even point despite similar semantic matching scores. Market-Bench provides a reproducible testbed for studying how LLMs interact in competitive markets.",
+      "authors": [
+        "Yushuo Zheng",
+        "Huiyu Duan",
+        "Zicheng Zhang",
+        "Yucheng Zhu",
+        "Xiongkuo Min",
+        "Guangtao Zhai"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-07T07:23:51Z",
+      "updated": "2026-04-19T09:01:29Z",
+      "announced_date": "2026-04-07",
+      "first_seen": "2026-04-07",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.05523v2",
+        "pdf": "https://arxiv.org/pdf/2604.05523v2",
+        "html": "https://arxiv.org/html/2604.05523"
+      },
+      "score": 22,
+      "tags": [
+        "multi-agent"
+      ],
+      "field": "multi-agent",
+      "citations": 2
+    }
+  ]
+}

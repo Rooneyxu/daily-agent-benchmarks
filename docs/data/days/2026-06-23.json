@@ -1,0 +1,272 @@
+{
+  "date": "2026-06-23",
+  "count": 5,
+  "report": {
+    "date": "2026-06-23",
+    "count": 5,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "workplace",
+        "count": 1,
+        "en": "Work / office",
+        "zh": "职场 / 办公"
+      }
+    ],
+    "en": {
+      "headline": "5 new agent benchmarks",
+      "summary": "On June 23, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Tool use (1), Coding agents (1), Science lab (1), and Memory (1).",
+      "highlights": [
+        {
+          "id": "2606.24526",
+          "title": "AGORA: An Archive-Grounded Benchmark for Agentic Workplace Document Reasoning",
+          "blurb": "Large language models are increasingly deployed as agents that reason over documents rather than answer from parametric knowledge."
+        },
+        {
+          "id": "2606.24530",
+          "title": "NatureBench: Can Coding Agents Match the Published SOTA of Nature-Family Papers?",
+          "blurb": "We introduce NatureBench, a cross-discipline benchmark of 90 tasks distilled from peer-reviewed Nature-family publications, designed to evaluate whether AI coding agents can move beyond reproduction toward discovery on r…"
+        },
+        {
+          "id": "2606.25139",
+          "title": "Buildrix: An Open Platform for Sharing and Benchmarking Agentic AI Skills in Building Engineering",
+          "blurb": "Agentic AI offers significant potential to automate complex building-engineering workflows."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年6月23日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在工具使用（1）、代码智能体（1）、科学实验（1）、记忆（1）。",
+      "highlights": [
+        {
+          "id": "2606.24526",
+          "title": "AGORA: An Archive-Grounded Benchmark for Agentic Workplace Document Reasoning",
+          "blurb": "Large language models are increasingly deployed as agents that reason over documents rather than answer from parametric knowledge."
+        },
+        {
+          "id": "2606.24530",
+          "title": "NatureBench: Can Coding Agents Match the Published SOTA of Nature-Family Papers?",
+          "blurb": "We introduce NatureBench, a cross-discipline benchmark of 90 tasks distilled from peer-reviewed Nature-family publications, designed to evaluate whether AI coding agents can move beyond reproduction toward discovery on r…"
+        },
+        {
+          "id": "2606.25139",
+          "title": "Buildrix: An Open Platform for Sharing and Benchmarking Agentic AI Skills in Building Engineering",
+          "blurb": "Agentic AI offers significant potential to automate complex building-engineering workflows."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.25139",
+      "title": "Buildrix: An Open Platform for Sharing and Benchmarking Agentic AI Skills in Building Engineering",
+      "abstract": "Agentic AI offers significant potential to automate complex building-engineering workflows. However, most existing applications remain isolated proof-of-concept demonstrations and lack reusable domain capabilities, human-verified evaluation cases, and standardized benchmarking infrastructure. This study presents Buildrix, an open, community-driven platform for developing, sharing, executing, and evaluating agentic AI skills for building engineering. Buildrix integrates three components: a Python command-line package for developing, validating, publishing, installing, and managing skills and test cases; a web-based Hub for organizing open challenges, reusable skills, test cases, reviews, and benchmark results; and a local agent harness that supports skill discovery, external toolchain provisioning, progressive context loading, and multi-step workflow execution. Buildrix skills are organized as standardized, self-contained packages containing task instructions, executable scripts, dependencies, and supporting resources. Quantitative test cases can be verified by domain experts and promoted to golden test cases for reproducible benchmark evaluation. Buildrix provides an open foundation for reusable capability development, transparent evaluation, and community-driven advancement of agentic AI in building engineering.",
+      "authors": [
+        "Zixin Jiang",
+        "Bing Dong"
+      ],
+      "categories": [
+        "eess.SY"
+      ],
+      "primary_category": "eess.SY",
+      "published": "2026-06-23T20:08:47Z",
+      "updated": "2026-06-23T20:08:47Z",
+      "announced_date": "2026-06-23",
+      "first_seen": "2026-06-23",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.25139v1",
+        "pdf": "https://arxiv.org/pdf/2606.25139v1",
+        "html": "https://arxiv.org/html/2606.25139"
+      },
+      "score": 13,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2607.09711",
+      "title": "EvoClawBench: Can Agents Learn Reusable Skills from Their Own Runs?",
+      "abstract": "Existing agent benchmarks primarily test task completion, tool use, or skill utility, but do not isolate whether a runtime can convert evidence from its own runs into reusable skills that improve fresh executions after authoring overhead. We introduce EvoClawBench, a benchmark for this closed-loop skill-learning question on repeated, fixture-backed tasks. EvoClawBench compares direct execution without skills, PreSkill authoring before execution, and PostSkill summarization from first-run evidence followed by a fresh second execution. The suite contains 100 tasks and 502 sub-problems across coding, data, office, security, operations, and domain-document workflows, with support for multiple agent runtimes. Experiments with OpenClaw and nanobot under local execution show that direct baseline performance is strongly runtime-dependent: OpenClaw remains below 20% across models, while nanobot ranges from 56.45% to 96.13%. Self-authored skills have mixed effects. nanobot GPT-5.4 stays above 96% in all modes and MiniMax-M2.7 improves from 90.97% to 94.50% under PostSkill, but nanobot DeepSeek-V4-Pro drops from 77.77% to 4.80% with PreSkill and 0.99% with PostSkill. OpenClaw shows similarly non-monotonic behavior, with some skill runs near baseline and others collapsing. These results indicate that learning reusable skills from an agent's own runs is selective and cost-sensitive, rather than an automatic benefit of adding skill authoring to an agent loop.",
+      "authors": [
+        "Zhiyuan Peng",
+        "Xin Yin",
+        "Chenhao Ying",
+        "Zhe Cui",
+        "Zixiang Ding",
+        "Zhenhua Liu",
+        "Jiang Wu",
+        "Yuan Luo"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.SE"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-06-23T19:14:29Z",
+      "updated": "2026-06-23T19:14:29Z",
+      "announced_date": "2026-06-23",
+      "first_seen": "2026-06-23",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.09711v1",
+        "pdf": "https://arxiv.org/pdf/2607.09711v1",
+        "html": "https://arxiv.org/html/2607.09711"
+      },
+      "score": 11,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.24530",
+      "title": "NatureBench: Can Coding Agents Match the Published SOTA of Nature-Family Papers?",
+      "abstract": "We introduce NatureBench, a cross-discipline benchmark of 90 tasks distilled from peer-reviewed Nature-family publications, designed to evaluate whether AI coding agents can move beyond reproduction toward discovery on real scientific problems. NatureBench is built on NatureGym, an automated pipeline that constructs a standardized, per-task containerized environment from a source paper, addressing the environment-fragmentation problem that has limited the credibility of prior agent-on-research benchmarks. Evaluating ten frontier agent configurations under a strict web-search-disabled protocol, we find that the strongest model surpasses SOTA on only 17.8% of tasks under the g>0.1 criterion. Analysis of method pathways reveals that agents succeed primarily through methodological translation, converting scientific tasks into familiar supervised prediction problems, rather than through genuine scientific invention. Failures are dominated by wrong method choice and insufficient compute budget, not by task misunderstanding. We release the benchmark, the NatureGym pipeline, and a public leaderboard with maintainer-side reproduction. Code: https://github.com/FrontisAI/NatureBench",
+      "authors": [
+        "Yuru Wang",
+        "Lejun Cheng",
+        "Yuxin Zuo",
+        "Sihang Zeng",
+        "Bingxiang He",
+        "Che Jiang",
+        "Junlin Yang",
+        "Yuchong Wang",
+        "Kaikai Zhao",
+        "Weifeng Huang",
+        "Kai Tian",
+        "Zhenzhao Yuan",
+        "Jincheng Zhong",
+        "Weizhi Wang",
+        "Ning Ding",
+        "Bowen Zhou",
+        "Kaiyan Zhang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-23T12:58:23Z",
+      "updated": "2026-07-06T16:56:53Z",
+      "announced_date": "2026-06-23",
+      "first_seen": "2026-06-23",
+      "comment": "Add results of GLM-5.2 and MinMax-M3",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.24530v2",
+        "pdf": "https://arxiv.org/pdf/2606.24530v2",
+        "html": "https://arxiv.org/html/2606.24530"
+      },
+      "score": 14,
+      "tags": [
+        "coding",
+        "science"
+      ],
+      "field": "coding",
+      "citations": 1
+    },
+    {
+      "id": "2606.24526",
+      "title": "AGORA: An Archive-Grounded Benchmark for Agentic Workplace Document Reasoning",
+      "abstract": "Large language models are increasingly deployed as agents that reason over documents rather than answer from parametric knowledge. We study archive-grounded reasoning: locating sparse evidence across a large, messy collection of workplace files, reconciling inconsistent terminology, units, and time conventions, and computing an answer. Existing benchmarks address only parts of this setting and none jointly stresses archive-groundedness, agentic exploration, and cross-domain coverage. We introduce Agora, a benchmark pairing 362 questions with eight domain collections of 9,664 authentic documents and 372M tokens, far exceeding any model's context window, so agents must explore deliberately rather than scan exhaustively. Agora is built by an agentic pipeline combining cross-document task synthesis, leakage-preventing obfuscation, and difficulty filtering. Evaluating eight models, we find the task far from solved: even the strongest reaches only 59.4% accuracy, with notable variation across domains.",
+      "authors": [
+        "Honglin Guo",
+        "Qi Zhang",
+        "Yu Zhang",
+        "Weijie Li",
+        "Rui Zheng",
+        "Zhikai Lei",
+        "Qiyuan Peng",
+        "Zhiheng Xi",
+        "Tao Gui",
+        "Qi Zhang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-23T12:57:18Z",
+      "updated": "2026-06-23T12:57:18Z",
+      "announced_date": "2026-06-23",
+      "first_seen": "2026-06-23",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.24526v1",
+        "pdf": "https://arxiv.org/pdf/2606.24526v1",
+        "html": "https://arxiv.org/html/2606.24526"
+      },
+      "score": 14,
+      "tags": [
+        "memory",
+        "planning",
+        "workplace"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2606.24026",
+      "title": "Can Language Model Agents be Helpful Circuit Explainers in Mechanistic Interpretability?",
+      "abstract": "Mechanistic interpretability has made substantial progress in automatically localizing circuits, but explaining what localized components do remains labor-intensive and difficult to standardize. In this work, we study whether language model (LM) agents can assist with this explanation problem once a circuit has already been identified. We introduce AgenticInterpBench, a benchmark for circuit explanation built from 84 semi-synthetic transformer circuits with 163 component-level annotations. We propose HyVE (Hypothesize, Validate, Explain), an agentic explainer that analyzes each component through an iterative loop of observation, hypothesis generation, and causal validation, eventually producing a component-level explanation and a circuit-level task description. Across four LM backbones, HyVE recovers useful component- and task-level explanations, but no backbone is uniformly best. Our analysis shows that strong backbones usually form observation-grounded hypotheses, while failures more often arise later in the validation loop, through incomplete validation plans, code execution errors, or unresolved hypotheses. A case study on an arithmetic circuit in Llama-3-8B shows that the same formulation can extend beyond semi-synthetic benchmarks to naturally trained models. Overall, LM agents are promising circuit explainers, but reliable validation remains the key obstacle.",
+      "authors": [
+        "Ayan Antik Khan",
+        "Harsh Kohli",
+        "Yuekun Yao",
+        "Huan Sun",
+        "Ziyu Yao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-23T00:04:31Z",
+      "updated": "2026-06-23T00:04:31Z",
+      "announced_date": "2026-06-23",
+      "first_seen": "2026-06-23",
+      "comment": "23 pages, 4 figures, 14 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.24026v1",
+        "pdf": "https://arxiv.org/pdf/2606.24026v1",
+        "html": "https://arxiv.org/html/2606.24026"
+      },
+      "score": 7,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "date": "2026-02-24",
+  "count": 2,
+  "report": {
+    "date": "2026-02-24",
+    "count": 2,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On February 24, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Tool use (1), Planning / reasoning (1), Research agents (1), and GUI agents (1).",
+      "highlights": [
+        {
+          "id": "2602.21143",
+          "title": "A Benchmark for Deep Information Synthesis",
+          "blurb": "Large language model (LLM)-based agents are increasingly used to solve complex tasks involving tool use, such as web browsing, code execution, and data analysis."
+        },
+        {
+          "id": "2604.09574",
+          "title": "Turing Test on Screen: A Benchmark for Mobile GUI Agent Humanization",
+          "blurb": "The rise of autonomous GUI agents has triggered adversarial countermeasures from digital platforms, yet existing research prioritizes utility and robustness over the critical dimension of anti-detection."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年2月24日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在工具使用（1）、规划 / 推理（1）、科研智能体（1）、GUI 智能体（1）。",
+      "highlights": [
+        {
+          "id": "2602.21143",
+          "title": "A Benchmark for Deep Information Synthesis",
+          "blurb": "Large language model (LLM)-based agents are increasingly used to solve complex tasks involving tool use, such as web browsing, code execution, and data analysis."
+        },
+        {
+          "id": "2604.09574",
+          "title": "Turing Test on Screen: A Benchmark for Mobile GUI Agent Humanization",
+          "blurb": "The rise of autonomous GUI agents has triggered adversarial countermeasures from digital platforms, yet existing research prioritizes utility and robustness over the critical dimension of anti-detection."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2602.21143",
+      "title": "A Benchmark for Deep Information Synthesis",
+      "abstract": "Large language model (LLM)-based agents are increasingly used to solve complex tasks involving tool use, such as web browsing, code execution, and data analysis. However, current evaluation benchmarks do not adequately assess their ability to solve real-world tasks that require synthesizing information from multiple sources and inferring insights beyond simple fact retrieval. To address this, we introduce DEEPSYNTH, a novel benchmark designed to evaluate agents on realistic, time-consuming problems that combine information gathering, synthesis, and structured reasoning to produce insights. DEEPSYNTH contains 120 tasks collected across 7 domains and data sources covering 67 countries. DEEPSYNTH is constructed using a multi-stage data collection pipeline that requires annotators to collect official data sources, create hypotheses, perform manual analysis, and design tasks with verifiable answers. When evaluated on DEEPSYNTH, 11 state-of-the-art LLMs and deep research agents achieve a maximum F1 score of 8.97 and 17.5 on the LLM-judge metric, underscoring the difficulty of the benchmark. Our analysis reveals that current agents struggle with hallucinations and reasoning over large information spaces, highlighting DEEPSYNTH as a crucial benchmark for guiding future research.",
+      "authors": [
+        "Debjit Paul",
+        "Daniel Murphy",
+        "Milan Gritta",
+        "Ronald Cardenas",
+        "Victor Prokhorov",
+        "Lena Sophia Bolliger",
+        "Aysim Toker",
+        "Roy Miles",
+        "Andreea-Maria Oncescu",
+        "Jasivan Alex Sivakumar",
+        "Philipp Borchert",
+        "Ismail Elezi",
+        "Meiru Zhang",
+        "Ka Yiu Lee",
+        "Guchun Zhang",
+        "Jun Wang",
+        "Gerasimos Lampouras"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-24T17:43:32Z",
+      "updated": "2026-02-24T17:43:32Z",
+      "announced_date": "2026-02-24",
+      "first_seen": "2026-02-24",
+      "comment": "Accepted at ICLR 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.21143v1",
+        "pdf": "https://arxiv.org/pdf/2602.21143v1",
+        "html": "https://arxiv.org/html/2602.21143"
+      },
+      "score": 18,
+      "tags": [
+        "tool-use",
+        "planning",
+        "research"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2604.09574",
+      "title": "Turing Test on Screen: A Benchmark for Mobile GUI Agent Humanization",
+      "abstract": "The rise of autonomous GUI agents has triggered adversarial countermeasures from digital platforms, yet existing research prioritizes utility and robustness over the critical dimension of anti-detection. We argue that for agents to survive in human-centric ecosystems, they must evolve Humanization capabilities. We introduce the ``Turing Test on Screen,'' formally modeling the interaction as a MinMax optimization problem between a detector and an agent aiming to minimize behavioral divergence. We then collect a new high-fidelity dataset of mobile touch dynamics, and conduct our analysis that vanilla LMM-based agents are easily detectable due to unnatural kinematics. Consequently, we establish the Agent Humanization Benchmark (AHB) and detection metrics to quantify the trade-off between imitability and utility. Finally, we propose methods ranging from heuristic noise to data-driven behavioral matching, demonstrating that agents can achieve high imitability theoretically and empirically without sacrificing performance. This work shifts the paradigm from whether an agent can perform a task to how it performs it within a human-centric ecosystem, laying the groundwork for seamless coexistence in adversarial digital environments.",
+      "authors": [
+        "Jiachen Zhu",
+        "Lingyu Yang",
+        "Rong Shan",
+        "Congmin Zheng",
+        "Zeyu Zheng",
+        "Weiwen Liu",
+        "Yong Yu",
+        "Weinan Zhang",
+        "Jianghao Lin"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-24T04:29:42Z",
+      "updated": "2026-02-24T04:29:42Z",
+      "announced_date": "2026-02-24",
+      "first_seen": "2026-02-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.09574v1",
+        "pdf": "https://arxiv.org/pdf/2604.09574v1",
+        "html": "https://arxiv.org/html/2604.09574"
+      },
+      "score": 17,
+      "tags": [
+        "gui",
+        "safety"
+      ],
+      "field": "computer-use",
+      "citations": 2
+    }
+  ]
+}

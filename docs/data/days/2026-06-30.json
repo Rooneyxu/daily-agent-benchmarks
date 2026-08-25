@@ -1,0 +1,335 @@
+{
+  "date": "2026-06-30",
+  "count": 6,
+  "report": {
+    "date": "2026-06-30",
+    "count": 6,
+    "themes": [
+      {
+        "id": "multimodal",
+        "count": 3,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      }
+    ],
+    "en": {
+      "headline": "6 new agent benchmarks",
+      "summary": "On June 30, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Multimodal (3), Safety (2), Coding agents (1), and Embodied / robotics (1).",
+      "highlights": [
+        {
+          "id": "2606.31154",
+          "title": "PPT-Eval: A Benchmark for Computer-Use Agents on PowerPoint Tasks",
+          "blurb": "Creating and editing slides is a rich, multimodal activity that is ubiquitous in professional and educational settings, making it an ideal testbed for real-world computer-use agents."
+        },
+        {
+          "id": "2606.31522",
+          "title": "FinPersona-Bench: A Benchmark for Longitudinal Psychometric Stability of Autonomous Financial Agents",
+          "blurb": "Large Language Models (LLMs) are increasingly deployed as autonomous financial agents initialized with explicit behavioral mandates such as \"preserve capital\" or \"avoid speculative bets\" that are meant to govern every de…"
+        },
+        {
+          "id": "2606.31174",
+          "title": "ClawArena-Team: Benchmarking Subagent Orchestration and Dynamic Workflows in Language-Model Agents",
+          "blurb": "Production large language-model (LLM) agents are increasingly deployed not as lone problem-solvers but as managers: a main model creates specialized subagents, delegates work, and orchestrates their parallel, asynchronou…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 6 篇 Agent Benchmark",
+      "summary": "2026年6月30日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在多模态（3）、安全（2）、代码智能体（1）、具身 / 机器人（1）。",
+      "highlights": [
+        {
+          "id": "2606.31154",
+          "title": "PPT-Eval: A Benchmark for Computer-Use Agents on PowerPoint Tasks",
+          "blurb": "Creating and editing slides is a rich, multimodal activity that is ubiquitous in professional and educational settings, making it an ideal testbed for real-world computer-use agents."
+        },
+        {
+          "id": "2606.31522",
+          "title": "FinPersona-Bench: A Benchmark for Longitudinal Psychometric Stability of Autonomous Financial Agents",
+          "blurb": "Large Language Models (LLMs) are increasingly deployed as autonomous financial agents initialized with explicit behavioral mandates such as \"preserve capital\" or \"avoid speculative bets\" that are meant to govern every de…"
+        },
+        {
+          "id": "2606.31174",
+          "title": "ClawArena-Team: Benchmarking Subagent Orchestration and Dynamic Workflows in Language-Model Agents",
+          "blurb": "Production large language-model (LLM) agents are increasingly deployed not as lone problem-solvers but as managers: a main model creates specialized subagents, delegates work, and orchestrates their parallel, asynchronou…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.32007",
+      "title": "AxDafny: Agentic Verified Code Generation in Dafny",
+      "abstract": "We study agentic code generation in Dafny, where a model must generate both executable code and the proof artifacts for verification. We present AxDafny, a verifier-guided repair framework that iteratively generates implementations, invariants, assertions, and termination arguments. We also introduce LiveCodeBench-Pro-Dafny (LCB-Pro-Dafny), a benchmark of 250 competition-style programming problems translated into Dafny with formal specifications and a verifier-based evaluation harness. On LCB-Pro-Dafny, AxDafny substantially improves verification success over baseline GPT-5.5 performance. On DafnyBench, AxDafny achieves 92.7\\% verification success, outperforming the strongest previously reported proof-hint baseline by 6.5 percentage points. Lastly, we show that verification success and runtime test performance measure different aspects of generated code.",
+      "authors": [
+        "Benjamin Breen",
+        "Austin Letson",
+        "Borja Requena Pozo",
+        "Leopoldo Sarra"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-30T17:39:43Z",
+      "updated": "2026-06-30T17:39:43Z",
+      "announced_date": "2026-06-30",
+      "first_seen": "2026-06-30",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.32007v1",
+        "pdf": "https://arxiv.org/pdf/2606.32007v1",
+        "html": "https://arxiv.org/html/2606.32007"
+      },
+      "score": 10,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 1
+    },
+    {
+      "id": "2606.31966",
+      "title": "MECoBench: A Systematic Study of Multimodal Agent Collaboration in Embodied Environments",
+      "abstract": "Recent multimodal large language models (MLLMs) have strong potential as embodied agents, but their ability to collaborate in visually grounded environments remains underexplored. To address this gap, we introduce MECoBench, a multimodal embodied cooperation benchmark with an evaluation platform spanning diverse real-world tasks, two cooperation structures, and three collaboration modes. Through extensive experiments across various MLLMs, we summarize three key findings: (i) Collaboration generally improves embodied task completion, but its benefits depend on balancing collaborative gains against coordination complexity. (ii) Communication is essential to collaboration gains, while the best collaboration mode depends on team size and model capability. (iii) Moreover, collaboration improves robustness under noisy priors and exploration conditions. Generally, MECoBench provides a systematic testbed for understanding the mechanisms and limits of multimodal embodied collaboration. Code and dataset are available at https://github.com/q-i-n-g/MECoBench.",
+      "authors": [
+        "Qingyun Liu",
+        "Jiwen Zhang",
+        "Jingyi Hu",
+        "Siyuan Wang",
+        "Zhongyu Wei"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-06-30T17:07:53Z",
+      "updated": "2026-06-30T17:07:53Z",
+      "announced_date": "2026-06-30",
+      "first_seen": "2026-06-30",
+      "comment": "Project website: https://q-i-n-g.github.io/MECoBench-Website/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.31966v1",
+        "pdf": "https://arxiv.org/pdf/2606.31966v1",
+        "html": "https://arxiv.org/html/2606.31966"
+      },
+      "score": 13,
+      "tags": [
+        "embodied",
+        "safety",
+        "multimodal"
+      ],
+      "field": "embodied",
+      "citations": 0
+    },
+    {
+      "id": "2606.31522",
+      "title": "FinPersona-Bench: A Benchmark for Longitudinal Psychometric Stability of Autonomous Financial Agents",
+      "abstract": "Large Language Models (LLMs) are increasingly deployed as autonomous financial agents initialized with explicit behavioral mandates such as \"preserve capital\" or \"avoid speculative bets\" that are meant to govern every decision throughout deployment. In practice, however, as market context accumulates over long horizons, these mandates gradually lose their behavioral influence, a phenomenon we formalize as Mandate Salience Decay (MSD). To measure MSD objectively, we introduce FinPersona-Bench, a simulation benchmark in which a synthetic market decouples observable price from hidden fundamental value, enabling falsifiable evaluation across three failure modes: trading without signal in calm markets, panic-selling during crashes, and ignoring fundamental value during speculative bubbles. Evaluating 18 leading frontier and open-source LLMs, each assigned one of three behavioral profiles ranging from strict capital preservation to aggressive growth, shows that MSD compounds over time and is model-dependent. In crash scenarios, the behavioral gap between static agents and those receiving periodic mandate re-grounding grows 4.4x from the first to the final quarter of the simulation. The effects of mandate re-grounding are not uniformly positive: it consistently helps conservative agents in low-signal markets but actively worsens behavior for aggressive agents in the same setting. These findings suggest that reliable long-horizon deployment requires selective, mandate-aware re-grounding based on agent profile and market regime.",
+      "authors": [
+        "Muhammad Usman Safder",
+        "Ayesha Gull",
+        "Rania Elbadry",
+        "Fan Zhang",
+        "Yankai Chen",
+        "Xueqing Peng",
+        "Xue",
+        "Liu",
+        "Preslav Nakov",
+        "Zhuohan Xie"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-30T11:33:29Z",
+      "updated": "2026-07-01T13:27:11Z",
+      "announced_date": "2026-06-30",
+      "first_seen": "2026-06-30",
+      "comment": "29 pages, includes figures and tables; formalizes Mandate Salience Decay and introduces FinPersona-Bench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.31522v2",
+        "pdf": "https://arxiv.org/pdf/2606.31522v2",
+        "html": "https://arxiv.org/html/2606.31522"
+      },
+      "score": 20,
+      "tags": [],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2606.31179",
+      "title": "HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents",
+      "abstract": "As AI agents become increasingly capable of complex, long-horizon reasoning, rigorous and holistic evaluation is essential for measuring progress toward real-world healthcare applications. We introduce HealthAgentBench, a suite of 54 agentic healthcare tasks across 7 categories each with its unique environment. The benchmark suite spans diverse workflows throughout the patient journey and a broad range of modalities. Each task is designed to replicate an end-to-end clinical workflow: given minimal instructions, an agent must explore raw healthcare data, operate within a complex environment, and execute multi-step solutions that go beyond naive prompting. A final task success rate is reported to provide a single, interpretable metric for HealthAgentBench overall performance for each agent. Evaluating frontier agents on HealthAgentBench, we find that overall task success rate remains low, underscoring the difficulty of the suite. The strongest and the most cost effective agent, Codex GPT-5.5, achieves only approximately 42% success rate. Beyond aggregate performance, HealthAgentBench reveals nuanced strengths and weaknesses across task categories. Frontier agents show promise in automatically developing research modeling pipelines over EHR data, but medical imaging remains especially challenging, particularly for Claude Code models, while Codex GPT-5.5 shows emerging capability. Tasks that combine large search spaces with compositional reasoning requirements remain difficult for all current agents. Together, these results suggest that HealthAgentBench provides a challenging and realistic benchmark with substantial room for future progress. We release our benchmark at https://github.com/microsoft/HealthAgentBench.",
+      "authors": [
+        "Qianchu Liu",
+        "Sheng Zhang",
+        "Guanghui Qin",
+        "Jeya Maria Jose Valanarasu",
+        "Maximilian Rokuss",
+        "Mingyu Lu",
+        "Timothy Ossowski",
+        "Juan Manuel Zambrano Chaves",
+        "Cliff Wong",
+        "Peniel Argaw",
+        "Yashna Hasija",
+        "Mu Wei",
+        "Wen-wai Yim",
+        "Qin Liu",
+        "Zilin Jing",
+        "Jason Entenmann",
+        "Naoto Usuyama",
+        "Tristan Naumann",
+        "Hoifung Poon"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-30T06:09:01Z",
+      "updated": "2026-06-30T06:09:01Z",
+      "announced_date": "2026-06-30",
+      "first_seen": "2026-06-30",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.31179v1",
+        "pdf": "https://arxiv.org/pdf/2606.31179v1",
+        "html": "https://arxiv.org/html/2606.31179"
+      },
+      "score": 18,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 6
+    },
+    {
+      "id": "2606.31174",
+      "title": "ClawArena-Team: Benchmarking Subagent Orchestration and Dynamic Workflows in Language-Model Agents",
+      "abstract": "Production large language-model (LLM) agents are increasingly deployed not as lone problem-solvers but as managers: a main model creates specialized subagents, delegates work, and orchestrates their parallel, asynchronous returns through dynamic workflows. Whether one model can actually run such a team is largely unmeasured: existing benchmarks score a policy's own task-solving or a fixed multi-agent system's emergent behavior, but none isolate the management ability of the single LLM acting as leader. We introduce ClawArena-Team, a benchmark of 41 multi-turn, multimodal, multi-directory scenarios spanning 258 evaluation rounds and 72 staged updates that measures this management ability. The main agent is deliberately constrained: it natively perceives only text and directly accesses only part of the workspace. It commands a fixed, locally served subagent pool, so score differences reflect management skill, not raw capability. All scoring is execution-based with no LLM judge: an overall score -- the Subagent-Management Score (SMS) -- multiplies task correctness by a least-privilege and modality-routing factor. Across twelve proprietary, community-hosted, and self-hosted models, experiments show that the management bottleneck is privilege granting rather than perception (no model exceeds 50% workspace-permission precision); that cost and management quality are decoupled (API cost spans over 100 times while the overall score spans under 4 times, with the cheapest open models on the Pareto frontier); and that most leaderboard scores cluster within a 9.9-point band while orchestration behaviors diverge by more than an order of magnitude. Code is available at https://github.com/aiming-lab/ClawArena.",
+      "authors": [
+        "Kaiwen Xiong",
+        "Haonian Ji",
+        "Shi Qiu",
+        "Zeyu Zheng",
+        "Cihang Xie",
+        "Xinyu Ye",
+        "Huaxiu Yao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-30T06:06:08Z",
+      "updated": "2026-07-02T07:39:52Z",
+      "announced_date": "2026-06-30",
+      "first_seen": "2026-06-30",
+      "comment": "24 pages, 10 figures, website: https://www.clawarena.cc/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.31174v2",
+        "pdf": "https://arxiv.org/pdf/2606.31174v2",
+        "html": "https://arxiv.org/html/2606.31174"
+      },
+      "score": 18,
+      "tags": [
+        "multi-agent",
+        "multimodal",
+        "science"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2606.31154",
+      "title": "PPT-Eval: A Benchmark for Computer-Use Agents on PowerPoint Tasks",
+      "abstract": "Creating and editing slides is a rich, multimodal activity that is ubiquitous in professional and educational settings, making it an ideal testbed for real-world computer-use agents. Microsoft PowerPoint is among the most widely adopted and feature-rich environments for presentation creation. We introduce PPT-Eval, a benchmark of 120 PowerPoint tasks across 12 files that cover both content creation and presentation editing scenarios, organized by difficulty. A central challenge in this domain is evaluation: tasks are complex, multimodal, and often admit many valid solutions. Moreover, today's agents frequently make only partial progress, which binary success metrics fail to capture. To address this, we design a robust evaluation framework to help create task-specific rubrics for PowerPoint tasks, taking inspiration from and building on past works for rubric-based evaluation. These rubrics award partial credit for intermediate steps, penalize unnecessary changes and poor aesthetics, and provide natural language feedback. This nuanced approach proves highly effective, achieving a Kendall's τ-b correlation of 0.77 with human judgments. We find that existing frontier agents still struggle with solving PowerPoint tasks, with strong models like Claude-4.5-Opus achieving only a 45% success rate and an average partial score of 57%. The benchmark is located at: https://microsoft.github.io/ppteval.",
+      "authors": [
+        "Apurva Gandhi",
+        "Vishwas Suryanarayanan",
+        "Raja Hasnain Anwar",
+        "Firoz Shaik",
+        "Shubhang Desai",
+        "Thong Q. Nguyen",
+        "Muhammad Taqi Raza",
+        "Vishal Chowdhary",
+        "Graham Neubig"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-06-30T05:26:51Z",
+      "updated": "2026-06-30T05:26:51Z",
+      "announced_date": "2026-06-30",
+      "first_seen": "2026-06-30",
+      "comment": "Proceedings of the 43rd International Conference on Machine Learning, Seoul, South Korea. PMLR 306, 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.31154v1",
+        "pdf": "https://arxiv.org/pdf/2606.31154v1",
+        "html": "https://arxiv.org/html/2606.31154"
+      },
+      "score": 22,
+      "tags": [
+        "computer-use",
+        "safety",
+        "multimodal"
+      ],
+      "field": "computer-use",
+      "citations": 3
+    }
+  ]
+}

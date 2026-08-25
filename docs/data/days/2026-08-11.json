@@ -1,0 +1,219 @@
+{
+  "date": "2026-08-11",
+  "count": 4,
+  "report": {
+    "date": "2026-08-11",
+    "count": 4,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "mobile",
+        "count": 1,
+        "en": "Mobile agents",
+        "zh": "移动智能体"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On August 11, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Tool use (2), Planning / reasoning (2), Mobile agents (1), and Safety (1).",
+      "highlights": [
+        {
+          "id": "2608.11434",
+          "title": "Benchmarking LLM Judges for Mobile Agent Evaluation",
+          "blurb": "Mobile agent benchmarks increasingly rely on LLM-based judges to evaluate task completion, yet the reliability of these judges on mobile agent trajectories remains largely unexamined."
+        },
+        {
+          "id": "2608.10669",
+          "title": "REDAgentBench: Executable Red Teaming and Faithful Measurement of LLM Agent Systems",
+          "blurb": "Large language model (LLM) agents combine language-based reasoning with external tools to perform complex tasks."
+        },
+        {
+          "id": "2608.10366",
+          "title": "DSAgentBench: Can Agents Automate End-to-End Data-Science Workflows in Real Computer Environments?",
+          "blurb": "Real-world data science involves long-horizon workflows that span data wrangling, exploration, modeling, visualization, and validation, and require coordinated use of tools such as notebooks, IDEs, terminals, browsers, a…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年8月11日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在工具使用（2）、规划 / 推理（2）、移动智能体（1）、安全（1）。",
+      "highlights": [
+        {
+          "id": "2608.11434",
+          "title": "Benchmarking LLM Judges for Mobile Agent Evaluation",
+          "blurb": "Mobile agent benchmarks increasingly rely on LLM-based judges to evaluate task completion, yet the reliability of these judges on mobile agent trajectories remains largely unexamined."
+        },
+        {
+          "id": "2608.10669",
+          "title": "REDAgentBench: Executable Red Teaming and Faithful Measurement of LLM Agent Systems",
+          "blurb": "Large language model (LLM) agents combine language-based reasoning with external tools to perform complex tasks."
+        },
+        {
+          "id": "2608.10366",
+          "title": "DSAgentBench: Can Agents Automate End-to-End Data-Science Workflows in Real Computer Environments?",
+          "blurb": "Real-world data science involves long-horizon workflows that span data wrangling, exploration, modeling, visualization, and validation, and require coordinated use of tools such as notebooks, IDEs, terminals, browsers, a…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.11434",
+      "title": "Benchmarking LLM Judges for Mobile Agent Evaluation",
+      "abstract": "Mobile agent benchmarks increasingly rely on LLM-based judges to evaluate task completion, yet the reliability of these judges on mobile agent trajectories remains largely unexamined. We introduce MobileJudgeBench, a benchmark for systematically evaluating LLM-as-judge methods on mobile agent trajectories. Our benchmark comprises 931 human-annotated trajectories spanning 6 mobile agent benchmarks, 4 agent models, and 68 apps. We evaluate 6 judge methods (five adapted from SPA-Bench, A3 with two modes, AndroidArena, and AgentRewardBench, plus a simple baseline we design) across multiple LLM backends. Our experiments reveal three key findings. First, a simple baseline judge with sampled screenshots is competitive with, and often exceeds, purpose-built methods, indicating that more elaborate judge pipelines do not consistently improve judge quality; among competitive methods, the LLM backbone is the primary driver. Second, benchmark quality metrics reliably predict real-world judge utility: they correlate with both agent ranking fidelity for evaluation and downstream performance when judges serve as reward signals for on-policy reinforcement learning. Third, failure analysis across two LLM backends uncovers qualitatively opposite failure profiles, one conservative and the other permissive, linked to the backbone's precision-recall characteristics.",
+      "authors": [
+        "Ziqiang Wang",
+        "Li Gu",
+        "Zhixiang Chi",
+        "Zhi Liu",
+        "Seyed Mehdi Ayyoubzadeh",
+        "Yuanhao Yu",
+        "Yang Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-11T21:00:46Z",
+      "updated": "2026-08-11T21:00:46Z",
+      "announced_date": "2026-08-11",
+      "first_seen": "2026-08-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.11434v1",
+        "pdf": "https://arxiv.org/pdf/2608.11434v1",
+        "html": "https://arxiv.org/html/2608.11434"
+      },
+      "score": 19,
+      "tags": [
+        "mobile"
+      ],
+      "field": "mobile",
+      "citations": 0
+    },
+    {
+      "id": "2608.10875",
+      "title": "VibeLifeBench: Can Your Life Agent Be Proactive and Persistent in a Living World?",
+      "abstract": "Large language model (LLM) agents are increasingly deployed as personal assistants. Existing evaluations, however, mostly use short, self-contained requests in static environments. Everyday life assistance is different. A task runs for weeks rather than minutes. The world keeps changing while the agent is not being prompted. Many constraints are never stated outright. An agent that merely answers the request in front of it will fail at such a task. What is needed instead is an agent that stays proactive and consistent. It decides on its own when to act, when to ask, and when to stay silent. It notices changes that nobody announced. It keeps one plan coherent from the first day to the last. No current benchmark measures this. We introduce VibeLifeBench, a benchmark of 200 long-horizon tasks across ten everyday-life domains. Each task is a scripted multi-week timeline in a simulated world of 22 mock services. The world advances on its own clock, and many of its changes are silent, so only an agent that re-inspects the world discovers them. Every task is graded by fine-grained, weighted checks that read only what the agent actually left behind, covering the end state, the timeliness of its actions, and whether it upheld the implicit constraints. We evaluate seven frontier models. All of them score low, which shows how far current agents are from assisting with real life. We will open-source all tasks, environments, and the evaluation framework.",
+      "authors": [
+        "Xiaohongshu Dots Studio",
+        "Evolvent AI"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-08-11T12:52:38Z",
+      "updated": "2026-08-16T17:38:38Z",
+      "announced_date": "2026-08-11",
+      "first_seen": "2026-08-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.10875v2",
+        "pdf": "https://arxiv.org/pdf/2608.10875v2",
+        "html": "https://arxiv.org/html/2608.10875"
+      },
+      "score": 10,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.10669",
+      "title": "REDAgentBench: Executable Red Teaming and Faithful Measurement of LLM Agent Systems",
+      "abstract": "Large language model (LLM) agents combine language-based reasoning with external tools to perform complex tasks. Adversarial inputs can exploit interactions between the agent and its environment, causing the agent to violate safety policies during execution. Yet existing evaluations often reduce agent safety to a single attack success rate (ASR), collapsing exposure, execution, observation, and adjudication and potentially conflating actual violations with evidence visibility. We introduce REDAgentBench, an executable framework for autonomous red-teaming and faithful measurement. It derives attacks from explicit safety constraints and associated agent-system vulnerabilities, runs them in isolated service sandboxes, and verifies harmful effects from service receipts and final-state changes. The benchmark contains 1,661 cases across five service surfaces. Across six models and three agent harnesses, macro-average ASR is 65.69%; reported ASR varies with harness and evidence view, while evaluation-context disclosure changes execution behavior. In a state-grounded diagnostic cohort, almost one in five confirmed violations with resolved action anchors occurs after the agent states the relevant constraint or risk, revealing a Recognition--Execution Gap. Finally, a training-free policy reminder reduces confirmed violations by more than 70 percentage points in matched replay. These findings show that executable evaluation can improve safety measurement and identify actionable intervention points.",
+      "authors": [
+        "Zixing Chen",
+        "Xingyuan Liu",
+        "Jie Zhu",
+        "Huaixia Dou",
+        "Shuo Jiang",
+        "Junhui Li",
+        "Lifan Guo",
+        "Feng Chen",
+        "Chi Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-11T08:48:54Z",
+      "updated": "2026-08-11T08:48:54Z",
+      "announced_date": "2026-08-11",
+      "first_seen": "2026-08-11",
+      "comment": "6 figures, 4 tables. Supplementary material included",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.10669v1",
+        "pdf": "https://arxiv.org/pdf/2608.10669v1",
+        "html": "https://arxiv.org/html/2608.10669"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.10366",
+      "title": "DSAgentBench: Can Agents Automate End-to-End Data-Science Workflows in Real Computer Environments?",
+      "abstract": "Real-world data science involves long-horizon workflows that span data wrangling, exploration, modeling, visualization, and validation, and require coordinated use of tools such as notebooks, IDEs, terminals, browsers, and databases within real operating environments. Yet existing benchmarks lack real-computer interaction and do not evaluate whether agents can execute complete end-to-end data-science workflows in realistic computing environments, failing to capture the multi-stage, multi-tool nature of data-science practice. We introduce DSAgentBench, the first benchmark to evaluate whether agents can automate full data-science workflows inside real computer environments. DSAgentBench contains 275 diverse tasks covering the entire data-science life-cycle, reflecting the complexity and tool coordination required in practice. Each task requires grounding decisions in intermediate outputs and coordinated tool use, and includes a deterministic evaluator that verifies analytical correctness, visual outputs, and model performance rather than code-only execution. Our extensive experiments with 15 closed- and open-source models show that even the strongest agent, Claude-4.6-Sonnet, achieves only 56.70% task success, while all open-source agents remain below 1%, frequently failing at tool orchestration, OS grounding, and multi-step reasoning. These results reveal a substantial capability gap between current agentic systems and real data-science workflows, positioning DSAgentBench as a foundation for developing grounded, verifiable, autonomous data-science agents. We release DSAgentBench at https://github.com/vis-nlp/DSAgentBench.",
+      "authors": [
+        "Mizanur Rahman",
+        "Mohammed Saidul Islam",
+        "Ridwan Mahbub",
+        "Md Tahmid Rahman Laskar",
+        "Shafiq Joty",
+        "Enamul Hoque Prince"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-11T01:45:56Z",
+      "updated": "2026-08-11T01:45:56Z",
+      "announced_date": "2026-08-11",
+      "first_seen": "2026-08-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.10366v1",
+        "pdf": "https://arxiv.org/pdf/2608.10366v1",
+        "html": "https://arxiv.org/html/2608.10366"
+      },
+      "score": 11,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

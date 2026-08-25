@@ -1,0 +1,278 @@
+{
+  "date": "2026-05-22",
+  "count": 5,
+  "report": {
+    "date": "2026-05-22",
+    "count": 5,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 3,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "5 new agent benchmarks",
+      "summary": "On May 22, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Coding agents (3), Tool use (2), Web agents (1), and Safety (1).",
+      "highlights": [
+        {
+          "id": "2605.24279",
+          "title": "ContextEcho: A Benchmark for Persona Drift in Long Agentic-Coding Sessions",
+          "blurb": "A frontier language model's acknowledged \"helpful programming assistant\" persona does not survive long agentic-coding sessions in the deployment regime that production products actually run."
+        },
+        {
+          "id": "2605.24110",
+          "title": "EvoCode-Bench: Evaluating Coding Agents in Multi-Turn Iterative Interactions",
+          "blurb": "Coding agents are increasingly used as iterative development partners, but most benchmarks still evaluate one specification followed by one final assessment."
+        },
+        {
+          "id": "2605.24183",
+          "title": "AvalancheBench: Evaluating Enterprise Data Agents Through Latent World Recovery",
+          "blurb": "We introduce AvalancheBench, a benchmark for evaluating enterprise data agents through \\emph{latent world recovery}."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年5月22日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在代码智能体（3）、工具使用（2）、网页智能体（1）、安全（1）。",
+      "highlights": [
+        {
+          "id": "2605.24279",
+          "title": "ContextEcho: A Benchmark for Persona Drift in Long Agentic-Coding Sessions",
+          "blurb": "A frontier language model's acknowledged \"helpful programming assistant\" persona does not survive long agentic-coding sessions in the deployment regime that production products actually run."
+        },
+        {
+          "id": "2605.24110",
+          "title": "EvoCode-Bench: Evaluating Coding Agents in Multi-Turn Iterative Interactions",
+          "blurb": "Coding agents are increasingly used as iterative development partners, but most benchmarks still evaluate one specification followed by one final assessment."
+        },
+        {
+          "id": "2605.24183",
+          "title": "AvalancheBench: Evaluating Enterprise Data Agents Through Latent World Recovery",
+          "blurb": "We introduce AvalancheBench, a benchmark for evaluating enterprise data agents through \\emph{latent world recovery}."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2605.24279",
+      "title": "ContextEcho: A Benchmark for Persona Drift in Long Agentic-Coding Sessions",
+      "abstract": "A frontier language model's acknowledged \"helpful programming assistant\" persona does not survive long agentic-coding sessions in the deployment regime that production products actually run. After hours of tool-using debugging, a model that initially hedges preferences (\"I don't have preferences\") may begin asserting them (\"Python - the feedback loop is instant...\"), revealing user-visible drift that deployer evaluations may miss. Existing persona-stability studies focus on short dialogues and report little shift, leaving real-world code-generation regimes - thousands of tool-using turns, compaction, and hours-long sessions - largely uncharacterized. We introduce ContextEcho, a benchmark and reusable harness for measuring persona drift at deployment scale. It combines a 25-probe identity suite, a snapshot-then-probe protocol that forks conversation state without perturbing the main session, complementary judged and judge-free measurement surfaces, and three anonymized Claude Code sessions spanning 3,746-9,716 turns. Across 23 frontier models, ContextEcho shows that persona drift is general across organizations rather than family-specific, that in-session compaction does not reliably reset it, and that a single-shot anchor restores the trained register across measured targets. It also reveals mode-dependent downstream effects: while drift can facilitate tool-using continuation, in tool-free chat it breaks formatting contracts and inflates output length. Overall, ContextEcho provides researchers and deployers an open-source framework to audit whether the persona a model ships with is the persona users encounter at session end, across chat-completions API targets and without retraining.",
+      "authors": [
+        "Xianzhong Ding",
+        "Yangyang Yu",
+        "Changwei Liu",
+        "Bill Zhao"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-05-22T23:13:21Z",
+      "updated": "2026-05-22T23:13:21Z",
+      "announced_date": "2026-05-22",
+      "first_seen": "2026-05-22",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.24279v1",
+        "pdf": "https://arxiv.org/pdf/2605.24279v1",
+        "html": "https://arxiv.org/html/2605.24279"
+      },
+      "score": 20,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2605.26144",
+      "title": "VISTA: An End-to-End Benchmark for Visual Spec-to-Web-App Coding Agents",
+      "abstract": "We present VISTA (VIsual Spec-To-App Benchmark), a benchmark for evaluating the end-to-end web-app generation capabilities of LLM-based agents. Unlike prior code generation benchmarks that focus on algorithmic tasks, VISTA targets realistic UI-centric development, where agents must produce functional, visually coherent applications from underspecified inputs. We define five prompt-information conditions that vary along two axes, visual/structural fidelity and stack constraint: (1) text only with free stack choice, (2) text with reference screenshots under three specified stacks, (3) text with reference screenshots under free stack choice, (4) text with screenshots and pruned Figma structure under a single specified stack, and (5) text with screenshots and pruned Figma structure under free stack choice. To enable robust evaluation, each page in the benchmark is manually annotated with interactive UI components and around three visual anchor points, addressing the well-known limitations of script-based testing tools such as Playwright in open-ended code generation settings. Evaluation combines DOM-grounded reference matching, behavior-specific browser tests, and CLIP-based visual similarity, jointly measuring structural alignment, behavioral completeness, and overall visual fidelity. We use VISTA to assess four agent systems drawn from two model families and two harnesses, finding that visual fidelity and functional correctness are partially decoupled across both input conditions and agents, and that agent editing style varies sharply but is largely orthogonal to task quality. VISTA establishes a rigorous and reproducible foundation for advancing agent-based software engineering research. Code is available at https://github.com/kaboider/VISTA_Bench.",
+      "authors": [
+        "JunJia Guo",
+        "Yuhang Yao",
+        "Jiawei",
+        "Zhou",
+        "Jingdi Chen"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-05-22T20:29:12Z",
+      "updated": "2026-06-22T18:12:46Z",
+      "announced_date": "2026-05-22",
+      "first_seen": "2026-05-22",
+      "comment": "Project page: https://kaboider.github.io/VIS_APP/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.26144v3",
+        "pdf": "https://arxiv.org/pdf/2605.26144v3",
+        "html": "https://arxiv.org/html/2605.26144"
+      },
+      "score": 15,
+      "tags": [
+        "web",
+        "coding",
+        "tool-use",
+        "safety"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2605.24183",
+      "title": "AvalancheBench: Evaluating Enterprise Data Agents Through Latent World Recovery",
+      "abstract": "We introduce AvalancheBench, a benchmark for evaluating enterprise data agents through \\emph{latent world recovery}. AvalancheBench improves on existing benchmarks in three ways. First, it evaluates analytical understanding rather than pipeline completion: systems are scored on whether they recover the segments, drivers, temporal events, and relationships that explain the data, not merely on whether they execute a workflow or produce a plausible report. Second, it provides ground truth for goal-driven analytics by generating observations from a known latent world, enabling partial credit for incomplete but valid recoveries. Third, it exposes how early analytical mistakes propagate into later conclusions: missed segments, merged events, or wrong attributions can lead to systematically wrong recommendations. In this sense, AvalancheBench complements real-data benchmarks by providing a controlled setting for diagnosing whether agents recover the analytical structure behind enterprise data. On a first e-commerce use case, the strongest configuration of a leading coding agent recovers only 26\\% of the rubric, with failures concentrated in generic customer segmentations and merged temporal events.",
+      "authors": [
+        "Darek Kleczek",
+        "Fuheng Zhao",
+        "Alexander W. Lee",
+        "Julien Tissier",
+        "Pawel Liskowski",
+        "Ugur Cetintemel",
+        "Anupam Datta"
+      ],
+      "categories": [
+        "cs.DB",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.DB",
+      "published": "2026-05-22T20:16:41Z",
+      "updated": "2026-05-22T20:16:41Z",
+      "announced_date": "2026-05-22",
+      "first_seen": "2026-05-22",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.24183v1",
+        "pdf": "https://arxiv.org/pdf/2605.24183v1",
+        "html": "https://arxiv.org/html/2605.24183"
+      },
+      "score": 15,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2605.24110",
+      "title": "EvoCode-Bench: Evaluating Coding Agents in Multi-Turn Iterative Interactions",
+      "abstract": "Coding agents are increasingly used as iterative development partners, but most benchmarks still evaluate one specification followed by one final assessment. This leaves out a basic question: can an agent keep its own codebase working as requirements change? We introduce EvoCode-Bench, a benchmark of 26 stateful coding tasks and 227 evaluated rounds. Each task preserves the agent's workspace for 5-15 rounds, states requirements through observable behavior, and uses cumulative executable tests to check new requirements and still-active prior ones. We evaluate 13 coding agents with two metrics: MT@4, a four-attempt fail-stop multi-round score, and SR, a single-round score from a reference-completed prior state. For most agents, SR exceeds MT@4 by 22-40 points. The gap also changes rankings: the highest-SR agent (78.9) ranks only third in persistent execution (44.0 MT@4). Even the strongest agents achieve only about 50% success on multi-turn metrics, and aggregate pass rate drops below half of round-1 performance by round 5. Failure analysis shows tier-dependent behavior: weaker agents fail early, while stronger agents survive long enough to expose specification-tracking and regression failures. We release the benchmark data and Harbor multi-turn infrastructure.",
+      "authors": [
+        "Haiyang Shen",
+        "Xuanzhong Chen",
+        "Wendong Xu",
+        "Yun Ma",
+        "Liang Chen",
+        "Kuan Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-22T18:17:28Z",
+      "updated": "2026-05-22T18:17:28Z",
+      "announced_date": "2026-05-22",
+      "first_seen": "2026-05-22",
+      "comment": "Work in Progress; 32 pages, 10 figures, preprint",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.24110v1",
+        "pdf": "https://arxiv.org/pdf/2605.24110v1",
+        "html": "https://arxiv.org/html/2605.24110"
+      },
+      "score": 18,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 3
+    },
+    {
+      "id": "2605.23771",
+      "title": "PhotoFlow: Agentic 3D Virtual Photography Missions",
+      "abstract": "Virtual photography asks an agent to enter a prepared 3D scene with no preselected camera pose or reference image, infer a suitable shot from scene information and a language intent, choose executable camera parameters, and render the final photograph. Recent progress in vision-language models makes this kind of spatial agent increasingly plausible, but the task stresses two capabilities that remain hard to evaluate together: complex 3D spatial understanding and abstract aesthetic judgment. We introduce PhotoFlow, a Director-Reviewer-Reflector agent for closed-loop camera search. The Director builds a soft photographic blueprint and proposes diverse candidate cameras; the Reviewer combines rule checks, visual critique, and pairwise incumbent selection; and the Reflector converts failures into region memory, dead-zone suppression, and high-explore relocation. We also introduce VPhotoBench, a benchmark of 47 open-license Blender scenes and 141 language-conditioned photography missions spanning subject placement, relational composition, and atmosphere/style. On held-out experiments, PhotoFlow achieves the strongest external quality-alignment composite and success rate among one-shot prediction, single-chain reflection, anchor-bank selection, and random search under a six-round rendering budget. To our knowledge, this is the first work to make language-conditioned virtual photography in arbitrary Blender scenes an executable agent task, and our results show that an LLM-centered spatial agent can already produce strong photographs in a setting designed to challenge both 3D reasoning and aesthetic choice.",
+      "authors": [
+        "Jiarui Guo",
+        "Haojia Wei",
+        "Yiming Zhang",
+        "Yifei Liu",
+        "Yuning Gong",
+        "Hongjie Zhang",
+        "Xue Yang",
+        "Zhihang Zhong"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-05-22T15:40:52Z",
+      "updated": "2026-05-22T15:40:52Z",
+      "announced_date": "2026-05-22",
+      "first_seen": "2026-05-22",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.23771v1",
+        "pdf": "https://arxiv.org/pdf/2605.23771v1",
+        "html": "https://arxiv.org/html/2605.23771"
+      },
+      "score": 10,
+      "tags": [
+        "memory",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    }
+  ]
+}

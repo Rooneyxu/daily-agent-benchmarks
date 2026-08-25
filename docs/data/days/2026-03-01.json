@@ -1,0 +1,141 @@
+{
+  "date": "2026-03-01",
+  "count": 2,
+  "report": {
+    "date": "2026-03-01",
+    "count": 2,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On March 1, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Planning / reasoning (2), Multimodal (1), and Multi-agent (1).",
+      "highlights": [
+        {
+          "id": "2603.01045",
+          "title": "Silo-Bench: A Scalable Environment for Evaluating Distributed Coordination in Multi-Agent LLM Systems",
+          "blurb": "Large language models are increasingly deployed in multi-agent systems to overcome context limitations by distributing information across agents."
+        },
+        {
+          "id": "2603.01059",
+          "title": "GroupGPT: A Token-efficient and Privacy-preserving Agentic Framework for Multi-User Chat Assistant",
+          "blurb": "Recent advances in large language models (LLMs) have enabled increasingly capable chatbots."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年3月1日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在规划 / 推理（2）、多模态（1）、多智能体（1）。",
+      "highlights": [
+        {
+          "id": "2603.01045",
+          "title": "Silo-Bench: A Scalable Environment for Evaluating Distributed Coordination in Multi-Agent LLM Systems",
+          "blurb": "Large language models are increasingly deployed in multi-agent systems to overcome context limitations by distributing information across agents."
+        },
+        {
+          "id": "2603.01059",
+          "title": "GroupGPT: A Token-efficient and Privacy-preserving Agentic Framework for Multi-User Chat Assistant",
+          "blurb": "Recent advances in large language models (LLMs) have enabled increasingly capable chatbots."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2603.01059",
+      "title": "GroupGPT: A Token-efficient and Privacy-preserving Agentic Framework for Multi-User Chat Assistant",
+      "abstract": "Recent advances in large language models (LLMs) have enabled increasingly capable chatbots. However, most existing systems focus on single-user settings and do not generalize well to multi-user group chat interactions, where agents require more proactive and accurate intervention under complex, evolving contexts. Existing approaches typically rely on LLMs for both intervention reasoning and response generation, leading to high token consumption, limited scalability, and potential privacy risks. To address these challenges, we propose GroupGPT, a token-efficient and privacy-preserving agentic framework for multi-user chat assistant. GroupGPT adopts an edge-cloud model collaboration architecture to decouple intervention timing from response generation, enabling efficient and accurate decision-making while preserving user privacy through on-device processing of sensitive information. The framework also supports multimodal inputs, including memes, images, videos, and voice messages.To support evaluation of timing accuracy and response quality, we further introduce MUIR, a benchmark dataset for multi-user chat assistant intervention reasoning. MUIR contains 2,500 annotated group chat segments with intervention labels and rationales. We evaluate a range of models on MUIR, spanning from open-source to proprietary variants, including both LLMs and their smaller counterparts. Extensive experiments demonstrate that GroupGPT generates accurate and well-timed responses, achieving an average score of 4.72/5.0 in LLM-based evaluation, and is well-received by users across diverse group chat scenarios. Moreover, GroupGPT reduces the token usage by up to 3 times compared to baselines, while providing privacy sanitization of user messages before cloud transmission. Code is available at: https://github.com/Eliot-Shen/GroupGPT .",
+      "authors": [
+        "Zhuokang Shen",
+        "Yifan Wang",
+        "Hanyu Chen",
+        "Yunhang Shen",
+        "Wenxuan Huang",
+        "Gaoqi He",
+        "Jiao Xie",
+        "Rongrong Ji",
+        "Shaohui Lin"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-03-01T11:29:25Z",
+      "updated": "2026-04-09T00:42:09Z",
+      "announced_date": "2026-03-01",
+      "first_seen": "2026-03-01",
+      "comment": "14 pages, 8 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.01059v3",
+        "pdf": "https://arxiv.org/pdf/2603.01059v3",
+        "html": "https://arxiv.org/html/2603.01059"
+      },
+      "score": 12,
+      "tags": [
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 1
+    },
+    {
+      "id": "2603.01045",
+      "title": "Silo-Bench: A Scalable Environment for Evaluating Distributed Coordination in Multi-Agent LLM Systems",
+      "abstract": "Large language models are increasingly deployed in multi-agent systems to overcome context limitations by distributing information across agents. Yet whether agents can reliably compute with distributed information, rather than merely exchange it, remains an open question. We introduce SILO-BENCH, a role-agnostic benchmark of 30 algorithmic tasks across three communication complexity levels, evaluating 54 configurations over 1,620 experiments. Our experiments expose a fundamental Communication-Reasoning Gap: agents spontaneously form task-appropriate coordination topologies and exchange information actively, yet systematically fail to synthesize distributed state into correct answers. The failure is localized to the reasoning-integration stage where agents often acquire sufficient information but cannot integrate it. This coordination overhead compounds with scale, eventually eliminating parallelization gains entirely. These findings demonstrate that naively scaling agent count cannot circumvent context limitations, and SILO-BENCH provides a foundation for tracking progress toward genuinely collaborative multi-agent systems. The code is available at https://github.com/jwyjohn/acl26-silo-bench .",
+      "authors": [
+        "Yuzhe Zhang",
+        "Feiran Liu",
+        "Yi Shan",
+        "Xinyi Huang",
+        "Xin Yang",
+        "Yueqi Zhu",
+        "Xuxin Cheng",
+        "Cao Liu",
+        "Ke Zeng",
+        "Terry Jingchen Zhang",
+        "Wenyuan Jiang"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-03-01T10:56:00Z",
+      "updated": "2026-04-13T19:12:13Z",
+      "announced_date": "2026-03-01",
+      "first_seen": "2026-03-01",
+      "comment": "20 pages, 7 figures, Accepted at ACL 2026 Main Conference",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.01045v2",
+        "pdf": "https://arxiv.org/pdf/2603.01045v2",
+        "html": "https://arxiv.org/html/2603.01045"
+      },
+      "score": 16,
+      "tags": [
+        "multi-agent",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 7
+    }
+  ]
+}

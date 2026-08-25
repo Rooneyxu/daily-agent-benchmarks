@@ -1,0 +1,158 @@
+{
+  "date": "2026-01-25",
+  "count": 2,
+  "report": {
+    "date": "2026-01-25",
+    "count": 2,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On January 25, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Safety (1), Memory (1), Dialogue / customer (1), and GUI agents (1).",
+      "highlights": [
+        {
+          "id": "2601.17722",
+          "title": "EntWorld: A Holistic Environment and Benchmark for Verifiable Enterprise GUI Agents",
+          "blurb": "Recent advances in Multimodal Large Language Models (MLLMs) have enabled agents to operate in open-ended web and operating system environments."
+        },
+        {
+          "id": "2601.17887",
+          "title": "When Personalization Legitimizes Risks: Uncovering Safety Vulnerabilities in Personalized Dialogue Agents",
+          "blurb": "Long-term memory enables large language model (LLM) agents to support personalized and sustained interactions."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年1月25日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在安全（1）、记忆（1）、对话 / 客服（1）、GUI 智能体（1）。",
+      "highlights": [
+        {
+          "id": "2601.17722",
+          "title": "EntWorld: A Holistic Environment and Benchmark for Verifiable Enterprise GUI Agents",
+          "blurb": "Recent advances in Multimodal Large Language Models (MLLMs) have enabled agents to operate in open-ended web and operating system environments."
+        },
+        {
+          "id": "2601.17887",
+          "title": "When Personalization Legitimizes Risks: Uncovering Safety Vulnerabilities in Personalized Dialogue Agents",
+          "blurb": "Long-term memory enables large language model (LLM) agents to support personalized and sustained interactions."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2601.17887",
+      "title": "When Personalization Legitimizes Risks: Uncovering Safety Vulnerabilities in Personalized Dialogue Agents",
+      "abstract": "Long-term memory enables large language model (LLM) agents to support personalized and sustained interactions. However, most work on personalized agents prioritizes utility and user experience, treating memory as a neutral component and largely overlooking its safety implications. In this paper, we reveal intent legitimation, a previously underexplored safety failure in personalized agents, where benign personal memories bias intent inference and cause models to legitimize inherently harmful queries. To study this phenomenon, we introduce PS-Bench, a benchmark designed to identify and quantify intent legitimation in personalized interactions. Across multiple memory-augmented agent frameworks and base LLMs, personalization increases attack success rates by 15.8\\%--243.7\\% relative to stateless baselines. We further provide mechanistic evidence for intent legitimation from internal representations space, and propose a lightweight detection-reflection method that effectively reduces safety degradation. Overall, our work provides the first systematic exploration and evaluation of intent legitimation as a safety failure mode that naturally arises from benign, real-world personalization, highlighting the importance of assessing safety under long-term personal context. Our code is available at: https://github.com/MuyuenLP/PS-Bench. WARNING: This paper may contain harmful content.",
+      "authors": [
+        "Jiahe Guo",
+        "Xiangran Guo",
+        "Yulin Hu",
+        "Zimo Long",
+        "Xingyu Sui",
+        "Xuda Zhi",
+        "Yongbo Huang",
+        "Hao He",
+        "Weixiang Zhao",
+        "Yanyan Zhao",
+        "Bing Qin"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-01-25T15:42:01Z",
+      "updated": "2026-05-17T15:59:35Z",
+      "announced_date": "2026-01-25",
+      "first_seen": "2026-01-25",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.17887v2",
+        "pdf": "https://arxiv.org/pdf/2601.17887v2",
+        "html": "https://arxiv.org/html/2601.17887"
+      },
+      "score": 6,
+      "tags": [
+        "safety",
+        "memory",
+        "conversation"
+      ],
+      "field": "safety",
+      "citations": 7
+    },
+    {
+      "id": "2601.17722",
+      "title": "EntWorld: A Holistic Environment and Benchmark for Verifiable Enterprise GUI Agents",
+      "abstract": "Recent advances in Multimodal Large Language Models (MLLMs) have enabled agents to operate in open-ended web and operating system environments. However, existing benchmarks predominantly target consumer-oriented scenarios (e.g., e-commerce and travel booking), failing to capture the complexity and rigor of professional enterprise workflows. Enterprise systems pose distinct challenges, including high-density user interfaces, strict business logic constraints, and a strong reliance on precise, state-consistent information retrieval-settings in which current generalist agents often struggle. To address this gap, we introduce EntWorld, a large-scale benchmark consisting of 1,756 tasks across six representative enterprise domains, including customer relationship management (CRM), information technology infrastructure library (ITIL), and enterprise resource planning (ERP) systems. Unlike previous datasets that depend on fragile execution traces or extensive manual annotation, EntWorld adopts a schema-grounded task generation framework that directly reverse-engineers business logic from underlying database schemas, enabling the synthesis of realistic, long-horizon workflows. Moreover, we propose a SQL-based deterministic verification mechanism in building datasets that replaces ambiguous visual matching with rigorous state-transition validation. Experimental results demonstrate that state-of-the-art models (e.g., GPT-4.1) achieve 47.61% success rate on EntWorld, substantially lower than the human performance, highlighting a pronounced enterprise gap in current agentic capabilities and the necessity of developing domain-specific agents. We release EntWorld as a rigorous testbed to facilitate the development and evaluation of the next generation of enterprise-ready digital agents.",
+      "authors": [
+        "Ying Mo",
+        "Yu Bai",
+        "Dapeng Sun",
+        "Yuqian Shi",
+        "Yukai Miao",
+        "Li Chen",
+        "Dan Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-01-25T06:58:15Z",
+      "updated": "2026-01-25T06:58:15Z",
+      "announced_date": "2026-01-25",
+      "first_seen": "2026-01-25",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.17722v1",
+        "pdf": "https://arxiv.org/pdf/2601.17722v1",
+        "html": "https://arxiv.org/html/2601.17722"
+      },
+      "score": 20,
+      "tags": [
+        "gui",
+        "planning",
+        "multimodal"
+      ],
+      "field": "workplace",
+      "citations": 4
+    }
+  ]
+}

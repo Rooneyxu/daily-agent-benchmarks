@@ -1,0 +1,156 @@
+{
+  "date": "2026-04-28",
+  "count": 2,
+  "report": {
+    "date": "2026-04-28",
+    "count": 2,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On April 28, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Planning / reasoning (1), Research agents (1), and Science lab (1).",
+      "highlights": [
+        {
+          "id": "2604.25256",
+          "title": "AutoResearchBench: Benchmarking AI Agents on Complex Scientific Literature Discovery",
+          "blurb": "Autonomous scientific research is significantly advanced thanks to the development of AI agents."
+        },
+        {
+          "id": "2604.25914",
+          "title": "DV-World: Benchmarking Data Visualization Agents in Real-World Scenarios",
+          "blurb": "Real-world data visualization (DV) requires native environmental grounding, cross-platform evolution, and proactive intent alignment."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年4月28日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在规划 / 推理（1）、科研智能体（1）、科学实验（1）。",
+      "highlights": [
+        {
+          "id": "2604.25256",
+          "title": "AutoResearchBench: Benchmarking AI Agents on Complex Scientific Literature Discovery",
+          "blurb": "Autonomous scientific research is significantly advanced thanks to the development of AI agents."
+        },
+        {
+          "id": "2604.25914",
+          "title": "DV-World: Benchmarking Data Visualization Agents in Real-World Scenarios",
+          "blurb": "Real-world data visualization (DV) requires native environmental grounding, cross-platform evolution, and proactive intent alignment."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.25914",
+      "title": "DV-World: Benchmarking Data Visualization Agents in Real-World Scenarios",
+      "abstract": "Real-world data visualization (DV) requires native environmental grounding, cross-platform evolution, and proactive intent alignment. Yet, existing benchmarks often suffer from code-sandbox confinement, single-language creation-only tasks, and assumption of perfect intent. To bridge these gaps, we introduce DV-World, a benchmark of 260 tasks designed to evaluate DV agents across real-world professional lifecycles. DV-World spans three domains: DV-Sheet for native spreadsheet manipulation including chart and dashboard creation as well as diagnostic repair; DV-Evolution for adapting and restructuring reference visual artifacts to fit new data across diverse programming paradigms and DV-Interact for proactive intent alignment with a user simulator that mimics real-world ambiguous requirements. Our hybrid evaluation framework integrates Table-value Alignment for numerical precision and MLLM-as-a-Judge with rubrics for semantic-visual assessment. Experiments reveal that state-of-the-art models achieve less than 50% overall performance, exposing critical deficits in handling the complex challenges of real-world data visualization. DV-World provides a realistic testbed to steer development toward the versatile expertise required in enterprise workflows. Our data and code are available at \\href{https://github.com/DA-Open/DV-World}{this project page}.",
+      "authors": [
+        "Jinxiang Meng",
+        "Shaoping Huang",
+        "Fangyu Lei",
+        "Jingyu Guo",
+        "Haoxiang Liu",
+        "Jiahao Su",
+        "Sihan Wang",
+        "Yao Wang",
+        "Enrui Wang",
+        "Ye Yang",
+        "Hongze Chai",
+        "Jinming Lv",
+        "Anbang Yu",
+        "Huangjing Zhang",
+        "Yitong Zhang",
+        "Yiming Huang",
+        "Zeyao Ma",
+        "Shizhu He",
+        "Jun Zhao",
+        "Kang Liu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-04-28T17:58:21Z",
+      "updated": "2026-04-28T17:58:21Z",
+      "announced_date": "2026-04-28",
+      "first_seen": "2026-04-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.25914v1",
+        "pdf": "https://arxiv.org/pdf/2604.25914v1",
+        "html": "https://arxiv.org/html/2604.25914"
+      },
+      "score": 14,
+      "tags": [],
+      "field": "workplace",
+      "citations": 1
+    },
+    {
+      "id": "2604.25256",
+      "title": "AutoResearchBench: Benchmarking AI Agents on Complex Scientific Literature Discovery",
+      "abstract": "Autonomous scientific research is significantly advanced thanks to the development of AI agents. One key step in this process is finding the right scientific literature, whether to explore existing knowledge for a research problem, or to acquire evidence for verifying assumptions and supporting claims. To assess AI agents' capability in driving this process, we present AutoResearchBench, a dedicated benchmark for autonomous scientific literature discovery. AutoResearchBench consists of two complementary task types: (1) Deep Research, which requires tracking down a specific target paper through a progressive, multi-step probing process, and (2) Wide Research, which requires comprehensively collecting a set of papers satisfying given conditions. Compared to previous benchmarks on agentic web browsing, AutoResearchBench is distinguished along three dimensions: it is research-oriented, calling for in-depth comprehension of scientific concepts; literature-focused, demanding fine-grained utilization of detailed information; and open-ended, involving an unknown number of qualified papers and thus requiring deliberate reasoning and search throughout. These properties make AutoResearchBench uniquely suited for evaluating autonomous research capabilities, and extraordinarily challenging. Even the most powerful LLMs, despite having largely conquered general agentic web-browsing benchmarks such as BrowseComp, achieve only 9.39% accuracy on Deep Research and 9.31% IoU on Wide Research, while many other strong baselines fall below 5%. We publicly release the dataset and evaluation pipeline to facilitate future research in this direction. We publicly release the dataset, evaluation pipeline, and code at https://github.com/CherYou/AutoResearchBench.",
+      "authors": [
+        "Lei Xiong",
+        "Kun Luo",
+        "Ziyi Xia",
+        "Wenbo Zhang",
+        "Jin-Ge Yao",
+        "Zheng Liu",
+        "Jingying Shao",
+        "Jianlyu Chen",
+        "Hongjin Qian",
+        "Xi Yang",
+        "Qian Yu",
+        "Hao Li",
+        "Chen Yue",
+        "Xiaan Du",
+        "Yuyang Wang",
+        "Yesheng Liu",
+        "Haiyu Xu",
+        "Zhicheng Dou"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-28T06:05:17Z",
+      "updated": "2026-04-28T06:05:17Z",
+      "announced_date": "2026-04-28",
+      "first_seen": "2026-04-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.25256v1",
+        "pdf": "https://arxiv.org/pdf/2604.25256v1",
+        "html": "https://arxiv.org/html/2604.25256"
+      },
+      "score": 20,
+      "tags": [
+        "planning",
+        "research",
+        "science"
+      ],
+      "field": "science",
+      "citations": 8
+    }
+  ]
+}

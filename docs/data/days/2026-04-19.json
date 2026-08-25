@@ -1,0 +1,134 @@
+{
+  "date": "2026-04-19",
+  "count": 2,
+  "report": {
+    "date": "2026-04-19",
+    "count": 2,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On April 19, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Coding agents (1), and Tool use (1).",
+      "highlights": [
+        {
+          "id": "2604.17308",
+          "title": "SkillFlow:Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents",
+          "blurb": "As the capability frontier of autonomous agents continues to expand, they are increasingly able to complete specialized tasks through plug-and-play external skills."
+        },
+        {
+          "id": "2604.17180",
+          "title": "BranchBench: Aligning Database Branching with Agentic Demands",
+          "blurb": "Branchable databases are evolving from developer tools to infrastructure for agentic workloads characterized by speculative mutations and non-linear state exploration."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年4月19日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在代码智能体（1）、工具使用（1）。",
+      "highlights": [
+        {
+          "id": "2604.17308",
+          "title": "SkillFlow:Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents",
+          "blurb": "As the capability frontier of autonomous agents continues to expand, they are increasingly able to complete specialized tasks through plug-and-play external skills."
+        },
+        {
+          "id": "2604.17180",
+          "title": "BranchBench: Aligning Database Branching with Agentic Demands",
+          "blurb": "Branchable databases are evolving from developer tools to infrastructure for agentic workloads characterized by speculative mutations and non-linear state exploration."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.17308",
+      "title": "SkillFlow:Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents",
+      "abstract": "As the capability frontier of autonomous agents continues to expand, they are increasingly able to complete specialized tasks through plug-and-play external skills. Yet current benchmarks mostly test whether models can use provided skills, leaving open whether they can discover skills from experience, repair them after failure, and maintain a coherent library over time. We introduce SkillFlow, a benchmark of 166 tasks across 20 families in which task construction within each family follows a Domain-Agnostic Execution Flow (DAEF) that defines an agent workflow framework, allowing these tasks to share a consistent workflow. Agents are evaluated under an Agentic Lifelong Learning protocol in which they begin without skills, solve tasks sequentially within each family, externalize lessons through trajectory- and rubric-driven skill patches, and carry the updated library forward. Experiments reveal a substantial capability gap. For Claude Opus 4.6, lifelong skill evolution improves task success from 62.65% to 71.08% (+8.43 points). However, high skill usage does not necessarily imply high utility: Kimi K2.5 gains only +0.60 points despite 66.87% skill usage, while Qwen-Coder-Next reaches only a 44.58% task completion rate and still regresses relative to the vanilla setting. SkillFlow contributes a structured testbed for this direction and an in-depth empirical analysis of skill discovery, patching, transfer, and their failure modes under lifelong evaluation.",
+      "authors": [
+        "Ziao Zhang",
+        "Kou Shi",
+        "Shiting Huang",
+        "Avery Nie",
+        "Yu Zeng",
+        "Yiming Zhao",
+        "Zhen Fang",
+        "Qishen Su",
+        "Haibo Qiu",
+        "Wei Yang",
+        "Qingnan Ren",
+        "Shun Zou",
+        "Wenxuan Huang",
+        "Lin Chen",
+        "Zehui Chen",
+        "Feng Zhao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-19T07:51:46Z",
+      "updated": "2026-04-19T07:51:46Z",
+      "announced_date": "2026-04-19",
+      "first_seen": "2026-04-19",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.17308v1",
+        "pdf": "https://arxiv.org/pdf/2604.17308v1",
+        "html": "https://arxiv.org/html/2604.17308"
+      },
+      "score": 19,
+      "tags": [],
+      "field": "other",
+      "citations": 15
+    },
+    {
+      "id": "2604.17180",
+      "title": "BranchBench: Aligning Database Branching with Agentic Demands",
+      "abstract": "Branchable databases are evolving from developer tools to infrastructure for agentic workloads characterized by speculative mutations and non-linear state exploration. Traditional RDBMS mechanisms such as nested transactions do not provide the persistent isolation and concurrent branch management required by autonomous agents, and recent \"zero-copy\" designs make different trade-offs whose impact on agentic workloads remains unclear. To clarify this space, we present BranchBench, a benchmark for evaluating branchable relational DBMSes under agentic exploration. We characterize five representative workloads-agentic software engineering, failure reproduction, data curation, MCTS, and simulation-and design parameterized macrobenchmarks that execute branch-mutate-evaluate loops to reflect these workloads, along with microbenchmarks that isolate branch lifecycle costs. We evaluate state of the art systems including Neon, DoltgreSQL, Tiger Data, Xata, and PostgreSQL baselines, and find a fundamental tension: systems optimized for fast branching suffer up to 5-4000x slower reads as branches deepen, while systems optimized for fast data operations incur 25-1500x higher branch creation and switching latency. Further, no current system supports the representative workloads at scale. These results highlight the need for branch-native DBMSes designed specifically for agentic exploration.",
+      "authors": [
+        "Elaine Ang",
+        "Sam Weldon",
+        "In Keun Kim",
+        "Kevin Durand",
+        "Kostis Kaffes",
+        "Eugene Wu"
+      ],
+      "categories": [
+        "cs.DB",
+        "cs.PF"
+      ],
+      "primary_category": "cs.DB",
+      "published": "2026-04-19T00:47:24Z",
+      "updated": "2026-04-19T00:47:24Z",
+      "announced_date": "2026-04-19",
+      "first_seen": "2026-04-19",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.17180v1",
+        "pdf": "https://arxiv.org/pdf/2604.17180v1",
+        "html": "https://arxiv.org/html/2604.17180"
+      },
+      "score": 16,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 1
+    }
+  ]
+}

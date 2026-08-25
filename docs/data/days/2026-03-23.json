@@ -1,0 +1,170 @@
+{
+  "date": "2026-03-23",
+  "count": 2,
+  "report": {
+    "date": "2026-03-23",
+    "count": 2,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On March 23, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Planning / reasoning (2), Multimodal (2), Web agents (1), and Coding agents (1).",
+      "highlights": [
+        {
+          "id": "2603.22529",
+          "title": "Ego2Web: A Web Agent Benchmark Grounded in Egocentric Videos",
+          "blurb": "Multimodal AI agents are increasingly automating complex real-world workflows that involve online web execution."
+        },
+        {
+          "id": "2603.22435",
+          "title": "CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation",
+          "blurb": "\"Code-as-Policy\" considers how executable code can complement data-intensive Vision-Language-Action (VLA) methods, yet their effectiveness as autonomous controllers for embodied manipulation remains underexplored."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年3月23日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在规划 / 推理（2）、多模态（2）、网页智能体（1）、代码智能体（1）。",
+      "highlights": [
+        {
+          "id": "2603.22529",
+          "title": "Ego2Web: A Web Agent Benchmark Grounded in Egocentric Videos",
+          "blurb": "Multimodal AI agents are increasingly automating complex real-world workflows that involve online web execution."
+        },
+        {
+          "id": "2603.22435",
+          "title": "CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation",
+          "blurb": "\"Code-as-Policy\" considers how executable code can complement data-intensive Vision-Language-Action (VLA) methods, yet their effectiveness as autonomous controllers for embodied manipulation remains underexplored."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2603.22529",
+      "title": "Ego2Web: A Web Agent Benchmark Grounded in Egocentric Videos",
+      "abstract": "Multimodal AI agents are increasingly automating complex real-world workflows that involve online web execution. However, current web-agent benchmarks suffer from a critical limitation: they focus entirely on web-based interaction and perception, lacking grounding in the user's real-world physical surroundings. This limitation prevents evaluation in crucial scenarios, such as when an agent must use egocentric visual perception (e.g., via AR glasses) to recognize an object in the user's surroundings and then complete a related task online. To address this gap, we introduce Ego2Web, the first benchmark designed to bridge egocentric video perception and web agent execution. Ego2Web pairs real-world first-person video recordings with web tasks that require visual understanding, web task planning, and interaction in an online environment for successful completion. We utilize an automatic data-generation pipeline combined with human verification and refinement to curate well-constructed, high-quality video-task pairs across diverse web task types, including e-commerce, media retrieval, knowledge lookup, etc. To facilitate accurate and scalable evaluation for our benchmark, we also develop a novel LLM-as-a-Judge automatic evaluation method, Ego2WebJudge, which achieves approximately 84% agreement with human judgment, substantially higher than existing evaluation methods. Experiments with diverse SoTA agents on our Ego2Web show that their performance is weak, with substantial headroom across all task categories. We also conduct a comprehensive ablation study on task design, highlighting the necessity of accurate video understanding in the proposed task and the limitations of current agents. We hope Ego2Web can be a critical new resource for developing truly capable AI assistants that can seamlessly see, understand, and act across the physical and digital worlds.",
+      "authors": [
+        "Shoubin Yu",
+        "Lei Shu",
+        "Antoine Yang",
+        "Yao Fu",
+        "Srinivas Sunkara",
+        "Maria Wang",
+        "Jindong Chen",
+        "Mohit Bansal",
+        "Boqing Gong"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-03-23T19:47:58Z",
+      "updated": "2026-03-23T19:47:58Z",
+      "announced_date": "2026-03-23",
+      "first_seen": "2026-03-23",
+      "comment": "CVPR 2026. Project page: https://ego2web.github.io/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.22529v1",
+        "pdf": "https://arxiv.org/pdf/2603.22529v1",
+        "html": "https://arxiv.org/html/2603.22529"
+      },
+      "score": 17,
+      "tags": [
+        "web",
+        "planning",
+        "multimodal"
+      ],
+      "field": "web",
+      "citations": 2
+    },
+    {
+      "id": "2603.22435",
+      "title": "CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation",
+      "abstract": "\"Code-as-Policy\" considers how executable code can complement data-intensive Vision-Language-Action (VLA) methods, yet their effectiveness as autonomous controllers for embodied manipulation remains underexplored. We present CaP-X, an open-access framework for systematically studying Code-as-Policy agents in robot manipulation. At its core is CaP-Gym, an interactive environment in which agents control robots by synthesizing and executing programs that compose perception and control primitives. Building on this foundation, CaP-Bench evaluates frontier language and vision-language models across varying levels of abstraction, interaction, and perceptual grounding. Across 12 models, CaP-Bench reveals a consistent trend: performance improves with human-crafted abstractions but degrades as these priors are removed, exposing a dependence on designer scaffolding. At the same time, we observe that this gap can be mitigated through scaling agentic test-time computation--through multi-turn interaction, structured execution feedback, visual differencing, automatic skill synthesis, and ensembled reasoning--substantially improves robustness even when agents operate over low-level primitives. These findings allow us to derive CaP-Agent0, a training-free framework that recovers human-level reliability on several manipulation tasks in simulation and on real embodiments. We further introduce CaP-RL, showing reinforcement learning with verifiable rewards improves success rates and transfers from sim2real with minimal gap. Together, CaP-X provides a principled, open-access platform for advancing embodied coding agents.",
+      "authors": [
+        "Letian Fu",
+        "Justin Yu",
+        "Karim El-Refai",
+        "Ethan Kou",
+        "Haoru Xue",
+        "Huang Huang",
+        "Wenli Xiao",
+        "Guanzhi Wang",
+        "Dantong Niu",
+        "Fei-Fei Li",
+        "Guanya Shi",
+        "Jiajun Wu",
+        "Shankar Sastry",
+        "Yuke Zhu",
+        "Ken Goldberg",
+        "Linxi \"Jim\" Fan"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-03-23T18:08:10Z",
+      "updated": "2026-07-02T17:36:10Z",
+      "announced_date": "2026-03-23",
+      "first_seen": "2026-03-23",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.22435v2",
+        "pdf": "https://arxiv.org/pdf/2603.22435v2",
+        "html": "https://arxiv.org/html/2603.22435"
+      },
+      "score": 13,
+      "tags": [
+        "coding",
+        "embodied",
+        "safety",
+        "planning",
+        "multimodal"
+      ],
+      "field": "coding",
+      "citations": 37
+    }
+  ]
+}

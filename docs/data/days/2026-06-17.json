@@ -1,0 +1,459 @@
+{
+  "date": "2026-06-17",
+  "count": 9,
+  "report": {
+    "date": "2026-06-17",
+    "count": 9,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 5,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 5,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "memory",
+        "count": 4,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "research",
+        "count": 2,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "9 new agent benchmarks",
+      "summary": "On June 17, 2026, arXiv listed 9 new agent benchmarks. Work clustered around Safety (5), Planning / reasoning (5), Memory (4), and Research agents (2).",
+      "highlights": [
+        {
+          "id": "2606.18789",
+          "title": "PowerAgentBench-SS: A Benchmark for Agentic AI in Power System Steady-State Studies",
+          "blurb": "Power system benchmarks usually evaluate numerical solvers, prediction models, or sequential controllers."
+        },
+        {
+          "id": "2606.18950",
+          "title": "RTSGameBench: An RTS Benchmark for Strategic Reasoning by Vision-Language Models",
+          "blurb": "Modern Vision-Language Models (VLMs) often struggle with strategic reasoning, i.e., anticipating and influencing other agents' actions, under uncertainty in competitive and cooperative settings."
+        },
+        {
+          "id": "2606.19613",
+          "title": "StaminaBench: Stress-Testing Coding Agents over 100 Interaction Turns",
+          "blurb": "We introduce StaminaBench, a benchmark that measures the stamina of coding agents: how many consecutive interaction turns (change requests) they can handle before failing."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 9 篇 Agent Benchmark",
+      "summary": "2026年6月17日，arXiv 新增 9 篇 Agent Benchmark。当日主题集中在安全（5）、规划 / 推理（5）、记忆（4）、科研智能体（2）。",
+      "highlights": [
+        {
+          "id": "2606.18789",
+          "title": "PowerAgentBench-SS: A Benchmark for Agentic AI in Power System Steady-State Studies",
+          "blurb": "Power system benchmarks usually evaluate numerical solvers, prediction models, or sequential controllers."
+        },
+        {
+          "id": "2606.18950",
+          "title": "RTSGameBench: An RTS Benchmark for Strategic Reasoning by Vision-Language Models",
+          "blurb": "Modern Vision-Language Models (VLMs) often struggle with strategic reasoning, i.e., anticipating and influencing other agents' actions, under uncertainty in competitive and cooperative settings."
+        },
+        {
+          "id": "2606.19613",
+          "title": "StaminaBench: Stress-Testing Coding Agents over 100 Interaction Turns",
+          "blurb": "We introduce StaminaBench, a benchmark that measures the stamina of coding agents: how many consecutive interaction turns (change requests) they can handle before failing."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.19613",
+      "title": "StaminaBench: Stress-Testing Coding Agents over 100 Interaction Turns",
+      "abstract": "We introduce StaminaBench, a benchmark that measures the stamina of coding agents: how many consecutive interaction turns (change requests) they can handle before failing. Unlike the prevailing fraction-of-tasks-solved metric, this matches real vibe-coding where sessions run dozens or hundreds of turns. In StaminaBench, agents implement a REST API server and modify it across a tunable number of procedurally generated follow-up change requests - 100 in our experiments, resulting in codebases of up to 6,000 lines. Tests are generated fully programmatically without LLM involvement, ensuring reproducibility and reliability; change sequences are drawn from either a hardcoded or LLM-driven sampler, both constrained to a structured action space to ensure changes are valid. The agent and the server run in an isolated environment and communicate with the benchmark through HTTP, making testing fully black-box and language-agnostic. We evaluate six agent harnesses paired with seven open-source LLMs across 20 scenarios of 100 turns each and find that: (1) all the tested models fail within 5-6 turns, confirming that vibe-coding-style programming without thorough testing produces bugs; (2) passing test feedback back to the agent and allowing it to retry improves passed turn count by up to 12x; and (3) a good harness is required for strong performance: stronger models exhibit up to a 6x gap between their best and worst harness, while weaker models fail with any harness. We release the benchmark and the generated tasks to enable further research into multi-turn coding agent behavior. Benchmark code and data: github.com/amazon-science/StaminaBench.",
+      "authors": [
+        "Vlad Sobal",
+        "Shuo Yang",
+        "Yuting Zhang",
+        "Wei Xia",
+        "Stefano Soatto"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-06-17T21:36:09Z",
+      "updated": "2026-06-17T21:36:09Z",
+      "announced_date": "2026-06-17",
+      "first_seen": "2026-06-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.19613v1",
+        "pdf": "https://arxiv.org/pdf/2606.19613v1",
+        "html": "https://arxiv.org/html/2606.19613"
+      },
+      "score": 14,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2606.19595",
+      "title": "IHBench: Evaluating Post-Interruption Recovery in Voice Agents with Structured Workflows",
+      "abstract": "Voice agents deployed in structured workflows (customer service, healthcare scheduling, account management) must handle frequent user interruptions while maintaining progress through multi-step procedures. Existing benchmarks for speech-capable models focus on the timing of interruptions: barge-in detection, endpointing, and turn-taking dynamics. They leave unmeasured what happens after the interruption: does the agent resume the workflow at the correct step? Does it address the user's interjection? Does it avoid re-delivering content the user already heard? We introduce IHBench (Interruption Handling Benchmark), a benchmark that evaluates post-interruption recovery in voice agents executing state-machine-driven workflows across 10 enterprise domains. Six interruption types are injected at controlled points mid-utterance, with per-interruption evaluation rubrics generated alongside the data. Each interruption is scored on two axes: task fulfillment and recovery quality. We evaluate 27 audio-language model configurations from OpenAI, Google, and the open-weight community. Models vary widely, and recovery quality depends strongly on the interruption type. Across our experiments, closed-weight models are consistently more robust to interruptions than open-weight ones: they win far more often on task fulfillment, degrade roughly 3.3x more slowly as conversations grow longer, and show no audio-versus-text modality gap, whereas the open-weight models lose ground on all three. A human study validates the LLM judge against human annotators, and a cross-benchmark analysis against AudioMultiChallenge indicates that recovery quality is a largely distinct capability axis.",
+      "authors": [
+        "Ahmad Salimi",
+        "Wentao Ma",
+        "Yuzhi Tang",
+        "Dongming Shen",
+        "Mu Li",
+        "Alex Smola"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-06-17T20:58:35Z",
+      "updated": "2026-06-17T20:58:35Z",
+      "announced_date": "2026-06-17",
+      "first_seen": "2026-06-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.19595v1",
+        "pdf": "https://arxiv.org/pdf/2606.19595v1",
+        "html": "https://arxiv.org/html/2606.19595"
+      },
+      "score": 10,
+      "tags": [
+        "safety",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 2
+    },
+    {
+      "id": "2606.19416",
+      "title": "MortarBench: Evaluating Mortgage Loan Origination Agents",
+      "abstract": "Loan origination is the process by which a lender creates a new loan, from application and underwriting through approval and funding. This process serves a critical role in evaluating the eligibility and level of risk posed by an applicant. Recently, firms have begun using mortgage loan agents to augment human loan officers, despite a lack of any public benchmark. To fill this gap, we present MortarBench, a loan origination agent benchmark. MortarBench uses a financial data synthesis and mutation pipeline to generate examples with broad edge case coverage that match real-world distributions and questions. We find that state-of-the-art large language models (LLMs) perform poorly, with closed-source models achieving at most 77.1\\% exact match accuracy. We also discover systematic biases in LLM perception of foreignness related to non-English names. Noting these weaknesses, we introduce CRIT, a confidence calibration framework. Our method increases accuracy to 80.5\\% while improving risk management steering and reducing bias.",
+      "authors": [
+        "Matthew Toles",
+        "Yunan Lu",
+        "Manav Munjal",
+        "Bojun Liu",
+        "Yuanhao Deng",
+        "Stephanie Selig",
+        "Derek Rindner",
+        "Cheng Li",
+        "Zhou Yu"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-06-17T17:44:17Z",
+      "updated": "2026-06-22T21:40:16Z",
+      "announced_date": "2026-06-17",
+      "first_seen": "2026-06-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.19416v2",
+        "pdf": "https://arxiv.org/pdf/2606.19416v2",
+        "html": "https://arxiv.org/html/2606.19416"
+      },
+      "score": 7,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.19245",
+      "title": "TxBench-PP: Analyzing AI Agent Performance on Small-Molecule Preclinical Pharmacology",
+      "abstract": "Artificial intelligence (AI) agents promise to accelerate drug discovery by compressing interpretation and decision-making loops, but practical deployment requires trusted evaluation on realistic program decisions. We introduce TherapeuticsBench Preclinical Pharmacology (TxBench-PP), a verifiable benchmark for small-molecule preclinical pharmacology and the first focused slice of a broader TherapeuticsBench effort across drug-discovery stages and therapeutic modalities. TxBench-PP tests whether agents can recover accurate conclusions from real-world assay data rather than memorized facts from literature. The benchmark contains 100 evaluations indexed by program stage, assay type, and task structure, spanning mechanism-of-action (MoA) and pharmacodynamic (PD) reasoning, compound-target engagement, causal target validation, developability and safety, and translational efficacy. Agents receive realistic workflow snapshots, inspect files in a coding environment, and return structured answers graded deterministically. Across 16 model-harness configurations, comprising 11 models and 4,800 trajectories, no system reliably recovered preclinical pharmacology decisions. The strongest configuration, Claude Opus 4.8 / Pi, passed 59.3\\% of endpoint attempts (178/300; 95\\% CI, 51.1-67.6), followed by GPT-5.5 / Pi at 55.3\\% (166/300; 47.0-63.6).",
+      "authors": [
+        "Hannah Le",
+        "Ramesh Ramasamy",
+        "Alex Urrutia",
+        "Mahsa Yazdani",
+        "Tim Proctor",
+        "Kenny Workman"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-17T16:23:45Z",
+      "updated": "2026-06-18T02:34:51Z",
+      "announced_date": "2026-06-17",
+      "first_seen": "2026-06-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.19245v2",
+        "pdf": "https://arxiv.org/pdf/2606.19245v2",
+        "html": "https://arxiv.org/html/2606.19245"
+      },
+      "score": 13,
+      "tags": [
+        "safety",
+        "planning",
+        "research"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2606.18950",
+      "title": "RTSGameBench: An RTS Benchmark for Strategic Reasoning by Vision-Language Models",
+      "abstract": "Modern Vision-Language Models (VLMs) often struggle with strategic reasoning, i.e., anticipating and influencing other agents' actions, under uncertainty in competitive and cooperative settings. Real-time strategy (RTS) games can be a natural testbed for diagnosing this limitation, as they demand coordination with allies, adaptation to opponents' strategy, and long-horizon planning under partial observability. However, existing RTS benchmarks offer limited evaluation scope, lack systematic competency diagnosis, and remain fixed in the pre-designed scenario coverage. To address these limitations, we present RTSGameBench, which is built on Beyond All Reason, a large-scale RTS game with an expanded battlefield that demands broader strategy diversity than the existing testbeds. The proposed benchmark provides evaluations through diverse gameplay across various matchup structures, diagnostic assessment via mini-games, each targeting an individual strategic competency, and extensible coverage via a self-evolving generation framework that converts free-form queries into new mini-games, improving over successive cycles. Additionally, for VLMs to operate in large-scale RTS games, we provide RTSGameAgent that manages units by an FSM with agentic memory. We empirically validate that multiple state-of-the-art VLMs do not perform well when matchups demand tighter coordination, multiagent coordination and when task scale increases.",
+      "authors": [
+        "San Kim",
+        "Daechul Ahn",
+        "Reokyoung Kim",
+        "Hyeonbeom Choi",
+        "Seungyeon Jwa",
+        "Jonghyun Choi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-17T11:32:51Z",
+      "updated": "2026-06-18T08:25:27Z",
+      "announced_date": "2026-06-17",
+      "first_seen": "2026-06-17",
+      "comment": "First two authors contributed equally",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.18950v2",
+        "pdf": "https://arxiv.org/pdf/2606.18950v2",
+        "html": "https://arxiv.org/html/2606.18950"
+      },
+      "score": 18,
+      "tags": [
+        "multi-agent",
+        "memory",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2606.18847",
+      "title": "WorldLines: Benchmarking and Modeling Long-Horizon Stateful Embodied Agents",
+      "abstract": "To assist humans over extended periods in real homes, embodied agents must remember user routines, world states, and past interactions. Existing long-term memory benchmarks mainly evaluate language-centric retrieval and question answering, while embodied benchmarks often focus on short-horizon task execution without testing long-term memory use in dynamic environments. We introduce WorldLines, a project-driven benchmark for long-horizon embodied household assistance. It constructs temporally extended household traces with dialogues, actions, execution feedback, object and device state changes, and converts them into evidence-linked samples for Memory QA and Embodied Task Planning. We further propose ObsMem, an observer-grounded memory framework that maintains visibility-aware memories and action-native state trails for state-aware decisions. Experiments reveal persistent challenges in partial observability, overwritten world states, and translating long-term memory into embodied plans, while ObsMem offers a stronger reference architecture for this setting.",
+      "authors": [
+        "Yehang Zhang",
+        "Jianchong Su",
+        "Haojian Huang",
+        "Yifan Chang",
+        "Tianhao Zhou",
+        "Xinli Xu",
+        "Yingjie Xu",
+        "Yinchuan Li",
+        "Zexi Li",
+        "Ying-Cong Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-17T09:26:26Z",
+      "updated": "2026-08-21T12:53:57Z",
+      "announced_date": "2026-06-17",
+      "first_seen": "2026-06-17",
+      "comment": "Accepted to EMNLP 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.18847v2",
+        "pdf": "https://arxiv.org/pdf/2606.18847v2",
+        "html": "https://arxiv.org/html/2606.18847"
+      },
+      "score": 12,
+      "tags": [
+        "embodied",
+        "memory",
+        "planning"
+      ],
+      "field": "embodied",
+      "citations": 1
+    },
+    {
+      "id": "2606.18829",
+      "title": "GateMem: Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents",
+      "abstract": "Memory benchmarks for LLM agents largely assume single-user settings, leaving shared assistants for hospitals, workplaces, campuses, and households understudied. In these deployments, multiple principals write to a common memory pool and query it under different roles, scopes, and relationships, so memory quality requires governance as well as recall. We introduce GateMem, a benchmark for multi-principal shared-memory agents. GateMem jointly evaluates utility for legitimate long-horizon requests with state updates, access control across contextual authorization boundaries, and agent-facing active forgetting after explicit deletion requests. It spans medical, office, education, and household domains, with long-form multi-party episodes, incremental memory injection, hidden checkpoints, structured judging, and leak-target annotations. Across diverse baselines and backbone models, no method simultaneously achieves strong utility, robust access control, and reliable forgetting. Long-context prompting often yields the best governance score at high token cost, while retrieval-based and external-memory methods reduce cost yet still leak unauthorized or deleted information. These results show current memory agents remain far from reliable shared institutional deployment.",
+      "authors": [
+        "Zhe Ren",
+        "Yibo Yang",
+        "Yimeng Chen",
+        "Zijun Zhao",
+        "Benshuo Fu",
+        "Zhihao Shu",
+        "Bingjie Zhang",
+        "Yangyang Xu",
+        "Dandan Guo",
+        "Shuicheng Yan"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-06-17T09:06:15Z",
+      "updated": "2026-06-17T09:06:15Z",
+      "announced_date": "2026-06-17",
+      "first_seen": "2026-06-17",
+      "comment": "24 pages, 8 figures. Code and dataset are available at https://github.com/rzhub/GateMem and https://huggingface.co/datasets/Ray368/GateMem",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.18829v1",
+        "pdf": "https://arxiv.org/pdf/2606.18829v1",
+        "html": "https://arxiv.org/html/2606.18829"
+      },
+      "score": 13,
+      "tags": [
+        "safety",
+        "memory"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2606.18789",
+      "title": "PowerAgentBench-SS: A Benchmark for Agentic AI in Power System Steady-State Studies",
+      "abstract": "Power system benchmarks usually evaluate numerical solvers, prediction models, or sequential controllers. These benchmarks are necessary, but they do not directly test whether a Large Language Model (LLM) agent can execute an engineering workflow: inspect a grid case, select tools, call simulators, screen contingencies, propose admissible mitigations, validate results, and produce an auditable evidence trail. This paper introduces PowerAgentBench-SS, a steady-state benchmark framework for evaluating tool-using agents in power system operation and planning studies. The benchmark exposes public case data, action constraints, a tool API, and a validation budget to an agent, while a hidden evaluator recomputes physical validity and scores the submitted report. We define the agent interface, tool contract, evidence log, and risk-sensitive metrics, including submitted recall, evidence-backed recall, found recall, false-safe penalties, severity regret, residual violation score, action cost, tool-use efficiency, and workflow diagnostics. To make the framework concrete, we instantiate the protocol in a reproducible DC thermal N-2 contingency-search pilot on deterministic IEEE 39-bus operating-point variants, with scripted baselines, an LLM JSON-command adapter, three locally hosted Ollama LLM agents, and one OpenAI API agent. The results show why solver-only or answer-only evaluation is insufficient: agents are distinguished not only by top-contingency discovery, but also by validation-budget use, explicit submission, type coercions, duplicate validations, evidence-backed reporting, and mitigation behavior.",
+      "authors": [
+        "Costas Mylonas",
+        "Magda Foti",
+        "Andrea Pomarico",
+        "Matheus Duarte",
+        "Qian Zhang",
+        "Emmanouel Varvarigos"
+      ],
+      "categories": [
+        "eess.SY"
+      ],
+      "primary_category": "eess.SY",
+      "published": "2026-06-17T08:04:12Z",
+      "updated": "2026-06-17T08:04:12Z",
+      "announced_date": "2026-06-17",
+      "first_seen": "2026-06-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.18789v1",
+        "pdf": "https://arxiv.org/pdf/2606.18789v1",
+        "html": "https://arxiv.org/html/2606.18789"
+      },
+      "score": 27,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2606.18648",
+      "title": "Deep Research in Physical Sciences: A Multi-Agent Framework and Comprehensive Benchmark",
+      "abstract": "Deep research agents are Large Language Model (LLM)-based systems designed for autonomous, multi-step scientific reasoning, and they hold immense potential for accelerating research in the physical sciences. However, comprehensive and in-depth evaluations of their capabilities within this domain remain lacking. To address this gap, we introduce PhySciBench, a benchmark highly relevant to physical science research, comprising 200 expert-curated questions, balanced between physics and chemistry, across six task categories that reflect real-world scientific workflows. Evaluations of state-of-the-art models and agent systems on PhySciBench reveal limited performance; even the strongest baseline, Gemini Deep Research, achieves an accuracy of only 33.5%. Analysis of failure cases identifies three recurrent deficiencies: fragility in extended reasoning chains, limited knowledge transfer across steps, and a lack of physics-grounded self-verification. Motivated by these findings, we develop DelveAgent, a modular multi-agent framework equipped with an adaptive planning loop, dual-granularity memory, and a hierarchical physics-grounded reflection mechanism. Across four scientific benchmarks, DelveAgent improves accuracy by up to 7.5 percentage points while reducing inference costs to approximately one-third of the strongest baseline. These results establish the significance of PhySciBench as a critical benchmark for evaluating AI systems in the physical sciences and demonstrate that architectural specialization can effectively enhance the reliability of autonomous scientific research. Our data and code are publicly available at https://github.com/yigengjiang/physci-deepresearch.",
+      "authors": [
+        "Yigeng Jiang",
+        "Tengchao Yang",
+        "Taoyong Cui",
+        "Jiaxing Wan",
+        "Yuan Wang",
+        "Weida Wang",
+        "Zhiyu Liu",
+        "Chuyi Peng",
+        "Binzhao Luo",
+        "Maoli Gao",
+        "Huaihai Huang",
+        "Yuqianer Zeng",
+        "Ziyang Zheng",
+        "Dongchen Huang",
+        "Chao Chen",
+        "Zichao Liu",
+        "Weiping Shen",
+        "Shuchen Pu",
+        "Siyu Zhou",
+        "Runmin Ma",
+        "Yusong Hu",
+        "Fei Chao",
+        "Bo Zhang",
+        "Xiawu Zheng",
+        "Zifu Wang",
+        "Lei Bai",
+        "Yunqi Cai",
+        "Shufei Zhang"
+      ],
+      "categories": [
+        "physics.comp-ph"
+      ],
+      "primary_category": "physics.comp-ph",
+      "published": "2026-06-17T03:32:06Z",
+      "updated": "2026-06-23T03:11:08Z",
+      "announced_date": "2026-06-17",
+      "first_seen": "2026-06-17",
+      "comment": "v3: fix error and add data, codes publicly link on Abstract",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.18648v3",
+        "pdf": "https://arxiv.org/pdf/2606.18648v3",
+        "html": "https://arxiv.org/html/2606.18648"
+      },
+      "score": 13,
+      "tags": [
+        "multi-agent",
+        "memory",
+        "planning",
+        "research",
+        "science"
+      ],
+      "field": "multi-agent",
+      "citations": 1
+    }
+  ]
+}

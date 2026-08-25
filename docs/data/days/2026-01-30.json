@@ -1,0 +1,143 @@
+{
+  "date": "2026-01-30",
+  "count": 2,
+  "report": {
+    "date": "2026-01-30",
+    "count": 2,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On January 30, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Planning / reasoning (2), Memory (1), Embodied / robotics (1), and Safety (1).",
+      "highlights": [
+        {
+          "id": "2603.25747",
+          "title": "BeSafe-Bench: Unveiling Behavioral Safety Risks of Situated Agents in Functional Environments",
+          "blurb": "The rapid evolution of Large Multimodal Models (LMMs) has enabled agents to perform complex digital and physical tasks, yet their deployment as autonomous decision-makers introduces substantial unintentional behavioral s…"
+        },
+        {
+          "id": "2602.00352",
+          "title": "DETOUR: An Interactive Benchmark for Dual-Agent Search and Reasoning",
+          "blurb": "When recalling information in conversation, people often arrive at the recollection after multiple turns."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年1月30日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在规划 / 推理（2）、记忆（1）、具身 / 机器人（1）、安全（1）。",
+      "highlights": [
+        {
+          "id": "2603.25747",
+          "title": "BeSafe-Bench: Unveiling Behavioral Safety Risks of Situated Agents in Functional Environments",
+          "blurb": "The rapid evolution of Large Multimodal Models (LMMs) has enabled agents to perform complex digital and physical tasks, yet their deployment as autonomous decision-makers introduces substantial unintentional behavioral s…"
+        },
+        {
+          "id": "2602.00352",
+          "title": "DETOUR: An Interactive Benchmark for Dual-Agent Search and Reasoning",
+          "blurb": "When recalling information in conversation, people often arrive at the recollection after multiple turns."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2602.00352",
+      "title": "DETOUR: An Interactive Benchmark for Dual-Agent Search and Reasoning",
+      "abstract": "When recalling information in conversation, people often arrive at the recollection after multiple turns. However, existing benchmarks for evaluating agent capabilities in such tip-of-the-tongue search processes are restricted to single-turn settings. To more realistically simulate tip-of-the-tongue search, we introduce Dual-agent based Evaluation Through Obscure Under-specified Retrieval (DETOUR), a dual-agent evaluation benchmark containing 1,011 prompts. The benchmark design involves a Primary Agent, which is the subject of evaluation, tasked with identifying the recollected entity through querying a Memory Agent that is held consistent across evaluations. Our results indicate that current state-of-the-art models still struggle with our benchmark, only achieving 36% accuracy when evaluated on all modalities (text, image, audio, and video), highlighting the importance of enhancing capabilities in underspecified scenarios.",
+      "authors": [
+        "Li Siyan",
+        "Darshan Deshpande",
+        "Anand Kannappan",
+        "Rebecca Qian"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-01-30T22:01:30Z",
+      "updated": "2026-01-30T22:01:30Z",
+      "announced_date": "2026-01-30",
+      "first_seen": "2026-01-30",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.00352v1",
+        "pdf": "https://arxiv.org/pdf/2602.00352v1",
+        "html": "https://arxiv.org/html/2602.00352"
+      },
+      "score": 8,
+      "tags": [
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2603.25747",
+      "title": "BeSafe-Bench: Unveiling Behavioral Safety Risks of Situated Agents in Functional Environments",
+      "abstract": "The rapid evolution of Large Multimodal Models (LMMs) has enabled agents to perform complex digital and physical tasks, yet their deployment as autonomous decision-makers introduces substantial unintentional behavioral safety risks. However, the absence of a comprehensive safety benchmark remains a major bottleneck, as existing evaluations rely on low-fidelity environments, simulated APIs, or narrowly scoped tasks. To address this gap, we present BeSafe-Bench (BSB), a benchmark for exposing behavioral safety risks of situated agents in functional environments, covering four representative domains: Web, Mobile, Embodied VLM, and Embodied VLA. Using functional environments, we construct a diverse instruction space by augmenting tasks with nine categories of safety-critical risks, and adopt a hybrid evaluation framework that combines rule-based checks with LLM-as-a-judge reasoning to assess real environmental impacts. Evaluating 13 popular agents reveals a concerning trend: even the best-performing agent completes fewer than 40% of tasks while fully adhering to safety constraints, and strong task performance frequently coincides with severe safety violations. These findings underscore the urgent need for improved safety alignment before deploying agentic systems in real-world settings.",
+      "authors": [
+        "Yuxuan Li",
+        "Yi Lin",
+        "Peng Wang",
+        "Shiming Liu",
+        "Xuetao Wei"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-01-30T03:41:57Z",
+      "updated": "2026-01-30T03:41:57Z",
+      "announced_date": "2026-01-30",
+      "first_seen": "2026-01-30",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.25747v1",
+        "pdf": "https://arxiv.org/pdf/2603.25747v1",
+        "html": "https://arxiv.org/html/2603.25747"
+      },
+      "score": 18,
+      "tags": [
+        "embodied",
+        "safety",
+        "planning",
+        "multimodal"
+      ],
+      "field": "safety",
+      "citations": 3
+    }
+  ]
+}

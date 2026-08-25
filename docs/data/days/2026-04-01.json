@@ -1,0 +1,401 @@
+{
+  "date": "2026-04-01",
+  "count": 8,
+  "report": {
+    "date": "2026-04-01",
+    "count": 8,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 3,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      }
+    ],
+    "en": {
+      "headline": "8 new agent benchmarks",
+      "summary": "On April 1, 2026, arXiv listed 8 new agent benchmarks. Work clustered around Safety (3), Planning / reasoning (3), Multi-agent (2), and Tool use (2).",
+      "highlights": [
+        {
+          "id": "2604.01212",
+          "title": "$\\texttt{YC-Bench}$: Benchmarking AI Agents for Long-Term Planning and Consistent Execution",
+          "blurb": "As LLM agents tackle increasingly complex tasks, a critical question is whether they can maintain strategic coherence over long horizons: planning under uncertainty, learning from delayed feedback, and adapting when earl…"
+        },
+        {
+          "id": "2604.01487",
+          "title": "AgentSocialBench: Evaluating Privacy Risks in Human-Centered Agentic Social Networks",
+          "blurb": "With the rise of personalized, persistent LLM agent frameworks such as OpenClaw, human-centered agentic social networks in which teams of collaborative AI agents serve individual users in a social network across multiple…"
+        },
+        {
+          "id": "2604.01221",
+          "title": "HippoCamp: Benchmarking Contextual Agents on Personal Computers",
+          "blurb": "We present HippoCamp, a new benchmark designed to evaluate agents' capabilities on multimodal file management."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 8 篇 Agent Benchmark",
+      "summary": "2026年4月1日，arXiv 新增 8 篇 Agent Benchmark。当日主题集中在安全（3）、规划 / 推理（3）、多智能体（2）、工具使用（2）。",
+      "highlights": [
+        {
+          "id": "2604.01212",
+          "title": "$\\texttt{YC-Bench}$: Benchmarking AI Agents for Long-Term Planning and Consistent Execution",
+          "blurb": "As LLM agents tackle increasingly complex tasks, a critical question is whether they can maintain strategic coherence over long horizons: planning under uncertainty, learning from delayed feedback, and adapting when earl…"
+        },
+        {
+          "id": "2604.01487",
+          "title": "AgentSocialBench: Evaluating Privacy Risks in Human-Centered Agentic Social Networks",
+          "blurb": "With the rise of personalized, persistent LLM agent frameworks such as OpenClaw, human-centered agentic social networks in which teams of collaborative AI agents serve individual users in a social network across multiple…"
+        },
+        {
+          "id": "2604.01221",
+          "title": "HippoCamp: Benchmarking Contextual Agents on Personal Computers",
+          "blurb": "We present HippoCamp, a new benchmark designed to evaluate agents' capabilities on multimodal file management."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.01487",
+      "title": "AgentSocialBench: Evaluating Privacy Risks in Human-Centered Agentic Social Networks",
+      "abstract": "With the rise of personalized, persistent LLM agent frameworks such as OpenClaw, human-centered agentic social networks in which teams of collaborative AI agents serve individual users in a social network across multiple domains are becoming a reality. This setting creates novel privacy challenges: agents must coordinate across domain boundaries, mediate between humans, and interact with other users' agents, all while protecting sensitive personal information. While prior work has evaluated multi-agent coordination and privacy preservation, the dynamics and privacy risks of human-centered agentic social networks remain unexplored. To this end, we introduce AgentSocialBench, the first benchmark to systematically evaluate privacy risk in this setting, comprising scenarios across seven categories spanning dyadic and multi-party interactions, grounded in realistic user profiles with hierarchical sensitivity labels and directed social graphs. Our experiments reveal that privacy in agentic social networks is fundamentally harder than in single-agent settings: (1) cross-domain and cross-user coordination creates persistent leakage pressure even when agents are explicitly instructed to protect information, (2) privacy instructions that teach agents how to abstract sensitive information paradoxically cause them to discuss it more (we call it abstraction paradox). These findings underscore that current LLM agents lack robust mechanisms for privacy preservation in human-centered agentic social networks, and that new approaches beyond prompt engineering are needed to make agent-mediated social coordination safe for real-world deployment.",
+      "authors": [
+        "Prince Zizhuang Wang",
+        "Shuli Jiang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-01T23:43:23Z",
+      "updated": "2026-04-06T08:32:52Z",
+      "announced_date": "2026-04-01",
+      "first_seen": "2026-04-01",
+      "comment": "43 pages, 9 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.01487v2",
+        "pdf": "https://arxiv.org/pdf/2604.01487v2",
+        "html": "https://arxiv.org/html/2604.01487"
+      },
+      "score": 18,
+      "tags": [
+        "multi-agent",
+        "safety"
+      ],
+      "field": "multi-agent",
+      "citations": 5
+    },
+    {
+      "id": "2604.01438",
+      "title": "ClawSafety: \"Safe\" LLMs, Unsafe Agents",
+      "abstract": "Personal AI agents like OpenClaw run with elevated privileges on users' local machines, where a single successful prompt injection can leak credentials, redirect financial transactions, or destroy files. This threat goes well beyond conventional text-level jailbreaks, yet existing safety evaluations fall short: most test models in isolated chat settings, rely on synthetic environments, and do not account for how the agent framework itself shapes safety outcomes. We introduce CLAWSAFETY, a benchmark of 120 adversarial test scenarios organized along three dimensions (harm domain, attack vector, and harmful action type) and grounded in realistic, high-privilege professional workspaces spanning software engineering, finance, healthcare, law, and DevOps. Each test case embeds adversarial content in one of three channels the agent encounters during normal work: workspace skill files, emails from trusted senders, and web pages. We evaluate five frontier LLMs as agent backbones, running 2,520 sandboxed trials across all configurations. Attack success rates (ASR) range from 40\\% to 75\\% across models and vary sharply by injection vector, with skill instructions (highest trust) consistently more dangerous than email or web content. Action-trace analysis reveals that the strongest model maintains hard boundaries against credential forwarding and destructive actions, while weaker models permit both. Cross-scaffold experiments on three agent frameworks further demonstrate that safety is not determined by the backbone model alone but depends on the full deployment stack, calling for safety evaluation that treats model and framework as joint variables. Code and data will be available at: https://weibowen555.github.io/ClawSafety/.",
+      "authors": [
+        "Bowen Wei",
+        "Yunbei Zhang",
+        "Jinhao Pan",
+        "Kai Mei",
+        "Xiao Wang",
+        "Jihun Hamm",
+        "Ziwei Zhu",
+        "Yingqiang Ge"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-01T22:24:24Z",
+      "updated": "2026-04-04T15:18:43Z",
+      "announced_date": "2026-04-01",
+      "first_seen": "2026-04-01",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.01438v2",
+        "pdf": "https://arxiv.org/pdf/2604.01438v2",
+        "html": "https://arxiv.org/html/2604.01438"
+      },
+      "score": 8,
+      "tags": [
+        "coding",
+        "safety"
+      ],
+      "field": "coding",
+      "citations": 12
+    },
+    {
+      "id": "2604.01221",
+      "title": "HippoCamp: Benchmarking Contextual Agents on Personal Computers",
+      "abstract": "We present HippoCamp, a new benchmark designed to evaluate agents' capabilities on multimodal file management. Unlike existing agent benchmarks that focus on tasks like web interaction, tool use, or software automation in generic settings, HippoCamp evaluates agents in user-centric environments to model individual user profiles and search massive personal files for context-aware reasoning. Our benchmark instantiates device-scale file systems over real-world profiles spanning diverse modalities, comprising 42.4 GB of data across over 2K real-world files. Building upon the raw files, we construct 581 QA pairs to assess agents' capabilities in search, evidence perception, and multi-step reasoning. To facilitate fine-grained analysis, we provide 46.1K densely annotated structured trajectories for step-wise failure diagnosis. We evaluate a wide range of state-of-the-art multimodal large language models (MLLMs) and agentic methods on HippoCamp. Our comprehensive experiments reveal a significant performance gap: even the most advanced commercial models achieve only 48.3% accuracy in user profiling, struggling particularly with long-horizon retrieval and cross-modal reasoning within dense personal file systems. Furthermore, our step-wise failure diagnosis identifies multimodal perception and evidence grounding as the primary bottlenecks. Ultimately, HippoCamp exposes the critical limitations of current agents in realistic, user-centric environments and provides a robust foundation for developing next-generation personal AI assistants.",
+      "authors": [
+        "Zhe Yang",
+        "Shulin Tian",
+        "Kairui Hu",
+        "Shuai Liu",
+        "Hoang-Nhat Nguyen",
+        "Yichi Zhang",
+        "Zujin Guo",
+        "Mengying Yu",
+        "Zinan Zhang",
+        "Jingkang Yang",
+        "Chen Change Loy",
+        "Ziwei Liu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-01T17:58:33Z",
+      "updated": "2026-04-01T17:58:33Z",
+      "announced_date": "2026-04-01",
+      "first_seen": "2026-04-01",
+      "comment": "Project Page: https://hippocamp-ai.github.io/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.01221v1",
+        "pdf": "https://arxiv.org/pdf/2604.01221v1",
+        "html": "https://arxiv.org/html/2604.01221"
+      },
+      "score": 17,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 2
+    },
+    {
+      "id": "2604.01212",
+      "title": "$\\texttt{YC-Bench}$: Benchmarking AI Agents for Long-Term Planning and Consistent Execution",
+      "abstract": "As LLM agents tackle increasingly complex tasks, a critical question is whether they can maintain strategic coherence over long horizons: planning under uncertainty, learning from delayed feedback, and adapting when early mistakes compound. We introduce $\\texttt{YC-Bench}$, a benchmark that evaluates these capabilities by tasking an agent with running a simulated startup over a one-year horizon spanning hundreds of turns. The agent must manage employees, select task contracts, and maintain profitability in a partially observable environment where adversarial clients and growing payroll create compounding consequences for poor decisions. We evaluate 12 models, both proprietary and open source, across 3 seeds each. Only three models consistently surpass the starting capital of \\$200K, with Claude Opus 4.6 achieving the highest average final funds at \\$1.27 M, followed by GLM-5 at \\$1.21 M at 11$\\times$ lower inference cost. Scratchpad usage, the sole mechanism for persisting information across context truncation, is the strongest predictor of success, and adversarial client detection is the primary failure mode, accounting for $47\\%$ of bankruptcies. Our analysis reveals that frontier models still fail through distinct failure modes such as over-parallelization, demonstrating the capability gaps for long-horizon performance. $\\texttt{YC-Bench}$ is open-source, reproducible, and configurable.",
+      "authors": [
+        "Muyu He",
+        "Adit Jain",
+        "Anand Kumar",
+        "Vincent Tu",
+        "Soumyadeep Bakshi",
+        "Sachin Patro",
+        "Nazneen Rajani"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-04-01T17:52:19Z",
+      "updated": "2026-04-01T17:52:19Z",
+      "announced_date": "2026-04-01",
+      "first_seen": "2026-04-01",
+      "comment": "16 pages, 10 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.01212v1",
+        "pdf": "https://arxiv.org/pdf/2604.01212v1",
+        "html": "https://arxiv.org/html/2604.01212"
+      },
+      "score": 24,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 7
+    },
+    {
+      "id": "2604.01151",
+      "title": "Detecting Multi-Agent Collusion Through Multi-Agent Interpretability",
+      "abstract": "As LLM agents are increasingly deployed in multi-agent systems, they introduce risks of covert coordination that may evade standard forms of human oversight. While linear probes on model activations have shown promise for detecting deception in single-agent settings, collusion is inherently a multi-agent phenomenon, and the use of internal representations for detecting collusion between agents remains unexplored. We introduce NARCBench, a benchmark for evaluating collusion detection under environment distribution shift, and propose five probing techniques that aggregate per-agent deception scores to classify scenarios at the group level, evaluated across four open-weight models (Qwen3-32B, Llama-3.1-70B, DeepSeek-R1 32B, GPT-OSS-20B) and six probe architectures. We frame this as a distributed anomaly detection problem, identifying three collusion signatures that map onto distinct anomaly types and detection paradigms. Every model reaches 1.00 AUROC in-distribution; on our strongest model (Llama-3.1-70B), our five probing techniques achieve 0.73 to 0.93 AUROC when transferred zero-shot to structurally different multi-agent scenarios and 0.99 to 1.00 on a steganographic blackjack card-counting task, with detection performance scaling with model capability. We find that no single probing technique dominates across all collusion types, consistent with the framework's prediction that different anomaly types require different detection paradigms. This work takes a step toward multi-agent interpretability: extending white-box inspection from single models to multi-agent contexts, where detection requires aggregating signals across agents. These results suggest that model internals provide a complementary signal to text-level monitoring for detecting multi-agent collusion. Code and data available at https://github.com/aaronrose227/narcbench.",
+      "authors": [
+        "Aaron Rose",
+        "Carissa Cullen",
+        "Sahar Abdelnabi",
+        "Philip Torr",
+        "Brandon Gary Kaplowitz",
+        "Christian Schroeder de Witt"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-01T17:08:05Z",
+      "updated": "2026-05-09T19:42:28Z",
+      "announced_date": "2026-04-01",
+      "first_seen": "2026-04-01",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.01151v2",
+        "pdf": "https://arxiv.org/pdf/2604.01151v2",
+        "html": "https://arxiv.org/html/2604.01151"
+      },
+      "score": 12,
+      "tags": [
+        "multi-agent"
+      ],
+      "field": "multi-agent",
+      "citations": 1
+    },
+    {
+      "id": "2604.00892",
+      "title": "When Users Change Their Mind: Evaluating Interruptible Agents in Long-Horizon Web Navigation",
+      "abstract": "As LLM agents transition from short, static problem solving to executing complex, long-horizon tasks in dynamic environments, the ability to handle user interruptions, such as adding requirement or revising goals, during mid-task execution is becoming a core requirement for realistic deployment. However, existing benchmarks largely assume uninterrupted agent behavior or study interruptions only in short, unconstrained language tasks. In this paper, we present the first systematic study of interruptible agents in long-horizon, environmentally grounded web navigation tasks, where actions induce persistent state changes. We formalize three realistic interruption types, including addition, revision, and retraction, and introduce InterruptBench, a benchmark derived from WebArena-Lite that synthesizes high-quality interruption scenarios under strict semantic constraints. Using a unified interruption simulation framework, we evaluate six strong LLM backbones across single- and multi-turn interruption settings, analyzing both their effectiveness in adapting to updated intents and their efficiency in recovering from mid-task changes. Our results show that handling user interruptions effectively and efficiently during long-horizon agentic tasks remains challenging for powerful large-scale LLMs. Code and dataset are available at https://github.com/HenryPengZou/InterruptBench.",
+      "authors": [
+        "Henry Peng Zou",
+        "Chunyu Miao",
+        "Wei-Chieh Huang",
+        "Yankai Chen",
+        "Yue Zhou",
+        "Hanrong Zhang",
+        "Yaozu Wu",
+        "Liancheng Fang",
+        "Zhengyao Gu",
+        "Zhen Zhang",
+        "Kening Zheng",
+        "Fangxin Wang",
+        "Yi Nian",
+        "Shanghao Li",
+        "Wenzhe Fan",
+        "Langzhou He",
+        "Weizhi Zhang",
+        "Xue Liu",
+        "Philip S. Yu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-04-01T13:40:28Z",
+      "updated": "2026-04-01T13:40:28Z",
+      "announced_date": "2026-04-01",
+      "first_seen": "2026-04-01",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.00892v1",
+        "pdf": "https://arxiv.org/pdf/2604.00892v1",
+        "html": "https://arxiv.org/html/2604.00892"
+      },
+      "score": 10,
+      "tags": [
+        "web"
+      ],
+      "field": "web",
+      "citations": 5
+    },
+    {
+      "id": "2604.00842",
+      "title": "Proactive Agent Research Environment: Simulating Active Users to Evaluate Proactive Assistants",
+      "abstract": "Proactive agents that anticipate user needs and autonomously execute tasks hold great promise as digital assistants, yet the lack of realistic user simulation frameworks hinders their development. Existing approaches model apps as flat tool-calling APIs, failing to capture the stateful and sequential nature of user interaction in digital environments and making realistic user simulation infeasible. We introduce Proactive Agent Research Environment (Pare), a framework for building and evaluating proactive agents in digital environments. Pare models applications as finite state machines with stateful navigation and state-dependent action space for the user simulator, enabling active user simulation. Building on this foundation, we present Pare-Bench, a benchmark of 143 diverse tasks spanning communication, productivity, scheduling, and lifestyle apps, designed to test context observation, goal inference, intervention timing, and multi-app orchestration.",
+      "authors": [
+        "Deepak Nathani",
+        "Cheng Zhang",
+        "Chang Huan",
+        "Jiaming Shan",
+        "Yinfei Yang",
+        "Alkesh Patel",
+        "Zhe Gan",
+        "William Yang Wang",
+        "Michael Saxon",
+        "Xin Eric Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-01T12:53:01Z",
+      "updated": "2026-04-01T12:53:01Z",
+      "announced_date": "2026-04-01",
+      "first_seen": "2026-04-01",
+      "comment": "34 pages, 8 figures, 5 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.00842v1",
+        "pdf": "https://arxiv.org/pdf/2604.00842v1",
+        "html": "https://arxiv.org/html/2604.00842"
+      },
+      "score": 5,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 10
+    },
+    {
+      "id": "2604.09666",
+      "title": "Do We Still Need GraphRAG? Benchmarking RAG and GraphRAG for Agentic Search Systems",
+      "abstract": "Retrieval-augmented generation (RAG) and its graph-based extensions (GraphRAG) are effective paradigms for improving large language model (LLM) reasoning by grounding generation in external knowledge. However, most existing RAG and GraphRAG systems operate under static or one-shot retrieval, where a fixed set of documents is provided to the LLM in a single pass. In contrast, recent agentic search systems enable dynamic, multi-round retrieval and sequential decision-making during inference, and have shown strong gains when combined with vanilla RAG by introducing implicit structure through interaction. This progress raises a fundamental question: can agentic search compensate for the absence of explicit graph structure, reducing the need for costly GraphRAG pipelines? To answer this question, we introduce RAGSearch, a unified benchmark that evaluates dense RAG and representative GraphRAG methods as retrieval infrastructures under agentic search. RAGSearch covers both training-free and training-based agentic inference across multiple question answering benchmarks. To ensure fair and reproducible comparison, we standardize the LLM backbone, retrieval budgets, and inference protocols, and report results on full test sets. Beyond answer accuracy, we report offline preprocessing cost, online inference efficiency, and stability. Our results show that agentic search substantially improves dense RAG and narrows the performance gap to GraphRAG, particularly in RL-based settings. Nevertheless, GraphRAG remains advantageous for complex multi-hop reasoning, exhibiting more stable agentic search behavior when its offline cost is amortized. Together, these findings clarify the complementary roles of explicit graph structure and agentic search, and provide practical guidance on retrieval design for modern agentic RAG systems.",
+      "authors": [
+        "Dongzhe Fan",
+        "Zheyi Xue",
+        "Siyuan Liu",
+        "Qiaoyu Tan"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-04-01T07:21:32Z",
+      "updated": "2026-04-01T07:21:32Z",
+      "announced_date": "2026-04-01",
+      "first_seen": "2026-04-01",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.09666v1",
+        "pdf": "https://arxiv.org/pdf/2604.09666v1",
+        "html": "https://arxiv.org/html/2604.09666"
+      },
+      "score": 11,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 1
+    }
+  ]
+}

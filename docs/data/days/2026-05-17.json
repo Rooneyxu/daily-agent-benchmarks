@@ -1,0 +1,320 @@
+{
+  "date": "2026-05-17",
+  "count": 6,
+  "report": {
+    "date": "2026-05-17",
+    "count": 6,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "research",
+        "count": 2,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      }
+    ],
+    "en": {
+      "headline": "6 new agent benchmarks",
+      "summary": "On May 17, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Coding agents (2), Research agents (2), Tool use (2), and Web agents (1).",
+      "highlights": [
+        {
+          "id": "2605.17281",
+          "title": "ContractBench: Can LLM Agents Preserve Observation Contracts?",
+          "blurb": "Tool-augmented LLM agents call APIs whose intermediate outputs, such as presigned URLs, session tokens, and OAuth state parameters, are observation contracts: artifacts whose later use is constrained by the external syst…"
+        },
+        {
+          "id": "2605.17373",
+          "title": "FML-bench: A Controlled Study of AI Research Agent Strategies from the Perspective of Search Dynamics",
+          "blurb": "AI research agents accelerate ML research by automating hypothesis generation, experimentation, and empirical refinement."
+        },
+        {
+          "id": "2605.17554",
+          "title": "Evaluating Deep Research Agents on Expert Consulting Work: A Benchmark with Verifiers, Rubrics, and Cognitive Traps",
+          "blurb": "Frontier deep research agents (DRAs) are being deployed in enterprise workflows faster than they are being evaluated."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 6 篇 Agent Benchmark",
+      "summary": "2026年5月17日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在代码智能体（2）、科研智能体（2）、工具使用（2）、网页智能体（1）。",
+      "highlights": [
+        {
+          "id": "2605.17281",
+          "title": "ContractBench: Can LLM Agents Preserve Observation Contracts?",
+          "blurb": "Tool-augmented LLM agents call APIs whose intermediate outputs, such as presigned URLs, session tokens, and OAuth state parameters, are observation contracts: artifacts whose later use is constrained by the external syst…"
+        },
+        {
+          "id": "2605.17373",
+          "title": "FML-bench: A Controlled Study of AI Research Agent Strategies from the Perspective of Search Dynamics",
+          "blurb": "AI research agents accelerate ML research by automating hypothesis generation, experimentation, and empirical refinement."
+        },
+        {
+          "id": "2605.17554",
+          "title": "Evaluating Deep Research Agents on Expert Consulting Work: A Benchmark with Verifiers, Rubrics, and Cognitive Traps",
+          "blurb": "Frontier deep research agents (DRAs) are being deployed in enterprise workflows faster than they are being evaluated."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2605.17637",
+      "title": "WebGameBench: Requirement-to-Application Evaluation for Coding Agents via Browser-Native Games",
+      "abstract": "Coding agents are increasingly used as application builders, yet many evaluations still focus on source code, repository-level tests, or intermediate traces rather than the delivered application. We introduce WebGameBench, a requirement-to-application benchmark that evaluates whether coding agents can turn a frozen Structured WebGame Specification into a browser-accessible game. Browser-native games provide a compact but behavior-dense testbed: even simple games require coordinated input handling, spatial mapping, rule execution, state transitions, terminal conditions, restart behavior, and visible feedback. In WebGameBench, each generated artifact is built, served, and exposed as a browser-accessible application under a unified deployment protocol. A runtime evaluator then interacts with the delivered game in a real browser and assigns a three-way label: EXCELLENT, USABLE, or UNUSABLE. On a human-reviewed subset, the runtime label is broadly aligned with human gameplay review under the Usable-rate criterion. Across 111 tasks, 12 coding agents, and 14 evaluation configurations, WebGameBench separates current systems: the best configuration reaches a 76.9% usable rate but only a 20.2% excellent rate. This gap shows that crossing the minimum playable-delivery threshold is still far from complete requirement satisfaction. To our knowledge, WebGameBench is the first requirement-to-application benchmark for browser-native game delivery that validates delivered-application runtime labels against independent human gameplay review under the Usable-rate criterion.",
+      "authors": [
+        "Wenyu Zhang",
+        "Guoliang You",
+        "Tianlun",
+        "Haotian Zhao",
+        "Tianshu Zhu",
+        "Haoran Wang",
+        "Xiaoxuan Tang",
+        "Mingyang Dai",
+        "Jingnan Gu",
+        "Daxiang Dong",
+        "Jianmin Wu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-17T20:07:12Z",
+      "updated": "2026-05-21T20:02:32Z",
+      "announced_date": "2026-05-17",
+      "first_seen": "2026-05-17",
+      "comment": "19 pages, 6 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.17637v2",
+        "pdf": "https://arxiv.org/pdf/2605.17637v2",
+        "html": "https://arxiv.org/html/2605.17637"
+      },
+      "score": 15,
+      "tags": [
+        "web",
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 3
+    },
+    {
+      "id": "2605.17554",
+      "title": "Evaluating Deep Research Agents on Expert Consulting Work: A Benchmark with Verifiers, Rubrics, and Cognitive Traps",
+      "abstract": "Frontier deep research agents (DRAs) are being deployed in enterprise workflows faster than they are being evaluated. Existing benchmarks measure factual recall, single-hop QA, or generic agentic skill, and miss the multi-document, decision-grade deliverables DRAs are asked to produce. We introduce a benchmark of 70 SME-authored management consulting prompts, each embedding cognitive traps that penalize surface-pattern reasoning. Three frontier agents, namely Claude Opus~4.6, OpenAI o3-deep-research and Gemini~3.1~Pro deep-research, are scored on two complementary layers: deterministic binary verifiers (mean 14.9 per task) and a five-criterion 0--3 SME rubric (Data Integrity, Analytical Rigor, Relevance \\& Focus, Execution Precision, Format \\& Deliverability), combined into a Verifier-Rubric Score (VRS, 0--100). Acceptance under a joint threshold (rubric mean $\\geq 2.5$ and verifier pass rate $\\geq 80\\%$) is uniformly low: o3 15.7\\%, Claude 12.9\\%, Gemini 12.9\\%. Pairwise differences are statistically indistinguishable. On the continuous VRS, o3 leads (61.4~[CI: 55.2,\\,67.5]), followed by Gemini (52.6) and Claude (38.5); the o3--Claude gap ($Δ{=}22.9$, $p{<}0.001$) survives Bonferroni correction. No agent averages above the rubric's ``adequate'' threshold of 2.0; no agent's mean verifier pass rate reaches the 80\\% acceptance floor. Each agent fails distinctively: Claude leads on data fabrication and file-access failures; o3 propagates cascading computation errors; Gemini oscillates between the highest perfect-verifier rate and the most catastrophic collapses. The benchmark, evaluation code, and full prompt corpus are publicly released.",
+      "authors": [
+        "Tanmay Asthana",
+        "Aman Saksena",
+        "Divyansh Sahu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-05-17T17:32:52Z",
+      "updated": "2026-06-25T15:53:39Z",
+      "announced_date": "2026-05-17",
+      "first_seen": "2026-05-17",
+      "comment": "Updating the paper with more data. Will resubmit",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.17554v3",
+        "pdf": "https://arxiv.org/pdf/2605.17554v3",
+        "html": "https://arxiv.org/html/2605.17554"
+      },
+      "score": 17,
+      "tags": [
+        "planning",
+        "research"
+      ],
+      "field": "workplace",
+      "citations": 1
+    },
+    {
+      "id": "2605.17526",
+      "title": "SaaSBench: Exploring the Boundaries of Coding Agents in Long-Horizon Enterprise SaaS Engineering",
+      "abstract": "As autonomous coding agents become capable of handling increasingly long-horizon tasks, they have gradually demonstrated the potential to complete end-to-end software development. Although existing benchmarks have recently evolved from localized code editing to from-scratch project generation, they remain confined to structurally simplified, single-stack applications. Consequently, they fail to capture the heterogeneous environments, full-stack orchestration, and system-level complexity of real enterprise Software as a Service (SaaS) systems, leaving a critical gap in assessing agents under realistic engineering constraints. To fill this gap, we introduce SaaSBench, the first benchmark designed to explore the boundaries of AI agents in enterprise SaaS engineering. Spanning 30 complex tasks across 6 SaaS domains with 5,370 validation nodes, it incorporates 8 programming languages, 6 databases, and 13 frameworks to meticulously mirror real-world software heterogeneity. Furthermore, we design a dependency-aware hybrid evaluation paradigm tailored for complex systems with long horizons and multi-component coupling, enabling fine-grained, reproducible assessment. Crucially, our extensive experiments reveal a striking insight: the primary bottleneck for state-of-the-art agents is not generating isolated code logic, but successfully configuring and integrating a multi-component system. Over 95\\% of task failures occur before agents even reach deep business logic, with models often falling victim to overconfidence and prematurely halting during foundational system setup, or getting trapped in ineffective debugging loops. We hope SaaSBench serves as a practical and challenging testbed to drive the evolution of reliable, system-level coding agents. The code is available at \\url{https://github.com/ShadeCloak/SaaSbench}.",
+      "authors": [
+        "Qingnan Ren",
+        "Shun Zou",
+        "Shiting Huang",
+        "Ziao Zhang",
+        "Kou Shi",
+        "Zhen Fang",
+        "Yiming Zhao",
+        "Yu Zeng",
+        "Qisheng Su",
+        "Lin Chen",
+        "Yong Wang",
+        "Zehui Chen",
+        "Xiangxiang Chu",
+        "Feng Zhao"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-05-17T16:15:56Z",
+      "updated": "2026-05-17T16:15:56Z",
+      "announced_date": "2026-05-17",
+      "first_seen": "2026-05-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.17526v1",
+        "pdf": "https://arxiv.org/pdf/2605.17526v1",
+        "html": "https://arxiv.org/html/2605.17526"
+      },
+      "score": 17,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 2
+    },
+    {
+      "id": "2605.17373",
+      "title": "FML-bench: A Controlled Study of AI Research Agent Strategies from the Perspective of Search Dynamics",
+      "abstract": "AI research agents accelerate ML research by automating hypothesis generation, experimentation, and empirical refinement. Existing agent strategies range from greedy hill-climbing to tree search and evolutionary optimization, yet which strategy choices drive performance remains unclear. Answering this question requires a benchmark that separates agent strategy (e.g., search topology) from execution infrastructure (e.g., code editor), so that performance differences are attributable to strategy rather than infrastructure, and that provides process-level metrics beyond final scores to analyze exploration behaviors. Existing benchmarks offer limited support. We propose FML-Bench, a benchmark of 18 fundamental ML research tasks across 10 domains that separates agent strategy from execution infrastructure and defines 12 process-level behavioral metrics. Evaluating six representative agents, we find that: (1) strategy complexity alone does not guarantee strong performance: a simple greedy hill-climber nearly matches the best-performing tree-search agent, both well above the remaining agents; (2) our analysis suggests this pattern relates to improvement opportunity structure: greedy search tends to be more effective when opportunities are dense, while tree-search and evolutionary strategies tend to be more effective when opportunities are sparse; an adaptive agent built on this insight switches to broader exploration upon detecting improvement stagnation and outperforms the other six agents, lending initial support to this observation; and (3) process-level analysis reveals that early convergence and directionally focused exploration are significantly associated with final performance, while solution diversity and compute cost are not. Our benchmark is available at: https://github.com/qrzou/FML-bench.",
+      "authors": [
+        "Qiran Zou",
+        "Hou Hei Lam",
+        "Wenhao Zhao",
+        "Tingting Chen",
+        "Yiming Tang",
+        "Samson Yu",
+        "Yingtao Zhu",
+        "Srinivas Anumasa",
+        "Zufeng Zhang",
+        "Tianyi Zhang",
+        "Chang Liu",
+        "Zhengyao Jiang",
+        "Anirudh Goyal",
+        "Dianbo Liu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-05-17T10:30:38Z",
+      "updated": "2026-05-29T04:24:32Z",
+      "announced_date": "2026-05-17",
+      "first_seen": "2026-05-17",
+      "comment": "Our benchmark is available at: https://github.com/qrzou/FML-bench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.17373v2",
+        "pdf": "https://arxiv.org/pdf/2605.17373v2",
+        "html": "https://arxiv.org/html/2605.17373"
+      },
+      "score": 18,
+      "tags": [
+        "research"
+      ],
+      "field": "science",
+      "citations": 3
+    },
+    {
+      "id": "2605.17324",
+      "title": "ASPI: Seeking Ambiguity Clarification Amplifies Prompt Injection Vulnerability in LLM Agents",
+      "abstract": "Clarification-seeking behavior is widely regarded as a desirable property of LLM agents, enabling them to resolve ambiguity before acting on underspecified tasks. However, the security implications of this interaction pattern remain unexplored. We investigate whether the transition from standard execution to a clarification-seeking state increases an agent's susceptibility to prompt injection attacks. We introduce ASPI (Ambiguous-State Prompt Injection), a benchmark of 728 task-attack scenarios that isolates clarification as a distinct agent state and measures how this state transition affects vulnerability under controlled conditions. Each benchmark instance is evaluated under matched execution and clarification settings: in the execution setting, the agent acts on a fully specified instruction and encounters adversarial content only through tool-returned data; in the clarification setting, the agent must first request and incorporate additional user input before acting. We evaluate ten frontier LLMs and find that clarification-seeking consistently and substantially amplifies vulnerability. For instance, attack success rises from 1.8% to 34.0% for o3 and from 2.2% to 35.7% for Gemini-3-Flash. A decomposition analysis reveals that this gap reflects both a state-dependent shift in how models process incoming content and a channel-specific effect arising from the agent-solicited clarification interface. These findings demonstrate that standard execution-time security evaluation systematically underestimates the attack surface of interactive agents, and that robustness under fully specified tasks does not translate to robustness under ambiguity. For reproducibility, our data and source code are available at https://github.com/scaleapi/aspi.",
+      "authors": [
+        "Udari Madhushani Sehwag",
+        "Zhengyang Shan",
+        "Heming Liu",
+        "Dileepa Lakshan",
+        "Joseph Brandifino",
+        "Max Fenkell"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-05-17T08:30:45Z",
+      "updated": "2026-05-17T08:30:45Z",
+      "announced_date": "2026-05-17",
+      "first_seen": "2026-05-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.17324v1",
+        "pdf": "https://arxiv.org/pdf/2605.17324v1",
+        "html": "https://arxiv.org/html/2605.17324"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2605.17281",
+      "title": "ContractBench: Can LLM Agents Preserve Observation Contracts?",
+      "abstract": "Tool-augmented LLM agents call APIs whose intermediate outputs, such as presigned URLs, session tokens, and OAuth state parameters, are observation contracts: artifacts whose later use is constrained by the external system that produced them. We show that observation contract compliance (preserving the temporal validity and byte-level integrity) is an emergent, regression-prone capability: it is neither guaranteed by general tool-use ability nor consistently improved by larger or newer models. To measure this, we introduce ContractBench, a benchmark of 33 dual-axis tasks that probe two orthogonal failure modes no existing benchmark evaluates: validity failures (using an artifact after expiry) and integrity failures (corrupting an artifact's bytes through the observation-to-action pipeline). Our evaluation is deterministic and programmatic, with a virtual clock controlling time and SHA-256 hashes verifying byte integrity. We assign each outcome a failure label drawn from real-world API specifications. We evaluate 38 models and report four findings: (i) no evaluated model clears 80%, with Claude-Opus-4.6 leading at 77.8%, revealing that current frontier models still fail to comply with observation contracts; (ii) a sharp within-family capability cliff in Qwen 3.5 between 4B (0%) and 9B (56.6%), smoothing to 70.7% at 397B-A17B: what emerges across the cliff is mid-trajectory restraint, not tool-call competence; (iii) non-monotonic scaling across the GPT-5 family: agentic post-training can erode compliance through sycophancy-driven regression; (iv) our failure taxonomy works as an actionable in-context reward signal, yielding +7.1 pp on 42 paired GPT-5.1 failures.",
+      "authors": [
+        "Jicheng Wang",
+        "Yifeng He",
+        "Zili Wang",
+        "Hanwen Xing",
+        "Arkaprava De",
+        "Hao Chen"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-05-17T06:37:04Z",
+      "updated": "2026-05-17T06:37:04Z",
+      "announced_date": "2026-05-17",
+      "first_seen": "2026-05-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.17281v1",
+        "pdf": "https://arxiv.org/pdf/2605.17281v1",
+        "html": "https://arxiv.org/html/2605.17281"
+      },
+      "score": 19,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

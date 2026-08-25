@@ -1,0 +1,153 @@
+{
+  "date": "2026-07-21",
+  "count": 2,
+  "report": {
+    "date": "2026-07-21",
+    "count": 2,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On July 21, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Tool use (1), Planning / reasoning (1), Safety (1), and Research agents (1).",
+      "highlights": [
+        {
+          "id": "2607.18665",
+          "title": "SciHazard: A Benchmark for Measuring Scientific Safety Risks with Decomposed Harm Scoring",
+          "blurb": "Large language models (LLMs) increasingly support science, but they can also convert hazardous scientific knowledge into actionable misuse guidance."
+        },
+        {
+          "id": "2607.19238",
+          "title": "FinanceComplexQA: Benchmarking Agentic Reasoning on Industrial-grade Financial Documents",
+          "blurb": "Agentic Reasoning has become a transformative force in financial analysis due to its ability to integrate large-scale information and generate reliable and accurate content."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年7月21日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在工具使用（1）、规划 / 推理（1）、安全（1）、科研智能体（1）。",
+      "highlights": [
+        {
+          "id": "2607.18665",
+          "title": "SciHazard: A Benchmark for Measuring Scientific Safety Risks with Decomposed Harm Scoring",
+          "blurb": "Large language models (LLMs) increasingly support science, but they can also convert hazardous scientific knowledge into actionable misuse guidance."
+        },
+        {
+          "id": "2607.19238",
+          "title": "FinanceComplexQA: Benchmarking Agentic Reasoning on Industrial-grade Financial Documents",
+          "blurb": "Agentic Reasoning has become a transformative force in financial analysis due to its ability to integrate large-scale information and generate reliable and accurate content."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2607.19238",
+      "title": "FinanceComplexQA: Benchmarking Agentic Reasoning on Industrial-grade Financial Documents",
+      "abstract": "Agentic Reasoning has become a transformative force in financial analysis due to its ability to integrate large-scale information and generate reliable and accurate content. However, when handling complex real-world problems, different agents still show significant performance variation. In this work, we design Finance-LaTeX SKILL, a skill for synthesizing financial documents with complex layouts based on expert knowledge. Using an agent workflow built on this skill, we generate 2,000 professional financial documents along with 6,000 high-quality question-answer pairs. To evaluate the overall capability of agents, we introduce FinanceComplexQA, a comprehensive open-ended generation benchmark for financial documents that closely resembles real-world scenarios. It contains 2,026 deep research tasks targeting 1009 financial documents. FinanceComplexQA has 8 key features: bilingual support; coverage of six mainstream scenarios and seven tasks; expert-level document reasoning questions; deep research of complex layouts; relatively stable and permanent reference answers; and precise evaluation through an Agent-as-a-Judge with multiple evaluation metrics. Using FinanceComplexQA, we conduct a comprehensive evaluation of leading RAG systems and agentic reasoning tools for financial document QA. Through identifying and analyzing failure cases, we provide an in-depth study of their capabilities in numerical computation, multi-hop reasoning, content summarization, and industry analysis.",
+      "authors": [
+        "Xianfu Cheng",
+        "Shiwei Zhang",
+        "Jiyu Zhao",
+        "Jian Yang",
+        "Xinyuan Wang",
+        "Ming Zhou",
+        "Weixiao Zhou",
+        "Xiangyuan Guan",
+        "Xiang Li",
+        "Zhenhe Wu",
+        "Ziyi Ni",
+        "Zhoujun Li",
+        "Bingjing Xu"
+      ],
+      "categories": [
+        "cs.CE"
+      ],
+      "primary_category": "cs.CE",
+      "published": "2026-07-21T16:08:27Z",
+      "updated": "2026-07-21T16:08:27Z",
+      "announced_date": "2026-07-21",
+      "first_seen": "2026-07-21",
+      "comment": "27 pages, 9 tables, 2 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.19238v1",
+        "pdf": "https://arxiv.org/pdf/2607.19238v1",
+        "html": "https://arxiv.org/html/2607.19238"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2607.18665",
+      "title": "SciHazard: A Benchmark for Measuring Scientific Safety Risks with Decomposed Harm Scoring",
+      "abstract": "Large language models (LLMs) increasingly support science, but they can also convert hazardous scientific knowledge into actionable misuse guidance. Existing benchmarks often rely on templated queries disconnected from real-world hazards, and employ LLM-as-a-Judge paradigms without domain grounding. To address this, we introduce SciHazard, a real-world-grounded benchmark for scientific risks and a dataset agnostic evaluation framework for measuring harmfulness. SciHazard contains 2400 hazardous questions and 600 oversafety questions across 12 disciplines, with both queries grounded in regulated entities and documented failure scenarios. To compute \\textsc{DeHarm-Score} , we develop a decomposed evaluating procedure that combines query hazard severity, refusal behavior, and response-level risk. For non-refused responses, it further decomposes response-level harm into \\textsc{Executability}, quantified via dynamic checklists with importance weighting, and \\textsc{Net-new risk}, assessed through retrieval-augmented claim extraction and synthesis-barrier verification. An expert-validation study shows that \\textsc{DeHarm-Score} improves agreement with expert annotations by 90.17\\% over the strongest baseline. We benchmark 31 frontier LLMs and deep research agents in an extensive scientific safety evaluation. Notably, deep research agents yield 32.3\\% higher mean \\textsc{DeHarm-Score} than standard LLMs, exposing autonomous agents as a critical blind spot in current safety defenses. Code and dataset are available at https://anonymous.4open.science/r/DeharmScore-7B55.",
+      "authors": [
+        "Chunxiao Li",
+        "Yuan Xiong",
+        "Lijun Li",
+        "Tianyi Du",
+        "Wenlong Zhang",
+        "Lei Bai",
+        "Jing Shao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-07-21T03:25:01Z",
+      "updated": "2026-07-21T03:25:01Z",
+      "announced_date": "2026-07-21",
+      "first_seen": "2026-07-21",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.18665v1",
+        "pdf": "https://arxiv.org/pdf/2607.18665v1",
+        "html": "https://arxiv.org/html/2607.18665"
+      },
+      "score": 17,
+      "tags": [
+        "safety",
+        "research",
+        "science"
+      ],
+      "field": "safety",
+      "citations": 0
+    }
+  ]
+}

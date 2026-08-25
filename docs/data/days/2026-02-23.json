@@ -1,0 +1,184 @@
+{
+  "date": "2026-02-23",
+  "count": 3,
+  "report": {
+    "date": "2026-02-23",
+    "count": 3,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      }
+    ],
+    "en": {
+      "headline": "3 new agent benchmarks",
+      "summary": "On February 23, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Tool use (2), Safety (2), Web agents (1), and Coding agents (1).",
+      "highlights": [
+        {
+          "id": "2602.19594",
+          "title": "ISO-Bench: Can Coding Agents Optimize Real-World Inference Workloads?",
+          "blurb": "We introduce ISO-Bench, a benchmark for coding agents to test their capabilities on real-world inference optimization tasks."
+        },
+        {
+          "id": "2602.19547",
+          "title": "CIBER: A Comprehensive Benchmark for Security Evaluation of Code Interpreter Agents",
+          "blurb": "LLM-based code interpreter agents are increasingly deployed in critical workflows, yet their robustness against risks introduced by their code execution capabilities remains underexplored."
+        },
+        {
+          "id": "2602.20156",
+          "title": "Skill-Inject: Measuring Agent Vulnerability to Skill File Attacks",
+          "blurb": "LLM agents are evolving rapidly, powered by code execution, tools, and the recently introduced agent skills feature."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年2月23日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在工具使用（2）、安全（2）、网页智能体（1）、代码智能体（1）。",
+      "highlights": [
+        {
+          "id": "2602.19594",
+          "title": "ISO-Bench: Can Coding Agents Optimize Real-World Inference Workloads?",
+          "blurb": "We introduce ISO-Bench, a benchmark for coding agents to test their capabilities on real-world inference optimization tasks."
+        },
+        {
+          "id": "2602.19547",
+          "title": "CIBER: A Comprehensive Benchmark for Security Evaluation of Code Interpreter Agents",
+          "blurb": "LLM-based code interpreter agents are increasingly deployed in critical workflows, yet their robustness against risks introduced by their code execution capabilities remains underexplored."
+        },
+        {
+          "id": "2602.20156",
+          "title": "Skill-Inject: Measuring Agent Vulnerability to Skill File Attacks",
+          "blurb": "LLM agents are evolving rapidly, powered by code execution, tools, and the recently introduced agent skills feature."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2602.20156",
+      "title": "Skill-Inject: Measuring Agent Vulnerability to Skill File Attacks",
+      "abstract": "LLM agents are evolving rapidly, powered by code execution, tools, and the recently introduced agent skills feature. Skills allow users to extend LLM applications with specialized third-party code, knowledge, and instructions. Although this can extend agent capabilities to new domains, it creates an increasingly complex agent supply chain, offering new surfaces for prompt injection attacks. We identify skill-based prompt injection as a significant threat and introduce SkillInject, a benchmark evaluating the susceptibility of widely-used LLM agents to injections through skill files. SkillInject contains 202 injection-task pairs with attacks ranging from obviously malicious injections to subtle, context-dependent attacks hidden in otherwise legitimate instructions. We evaluate frontier LLMs on SkillInject, measuring both security in terms of harmful instruction avoidance and utility in terms of legitimate instruction compliance. Our results show that today's agents are highly vulnerable with up to 80% attack success rate with frontier models, often executing extremely harmful instructions including data exfiltration, destructive action, and ransomware-like behavior. They furthermore suggest that this problem will not be solved through model scaling or simple input filtering, but that robust agent security will require context-aware authorization frameworks. Our benchmark is available at https://www.skill-inject.com/.",
+      "authors": [
+        "David Schmotz",
+        "Luca Beurer-Kellner",
+        "Sahar Abdelnabi",
+        "Maksym Andriushchenko"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-02-23T18:59:27Z",
+      "updated": "2026-02-25T18:14:01Z",
+      "announced_date": "2026-02-23",
+      "first_seen": "2026-02-23",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.20156v3",
+        "pdf": "https://arxiv.org/pdf/2602.20156v3",
+        "html": "https://arxiv.org/html/2602.20156"
+      },
+      "score": 9,
+      "tags": [
+        "web",
+        "tool-use",
+        "safety"
+      ],
+      "field": "web",
+      "citations": 72
+    },
+    {
+      "id": "2602.19594",
+      "title": "ISO-Bench: Can Coding Agents Optimize Real-World Inference Workloads?",
+      "abstract": "We introduce ISO-Bench, a benchmark for coding agents to test their capabilities on real-world inference optimization tasks. These tasks were taken from vLLM and SGLang, two of the most popular LLM serving frameworks. Each task provides an agent with a codebase and bottleneck description, whereby the agent must produce an optimization patch evaluated against expert human solutions. We curated 54 tasks from merged pull requests with measurable performance improvements. While existing benchmarks heavily use runtime-based metrics, such approaches can be gamed to pass tests without capturing the actual intent of the code changes. Therefore, we combine both hard (execution-based) and soft (LLM-based) metrics to show that both are necessary for complete evaluation. While evaluating both closed and open-source coding agents, we find no single agent dominates across codebases. Surprisingly, agents often identify correct bottlenecks but fail to execute working solutions. We also show that agents with identical underlying models differ substantially, suggesting scaffolding is as important as the model.",
+      "authors": [
+        "Ayush Nangia",
+        "Shikhar Mishra",
+        "Aman Gokrani",
+        "Paras Chopra"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-23T08:37:53Z",
+      "updated": "2026-02-23T08:37:53Z",
+      "announced_date": "2026-02-23",
+      "first_seen": "2026-02-23",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.19594v1",
+        "pdf": "https://arxiv.org/pdf/2602.19594v1",
+        "html": "https://arxiv.org/html/2602.19594"
+      },
+      "score": 21,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 3
+    },
+    {
+      "id": "2602.19547",
+      "title": "CIBER: A Comprehensive Benchmark for Security Evaluation of Code Interpreter Agents",
+      "abstract": "LLM-based code interpreter agents are increasingly deployed in critical workflows, yet their robustness against risks introduced by their code execution capabilities remains underexplored. Existing benchmarks are limited to static datasets or simulated environments, failing to capture the security risks arising from dynamic code execution, tool interactions, and multi-turn context. To bridge this gap, we introduce CIBER, an automated benchmark that combines dynamic attack generation, isolated secure sandboxing, and state-aware evaluation to systematically assess the vulnerability of code interpreter agents against four major types of adversarial attacks: Direct/Indirect Prompt Injection, Memory Poisoning, and Prompt-based Backdoor. We evaluate six foundation models across two representative code interpreter agents (OpenInterpreter and OpenCodeInterpreter), incorporating a controlled study of identical models. Our results reveal that Interpreter Architecture and Model Alignment Set the Security Baseline. Structural integration enables aligned specialized models to outperform generic SOTA models. Conversely, high intelligence paradoxically increases susceptibility to complex adversarial prompts due to stronger instruction adherence. Furthermore, we identify a \"Natural Language Disguise\" Phenomenon, where natural language functions as a significantly more effective input modality than explicit code snippets (+14.1% ASR), thereby bypassing syntax-based defenses. Finally, we expose an alarming Security Polarization, where agents exhibit robust defenses against explicit threats yet fail catastrophically against implicit semantic hazards, highlighting a fundamental blind spot in current pattern-matching protection approaches.",
+      "authors": [
+        "Lei Ba",
+        "Qinbin Li",
+        "Songze Li"
+      ],
+      "categories": [
+        "cs.CR"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-02-23T06:41:41Z",
+      "updated": "2026-02-23T06:41:41Z",
+      "announced_date": "2026-02-23",
+      "first_seen": "2026-02-23",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.19547v1",
+        "pdf": "https://arxiv.org/pdf/2602.19547v1",
+        "html": "https://arxiv.org/html/2602.19547"
+      },
+      "score": 9,
+      "tags": [
+        "tool-use",
+        "safety",
+        "memory"
+      ],
+      "field": "other",
+      "citations": 2
+    }
+  ]
+}

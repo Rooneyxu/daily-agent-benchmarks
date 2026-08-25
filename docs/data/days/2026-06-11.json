@@ -1,0 +1,420 @@
+{
+  "date": "2026-06-11",
+  "count": 9,
+  "report": {
+    "date": "2026-06-11",
+    "count": 9,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 4,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "science",
+        "count": 2,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      }
+    ],
+    "en": {
+      "headline": "9 new agent benchmarks",
+      "summary": "On June 11, 2026, arXiv listed 9 new agent benchmarks. Work clustered around Planning / reasoning (4), Tool use (3), Safety (2), and Science lab (2).",
+      "highlights": [
+        {
+          "id": "2606.12821",
+          "title": "GeoNatureAgent Benchmark: Benchmarking LLM Agents for Environmental Geospatial Analysis Across Frontier and Open-Weight Foundation Models",
+          "blurb": "Environmental scientists spend disproportionate effort on data wrangling rather than analysis, and AI agents that automate geospatial workflows remain unvalidated: no benchmark evaluates agents operating through structur…"
+        },
+        {
+          "id": "2606.13602",
+          "title": "EpiBench: Verifiable Evaluation of AI Agents on Epigenomics Analysis",
+          "blurb": "We introduce EpiBench, a verifiable benchmark for short-horizon epigenomics analysis."
+        },
+        {
+          "id": "2606.13681",
+          "title": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
+          "blurb": "Large language model (LLM) agents have achieved strong performance on a wide range of benchmarks, yet most evaluations assume static environments."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 9 篇 Agent Benchmark",
+      "summary": "2026年6月11日，arXiv 新增 9 篇 Agent Benchmark。当日主题集中在规划 / 推理（4）、工具使用（3）、安全（2）、科学实验（2）。",
+      "highlights": [
+        {
+          "id": "2606.12821",
+          "title": "GeoNatureAgent Benchmark: Benchmarking LLM Agents for Environmental Geospatial Analysis Across Frontier and Open-Weight Foundation Models",
+          "blurb": "Environmental scientists spend disproportionate effort on data wrangling rather than analysis, and AI agents that automate geospatial workflows remain unvalidated: no benchmark evaluates agents operating through structur…"
+        },
+        {
+          "id": "2606.13602",
+          "title": "EpiBench: Verifiable Evaluation of AI Agents on Epigenomics Analysis",
+          "blurb": "We introduce EpiBench, a verifiable benchmark for short-horizon epigenomics analysis."
+        },
+        {
+          "id": "2606.13681",
+          "title": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
+          "blurb": "Large language model (LLM) agents have achieved strong performance on a wide range of benchmarks, yet most evaluations assume static environments."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.13681",
+      "title": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
+      "abstract": "Large language model (LLM) agents have achieved strong performance on a wide range of benchmarks, yet most evaluations assume static environments. In contrast, real-world deployment is inherently dynamic, requiring agents to continually align their knowledge, skills, and behavior with changing environments and updated task conditions. To address this gap, we introduce EvoArena, a benchmark suite that models environment changes as sequences of progressive updates across terminal, software, and social domains. We further propose EvoMem, a patch-based memory paradigm that records memory evolution as structured update histories, enabling agents to reason about environmental evolution through changes in their memory. Experiments show that current agents struggle on EvoArena, achieving an average accuracy of 39.6% across evolving terminal, software, and social-preference domains. EvoMem consistently improves performance, yielding an average gain of 1.5% on EvoArena and also improving standard benchmarks such as GAIA and LoCoMo by 6.1% and 4.8%. Beyond individual tasks, EvoMem further improves chain-level accuracy by 3.7% on EvoArena, where success requires completing a consecutive sequence of related evolutionary subtasks. Mechanistic analysis shows that EvoMem improves evidence capture in the memory, indicating better preservation of complete evolving environment states. Our results highlight the importance of modeling evolution in both evaluation and memory for reliable agent deployment.",
+      "authors": [
+        "Jundong Xu",
+        "Qingchuan Li",
+        "Jiaying Wu",
+        "Yihuai Lan",
+        "Shuyue Stella Li",
+        "Huichi Zhou",
+        "Bowen Jiang",
+        "Lei Wang",
+        "Jun Wang",
+        "Anh Tuan Luu",
+        "Caiming Xiong",
+        "Hae Won Park",
+        "Bryan Hooi",
+        "Zhiyuan Hu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-11T17:59:59Z",
+      "updated": "2026-06-17T04:10:52Z",
+      "announced_date": "2026-06-11",
+      "first_seen": "2026-06-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.13681v2",
+        "pdf": "https://arxiv.org/pdf/2606.13681v2",
+        "html": "https://arxiv.org/html/2606.13681"
+      },
+      "score": 15,
+      "tags": [
+        "safety",
+        "memory"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2606.13602",
+      "title": "EpiBench: Verifiable Evaluation of AI Agents on Epigenomics Analysis",
+      "abstract": "We introduce EpiBench, a verifiable benchmark for short-horizon epigenomics analysis. EpiBench evaluates whether agents can make well-defined analysis decisions from realistic workflow states and return deterministically gradable answers. The benchmark includes 106 evaluations across CUT\\&Tag/CUT\\&RUN, ATAC-seq, ChIP-seq, and DNA methylation workflows. Across 5,088 valid trajectories from 16 model-harness pairs, no system passed a majority of attempts: GPT-5.5 / Pi led at 45.0\\% (143/318 attempts; 95\\% confidence interval (CI), 36.3--53.7), followed by GPT-5.5 / OpenAI Codex at 39.9\\% (127/318 attempts; 95\\% CI, 31.6--48.3). Claude Opus 4.8 Max / Pi and GPT-5.4 / Pi each passed 39.0\\% (124/318 attempts; 95\\% CI, 30.2--47.8 and 31.0--47.0, respectively). Performance varies across assay types, and many failed runs still contain parts of the correct answer. Agents often found the right files and computed useful intermediate results, but failed when the task required deeper, assay-specific scientific judgment.",
+      "authors": [
+        "Harihara Muralidharan",
+        "Reema Baskar",
+        "Soo Hee Lee",
+        "Tim Proctor",
+        "Kenny Workman"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-11T17:20:29Z",
+      "updated": "2026-06-11T17:20:29Z",
+      "announced_date": "2026-06-11",
+      "first_seen": "2026-06-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.13602v1",
+        "pdf": "https://arxiv.org/pdf/2606.13602v1",
+        "html": "https://arxiv.org/html/2606.13602"
+      },
+      "score": 15,
+      "tags": [
+        "science"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2606.13757",
+      "title": "SEVRA-BENCH: Social Engineering of Vulnerabilities in Review Agents",
+      "abstract": "Large language models (LLMs) are increasingly deployed in automated code-review systems, where their approvals can determine which code is merged into shared repositories. However, it is unclear whether review agents can detect vulnerability-introducing code when an attacker controls both the code change and the persuasive Pull Request (PR) narrative designed to mask it. We introduce SEVRA-BENCH (Social Engineering of Vulnerabilities in Review Agents), a benchmark that measures how often a review agent approves such adversarial PR s. Each PR in SEVRA-BENCH is built from a historical commit that fixed a vulnerability. We automatically reverse that fix to extract the original vulnerable code, and submit the resulting code change as a PR wrapped in one of 15 social-engineering framings. To test review-agent resilience to narrative manipulation, these framings vary dimensions such as supporting evidence, conveyed urgency, signals of prior approval, and appeals to authority. SEVRA-BENCH evaluates a retained challenge split of roughly 1000 adversarial PRs drawn from publicly disclosed vulnerability fixes across the top 10 entries of the MITRE's 2025 most dangerous software weaknesses. Evaluating 8 review agents against this benchmark, we reveal that review agents are susceptible to narrative manipulation, exposing a significant gap in security capabilities.",
+      "authors": [
+        "Rui Melo",
+        "Riccardo Fogliato",
+        "Sean Zhou",
+        "Pratiksha Thaker",
+        "Zhiwei Steven Wu"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-06-11T16:35:56Z",
+      "updated": "2026-07-06T18:27:31Z",
+      "announced_date": "2026-06-11",
+      "first_seen": "2026-06-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.13757v2",
+        "pdf": "https://arxiv.org/pdf/2606.13757v2",
+        "html": "https://arxiv.org/html/2606.13757"
+      },
+      "score": 13,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.13385",
+      "title": "Who Pays the Price? Stakeholder-Centric Prompt Injection Benchmarking for Real-world Web Agents",
+      "abstract": "LLM-based web agents are increasingly deployed in real-world settings such as e-commerce, where they interact extensively with untrusted web content while executing actions that carry direct financial consequences. This makes them vulnerable to prompt-injection attacks, in which seemingly benign web content conceals adversarial instructions that manipulate the agent's behavior. Existing security benchmarks adopt an \\textit{attack-centric} perspective, focusing on the technical feasibility of injections while overlooking the nuanced distribution of resulting harms. In practice, however, prompt-injection risk is victim-dependent: a single exploit can produce asymmetric consequences for different stakeholders, and the same attack pattern may exhibit substantially different effectiveness depending on whom it targets. To capture these properties, we introduce StakeBench, a stakeholder-centric benchmark that systematically categorizes and attributes harm in real-world web agent systems for online shopping. In general, StakeBench decomposes prompt-injection risk into 12 concrete attack objectives across three stakeholder classes, realized by 22 reusable templates and instantiated into 264 executable adversarial cases spanning 12 product categories, with each case evaluated along complementary outcome- and process-level metrics. Evaluating four deployable agent-backbone configurations across 3,168 attacked runs, we find substantial and heterogeneous vulnerabilities: no attack objective is reliably resisted by current LLM-based web agents, and outcomes span four qualitatively distinct modes. These patterns are missed by conventional attack-centric, single-metric evaluation, underscoring the need for stakeholder-aware assessment of LLM-based agents in real-world deployments.",
+      "authors": [
+        "Zihao Wang",
+        "Yiming Li",
+        "Yutong Wu",
+        "Kangjie Chen",
+        "Zheyu Liu",
+        "Fok Kar Wai",
+        "Pin-Yu Chen",
+        "Vrizlynn L. L. Thing",
+        "Bo Li",
+        "Dacheng Tao",
+        "Tianwei Zhang"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CY",
+        "cs.HC",
+        "cs.MM"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-06-11T14:12:43Z",
+      "updated": "2026-07-27T14:19:24Z",
+      "announced_date": "2026-06-11",
+      "first_seen": "2026-06-11",
+      "comment": "25 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.13385v2",
+        "pdf": "https://arxiv.org/pdf/2606.13385v2",
+        "html": "https://arxiv.org/html/2606.13385"
+      },
+      "score": 13,
+      "tags": [
+        "web",
+        "safety"
+      ],
+      "field": "web",
+      "citations": 0
+    },
+    {
+      "id": "2606.13148",
+      "title": "TerraBench: Can Agents Reason Over Heterogeneous Earth-System Data?",
+      "abstract": "Climate and environmental decision-making increasingly requires reasoning across heterogeneous inputs, including gridded physical data, satellite imagery, geospatial context, and simulator outputs. Weather and climate foundation models can forecast well, but do not reason interactively in language, while large language models (LLMs) reason in language but cannot operate directly on high-dimensional Earth-system data. As a result, real scientific workflows in Earth-science remain underserved. We introduce TerraBench, a benchmark for grounded Earth-science reasoning, built on TerraAgent, a ReAct-style executable framework that interleaves reasoning, tool calls, and observations to couple LLM planning with scientific tools for environmental retrieval, geospatial processing, simulation, and artifact-backed computation. TerraBench unifies analysis of Earth observation imagery, gridded data, GIS reasoning and simulation in a single executable interface, whereas prior benchmarks isolate these capabilities into narrow individual tasks. It is also the first in this space to pair process-level tool-use metrics with tolerance-aware numeric scoring. The benchmark comprises 403 extensive agentic tasks across three tracks (Fundamentals, Simulator-Grounded, and Document-Grounded Verification) and eight application domains with 24,500 verified execution steps. These results indicate that reliable Earth-science agents must go beyond tool access to coordinate heterogeneous workflows, parameterize tools precisely, and preserve artifact provenance.",
+      "authors": [
+        "Dat Tien Nguyen",
+        "Thao Nguyen",
+        "Fadillah Adamsyah Maani",
+        "Huy M. Le",
+        "Muhammad Umer Sheikh",
+        "Numan Saeed",
+        "Muhammad Haris Khan",
+        "Salman Khan"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-11T10:26:03Z",
+      "updated": "2026-07-01T17:31:23Z",
+      "announced_date": "2026-06-11",
+      "first_seen": "2026-06-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.13148v2",
+        "pdf": "https://arxiv.org/pdf/2606.13148v2",
+        "html": "https://arxiv.org/html/2606.13148"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use",
+        "planning",
+        "science"
+      ],
+      "field": "other",
+      "citations": 2
+    },
+    {
+      "id": "2606.13120",
+      "title": "EvoBrowseComp: Benchmarking Search Agents on Evolving Knowledge",
+      "abstract": "Search Agents -- large language models augmented with search tools -- have intensified the need for future-proof evaluation benchmarks. Existing benchmarks such as BrowseComp rely on static knowledge, making them vulnerable to test-set contamination and parametric memorization. Consequently, models can achieve high scores through fact recall rather than genuine retrieval, obscuring true browsing competence via reasoning shortcuts. In this paper, we introduce EvoBrowseComp, an evolving benchmark of 400 English and 400 Chinese contamination-free complex questions synthesized via live-web traversal. To collect these questions, we design a three-agent collaborative framework: (1) a QA synthesis agent that retrieves fresh knowledge from the live web to synthesize QA pairs; (2) an information filtering agent that filters retrieved knowledge in terms of credibility and popularity to block parametric shortcuts; and (3) a high-level guidance agent that formalizes questions into reasoning graphs to reduce logical redundancy and shortcuts in synthesized QA pairs. Because the framework supports fully automated synthesis, EvoBrowseComp can be regularly updated to prevent data contamination and maintain temporal freshness. Extensive experiments confirm its great difficulty, requiring broad horizontal search. It establishes a scalable paradigm for auto-updatable, high-difficulty benchmarking that keeps pace with both evolving world knowledge and advancing agent capabilities.",
+      "authors": [
+        "Yunhan Wang",
+        "Jiaan Wang",
+        "Lianzhe Huang",
+        "Xianfeng Zeng",
+        "Fandong Meng"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-11T09:48:32Z",
+      "updated": "2026-06-11T09:48:32Z",
+      "announced_date": "2026-06-11",
+      "first_seen": "2026-06-11",
+      "comment": "14 pages, under review",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.13120v1",
+        "pdf": "https://arxiv.org/pdf/2606.13120v1",
+        "html": "https://arxiv.org/html/2606.13120"
+      },
+      "score": 8,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 1
+    },
+    {
+      "id": "2606.12871",
+      "title": "DailyReport: An Open-ended Benchmark for Evaluating Search Agents on Daily Search Tasks",
+      "abstract": "Search Agents (SAs) typically leverage large language models (LLMs) to support complex information-seeking tasks by autonomously exploring web sources and synthesizing information into comprehensive responses. For SAs evaluation, prior benchmarks mainly focus on specialized tasks that are unlikely to arise in real-world user scenarios. Moreover, their reliance on coarse task-level rubrics often limits evaluation interpretability. To bridge this gap, we introduce DailyReport, an open-ended benchmark to evaluate SA capabilities on daily search tasks. It contains 150 open-ended tasks with 3,546 associated rubrics, capturing widely discussed and timely information demands of real-world users. Each task is decomposed into subtasks and evaluated with cascade rubrics across disentangled dimensions. Through cascade performance attribution and user-centric aggregation, we derive highly interpretable scores for each dimension, along with a user preference score. Our results on 17 agentic systems show that current systems still fall short of users' expectations. To facilitate future research, our dataset and code are made publicly available at https://github.com/AGI-Eval-Official/DailyReport.",
+      "authors": [
+        "Jingxuan Han",
+        "Wei Liu",
+        "Mingyang Zhu",
+        "Youpeng Wang",
+        "Ziwen Wang",
+        "Lin Qiu",
+        "Xuezhi Cao",
+        "Xunliang Cai",
+        "Zheren Fu",
+        "Licheng Zhang",
+        "Zhendong Mao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-11T03:59:07Z",
+      "updated": "2026-06-11T03:59:07Z",
+      "announced_date": "2026-06-11",
+      "first_seen": "2026-06-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.12871v1",
+        "pdf": "https://arxiv.org/pdf/2606.12871v1",
+        "html": "https://arxiv.org/html/2606.12871"
+      },
+      "score": 12,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.12837",
+      "title": "LoHoSearch: Benchmarking Long-Horizon Search Agents Beyond the Human Difficulty Ceiling",
+      "abstract": "Search agent benchmarks exemplified by BrowseComp have rapidly saturated over the past year, with the strongest models surpassing 90% accuracy. Since these benchmarks are predominantly human-authored, annotators lack a global perspective on entity statistics and cannot systematically maximize search space size and structural complexity. This creates a difficulty ceiling that is hard to break. To address this, we introduce LoHoSearch (Long-Horizon Search Agents), a challenging benchmark comprising 544 human-verified questions across 11 domains. LoHoSearch is constructed via an automated pipeline built upon a knowledge graph covering over 7 million Wikipedia entities, which selects relations with large search spaces and assembles them into structurally complex questions with KG-verified unique answers. Our evaluation demonstrates that even the strongest model achieves only 34.74% accuracy, and existing context management strategies (best +6.8%) yield far smaller gains than on prior benchmarks. LoHoSearch provides a more demanding standard for evaluating long-horizon reasoning and context management in search agents.",
+      "authors": [
+        "Jiarui Zhao",
+        "Rongzhi Zhang",
+        "Lingchuan Liu",
+        "Hao Yang",
+        "Xunliang Cai",
+        "Xi Su"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-11T03:04:32Z",
+      "updated": "2026-06-17T03:34:47Z",
+      "announced_date": "2026-06-11",
+      "first_seen": "2026-06-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.12837v2",
+        "pdf": "https://arxiv.org/pdf/2606.12837v2",
+        "html": "https://arxiv.org/html/2606.12837"
+      },
+      "score": 8,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.12821",
+      "title": "GeoNatureAgent Benchmark: Benchmarking LLM Agents for Environmental Geospatial Analysis Across Frontier and Open-Weight Foundation Models",
+      "abstract": "Environmental scientists spend disproportionate effort on data wrangling rather than analysis, and AI agents that automate geospatial workflows remain unvalidated: no benchmark evaluates agents operating through structured tool calling against real APIs. We introduce the GeoNatureAgent Benchmark, the first benchmark for environmental analysis agents that operate via structured tool calls to a production-style geospatial API. It comprises 93 tasks across 18 categories, covering municipality analysis, multi-turn conversation, spatial reasoning, cross-indicator synthesis, error handling and recovery, ranking, comparison, multilingual understanding, habitat analysis, and task rejection. Tasks are evaluated against an open, self-hostable API serving three environmental indicators across Spain and Portugal via sixteen tools. We evaluate seven LLMs (Claude Sonnet 4, DeepSeek V3.2, GLM-5, Gemini 2.5 Pro, Qwen3-235B, GPT-OSS-120B, Llama 4 Scout) under three temperature-1.0 seeds, reporting capability and per-case cost as orthogonal axes. We find: (1) Claude Sonnet 4 leads at 60.8% +/- 0.8%, followed by DeepSeek V3.2 at 56.3% +/- 3.1%, with no other model above 51%; (2) the cost-accuracy Pareto frontier is occupied mostly by open-weight models, with DeepSeek V3.2 offering 93% of Claude's capability at 11x lower cost ($0.011/case); (3) comparison tasks remain universally unsolved (0% on close-value comparisons), exposing systematic reasoning limits; and (4) structured tool calling against a real API is more discriminative than general-purpose GIS benchmarks, with accuracies 25-35 points lower. We further show extensibility by integrating BigEarthNet V2 land cover for Portugal alongside Spanish CO2 and erosion indicators. The benchmark, harness, and self-hostable API are publicly available.",
+      "authors": [
+        "Gabriel Diaz-Ireland",
+        "Diego Prieto-Herráez",
+        "Mario García Peces",
+        "Javier Velázquez",
+        "Devika Jain"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.ET"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-11T02:35:20Z",
+      "updated": "2026-06-11T02:35:20Z",
+      "announced_date": "2026-06-11",
+      "first_seen": "2026-06-11",
+      "comment": "Preprint. 10 pages, 8 figures. Submitted to ACM SIGSPATIAL 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.12821v1",
+        "pdf": "https://arxiv.org/pdf/2606.12821v1",
+        "html": "https://arxiv.org/html/2606.12821"
+      },
+      "score": 18,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

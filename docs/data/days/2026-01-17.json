@@ -1,0 +1,273 @@
+{
+  "date": "2026-01-17",
+  "count": 3,
+  "report": {
+    "date": "2026-01-17",
+    "count": 3,
+    "themes": [
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      }
+    ],
+    "en": {
+      "headline": "3 new agent benchmarks",
+      "summary": "On January 17, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Memory (2), Web agents (1), Tool use (1), and Planning / reasoning (1).",
+      "highlights": [
+        {
+          "id": "2601.11868",
+          "title": "Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces",
+          "blurb": "AI agents may soon become capable of autonomously completing valuable, long-horizon tasks in diverse domains."
+        },
+        {
+          "id": "2601.11854",
+          "title": "ATOD: An Evaluation Framework and Benchmark for Agentic Task-Oriented Dialogue Systems",
+          "blurb": "Recent advances in task-oriented dialogue (TOD) systems, driven by large language models (LLMs) with extensive API and tool integration, have enabled conversational agents to coordinate interleaved goals, maintain long-h…"
+        },
+        {
+          "id": "2601.11957",
+          "title": "PEARL: Self-Evolving Assistant for Time Management with Reinforcement Learning",
+          "blurb": "Overlapping calendar invitations force busy professionals to repeatedly decide which meetings to attend, reschedule, or decline."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年1月17日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在记忆（2）、网页智能体（1）、工具使用（1）、规划 / 推理（1）。",
+      "highlights": [
+        {
+          "id": "2601.11868",
+          "title": "Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces",
+          "blurb": "AI agents may soon become capable of autonomously completing valuable, long-horizon tasks in diverse domains."
+        },
+        {
+          "id": "2601.11854",
+          "title": "ATOD: An Evaluation Framework and Benchmark for Agentic Task-Oriented Dialogue Systems",
+          "blurb": "Recent advances in task-oriented dialogue (TOD) systems, driven by large language models (LLMs) with extensive API and tool integration, have enabled conversational agents to coordinate interleaved goals, maintain long-h…"
+        },
+        {
+          "id": "2601.11957",
+          "title": "PEARL: Self-Evolving Assistant for Time Management with Reinforcement Learning",
+          "blurb": "Overlapping calendar invitations force busy professionals to repeatedly decide which meetings to attend, reschedule, or decline."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2601.11957",
+      "title": "PEARL: Self-Evolving Assistant for Time Management with Reinforcement Learning",
+      "abstract": "Overlapping calendar invitations force busy professionals to repeatedly decide which meetings to attend, reschedule, or decline. We refer to this preference-driven decision process as calendar conflict resolution. Automating this decision process is crucial yet challenging. Scheduling logistics can drain hours, and human delegation often fails at scale, which motivates us to ask: Can we trust large language models (LLMs) or language agents to manage time? To enable a systematic study of this question, we introduce CalConflictBench, a benchmark for long-horizon calendar conflict resolution. In CalConflictBench, conflicts are presented to agents round-by-round over a calendar year, requiring them to infer and adapt to user preferences progressively. Our experiments show that current LLM agents perform poorly with high error rates, e.g., Qwen-3-30B-Think has an average error rate of 35%. To address this gap, we propose PEARL, a reinforcement-learning framework that (i) augments the language agent with an external preference memory that stores and updates inferred strategies (e.g., attendee priorities, topic importance, time/location preferences), and (ii) optimizes the agent with round-wise rewards that directly supervise decision correctness, ranking quality, and memory usage across rounds. Experiments on CalConflictBench show that PEARL achieves an error reduction rate of 0.76 and a 55% improvement in average error rate compared to the strongest baseline.",
+      "authors": [
+        "Bingxuan Li",
+        "Jeonghwan Kim",
+        "Cheng Qian",
+        "Xiusi Chen",
+        "Eitan Anzenberg",
+        "Niran Kundapur",
+        "Heng Ji"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-01-17T08:19:18Z",
+      "updated": "2026-06-23T06:39:00Z",
+      "announced_date": "2026-01-17",
+      "first_seen": "2026-01-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.11957v4",
+        "pdf": "https://arxiv.org/pdf/2601.11957v4",
+        "html": "https://arxiv.org/html/2601.11957"
+      },
+      "score": 9,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 3
+    },
+    {
+      "id": "2601.11868",
+      "title": "Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces",
+      "abstract": "AI agents may soon become capable of autonomously completing valuable, long-horizon tasks in diverse domains. Current benchmarks either do not measure real-world tasks, or are not sufficiently difficult to meaningfully measure frontier models. To this end, we present Terminal-Bench 2.0: a carefully curated hard benchmark composed of 89 tasks in computer terminal environments inspired by problems from real workflows. Each task features a unique environment, human-written solution, and comprehensive tests for verification. We show that frontier models and agents score less than 65\\% on the benchmark and conduct an error analysis to identify areas for model and agent improvement. We publish the dataset and evaluation harness to assist developers and researchers in future work at https://www.tbench.ai/ .",
+      "authors": [
+        "Mike A. Merrill",
+        "Alexander G. Shaw",
+        "Nicholas Carlini",
+        "Boxuan Li",
+        "Harsh Raj",
+        "Ivan Bercovich",
+        "Lin Shi",
+        "Jeong Yeon Shin",
+        "Thomas Walshe",
+        "E. Kelly Buchanan",
+        "Junhong Shen",
+        "Guanghao Ye",
+        "Haowei Lin",
+        "Jason Poulos",
+        "Maoyu Wang",
+        "Marianna Nezhurina",
+        "Jenia Jitsev",
+        "Di Lu",
+        "Orfeas Menis Mastromichalakis",
+        "Zhiwei Xu",
+        "Zizhao Chen",
+        "Yue Liu",
+        "Robert Zhang",
+        "Leon Liangyu Chen",
+        "Anurag Kashyap",
+        "Jan-Lucas Uslu",
+        "Jeffrey Li",
+        "Jianbo Wu",
+        "Minghao Yan",
+        "Song Bian",
+        "Vedang Sharma",
+        "Ke Sun",
+        "Steven Dillmann",
+        "Akshay Anand",
+        "Andrew Lanpouthakoun",
+        "Bardia Koopah",
+        "Changran Hu",
+        "Etash Guha",
+        "Gabriel H. S. Dreiman",
+        "Jiacheng Zhu",
+        "Karl Krauth",
+        "Li Zhong",
+        "Niklas Muennighoff",
+        "Robert Amanfu",
+        "Shangyin Tan",
+        "Shreyas Pimpalgaonkar",
+        "Tushar Aggarwal",
+        "Xiangning Lin",
+        "Xin Lan",
+        "Xuandong Zhao",
+        "Yiqing Liang",
+        "Yuanli Wang",
+        "Zilong Wang",
+        "Changzhi Zhou",
+        "David Heineman",
+        "Hange Liu",
+        "Harsh Trivedi",
+        "John Yang",
+        "Junhong Lin",
+        "Manish Shetty",
+        "Michael Yang",
+        "Nabil Omi",
+        "Negin Raoof",
+        "Shanda Li",
+        "Terry Yue Zhuo",
+        "Wuwei Lin",
+        "Yiwei Dai",
+        "Yuxin Wang",
+        "Wenhao Chai",
+        "Shang Zhou",
+        "Dariush Wahdany",
+        "Ziyu She",
+        "Jiaming Hu",
+        "Zhikang Dong",
+        "Yuxuan Zhu",
+        "Sasha Cui",
+        "Ahson Saiyed",
+        "Arinbjörn Kolbeinsson",
+        "Jesse Hu",
+        "Christopher Michael Rytting",
+        "Ryan Marten",
+        "Yixin Wang",
+        "Alex Dimakis",
+        "Andy Konwinski",
+        "Ludwig Schmidt"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-01-17T01:29:30Z",
+      "updated": "2026-01-17T01:29:30Z",
+      "announced_date": "2026-01-17",
+      "first_seen": "2026-01-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.11868v1",
+        "pdf": "https://arxiv.org/pdf/2601.11868v1",
+        "html": "https://arxiv.org/html/2601.11868"
+      },
+      "score": 19,
+      "tags": [
+        "web"
+      ],
+      "field": "web",
+      "citations": 354
+    },
+    {
+      "id": "2601.11854",
+      "title": "ATOD: An Evaluation Framework and Benchmark for Agentic Task-Oriented Dialogue Systems",
+      "abstract": "Recent advances in task-oriented dialogue (TOD) systems, driven by large language models (LLMs) with extensive API and tool integration, have enabled conversational agents to coordinate interleaved goals, maintain long-horizon context, and act proactively through asynchronous execution. These capabilities extend beyond traditional TOD systems, yet existing benchmarks lack systematic support for evaluating such agentic behaviors. To address this gap, we introduce ATOD, a benchmark and synthetic dialogue generation pipeline that produces richly annotated conversations requiring long-term reasoning. ATOD captures key characteristics of advanced TOD, including multi-goal coordination, dependency management, memory, adaptability, and proactivity. Building on ATOD, we propose ATOD-Eval, a holistic evaluation framework that translates these dimensions into fine-grained metrics and supports reproducible offline and online evaluation. We further present a strong agentic memory-based evaluator for benchmarking on ATOD. Experiments show that ATOD-Eval enables comprehensive assessment across task completion, agentic capability, and response quality, and that the proposed evaluator offers a better accuracy-efficiency tradeoff compared to existing memory- and LLM-based approaches under this evaluation setting.",
+      "authors": [
+        "Yifei Zhang",
+        "Hooshang Nayyeri",
+        "Rinat Khaziev",
+        "Emine Yilmaz",
+        "Gokhan Tur",
+        "Dilek Hakkani-Tür",
+        "Hari Thadakamalla"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-01-17T00:53:43Z",
+      "updated": "2026-01-30T15:18:28Z",
+      "announced_date": "2026-01-17",
+      "first_seen": "2026-01-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.11854v2",
+        "pdf": "https://arxiv.org/pdf/2601.11854v2",
+        "html": "https://arxiv.org/html/2601.11854"
+      },
+      "score": 16,
+      "tags": [
+        "tool-use",
+        "memory",
+        "planning",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 0
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "date": "2026-03-20",
+  "count": 2,
+  "report": {
+    "date": "2026-03-20",
+    "count": 2,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On March 20, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Tool use (1).",
+      "highlights": [
+        {
+          "id": "2604.13072",
+          "title": "LiveClawBench: Benchmarking LLM Agents on Complex, Real-World Assistant Tasks",
+          "blurb": "OpenClaw-style personal assistants extend LLM agents from isolated tool use to open-ended, stateful, and personalized software environments."
+        },
+        {
+          "id": "2603.19583",
+          "title": "Skilled AI Agents for Embedded and IoT Systems Development",
+          "blurb": "Large language models (LLMs) and agentic systems have shown promise for automated software development, but applying them to hardware-in-the-loop (HIL) embedded and Internet-of-Things (IoT) systems remains challenging du…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年3月20日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在工具使用（1）。",
+      "highlights": [
+        {
+          "id": "2604.13072",
+          "title": "LiveClawBench: Benchmarking LLM Agents on Complex, Real-World Assistant Tasks",
+          "blurb": "OpenClaw-style personal assistants extend LLM agents from isolated tool use to open-ended, stateful, and personalized software environments."
+        },
+        {
+          "id": "2603.19583",
+          "title": "Skilled AI Agents for Embedded and IoT Systems Development",
+          "blurb": "Large language models (LLMs) and agentic systems have shown promise for automated software development, but applying them to hardware-in-the-loop (HIL) embedded and Internet-of-Things (IoT) systems remains challenging du…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.13072",
+      "title": "LiveClawBench: Benchmarking LLM Agents on Complex, Real-World Assistant Tasks",
+      "abstract": "OpenClaw-style personal assistants extend LLM agents from isolated tool use to open-ended, stateful, and personalized software environments. Evaluating these assistants is fundamentally a fidelity problem: benchmarks must be faithful both to the distribution of real assistant tasks and to the execution semantics of the environments in which those tasks unfold. Existing benchmarks often lose fidelity in one dimension or the other. Their task distributions are shaped by what is easy to isolate, mock, and verify, underrepresenting real-world difficulties such as cross-service dependency, contaminated state, implicit intent, and runtime change. Their environments are either live but hard to reproduce, or reproducible but reduced to endpoint-level stubs that remove sessions, artifacts, state transitions, and downstream side effects. We introduce LiveClawBench, a benchmark designed around this dual-fidelity requirement. LiveClawBench combines a Triple-Axis Complexity Framework for difficulty-driven task construction with reproducible full-stack mock applications that preserve stateful execution semantics. With 134 executable cases across 10 domains with 22 mocked services, LiveClawBench supports controlled, extensible, and factor-level diagnostic evaluation of realistic agentic tasks. We release the benchmark resources: (1) Benchmark: https://github.com/Mosi-AI/LiveClawBench; (2) Leaderboard: https://mosi-ai.github.io/LiveClawBench/leaderboard/; (3) Trajectories: https://huggingface.co/datasets/Mosi-AI/LiveClawbench-trajectories",
+      "authors": [
+        "Xiang Long",
+        "Li Du",
+        "Yilong Xu",
+        "RongJian Xu",
+        "Qiyanhui Lu",
+        "Ying Gao",
+        "Qinhua Xie",
+        "Fangcheng Liu",
+        "Ning Ding",
+        "Haoqing Wang",
+        "Ziheng Li",
+        "Changjiang Zhou",
+        "Jianyuan Guo",
+        "Yehui Tang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-03-20T16:08:21Z",
+      "updated": "2026-06-25T07:57:24Z",
+      "announced_date": "2026-03-20",
+      "first_seen": "2026-03-20",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.13072v2",
+        "pdf": "https://arxiv.org/pdf/2604.13072v2",
+        "html": "https://arxiv.org/html/2604.13072"
+      },
+      "score": 26,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 4
+    },
+    {
+      "id": "2603.19583",
+      "title": "Skilled AI Agents for Embedded and IoT Systems Development",
+      "abstract": "Large language models (LLMs) and agentic systems have shown promise for automated software development, but applying them to hardware-in-the-loop (HIL) embedded and Internet-of-Things (IoT) systems remains challenging due to the tight coupling between software logic and physical hardware behavior. Code that compiles successfully may still fail when deployed on real devices because of timing constraints, peripheral initialization requirements, or hardware-specific behaviors. To address this challenge, we introduce a skills-based agentic framework for HIL embedded development together with IoT-SkillsBench, a benchmark designed to systematically evaluate AI agents in real embedded programming environments. IoT-SkillsBench spans three representative embedded platforms, 23 peripherals, and 42 tasks across three difficulty levels, where each task is evaluated under three agent configurations (no-skills, LLM-generated skills, and human-expert skills) and validated through real hardware execution. Across 378 hardware validated experiments, we show that concise human-expert skills with structured expert knowledge enable near-perfect success rates across platforms.",
+      "authors": [
+        "Yiming Li",
+        "Yuhan Cheng",
+        "Mingchen Ma",
+        "Yihang Zou",
+        "Ningyuan Yang",
+        "Wei Cheng",
+        "Hai \"Helen\" Li",
+        "Yiran Chen",
+        "Tingjun Chen"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-03-20T02:56:15Z",
+      "updated": "2026-03-20T02:56:15Z",
+      "announced_date": "2026-03-20",
+      "first_seen": "2026-03-20",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.19583v1",
+        "pdf": "https://arxiv.org/pdf/2603.19583v1",
+        "html": "https://arxiv.org/html/2603.19583"
+      },
+      "score": 14,
+      "tags": [],
+      "field": "other",
+      "citations": 2
+    }
+  ]
+}

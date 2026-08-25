@@ -1,0 +1,128 @@
+{
+  "date": "2026-01-02",
+  "count": 2,
+  "report": {
+    "date": "2026-01-02",
+    "count": 2,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On January 2, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Tool use (2), Planning / reasoning (1), and Safety (1).",
+      "highlights": [
+        {
+          "id": "2603.04403",
+          "title": "FinRetrieval: A Benchmark for Financial Data Retrieval by AI Agents",
+          "blurb": "AI agents increasingly assist with financial research, yet no benchmark evaluates their ability to retrieve specific numeric values from structured databases."
+        },
+        {
+          "id": "2601.00596",
+          "title": "Beyond IVR: Benchmarking Customer Support LLM Agents for Business-Adherence",
+          "blurb": "Traditional customer support systems, such as Interactive Voice Response (IVR), rely on rigid scripts and lack the flexibility required for handling complex, policy-driven tasks."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年1月2日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在工具使用（2）、规划 / 推理（1）、安全（1）。",
+      "highlights": [
+        {
+          "id": "2603.04403",
+          "title": "FinRetrieval: A Benchmark for Financial Data Retrieval by AI Agents",
+          "blurb": "AI agents increasingly assist with financial research, yet no benchmark evaluates their ability to retrieve specific numeric values from structured databases."
+        },
+        {
+          "id": "2601.00596",
+          "title": "Beyond IVR: Benchmarking Customer Support LLM Agents for Business-Adherence",
+          "blurb": "Traditional customer support systems, such as Interactive Voice Response (IVR), rely on rigid scripts and lack the flexibility required for handling complex, policy-driven tasks."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2603.04403",
+      "title": "FinRetrieval: A Benchmark for Financial Data Retrieval by AI Agents",
+      "abstract": "AI agents increasingly assist with financial research, yet no benchmark evaluates their ability to retrieve specific numeric values from structured databases. We introduce FinRetrieval, a benchmark of 500 financial retrieval questions with ground truth answers, agent responses from 14 configurations across three frontier providers (Anthropic, OpenAI, Google), and complete tool call execution traces. Our evaluation reveals that tool availability dominates performance: Claude Opus achieves 90.8% accuracy with structured data APIs but only 19.8% with web search alone--a 71 percentage point gap that exceeds other providers by 3-4x. We find that reasoning mode benefits vary inversely with base capability (+9.0pp for OpenAI vs +2.8pp for Claude), explained by differences in base-mode tool utilization rather than reasoning ability. Geographic performance gaps (5.6pp US advantage) stem from fiscal year naming conventions, not model limitations. We release the dataset, evaluation code, and tool traces to enable research on financial AI systems.",
+      "authors": [
+        "Eric Y. Kim",
+        "Jie Huang"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-01-02T17:51:37Z",
+      "updated": "2026-01-02T17:51:37Z",
+      "announced_date": "2026-01-02",
+      "first_seen": "2026-01-02",
+      "comment": "26 pages, 2 figures, 16 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.04403v1",
+        "pdf": "https://arxiv.org/pdf/2603.04403v1",
+        "html": "https://arxiv.org/html/2603.04403"
+      },
+      "score": 20,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 4
+    },
+    {
+      "id": "2601.00596",
+      "title": "Beyond IVR: Benchmarking Customer Support LLM Agents for Business-Adherence",
+      "abstract": "Traditional customer support systems, such as Interactive Voice Response (IVR), rely on rigid scripts and lack the flexibility required for handling complex, policy-driven tasks. While large language model (LLM) agents offer a promising alternative, evaluating their ability to act in accordance with business rules and real-world support workflows remains an open challenge. Existing benchmarks primarily focus on tool usage or task completion, overlooking an agent's capacity to adhere to multi-step policies, navigate task dependencies, and remain robust to unpredictable user or environment behavior. In this work, we introduce JourneyBench, a benchmark designed to assess policy-aware agents in customer support. JourneyBench leverages graph representations to generate diverse, realistic support scenarios and proposes the User Journey Coverage Score, a novel metric to measure policy adherence. We evaluate multiple state-of-the-art LLMs using two agent designs: a Static-Prompt Agent (SPA) and a Dynamic-Prompt Agent (DPA) that explicitly models policy control. Across 703 conversations in three domains, we show that DPA significantly boosts policy adherence, even allowing smaller models like GPT-4o-mini to outperform more capable ones like GPT-4o. Our findings demonstrate the importance of structured orchestration and establish JourneyBench as a critical resource to advance AI-driven customer support beyond IVR-era limitations.",
+      "authors": [
+        "Sumanth Balaji",
+        "Piyush Mishra",
+        "Aashraya Sachdeva",
+        "Suraj Agrawal"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-01-02T07:21:23Z",
+      "updated": "2026-01-02T07:21:23Z",
+      "announced_date": "2026-01-02",
+      "first_seen": "2026-01-02",
+      "comment": "17 pages, 3 figures, preprint",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.00596v1",
+        "pdf": "https://arxiv.org/pdf/2601.00596v1",
+        "html": "https://arxiv.org/html/2601.00596"
+      },
+      "score": 16,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "conversation",
+      "citations": 9
+    }
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "date": "2026-06-04",
+  "count": 7,
+  "report": {
+    "date": "2026-06-04",
+    "count": 7,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "gui",
+        "count": 2,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "computer-use",
+        "count": 2,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      }
+    ],
+    "en": {
+      "headline": "7 new agent benchmarks",
+      "summary": "On June 4, 2026, arXiv listed 7 new agent benchmarks. Work clustered around Planning / reasoning (3), GUI agents (2), Computer use (2), and Tool use (2).",
+      "highlights": [
+        {
+          "id": "2606.06560",
+          "title": "MacArena: Benchmarking Computer Use Agents on an Online macOS Environment",
+          "blurb": "Computer-use agents (CUAs) operate graphical user interfaces (GUIs) through vision and control primitives, and their capabilities have advanced rapidly, driven in part by standardized online evaluation benchmarks such as…"
+        },
+        {
+          "id": "2606.05570",
+          "title": "TensorBench: Benchmarking Coding Agents on a Compiler-Based Tensor Framework",
+          "blurb": "Repository-level coding benchmarks face a trade-off between task difficulty and evaluation reliability: tasks that challenge frontier models often involve large codebases with incomplete test coverage, while human review…"
+        },
+        {
+          "id": "2606.05806",
+          "title": "When Tools Fail: Benchmarking Dynamic Replanning and Anomaly Recovery in LLM Agents",
+          "blurb": "Existing benchmarks evaluate Tool-Integrated Reasoning (TIR) in LLMs on idealized ''happy paths'', largely overlooking real-world tool failures."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 7 篇 Agent Benchmark",
+      "summary": "2026年6月4日，arXiv 新增 7 篇 Agent Benchmark。当日主题集中在规划 / 推理（3）、GUI 智能体（2）、计算机使用（2）、工具使用（2）。",
+      "highlights": [
+        {
+          "id": "2606.06560",
+          "title": "MacArena: Benchmarking Computer Use Agents on an Online macOS Environment",
+          "blurb": "Computer-use agents (CUAs) operate graphical user interfaces (GUIs) through vision and control primitives, and their capabilities have advanced rapidly, driven in part by standardized online evaluation benchmarks such as…"
+        },
+        {
+          "id": "2606.05570",
+          "title": "TensorBench: Benchmarking Coding Agents on a Compiler-Based Tensor Framework",
+          "blurb": "Repository-level coding benchmarks face a trade-off between task difficulty and evaluation reliability: tasks that challenge frontier models often involve large codebases with incomplete test coverage, while human review…"
+        },
+        {
+          "id": "2606.05806",
+          "title": "When Tools Fail: Benchmarking Dynamic Replanning and Anomaly Recovery in LLM Agents",
+          "blurb": "Existing benchmarks evaluate Tool-Integrated Reasoning (TIR) in LLMs on idealized ''happy paths'', largely overlooking real-world tool failures."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2606.06322",
+      "title": "DragOn: A Benchmark and Dataset for Drag-Based GUI Interactions",
+      "abstract": "GUI agents - vision-based models that control desktops, web browsers, and mobile devices through graphical user interfaces - promise to automate a wide range of digital tasks. While million-scale datasets have enabled substantial progress on click-grounding, drag grounding (e.g. drag-and-drop, swipe, highlight) data remains an order of magnitude smaller and current models fall short on complex drag-based interactions. We introduce DragOn, a drag grounding benchmark and training dataset covering four domains: text highlighting, cell selection, element resizing and slider manipulation. The dataset comprises 286K training screenshots and 3.5M training tasks, plus a 2000-example held-out evaluation suite. We evaluate proprietary (GPT, Claude) and open-weight (Qwen, Kimi, Holo) models, as well as a Qwen VLM fine-tuned on our training data. Results suggest that our dataset could improve performance of state-of-the-art models on downstream computer-use tasks.",
+      "authors": [
+        "Nathan Bout",
+        "Maxime Langevin",
+        "Ronan Riochet"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-04T15:57:29Z",
+      "updated": "2026-06-04T15:57:29Z",
+      "announced_date": "2026-06-04",
+      "first_seen": "2026-06-04",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.06322v1",
+        "pdf": "https://arxiv.org/pdf/2606.06322v1",
+        "html": "https://arxiv.org/html/2606.06322"
+      },
+      "score": 15,
+      "tags": [
+        "gui",
+        "computer-use",
+        "multimodal"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2606.06560",
+      "title": "MacArena: Benchmarking Computer Use Agents on an Online macOS Environment",
+      "abstract": "Computer-use agents (CUAs) operate graphical user interfaces (GUIs) through vision and control primitives, and their capabilities have advanced rapidly, driven in part by standardized online evaluation benchmarks such as OSWorld, which serve both as evaluation tools and as training environments for reinforcement learning. However, macOS remains underserved in this landscape: the only existing benchmark, macOSWorld, covers a narrow slice of first-party applications with simpler tasks, and runs on x86 virtual machines incompatible with Apple Silicon. We introduce MacArena, a benchmark of 421 manually verified tasks spanning 50 applications that combines a curated port of OSWorld tasks, content sourced from macOSWorld, and 49 new macOS-native tasks, all running on Apple's native Virtualization framework on Apple Silicon. We argue that macOS presents distinct GUI challenges beyond what Linux-based benchmarks capture, and our evaluation supports this claim: strong model performance on existing benchmarks can reflect familiarity with task distributions rather than genuine cross-platform GUI competence. Notably, model rankings invert between ported and macOS-native tasks, with a leading model trailing by over 26% on the MacArena subset, suggesting that macOS poses a genuinely harder environment for current GUI agents.",
+      "authors": [
+        "Victor Muryn",
+        "Maksym Shamrai",
+        "Sofiia Mazepa",
+        "Yehor Khodysko"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.HC"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-06-04T14:01:32Z",
+      "updated": "2026-06-04T14:01:32Z",
+      "announced_date": "2026-06-04",
+      "first_seen": "2026-06-04",
+      "comment": "Accepted to the Second Workshop on Agents in the Wild: Safety, Security, and Beyond (AIWILD) at ICML 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.06560v1",
+        "pdf": "https://arxiv.org/pdf/2606.06560v1",
+        "html": "https://arxiv.org/html/2606.06560"
+      },
+      "score": 26,
+      "tags": [
+        "gui",
+        "tool-use",
+        "computer-use"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2606.06055",
+      "title": "HUSH-Bench: Measuring Memory-Use Boundaries for Sensitive History in Conversational Agents",
+      "abstract": "Long-term memory helps conversational agents maintain continuity across sessions, while relevance and current-turn warrant remain distinct decisions. We study this boundary under a stated conservative policy in which sensitive history shapes a response when the current turn supplies a reason to use it. We introduce HUSH-Bench, a controlled benchmark of 2,400 benign prompts paired with histories containing one marked sensitive disclosure and matched no-memory references. HUSH-Bench measures unsolicited history integration with the Unsolicited History Integration Score (UIS; 0--100, higher is worse), records whether the marked disclosure reaches the generator, and includes paired prompts that differ only in whether the user asks the assistant to use earlier context. We evaluate four models under no-memory, full-context, and three retrieval-based memory settings. Memory access raises UIS from near zero to 8.9--26.6 for one model and 51.3--83.0 for the other three. Retrieval systems expose the marked disclosure in 23.0\\%--30.3\\% of cases, while related sensitive entries or summaries remain available and three models continue to show high UIS. Across four generators, an explicit invitation increases target-memory uptake scores by 27.0--41.3; measured helpfulness remains stable while mean over-scope rises. These results motivate treating memory storage, retrieval, warrant, and per-turn scope as separate design decisions.",
+      "authors": [
+        "Lingxiang Xu",
+        "Jiaoyun Yang",
+        "Min Hu",
+        "Ning An"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-04T11:54:51Z",
+      "updated": "2026-08-03T14:34:11Z",
+      "announced_date": "2026-06-04",
+      "first_seen": "2026-06-04",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.06055v2",
+        "pdf": "https://arxiv.org/pdf/2606.06055v2",
+        "html": "https://arxiv.org/html/2606.06055"
+      },
+      "score": 11,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2606.05920",
+      "title": "Asuka-Bench: Benchmarking Code Agents on Underspecified User Intent and Multi-Round Refinement",
+      "abstract": "Existing code-generation benchmarks score a single mapping from a complete prompt to a one-shot output. However, real web development is different. Users seldom write a full spec at the start; many requirements only become clear once they look at an intermediate result and react to it. We present Asuka-Bench, a benchmark that pairs underspecified user intent with multi-round refinement, grounded in browser-rendered behavior. Each task is resolved through a closed loop: a Code Agent generates a web project, a UI Agent executes test cases on the deployed site, and a User LLM turns evaluation outcomes into natural-language feedback for the next round. The benchmark comprises 50 web tasks with 784 evaluation criteria and 2402 expected outcomes. We benchmark 8 LLMs across 2 agent frameworks. The results separate models clearly: weighted Task Pass Rate varies by 38 percentage points and models also differ substantially in their ability to repair from feedback. Asuka-Bench is also far from saturated: even the strongest model completes only 52% of projects after three rounds.",
+      "authors": [
+        "Xin Wang",
+        "Liangtai Sun",
+        "Yaoming Zhu",
+        "Shuang Zhou",
+        "Jiaxing Liu",
+        "Fengjiao Chen",
+        "Lin Qiu",
+        "Xuezhi Cao",
+        "Xunliang Cai",
+        "Licheng Zhang",
+        "Zhendong Mao"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-06-04T09:24:30Z",
+      "updated": "2026-06-04T09:24:30Z",
+      "announced_date": "2026-06-04",
+      "first_seen": "2026-06-04",
+      "comment": "under review",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.05920v1",
+        "pdf": "https://arxiv.org/pdf/2606.05920v1",
+        "html": "https://arxiv.org/html/2606.05920"
+      },
+      "score": 18,
+      "tags": [
+        "web",
+        "planning"
+      ],
+      "field": "web",
+      "citations": 1
+    },
+    {
+      "id": "2606.05806",
+      "title": "When Tools Fail: Benchmarking Dynamic Replanning and Anomaly Recovery in LLM Agents",
+      "abstract": "Existing benchmarks evaluate Tool-Integrated Reasoning (TIR) in LLMs on idealized ''happy paths'', largely overlooking real-world tool failures. We introduce ToolMaze, a benchmark for dynamic path discovery and error recovery in TIR agents. To separate systematic replanning from blind trial-and-error, ToolMaze adopts a two-dimensional design: DAG-based topological complexity and a $2 \\times 2$ taxonomy of tool perturbations (explicit/implicit, transient/permanent). Evaluations show that perturbations degrade performance across nearly all models, with the sharpest drops under implicit semantic failures. Driven by systemic over-trust in corrupted outputs, Perturbation Recovery Rate (PRR) plummets by around 37\\% in these scenarios, while complex topologies trap agents in futile trial-and-error loops. Crucially, agentic fault-tolerance improves with model scale $3.66\\times$ slower than basic task execution, highlighting dynamic replanning as a distinct bottleneck unaddressed by model scaling or prompting. Data and code are available at https://github.com/Zhudongsheng75/ToolMaze.",
+      "authors": [
+        "Dongsheng Zhu",
+        "Xuchen Ma",
+        "Yucheng Shen",
+        "Xiang Li",
+        "Yukun Zhao",
+        "Shuaiqiang Wang",
+        "Lingyong Yan",
+        "Dawei Yin"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-06-04T07:38:46Z",
+      "updated": "2026-06-04T07:38:46Z",
+      "announced_date": "2026-06-04",
+      "first_seen": "2026-06-04",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.05806v1",
+        "pdf": "https://arxiv.org/pdf/2606.05806v1",
+        "html": "https://arxiv.org/html/2606.05806"
+      },
+      "score": 19,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 4
+    },
+    {
+      "id": "2606.05622",
+      "title": "AdaPlanBench: Evaluating Adaptive Planning in Large Language Model Agents under World and User Constraints",
+      "abstract": "Planning for real-world problems by language models often involves both world and user constraints, which may not be fully specified upfront and are progressively disclosed through interaction. However, existing benchmarks still underexplore adaptive planning under such progressively revealed dual constraints. To address this gap, we introduce AdaPlanBench, a dynamic interactive benchmark for evaluating whether Large Language Model (LLM) agents can adaptively plan and re-plan under progressively revealed world and user constraints. AdaPlanBench is built on 307 household tasks, with a scalable constraint construction pipeline that augments each task with dual constraints. At runtime, agents interact with the environment in a multi-turn protocol where hidden constraints are revealed only when the agent proposes a plan that violates them, requiring iterative plan revision under accumulating feedback. This makes planning challenging, as agents must infer and track constraints from feedback while re-planning effectively. Experiments on ten leading LLMs show that adaptive planning under dual constraints remains challenging, with the best model reaching only 67.75% accuracy. We further observe that performance degrades as more constraints accumulate, with user constraints posing a particularly large challenge and failures often stemming from weaker physical grounding and reduced effectiveness. These results establish AdaPlanBench as a testbed for dual-constrained interactive planning and highlight the challenge of reliable adaptation to dynamically revealed constraints in LLM agents.",
+      "authors": [
+        "Jiayu Liu",
+        "Cheng Qian",
+        "Zhenhailong Wang",
+        "Bingxuan Li",
+        "Jiateng Liu",
+        "Qing Zong",
+        "Heng Wang",
+        "Jeonghwan Kim",
+        "Yumeng Wang",
+        "Bingxiang He",
+        "Xiusi Chen",
+        "Yi R. Fung",
+        "Heng Ji"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-04T02:47:29Z",
+      "updated": "2026-07-09T05:22:20Z",
+      "announced_date": "2026-06-04",
+      "first_seen": "2026-06-04",
+      "comment": "COLM 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.05622v2",
+        "pdf": "https://arxiv.org/pdf/2606.05622v2",
+        "html": "https://arxiv.org/html/2606.05622"
+      },
+      "score": 13,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 5
+    },
+    {
+      "id": "2606.05570",
+      "title": "TensorBench: Benchmarking Coding Agents on a Compiler-Based Tensor Framework",
+      "abstract": "Repository-level coding benchmarks face a trade-off between task difficulty and evaluation reliability: tasks that challenge frontier models often involve large codebases with incomplete test coverage, while human review does not scale. We introduce TensorBench, a benchmark of 199 feature-addition and refactoring tasks on an open-source compiler-based tensor framework that extends PyTorch with first-class support for dense and sparse tensors. Tasks cover new sparse formats, dense optimization passes, IR transformations, scheduler changes, runtime components, and high-level numerical operators. TensorBench grades each run by applying the agent's patch and running the framework's test suite, which includes the pre-existing randomized regression tests and any tests the agent adds. For feature-addition tasks, a pass means that the patched repository preserves the tested pre-existing behavior and satisfies the agent-added checks for the requested feature. We evaluate seven coding agents spanning three frontier model families and one open-weight model. Pass rates under this criterion range from $64.8\\%$ for the strongest agent to $22.1\\%$ for the weakest. Agents pass different subsets of tasks: pairwise Cohen's $κ$ ranges from $-0.07$ to $0.43$, with $κ= 0.05$ for the two strongest agents.",
+      "authors": [
+        "Bobby Yan",
+        "Fredrik Kjolstad"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-06-04T01:42:40Z",
+      "updated": "2026-06-04T01:42:40Z",
+      "announced_date": "2026-06-04",
+      "first_seen": "2026-06-04",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.05570v1",
+        "pdf": "https://arxiv.org/pdf/2606.05570v1",
+        "html": "https://arxiv.org/html/2606.05570"
+      },
+      "score": 19,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    }
+  ]
+}

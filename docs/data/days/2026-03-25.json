@@ -1,0 +1,256 @@
+{
+  "date": "2026-03-25",
+  "count": 4,
+  "report": {
+    "date": "2026-03-25",
+    "count": 4,
+    "themes": [
+      {
+        "id": "embodied",
+        "count": 2,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On March 25, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Embodied / robotics (2), Memory (2), Coding agents (1), and Multi-agent (1).",
+      "highlights": [
+        {
+          "id": "2603.24755",
+          "title": "SlopCodeBench: Benchmarking How Coding Agents Degrade Over Long-Horizon Iterative Tasks",
+          "blurb": "Software development is iterative, yet agentic coding benchmarks hide design issues through their single-shot setup."
+        },
+        {
+          "id": "2603.23848",
+          "title": "BeliefShift: Benchmarking Temporal Belief Consistency and Opinion Drift in LLM Agents",
+          "blurb": "LLMs are increasingly used as long-running conversational agents, yet every major benchmark evaluating their memory treats user information as static facts to be stored and retrieved."
+        },
+        {
+          "id": "2603.24329",
+          "title": "GameplayQA: A Benchmarking Framework for Decision-Dense POV-Synced Multi-Video Understanding of 3D Virtual Agents",
+          "blurb": "Multimodal LLMs are increasingly deployed as perceptual backbones for autonomous agents in 3D environments, from robotics to virtual worlds."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年3月25日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在具身 / 机器人（2）、记忆（2）、代码智能体（1）、多智能体（1）。",
+      "highlights": [
+        {
+          "id": "2603.24755",
+          "title": "SlopCodeBench: Benchmarking How Coding Agents Degrade Over Long-Horizon Iterative Tasks",
+          "blurb": "Software development is iterative, yet agentic coding benchmarks hide design issues through their single-shot setup."
+        },
+        {
+          "id": "2603.23848",
+          "title": "BeliefShift: Benchmarking Temporal Belief Consistency and Opinion Drift in LLM Agents",
+          "blurb": "LLMs are increasingly used as long-running conversational agents, yet every major benchmark evaluating their memory treats user information as static facts to be stored and retrieved."
+        },
+        {
+          "id": "2603.24329",
+          "title": "GameplayQA: A Benchmarking Framework for Decision-Dense POV-Synced Multi-Video Understanding of 3D Virtual Agents",
+          "blurb": "Multimodal LLMs are increasingly deployed as perceptual backbones for autonomous agents in 3D environments, from robotics to virtual worlds."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2603.24755",
+      "title": "SlopCodeBench: Benchmarking How Coding Agents Degrade Over Long-Horizon Iterative Tasks",
+      "abstract": "Software development is iterative, yet agentic coding benchmarks hide design issues through their single-shot setup. Recent iterative benchmarks attempt to remedy this but heavily constrain an agent's design decision space, making it impossible to faithfully measure how their decisions shape future extensions. We introduce SlopCodeBench, a benchmark of 36 problems and 196 checkpoints where agents repeatedly extend their own solutions. Unlike prior iterative benchmarks, our evolving specifications demand architectural decisions but leave internal structure to the agent. We measure two forms of degradation: structural erosion (concentrated complexity) and verbosity (redundant code). Evaluating 15 coding agents across open and closed models, we find that no agent fully solves any problem end-to-end, and the best agent passes 14.8% of checkpoints. Quality degrades across checkpoints, with structural erosion rising in 77% of trajectories and verbosity in 75.5%. Compared to 473 open-source Python repositories, agent code is 2.3x more verbose and 2.0x more eroded, and the human repositories degrade less often and by smaller margins across their git histories. Explicit quality guidance reduces initial verbosity and erosion by up to a third, without affecting degradation rates. SlopCodeBench provides the first measurement of code degradation under iterative extension, revealing that agents pass checkpoints while producing code that erodes and bloats with each turn.",
+      "authors": [
+        "Gabriel Orlanski",
+        "Devjeet Roy",
+        "Alexander Yun",
+        "Changho Shin",
+        "Alex Gu",
+        "Albert Ge",
+        "Dyah Adila",
+        "Nicholas Roberts",
+        "Frederic Sala",
+        "Aws Albarghouthi"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-03-25T19:26:44Z",
+      "updated": "2026-05-07T20:39:58Z",
+      "announced_date": "2026-03-25",
+      "first_seen": "2026-03-25",
+      "comment": "Code and Leaderboards are located at https://www.scbench.ai",
+      "doi": "10.5281/zenodo.18405900,",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.24755v2",
+        "pdf": "https://arxiv.org/pdf/2603.24755v2",
+        "html": "https://arxiv.org/html/2603.24755"
+      },
+      "score": 20,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 15
+    },
+    {
+      "id": "2603.24329",
+      "title": "GameplayQA: A Benchmarking Framework for Decision-Dense POV-Synced Multi-Video Understanding of 3D Virtual Agents",
+      "abstract": "Multimodal LLMs are increasingly deployed as perceptual backbones for autonomous agents in 3D environments, from robotics to virtual worlds. These applications require agents to perceive rapid state changes, attribute actions to the correct entities, and reason about concurrent multi-agent behaviors from a first-person perspective, capabilities that existing benchmarks do not adequately evaluate. We introduce GameplayQA, a framework for evaluating agentic-centric perception and reasoning through video understanding. Specifically, we densely annotate multiplayer 3D gameplay videos at 1.22 labels/second, with time-synced, concurrent captions of states, actions, and events structured around a triadic system of Self, Other Agents, and the World, a natural decomposition for multi-agent environments. From these annotations, we refined 2.4K diagnostic QA pairs organized into three levels of cognitive complexity, accompanied by a structured distractor taxonomy that enables fine-grained analysis of where models hallucinate. Evaluation of frontier MLLMs reveals a substantial gap from human performance, with common failures in temporal and cross-video grounding, agent-role attribution, and handling the decision density of the game. We hope GameplayQA stimulates future research at the intersection of embodied AI, agentic perception, and world modeling.",
+      "authors": [
+        "Yunzhe Wang",
+        "Runhui Xu",
+        "Kexin Zheng",
+        "Tianyi Zhang",
+        "Jayavibhav Niranjan Kogundi",
+        "Soham Hans",
+        "Volkan Ustun"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-03-25T14:10:45Z",
+      "updated": "2026-04-12T23:43:39Z",
+      "announced_date": "2026-03-25",
+      "first_seen": "2026-03-25",
+      "comment": "Accepted to the Annual Meeting of the Association for Computational Linguistics (ACL 2026)",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.24329v2",
+        "pdf": "https://arxiv.org/pdf/2603.24329v2",
+        "html": "https://arxiv.org/html/2603.24329"
+      },
+      "score": 14,
+      "tags": [
+        "multi-agent",
+        "embodied",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multi-agent",
+      "citations": 2
+    },
+    {
+      "id": "2603.23848",
+      "title": "BeliefShift: Benchmarking Temporal Belief Consistency and Opinion Drift in LLM Agents",
+      "abstract": "LLMs are increasingly used as long-running conversational agents, yet every major benchmark evaluating their memory treats user information as static facts to be stored and retrieved. That's the wrong model. People change their minds, and over extended interactions, phenomena like opinion drift, over-alignment, and confirmation bias start to matter a lot. BeliefShift introduces a longitudinal benchmark designed specifically to evaluate belief dynamics in multi-session LLM interactions. It covers three tracks: Temporal Belief Consistency, Contradiction Detection, and Evidence-Driven Revision. The dataset includes 2,400 human-annotated multi-session interaction trajectories spanning health, politics, personal values, and product preferences. We evaluate seven models including GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, LLaMA-3, and Mistral-Large under zero-shot and retrieval-augmented generation (RAG) settings. Results reveal a clear trade-off: models that personalize aggressively resist drift poorly, while factually grounded models miss legitimate belief updates. We further introduce four novel evaluation metrics: Belief Revision Accuracy (BRA), Drift Coherence Score (DCS), Contradiction Resolution Rate (CRR), and Evidence Sensitivity Index (ESI).",
+      "authors": [
+        "Praveen Kumar Myakala",
+        "Manan Agrawal",
+        "Rahul Manche"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CY"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-03-25T02:09:35Z",
+      "updated": "2026-03-25T02:09:35Z",
+      "announced_date": "2026-03-25",
+      "first_seen": "2026-03-25",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.23848v1",
+        "pdf": "https://arxiv.org/pdf/2603.23848v1",
+        "html": "https://arxiv.org/html/2603.23848"
+      },
+      "score": 14,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 6
+    },
+    {
+      "id": "2603.23840",
+      "title": "VehicleMemBench: An Executable Benchmark for Multi-User Long-Term Memory in In-Vehicle Agents",
+      "abstract": "With the growing demand for intelligent in-vehicle experiences, vehicle-based agents are evolving from simple assistants to long-term companions. This evolution requires agents to continuously model multi-user preferences and make reliable decisions in the face of inter-user preference conflicts and changing habits over time. However, existing benchmarks are largely limited to single-user, static question-answer settings, failing to capture the temporal evolution of preferences and the multi-user, tool-interactive nature of real vehicle environments. To address this gap, we introduce VehicleMemBench, a multi-user long-context memory benchmark built on an executable in-vehicle simulation environment. The benchmark evaluates tool use and memory by comparing the post-action environment state with a predefined target state, enabling objective and reproducible evaluation without LLM-based or human scoring. VehicleMemBench includes 23 tool modules, and each sample contains over 80 historical memory events. Experiments show that powerful models perform well on direct instruction tasks but struggle in scenarios involving memory evolution, particularly when user preferences change dynamically. Even advanced memory systems struggle to handle domain-specific memory requirements in this environment. These findings highlight the need for more robust and specialized memory management mechanisms to support long-term adaptive decision-making in real-world in-vehicle systems. To facilitate future research, we release the data and code.",
+      "authors": [
+        "Yuhao Chen",
+        "Yi Xu",
+        "Xinyun Ding",
+        "Xiang Fang",
+        "Shuochen Liu",
+        "Luxi Lin",
+        "Qingyu Zhang",
+        "Ya Li",
+        "Quan Liu",
+        "Tong Xu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-25T01:54:28Z",
+      "updated": "2026-03-25T01:54:28Z",
+      "announced_date": "2026-03-25",
+      "first_seen": "2026-03-25",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.23840v1",
+        "pdf": "https://arxiv.org/pdf/2603.23840v1",
+        "html": "https://arxiv.org/html/2603.23840"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use",
+        "embodied",
+        "safety",
+        "memory"
+      ],
+      "field": "embodied",
+      "citations": 1
+    }
+  ]
+}

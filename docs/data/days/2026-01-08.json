@@ -1,0 +1,159 @@
+{
+  "date": "2026-01-08",
+  "count": 2,
+  "report": {
+    "date": "2026-01-08",
+    "count": 2,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On January 8, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Planning / reasoning (2), Tool use (1), Safety (1), and Multi-agent (1).",
+      "highlights": [
+        {
+          "id": "2601.05039",
+          "title": "FinDeepForecast: A Live Multi-Agent System for Benchmarking Deep Research Agents in Financial Forecasting",
+          "blurb": "Deep Research (DR) Agents powered by advanced Large Language Models (LLMs) have fundamentally shifted the paradigm for completing complex research tasks."
+        },
+        {
+          "id": "2601.05101",
+          "title": "Arabic Prompts with English Tools: A Benchmark",
+          "blurb": "Large Language Models (LLMs) are now integral to numerous industries, increasingly serving as the core reasoning engine for autonomous agents that perform complex tasks through tool-use."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年1月8日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在规划 / 推理（2）、工具使用（1）、安全（1）、多智能体（1）。",
+      "highlights": [
+        {
+          "id": "2601.05039",
+          "title": "FinDeepForecast: A Live Multi-Agent System for Benchmarking Deep Research Agents in Financial Forecasting",
+          "blurb": "Deep Research (DR) Agents powered by advanced Large Language Models (LLMs) have fundamentally shifted the paradigm for completing complex research tasks."
+        },
+        {
+          "id": "2601.05101",
+          "title": "Arabic Prompts with English Tools: A Benchmark",
+          "blurb": "Large Language Models (LLMs) are now integral to numerous industries, increasingly serving as the core reasoning engine for autonomous agents that perform complex tasks through tool-use."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2601.05101",
+      "title": "Arabic Prompts with English Tools: A Benchmark",
+      "abstract": "Large Language Models (LLMs) are now integral to numerous industries, increasingly serving as the core reasoning engine for autonomous agents that perform complex tasks through tool-use. While the development of Arabic-native LLMs is accelerating, the benchmarks for evaluating their capabilities lag behind, with most existing frameworks focusing on English. A critical and overlooked area is tool-calling, where the performance of models prompted in non-English languages like Arabic is poorly understood, especially since these models are often pretrained on predominantly English data. This paper addresses this critical gap by introducing the first dedicated benchmark for evaluating the tool-calling and agentic capabilities of LLMs in the Arabic language. Our work provides a standardized framework to measure the functional accuracy and robustness of models in Arabic agentic workflows. Our findings reveal a huge performance gap: when users interact in Arabic, tool-calling accuracy drops by an average of 5-10\\%, regardless of whether the tool descriptions themselves are in Arabic or English. By shedding light on these critical challenges, this benchmark aims to foster the development of more reliable and linguistically equitable AI agents for Arabic-speaking users.",
+      "authors": [
+        "Konstantin Kubrak",
+        "Ahmed El-Moselhy",
+        "Ammar Alsulami",
+        "Remaz Altuwaim",
+        "Hassan Ismail Fawaz",
+        "Faisal Alsaby"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-01-08T16:47:09Z",
+      "updated": "2026-01-08T16:47:09Z",
+      "announced_date": "2026-01-08",
+      "first_seen": "2026-01-08",
+      "comment": "10 pages, 10 figures, LLMs, Big Data, and Multilinguality for All (LLMs4All) Workshop at IEEE BigData 2025 Conference, Macau, December 10, 2025",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.05101v1",
+        "pdf": "https://arxiv.org/pdf/2601.05101v1",
+        "html": "https://arxiv.org/html/2601.05101"
+      },
+      "score": 15,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2601.05039",
+      "title": "FinDeepForecast: A Live Multi-Agent System for Benchmarking Deep Research Agents in Financial Forecasting",
+      "abstract": "Deep Research (DR) Agents powered by advanced Large Language Models (LLMs) have fundamentally shifted the paradigm for completing complex research tasks. Yet, a comprehensive and live evaluation of their forecasting performance on real-world, research-oriented tasks in high-stakes domains (e.g., finance) remains underexplored. We introduce FinDeepForecast, the first live, end-to-end multi-agent system for automatically evaluating DR agents by continuously generating research-oriented financial forecasting tasks. This system is equipped with a dual-track taxonomy, enabling the dynamic generation of recurrent and non-recurrent forecasting tasks at both corporate and macro levels. With this system, we generate FinDeepForecastBench, a weekly evaluation benchmark over a ten-week horizon, encompassing 8 global economies and 1,314 listed companies, and evaluate 13 representative methods. Extensive experiments show that, while DR agents consistently outperform strong baselines, their performance still falls short of genuine forward-looking financial reasoning. We expect the proposed FinDeepForecast system to consistently facilitate future advancements of DR agents in research-oriented financial forecasting tasks. The benchmark and leaderboard are publicly available on the OpenFinArena Platform.",
+      "authors": [
+        "Xiangyu Li",
+        "Xuan Yao",
+        "Guohao Qi",
+        "Fengbin Zhu",
+        "Kelvin J. L. Koa",
+        "Xiang Yao Ng",
+        "Ziyang Liu",
+        "Xingyu Ni",
+        "Chang Liu",
+        "Yonghui Yang",
+        "Yang Zhang",
+        "Wenjie Wang",
+        "Fuli Feng",
+        "Chao Wang",
+        "Huanbo Luan",
+        "Xiaofen Xing",
+        "Xiangmin Xu",
+        "Tat-Seng Chua",
+        "Ke-Wei Huang"
+      ],
+      "categories": [
+        "cs.MA"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-01-08T15:45:09Z",
+      "updated": "2026-01-08T15:45:09Z",
+      "announced_date": "2026-01-08",
+      "first_seen": "2026-01-08",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.05039v1",
+        "pdf": "https://arxiv.org/pdf/2601.05039v1",
+        "html": "https://arxiv.org/html/2601.05039"
+      },
+      "score": 20,
+      "tags": [
+        "multi-agent",
+        "planning",
+        "research"
+      ],
+      "field": "multi-agent",
+      "citations": 4
+    }
+  ]
+}

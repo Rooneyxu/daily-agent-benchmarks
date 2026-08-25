@@ -1,0 +1,190 @@
+{
+  "date": "2026-01-07",
+  "count": 3,
+  "report": {
+    "date": "2026-01-07",
+    "count": 3,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "3 new agent benchmarks",
+      "summary": "On January 7, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Planning / reasoning (2), Coding agents (1), Memory (1), and Multimodal (1).",
+      "highlights": [
+        {
+          "id": "2601.03731",
+          "title": "From Laboratory to Real-World Applications: Benchmarking Agentic Code Reasoning at the Repository Level",
+          "blurb": "As large language models (LLMs) evolve into autonomous agents, evaluating repository-level reasoning, the ability to maintain logical consistency across massive, real-world, interdependent file systems, has become critic…"
+        },
+        {
+          "id": "2601.03515",
+          "title": "Mem-Gallery: Benchmarking Multimodal Long-Term Conversational Memory for MLLM Agents",
+          "blurb": "Long-term memory is a critical capability for multimodal large language model (MLLM) agents, particularly in conversational settings where information accumulates and evolves over time."
+        },
+        {
+          "id": "2601.03540",
+          "title": "DeepSynth-Eval: Objectively Evaluating Information Consolidation in Deep Survey Writing",
+          "blurb": "The evolution of Large Language Models (LLMs) towards autonomous agents has catalyzed progress in Deep Research."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年1月7日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在规划 / 推理（2）、代码智能体（1）、记忆（1）、多模态（1）。",
+      "highlights": [
+        {
+          "id": "2601.03731",
+          "title": "From Laboratory to Real-World Applications: Benchmarking Agentic Code Reasoning at the Repository Level",
+          "blurb": "As large language models (LLMs) evolve into autonomous agents, evaluating repository-level reasoning, the ability to maintain logical consistency across massive, real-world, interdependent file systems, has become critic…"
+        },
+        {
+          "id": "2601.03515",
+          "title": "Mem-Gallery: Benchmarking Multimodal Long-Term Conversational Memory for MLLM Agents",
+          "blurb": "Long-term memory is a critical capability for multimodal large language model (MLLM) agents, particularly in conversational settings where information accumulates and evolves over time."
+        },
+        {
+          "id": "2601.03540",
+          "title": "DeepSynth-Eval: Objectively Evaluating Information Consolidation in Deep Survey Writing",
+          "blurb": "The evolution of Large Language Models (LLMs) towards autonomous agents has catalyzed progress in Deep Research."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2601.03731",
+      "title": "From Laboratory to Real-World Applications: Benchmarking Agentic Code Reasoning at the Repository Level",
+      "abstract": "As large language models (LLMs) evolve into autonomous agents, evaluating repository-level reasoning, the ability to maintain logical consistency across massive, real-world, interdependent file systems, has become critical. Current benchmarks typically fluctuate between isolated code snippets and black-box evaluations. We present RepoReason, a white-box diagnostic benchmark centered on abductive assertion verification. To eliminate memorization while preserving authentic logical depth, we implement an execution-driven mutation framework that utilizes the environment as a semantic oracle to regenerate ground-truth states. Furthermore, we establish a fine-grained diagnostic system using dynamic program slicing, quantifying reasoning via three orthogonal metrics: $ESV$ (reading load), $MCL$ (simulation depth), and $DFI$ (integration width). Comprehensive evaluations of frontier models (e.g., Claude-4.5-Sonnet, DeepSeek-v3.1-Terminus) reveal a prevalent aggregation deficit, where integration width serves as the primary cognitive bottleneck. Our findings provide granular white-box insights for optimizing the next generation of agentic software engineering.",
+      "authors": [
+        "Jia Li",
+        "Yuxin Su",
+        "Michael R. Lyu"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-01-07T09:22:28Z",
+      "updated": "2026-05-03T08:05:20Z",
+      "announced_date": "2026-01-07",
+      "first_seen": "2026-01-07",
+      "comment": "Accepted by ACL 26 main",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.03731v3",
+        "pdf": "https://arxiv.org/pdf/2601.03731v3",
+        "html": "https://arxiv.org/html/2601.03731"
+      },
+      "score": 15,
+      "tags": [
+        "coding",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 6
+    },
+    {
+      "id": "2601.03540",
+      "title": "DeepSynth-Eval: Objectively Evaluating Information Consolidation in Deep Survey Writing",
+      "abstract": "The evolution of Large Language Models (LLMs) towards autonomous agents has catalyzed progress in Deep Research. While retrieval capabilities are well-benchmarked, the post-retrieval synthesis stage--where agents must digest massive amounts of context and consolidate fragmented evidence into coherent, long-form reports--remains under-evaluated due to the subjectivity of open-ended writing. To bridge this gap, we introduce DeepSynth-Eval, a benchmark designed to objectively evaluate information consolidation capabilities. We leverage high-quality survey papers as gold standards, reverse-engineering research requests and constructing \"Oracle Contexts\" from their bibliographies to isolate synthesis from retrieval noise. We propose a fine-grained evaluation protocol using General Checklists (for factual coverage) and Constraint Checklists (for structural organization), transforming subjective judgment into verifiable metrics. Experiments across 96 tasks reveal that synthesizing information from hundreds of references remains a significant challenge. Our results demonstrate that agentic plan-and-write workflows significantly outperform single-turn generation, effectively reducing hallucinations and improving adherence to complex structural constraints.",
+      "authors": [
+        "Hongzhi Zhang",
+        "Yuanze Hu",
+        "Tinghai Zhang",
+        "Jia Fu",
+        "Tao Wang",
+        "Junwei Jing",
+        "Zhaoxin Fan",
+        "Qi Wang",
+        "Ruiming Tang",
+        "Han Li",
+        "Guorui Zhou",
+        "Kun Gai"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-01-07T03:07:52Z",
+      "updated": "2026-01-07T03:07:52Z",
+      "announced_date": "2026-01-07",
+      "first_seen": "2026-01-07",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.03540v1",
+        "pdf": "https://arxiv.org/pdf/2601.03540v1",
+        "html": "https://arxiv.org/html/2601.03540"
+      },
+      "score": 11,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2601.03515",
+      "title": "Mem-Gallery: Benchmarking Multimodal Long-Term Conversational Memory for MLLM Agents",
+      "abstract": "Long-term memory is a critical capability for multimodal large language model (MLLM) agents, particularly in conversational settings where information accumulates and evolves over time. However, existing benchmarks either evaluate multi-session memory in text-only conversations or assess multimodal understanding within localized contexts, failing to evaluate how multimodal memory is preserved, organized, and evolved across long-term conversational trajectories. Thus, we introduce Mem-Gallery, a new benchmark for evaluating multimodal long-term conversational memory in MLLM agents. Mem-Gallery features high-quality multi-session conversations grounded in both visual and textual information, with long interaction horizons and rich multimodal dependencies. Building on this dataset, we propose a systematic evaluation framework that assesses key memory capabilities along three functional dimensions: memory extraction and test-time adaptation, memory reasoning, and memory knowledge management. Extensive benchmarking across thirteen memory systems reveals several key findings, highlighting the necessity of explicit multimodal information retention and memory organization, the persistent limitations in memory reasoning and knowledge management, as well as the efficiency bottleneck of current models.",
+      "authors": [
+        "Yuanchen Bei",
+        "Tianxin Wei",
+        "Xuying Ning",
+        "Yanjun Zhao",
+        "Zhining Liu",
+        "Xiao Lin",
+        "Yada Zhu",
+        "Hendrik Hamann",
+        "Jingrui He",
+        "Hanghang Tong"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-01-07T02:03:13Z",
+      "updated": "2026-01-07T02:03:13Z",
+      "announced_date": "2026-01-07",
+      "first_seen": "2026-01-07",
+      "comment": "34 pages, 18 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2601.03515v1",
+        "pdf": "https://arxiv.org/pdf/2601.03515v1",
+        "html": "https://arxiv.org/html/2601.03515"
+      },
+      "score": 14,
+      "tags": [
+        "memory",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 32
+    }
+  ]
+}

@@ -1,0 +1,532 @@
+{
+  "date": "2026-02-13",
+  "count": 9,
+  "report": {
+    "date": "2026-02-13",
+    "count": 9,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 6,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "tool-use",
+        "count": 5,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 4,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "science",
+        "count": 2,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      }
+    ],
+    "en": {
+      "headline": "9 new agent benchmarks",
+      "summary": "On February 13, 2026, arXiv listed 9 new agent benchmarks. Work clustered around Safety (6), Tool use (5), Planning / reasoning (4), and Multimodal (2).",
+      "highlights": [
+        {
+          "id": "2602.12984",
+          "title": "SciAgentGym: Benchmarking Multi-Step Scientific Tool-use in LLM Agents",
+          "blurb": "Scientific reasoning inherently demands integrating sophisticated toolkits to navigate domain-specific knowledge."
+        },
+        {
+          "id": "2602.12876",
+          "title": "BrowseComp-$V^3$: A Visual, Vertical, and Verifiable Benchmark for Multimodal Browsing Agents",
+          "blurb": "Multimodal large language models (MLLMs), equipped with increasingly advanced planning and tool-use capabilities, are evolving into autonomous agents capable of performing multimodal web browsing and deep search in open-…"
+        },
+        {
+          "id": "2602.12670",
+          "title": "SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks",
+          "blurb": "Agent Skills are structured packages of procedural knowledge that augment large language model (LLM) agents at inference time."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 9 篇 Agent Benchmark",
+      "summary": "2026年2月13日，arXiv 新增 9 篇 Agent Benchmark。当日主题集中在安全（6）、工具使用（5）、规划 / 推理（4）、多模态（2）。",
+      "highlights": [
+        {
+          "id": "2602.12984",
+          "title": "SciAgentGym: Benchmarking Multi-Step Scientific Tool-use in LLM Agents",
+          "blurb": "Scientific reasoning inherently demands integrating sophisticated toolkits to navigate domain-specific knowledge."
+        },
+        {
+          "id": "2602.12876",
+          "title": "BrowseComp-$V^3$: A Visual, Vertical, and Verifiable Benchmark for Multimodal Browsing Agents",
+          "blurb": "Multimodal large language models (MLLMs), equipped with increasingly advanced planning and tool-use capabilities, are evolving into autonomous agents capable of performing multimodal web browsing and deep search in open-…"
+        },
+        {
+          "id": "2602.12670",
+          "title": "SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks",
+          "blurb": "Agent Skills are structured packages of procedural knowledge that augment large language model (LLM) agents at inference time."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2602.13179",
+      "title": "Fix Before Search: Benchmarking Agentic Query Visual Pre-processing in Multimodal Retrieval-augmented Generation",
+      "abstract": "Multimodal Retrieval-Augmented Generation (MRAG) has emerged as a key paradigm for grounding MLLMs with external knowledge. While query pre-processing (e.g., rewriting) is standard in text-based RAG, existing MRAG pipelines predominantly treat visual inputs as static and immutable, implicitly assuming they are noise-free. However, real-world visual queries are often ``imperfect'' -- suffering from geometric distortions, quality degradation, or semantic ambiguity -- leading to catastrophic retrieval failures. To address this gap, we propose V-QPP-Bench, the first comprehensive benchmark dedicated to Visual Query Pre-processing (V-QPP). We formulate V-QPP as an agentic decision-making task where MLLMs must autonomously diagnose imperfections and deploy perceptual tools to refine queries. Our extensive evaluation across 46,700 imperfect queries and diverse MRAG paradigms reveals three critical insights: (1) Vulnerability -- visual imperfections severely degrade both retrieval recall and end-to-end MRAG performance; (2) Restoration Potential \\& Bottleneck -- while oracle preprocessing recovers near-perfect performance, off-the-shelf MLLMs struggle with tool selection and parameter prediction without specialized training; and (3) Training Enhancement -- supervised fine-tuning enables compact models to achieve comparable or superior performance to larger proprietary models, demonstrating the benchmark's value for developing robust MRAG systems The code is available at https://github.com/phycholosogy/VQQP_Bench",
+      "authors": [
+        "Jiankun Zhang",
+        "Shenglai Zeng",
+        "Kai Guo",
+        "Xinnan Dai",
+        "Hui Liu",
+        "Jiliang Tang",
+        "Yi Chang"
+      ],
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-13T18:39:48Z",
+      "updated": "2026-02-13T18:39:48Z",
+      "announced_date": "2026-02-13",
+      "first_seen": "2026-02-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.13179v1",
+        "pdf": "https://arxiv.org/pdf/2602.13179v1",
+        "html": "https://arxiv.org/html/2602.13179"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "safety",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 1
+    },
+    {
+      "id": "2602.13379",
+      "title": "Unsafer in Many Turns: Benchmarking and Defending Multi-Turn Safety Risks in Tool-Using Agents",
+      "abstract": "LLM-based agents are becoming increasingly capable, yet their safety lags behind. This creates a gap between what agents can do and should do. This gap widens as agents engage in multi-turn interactions and employ diverse tools, introducing new risks overlooked by existing benchmarks. To systematically scale safety testing into multi-turn, tool-realistic settings, we propose a principled taxonomy that transforms single-turn harmful tasks into multi-turn attack sequences. Using this taxonomy, we construct MT-AgentRisk (Multi-Turn Agent Risk Benchmark), the first benchmark to evaluate multi-turn tool-using agent safety. Our experiments reveal substantial safety degradation: the Attack Success Rate (ASR) increases by 16% on average across open and closed models in multi-turn settings. To close this gap, we propose ToolShield, a training-free, tool-agnostic, self-exploration defense: when encountering a new tool, the agent autonomously generates test cases, executes them to observe downstream effects, and distills safety experiences for deployment. Experiments show that ToolShield effectively reduces ASR by 30% on average in multi-turn interactions. Our code is available at https://github.com/CHATS-lab/ToolShield.",
+      "authors": [
+        "Xu Li",
+        "Simon Yu",
+        "Minzhou Pan",
+        "Yiyou Sun",
+        "Bo Li",
+        "Dawn Song",
+        "Xue Lin",
+        "Weiyan Shi"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-02-13T18:38:18Z",
+      "updated": "2026-06-10T21:28:47Z",
+      "announced_date": "2026-02-13",
+      "first_seen": "2026-02-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.13379v2",
+        "pdf": "https://arxiv.org/pdf/2602.13379v2",
+        "html": "https://arxiv.org/html/2602.13379"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "safety",
+        "science"
+      ],
+      "field": "safety",
+      "citations": 16
+    },
+    {
+      "id": "2602.13059",
+      "title": "TraceBack: Multi-Agent Decomposition for Fine-Grained Table Attribution",
+      "abstract": "Question answering (QA) over structured tables requires not only accurate answers but also transparency about which cells support them. Existing table QA systems rarely provide fine-grained attribution, so even correct answers often lack verifiable grounding, limiting trust in high-stakes settings. We address this with TraceBack, a modular multi-agent framework for scalable, cell-level attribution in single-table QA. TraceBack prunes tables to relevant rows and columns, decomposes questions into semantically coherent sub-questions, and aligns each answer span with its supporting cells, capturing both explicit and implicit evidence used in intermediate reasoning steps. To enable systematic evaluation, we release CITEBench, a benchmark with phrase-to-cell annotations drawn from ToTTo, FetaQA, and AITQA. We further propose FairScore, a reference-less metric that compares atomic facts derived from predicted cells and answers to estimate attribution precision and recall without human cell labels. Experiments show that TraceBack substantially outperforms strong baselines across datasets and granularities, while FairScore closely tracks human judgments and preserves relative method rankings, supporting interpretable and scalable evaluation of table-based QA.",
+      "authors": [
+        "Tejas Anvekar",
+        "Junha Park",
+        "Rajat Jha",
+        "Devanshu Gupta",
+        "Poojah Ganesan",
+        "Puneeth Mathur",
+        "Vivek Gupta"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-13T16:13:36Z",
+      "updated": "2026-02-13T16:13:36Z",
+      "announced_date": "2026-02-13",
+      "first_seen": "2026-02-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.13059v1",
+        "pdf": "https://arxiv.org/pdf/2602.13059v1",
+        "html": "https://arxiv.org/html/2602.13059"
+      },
+      "score": 12,
+      "tags": [
+        "multi-agent",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2602.13372",
+      "title": "MoralityGym: A Benchmark for Evaluating Hierarchical Moral Alignment in Sequential Decision-Making Agents",
+      "abstract": "Evaluating moral alignment in agents navigating conflicting, hierarchically structured human norms is a critical challenge at the intersection of AI safety, moral philosophy, and cognitive science. We introduce Morality Chains, a novel formalism for representing moral norms as ordered deontic constraints, and MoralityGym, a benchmark of 98 ethical-dilemma problems presented as trolley-dilemma-style Gymnasium environments. By decoupling task-solving from moral evaluation and introducing a novel Morality Metric, MoralityGym allows the integration of insights from psychology and philosophy into the evaluation of norm-sensitive reasoning. Baseline results with Safe RL methods reveal key limitations, underscoring the need for more principled approaches to ethical decision-making. This work provides a foundation for developing AI systems that behave more reliably, transparently, and ethically in complex real-world contexts.",
+      "authors": [
+        "Simon Rosen",
+        "Siddarth Singh",
+        "Ebenezer Gelo",
+        "Helen Sarah Robertson",
+        "Ibrahim Suder",
+        "Victoria Williams",
+        "Benjamin Rosman",
+        "Geraud Nangue Tasse",
+        "Steven James"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-13T15:40:32Z",
+      "updated": "2026-05-21T13:32:14Z",
+      "announced_date": "2026-02-13",
+      "first_seen": "2026-02-13",
+      "comment": "Accepted at AAMAS 2026",
+      "doi": "10.65109/SAKL6648",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.13372v2",
+        "pdf": "https://arxiv.org/pdf/2602.13372v2",
+        "html": "https://arxiv.org/html/2602.13372"
+      },
+      "score": 14,
+      "tags": [
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 3
+    },
+    {
+      "id": "2602.12984",
+      "title": "SciAgentGym: Benchmarking Multi-Step Scientific Tool-use in LLM Agents",
+      "abstract": "Scientific reasoning inherently demands integrating sophisticated toolkits to navigate domain-specific knowledge. Yet, current benchmarks largely overlook agents' ability to orchestrate tools for such rigorous workflows. To bridge this gap, we introduce SciAgentGym, a scalable interactive environment featuring 1,780 domain-specific tools across four natural science disciplines, supported by a robust execution infrastructure. Complementing this, we present SciAgentBench, a tiered evaluation suite designed to stress-test agentic capabilities from elementary actions to long-horizon workflows. Our evaluation identifies a critical bottleneck: state-of-the-art models still struggle with complex scientific tool-use, and their performance degrades substantially as interaction horizons extend. To address this, we propose SciForge, a data synthesis method that models the tool action space as a dependency graph to generate logic-aware training trajectories. By fine-tuning on these trajectories, our SciAgent-8B outperforms the significantly larger Qwen3-VL-235B-Instruct while exhibiting positive cross-domain transfer of scientific tool-use capabilities. These results underscore the promising potential of next-generation autonomous scientific agents.",
+      "authors": [
+        "Yujiong Shen",
+        "Yajie Yang",
+        "Zhiheng Xi",
+        "Binze Hu",
+        "Huayu Sha",
+        "Jiazheng Zhang",
+        "Qiyuan Peng",
+        "Junlin Shang",
+        "Jixuan Huang",
+        "Yutao Fan",
+        "Jingqi Tong",
+        "Shihan Dou",
+        "Ming Zhang",
+        "Lei Bai",
+        "Zhenfei Yin",
+        "Tao Gui",
+        "Xingjun Ma",
+        "Qi Zhang",
+        "Xuanjing Huang",
+        "Yu-Gang Jiang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-13T14:58:18Z",
+      "updated": "2026-05-30T12:51:16Z",
+      "announced_date": "2026-02-13",
+      "first_seen": "2026-02-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.12984v2",
+        "pdf": "https://arxiv.org/pdf/2602.12984v2",
+        "html": "https://arxiv.org/html/2602.12984"
+      },
+      "score": 22,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning",
+        "science"
+      ],
+      "field": "science",
+      "citations": 6
+    },
+    {
+      "id": "2602.12876",
+      "title": "BrowseComp-$V^3$: A Visual, Vertical, and Verifiable Benchmark for Multimodal Browsing Agents",
+      "abstract": "Multimodal large language models (MLLMs), equipped with increasingly advanced planning and tool-use capabilities, are evolving into autonomous agents capable of performing multimodal web browsing and deep search in open-world environments. However, existing benchmarks for multimodal browsing remain limited in task complexity, evidence accessibility, and evaluation granularity, hindering comprehensive and reproducible assessments of deep search capabilities. To address these limitations, we introduce BrowseComp-$V^3$, a novel benchmark consisting of 300 carefully curated and challenging questions spanning diverse domains. The benchmark emphasizes deep, multi-level, and cross-modal multi-hop reasoning, where critical evidence is interleaved across textual and visual modalities within and across web pages. All supporting evidence is strictly required to be publicly searchable, ensuring fairness and reproducibility. Beyond final-answer accuracy, we incorporate an expert-validated, subgoal-driven process evaluation mechanism that enables fine-grained analysis of intermediate reasoning behaviors and systematic characterization of capability boundaries. In addition, we propose OmniSeeker, a unified multimodal browsing agent framework integrating diverse web search and visual perception tools. Comprehensive experiments demonstrate that even state-of-the-art models achieve only 36% accuracy on our benchmark, revealing critical bottlenecks in multimodal information integration and fine-grained perception. Our results highlight a fundamental gap between current model capabilities and robust multimodal deep search in real-world settings.",
+      "authors": [
+        "Huanyao Zhang",
+        "Jiepeng Zhou",
+        "Bo Li",
+        "Bowen Zhou",
+        "Yanzhe Shan",
+        "Haishan Lu",
+        "Zhiyong Cao",
+        "Jiaoyang Chen",
+        "Yuqian Han",
+        "Zinan Sheng",
+        "Zhengwei Tao",
+        "Hao Liang",
+        "Jialong Wu",
+        "Yang Shi",
+        "Yuanpeng He",
+        "Jiaye Lin",
+        "Qintong Zhang",
+        "Guochen Yan",
+        "Runhao Zhao",
+        "Zhengpin Li",
+        "Xiaohan Yu",
+        "Lang Mei",
+        "Chong Chen",
+        "Wentao Zhang",
+        "Bin Cui"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-13T12:25:13Z",
+      "updated": "2026-02-24T15:07:52Z",
+      "announced_date": "2026-02-13",
+      "first_seen": "2026-02-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.12876v2",
+        "pdf": "https://arxiv.org/pdf/2602.12876v2",
+        "html": "https://arxiv.org/html/2602.12876"
+      },
+      "score": 16,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 5
+    },
+    {
+      "id": "2604.06185",
+      "title": "Benchmarking LLM Tool-Use in the Wild",
+      "abstract": "Fulfilling user needs through Large Language Model multi-turn, multi-step tool-use is rarely a straightforward process. Real user interactions are inherently wild, being intricate, messy, and flexible. We identify three key challenges from user behaviour: compositional tasks that demand efficient orchestration of tool-call topologies, implicit intent spread across dialogue turns that require contextual inference, and instruction transition, which mixes task queries, clarifications, and casual conversation, forcing LLMs to adjust their policies on the fly. Existing benchmarks overlook these behaviors, making the apparent progress of LLMs on tool-use spurious. To address this, we introduce WildToolBench, an LLM tool-use benchmark grounded in real-world user behavior patterns. Comprehensive evaluations of 57 LLMs reveal that no model achieves an accuracy of more than 15%, indicating a substantial gap in the robustness of LLMs' agentic ability. Controlled experiments and in-depth analyses further indicate that the real challenge for LLM tool-use lies not in artificially complex tasks, but in the wild nature of user behavior, emphasizing the need to reconsider the interactions among LLMs, users, and tools.",
+      "authors": [
+        "Peijie Yu",
+        "Wei Liu",
+        "Yifan Yang",
+        "Jinjian Li",
+        "Zelong Zhang",
+        "Xiao Feng",
+        "Feng Zhang"
+      ],
+      "categories": [
+        "cs.HC",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-13T08:55:46Z",
+      "updated": "2026-02-13T08:55:46Z",
+      "announced_date": "2026-02-13",
+      "first_seen": "2026-02-13",
+      "comment": "accepted by ICLR 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.06185v1",
+        "pdf": "https://arxiv.org/pdf/2604.06185v1",
+        "html": "https://arxiv.org/html/2604.06185"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use",
+        "safety",
+        "conversation"
+      ],
+      "field": "tool-use",
+      "citations": 11
+    },
+    {
+      "id": "2602.12670",
+      "title": "SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks",
+      "abstract": "Agent Skills are structured packages of procedural knowledge that augment large language model (LLM) agents at inference time. Despite rapid adoption, there is no standard way to measure whether they actually help. We present SkillsBench, a benchmark whose current inventory contains 87 tasks across 8 domains paired with curated Skills and deterministic verifiers. Our latest aggregate evaluation runs the 87-task benchmark under matched no-Skills and curated-Skills conditions for 18 model-harness configurations. Curated Skills raise the average pass rate from 33.9% to 50.5% (+16.6 percentage points; 25.5% normalized gain), with configuration-level gains ranging from +4.1 to +25.7 pp. Focused Skills with at most three modules outperform larger or exhaustive bundles, and smaller models with Skills can match larger models without them. SkillsBench establishes paired evaluation as the foundation for rigorous measurement of Skill efficacy on agentic, expertise-heavy work.",
+      "authors": [
+        "Xiangyi Li",
+        "Yimin Liu",
+        "Wenbo Chen",
+        "Bingran You",
+        "Zonglin Di",
+        "Yifeng He",
+        "Shenghan Zheng",
+        "Kyoung Whan Choe",
+        "Jiankai Sun",
+        "Shuyi Wang",
+        "Chujun Tao",
+        "Binxu Li",
+        "Xuandong Zhao",
+        "Hejia Geng",
+        "Xiaojun Wu",
+        "Junwei Zhou",
+        "Xiaokun Chen",
+        "Hanwen Xing",
+        "Yubo Li",
+        "Qunhong Zeng",
+        "Di Wang",
+        "Yuanli Wang",
+        "Roey Ben Chaim",
+        "Penghao Jiang",
+        "Haotian Shen",
+        "Luyang Kong",
+        "Xinyi Liu",
+        "Runhui Wang",
+        "Xuanqing Liu",
+        "Jiachen Li",
+        "Xin Lan",
+        "Yueqian Lin",
+        "Wengao Ye",
+        "Junwei He",
+        "Songlin Li",
+        "Yue Zhang",
+        "Yipeng Gao",
+        "Yijiang Li",
+        "Ze Ma",
+        "Liqiang Jing",
+        "Tianyu Wang",
+        "Kaixin Li",
+        "Yiqi Xue",
+        "Haoran Lyu",
+        "Yizhuo He",
+        "Yuchen Tian",
+        "Shutong Wu",
+        "Bowei Wang",
+        "Yixuan Gao",
+        "Bo Chen",
+        "Litong Liu",
+        "Sikai Cheng",
+        "Jiajun Bao",
+        "Shuaicheng Tong",
+        "Shuwen Xu",
+        "Terry Yue Zhuo",
+        "Tinghan Ye",
+        "Qi Qi",
+        "Miao Li",
+        "Longtai Liao",
+        "Zelin Tan",
+        "Chang Shi",
+        "Xilin Tang",
+        "Srinath Tankasala",
+        "Boqin Yuan",
+        "Yaoyao Qian",
+        "Jianhong Tu",
+        "Chenguang Wang",
+        "Yizhou Sun",
+        "Wei Wang",
+        "Aaron Taylor",
+        "Ziyue Yang",
+        "Changkun Guan",
+        "Zhikang Dong",
+        "Xinyu Zhang",
+        "Steven Dillmann",
+        "Han-chung Lee",
+        "Dawn Song"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-13T07:06:06Z",
+      "updated": "2026-06-14T21:21:07Z",
+      "announced_date": "2026-02-13",
+      "first_seen": "2026-02-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.12670v4",
+        "pdf": "https://arxiv.org/pdf/2602.12670v4",
+        "html": "https://arxiv.org/html/2602.12670"
+      },
+      "score": 16,
+      "tags": [],
+      "field": "other",
+      "citations": 201
+    },
+    {
+      "id": "2602.12631",
+      "title": "AI Agents for Inventory Control: Human-LLM-OR Complementarity",
+      "abstract": "Inventory control is a fundamental operations problem in which ordering decisions are traditionally guided by theoretically grounded operations research (OR) algorithms. However, such algorithms often rely on rigid modeling assumptions and can perform poorly when demand distributions shift or relevant contextual information is unavailable. Recent advances in large language models (LLMs) have generated interest in AI agents that can reason flexibly and incorporate rich contextual signals, but it remains unclear how best to incorporate LLM-based methods into traditional decision-making pipelines. We study how OR algorithms, LLMs, and humans can interact and complement each other in a multi-period inventory control setting. We construct InventoryBench, a benchmark of over 1,000 inventory instances spanning both synthetic and real-world demand data, designed to stress-test decision rules under demand shifts, seasonality, and uncertain lead times. Through this benchmark, we find that OR-augmented LLM methods outperform either method in isolation, suggesting that these methods are complementary rather than substitutes. We further investigate the role of humans through a controlled classroom experiment that embeds LLM recommendations into a human-in-the-loop decision pipeline. Contrary to prior findings that human-AI collaboration can degrade performance, we show that, on average, human-AI teams achieve higher profits than either humans or AI agents operating alone. Beyond this population-level finding, we formalize an individual-level complementarity effect and derive a distribution-free lower bound on the fraction of individuals who benefit from AI collaboration; empirically, we find this fraction to be substantial.",
+      "authors": [
+        "Jackie Baek",
+        "Yaopeng Fu",
+        "Will Ma",
+        "Tianyi Peng"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.HC",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-13T05:23:46Z",
+      "updated": "2026-05-04T21:40:13Z",
+      "announced_date": "2026-02-13",
+      "first_seen": "2026-02-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.12631v2",
+        "pdf": "https://arxiv.org/pdf/2602.12631v2",
+        "html": "https://arxiv.org/html/2602.12631"
+      },
+      "score": 10,
+      "tags": [],
+      "field": "other",
+      "citations": 3
+    }
+  ]
+}

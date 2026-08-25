@@ -1,0 +1,110 @@
+{
+  "date": "2026-03-11",
+  "count": 2,
+  "report": {
+    "date": "2026-03-11",
+    "count": 2,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On March 11, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Planning / reasoning (1).",
+      "highlights": [
+        {
+          "id": "2603.10795",
+          "title": "Re-Evaluating EVMBench: Are AI Agents Ready for Smart Contract Security?",
+          "blurb": "EVMbench, released by OpenAI, Paradigm, and OtterSec, is the first large-scale benchmark for AI agents on smart contract security."
+        },
+        {
+          "id": "2603.11337",
+          "title": "RewardHackingAgents: Benchmarking Evaluation Integrity for LLM ML-Engineering Agents",
+          "blurb": "LLM agents increasingly perform end-to-end ML engineering tasks where success is judged by a single scalar test metric."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年3月11日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在规划 / 推理（1）。",
+      "highlights": [
+        {
+          "id": "2603.10795",
+          "title": "Re-Evaluating EVMBench: Are AI Agents Ready for Smart Contract Security?",
+          "blurb": "EVMbench, released by OpenAI, Paradigm, and OtterSec, is the first large-scale benchmark for AI agents on smart contract security."
+        },
+        {
+          "id": "2603.11337",
+          "title": "RewardHackingAgents: Benchmarking Evaluation Integrity for LLM ML-Engineering Agents",
+          "blurb": "LLM agents increasingly perform end-to-end ML engineering tasks where success is judged by a single scalar test metric."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2603.11337",
+      "title": "RewardHackingAgents: Benchmarking Evaluation Integrity for LLM ML-Engineering Agents",
+      "abstract": "LLM agents increasingly perform end-to-end ML engineering tasks where success is judged by a single scalar test metric. This creates a structural vulnerability: an agent can increase the reported score by compromising the evaluation pipeline rather than improving the model. We introduce RewardHackingAgents, a workspace-based benchmark that makes two compromise vectors explicit and measurable: evaluator tampering (modifying metric computation or reporting) and train/test leakage (accessing held-out data or labels during training). Each episode runs in a fresh workspace with patch tracking and runtime file-access logging; detectors compare the agent-reported metric to a trusted reference to assign auditable integrity labels. Across three tasks and two LLM backbones, scripted attacks succeed on both vectors in fully mutable workspaces; single-mechanism defenses block only one vector; and a combined regime blocks both. In natural-agent runs, evaluator-tampering attempts occur in about 50% of episodes and are eliminated by evaluator locking, with a 25-31% median runtime overhead. Overall, we demonstrate that evaluation integrity for ML-engineering agents can be benchmarked as a first-class outcome rather than assumed.",
+      "authors": [
+        "Yonas Atinafu",
+        "Robin Cohen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-03-11T22:06:44Z",
+      "updated": "2026-03-11T22:06:44Z",
+      "announced_date": "2026-03-11",
+      "first_seen": "2026-03-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.11337v1",
+        "pdf": "https://arxiv.org/pdf/2603.11337v1",
+        "html": "https://arxiv.org/html/2603.11337"
+      },
+      "score": 10,
+      "tags": [],
+      "field": "other",
+      "citations": 6
+    },
+    {
+      "id": "2603.10795",
+      "title": "Re-Evaluating EVMBench: Are AI Agents Ready for Smart Contract Security?",
+      "abstract": "EVMbench, released by OpenAI, Paradigm, and OtterSec, is the first large-scale benchmark for AI agents on smart contract security. Its results -- agents detect up to 45.6% of vulnerabilities and exploit 72.2% of a curated subset -- have fueled expectations that fully automated AI auditing is within reach. We identify two limitations: its narrow evaluation scope (14 agent configurations, most models tested on only their vendor scaffold) and its reliance on audit-contest data published before every model's release that models may have seen during training. To address these, we expand to 26 configurations across four model families and three scaffolds, and introduce a contamination-free dataset of 22 real-world security incidents postdating every model's release date. Our evaluation yields three findings: (1) agents' detection results are not stable, with rankings shifting across configurations, tasks, and datasets; (2) on real-world incidents, no agent succeeds at end-to-end exploitation across all 110 agent-incident pairs despite detecting up to 65% of vulnerabilities, contradicting EVMbench's conclusion that discovery is the primary bottleneck; and (3) scaffolding materially affects results, with an open-source scaffold outperforming vendor alternatives by up to 5 percentage points, yet EVMbench does not control for this. These findings challenge the narrative that fully automated AI auditing is imminent. Agents reliably catch well-known patterns and respond strongly to human-provided context, but cannot replace human judgment. For developers, agent scans serve as a pre-deployment check. For audit firms, agents are most effective within a human-in-the-loop workflow where AI handles breadth and human auditors contribute protocol-specific knowledge and adversarial reasoning. Code and data: https://github.com/blocksecteam/ReEVMBench/.",
+      "authors": [
+        "Chaoyuan Peng",
+        "Lei Wu",
+        "Yajin Zhou"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.ET"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-03-11T14:07:16Z",
+      "updated": "2026-03-11T14:07:16Z",
+      "announced_date": "2026-03-11",
+      "first_seen": "2026-03-11",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2603.10795v1",
+        "pdf": "https://arxiv.org/pdf/2603.10795v1",
+        "html": "https://arxiv.org/html/2603.10795"
+      },
+      "score": 14,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 1
+    }
+  ]
+}

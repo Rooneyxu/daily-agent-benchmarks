@@ -1,0 +1,275 @@
+{
+  "date": "2026-04-18",
+  "count": 5,
+  "report": {
+    "date": "2026-04-18",
+    "count": 5,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 4,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "5 new agent benchmarks",
+      "summary": "On April 18, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Planning / reasoning (4), Tool use (2), Multi-agent (1), and Research agents (1).",
+      "highlights": [
+        {
+          "id": "2604.17143",
+          "title": "SeekerGym: A Benchmark for Reliable Information Seeking",
+          "blurb": "Despite their substantial successes, AI agents continue to face fundamental challenges in terms of trustworthiness."
+        },
+        {
+          "id": "2604.16813",
+          "title": "PersonalHomeBench: Evaluating Agents in Personalized Smart Homes",
+          "blurb": "Agentic AI systems are rapidly advancing toward real-world applications, yet their readiness in complex and personalized environments remains insufficiently characterized."
+        },
+        {
+          "id": "2604.17019",
+          "title": "Mini-BEHAVIOR-Gran: Revealing U-Shaped Effects of Instruction Granularity on Language-Guided Embodied Agents",
+          "blurb": "Instruction granularity is an important yet poorly controlled variable in language-guided embodied AI."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年4月18日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在规划 / 推理（4）、工具使用（2）、多智能体（1）、科研智能体（1）。",
+      "highlights": [
+        {
+          "id": "2604.17143",
+          "title": "SeekerGym: A Benchmark for Reliable Information Seeking",
+          "blurb": "Despite their substantial successes, AI agents continue to face fundamental challenges in terms of trustworthiness."
+        },
+        {
+          "id": "2604.16813",
+          "title": "PersonalHomeBench: Evaluating Agents in Personalized Smart Homes",
+          "blurb": "Agentic AI systems are rapidly advancing toward real-world applications, yet their readiness in complex and personalized environments remains insufficiently characterized."
+        },
+        {
+          "id": "2604.17019",
+          "title": "Mini-BEHAVIOR-Gran: Revealing U-Shaped Effects of Instruction Granularity on Language-Guided Embodied Agents",
+          "blurb": "Instruction granularity is an important yet poorly controlled variable in language-guided embodied AI."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.17159",
+      "title": "Systematic Capability Benchmarking of Frontier Large Language Models for Offensive Cyber Tasks",
+      "abstract": "We present, to our knowledge, the most comprehensive cross-model evaluation of LLM agents on offensive cybersecurity tasks, benchmarking 10 frontier models from 7 providers on all 200 challenges of the NYU CTF Bench. Building on the D-CIPHER multi-agent framework, we extend it with multi-provider backend support, a custom Kali Linux environment with over 100 pre-installed penetration testing tools, and runtime tool-discovery agents. Through a controlled factorial study, we find that the Kali Linux environment yields a +9.5 percentage-point improvement over Ubuntu, while auto-prompting and category-specific tips often degrade performance in well-equipped environments. Among models, Claude 4.5 Opus achieves the highest solve rate (59%), followed by Gemini 3 Pro (52%), with Gemini 3 Flash offering the best cost-efficiency at $0.05 per solve. Asymmetric planner/executor model assignments provide no meaningful benefit while coherent same-model configurations consistently outperform mixed-tier pairings. Our results indicate that environment tooling and model selection emerge as the strongest drivers of performance, whereas prompt engineering interventions show diminishing or negative returns in well-equipped environments. Reported performance reflects both model reasoning ability and compatibility with agent tooling and API integration.",
+      "authors": [
+        "Tyler H. Merves",
+        "Michael H. Conaway",
+        "Joseph M. Escobar",
+        "Hakan T. Otal",
+        "Unal Tatar"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-04-18T22:13:23Z",
+      "updated": "2026-04-18T22:13:23Z",
+      "announced_date": "2026-04-18",
+      "first_seen": "2026-04-18",
+      "comment": "6 pages, 4 figures. Submitted to the IEEE Systems and Information Engineering Design Symposium (SIEDS)",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.17159v1",
+        "pdf": "https://arxiv.org/pdf/2604.17159v1",
+        "html": "https://arxiv.org/html/2604.17159"
+      },
+      "score": 10,
+      "tags": [
+        "tool-use",
+        "multi-agent",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 2
+    },
+    {
+      "id": "2604.17143",
+      "title": "SeekerGym: A Benchmark for Reliable Information Seeking",
+      "abstract": "Despite their substantial successes, AI agents continue to face fundamental challenges in terms of trustworthiness. Consider deep research agents, tasked with searching for information relevant to a given topic-while AI agents can perform effective information retrieval, there is little guarantee regarding the completeness of this information. Gaps in retrieved information can leave biases that mislead users even if the information they are given is correct and relevant. We introduce SeekerGym, a benchmark designed to evaluate the completeness of information retrieved by AI agents. In addition, SeekerGym also measures how well agents quantify their uncertainty in the completeness of their information; if an agent fails to retrieve all relevant information, it is useful for it to at least quantify how much might be missing. At a high level, each task in SeekerGym is a document (e.g., a Wikipedia article), and the AI agent must issue queries to retrieve passages from that document. Intuitively, the document comprehensively covers a topic, so the ability to retrieve its sections directly measures completeness of information retrieval. In addition to Wikipedia, we also consider machine learning survey papers, where the goal is to retrieve relevant sections of a survey paper. We benchmark several models and algorithms; the best approaches retrieve 42.5% of passages on Wikipedia and 29.2% on ML Surveys, leaving substantial room for improvement.",
+      "authors": [
+        "Remy Kim",
+        "Minseung Lee",
+        "Shuo Li",
+        "Osbert Bastani"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-04-18T20:33:58Z",
+      "updated": "2026-04-18T20:33:58Z",
+      "announced_date": "2026-04-18",
+      "first_seen": "2026-04-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.17143v1",
+        "pdf": "https://arxiv.org/pdf/2604.17143v1",
+        "html": "https://arxiv.org/html/2604.17143"
+      },
+      "score": 19,
+      "tags": [
+        "research"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2604.17133",
+      "title": "If Only My CGM Could Speak: A Privacy-Preserving Agent for Question Answering over Continuous Glucose Data",
+      "abstract": "Continuous glucose monitors (CGMs) used in diabetes care collect rich personal health data that could improve day-to-day self-management. However, current patient platforms only offer static summaries which do not support inquisitive user queries. Large language models (LLMs) could enable free-form inquiries about continuous glucose data, but deploying them over sensitive health records raises privacy and accuracy concerns. In this paper, we present CGM-Agent, a privacy-preserving framework for question answering over personal glucose data. In our design, the LLM serves purely as a reasoning engine that selects analytical functions. All computation occurs locally, and personal health data never leaves the user's device. For evaluation, we construct a benchmark of 4,180 questions combining parameterized question templates with real user queries and ground truth derived from deterministic program execution. Evaluating 6 leading LLMs, we find that top models achieve 94\\% value accuracy on synthetic queries and 88\\% on ambiguous real-world queries. Errors stem primarily from intent and temporal ambiguity rather than computational failures. Additionally, lightweight models achieve competitive performance in our agent design, suggesting opportunities for low-cost deployment. We release our code and benchmark to support future work on trustworthy health agents.",
+      "authors": [
+        "Yanjun Cui",
+        "Ali Emami",
+        "Temiloluwa Prioleau",
+        "Nikhil Singh"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-18T20:18:58Z",
+      "updated": "2026-04-18T20:18:58Z",
+      "announced_date": "2026-04-18",
+      "first_seen": "2026-04-18",
+      "comment": "Accepted by ACL Findings 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.17133v1",
+        "pdf": "https://arxiv.org/pdf/2604.17133v1",
+        "html": "https://arxiv.org/html/2604.17133"
+      },
+      "score": 6,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2604.17019",
+      "title": "Mini-BEHAVIOR-Gran: Revealing U-Shaped Effects of Instruction Granularity on Language-Guided Embodied Agents",
+      "abstract": "Instruction granularity is an important yet poorly controlled variable in language-guided embodied AI. Existing benchmarks typically pair each task with a single static instruction, making it difficult to study how agent behavior changes when the same task is described at different levels of detail. We introduce Mini-BEHAVIOR-Gran, a new benchmark for controlled studies of instruction granularity that extends Mini-BEHAVIOR with multiple instruction variants per task, ranging from high-level goal descriptions to step-by-step guidance. Using this benchmark, we compare four candidate metrics for cross-task granularity quantification: token count, entity count, action-verb count, and planning-width, and find that width correlates most consistently with agent performance. Using width to organize training and evaluation further reveals a non-monotonic U-shaped relationship between instruction granularity and performance, with peaks at both fine and coarse extremes. Further analysis suggests that the coarse-granularity performance rebound is associated with shallow grounding, where agents learn vision-dominant policies.",
+      "authors": [
+        "Sukai Huang",
+        "Chenyuan Zhang",
+        "Fucai Ke",
+        "Zhixi Cai",
+        "Gholamreza Haffari",
+        "Lizhen Qu",
+        "Hamid Rezatofighi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-18T14:57:51Z",
+      "updated": "2026-04-18T14:57:51Z",
+      "announced_date": "2026-04-18",
+      "first_seen": "2026-04-18",
+      "comment": "23 pages, Keywords: Language Grounding, Language Granularity, Instruction Following Agent, Width-based Planning Research Area: Multimodality and Language Grounding to Vision, Robotics and Beyond Research Area Keywords: vision language navigation, multimodality, neurosymbolic approaches",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.17019v1",
+        "pdf": "https://arxiv.org/pdf/2604.17019v1",
+        "html": "https://arxiv.org/html/2604.17019"
+      },
+      "score": 11,
+      "tags": [
+        "embodied",
+        "planning"
+      ],
+      "field": "embodied",
+      "citations": 0
+    },
+    {
+      "id": "2604.16813",
+      "title": "PersonalHomeBench: Evaluating Agents in Personalized Smart Homes",
+      "abstract": "Agentic AI systems are rapidly advancing toward real-world applications, yet their readiness in complex and personalized environments remains insufficiently characterized. To address this gap, we introduce PersonalHomeBench, a benchmark for evaluating foundation models as agentic assistants in personalized smart home environments. The benchmark is constructed through an iterative process that progressively builds rich household states, which are then used to generate personalized, context-dependent tasks. To support realistic agent-environment interaction, we provide PersonalHomeTools, a comprehensive toolbox enabling household information retrieval, appliance control, and situational understanding. PersonalHomeBench evaluates both reactive and proactive agentic abilities under unimodal and multimodal observations. Thorough experimentation reveals a systematic performance reduction as task complexity increases, with pronounced failures in counterfactual reasoning and under partial observability, where effective tool-based information gathering is required. These results position PersonalHomeBench as a rigorous evaluation platform for analyzing the robustness and limitations of personalized agentic reasoning and planning.",
+      "authors": [
+        "Manasa Bharadwaj",
+        "Yolanda Liu",
+        "InJung Yang",
+        "Sungil Kim",
+        "Nikhil Verma",
+        "KoKeun Kim",
+        "Kevin Ferreira",
+        "YoungJoon Kim"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.DB"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-18T03:53:22Z",
+      "updated": "2026-05-13T21:16:49Z",
+      "announced_date": "2026-04-18",
+      "first_seen": "2026-04-18",
+      "comment": "Please use and cite the V3 version of this work, which includes updated correct author ordering and expanded error analysis in the appendix",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.16813v3",
+        "pdf": "https://arxiv.org/pdf/2604.16813v3",
+        "html": "https://arxiv.org/html/2604.16813"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 1
+    }
+  ]
+}

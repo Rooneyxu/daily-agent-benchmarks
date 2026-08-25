@@ -1,0 +1,349 @@
+{
+  "date": "2026-02-02",
+  "count": 6,
+  "report": {
+    "date": "2026-02-02",
+    "count": 6,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 4,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      }
+    ],
+    "en": {
+      "headline": "6 new agent benchmarks",
+      "summary": "On February 2, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Safety (4), Planning / reasoning (3), Coding agents (2), and Research agents (1).",
+      "highlights": [
+        {
+          "id": "2602.01675",
+          "title": "TRIP-Bench: A Benchmark for Long-Horizon Interactive Agents in Real-World Scenarios",
+          "blurb": "As LLM-based agents are deployed in increasingly complex real-world settings, existing benchmarks underrepresent key challenges such as enforcing global constraints, coordinating multi-tool reasoning, and adapting to evo…"
+        },
+        {
+          "id": "2602.02455",
+          "title": "Drift-Bench: Diagnosing Cooperative Breakdowns in LLM Agents under Input Faults via Multi-Turn Interaction",
+          "blurb": "As Large Language Models transition to autonomous agents, user inputs frequently violate cooperative assumptions (e.g., implicit intent, missing parameters, false presuppositions, or ambiguous expressions), creating exec…"
+        },
+        {
+          "id": "2602.02905",
+          "title": "FIRE-Bench: Evaluating AI Agents on the Rediscovery of Scientific Insights",
+          "blurb": "Autonomous agents powered by large language models (LLMs) promise to accelerate scientific discovery end-to-end, but rigorously evaluating their capacity for verifiable discovery remains a central challenge."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 6 篇 Agent Benchmark",
+      "summary": "2026年2月2日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在安全（4）、规划 / 推理（3）、代码智能体（2）、科研智能体（1）。",
+      "highlights": [
+        {
+          "id": "2602.01675",
+          "title": "TRIP-Bench: A Benchmark for Long-Horizon Interactive Agents in Real-World Scenarios",
+          "blurb": "As LLM-based agents are deployed in increasingly complex real-world settings, existing benchmarks underrepresent key challenges such as enforcing global constraints, coordinating multi-tool reasoning, and adapting to evo…"
+        },
+        {
+          "id": "2602.02455",
+          "title": "Drift-Bench: Diagnosing Cooperative Breakdowns in LLM Agents under Input Faults via Multi-Turn Interaction",
+          "blurb": "As Large Language Models transition to autonomous agents, user inputs frequently violate cooperative assumptions (e.g., implicit intent, missing parameters, false presuppositions, or ambiguous expressions), creating exec…"
+        },
+        {
+          "id": "2602.02905",
+          "title": "FIRE-Bench: Evaluating AI Agents on the Rediscovery of Scientific Insights",
+          "blurb": "Autonomous agents powered by large language models (LLMs) promise to accelerate scientific discovery end-to-end, but rigorously evaluating their capacity for verifiable discovery remains a central challenge."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2602.02905",
+      "title": "FIRE-Bench: Evaluating AI Agents on the Rediscovery of Scientific Insights",
+      "abstract": "Autonomous agents powered by large language models (LLMs) promise to accelerate scientific discovery end-to-end, but rigorously evaluating their capacity for verifiable discovery remains a central challenge. Existing benchmarks face a trade-off: they either heavily rely on LLM-as-judge evaluations of automatically generated research outputs or optimize convenient yet isolated performance metrics that provide coarse proxies for scientific insight. To address this gap, we introduce FIRE-Bench (Full-cycle Insight Rediscovery Evaluation), a benchmark that evaluates agents through the rediscovery of established findings from recent, high-impact machine learning research. Agents are given only a high-level research question extracted from a published, verified study and must autonomously explore ideas, design experiments, implement code, execute their plans, and derive conclusions supported by empirical evidence. We evaluate a range of state-of-the-art agents with frontier LLMs backbones like gpt-5 on FIRE-Bench. Our results show that full-cycle scientific research remains challenging for current agent systems: even the strongest agents achieve limited rediscovery success (<50 F1), exhibit high variance across runs, and display recurring failure modes in experimental design, execution, and evidence-based reasoning. FIRE-Bench provides a rigorous and diagnostic framework for measuring progress toward reliable agent-driven scientific discovery.",
+      "authors": [
+        "Zhen Wang",
+        "Fan Bai",
+        "Zhongyan Luo",
+        "Jinyan Su",
+        "Kaiser Sun",
+        "Xinle Yu",
+        "Jieyuan Liu",
+        "Kun Zhou",
+        "Claire Cardie",
+        "Mark Dredze",
+        "Zhiting Hu",
+        "Eric P. Xing"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-02T23:21:13Z",
+      "updated": "2026-07-10T18:07:40Z",
+      "announced_date": "2026-02-02",
+      "first_seen": "2026-02-02",
+      "comment": "34 pages, 3 figures, 16 tables; ICML 2026 Camera-ready Version",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.02905v2",
+        "pdf": "https://arxiv.org/pdf/2602.02905v2",
+        "html": "https://arxiv.org/html/2602.02905"
+      },
+      "score": 21,
+      "tags": [
+        "planning",
+        "research",
+        "science"
+      ],
+      "field": "science",
+      "citations": 2
+    },
+    {
+      "id": "2602.02455",
+      "title": "Drift-Bench: Diagnosing Cooperative Breakdowns in LLM Agents under Input Faults via Multi-Turn Interaction",
+      "abstract": "As Large Language Models transition to autonomous agents, user inputs frequently violate cooperative assumptions (e.g., implicit intent, missing parameters, false presuppositions, or ambiguous expressions), creating execution risks that text-only evaluations do not capture. Existing benchmarks typically assume well-specified instructions or restrict evaluation to text-only, single-turn clarification, and thus do not measure multi-turn disambiguation under grounded execution risk. We introduce \\textbf{Drift-Bench}, the first diagnostic benchmark that evaluates agentic pragmatics under input faults through multi-turn clarification across state-oriented and service-oriented execution environments. Grounded in classical theories of communication, \\textbf{Drift-Bench} provides a unified taxonomy of cooperative breakdowns and employs a persona-driven user simulator with the \\textbf{Rise} evaluation protocol. Experiments show substantial performance drops under these faults, with clarification effectiveness varying across user personas and fault types. \\MethodName bridges clarification research and agent safety evaluation, enabling systematic diagnosis of failures that can lead to unsafe executions.",
+      "authors": [
+        "Han Bao",
+        "Zheyuan Zhang",
+        "Pengcheng Jing",
+        "Zhengqing Yuan",
+        "Kaiwen Shi",
+        "Yanfang Ye"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-02T18:46:16Z",
+      "updated": "2026-02-02T18:46:16Z",
+      "announced_date": "2026-02-02",
+      "first_seen": "2026-02-02",
+      "comment": "65 pages, 40 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.02455v1",
+        "pdf": "https://arxiv.org/pdf/2602.02455v1",
+        "html": "https://arxiv.org/html/2602.02455"
+      },
+      "score": 21,
+      "tags": [
+        "safety"
+      ],
+      "field": "other",
+      "citations": 8
+    },
+    {
+      "id": "2602.02262",
+      "title": "OmniCode: A Benchmark for Evaluating Software Engineering Agents",
+      "abstract": "LLM-powered coding agents are redefining how real-world software is developed. To drive the research towards better coding agents, we require challenging benchmarks that can rigorously evaluate the ability of such agents to perform various software engineering tasks. However, popular coding benchmarks such as HumanEval and SWE-Bench focus on narrowly scoped tasks such as competition programming and patch generation. In reality, software engineers have to handle a broader set of tasks for real-world software development. To address this gap, we propose OmniCode, a novel software engineering benchmark that contains a broader and more diverse set of task categories beyond code or patch generation. Overall, OmniCode contains 1794 tasks spanning three programming languages - Python, Java, and C++ - and four key categories: bug fixing, test generation, code review fixing, and style fixing. In contrast to prior software engineering benchmarks, the tasks in OmniCode are (1) manually validated to eliminate ill-defined problems, and (2) synthetically crafted or recently curated to avoid data leakage issues, presenting a new framework for synthetically generating diverse software tasks from limited real-world data. We evaluate OmniCode with popular agent frameworks such as SWE-Agent and show that while they may perform well on bug fixing for Python, they fall short on tasks such as Test Generation and in languages such as C++ and Java. For instance, SWE-Agent achieves a maximum of 25.0% with DeepSeek-V3.1 on C++ Test Generation. OmniCode aims to serve as a robust benchmark and spur the development of agents that can perform well across different aspects of software development. Code and data are available at https://github.com/seal-research/OmniCode.",
+      "authors": [
+        "Atharv Sonwane",
+        "Eng-Shen Tu",
+        "Wei-Chung Lu",
+        "Claas Beger",
+        "Carter Larsen",
+        "Debjit Dhar",
+        "Simon Alford",
+        "Rachel Chen",
+        "Ronit Pattanayak",
+        "Tuan Anh Dang",
+        "Guohao Chen",
+        "Gloria Geng",
+        "Kevin Ellis",
+        "Saikat Dutta"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-02T16:04:10Z",
+      "updated": "2026-05-18T14:44:51Z",
+      "announced_date": "2026-02-02",
+      "first_seen": "2026-02-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.02262v3",
+        "pdf": "https://arxiv.org/pdf/2602.02262v3",
+        "html": "https://arxiv.org/html/2602.02262"
+      },
+      "score": 15,
+      "tags": [
+        "coding",
+        "safety"
+      ],
+      "field": "coding",
+      "citations": 3
+    },
+    {
+      "id": "2602.01885",
+      "title": "ES-MemEval: Benchmarking Conversational Agents on Personalized Long-Term Emotional Support",
+      "abstract": "Large Language Models (LLMs) have shown strong potential as conversational agents. Yet, their effectiveness remains limited by deficiencies in robust long-term memory, particularly in complex, long-term web-based services such as online emotional support. However, existing long-term dialogue benchmarks primarily focus on static and explicit fact retrieval, failing to evaluate agents in critical scenarios where user information is dispersed, implicit, and continuously evolving. To address this gap, we introduce ES-MemEval, a comprehensive benchmark that systematically evaluates five core memory capabilities: information extraction, temporal reasoning, conflict detection, abstention, and user modeling, in long-term emotional support settings, covering question answering, summarization, and dialogue generation tasks. To support the benchmark, we also propose EvoEmo, a multi-session dataset for personalized long-term emotional support that captures fragmented, implicit user disclosures and evolving user states. Extensive experiments on open-source long-context, commercial, and retrieval-augmented (RAG) LLMs show that explicit long-term memory is essential for reducing hallucinations and enabling effective personalization. At the same time, RAG improves factual consistency but struggles with temporal dynamics and evolving user states. These findings highlight both the potential and limitations of current paradigms and motivate more robust integration of memory and retrieval for long-term personalized dialogue systems.",
+      "authors": [
+        "Tiantian Chen",
+        "Jiaqi Lu",
+        "Ying Shen",
+        "Lin Zhang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-02T09:58:26Z",
+      "updated": "2026-02-02T09:58:26Z",
+      "announced_date": "2026-02-02",
+      "first_seen": "2026-02-02",
+      "comment": "12 pages, 7 figures. Accepted to The Web Conference (WWW) 2026",
+      "doi": "10.1145/3774904.3792143",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.01885v1",
+        "pdf": "https://arxiv.org/pdf/2602.01885v1",
+        "html": "https://arxiv.org/html/2602.01885"
+      },
+      "score": 8,
+      "tags": [
+        "safety",
+        "memory",
+        "planning",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 9
+    },
+    {
+      "id": "2602.01675",
+      "title": "TRIP-Bench: A Benchmark for Long-Horizon Interactive Agents in Real-World Scenarios",
+      "abstract": "As LLM-based agents are deployed in increasingly complex real-world settings, existing benchmarks underrepresent key challenges such as enforcing global constraints, coordinating multi-tool reasoning, and adapting to evolving user behavior over long, multi-turn interactions. To bridge this gap, we introduce \\textbf{TRIP-Bench}, a long-horizon benchmark grounded in realistic travel-planning scenarios. TRIP-Bench leverages real-world data, offers 18 curated tools and 40+ travel requirements, and supports automated evaluation. It includes splits of varying difficulty; the hard split emphasizes long and ambiguous interactions, style shifts, feasibility changes, and iterative version revision. Dialogues span up to 15 user turns, can involve 150+ tool calls, and may exceed 200k tokens of context. Experiments show that even advanced models achieve at most 50\\% success on the easy split, with performance dropping below 10\\% on hard subsets. We further propose \\textbf{GTPO}, an online multi-turn reinforcement learning method with specialized reward normalization and reward differencing. Applied to Qwen2.5-32B-Instruct, GTPO improves constraint satisfaction and interaction robustness, outperforming Gemini-3-Pro in our evaluation. We expect TRIP-Bench to advance practical long-horizon interactive agents, and GTPO to provide an effective online RL recipe for robust long-horizon training.",
+      "authors": [
+        "Yuanzhe Shen",
+        "Zisu Huang",
+        "Zhengyuan Wang",
+        "Muzhao Tian",
+        "Zhengkang Guo",
+        "Chenyang Zhang",
+        "Shuaiyu Zhou",
+        "Zengjie Hu",
+        "Dailin Li",
+        "Jingwen Xu",
+        "Kaimin Wang",
+        "Wenhao Liu",
+        "Tianlong Li",
+        "Fengpeng Yue",
+        "Feng Hong",
+        "Cao Liu",
+        "Ke Zeng"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-02T05:43:08Z",
+      "updated": "2026-02-02T05:43:08Z",
+      "announced_date": "2026-02-02",
+      "first_seen": "2026-02-02",
+      "comment": "40 pages, 6figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.01675v1",
+        "pdf": "https://arxiv.org/pdf/2602.01675v1",
+        "html": "https://arxiv.org/html/2602.01675"
+      },
+      "score": 25,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 7
+    },
+    {
+      "id": "2602.01655",
+      "title": "ProjDevBench: Benchmarking AI Coding Agents on End-to-End Project Development",
+      "abstract": "Recent coding agents can generate complete codebases from simple prompts, yet existing evaluations focus on issue-level bug fixing and lag behind end-to-end development. We introduce ProjDevBench, an end-to-end benchmark that provides project requirements to coding agents and evaluates the resulting repositories. Combining Online Judge (OJ) testing with LLM-assisted code review, the benchmark evaluates agents on (1) system architecture design, (2) functional correctness, and (3) iterative solution refinement. We curate 20 programming problems across 8 categories, covering both concept-oriented tasks and real-world application scenarios, and evaluate six coding agents built on different LLM backends. Our evaluation reports an overall acceptance rate of 27.38%: agents handle basic functionality and data structures but struggle with complex system design, time complexity optimization, and resource management. Our benchmark is available at https://github.com/zsworld6/projdevbench.",
+      "authors": [
+        "Pengrui Lu",
+        "Shiqi Zhang",
+        "Yunzhong Hou",
+        "Lyumanshan Ye",
+        "Chaoyi Huang",
+        "Zixi Chen",
+        "Ji Zeng",
+        "Hantao Jiang",
+        "Pengfei Liu",
+        "Yiwei Wang",
+        "Ming-Hsuan Yang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-02T05:17:23Z",
+      "updated": "2026-02-09T15:17:29Z",
+      "announced_date": "2026-02-02",
+      "first_seen": "2026-02-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2602.01655v2",
+        "pdf": "https://arxiv.org/pdf/2602.01655v2",
+        "html": "https://arxiv.org/html/2602.01655"
+      },
+      "score": 17,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 7
+    }
+  ]
+}

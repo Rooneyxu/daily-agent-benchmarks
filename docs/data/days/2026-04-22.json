@@ -1,0 +1,196 @@
+{
+  "date": "2026-04-22",
+  "count": 3,
+  "report": {
+    "date": "2026-04-22",
+    "count": 3,
+    "themes": [
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      }
+    ],
+    "en": {
+      "headline": "3 new agent benchmarks",
+      "summary": "On April 22, 2026, arXiv listed 3 new agent benchmarks. Work clustered around GUI agents (1), Multimodal (1), Coding agents (1), and Multi-agent (1).",
+      "highlights": [
+        {
+          "id": "2604.20273",
+          "title": "ActuBench: A Multi-Agent LLM Pipeline for Generation and Evaluation of Actuarial Reasoning Tasks",
+          "blurb": "We present ActuBench, a multi-agent LLM pipeline for the automated generation and evaluation of advanced actuarial assessment items aligned with the International Actuarial Association (IAA) Education Syllabus."
+        },
+        {
+          "id": "2604.20087",
+          "title": "SkillLearnBench: Benchmarking Continual Learning Methods for Agent Skill Generation on Real-World Tasks",
+          "blurb": "Skills have become the de facto way to enable LLM agents to perform complex real-world tasks with customized instructions, workflows, and tools, but how to learn them automatically and effectively remains unclear."
+        },
+        {
+          "id": "2604.21134",
+          "title": "Beyond Pixels: Introspective and Interactive Grounding for Visualization Agents",
+          "blurb": "Vision-Language Models (VLMs) frequently misread values, hallucinate details, and confuse overlapping elements in charts."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年4月22日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在GUI 智能体（1）、多模态（1）、代码智能体（1）、多智能体（1）。",
+      "highlights": [
+        {
+          "id": "2604.20273",
+          "title": "ActuBench: A Multi-Agent LLM Pipeline for Generation and Evaluation of Actuarial Reasoning Tasks",
+          "blurb": "We present ActuBench, a multi-agent LLM pipeline for the automated generation and evaluation of advanced actuarial assessment items aligned with the International Actuarial Association (IAA) Education Syllabus."
+        },
+        {
+          "id": "2604.20087",
+          "title": "SkillLearnBench: Benchmarking Continual Learning Methods for Agent Skill Generation on Real-World Tasks",
+          "blurb": "Skills have become the de facto way to enable LLM agents to perform complex real-world tasks with customized instructions, workflows, and tools, but how to learn them automatically and effectively remains unclear."
+        },
+        {
+          "id": "2604.21134",
+          "title": "Beyond Pixels: Introspective and Interactive Grounding for Visualization Agents",
+          "blurb": "Vision-Language Models (VLMs) frequently misread values, hallucinate details, and confuse overlapping elements in charts."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2604.21134",
+      "title": "Beyond Pixels: Introspective and Interactive Grounding for Visualization Agents",
+      "abstract": "Vision-Language Models (VLMs) frequently misread values, hallucinate details, and confuse overlapping elements in charts. Current approaches rely solely on pixel interpretation, creating a Pixel-Only Bottleneck: agents treat interactive charts as static images, losing access to the structured specification that encodes exact values. We introduce Introspective and Interactive Visual Grounding (IVG), a framework that combines (1) spec-grounded introspection, which queries the underlying specification for deterministic evidence, with (2) view-grounded interaction, which manipulates the view to resolve visual ambiguity. To enable evaluation without VLM bias, we present iPlotBench, a benchmark of 500 interactive Plotly figures with 6,706 binary questions and ground-truth specifications. Experiments show that introspection improves data reconstruction fidelity, while the combination with interaction achieves the highest QA accuracy (0.81), with +6.7 % gains on overlapping geometries. We further demonstrate IVG in deployed agents that explore data autonomously and collaborate with human users in real time.",
+      "authors": [
+        "Yiyang Lu",
+        "Woong Shin",
+        "Ahmad Maroof Karimi",
+        "Feiyi Wang",
+        "Jie Ren",
+        "Evgenia Smirni"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-04-22T22:47:23Z",
+      "updated": "2026-04-22T22:47:23Z",
+      "announced_date": "2026-04-22",
+      "first_seen": "2026-04-22",
+      "comment": "18 pages, 8 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.21134v1",
+        "pdf": "https://arxiv.org/pdf/2604.21134v1",
+        "html": "https://arxiv.org/html/2604.21134"
+      },
+      "score": 6,
+      "tags": [
+        "gui",
+        "multimodal"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2604.20273",
+      "title": "ActuBench: A Multi-Agent LLM Pipeline for Generation and Evaluation of Actuarial Reasoning Tasks",
+      "abstract": "We present ActuBench, a multi-agent LLM pipeline for the automated generation and evaluation of advanced actuarial assessment items aligned with the International Actuarial Association (IAA) Education Syllabus. The pipeline separates four LLM roles by adapter: one agent drafts items, one constructs distractors, a third independently verifies both stages and drives bounded one-shot repair loops, and a cost-optimized auxiliary agent handles Wikipedia-note summarization and topic labelling. The items, per-model responses and complete leaderboard are published as a browsable web interface at https://actubench.de/en/, allowing readers and practitioners to inspect individual items without a repository checkout. We evaluate 50 language models from eight providers on two complementary benchmarks -- 100 empirically hardest multiple-choice items and 100 open-ended items scored by an LLM judge -- and report three headline findings. First, multi-agent verification is load-bearing: the independent verifier flags a majority of drafted items on first pass, most of which the one-shot repair loop resolves. Second, locally-hosted open-weights inference sits on the cost-performance Pareto front: a Gemma~4 model running on consumer hardware and a Cerebras-hosted 120B open-weights model dominate the near-zero-cost region, with the latter within one item of the top of the leaderboard. Third, MCQ and LLM-as-Judge rankings differ meaningfully: the MCQ scaffold inflates the performance ceiling, and Judge-mode evaluation is needed to discriminate at the frontier.",
+      "authors": [
+        "Jan-Philipp Schmidt"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-04-22T07:20:03Z",
+      "updated": "2026-04-22T07:20:03Z",
+      "announced_date": "2026-04-22",
+      "first_seen": "2026-04-22",
+      "comment": "19 pages, 4 figures, 4 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.20273v1",
+        "pdf": "https://arxiv.org/pdf/2604.20273v1",
+        "html": "https://arxiv.org/html/2604.20273"
+      },
+      "score": 15,
+      "tags": [
+        "coding",
+        "multi-agent",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2604.20087",
+      "title": "SkillLearnBench: Benchmarking Continual Learning Methods for Agent Skill Generation on Real-World Tasks",
+      "abstract": "Skills have become the de facto way to enable LLM agents to perform complex real-world tasks with customized instructions, workflows, and tools, but how to learn them automatically and effectively remains unclear. We introduce SkillLearnBench, the first benchmark for evaluating continual skill learning methods, comprising 20 verified, skill-dependent tasks across 15 sub-domains derived from a real-world skill taxonomy , evaluated at three levels: skill quality, execution trajectory, and task outcome. Using this benchmark, we evaluate recent continual learning techniques, those leveraging one-shot, self/teacher feedback, and skill creator to generate skills from agent experiences. We find that all continual learning methods improve over the no-skill baseline, yet consistent gains remain elusive: no method leads across all tasks and LLMs, and scaling to stronger LLMs does not reliably help. Continual learning improves tasks with clear, reusable workflows but struggles on open-ended tasks, and using stronger LLM backbones does not consistently produce better skills. Our analysis also revealed that multiple iterations in continual learning facilitate genuine improvement via external feedback, whereas self-feedback alone induces recursive drift. Our data and code are open-source at https://github.com/cxcscmu/SkillLearnBench to enable further studies of automatic skill generation and continual learning techniques.",
+      "authors": [
+        "Shanshan Zhong",
+        "Yi Lu",
+        "Jingjie Ning",
+        "Yibing Wan",
+        "Lihan Feng",
+        "Yuyi Ao",
+        "Leonardo F. R. Ribeiro",
+        "Markus Dreyer",
+        "Sean Ammirati",
+        "Chenyan Xiong"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-04-22T01:07:37Z",
+      "updated": "2026-04-22T01:07:37Z",
+      "announced_date": "2026-04-22",
+      "first_seen": "2026-04-22",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2604.20087v1",
+        "pdf": "https://arxiv.org/pdf/2604.20087v1",
+        "html": "https://arxiv.org/html/2604.20087"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "other",
+      "citations": 33
+    }
+  ]
+}
