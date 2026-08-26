@@ -1,19 +1,19 @@
 {
   "date": "2026-08-23",
-  "count": 2,
+  "count": 3,
   "report": {
     "date": "2026-08-23",
-    "count": 2,
+    "count": 3,
     "themes": [
       {
         "id": "tool-use",
-        "count": 2,
+        "count": 3,
         "en": "Tool use",
         "zh": "工具使用"
       },
       {
         "id": "safety",
-        "count": 1,
+        "count": 2,
         "en": "Safety",
         "zh": "安全"
       },
@@ -31,13 +31,18 @@
       }
     ],
     "en": {
-      "headline": "2 new agent benchmarks",
-      "summary": "On August 23, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Tool use (2), Safety (1), Memory (1), and Work / office (1).",
+      "headline": "3 new agent benchmarks",
+      "summary": "On August 23, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Tool use (3), Safety (2), Memory (1), and Work / office (1).",
       "highlights": [
         {
           "id": "2608.22510",
           "title": "ClawProBench: Trace-Aware Evaluation of AI Agents with Runtime Coverage and Frozen Workplace-Style Holdouts",
           "blurb": "Agent benchmarks often evaluate only final answers even when agents run on stateful runtimes."
+        },
+        {
+          "id": "2608.23635",
+          "title": "ToolRobustBench: Stage-Wise Perturbation Evaluation and Failure Diagnosis for Tool-Calling Agents",
+          "blurb": "Large language models (LLMs) rely on tool calling as a fundamental agent capability, enabling them to invoke external systems and complete tasks beyond text generation."
         },
         {
           "id": "2608.22331",
@@ -47,13 +52,18 @@
       ]
     },
     "zh": {
-      "headline": "新增 2 篇 Agent Benchmark",
-      "summary": "2026年8月23日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在工具使用（2）、安全（1）、记忆（1）、职场 / 办公（1）。",
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年8月23日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在工具使用（3）、安全（2）、记忆（1）、职场 / 办公（1）。",
       "highlights": [
         {
           "id": "2608.22510",
           "title": "ClawProBench: Trace-Aware Evaluation of AI Agents with Runtime Coverage and Frozen Workplace-Style Holdouts",
           "blurb": "Agent benchmarks often evaluate only final answers even when agents run on stateful runtimes."
+        },
+        {
+          "id": "2608.23635",
+          "title": "ToolRobustBench: Stage-Wise Perturbation Evaluation and Failure Diagnosis for Tool-Calling Agents",
+          "blurb": "Large language models (LLMs) rely on tool calling as a fundamental agent capability, enabling them to invoke external systems and complete tasks beyond text generation."
         },
         {
           "id": "2608.22331",
@@ -94,6 +104,39 @@
         "workplace"
       ],
       "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2608.23635",
+      "title": "ToolRobustBench: Stage-Wise Perturbation Evaluation and Failure Diagnosis for Tool-Calling Agents",
+      "abstract": "Large language models (LLMs) rely on tool calling as a fundamental agent capability, enabling them to invoke external systems and complete tasks beyond text generation. However, clean end-to-end (E2E) success cannot identify where a tool-use failure originates or how it propagates through a call. We introduce ToolRobustBench, a stage-wise diagnostic benchmark for tool-calling agents, where a tool-calling agent is an LLM system that selects a tool, supplies structured arguments, and interprets its returned feedback. ToolRobustBench aligns four perturbation families with the tool-use pipeline: tool-interface, user-intent, tool-output/observation, and runtime-environment perturbations. It attributes failures to tool selection, schema grounding, argument binding, tool-output/runtime-feedback handling, and E2E task success. Experiments on 15,456 single-family instances across 7 models, 16 sampled local tools, 4 perturbation families, and 14 subtypes show high but non-uniform clean performance and substantial robustness degradation, with tool-output/observation perturbation the dominant bottleneck. Mixed-family experiments reveal non-additive failure patterns that are not explained by isolated single-family results. Thus, ToolRobustBench provides a deterministic and cascade-aware benchmark for diagnosing robustness beyond clean tool-calling accuracy;",
+      "authors": [
+        "YiShan Zheng",
+        "Yuan Wu",
+        "Yi Chang"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-08-23T15:22:49Z",
+      "updated": "2026-08-23T15:22:49Z",
+      "announced_date": "2026-08-23",
+      "first_seen": "2026-08-23",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.23635v1",
+        "pdf": "https://arxiv.org/pdf/2608.23635v1",
+        "html": "https://arxiv.org/html/2608.23635"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "other",
       "citations": 0
     },
     {

@@ -1,0 +1,183 @@
+{
+  "date": "2026-08-25",
+  "count": 3,
+  "report": {
+    "date": "2026-08-25",
+    "count": 3,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      }
+    ],
+    "en": {
+      "headline": "3 new agent benchmarks",
+      "summary": "On August 25, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Tool use (3), Planning / reasoning (2), Multi-agent (1), and Safety (1).",
+      "highlights": [
+        {
+          "id": "2608.24509",
+          "title": "PeakBench: Benchmarking Resource-Aware Tool Invocation in LLM Agents",
+          "blurb": "LLM agents increasingly solve tasks by invoking multiple tools, where parallel execution is essential for low latency but difficult to manage safely."
+        },
+        {
+          "id": "2608.24361",
+          "title": "Adaptive Influence Graphs for Failure Attribution in Multi-Agent Systems",
+          "blurb": "Multi-agent LLM systems are increasingly deployed in real-world applications, where failures can be costly and difficult to localize."
+        },
+        {
+          "id": "2608.24314",
+          "title": "Benchmarking LLM Judges for Voice-Agent Evaluation: Reliability, Calibration, and Human Oversight",
+          "blurb": "Evaluating conversational voice agents at scale re- quires reliable assessment methods that capture both observ- able interaction quality and the contextual judgment typically provided by human evaluators."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年8月25日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在工具使用（3）、规划 / 推理（2）、多智能体（1）、安全（1）。",
+      "highlights": [
+        {
+          "id": "2608.24509",
+          "title": "PeakBench: Benchmarking Resource-Aware Tool Invocation in LLM Agents",
+          "blurb": "LLM agents increasingly solve tasks by invoking multiple tools, where parallel execution is essential for low latency but difficult to manage safely."
+        },
+        {
+          "id": "2608.24361",
+          "title": "Adaptive Influence Graphs for Failure Attribution in Multi-Agent Systems",
+          "blurb": "Multi-agent LLM systems are increasingly deployed in real-world applications, where failures can be costly and difficult to localize."
+        },
+        {
+          "id": "2608.24314",
+          "title": "Benchmarking LLM Judges for Voice-Agent Evaluation: Reliability, Calibration, and Human Oversight",
+          "blurb": "Evaluating conversational voice agents at scale re- quires reliable assessment methods that capture both observ- able interaction quality and the contextual judgment typically provided by human evaluators."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.24509",
+      "title": "PeakBench: Benchmarking Resource-Aware Tool Invocation in LLM Agents",
+      "abstract": "LLM agents increasingly solve tasks by invoking multiple tools, where parallel execution is essential for low latency but difficult to manage safely. Existing agent benchmarks primarily evaluate tool selection, argument generation, and end-to-end success under mostly serial execution, largely overlooking valid parallelization and resource-constrained scheduling. This missing scheduling dimension creates a practical failure mode: serial execution is safe but slow, while resource-agnostic parallel execution is fast but prone to avoidable resource overflows. To address this gap, we introduce PeakBench, a benchmark of executable multi-tool workflows with execution-grounded dependency annotations and measured resource profiles. A central challenge in evaluating such workflows is attribution: failures and inefficiencies may arise from incorrect dependency planning, poor resource-constrained scheduling, or both. PeakBench addresses this challenge with a two-part evaluation framework that disentangles logical planning from physical scheduling, with dedicated metrics for each dimension. Using this framework, we show that strong logical planning does not reliably translate into safe or efficient execution under resource constraints. We further show that exposing resource information can reduce avoidable overflows and improve resource utilization, making PeakBench a useful testbed for diagnosing resource-aware agent behavior. Code is available at https://github.com/Czzzk/Staggering-the-Peaks.",
+      "authors": [
+        "Zhi-Kai Chen",
+        "Xu-Xiang Zhong",
+        "Song-Yan Li",
+        "De-Chuan Zhan",
+        "Han-Jia Ye"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-25T12:56:08Z",
+      "updated": "2026-08-25T12:56:08Z",
+      "announced_date": "2026-08-25",
+      "first_seen": "2026-08-25",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.24509v1",
+        "pdf": "https://arxiv.org/pdf/2608.24509v1",
+        "html": "https://arxiv.org/html/2608.24509"
+      },
+      "score": 21,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.24361",
+      "title": "Adaptive Influence Graphs for Failure Attribution in Multi-Agent Systems",
+      "abstract": "Multi-agent LLM systems are increasingly deployed in real-world applications, where failures can be costly and difficult to localize. Despite growing efforts to automate failure attribution, diagnosing failed runs still largely relies on human engineers. Yet engineers rarely debug complex systems by reading raw logs end to end. Instead, observability tools organize traces around components, actions, and dependencies to support targeted navigation. We hypothesize that modern LLMs can benefit from the same paradigm. To test this hypothesis, we introduce Adaptive Influence Graphs (AIGs), a two-stage agentic framework that first transforms a failed trace into a structured graph and then navigates it to identify the critical error. Across multiple models, we show that richer trace representations consistently improve failure attribution, with adaptive graph construction and agent-directed traversal yielding the strongest results. AIGs establish a new state of the art on Who&When, the standard benchmark for multi-agent failure attribution. This affirms our hypothesis that attribution depends not only on the diagnosing model, but also on how the trace is represented and explored.",
+      "authors": [
+        "Yarden Bakish",
+        "Amir Dudai",
+        "Roy Ganz",
+        "Oren Nuriel",
+        "Elad Ben Avraham",
+        "Mor Shpigel Nacson",
+        "Ron Litman"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-25T10:18:19Z",
+      "updated": "2026-08-25T10:18:19Z",
+      "announced_date": "2026-08-25",
+      "first_seen": "2026-08-25",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.24361v1",
+        "pdf": "https://arxiv.org/pdf/2608.24361v1",
+        "html": "https://arxiv.org/html/2608.24361"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "multi-agent"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2608.24314",
+      "title": "Benchmarking LLM Judges for Voice-Agent Evaluation: Reliability, Calibration, and Human Oversight",
+      "abstract": "Evaluating conversational voice agents at scale re- quires reliable assessment methods that capture both observ- able interaction quality and the contextual judgment typically provided by human evaluators. We investigate LLM-as-a-Judge evaluation by comparing human judgments with GPT-4.1 and GPT-5 on telecom and retail voice-agent conversations, across conversational quality and safety dimensions. The same interac- tions are scored under three evaluation configurations, p0, p1, and p2, to test whether automated judgments are sensitive to the evaluation setup and whether observed patterns generalize across configurations and judge models. Beyond aggregate agreement, we examine metric-level correlations, evaluator consistency, and systematic human-LLM disagreement to identify which conver- sational attributes can be judged reliably by automation and which remain sensitive to interpretation and context. Effective voice-agent evaluation is also shaped by pipeline-level factors such as speech generation, streaming, and error propagation across ASR, reasoning, and tool-calling stages, motivating our focus on comparing how human and LLM judges score the same interactions end to end. Our results show that LLM- based evaluation can serve as an effective component of large- scale voice-agent assessment, but that its reliability is metric- and configuration-dependent rather than uniform. This pro- vides an empirical framework for identifying which metrics suit automated evaluation and supports hybrid pipelines in which LLM judges handle scalable assessment while human evaluators remain engaged for metrics that demand contextual interpretation and higher-confidence judgment.",
+      "authors": [
+        "Anupam Purwar",
+        "Shashank Singh",
+        "Kritika Srivastava"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.ET"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-25T09:44:36Z",
+      "updated": "2026-08-25T09:44:36Z",
+      "announced_date": "2026-08-25",
+      "first_seen": "2026-08-25",
+      "comment": "Extends LLM-as-a-Judge to voice agents across telecom and retail, testing GPT-4.1 and GPT-5 against human raters across 10 safety and efficiency metrics. A correlation-based calibration analysis reveals domain-dependent reliability and identifies Recovery Turn Count and safety-recall metrics as unreliable for fully automated judging",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.24314v1",
+        "pdf": "https://arxiv.org/pdf/2608.24314v1",
+        "html": "https://arxiv.org/html/2608.24314"
+      },
+      "score": 6,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}
