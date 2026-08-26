@@ -173,7 +173,8 @@ a {
 }
 
 .lang button,
-.theme {
+.theme,
+.github {
   background: transparent;
   color: var(--muted);
   border: 0;
@@ -189,8 +190,20 @@ a {
   color: var(--bg);
 }
 
-.theme {
+.theme,
+.github {
   border: 1px solid var(--rule);
+}
+
+.github {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+}
+
+.github:hover {
+  color: var(--ink);
 }
 
 .shell {
@@ -596,7 +609,7 @@ a {
 }
 
 .masthead--simple {
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr auto;
 }
 
 .paper-page {
