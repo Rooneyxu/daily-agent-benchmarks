@@ -1,9 +1,9 @@
 {
   "date": "2026-08-26",
-  "count": 2,
+  "count": 3,
   "report": {
     "date": "2026-08-26",
-    "count": 2,
+    "count": 3,
     "themes": [
       {
         "id": "gui",
@@ -36,6 +36,12 @@
         "zh": "多模态"
       },
       {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
         "id": "science",
         "count": 1,
         "en": "Science lab",
@@ -43,8 +49,8 @@
       }
     ],
     "en": {
-      "headline": "2 new agent benchmarks",
-      "summary": "On August 26, 2026, arXiv listed 2 new agent benchmarks. Work clustered around GUI agents (1), Coding agents (1), Tool use (1), and Planning / reasoning (1).",
+      "headline": "3 new agent benchmarks",
+      "summary": "On August 26, 2026, arXiv listed 3 new agent benchmarks. Work clustered around GUI agents (1), Coding agents (1), Tool use (1), and Planning / reasoning (1).",
       "highlights": [
         {
           "id": "2608.25417",
@@ -55,12 +61,17 @@
           "id": "2608.25286",
           "title": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks",
           "blurb": "Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses."
+        },
+        {
+          "id": "2608.25340",
+          "title": "HRGuard: Gating Relationship Manipulation in Multi-Turn Agentic AI Conversations",
+          "blurb": "Agentic AI assistants are increasingly used in everyday life."
         }
       ]
     },
     "zh": {
-      "headline": "新增 2 篇 Agent Benchmark",
-      "summary": "2026年8月26日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在GUI 智能体（1）、代码智能体（1）、工具使用（1）、规划 / 推理（1）。",
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年8月26日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在GUI 智能体（1）、代码智能体（1）、工具使用（1）、规划 / 推理（1）。",
       "highlights": [
         {
           "id": "2608.25417",
@@ -71,6 +82,11 @@
           "id": "2608.25286",
           "title": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks",
           "blurb": "Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses."
+        },
+        {
+          "id": "2608.25340",
+          "title": "HRGuard: Gating Relationship Manipulation in Multi-Turn Agentic AI Conversations",
+          "blurb": "Agentic AI assistants are increasingly used in everyday life."
         }
       ]
     }
@@ -112,6 +128,37 @@
         "multimodal"
       ],
       "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2608.25340",
+      "title": "HRGuard: Gating Relationship Manipulation in Multi-Turn Agentic AI Conversations",
+      "abstract": "Agentic AI assistants are increasingly used in everyday life. However, they may also be misused to support harmful manipulation in interpersonal relationships. This problem is role-sensitive. Requests from users who seek to manipulate others should be blocked. Users who seek protection from manipulation should instead receive supportive guidance. We study agentic relationship harm, which describes harm to human-human relationships that is mediated or assisted by AI agents. In multi-turn settings, individually plausible actions may combine into a harmful workflow. We introduce a benchmark of 1,000 five-turn conversations. It covers both attacker-side and victim-side scenarios. It also includes direct and adversarially paraphrased variants. We further propose HRGuard. It includes an online pre-generation gate and a turn-level post-generation gate. The post-generation gate maintains a decayed cumulative risk state and interrupts emerging manipulative workflows. Across eight generation models, HRGuard reduces harmful compliance while preserving victim-side protective guidance. It also outperforms a generic safety prompt and three general-purpose guard models. Independent-judge evaluation supports the main findings. Under our evaluation protocol, the tested generic prompt and general-purpose guards leave substantial residual risk, motivating turn-aware relationship-specific evaluation.",
+      "authors": [
+        "Pei-Sze Tan",
+        "Tasuku Igarashi",
+        "Isao Echizen"
+      ],
+      "categories": [
+        "cs.HC"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-08-26T03:49:42Z",
+      "updated": "2026-08-26T03:49:42Z",
+      "announced_date": "2026-08-26",
+      "first_seen": "2026-08-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.25340v1",
+        "pdf": "https://arxiv.org/pdf/2608.25340v1",
+        "html": "https://arxiv.org/html/2608.25340"
+      },
+      "score": 15,
+      "tags": [
+        "safety"
+      ],
+      "field": "safety",
       "citations": 0
     },
     {
