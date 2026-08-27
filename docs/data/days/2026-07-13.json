@@ -1,25 +1,25 @@
 {
   "date": "2026-07-13",
-  "count": 5,
+  "count": 4,
   "report": {
     "date": "2026-07-13",
-    "count": 5,
+    "count": 4,
     "themes": [
       {
         "id": "tool-use",
-        "count": 2,
+        "count": 1,
         "en": "Tool use",
         "zh": "工具使用"
       },
       {
         "id": "safety",
-        "count": 2,
+        "count": 1,
         "en": "Safety",
         "zh": "安全"
       },
       {
         "id": "planning",
-        "count": 2,
+        "count": 1,
         "en": "Planning / reasoning",
         "zh": "规划 / 推理"
       },
@@ -37,8 +37,8 @@
       }
     ],
     "en": {
-      "headline": "5 new agent benchmarks",
-      "summary": "On July 13, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Tool use (2), Safety (2), Planning / reasoning (2), and Memory (1).",
+      "headline": "4 new agent benchmarks",
+      "summary": "On July 13, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Tool use (1), Safety (1), Planning / reasoning (1), and Memory (1).",
       "highlights": [
         {
           "id": "2607.11042",
@@ -46,20 +46,20 @@
           "blurb": "Large language models (LLMs) are increasingly used in agentic coding settings, where they can inspect files, execute commands, run tests, observe failures, and iteratively revise code."
         },
         {
-          "id": "2607.13081",
-          "title": "SingGuard-NSFA: Extensible Guardrails for Agentic AI via Generative Reasoning and Real-Time Classification",
-          "blurb": "We present nsfaguard, a guardrail framework for securing agentic AI systems against operational threats, such as prompt injection, sensitive information extraction, malicious code requests, dangerous tool misuse, and res…"
-        },
-        {
           "id": "2607.26072",
           "title": "IFCMemoryBench: Evaluating Long-Term Memory of LLM-Based Agents in BIM Information Retrieval",
           "blurb": "Long-term memory is becoming a core capability of LLM-based agents, but existing evaluations largely test conversational recall in open-domain or persona-grounded settings."
+        },
+        {
+          "id": "2607.11818",
+          "title": "MM-ToolSandBox: A Unified Framework for Evaluating Visual Tool-Calling Agents",
+          "blurb": "We introduce MM-ToolSandBox, a benchmark and evaluation framework for visually grounded tool-calling agents."
         }
       ]
     },
     "zh": {
-      "headline": "新增 5 篇 Agent Benchmark",
-      "summary": "2026年7月13日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在工具使用（2）、安全（2）、规划 / 推理（2）、记忆（1）。",
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年7月13日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在工具使用（1）、安全（1）、规划 / 推理（1）、记忆（1）。",
       "highlights": [
         {
           "id": "2607.11042",
@@ -67,14 +67,14 @@
           "blurb": "Large language models (LLMs) are increasingly used in agentic coding settings, where they can inspect files, execute commands, run tests, observe failures, and iteratively revise code."
         },
         {
-          "id": "2607.13081",
-          "title": "SingGuard-NSFA: Extensible Guardrails for Agentic AI via Generative Reasoning and Real-Time Classification",
-          "blurb": "We present nsfaguard, a guardrail framework for securing agentic AI systems against operational threats, such as prompt injection, sensitive information extraction, malicious code requests, dangerous tool misuse, and res…"
-        },
-        {
           "id": "2607.26072",
           "title": "IFCMemoryBench: Evaluating Long-Term Memory of LLM-Based Agents in BIM Information Retrieval",
           "blurb": "Long-term memory is becoming a core capability of LLM-based agents, but existing evaluations largely test conversational recall in open-domain or persona-grounded settings."
+        },
+        {
+          "id": "2607.11818",
+          "title": "MM-ToolSandBox: A Unified Framework for Evaluating Visual Tool-Calling Agents",
+          "blurb": "We introduce MM-ToolSandBox, a benchmark and evaluation framework for visually grounded tool-calling agents."
         }
       ]
     }
@@ -177,40 +177,6 @@
       "score": 10,
       "tags": [
         "memory"
-      ],
-      "field": "other",
-      "citations": 0
-    },
-    {
-      "id": "2607.13081",
-      "title": "SingGuard-NSFA: Extensible Guardrails for Agentic AI via Generative Reasoning and Real-Time Classification",
-      "abstract": "We present nsfaguard, a guardrail framework for securing agentic AI systems against operational threats, such as prompt injection, sensitive information extraction, malicious code requests, dangerous tool misuse, and resource exhaustion. We first introduce the NSFA taxonomy, which organizes 185 risk variants into a CIA-triad-grounded hierarchy and is cross-validated against three well-established OWASP guidelines. Based on this taxonomy, we construct a benchmark suite spanning 133 languages, comprising over 93K purpose-built samples targeting both user queries and agent responses, along with 3,435 cross-source samples adapted from five public agent-security datasets. To detect these operational threats in practice, we develop a dual-mode approach combining SFT-based generative reasoning for interpretable offline auditing with discriminative classification heads on the frozen backbone, enabling real-time detection at approximately 50,ms. We release four models with 0.8B, 2B, 4B, and 9B parameters, all achieving $\\geq$94% F1 on purpose-built benchmarks and surpassing the strongest competing guardrails by 6 to 12 absolute points. On cross-source evaluation, the 9B model attains 91.29% F1 with a more balanced precision--recall trade-off. Moreover, ablation experiments show that classification heads can equip a guardrail with risk detection capabilities beyond its original scope and achieve state-of-the-art performance. These results demonstrate the extensibility of the approach and its generality as a plug-in enhancement.",
-      "authors": [
-        "SingGuard Team"
-      ],
-      "categories": [
-        "cs.CR",
-        "cs.AI",
-        "cs.CL",
-        "cs.LG"
-      ],
-      "primary_category": "cs.CR",
-      "published": "2026-07-13T07:28:45Z",
-      "updated": "2026-07-13T07:28:45Z",
-      "announced_date": "2026-07-13",
-      "first_seen": "2026-07-13",
-      "comment": "",
-      "doi": "",
-      "links": {
-        "abs": "https://arxiv.org/abs/2607.13081v1",
-        "pdf": "https://arxiv.org/pdf/2607.13081v1",
-        "html": "https://arxiv.org/html/2607.13081"
-      },
-      "score": 12,
-      "tags": [
-        "tool-use",
-        "safety",
-        "planning"
       ],
       "field": "other",
       "citations": 0

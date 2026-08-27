@@ -1,9 +1,9 @@
 {
   "date": "2026-05-05",
-  "count": 3,
+  "count": 2,
   "report": {
     "date": "2026-05-05",
-    "count": 3,
+    "count": 2,
     "themes": [
       {
         "id": "coding",
@@ -22,17 +22,11 @@
         "count": 1,
         "en": "Planning / reasoning",
         "zh": "规划 / 推理"
-      },
-      {
-        "id": "tool-use",
-        "count": 1,
-        "en": "Tool use",
-        "zh": "工具使用"
       }
     ],
     "en": {
-      "headline": "3 new agent benchmarks",
-      "summary": "On May 5, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Coding agents (1), Safety (1), Planning / reasoning (1), and Tool use (1).",
+      "headline": "2 new agent benchmarks",
+      "summary": "On May 5, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Coding agents (1), Safety (1), and Planning / reasoning (1).",
       "highlights": [
         {
           "id": "2605.03596",
@@ -43,17 +37,12 @@
           "id": "2605.03952",
           "title": "MOSAIC-Bench: Measuring Compositional Vulnerability Induction in Coding Agents",
           "blurb": "Coding agents often pass per-prompt safety review yet ship exploitable code when their tasks are decomposed into routine engineering tickets."
-        },
-        {
-          "id": "2605.03378",
-          "title": "ARGUS: Defending LLM Agents Against Context-Aware Prompt Injection",
-          "blurb": "Large Language Model (LLM) agents are increasingly deployed as task-oriented software systems that use runtime context to decide and act on behalf of users."
         }
       ]
     },
     "zh": {
-      "headline": "新增 3 篇 Agent Benchmark",
-      "summary": "2026年5月5日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在代码智能体（1）、安全（1）、规划 / 推理（1）、工具使用（1）。",
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年5月5日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在代码智能体（1）、安全（1）、规划 / 推理（1）。",
       "highlights": [
         {
           "id": "2605.03596",
@@ -64,11 +53,6 @@
           "id": "2605.03952",
           "title": "MOSAIC-Bench: Measuring Compositional Vulnerability Induction in Coding Agents",
           "blurb": "Coding agents often pass per-prompt safety review yet ship exploitable code when their tasks are decomposed into routine engineering tickets."
-        },
-        {
-          "id": "2605.03378",
-          "title": "ARGUS: Defending LLM Agents Against Context-Aware Prompt Injection",
-          "blurb": "Large Language Model (LLM) agents are increasingly deployed as task-oriented software systems that use runtime context to decide and act on behalf of users."
         }
       ]
     }
@@ -159,41 +143,6 @@
       ],
       "field": "other",
       "citations": 7
-    },
-    {
-      "id": "2605.03378",
-      "title": "ARGUS: Defending LLM Agents Against Context-Aware Prompt Injection",
-      "abstract": "Large Language Model (LLM) agents are increasingly deployed as task-oriented software systems that use runtime context to decide and act on behalf of users. This delegation model makes prompt injection especially dangerous: an attacker can hide a context-aware instruction inside evidence the agent must use to decide what to do. Existing benchmarks and defenses largely miss this setting. Benchmarks often use context-insensitive tasks where the user prompt already specifies the intended action, together with generic attack payloads independent of context. Existing defenses also do not capture the causal support from runtime evidence to concrete actions, which makes them incomplete and ineffective for context-dependent tasks. We present AgentLure, a benchmark for context-dependent tasks under context-aware prompt injection. AgentLure spans four agentic domains and eight attack vectors across six attack surfaces. To defend this setting, we propose ARGUS, a causal-provenance auditor for LLM agents. Instead of relying only on tool authorization or suspicious-context detection, ARGUS verifies whether each proposed action has a complete benign causal justification. It builds an influence-provenance graph, labels runtime spans, grounds action arguments in supporting evidence, and releases an action only when benign evidence entails it and task invariants hold. On AgentLure, ARGUS reduces attack success rate from 28.8% to 3.8% while preserving 87.5% clean utility, significantly outperforming existing defenses in the security-utility tradeoff.",
-      "authors": [
-        "Shihao Weng",
-        "Yang Feng",
-        "Jinrui Zhang",
-        "Xiaofei Xie",
-        "Jiongchi Yu",
-        "Jia Liu"
-      ],
-      "categories": [
-        "cs.CR",
-        "cs.SE"
-      ],
-      "primary_category": "cs.CR",
-      "published": "2026-05-05T05:37:00Z",
-      "updated": "2026-07-08T15:04:28Z",
-      "announced_date": "2026-05-05",
-      "first_seen": "2026-05-05",
-      "comment": "14 pages",
-      "doi": "",
-      "links": {
-        "abs": "https://arxiv.org/abs/2605.03378v2",
-        "pdf": "https://arxiv.org/pdf/2605.03378v2",
-        "html": "https://arxiv.org/html/2605.03378"
-      },
-      "score": 12,
-      "tags": [
-        "tool-use"
-      ],
-      "field": "other",
-      "citations": 9
     }
   ]
 }

@@ -1,27 +1,15 @@
 {
   "date": "2026-07-08",
-  "count": 5,
+  "count": 4,
   "report": {
     "date": "2026-07-08",
-    "count": 5,
+    "count": 4,
     "themes": [
       {
         "id": "coding",
         "count": 3,
         "en": "Coding agents",
         "zh": "代码智能体"
-      },
-      {
-        "id": "tool-use",
-        "count": 1,
-        "en": "Tool use",
-        "zh": "工具使用"
-      },
-      {
-        "id": "safety",
-        "count": 1,
-        "en": "Safety",
-        "zh": "安全"
       },
       {
         "id": "multimodal",
@@ -31,8 +19,8 @@
       }
     ],
     "en": {
-      "headline": "5 new agent benchmarks",
-      "summary": "On July 8, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Coding agents (3), Tool use (1), Safety (1), and Multimodal (1).",
+      "headline": "4 new agent benchmarks",
+      "summary": "On July 8, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Coding agents (3), and Multimodal (1).",
       "highlights": [
         {
           "id": "2607.07744",
@@ -52,8 +40,8 @@
       ]
     },
     "zh": {
-      "headline": "新增 5 篇 Agent Benchmark",
-      "summary": "2026年7月8日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在代码智能体（3）、工具使用（1）、安全（1）、多模态（1）。",
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年7月8日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在代码智能体（3）、多模态（1）。",
       "highlights": [
         {
           "id": "2607.07744",
@@ -106,41 +94,6 @@
       ],
       "field": "coding",
       "citations": 13
-    },
-    {
-      "id": "2607.07774",
-      "title": "ScopeJudge: Cost-Aware Pre-Execution Gating for Offensive Security Agents",
-      "abstract": "As LLM agents take on offensive security work, a single out-of-scope tool call can breach a client's engagement boundary, disrupt production, or void a bug-bounty finding. Unlike a fixed safety policy, the boundary that matters is declared in the user's request and must be inferred from intent. That challenge is sharpened by the adversarial nature of offensive security: the same tool call is in or out of scope depending not on the action itself but on the target it touches and the context in which it runs, which no fixed policy can enumerate in advance. We study pre-execution gating: a cheap, trusted LLM judge inspects each call proposed by a strong, swappable agent, and accepts or rejects it before it runs. We introduce ScopeJudge, a benchmark of 4,897 tool calls (7.7% scope violations) from agent trajectories on tasks engineered to tempt agents out of scope and labeled at the call level by professional penetration testers, with substantial inter-grader agreement (Fleiss kappa = 0.64) that sets an expert agreement reference point of F1 = 0.78. We evaluate eight judge models under five transcript strategies, varying how much context the judge sees, from the static policy alone to the full raw transcript, and chart the resulting cost-accuracy Pareto frontier. We find that a static policy is structurally insufficient for scope enforcement: blind to the user's request, judge recall collapses to near zero, confirming that scope lives in the request and that request-conditioned monitoring is necessary. Because a missed violation costs more than a spurious rejection, we report precision, recall, and F1 separately and recommend two operating points: a cost-sensitive configuration and a recall-first one for high-stakes deployments. We release the ScopeJudge dataset to support real-time monitoring and scalable oversight of autonomous security agents.",
-      "authors": [
-        "Shane Caldwell",
-        "Max Harley",
-        "Ads Dawson",
-        "Michael Kouremetis",
-        "Vincent Abruzzo",
-        "Will Pearce"
-      ],
-      "categories": [
-        "cs.CR"
-      ],
-      "primary_category": "cs.CR",
-      "published": "2026-07-08T16:46:06Z",
-      "updated": "2026-07-30T19:01:17Z",
-      "announced_date": "2026-07-08",
-      "first_seen": "2026-07-08",
-      "comment": "22 pages, 4 figures, 4 tables, 1 link to code, 1 link to dataset",
-      "doi": "",
-      "links": {
-        "abs": "https://arxiv.org/abs/2607.07774v2",
-        "pdf": "https://arxiv.org/pdf/2607.07774v2",
-        "html": "https://arxiv.org/html/2607.07774"
-      },
-      "score": 8,
-      "tags": [
-        "tool-use",
-        "safety"
-      ],
-      "field": "other",
-      "citations": 2
     },
     {
       "id": "2607.07189",

@@ -1,13 +1,13 @@
 {
   "date": "2026-01-15",
-  "count": 3,
+  "count": 2,
   "report": {
     "date": "2026-01-15",
-    "count": 3,
+    "count": 2,
     "themes": [
       {
         "id": "planning",
-        "count": 2,
+        "count": 1,
         "en": "Planning / reasoning",
         "zh": "规划 / 推理"
       },
@@ -22,23 +22,11 @@
         "count": 1,
         "en": "Coding agents",
         "zh": "代码智能体"
-      },
-      {
-        "id": "tool-use",
-        "count": 1,
-        "en": "Tool use",
-        "zh": "工具使用"
-      },
-      {
-        "id": "safety",
-        "count": 1,
-        "en": "Safety",
-        "zh": "安全"
       }
     ],
     "en": {
-      "headline": "3 new agent benchmarks",
-      "summary": "On January 15, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Planning / reasoning (2), Research agents (1), Coding agents (1), and Tool use (1).",
+      "headline": "2 new agent benchmarks",
+      "summary": "On January 15, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Planning / reasoning (1), Research agents (1), and Coding agents (1).",
       "highlights": [
         {
           "id": "2601.10343",
@@ -49,17 +37,12 @@
           "id": "2601.10504",
           "title": "DR-Arena: an Automated Evaluation Framework for Deep Research Agents",
           "blurb": "As Large Language Models (LLMs) increasingly operate as Deep Research (DR) Agents capable of autonomous investigation and information synthesis, reliable evaluation of their task performance has become a critical bottlen…"
-        },
-        {
-          "id": "2601.10156",
-          "title": "ToolSafe: Enhancing Tool Invocation Safety of LLM-based agents via Proactive Step-level Guardrail and Feedback",
-          "blurb": "While LLM-based agents can interact with environments via invoking external tools, their expanded capabilities also amplify security risks."
         }
       ]
     },
     "zh": {
-      "headline": "新增 3 篇 Agent Benchmark",
-      "summary": "2026年1月15日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在规划 / 推理（2）、科研智能体（1）、代码智能体（1）、工具使用（1）。",
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年1月15日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在规划 / 推理（1）、科研智能体（1）、代码智能体（1）。",
       "highlights": [
         {
           "id": "2601.10343",
@@ -70,11 +53,6 @@
           "id": "2601.10504",
           "title": "DR-Arena: an Automated Evaluation Framework for Deep Research Agents",
           "blurb": "As Large Language Models (LLMs) increasingly operate as Deep Research (DR) Agents capable of autonomous investigation and information synthesis, reliable evaluation of their task performance has become a critical bottlen…"
-        },
-        {
-          "id": "2601.10156",
-          "title": "ToolSafe: Enhancing Tool Invocation Safety of LLM-based agents via Proactive Step-level Guardrail and Feedback",
-          "blurb": "While LLM-based agents can interact with environments via invoking external tools, their expanded capabilities also amplify security risks."
         }
       ]
     }
@@ -156,43 +134,6 @@
       ],
       "field": "coding",
       "citations": 13
-    },
-    {
-      "id": "2601.10156",
-      "title": "ToolSafe: Enhancing Tool Invocation Safety of LLM-based agents via Proactive Step-level Guardrail and Feedback",
-      "abstract": "While LLM-based agents can interact with environments via invoking external tools, their expanded capabilities also amplify security risks. Monitoring step-level tool invocation behaviors in real time and proactively intervening before unsafe execution is critical for agent deployment, yet remains under-explored. In this work, we first construct TS-Bench, a novel benchmark for step-level tool invocation safety detection in LLM agents. We then develop a guardrail model, TS-Guard, using multi-task reinforcement learning. The model proactively detects unsafe tool invocation actions before execution by reasoning over the interaction history. It assesses request harmfulness and action-attack correlations, producing interpretable and generalizable safety judgments and feedback. Furthermore, we introduce TS-Flow, a guardrail-feedback-driven reasoning framework for LLM agents, which reduces harmful tool invocations of ReAct-style agents by 65 percent on average and improves benign task completion by approximately 10 percent under prompt injection attacks.",
-      "authors": [
-        "Yutao Mou",
-        "Zhangchi Xue",
-        "Lijun Li",
-        "Peiyang Liu",
-        "Shikun Zhang",
-        "Wei Ye",
-        "Jing Shao"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "primary_category": "cs.CL",
-      "published": "2026-01-15T07:54:32Z",
-      "updated": "2026-01-15T07:54:32Z",
-      "announced_date": "2026-01-15",
-      "first_seen": "2026-01-15",
-      "comment": "Work in Progress. Code available: https://github.com/MurrayTom/ToolSafe",
-      "doi": "",
-      "links": {
-        "abs": "https://arxiv.org/abs/2601.10156v1",
-        "pdf": "https://arxiv.org/pdf/2601.10156v1",
-        "html": "https://arxiv.org/html/2601.10156"
-      },
-      "score": 7,
-      "tags": [
-        "tool-use",
-        "safety",
-        "planning"
-      ],
-      "field": "safety",
-      "citations": 44
     }
   ]
 }

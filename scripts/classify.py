@@ -10,6 +10,7 @@ from config import (
     FIELD_RULES,
     FIELD_TITLE_PATTERNS,
     INTRO_BENCH_PATTERNS,
+    METHOD_TITLE_DROP_PATTERNS,
     NAMED_BENCH_PATTERNS,
     NEGATIVE_PATTERNS,
     RL_TITLE_PATTERNS,
@@ -81,6 +82,9 @@ def classify(paper: dict[str, Any]) -> dict[str, Any] | None:
     agent_in_title = bool(re.search(r"\bagents?\b|\bagentic\b", title, re.IGNORECASE))
 
     if _count(title, RL_TITLE_PATTERNS) and not strong_agent:
+        return None
+
+    if _count(title, METHOD_TITLE_DROP_PATTERNS) and not title_is_bench and not named_title:
         return None
 
     accepted = False

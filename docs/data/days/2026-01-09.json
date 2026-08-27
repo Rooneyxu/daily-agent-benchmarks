@@ -1,27 +1,15 @@
 {
   "date": "2026-01-09",
-  "count": 4,
+  "count": 3,
   "report": {
     "date": "2026-01-09",
-    "count": 4,
+    "count": 3,
     "themes": [
       {
         "id": "tool-use",
-        "count": 3,
+        "count": 2,
         "en": "Tool use",
         "zh": "工具使用"
-      },
-      {
-        "id": "planning",
-        "count": 2,
-        "en": "Planning / reasoning",
-        "zh": "规划 / 推理"
-      },
-      {
-        "id": "safety",
-        "count": 2,
-        "en": "Safety",
-        "zh": "安全"
       },
       {
         "id": "web",
@@ -30,15 +18,27 @@
         "zh": "网页智能体"
       },
       {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
         "id": "multimodal",
         "count": 1,
         "en": "Multimodal",
         "zh": "多模态"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
       }
     ],
     "en": {
-      "headline": "4 new agent benchmarks",
-      "summary": "On January 9, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Tool use (3), Planning / reasoning (2), Safety (2), and Web agents (1).",
+      "headline": "3 new agent benchmarks",
+      "summary": "On January 9, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Tool use (2), Web agents (1), Planning / reasoning (1), and Multimodal (1).",
       "highlights": [
         {
           "id": "2601.05899",
@@ -58,8 +58,8 @@
       ]
     },
     "zh": {
-      "headline": "新增 4 篇 Agent Benchmark",
-      "summary": "2026年1月9日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在工具使用（3）、规划 / 推理（2）、安全（2）、网页智能体（1）。",
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年1月9日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在工具使用（2）、网页智能体（1）、规划 / 推理（1）、多模态（1）。",
       "highlights": [
         {
           "id": "2601.05899",
@@ -149,44 +149,6 @@
       ],
       "field": "multimodal",
       "citations": 5
-    },
-    {
-      "id": "2601.05755",
-      "title": "VIGIL: Defending LLM Agents Against Tool Stream Injection via Verify-Before-Commit",
-      "abstract": "LLM agents operating in open environments face escalating risks from indirect prompt injection, particularly within the tool stream where manipulated metadata and runtime feedback hijack execution flow. Existing defenses encounter a critical dilemma as advanced models prioritize injected rules due to strict alignment while static protection mechanisms sever the feedback loop required for adaptive reasoning. To reconcile this conflict, we propose \\textbf{VIGIL}, a framework that shifts the paradigm from restrictive isolation to a verify-before-commit protocol. By facilitating speculative hypothesis generation and enforcing safety through intent-grounded verification, \\textbf{VIGIL} preserves reasoning flexibility while ensuring robust control. We further introduce \\textbf{SIREN}, a benchmark comprising 959 tool stream injection cases designed to simulate pervasive threats characterized by dynamic dependencies. Extensive experiments demonstrate that \\textbf{VIGIL} outperforms state-of-the-art dynamic defenses by reducing the attack success rate by over 22\\% while more than doubling the utility under attack compared to static baselines, thereby achieving an optimal balance between security and utility.",
-      "authors": [
-        "Junda Lin",
-        "Zhaomeng Zhou",
-        "Zhi Zheng",
-        "Shuochen Liu",
-        "Tong Xu",
-        "Yong Chen",
-        "Enhong Chen"
-      ],
-      "categories": [
-        "cs.CR",
-        "cs.AI"
-      ],
-      "primary_category": "cs.CR",
-      "published": "2026-01-09T12:19:49Z",
-      "updated": "2026-01-14T18:19:43Z",
-      "announced_date": "2026-01-09",
-      "first_seen": "2026-01-09",
-      "comment": "",
-      "doi": "",
-      "links": {
-        "abs": "https://arxiv.org/abs/2601.05755v2",
-        "pdf": "https://arxiv.org/pdf/2601.05755v2",
-        "html": "https://arxiv.org/html/2601.05755"
-      },
-      "score": 10,
-      "tags": [
-        "tool-use",
-        "safety",
-        "planning"
-      ],
-      "field": "other",
-      "citations": 10
     },
     {
       "id": "2601.07853",
