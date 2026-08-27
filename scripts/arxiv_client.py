@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import http.client
 import re
 import time
 import urllib.error
@@ -16,6 +17,7 @@ from config import (
     MAX_PAGES,
     PAGE_SIZE,
     REQUEST_GAP_S,
+    REQUEST_RETRIES,
     REQUEST_TIMEOUT_S,
     SEARCH_QUERIES,
     USER_AGENT,
@@ -115,7 +117,21 @@ def _in_window(paper: dict[str, Any], date_from: str, date_to: str) -> bool:
     return bool(day) and date_from <= day <= date_to
 
 
-def _request(url: str, retries: int = 4) -> bytes:
+_RETRYABLE = (
+    TimeoutError,
+    ConnectionResetError,
+    BrokenPipeError,
+    http.client.IncompleteRead,
+    http.client.RemoteDisconnected,
+    urllib.error.URLError,
+)
+
+
+def _backoff_s(attempt: int) -> float:
+    return min(60.0, REQUEST_GAP_S * (2**attempt))
+
+
+def _request(url: str, retries: int = REQUEST_RETRIES) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     last_err: Exception | None = None
     for attempt in range(retries):
@@ -124,16 +140,15 @@ def _request(url: str, retries: int = 4) -> bytes:
                 return resp.read()
         except urllib.error.HTTPError as exc:
             last_err = exc
-            if exc.code in {429, 500, 502, 503, 504} and attempt + 1 < retries:
-                time.sleep(REQUEST_GAP_S * (attempt + 2))
-                continue
-            raise
-        except urllib.error.URLError as exc:
+            if exc.code not in {429, 500, 502, 503, 504} or attempt + 1 >= retries:
+                raise
+        except _RETRYABLE as exc:
             last_err = exc
-            if attempt + 1 < retries:
-                time.sleep(REQUEST_GAP_S * (attempt + 2))
-                continue
-            raise
+            if attempt + 1 >= retries:
+                raise
+        wait = _backoff_s(attempt)
+        print(f"  retry {attempt + 1}/{retries} in {wait:.0f}s ({last_err})", flush=True)
+        time.sleep(wait)
     raise RuntimeError(f"arXiv request failed: {last_err}")
 
 

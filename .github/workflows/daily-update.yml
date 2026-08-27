@@ -8,6 +8,8 @@ on:
     # Cron days 1–5 (Mon–Fri UTC) = the night of Sun–Thu ET announcements.
     - cron: "25 0 * * 1-5"
     - cron: "25 1 * * 1-5"
+    # Catch-up if export.arxiv.org was overloaded right after the drop.
+    - cron: "30 3 * * 1-5"
   workflow_dispatch:
   push:
     branches: [main, master]
@@ -37,7 +39,17 @@ jobs:
           python-version: "3.11"
 
       - name: Fetch and classify new agent benchmarks
-        run: python scripts/update.py --days 4
+        run: |
+          for i in 1 2 3; do
+            if python scripts/update.py --days 4; then
+              exit 0
+            fi
+            echo "update failed (attempt $i/3)"
+            if [ "$i" -lt 3 ]; then
+              sleep $((i * 45))
+            fi
+          done
+          exit 1
 
       - name: Commit data if changed
         run: |

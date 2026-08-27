@@ -59,7 +59,7 @@ python -m http.server 8080 --directory docs
    - 项目页：`https://<user>.github.io/daily-agent-benchmarks/`
    - 若仓库名是 `<user>.github.io`，则在根路径。
 
-工作流在 [arXiv 每日公告](https://info.arxiv.org/help/availability.html)（周日到周四 20:00 美国东部时间）之后立刻跑：UTC 00:25 和 01:25（周一到周五），对应北京时间约 08:25 / 09:25。有新增就会提交 `docs/data/`。 GitHub 的 cron 可能再晚几分钟。
+工作流在 [arXiv 每日公告](https://info.arxiv.org/help/availability.html)（周日到周四 20:00 美国东部时间）之后立刻跑：UTC 00:25、01:25，以及 03:30 补跑（周一到周五），对应北京时间约 08:25 / 09:25 / 11:30。请求超时会自动重试。有新增就会提交 `docs/data/`。 GitHub 的 cron 可能再晚几分钟。
 
 ## 网页能力
 

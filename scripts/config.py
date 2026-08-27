@@ -32,7 +32,8 @@ SEARCH_QUERIES = (
     '(ti:agent OR ti:agents) AND abs:benchmark AND (cat:cs.AI OR cat:cs.CL OR cat:cs.LG OR cat:cs.MA)',
 )
 
-REQUEST_TIMEOUT_S = 30
+REQUEST_TIMEOUT_S = 60
+REQUEST_RETRIES = 6
 REQUEST_GAP_S = 3.1
 PAGE_SIZE = 100
 MAX_PAGES = 30
