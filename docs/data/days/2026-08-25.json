@@ -1,21 +1,27 @@
 {
   "date": "2026-08-25",
-  "count": 3,
+  "count": 4,
   "report": {
     "date": "2026-08-25",
-    "count": 3,
+    "count": 4,
     "themes": [
       {
         "id": "tool-use",
-        "count": 3,
+        "count": 4,
         "en": "Tool use",
         "zh": "工具使用"
       },
       {
         "id": "planning",
-        "count": 2,
+        "count": 3,
         "en": "Planning / reasoning",
         "zh": "规划 / 推理"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
       },
       {
         "id": "multi-agent",
@@ -31,8 +37,8 @@
       }
     ],
     "en": {
-      "headline": "3 new agent benchmarks",
-      "summary": "On August 25, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Tool use (3), Planning / reasoning (2), Multi-agent (1), and Safety (1).",
+      "headline": "4 new agent benchmarks",
+      "summary": "On August 25, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Tool use (4), Planning / reasoning (3), Multimodal (1), and Multi-agent (1).",
       "highlights": [
         {
           "id": "2608.24509",
@@ -40,20 +46,20 @@
           "blurb": "LLM agents increasingly solve tasks by invoking multiple tools, where parallel execution is essential for low latency but difficult to manage safely."
         },
         {
+          "id": "2608.25039",
+          "title": "LifePlanner: Evaluating LLM Agents for Geo-spatial Planning with Social Media Data",
+          "blurb": "Geo-spatial planning, like trip design, is a realistic testbed for LLM agents because it requires grounded tool use, noisy evidence retrieval, and multi-constraint reasoning."
+        },
+        {
           "id": "2608.24361",
           "title": "Adaptive Influence Graphs for Failure Attribution in Multi-Agent Systems",
           "blurb": "Multi-agent LLM systems are increasingly deployed in real-world applications, where failures can be costly and difficult to localize."
-        },
-        {
-          "id": "2608.24314",
-          "title": "Benchmarking LLM Judges for Voice-Agent Evaluation: Reliability, Calibration, and Human Oversight",
-          "blurb": "Evaluating conversational voice agents at scale re- quires reliable assessment methods that capture both observ- able interaction quality and the contextual judgment typically provided by human evaluators."
         }
       ]
     },
     "zh": {
-      "headline": "新增 3 篇 Agent Benchmark",
-      "summary": "2026年8月25日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在工具使用（3）、规划 / 推理（2）、多智能体（1）、安全（1）。",
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年8月25日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在工具使用（4）、规划 / 推理（3）、多模态（1）、多智能体（1）。",
       "highlights": [
         {
           "id": "2608.24509",
@@ -61,19 +67,56 @@
           "blurb": "LLM agents increasingly solve tasks by invoking multiple tools, where parallel execution is essential for low latency but difficult to manage safely."
         },
         {
+          "id": "2608.25039",
+          "title": "LifePlanner: Evaluating LLM Agents for Geo-spatial Planning with Social Media Data",
+          "blurb": "Geo-spatial planning, like trip design, is a realistic testbed for LLM agents because it requires grounded tool use, noisy evidence retrieval, and multi-constraint reasoning."
+        },
+        {
           "id": "2608.24361",
           "title": "Adaptive Influence Graphs for Failure Attribution in Multi-Agent Systems",
           "blurb": "Multi-agent LLM systems are increasingly deployed in real-world applications, where failures can be costly and difficult to localize."
-        },
-        {
-          "id": "2608.24314",
-          "title": "Benchmarking LLM Judges for Voice-Agent Evaluation: Reliability, Calibration, and Human Oversight",
-          "blurb": "Evaluating conversational voice agents at scale re- quires reliable assessment methods that capture both observ- able interaction quality and the contextual judgment typically provided by human evaluators."
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2608.25039",
+      "title": "LifePlanner: Evaluating LLM Agents for Geo-spatial Planning with Social Media Data",
+      "abstract": "Geo-spatial planning, like trip design, is a realistic testbed for LLM agents because it requires grounded tool use, noisy evidence retrieval, and multi-constraint reasoning. Most benchmarks, however, only provide clean geospatial data and tools, missing the open-ended social signals that people use in daily planning. We introduce LifePlanner, a benchmark that enriches map data with large-scale local social media posts and provides access through an MCP toolset. LifePlanner provides an evaluation suite spanning four task categories and three difficulty levels. Experiments show frontier LLMs perform well on simple retrieval but degrade sharply on complex planning, with the Pass Rate dropping to 40.2%. Results show that failures mainly stem from incomplete evidence acquisition from such a large multimodal database, imprecise tool use, and weak constraint integration rather than model size or reasoning length, suggesting that future progress requires effective grounded planning instead of scaling alone.",
+      "authors": [
+        "Zhen Dong",
+        "Yuning Peng",
+        "Yutao Shi",
+        "Lei Zhong",
+        "Yongsen Mao",
+        "Yuan Liu",
+        "Haiping Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-25T18:28:29Z",
+      "updated": "2026-08-25T18:28:29Z",
+      "announced_date": "2026-08-25",
+      "first_seen": "2026-08-25",
+      "comment": "25 pages, 7 figures, 11 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.25039v1",
+        "pdf": "https://arxiv.org/pdf/2608.25039v1",
+        "html": "https://arxiv.org/html/2608.25039"
+      },
+      "score": 17,
+      "tags": [
+        "tool-use",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
     {
       "id": "2608.24509",
       "title": "PeakBench: Benchmarking Resource-Aware Tool Invocation in LLM Agents",
