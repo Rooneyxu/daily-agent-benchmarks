@@ -109,15 +109,6 @@ NEGATIVE_PATTERNS = (
     r"\bmarl\b",
 )
 
-# Title is a safety gate / defense method, not an agent-eval suite.
-# HRGuard (2608.25340) was kept via "we introduce a benchmark of conversations".
-METHOD_TITLE_DROP_PATTERNS = (
-    r"guard\b",
-    r"\bgating\b",
-    r"\bguardrails?\b",
-    r"\bdefending\b.{0,50}\b(?:agents?|agentic)\b",
-)
-
 # Title-only RL papers with a generic "agent" mention are usually not
 # LLM / tool-use agent benchmarks.
 RL_TITLE_PATTERNS = (
@@ -278,6 +269,9 @@ FIELD_RULES: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("embodied", ("embodied",)),
     ("conversation", ("conversation",)),
     ("multimodal", ("multimodal",)),
+    ("safety", ("safety",)),
+    ("tool-use", ("tool-use",)),
+    ("science", ("science", "research")),
 )
 
 FIELD_LABELS = {
