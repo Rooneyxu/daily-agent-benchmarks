@@ -17,8 +17,9 @@ def main() -> None:
     console_errors: list[str] = []
     payload = json.loads((Path(__file__).resolve().parents[1] / "docs" / "bio" / "data" / "index.json").read_text())
     total = payload["total"]
-    p0_count = sum(entry["priority"] == "P0" for entry in payload["entries"])
-    construction_count = sum("construction" in entry["categories"] for entry in payload["entries"])
+    main_entries = [entry for entry in payload["entries"] if entry["collection_status"] == "confirmed"]
+    p0_count = sum(entry["priority"] == "P0" for entry in main_entries)
+    construction_count = sum("construction" in entry["categories"] for entry in main_entries)
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True, executable_path=CHROME_PATH)
         page = browser.new_page(viewport={"width": 1440, "height": 1000})
@@ -30,12 +31,13 @@ def main() -> None:
         page.wait_for_selector(".bio-row")
 
         assert page.locator(".hero__stats b").first.text_content() == str(total)
-        assert page.locator(".bio-row").count() == min(24, total)
+        assert page.locator(".bio-row").count() == min(24, len(main_entries))
         page.screenshot(path="/private/tmp/daily-agent-benchmarks-bio-home.png", full_page=True)
 
         page.get_by_role("button", name="P0", exact=True).click()
         assert page.locator(".bio-row").count() == min(24, p0_count)
 
+        page.get_by_role("button", name="All", exact=True).nth(0).click()
         page.locator("[data-category='construction']").click()
         assert page.locator(".bio-row").count() == min(24, construction_count)
 
