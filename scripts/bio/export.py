@@ -135,6 +135,26 @@ def validate_payload(payload: dict[str, Any]) -> None:
         seen.add(row["id"])
 
 
+def write_vendor_archive(
+    output_dir: Path,
+    entries: list[BioEntry],
+    generated_at: str,
+) -> dict[str, Any]:
+    payload = {
+        "schema_version": 1,
+        "generated_at": generated_at,
+        "total": len(entries),
+        "entries": [entry.to_dict() for entry in entries],
+    }
+    data_dir = output_dir / "data"
+    data_dir.mkdir(parents=True, exist_ok=True)
+    (data_dir / "vendor-archive.json").write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    return payload
+
+
 def write_snapshot(
     output_dir: Path,
     entries: list[BioEntry],

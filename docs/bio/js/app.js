@@ -88,7 +88,6 @@
     return `<div class="bio-filters">
       ${filterButtons("status", "status-filter", state.status, [["confirmed", "main"], ["watchlist", "watchlist"]])}
       ${filterButtons("priority", "priority-filter", state.priority, [["all", "all"], ["P0", "P0"], ["P1", "P1"], ["P2", "P2"]])}
-      ${filterButtons("type", "kind-filter", state.kind, [["all", "all"], ["paper", "paper"], ["evaluation_update", "update"]])}
     </div>`;
   }
 

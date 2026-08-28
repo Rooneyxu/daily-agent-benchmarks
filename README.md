@@ -2,7 +2,7 @@
 
 每日从 [arXiv](https://arxiv.org) 收集 **Agent Benchmark** 论文，整理成可部署到 GitHub Pages 的静态站点。
 
-仓库同时提供独立的 **Bio & Medical Benchmarks** 子站：收集生物、医学、生命科学、实验 protocol、科研 Agent、生物安全、自动化出题与自动化质检 benchmark，以及 system/model card 中有实质内容的评测更新。P0/P1/P2 只是浏览标记，不决定是否收录。
+仓库同时提供独立的 **Bio & Medical Benchmarks** 子站：每日收集生物、医学、生命科学、实验 protocol、科研 Agent、生物安全、自动化出题与自动化质检 benchmark 论文。P0/P1/P2 只是浏览标记，不决定是否收录。厂商 system/model card 已暂停自动巡检，历史记录保留在 `docs/bio/data/vendor-archive.json`，不进入主信息流。
 
 站点按投稿日期倒序展示：名称、作者、摘要、分类、PDF / HTML 链接；每一天有一份中英双语简报；浏览器内用 **BM25** 做排序搜索。
 

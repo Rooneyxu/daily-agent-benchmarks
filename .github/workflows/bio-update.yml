@@ -58,7 +58,7 @@ jobs:
       - name: Discover and publish Bio/Medical benchmarks
         env:
           LOOKBACK_DAYS: ${{ inputs.days || '4' }}
-        run: python scripts/bio_update.py --days "$LOOKBACK_DAYS"
+        run: python scripts/bio_update.py --days "$LOOKBACK_DAYS" --no-vendors
 
       - name: Commit public snapshot if changed
         run: |

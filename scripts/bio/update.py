@@ -13,7 +13,7 @@ import httpx
 
 from .classify import classify
 from .extract import fetch_document
-from .export import write_snapshot
+from .export import write_snapshot, write_vendor_archive
 from .models import BioEntry, SourceCandidate, SourceDocument, canonical_id, slug_for, utc_now
 from .sources import SourceAdapter, build_adapters
 from .storage import SupabaseStore, load_local_entries, load_seed_entries, merge_entries
@@ -21,6 +21,7 @@ from .storage import SupabaseStore, load_local_entries, load_seed_entries, merge
 ROOT = Path(__file__).resolve().parents[2]
 BIO_OUTPUT = ROOT / "docs" / "bio"
 BIO_INDEX = BIO_OUTPUT / "data" / "index.json"
+VENDOR_ARCHIVE = BIO_OUTPUT / "data" / "vendor-archive.json"
 AGENT_INDEX = ROOT / "docs" / "data" / "index.json"
 SEED_PATH = ROOT / "data" / "bio-seeds.json"
 
@@ -205,7 +206,17 @@ def run(
     date_from = (today - timedelta(days=lookback)).isoformat()
     date_to = today.isoformat()
 
-    existing = [] if seed_only else load_local_entries(BIO_INDEX)
+    store = SupabaseStore() if SupabaseStore.configured() else None
+    if seed_only:
+        existing = []
+    elif store is not None:
+        existing = store.list_entries()
+    else:
+        existing = merge_entries(
+            load_local_entries(BIO_INDEX),
+            load_local_entries(VENDOR_ARCHIVE),
+            generated_at,
+        )
     seeds = load_seed_entries(SEED_PATH)
     base = merge_entries(existing, seeds, generated_at)
     source_health: list[dict[str, Any]] = []
@@ -243,15 +254,14 @@ def run(
         raise RuntimeError("All Bio/Medical sources failed; previous snapshot was preserved")
 
     merged = merge_entries(base, incoming, generated_at)
-    store = SupabaseStore() if SupabaseStore.configured() else None
     if store is not None:
         adapters_by_id = {adapter.id: adapter for adapter in adapters}
         store.upsert_sources(
             [_source_row(adapters_by_id[row["source"]], row) for row in source_health]
         )
         store.upsert_documents(documents)
-        store.upsert_entries(merge_entries(seeds, incoming, generated_at))
-        store.upsert_benchmarks(merge_entries(seeds, incoming, generated_at))
+        store.upsert_entries(merged)
+        store.upsert_benchmarks(merged)
         for health in source_health:
             store.record_run(
                 {
@@ -267,7 +277,14 @@ def run(
             )
         merged = merge_entries(store.list_entries(), [], generated_at)
 
-    public_entries = [entry for entry in merged if entry.collection_status in {"confirmed", "watchlist"}]
+    publishable = [entry for entry in merged if entry.collection_status in {"confirmed", "watchlist"}]
+    vendor_entries = [entry for entry in publishable if entry.source.startswith("vendor:")]
+    public_entries = [
+        entry
+        for entry in publishable
+        if entry.kind == "paper" and not entry.source.startswith("vendor:")
+    ]
+    write_vendor_archive(output_dir, vendor_entries, generated_at)
     payload = write_snapshot(output_dir, public_entries, generated_at, source_health, AGENT_INDEX)
     print(
         f"Wrote {payload['total']} Bio/Medical entries across {len(payload['days'])} days -> {output_dir / 'data' / 'index.json'}",
