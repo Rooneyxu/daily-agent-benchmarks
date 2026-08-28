@@ -1,0 +1,86 @@
+{
+  "date": "2026-07-27",
+  "count": 1,
+  "entries": [
+    {
+      "id": "arxiv:2607.23975",
+      "slug": "arxiv-2607-23975-f885140d07",
+      "kind": "paper",
+      "title": "Plato-Bio: verification-first biological novelty screening with temporal rediscovery and structural benchmarks",
+      "abstract": "Large language model research agents can connect literature retrieval, analysis code, and manuscript preparation, but coherent output does not establish scientific validity. We developed Plato-Bio, a biology-routed extension of the open Plato/Denario architecture that couples explicit workflow states with provenance records, citation checks, claim-to-evidence links, scoped file writes, and publication gates. A source audit identified and repaired three defects that could distort evaluation: loss of task domain in the default factory, omission of declared method signals from scoring, and evidence sidecars that lacked the drafted-claim denominator. On the current clean revision, the full Python suite completed with 931 passes, six skips, and no failures or errors; targeted biology, genomics, evidence/citation, and adversarial-safety suites likewise completed without failure. We evaluated two narrow use cases. In a frozen historical rediscovery task, independent pre-1986 literature bridges ranked the later-studied relation between fish oil and Raynaud phenomenon first; TF-IDF ranked it second and corpus frequency third. This single curated task measures retrospective ranking, not prospective discovery. In a separate comparison of AlphaFold models with experimental structures for 15 human proteins, 11 targets had high-confidence-core C-alpha RMSD below 1 Angstrom (median 0.501 Angstrom). Four targets exceeded 2 Angstrom, and confidence masking reduced the SUMO1 discrepancy from 16.61 to 2.58 Angstrom over 74 residues. The workflow emitted 27 traceable discrepancy regions, all retained as unvalidated hypotheses. Plato-Bio therefore provides reproducible software contracts and auditable screening baselines; broader claims of agent efficacy or biological novelty require preregistered evaluation, independent review, and prospective validation.",
+      "authors": [
+        "Stefan G. Creadore"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-07-27T03:55:39Z",
+      "updated_at": "2026-07-27T03:55:39Z",
+      "first_seen_at": "2026-07-27T03:55:39Z",
+      "event_at": "2026-07-27T03:55:39Z",
+      "priority": "P0",
+      "categories": [
+        "agent",
+        "quality"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2607.23975"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.23975v1",
+        "html": "https://arxiv.org/html/2607.23975",
+        "pdf": "https://arxiv.org/pdf/2607.23975v1"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "Plato-Bio: verification-first biological novelty screening with temporal rediscovery and structural benchmarks Large language model research agents can connect literature retrieval, analysis code, and manuscript preparation, but coherent output does not establish scientific validity. We developed Plato-Bio, a biology-routed extension of the open P",
+          "source_url": "https://arxiv.org/html/2607.23975"
+        },
+        {
+          "term": "benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "Plato-Bio: verification-first biological novelty screening with temporal rediscovery and structural benchmarks Large language model research agents can connect literature retrieval, analysis code, and manuscript preparation, but coherent output does not establish scientific validity. We developed Plato-Bio, a biology-routed extension of the open Pl",
+          "source_url": "https://arxiv.org/html/2607.23975"
+        },
+        {
+          "term": "biology",
+          "location": "Abstract / metadata",
+          "excerpt": "iterature retrieval, analysis code, and manuscript preparation, but coherent output does not establish scientific validity. We developed Plato-Bio, a biology-routed extension of the open Plato/Denario architecture that couples explicit workflow states with provenance records, citation checks, claim-to-evidence links, scoped file writes, and publication gates. A source audit identified and repai",
+          "source_url": "https://arxiv.org/html/2607.23975"
+        },
+        {
+          "term": "biological",
+          "location": "Abstract / metadata",
+          "excerpt": "Plato-Bio: verification-first biological novelty screening with temporal rediscovery and structural benchmarks Large language model research agents can connect literature retrieval, analysis code, and manuscript preparation, but coherent output does not establish scientific valid",
+          "source_url": "https://arxiv.org/html/2607.23975"
+        },
+        {
+          "term": "genomic",
+          "location": "Abstract / metadata",
+          "excerpt": "denominator. On the current clean revision, the full Python suite completed with 931 passes, six skips, and no failures or errors; targeted biology, genomics, evidence/citation, and adversarial-safety suites likewise completed without failure. We evaluated two narrow use cases. In a frozen historical rediscovery task, independent pre-1986 literature bridges ranked the later-studied relation be",
+          "source_url": "https://arxiv.org/html/2607.23975"
+        },
+        {
+          "term": "genomics",
+          "location": "Abstract / metadata",
+          "excerpt": "denominator. On the current clean revision, the full Python suite completed with 931 passes, six skips, and no failures or errors; targeted biology, genomics, evidence/citation, and adversarial-safety suites likewise completed without failure. We evaluated two narrow use cases. In a frozen historical rediscovery task, independent pre-1986 literature bridges ranked the later-studied relation bet",
+          "source_url": "https://arxiv.org/html/2607.23975"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Explicit biomedical benchmark contribution detected.",
+      "match_score": 26,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "seed:2607.23975",
+      "is_seed": true
+    }
+  ]
+}

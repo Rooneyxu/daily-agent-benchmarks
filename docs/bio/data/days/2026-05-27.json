@@ -1,0 +1,235 @@
+{
+  "date": "2026-05-27",
+  "count": 3,
+  "entries": [
+    {
+      "id": "arxiv:2605.28161",
+      "slug": "arxiv-2605-28161-c1088320a3",
+      "kind": "paper",
+      "title": "MeniOmni: A Structured Multimodal Benchmark for Holistic Meniscus Injury Assessment",
+      "abstract": "Clinical diagnosis of meniscus injuries requires radiologists to integrate volumetric MRI evidence with patient context (e.g., sex, age, BMI) and to produce structured diagnostic reports. Existing knee MRI benchmarks are typically unimodal and rely on coarse labels, limiting their ability to evaluate holistic clinical reasoning. We introduce MeniOmni, a structured multimodal benchmark for meniscus injury assessment, consisting of 746 multi-center MRI studies with tri-planar volumetric inputs, Clinical Priors, and expert-annotated clinical text. MeniOmni supports two tasks: (1) fine-grained Stoller severity grading and (2) diagnostic report generation. We further propose risk-aware ordinal evaluation and a semantic consistency metric (Meni-Score) to better reflect clinical relevance. Baseline experiments show that incorporating Clinical Priors improves grading performance and reduces severe errors, highlighting the value of multimodal context for safer assessment. Code and data are available at https://github.com/ShuruiXu/MeniOmni.",
+      "authors": [
+        "Shurui Xu",
+        "Siqi Yang",
+        "Weiping Ding",
+        "Hui Wang",
+        "Mengzhen Fan",
+        "Yuyu Sun",
+        "Shuyan Li"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-05-27T08:44:46Z",
+      "updated_at": "2026-05-27T08:44:46Z",
+      "first_seen_at": "2026-05-27T08:44:46Z",
+      "event_at": "2026-05-27T08:44:46Z",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2605.28161"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.28161v1",
+        "html": "https://arxiv.org/html/2605.28161",
+        "pdf": "https://arxiv.org/pdf/2605.28161v1"
+      },
+      "evidence": [
+        {
+          "term": "we introduce",
+          "location": "Abstract / metadata",
+          "excerpt": "ports. Existing knee MRI benchmarks are typically unimodal and rely on coarse labels, limiting their ability to evaluate holistic clinical reasoning. We introduce MeniOmni, a structured multimodal benchmark for meniscus injury assessment, consisting of 746 multi-center MRI studies with tri-planar volumetric inputs, Clinical Priors, and expert-annotated clinical text. MeniOmni supports two tasks: (1)",
+          "source_url": "https://arxiv.org/html/2605.28161"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "MeniOmni: A Structured Multimodal Benchmark for Holistic Meniscus Injury Assessment Clinical diagnosis of meniscus injuries requires radiologists to integrate volumetric MRI evidence with patient context (e.g., sex, age, BMI) and to produce structured diagnostic reports. Existing kn",
+          "source_url": "https://arxiv.org/html/2605.28161"
+        },
+        {
+          "term": "benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "gists to integrate volumetric MRI evidence with patient context (e.g., sex, age, BMI) and to produce structured diagnostic reports. Existing knee MRI benchmarks are typically unimodal and rely on coarse labels, limiting their ability to evaluate holistic clinical reasoning. We introduce MeniOmni, a structured multimodal benchmark for meniscus injury assessment, consisting of 746 multi-center MRI s",
+          "source_url": "https://arxiv.org/html/2605.28161"
+        },
+        {
+          "term": "clinical",
+          "location": "Abstract / metadata",
+          "excerpt": "MeniOmni: A Structured Multimodal Benchmark for Holistic Meniscus Injury Assessment Clinical diagnosis of meniscus injuries requires radiologists to integrate volumetric MRI evidence with patient context (e.g., sex, age, BMI) and to produce structured diagnostic reports. Existing knee MRI benchmarks are typically unimodal and rely",
+          "source_url": "https://arxiv.org/html/2605.28161"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Explicit biomedical benchmark contribution detected.",
+      "match_score": 19,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "seed:2605.28161",
+      "is_seed": true
+    },
+    {
+      "id": "arxiv:2605.28065",
+      "slug": "arxiv-2605-28065-75a35cf864",
+      "kind": "paper",
+      "title": "Verifiable Benchmarking of Long-Horizon Spatial Biology",
+      "abstract": "AI agents are increasingly useful for biological data analysis, but existing benchmarks mostly test broad biological knowledge, executable workflows, or localized analysis steps rather than end-to-end scientific reasoning over spatial measurements. We introduce SpatialBench-Long, a benchmark for long-horizon spatial biology in which agents must recover biological claims from raw or near-raw data and calibrated experimental context without prescribed methods. SpatialBench-Long contains 24 evaluations across primary pancreatic ductal adenocarcinoma (PDAC), engineered glioblastoma organoids and in vivo tumors, Cas9 lineage-traced lung adenocarcinoma, and mouse optic nerve aging/intervention systems, spanning CosMx, Visium, Xenium, multiplexed error-robust fluorescence in situ hybridization (MERFISH), single-cell RNA sequencing (scRNA-seq), Slide-seq, Slide-tags, histology, and lineage-recording data. Candidate claims are hardened through reproduction, independent scientist review, and trajectory inspection. Final answers are graded deterministically over controlled vocabularies and symbols with companion rubrics capturing progress through key analysis chokepoints. Across the SpatialBench-Long benchmark, three model-harness pairs tie at 8/72 runs (11.1\\%): Gemini 3.5 Flash / Pi terminal coding harness, GPT-5.5 / Pi, and GPT-5.5 / OpenAI Codex. SpatialBench-Long tests whether agents can move beyond executing procedural analysis to deriving accurate scientific conclusions from complex spatial measurements.",
+      "authors": [
+        "Ian Diks",
+        "Harihara Muralidharan",
+        "Tim Proctor",
+        "Kenny Workman"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-05-27T07:19:18Z",
+      "updated_at": "2026-05-27T07:19:18Z",
+      "first_seen_at": "2026-05-27T07:19:18Z",
+      "event_at": "2026-05-27T07:19:18Z",
+      "priority": "P1",
+      "categories": [
+        "text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2605.28065"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.28065v1",
+        "html": "https://arxiv.org/html/2605.28065",
+        "pdf": "https://arxiv.org/pdf/2605.28065v1"
+      },
+      "evidence": [
+        {
+          "term": "we introduce",
+          "location": "Abstract / metadata",
+          "excerpt": "broad biological knowledge, executable workflows, or localized analysis steps rather than end-to-end scientific reasoning over spatial measurements. We introduce SpatialBench-Long, a benchmark for long-horizon spatial biology in which agents must recover biological claims from raw or near-raw data and calibrated experimental context without prescribed methods. SpatialBench-Long contains 24 evaluati",
+          "source_url": "https://arxiv.org/html/2605.28065"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "Verifiable Benchmarking of Long-Horizon Spatial Biology AI agents are increasingly useful for biological data analysis, but existing benchmarks mostly test broad biological knowledge, executable workflows, or localized analysis steps rather than end-to-end sci",
+          "source_url": "https://arxiv.org/html/2605.28065"
+        },
+        {
+          "term": "benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "Verifiable Benchmarking of Long-Horizon Spatial Biology AI agents are increasingly useful for biological data analysis, but existing benchmarks mostly test broad biological knowledge, executable workflows, or localized analysis steps rather than end-to-end scientific reasoning over spatial measurements. We introduce SpatialBench-Long, a benchmark for long-horizon spatial biology i",
+          "source_url": "https://arxiv.org/html/2605.28065"
+        },
+        {
+          "term": "benchmarking",
+          "location": "Abstract / metadata",
+          "excerpt": "Verifiable Benchmarking of Long-Horizon Spatial Biology AI agents are increasingly useful for biological data analysis, but existing benchmarks mostly test broad biological knowledge, executable workflows, or localized analysis steps rather than end-to-end scient",
+          "source_url": "https://arxiv.org/html/2605.28065"
+        },
+        {
+          "term": "biology",
+          "location": "Abstract / metadata",
+          "excerpt": "Verifiable Benchmarking of Long-Horizon Spatial Biology AI agents are increasingly useful for biological data analysis, but existing benchmarks mostly test broad biological knowledge, executable workflows, or localized analysis steps rather than end-to-end scientific reasoning over spatial meas",
+          "source_url": "https://arxiv.org/html/2605.28065"
+        },
+        {
+          "term": "biological",
+          "location": "Abstract / metadata",
+          "excerpt": "Verifiable Benchmarking of Long-Horizon Spatial Biology AI agents are increasingly useful for biological data analysis, but existing benchmarks mostly test broad biological knowledge, executable workflows, or localized analysis steps rather than end-to-end scientific reasoning over spatial measurements. We introduce SpatialBench-Long, a bench",
+          "source_url": "https://arxiv.org/html/2605.28065"
+        },
+        {
+          "term": "single-cell",
+          "location": "Abstract / metadata",
+          "excerpt": "mouse optic nerve aging/intervention systems, spanning CosMx, Visium, Xenium, multiplexed error-robust fluorescence in situ hybridization (MERFISH), single-cell RNA sequencing (scRNA-seq), Slide-seq, Slide-tags, histology, and lineage-recording data. Candidate claims are hardened through reproduction, independent scientist review, and trajectory inspection. Final answers are graded deterministical",
+          "source_url": "https://arxiv.org/html/2605.28065"
+        }
+      ],
+      "related_benchmarks": [
+        "SpatialBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Explicit biomedical benchmark contribution detected.",
+      "match_score": 28,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "seed:2605.28065",
+      "is_seed": true
+    },
+    {
+      "id": "arxiv:2605.28025",
+      "slug": "arxiv-2605-28025-3e5ff323ae",
+      "kind": "paper",
+      "title": "MIRA: A Bilingual Benchmark for Medical Information Response Audit",
+      "abstract": "Large language models (LLMs) are increasingly used to provide public-facing health information, yet existing safety evaluations overlook whether responses preserve comparable medical information across different user phrasings of the same question. To address this, we introduce the Medical Information Response Audit (MIRA), a bilingual, controlled benchmark that assesses whether LLMs provide comparable medical information across user-side language, register, and health literacy signals. MIRA contains 4,320 prompts built from 60 medically reviewed, low-risk health questions. Across five mainstream LLMs, models answered all medical questions, but responses to low health-literacy signals consistently omitted more key information, provided fewer concrete next steps, and offered less support for independent judgment. We term this pattern Differential Information Dilution (DID). Language effects are model-specific rather than uniformly worse for non-English prompts. A comparison with 300 real-world health queries provides preliminary evidence of rank-order validity. A knowledge-guided mitigation prompt reduces information dilution for most models, with the largest reductions in underinformative simplification observed for Claude (~8%) and Qwen (~6%).",
+      "authors": [
+        "Mengyu Xu",
+        "Qiaoxin Yang",
+        "Qianqian Wang",
+        "Xiwei Dai",
+        "Weiyi Wu",
+        "Chongyang Gao"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-05-27T06:28:03Z",
+      "updated_at": "2026-05-27T06:28:03Z",
+      "first_seen_at": "2026-05-27T06:28:03Z",
+      "event_at": "2026-05-27T06:28:03Z",
+      "priority": "P1",
+      "categories": [
+        "text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2605.28025"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.28025v1",
+        "html": "https://arxiv.org/html/2605.28025",
+        "pdf": "https://arxiv.org/pdf/2605.28025v1"
+      },
+      "evidence": [
+        {
+          "term": "we introduce",
+          "location": "Abstract / metadata",
+          "excerpt": "evaluations overlook whether responses preserve comparable medical information across different user phrasings of the same question. To address this, we introduce the Medical Information Response Audit (MIRA), a bilingual, controlled benchmark that assesses whether LLMs provide comparable medical information across user-side language, register, and health literacy signals. MIRA contains 4,320 prompt",
+          "source_url": "https://arxiv.org/html/2605.28025"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "MIRA: A Bilingual Benchmark for Medical Information Response Audit Large language models (LLMs) are increasingly used to provide public-facing health information, yet existing safety evaluations overlook whether responses preserve comparable medical information acros",
+          "source_url": "https://arxiv.org/html/2605.28025"
+        },
+        {
+          "term": "medical",
+          "location": "Abstract / metadata",
+          "excerpt": "MIRA: A Bilingual Benchmark for Medical Information Response Audit Large language models (LLMs) are increasingly used to provide public-facing health information, yet existing safety evaluations overlook whether responses preserve comparable medical information across different",
+          "source_url": "https://arxiv.org/html/2605.28025"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Explicit biomedical benchmark contribution detected.",
+      "match_score": 14,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "seed:2605.28025",
+      "is_seed": true
+    }
+  ]
+}

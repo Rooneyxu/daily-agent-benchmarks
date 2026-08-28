@@ -2,7 +2,7 @@ name: Deploy Pages
 
 on:
   workflow_run:
-    workflows: ["Daily arXiv update"]
+    workflows: ["Daily arXiv update", "Daily Bio/Medical update"]
     types: [completed]
   push:
     branches: [main]

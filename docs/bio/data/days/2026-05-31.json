@@ -1,0 +1,87 @@
+{
+  "date": "2026-05-31",
+  "count": 1,
+  "entries": [
+    {
+      "id": "arxiv:2607.22566",
+      "slug": "arxiv-2607-22566-1d79f02ee0",
+      "kind": "paper",
+      "title": "MedLoCoMo: A Long-Context Multi-Session Medical Dialogue Benchmark for Large Language Models",
+      "abstract": "MedLoCoMo is a Medical Long-Context Memory benchmark for patient-specific clinical reasoning over multi-admission medical dialogue. Existing medical QA benchmarks largely test short context knowledge or single document grounding, leaving open whether LLMs can use, connect, and abstain over longitudinal patient histories. We build MedLoCoMo from deidentified MIMIC-IV and MIMIC-IV-Note records by constructing admission-level clinical packets, synthesizing grounded doctor-patient conversations, and generating evidence linked QA items over single-admission, cross-admission, and adversarial unanswerable settings. The benchmark contains 100 patient timelines averaging 1,669.8 turns, 29.7 sessions, and 74,512.2 tokens per conversation. Across the evaluated baselines, cross-admission reasoning is consistently harder than localized evidence use, even when models have long context windows or use external memory or retrieval methods. The code and MedLoCoMo benchmark release is available at https://github.com/leozzy13/MedLoCoMo for use and reproducibility.",
+      "authors": [
+        "Zeyu Zhang",
+        "Ziqing Wang",
+        "Kaize Ding"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-05-31T03:40:07Z",
+      "updated_at": "2026-05-31T03:40:07Z",
+      "first_seen_at": "2026-05-31T03:40:07Z",
+      "event_at": "2026-05-31T03:40:07Z",
+      "priority": "P1",
+      "categories": [
+        "text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2607.22566"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.22566v1",
+        "html": "https://arxiv.org/html/2607.22566",
+        "pdf": "https://arxiv.org/pdf/2607.22566v1"
+      },
+      "evidence": [
+        {
+          "term": "we build",
+          "location": "Abstract / metadata",
+          "excerpt": "st short context knowledge or single document grounding, leaving open whether LLMs can use, connect, and abstain over longitudinal patient histories. We build MedLoCoMo from deidentified MIMIC-IV and MIMIC-IV-Note records by constructing admission-level clinical packets, synthesizing grounded doctor-patient conversations, and generating evidence linked QA items over single-admission, cross-admis",
+          "source_url": "https://arxiv.org/html/2607.22566"
+        },
+        {
+          "term": "reproducibility",
+          "location": "Abstract / metadata",
+          "excerpt": "use external memory or retrieval methods. The code and MedLoCoMo benchmark release is available at https://github.com/leozzy13/MedLoCoMo for use and reproducibility. MedLoCoMo is a Medical Long-Context Memory benchmark for patient-specific clinical reasoning over multi-admission medical dialogue. Existing medical QA benchmarks largely test short context knowledge or single document grounding, leaving",
+          "source_url": "https://arxiv.org/html/2607.22566"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "MedLoCoMo: A Long-Context Multi-Session Medical Dialogue Benchmark for Large Language Models MedLoCoMo is a Medical Long-Context Memory benchmark for patient-specific clinical reasoning over multi-admission medical dialogue. Existing medical QA benchmarks largely test short context knowledge or single doc",
+          "source_url": "https://arxiv.org/html/2607.22566"
+        },
+        {
+          "term": "benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "dLoCoMo is a Medical Long-Context Memory benchmark for patient-specific clinical reasoning over multi-admission medical dialogue. Existing medical QA benchmarks largely test short context knowledge or single document grounding, leaving open whether LLMs can use, connect, and abstain over longitudinal patient histories. We build MedLoCoMo from deidentified MIMIC-IV and MIMIC-IV-Note records by cons",
+          "source_url": "https://arxiv.org/html/2607.22566"
+        },
+        {
+          "term": "medical",
+          "location": "Abstract / metadata",
+          "excerpt": "MedLoCoMo: A Long-Context Multi-Session Medical Dialogue Benchmark for Large Language Models MedLoCoMo is a Medical Long-Context Memory benchmark for patient-specific clinical reasoning over multi-admission medical dialogue. Existing medical QA benchmarks largely test short context know",
+          "source_url": "https://arxiv.org/html/2607.22566"
+        },
+        {
+          "term": "clinical",
+          "location": "Abstract / metadata",
+          "excerpt": "-Context Multi-Session Medical Dialogue Benchmark for Large Language Models MedLoCoMo is a Medical Long-Context Memory benchmark for patient-specific clinical reasoning over multi-admission medical dialogue. Existing medical QA benchmarks largely test short context knowledge or single document grounding, leaving open whether LLMs can use, connect, and abstain over longitudinal patient histories",
+          "source_url": "https://arxiv.org/html/2607.22566"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Explicit biomedical benchmark contribution detected.",
+      "match_score": 22,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "seed:2607.22566",
+      "is_seed": true
+    }
+  ]
+}

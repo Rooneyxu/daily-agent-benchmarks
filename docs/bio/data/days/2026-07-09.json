@@ -1,0 +1,95 @@
+{
+  "date": "2026-07-09",
+  "count": 1,
+  "entries": [
+    {
+      "id": "arxiv:2607.08758",
+      "slug": "arxiv-2607-08758-8844b1182e",
+      "kind": "paper",
+      "title": "Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation",
+      "abstract": "Scientific ideas rarely start from a blank page. They inherit mechanisms, repair known limitations, and recombine pieces of earlier work, much like biological genomes. Current benchmarks still say little about whether AI systems can follow this inheritance structure. We present IdeaGene-Bench (IG-Bench), a benchmark for scientific lineage reasoning and lineage-grounded idea generation. IG-Bench is organized around the IdeaGene framework: each paper or proposal is represented as a set of minimal, typed, evidence-grounded Idea Genome objects, and a GenomeDiff aligns these objects to record inheritance, mutation, loss, external import, and novel insertion under six operational evolutionary dynamics. The benchmark contains 1,961 golden lineage traces, 1,085 curated Idea Genome objects, and 920 pairwise GenomeDiff records across 10 scientific domains. It supports two evaluations. IG-Exam (42 task types, 1,029 instances) tests closed-form lineage reasoning across Idea Genome abstraction, inheritance tracing, evolutionary reasoning, and lineage verification. IG-Arena evaluates generation with a lineage-conditioned Population-Evolution Score(PES), asking whether a proposal can be inserted as a coherent descendant of a given lineage population: it should inherit the right Idea Genome objects, vary meaningfully from nearby work, and offer selection value for future research. Experiments on 14 LLM-based scientists expose a compositional bottleneck. The strongest system reaches only 27.3% exact accuracy on lineage reasoning, and structured lineage context reshuffles system rankings rather than helping every participant uniformly.",
+      "authors": [
+        "Yifan Zhou",
+        "Qihao Yang",
+        "Yan Li",
+        "Donggang Li",
+        "Xiru Hu",
+        "Hokin Deng",
+        "Ziyang Gong",
+        "Xuanyi Zhou",
+        "Huacan Wang",
+        "Xiangchao Yan",
+        "Wanghan Xu",
+        "Wenlong Zhang",
+        "Shaofeng Zhang",
+        "Yue Zhou",
+        "Yifan Yang",
+        "Zhihang Zhong",
+        "Xue Yang"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-07-09T17:55:53Z",
+      "updated_at": "2026-07-09T17:55:53Z",
+      "first_seen_at": "2026-07-09T17:55:53Z",
+      "event_at": "2026-07-09T17:55:53Z",
+      "priority": "P1",
+      "categories": [
+        "text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2607.08758"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.08758v1",
+        "html": "https://arxiv.org/html/2607.08758",
+        "pdf": "https://arxiv.org/pdf/2607.08758v1"
+      },
+      "evidence": [
+        {
+          "term": "we present",
+          "location": "Abstract / metadata",
+          "excerpt": "es of earlier work, much like biological genomes. Current benchmarks still say little about whether AI systems can follow this inheritance structure. We present IdeaGene-Bench (IG-Bench), a benchmark for scientific lineage reasoning and lineage-grounded idea generation. IG-Bench is organized around the IdeaGene framework: each paper or proposal is represented as a set of minimal, typed, evidence-g",
+          "source_url": "https://arxiv.org/html/2607.08758"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation Scientific ideas rarely start from a blank page. They inherit mechanisms, repair known limitations, and recombine pieces of earlier work, much like biological genomes. Cu",
+          "source_url": "https://arxiv.org/html/2607.08758"
+        },
+        {
+          "term": "benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "art from a blank page. They inherit mechanisms, repair known limitations, and recombine pieces of earlier work, much like biological genomes. Current benchmarks still say little about whether AI systems can follow this inheritance structure. We present IdeaGene-Bench (IG-Bench), a benchmark for scientific lineage reasoning and lineage-grounded idea generation. IG-Bench is organized around the Idea",
+          "source_url": "https://arxiv.org/html/2607.08758"
+        },
+        {
+          "term": "benchmarking",
+          "location": "Abstract / metadata",
+          "excerpt": "Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation Scientific ideas rarely start from a blank page. They inherit mechanisms, repair known limitations, and recombine pieces of earlier work, much like biological genomes. Curre",
+          "source_url": "https://arxiv.org/html/2607.08758"
+        },
+        {
+          "term": "biological",
+          "location": "Abstract / metadata",
+          "excerpt": "n Scientific ideas rarely start from a blank page. They inherit mechanisms, repair known limitations, and recombine pieces of earlier work, much like biological genomes. Current benchmarks still say little about whether AI systems can follow this inheritance structure. We present IdeaGene-Bench (IG-Bench), a benchmark for scientific lineage reasoning and lineage-grounded idea generation. IG-Bench",
+          "source_url": "https://arxiv.org/html/2607.08758"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Explicit biomedical benchmark contribution detected.",
+      "match_score": 20,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "seed:2607.08758",
+      "is_seed": true
+    }
+  ]
+}

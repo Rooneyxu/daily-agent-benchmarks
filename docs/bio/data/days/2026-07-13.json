@@ -1,0 +1,80 @@
+{
+  "date": "2026-07-13",
+  "count": 1,
+  "entries": [
+    {
+      "id": "arxiv:2607.11079",
+      "slug": "arxiv-2607-11079-89cef27722",
+      "kind": "paper",
+      "title": "Are LLMs Ready for Scientific Discovery? A Capability-Oriented Benchmark for AI Scientists",
+      "abstract": "Existing benchmarks for scientific data analysis evaluate LLMs primarily on code execution or workflow completion, overlooking that scientific analysis serves to support distinct types of scientific claims: hypothesis exploration, statistical inference, mechanistic explanation, each with different assumptions and validity criteria. We introduce SDABench, a benchmark that reorganizes evaluation around six capabilities (descriptive, exploratory, inferential, predictive, causal, and mechanistic) across five domains (Biology, Chemistry, Environment, Geography, Physics). SDABench comprises 527 real-data instances (SDA-Real) and 6000 synthetic instances (SDA-Synth), each in both multiple-choice and open-ended formats, constructed through an automated pipeline. Evaluating 15 representative LLMs, we find that models handle descriptive analysis well but degrade sharply on tasks requiring assumption selection, latent-process modeling, or mechanistic reasoning. SDABench further provides a five-stage error analysis framework that locates where LLMs fail: more advanced models more reliably identify the relevant scope and variables, but still struggle to select appropriate analytical procedures, model variable relationships, and draw valid conclusions.",
+      "authors": [
+        "Chuhan Shi",
+        "Xiaoquan Ren",
+        "Sicheng Song",
+        "Haobo Li",
+        "Rui Sheng",
+        "Yushi Sun"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-07-13T04:39:40Z",
+      "updated_at": "2026-07-13T04:39:40Z",
+      "first_seen_at": "2026-07-13T04:39:40Z",
+      "event_at": "2026-07-13T04:39:40Z",
+      "priority": "P1",
+      "categories": [
+        "text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2607.11079"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.11079v1",
+        "html": "https://arxiv.org/html/2607.11079",
+        "pdf": "https://arxiv.org/pdf/2607.11079v1"
+      },
+      "evidence": [
+        {
+          "term": "we introduce",
+          "location": "Abstract / metadata",
+          "excerpt": "of scientific claims: hypothesis exploration, statistical inference, mechanistic explanation, each with different assumptions and validity criteria. We introduce SDABench, a benchmark that reorganizes evaluation around six capabilities (descriptive, exploratory, inferential, predictive, causal, and mechanistic) across five domains (Biology, Chemistry, Environment, Geography, Physics). SDABench comp",
+          "source_url": "https://arxiv.org/html/2607.11079"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "Are LLMs Ready for Scientific Discovery? A Capability-Oriented Benchmark for AI Scientists Existing benchmarks for scientific data analysis evaluate LLMs primarily on code execution or workflow completion, overlooking that scientific analysis serves to support distinct types of scientific claims: hypothesis exp",
+          "source_url": "https://arxiv.org/html/2607.11079"
+        },
+        {
+          "term": "benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "Are LLMs Ready for Scientific Discovery? A Capability-Oriented Benchmark for AI Scientists Existing benchmarks for scientific data analysis evaluate LLMs primarily on code execution or workflow completion, overlooking that scientific analysis serves to support distinct types of scientific claims: hypothesis exploration, statistical inference, mecha",
+          "source_url": "https://arxiv.org/html/2607.11079"
+        },
+        {
+          "term": "biology",
+          "location": "Abstract / metadata",
+          "excerpt": "that reorganizes evaluation around six capabilities (descriptive, exploratory, inferential, predictive, causal, and mechanistic) across five domains (Biology, Chemistry, Environment, Geography, Physics). SDABench comprises 527 real-data instances (SDA-Real) and 6000 synthetic instances (SDA-Synth), each in both multiple-choice and open-ended formats, constructed through an automated pipeline. E",
+          "source_url": "https://arxiv.org/html/2607.11079"
+        }
+      ],
+      "related_benchmarks": [
+        "SDABench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Explicit biomedical benchmark contribution detected.",
+      "match_score": 19,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "seed:2607.11079",
+      "is_seed": true
+    }
+  ]
+}

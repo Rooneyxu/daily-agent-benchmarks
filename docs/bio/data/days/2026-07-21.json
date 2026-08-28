@@ -1,0 +1,231 @@
+{
+  "date": "2026-07-21",
+  "count": 3,
+  "entries": [
+    {
+      "id": "arxiv:2607.20572",
+      "slug": "arxiv-2607-20572-531a90111c",
+      "kind": "paper",
+      "title": "Auditing pretraining contamination in single-cell foundation model benchmarks",
+      "abstract": "Single-cell foundation models (scFMs) such as Geneformer, scGPT, and Universal Cell Embeddings (UCE) are pretrained on tens of millions of cells drawn from public repositories. The same repositories underlie widely used integration benchmarks, creating an unmeasured risk that zero-shot benchmark performance reflects pretraining exposure rather than genuine generalization. We introduce \\textbf{scContam}, a per-cell audit framework that combines a MinHash-based gene-set fingerprint signal against the explicit pretraining corpus with a loss-based membership inference attack (MIA-scFM). Applied to four scIB benchmarks and three scFMs, we find that two of the most-cited benchmarks, PBMC 3k and the CELLxGENE human pancreatic islet atlas, contain extensive pretraining-overlap evidence ($80.4\\%$ and $77.0\\%$ of cells with fingerprint $p < 0.05$ against Genecorpus-30M), whereas the post-cutoff datasets AIDA v2 and Tahoe-100M show no overlap evidence ($0\\%$). A controlled re-pretraining experiment establishes that MIA-scFM AUROC scales monotonically with the model's capacity-to-data ratio (AUROC $0.494 \\to 0.690 \\to 0.881$ across properly-regularized, mildly-overfit, and aggressively-overfit regimes), demonstrating that production scFMs resist instance-level memorization but distributional contamination must be detected separately. A donor-matched, within-cell-type analysis with three architectures shows that contaminated cells embed measurably more tightly than donor-matched clean cells (permutation $p = 0.030, 0.014, < 0.002$, respectively), with a perfectly null AIDA negative control. Pretraining audits are tractable and should accompany scFM benchmark reporting.",
+      "authors": [
+        "Sarwan Ali"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-07-21T22:47:55Z",
+      "updated_at": "2026-07-21T22:47:55Z",
+      "first_seen_at": "2026-07-21T22:47:55Z",
+      "event_at": "2026-07-21T22:47:55Z",
+      "priority": "P2",
+      "categories": [
+        "quality"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2607.20572"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.20572v1",
+        "html": "https://arxiv.org/html/2607.20572",
+        "pdf": "https://arxiv.org/pdf/2607.20572v1"
+      },
+      "evidence": [
+        {
+          "term": "we introduce",
+          "location": "Abstract / metadata",
+          "excerpt": "ration benchmarks, creating an unmeasured risk that zero-shot benchmark performance reflects pretraining exposure rather than genuine generalization. We introduce \\textbf{scContam}, a per-cell audit framework that combines a MinHash-based gene-set fingerprint signal against the explicit pretraining corpus with a loss-based membership inference attack (MIA-scFM). Applied to four scIB benchmarks and t",
+          "source_url": "https://arxiv.org/html/2607.20572"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "Auditing pretraining contamination in single-cell foundation model benchmarks Single-cell foundation models (scFMs) such as Geneformer, scGPT, and Universal Cell Embeddings (UCE) are pretrained on tens of millions of cells drawn from public repositories. The same repositories underlie widely used integration benchm",
+          "source_url": "https://arxiv.org/html/2607.20572"
+        },
+        {
+          "term": "benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "Auditing pretraining contamination in single-cell foundation model benchmarks Single-cell foundation models (scFMs) such as Geneformer, scGPT, and Universal Cell Embeddings (UCE) are pretrained on tens of millions of cells drawn from public repositories. The same repositories underlie widely used integration benchma",
+          "source_url": "https://arxiv.org/html/2607.20572"
+        },
+        {
+          "term": "single-cell",
+          "location": "Abstract / metadata",
+          "excerpt": "Auditing pretraining contamination in single-cell foundation model benchmarks Single-cell foundation models (scFMs) such as Geneformer, scGPT, and Universal Cell Embeddings (UCE) are pretrained on tens of millions of cells drawn from public repositories. The same repositories underlie wid",
+          "source_url": "https://arxiv.org/html/2607.20572"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Explicit biomedical benchmark contribution detected.",
+      "match_score": 19,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "seed:2607.20572",
+      "is_seed": true
+    },
+    {
+      "id": "arxiv:2607.19262",
+      "slug": "arxiv-2607-19262-acfdfe0103",
+      "kind": "paper",
+      "title": "BioSecBench-Surveillance: A Verifiable Benchmark for AI Agents in Pathogen Genomic Surveillance",
+      "abstract": "As pathogen genomic surveillance scales, the bottleneck is shifting from data generation to analysis. We present BioSecBench-Surveillance, a verifiable benchmark of 100 evaluations testing whether AI agents can infer the right analysis pipeline from raw sequencing data and surveillance context. Each evaluation gives an agent only the data and context a human analyst would have, then grades its structured answer deterministically. The tasks span seven categories, from taxonomic classification to genetic-engineering detection, across diverse sample types and sequencing technologies. Across 3,962 gradable attempts from sixteen model-harness pairs, the strongest configuration cleared only about half. Opus 4.8 with PI led at 50.2 percent, with a 95 percent confidence interval of 40.1 to 60.3 percent across 83 evaluations, tied with GPT-5.5 with Codex at 50.2 percent, with a 95 percent confidence interval of 40.8 to 59.6 percent, followed by Opus 4.7 with PI at 49.6 percent, with a 95 percent confidence interval of 40.0 to 59.2 percent, and Sonnet 4.6 with PI at 48.6 percent, with a 95 percent confidence interval of 38.9 to 58.3 percent. Even when agents invoked the correct workflows, their mistakes came from the choices around them, such as which references, thresholds, filters, and normalization to apply. BioSecBench-Surveillance provides a standard for measuring whether agents can be trusted to perform genomic surveillance when the next outbreak arrives.",
+      "authors": [
+        "Harmon Bhasin",
+        "Kevin Flyangolts",
+        "Dianzhuo Wang",
+        "Evan Seeyave",
+        "Arjun Banerjee",
+        "Amanda Darling",
+        "Joshua Stallings",
+        "David Stern",
+        "Shawn Higdon",
+        "Claire Duvallet",
+        "Bryan Tegomoh",
+        "Kenny Workman"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-07-21T16:33:57Z",
+      "updated_at": "2026-07-21T16:33:57Z",
+      "first_seen_at": "2026-07-21T16:33:57Z",
+      "event_at": "2026-07-21T16:33:57Z",
+      "priority": "P1",
+      "categories": [
+        "text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2607.19262"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.19262v1",
+        "html": "https://arxiv.org/html/2607.19262",
+        "pdf": "https://arxiv.org/pdf/2607.19262v1"
+      },
+      "evidence": [
+        {
+          "term": "we present",
+          "location": "Abstract / metadata",
+          "excerpt": "for AI Agents in Pathogen Genomic Surveillance As pathogen genomic surveillance scales, the bottleneck is shifting from data generation to analysis. We present BioSecBench-Surveillance, a verifiable benchmark of 100 evaluations testing whether AI agents can infer the right analysis pipeline from raw sequencing data and surveillance context. Each evaluation gives an agent only the data and context",
+          "source_url": "https://arxiv.org/html/2607.19262"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "BioSecBench-Surveillance: A Verifiable Benchmark for AI Agents in Pathogen Genomic Surveillance As pathogen genomic surveillance scales, the bottleneck is shifting from data generation to analysis. We present BioSecBench-Surveillance, a verifiable benchmark of 100 evaluations testing whe",
+          "source_url": "https://arxiv.org/html/2607.19262"
+        },
+        {
+          "term": "genomic",
+          "location": "Abstract / metadata",
+          "excerpt": "BioSecBench-Surveillance: A Verifiable Benchmark for AI Agents in Pathogen Genomic Surveillance As pathogen genomic surveillance scales, the bottleneck is shifting from data generation to analysis. We present BioSecBench-Surveillance, a verifiable benchmark of 100 evaluations testing whether AI agents can infer the right",
+          "source_url": "https://arxiv.org/html/2607.19262"
+        }
+      ],
+      "related_benchmarks": [
+        "BioSecBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Explicit biomedical benchmark contribution detected.",
+      "match_score": 14,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "seed:2607.19262",
+      "is_seed": true
+    },
+    {
+      "id": "arxiv:2607.18777",
+      "slug": "arxiv-2607-18777-bb3068042d",
+      "kind": "paper",
+      "title": "PertReason: A Knowledge-Grounded Benchmark and Framework for Cell-State-Conditioned Mechanistic Reasoning of Perturbation Effects",
+      "abstract": "Evaluating machine learning in scientific domains requires separating correct predictions from correct reasons under realistic distribution shifts. We introduce PertReason, a knowledge-grounded benchmark and framework suite for cell-state--conditioned reasoning about perturbation effects. At its core, PertReasonQA is a benchmark that tests whether models can generate mechanistically faithful explanations while remaining robust to complex shifts, such as new cells and unseen perturbations. PertReasonQA combines single-cell genetic and chemical perturbation data across multiple cellular contexts with knowledge graphs, and dynamically conditions pathways on cell-specific basal states to avoid generic memorization. Evaluations on state-of-the-art models reveal systematic gaps between predictive accuracy and mechanistic reasoning. Specifically, these models exhibit failure modes largely invisible to standard benchmarks, such as deriving correct answers through flawed logic, ignoring cellular context, and generating directionally inconsistent mechanisms. As a reference probe of the benchmark, we present PertReasonLM, a large language model trained to align outcome predictions with context-specific mechanistic reasoning. Our model targets the identified failure modes by grounding rationales in context-specific pathways and tightening agreement between outcomes and mechanisms. Together, we provide a diagnostic framework for exposing and mitigating failures in faithful reasoning in data-rich scientific systems.",
+      "authors": [
+        "Dongkwan Kim",
+        "Yiming Gao",
+        "Yining Yang",
+        "Yang Shen"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-07-21T06:59:25Z",
+      "updated_at": "2026-07-21T06:59:25Z",
+      "first_seen_at": "2026-07-21T06:59:25Z",
+      "event_at": "2026-07-21T06:59:25Z",
+      "priority": "P1",
+      "categories": [
+        "text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2607.18777"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.18777v1",
+        "html": "https://arxiv.org/html/2607.18777",
+        "pdf": "https://arxiv.org/pdf/2607.18777v1"
+      },
+      "evidence": [
+        {
+          "term": "we introduce",
+          "location": "Abstract / metadata",
+          "excerpt": "s Evaluating machine learning in scientific domains requires separating correct predictions from correct reasons under realistic distribution shifts. We introduce PertReason, a knowledge-grounded benchmark and framework suite for cell-state--conditioned reasoning about perturbation effects. At its core, PertReasonQA is a benchmark that tests whether models can generate mechanistically faithful expla",
+          "source_url": "https://arxiv.org/html/2607.18777"
+        },
+        {
+          "term": "we present",
+          "location": "Abstract / metadata",
+          "excerpt": "answers through flawed logic, ignoring cellular context, and generating directionally inconsistent mechanisms. As a reference probe of the benchmark, we present PertReasonLM, a large language model trained to align outcome predictions with context-specific mechanistic reasoning. Our model targets the identified failure modes by grounding rationales in context-specific pathways and tightening agree",
+          "source_url": "https://arxiv.org/html/2607.18777"
+        },
+        {
+          "term": "failure mode",
+          "location": "Abstract / metadata",
+          "excerpt": "aluations on state-of-the-art models reveal systematic gaps between predictive accuracy and mechanistic reasoning. Specifically, these models exhibit failure modes largely invisible to standard benchmarks, such as deriving correct answers through flawed logic, ignoring cellular context, and generating directionally inconsistent mechanisms. As a reference probe of the benchmark, we present PertReason",
+          "source_url": "https://arxiv.org/html/2607.18777"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "PertReason: A Knowledge-Grounded Benchmark and Framework for Cell-State-Conditioned Mechanistic Reasoning of Perturbation Effects Evaluating machine learning in scientific domains requires separating correct predictions from correct reasons under realistic distribution shifts. We i",
+          "source_url": "https://arxiv.org/html/2607.18777"
+        },
+        {
+          "term": "benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "systematic gaps between predictive accuracy and mechanistic reasoning. Specifically, these models exhibit failure modes largely invisible to standard benchmarks, such as deriving correct answers through flawed logic, ignoring cellular context, and generating directionally inconsistent mechanisms. As a reference probe of the benchmark, we present PertReasonLM, a large language model trained to alig",
+          "source_url": "https://arxiv.org/html/2607.18777"
+        },
+        {
+          "term": "single-cell",
+          "location": "Abstract / metadata",
+          "excerpt": "ate mechanistically faithful explanations while remaining robust to complex shifts, such as new cells and unseen perturbations. PertReasonQA combines single-cell genetic and chemical perturbation data across multiple cellular contexts with knowledge graphs, and dynamically conditions pathways on cell-specific basal states to avoid generic memorization. Evaluations on state-of-the-art models reveal",
+          "source_url": "https://arxiv.org/html/2607.18777"
+        }
+      ],
+      "related_benchmarks": [
+        "PertReasonQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Explicit biomedical benchmark contribution detected.",
+      "match_score": 25,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "seed:2607.18777",
+      "is_seed": true
+    }
+  ]
+}

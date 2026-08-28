@@ -1,0 +1,181 @@
+{
+  "date": "2026-06-25",
+  "count": 2,
+  "entries": [
+    {
+      "id": "arxiv:2606.27413",
+      "slug": "arxiv-2606-27413-a68f60be13",
+      "kind": "paper",
+      "title": "GRAFT: Biological Graph and Hypergraph Benchmarks for Linked Gene Expression and Phenotypic Trait Prediction in Arabidopsis thaliana",
+      "abstract": "Understanding which genes control which traits in an organism remains one of the central challenges in biology. Despite significant advances in data collection technology, our ability to map genes to traits is still limited. This genome-to-phenome (G2P) challenge spans several problem domains, including plant breeding, and requires methods capable of reasoning over high-dimensional, heterogeneous, and biologically structured data. Current datasets and data repositories, however, are not well-equipped for this task. Current studies do not link gene expression and trait data, and most focus on very specific traits, limiting the breadth of possible correlations. To address this gap, we present the novel Gene-Graph Regression for Arabidopsis Functional Traits (GRAFT) dataset, a curated multi-modal dataset linking gene expression profiles with phenotypic trait measurements in Arabidopsis thaliana, a model organism in plant biology. GRAFT supports tasks such as phenotype prediction and interpretable graph learning. In addition, we benchmark conventional regression and explanatory baselines, including a biologically-informed hypergraph baseline, to validate gene-trait associations. To the best of our knowledge, this is the first dataset to provide multimodal gene information and heterogeneous trait or phenotype data for the same Arabidopsis thaliana specimens. With GRAFT, we aim to foster research to accurately understand the relationship between genotypes and phenotypes using gene information, higher-order gene pairings, and trait data from multiple sources.",
+      "authors": [
+        "Manuel Serna-Aguilera",
+        "Vanshika Jindal",
+        "Fiona L. Goggin",
+        "Jiamei Li",
+        "Aranyak Goswami",
+        "Alexander Bucksch",
+        "Suxing Liu",
+        "Khoa Luu"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-06-25T16:02:38Z",
+      "updated_at": "2026-06-25T16:02:38Z",
+      "first_seen_at": "2026-06-25T16:02:38Z",
+      "event_at": "2026-06-25T16:02:38Z",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2606.27413"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.27413v1",
+        "html": "https://arxiv.org/html/2606.27413",
+        "pdf": "https://arxiv.org/pdf/2606.27413v1"
+      },
+      "evidence": [
+        {
+          "term": "we present",
+          "location": "Abstract / metadata",
+          "excerpt": "not link gene expression and trait data, and most focus on very specific traits, limiting the breadth of possible correlations. To address this gap, we present the novel Gene-Graph Regression for Arabidopsis Functional Traits (GRAFT) dataset, a curated multi-modal dataset linking gene expression profiles with phenotypic trait measurements in Arabidopsis thaliana, a model organism in plant biology",
+          "source_url": "https://arxiv.org/html/2606.27413"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "GRAFT: Biological Graph and Hypergraph Benchmarks for Linked Gene Expression and Phenotypic Trait Prediction in Arabidopsis thaliana Understanding which genes control which traits in an organism remains one of the central challenges in biology. Despite significant advances in data collec",
+          "source_url": "https://arxiv.org/html/2606.27413"
+        },
+        {
+          "term": "benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "GRAFT: Biological Graph and Hypergraph Benchmarks for Linked Gene Expression and Phenotypic Trait Prediction in Arabidopsis thaliana Understanding which genes control which traits in an organism remains one of the central challenges in biology. Despite significant advances in data collect",
+          "source_url": "https://arxiv.org/html/2606.27413"
+        },
+        {
+          "term": "biology",
+          "location": "Abstract / metadata",
+          "excerpt": "typic Trait Prediction in Arabidopsis thaliana Understanding which genes control which traits in an organism remains one of the central challenges in biology. Despite significant advances in data collection technology, our ability to map genes to traits is still limited. This genome-to-phenome (G2P) challenge spans several problem domains, including plant breeding, and requires methods capable",
+          "source_url": "https://arxiv.org/html/2606.27413"
+        },
+        {
+          "term": "biological",
+          "location": "Abstract / metadata",
+          "excerpt": "GRAFT: Biological Graph and Hypergraph Benchmarks for Linked Gene Expression and Phenotypic Trait Prediction in Arabidopsis thaliana Understanding which genes control which traits in an organism remains one of the central challenges in biology. Despite sign",
+          "source_url": "https://arxiv.org/html/2606.27413"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Explicit biomedical benchmark contribution detected.",
+      "match_score": 22,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "seed:2606.27413",
+      "is_seed": true
+    },
+    {
+      "id": "arxiv:2606.26563",
+      "slug": "arxiv-2606-26563-f84738d86a",
+      "kind": "paper",
+      "title": "scBench-Long: Verifiable Benchmarking of Long-Horizon Single-Cell Biology",
+      "abstract": "Single-cell studies require analysts to convert raw measurements into specific biological claims through multi-step workflows and integration of metadata, assay context, and auxiliary evidence. Existing AI-biology benchmarks largely measure broad knowledge, executable workflows, or local analysis steps. We introduce scBench-Long, a benchmark for long-horizon single-cell biology in which agents must recover scientific conclusions from raw or near-raw data without prescribed methods. The benchmark contains 21 evaluations spanning melanoma CD8 T-cell reactivity, CD8 RNA+ATAC regulatory inference, human--monkey chimera development, KRAS-driven lung tumor aging, and lethal COVID-19 lung pathology. Tasks cover paired scRNA/TCR sequencing, RNA and chromatin profiling, cross-species transcriptomics, combinatorial scRNA-seq, single-nucleus RNA-seq, immune repertoires, ortholog maps, ligand--receptor resources, and validation evidence. Candidate claims are reproduced, reviewed, and converted into controlled answer vocabularies with deterministic grading and trajectory rubrics. Across 1,068 completed trajectories, the strongest model--harness pair passes 16/63 runs (25.4\\%). scBench-Long evaluates whether agents can move beyond local analysis steps and make complex scientific claims that are supported by single-cell data.",
+      "authors": [
+        "Ian Diks",
+        "Zhen Yang",
+        "Arjun Banerjee",
+        "Tim Proctor",
+        "Kenny Workman"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-06-25T03:21:50Z",
+      "updated_at": "2026-06-25T03:21:50Z",
+      "first_seen_at": "2026-06-25T03:21:50Z",
+      "event_at": "2026-06-25T03:21:50Z",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2606.26563"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.26563v1",
+        "html": "https://arxiv.org/html/2606.26563",
+        "pdf": "https://arxiv.org/pdf/2606.26563v1"
+      },
+      "evidence": [
+        {
+          "term": "we introduce",
+          "location": "Abstract / metadata",
+          "excerpt": "assay context, and auxiliary evidence. Existing AI-biology benchmarks largely measure broad knowledge, executable workflows, or local analysis steps. We introduce scBench-Long, a benchmark for long-horizon single-cell biology in which agents must recover scientific conclusions from raw or near-raw data without prescribed methods. The benchmark contains 21 evaluations spanning melanoma CD8 T-cell rea",
+          "source_url": "https://arxiv.org/html/2606.26563"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "scBench-Long: Verifiable Benchmarking of Long-Horizon Single-Cell Biology Single-cell studies require analysts to convert raw measurements into specific biological claims through multi-step workflows and integration of metadata, assay context, and auxiliary evidence. Existi",
+          "source_url": "https://arxiv.org/html/2606.26563"
+        },
+        {
+          "term": "benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "into specific biological claims through multi-step workflows and integration of metadata, assay context, and auxiliary evidence. Existing AI-biology benchmarks largely measure broad knowledge, executable workflows, or local analysis steps. We introduce scBench-Long, a benchmark for long-horizon single-cell biology in which agents must recover scientific conclusions from raw or near-raw data witho",
+          "source_url": "https://arxiv.org/html/2606.26563"
+        },
+        {
+          "term": "benchmarking",
+          "location": "Abstract / metadata",
+          "excerpt": "scBench-Long: Verifiable Benchmarking of Long-Horizon Single-Cell Biology Single-cell studies require analysts to convert raw measurements into specific biological claims through multi-step workflows and integration of metadata, assay context, and auxiliary evidence. Existing",
+          "source_url": "https://arxiv.org/html/2606.26563"
+        },
+        {
+          "term": "biology",
+          "location": "Abstract / metadata",
+          "excerpt": "scBench-Long: Verifiable Benchmarking of Long-Horizon Single-Cell Biology Single-cell studies require analysts to convert raw measurements into specific biological claims through multi-step workflows and integration of metadata, assay context, and auxiliary evidence. Existing AI-biology benchmarks largely measur",
+          "source_url": "https://arxiv.org/html/2606.26563"
+        },
+        {
+          "term": "biological",
+          "location": "Abstract / metadata",
+          "excerpt": "ench-Long: Verifiable Benchmarking of Long-Horizon Single-Cell Biology Single-cell studies require analysts to convert raw measurements into specific biological claims through multi-step workflows and integration of metadata, assay context, and auxiliary evidence. Existing AI-biology benchmarks largely measure broad knowledge, executable workflows, or local analysis steps. We introduce scBench-Lon",
+          "source_url": "https://arxiv.org/html/2606.26563"
+        },
+        {
+          "term": "transcriptomic",
+          "location": "Abstract / metadata",
+          "excerpt": "KRAS-driven lung tumor aging, and lethal COVID-19 lung pathology. Tasks cover paired scRNA/TCR sequencing, RNA and chromatin profiling, cross-species transcriptomics, combinatorial scRNA-seq, single-nucleus RNA-seq, immune repertoires, ortholog maps, ligand--receptor resources, and validation evidence. Candidate claims are reproduced, reviewed, and converted into controlled answer vocabularies with de",
+          "source_url": "https://arxiv.org/html/2606.26563"
+        },
+        {
+          "term": "single-cell",
+          "location": "Abstract / metadata",
+          "excerpt": "scBench-Long: Verifiable Benchmarking of Long-Horizon Single-Cell Biology Single-cell studies require analysts to convert raw measurements into specific biological claims through multi-step workflows and integration of metadata, assay context, and auxiliary evidence. Existing AI-biology benchmarks largel",
+          "source_url": "https://arxiv.org/html/2606.26563"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Explicit biomedical benchmark contribution detected.",
+      "match_score": 34,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "seed:2606.26563",
+      "is_seed": true
+    }
+  ]
+}

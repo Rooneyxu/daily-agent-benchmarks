@@ -2,6 +2,8 @@
 
 每日从 [arXiv](https://arxiv.org) 收集 **Agent Benchmark** 论文，整理成可部署到 GitHub Pages 的静态站点。
 
+仓库同时提供独立的 **Bio & Medical Benchmarks** 子站：收集生物、医学、生命科学、实验 protocol、科研 Agent、生物安全、自动化出题与自动化质检 benchmark，以及 system/model card 中有实质内容的评测更新。P0/P1/P2 只是浏览标记，不决定是否收录。
+
 站点按投稿日期倒序展示：名称、作者、摘要、分类、PDF / HTML 链接；每一天有一份中英双语简报；浏览器内用 **BM25** 做排序搜索。
 
 ## 这个仓库做什么
@@ -48,6 +50,30 @@ python -m http.server 8080 --directory docs
 
 打开 http://127.0.0.1:8080 。
 
+### Bio & Medical 子站
+
+安装固定版本依赖：
+
+```bash
+python -m pip install -r requirements-bio.txt
+```
+
+仅使用仓库内 60 个已核验种子生成静态页面：
+
+```bash
+python scripts/bio_update.py --seed-only
+```
+
+运行四天重叠窗口的完整多来源更新：
+
+```bash
+SUPABASE_URL=... SUPABASE_SECRET_KEY=... python scripts/bio_update.py --days 4
+```
+
+Bio 管线独立巡检 arXiv、Europe PMC、bioRxiv/medRxiv、OpenReview 和配置中的厂商官方页面。Supabase 保存规范记录、来源状态和更新历史，公开网页只读取 `docs/bio/data/` 中的静态 JSON，不会接触数据库密钥。
+
+数据库结构在 `supabase/migrations/`。服务端应使用 Supabase secret key；不要把 secret 或旧 service-role key写入仓库或前端。
+
 ## 发布到 GitHub.io
 
 1. 把仓库推到 GitHub。
@@ -83,7 +109,10 @@ python -m http.server 8080 --directory docs
 
 ```
 scripts/          抓取、过滤、简报、写 JSON
+scripts/bio/      Bio/Medical 多来源抓取、证据抽取、分类与持久化
 docs/             GitHub Pages 站点
 docs/data/        索引与按日切片
+docs/bio/         Bio & Medical 子站及静态快照
+supabase/         Bio/Medical 事实库迁移
 .github/workflows 每日定时更新
 ```

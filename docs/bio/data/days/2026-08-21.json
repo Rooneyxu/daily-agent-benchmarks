@@ -1,0 +1,160 @@
+{
+  "date": "2026-08-21",
+  "count": 2,
+  "entries": [
+    {
+      "id": "arxiv:2608.21357",
+      "slug": "arxiv-2608-21357-984d373632",
+      "kind": "paper",
+      "title": "VIALS: A Benchmark for Visual Interpretation of Artifacts in the Life Sciences",
+      "abstract": "In professional life sciences workflows, scientists routinely interpret visual artifacts (gel blots, microscopy images, plasmid maps, flow cytometry plots, molecular structures, ...) to inform research decisions. We introduce VIALS, a visual question-answering benchmark with 161 such interpretation tasks, spanning the types of artifacts examined throughout experimental workflows in the biotech industry (rather than polished figures from publications and textbooks). While frontier vision-language models can now fluently describe natural images, we find that they are unable to accurately interpret these scientific images, reflecting limitations in domain knowledge and domain-specific visual reasoning capabilities. In contrast, scientists with relevant domain expertise find these visual interpretation tasks straightforward. AI that cannot similarly interpret such images will have limited utility in professional life sciences workflows, where such artifacts are central to how scientists reason, communicate, and make decisions.",
+      "authors": [
+        "Elaine Lau",
+        "Thanuka Udumulla",
+        "Lee Izhaki-Tavor",
+        "Francisco Guzmán",
+        "Nicholas Magazine",
+        "Jonas Mueller"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-21T17:59:26Z",
+      "updated_at": "2026-08-21T17:59:26Z",
+      "first_seen_at": "2026-08-21T17:59:26Z",
+      "event_at": "2026-08-21T17:59:26Z",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.21357"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.21357v1",
+        "html": "https://arxiv.org/html/2608.21357",
+        "pdf": "https://arxiv.org/pdf/2608.21357v1"
+      },
+      "evidence": [
+        {
+          "term": "we introduce",
+          "location": "Abstract / metadata",
+          "excerpt": "nterpret visual artifacts (gel blots, microscopy images, plasmid maps, flow cytometry plots, molecular structures, ...) to inform research decisions. We introduce VIALS, a visual question-answering benchmark with 161 such interpretation tasks, spanning the types of artifacts examined throughout experimental workflows in the biotech industry (rather than polished figures from publications and textboo",
+          "source_url": "https://arxiv.org/html/2608.21357"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "VIALS: A Benchmark for Visual Interpretation of Artifacts in the Life Sciences In professional life sciences workflows, scientists routinely interpret visual artifacts (gel blots, microscopy images, plasmid maps, flow cytometry plots, molecular structures,",
+          "source_url": "https://arxiv.org/html/2608.21357"
+        },
+        {
+          "term": "life science",
+          "location": "Abstract / metadata",
+          "excerpt": "VIALS: A Benchmark for Visual Interpretation of Artifacts in the Life Sciences In professional life sciences workflows, scientists routinely interpret visual artifacts (gel blots, microscopy images, plasmid maps, flow cytometry plots, molecular structures, ...) to inform research decisions. We introduce VIALS, a vis",
+          "source_url": "https://arxiv.org/html/2608.21357"
+        },
+        {
+          "term": "microscopy",
+          "location": "Abstract / metadata",
+          "excerpt": "Interpretation of Artifacts in the Life Sciences In professional life sciences workflows, scientists routinely interpret visual artifacts (gel blots, microscopy images, plasmid maps, flow cytometry plots, molecular structures, ...) to inform research decisions. We introduce VIALS, a visual question-answering benchmark with 161 such interpretation tasks, spanning the types of artifacts examined thr",
+          "source_url": "https://arxiv.org/html/2608.21357"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Explicit biomedical benchmark contribution detected.",
+      "match_score": 19,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "seed:2608.21357",
+      "is_seed": true
+    },
+    {
+      "id": "arxiv:2608.21060",
+      "slug": "arxiv-2608-21060-f1132c7e46",
+      "kind": "paper",
+      "title": "CellPath-Bench: A Multidimensional Benchmark for Whole-Slide Cellular Representations in Pathology Foundation Models",
+      "abstract": "Pathology foundation models (PFMs) are increasingly used as general-purpose backbones, yet existing benchmarks cannot systematically diagnose their whole-slide cellular representation capabilities, including the decodability of cell-type information and the transferability of such information across tissue sections, datasets, and anatomical organs. We introduce CellPath-Bench, a cellular-resolution benchmark that evaluates frozen PFMs themselves. Following quality control of 52 candidate Xenium datasets, we construct a panel of 25 spatially aligned H\\&E--Xenium tissue sections spanning 11 organs and 7,079,283 cells, harmonized into fine- and coarse-grained taxonomies. CellPath-Bench samples frozen WSI feature maps at registered nuclear coordinates and evaluates them using standardized multiclass linear probes. Cell Representation Advantage (CRA) measures the within-section advantage of nucleus-anchored representations over patch-level mean pooling, while Cell Representation Transferability (CRT) characterizes the generalization of cell-type decodability across tissue sections, datasets, and organs. We benchmark 30 pathology-specific and general-purpose foundation models through 304,920 runs across spatial readouts, magnifications, taxonomic granularities, and evaluation protocols. The results reveal substantial model-dependent differences in cell-type decodability and its cross-domain generalization, yielding distinct multidimensional capability profiles. CellPath-Bench provides a standardized framework for auditing cellular information in frozen PFM representations.",
+      "authors": [
+        "Bokai Zhao",
+        "Yiyang Zhang",
+        "Hanqing Chao",
+        "Yawei Ma",
+        "Long Bai",
+        "Tai Ma",
+        "Minfeng Xu",
+        "Ming Song",
+        "Tianzi Jiang"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-21T13:03:35Z",
+      "updated_at": "2026-08-21T13:03:35Z",
+      "first_seen_at": "2026-08-21T13:03:35Z",
+      "event_at": "2026-08-21T13:03:35Z",
+      "priority": "P0",
+      "categories": [
+        "multimodal",
+        "protocol"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.21060"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.21060v1",
+        "html": "https://arxiv.org/html/2608.21060",
+        "pdf": "https://arxiv.org/pdf/2608.21060v1"
+      },
+      "evidence": [
+        {
+          "term": "we introduce",
+          "location": "Abstract / metadata",
+          "excerpt": "luding the decodability of cell-type information and the transferability of such information across tissue sections, datasets, and anatomical organs. We introduce CellPath-Bench, a cellular-resolution benchmark that evaluates frozen PFMs themselves. Following quality control of 52 candidate Xenium datasets, we construct a panel of 25 spatially aligned H\\&E--Xenium tissue sections spanning 11 organs",
+          "source_url": "https://arxiv.org/html/2608.21060"
+        },
+        {
+          "term": "we construct",
+          "location": "Abstract / metadata",
+          "excerpt": "uce CellPath-Bench, a cellular-resolution benchmark that evaluates frozen PFMs themselves. Following quality control of 52 candidate Xenium datasets, we construct a panel of 25 spatially aligned H\\&E--Xenium tissue sections spanning 11 organs and 7,079,283 cells, harmonized into fine- and coarse-grained taxonomies. CellPath-Bench samples frozen WSI feature maps at registered nuclear coordinates and",
+          "source_url": "https://arxiv.org/html/2608.21060"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "CellPath-Bench: A Multidimensional Benchmark for Whole-Slide Cellular Representations in Pathology Foundation Models Pathology foundation models (PFMs) are increasingly used as general-purpose backbones, yet existing benchmarks cannot systematically diagnose their whole-slide cellula",
+          "source_url": "https://arxiv.org/html/2608.21060"
+        },
+        {
+          "term": "benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "ar Representations in Pathology Foundation Models Pathology foundation models (PFMs) are increasingly used as general-purpose backbones, yet existing benchmarks cannot systematically diagnose their whole-slide cellular representation capabilities, including the decodability of cell-type information and the transferability of such information across tissue sections, datasets, and anatomical organs",
+          "source_url": "https://arxiv.org/html/2608.21060"
+        },
+        {
+          "term": "pathology",
+          "location": "Abstract / metadata",
+          "excerpt": "CellPath-Bench: A Multidimensional Benchmark for Whole-Slide Cellular Representations in Pathology Foundation Models Pathology foundation models (PFMs) are increasingly used as general-purpose backbones, yet existing benchmarks cannot systematically diagnose their whole-slide cellular representation capabilities, including the decodabil",
+          "source_url": "https://arxiv.org/html/2608.21060"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Explicit biomedical benchmark contribution detected.",
+      "match_score": 25,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "seed:2608.21060",
+      "is_seed": true
+    }
+  ]
+}

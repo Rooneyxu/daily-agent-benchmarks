@@ -1,0 +1,84 @@
+name: Daily Bio/Medical update
+
+on:
+  schedule:
+    # 04:30 UTC = 12:30 Singapore, every day including weekends.
+    - cron: "30 4 * * *"
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Overlapping lookback window"
+        required: false
+        default: "4"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/bio/**"
+      - "scripts/bio_update.py"
+      - "data/bio-seed*.json"
+      - "requirements-bio.txt"
+      - "supabase/**"
+      - ".github/workflows/bio-update.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-bio-medical-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements-bio.txt
+
+      - name: Install Bio pipeline dependencies
+        run: python -m pip install --requirement requirements-bio.txt
+
+      - name: Verify database secrets
+        run: |
+          if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_SECRET_KEY" ]; then
+            echo "SUPABASE_URL and SUPABASE_SECRET_KEY must be configured as repository secrets."
+            exit 1
+          fi
+      - name: Discover and publish Bio/Medical benchmarks
+        env:
+          LOOKBACK_DAYS: ${{ inputs.days || '4' }}
+        run: |
+          for attempt in 1 2 3; do
+            if python scripts/bio_update.py --days "$LOOKBACK_DAYS"; then
+              exit 0
+            fi
+            echo "Bio/Medical update failed (attempt $attempt/3)"
+            if [ "$attempt" -lt 3 ]; then
+              sleep $((attempt * 45))
+            fi
+          done
+          exit 1
+
+      - name: Commit public snapshot if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/bio/data docs/bio/p
+          if git diff --cached --quiet; then
+            echo "No public Bio/Medical changes"
+          else
+            git commit -m "chore: daily bio medical benchmark index"
+            git pull --rebase --autostash origin main
+            git push
+          fi

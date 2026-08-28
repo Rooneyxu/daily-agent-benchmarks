@@ -191,6 +191,10 @@ PAPER_PAGE = """<!DOCTYPE html>
           </span>
         </a>
       </div>
+      <nav class="site-switch" aria-label="Benchmark collections">
+        <a href="../" aria-current="page">Agent</a>
+        <a href="../bio/">Bio &amp; Medical</a>
+      </nav>
     </header>
     <main id="main" class="paper-page"></main>
     <footer class="colophon">

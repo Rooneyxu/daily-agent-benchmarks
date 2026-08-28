@@ -1,0 +1,160 @@
+{
+  "date": "2026-05-22",
+  "count": 2,
+  "entries": [
+    {
+      "id": "arxiv:2605.23629",
+      "slug": "arxiv-2605-23629-4d37e790ae",
+      "kind": "paper",
+      "title": "DDX-TRACE: A Benchmark for Medical Diagnostic Trajectories in VLMs",
+      "abstract": "Medical diagnosis is not a single prediction from a fully specified vignette. It is a sequential workup: clinicians decide what evidence to obtain, revise a differential diagnosis, and stop when the diagnosis is sufficiently supported. Most medical AI benchmarks instead reveal the relevant context upfront and score only the final answer, making unsupported correct guesses, premature closure, inefficient workups, and poor uncertainty updating invisible. We introduce DDX-TRACE, a physician-adjudicated benchmark for multimodal neuroradiology that evaluates diagnostic trajectories under hidden evidence over 211 challenging cases. Each case begins with limited clinical history; models request imaging studies in free form, receive matched image bundles when available, update a probabilistic differential diagnosis after each turn, and stop with a localized final diagnosis. Evaluating state-of-the-art VLMs, we find that final diagnosis scores can substantially misrepresent workup quality: models may guess plausible diagnoses without essential evidence, request useful studies but misinterpret raw images, or acquire evidence inefficiently while updating uncertainty poorly. Controlled evidence variants isolate bottlenecks in planning, visual evidence extraction, and downstream differential reasoning. DDX-TRACE shifts medical AI evaluation from final answers to evidence-supported diagnostic trajectories.",
+      "authors": [
+        "Jiazhen Pan",
+        "Weixiang Shen",
+        "Jun Li",
+        "Julian Canisius",
+        "Felix Bitzer",
+        "Paula Roßmüller",
+        "Jiancheng Yang",
+        "Virginie Kreutzinger",
+        "Daniel Rueckert",
+        "Benedikt Wiestler"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-05-22T13:41:10Z",
+      "updated_at": "2026-05-22T13:41:10Z",
+      "first_seen_at": "2026-05-22T13:41:10Z",
+      "event_at": "2026-05-22T13:41:10Z",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2605.23629"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.23629v1",
+        "html": "https://arxiv.org/html/2605.23629",
+        "pdf": "https://arxiv.org/pdf/2605.23629v1"
+      },
+      "evidence": [
+        {
+          "term": "we introduce",
+          "location": "Abstract / metadata",
+          "excerpt": "and score only the final answer, making unsupported correct guesses, premature closure, inefficient workups, and poor uncertainty updating invisible. We introduce DDX-TRACE, a physician-adjudicated benchmark for multimodal neuroradiology that evaluates diagnostic trajectories under hidden evidence over 211 challenging cases. Each case begins with limited clinical history; models request imaging stud",
+          "source_url": "https://arxiv.org/html/2605.23629"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "DDX-TRACE: A Benchmark for Medical Diagnostic Trajectories in VLMs Medical diagnosis is not a single prediction from a fully specified vignette. It is a sequential workup: clinicians decide what evidence to obtain, revise a differential diagnosis, and stop when",
+          "source_url": "https://arxiv.org/html/2605.23629"
+        },
+        {
+          "term": "benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "p: clinicians decide what evidence to obtain, revise a differential diagnosis, and stop when the diagnosis is sufficiently supported. Most medical AI benchmarks instead reveal the relevant context upfront and score only the final answer, making unsupported correct guesses, premature closure, inefficient workups, and poor uncertainty updating invisible. We introduce DDX-TRACE, a physician-adjudicat",
+          "source_url": "https://arxiv.org/html/2605.23629"
+        },
+        {
+          "term": "medical",
+          "location": "Abstract / metadata",
+          "excerpt": "DDX-TRACE: A Benchmark for Medical Diagnostic Trajectories in VLMs Medical diagnosis is not a single prediction from a fully specified vignette. It is a sequential workup: clinicians decide what evidence to obtain, revise a differential diagnosis, and stop when the diagnosi",
+          "source_url": "https://arxiv.org/html/2605.23629"
+        },
+        {
+          "term": "clinical",
+          "location": "Abstract / metadata",
+          "excerpt": "for multimodal neuroradiology that evaluates diagnostic trajectories under hidden evidence over 211 challenging cases. Each case begins with limited clinical history; models request imaging studies in free form, receive matched image bundles when available, update a probabilistic differential diagnosis after each turn, and stop with a localized final diagnosis. Evaluating state-of-the-art VLMs,",
+          "source_url": "https://arxiv.org/html/2605.23629"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Explicit biomedical benchmark contribution detected.",
+      "match_score": 22,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "seed:2605.23629",
+      "is_seed": true
+    },
+    {
+      "id": "arxiv:2605.23242",
+      "slug": "arxiv-2605-23242-0d775f470f",
+      "kind": "paper",
+      "title": "Cogniscope: A Synthetic Longitudinal Benchmark and Browser-Based Evaluation Framework for Early-Risk Cognitive AI Systems",
+      "abstract": "We present Cogniscope, an open evaluation framework for studying longitudinal early-risk AI systems under controlled behavioral drift, sparse observations, delayed evidence, and heterogeneous progression patterns. Cogniscope combines two complementary components: a synthetic simulation engine that generates privacy-preserving longitudinal behavioral traces aligned with configurable latent risk trajectories, and a browser-based data-collection instrument implemented as a Chrome extension for capturing naturalistic video interaction telemetry and micro-question responses during YouTube playback. The released benchmark includes 200,000 simulated video-interaction records from 200 users over 200 days, a 504-session schema-aligned synthetic deployment dataset across nine behavioral profiles, an 18-table relational schema, baseline evaluation scripts, and time-aware metrics including Early Risk Detection Error (ERDE) and time-to-detection (TTD). We emphasize that Cogniscope is not a diagnostic system and does not claim clinical validity. Instead, it provides a reusable testbed for evaluating how sequential models behave under known longitudinal challenges before deployment with real human-subject data. Experiments show that simple behavioral coherence signals separate simulated risk states under controlled priors, while rule-based deployment-profile classification remains challenging, motivating learned temporal models and robust evaluation protocols.",
+      "authors": [
+        "Mahfuza Farooque",
+        "Ananya Drishti",
+        "Mukhil Muruganantham Prakaash",
+        "Uttkarsh Agarwal",
+        "Zahra Abdul Basit",
+        "Asish Kondragunta"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-05-22T05:24:37Z",
+      "updated_at": "2026-05-22T05:24:37Z",
+      "first_seen_at": "2026-05-22T05:24:37Z",
+      "event_at": "2026-05-22T05:24:37Z",
+      "priority": "P0",
+      "categories": [
+        "protocol"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2605.23242"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.23242v1",
+        "html": "https://arxiv.org/html/2605.23242",
+        "pdf": "https://arxiv.org/pdf/2605.23242v1"
+      },
+      "evidence": [
+        {
+          "term": "we present",
+          "location": "Abstract / metadata",
+          "excerpt": "Cogniscope: A Synthetic Longitudinal Benchmark and Browser-Based Evaluation Framework for Early-Risk Cognitive AI Systems We present Cogniscope, an open evaluation framework for studying longitudinal early-risk AI systems under controlled behavioral drift, sparse observations, delayed evidence, and heterogeneous progression patterns. Cogniscope combines two complementar",
+          "source_url": "https://arxiv.org/html/2605.23242"
+        },
+        {
+          "term": "evaluation framework",
+          "location": "Abstract / metadata",
+          "excerpt": "Cogniscope: A Synthetic Longitudinal Benchmark and Browser-Based Evaluation Framework for Early-Risk Cognitive AI Systems We present Cogniscope, an open evaluation framework for studying longitudinal early-risk AI systems under controlled behavioral drift, sparse observations, delayed evidence, and heterogeneous progression",
+          "source_url": "https://arxiv.org/html/2605.23242"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "Cogniscope: A Synthetic Longitudinal Benchmark and Browser-Based Evaluation Framework for Early-Risk Cognitive AI Systems We present Cogniscope, an open evaluation framework for studying longitudinal early-risk AI systems under controlled behavioral drift, sparse observations, delayed",
+          "source_url": "https://arxiv.org/html/2605.23242"
+        },
+        {
+          "term": "clinical",
+          "location": "Abstract / metadata",
+          "excerpt": "s including Early Risk Detection Error (ERDE) and time-to-detection (TTD). We emphasize that Cogniscope is not a diagnostic system and does not claim clinical validity. Instead, it provides a reusable testbed for evaluating how sequential models behave under known longitudinal challenges before deployment with real human-subject data. Experiments show that simple behavioral coherence signals sep",
+          "source_url": "https://arxiv.org/html/2605.23242"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Explicit biomedical benchmark contribution detected.",
+      "match_score": 20,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "seed:2605.23242",
+      "is_seed": true
+    }
+  ]
+}

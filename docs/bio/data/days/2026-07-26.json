@@ -1,0 +1,78 @@
+{
+  "date": "2026-07-26",
+  "count": 1,
+  "entries": [
+    {
+      "id": "arxiv:2607.23704",
+      "slug": "arxiv-2607-23704-4898b6a23d",
+      "kind": "paper",
+      "title": "LabRobFail: A Benchmark for Robotic Failure Analysis in Chemical Self-driving Laboratory",
+      "abstract": "The deployment of embodied agents in self-driving laboratories could accelerate scientific discovery, yet their reliability is constrained by the irreversible and safety-critical nature of chemical experiments. Progress is further hindered by scarce failure data and the lack of fine-grained evaluation protocols. To address these challenges, we introduce LabRobFail, a failure-centric framework for learning and evaluating robotic failure analysis in chemical laboratories. LabRobFail-Sim injects controllable failures at the control, physics, and semantic levels, enabling the construction of LabRobFail-Data, which contains over 20,000 trajectories across 70+ task scenarios, five failure categories, and 11 fine-grained failure types. LabRobFail-Bench evaluates six capabilities spanning task understanding, failure detection, temporal localization, severity assessment, failure classification, and actionable correction. We further develop LabRobFail-VLM, a domain-specialized vision-language model that generates structured failure diagnoses and recovery instructions. On seen environments, it achieves 90.83% failure-detection accuracy and 77.21% temporal-localization accuracy, substantially outperforming general-purpose VLMs. When integrated as a real-time supervisor, it improves downstream task success rates by 4-16 percentage points, demonstrating the value of fine-grained failure understanding for closed-loop recovery and reliable laboratory autonomy. Our code and data are available at https://github.com/Su-ISE-2001/SciRobo",
+      "authors": [
+        "Haobo Wang",
+        "Baoli Sun",
+        "Anqi Zou",
+        "Dongsheng Huang",
+        "Zelin Lv",
+        "Ning Wang",
+        "Rui Li",
+        "Dongzhan Zhou",
+        "Weiyu Guo",
+        "Zhihui Wang",
+        "Wanli Ouyang"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-07-26T14:56:04Z",
+      "updated_at": "2026-07-29T11:00:47Z",
+      "first_seen_at": "2026-07-26T14:56:04Z",
+      "event_at": "2026-07-26T14:56:04Z",
+      "priority": "P0",
+      "categories": [
+        "multimodal",
+        "protocol"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2607.23704"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.23704v2",
+        "html": "https://arxiv.org/html/2607.23704",
+        "pdf": "https://arxiv.org/pdf/2607.23704v2"
+      },
+      "evidence": [
+        {
+          "term": "we introduce",
+          "location": "Abstract / metadata",
+          "excerpt": "ical experiments. Progress is further hindered by scarce failure data and the lack of fine-grained evaluation protocols. To address these challenges, we introduce LabRobFail, a failure-centric framework for learning and evaluating robotic failure analysis in chemical laboratories. LabRobFail-Sim injects controllable failures at the control, physics, and semantic levels, enabling the construction of",
+          "source_url": "https://arxiv.org/html/2607.23704"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "LabRobFail: A Benchmark for Robotic Failure Analysis in Chemical Self-driving Laboratory The deployment of embodied agents in self-driving laboratories could accelerate scientific discovery, yet their reliability is constrained by the irreversible and safety-crit",
+          "source_url": "https://arxiv.org/html/2607.23704"
+        },
+        {
+          "term": "laboratory",
+          "location": "Abstract / metadata",
+          "excerpt": "LabRobFail: A Benchmark for Robotic Failure Analysis in Chemical Self-driving Laboratory The deployment of embodied agents in self-driving laboratories could accelerate scientific discovery, yet their reliability is constrained by the irreversible and safety-critical nature of chemical experiments. Progress is further hindered",
+          "source_url": "https://arxiv.org/html/2607.23704"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Explicit biomedical benchmark contribution detected.",
+      "match_score": 18,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "seed:2607.23704",
+      "is_seed": true
+    }
+  ]
+}

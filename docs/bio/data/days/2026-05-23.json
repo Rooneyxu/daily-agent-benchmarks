@@ -1,0 +1,253 @@
+{
+  "date": "2026-05-23",
+  "count": 3,
+  "entries": [
+    {
+      "id": "arxiv:2605.24771",
+      "slug": "arxiv-2605-24771-ea50ec3baa",
+      "kind": "paper",
+      "title": "From Theory to Decision Rule: Calibrating the Noisy-Label Crossover for Vision-Language Model Weak Supervision Across Three Medical-Imaging Benchmarks",
+      "abstract": "Classical noisy-label theory predicts that downstream performance under weak supervision is bounded above by the labeler's accuracy, implying a sharp crossover: once a gold-trained classifier matches the labeler, weak labels stop helping and start hurting. The prediction is theoretical; what is missing is a benchmark calibration that turns it into an instance-level statement for modern foundation-model labelers. We provide such a calibration for BiomedCLIP-generated weak labels on three medical-imaging benchmarks (PCAM, ISIC, NIH-CXR) and six downstream architectures spanning an 11x parameter range. The crossover predicted by theory appears at ng~100 on PCAM, 20-50 on ISIC, and 250-500 on NIH-CXR; weak labels above the crossover degrade AUC by up to -0.10. The location is architecture-invariant for four of five pretrained architectures, and a within-family DenseNet sweep (2.5x parameters, identical pretraining) supports the view that the labeler, not the student, is the dominant constraint. The calibration in turn produces a decision rule operable from 10-20 gold labels: compare gold-only AUC to VLM accuracy on the user's gold set. A structured-vs-random noise sign flip on NIH-CXR shows that the rate-only formulation of the bound is incomplete and identifies a concrete refinement (label-space projection) that future benchmarks can be designed to test.",
+      "authors": [
+        "Bruce Changlong Xu",
+        "Jose James",
+        "Alexander Ryu"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-05-23T23:15:07Z",
+      "updated_at": "2026-05-23T23:15:07Z",
+      "first_seen_at": "2026-05-23T23:15:07Z",
+      "event_at": "2026-05-23T23:15:07Z",
+      "priority": "P0",
+      "categories": [
+        "multimodal",
+        "construction"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2605.24771"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.24771v1",
+        "html": "https://arxiv.org/html/2605.24771",
+        "pdf": "https://arxiv.org/pdf/2605.24771v1"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "From Theory to Decision Rule: Calibrating the Noisy-Label Crossover for Vision-Language Model Weak Supervision Across Three Medical-Imaging Benchmarks Classical noisy-label theory predicts that downstream performance under weak supervision is bounded above by the labeler's accuracy, implying a sharp crossover: once a gold-trained classifier matches the labeler, weak labels stop helping",
+          "source_url": "https://arxiv.org/html/2605.24771"
+        },
+        {
+          "term": "benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "From Theory to Decision Rule: Calibrating the Noisy-Label Crossover for Vision-Language Model Weak Supervision Across Three Medical-Imaging Benchmarks Classical noisy-label theory predicts that downstream performance under weak supervision is bounded above by the labeler's accuracy, implying a sharp crossover: once a gold-trained classifier matches the labeler, weak labels stop helping a",
+          "source_url": "https://arxiv.org/html/2605.24771"
+        },
+        {
+          "term": "medical",
+          "location": "Abstract / metadata",
+          "excerpt": "From Theory to Decision Rule: Calibrating the Noisy-Label Crossover for Vision-Language Model Weak Supervision Across Three Medical-Imaging Benchmarks Classical noisy-label theory predicts that downstream performance under weak supervision is bounded above by the labeler's accuracy, implying a sharp crossover: once a gold-trained classifier matches the labeler, weak la",
+          "source_url": "https://arxiv.org/html/2605.24771"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Explicit biomedical benchmark contribution detected.",
+      "match_score": 17,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "seed:2605.24771",
+      "is_seed": true
+    },
+    {
+      "id": "arxiv:2605.24636",
+      "slug": "arxiv-2605-24636-6d4f75678f",
+      "kind": "paper",
+      "title": "GlobalDentBench: A Multinational Benchmark for Evaluating LLM Clinical Reasoning in Dentistry with Expert Calibration",
+      "abstract": "While large language models (LLMs) hold transformative potential for medicine, their reasoning robustness and safety in real-world clinical scenarios remain critically underexplored, particularly in dentistry. Here we introduce GlobalDentBench, the first multinational dental benchmark, featuring a taxonomy that encompasses 14 dental specialties across 88 countries and regions spanning six continents. The benchmark comprises 8,978 expert-validated questions across three formats (multiple-choice, short-answer, and case-based questions) and assesses three progressive reasoning levels: knowledge recall (L1), routine reasoning (L2), and individualized reasoning (L3). To ensure data quality, the automated construction framework was calibrated by six senior dentists, achieving expert agreement rates of 99.98% for multiple-choice and short-answer questions and 96.78% for the more complex case-based questions. Evaluation of 12 frontier LLMs on GlobalDentBench revealed a sharp, stepwise performance degradation with increasing reasoning complexity. Specifically, accuracy plummeted from 81.34% on multiple-choice to 64.53% on short-answer and 22.34% on case-based questions, while declining markedly from 74.01% at L1 to 55.64% at L2 and 35.71% at L3. More critically, risk analysis of real-world dental cases demonstrated an alarming overall unsafe rate of 31.01% in LLM-generated clinical recommendations, with 4.51% posing risks of irreversible patient harm and risks particularly pronounced in specialties such as orthodontics. These findings expose fundamental limitations in the medical reasoning and safety of current LLMs. Consequently, GlobalDentBench provides a scalable foundation for trustworthy clinical AI evaluation, underscoring the urgent need for rigorous validation before the safe deployment of these models in healthcare.",
+      "authors": [
+        "Junjie Zhao",
+        "Jingyi Liang",
+        "Zhenyang Cai",
+        "Jiaming Zhang",
+        "Zhenwei Wen",
+        "Shuzhi Deng",
+        "Wenjing Yi",
+        "Chunfeng Luo",
+        "Hexian Zhang",
+        "Junying Chen",
+        "Tianrui Liu",
+        "Zhuhui Bai",
+        "Zixu Zhang",
+        "Pradeep Singh",
+        "Xiang Liu",
+        "Jianquan Li",
+        "Nhan L Tran",
+        "Falk Schwendicke",
+        "Zuolin Jin",
+        "Lijian Jin",
+        "Liangyi Chen",
+        "Wei-fa Yang",
+        "Benyou Wang",
+        "Junwen Wang",
+        "Shan Jiang"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-05-23T15:53:44Z",
+      "updated_at": "2026-05-26T17:07:57Z",
+      "first_seen_at": "2026-05-23T15:53:44Z",
+      "event_at": "2026-05-23T15:53:44Z",
+      "priority": "P1",
+      "categories": [
+        "text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2605.24636"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.24636v2",
+        "html": "https://arxiv.org/html/2605.24636",
+        "pdf": "https://arxiv.org/pdf/2605.24636v2"
+      },
+      "evidence": [
+        {
+          "term": "we introduce",
+          "location": "Abstract / metadata",
+          "excerpt": "for medicine, their reasoning robustness and safety in real-world clinical scenarios remain critically underexplored, particularly in dentistry. Here we introduce GlobalDentBench, the first multinational dental benchmark, featuring a taxonomy that encompasses 14 dental specialties across 88 countries and regions spanning six continents. The benchmark comprises 8,978 expert-validated questions across",
+          "source_url": "https://arxiv.org/html/2605.24636"
+        },
+        {
+          "term": "benchmark comprises",
+          "location": "Abstract / metadata",
+          "excerpt": "tinational dental benchmark, featuring a taxonomy that encompasses 14 dental specialties across 88 countries and regions spanning six continents. The benchmark comprises 8,978 expert-validated questions across three formats (multiple-choice, short-answer, and case-based questions) and assesses three progressive reasoning levels: knowledge recall (L1), routine reasoning (L2), and individualized reasoning (L",
+          "source_url": "https://arxiv.org/html/2605.24636"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "GlobalDentBench: A Multinational Benchmark for Evaluating LLM Clinical Reasoning in Dentistry with Expert Calibration While large language models (LLMs) hold transformative potential for medicine, their reasoning robustness and safety in real-world clinical scenarios remain critica",
+          "source_url": "https://arxiv.org/html/2605.24636"
+        },
+        {
+          "term": "medicine",
+          "location": "Abstract / metadata",
+          "excerpt": "hmark for Evaluating LLM Clinical Reasoning in Dentistry with Expert Calibration While large language models (LLMs) hold transformative potential for medicine, their reasoning robustness and safety in real-world clinical scenarios remain critically underexplored, particularly in dentistry. Here we introduce GlobalDentBench, the first multinational dental benchmark, featuring a taxonomy that enco",
+          "source_url": "https://arxiv.org/html/2605.24636"
+        },
+        {
+          "term": "medical",
+          "location": "Abstract / metadata",
+          "excerpt": "irreversible patient harm and risks particularly pronounced in specialties such as orthodontics. These findings expose fundamental limitations in the medical reasoning and safety of current LLMs. Consequently, GlobalDentBench provides a scalable foundation for trustworthy clinical AI evaluation, underscoring the urgent need for rigorous validation before the safe deployment of these models in h",
+          "source_url": "https://arxiv.org/html/2605.24636"
+        },
+        {
+          "term": "clinical",
+          "location": "Abstract / metadata",
+          "excerpt": "GlobalDentBench: A Multinational Benchmark for Evaluating LLM Clinical Reasoning in Dentistry with Expert Calibration While large language models (LLMs) hold transformative potential for medicine, their reasoning robustness and safety in real-world clinical scenarios remain critically underexplored, particula",
+          "source_url": "https://arxiv.org/html/2605.24636"
+        },
+        {
+          "term": "healthcare",
+          "location": "Abstract / metadata",
+          "excerpt": "foundation for trustworthy clinical AI evaluation, underscoring the urgent need for rigorous validation before the safe deployment of these models in healthcare. While large language models (LLMs) hold transformative potential for medicine, their reasoning robustness and safety in real-world clinical scenarios remain critically underexplored, particularly in dentistry. Here we introduce GlobalDent",
+          "source_url": "https://arxiv.org/html/2605.24636"
+        }
+      ],
+      "related_benchmarks": [
+        "GlobalDentBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Explicit biomedical benchmark contribution detected.",
+      "match_score": 27,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "seed:2605.24636",
+      "is_seed": true
+    },
+    {
+      "id": "arxiv:2605.24492",
+      "slug": "arxiv-2605-24492-fc1eecf7a2",
+      "kind": "paper",
+      "title": "Med-R2: An Adversarial Benchmark for Evidence-Grounded Reasoning in Medical VLMs",
+      "abstract": "Vision-language models have demonstrated impressive capabilities in general medical visual question answering, yet due to limited interpretability, it remains unclear whether their predictions reflect evidence-grounded clinical reasoning or reliance on spurious priors. We introduce Med-R2 Bench, a hierarchical benchmark aligned with the clinical workflow to evaluate adversarial robustness with visual grounding. We design stepwise QA tasks to assess whether reasoning chains are strictly grounded in visual evidence across the four clinical stages, and employ adversarial perturbations to test robustness against misleading cues. Med-R2 comprises 42,432 images, 31 task categories, and 110,406 QA pairs. Evaluation across 14 VLMs reveals a sequential performance degradation along the four-stage clinical workflow. Adversarial experiments show that models rely heavily on correct prompts to guess answers. Even when provided with explicit visual cues, the models struggle to accurately align textual descriptions. Finally, we demonstrate stepwise fine-tuning using our hierarchical data significantly improves reasoning robustness, highlighting its potential to drive future improvements in evidence-based medical AI.",
+      "authors": [
+        "Wen Ma",
+        "Fucheng Niu",
+        "Zhiting Fan",
+        "Zikai Xiao",
+        "Jiaxiang Liu",
+        "Zuozhu Liu"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-05-23T09:50:19Z",
+      "updated_at": "2026-05-23T09:50:19Z",
+      "first_seen_at": "2026-05-23T09:50:19Z",
+      "event_at": "2026-05-23T09:50:19Z",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2605.24492"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.24492v1",
+        "html": "https://arxiv.org/html/2605.24492",
+        "pdf": "https://arxiv.org/pdf/2605.24492v1"
+      },
+      "evidence": [
+        {
+          "term": "we introduce",
+          "location": "Abstract / metadata",
+          "excerpt": "o limited interpretability, it remains unclear whether their predictions reflect evidence-grounded clinical reasoning or reliance on spurious priors. We introduce Med-R2 Bench, a hierarchical benchmark aligned with the clinical workflow to evaluate adversarial robustness with visual grounding. We design stepwise QA tasks to assess whether reasoning chains are strictly grounded in visual evidence acr",
+          "source_url": "https://arxiv.org/html/2605.24492"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "Med-R2: An Adversarial Benchmark for Evidence-Grounded Reasoning in Medical VLMs Vision-language models have demonstrated impressive capabilities in general medical visual question answering, yet due to limited interpretability, it remains unclear whether their prediction",
+          "source_url": "https://arxiv.org/html/2605.24492"
+        },
+        {
+          "term": "medical",
+          "location": "Abstract / metadata",
+          "excerpt": "Med-R2: An Adversarial Benchmark for Evidence-Grounded Reasoning in Medical VLMs Vision-language models have demonstrated impressive capabilities in general medical visual question answering, yet due to limited interpretability, it remains unclear whether their predictions reflect evidence-grounded clinical reason",
+          "source_url": "https://arxiv.org/html/2605.24492"
+        },
+        {
+          "term": "clinical",
+          "location": "Abstract / metadata",
+          "excerpt": "eneral medical visual question answering, yet due to limited interpretability, it remains unclear whether their predictions reflect evidence-grounded clinical reasoning or reliance on spurious priors. We introduce Med-R2 Bench, a hierarchical benchmark aligned with the clinical workflow to evaluate adversarial robustness with visual grounding. We design stepwise QA tasks to assess whether reason",
+          "source_url": "https://arxiv.org/html/2605.24492"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Explicit biomedical benchmark contribution detected.",
+      "match_score": 19,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "seed:2605.24492",
+      "is_seed": true
+    }
+  ]
+}
