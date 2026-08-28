@@ -323,12 +323,20 @@ class VendorAdapter(SourceAdapter):
         self.id = f"vendor:{config['id']}"
         self.name = str(config["name"])
         self.indexes = tuple(str(url) for url in config["indexes"])
+        self.warnings: list[str] = []
 
     def discover(self, date_from: str, date_to: str) -> list[SourceCandidate]:
         del date_from, date_to  # Index pages are diffed by stable URL and content hash instead of date queries.
         rows: dict[str, SourceCandidate] = {}
+        self.warnings = []
+        successful_indexes = 0
         for index_url in self.indexes:
-            response = self._get(index_url, headers={"Accept": "text/html"})
+            try:
+                response = self._get(index_url, headers={"Accept": "text/html"})
+            except Exception as exc:  # noqa: BLE001 - one blocked index must not discard sibling indexes.
+                self.warnings.append(f"{index_url}: {exc}")
+                continue
+            successful_indexes += 1
             soup = BeautifulSoup(response.content, "html.parser")
             accepted_from_index = 0
             for anchor in soup.find_all("a", href=True):
@@ -355,6 +363,8 @@ class VendorAdapter(SourceAdapter):
                 accepted_from_index += 1
                 if accepted_from_index >= 12:
                     break
+        if not successful_indexes:
+            raise RuntimeError("; ".join(self.warnings)[:600] or "All vendor indexes failed")
         return list(rows.values())
 
 

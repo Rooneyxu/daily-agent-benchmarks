@@ -115,7 +115,7 @@ def _source_row(adapter: SourceAdapter, health: dict[str, Any]) -> dict[str, Any
         "last_error": health.get("error") or None,
         "updated_at": health.get("finished_at"),
     }
-    if health.get("status") == "success":
+    if health.get("status") in {"success", "partial"}:
         row["last_success_at"] = health.get("finished_at")
     return row
 
@@ -164,15 +164,16 @@ def _run_adapter(
             if entry is not None:
                 entries.append(entry)
         finished_at = utc_now()
+        warnings = getattr(adapter, "warnings", [])
         health = {
             "source": adapter.id,
             "name": adapter.name,
-            "status": "success",
+            "status": "partial" if warnings else "success",
             "started_at": started_at,
             "finished_at": finished_at,
             "discovered": len(candidates),
             "published": len(entries),
-            "error": "",
+            "error": "; ".join(warnings)[:600],
         }
         return documents, entries, health
     except Exception as exc:  # noqa: BLE001 - source isolation is part of the product contract.
@@ -236,7 +237,9 @@ def run(
                 flush=True,
             )
 
-    if not seed_only and source_health and not any(row["status"] == "success" for row in source_health):
+    if not seed_only and source_health and not any(
+        row["status"] in {"success", "partial"} for row in source_health
+    ):
         raise RuntimeError("All Bio/Medical sources failed; previous snapshot was preserved")
 
     merged = merge_entries(base, incoming, generated_at)

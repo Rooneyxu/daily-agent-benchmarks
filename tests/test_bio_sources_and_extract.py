@@ -4,7 +4,8 @@ import httpx
 
 from bio.extract import fetch_document
 from bio.models import SourceCandidate
-from bio.sources import ArxivAdapter, BioRxivAdapter, EuropePmcAdapter, OpenReviewAdapter
+from bio.sources import ArxivAdapter, BioRxivAdapter, EuropePmcAdapter, OpenReviewAdapter, VendorAdapter
+from bio.update import _run_adapter
 
 
 def client_for(handler) -> httpx.Client:
@@ -120,6 +121,40 @@ def test_openreview_v2_wrapped_and_v1_plain_content() -> None:
         rows = OpenReviewAdapter(client).discover("2026-08-25", "2026-08-27")
     assert {row.source_id for row in rows} == {"v1-note", "v2-note"}
     assert {row.title for row in rows} == {"BioBench V1", "BioBench V2"}
+
+
+def test_vendor_index_failure_keeps_sibling_index_results() -> None:
+    def handler(request: httpx.Request) -> httpx.Response:
+        if request.url.path == "/blocked":
+            return httpx.Response(403, request=request)
+        return httpx.Response(
+            200,
+            text='<a href="/biology-system-card">Biology benchmark system card</a>',
+            request=request,
+        )
+
+    config = {
+        "id": "example",
+        "name": "Example AI",
+        "indexes": ("https://vendor.test/good", "https://vendor.test/blocked"),
+    }
+    with client_for(handler) as client:
+        adapter = VendorAdapter(client, config)
+        _, entries, health = _run_adapter(
+            adapter,
+            client,
+            "2026-08-27",
+            "2026-08-28",
+            set(),
+            "2026-08-28T00:00:00Z",
+            fetch_full_text=False,
+        )
+
+    assert health["status"] == "partial"
+    assert health["discovered"] == 1
+    assert health["published"] == 1
+    assert "403 Forbidden" in health["error"]
+    assert entries[0].kind == "evaluation_update"
 
 
 def minimal_pdf(text: str) -> bytes:
