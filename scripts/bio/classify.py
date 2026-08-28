@@ -9,11 +9,16 @@ from .config import (
     BENCHMARK_TERMS,
     BIO_TERMS,
     CORE_BIO_TERMS,
+    EVALUATION_DATASET_PATTERNS,
+    GENERAL_AI_EVALUAND_PATTERNS,
     MAX_EVIDENCE,
     METHODOLOGY_PATTERNS,
     NEW_BENCHMARK_PATTERNS,
+    PLANT_SCOPE_PATTERNS,
     ROUTINE_EVAL_TERMS,
+    SPECIALIZED_BENCHMARK_PATTERNS,
     TOPIC_PATTERNS,
+    TRANSFERABLE_METHOD_PATTERNS,
 )
 from .models import Classification, Evidence, SourceDocument
 
@@ -123,6 +128,11 @@ def classify(document: SourceDocument) -> Classification:
     new_hits = _pattern_hits(metadata_text, NEW_BENCHMARK_PATTERNS)
     methodology_hits = _pattern_hits(metadata_text, METHODOLOGY_PATTERNS)
     audit_hits = _pattern_hits(metadata_text, AUDIT_PATTERNS)
+    evaluation_dataset_hits = _pattern_hits(metadata_text, EVALUATION_DATASET_PATTERNS)
+    plant_scope_hits = _pattern_hits(metadata_text, PLANT_SCOPE_PATTERNS)
+    specialized_benchmark_hits = _pattern_hits(metadata_text, SPECIALIZED_BENCHMARK_PATTERNS)
+    general_ai_evaluand_hits = _pattern_hits(metadata_text, GENERAL_AI_EVALUAND_PATTERNS)
+    transferable_method_hits = _pattern_hits(metadata_text, TRANSFERABLE_METHOD_PATTERNS)
     routine_hits = _contains(metadata_text, ROUTINE_EVAL_TERMS)
     topic_hits = _topic_hits(full_text)
     categories = [_primary_topic(topic_hits)]
@@ -136,7 +146,35 @@ def classify(document: SourceDocument) -> Classification:
             re.IGNORECASE,
         )
     )
-    benchmark_signal = bool(benchmark_hits) or title_artifact or bool(new_hits)
+    title_dataset_artifact = bool(re.search(r"\bdatasets?\b", title, re.IGNORECASE))
+    title_non_dataset_artifact = bool(
+        re.search(r"\b(?:benchmarks?|evaluation suite|eval suite|challenge set|test set)\b", title, re.IGNORECASE)
+    )
+    title_evaluation_dataset_hits = _pattern_hits(title, EVALUATION_DATASET_PATTERNS)
+    title_evaluation_artifact = bool(
+        (title_artifact and (not title_dataset_artifact or title_non_dataset_artifact))
+        or title_evaluation_dataset_hits
+    )
+    non_dataset_new_hits = [hit for hit in new_hits if not re.search(r"\bdatasets?\b", hit, re.IGNORECASE)]
+    qualifying_new_artifact = bool(
+        title_evaluation_artifact
+        or (evaluation_dataset_hits and new_hits)
+        or non_dataset_new_hits
+    )
+    plain_dataset_artifact = bool(
+        title_dataset_artifact and not qualifying_new_artifact and not methodology_hits and not audit_hits
+    )
+    benchmark_signal = bool(benchmark_hits) or title_artifact or bool(new_hits) or bool(evaluation_dataset_hits)
+
+    transferable_scope_override = bool(transferable_method_hits)
+    excluded_plant_scope = bool(plant_scope_hits) and not transferable_scope_override
+    excluded_specialized_scope = bool(specialized_benchmark_hits) and not (
+        general_ai_evaluand_hits or transferable_scope_override
+    )
+    strong_domain_signal = strong_domain_signal or bool(
+        (plant_scope_hits or specialized_benchmark_hits)
+        and (general_ai_evaluand_hits or transferable_scope_override)
+    )
 
     score = 3 * len(set(domain_hits)) + 3 * len(set(benchmark_hits))
     score += 4 * int(title_artifact) + 4 * len(set(new_hits))
@@ -155,6 +193,12 @@ def classify(document: SourceDocument) -> Classification:
     elif not candidate.abstract.strip():
         status = "watchlist"
         reason = "The title may be relevant, but the source did not provide an abstract for admission review."
+    elif excluded_plant_scope:
+        status = "excluded"
+        reason = "Plant or agricultural evaluation without a clearly transferable benchmark-construction or quality method."
+    elif excluded_specialized_scope:
+        status = "excluded"
+        reason = "Routine specialized biological foundation-model or molecular prediction benchmarking."
     elif not strong_domain_signal:
         status = "watchlist"
         reason = "Only a weak or incidental biological or medical domain signal appears in the title and abstract."
@@ -164,9 +208,12 @@ def classify(document: SourceDocument) -> Classification:
     elif methodology_hits and benchmark_signal:
         status = "confirmed"
         reason = "Title or abstract explicitly studies biomedical benchmark construction or quality methodology."
-    elif new_hits or title_artifact:
+    elif qualifying_new_artifact:
         status = "confirmed"
         reason = "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite."
+    elif plain_dataset_artifact:
+        status = "excluded"
+        reason = "A biomedical dataset is released without an explicit model-evaluation, test, challenge, or benchmark role."
     elif routine_hits:
         status = "excluded"
         reason = "Routine scoring on existing benchmarks without a substantive evaluation contribution."

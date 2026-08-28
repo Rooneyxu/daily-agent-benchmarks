@@ -106,15 +106,14 @@ def test_auditing_widely_used_biomolecular_benchmarks_is_audit() -> None:
     assert result.priority == "P2"
 
 
-def test_harmonised_benchmarking_with_findings_is_audit() -> None:
+def test_harmonised_specialized_foundation_model_benchmark_is_excluded() -> None:
     result = classify(
         document(
             "Harmonised benchmarking of foundation models for spatial transcriptomics reveals context-dependent generalisation",
             "The biomedical benchmark shows that rankings shift with modality, preprocessing, and domain shift.",
         )
     )
-    assert result.collection_status == "confirmed"
-    assert result.priority == "P2"
+    assert result.collection_status == "excluded"
 
 
 def test_plain_model_robustness_is_not_a_benchmark_audit() -> None:
@@ -232,7 +231,7 @@ def test_systematic_model_comparison_is_not_a_benchmark_audit() -> None:
             "Systematic benchmarking reveals strong performance on a biological benchmark dataset.",
         )
     )
-    assert result.collection_status == "watchlist"
+    assert result.collection_status == "excluded"
 
 
 def test_incidental_medical_domain_mention_stays_internal() -> None:
@@ -324,11 +323,124 @@ def test_benchmark_mention_without_explicit_contribution_stays_internal() -> Non
     assert result.collection_status == "watchlist"
 
 
-def test_named_benchmark_in_title_is_explicit_admission_evidence() -> None:
+def test_specialized_protein_prediction_benchmark_is_excluded() -> None:
     result = classify(
         document(
             "ProteinGym: Large-Scale Benchmarks for Protein Fitness Prediction",
             "ProteinGym provides experimentally grounded biological tasks and datasets.",
+        )
+    )
+    assert result.collection_status == "excluded"
+
+
+def test_generic_biomedical_dataset_is_not_an_evaluation_artifact() -> None:
+    result = classify(
+        document(
+            "COFITAGE: A Multimodal and Longitudinal Neuroimaging Dataset",
+            "We provide an open-access biomedical cohort dataset with neuroimaging, genetics, sleep, and cognitive phenotyping for studying disease progression.",
+        )
+    )
+    assert result.collection_status == "excluded"
+
+
+def test_dataset_that_disclaims_a_benchmark_is_excluded() -> None:
+    result = classify(
+        document(
+            "PhageLysData: An Evidence-Aware Dataset of Phage Lytic Enzymes",
+            "We release a versioned protein resource for retrieval and task-specific dataset construction without defining a universal predictive benchmark.",
+        )
+    )
+    assert result.collection_status == "excluded"
+
+
+def test_dataset_for_evaluating_general_mllms_is_included() -> None:
+    result = classify(
+        document(
+            "MedFigureSet: A Dataset for Evaluating Multimodal LLMs",
+            "We introduce a biomedical dataset for evaluating multimodal large language models on evidence-grounded figure reasoning.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+    assert result.priority == "P1"
+
+
+def test_dataset_towards_llm_evaluation_is_included() -> None:
+    result = classify(
+        document(
+            "MTDiag: A Multi-Turn Diagnostic Dataset Towards Clinically Meaningful LLM Evaluation",
+            "We present a clinical dataset and introduce knowledge-grounded metrics for evaluating LLM diagnostic agents.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+
+
+def test_dataset_with_explicit_downstream_benchmark_tasks_is_included() -> None:
+    result = classify(
+        document(
+            "DocTalkBN: A Dataset of Expert Telemedicine Conversations",
+            "We present a clinical conversation dataset and construct three downstream evaluation tasks to benchmark large language models.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+
+
+def test_specialized_molecular_prediction_benchmark_is_excluded() -> None:
+    result = classify(
+        document(
+            "PathoMIC: A Benchmark for Antimicrobial Peptide Activity Prediction",
+            "We introduce a benchmark for peptide-pathogen minimum inhibitory concentration prediction across species.",
+        )
+    )
+    assert result.collection_status == "excluded"
+
+
+def test_nucleotide_foundation_model_benchmark_is_excluded() -> None:
+    result = classify(
+        document(
+            "ViroBench: Benchmarking Nucleotide Foundation Models on Viral Genomics Tasks",
+            "We introduce a benchmark for nucleotide foundation models on viral sequence classification, generation, and fitness prediction.",
+        )
+    )
+    assert result.collection_status == "excluded"
+
+
+def test_transferable_contamination_audit_of_specialized_foundation_models_is_included() -> None:
+    result = classify(
+        document(
+            "Auditing pretraining contamination in single-cell foundation model benchmarks",
+            "We introduce a per-cell audit framework for detecting pretraining contamination across biomedical benchmarks.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+    assert result.priority == "P2"
+
+
+def test_plant_vlm_benchmark_is_excluded_without_transferable_methodology() -> None:
+    result = classify(
+        document(
+            "PlantMicro: A Benchmark for Microscopic Plant Image Understanding",
+            "We introduce a benchmark for evaluating vision-language models on plant pathology images and classification tasks.",
+        )
+    )
+    assert result.collection_status == "excluded"
+
+
+def test_plant_benchmark_with_transferable_automated_qc_is_included() -> None:
+    result = classify(
+        document(
+            "AutoPlantQA: Automated Benchmark Construction from Plant Protocols",
+            "We introduce automated benchmark construction with automatic question generation and an automated verifier for plant biology.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+    assert result.priority == "P0"
+
+
+def test_general_llm_agent_on_molecular_tasks_is_included() -> None:
+    result = classify(
+        document(
+            "SMDD-Bench: Can LLMs Solve Real-World Small Molecule Drug Design Tasks?",
+            "We introduce an agentic benchmark for frontier large language model agents using tools to solve long-horizon drug design tasks.",
         )
     )
     assert result.collection_status == "confirmed"

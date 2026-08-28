@@ -149,6 +149,42 @@ ROUTINE_EVAL_TERMS = (
     "achieves state-of-the-art on",
 )
 
+EVALUATION_DATASET_PATTERNS = (
+    r"\b(?:benchmark|evaluation|eval|test|challenge) datasets?\b",
+    r"\bdatasets? (?:designed|built|constructed|created|curated|released)?\s*(?:for|to|toward|towards) .{0,80}\b(?:benchmark(?:ing)?|evaluat(?:e|ing|ion)|test(?:ing)?|assess(?:ing|ment))\b",
+    r"\bdatasets? (?:serve|serves|served|used) as .{0,50}\b(?:benchmark|evaluation suite|test set|challenge set)\b",
+    r"\b(?:construct|create|define|introduce) (?:[a-z0-9-]+ ){0,8}(?:downstream|evaluation|benchmark) tasks?\b",
+)
+
+PLANT_SCOPE_PATTERNS = (
+    r"\b(?:agriculture|agricultural|agronom(?:y|ic)|crop|crops|plant|plants|plant pathology|plant biology|arabidopsis|botanical|horticultur(?:e|al))\b",
+)
+
+SPECIALIZED_BENCHMARK_PATTERNS = (
+    r"\b(?:protein|peptide|amino[- ]acid|nucleotide|dna|rna|genomic|genome|transcriptomic|proteomic) (?:foundation|language|representation|generative) models?\b",
+    r"\b(?:single[- ]cell|spatial transcriptomic|pathology|medical imaging) (?:foundation|representation) models?\b",
+    r"\b(?:foundation|language|representation|generative) models? (?:for|of|on) (?:protein|peptide|nucleotide|dna|rna|genomics?|single[- ]cell|spatial transcriptomics?|pathology|medical imaging)\b",
+    r"\b(?:protein|peptide|amino[- ]acid|nucleotide|dna|rna|gene|genomic|genome|molecular|molecule|small[- ]molecule)\b.{0,100}\b(?:structure|sequence|property|properties|activity|affinity|fitness|function|phenotype|variant|mutation) (?:prediction|classification|regression|generation|design|modeling|modelling)\b",
+    r"\b(?:protein fitness|protein structure|sequence classification|molecular propert(?:y|ies)|drug design|binding affinity|mutation effect|phenotype prediction)\b",
+)
+
+GENERAL_AI_EVALUAND_PATTERNS = (
+    r"\b(?:large|multimodal large) language models?\b|\b(?:llms?|mllms?)\b",
+    r"\bvision[- ]language models?\b|\bvlms?\b",
+    r"\b(?:ai|llm|language|research|scientific|biomedical|biology) agents?\b|\bagentic\b",
+    r"\bfrontier (?:ai )?models?\b|\bgeneral[- ]purpose (?:ai )?(?:models?|systems?)\b",
+)
+
+TRANSFERABLE_METHOD_PATTERNS = (
+    r"\b(?:automatic|automated) (?:question|item|task) generation\b",
+    r"\b(?:automatic|automated|programmatic|synthetic) benchmark construction\b",
+    r"\b(?:automatic|automated|programmatic) (?:verifier|grader|grading|scoring|quality control|quality assurance)\b",
+    r"\b(?:answerability|uniqueness|evidence entailment|answer provenance|citation grounding) (?:check|checking|verification|verifier)\b",
+    r"\b(?:benchmark|data|dataset|pretraining|training[- ]data|test[- ]set) (?:contamination|leakage)\b|\b(?:contamination|leakage) (?:in|of|across) .{0,80}\bbenchmarks?\b|\b(?:near[- ]duplicate|train[- ]test overlap|dataset overlap)s?\b",
+    r"\b(?:data inconsistenc(?:y|ies)|label conflicts?|structural leakage|reproducibility audit)\b",
+    r"\b(?:adversarial filtering|generator[- ]verifier|item response theory|judge calibration|rubric generation)\b",
+)
+
 TOPIC_PATTERNS: dict[str, tuple[str, ...]] = {
     "multimodal": (
         r"\bmultimodal\b|\bvision[- ]language\b",
