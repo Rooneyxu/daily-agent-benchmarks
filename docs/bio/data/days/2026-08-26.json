@@ -19,14 +19,13 @@
         "Jon M. Laurent"
       ],
       "source": "arxiv",
-      "published_at": "2026-08-26T01:45:55+00:00",
-      "updated_at": "2026-08-26T01:45:55+00:00",
+      "published_at": "2026-08-26T01:45:55Z",
+      "updated_at": "2026-08-26T01:45:55Z",
       "first_seen_at": "2026-08-26T01:45:55+00:00",
       "event_at": "2026-08-26T01:45:55+00:00",
-      "priority": "P0",
+      "priority": "P1",
       "categories": [
-        "agent",
-        "quality"
+        "experiment_agent"
       ],
       "collection_status": "confirmed",
       "access_status": "public",
@@ -36,38 +35,38 @@
       },
       "links": {
         "abs": "https://arxiv.org/abs/2608.25286v1",
-        "pdf": "https://arxiv.org/pdf/2608.25286v1",
-        "html": "https://arxiv.org/html/2608.25286"
+        "html": "https://arxiv.org/html/2608.25286",
+        "pdf": "https://arxiv.org/pdf/2608.25286v1"
       },
       "evidence": [
         {
           "term": "we introduce",
-          "excerpt": "Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been systematically evaluated. Here we introduce BixBench3, a benchmark that measures the capacity of AI agents to process raw biological data through to scientific results. We designed BixBench3 tasks to mirror the delegation of work from a scientist to an agent: the scientist chooses t",
           "location": "Abstract / metadata",
+          "excerpt": "Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been systematically evaluated. Here we introduce BixBench3, a benchmark that measures the capacity of AI agents to process raw biological data through to scientific results. We designed BixBench3 tasks to mirror the delegation of work from a scientist to an agent: the scientist chooses t",
           "source_url": "https://arxiv.org/html/2608.25286"
         },
         {
           "term": "benchmark",
-          "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology",
           "location": "Abstract / metadata",
+          "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology",
           "source_url": "https://arxiv.org/html/2608.25286"
         },
         {
           "term": "benchmarking",
-          "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology at",
           "location": "Abstract / metadata",
+          "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology at",
           "source_url": "https://arxiv.org/html/2608.25286"
         },
         {
           "term": "biology",
-          "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been syst",
           "location": "Abstract / metadata",
+          "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been syst",
           "source_url": "https://arxiv.org/html/2608.25286"
         },
         {
           "term": "biological",
-          "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been systematically evaluated. Here we introduce BixBench3, a benchmark that m",
           "location": "Abstract / metadata",
+          "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been systematically evaluated. Here we introduce BixBench3, a benchmark that m",
           "source_url": "https://arxiv.org/html/2608.25286"
         }
       ],
@@ -78,12 +77,14 @@
       "evaluation_contexts": [
         "beneficial_capability"
       ],
-      "classification_reason": "Explicit biomedical benchmark contribution detected.",
-      "match_score": 20,
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 16,
       "extraction_status": "metadata_only",
       "extraction_error": "",
       "content_hash": "seed:2608.25286",
-      "is_seed": true
+      "is_seed": true,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
     }
   ]
 }

@@ -17,9 +17,9 @@ def main() -> None:
     console_errors: list[str] = []
     payload = json.loads((Path(__file__).resolve().parents[1] / "docs" / "bio" / "data" / "index.json").read_text())
     total = payload["total"]
-    main_entries = [entry for entry in payload["entries"] if entry["collection_status"] == "confirmed"]
-    p0_count = sum(entry["priority"] == "P0" for entry in main_entries)
-    construction_count = sum("construction" in entry["categories"] for entry in main_entries)
+    main_entries = payload["entries"]
+    methodology_count = sum(entry["contribution_type"] == "methodology" for entry in main_entries)
+    experiment_count = sum(entry["topic"] == "experiment_agent" for entry in main_entries)
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True, executable_path=CHROME_PATH)
         page = browser.new_page(viewport={"width": 1440, "height": 1000})
@@ -32,17 +32,18 @@ def main() -> None:
 
         assert page.locator(".hero__stats b").first.text_content() == str(total)
         assert page.locator(".bio-row").count() == min(24, len(main_entries))
+        assert page.get_by_role("button", name="P0", exact=True).count() == 0
+        assert page.get_by_text("Watchlist", exact=True).count() == 0
         page.screenshot(path="/private/tmp/daily-agent-benchmarks-bio-home.png", full_page=True)
 
-        page.get_by_role("button", name="P0", exact=True).click()
-        assert page.locator(".bio-row").count() == min(24, p0_count)
+        page.get_by_role("button", name="Methodology", exact=True).click()
+        assert page.locator(".bio-row").count() == min(24, methodology_count)
 
         page.get_by_role("button", name="All", exact=True).nth(0).click()
-        page.locator("[data-category='construction']").click()
-        assert page.locator(".bio-row").count() == min(24, construction_count)
+        page.locator("[data-topic='experiment_agent']").click()
+        assert page.locator(".bio-row").count() == min(24, experiment_count)
 
-        page.locator("[data-category='all']").click()
-        page.get_by_role("button", name="All", exact=True).nth(1).click()
+        page.locator("[data-topic='all']").click()
         page.locator("#bio-q").fill("LAB-Bench")
         page.wait_for_timeout(250)
         assert page.locator(".bio-row").count() >= 1

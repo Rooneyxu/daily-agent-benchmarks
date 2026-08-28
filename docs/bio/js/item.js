@@ -17,21 +17,22 @@
       const entry = (data.entries || []).find((row) => row.id === window.BIO_ENTRY_ID);
       if (!entry) throw new Error("entry not found");
       document.title = entry.title;
-      const categories = (entry.categories || []).map((category) => `<span class="chip">${escape(bioCategoryLabel(category, lang))}</span>`).join("");
+      const topic = `<span class="chip">${escape(bioTopicLabel(entry.topic, lang))}</span>`;
       const identifiers = Object.entries(entry.identifiers || {}).map(([key, value]) => `${escape(key.toUpperCase())}: ${escape(value)}`).join(" · ");
       const contexts = (entry.evaluation_contexts || []).map((context) => bioT(lang, context === "biosecurity_misuse" ? "biosecurityMisuse" : "beneficialCapability")).join(" · ");
       const links = Object.entries(entry.links || {}).filter(([, value]) => value).map(([key, value]) => `<a href="${escape(value)}" target="_blank" rel="noopener">${escape(key)}</a>`).join("");
       const evidence = (entry.evidence || []).map((row) => `<article class="evidence-card"><div class="evidence-card__head"><strong>${escape(row.term)}</strong><span>${escape(row.location)}</span></div><p>${escape(row.excerpt)}</p>${row.source_url ? `<a class="row__go" href="${escape(row.source_url)}" target="_blank" rel="noopener">${bioT(lang, "source")}</a>` : ""}</article>`).join("");
       const agentLink = entry.related_agent_url ? `<a href="${escape(entry.related_agent_url)}">${bioT(lang, "relatedAgent")}</a>` : "";
       root.innerHTML = `<p class="crumb"><a href="${base}">${bioT(lang, "back")}</a></p><article class="paper paper--full">
-        <div class="themes"><span class="bio-priority bio-priority--${entry.priority.toLowerCase()}">${escape(entry.priority)}</span><span class="bio-kind">${bioT(lang, entry.kind === "paper" ? "paper" : "update")}</span>${categories}</div>
+        <div class="themes"><span class="bio-contribution bio-contribution--${entry.contribution_type}">${escape(bioContributionLabel(entry.contribution_type, lang))}</span>${topic}</div>
         <h1>${escape(entry.title)}</h1><div class="meta">${escape((entry.authors || []).join(", "))}</div>
-        ${entry.collection_status === "watchlist" ? `<p class="notice">${bioT(lang, "watchNotice")}</p>` : ""}
         <div class="abstract"><p>${escape(entry.abstract)}</p></div>
         <dl class="bio-definition">
           ${definition(bioT(lang, "published"), escape((entry.published_at || "").slice(0, 10)))}
           ${definition(bioT(lang, "firstSeen"), escape((entry.first_seen_at || "").slice(0, 10)))}
           ${definition(bioT(lang, "access"), escape(entry.access_status))}
+          ${definition(bioT(lang, "topic"), escape(bioTopicLabel(entry.topic, lang)))}
+          ${definition(bioT(lang, "contributionType"), escape(bioContributionLabel(entry.contribution_type, lang)))}
           ${definition(bioT(lang, "reason"), escape(entry.classification_reason))}
           ${definition(bioT(lang, "identifiers"), identifiers)}
           ${definition(bioT(lang, "context"), escape(contexts))}

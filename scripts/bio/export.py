@@ -7,7 +7,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
 
-from .config import CATEGORY_LABELS
+from .config import CONTRIBUTION_BY_PRIORITY, CONTRIBUTION_LABELS, TOPIC_LABELS
 from .models import BioEntry
 
 
@@ -69,10 +69,16 @@ def attach_agent_links(entries: list[BioEntry], agent_index: Path) -> None:
             entry.related_agent_url = f"../../p/{safe}.html"
 
 
+def _public_entry(entry: BioEntry) -> dict[str, Any]:
+    row = entry.to_dict()
+    row["topic"] = entry.categories[0] if entry.categories else "general_text"
+    row["contribution_type"] = CONTRIBUTION_BY_PRIORITY.get(entry.priority, "new_benchmark")
+    return row
+
+
 def build_payload(entries: list[BioEntry], generated_at: str, source_health: list[dict[str, Any]]) -> dict[str, Any]:
-    category_counts = Counter(category for entry in entries for category in entry.categories)
-    priority_counts = Counter(entry.priority for entry in entries)
-    status_counts = Counter(entry.collection_status for entry in entries)
+    topic_counts = Counter((entry.categories or ["general_text"])[0] for entry in entries)
+    contribution_counts = Counter(CONTRIBUTION_BY_PRIORITY.get(entry.priority, "new_benchmark") for entry in entries)
     kind_counts = Counter(entry.kind for entry in entries)
     context_counts = Counter(context for entry in entries for context in entry.evaluation_contexts)
     by_day: dict[str, list[str]] = defaultdict(list)
@@ -85,20 +91,20 @@ def build_payload(entries: list[BioEntry], generated_at: str, source_health: lis
         for day, ids in sorted(by_day.items(), reverse=True)
     ]
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "generated_at": generated_at,
         "total": len(entries),
         "counts": {
-            "priorities": dict(priority_counts),
-            "categories": dict(category_counts),
-            "statuses": dict(status_counts),
+            "topics": dict(topic_counts),
+            "contribution_types": dict(contribution_counts),
             "kinds": dict(kind_counts),
             "evaluation_contexts": dict(context_counts),
         },
-        "category_labels": CATEGORY_LABELS,
+        "topic_labels": TOPIC_LABELS,
+        "contribution_labels": CONTRIBUTION_LABELS,
         "source_health": source_health,
         "days": days,
-        "entries": [entry.to_dict() for entry in entries],
+        "entries": [_public_entry(entry) for entry in entries],
     }
 
 
@@ -119,6 +125,8 @@ def validate_payload(payload: dict[str, Any]) -> None:
             "priority",
             "categories",
             "collection_status",
+            "topic",
+            "contribution_type",
             "evidence",
             "links",
             "evaluation_contexts",
@@ -132,6 +140,12 @@ def validate_payload(payload: dict[str, Any]) -> None:
             raise ValueError(f"Invalid priority for {row['id']}")
         if row["collection_status"] not in {"confirmed", "watchlist"}:
             raise ValueError(f"Invalid public collection status for {row['id']}")
+        if row["collection_status"] != "confirmed":
+            raise ValueError(f"Non-confirmed entry exported publicly: {row['id']}")
+        if row["topic"] not in TOPIC_LABELS:
+            raise ValueError(f"Invalid topic for {row['id']}")
+        if row["contribution_type"] not in CONTRIBUTION_LABELS:
+            raise ValueError(f"Invalid contribution type for {row['id']}")
         seen.add(row["id"])
 
 
@@ -187,7 +201,7 @@ def write_snapshot(
         json.dumps(meta, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    by_id = {entry.id: entry.to_dict() for entry in entries}
+    by_id = {entry.id: _public_entry(entry) for entry in entries}
     keep_days = set()
     for day in payload["days"]:
         keep_days.add(day["date"])

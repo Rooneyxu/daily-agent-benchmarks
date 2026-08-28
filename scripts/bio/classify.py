@@ -5,13 +5,14 @@ from __future__ import annotations
 import re
 
 from .config import (
+    AUDIT_PATTERNS,
     BENCHMARK_TERMS,
     BIO_TERMS,
-    CATEGORY_PATTERNS,
     MAX_EVIDENCE,
-    NEW_ARTIFACT_TERMS,
+    METHODOLOGY_PATTERNS,
+    NEW_BENCHMARK_PATTERNS,
     ROUTINE_EVAL_TERMS,
-    SUBSTANTIVE_UPDATE_TERMS,
+    TOPIC_PATTERNS,
 )
 from .models import Classification, Evidence, SourceDocument
 
@@ -21,17 +22,33 @@ def _contains(text: str, terms: tuple[str, ...]) -> list[str]:
     return [term for term in terms if term in lowered]
 
 
-def _category_hits(text: str) -> dict[str, list[str]]:
+def _pattern_hits(text: str, patterns: tuple[str, ...]) -> list[str]:
+    hits = []
+    for pattern in patterns:
+        match = re.search(pattern, text, re.IGNORECASE)
+        if match:
+            hits.append(match.group(0))
+    return hits
+
+
+def _topic_hits(text: str) -> dict[str, list[str]]:
     hits: dict[str, list[str]] = {}
-    for category, patterns in CATEGORY_PATTERNS.items():
+    for topic, patterns in TOPIC_PATTERNS.items():
         matches = []
         for pattern in patterns:
             match = re.search(pattern, text, re.IGNORECASE)
             if match:
                 matches.append(match.group(0))
         if matches:
-            hits[category] = matches
+            hits[topic] = matches
     return hits
+
+
+def _primary_topic(hits: dict[str, list[str]]) -> str:
+    if not hits:
+        return "general_text"
+    tie_order = {"biosafety": 3, "experiment_agent": 2, "multimodal": 1}
+    return max(hits, key=lambda topic: (len(hits[topic]), tie_order.get(topic, 0)))
 
 
 def _location_at(text: str, offset: int) -> str:
@@ -69,28 +86,35 @@ def _evidence(text: str, terms: list[str], source_url: str) -> list[Evidence]:
 def classify(document: SourceDocument) -> Classification:
     candidate = document.candidate
     title = candidate.title or ""
-    text = f"{title}\n{candidate.abstract}\n{document.body}".strip()
-    domain_hits = _contains(text, BIO_TERMS)
-    benchmark_hits = _contains(text, BENCHMARK_TERMS)
-    new_hits = _contains(text, NEW_ARTIFACT_TERMS)
-    update_hits = _contains(text, SUBSTANTIVE_UPDATE_TERMS)
-    routine_hits = _contains(text, ROUTINE_EVAL_TERMS)
-    category_hits = _category_hits(text)
-    categories = list(category_hits)
+    metadata_text = re.sub(r"\s+", " ", f"{title} {candidate.abstract}").strip()
+    full_text = f"{title}\n{candidate.abstract}\n{document.body}".strip()
+    domain_hits = _contains(metadata_text, BIO_TERMS)
+    benchmark_hits = _contains(metadata_text, BENCHMARK_TERMS)
+    new_hits = _pattern_hits(metadata_text, NEW_BENCHMARK_PATTERNS)
+    methodology_hits = _pattern_hits(metadata_text, METHODOLOGY_PATTERNS)
+    audit_hits = _pattern_hits(metadata_text, AUDIT_PATTERNS)
+    routine_hits = _contains(metadata_text, ROUTINE_EVAL_TERMS)
+    topic_hits = _topic_hits(full_text)
+    categories = [_primary_topic(topic_hits)]
 
-    title_benchmark = bool(_contains(title, BENCHMARK_TERMS)) or bool(
-        re.search(r"\b[a-z0-9][a-z0-9_-]*(?:bench|benchmark|eval)\b", title, re.IGNORECASE)
+    title_benchmark = bool(_contains(title, BENCHMARK_TERMS))
+    title_artifact = bool(
+        re.search(r"\b[a-z0-9][a-z0-9_-]*(?:bench|benchmark|eval|qa)\b", title, re.IGNORECASE)
+        or re.search(
+            r"^[^:]{2,100}:\s*(?![^:]*\b(?:survey|review|taxonomy|taxonomies|methods|applications|open challenges)\b)(?:(?:a|an|the)\s+)?(?:[a-z0-9-]+\s+){0,8}(?:benchmarks?|dataset|evaluation suite|eval suite|challenge set|test set)\b",
+            title,
+            re.IGNORECASE,
+        )
     )
-    source_update = candidate.kind == "evaluation_update"
-    is_audit = bool(update_hits) and not bool(new_hits)
+    benchmark_signal = bool(benchmark_hits) or title_artifact or bool(new_hits)
 
     score = 3 * len(set(domain_hits)) + 3 * len(set(benchmark_hits))
-    score += 4 * int(title_benchmark) + 4 * len(set(new_hits)) + 2 * len(set(update_hits))
-    score += 2 * len(categories)
+    score += 4 * int(title_artifact) + 4 * len(set(new_hits))
+    score += 4 * len(set(methodology_hits)) + 4 * len(set(audit_hits)) + 2 * len(topic_hits)
 
-    if source_update or is_audit:
+    if audit_hits and benchmark_signal:
         priority = "P2"
-    elif any(category in categories for category in ("construction", "quality", "protocol")):
+    elif methodology_hits and benchmark_signal:
         priority = "P0"
     else:
         priority = "P1"
@@ -98,39 +122,33 @@ def classify(document: SourceDocument) -> Classification:
     if not domain_hits:
         status = "excluded"
         reason = "No explicit biological or medical domain signal."
-    elif not benchmark_hits and not title_benchmark:
-        status = "excluded"
-        reason = "No benchmark or evaluation-artifact signal."
-    elif source_update:
-        if document.extraction_status != "complete" or not update_hits:
-            status = "watchlist"
-            reason = "Official model artifact is relevant, but full-text update evidence is incomplete."
-        else:
-            status = "confirmed"
-            reason = "Official model artifact contains explicit biomedical evaluation evidence."
-    elif new_hits or title_benchmark:
+    elif audit_hits and benchmark_signal:
         status = "confirmed"
-        reason = "Explicit biomedical benchmark contribution detected."
-    elif update_hits:
+        reason = "Title or abstract explicitly identifies a biomedical benchmark audit."
+    elif methodology_hits and benchmark_signal:
         status = "confirmed"
-        reason = "Substantive benchmark audit or evaluation-method update detected."
+        reason = "Title or abstract explicitly studies biomedical benchmark construction or quality methodology."
+    elif new_hits or title_artifact:
+        status = "confirmed"
+        reason = "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite."
     elif routine_hits:
         status = "excluded"
         reason = "Routine scoring on existing benchmarks without a substantive evaluation contribution."
+    elif not benchmark_signal:
+        status = "excluded"
+        reason = "No benchmark or evaluation-artifact signal in the title or abstract."
     else:
         status = "watchlist"
-        reason = "Biomedical benchmark use is present, but the contribution type is not explicit."
-
-    if not categories and status != "excluded":
-        categories = ["text"]
+        reason = "A biomedical benchmark is mentioned, but the title and abstract do not state a qualifying contribution."
 
     evidence_terms = []
-    for group in (new_hits, update_hits, benchmark_hits, domain_hits):
+    enrichment_terms = [term for matches in topic_hits.values() for term in matches]
+    for group in (new_hits, methodology_hits, audit_hits, benchmark_hits, domain_hits, enrichment_terms):
         for term in group:
             if term not in evidence_terms:
                 evidence_terms.append(term)
     source_url = candidate.links.get("html") or candidate.links.get("abs") or candidate.content_url
-    evidence = _evidence(text, evidence_terms, source_url)
+    evidence = _evidence(full_text, evidence_terms, source_url)
     if status == "confirmed" and not evidence:
         status = "watchlist"
         reason = "Relevant signals were found, but no traceable evidence window could be produced."

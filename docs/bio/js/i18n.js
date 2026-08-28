@@ -10,17 +10,15 @@ const BIO_STRINGS = {
     themeToggle: "Toggle color theme",
     themeToLight: "Light",
     themeToDark: "Dark",
-    heroLead: "New biology, medicine, life-science, protocol, agent, and biosafety benchmark papers, checked daily.",
+    heroLead: "New biology and medical benchmarks, plus papers on benchmark construction, quality, and audits, checked daily.",
     records: "records",
-    confirmed: "main catalog",
     latest: "latest event",
     updated: "Index generated",
     all: "All",
-    status: "Catalog",
-    main: "Main",
-    watchlist: "Watchlist",
-    priority: "Priority",
-    type: "Type",
+    contribution: "Contribution",
+    newBenchmark: "New benchmark",
+    methodology: "Methodology",
+    audit: "Audit",
     paper: "Papers",
     update: "Evaluation updates",
     loadMore: "Load more",
@@ -33,15 +31,15 @@ const BIO_STRINGS = {
     reason: "Why included",
     published: "Published",
     firstSeen: "First seen",
-    categories: "Categories",
+    topic: "Topic",
+    contributionType: "Contribution",
     identifiers: "Identifiers",
     relatedAgent: "Also indexed under Agent Benchmarks",
     context: "Evaluation context",
     beneficialCapability: "Beneficial life-science capability",
     biosecurityMisuse: "Biosecurity / misuse evaluation",
     extraction: "Extraction",
-    watchNotice: "This item is in the Watchlist because its relevance or full-text evidence is incomplete.",
-    footer: "Sources are checked daily. Priority labels help navigation but never decide inclusion.",
+    footer: "Public inclusion is decided from titles and abstracts. Full text only enriches topics and evidence.",
   },
   zh: {
     title: "生物与医学",
@@ -54,17 +52,15 @@ const BIO_STRINGS = {
     themeToggle: "切换配色",
     themeToLight: "浅色",
     themeToDark: "深色",
-    heroLead: "每日收集生物、医学、生命科学、实验 Protocol、科研 Agent 与生物安全 Benchmark 论文。",
+    heroLead: "每日收集生物与医学新 Benchmark，以及研究 Benchmark 构建、质检和审计的论文。",
     records: "条记录",
-    confirmed: "条正式收录",
     latest: "最近事件",
     updated: "索引生成时间",
     all: "全部",
-    status: "目录",
-    main: "正式库",
-    watchlist: "观察区",
-    priority: "标记",
-    type: "类型",
+    contribution: "贡献类型",
+    newBenchmark: "新 Benchmark",
+    methodology: "构建与质检",
+    audit: "审计",
     paper: "论文",
     update: "评测更新",
     loadMore: "加载更多",
@@ -77,27 +73,30 @@ const BIO_STRINGS = {
     reason: "纳入理由",
     published: "发布日期",
     firstSeen: "首次发现",
-    categories: "类别",
+    topic: "主题",
+    contributionType: "贡献类型",
     identifiers: "标识符",
     relatedAgent: "同时收录于 Agent Benchmarks",
     context: "评测语境",
     beneficialCapability: "有益生命科学能力",
     biosecurityMisuse: "生物安全 / 滥用风险评测",
     extraction: "全文解析",
-    watchNotice: "这条记录位于观察区，因为相关性或全文证据仍不完整。",
-    footer: "系统每日巡检来源；P0/P1/P2 只用于浏览标记，不决定是否收录。",
+    footer: "是否公开收录只由标题和摘要决定；全文仅用于补充主题与证据。",
   },
 };
 
-const BIO_CATEGORY_LABELS = {
-  all: { en: "All categories", zh: "全部类别" },
-  text: { en: "Bio/medical text", zh: "生物医学文本" },
+const BIO_TOPIC_LABELS = {
+  all: { en: "All topics", zh: "全部主题" },
+  general_text: { en: "Bio/medical & text", zh: "生物医学与文本" },
   multimodal: { en: "Scientific multimodal", zh: "科学多模态" },
-  protocol: { en: "Experiment & protocol", zh: "实验与 Protocol" },
-  agent: { en: "Research agents", zh: "科研 Agent" },
+  experiment_agent: { en: "Experiment & agents", zh: "实验与 Agent" },
   biosafety: { en: "Biosafety & biorisk", zh: "生物安全与风险" },
-  construction: { en: "Automated construction", zh: "自动化出题与构建" },
-  quality: { en: "Automated quality", zh: "自动化质检与评测" },
+};
+
+const BIO_CONTRIBUTION_LABELS = {
+  new_benchmark: { en: "New benchmark", zh: "新 Benchmark" },
+  methodology: { en: "Benchmark methodology", zh: "构建与质检方法" },
+  audit: { en: "Benchmark audit", zh: "Benchmark 审计" },
 };
 
 const SYNONYMS = {
@@ -119,8 +118,13 @@ function bioT(lang, key) {
   return (BIO_STRINGS[lang] || BIO_STRINGS.en)[key] || BIO_STRINGS.en[key] || key;
 }
 
-function bioCategoryLabel(id, lang) {
-  const row = BIO_CATEGORY_LABELS[id] || { en: id, zh: id };
+function bioTopicLabel(id, lang) {
+  const row = BIO_TOPIC_LABELS[id] || { en: id, zh: id };
+  return row[lang === "zh" ? "zh" : "en"];
+}
+
+function bioContributionLabel(id, lang) {
+  const row = BIO_CONTRIBUTION_LABELS[id] || { en: id, zh: id };
   return row[lang === "zh" ? "zh" : "en"];
 }
 

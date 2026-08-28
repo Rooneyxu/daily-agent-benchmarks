@@ -22,7 +22,7 @@ def sample_entry() -> BioEntry:
         first_seen_at="2026-01-02T00:00:00Z",
         event_at="2026-01-02T00:00:00Z",
         priority="P1",
-        categories=["text"],
+        categories=["general_text"],
         collection_status="confirmed",
         access_status="public",
         license="",
@@ -49,7 +49,10 @@ def test_static_snapshot_contains_index_meta_day_and_page(tmp_path: Path) -> Non
         tmp_path / "missing-agent-index.json",
     )
     validate_payload(payload)
-    assert json.loads((tmp_path / "data" / "index.json").read_text())["total"] == 1
+    index = json.loads((tmp_path / "data" / "index.json").read_text())
+    assert index["total"] == 1
+    assert index["entries"][0]["topic"] == "general_text"
+    assert index["entries"][0]["contribution_type"] == "new_benchmark"
     assert (tmp_path / "data" / "meta.json").exists()
     assert (tmp_path / "data" / "days" / "2026-01-02.json").exists()
     assert (tmp_path / "p" / f"{sample_entry().slug}.html").exists()
@@ -60,5 +63,3 @@ def test_committed_seed_catalog_has_sixty_confirmed_records() -> None:
     payload = json.loads((root / "data" / "bio-seeds.json").read_text())
     assert len(payload["entries"]) == 60
     assert all(row["collection_status"] == "confirmed" for row in payload["entries"])
-    assert {row["priority"] for row in payload["entries"]} == {"P0", "P1", "P2"}
-    assert len({category for row in payload["entries"] for category in row["categories"]}) == 7

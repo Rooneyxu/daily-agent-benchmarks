@@ -1,86 +1,28 @@
 {
-  "schema_version": 1,
-  "generated_at": "2026-08-28T08:13:29Z",
-  "total": 153,
-  "day_count": 40,
+  "schema_version": 2,
+  "generated_at": "2026-08-28T08:53:28Z",
+  "total": 62,
+  "day_count": 35,
   "latest_date": "2026-08-28",
   "counts": {
-    "priorities": {
-      "P1": 110,
-      "P0": 34,
-      "P2": 9
+    "topics": {
+      "multimodal": 14,
+      "general_text": 22,
+      "experiment_agent": 18,
+      "biosafety": 8
     },
-    "categories": {
-      "text": 90,
-      "multimodal": 41,
-      "quality": 21,
-      "protocol": 26,
-      "biosafety": 9,
-      "construction": 10,
-      "agent": 10
-    },
-    "statuses": {
-      "confirmed": 117,
-      "watchlist": 36
+    "contribution_types": {
+      "new_benchmark": 58,
+      "audit": 1,
+      "methodology": 3
     },
     "kinds": {
-      "paper": 153
+      "paper": 62
     },
     "evaluation_contexts": {
-      "beneficial_capability": 152,
-      "biosecurity_misuse": 9
+      "beneficial_capability": 54,
+      "biosecurity_misuse": 8
     }
   },
-  "source_health": [
-    {
-      "source": "arxiv",
-      "name": "arXiv",
-      "status": "failed",
-      "started_at": "2026-08-28T08:13:31Z",
-      "finished_at": "2026-08-28T08:13:32Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "Client error '429 Unknown Error' for url 'https://export.arxiv.org/api/query?search_query=%28ti%3Abenchmark+OR+ti%3Abench+OR+ti%3A%22evaluation+suite%22%29+AND+%28all%3Abiomedical+OR+all%3Amedical+OR+all%3Aclinical%29&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
-    },
-    {
-      "source": "europepmc",
-      "name": "Europe PMC",
-      "status": "failed",
-      "started_at": "2026-08-28T08:13:32Z",
-      "finished_at": "2026-08-28T08:14:18Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "The read operation timed out"
-    },
-    {
-      "source": "biorxiv",
-      "name": "bioRxiv / medRxiv",
-      "status": "success",
-      "started_at": "2026-08-28T08:14:18Z",
-      "finished_at": "2026-08-28T08:16:23Z",
-      "discovered": 1062,
-      "published": 42,
-      "error": ""
-    },
-    {
-      "source": "medrxiv",
-      "name": "bioRxiv / medRxiv",
-      "status": "success",
-      "started_at": "2026-08-28T08:16:23Z",
-      "finished_at": "2026-08-28T08:16:40Z",
-      "discovered": 222,
-      "published": 18,
-      "error": ""
-    },
-    {
-      "source": "openreview",
-      "name": "OpenReview",
-      "status": "success",
-      "started_at": "2026-08-28T08:16:40Z",
-      "finished_at": "2026-08-28T08:16:45Z",
-      "discovered": 0,
-      "published": 0,
-      "error": ""
-    }
-  ]
+  "source_health": []
 }

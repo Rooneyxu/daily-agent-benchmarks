@@ -108,7 +108,7 @@ const BM25 = (() => {
     const docs = papers.map((paper) => {
       const title = tokenize(`${paper.title} ${(paper.tags || []).join(" ")}`);
       const body = tokenize(
-        `${paper.abstract} ${(paper.authors || []).join(" ")} ${(paper.categories || []).join(" ")}`
+        `${paper.abstract} ${(paper.authors || []).join(" ")} ${(paper.categories || []).join(" ")} ${paper.topic || ""} ${paper.contribution_type || ""}`
       );
       return {
         id: paper.id,

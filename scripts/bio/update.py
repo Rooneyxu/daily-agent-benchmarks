@@ -53,12 +53,45 @@ def _access_status(candidate: SourceCandidate) -> str:
 
 
 def _evaluation_contexts(categories: list[str]) -> list[str]:
-    contexts = []
-    if any(category != "biosafety" for category in categories):
-        contexts.append("beneficial_capability")
+    return ["biosecurity_misuse"] if "biosafety" in categories else ["beneficial_capability"]
+
+
+def _legacy_topic(categories: list[str]) -> str:
     if "biosafety" in categories:
-        contexts.append("biosecurity_misuse")
-    return contexts
+        return "biosafety"
+    if any(category in categories for category in ("protocol", "agent", "experiment_agent")):
+        return "experiment_agent"
+    if "multimodal" in categories:
+        return "multimodal"
+    return "general_text"
+
+
+def _refresh_stored_classification(entry: BioEntry) -> None:
+    if entry.source.startswith("vendor:") or entry.kind != "paper":
+        return
+    candidate = SourceCandidate(
+        source=entry.source,
+        source_id=entry.id,
+        kind=entry.kind,
+        title=entry.title,
+        abstract=entry.abstract,
+        identifiers=entry.identifiers,
+        links=entry.links,
+    )
+    result = classify(
+        SourceDocument(
+            candidate=candidate,
+            body=entry.abstract,
+            content_hash=entry.content_hash,
+            extraction_status="metadata_only",
+        )
+    )
+    entry.priority = result.priority
+    entry.categories = [_legacy_topic(entry.categories)]
+    entry.collection_status = "confirmed" if result.collection_status == "confirmed" else "watchlist"
+    entry.classification_reason = result.reason
+    entry.match_score = result.score
+    entry.evaluation_contexts = _evaluation_contexts(entry.categories)
 
 
 def document_to_entry(document: SourceDocument, seen_at: str) -> BioEntry | None:
@@ -218,6 +251,8 @@ def run(
             generated_at,
         )
     seeds = load_seed_entries(SEED_PATH)
+    for entry in (*existing, *seeds):
+        _refresh_stored_classification(entry)
     base = merge_entries(existing, seeds, generated_at)
     source_health: list[dict[str, Any]] = []
     documents: list[tuple[SourceDocument, str]] = []
@@ -277,12 +312,17 @@ def run(
             )
         merged = merge_entries(store.list_entries(), [], generated_at)
 
-    publishable = [entry for entry in merged if entry.collection_status in {"confirmed", "watchlist"}]
-    vendor_entries = [entry for entry in publishable if entry.source.startswith("vendor:")]
+    vendor_entries = [
+        entry
+        for entry in merged
+        if entry.collection_status in {"confirmed", "watchlist"} and entry.source.startswith("vendor:")
+    ]
     public_entries = [
         entry
-        for entry in publishable
-        if entry.kind == "paper" and not entry.source.startswith("vendor:")
+        for entry in merged
+        if entry.collection_status == "confirmed"
+        and entry.kind == "paper"
+        and not entry.source.startswith("vendor:")
     ]
     write_vendor_archive(output_dir, vendor_entries, generated_at)
     payload = write_snapshot(output_dir, public_entries, generated_at, source_health, AGENT_INDEX)

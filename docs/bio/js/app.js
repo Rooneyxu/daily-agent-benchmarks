@@ -4,10 +4,8 @@
     lang: localStorage.getItem("dab-lang") || ((navigator.language || "").startsWith("zh") ? "zh" : "en"),
     theme: localStorage.getItem("dab-theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"),
     exact: localStorage.getItem("bio-exact") === "1",
-    category: localStorage.getItem("bio-category") || "all",
-    priority: localStorage.getItem("bio-priority") || "all",
-    kind: localStorage.getItem("bio-kind") || "all",
-    status: localStorage.getItem("bio-status") || "confirmed",
+    topic: localStorage.getItem("bio-topic") || "all",
+    contribution: localStorage.getItem("bio-contribution") || "all",
     query: "",
     shown: PAGE_SIZE,
     data: null,
@@ -46,10 +44,8 @@
 
   function filteredEntries() {
     return (state.data.entries || []).filter((entry) => {
-      if (state.category !== "all" && !(entry.categories || []).includes(state.category)) return false;
-      if (state.priority !== "all" && entry.priority !== state.priority) return false;
-      if (state.kind !== "all" && entry.kind !== state.kind) return false;
-      if (entry.collection_status !== state.status) return false;
+      if (state.topic !== "all" && entry.topic !== state.topic) return false;
+      if (state.contribution !== "all" && entry.contribution_type !== state.contribution) return false;
       return true;
     });
   }
@@ -60,19 +56,15 @@
   }
 
   function badge(entry) {
-    const priority = `<span class="bio-priority bio-priority--${entry.priority.toLowerCase()}">${escape(entry.priority)}</span>`;
-    const kind = `<span class="bio-kind">${bioT(state.lang, entry.kind === "paper" ? "paper" : "update")}</span>`;
-    const statusClass = entry.collection_status === "watchlist" ? " bio-status-chip--watchlist" : "";
-    const status = `<span class="chip bio-status-chip${statusClass}">${bioT(state.lang, entry.collection_status === "watchlist" ? "watchlist" : "main")}</span>`;
-    return `${priority}${kind}${status}`;
+    return `<span class="bio-contribution bio-contribution--${entry.contribution_type}">${escape(bioContributionLabel(entry.contribution_type, state.lang))}</span>`;
   }
 
   function row(entry, query = "") {
     const title = query ? BM25.highlight(entry.title, query) : escape(entry.title);
-    const categoryChips = (entry.categories || []).slice(0, 3).map((category) => `<span class="chip">${escape(bioCategoryLabel(category, state.lang))}</span>`).join("");
+    const topicChip = `<span class="chip">${escape(bioTopicLabel(entry.topic, state.lang))}</span>`;
     return `<article class="row bio-row">
       <div class="row__main">
-        <div class="themes">${badge(entry)}${categoryChips}</div>
+        <div class="themes">${badge(entry)}${topicChip}</div>
         <h3><a href="./p/${encodeURIComponent(entry.slug)}.html">${title}</a></h3>
         <div class="meta"><span>${escape(dateOf(entry).slice(0, 10))}</span><span>· ${escape(entry.source)}</span><span>· ${escape((entry.authors || []).slice(0, 3).join(", "))}${(entry.authors || []).length > 3 ? " et al." : ""}</span></div>
       </div>
@@ -86,25 +78,23 @@
 
   function filters() {
     return `<div class="bio-filters">
-      ${filterButtons("status", "status-filter", state.status, [["confirmed", "main"], ["watchlist", "watchlist"]])}
-      ${filterButtons("priority", "priority-filter", state.priority, [["all", "all"], ["P0", "P0"], ["P1", "P1"], ["P2", "P2"]])}
+      ${filterButtons("contribution", "contribution-filter", state.contribution, [["all", "all"], ["new_benchmark", "newBenchmark"], ["methodology", "methodology"], ["audit", "audit"]])}
     </div>`;
   }
 
   function renderRail() {
-    const entries = (state.data.entries || []).filter((entry) => entry.collection_status === state.status);
-    const categories = ["all", ...Object.keys(BIO_CATEGORY_LABELS).filter((id) => id !== "all")];
-    elements.rail.innerHTML = categories.map((category) => {
-      const count = category === "all" ? entries.length : entries.filter((entry) => (entry.categories || []).includes(category)).length;
-      return `<a href="#${category}" data-category="${category}"${state.category === category ? ' aria-current="true"' : ""}><span>${escape(bioCategoryLabel(category, state.lang))}</span><span class="n">${count}</span></a>`;
+    const entries = state.data.entries || [];
+    const topics = ["all", ...Object.keys(BIO_TOPIC_LABELS).filter((id) => id !== "all")];
+    elements.rail.innerHTML = topics.map((topic) => {
+      const count = topic === "all" ? entries.length : entries.filter((entry) => entry.topic === topic).length;
+      return `<a href="#${topic}" data-topic="${topic}"${state.topic === topic ? ' aria-current="true"' : ""}><span>${escape(bioTopicLabel(topic, state.lang))}</span><span class="n">${count}</span></a>`;
     }).join("");
   }
 
   function renderHero() {
     const entries = state.data.entries || [];
-    const confirmed = entries.filter((entry) => entry.collection_status === "confirmed").length;
     const latest = entries.map(dateOf).sort().reverse()[0]?.slice(0, 10) || "—";
-    elements.hero.innerHTML = `<h1>${bioT(state.lang, "docTitle")}</h1><p>${bioT(state.lang, "heroLead")}</p><div class="hero__stats"><div><b>${entries.length}</b><span>${bioT(state.lang, "records")}</span></div><div><b>${confirmed}</b><span>${bioT(state.lang, "confirmed")}</span></div><div><b>${escape(latest)}</b><span>${bioT(state.lang, "latest")}</span></div></div>`;
+    elements.hero.innerHTML = `<h1>${bioT(state.lang, "docTitle")}</h1><p>${bioT(state.lang, "heroLead")}</p><div class="hero__stats"><div><b>${entries.length}</b><span>${bioT(state.lang, "records")}</span></div><div><b>${escape(latest)}</b><span>${bioT(state.lang, "latest")}</span></div></div>`;
     elements.generated.textContent = `${bioT(state.lang, "updated")} ${escape((state.data.generated_at || "").replace("T", " ").replace("Z", " UTC"))}`;
   }
 
@@ -149,13 +139,11 @@
       const target = event.target.closest("button");
       if (!target) return;
       if (target.hasAttribute("data-more")) { state.shown += PAGE_SIZE; renderFeed(); }
-      else if (target.dataset.statusFilter) updateFilter("status", target.dataset.statusFilter);
-      else if (target.dataset.priorityFilter) updateFilter("priority", target.dataset.priorityFilter);
-      else if (target.dataset.kindFilter) updateFilter("kind", target.dataset.kindFilter);
+      else if (target.dataset.contributionFilter) updateFilter("contribution", target.dataset.contributionFilter);
     });
     elements.rail.addEventListener("click", (event) => {
-      const link = event.target.closest("[data-category]");
-      if (link) { event.preventDefault(); updateFilter("category", link.dataset.category); }
+      const link = event.target.closest("[data-topic]");
+      if (link) { event.preventDefault(); updateFilter("topic", link.dataset.topic); }
     });
   }
 

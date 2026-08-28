@@ -23,7 +23,7 @@ def _entry(entry_id: str, source: str, kind: str = "paper") -> BioEntry:
         first_seen_at="2026-01-02T00:00:00Z",
         event_at="2026-01-02T00:00:00Z",
         priority="P1",
-        categories=["text"],
+        categories=["general_text"],
         collection_status="confirmed",
         access_status="public",
         license="",
@@ -119,6 +119,8 @@ def test_run_preserves_stored_event_time_and_archives_vendor_entries(
 
     assert payload["total"] == 1
     assert payload["entries"][0]["id"] == existing.id
+    assert payload["entries"][0]["topic"] == "general_text"
+    assert payload["entries"][0]["contribution_type"] == "new_benchmark"
     assert payload["entries"][0]["event_at"] == existing.event_at
     assert FakeStore.last is not None
     assert FakeStore.last.entries[existing.id].event_at == existing.event_at
@@ -134,3 +136,13 @@ def test_scheduled_workflow_disables_vendor_discovery() -> None:
     root = Path(__file__).resolve().parents[1]
     workflow = (root / ".github" / "workflows" / "bio-update.yml").read_text()
     assert 'python scripts/bio_update.py --days "$LOOKBACK_DAYS" --no-vendors' in workflow
+
+
+def test_stored_ambiguous_paper_moves_to_internal_review_queue() -> None:
+    entry = _entry("arxiv:routine", "arxiv")
+    entry.title = "Reliability on biomedical benchmarks"
+    entry.abstract = "We compare clinical models on a standard medical benchmark."
+
+    bio_update._refresh_stored_classification(entry)
+
+    assert entry.collection_status == "watchlist"

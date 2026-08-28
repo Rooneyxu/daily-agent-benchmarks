@@ -17,13 +17,12 @@
         "Jindong Han"
       ],
       "source": "arxiv",
-      "published_at": "2026-07-10T18:13:54+00:00",
-      "updated_at": "2026-07-10T18:13:54+00:00",
+      "published_at": "2026-07-10T18:13:54Z",
+      "updated_at": "2026-07-10T18:13:54Z",
       "first_seen_at": "2026-07-10T18:13:54+00:00",
       "event_at": "2026-07-10T18:13:54+00:00",
       "priority": "P1",
       "categories": [
-        "multimodal",
         "biosafety"
       ],
       "collection_status": "confirmed",
@@ -34,59 +33,60 @@
       },
       "links": {
         "abs": "https://arxiv.org/abs/2607.09880v1",
-        "pdf": "https://arxiv.org/pdf/2607.09880v1",
-        "html": "https://arxiv.org/html/2607.09880"
+        "html": "https://arxiv.org/html/2607.09880",
+        "pdf": "https://arxiv.org/pdf/2607.09880v1"
       },
       "evidence": [
         {
           "term": "we introduce",
-          "excerpt": "ver static data, and therefore rarely assess whether models can faithfully ground their answers in irregular temporal observations. To fill this gap, we introduce CLIR-Bench, a benchmark for irregular clinical time series QA constructed from de-identified ICU records through a principled four-stage pipeline. CLIR-Bench contains 6,600 QA instances spanning 11 clinical variables, organized into four c",
           "location": "Abstract / metadata",
+          "excerpt": "ver static data, and therefore rarely assess whether models can faithfully ground their answers in irregular temporal observations. To fill this gap, we introduce CLIR-Bench, a benchmark for irregular clinical time series QA constructed from de-identified ICU records through a principled four-stage pipeline. CLIR-Bench contains 6,600 QA instances spanning 11 clinical variables, organized into four c",
           "source_url": "https://arxiv.org/html/2607.09880"
         },
         {
           "term": "benchmark",
-          "excerpt": "CLIR-Bench: Benchmarking Multimodal Question Answering over Irregular Clinical Time Series Clinical time series are central to patient monitoring, risk assessment, and clinical decision support. However, they are often sparse, irregularly sampled, and asynchron",
           "location": "Abstract / metadata",
+          "excerpt": "CLIR-Bench: Benchmarking Multimodal Question Answering over Irregular Clinical Time Series Clinical time series are central to patient monitoring, risk assessment, and clinical decision support. However, they are often sparse, irregularly sampled, and asynchron",
           "source_url": "https://arxiv.org/html/2607.09880"
         },
         {
           "term": "benchmarks",
-          "excerpt": "y sampled, and asynchronous, making it difficult for models to identify the temporal evidence required for clinical Question Answering (QA). Existing benchmarks primarily focus on regularly sampled time-series QA or medical QA over static data, and therefore rarely assess whether models can faithfully ground their answers in irregular temporal observations. To fill this gap, we introduce CLIR-Benc",
           "location": "Abstract / metadata",
+          "excerpt": "y sampled, and asynchronous, making it difficult for models to identify the temporal evidence required for clinical Question Answering (QA). Existing benchmarks primarily focus on regularly sampled time-series QA or medical QA over static data, and therefore rarely assess whether models can faithfully ground their answers in irregular temporal observations. To fill this gap, we introduce CLIR-Benc",
           "source_url": "https://arxiv.org/html/2607.09880"
         },
         {
           "term": "benchmarking",
-          "excerpt": "CLIR-Bench: Benchmarking Multimodal Question Answering over Irregular Clinical Time Series Clinical time series are central to patient monitoring, risk assessment, and clinical decision support. However, they are often sparse, irregularly sampled, and asynchronous",
           "location": "Abstract / metadata",
+          "excerpt": "CLIR-Bench: Benchmarking Multimodal Question Answering over Irregular Clinical Time Series Clinical time series are central to patient monitoring, risk assessment, and clinical decision support. However, they are often sparse, irregularly sampled, and asynchronous",
           "source_url": "https://arxiv.org/html/2607.09880"
         },
         {
           "term": "medical",
-          "excerpt": "ntify the temporal evidence required for clinical Question Answering (QA). Existing benchmarks primarily focus on regularly sampled time-series QA or medical QA over static data, and therefore rarely assess whether models can faithfully ground their answers in irregular temporal observations. To fill this gap, we introduce CLIR-Bench, a benchmark for irregular clinical time series QA constructe",
           "location": "Abstract / metadata",
+          "excerpt": "ntify the temporal evidence required for clinical Question Answering (QA). Existing benchmarks primarily focus on regularly sampled time-series QA or medical QA over static data, and therefore rarely assess whether models can faithfully ground their answers in irregular temporal observations. To fill this gap, we introduce CLIR-Bench, a benchmark for irregular clinical time series QA constructe",
           "source_url": "https://arxiv.org/html/2607.09880"
         },
         {
           "term": "clinical",
-          "excerpt": "CLIR-Bench: Benchmarking Multimodal Question Answering over Irregular Clinical Time Series Clinical time series are central to patient monitoring, risk assessment, and clinical decision support. However, they are often sparse, irregularly sampled, and asynchronous, making it difficult for models to identify the tempo",
           "location": "Abstract / metadata",
+          "excerpt": "CLIR-Bench: Benchmarking Multimodal Question Answering over Irregular Clinical Time Series Clinical time series are central to patient monitoring, risk assessment, and clinical decision support. However, they are often sparse, irregularly sampled, and asynchronous, making it difficult for models to identify the tempo",
           "source_url": "https://arxiv.org/html/2607.09880"
         }
       ],
       "related_benchmarks": [],
       "related_agent_url": "",
       "evaluation_contexts": [
-        "beneficial_capability",
         "biosecurity_misuse"
       ],
-      "classification_reason": "Explicit biomedical benchmark contribution detected.",
-      "match_score": 27,
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 31,
       "extraction_status": "metadata_only",
       "extraction_error": "",
       "content_hash": "seed:2607.09880",
-      "is_seed": true
+      "is_seed": true,
+      "topic": "biosafety",
+      "contribution_type": "new_benchmark"
     }
   ]
 }
