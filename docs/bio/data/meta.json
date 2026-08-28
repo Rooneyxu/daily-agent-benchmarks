@@ -1,35 +1,217 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-28T06:04:24Z",
-  "total": 60,
+  "generated_at": "2026-08-28T07:13:27Z",
+  "total": 171,
   "day_count": 42,
-  "latest_date": "2026-08-26",
+  "latest_date": "2026-08-28",
   "counts": {
     "priorities": {
-      "P0": 16,
-      "P1": 38,
-      "P2": 6
+      "P2": 26,
+      "P1": 109,
+      "P0": 36
     },
     "categories": {
-      "agent": 10,
-      "quality": 13,
-      "multimodal": 19,
-      "protocol": 11,
-      "text": 28,
-      "biosafety": 9,
-      "construction": 5
+      "text": 92,
+      "quality": 33,
+      "multimodal": 57,
+      "protocol": 41,
+      "biosafety": 20,
+      "agent": 21,
+      "construction": 13
     },
     "statuses": {
-      "confirmed": 60
+      "watchlist": 42,
+      "confirmed": 129
     },
     "kinds": {
-      "paper": 59,
-      "evaluation_update": 1
+      "evaluation_update": 17,
+      "paper": 154
     },
     "evaluation_contexts": {
-      "beneficial_capability": 59,
-      "biosecurity_misuse": 9
+      "beneficial_capability": 170,
+      "biosecurity_misuse": 20
     }
   },
-  "source_health": []
+  "source_health": [
+    {
+      "source": "arxiv",
+      "name": "arXiv",
+      "status": "success",
+      "started_at": "2026-08-28T07:13:27Z",
+      "finished_at": "2026-08-28T07:13:31Z",
+      "discovered": 27,
+      "published": 8,
+      "error": ""
+    },
+    {
+      "source": "europepmc",
+      "name": "Europe PMC",
+      "status": "success",
+      "started_at": "2026-08-28T07:13:31Z",
+      "finished_at": "2026-08-28T07:13:34Z",
+      "discovered": 41,
+      "published": 41,
+      "error": ""
+    },
+    {
+      "source": "biorxiv",
+      "name": "bioRxiv / medRxiv",
+      "status": "success",
+      "started_at": "2026-08-28T07:13:34Z",
+      "finished_at": "2026-08-28T07:15:27Z",
+      "discovered": 1032,
+      "published": 41,
+      "error": ""
+    },
+    {
+      "source": "medrxiv",
+      "name": "bioRxiv / medRxiv",
+      "status": "success",
+      "started_at": "2026-08-28T07:15:27Z",
+      "finished_at": "2026-08-28T07:15:42Z",
+      "discovered": 222,
+      "published": 18,
+      "error": ""
+    },
+    {
+      "source": "openreview",
+      "name": "OpenReview",
+      "status": "success",
+      "started_at": "2026-08-28T07:15:42Z",
+      "finished_at": "2026-08-28T07:15:42Z",
+      "discovered": 0,
+      "published": 0,
+      "error": ""
+    },
+    {
+      "source": "vendor:openai",
+      "name": "OpenAI",
+      "status": "failed",
+      "started_at": "2026-08-28T07:15:42Z",
+      "finished_at": "2026-08-28T07:15:42Z",
+      "discovered": 0,
+      "published": 0,
+      "error": "Client error '403 Forbidden' for url 'https://openai.com/research/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+    },
+    {
+      "source": "vendor:anthropic",
+      "name": "Anthropic",
+      "status": "success",
+      "started_at": "2026-08-28T07:15:42Z",
+      "finished_at": "2026-08-28T07:17:54Z",
+      "discovered": 19,
+      "published": 11,
+      "error": ""
+    },
+    {
+      "source": "vendor:deepmind",
+      "name": "Google DeepMind",
+      "status": "success",
+      "started_at": "2026-08-28T07:17:54Z",
+      "finished_at": "2026-08-28T07:17:59Z",
+      "discovered": 7,
+      "published": 0,
+      "error": ""
+    },
+    {
+      "source": "vendor:meta",
+      "name": "Meta AI",
+      "status": "success",
+      "started_at": "2026-08-28T07:17:59Z",
+      "finished_at": "2026-08-28T07:18:01Z",
+      "discovered": 0,
+      "published": 0,
+      "error": ""
+    },
+    {
+      "source": "vendor:microsoft",
+      "name": "Microsoft Research",
+      "status": "success",
+      "started_at": "2026-08-28T07:18:01Z",
+      "finished_at": "2026-08-28T07:18:17Z",
+      "discovered": 11,
+      "published": 2,
+      "error": ""
+    },
+    {
+      "source": "vendor:xai",
+      "name": "xAI",
+      "status": "failed",
+      "started_at": "2026-08-28T07:18:17Z",
+      "finished_at": "2026-08-28T07:18:17Z",
+      "discovered": 0,
+      "published": 0,
+      "error": "Client error '403 Forbidden' for url 'https://x.ai/news'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+    },
+    {
+      "source": "vendor:nvidia",
+      "name": "NVIDIA",
+      "status": "success",
+      "started_at": "2026-08-28T07:18:17Z",
+      "finished_at": "2026-08-28T07:18:19Z",
+      "discovered": 10,
+      "published": 0,
+      "error": ""
+    },
+    {
+      "source": "vendor:aws",
+      "name": "Amazon / AWS",
+      "status": "success",
+      "started_at": "2026-08-28T07:18:19Z",
+      "finished_at": "2026-08-28T07:18:21Z",
+      "discovered": 5,
+      "published": 0,
+      "error": ""
+    },
+    {
+      "source": "vendor:mistral",
+      "name": "Mistral AI",
+      "status": "success",
+      "started_at": "2026-08-28T07:18:21Z",
+      "finished_at": "2026-08-28T07:18:24Z",
+      "discovered": 11,
+      "published": 1,
+      "error": ""
+    },
+    {
+      "source": "vendor:qwen",
+      "name": "Qwen / Alibaba",
+      "status": "success",
+      "started_at": "2026-08-28T07:18:24Z",
+      "finished_at": "2026-08-28T07:18:24Z",
+      "discovered": 1,
+      "published": 0,
+      "error": ""
+    },
+    {
+      "source": "vendor:deepseek",
+      "name": "DeepSeek",
+      "status": "success",
+      "started_at": "2026-08-28T07:18:24Z",
+      "finished_at": "2026-08-28T07:18:26Z",
+      "discovered": 0,
+      "published": 0,
+      "error": ""
+    },
+    {
+      "source": "vendor:ai2",
+      "name": "AI2",
+      "status": "success",
+      "started_at": "2026-08-28T07:18:26Z",
+      "finished_at": "2026-08-28T07:18:28Z",
+      "discovered": 4,
+      "published": 0,
+      "error": ""
+    },
+    {
+      "source": "vendor:huggingface",
+      "name": "Hugging Face",
+      "status": "success",
+      "started_at": "2026-08-28T07:18:28Z",
+      "finished_at": "2026-08-28T07:18:29Z",
+      "discovered": 7,
+      "published": 2,
+      "error": ""
+    }
+  ]
 }
