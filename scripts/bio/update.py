@@ -108,14 +108,16 @@ def document_to_entry(document: SourceDocument, seen_at: str) -> BioEntry | None
 
 
 def _source_row(adapter: SourceAdapter, health: dict[str, Any]) -> dict[str, Any]:
-    return {
+    row = {
         "id": adapter.id,
         "name": adapter.name,
         "enabled": True,
-        "last_success_at": health.get("finished_at") if health.get("status") == "success" else None,
         "last_error": health.get("error") or None,
         "updated_at": health.get("finished_at"),
     }
+    if health.get("status") == "success":
+        row["last_success_at"] = health.get("finished_at")
+    return row
 
 
 def _run_adapter(

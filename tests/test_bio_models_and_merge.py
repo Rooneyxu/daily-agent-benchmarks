@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 from copy import deepcopy
+from types import SimpleNamespace
 
 from bio.models import BioEntry, canonical_id, slug_for
 from bio.storage import merge_entries
+from bio.update import _source_row
 
 
 def entry() -> BioEntry:
@@ -58,3 +60,17 @@ def test_meaningful_evidence_change_resurfaces_entry() -> None:
     new.evidence.append({"term": "failure mode", "location": "Page 5", "excerpt": "new failure mode", "source_url": ""})
     merged = merge_entries([old], [new], "2026-02-02T00:00:00Z")
     assert merged[0].event_at == "2026-02-02T00:00:00Z"
+
+
+def test_failed_source_does_not_clear_last_success_timestamp() -> None:
+    adapter = SimpleNamespace(id="arxiv", name="arXiv")
+    row = _source_row(
+        adapter,
+        {
+            "status": "failed",
+            "finished_at": "2026-02-02T00:00:00Z",
+            "error": "temporary failure",
+        },
+    )
+    assert "last_success_at" not in row
+    assert row["last_error"] == "temporary failure"
