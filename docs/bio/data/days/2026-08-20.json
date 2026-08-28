@@ -1,0 +1,95 @@
+{
+  "date": "2026-08-20",
+  "count": 1,
+  "entries": [
+    {
+      "id": "doi:10.1093/bioinformatics/btag608",
+      "slug": "doi-10-1093-bioinformatics-btag608-66869c13c7",
+      "kind": "paper",
+      "title": "Benchmarking the Impact of Data Leakage on the Performance of Knowledge Graph Embedding Models for Biomedical Link Prediction.",
+      "abstract": "<h4>Motivation</h4>Knowledge Graphs (KGs) organize complex biomedical knowledge into structured representations of entities and relations. Knowledge Graph Embedding (KGE) models learn compact representations of KGs, and are widely applied for biomedical link prediction. Despite extensive work on KGE models, current evaluations often overlook the issue of data leakage, which can artificially inflate performance and undermine benchmark validity. Data leakage can arise when (1) there is redundancy between training and test sets, (2) the model leverages illegitimate features, or (3) the test set does not accurately reflect real-world inference.<h4>Results</h4>We assess the impact of data leakage on KGE-based link prediction across three biomedical knowledge graphs, using decoder-only and GNN-based models. We first demonstrate the impact of train-test redundancies and implement a systematic procedure to detect and remove them. Using permutation experiments, we also investigate whether node degree acts as an illegitimate predictive feature, and find no evidence that predictions are driven by degree alone. Finally, we evaluate how well common test set sampling strategies reflect real-world inference in drug repurposing. We compare random and cold-start data splits with an independent test set from Orphanet, and observe a substantial performance drop on the latter, indicating that current benchmarking practices may overestimate how well KGE models generalize to practical applications. Overall, our findings highlight the importance of rigorous benchmark design and careful evaluation of the generalization ability of KGE models for biomedical link prediction.<h4>Availability and implementation</h4>Code and results are openly available on GitHub at https://github.com/galadrielbriere/data_leakage_kge_benchmark.git and archived on Zenodo at https://doi.org/10.5281/zenodo.21885112.<h4>Supplementary information</h4>Supplementary data are available.",
+      "authors": [
+        "Bri Ere G",
+        "Stosskopf T",
+        "Loire B",
+        "Baudot A."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-08-20T00:00:00+00:00",
+      "updated_at": "2026-08-22T00:00:00+00:00",
+      "first_seen_at": "2026-08-20T00:00:00+00:00",
+      "event_at": "2026-08-20T00:00:00+00:00",
+      "priority": "P2",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.1093/bioinformatics/btag608",
+        "pmid": "42623034"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/42623034"
+      },
+      "evidence": [
+        {
+          "term": "assess the impact of data leakage",
+          "excerpt": "and test sets, (2) the model leverages illegitimate features, or (3) the test set does not accurately reflect real-world inference.<h4>Results</h4>We assess the impact of data leakage on KGE-based link prediction across three biomedical knowledge graphs, using decoder-only and GNN-based models. We first demonstrate the impact of train-test redundancies and implement a systematic procedure to detect and remove them. Usin",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42623034"
+        },
+        {
+          "term": "Benchmarking the Impact of Data Leakage",
+          "excerpt": "Benchmarking the Impact of Data Leakage on the Performance of Knowledge Graph Embedding Models for Biomedical Link Prediction. <h4>Motivation</h4>Knowledge Graphs (KGs) organize complex biomedical knowledge into structured representations of entities and relations. Knowledge Gra",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42623034"
+        },
+        {
+          "term": "inflate performance and undermine benchmark validity",
+          "excerpt": "iomedical link prediction. Despite extensive work on KGE models, current evaluations often overlook the issue of data leakage, which can artificially inflate performance and undermine benchmark validity. Data leakage can arise when (1) there is redundancy between training and test sets, (2) the model leverages illegitimate features, or (3) the test set does not accurately reflect real-world inference.<h4>Results</h4>We assess the impact o",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42623034"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Benchmarking the Impact of Data Leakage on the Performance of Knowledge Graph Embedding Models for Biomedical Link Prediction. <h4>Motivation</h4>Knowledge Graphs (KGs) organize complex biomedical knowledge into structured representations of entitie",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42623034"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "Benchmarking the Impact of Data Leakage on the Performance of Knowledge Graph Embedding Models for Biomedical Link Prediction. <h4>Motivation</h4>Knowledge Graphs (KGs) organize complex biomedical knowledge into structured representations of entities a",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42623034"
+        },
+        {
+          "term": "test set",
+          "excerpt": "which can artificially inflate performance and undermine benchmark validity. Data leakage can arise when (1) there is redundancy between training and test sets, (2) the model leverages illegitimate features, or (3) the test set does not accurately reflect real-world inference.<h4>Results</h4>We assess the impact of data leakage on KGE-based link prediction across three biomedical knowledge graph",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42623034"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "Benchmarking the Impact of Data Leakage on the Performance of Knowledge Graph Embedding Models for Biomedical Link Prediction. <h4>Motivation</h4>Knowledge Graphs (KGs) organize complex biomedical knowledge into structured representations of entities and relations. Knowledge Graph Embedding (KGE) models learn compact representations of KGs, and ar",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42623034"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "match_score": 27,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "metadata:doi:10.1093/bioinformatics/btag608",
+      "is_seed": true,
+      "topic": "general_text",
+      "contribution_type": "audit"
+    }
+  ]
+}

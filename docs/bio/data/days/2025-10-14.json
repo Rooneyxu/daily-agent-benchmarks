@@ -1,0 +1,88 @@
+{
+  "date": "2025-10-14",
+  "count": 1,
+  "entries": [
+    {
+      "id": "arxiv:2510.12617",
+      "slug": "arxiv-2510-12617-d31b36ff27",
+      "kind": "paper",
+      "title": "Same model, better performance: the impact of shuffling on DNA Language Models benchmarking",
+      "abstract": "Large Language Models are increasingly popular in genomics due to their potential to decode complex biological sequences. Hence, researchers require a standardized benchmark to evaluate DNA Language Models (DNA LMs) capabilities. However, evaluating DNA LMs is a complex task that intersects genomic's domain-specific challenges and machine learning methodologies, where seemingly minor implementation details can significantly compromise benchmark validity. We demonstrate this through BEND (Benchmarking DNA Language Models), where hardware-dependent hyperparameters -- number of data loading workers and buffer sizes -- create spurious performance variations of up to 4% for identical models. The problem stems from inadequate data shuffling interacting with domain specific data characteristics. Experiments with three DNA language models (HyenaDNA, DNABERT-2, ResNet-LM) show these artifacts affect both absolute performance and relative model rankings. We propose a simple solution: pre-shuffling data before storage eliminates hardware dependencies while maintaining efficiency. This work highlights how standard ML practices can interact unexpectedly with domain-specific data characteristics, with broader implications for benchmark design in specialized domains.",
+      "authors": [
+        "Davide Greco",
+        "Konrad Rawlik"
+      ],
+      "source": "arxiv",
+      "published_at": "2025-10-14T15:16:56+00:00",
+      "updated_at": "2025-12-10T22:00:37+00:00",
+      "first_seen_at": "2025-10-14T15:16:56+00:00",
+      "event_at": "2025-10-14T15:16:56+00:00",
+      "priority": "P2",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2510.12617"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2510.12617v2",
+        "pdf": "https://arxiv.org/pdf/2510.12617v2",
+        "html": "https://arxiv.org/html/2510.12617"
+      },
+      "evidence": [
+        {
+          "term": "compromise benchmark validity",
+          "excerpt": "at intersects genomic's domain-specific challenges and machine learning methodologies, where seemingly minor implementation details can significantly compromise benchmark validity. We demonstrate this through BEND (Benchmarking DNA Language Models), where hardware-dependent hyperparameters -- number of data loading workers and buffer sizes -- create spurious performance variations of up to 4% for identical models. T",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2510.12617"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Same model, better performance: the impact of shuffling on DNA Language Models benchmarking Large Language Models are increasingly popular in genomics due to their potential to decode complex biological sequences. Hence, researchers require a standardized benchmark to evaluate DNA Language Models (DNA LMs) capabilities. Howeve",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2510.12617"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "Same model, better performance: the impact of shuffling on DNA Language Models benchmarking Large Language Models are increasingly popular in genomics due to their potential to decode complex biological sequences. Hence, researchers require a standardized benchmark to evaluate DNA Language Models (DNA LMs) capabilities. However,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2510.12617"
+        },
+        {
+          "term": "biological",
+          "excerpt": "of shuffling on DNA Language Models benchmarking Large Language Models are increasingly popular in genomics due to their potential to decode complex biological sequences. Hence, researchers require a standardized benchmark to evaluate DNA Language Models (DNA LMs) capabilities. However, evaluating DNA LMs is a complex task that intersects genomic's domain-specific challenges and machine learning",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2510.12617"
+        },
+        {
+          "term": "genomic",
+          "excerpt": "Same model, better performance: the impact of shuffling on DNA Language Models benchmarking Large Language Models are increasingly popular in genomics due to their potential to decode complex biological sequences. Hence, researchers require a standardized benchmark to evaluate DNA Language Models (DNA LMs) capabilities. However, evaluating DNA LMs is a complex task that intersects genom",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2510.12617"
+        },
+        {
+          "term": "genomics",
+          "excerpt": "Same model, better performance: the impact of shuffling on DNA Language Models benchmarking Large Language Models are increasingly popular in genomics due to their potential to decode complex biological sequences. Hence, researchers require a standardized benchmark to evaluate DNA Language Models (DNA LMs) capabilities. However, evaluating DNA LMs is a complex task that intersects genomi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2510.12617"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "match_score": 19,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "metadata:arxiv:2510.12617",
+      "is_seed": true,
+      "topic": "general_text",
+      "contribution_type": "audit"
+    }
+  ]
+}

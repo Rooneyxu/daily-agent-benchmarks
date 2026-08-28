@@ -1,7 +1,1549 @@
 {
   "date": "2026-08-28",
-  "count": 18,
+  "count": 29,
   "entries": [
+    {
+      "id": "doi:10.1016/j.cell.2026.08.004",
+      "slug": "doi-10-1016-j-cell-2026-08-004-e9b063ac5f",
+      "kind": "paper",
+      "title": "Virtual Cell Challenge 2026: Benchmarking zero-shot generalization across cellular contexts. ",
+      "abstract": "The Virtual Cell Challenge returns in 2026 with a more demanding test of biological generalization: zero-shot prediction across multiple independent cellular contexts. Participants will build models to predict gene knockdown responses in a new Arc-generated dataset comprising unseen cell lines. The goal is to determine whether the best models can meaningfully close the gap between preclinical experimental predictions and human biology.",
+      "authors": [
+        "Arc Virtual Cell Initiative Team",
+        "Goodarzi H."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-08-26T00:00:00+00:00",
+      "updated_at": "2026-08-27T00:00:00+00:00",
+      "first_seen_at": "2026-08-28T10:25:25+00:00",
+      "event_at": "2026-08-28T10:25:25+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.1016/j.cell.2026.08.004",
+        "pmid": "42648290"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/42648290"
+      },
+      "evidence": [
+        {
+          "term": "new Arc-generated dataset",
+          "excerpt": "lization: zero-shot prediction across multiple independent cellular contexts. Participants will build models to predict gene knockdown responses in a new Arc-generated dataset comprising unseen cell lines. The goal is to determine whether the best models can meaningfully close the gap between preclinical experimental predictions and human biology. The Virtual Cell Challenge returns in 2026 with a more demanding",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42648290"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Virtual Cell Challenge 2026: Benchmarking zero-shot generalization across cellular contexts. The Virtual Cell Challenge returns in 2026 with a more demanding test of biological generalization: zero-shot prediction across multiple independent cellular contexts. Participants wil",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42648290"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "Virtual Cell Challenge 2026: Benchmarking zero-shot generalization across cellular contexts. The Virtual Cell Challenge returns in 2026 with a more demanding test of biological generalization: zero-shot prediction across multiple independent cellular contexts. Participants will b",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42648290"
+        },
+        {
+          "term": "biology",
+          "excerpt": "en cell lines. The goal is to determine whether the best models can meaningfully close the gap between preclinical experimental predictions and human biology. The Virtual Cell Challenge returns in 2026 with a more demanding test of biological generalization: zero-shot prediction across multiple independent cellular contexts. Participants will build models to predict gene knockdown responses in",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42648290"
+        },
+        {
+          "term": "biological",
+          "excerpt": "lenge 2026: Benchmarking zero-shot generalization across cellular contexts. The Virtual Cell Challenge returns in 2026 with a more demanding test of biological generalization: zero-shot prediction across multiple independent cellular contexts. Participants will build models to predict gene knockdown responses in a new Arc-generated dataset comprising unseen cell lines. The goal is to determine wh",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42648290"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "a new Arc-generated dataset comprising unseen cell lines. The goal is to determine whether the best models can meaningfully close the gap between preclinical experimental predictions and human biology. The Virtual Cell Challenge returns in 2026 with a more demanding test of biological generalization: zero-shot prediction across multiple independent cellular contexts. Participants will build mod",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42648290"
+        },
+        {
+          "term": "gene",
+          "excerpt": "Virtual Cell Challenge 2026: Benchmarking zero-shot generalization across cellular contexts. The Virtual Cell Challenge returns in 2026 with a more demanding test of biological generalization: zero-shot prediction across multiple independent cellular contexts. Participants will build models to",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42648290"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 22,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "e51374311bf0dc499c5ecda4cd367a7f1abe590c5eefab61d2808036aa8df64c",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.25071",
+      "slug": "arxiv-2608-25071-4d095e40d3",
+      "kind": "paper",
+      "title": "HealthBench-Psych: A Mental Health Subset of OpenAI's HealthBench",
+      "abstract": "General-purpose health benchmarks increasingly anchor claims about LLM medical performance, but they are not always resolved by clinical specialty, making domain-specific performance hard to isolate. Mental health is of acute public-health concern as millions of people turn to LLMs for psychological support, and most existing evaluations are bespoke academic benchmarks that are difficult to integrate into developer workflows. We introduce HealthBench-Psych and HealthBench-Psych-Hard. We screened HealthBench's 5,000 physician-rubric conversations for mental-health relevance with a transparent LLM-applied rubric, then validated the subset through two rounds of blinded clinician review with concealed known-exclude controls, yielding 610 conversations (12.2% of the corpus). Evaluating 20 frontier and open models under a cross-vendor panel of three LLM judges, we find a statistically tied frontier cluster, measurable refusal behavior in two models, and near-identical rankings across judges ($τ\\ge 0.92$). We release the subset, pipeline, model responses, grades, and analysis code as a reusable resource.",
+      "authors": [
+        "Matthew Flathers",
+        "Phuong Anh Nguyen",
+        "Jill Noorily",
+        "Julian Herpertz",
+        "Meiting Chen",
+        "Jasreen Multani",
+        "Samuel Powell",
+        "Mason Granof",
+        "Mark Kalinch",
+        "John Torous"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-25T19:05:19+00:00",
+      "updated_at": "2026-08-25T19:05:19+00:00",
+      "first_seen_at": "2026-08-28T10:25:19+00:00",
+      "event_at": "2026-08-28T10:25:19+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.25071"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.25071v1",
+        "pdf": "https://arxiv.org/pdf/2608.25071v1",
+        "code": "https://github.com/mindbench-ai/healthbench-psych",
+        "data": "https://huggingface.co/datasets/mindbench-ai/healthbench-psych",
+        "html": "https://arxiv.org/html/2608.25071"
+      },
+      "evidence": [
+        {
+          "term": "We introduce HealthBench",
+          "excerpt": "Ms for psychological support, and most existing evaluations are bespoke academic benchmarks that are difficult to integrate into developer workflows. We introduce HealthBench-Psych and HealthBench-Psych-Hard. We screened HealthBench's 5,000 physician-rubric conversations for mental-health relevance with a transparent LLM-applied rubric, then validated the subset through two rounds of blinded clinician review wi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25071"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "HealthBench-Psych: A Mental Health Subset of OpenAI's HealthBench General-purpose health benchmarks increasingly anchor claims about LLM medical performance, but they are not always resolved by clinical specialty, making domain-specific performance hard to isolate. Mental health is of acute public-health concern as millions of people tu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25071"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "HealthBench-Psych: A Mental Health Subset of OpenAI's HealthBench General-purpose health benchmarks increasingly anchor claims about LLM medical performance, but they are not always resolved by clinical specialty, making domain-specific performance hard to isolate. Mental health is of acute public-health concern as millions of people tur",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25071"
+        },
+        {
+          "term": "medical",
+          "excerpt": "HealthBench-Psych: A Mental Health Subset of OpenAI's HealthBench General-purpose health benchmarks increasingly anchor claims about LLM medical performance, but they are not always resolved by clinical specialty, making domain-specific performance hard to isolate. Mental health is of acute public-health concern as millions of people turn to LLMs for psychological support, and most",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25071"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "OpenAI's HealthBench General-purpose health benchmarks increasingly anchor claims about LLM medical performance, but they are not always resolved by clinical specialty, making domain-specific performance hard to isolate. Mental health is of acute public-health concern as millions of people turn to LLMs for psychological support, and most existing evaluations are bespoke academic benchmarks that",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25071"
+        }
+      ],
+      "related_benchmarks": [
+        "HealthBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 20,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "79a6bbb16efdfccd70c651c989a6577fd8064f29b6de08e62b194b8268e49db6",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.27212",
+      "slug": "arxiv-2608-27212-e3ab5cc305",
+      "kind": "paper",
+      "title": "Constrained estimation of rotational invariants of the cumulant expansion (RICE) for rapid tensor-valued diffusion MRI",
+      "abstract": "Purpose: To complement 1.5-minute measurements of common tensor-valued diffusion MRI (dMRI) markers with rapid constrained fitting. Methods: Fast dMRI protocols for obtaining rotational invariants of the cumulant expansion (RICE) were paired with constrained weighted linear least squares (CWLLS) to stabilize the more fragile WLLS fit. A compact constraint set was formulated, including a novel mean-dependent upper bound on total diffusional variance. Evaluation used diffusion tensor distribution (DTD) simulations, healthy-volunteer data with a resolution-dependent SNR experiment, and a glioma patient dataset. A 5-minute q-space trajectory imaging (QTI) protocol served as a reference. Results: Across experiments, CWLLS reduced unphysical estimates and fit outliers in parameters such as microscopic FA and isotropic diffusivity variance. In simulations, it narrowed error distributions most clearly in the CSF-dominant case, while some metrics showed a bias-variance trade-off. In vivo, CWLLS removed negative variance estimates, truncated out-of-bounds tails, and reduced artifacts in fluid-contaminated voxels while preserving anatomical contrast. It also retained more stable maps than WLLS at higher resolution, although both estimators degraded in the lowest-SNR setting. Notably, the new mean-dependent variance bound was violated in 15.4% of voxels in the patient dataset, accounting for nearly half of the 32.7% that violated at least one constraint. Healthy-volunteer benchmarking showed that CWLLS completed in under 30 seconds. The constrained QTI fit required 72 minutes, making CWLLS 160 times faster. Conclusion: CWLLS for fast RICE yielded high-quality parameter maps at an online-ready computational cost. This may enhance the reliability of dMRI tissue characterization and strengthen the path toward clinical translation.",
+      "authors": [
+        "Jinyang Yu",
+        "Oliver Gödicke",
+        "Frederik B. Laun",
+        "Obada T. Alhalabi",
+        "Iris A. Kohler",
+        "Jürgen Hesser",
+        "Sandro M. Krieg",
+        "Bogdana Suchorska",
+        "Heinz-Peter Schlemmer",
+        "Mark E. Ladd",
+        "David Bonekamp",
+        "Johann M. E. Jende",
+        "Tristan A. Kuder"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-27T14:55:55+00:00",
+      "updated_at": "2026-08-27T14:55:55+00:00",
+      "first_seen_at": "2026-08-28T10:25:17+00:00",
+      "event_at": "2026-08-28T10:25:17+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.27212"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.27212v1",
+        "pdf": "https://arxiv.org/pdf/2608.27212v1",
+        "html": "https://arxiv.org/html/2608.27212"
+      },
+      "evidence": [
+        {
+          "term": "new mean-dependent variance bound was violated in 15.4% of voxels in the patient dataset",
+          "excerpt": "contrast. It also retained more stable maps than WLLS at higher resolution, although both estimators degraded in the lowest-SNR setting. Notably, the new mean-dependent variance bound was violated in 15.4% of voxels in the patient dataset, accounting for nearly half of the 32.7% that violated at least one constraint. Healthy-volunteer benchmarking showed that CWLLS completed in under 30 seconds. The constrained QTI fit required 72 minutes, making CWLLS 160 times faster. Con",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27212"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "violated in 15.4% of voxels in the patient dataset, accounting for nearly half of the 32.7% that violated at least one constraint. Healthy-volunteer benchmarking showed that CWLLS completed in under 30 seconds. The constrained QTI fit required 72 minutes, making CWLLS 160 times faster. Conclusion: CWLLS for fast RICE yielded high-quality parameter maps at an online-ready computational cost. This",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27212"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "violated in 15.4% of voxels in the patient dataset, accounting for nearly half of the 32.7% that violated at least one constraint. Healthy-volunteer benchmarking showed that CWLLS completed in under 30 seconds. The constrained QTI fit required 72 minutes, making CWLLS 160 times faster. Conclusion: CWLLS for fast RICE yielded high-quality parameter maps at an online-ready computational cost. This ma",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27212"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "parameter maps at an online-ready computational cost. This may enhance the reliability of dMRI tissue characterization and strengthen the path toward clinical translation. [[SECTION Constrained estimation of rotational invariants of the cumulant expansion (RICE) for rapid tensor-valued diffusion MRI]] Constrained estimation of rotational invariants of the cumulant expansion (RICE) for rapid tens",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27212"
+        },
+        {
+          "term": "patient",
+          "excerpt": "nce. Evaluation used diffusion tensor distribution (DTD) simulations, healthy-volunteer data with a resolution-dependent SNR experiment, and a glioma patient dataset. A 5-minute q-space trajectory imaging (QTI) protocol served as a reference. Results: Across experiments, CWLLS reduced unphysical estimates and fit outliers in parameters such as microscopic FA and isotropic diffusivity variance",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27212"
+        },
+        {
+          "term": "microscopic",
+          "excerpt": "imaging (QTI) protocol served as a reference. Results: Across experiments, CWLLS reduced unphysical estimates and fit outliers in parameters such as microscopic FA and isotropic diffusivity variance. In simulations, it narrowed error distributions most clearly in the CSF-dominant case, while some metrics showed a bias-variance trade-off. In vivo, CWLLS removed negative variance estimates, truncate",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27212"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "e59aaa8b4a55155ae8d7de90419706d28303d1d68655dee3be8a46117e3e06ce",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.23898",
+      "slug": "arxiv-2608-23898-277d7aee4e",
+      "kind": "paper",
+      "title": "BenchBench-Protocol: Evaluating Real-World Wet-Lab Protocol Reasoning and Modification",
+      "abstract": "We introduce BenchBench-Protocol, a benchmark for large language models of 149 protocol-modification tasks recovered from modifications that scientists made to published protocols during real experimental work. Adapting a published protocol to a new experiment is a routine task for a wet-lab scientist, and a correct modification requires accounting for prior choices and downstream steps. Recent life-science benchmarks have moved toward open-ended, rubric-graded tasks, but tasks are typically elicited from experts rather than reconstructed from real-world modifications. BenchBench-Protocol tasks are derived from differences between a published protocol and a version a scientist modified, which provides the basis for the query and the weighted rubric elements for a correct response. The benchmark draws from 96 source protocols across nine domains of wet-lab biology and only includes tasks rated highly after review by domain experts. We evaluate nine closed and open models; Claude Opus 5 scores highest at 59.2% normalized rubric score, with other models between 34.1% and 47.1%, and the benchmark remains unsaturated when taking the best of ten attempts. As models are increasingly helpful in life-sciences research, evaluating them on routine wet-lab tasks becomes correspondingly important. We present BenchBench-Protocol as both a grounded assessment of wet-lab reasoning and evidence for the utility of real-world experiments to construct benchmark tasks.",
+      "authors": [
+        "Aditya Sivakumar",
+        "Ashu Singhal",
+        "Nicholas Larus-Stone",
+        "Nithin Parsan"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-24T23:11:35+00:00",
+      "updated_at": "2026-08-24T23:11:35+00:00",
+      "first_seen_at": "2026-08-28T10:25:16+00:00",
+      "event_at": "2026-08-28T10:25:16+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.23898"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.23898v1",
+        "pdf": "https://arxiv.org/pdf/2608.23898v1",
+        "html": "https://arxiv.org/html/2608.23898"
+      },
+      "evidence": [
+        {
+          "term": "We introduce BenchBench",
+          "excerpt": "BenchBench-Protocol: Evaluating Real-World Wet-Lab Protocol Reasoning and Modification We introduce BenchBench-Protocol, a benchmark for large language models of 149 protocol-modification tasks recovered from modifications that scientists made to published protocols during real experimental work. Adapting a published protocol to a new experiment is",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.23898"
+        },
+        {
+          "term": "We introduce BenchBench-Protocol, a benchmark",
+          "excerpt": "BenchBench-Protocol: Evaluating Real-World Wet-Lab Protocol Reasoning and Modification We introduce BenchBench-Protocol, a benchmark for large language models of 149 protocol-modification tasks recovered from modifications that scientists made to published protocols during real experimental work. Adapting a published protocol to a new experiment is a routine task for a",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.23898"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "is a routine task for a wet-lab scientist, and a correct modification requires accounting for prior choices and downstream steps. Recent life-science benchmarks have moved toward open-ended, rubric-graded tasks, but tasks are typically elicited from experts rather than reconstructed from real-world modifications. BenchBench-Protocol tasks are derived from differences between a published protocol a",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.23898"
+        },
+        {
+          "term": "biology",
+          "excerpt": "is for the query and the weighted rubric elements for a correct response. The benchmark draws from 96 source protocols across nine domains of wet-lab biology and only includes tasks rated highly after review by domain experts. We evaluate nine closed and open models; Claude Opus 5 scores highest at 59.2% normalized rubric score, with other models between 34.1% and 47.1%, and the benchmark remai",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.23898"
+        },
+        {
+          "term": "life-science",
+          "excerpt": "w experiment is a routine task for a wet-lab scientist, and a correct modification requires accounting for prior choices and downstream steps. Recent life-science benchmarks have moved toward open-ended, rubric-graded tasks, but tasks are typically elicited from experts rather than reconstructed from real-world modifications. BenchBench-Protocol tasks are derived from differences between a published",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.23898"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "Opus and GPT-series models perform strongly on staining and imaging tasks relative to open-source models, which may be due to general improvements in multimodal reasoning in these models versus open series. Figure 6 summarizes these results; full values are reported in Table E1 . [[SECTION 5.4 Model Token Usage and Cost]] 5.4 Model Token Usage and Cost Figure 7 visualizes average input and output",
+          "location": "5.3 Performance by Source-Protocol Domain",
+          "source_url": "https://arxiv.org/html/2608.23898"
+        },
+        {
+          "term": "microscopy",
+          "excerpt": "ncing, which is assigned to genomics, transcriptomics, and sequencing. Sample fixation, permeabilization, labeling with antibodies or dyes, mounting, microscopy, image acquisition, flow cytometry, and analysis of the resulting images or cytometry data. Nucleic acid extraction for sequencing, library preparation, quantification and quality control of libraries, sequencing runs, and associated sampl",
+          "location": "A.1 Protocol Domains",
+          "source_url": "https://arxiv.org/html/2608.23898"
+        },
+        {
+          "term": "ProtocolQA",
+          "excerpt": "-Bench has an extensive suite of biology research tasks ( Laurent et al., 2024 ) , with LABBench2 expanding these tests with free-response questions (ProtocolQA2, LitQA3, FigQA2, and others) that show whether models can troubleshoot protocols and understand and evaluate figures, tables, and data from research papers and databases ( Laurent et al., 2026 ) . BioProBench assesses model capabilities i",
+          "location": "2 Related Work",
+          "source_url": "https://arxiv.org/html/2608.23898"
+        }
+      ],
+      "related_benchmarks": [
+        "BenchBench",
+        "BioProBench",
+        "TroubleshootingBench",
+        "ProtocolQA",
+        "BixBench",
+        "ScienceAgentBench",
+        "AstaBench",
+        "GeneBench",
+        "LifeSciBench",
+        "LAB-Bench",
+        "LABBench2"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 28,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "20be0d00085be659e2a6556a11d4c7e762238f30b8964f868cf981aed436c346",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.22917",
+      "slug": "arxiv-2608-22917-68bd63d60a",
+      "kind": "paper",
+      "title": "TSWAP: A Multilingual Retrieval-Augmented Thai Wellness Advisor",
+      "abstract": "We present TSWAP, a deployed eight-language conversational wellness advisor grounded, via retrieval-augmented generation, in a verified knowledge base of Thai traditional medicine and certified wellness providers. An unmodified open-weight LLM (Qwen3.6-35B-A3B on vLLM) is grounded on a ~30.6K-chunk Thai index by a hybrid dense-sparse retriever with cross-encoder reranking; a first-turn query classifier forces tool-based retrieval for entity lookups; a rule-based safety layer enforces medical scope and Thai emergency routing; and all eight languages are served zero-shot with translate-then-retrieve. We release the first Thai traditional-medicine/wellness retrieval benchmark (50 questions with gold document IDs; Recall@5 = 0.88), production QA logs (91.1% test-retest pass over 259 cases), and a 71-question frontier no-retrieval probe showing what each grounding pillar contributes: without the safety prompt the backend model family produced a full drug-dosing schedule and complied with out-of-scope requests, and without the knowledge base it produced zero verifiable provider recommendations. We further report two transferable deployment findings: English-calibrated 4-bit AWQ quantization corrupts Thai tone marks, and forced-retrieval routing is necessary for reliable grounding.",
+      "authors": [
+        "Pornthep Ukosaramig",
+        "Kobkrit Viriyayudhakorn"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-24T07:54:07+00:00",
+      "updated_at": "2026-08-24T07:54:07+00:00",
+      "first_seen_at": "2026-08-28T10:25:16+00:00",
+      "event_at": "2026-08-28T10:25:16+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.22917"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.22917v1",
+        "pdf": "https://arxiv.org/pdf/2608.22917v1",
+        "code": "https://github.com/kobkrit/tswap-wellness-benchmark",
+        "data": "https://huggingface.co/datasets/iapp/tswap-wellness-benchmark",
+        "html": "https://arxiv.org/html/2608.22917"
+      },
+      "evidence": [
+        {
+          "term": "We release the first Thai traditional-medicine/wellness retrieval benchmark",
+          "excerpt": "rule-based safety layer enforces medical scope and Thai emergency routing; and all eight languages are served zero-shot with translate-then-retrieve. We release the first Thai traditional-medicine/wellness retrieval benchmark (50 questions with gold document IDs; Recall@5 = 0.88), production QA logs (91.1% test-retest pass over 259 cases), and a 71-question frontier no-retrieval probe showing what each grounding pillar contributes: without the safety prompt the",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.22917"
+        },
+        {
+          "term": "first Thai traditional-medicine/wellness retrieval benchmark",
+          "excerpt": "ty layer enforces medical scope and Thai emergency routing; and all eight languages are served zero-shot with translate-then-retrieve. We release the first Thai traditional-medicine/wellness retrieval benchmark (50 questions with gold document IDs; Recall@5 = 0.88), production QA logs (91.1% test-retest pass over 259 cases), and a 71-question frontier no-retrieval probe showing what each grounding pillar contributes: without the safety prompt the",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.22917"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "routing; and all eight languages are served zero-shot with translate-then-retrieve. We release the first Thai traditional-medicine/wellness retrieval benchmark (50 questions with gold document IDs; Recall@5 = 0.88), production QA logs (91.1% test-retest pass over 259 cases), and a 71-question frontier no-retrieval probe showing what each grounding pillar contributes: without the safety prompt the",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.22917"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "eployed eight-language conversational wellness advisor grounded, via retrieval-augmented generation, in a verified knowledge base of Thai traditional medicine and certified wellness providers. An unmodified open-weight LLM (Qwen3.6-35B-A3B on vLLM) is grounded on a ~30.6K-chunk Thai index by a hybrid dense-sparse retriever with cross-encoder reranking; a first-turn query classifier forces tool-b",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.22917"
+        },
+        {
+          "term": "medical",
+          "excerpt": "riever with cross-encoder reranking; a first-turn query classifier forces tool-based retrieval for entity lookups; a rule-based safety layer enforces medical scope and Thai emergency routing; and all eight languages are served zero-shot with translate-then-retrieve. We release the first Thai traditional-medicine/wellness retrieval benchmark (50 questions with gold document IDs; Recall@5 = 0.88)",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.22917"
+        },
+        {
+          "term": "Multimodal",
+          "excerpt": "s in Real-World Multilingual Settings. arXiv:2410.13671, 2024. [7] Zhang, W., Aljunied, S. M., Gao, C., Chia, Y. K., Bing, L. M3Exam: A Multilingual, Multimodal, Multilevel Benchmark for Examining Large Language Models. NeurIPS 2023, Datasets and Benchmarks Track , 2023. arXiv:2306.05179. [8] Xiong, G., Jin, Q., Lu, Z., Zhang, A. Benchmarking Retrieval-Augmented Generation for Medicine. Findings o",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2608.22917"
+        },
+        {
+          "term": "tool-using",
+          "excerpt": "rk. We release the first such benchmark with production evaluation logs, and contribute grounding and serving findings we expect to transfer to other tool-using RAG assistants in low-resource languages. [[SECTION Acknowledgments]] Acknowledgments This research project is financially supported by the Program Management Unit for Competitiveness (PMUC) under grant number C05F680144. [[SECTION Referen",
+          "location": "7 Conclusion",
+          "source_url": "https://arxiv.org/html/2608.22917"
+        }
+      ],
+      "related_benchmarks": [
+        "HealthBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 25,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "700207dd3c297d7fc778b980dff16c8b44f7f30a4ec06e520991ec687e492ca3",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.25630",
+      "slug": "arxiv-2608-25630-4457d77e67",
+      "kind": "paper",
+      "title": "SeVeR: Selective Visual Exposure and Retrieval for 3D Medical Image Question Answering",
+      "abstract": "Volumetric medical VQA requires reasoning over long and redundant 3D visual token sequences, especially in multi-sequence MRI where complementary modalities provide diverse diagnostic cues but expose the decoder to many repeated anatomical regions. To investigate reasoning under multi-sequence visual redundancy, we first introduce BreMRIs-VQA, a clinically curated breast MRI benchmark with 1.19M QA pairs from 71.0K sequences and 12.9K patients, covering both free-text and multiple-choice questions. We further propose SeVeR, a selective visual exposure framework that compresses dense volumes into modality-wise prototypes and retrieves complementary multi-level evidence with change-aware gated attention during decoding, trained with a marginal-utility self-consistency objective that suppresses unhelpful retrieval. Experiments on BreMRIs-VQA and public benchmarks show that SeVeR improves both discriminative and generative performance while exposing substantially fewer visual tokens.",
+      "authors": [
+        "Yaojun Hu",
+        "Danyang Tu",
+        "Yang Liu",
+        "Jiajin Zhang",
+        "Wei Fang",
+        "Zhiqiang Liu",
+        "Chunlai Dong",
+        "Yingda Xia",
+        "Haochao Ying",
+        "Jian Wu",
+        "Ling Zhang"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-26T10:58:45+00:00",
+      "updated_at": "2026-08-26T10:58:45+00:00",
+      "first_seen_at": "2026-08-28T10:25:14+00:00",
+      "event_at": "2026-08-28T10:25:14+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.25630"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.25630v1",
+        "pdf": "https://arxiv.org/pdf/2608.25630v1",
+        "html": "https://arxiv.org/html/2608.25630"
+      },
+      "evidence": [
+        {
+          "term": "first introduce BreMRIs-VQA, a clinically curated breast MRI benchmark",
+          "excerpt": "verse diagnostic cues but expose the decoder to many repeated anatomical regions. To investigate reasoning under multi-sequence visual redundancy, we first introduce BreMRIs-VQA, a clinically curated breast MRI benchmark with 1.19M QA pairs from 71.0K sequences and 12.9K patients, covering both free-text and multiple-choice questions. We further propose SeVeR, a selective visual exposure framework that compresses dense volumes into modality-wise prototypes",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25630"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "anatomical regions. To investigate reasoning under multi-sequence visual redundancy, we first introduce BreMRIs-VQA, a clinically curated breast MRI benchmark with 1.19M QA pairs from 71.0K sequences and 12.9K patients, covering both free-text and multiple-choice questions. We further propose SeVeR, a selective visual exposure framework that compresses dense volumes into modality-wise prototypes",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25630"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "uring decoding, trained with a marginal-utility self-consistency objective that suppresses unhelpful retrieval. Experiments on BreMRIs-VQA and public benchmarks show that SeVeR improves both discriminative and generative performance while exposing substantially fewer visual tokens. [[SECTION SeVeR: Selective Visual Exposure and Retrieval for 3D Medical Image Question Answering]] SeVeR: Selective V",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25630"
+        },
+        {
+          "term": "medical",
+          "excerpt": "SeVeR: Selective Visual Exposure and Retrieval for 3D Medical Image Question Answering Volumetric medical VQA requires reasoning over long and redundant 3D visual token sequences, especially in multi-sequence MRI where complementary modalities provide diverse diagnostic cues but expose the decoder to",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25630"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "e the decoder to many repeated anatomical regions. To investigate reasoning under multi-sequence visual redundancy, we first introduce BreMRIs-VQA, a clinically curated breast MRI benchmark with 1.19M QA pairs from 71.0K sequences and 12.9K patients, covering both free-text and multiple-choice questions. We further propose SeVeR, a selective visual exposure framework that compresses dense volume",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25630"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "Alvar et al. (2025) Saeed Ranjbar Alvar, Gursimran Singh, Mohammad Akbari, and Yong Zhang. Divprune: Diversity-based visual token pruning for large multimodal models. In IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) , 2025. Bai et al. (2024) Fan Bai, Yuxin Du, Tiejun Huang, Max Q-H Meng, and Bo Zhao. M3d: Advancing 3d medical image analysis with multi-modal large language",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2608.25630"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "K breast MRI sequences from a cohort of 12.9K patients, where each contains at least 3 different MRI modalities, paired with a radiology report and a pathology report verified by two radiologists. Then, we design a QA generation pipeline consisting of multi-stage extraction, task construction, paraphrasing, and validation, which enables BreMRIs-VQA to contain 1.19M VQA pairs, including 671.6K fre",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2608.25630"
+        }
+      ],
+      "related_benchmarks": [
+        "VQA",
+        "BreMRIs-VQA",
+        "DeepTumorVQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 22,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c924be31ff9bf2d2c7a2e12da7e9d2b3bbbe041f663bf594f551d277739ce4e4",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.25085",
+      "slug": "arxiv-2608-25085-d5d4426764",
+      "kind": "paper",
+      "title": "MTDiag: A Multi-Turn Diagnostic Dataset Towards Clinically Meaningful LLM Evaluation",
+      "abstract": "Clinical diagnosis is fundamentally interactive and incremental, yet the dominant paradigm for evaluating Large Language Models (LLMs) in medicine remains static QA benchmarks or template-based dialogues. These benchmarks say little about whether a model can serve as a diagnostic agent in a dynamic clinical encounter, with LLMs showing significant accuracy and reliability degradation in multi-turn settings. To address this issue, we present MTDiag, a large multi-turn diagnostic dialogue dataset constructed from three heterogeneous sources: DDXPlus, MIMIC-IV, and published case reports (AJCR), covering common ED presentations as well as long-tail rare and atypical conditions. All cases are normalized into a canonical schema anchored in the most comprehensive and widely-adopted medical knowledge bases (UMLS concept identifiers, with ICD-10 diagnosis codes). We release the schema, a UserLM-8B-based utterance-generation pipeline, and the physician-validated dataset that converts structured clinical evidence into natural-language utterances. Importantly, we introduce and motivate clinical knowledge-grounded metrics for evaluating LLMs as diagnostic agents, beyond diagnostic accuracy, for the task of multi-turn differential diagnosis.",
+      "authors": [
+        "Pia Chouayfati",
+        "Alexander M. Fichtl",
+        "Miriam Anschütz",
+        "George Doumat",
+        "Georg Groh"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-25T19:27:10+00:00",
+      "updated_at": "2026-08-25T19:27:10+00:00",
+      "first_seen_at": "2026-08-28T10:25:14+00:00",
+      "event_at": "2026-08-28T10:25:14+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.25085"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.25085v1",
+        "pdf": "https://arxiv.org/pdf/2608.25085v1",
+        "code": "https://github.com/piachouaifaty/MTDiag",
+        "html": "https://arxiv.org/html/2608.25085"
+      },
+      "evidence": [
+        {
+          "term": "we present MTDiag, a large multi-turn diagnostic dialogue dataset",
+          "excerpt": "nt in a dynamic clinical encounter, with LLMs showing significant accuracy and reliability degradation in multi-turn settings. To address this issue, we present MTDiag, a large multi-turn diagnostic dialogue dataset constructed from three heterogeneous sources: DDXPlus, MIMIC-IV, and published case reports (AJCR), covering common ED presentations as well as long-tail rare and atypical conditions. All cases are normalized into a canonical schema anchor",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25085"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "sis is fundamentally interactive and incremental, yet the dominant paradigm for evaluating Large Language Models (LLMs) in medicine remains static QA benchmarks or template-based dialogues. These benchmarks say little about whether a model can serve as a diagnostic agent in a dynamic clinical encounter, with LLMs showing significant accuracy and reliability degradation in multi-turn settings. To",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25085"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "sis is fundamentally interactive and incremental, yet the dominant paradigm for evaluating Large Language Models (LLMs) in medicine remains static QA benchmarks or template-based dialogues. These benchmarks say little about whether a model can serve as a diagnostic agent in a dynamic clinical encounter, with LLMs showing significant accuracy and reliability degradation in multi-turn settings. To a",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25085"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "Evaluation Clinical diagnosis is fundamentally interactive and incremental, yet the dominant paradigm for evaluating Large Language Models (LLMs) in medicine remains static QA benchmarks or template-based dialogues. These benchmarks say little about whether a model can serve as a diagnostic agent in a dynamic clinical encounter, with LLMs showing significant accuracy and reliability degradation",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25085"
+        },
+        {
+          "term": "medical",
+          "excerpt": "ell as long-tail rare and atypical conditions. All cases are normalized into a canonical schema anchored in the most comprehensive and widely-adopted medical knowledge bases (UMLS concept identifiers, with ICD-10 diagnosis codes). We release the schema, a UserLM-8B-based utterance-generation pipeline, and the physician-validated dataset that converts structured clinical evidence into natural-la",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25085"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "MTDiag: A Multi-Turn Diagnostic Dataset Towards Clinically Meaningful LLM Evaluation Clinical diagnosis is fundamentally interactive and incremental, yet the dominant paradigm for evaluating Large Language Models (LLMs) in medicine remains static QA benchmarks or template-based dialogues. These",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25085"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "presentations. We draw on four official modules (Hosp, ED, Note) and two community extensions (BHC hospital course narratives; CDM curated abdominal pathology cases). The target population is patients who walk into an ED of their own volition and could plausibly interact with an LLM instead. From 425,087 raw ED visits, we sequentially exclude ambulance arrivals, visits with pain score above 8/10",
+          "location": "4.1.2 MIMIC-IV",
+          "source_url": "https://arxiv.org/html/2608.25085"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "static benchmarks degrade substantially when required to elicit information across a multi-turn encounter. AI Hospital Fan et al. (2025) and the JAMA multi-agent framework Sangwon et al. (2025) further surface reliability and consistency failures in interactive settings. Arias-Duart et al. (2025) propose automatic evaluation of healthcare LLMs beyond question-answering, and implement a range of sub",
+          "location": "2.1 The Diagnostic Encounter as a Dialogue Modeling Task",
+          "source_url": "https://arxiv.org/html/2608.25085"
+        }
+      ],
+      "related_benchmarks": [
+        "PubMedQA",
+        "MedQA",
+        "MedMCQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 27,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "51e3dbc296543ab6960c72de350c8f2cb6bffed675a7052a09e57a7a61749819",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.27110",
+      "slug": "arxiv-2608-27110-d72c667f58",
+      "kind": "paper",
+      "title": "DocTalkBN: A Novel Dataset of Expert Telemedicine Conversations in Bengali",
+      "abstract": "Reliable medical conversational AI requires authentic expert--patient interaction data, yet such datasets remain scarce, especially for low-resource languages such as Bengali. We present DocTalkBN, a large-scale multimodal dataset of real-world expert telemedicine conversations in Bengali, collected from nationally broadcast telemedicine programs featuring board-certified physicians. DocTalkBN contains 557.63 hours of paired audio and text, 1,515 multi-turn patient calls, 10,274 host--doctor question--answer exchanges, totaling 1.7M tokens, spanning 26 medical specialties. Unlike prior resources derived from medical forums, written health content, or synthetic data, our dataset preserves the spontaneity, contextual richness, and spoken characteristics of authentic medical interactions in a low-resource setting. To support benchmark-driven research, we further construct three downstream tasks from the corpus, medical triage classification, advice safety evaluation, and medical named entity recognition, and benchmark a diverse set of large language models and encoder-based baselines. Our results show that DocTalkBN is a practically useful resource, particularly for clinically grounded reasoning tasks. We release this resource to facilitate future research on reliable medical NLP and safer, more culturally grounded healthcare systems for low-resource languages. Our source codes and dataset are publicly available at https://anonymous.4open.science/r/doctalk.",
+      "authors": [
+        "Anik Saha",
+        "Fahmida Sultana Naznin",
+        "Sadatul Islam Sadi",
+        "Ananya Shahrin Promi",
+        "Wahid Al Azad Navid",
+        "Rifat Shahriyar"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-27T13:25:17+00:00",
+      "updated_at": "2026-08-27T13:25:17+00:00",
+      "first_seen_at": "2026-08-28T10:25:13+00:00",
+      "event_at": "2026-08-28T10:25:13+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.27110"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.27110v1",
+        "pdf": "https://arxiv.org/pdf/2608.27110v1",
+        "code": "https://github.com/meta-llama/llama3/blob/main/MODEL_CARD.md",
+        "html": "https://arxiv.org/html/2608.27110"
+      },
+      "evidence": [
+        {
+          "term": "We present DocTalkBN, a large-scale multimodal dataset",
+          "excerpt": "ional AI requires authentic expert--patient interaction data, yet such datasets remain scarce, especially for low-resource languages such as Bengali. We present DocTalkBN, a large-scale multimodal dataset of real-world expert telemedicine conversations in Bengali, collected from nationally broadcast telemedicine programs featuring board-certified physicians. DocTalkBN contains 557.63 hours of paired audio and text, 1,515 multi-turn patient",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27110"
+        },
+        {
+          "term": "Novel Dataset",
+          "excerpt": "DocTalkBN: A Novel Dataset of Expert Telemedicine Conversations in Bengali Reliable medical conversational AI requires authentic expert--patient interaction data, yet such datasets remain scarce, especially for low-resource languages such as Bengali. We present DocT",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27110"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "et preserves the spontaneity, contextual richness, and spoken characteristics of authentic medical interactions in a low-resource setting. To support benchmark-driven research, we further construct three downstream tasks from the corpus, medical triage classification, advice safety evaluation, and medical named entity recognition, and benchmark a diverse set of large language models and encoder-b",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27110"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "DocTalkBN: A Novel Dataset of Expert Telemedicine Conversations in Bengali Reliable medical conversational AI requires authentic expert--patient interaction data, yet such datasets remain scarce, especially for low-resource languages such as Bengali. We present DocTalkBN, a large-scale mu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27110"
+        },
+        {
+          "term": "medical",
+          "excerpt": "DocTalkBN: A Novel Dataset of Expert Telemedicine Conversations in Bengali Reliable medical conversational AI requires authentic expert--patient interaction data, yet such datasets remain scarce, especially for low-resource languages such as Bengali. We present DocTalkBN, a large-scale multimodal dataset of real-world expert tele",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27110"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "diverse set of large language models and encoder-based baselines. Our results show that DocTalkBN is a practically useful resource, particularly for clinically grounded reasoning tasks. We release this resource to facilitate future research on reliable medical NLP and safer, more culturally grounded healthcare systems for low-resource languages. Our source codes and dataset are publicly availab",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27110"
+        },
+        {
+          "term": "healthcare",
+          "excerpt": "inically grounded reasoning tasks. We release this resource to facilitate future research on reliable medical NLP and safer, more culturally grounded healthcare systems for low-resource languages. Our source codes and dataset are publicly available at https://anonymous.4open.science/r/doctalk. [[SECTION DocTalkBN: A Novel Dataset of Expert Telemedicine Conversations in Bengali]] DocTalkBN: A Novel",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27110"
+        },
+        {
+          "term": "patient",
+          "excerpt": "DocTalkBN: A Novel Dataset of Expert Telemedicine Conversations in Bengali Reliable medical conversational AI requires authentic expert--patient interaction data, yet such datasets remain scarce, especially for low-resource languages such as Bengali. We present DocTalkBN, a large-scale multimodal dataset of real-world expert telemedicine conversations in Bengali, collected from nat",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27110"
+        }
+      ],
+      "related_benchmarks": [
+        "MEDIQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 34,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "4eafea69e07800c7878f1a642f858c11b90136e1d0b3adaa7d8f5b069f9b28fb",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.26856",
+      "slug": "arxiv-2608-26856-6397c0bcd7",
+      "kind": "paper",
+      "title": "From Reasoning to Pixels: Grounded Medical Multimodal LLMs for VQA and Segmentation",
+      "abstract": "Although Multimodal Large Language Models (MLLMs) have demonstrated impressive performance in Medical Visual Question Answering (Med-VQA), their reliance on global image features often lacks precise pixel-level grounding, thereby limiting clinical trustworthiness. To bridge the semantic gap between high-level clinical reasoning and spatial localization, we propose \\textsc{\\textsc{MedREAL}} (\\textbf{Med}ical \\textbf{RE}asoning-driven \\textbf{A}nswering and \\textbf{L}ocalization), a unified framework that seamlessly aligns linguistic reasoning with spatial grounding. Specifically, \\textsc{MedREAL} introduces \\textbf{S}eg \\textbf{A}nchored \\textbf{R}easoning \\textbf{P}ooling (SARP) to distill task-relevant semantic evidence directly from \\texttt{[SEG]} tokens within the MLLM's hidden states. Furthermore, a \\textbf{R}easoning-to-\\textbf{V}isual (R2V) fusion mechanism is proposed to effectively inject these reasoning-aware features into a segmentation pipeline for accurate mask decoding. To facilitate this paradigm, we construct MedRAVS-13K, a comprehensive dataset comprising 13,824 expertly validated samples across four diverse imaging modalities. Extensive experiments demonstrate that \\textsc{MedREAL} significantly outperforms state-of-the-arts, achieving 68.49\\% gIoU and 70.47\\% cIoU on benchmark evaluations. By generating evidence masks that are strictly consistent with textual diagnoses, \\textsc{MedREAL} provides a robust, interpretable framework for reasoning-driven medical image analysis.",
+      "authors": [
+        "Haowen Gu",
+        "Gensheng Pei",
+        "Junzhu Mao",
+        "Qiong Wang",
+        "Mingwu Ren",
+        "Yazhou Yao"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-27T09:23:16+00:00",
+      "updated_at": "2026-08-27T09:23:16+00:00",
+      "first_seen_at": "2026-08-28T10:25:13+00:00",
+      "event_at": "2026-08-28T10:25:13+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.26856"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.26856v1",
+        "pdf": "https://arxiv.org/pdf/2608.26856v1",
+        "code": "https://github.com/NUST-Machine-Intelligence-Laboratory/MedREAL",
+        "html": "https://arxiv.org/html/2608.26856"
+      },
+      "evidence": [
+        {
+          "term": "we construct MedRAVS-13K, a comprehensive dataset",
+          "excerpt": "s proposed to effectively inject these reasoning-aware features into a segmentation pipeline for accurate mask decoding. To facilitate this paradigm, we construct MedRAVS-13K, a comprehensive dataset comprising 13,824 expertly validated samples across four diverse imaging modalities. Extensive experiments demonstrate that \\textsc{MedREAL} significantly outperforms state-of-the-arts, achieving 68.49\\% gIoU and 70.47\\% cIoU on benchmark",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26856"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "ties. Extensive experiments demonstrate that \\textsc{MedREAL} significantly outperforms state-of-the-arts, achieving 68.49\\% gIoU and 70.47\\% cIoU on benchmark evaluations. By generating evidence masks that are strictly consistent with textual diagnoses, \\textsc{MedREAL} provides a robust, interpretable framework for reasoning-driven medical image analysis. [[SECTION From Reasoning to Pixels: Gro",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26856"
+        },
+        {
+          "term": "medical",
+          "excerpt": "From Reasoning to Pixels: Grounded Medical Multimodal LLMs for VQA and Segmentation Although Multimodal Large Language Models (MLLMs) have demonstrated impressive performance in Medical Visual Question Answering (Med-VQA), their reliance on global image features often lacks precise",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26856"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "e in Medical Visual Question Answering (Med-VQA), their reliance on global image features often lacks precise pixel-level grounding, thereby limiting clinical trustworthiness. To bridge the semantic gap between high-level clinical reasoning and spatial localization, we propose \\textsc{\\textsc{MedREAL}} (\\textbf{Med}ical \\textbf{RE}asoning-driven \\textbf{A}nswering and \\textbf{L}ocalization), a u",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26856"
+        },
+        {
+          "term": "Multimodal",
+          "excerpt": "From Reasoning to Pixels: Grounded Medical Multimodal LLMs for VQA and Segmentation Although Multimodal Large Language Models (MLLMs) have demonstrated impressive performance in Medical Visual Question Answering (Med-VQA), their reliance on global image features often lacks precise pixel-leve",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26856"
+        },
+        {
+          "term": "pathological",
+          "excerpt": "practice often demands explicit localization of the visual evidence that supports a decision, such as identifying a lesion, anatomical structure, or pathological region. This requirement highlights a critical limitation of existing Med-VQA systems: while recent multimodal large language models (MLLMs) [ 3 , 35 , 34 , 1 , 13 , 51 ] demonstrate strong reasoning capabilities, they typically provide an",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2608.26856"
+        },
+        {
+          "term": "visual grounding",
+          "excerpt": "uestions. Because the masks exhibit substantial variation in scale and morphology across the four modalities, the dataset presents highly challenging visual grounding scenarios that demand the joint optimization of reasoning, segmentation, and answer prediction. [[SECTION 5 Experiments]] 5 Experiments [[SECTION 5.1 Experiment Setup]] 5.1 Experiment Setup Datasets. To evaluate the performance of MedREAL",
+          "location": "4.2 Data Generation and Curation",
+          "source_url": "https://arxiv.org/html/2608.26856"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "hezloo, M. S. Seyfioglu, R. Soraki, W. O. Ikezogwo, B. Li, T. Vivekanandan, J. G. Elmore, R. Krishna, and L. Shapiro (2025) Pathfinder: a multi-modal multi-agent system for medical diagnostic decision-making applied to histopathology . In Proceedings of the IEEE/CVF International Conference on Computer Vision , pp. 23431–23441 . Cited by: §2 . [16] H. Gong, G. Chen, S. Liu, Y. Yu, and G. Li (2021)",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2608.26856"
+        }
+      ],
+      "related_benchmarks": [
+        "VQA",
+        "Med-VQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 21,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "d5b4f93657f130875c005cc85a1b87dd9d1651be53bad246c4841da9c973ab31",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.26848",
+      "slug": "arxiv-2608-26848-06029fb2ad",
+      "kind": "paper",
+      "title": "MedFG-VQA: Low-Frequency Memory and Graph Attention for Lightweight Medical VQA",
+      "abstract": "Medical Visual Question Answering (Med-VQA) holds significant promise for clinical decision support, yet faces challenges due to limited annotated data and the high computational demands of existing large vision-language models. We propose MedFG-VQA, a lightweight framework that leverages a memory bank to augment DCT-based low-frequency features and employs graph-enhanced cross-attention for effective visual-textual alignment. Specifically, our approach features two key components: Frequency-Memory Fusion (FMF), which enhances low-frequency features by retrieving from a learnable memory bank built on DCT decomposition, and Graph-Aware Cross-Attention (GACA), which aligns visual-textual features via cross-attention and refines them through graph-convolutional aggregation. To address data scarcity, we construct SynMed-VQA, a large-scale synthetic dataset comprising over 2 million question-answer pairs across 9 imaging modalities and 10 major organs, generated with GPT-4o. Extensive experiments on SynMed-VQA and three other standard biomedical VQA benchmarks demonstrate that MedFG-VQA achieves competitive or superior performance compared to much larger models while maintaining significantly lower computational costs, highlighting its efficiency and potential for clinical deployment.",
+      "authors": [
+        "Haowen Gu",
+        "Gensheng Pei",
+        "Zeren Sun",
+        "Mingwu Ren",
+        "Xiangbo Shu",
+        "Yazhou Yao",
+        "Fumin Shen"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-27T09:16:14+00:00",
+      "updated_at": "2026-08-27T09:16:14+00:00",
+      "first_seen_at": "2026-08-28T10:25:13+00:00",
+      "event_at": "2026-08-28T10:25:13+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.26848"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.26848v1",
+        "pdf": "https://arxiv.org/pdf/2608.26848v1",
+        "code": "https://github.com/NUST-Machine-Intelligence-Laboratory/MedFG",
+        "html": "https://arxiv.org/html/2608.26848"
+      },
+      "evidence": [
+        {
+          "term": "We propose MedFG-VQA",
+          "excerpt": "cal decision support, yet faces challenges due to limited annotated data and the high computational demands of existing large vision-language models. We propose MedFG-VQA, a lightweight framework that leverages a memory bank to augment DCT-based low-frequency features and employs graph-enhanced cross-attention for effective visual-textual alignment. Specifically, our approach features two key components: Fr",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26848"
+        },
+        {
+          "term": "we construct SynMed-VQA, a large-scale synthetic dataset",
+          "excerpt": "(GACA), which aligns visual-textual features via cross-attention and refines them through graph-convolutional aggregation. To address data scarcity, we construct SynMed-VQA, a large-scale synthetic dataset comprising over 2 million question-answer pairs across 9 imaging modalities and 10 major organs, generated with GPT-4o. Extensive experiments on SynMed-VQA and three other standard biomedical VQA benchmarks demonstrate that MedFG-VQA achie",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26848"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "s across 9 imaging modalities and 10 major organs, generated with GPT-4o. Extensive experiments on SynMed-VQA and three other standard biomedical VQA benchmarks demonstrate that MedFG-VQA achieves competitive or superior performance compared to much larger models while maintaining significantly lower computational costs, highlighting its efficiency and potential for clinical deployment. [[SECTION",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26848"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "ion-answer pairs across 9 imaging modalities and 10 major organs, generated with GPT-4o. Extensive experiments on SynMed-VQA and three other standard biomedical VQA benchmarks demonstrate that MedFG-VQA achieves competitive or superior performance compared to much larger models while maintaining significantly lower computational costs, highlighting its efficiency and potential for clinical deploym",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26848"
+        },
+        {
+          "term": "medical",
+          "excerpt": "MedFG-VQA: Low-Frequency Memory and Graph Attention for Lightweight Medical VQA Medical Visual Question Answering (Med-VQA) holds significant promise for clinical decision support, yet faces challenges due to limited annotated data and the high computational demands of existing large vision-language models. We pro",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26848"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "G-VQA: Low-Frequency Memory and Graph Attention for Lightweight Medical VQA Medical Visual Question Answering (Med-VQA) holds significant promise for clinical decision support, yet faces challenges due to limited annotated data and the high computational demands of existing large vision-language models. We propose MedFG-VQA, a lightweight framework that leverages a memory bank to augment DCT-bas",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26848"
+        },
+        {
+          "term": "vision-language",
+          "excerpt": "ficant promise for clinical decision support, yet faces challenges due to limited annotated data and the high computational demands of existing large vision-language models. We propose MedFG-VQA, a lightweight framework that leverages a memory bank to augment DCT-based low-frequency features and employs graph-enhanced cross-attention for effective visual-textual alignment. Specifically, our approach fe",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26848"
+        },
+        {
+          "term": "pathological",
+          "excerpt": "g one of four core aspects: (1) imaging features ( e.g . , signal intensity, enhancement pattern, morphology), (2) visible anatomical structures, (3) pathological manifestations ( e.g . , mass effect, edema, invasion), and (4) clinical implications ( e.g . , symptoms, functional impact, management considerations). Within each aspect, emphasis is customized per disease domain, for instance, brain tum",
+          "location": "4.2 Data Generation",
+          "source_url": "https://arxiv.org/html/2608.26848"
+        }
+      ],
+      "related_benchmarks": [
+        "MedFG-VQA",
+        "VQA",
+        "Med-VQA",
+        "SynMed-VQA",
+        "SynMedVQA",
+        "PathVQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 29,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "43294e76202e4a9013a40f1c2cdb95b513f509eafe28aace12ce6d330c8a2f1c",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.25286",
+      "slug": "arxiv-2608-25286-b5917eeae1",
+      "kind": "paper",
+      "title": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks",
+      "abstract": "Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been systematically evaluated. Here we introduce BixBench3, a benchmark that measures the capacity of AI agents to process raw biological data through to scientific results. We designed BixBench3 tasks to mirror the delegation of work from a scientist to an agent: the scientist chooses the research question and high-level methods, then delegates implementation of all analyses to the agent. In each task, an agent receives a research objective, methodological guidance, and raw data derived from a published scientific study, and must execute a sequence of analyses to achieve the research objective. The data artifacts resulting from these analyses - such as peak call matrices or differential expression tables - are programmatically graded against the corresponding artifacts generated and reported in the original study. Across 20 BixBench3 tasks encompassing the generation of 138 unique artifacts, we find that 13 frontier models achieve scores ranging from 0.00 for Gemini 3.1 Flash Lite to 0.48 for GPT 5.6 Sol. Agents perform worse on tasks with larger raw datasets (0.36 on tasks with <100 GB versus 0.10 on tasks with >100 GB) and on analyses requiring more sequential steps (0.36 at 1-2 steps vs 0.24 at 3+). On average, agents use 6.8 hours, 102 million tokens, and $43 to complete each task, with the longest attempts consuming 24 hours, 1.07 billion tokens, and $525. Notably, the highest-scoring agents used fewer tokens and were cheaper than less performant options. These results reveal that LLMs vary substantially in their ability to (1) execute multiple sequential analysis steps coherently, (2) manage large quantities of raw data, and (3) work across scientific domains.",
+      "authors": [
+        "Zane Koch",
+        "Asmamaw T. Wassie",
+        "Javier Valdes-Aleman",
+        "Jason Lee",
+        "Michaela M. Hinks",
+        "Samuel G. Rodriques",
+        "Andrew D. White",
+        "Jon M. Laurent"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-26T01:45:55+00:00",
+      "updated_at": "2026-08-26T01:45:55+00:00",
+      "first_seen_at": "2026-08-26T01:45:55+00:00",
+      "event_at": "2026-08-28T10:25:12+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.25286"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.25286v1",
+        "pdf": "https://arxiv.org/pdf/2608.25286v1",
+        "code": "https://github.com/EdisonScientific/BixBench3",
+        "data": "https://huggingface.co/datasets/EdisonScientific/BixBench3",
+        "html": "https://arxiv.org/html/2608.25286"
+      },
+      "evidence": [
+        {
+          "term": "we introduce BixBench3, a benchmark",
+          "excerpt": "Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been systematically evaluated. Here we introduce BixBench3, a benchmark that measures the capacity of AI agents to process raw biological data through to scientific results. We designed BixBench3 tasks to mirror the delegation of work from a scientist to an agent: the scientist chooses the research question an",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25286"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25286"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology at",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25286"
+        },
+        {
+          "term": "biology",
+          "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been syst",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25286"
+        },
+        {
+          "term": "biological",
+          "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been systematically evaluated. Here we introduce BixBench3, a benchmark that m",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25286"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "Li, S. Zhao, R. Cao, J. H. Toh, Z. Cheng, D. Shin, F. Lei, Y. Liu, Y. Xu, S. Zhou, S. Savarese, C. Xiong, V. Zhong, and T. Yu OSWorld: benchmarking multimodal agents for open-ended tasks in real computer environments . In Advances in Neural Information Processing Systems , Vol. 37 , pp. 52040–52094 . Note: Datasets and Benchmarks Track External Links: Document Cited by: §1.1 . Xin et al. (2024)",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2608.25286"
+        },
+        {
+          "term": "troubleshooting",
+          "excerpt": "isolated analyses. LAB-Bench and LABBench2 test domain knowledge and practical research skills through questions about literature retrieval, protocol troubleshooting, and sequence manipulation, while BioProBench focuses on biological protocol understanding ( Laurent et al., 2024 ; Laurent et al., 2026 ; Liu et al., 2025 ) . DISCOVERYWORLD required agents to make scientific discoveries in a virtual envi",
+          "location": "1.1 Related work",
+          "source_url": "https://arxiv.org/html/2608.25286"
+        },
+        {
+          "term": "tool use",
+          "excerpt": "etence. BixBench3 combines the long-horizon challenge of the former with the domain-specificity of the latter. Long-horizon agent benchmarks evaluate tool use, planning, and execution over many steps. As agentic capabilities have improved, the length of tasks that models can complete has increased from those taking humans minutes in 2024 ( Zhou et al., 2024 ; Xie et al., 2024 ) to those taking h",
+          "location": "1.1 Related work",
+          "source_url": "https://arxiv.org/html/2608.25286"
+        }
+      ],
+      "related_benchmarks": [
+        "PaperBench",
+        "BioProBench",
+        "BixBench",
+        "CompBioBench",
+        "BAISBench",
+        "GeneBench",
+        "SpatialBench",
+        "VariantBench",
+        "LAB-Bench",
+        "LABBench2"
+      ],
+      "related_agent_url": "../../p/2608.25286.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 20,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "f32bbf5d1b22de2ff05c8456288b53a6807b1d172b6d3d055eceb51c18369c4a",
+      "is_seed": true,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.25114",
+      "slug": "arxiv-2608-25114-3f8d2598a5",
+      "kind": "paper",
+      "title": "Flower Hub: A Reproducible Benchmarking Platform for Federated Learning in Simulation and Deployment",
+      "abstract": "Federated learning (FL) has emerged as a key approach for training models across decentralized data, yet benchmarking in FL remains difficult to reproduce, compare, and extend. Existing evaluations are often tied to custom infrastructure, released as incomplete research code, and conducted primarily in simulation, which limits portability and practical relevance. We present Flower Hub, a platform for publishing, discovering, and executing decentralized and federated applications. We show how it enables reproducible benchmarking by packaging benchmarks as executable, versioned applications with standardized metadata, pinned dependencies, and explicit evaluation workflows. We instantiate this approach with a multi-domain benchmark suite spanning cross-silo and cross-device settings, and including tasks in medical imaging, financial tabular learning, legal instruction tuning, phishing URL detection, and audio tagging. We further demonstrate that the same benchmarking application can run across both simulation and deployment runtimes without changing the application code, enabling unified evaluation across varying learning environments. Beyond model quality, our benchmark design supports system-aware reporting, including runtime and communication metrics. This work advances benchmarking in FL settings from ad hoc code artifacts towards portable, executable, and reusable benchmark applications.",
+      "authors": [
+        "Yan Gao",
+        "Mohammad Naseri",
+        "Javier Fernandez-Marques",
+        "Dimitris Stripelis",
+        "Lorenzo Sani",
+        "Davide Eynard",
+        "Fan Zhang",
+        "Hong Jia",
+        "Ting Dang",
+        "D. B. Emerson",
+        "Fatemeh Tavakoli",
+        "Ole Werger",
+        "Lars Wulfert",
+        "Petros Demetrakopoulos",
+        "Sofia Tsekeridou",
+        "InSeo Song",
+        "KangYoon Lee",
+        "Honghao Li",
+        "Lingjuan Lyu",
+        "John P Dickerson",
+        "Daniel Janes Beutel",
+        "Nicholas D. Lane"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-25T20:09:44+00:00",
+      "updated_at": "2026-08-25T20:09:44+00:00",
+      "first_seen_at": "2026-08-28T07:13:29+00:00",
+      "event_at": "2026-08-28T10:25:11+00:00",
+      "priority": "P0",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.25114"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.25114v1",
+        "pdf": "https://arxiv.org/pdf/2608.25114v1",
+        "data": "https://huggingface.co/datasets/flwrlabs/fed-brats",
+        "html": "https://arxiv.org/html/2608.25114"
+      },
+      "evidence": [
+        {
+          "term": "Reproducible Benchmarking Platform",
+          "excerpt": "Flower Hub: A Reproducible Benchmarking Platform for Federated Learning in Simulation and Deployment Federated learning (FL) has emerged as a key approach for training models across decentralized data, yet benchmarking in FL remains difficult to reproduce, compare, and extend. Existing e",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25114"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Flower Hub: A Reproducible Benchmarking Platform for Federated Learning in Simulation and Deployment Federated learning (FL) has emerged as a key approach for training models across decentralized data, yet benchmarking in FL remains difficult to reproduce, compare, and extend",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25114"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "rm for publishing, discovering, and executing decentralized and federated applications. We show how it enables reproducible benchmarking by packaging benchmarks as executable, versioned applications with standardized metadata, pinned dependencies, and explicit evaluation workflows. We instantiate this approach with a multi-domain benchmark suite spanning cross-silo and cross-device settings, and i",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25114"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "Flower Hub: A Reproducible Benchmarking Platform for Federated Learning in Simulation and Deployment Federated learning (FL) has emerged as a key approach for training models across decentralized data, yet benchmarking in FL remains difficult to reproduce, compare, and extend. E",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25114"
+        },
+        {
+          "term": "medical",
+          "excerpt": "ion workflows. We instantiate this approach with a multi-domain benchmark suite spanning cross-silo and cross-device settings, and including tasks in medical imaging, financial tabular learning, legal instruction tuning, phishing URL detection, and audio tagging. We further demonstrate that the same benchmarking application can run across both simulation and deployment runtimes without changing",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25114"
+        },
+        {
+          "term": "medical imaging",
+          "excerpt": "ion workflows. We instantiate this approach with a multi-domain benchmark suite spanning cross-silo and cross-device settings, and including tasks in medical imaging, financial tabular learning, legal instruction tuning, phishing URL detection, and audio tagging. We further demonstrate that the same benchmarking application can run across both simulation and deployment runtimes without changing the app",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25114"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "dix F.1 . Medical image segmentation 2 2 2 https://huggingface.co/datasets/flwrlabs/fed-brats . We use the BraTS-GLI dataset [ 30 ] , which comprises multimodal glioma MRI scans with four input sequences: T1-native, T1-contrast enhanced, T2-weighted, and T2-FLAIR, together with corresponding tumor segmentation masks. To emulate a realistic federated setting, the data are partitioned according to a",
+          "location": "3.1 FL Dataset Construction",
+          "source_url": "https://arxiv.org/html/2608.25114"
+        }
+      ],
+      "related_benchmarks": [
+        "LegalBench",
+        "FLBench",
+        "FedEval"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "match_score": 21,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "afe6785e8b1f47b2a6b87de95178263a0dcd72b1ea30bba9f9445fbae405f88f",
+      "is_seed": true,
+      "topic": "multimodal",
+      "contribution_type": "methodology"
+    },
+    {
+      "id": "arxiv:2608.26228",
+      "slug": "arxiv-2608-26228-6ced7aef3b",
+      "kind": "paper",
+      "title": "PathoMIC: A Benchmark for Cross-Species Antimicrobial Peptide Activity Prediction",
+      "abstract": "With activity against multidrug-resistant pathogens and mechanisms distinct from conventional antibiotics, antimicrobial peptides (AMPs) offer a promising approach to combating antibiotic-resistant infections. However, their potency varies substantially across pathogen species, making accurate prediction of the minimum inhibitory concentration (MIC) for specific peptide-pathogen pairs essential for prioritizing candidates before costly experimental validation. Existing predictors are trained mainly on a few well-represented pathogens and rarely exploit biological relationships across species, limiting their generalization to low-resource and unseen pathogens. We introduce PathoMIC, the largest and most pathogen-diverse unified dataset for quantitative antimicrobial peptide activity prediction, containing 74,751 experimentally reported MIC measurements across 424 pathogen species. PathoMIC integrates peptide sequences, standardized MIC values, pathogen descriptions, and taxonomic relationships to facilitate knowledge transfer across related species. We establish few-shot and zero-shot cross-species evaluation protocols and develop a knowledge-enhanced framework that leverages pathogen descriptions and taxonomy. The framework yields substantial improvements for low-resource species with limited supervision, while gains for entirely unseen species remain modest, highlighting the difficulty of zero-shot cross-species MIC prediction. PathoMIC provides a standardized foundation for cross-species activity modeling and pathogen-specific virtual screening. Code is available at https://anonymous.4open.science/r/PathoMIC-546D/.",
+      "authors": [
+        "Yeqing Lu",
+        "Xiaoyan Zhao",
+        "Fuli Feng"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-26T16:25:57+00:00",
+      "updated_at": "2026-08-26T16:25:57+00:00",
+      "first_seen_at": "2026-08-28T07:13:30+00:00",
+      "event_at": "2026-08-28T10:24:47+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.26228"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.26228v1",
+        "pdf": "https://arxiv.org/pdf/2608.26228v1",
+        "html": "https://arxiv.org/html/2608.26228"
+      },
+      "evidence": [
+        {
+          "term": "We introduce PathoMIC, the largest and most pathogen-diverse unified dataset",
+          "excerpt": "represented pathogens and rarely exploit biological relationships across species, limiting their generalization to low-resource and unseen pathogens. We introduce PathoMIC, the largest and most pathogen-diverse unified dataset for quantitative antimicrobial peptide activity prediction, containing 74,751 experimentally reported MIC measurements across 424 pathogen species. PathoMIC integrates peptide sequences, standardized MIC values, pathogen descriptions, and",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26228"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "PathoMIC: A Benchmark for Cross-Species Antimicrobial Peptide Activity Prediction With activity against multidrug-resistant pathogens and mechanisms distinct from conventional antibiotics, antimicrobial peptides (AMPs) offer a promising approach to combating an",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26228"
+        },
+        {
+          "term": "biological",
+          "excerpt": "izing candidates before costly experimental validation. Existing predictors are trained mainly on a few well-represented pathogens and rarely exploit biological relationships across species, limiting their generalization to low-resource and unseen pathogens. We introduce PathoMIC, the largest and most pathogen-diverse unified dataset for quantitative antimicrobial peptide activity prediction, cont",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26228"
+        },
+        {
+          "term": "peptide",
+          "excerpt": "PathoMIC: A Benchmark for Cross-Species Antimicrobial Peptide Activity Prediction With activity against multidrug-resistant pathogens and mechanisms distinct from conventional antibiotics, antimicrobial peptides (AMPs) offer a promising approach to combating antibiotic-resistant infections. However,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26228"
+        },
+        {
+          "term": "antimicrobial",
+          "excerpt": "PathoMIC: A Benchmark for Cross-Species Antimicrobial Peptide Activity Prediction With activity against multidrug-resistant pathogens and mechanisms distinct from conventional antibiotics, antimicrobial peptides (AMPs) offer a promising approach to combating antibiotic-resistant infections. H",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26228"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 20,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "e8d550cc7beb16ed3153410c1d1ccccd1d0b61a4961fe976f33815f67bc3980f",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.08.24.746336",
+      "slug": "doi-10-64898-2026-08-24-746336-0ae7480021",
+      "kind": "paper",
+      "title": "CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry",
+      "abstract": "In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the next. Immunologists instead annotate by manual gating, splitting one parent population at a time on a two-marker plot, down an expert-defined hierarchy. We introduce CytoGate-Bench, a benchmark that reformulates this per-step procedure as a zero-shot, panel-agnostic task for large language models. It comprises 23,646 expert-annotated instances re-curated from 11 public flow- and mass-cytometry cohorts spanning eight marker panels. Across six open- and closed-weight backbones, the strongest formulation draws one rectangular gate per candidate and falls within the range of trained, panel-specialized baselines. It degrades less under distribution shift. Walking the hierarchy stepwise outperforms predicting every cell type at once. Ablations trace the signal to the data distribution shape and curated marker priors. However, adding vision or a self-verification loop systematically tightens gates.",
+      "authors": [
+        "Kim J",
+        "Lee B",
+        "Ahn N",
+        "Ionita M",
+        "McKeague ML",
+        "Lee ME",
+        "Jeong C",
+        "Apostolidis SA",
+        "Baxter AE",
+        "Shwetank",
+        "Greenplate AR",
+        "Wherry EJ",
+        "Sohn K",
+        "Kim D."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-08-26T00:00:00+00:00",
+      "updated_at": "2026-08-27T00:00:00+00:00",
+      "first_seen_at": "2026-08-28T07:13:33+00:00",
+      "event_at": "2026-08-28T10:24:47+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.64898/2026.08.24.746336"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1305902"
+      },
+      "evidence": [
+        {
+          "term": "We introduce CytoGate-Bench",
+          "excerpt": "t. Immunologists instead annotate by manual gating, splitting one parent population at a time on a two-marker plot, down an expert-defined hierarchy. We introduce CytoGate-Bench, a benchmark that reformulates this per-step procedure as a zero-shot, panel-agnostic task for large language models. It comprises 23,646 expert-annotated instances re-curated from 11 public flow- and mass-cytometry cohorts spanning eight",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305902"
+        },
+        {
+          "term": "We introduce CytoGate-Bench, a benchmark",
+          "excerpt": "t. Immunologists instead annotate by manual gating, splitting one parent population at a time on a two-marker plot, down an expert-defined hierarchy. We introduce CytoGate-Bench, a benchmark that reformulates this per-step procedure as a zero-shot, panel-agnostic task for large language models. It comprises 23,646 expert-annotated instances re-curated from 11 public flow- and mass-cytometry cohorts spanning eight marker panels",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305902"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the nex",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305902"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the next. Immunologists instead annotate by manual gating, splitting one parent population at a time on a two-m",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305902"
+        },
+        {
+          "term": "single-cell",
+          "excerpt": "CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the next. Immunologists instead annotate by manual gating, splitting one parent populati",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305902"
+        },
+        {
+          "term": "immunology",
+          "excerpt": "CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the next. Immunologists instead annotate by manual gating, splitting one parent population at a time on a two-marker plot,",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305902"
+        },
+        {
+          "term": "cross-panel",
+          "excerpt": "CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the next. Immunologists",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305902"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 26,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "7e4c864b07f05ed56a6b8df178a5e86d862280303776154b120b890700fc59c1",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.08.21.746347",
+      "slug": "doi-10-64898-2026-08-21-746347-92d1fe89b0",
+      "kind": "paper",
+      "title": "BatchRefiner: fast, significant improvement in batch integration of single-cell embeddings with ensemble refinement",
+      "abstract": "Data from single-cell RNA sequencing (scRNA-seq) and the Assay for Transposase-Accessible Chromatin (scATAC-seq) are high-dimensional, sparse, and undesirably capture technical variability between experiments or batches. Many analysis methods thus seek to produce a low-dimensional cell-by-feature embedding space that groups together biologically similar cells across batches while distancing dissimilar cells. Here, we introduce ensemble refinement for scRNA-seq and scATAC-seq embeddings, inspired by ensemble methods from statistical machine learning, and implement BatchRefiner, a fast post-processing tool to enhance batch integration. We extensively benchmark widely-used scRNA-seq embedding methods on both batch integration and biological conservation over a wide range of datasets, before and after the addition of BatchRefiner. We extend these benchmarking approaches to provide the first comprehensive benchmark of batch integration for scATAC-seq embedding methods, including BatchRefiner. Importantly, we formalize a significance statistic, which we use to demonstrate BatchRefiner's significant improvement in batch integration across a wide range of embedding methods, atlas-scale datasets, and established metrics.",
+      "authors": [
+        "Schäffer DE",
+        "Kang H",
+        "Aksu ED",
+        "Edelman D",
+        "Berger B."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-08-26T00:00:00+00:00",
+      "updated_at": "2026-08-27T00:00:00+00:00",
+      "first_seen_at": "2026-08-28T07:13:33+00:00",
+      "event_at": "2026-08-28T10:24:47+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.64898/2026.08.21.746347"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1305945"
+      },
+      "evidence": [
+        {
+          "term": "first comprehensive benchmark",
+          "excerpt": "cal conservation over a wide range of datasets, before and after the addition of BatchRefiner. We extend these benchmarking approaches to provide the first comprehensive benchmark of batch integration for scATAC-seq embedding methods, including BatchRefiner. Importantly, we formalize a significance statistic, which we use to demonstrate BatchRefiner's significant improvement in batch integration across a wide range",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305945"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "emble methods from statistical machine learning, and implement BatchRefiner, a fast post-processing tool to enhance batch integration. We extensively benchmark widely-used scRNA-seq embedding methods on both batch integration and biological conservation over a wide range of datasets, before and after the addition of BatchRefiner. We extend these benchmarking approaches to provide the first compre",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305945"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "s on both batch integration and biological conservation over a wide range of datasets, before and after the addition of BatchRefiner. We extend these benchmarking approaches to provide the first comprehensive benchmark of batch integration for scATAC-seq embedding methods, including BatchRefiner. Importantly, we formalize a significance statistic, which we use to demonstrate BatchRefiner's significa",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305945"
+        },
+        {
+          "term": "biological",
+          "excerpt": "ity between experiments or batches. Many analysis methods thus seek to produce a low-dimensional cell-by-feature embedding space that groups together biologically similar cells across batches while distancing dissimilar cells. Here, we introduce ensemble refinement for scRNA-seq and scATAC-seq embeddings, inspired by ensemble methods from statistical machine learning, and implement BatchRefiner, a",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305945"
+        },
+        {
+          "term": "single-cell",
+          "excerpt": "BatchRefiner: fast, significant improvement in batch integration of single-cell embeddings with ensemble refinement Data from single-cell RNA sequencing (scRNA-seq) and the Assay for Transposase-Accessible Chromatin (scATAC-seq) are high-dimensional, sparse, and undesirably capture technical variability between experi",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305945"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 16,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "8a0bf7fa2e1644f7566410a46947d4b91e6527b4e4fbf9fdffdd6995b1d1f325",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.08.24.746620",
+      "slug": "doi-10-64898-2026-08-24-746620-c01a97c542",
+      "kind": "paper",
+      "title": "PhageLysData: an evidence-aware and AI-ready dataset of phage lytic enzymes and depolymerases",
+      "abstract": "Bacteriophage lytic enzymes and depolymerases are relevant to phage biology, antimicrobial development, and protein engineering, but their sequence and annotation data remain dispersed across general databases, specialized resources, genome-centred collections, and prediction-oriented datasets. We present PhageLysData, an evidence-aware and AI-ready resource constructed through reproducible multisource integration, provenance tracking, and exact-sequence consolidation. The release integrates 807,366 source observations from seven primary resources into 759,105 unique exact-sequence entities, comprising an evidence-supported Core of 11,867 entities, a Prediction Extension of 745,092 prediction-only candidates, and 2,146 Context entities retained for provenance and reference. This architecture preserves broad sequence-space coverage while maintaining a clear distinction between non-predictive and prediction-derived support. Core entities are enriched with harmonized biological annotations, physicochemical properties, independent InterProScan-derived functional annotations, mapped PDB and AlphaFold DB structural assets, and reusable numerical representations. For 11,259 eligible Core sequences, PhageLysData provides embeddings from 11 protein language models together with one-hot encoding under a common representation contract. Release-facing examples demonstrate latent-space exploration, unsupervised clustering, supervised classification, and evidence-aware candidate retrieval without defining a universal predictive benchmark. PhageLysData provides a traceable, versioned, and computationally accessible foundation for protein retrieval, comparative analysis, task-specific dataset construction, and machine-learning applications involving phage lytic enzymes and depolymerases.",
+      "authors": [
+        "Medina-Ortiz D",
+        "Olivera-Nappa A",
+        "Lienqueo ME",
+        "Opazo R",
+        "Romero J."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-08-25T00:00:00+00:00",
+      "updated_at": "2026-08-27T00:00:00+00:00",
+      "first_seen_at": "2026-08-28T07:13:33+00:00",
+      "event_at": "2026-08-28T10:24:47+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.64898/2026.08.24.746620"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1306028"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "space exploration, unsupervised clustering, supervised classification, and evidence-aware candidate retrieval without defining a universal predictive benchmark. PhageLysData provides a traceable, versioned, and computationally accessible foundation for protein retrieval, comparative analysis, task-specific dataset construction, and machine-learning applications involving phage lytic enzymes and d",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1306028"
+        },
+        {
+          "term": "biology",
+          "excerpt": ": an evidence-aware and AI-ready dataset of phage lytic enzymes and depolymerases Bacteriophage lytic enzymes and depolymerases are relevant to phage biology, antimicrobial development, and protein engineering, but their sequence and annotation data remain dispersed across general databases, specialized resources, genome-centred collections, and prediction-oriented datasets. We present PhageLys",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1306028"
+        },
+        {
+          "term": "biological",
+          "excerpt": "pace coverage while maintaining a clear distinction between non-predictive and prediction-derived support. Core entities are enriched with harmonized biological annotations, physicochemical properties, independent InterProScan-derived functional annotations, mapped PDB and AlphaFold DB structural assets, and reusable numerical representations. For 11,259 eligible Core sequences, PhageLysData provi",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1306028"
+        },
+        {
+          "term": "protein",
+          "excerpt": "of phage lytic enzymes and depolymerases Bacteriophage lytic enzymes and depolymerases are relevant to phage biology, antimicrobial development, and protein engineering, but their sequence and annotation data remain dispersed across general databases, specialized resources, genome-centred collections, and prediction-oriented datasets. We present PhageLysData, an evidence-aware and AI-ready res",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1306028"
+        },
+        {
+          "term": "genome",
+          "excerpt": "robial development, and protein engineering, but their sequence and annotation data remain dispersed across general databases, specialized resources, genome-centred collections, and prediction-oriented datasets. We present PhageLysData, an evidence-aware and AI-ready resource constructed through reproducible multisource integration, provenance tracking, and exact-sequence consolidation. The re",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1306028"
+        },
+        {
+          "term": "antimicrobial",
+          "excerpt": "ence-aware and AI-ready dataset of phage lytic enzymes and depolymerases Bacteriophage lytic enzymes and depolymerases are relevant to phage biology, antimicrobial development, and protein engineering, but their sequence and annotation data remain dispersed across general databases, specialized resources, genome-centred collections, and prediction-oriented datasets. We present PhageLysData, an eviden",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1306028"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 22,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "5cdc8a92a5ffc8e43809ee79941bbb1f4e4d0d55e387061882b9a682d39e35af",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
     {
       "id": "doi:10.64898/2026.08.20.26360960",
       "slug": "doi-10-64898-2026-08-20-26360960-9dbbca3470",
@@ -55,7 +1597,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 11,
+      "match_score": 14,
       "extraction_status": "incomplete",
       "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.08.20.26360960.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
       "content_hash": "24cb5fe9f7bb023576dc3467043f6bb420b9f1073e3916c83241b0e3857f9e7e",
@@ -126,7 +1668,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 9,
+      "match_score": 15,
       "extraction_status": "incomplete",
       "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.08.24.746635.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
       "content_hash": "1723fda14d431781416a461dc76ad5f3edeb91adae2907c9a4bd9b5607ab31dc",
@@ -229,7 +1771,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 13,
+      "match_score": 19,
       "extraction_status": "incomplete",
       "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.08.25.746926.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
       "content_hash": "9d8241c8b156d6c30e27a15d2cef3b5116f778bf20b53c64a5f3b4a3611462c4",
@@ -291,7 +1833,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 7,
+      "match_score": 19,
       "extraction_status": "incomplete",
       "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.08.19.745737.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
       "content_hash": "dd5d4fa68216aedd85dd81f4348b45ff27c1a13d3a27307ed2ba3d7b8d7ea2ae",
@@ -361,119 +1903,6 @@
       "content_hash": "6958b53512afb32c0f94ae11c763960b99e73017e81b68ad7e6989dcae64af99",
       "is_seed": false,
       "topic": "general_text",
-      "contribution_type": "new_benchmark"
-    },
-    {
-      "id": "arxiv:2608.25286",
-      "slug": "arxiv-2608-25286-b5917eeae1",
-      "kind": "paper",
-      "title": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks",
-      "abstract": "Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been systematically evaluated. Here we introduce BixBench3, a benchmark that measures the capacity of AI agents to process raw biological data through to scientific results. We designed BixBench3 tasks to mirror the delegation of work from a scientist to an agent: the scientist chooses the research question and high-level methods, then delegates implementation of all analyses to the agent. In each task, an agent receives a research objective, methodological guidance, and raw data derived from a published scientific study, and must execute a sequence of analyses to achieve the research objective. The data artifacts resulting from these analyses - such as peak call matrices or differential expression tables - are programmatically graded against the corresponding artifacts generated and reported in the original study. Across 20 BixBench3 tasks encompassing the generation of 138 unique artifacts, we find that 13 frontier models achieve scores ranging from 0.00 for Gemini 3.1 Flash Lite to 0.48 for GPT 5.6 Sol. Agents perform worse on tasks with larger raw datasets (0.36 on tasks with <100 GB versus 0.10 on tasks with >100 GB) and on analyses requiring more sequential steps (0.36 at 1-2 steps vs 0.24 at 3+). On average, agents use 6.8 hours, 102 million tokens, and $43 to complete each task, with the longest attempts consuming 24 hours, 1.07 billion tokens, and $525. Notably, the highest-scoring agents used fewer tokens and were cheaper than less performant options. These results reveal that LLMs vary substantially in their ability to (1) execute multiple sequential analysis steps coherently, (2) manage large quantities of raw data, and (3) work across scientific domains.",
-      "authors": [
-        "Zane Koch",
-        "Asmamaw T. Wassie",
-        "Javier Valdes-Aleman",
-        "Jason Lee",
-        "Michaela M. Hinks",
-        "Samuel G. Rodriques",
-        "Andrew D. White",
-        "Jon M. Laurent"
-      ],
-      "source": "arxiv",
-      "published_at": "2026-08-26T01:45:55+00:00",
-      "updated_at": "2026-08-26T01:45:55+00:00",
-      "first_seen_at": "2026-08-26T01:45:55+00:00",
-      "event_at": "2026-08-28T08:57:17+00:00",
-      "priority": "P1",
-      "categories": [
-        "experiment_agent"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "",
-      "identifiers": {
-        "arxiv": "2608.25286"
-      },
-      "links": {
-        "abs": "https://arxiv.org/abs/2608.25286v1",
-        "pdf": "https://arxiv.org/pdf/2608.25286v1",
-        "code": "https://github.com/EdisonScientific/BixBench3",
-        "data": "https://huggingface.co/datasets/EdisonScientific/BixBench3",
-        "html": "https://arxiv.org/html/2608.25286"
-      },
-      "evidence": [
-        {
-          "term": "we introduce BixBench3, a benchmark",
-          "excerpt": "Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been systematically evaluated. Here we introduce BixBench3, a benchmark that measures the capacity of AI agents to process raw biological data through to scientific results. We designed BixBench3 tasks to mirror the delegation of work from a scientist to an agent: the scientist chooses the research question an",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2608.25286"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2608.25286"
-        },
-        {
-          "term": "benchmarking",
-          "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology at",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2608.25286"
-        },
-        {
-          "term": "biology",
-          "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been syst",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2608.25286"
-        },
-        {
-          "term": "biological",
-          "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been systematically evaluated. Here we introduce BixBench3, a benchmark that m",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2608.25286"
-        },
-        {
-          "term": "multimodal",
-          "excerpt": "Li, S. Zhao, R. Cao, J. H. Toh, Z. Cheng, D. Shin, F. Lei, Y. Liu, Y. Xu, S. Zhou, S. Savarese, C. Xiong, V. Zhong, and T. Yu OSWorld: benchmarking multimodal agents for open-ended tasks in real computer environments . In Advances in Neural Information Processing Systems , Vol. 37 , pp. 52040–52094 . Note: Datasets and Benchmarks Track External Links: Document Cited by: §1.1 . Xin et al. (2024)",
-          "location": "References",
-          "source_url": "https://arxiv.org/html/2608.25286"
-        },
-        {
-          "term": "troubleshooting",
-          "excerpt": "isolated analyses. LAB-Bench and LABBench2 test domain knowledge and practical research skills through questions about literature retrieval, protocol troubleshooting, and sequence manipulation, while BioProBench focuses on biological protocol understanding ( Laurent et al., 2024 ; Laurent et al., 2026 ; Liu et al., 2025 ) . DISCOVERYWORLD required agents to make scientific discoveries in a virtual envi",
-          "location": "1.1 Related work",
-          "source_url": "https://arxiv.org/html/2608.25286"
-        },
-        {
-          "term": "tool use",
-          "excerpt": "etence. BixBench3 combines the long-horizon challenge of the former with the domain-specificity of the latter. Long-horizon agent benchmarks evaluate tool use, planning, and execution over many steps. As agentic capabilities have improved, the length of tasks that models can complete has increased from those taking humans minutes in 2024 ( Zhou et al., 2024 ; Xie et al., 2024 ) to those taking h",
-          "location": "1.1 Related work",
-          "source_url": "https://arxiv.org/html/2608.25286"
-        }
-      ],
-      "related_benchmarks": [
-        "PaperBench",
-        "BioProBench",
-        "BixBench",
-        "CompBioBench",
-        "BAISBench",
-        "GeneBench",
-        "SpatialBench",
-        "VariantBench",
-        "LAB-Bench",
-        "LABBench2"
-      ],
-      "related_agent_url": "../../p/2608.25286.html",
-      "evaluation_contexts": [
-        "beneficial_capability"
-      ],
-      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 20,
-      "extraction_status": "complete",
-      "extraction_error": "",
-      "content_hash": "f32bbf5d1b22de2ff05c8456288b53a6807b1d172b6d3d055eceb51c18369c4a",
-      "is_seed": true,
-      "topic": "experiment_agent",
       "contribution_type": "new_benchmark"
     },
     {
@@ -762,244 +2191,6 @@
       "contribution_type": "new_benchmark"
     },
     {
-      "id": "arxiv:2608.26228",
-      "slug": "arxiv-2608-26228-6ced7aef3b",
-      "kind": "paper",
-      "title": "PathoMIC: A Benchmark for Cross-Species Antimicrobial Peptide Activity Prediction",
-      "abstract": "With activity against multidrug-resistant pathogens and mechanisms distinct from conventional antibiotics, antimicrobial peptides (AMPs) offer a promising approach to combating antibiotic-resistant infections. However, their potency varies substantially across pathogen species, making accurate prediction of the minimum inhibitory concentration (MIC) for specific peptide-pathogen pairs essential for prioritizing candidates before costly experimental validation. Existing predictors are trained mainly on a few well-represented pathogens and rarely exploit biological relationships across species, limiting their generalization to low-resource and unseen pathogens. We introduce PathoMIC, the largest and most pathogen-diverse unified dataset for quantitative antimicrobial peptide activity prediction, containing 74,751 experimentally reported MIC measurements across 424 pathogen species. PathoMIC integrates peptide sequences, standardized MIC values, pathogen descriptions, and taxonomic relationships to facilitate knowledge transfer across related species. We establish few-shot and zero-shot cross-species evaluation protocols and develop a knowledge-enhanced framework that leverages pathogen descriptions and taxonomy. The framework yields substantial improvements for low-resource species with limited supervision, while gains for entirely unseen species remain modest, highlighting the difficulty of zero-shot cross-species MIC prediction. PathoMIC provides a standardized foundation for cross-species activity modeling and pathogen-specific virtual screening. Code is available at https://anonymous.4open.science/r/PathoMIC-546D/.",
-      "authors": [
-        "Yeqing Lu",
-        "Xiaoyan Zhao",
-        "Fuli Feng"
-      ],
-      "source": "arxiv",
-      "published_at": "2026-08-26T16:25:57+00:00",
-      "updated_at": "2026-08-26T16:25:57+00:00",
-      "first_seen_at": "2026-08-28T07:13:30+00:00",
-      "event_at": "2026-08-28T08:57:06+00:00",
-      "priority": "P1",
-      "categories": [
-        "general_text"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "",
-      "identifiers": {
-        "arxiv": "2608.26228"
-      },
-      "links": {
-        "abs": "https://arxiv.org/abs/2608.26228v1",
-        "pdf": "https://arxiv.org/pdf/2608.26228v1",
-        "html": "https://arxiv.org/html/2608.26228"
-      },
-      "evidence": [
-        {
-          "term": "We introduce PathoMIC, the largest and most pathogen-diverse unified dataset",
-          "excerpt": "represented pathogens and rarely exploit biological relationships across species, limiting their generalization to low-resource and unseen pathogens. We introduce PathoMIC, the largest and most pathogen-diverse unified dataset for quantitative antimicrobial peptide activity prediction, containing 74,751 experimentally reported MIC measurements across 424 pathogen species. PathoMIC integrates peptide sequences, standardized MIC values, pathogen descriptions, and",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2608.26228"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "PathoMIC: A Benchmark for Cross-Species Antimicrobial Peptide Activity Prediction With activity against multidrug-resistant pathogens and mechanisms distinct from conventional antibiotics, antimicrobial peptides (AMPs) offer a promising approach to combating an",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2608.26228"
-        },
-        {
-          "term": "biological",
-          "excerpt": "izing candidates before costly experimental validation. Existing predictors are trained mainly on a few well-represented pathogens and rarely exploit biological relationships across species, limiting their generalization to low-resource and unseen pathogens. We introduce PathoMIC, the largest and most pathogen-diverse unified dataset for quantitative antimicrobial peptide activity prediction, cont",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2608.26228"
-        }
-      ],
-      "related_benchmarks": [],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability"
-      ],
-      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 14,
-      "extraction_status": "complete",
-      "extraction_error": "",
-      "content_hash": "e8d550cc7beb16ed3153410c1d1ccccd1d0b61a4961fe976f33815f67bc3980f",
-      "is_seed": false,
-      "topic": "general_text",
-      "contribution_type": "new_benchmark"
-    },
-    {
-      "id": "doi:10.64898/2026.08.24.746336",
-      "slug": "doi-10-64898-2026-08-24-746336-0ae7480021",
-      "kind": "paper",
-      "title": "CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry",
-      "abstract": "In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the next. Immunologists instead annotate by manual gating, splitting one parent population at a time on a two-marker plot, down an expert-defined hierarchy. We introduce CytoGate-Bench, a benchmark that reformulates this per-step procedure as a zero-shot, panel-agnostic task for large language models. It comprises 23,646 expert-annotated instances re-curated from 11 public flow- and mass-cytometry cohorts spanning eight marker panels. Across six open- and closed-weight backbones, the strongest formulation draws one rectangular gate per candidate and falls within the range of trained, panel-specialized baselines. It degrades less under distribution shift. Walking the hierarchy stepwise outperforms predicting every cell type at once. Ablations trace the signal to the data distribution shape and curated marker priors. However, adding vision or a self-verification loop systematically tightens gates.",
-      "authors": [
-        "Kim, J.",
-        "Lee, B.",
-        "Ahn, N.",
-        "Ionita, M.",
-        "McKeague, M. L.",
-        "Lee, M. E.",
-        "Jeong, C.-U.",
-        "Apostolidis, S. A.",
-        "Baxter, A. E.",
-        "Shwetank,",
-        "Greenplate, A. R.",
-        "Wherry, E. J.",
-        "Sohn, K.-A.",
-        "Kim, D."
-      ],
-      "source": "biorxiv",
-      "published_at": "2026-08-26T00:00:00+00:00",
-      "updated_at": "2026-08-26T00:00:00+00:00",
-      "first_seen_at": "2026-08-28T07:13:33+00:00",
-      "event_at": "2026-08-28T08:57:06+00:00",
-      "priority": "P1",
-      "categories": [
-        "multimodal"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "cc_by_nc_nd",
-      "identifiers": {
-        "doi": "10.64898/2026.08.24.746336"
-      },
-      "links": {
-        "abs": "https://www.biorxiv.org/content/10.64898/2026.08.24.746336",
-        "pdf": "https://www.biorxiv.org/content/10.64898/2026.08.24.746336.full.pdf",
-        "html": "https://www.biorxiv.org/content/10.64898/2026.08.24.746336.full"
-      },
-      "evidence": [
-        {
-          "term": "We introduce CytoGate-Bench",
-          "excerpt": "t. Immunologists instead annotate by manual gating, splitting one parent population at a time on a two-marker plot, down an expert-defined hierarchy. We introduce CytoGate-Bench, a benchmark that reformulates this per-step procedure as a zero-shot, panel-agnostic task for large language models. It comprises 23,646 expert-annotated instances re-curated from 11 public flow- and mass-cytometry cohorts spanning eight",
-          "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.24.746336.full"
-        },
-        {
-          "term": "We introduce CytoGate-Bench, a benchmark",
-          "excerpt": "t. Immunologists instead annotate by manual gating, splitting one parent population at a time on a two-marker plot, down an expert-defined hierarchy. We introduce CytoGate-Bench, a benchmark that reformulates this per-step procedure as a zero-shot, panel-agnostic task for large language models. It comprises 23,646 expert-annotated instances re-curated from 11 public flow- and mass-cytometry cohorts spanning eight marker panels",
-          "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.24.746336.full"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the nex",
-          "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.24.746336.full"
-        },
-        {
-          "term": "clinical",
-          "excerpt": "CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the next. Immunologists instead annotate by manual gating, splitting one parent population at a time on a two-m",
-          "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.24.746336.full"
-        },
-        {
-          "term": "single-cell",
-          "excerpt": "CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the next. Immunologists instead annotate by manual gating, splitting one parent populati",
-          "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.24.746336.full"
-        },
-        {
-          "term": "cross-panel",
-          "excerpt": "CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the next. Immunologists",
-          "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.24.746336.full"
-        }
-      ],
-      "related_benchmarks": [],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability"
-      ],
-      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 23,
-      "extraction_status": "incomplete",
-      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.08.24.746336.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
-      "content_hash": "7e4c864b07f05ed56a6b8df178a5e86d862280303776154b120b890700fc59c1",
-      "is_seed": false,
-      "topic": "multimodal",
-      "contribution_type": "new_benchmark"
-    },
-    {
-      "id": "doi:10.64898/2026.08.21.746347",
-      "slug": "doi-10-64898-2026-08-21-746347-92d1fe89b0",
-      "kind": "paper",
-      "title": "BatchRefiner: fast, significant improvement in batch integration of single-cell embeddings with ensemble refinement",
-      "abstract": "Data from single-cell RNA sequencing (scRNA-seq) and the Assay for Transposase-Accessible Chromatin (scATAC-seq) are high-dimensional, sparse, and undesirably capture technical variability between experiments or batches. Many analysis methods thus seek to produce a low-dimensional cell-by-feature embedding space that groups together biologically similar cells across batches while distancing dissimilar cells. Here, we introduce ensemble refinement for scRNA-seq and scATAC-seq embeddings, inspired by ensemble methods from statistical machine learning, and implement BatchRefiner, a fast post-processing tool to enhance batch integration. We extensively benchmark widely-used scRNA-seq embedding methods on both batch integration and biological conservation over a wide range of datasets, before and after the addition of BatchRefiner. We extend these benchmarking approaches to provide the first comprehensive benchmark of batch integration for scATAC-seq embedding methods, including BatchRefiner. Importantly, we formalize a significance statistic, which we use to demonstrate BatchRefiner's significant improvement in batch integration across a wide range of embedding methods, atlas-scale datasets, and established metrics.",
-      "authors": [
-        "Schäffer, D. E.",
-        "Kang, H.",
-        "Aksu, E. D.",
-        "Edelman, D.",
-        "Berger, B."
-      ],
-      "source": "biorxiv",
-      "published_at": "2026-08-26T00:00:00+00:00",
-      "updated_at": "2026-08-26T00:00:00+00:00",
-      "first_seen_at": "2026-08-28T07:13:33+00:00",
-      "event_at": "2026-08-28T08:57:06+00:00",
-      "priority": "P1",
-      "categories": [
-        "general_text"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "cc_by",
-      "identifiers": {
-        "doi": "10.64898/2026.08.21.746347"
-      },
-      "links": {
-        "abs": "https://www.biorxiv.org/content/10.64898/2026.08.21.746347",
-        "pdf": "https://www.biorxiv.org/content/10.64898/2026.08.21.746347.full.pdf",
-        "html": "https://www.biorxiv.org/content/10.64898/2026.08.21.746347.full"
-      },
-      "evidence": [
-        {
-          "term": "first comprehensive benchmark",
-          "excerpt": "cal conservation over a wide range of datasets, before and after the addition of BatchRefiner. We extend these benchmarking approaches to provide the first comprehensive benchmark of batch integration for scATAC-seq embedding methods, including BatchRefiner. Importantly, we formalize a significance statistic, which we use to demonstrate BatchRefiner's significant improvement in batch integration across a wide range",
-          "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.21.746347.full"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "emble methods from statistical machine learning, and implement BatchRefiner, a fast post-processing tool to enhance batch integration. We extensively benchmark widely-used scRNA-seq embedding methods on both batch integration and biological conservation over a wide range of datasets, before and after the addition of BatchRefiner. We extend these benchmarking approaches to provide the first compre",
-          "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.21.746347.full"
-        },
-        {
-          "term": "benchmarking",
-          "excerpt": "s on both batch integration and biological conservation over a wide range of datasets, before and after the addition of BatchRefiner. We extend these benchmarking approaches to provide the first comprehensive benchmark of batch integration for scATAC-seq embedding methods, including BatchRefiner. Importantly, we formalize a significance statistic, which we use to demonstrate BatchRefiner's significa",
-          "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.21.746347.full"
-        },
-        {
-          "term": "biological",
-          "excerpt": "ity between experiments or batches. Many analysis methods thus seek to produce a low-dimensional cell-by-feature embedding space that groups together biologically similar cells across batches while distancing dissimilar cells. Here, we introduce ensemble refinement for scRNA-seq and scATAC-seq embeddings, inspired by ensemble methods from statistical machine learning, and implement BatchRefiner, a",
-          "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.21.746347.full"
-        },
-        {
-          "term": "single-cell",
-          "excerpt": "BatchRefiner: fast, significant improvement in batch integration of single-cell embeddings with ensemble refinement Data from single-cell RNA sequencing (scRNA-seq) and the Assay for Transposase-Accessible Chromatin (scATAC-seq) are high-dimensional, sparse, and undesirably capture technical variability between experi",
-          "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.21.746347.full"
-        }
-      ],
-      "related_benchmarks": [],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability"
-      ],
-      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 16,
-      "extraction_status": "incomplete",
-      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.08.21.746347.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
-      "content_hash": "8a0bf7fa2e1644f7566410a46947d4b91e6527b4e4fbf9fdffdd6995b1d1f325",
-      "is_seed": false,
-      "topic": "general_text",
-      "contribution_type": "new_benchmark"
-    },
-    {
       "id": "doi:10.64898/2026.08.19.745729",
       "slug": "doi-10-64898-2026-08-19-745729-ed89b70489",
       "kind": "paper",
@@ -1074,7 +2265,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 17,
+      "match_score": 23,
       "extraction_status": "incomplete",
       "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.08.19.745729.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
       "content_hash": "f0166e47f2ac26727db7f677f9a5d01df1e288020f522b2acce525b3190ada21",
@@ -1254,73 +2445,6 @@
       "content_hash": "d450d91adc0e12748e88d66bce936999902b92871a0cc0063d8b7bd2c20d834f",
       "is_seed": false,
       "topic": "multimodal",
-      "contribution_type": "new_benchmark"
-    },
-    {
-      "id": "doi:10.64898/2026.08.24.746620",
-      "slug": "doi-10-64898-2026-08-24-746620-c01a97c542",
-      "kind": "paper",
-      "title": "PhageLysData: an evidence-aware and AI-ready dataset of phage lytic enzymes and depolymerases",
-      "abstract": "Bacteriophage lytic enzymes and depolymerases are relevant to phage biology, antimicrobial development, and protein engineering, but their sequence and annotation data remain dispersed across general databases, specialized resources, genome-centred collections, and prediction-oriented datasets. We present PhageLysData, an evidence-aware and AI-ready resource constructed through reproducible multisource integration, provenance tracking, and exact-sequence consolidation. The release integrates 807,366 source observations from seven primary resources into 759,105 unique exact-sequence entities, comprising an evidence-supported Core of 11,867 entities, a Prediction Extension of 745,092 prediction-only candidates, and 2,146 Context entities retained for provenance and reference. This architecture preserves broad sequence-space coverage while maintaining a clear distinction between non-predictive and prediction-derived support. Core entities are enriched with harmonized biological annotations, physicochemical properties, independent InterProScan-derived functional annotations, mapped PDB and AlphaFold DB structural assets, and reusable numerical representations. For 11,259 eligible Core sequences, PhageLysData provides embeddings from 11 protein language models together with one-hot encoding under a common representation contract. Release-facing examples demonstrate latent-space exploration, unsupervised clustering, supervised classification, and evidence-aware candidate retrieval without defining a universal predictive benchmark. PhageLysData provides a traceable, versioned, and computationally accessible foundation for protein retrieval, comparative analysis, task-specific dataset construction, and machine-learning applications involving phage lytic enzymes and depolymerases.",
-      "authors": [
-        "Medina-Ortiz, D.",
-        "Olivera-Nappa, A.",
-        "Lienqueo, M. E.",
-        "Opazo, R.",
-        "Romero, J."
-      ],
-      "source": "biorxiv",
-      "published_at": "2026-08-25T00:00:00+00:00",
-      "updated_at": "2026-08-25T00:00:00+00:00",
-      "first_seen_at": "2026-08-28T07:13:33+00:00",
-      "event_at": "2026-08-28T08:57:06+00:00",
-      "priority": "P1",
-      "categories": [
-        "general_text"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "cc_by",
-      "identifiers": {
-        "doi": "10.64898/2026.08.24.746620"
-      },
-      "links": {
-        "abs": "https://www.biorxiv.org/content/10.64898/2026.08.24.746620",
-        "pdf": "https://www.biorxiv.org/content/10.64898/2026.08.24.746620.full.pdf",
-        "html": "https://www.biorxiv.org/content/10.64898/2026.08.24.746620.full"
-      },
-      "evidence": [
-        {
-          "term": "benchmark",
-          "excerpt": "space exploration, unsupervised clustering, supervised classification, and evidence-aware candidate retrieval without defining a universal predictive benchmark. PhageLysData provides a traceable, versioned, and computationally accessible foundation for protein retrieval, comparative analysis, task-specific dataset construction, and machine-learning applications involving phage lytic enzymes and d",
-          "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.24.746620.full"
-        },
-        {
-          "term": "biology",
-          "excerpt": ": an evidence-aware and AI-ready dataset of phage lytic enzymes and depolymerases Bacteriophage lytic enzymes and depolymerases are relevant to phage biology, antimicrobial development, and protein engineering, but their sequence and annotation data remain dispersed across general databases, specialized resources, genome-centred collections, and prediction-oriented datasets. We present PhageLys",
-          "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.24.746620.full"
-        },
-        {
-          "term": "biological",
-          "excerpt": "pace coverage while maintaining a clear distinction between non-predictive and prediction-derived support. Core entities are enriched with harmonized biological annotations, physicochemical properties, independent InterProScan-derived functional annotations, mapped PDB and AlphaFold DB structural assets, and reusable numerical representations. For 11,259 eligible Core sequences, PhageLysData provi",
-          "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.24.746620.full"
-        }
-      ],
-      "related_benchmarks": [],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability"
-      ],
-      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 13,
-      "extraction_status": "incomplete",
-      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.08.24.746620.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
-      "content_hash": "5cdc8a92a5ffc8e43809ee79941bbb1f4e4d0d55e387061882b9a682d39e35af",
-      "is_seed": false,
-      "topic": "general_text",
       "contribution_type": "new_benchmark"
     },
     {

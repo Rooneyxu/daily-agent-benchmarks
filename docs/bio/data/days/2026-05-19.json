@@ -1,7 +1,90 @@
 {
   "date": "2026-05-19",
-  "count": 1,
+  "count": 2,
   "entries": [
+    {
+      "id": "arxiv:2605.20537",
+      "slug": "arxiv-2605-20537-241a625405",
+      "kind": "paper",
+      "title": "What Do Biomedical NER and Entity Linking Benchmarks Measure? A Corpus-Centric Diagnostic Framework",
+      "abstract": "Biomedical named entity recognition (NER) and entity linking (EL) strongly depend on annotated corpora, but the utility of these resources for benchmarking is often assumed rather than characterized. We present a corpus-centric framework for diagnosing benchmark-relevant properties directly from corpus annotations, concept links, train-test splits, document metadata, and terminology mappings. The framework organizes standardized statistics into five families: (1) scale, density and label distribution, (2) lexical and conceptual structure, (3) train-test overlap, (4) metadata composition, and (5) terminology coverage where applicable. Applying the framework to nine corpora spanning diseases, chemicals, and cell types, we find that corpus properties can differ substantially, even when they address the same apparent task. We find differences in the evaluation signal they provide, the generalization demands they impose, the degree of train-test reuse they permit, and the regions of biomedical literature and concept space they represent. These differences suggest that commonly reported corpus statistics can be insufficient to characterize what biomedical NER and EL benchmarks evaluate. We argue that corpus-centric diagnostics provide a practical framework for analyzing corpora beyond surface descriptors such as corpus size and entity type, for identifying potential transfer risks, and for interpreting the scope of benchmarking conclusions. We release the framework as open-source code with an interactive dashboard to support reproducing our analyses and characterizing additional corpora.",
+      "authors": [
+        "Robert Leaman",
+        "Rezarta Islamaj",
+        "Zhiyong Lu"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-05-19T22:19:22+00:00",
+      "updated_at": "2026-05-19T22:19:22+00:00",
+      "first_seen_at": "2026-05-19T22:19:22+00:00",
+      "event_at": "2026-05-19T22:19:22+00:00",
+      "priority": "P2",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2605.20537"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2605.20537v1",
+        "pdf": "https://arxiv.org/pdf/2605.20537v1",
+        "html": "https://arxiv.org/html/2605.20537"
+      },
+      "evidence": [
+        {
+          "term": "we present",
+          "excerpt": "ty linking (EL) strongly depend on annotated corpora, but the utility of these resources for benchmarking is often assumed rather than characterized. We present a corpus-centric framework for diagnosing benchmark-relevant properties directly from corpus annotations, concept links, train-test splits, document metadata, and terminology mappings. The framework organizes standardized statistics into f",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2605.20537"
+        },
+        {
+          "term": "we release",
+          "excerpt": "escriptors such as corpus size and entity type, for identifying potential transfer risks, and for interpreting the scope of benchmarking conclusions. We release the framework as open-source code with an interactive dashboard to support reproducing our analyses and characterizing additional corpora. Biomedical named entity recognition (NER) and entity linking (EL) strongly depend on annotated corpo",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2605.20537"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "What Do Biomedical NER and Entity Linking Benchmarks Measure? A Corpus-Centric Diagnostic Framework Biomedical named entity recognition (NER) and entity linking (EL) strongly depend on annotated corpora, but the utility of these resources for benchmarking is often assumed rather than charac",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2605.20537"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "What Do Biomedical NER and Entity Linking Benchmarks Measure? A Corpus-Centric Diagnostic Framework Biomedical named entity recognition (NER) and entity linking (EL) strongly depend on annotated corpora, but the utility of these resources for benchmarking is often assumed rather than charact",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2605.20537"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "mework Biomedical named entity recognition (NER) and entity linking (EL) strongly depend on annotated corpora, but the utility of these resources for benchmarking is often assumed rather than characterized. We present a corpus-centric framework for diagnosing benchmark-relevant properties directly from corpus annotations, concept links, train-test splits, document metadata, and terminology mappings",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2605.20537"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "What Do Biomedical NER and Entity Linking Benchmarks Measure? A Corpus-Centric Diagnostic Framework Biomedical named entity recognition (NER) and entity linking (EL) strongly depend on annotated corpora, but the utility of these resources for benchmarking is",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2605.20537"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "match_score": 23,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "seed:2605.20537",
+      "is_seed": true,
+      "topic": "general_text",
+      "contribution_type": "audit"
+    },
     {
       "id": "arxiv:2605.20469",
       "slug": "arxiv-2605-20469-c7994b3dba",
@@ -70,7 +153,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 18,
+      "match_score": 21,
       "extraction_status": "metadata_only",
       "extraction_error": "",
       "content_hash": "seed:2605.20469",

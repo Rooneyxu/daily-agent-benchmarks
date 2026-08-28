@@ -1,6 +1,6 @@
 {
   "date": "2026-07-21",
-  "count": 3,
+  "count": 4,
   "entries": [
     {
       "id": "arxiv:2607.20572",
@@ -63,7 +63,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
-      "match_score": 21,
+      "match_score": 24,
       "extraction_status": "metadata_only",
       "extraction_error": "",
       "content_hash": "seed:2607.20572",
@@ -232,6 +232,87 @@
       "is_seed": true,
       "topic": "general_text",
       "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2607.18696",
+      "slug": "arxiv-2607-18696-7b5fe3c9c7",
+      "kind": "paper",
+      "title": "Do AI-Native Biotechs Need Departments? Benchmarking Company World Models for AI-Driven Drug Development",
+      "abstract": "AI-native biotechnology companies are often designed by copying human biotech org charts into agent roles. We argue for a different abstraction: a Company World Model, defined as a persistent asset-to-value state representation with transition models, explicit value functions, planning, and updating across scientific, regulatory, BD, commercial, financial, and execution constraints. We introduce a dry-lab benchmark for testing whether AI-agent organizations should mimic departments or operate around such a world model. The benchmark contains 45 retrospective public-information decision cases with strict time cutoffs, hidden outcomes, common schemas, automatic scoring, and blinded pairwise judging. We compare human-org-mimic, stronger human-org-mimic-plus, AI-native asset-centric, and AI-native value-conversion architectures. The value-conversion architecture is a prompt-level approximation of a Company World Model: a Live Asset Value Record updated by Deal, Approval, Revenue, and Investment Arbiter loops. Under a success function defined by external BD, regulatory approval and launch, and revenue discipline, it achieved the highest automatic value-conversion score and was strongly preferred over the original baselines by value-specific blinded judges. Stress tests narrowed the claim: a stronger human baseline remained competitive, and a neutral judge did not show robust value-conversion dominance. Codex-only mechanistic ablations suggest that Revenue Room, Deal Room, and Approval Room carry useful work under the target objective. The central finding is objective-sensitive: departments may remain useful governance views, but the core AI-native operating primitive should be a shared, predictive asset-to-value state rather than a static human org chart. The study is dry-lab only and does not establish real-world drug success, clinical benefit, or revenue prediction accuracy.",
+      "authors": [
+        "Yinan Wang"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-07-21T04:34:35+00:00",
+      "updated_at": "2026-07-21T04:34:35+00:00",
+      "first_seen_at": "2026-07-21T04:34:35+00:00",
+      "event_at": "2026-07-21T04:34:35+00:00",
+      "priority": "P0",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2607.18696"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.18696v1",
+        "pdf": "https://arxiv.org/pdf/2607.18696v1",
+        "html": "https://arxiv.org/html/2607.18696"
+      },
+      "evidence": [
+        {
+          "term": "We introduce a dry-lab benchmark",
+          "excerpt": "nsition models, explicit value functions, planning, and updating across scientific, regulatory, BD, commercial, financial, and execution constraints. We introduce a dry-lab benchmark for testing whether AI-agent organizations should mimic departments or operate around such a world model. The benchmark contains 45 retrospective public-information decision cases with strict time cutoffs, hidden outcomes, common schemas,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2607.18696"
+        },
+        {
+          "term": "benchmark contains",
+          "excerpt": "aints. We introduce a dry-lab benchmark for testing whether AI-agent organizations should mimic departments or operate around such a world model. The benchmark contains 45 retrospective public-information decision cases with strict time cutoffs, hidden outcomes, common schemas, automatic scoring, and blinded pairwise judging. We compare human-org-mimic, stronger human-org-mimic-plus, AI-native asset-centr",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2607.18696"
+        },
+        {
+          "term": "automatic scoring",
+          "excerpt": "h a world model. The benchmark contains 45 retrospective public-information decision cases with strict time cutoffs, hidden outcomes, common schemas, automatic scoring, and blinded pairwise judging. We compare human-org-mimic, stronger human-org-mimic-plus, AI-native asset-centric, and AI-native value-conversion architectures. The value-conversion architecture is a prompt-level approximation of a Company",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2607.18696"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Do AI-Native Biotechs Need Departments? Benchmarking Company World Models for AI-Driven Drug Development AI-native biotechnology companies are often designed by copying human biotech org charts into agent roles. We argue for a different abstraction: a Company World Model, defined as a per",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2607.18696"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "Do AI-Native Biotechs Need Departments? Benchmarking Company World Models for AI-Driven Drug Development AI-native biotechnology companies are often designed by copying human biotech org charts into agent roles. We argue for a different abstraction: a Company World Model, defined as a persis",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2607.18696"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "ared, predictive asset-to-value state rather than a static human org chart. The study is dry-lab only and does not establish real-world drug success, clinical benefit, or revenue prediction accuracy. AI-native biotechnology companies are often designed by copying human biotech org charts into agent roles. We argue for a different abstraction: a Company World Model, defined as a persistent asset-",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2607.18696"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "match_score": 21,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "metadata:arxiv:2607.18696",
+      "is_seed": true,
+      "topic": "general_text",
+      "contribution_type": "methodology"
     }
   ]
 }

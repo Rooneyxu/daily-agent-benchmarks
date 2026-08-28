@@ -1,6 +1,6 @@
 {
   "date": "2026-07-09",
-  "count": 1,
+  "count": 2,
   "entries": [
     {
       "id": "arxiv:2607.08758",
@@ -85,13 +85,84 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 24,
+      "match_score": 27,
       "extraction_status": "metadata_only",
       "extraction_error": "",
       "content_hash": "seed:2607.08758",
       "is_seed": true,
       "topic": "general_text",
       "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2607.08203",
+      "slug": "arxiv-2607-08203-bb3a3e16f5",
+      "kind": "paper",
+      "title": "Metrics or Mirage? An Audit of Evaluation Inconsistencies in Colonoscopy Polyp Segmentation Benchmarks",
+      "abstract": "Progress in colonoscopy polyp segmentation is routinely reported through leaderboard comparisons on a small set of public benchmarks. We argue that this apparent progress is difficult to verify: a systematic audit of \\textbf{27 papers} published between 2015 and 2026 reveals three structural problems in how the community evaluates models. \\textbf{First}, 25 of 27 papers \\textit{omit the Hausdorff distance}. Hausdorff distance is a boundary-accuracy metric with direct clinical relevance for detecting flat or small polyps, and is a standard in radiotherapy segmentation. \\textbf{Second}, at least five \\textit{incompatible train/test split protocols} co-exist across papers reporting results on the same two datasets (Kvasir-SEG and CVC-ClinicDB), making published Dice scores non-comparable even when they appear in the same leaderboard column. \\textbf{Third}, 26 of 27 papers make \\textit{performance claims without any statistical significance test}. Strikingly, four papers published \\emph{after} the Metrics Reloaded framework~\\cite{metricsreloaded2024} (Maier-Hein et al., \\textit{Nature Methods} 2024) perpetuate these same problems, suggesting that general-purpose metric guidance has not yet reached the colonoscopy sub-community. To show these problems are not merely cosmetic, we re-evaluate five representative models under three controlled protocols with a single uniform scorer, and find that the reported metric conceals large boundary and recall failures, that the ``best'' model changes with the metric, and that near-tied rankings reverse across random splits. We propose a five-point \\textbf{Polyp Segmentation Reporting Checklist}~(PSRC) as a lightweight, domain-adapted corrective.",
+      "authors": [
+        "Aisha Urooj",
+        "Zain Ul Abdien",
+        "Neelu Madan"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-07-09T08:01:55+00:00",
+      "updated_at": "2026-07-09T08:01:55+00:00",
+      "first_seen_at": "2026-07-09T08:01:55+00:00",
+      "event_at": "2026-07-09T08:01:55+00:00",
+      "priority": "P2",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2607.08203"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.08203v1",
+        "pdf": "https://arxiv.org/pdf/2607.08203v1",
+        "html": "https://arxiv.org/html/2607.08203"
+      },
+      "evidence": [
+        {
+          "term": "Audit of Evaluation Inconsistencies in Colonoscopy Polyp Segmentation Benchmarks",
+          "excerpt": "Metrics or Mirage? An Audit of Evaluation Inconsistencies in Colonoscopy Polyp Segmentation Benchmarks Progress in colonoscopy polyp segmentation is routinely reported through leaderboard comparisons on a small set of public benchmarks. We argue that this apparent progress is difficult to verify: a systematic audit of \\textbf{27 papers} pub",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2607.08203"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Metrics or Mirage? An Audit of Evaluation Inconsistencies in Colonoscopy Polyp Segmentation Benchmarks Progress in colonoscopy polyp segmentation is routinely reported through leaderboard comparisons on a small set of public benchmarks. We argue that this apparent progress is difficult to verify: a systematic audit of \\textbf{27 papers} pu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2607.08203"
+        },
+        {
+          "term": "leaderboard",
+          "excerpt": "t of Evaluation Inconsistencies in Colonoscopy Polyp Segmentation Benchmarks Progress in colonoscopy polyp segmentation is routinely reported through leaderboard comparisons on a small set of public benchmarks. We argue that this apparent progress is difficult to verify: a systematic audit of \\textbf{27 papers} published between 2015 and 2026 reveals three structural problems in how the community e",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2607.08203"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "evaluates models. \\textbf{First}, 25 of 27 papers \\textit{omit the Hausdorff distance}. Hausdorff distance is a boundary-accuracy metric with direct clinical relevance for detecting flat or small polyps, and is a standard in radiotherapy segmentation. \\textbf{Second}, at least five \\textit{incompatible train/test split protocols} co-exist across papers reporting results on the same two datasets",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2607.08203"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "match_score": 16,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "metadata:arxiv:2607.08203",
+      "is_seed": true,
+      "topic": "general_text",
+      "contribution_type": "audit"
     }
   ]
 }

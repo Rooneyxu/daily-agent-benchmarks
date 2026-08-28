@@ -1,6 +1,6 @@
 {
   "date": "2026-07-28",
-  "count": 1,
+  "count": 2,
   "entries": [
     {
       "id": "arxiv:2607.25700",
@@ -74,6 +74,87 @@
       "is_seed": true,
       "topic": "biosafety",
       "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2607.25589",
+      "slug": "arxiv-2607-25589-86cbde21c4",
+      "kind": "paper",
+      "title": "Forensic Reproducibility Audit of a Radiology Vision-Language Model Benchmark: From Intended Protocol to Released Artifact",
+      "abstract": "Medical-imaging AI benchmarks combine datasets, DICOM rendering, prompts, provider APIs, automated labels, statistical code, manuscripts, and repository releases. Agreement across these artifacts is usually assumed rather than tested. We performed a retrospective forensic reproducibility audit of a preserved chest-radiograph vision-language model (VLM) pilot; no model was called again and no image or report was newly annotated. We traced prompt bindings, DICOM metadata, output completeness, label extraction, matched analyses, and release propagation. Of 300 planned model-prompt calls, 297 yielded nonempty reports. Sixty Claude calls labeled A/B were executed with the same C prompt. The 30 studies represented 28 patients. Four MONOCHROME1 images were rendered without required polarity inversion, dataset split membership was not retained, and the unvalidated extractor truncated five reports to 4000 characters. Reconstructing one common cohort of 369 complete case-finding blocks changed Cochran's Q from 154.73 to 182.29. Of 45 McNemar comparisons, 27 had unadjusted p < 0.05 and 20 remained below 0.05 after Holm adjustment. These values describe only the archived automated-label matrix; they do not recover the intended prompt comparison or establish clinical performance. We withdraw the original performance, ranking, prompt-effect, and clinical claims and specify machine-verifiable controls for cohort, DICOM rendering, prompt and model identity, call status, annotation provenance, keyed analysis, and derived artifacts.",
+      "authors": [
+        "Mateusz Kozłowski"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-07-28T11:19:38+00:00",
+      "updated_at": "2026-08-10T21:09:30+00:00",
+      "first_seen_at": "2026-07-28T11:19:38+00:00",
+      "event_at": "2026-07-28T11:19:38+00:00",
+      "priority": "P2",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2607.25589"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.25589v2",
+        "pdf": "https://arxiv.org/pdf/2607.25589v2",
+        "html": "https://arxiv.org/html/2607.25589"
+      },
+      "evidence": [
+        {
+          "term": "Audit of a Radiology Vision-Language Model Benchmark",
+          "excerpt": "Forensic Reproducibility Audit of a Radiology Vision-Language Model Benchmark: From Intended Protocol to Released Artifact Medical-imaging AI benchmarks combine datasets, DICOM rendering, prompts, provider APIs, automated labels, statistical code, manuscripts, and repository releases. Agreement across these artifact",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2607.25589"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "Forensic Reproducibility Audit of a Radiology Vision-Language Model Benchmark: From Intended Protocol to Released Artifact Medical-imaging AI benchmarks combine datasets, DICOM rendering, prompts, provider APIs, automated labels, statistical code, manuscripts, and repository releases. Agreement across these artifacts is usually assumed rather than tested. We performed a retrospective foren",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2607.25589"
+        },
+        {
+          "term": "medical",
+          "excerpt": "Forensic Reproducibility Audit of a Radiology Vision-Language Model Benchmark: From Intended Protocol to Released Artifact Medical-imaging AI benchmarks combine datasets, DICOM rendering, prompts, provider APIs, automated labels, statistical code, manuscripts, and repository releases. Agreement across these artifacts is usually assumed rather than tested. We performed",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2607.25589"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "fter Holm adjustment. These values describe only the archived automated-label matrix; they do not recover the intended prompt comparison or establish clinical performance. We withdraw the original performance, ranking, prompt-effect, and clinical claims and specify machine-verifiable controls for cohort, DICOM rendering, prompt and model identity, call status, annotation provenance, keyed analys",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2607.25589"
+        },
+        {
+          "term": "medical-imaging",
+          "excerpt": "Forensic Reproducibility Audit of a Radiology Vision-Language Model Benchmark: From Intended Protocol to Released Artifact Medical-imaging AI benchmarks combine datasets, DICOM rendering, prompts, provider APIs, automated labels, statistical code, manuscripts, and repository releases. Agreement across these artifacts is usually assumed rather than tested. We performed a retro",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2607.25589"
+        },
+        {
+          "term": "Vision-Language",
+          "excerpt": "Forensic Reproducibility Audit of a Radiology Vision-Language Model Benchmark: From Intended Protocol to Released Artifact Medical-imaging AI benchmarks combine datasets, DICOM rendering, prompts, provider APIs, automated labels, statistical code, manuscripts, and repository releases. Agreement acros",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2607.25589"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "match_score": 25,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "metadata:arxiv:2607.25589",
+      "is_seed": true,
+      "topic": "multimodal",
+      "contribution_type": "audit"
     }
   ]
 }

@@ -1,0 +1,81 @@
+{
+  "date": "2026-06-08",
+  "count": 1,
+  "entries": [
+    {
+      "id": "arxiv:2606.10066",
+      "slug": "arxiv-2606-10066-c96016600b",
+      "kind": "paper",
+      "title": "A Controlled Audit of Pretraining Contamination in Public Medical Vision-Language Benchmarks",
+      "abstract": "Medical vision-language models (VLMs) are evaluated on public benchmarks whose images and question-answer pairs have been freely downloadable for years, yet reported accuracy assumes these examples were absent from pretraining. We audit open VLMs on SLAKE-En, PathVQA, VQA-RAD, and an auxiliary public OmniMedVQA mirror using four detector families: image-side near-neighbour overlap against PMC-OA-beta, canonical-order exchangeability, cohort-relative Min-K%++ tail enrichment, and cross-model top-K overlap. We find measurable image-side source overlap on SLAKE-En: 19.8% of images are flagged under SigLIP-B-16 and 4.2% under SigLIP-SO400M, while out-of-domain controls produce 0/2000 flags. Manual adjudication shows same-modality, same-projection matches to different patients rather than verified pixel-level duplicates, so we interpret this as source or distributional overlap rather than confirmed per-image memorization. On the text side, Qwen2.5-VL on SLAKE-En shows a canonical-order exchangeability signal that survives ordering ablation and external non-medical baselines. On the OmniMedVQA mirror, exchangeability fires for five medical and general VLMs while BLIP-2 remains clean. In contrast, cohort-relative Min-K%++ tail enrichment and cross-model top-K overlap collapse under an external pre-domain baseline: BLIP-2 reproduces the apparent positive signals despite lacking plausible medical-VQA exposure. We conclude that these cohort-relative detectors are unreliable as standalone membership-inference signals on small medical-VLM cohorts.",
+      "authors": [
+        "Bruce Changlong Xu",
+        "Lan Wu",
+        "Alexander Ryu"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-06-08T18:40:10+00:00",
+      "updated_at": "2026-06-08T18:40:10+00:00",
+      "first_seen_at": "2026-06-08T18:40:10+00:00",
+      "event_at": "2026-06-08T18:40:10+00:00",
+      "priority": "P2",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2606.10066"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.10066v1",
+        "pdf": "https://arxiv.org/pdf/2606.10066v1",
+        "html": "https://arxiv.org/html/2606.10066"
+      },
+      "evidence": [
+        {
+          "term": "Audit of Pretraining Contamination in Public Medical Vision-Language Benchmarks",
+          "excerpt": "A Controlled Audit of Pretraining Contamination in Public Medical Vision-Language Benchmarks Medical vision-language models (VLMs) are evaluated on public benchmarks whose images and question-answer pairs have been freely downloadable for years, yet reported accuracy assumes these examples were absent from pretraining. We audit op",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2606.10066"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "A Controlled Audit of Pretraining Contamination in Public Medical Vision-Language Benchmarks Medical vision-language models (VLMs) are evaluated on public benchmarks whose images and question-answer pairs have been freely downloadable for years, yet reported accuracy assumes these examples were absent from pretraining. We audit o",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2606.10066"
+        },
+        {
+          "term": "medical",
+          "excerpt": "A Controlled Audit of Pretraining Contamination in Public Medical Vision-Language Benchmarks Medical vision-language models (VLMs) are evaluated on public benchmarks whose images and question-answer pairs have been freely downloadable for years, yet reported accuracy assumes these examples were absent fr",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2606.10066"
+        },
+        {
+          "term": "Vision-Language",
+          "excerpt": "A Controlled Audit of Pretraining Contamination in Public Medical Vision-Language Benchmarks Medical vision-language models (VLMs) are evaluated on public benchmarks whose images and question-answer pairs have been freely downloadable for years, yet reported accuracy assumes these examples were absent from pretraining",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2606.10066"
+        }
+      ],
+      "related_benchmarks": [
+        "PathVQA",
+        "VQA",
+        "OmniMedVQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "match_score": 15,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "metadata:arxiv:2606.10066",
+      "is_seed": true,
+      "topic": "multimodal",
+      "contribution_type": "audit"
+    }
+  ]
+}

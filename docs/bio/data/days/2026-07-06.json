@@ -1,0 +1,147 @@
+{
+  "date": "2026-07-06",
+  "count": 2,
+  "entries": [
+    {
+      "id": "arxiv:2607.05084",
+      "slug": "arxiv-2607-05084-8d561b9d8e",
+      "kind": "paper",
+      "title": "Rethinking Benchmarks and Models for Enzyme Specificity Prediction",
+      "abstract": "Artificial Intelligence has had a profound impact on the biological sciences, and in particular has accelerated research on protein form and function. Enzymes are no exception: a surge of predictive models have been recently developed to address a range of enzyme tasks. Models addressing enzyme-substrate (ES) or enzyme-reaction (ER) compatibility could be especially valuable for enzyme annotation, biosynthetic pathway elucidation, and biocatalyst retrieval, the central challenge of which is the identification of a true catalyst (or truly compatible reaction) among many similar candidates. While existing models report strong performance on alternative benchmarks, less is known about their capabilities in this regime. Herein, we benchmark four recently released ES and ER prediction models, using tasks and datasets tailored to this setting. We first show that two representative ES prediction models perform near random baselines across two enzyme families when considering enzymes and substrates not encountered during training. To evaluate additional models across a consistent dataset, we next assemble the largest cytochrome P450 (CYP) reaction dataset to date, 2,922 reactions across 768 enzymes, and construct a CYP ranking benchmark requiring the correct enzyme to be prioritized among all CYPs in its native organism. We again find that most models do not outperform sequence-based (BLAST) baselines even after fine-tuning. We finally adapt the bimolecular structure prediction model Boltz to ES prediction by training supervised classifiers on residue-ligand pair embeddings, and show that this approach consistently surpasses the BLAST baselines on our CYP ranking benchmark. Together, our results argue for more discovery-relevant benchmarking and suggest that interaction-aware representations from full biomolecular complexes may provide a promising basis for enzyme prioritization.",
+      "authors": [
+        "Elizabeth H. Mahood",
+        "Natália Komorníková",
+        "Tomáš Pluskal",
+        "Pranam Chatterjee"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-07-06T13:48:02+00:00",
+      "updated_at": "2026-07-06T13:48:02+00:00",
+      "first_seen_at": "2026-07-06T13:48:02+00:00",
+      "event_at": "2026-07-06T13:48:02+00:00",
+      "priority": "P2",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2607.05084"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.05084v1",
+        "pdf": "https://arxiv.org/pdf/2607.05084v1",
+        "html": "https://arxiv.org/html/2607.05084"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "Rethinking Benchmarks and Models for Enzyme Specificity Prediction Artificial Intelligence has had a profound impact on the biological sciences, and in particular has accelerated research on protein form and function. Enzymes are no exception: a surge of predi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2607.05084"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "Rethinking Benchmarks and Models for Enzyme Specificity Prediction Artificial Intelligence has had a profound impact on the biological sciences, and in particular has accelerated research on protein form and function. Enzymes are no exception: a surge of predic",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2607.05084"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "w that this approach consistently surpasses the BLAST baselines on our CYP ranking benchmark. Together, our results argue for more discovery-relevant benchmarking and suggest that interaction-aware representations from full biomolecular complexes may provide a promising basis for enzyme prioritization. Artificial Intelligence has had a profound impact on the biological sciences, and in particular ha",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2607.05084"
+        },
+        {
+          "term": "biological",
+          "excerpt": "Rethinking Benchmarks and Models for Enzyme Specificity Prediction Artificial Intelligence has had a profound impact on the biological sciences, and in particular has accelerated research on protein form and function. Enzymes are no exception: a surge of predictive models have been recently developed to address a range of enzyme tasks. Models addressing enzyme-substrate (",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2607.05084"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "match_score": 22,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "seed:2607.05084",
+      "is_seed": true,
+      "topic": "general_text",
+      "contribution_type": "audit"
+    },
+    {
+      "id": "doi:10.21203/rs.3.rs-10064275/v1",
+      "slug": "doi-10-21203-rs-3-rs-10064275-v1-1bfa1a9a43",
+      "kind": "paper",
+      "title": "Can Large Language Models Detect Contradicted Biomedical Evidence? A Dual-Annotator Benchmark Audit",
+      "abstract": "<title>Abstract</title>  <p>Background: Biomedical question answering systems increasingly use retrieval-augmented generation, yet generated answers may be unsupported by, or actively contradict, retrieved evidence. In the configurations tested in this study, all LLM verifiers substantially under-detected gold contradictions, with the best automated recall only 5/23 (21.7%). We audited this failure mode and tested whether knowledge-graph-guided reranking improved answer accuracy. <h4>Methods:</h4> We evaluated KG-guided reranking (KG-RRAG) against standard RAG on 300 PubMedQA questions. We also constructed Set B (n = 150) for evidence-answer verification: supported = 81, insufficient = 46, contradicted = 23. Verifiers included GPT-5.5, DeepSeek-v4-pro and glm-5.1 prompt configurations, DistilBERT-MNLI, PubMedBERT-MedNLI, rule-based, hybrid, and proxy baselines. A second human annotator provided a blind first-pass sample and a focused contradiction review. <h4>Results:</h4> KG-RRAG did not improve answer accuracy (0.500 vs. 0.510; McNemar p = 0.766; 95% CI for \\((\\Delta)\\)[\\((-)\\)0.053, +0.033]). The best automated configuration, E1-glm-5.1, detected 5/23 contradictions (Wilson 95% CI [9.6%, 42.2%]). GPT-5.5 achieved three-way accuracy 0.6067, macro-F1 0.5216, \\((\\kappa)\\) = 0.3566, and contradiction recall 4/23 (Wilson 95% CI [6.9%, 36.8%]). DeepSeek E1 detected 3/23, DeepSeek V2.1 detected 1/23, and PubMedBERT-MedNLI detected 2/23 contradictions. Human2 detected 0/7 contradictions in a blind sample30 first pass but 13/23 in a focused, known-contradiction review; these protocols are not directly comparable. H2-vs-GPT-5.5 \\((\\kappa)\\) = 0.6053 reflected shared conservative agreement rather than correctness validation. <h4>Conclusions:</h4> The tested automated verifiers showed substantial contradiction under-detection, mainly absorbing contradicted cases into insufficient. Current LLM-based verification may support offline audit and system comparison, but these results do not establish clinical readiness for autonomous contradiction screening.</p>",
+      "authors": [
+        "Chen x."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-07-06T00:00:00+00:00",
+      "updated_at": "2026-07-09T00:00:00+00:00",
+      "first_seen_at": "2026-07-06T00:00:00+00:00",
+      "event_at": "2026-07-06T00:00:00+00:00",
+      "priority": "P2",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc by",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-10064275/v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1274755"
+      },
+      "evidence": [
+        {
+          "term": "Benchmark Audit",
+          "excerpt": "Can Large Language Models Detect Contradicted Biomedical Evidence? A Dual-Annotator Benchmark Audit <title>Abstract</title> <p>Background: Biomedical question answering systems increasingly use retrieval-augmented generation, yet generated answers may be unsupported by, or actively contradict, retrieved evidence. In the configurations t",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1274755"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Can Large Language Models Detect Contradicted Biomedical Evidence? A Dual-Annotator Benchmark Audit <title>Abstract</title> <p>Background: Biomedical question answering systems increasingly use retrieval-augmented generation, yet generated answers may be unsupported by, or actively contradict, retrieved evidence. In the configurat",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1274755"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "Can Large Language Models Detect Contradicted Biomedical Evidence? A Dual-Annotator Benchmark Audit <title>Abstract</title> <p>Background: Biomedical question answering systems increasingly use retrieval-augmented generation, yet generated answers may be unsupported by, or actively contradict,",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1274755"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "tradicted cases into insufficient. Current LLM-based verification may support offline audit and system comparison, but these results do not establish clinical readiness for autonomous contradiction screening.</p> <title>Abstract</title> <p>Background: Biomedical question answering systems increasingly use retrieval-augmented generation, yet generated answers may be unsupported by, or actively c",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1274755"
+        }
+      ],
+      "related_benchmarks": [
+        "PubMedQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "match_score": 16,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "metadata:doi:10.21203/rs.3.rs-10064275/v1",
+      "is_seed": true,
+      "topic": "general_text",
+      "contribution_type": "audit"
+    }
+  ]
+}
