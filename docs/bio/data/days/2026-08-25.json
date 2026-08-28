@@ -1,0 +1,578 @@
+{
+  "date": "2026-08-25",
+  "count": 7,
+  "entries": [
+    {
+      "id": "arxiv:2608.25114",
+      "slug": "arxiv-2608-25114-3f8d2598a5",
+      "kind": "paper",
+      "title": "Flower Hub: A Reproducible Benchmarking Platform for Federated Learning in Simulation and Deployment",
+      "abstract": "Federated learning (FL) has emerged as a key approach for training models across decentralized data, yet benchmarking in FL remains difficult to reproduce, compare, and extend. Existing evaluations are often tied to custom infrastructure, released as incomplete research code, and conducted primarily in simulation, which limits portability and practical relevance. We present Flower Hub, a platform for publishing, discovering, and executing decentralized and federated applications. We show how it enables reproducible benchmarking by packaging benchmarks as executable, versioned applications with standardized metadata, pinned dependencies, and explicit evaluation workflows. We instantiate this approach with a multi-domain benchmark suite spanning cross-silo and cross-device settings, and including tasks in medical imaging, financial tabular learning, legal instruction tuning, phishing URL detection, and audio tagging. We further demonstrate that the same benchmarking application can run across both simulation and deployment runtimes without changing the application code, enabling unified evaluation across varying learning environments. Beyond model quality, our benchmark design supports system-aware reporting, including runtime and communication metrics. This work advances benchmarking in FL settings from ad hoc code artifacts towards portable, executable, and reusable benchmark applications.",
+      "authors": [
+        "Yan Gao",
+        "Mohammad Naseri",
+        "Javier Fernandez-Marques",
+        "Dimitris Stripelis",
+        "Lorenzo Sani",
+        "Davide Eynard",
+        "Fan Zhang",
+        "Hong Jia",
+        "Ting Dang",
+        "D. B. Emerson",
+        "Fatemeh Tavakoli",
+        "Ole Werger",
+        "Lars Wulfert",
+        "Petros Demetrakopoulos",
+        "Sofia Tsekeridou",
+        "InSeo Song",
+        "KangYoon Lee",
+        "Honghao Li",
+        "Lingjuan Lyu",
+        "John P Dickerson",
+        "Daniel Janes Beutel",
+        "Nicholas D. Lane"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-25T20:09:44Z",
+      "updated_at": "2026-08-25T20:09:44Z",
+      "priority": "P0",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.25114"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.25114v1",
+        "html": "https://arxiv.org/html/2608.25114",
+        "pdf": "https://arxiv.org/pdf/2608.25114v1"
+      },
+      "evidence": [
+        {
+          "term": "Reproducible Benchmarking Platform",
+          "location": "Abstract / metadata",
+          "excerpt": "Flower Hub: A Reproducible Benchmarking Platform for Federated Learning in Simulation and Deployment Federated learning (FL) has emerged as a key approach for training models across decentralized data, yet benchmarking in FL remains difficult to reproduce, compare, and extend. Existing e",
+          "source_url": "https://arxiv.org/html/2608.25114"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "Flower Hub: A Reproducible Benchmarking Platform for Federated Learning in Simulation and Deployment Federated learning (FL) has emerged as a key approach for training models across decentralized data, yet benchmarking in FL remains difficult to reproduce, compare, and extend",
+          "source_url": "https://arxiv.org/html/2608.25114"
+        },
+        {
+          "term": "benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "rm for publishing, discovering, and executing decentralized and federated applications. We show how it enables reproducible benchmarking by packaging benchmarks as executable, versioned applications with standardized metadata, pinned dependencies, and explicit evaluation workflows. We instantiate this approach with a multi-domain benchmark suite spanning cross-silo and cross-device settings, and i",
+          "source_url": "https://arxiv.org/html/2608.25114"
+        },
+        {
+          "term": "benchmarking",
+          "location": "Abstract / metadata",
+          "excerpt": "Flower Hub: A Reproducible Benchmarking Platform for Federated Learning in Simulation and Deployment Federated learning (FL) has emerged as a key approach for training models across decentralized data, yet benchmarking in FL remains difficult to reproduce, compare, and extend. E",
+          "source_url": "https://arxiv.org/html/2608.25114"
+        },
+        {
+          "term": "medical",
+          "location": "Abstract / metadata",
+          "excerpt": "ion workflows. We instantiate this approach with a multi-domain benchmark suite spanning cross-silo and cross-device settings, and including tasks in medical imaging, financial tabular learning, legal instruction tuning, phishing URL detection, and audio tagging. We further demonstrate that the same benchmarking application can run across both simulation and deployment runtimes without changing",
+          "source_url": "https://arxiv.org/html/2608.25114"
+        },
+        {
+          "term": "medical imaging",
+          "location": "Abstract / metadata",
+          "excerpt": "ion workflows. We instantiate this approach with a multi-domain benchmark suite spanning cross-silo and cross-device settings, and including tasks in medical imaging, financial tabular learning, legal instruction tuning, phishing URL detection, and audio tagging. We further demonstrate that the same benchmarking application can run across both simulation and deployment runtimes without changing the app",
+          "source_url": "https://arxiv.org/html/2608.25114"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "match_score": 19,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "metadata:arxiv:2608.25114",
+      "is_seed": true,
+      "topic": "general_text",
+      "contribution_type": "methodology"
+    },
+    {
+      "id": "arxiv:2608.25085",
+      "slug": "arxiv-2608-25085-d5d4426764",
+      "kind": "paper",
+      "title": "MTDiag: A Multi-Turn Diagnostic Dataset Towards Clinically Meaningful LLM Evaluation",
+      "abstract": "Clinical diagnosis is fundamentally interactive and incremental, yet the dominant paradigm for evaluating Large Language Models (LLMs) in medicine remains static QA benchmarks or template-based dialogues. These benchmarks say little about whether a model can serve as a diagnostic agent in a dynamic clinical encounter, with LLMs showing significant accuracy and reliability degradation in multi-turn settings. To address this issue, we present MTDiag, a large multi-turn diagnostic dialogue dataset constructed from three heterogeneous sources: DDXPlus, MIMIC-IV, and published case reports (AJCR), covering common ED presentations as well as long-tail rare and atypical conditions. All cases are normalized into a canonical schema anchored in the most comprehensive and widely-adopted medical knowledge bases (UMLS concept identifiers, with ICD-10 diagnosis codes). We release the schema, a UserLM-8B-based utterance-generation pipeline, and the physician-validated dataset that converts structured clinical evidence into natural-language utterances. Importantly, we introduce and motivate clinical knowledge-grounded metrics for evaluating LLMs as diagnostic agents, beyond diagnostic accuracy, for the task of multi-turn differential diagnosis.",
+      "authors": [
+        "Pia Chouayfati",
+        "Alexander M. Fichtl",
+        "Miriam Anschütz",
+        "George Doumat",
+        "Georg Groh"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-25T19:27:10+00:00",
+      "updated_at": "2026-08-25T19:27:10+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.25085"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.25085v1",
+        "pdf": "https://arxiv.org/pdf/2608.25085v1",
+        "code": "https://github.com/piachouaifaty/MTDiag",
+        "html": "https://arxiv.org/html/2608.25085"
+      },
+      "evidence": [
+        {
+          "term": "we present MTDiag, a large multi-turn diagnostic dialogue dataset",
+          "excerpt": "nt in a dynamic clinical encounter, with LLMs showing significant accuracy and reliability degradation in multi-turn settings. To address this issue, we present MTDiag, a large multi-turn diagnostic dialogue dataset constructed from three heterogeneous sources: DDXPlus, MIMIC-IV, and published case reports (AJCR), covering common ED presentations as well as long-tail rare and atypical conditions. All cases are normalized into a canonical schema anchor",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25085"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "sis is fundamentally interactive and incremental, yet the dominant paradigm for evaluating Large Language Models (LLMs) in medicine remains static QA benchmarks or template-based dialogues. These benchmarks say little about whether a model can serve as a diagnostic agent in a dynamic clinical encounter, with LLMs showing significant accuracy and reliability degradation in multi-turn settings. To",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25085"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "sis is fundamentally interactive and incremental, yet the dominant paradigm for evaluating Large Language Models (LLMs) in medicine remains static QA benchmarks or template-based dialogues. These benchmarks say little about whether a model can serve as a diagnostic agent in a dynamic clinical encounter, with LLMs showing significant accuracy and reliability degradation in multi-turn settings. To a",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25085"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "Evaluation Clinical diagnosis is fundamentally interactive and incremental, yet the dominant paradigm for evaluating Large Language Models (LLMs) in medicine remains static QA benchmarks or template-based dialogues. These benchmarks say little about whether a model can serve as a diagnostic agent in a dynamic clinical encounter, with LLMs showing significant accuracy and reliability degradation",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25085"
+        },
+        {
+          "term": "medical",
+          "excerpt": "ell as long-tail rare and atypical conditions. All cases are normalized into a canonical schema anchored in the most comprehensive and widely-adopted medical knowledge bases (UMLS concept identifiers, with ICD-10 diagnosis codes). We release the schema, a UserLM-8B-based utterance-generation pipeline, and the physician-validated dataset that converts structured clinical evidence into natural-la",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25085"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "MTDiag: A Multi-Turn Diagnostic Dataset Towards Clinically Meaningful LLM Evaluation Clinical diagnosis is fundamentally interactive and incremental, yet the dominant paradigm for evaluating Large Language Models (LLMs) in medicine remains static QA benchmarks or template-based dialogues. These",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25085"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "presentations. We draw on four official modules (Hosp, ED, Note) and two community extensions (BHC hospital course narratives; CDM curated abdominal pathology cases). The target population is patients who walk into an ED of their own volition and could plausibly interact with an LLM instead. From 425,087 raw ED visits, we sequentially exclude ambulance arrivals, visits with pain score above 8/10",
+          "location": "4.1.2 MIMIC-IV",
+          "source_url": "https://arxiv.org/html/2608.25085"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "static benchmarks degrade substantially when required to elicit information across a multi-turn encounter. AI Hospital Fan et al. (2025) and the JAMA multi-agent framework Sangwon et al. (2025) further surface reliability and consistency failures in interactive settings. Arias-Duart et al. (2025) propose automatic evaluation of healthcare LLMs beyond question-answering, and implement a range of sub",
+          "location": "2.1 The Diagnostic Encounter as a Dialogue Modeling Task",
+          "source_url": "https://arxiv.org/html/2608.25085"
+        }
+      ],
+      "related_benchmarks": [
+        "PubMedQA",
+        "MedQA",
+        "MedMCQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 23,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "51e3dbc296543ab6960c72de350c8f2cb6bffed675a7052a09e57a7a61749819",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.25071",
+      "slug": "arxiv-2608-25071-4d095e40d3",
+      "kind": "paper",
+      "title": "HealthBench-Psych: A Mental Health Subset of OpenAI's HealthBench",
+      "abstract": "General-purpose health benchmarks increasingly anchor claims about LLM medical performance, but they are not always resolved by clinical specialty, making domain-specific performance hard to isolate. Mental health is of acute public-health concern as millions of people turn to LLMs for psychological support, and most existing evaluations are bespoke academic benchmarks that are difficult to integrate into developer workflows. We introduce HealthBench-Psych and HealthBench-Psych-Hard. We screened HealthBench's 5,000 physician-rubric conversations for mental-health relevance with a transparent LLM-applied rubric, then validated the subset through two rounds of blinded clinician review with concealed known-exclude controls, yielding 610 conversations (12.2% of the corpus). Evaluating 20 frontier and open models under a cross-vendor panel of three LLM judges, we find a statistically tied frontier cluster, measurable refusal behavior in two models, and near-identical rankings across judges ($τ\\ge 0.92$). We release the subset, pipeline, model responses, grades, and analysis code as a reusable resource.",
+      "authors": [
+        "Matthew Flathers",
+        "Phuong Anh Nguyen",
+        "Jill Noorily",
+        "Julian Herpertz",
+        "Meiting Chen",
+        "Jasreen Multani",
+        "Samuel Powell",
+        "Mason Granof",
+        "Mark Kalinch",
+        "John Torous"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-25T19:05:19+00:00",
+      "updated_at": "2026-08-25T19:05:19+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.25071"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.25071v1",
+        "pdf": "https://arxiv.org/pdf/2608.25071v1",
+        "code": "https://github.com/mindbench-ai/healthbench-psych",
+        "data": "https://huggingface.co/datasets/mindbench-ai/healthbench-psych",
+        "html": "https://arxiv.org/html/2608.25071"
+      },
+      "evidence": [
+        {
+          "term": "We introduce HealthBench",
+          "excerpt": "Ms for psychological support, and most existing evaluations are bespoke academic benchmarks that are difficult to integrate into developer workflows. We introduce HealthBench-Psych and HealthBench-Psych-Hard. We screened HealthBench's 5,000 physician-rubric conversations for mental-health relevance with a transparent LLM-applied rubric, then validated the subset through two rounds of blinded clinician review wi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25071"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "HealthBench-Psych: A Mental Health Subset of OpenAI's HealthBench General-purpose health benchmarks increasingly anchor claims about LLM medical performance, but they are not always resolved by clinical specialty, making domain-specific performance hard to isolate. Mental health is of acute public-health concern as millions of people tu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25071"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "HealthBench-Psych: A Mental Health Subset of OpenAI's HealthBench General-purpose health benchmarks increasingly anchor claims about LLM medical performance, but they are not always resolved by clinical specialty, making domain-specific performance hard to isolate. Mental health is of acute public-health concern as millions of people tur",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25071"
+        },
+        {
+          "term": "medical",
+          "excerpt": "HealthBench-Psych: A Mental Health Subset of OpenAI's HealthBench General-purpose health benchmarks increasingly anchor claims about LLM medical performance, but they are not always resolved by clinical specialty, making domain-specific performance hard to isolate. Mental health is of acute public-health concern as millions of people turn to LLMs for psychological support, and most",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25071"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "OpenAI's HealthBench General-purpose health benchmarks increasingly anchor claims about LLM medical performance, but they are not always resolved by clinical specialty, making domain-specific performance hard to isolate. Mental health is of acute public-health concern as millions of people turn to LLMs for psychological support, and most existing evaluations are bespoke academic benchmarks that",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25071"
+        }
+      ],
+      "related_benchmarks": [
+        "HealthBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 20,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "79a6bbb16efdfccd70c651c989a6577fd8064f29b6de08e62b194b8268e49db6",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.24118",
+      "slug": "arxiv-2608-24118-751149beb8",
+      "kind": "paper",
+      "title": "MC-CXR: A Multi-Context Chest X-ray Benchmark for Context-Induced Disruption in Vision-Language Models",
+      "abstract": "Vision-language models (VLMs) are increasingly used in clinical pipelines where a chest X-ray is interpreted alongside retrieved reports, preliminary notes, or prior imaging. Existing benchmarks measure whether models answer correctly in isolation, but not whether they preserve a correct image-only decision when plausible context conflicts with the image. We introduce Multi-Context Chest X-ray (MC-CXR), a benchmark of 240 cases expanded into 2,522 instances that isolates context-induced disruption through paired perturbation. Each case fixes the current image and target finding while presenting matched reliable and misleading context across text and prior CXR, with visual overlays where available. MC-CXR defines three task families and two paired metrics, the switch-to-wrong rate and the context-aligned error rate. We evaluate ten VLMs spanning open-source general, medical-domain, and closed-source systems. Image-only accuracy is necessary but insufficient. Mean switch rates range from 45.6-78.1% across misleading textual sources and 35.7-61.7% across misleading visual sources. Among switched predictions, 74.6% align with the misleading label for text versus 17.6% for visual context, a 57.0-point gap (95% CI 50.9-62.8). This text-visual asymmetry is observed under the standardized direct-answer protocol. The dataset is available on PhysioNet.",
+      "authors": [
+        "Junhyeok Lee",
+        "Songsoo Kim",
+        "Kyu Sung Choi"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-25T06:28:17+00:00",
+      "updated_at": "2026-08-25T06:28:17+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.24118"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.24118v1",
+        "pdf": "https://arxiv.org/pdf/2608.24118v1",
+        "html": "https://arxiv.org/html/2608.24118"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "MC-CXR: A Multi-Context Chest X-ray Benchmark for Context-Induced Disruption in Vision-Language Models Vision-language models (VLMs) are increasingly used in clinical pipelines where a chest X-ray is interpreted alongside retrieved reports, preliminary notes, or prior imaging. Existin",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.24118"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "increasingly used in clinical pipelines where a chest X-ray is interpreted alongside retrieved reports, preliminary notes, or prior imaging. Existing benchmarks measure whether models answer correctly in isolation, but not whether they preserve a correct image-only decision when plausible context conflicts with the image. We introduce Multi-Context Chest X-ray (MC-CXR), a benchmark of 240 cases ex",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.24118"
+        },
+        {
+          "term": "medical",
+          "excerpt": "task families and two paired metrics, the switch-to-wrong rate and the context-aligned error rate. We evaluate ten VLMs spanning open-source general, medical-domain, and closed-source systems. Image-only accuracy is necessary but insufficient. Mean switch rates range from 45.6-78.1% across misleading textual sources and 35.7-61.7% across misleading visual sources. Among switched predictions, 74",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.24118"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "A Multi-Context Chest X-ray Benchmark for Context-Induced Disruption in Vision-Language Models Vision-language models (VLMs) are increasingly used in clinical pipelines where a chest X-ray is interpreted alongside retrieved reports, preliminary notes, or prior imaging. Existing benchmarks measure whether models answer correctly in isolation, but not whether they preserve a correct image-only dec",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.24118"
+        },
+        {
+          "term": "Vision-Language",
+          "excerpt": "MC-CXR: A Multi-Context Chest X-ray Benchmark for Context-Induced Disruption in Vision-Language Models Vision-language models (VLMs) are increasingly used in clinical pipelines where a chest X-ray is interpreted alongside retrieved reports, preliminary notes, or prior imaging. Existing benchmarks measure whether models answer correct",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.24118"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "a current-image-consistent preliminary note. The prior-image reliable context is the same-patient prior CXR. The visual-overlay reliable context is a pathology-aligned PACS-style arrow. RCS thus separates whether context agrees with the image from whether the model uses that agreement without losing its grip on the image evidence. The two are not the same. Reliable context still flips an image-on",
+          "location": "RCS , Reliable Context Stability.",
+          "source_url": "https://arxiv.org/html/2608.24118"
+        }
+      ],
+      "related_benchmarks": [
+        "VQA",
+        "ReXVQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "d450d91adc0e12748e88d66bce936999902b92871a0cc0063d8b7bd2c20d834f",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.08.24.746620",
+      "slug": "doi-10-64898-2026-08-24-746620-c01a97c542",
+      "kind": "paper",
+      "title": "PhageLysData: an evidence-aware and AI-ready dataset of phage lytic enzymes and depolymerases",
+      "abstract": "Bacteriophage lytic enzymes and depolymerases are relevant to phage biology, antimicrobial development, and protein engineering, but their sequence and annotation data remain dispersed across general databases, specialized resources, genome-centred collections, and prediction-oriented datasets. We present PhageLysData, an evidence-aware and AI-ready resource constructed through reproducible multisource integration, provenance tracking, and exact-sequence consolidation. The release integrates 807,366 source observations from seven primary resources into 759,105 unique exact-sequence entities, comprising an evidence-supported Core of 11,867 entities, a Prediction Extension of 745,092 prediction-only candidates, and 2,146 Context entities retained for provenance and reference. This architecture preserves broad sequence-space coverage while maintaining a clear distinction between non-predictive and prediction-derived support. Core entities are enriched with harmonized biological annotations, physicochemical properties, independent InterProScan-derived functional annotations, mapped PDB and AlphaFold DB structural assets, and reusable numerical representations. For 11,259 eligible Core sequences, PhageLysData provides embeddings from 11 protein language models together with one-hot encoding under a common representation contract. Release-facing examples demonstrate latent-space exploration, unsupervised clustering, supervised classification, and evidence-aware candidate retrieval without defining a universal predictive benchmark. PhageLysData provides a traceable, versioned, and computationally accessible foundation for protein retrieval, comparative analysis, task-specific dataset construction, and machine-learning applications involving phage lytic enzymes and depolymerases.",
+      "authors": [
+        "Medina-Ortiz D",
+        "Olivera-Nappa A",
+        "Lienqueo ME",
+        "Opazo R",
+        "Romero J."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-08-25T00:00:00+00:00",
+      "updated_at": "2026-08-27T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.64898/2026.08.24.746620"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1306028"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "space exploration, unsupervised clustering, supervised classification, and evidence-aware candidate retrieval without defining a universal predictive benchmark. PhageLysData provides a traceable, versioned, and computationally accessible foundation for protein retrieval, comparative analysis, task-specific dataset construction, and machine-learning applications involving phage lytic enzymes and d",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1306028"
+        },
+        {
+          "term": "biology",
+          "excerpt": ": an evidence-aware and AI-ready dataset of phage lytic enzymes and depolymerases Bacteriophage lytic enzymes and depolymerases are relevant to phage biology, antimicrobial development, and protein engineering, but their sequence and annotation data remain dispersed across general databases, specialized resources, genome-centred collections, and prediction-oriented datasets. We present PhageLys",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1306028"
+        },
+        {
+          "term": "biological",
+          "excerpt": "pace coverage while maintaining a clear distinction between non-predictive and prediction-derived support. Core entities are enriched with harmonized biological annotations, physicochemical properties, independent InterProScan-derived functional annotations, mapped PDB and AlphaFold DB structural assets, and reusable numerical representations. For 11,259 eligible Core sequences, PhageLysData provi",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1306028"
+        },
+        {
+          "term": "protein",
+          "excerpt": "of phage lytic enzymes and depolymerases Bacteriophage lytic enzymes and depolymerases are relevant to phage biology, antimicrobial development, and protein engineering, but their sequence and annotation data remain dispersed across general databases, specialized resources, genome-centred collections, and prediction-oriented datasets. We present PhageLysData, an evidence-aware and AI-ready res",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1306028"
+        },
+        {
+          "term": "genome",
+          "excerpt": "robial development, and protein engineering, but their sequence and annotation data remain dispersed across general databases, specialized resources, genome-centred collections, and prediction-oriented datasets. We present PhageLysData, an evidence-aware and AI-ready resource constructed through reproducible multisource integration, provenance tracking, and exact-sequence consolidation. The re",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1306028"
+        },
+        {
+          "term": "antimicrobial",
+          "excerpt": "ence-aware and AI-ready dataset of phage lytic enzymes and depolymerases Bacteriophage lytic enzymes and depolymerases are relevant to phage biology, antimicrobial development, and protein engineering, but their sequence and annotation data remain dispersed across general databases, specialized resources, genome-centred collections, and prediction-oriented datasets. We present PhageLysData, an eviden",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1306028"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 22,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "5cdc8a92a5ffc8e43809ee79941bbb1f4e4d0d55e387061882b9a682d39e35af",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.08.20.26360960",
+      "slug": "doi-10-64898-2026-08-20-26360960-9dbbca3470",
+      "kind": "paper",
+      "title": "PathEQA: Feature-Graph-Guided Random Forests for Multianalyte External Quality Assessment",
+      "abstract": "External quality assessment (EQA) of multianalyte assays is commonly interpreted analyte by analyte, although many panels contain known relations among measured features that may reveal joint quality patterns. We propose PathEQA, a feature-graph-guided random forest framework in which a user-supplied graph can represent biochemical pathways, molecular interactions, shared measurement processes, or other domain relations. The same graph is allowed to influence feature representation, node-level candidate generation, and split selection, with an optional local grouped decision. We evaluated the framework in graph-aligned and graph-misspecified simulations and used a six-analyte catecholamine-related liquid chromatography-tandem mass spectrometry EQA data set as an illustrative case study (929 records from 58 laboratories and 117 complete multianalyte panels). In graph-aligned simulations, the grouped variant reduced test root mean squared error by 7.4-9.4% relative to ordinary random forest across training sizes of 60-240, whereas graph misspecification could worsen prediction. In the catecholamine case study, full PathEQA was comparable with ordinary random forest in laboratory-grouped cross-validation (RMSE 0.570 versus 0.569) and modestly better in the final-round temporal holdout (0.307 versus 0.318); a simpler static network-sampling baseline performed best. Dopamine-norepinephrine was the strongest pair, whereas dopamine-norepinephrine-epinephrine best estimated multianalyte failure burden. These results support a general conclusion: feature-graph guidance can improve small-sample multivariate quality assessment when the supplied structure is outcome-relevant, but graph relevance must be tested rather than assumed. Catecholamines serve here as a worked example rather than a restriction of the framework.",
+      "authors": [
+        "Li, Q.",
+        "Yu, K."
+      ],
+      "source": "medrxiv",
+      "published_at": "2026-08-25T00:00:00+00:00",
+      "updated_at": "2026-08-25T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_no",
+      "identifiers": {
+        "doi": "10.64898/2026.08.20.26360960"
+      },
+      "links": {
+        "abs": "https://www.medrxiv.org/content/10.64898/2026.08.20.26360960",
+        "pdf": "https://www.medrxiv.org/content/10.64898/2026.08.20.26360960.full.pdf",
+        "html": "https://www.medrxiv.org/content/10.64898/2026.08.20.26360960.full"
+      },
+      "evidence": [
+        {
+          "term": "We propose PathEQA",
+          "excerpt": "commonly interpreted analyte by analyte, although many panels contain known relations among measured features that may reveal joint quality patterns. We propose PathEQA, a feature-graph-guided random forest framework in which a user-supplied graph can represent biochemical pathways, molecular interactions, shared measurement processes, or other domain relations. The same graph is allowed to influence feat",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.08.20.26360960.full"
+        },
+        {
+          "term": "laboratory",
+          "excerpt": ", whereas graph misspecification could worsen prediction. In the catecholamine case study, full PathEQA was comparable with ordinary random forest in laboratory-grouped cross-validation (RMSE 0.570 versus 0.569) and modestly better in the final-round temporal holdout (0.307 versus 0.318); a simpler static network-sampling baseline performed best. Dopamine-norepinephrine was the strongest pair, whe",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.08.20.26360960.full"
+        }
+      ],
+      "related_benchmarks": [
+        "PathEQA",
+        "EQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 14,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.08.20.26360960.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "24cb5fe9f7bb023576dc3467043f6bb420b9f1073e3916c83241b0e3857f9e7e",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.08.12.743994",
+      "slug": "doi-10-64898-2026-08-12-743994-3658cfd4f1",
+      "kind": "paper",
+      "title": "From Data Curation to Risk Reporting: A Pipeline for Polygenic Risk Scores",
+      "abstract": "Polygenic risk scores (PRS) have emerged as a powerful tool for quantifying genetic susceptibility to complex traits and diseases. However, their calculation and interpretation require standardized data curation, robust statistical methods, and clear reporting strategies. In this work, we present an integrated pipeline designed to address these challenges. The pipeline begins with the construction of a curated genotype/phenotype database derived from public repositories, ensuring that only phenotypes with appropriate metadata, statistical distributions, and ethical suitability are retained. The final dataset comprises 2,346 phenotypes covering 38,256,468 unique SNPs. These phenotypes serve as the final analytical units for PRS calculation, risk stratification, and individual-level interpretation. The generated reports integrate sample-level results, phenotype categorization, risk classification, study references, and variant tables, providing a structured and interpretable output for end users. Together, the curated database and reporting framework establish a comprehensive toolbox for PRS analysis, enhancing reproducibility, transparency, and usability in both research and clinical contexts.",
+      "authors": [
+        "Barbosa Araujo, P. V.",
+        "Fiuza, T. d. S.",
+        "Kroll, J. E.",
+        "Andrade, R. L.",
+        "Gomes, D. H. F.",
+        "Varuzza, L.",
+        "de Souza, G. A.",
+        "de Souza, S. J."
+      ],
+      "source": "biorxiv",
+      "published_at": "2026-08-25T00:00:00+00:00",
+      "updated_at": "2026-08-25T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_no",
+      "identifiers": {
+        "doi": "10.64898/2026.08.12.743994"
+      },
+      "links": {
+        "abs": "https://www.biorxiv.org/content/10.64898/2026.08.12.743994",
+        "pdf": "https://www.biorxiv.org/content/10.64898/2026.08.12.743994.full.pdf",
+        "html": "https://www.biorxiv.org/content/10.64898/2026.08.12.743994.full"
+      },
+      "evidence": [
+        {
+          "term": "dataset comprises",
+          "excerpt": "lic repositories, ensuring that only phenotypes with appropriate metadata, statistical distributions, and ethical suitability are retained. The final dataset comprises 2,346 phenotypes covering 38,256,468 unique SNPs. These phenotypes serve as the final analytical units for PRS calculation, risk stratification, and individual-level interpretation. The generated reports integrate sample-level results, phe",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.12.743994.full"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "d reporting framework establish a comprehensive toolbox for PRS analysis, enhancing reproducibility, transparency, and usability in both research and clinical contexts. Polygenic risk scores (PRS) have emerged as a powerful tool for quantifying genetic susceptibility to complex traits and diseases. However, their calculation and interpretation require standardized data curation, robust statistic",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.12.743994.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 7,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.08.12.743994.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "6958b53512afb32c0f94ae11c763960b99e73017e81b68ad7e6989dcae64af99",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}

@@ -121,7 +121,8 @@ def test_run_preserves_stored_event_time_and_archives_vendor_entries(
     assert payload["entries"][0]["id"] == existing.id
     assert payload["entries"][0]["topic"] == "general_text"
     assert payload["entries"][0]["contribution_type"] == "new_benchmark"
-    assert payload["entries"][0]["event_at"] == existing.event_at
+    assert "event_at" not in payload["entries"][0]
+    assert "first_seen_at" not in payload["entries"][0]
     assert FakeStore.last is not None
     assert FakeStore.last.entries[existing.id].event_at == existing.event_at
     archive = json.loads((tmp_path / "data" / "vendor-archive.json").read_text())

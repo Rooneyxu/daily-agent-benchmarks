@@ -126,6 +126,8 @@ def entry_from_dict(row: dict[str, Any]) -> BioEntry:
     for name, definition in fields.items():
         if name in row:
             values[name] = row[name]
+        elif name in {"first_seen_at", "event_at"}:
+            values[name] = row.get("published_at", "")
         elif name == "evaluation_contexts":
             categories = row.get("categories", [])
             values[name] = (["beneficial_capability"] if any(category != "biosafety" for category in categories) else []) + (

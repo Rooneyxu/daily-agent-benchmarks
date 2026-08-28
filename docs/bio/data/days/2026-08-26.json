@@ -1,0 +1,924 @@
+{
+  "date": "2026-08-26",
+  "count": 11,
+  "entries": [
+    {
+      "id": "arxiv:2608.26416",
+      "slug": "arxiv-2608-26416-494d00034f",
+      "kind": "paper",
+      "title": "IoMT-SecAlarmBench: A Counterfactual Benchmark for Integrity Attacks in IoMT",
+      "abstract": "The Internet of Medical Things (IoMT) combines clinical physiological data with cyber-system information, creating challenges in determining whether an abnormal reading reflects a genuine physiological event, a device fault, or a cyber-attack within the expected physiological range. Answering this requires counterfactual ground truth, which no existing dataset provides. We present IoMT-SecAlarmBench, a semi-synthetic benchmark that injects controlled integrity attacks into genuine coupled ECG+PPG recordings using a structured experimental design combining four attack morphologies, four severity levels, two physiological plausibility conditions, and replay attacks. Each injected window retains its cause, attack subtype, and the clean signal that would have been observed without the attack. We evaluate six detectors from five method families using threshold-independent measures and a matched false-alarm budget. Results show no method consistently detects the most difficult cases: replay attacks and low-amplitude transient spikes remain close to chance-level performance across detectors. Results also reveal a trade-off between detecting attacks and distinguishing them from sensor faults: the best-performing detector on hard cases flags fault/artifact windows at 5.3 times its false-alarm rate on normal data. Three-way classification performs poorly for genuine physiological events, and a leakage audit of a dual-modality network dataset indicates previously reported IoMT intrusion-detection performance is partly driven by identifying information. Benchmark, generation code, preprocessing, evaluation tools, and datasheet are released.",
+      "authors": [
+        "Emmanuel C. Ugwuabonyi",
+        "Dmitri Perkins"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-26T21:29:26+00:00",
+      "updated_at": "2026-08-26T21:29:26+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.26416"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.26416v1",
+        "pdf": "https://arxiv.org/pdf/2608.26416v1",
+        "code": "https://github.com/techosystem/IoMT_SecAlarmBench",
+        "html": "https://arxiv.org/html/2608.26416"
+      },
+      "evidence": [
+        {
+          "term": "We present IoMT-SecAlarmBench",
+          "excerpt": ", or a cyber-attack within the expected physiological range. Answering this requires counterfactual ground truth, which no existing dataset provides. We present IoMT-SecAlarmBench, a semi-synthetic benchmark that injects controlled integrity attacks into genuine coupled ECG+PPG recordings using a structured experimental design combining four attack morphologies, four severity levels, two physiological plausibility c",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26416"
+        },
+        {
+          "term": "We present IoMT-SecAlarmBench, a semi-synthetic benchmark",
+          "excerpt": ", or a cyber-attack within the expected physiological range. Answering this requires counterfactual ground truth, which no existing dataset provides. We present IoMT-SecAlarmBench, a semi-synthetic benchmark that injects controlled integrity attacks into genuine coupled ECG+PPG recordings using a structured experimental design combining four attack morphologies, four severity levels, two physiological plausibility conditions, and replay attack",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26416"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "IoMT-SecAlarmBench: A Counterfactual Benchmark for Integrity Attacks in IoMT The Internet of Medical Things (IoMT) combines clinical physiological data with cyber-system information, creating challenges in determining whether an abnormal reading reflects a genuine physiological event,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26416"
+        },
+        {
+          "term": "medical",
+          "excerpt": "IoMT-SecAlarmBench: A Counterfactual Benchmark for Integrity Attacks in IoMT The Internet of Medical Things (IoMT) combines clinical physiological data with cyber-system information, creating challenges in determining whether an abnormal reading reflects a genuine physiological event, a device fault, or a cyber-attack within the expected",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26416"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "IoMT-SecAlarmBench: A Counterfactual Benchmark for Integrity Attacks in IoMT The Internet of Medical Things (IoMT) combines clinical physiological data with cyber-system information, creating challenges in determining whether an abnormal reading reflects a genuine physiological event, a device fault, or a cyber-attack within the expected physiological range. Answering t",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26416"
+        }
+      ],
+      "related_benchmarks": [
+        "IoMT-SecAlarmBench",
+        "IoMT_SecAlarmBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 21,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "bf62b13a08458aea5f6f9daf16733bfd82dd624e7319da2ec60e744a48e61dbf",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.26228",
+      "slug": "arxiv-2608-26228-6ced7aef3b",
+      "kind": "paper",
+      "title": "PathoMIC: A Benchmark for Cross-Species Antimicrobial Peptide Activity Prediction",
+      "abstract": "With activity against multidrug-resistant pathogens and mechanisms distinct from conventional antibiotics, antimicrobial peptides (AMPs) offer a promising approach to combating antibiotic-resistant infections. However, their potency varies substantially across pathogen species, making accurate prediction of the minimum inhibitory concentration (MIC) for specific peptide-pathogen pairs essential for prioritizing candidates before costly experimental validation. Existing predictors are trained mainly on a few well-represented pathogens and rarely exploit biological relationships across species, limiting their generalization to low-resource and unseen pathogens. We introduce PathoMIC, the largest and most pathogen-diverse unified dataset for quantitative antimicrobial peptide activity prediction, containing 74,751 experimentally reported MIC measurements across 424 pathogen species. PathoMIC integrates peptide sequences, standardized MIC values, pathogen descriptions, and taxonomic relationships to facilitate knowledge transfer across related species. We establish few-shot and zero-shot cross-species evaluation protocols and develop a knowledge-enhanced framework that leverages pathogen descriptions and taxonomy. The framework yields substantial improvements for low-resource species with limited supervision, while gains for entirely unseen species remain modest, highlighting the difficulty of zero-shot cross-species MIC prediction. PathoMIC provides a standardized foundation for cross-species activity modeling and pathogen-specific virtual screening. Code is available at https://anonymous.4open.science/r/PathoMIC-546D/.",
+      "authors": [
+        "Yeqing Lu",
+        "Xiaoyan Zhao",
+        "Fuli Feng"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-26T16:25:57+00:00",
+      "updated_at": "2026-08-26T16:25:57+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.26228"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.26228v1",
+        "pdf": "https://arxiv.org/pdf/2608.26228v1",
+        "html": "https://arxiv.org/html/2608.26228"
+      },
+      "evidence": [
+        {
+          "term": "We introduce PathoMIC, the largest and most pathogen-diverse unified dataset",
+          "excerpt": "represented pathogens and rarely exploit biological relationships across species, limiting their generalization to low-resource and unseen pathogens. We introduce PathoMIC, the largest and most pathogen-diverse unified dataset for quantitative antimicrobial peptide activity prediction, containing 74,751 experimentally reported MIC measurements across 424 pathogen species. PathoMIC integrates peptide sequences, standardized MIC values, pathogen descriptions, and",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26228"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "PathoMIC: A Benchmark for Cross-Species Antimicrobial Peptide Activity Prediction With activity against multidrug-resistant pathogens and mechanisms distinct from conventional antibiotics, antimicrobial peptides (AMPs) offer a promising approach to combating an",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26228"
+        },
+        {
+          "term": "biological",
+          "excerpt": "izing candidates before costly experimental validation. Existing predictors are trained mainly on a few well-represented pathogens and rarely exploit biological relationships across species, limiting their generalization to low-resource and unseen pathogens. We introduce PathoMIC, the largest and most pathogen-diverse unified dataset for quantitative antimicrobial peptide activity prediction, cont",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26228"
+        },
+        {
+          "term": "peptide",
+          "excerpt": "PathoMIC: A Benchmark for Cross-Species Antimicrobial Peptide Activity Prediction With activity against multidrug-resistant pathogens and mechanisms distinct from conventional antibiotics, antimicrobial peptides (AMPs) offer a promising approach to combating antibiotic-resistant infections. However,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26228"
+        },
+        {
+          "term": "antimicrobial",
+          "excerpt": "PathoMIC: A Benchmark for Cross-Species Antimicrobial Peptide Activity Prediction With activity against multidrug-resistant pathogens and mechanisms distinct from conventional antibiotics, antimicrobial peptides (AMPs) offer a promising approach to combating antibiotic-resistant infections. H",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26228"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 20,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "e8d550cc7beb16ed3153410c1d1ccccd1d0b61a4961fe976f33815f67bc3980f",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.25630",
+      "slug": "arxiv-2608-25630-4457d77e67",
+      "kind": "paper",
+      "title": "SeVeR: Selective Visual Exposure and Retrieval for 3D Medical Image Question Answering",
+      "abstract": "Volumetric medical VQA requires reasoning over long and redundant 3D visual token sequences, especially in multi-sequence MRI where complementary modalities provide diverse diagnostic cues but expose the decoder to many repeated anatomical regions. To investigate reasoning under multi-sequence visual redundancy, we first introduce BreMRIs-VQA, a clinically curated breast MRI benchmark with 1.19M QA pairs from 71.0K sequences and 12.9K patients, covering both free-text and multiple-choice questions. We further propose SeVeR, a selective visual exposure framework that compresses dense volumes into modality-wise prototypes and retrieves complementary multi-level evidence with change-aware gated attention during decoding, trained with a marginal-utility self-consistency objective that suppresses unhelpful retrieval. Experiments on BreMRIs-VQA and public benchmarks show that SeVeR improves both discriminative and generative performance while exposing substantially fewer visual tokens.",
+      "authors": [
+        "Yaojun Hu",
+        "Danyang Tu",
+        "Yang Liu",
+        "Jiajin Zhang",
+        "Wei Fang",
+        "Zhiqiang Liu",
+        "Chunlai Dong",
+        "Yingda Xia",
+        "Haochao Ying",
+        "Jian Wu",
+        "Ling Zhang"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-26T10:58:45+00:00",
+      "updated_at": "2026-08-26T10:58:45+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.25630"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.25630v1",
+        "pdf": "https://arxiv.org/pdf/2608.25630v1",
+        "html": "https://arxiv.org/html/2608.25630"
+      },
+      "evidence": [
+        {
+          "term": "first introduce BreMRIs-VQA, a clinically curated breast MRI benchmark",
+          "excerpt": "verse diagnostic cues but expose the decoder to many repeated anatomical regions. To investigate reasoning under multi-sequence visual redundancy, we first introduce BreMRIs-VQA, a clinically curated breast MRI benchmark with 1.19M QA pairs from 71.0K sequences and 12.9K patients, covering both free-text and multiple-choice questions. We further propose SeVeR, a selective visual exposure framework that compresses dense volumes into modality-wise prototypes",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25630"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "anatomical regions. To investigate reasoning under multi-sequence visual redundancy, we first introduce BreMRIs-VQA, a clinically curated breast MRI benchmark with 1.19M QA pairs from 71.0K sequences and 12.9K patients, covering both free-text and multiple-choice questions. We further propose SeVeR, a selective visual exposure framework that compresses dense volumes into modality-wise prototypes",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25630"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "uring decoding, trained with a marginal-utility self-consistency objective that suppresses unhelpful retrieval. Experiments on BreMRIs-VQA and public benchmarks show that SeVeR improves both discriminative and generative performance while exposing substantially fewer visual tokens. [[SECTION SeVeR: Selective Visual Exposure and Retrieval for 3D Medical Image Question Answering]] SeVeR: Selective V",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25630"
+        },
+        {
+          "term": "medical",
+          "excerpt": "SeVeR: Selective Visual Exposure and Retrieval for 3D Medical Image Question Answering Volumetric medical VQA requires reasoning over long and redundant 3D visual token sequences, especially in multi-sequence MRI where complementary modalities provide diverse diagnostic cues but expose the decoder to",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25630"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "e the decoder to many repeated anatomical regions. To investigate reasoning under multi-sequence visual redundancy, we first introduce BreMRIs-VQA, a clinically curated breast MRI benchmark with 1.19M QA pairs from 71.0K sequences and 12.9K patients, covering both free-text and multiple-choice questions. We further propose SeVeR, a selective visual exposure framework that compresses dense volume",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25630"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "Alvar et al. (2025) Saeed Ranjbar Alvar, Gursimran Singh, Mohammad Akbari, and Yong Zhang. Divprune: Diversity-based visual token pruning for large multimodal models. In IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) , 2025. Bai et al. (2024) Fan Bai, Yuxin Du, Tiejun Huang, Max Q-H Meng, and Bo Zhao. M3d: Advancing 3d medical image analysis with multi-modal large language",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2608.25630"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "K breast MRI sequences from a cohort of 12.9K patients, where each contains at least 3 different MRI modalities, paired with a radiology report and a pathology report verified by two radiologists. Then, we design a QA generation pipeline consisting of multi-stage extraction, task construction, paraphrasing, and validation, which enables BreMRIs-VQA to contain 1.19M VQA pairs, including 671.6K fre",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2608.25630"
+        }
+      ],
+      "related_benchmarks": [
+        "VQA",
+        "BreMRIs-VQA",
+        "DeepTumorVQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 20,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c924be31ff9bf2d2c7a2e12da7e9d2b3bbbe041f663bf594f551d277739ce4e4",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.25286",
+      "slug": "arxiv-2608-25286-b5917eeae1",
+      "kind": "paper",
+      "title": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks",
+      "abstract": "Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been systematically evaluated. Here we introduce BixBench3, a benchmark that measures the capacity of AI agents to process raw biological data through to scientific results. We designed BixBench3 tasks to mirror the delegation of work from a scientist to an agent: the scientist chooses the research question and high-level methods, then delegates implementation of all analyses to the agent. In each task, an agent receives a research objective, methodological guidance, and raw data derived from a published scientific study, and must execute a sequence of analyses to achieve the research objective. The data artifacts resulting from these analyses - such as peak call matrices or differential expression tables - are programmatically graded against the corresponding artifacts generated and reported in the original study. Across 20 BixBench3 tasks encompassing the generation of 138 unique artifacts, we find that 13 frontier models achieve scores ranging from 0.00 for Gemini 3.1 Flash Lite to 0.48 for GPT 5.6 Sol. Agents perform worse on tasks with larger raw datasets (0.36 on tasks with <100 GB versus 0.10 on tasks with >100 GB) and on analyses requiring more sequential steps (0.36 at 1-2 steps vs 0.24 at 3+). On average, agents use 6.8 hours, 102 million tokens, and $43 to complete each task, with the longest attempts consuming 24 hours, 1.07 billion tokens, and $525. Notably, the highest-scoring agents used fewer tokens and were cheaper than less performant options. These results reveal that LLMs vary substantially in their ability to (1) execute multiple sequential analysis steps coherently, (2) manage large quantities of raw data, and (3) work across scientific domains.",
+      "authors": [
+        "Zane Koch",
+        "Asmamaw T. Wassie",
+        "Javier Valdes-Aleman",
+        "Jason Lee",
+        "Michaela M. Hinks",
+        "Samuel G. Rodriques",
+        "Andrew D. White",
+        "Jon M. Laurent"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-26T01:45:55Z",
+      "updated_at": "2026-08-26T01:45:55Z",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.25286"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.25286v1",
+        "html": "https://arxiv.org/html/2608.25286",
+        "pdf": "https://arxiv.org/pdf/2608.25286v1"
+      },
+      "evidence": [
+        {
+          "term": "we introduce",
+          "location": "Abstract / metadata",
+          "excerpt": "Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been systematically evaluated. Here we introduce BixBench3, a benchmark that measures the capacity of AI agents to process raw biological data through to scientific results. We designed BixBench3 tasks to mirror the delegation of work from a scientist to an agent: the scientist chooses t",
+          "source_url": "https://arxiv.org/html/2608.25286"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology",
+          "source_url": "https://arxiv.org/html/2608.25286"
+        },
+        {
+          "term": "benchmarking",
+          "location": "Abstract / metadata",
+          "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology at",
+          "source_url": "https://arxiv.org/html/2608.25286"
+        },
+        {
+          "term": "biology",
+          "location": "Abstract / metadata",
+          "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been syst",
+          "source_url": "https://arxiv.org/html/2608.25286"
+        },
+        {
+          "term": "biological",
+          "location": "Abstract / metadata",
+          "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been systematically evaluated. Here we introduce BixBench3, a benchmark that m",
+          "source_url": "https://arxiv.org/html/2608.25286"
+        }
+      ],
+      "related_benchmarks": [
+        "BixBench3"
+      ],
+      "related_agent_url": "../../p/2608.25286.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 16,
+      "extraction_status": "metadata_only",
+      "extraction_error": "",
+      "content_hash": "seed:2608.25286",
+      "is_seed": true,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.08.25.746926",
+      "slug": "doi-10-64898-2026-08-25-746926-fb06f915fc",
+      "kind": "paper",
+      "title": "Multiscale biological interactions define clinical trajectories in acute myeloid leukemia",
+      "abstract": "Cancer is characterized by complex interactions across genetic, cellular, and microenvironmental scales. However, a quantitative understanding of how these interactions shape clinical trajectories remains limited. Here, we present a multi-scale single-cell dataset from 184 treatment-naive acute myeloid leukemia (AML) patients spanning all major genetic subtypes, together with an analytical framework to dissect interactions across biological scales. We show that distinct clinical outcomes are encoded by specific cross-scale, cross-compartment interactions present at diagnosis: response to induction therapy is governed by interactions between genetic alterations and leukemic differentiation state; relapse following chemotherapy is associated with non-genetic programs linked to metabolism; and relapse after allogeneic stem cell transplantation is driven by interactions between the immune microenvironment and residual healthy hematopoiesis. Together, our study provides a framework to resolve intra- and inter-patient heterogeneity in cancer and supports a model in which clinical trajectories in AML emerge from defined interactions across biological scales.",
+      "authors": [
+        "Barinka, J.",
+        "Graessle, S.",
+        "Pajonk, M.",
+        "Allesoee, R.",
+        "Bamopoulos, S.",
+        "Moennig, M.",
+        "Roethemeier, C.",
+        "Jopp-Saile, L.",
+        "Vonficht, D.",
+        "Besiridou, E.",
+        "Ihlow, J.",
+        "Braune, J.",
+        "Vlachou, E. P.",
+        "Beneyto-Calabuig, S.",
+        "Kardorff, M.",
+        "Neunhaeuser, S.",
+        "Fregona, V.",
+        "Feurstein, S.",
+        "Halik, A.",
+        "George, H.",
+        "Zaugg, J. B.",
+        "Huebschmann, D.",
+        "Hundemer, M.",
+        "Lutz, C.",
+        "Trumpp, A.",
+        "Bullinger, L.",
+        "Keller, U.",
+        "Mueller-Tidow, C.",
+        "Westermann, J.",
+        "Damm, F.",
+        "Kroenke, J.",
+        "Sauer, T.",
+        "Velten, L.",
+        "Raffel, S.",
+        "Haas, S."
+      ],
+      "source": "biorxiv",
+      "published_at": "2026-08-26T00:00:00+00:00",
+      "updated_at": "2026-08-26T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by_nc_nd",
+      "identifiers": {
+        "doi": "10.64898/2026.08.25.746926"
+      },
+      "links": {
+        "abs": "https://www.biorxiv.org/content/10.64898/2026.08.25.746926",
+        "pdf": "https://www.biorxiv.org/content/10.64898/2026.08.25.746926.full.pdf",
+        "html": "https://www.biorxiv.org/content/10.64898/2026.08.25.746926.full"
+      },
+      "evidence": [
+        {
+          "term": "we present a multi-scale single-cell dataset",
+          "excerpt": "ar, and microenvironmental scales. However, a quantitative understanding of how these interactions shape clinical trajectories remains limited. Here, we present a multi-scale single-cell dataset from 184 treatment-naive acute myeloid leukemia (AML) patients spanning all major genetic subtypes, together with an analytical framework to dissect interactions across biological scales. We show that distinct clinical outcomes are encoded",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.25.746926.full"
+        },
+        {
+          "term": "biological",
+          "excerpt": "Multiscale biological interactions define clinical trajectories in acute myeloid leukemia Cancer is characterized by complex interactions across genetic, cellular, and microenvironmental scales. However, a quantitative understanding of how these interactions sh",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.25.746926.full"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Multiscale biological interactions define clinical trajectories in acute myeloid leukemia Cancer is characterized by complex interactions across genetic, cellular, and microenvironmental scales. However, a quantitative understanding of how these interactions shape clinical trajectories rem",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.25.746926.full"
+        },
+        {
+          "term": "single-cell",
+          "excerpt": "l scales. However, a quantitative understanding of how these interactions shape clinical trajectories remains limited. Here, we present a multi-scale single-cell dataset from 184 treatment-naive acute myeloid leukemia (AML) patients spanning all major genetic subtypes, together with an analytical framework to dissect interactions across biological scales. We show that distinct clinical outcomes are",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.25.746926.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.08.25.746926.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "9d8241c8b156d6c30e27a15d2cef3b5116f778bf20b53c64a5f3b4a3611462c4",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.08.24.746336",
+      "slug": "doi-10-64898-2026-08-24-746336-0ae7480021",
+      "kind": "paper",
+      "title": "CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry",
+      "abstract": "In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the next. Immunologists instead annotate by manual gating, splitting one parent population at a time on a two-marker plot, down an expert-defined hierarchy. We introduce CytoGate-Bench, a benchmark that reformulates this per-step procedure as a zero-shot, panel-agnostic task for large language models. It comprises 23,646 expert-annotated instances re-curated from 11 public flow- and mass-cytometry cohorts spanning eight marker panels. Across six open- and closed-weight backbones, the strongest formulation draws one rectangular gate per candidate and falls within the range of trained, panel-specialized baselines. It degrades less under distribution shift. Walking the hierarchy stepwise outperforms predicting every cell type at once. Ablations trace the signal to the data distribution shape and curated marker priors. However, adding vision or a self-verification loop systematically tightens gates.",
+      "authors": [
+        "Kim J",
+        "Lee B",
+        "Ahn N",
+        "Ionita M",
+        "McKeague ML",
+        "Lee ME",
+        "Jeong C",
+        "Apostolidis SA",
+        "Baxter AE",
+        "Shwetank",
+        "Greenplate AR",
+        "Wherry EJ",
+        "Sohn K",
+        "Kim D."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-08-26T00:00:00+00:00",
+      "updated_at": "2026-08-27T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.64898/2026.08.24.746336"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1305902"
+      },
+      "evidence": [
+        {
+          "term": "We introduce CytoGate-Bench",
+          "excerpt": "t. Immunologists instead annotate by manual gating, splitting one parent population at a time on a two-marker plot, down an expert-defined hierarchy. We introduce CytoGate-Bench, a benchmark that reformulates this per-step procedure as a zero-shot, panel-agnostic task for large language models. It comprises 23,646 expert-annotated instances re-curated from 11 public flow- and mass-cytometry cohorts spanning eight",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305902"
+        },
+        {
+          "term": "We introduce CytoGate-Bench, a benchmark",
+          "excerpt": "t. Immunologists instead annotate by manual gating, splitting one parent population at a time on a two-marker plot, down an expert-defined hierarchy. We introduce CytoGate-Bench, a benchmark that reformulates this per-step procedure as a zero-shot, panel-agnostic task for large language models. It comprises 23,646 expert-annotated instances re-curated from 11 public flow- and mass-cytometry cohorts spanning eight marker panels",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305902"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the nex",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305902"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the next. Immunologists instead annotate by manual gating, splitting one parent population at a time on a two-m",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305902"
+        },
+        {
+          "term": "single-cell",
+          "excerpt": "CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the next. Immunologists instead annotate by manual gating, splitting one parent populati",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305902"
+        },
+        {
+          "term": "immunology",
+          "excerpt": "CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the next. Immunologists instead annotate by manual gating, splitting one parent population at a time on a two-marker plot,",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305902"
+        },
+        {
+          "term": "cross-panel",
+          "excerpt": "CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the next. Immunologists",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305902"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 26,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "7e4c864b07f05ed56a6b8df178a5e86d862280303776154b120b890700fc59c1",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.08.21.746347",
+      "slug": "doi-10-64898-2026-08-21-746347-92d1fe89b0",
+      "kind": "paper",
+      "title": "BatchRefiner: fast, significant improvement in batch integration of single-cell embeddings with ensemble refinement",
+      "abstract": "Data from single-cell RNA sequencing (scRNA-seq) and the Assay for Transposase-Accessible Chromatin (scATAC-seq) are high-dimensional, sparse, and undesirably capture technical variability between experiments or batches. Many analysis methods thus seek to produce a low-dimensional cell-by-feature embedding space that groups together biologically similar cells across batches while distancing dissimilar cells. Here, we introduce ensemble refinement for scRNA-seq and scATAC-seq embeddings, inspired by ensemble methods from statistical machine learning, and implement BatchRefiner, a fast post-processing tool to enhance batch integration. We extensively benchmark widely-used scRNA-seq embedding methods on both batch integration and biological conservation over a wide range of datasets, before and after the addition of BatchRefiner. We extend these benchmarking approaches to provide the first comprehensive benchmark of batch integration for scATAC-seq embedding methods, including BatchRefiner. Importantly, we formalize a significance statistic, which we use to demonstrate BatchRefiner's significant improvement in batch integration across a wide range of embedding methods, atlas-scale datasets, and established metrics.",
+      "authors": [
+        "Schäffer DE",
+        "Kang H",
+        "Aksu ED",
+        "Edelman D",
+        "Berger B."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-08-26T00:00:00+00:00",
+      "updated_at": "2026-08-27T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.64898/2026.08.21.746347"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1305945"
+      },
+      "evidence": [
+        {
+          "term": "first comprehensive benchmark",
+          "excerpt": "cal conservation over a wide range of datasets, before and after the addition of BatchRefiner. We extend these benchmarking approaches to provide the first comprehensive benchmark of batch integration for scATAC-seq embedding methods, including BatchRefiner. Importantly, we formalize a significance statistic, which we use to demonstrate BatchRefiner's significant improvement in batch integration across a wide range",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305945"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "emble methods from statistical machine learning, and implement BatchRefiner, a fast post-processing tool to enhance batch integration. We extensively benchmark widely-used scRNA-seq embedding methods on both batch integration and biological conservation over a wide range of datasets, before and after the addition of BatchRefiner. We extend these benchmarking approaches to provide the first compre",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305945"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "s on both batch integration and biological conservation over a wide range of datasets, before and after the addition of BatchRefiner. We extend these benchmarking approaches to provide the first comprehensive benchmark of batch integration for scATAC-seq embedding methods, including BatchRefiner. Importantly, we formalize a significance statistic, which we use to demonstrate BatchRefiner's significa",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305945"
+        },
+        {
+          "term": "biological",
+          "excerpt": "ity between experiments or batches. Many analysis methods thus seek to produce a low-dimensional cell-by-feature embedding space that groups together biologically similar cells across batches while distancing dissimilar cells. Here, we introduce ensemble refinement for scRNA-seq and scATAC-seq embeddings, inspired by ensemble methods from statistical machine learning, and implement BatchRefiner, a",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305945"
+        },
+        {
+          "term": "single-cell",
+          "excerpt": "BatchRefiner: fast, significant improvement in batch integration of single-cell embeddings with ensemble refinement Data from single-cell RNA sequencing (scRNA-seq) and the Assay for Transposase-Accessible Chromatin (scATAC-seq) are high-dimensional, sparse, and undesirably capture technical variability between experi",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1305945"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 16,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "8a0bf7fa2e1644f7566410a46947d4b91e6527b4e4fbf9fdffdd6995b1d1f325",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.08.19.745737",
+      "slug": "doi-10-64898-2026-08-19-745737-73618d3155",
+      "kind": "paper",
+      "title": "A multi-scale structural and biophysical atlas of TCR-peptide-HLA recognition dynamics",
+      "abstract": "Dynamic interactions between T cell receptor (TCR) and peptide-human leukocyte antigen (pHLA) complexes are central to peptide-specific immune recognition, influencing T cell activation and immune responses. While structural biology has provided valuable static structures of TCR-pHLA complexes, systematic datasets capturing their dynamic and interaction patterns remain limited. Here, we present DynaTPH, a curated structural dynamics dataset of human TCR-pHLA complexes. DynaTPH integrates TCR-pHLA structures, covering both HLA class I and class II complexes, and extends these static structural resources with standardized molecular dynamics simulations and derived biophysical properties. Through a multi-stage filtering procedure, we identified 256 representative complexes and performed standardized all-atom molecular dynamics simulations for each system, corresponding to a cumulative simulation time of 38.4 s. The dataset includes static structures, trajectories, corresponding frames, and derived physicochemical properties, including hydrogen bonds, intermolecular contacts, solvent accessibility, and backbone flexibility. By capturing the conformational flexibility and dynamic interaction patterns across diverse TCR-pHLA interfaces, DynaTPH extends static structural resources with multidimensional biophysical information. This dataset enables systematic investigation of TCR-pHLA recognition dynamics and supports applications in TCR engineering, vaccine design, and immune tolerance research and artificial intelligence-driven computational immunology.",
+      "authors": [
+        "Zhang, S.",
+        "Long, Y.",
+        "Wang, T.",
+        "Zhong, Q.",
+        "Li, J.",
+        "Fu, L."
+      ],
+      "source": "biorxiv",
+      "published_at": "2026-08-26T00:00:00+00:00",
+      "updated_at": "2026-08-26T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_no",
+      "identifiers": {
+        "doi": "10.64898/2026.08.19.745737"
+      },
+      "links": {
+        "abs": "https://www.biorxiv.org/content/10.64898/2026.08.19.745737",
+        "pdf": "https://www.biorxiv.org/content/10.64898/2026.08.19.745737.full.pdf",
+        "html": "https://www.biorxiv.org/content/10.64898/2026.08.19.745737.full"
+      },
+      "evidence": [
+        {
+          "term": "we present DynaTPH, a curated structural dynamics dataset",
+          "excerpt": "provided valuable static structures of TCR-pHLA complexes, systematic datasets capturing their dynamic and interaction patterns remain limited. Here, we present DynaTPH, a curated structural dynamics dataset of human TCR-pHLA complexes. DynaTPH integrates TCR-pHLA structures, covering both HLA class I and class II complexes, and extends these static structural resources with standardized molecular dynamics simulations and derived biophysical p",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.19.745737.full"
+        },
+        {
+          "term": "biology",
+          "excerpt": "yte antigen (pHLA) complexes are central to peptide-specific immune recognition, influencing T cell activation and immune responses. While structural biology has provided valuable static structures of TCR-pHLA complexes, systematic datasets capturing their dynamic and interaction patterns remain limited. Here, we present DynaTPH, a curated structural dynamics dataset of human TCR-pHLA complexes",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.19.745737.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.08.19.745737.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "dd5d4fa68216aedd85dd81f4348b45ff27c1a13d3a27307ed2ba3d7b8d7ea2ae",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.08.19.745729",
+      "slug": "doi-10-64898-2026-08-19-745729-ed89b70489",
+      "kind": "paper",
+      "title": "A mechanism-annotated benchmark reveals limited fidelity to drug-response signatures in single-cell perturbation models",
+      "abstract": "Single-cell drug perturbation models are increasingly used to predict how compounds remodel cellular states, but they are still largely assessed by expression reconstruction. Whether high expression similarity reflects preservation of drug-response signatures remains unclear. Here we present scDrugPerturb-Bench, a mechanism-annotated benchmark that links matched control and drug-treated single-cell RNA-sequencing profiles to literature-curated directional key-gene evidence. The resource covers 181 datasets, 423 annotated response cases, 717 unique key genes and 2.5 million cells. We introduce the Mechanism Fidelity Score (MFS) to evaluate key-gene direction, effect-size recovery, gene-set coherence, mechanism specificity and pathway-level response polarity. Across 12 perturbation-prediction models, 3 baselines and 10 data splits, expression-similarity metrics were weakly aligned with MFS and selected different model configurations. Mechanism-aware selection improved early drug retrieval in a transcriptome-based drug design evaluation, indicating that MFS provides practical information beyond benchmark reporting. Systematic benchmarking revealed limited fidelity to drug-response signatures across cell-line and source-integrated settings. Frozen single-cell foundation model embeddings produced local, metric-dependent gains rather than universal improvements, and source context substantially reshaped model assessment. Hard-negative tests further showed that plausible perturbation responses can arise from non-specific transcriptional shortcuts. These results show that expression reconstruction is an insufficient proxy for preserving drug-response signatures and establish scDrugPerturb-Bench as a benchmark for mechanism-aware evaluation of single-cell drug perturbation models.",
+      "authors": [
+        "Li, L.",
+        "Duan, S.",
+        "Zha, X.",
+        "Ye, F.",
+        "Zhang, Y.",
+        "Zhang, X.",
+        "Cao, Y.",
+        "Liu, C.",
+        "Fang, B."
+      ],
+      "source": "biorxiv",
+      "published_at": "2026-08-26T00:00:00+00:00",
+      "updated_at": "2026-08-26T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by",
+      "identifiers": {
+        "doi": "10.64898/2026.08.19.745729"
+      },
+      "links": {
+        "abs": "https://www.biorxiv.org/content/10.64898/2026.08.19.745729",
+        "pdf": "https://www.biorxiv.org/content/10.64898/2026.08.19.745729.full.pdf",
+        "html": "https://www.biorxiv.org/content/10.64898/2026.08.19.745729.full"
+      },
+      "evidence": [
+        {
+          "term": "we present scDrugPerturb-Bench",
+          "excerpt": "ely assessed by expression reconstruction. Whether high expression similarity reflects preservation of drug-response signatures remains unclear. Here we present scDrugPerturb-Bench, a mechanism-annotated benchmark that links matched control and drug-treated single-cell RNA-sequencing profiles to literature-curated directional key-gene evidence. The resource covers 181 datasets, 423 annotated response cases, 717 uniqu",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.19.745729.full"
+        },
+        {
+          "term": "we present scDrugPerturb-Bench, a mechanism-annotated benchmark",
+          "excerpt": "ely assessed by expression reconstruction. Whether high expression similarity reflects preservation of drug-response signatures remains unclear. Here we present scDrugPerturb-Bench, a mechanism-annotated benchmark that links matched control and drug-treated single-cell RNA-sequencing profiles to literature-curated directional key-gene evidence. The resource covers 181 datasets, 423 annotated response cases, 717 unique key genes and 2.5 million cells",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.19.745729.full"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "A mechanism-annotated benchmark reveals limited fidelity to drug-response signatures in single-cell perturbation models Single-cell drug perturbation models are increasingly used to predict how compounds remodel cellular states, but they are still largely assessed by exp",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.19.745729.full"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "retrieval in a transcriptome-based drug design evaluation, indicating that MFS provides practical information beyond benchmark reporting. Systematic benchmarking revealed limited fidelity to drug-response signatures across cell-line and source-integrated settings. Frozen single-cell foundation model embeddings produced local, metric-dependent gains rather than universal improvements, and source con",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.19.745729.full"
+        },
+        {
+          "term": "single-cell",
+          "excerpt": "A mechanism-annotated benchmark reveals limited fidelity to drug-response signatures in single-cell perturbation models Single-cell drug perturbation models are increasingly used to predict how compounds remodel cellular states, but they are still largely assessed by expression reconstruction. Whether high expression similarity reflects",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.19.745729.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 23,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.08.19.745729.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "f0166e47f2ac26727db7f677f9a5d01df1e288020f522b2acce525b3190ada21",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.1016/j.cell.2026.08.004",
+      "slug": "doi-10-1016-j-cell-2026-08-004-e9b063ac5f",
+      "kind": "paper",
+      "title": "Virtual Cell Challenge 2026: Benchmarking zero-shot generalization across cellular contexts. ",
+      "abstract": "The Virtual Cell Challenge returns in 2026 with a more demanding test of biological generalization: zero-shot prediction across multiple independent cellular contexts. Participants will build models to predict gene knockdown responses in a new Arc-generated dataset comprising unseen cell lines. The goal is to determine whether the best models can meaningfully close the gap between preclinical experimental predictions and human biology.",
+      "authors": [
+        "Arc Virtual Cell Initiative Team",
+        "Goodarzi H."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-08-26T00:00:00+00:00",
+      "updated_at": "2026-08-27T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.1016/j.cell.2026.08.004",
+        "pmid": "42648290"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/42648290"
+      },
+      "evidence": [
+        {
+          "term": "new Arc-generated dataset",
+          "excerpt": "lization: zero-shot prediction across multiple independent cellular contexts. Participants will build models to predict gene knockdown responses in a new Arc-generated dataset comprising unseen cell lines. The goal is to determine whether the best models can meaningfully close the gap between preclinical experimental predictions and human biology. The Virtual Cell Challenge returns in 2026 with a more demanding",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42648290"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Virtual Cell Challenge 2026: Benchmarking zero-shot generalization across cellular contexts. The Virtual Cell Challenge returns in 2026 with a more demanding test of biological generalization: zero-shot prediction across multiple independent cellular contexts. Participants wil",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42648290"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "Virtual Cell Challenge 2026: Benchmarking zero-shot generalization across cellular contexts. The Virtual Cell Challenge returns in 2026 with a more demanding test of biological generalization: zero-shot prediction across multiple independent cellular contexts. Participants will b",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42648290"
+        },
+        {
+          "term": "biology",
+          "excerpt": "en cell lines. The goal is to determine whether the best models can meaningfully close the gap between preclinical experimental predictions and human biology. The Virtual Cell Challenge returns in 2026 with a more demanding test of biological generalization: zero-shot prediction across multiple independent cellular contexts. Participants will build models to predict gene knockdown responses in",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42648290"
+        },
+        {
+          "term": "biological",
+          "excerpt": "lenge 2026: Benchmarking zero-shot generalization across cellular contexts. The Virtual Cell Challenge returns in 2026 with a more demanding test of biological generalization: zero-shot prediction across multiple independent cellular contexts. Participants will build models to predict gene knockdown responses in a new Arc-generated dataset comprising unseen cell lines. The goal is to determine wh",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42648290"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "a new Arc-generated dataset comprising unseen cell lines. The goal is to determine whether the best models can meaningfully close the gap between preclinical experimental predictions and human biology. The Virtual Cell Challenge returns in 2026 with a more demanding test of biological generalization: zero-shot prediction across multiple independent cellular contexts. Participants will build mod",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42648290"
+        },
+        {
+          "term": "gene",
+          "excerpt": "Virtual Cell Challenge 2026: Benchmarking zero-shot generalization across cellular contexts. The Virtual Cell Challenge returns in 2026 with a more demanding test of biological generalization: zero-shot prediction across multiple independent cellular contexts. Participants will build models to",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42648290"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 22,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "e51374311bf0dc499c5ecda4cd367a7f1abe590c5eefab61d2808036aa8df64c",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.1007/s11548-026-03784-z",
+      "slug": "doi-10-1007-s11548-026-03784-z-4db37e7745",
+      "kind": "paper",
+      "title": "SurgAnt-ViVQA: learning to anticipate surgical events through GRU-driven temporal cross-attention. ",
+      "abstract": "Anticipating forthcoming surgical events is vital for real-time assistance in endonasal transsphenoidal pituitary surgery, where visibility is limited and workflow changes rapidly. Most visual question answering (VQA) systems reason on isolated frames with static vision-language alignment, providing limited support for forecasting forthcoming steps, instrument needs, or remaining procedure time. Existing surgical VQA datasets likewise focus primarily on the current scene rather than the near future. We introduce PitVQA-Anticipation, a VQA dataset designed for forward-looking surgical reasoning. It comprises 33.5 h of operative video and 734,769 question-answer pairs built from temporally grouped clips and expert annotations across four tasks: predicting the future phase, next step, upcoming instrument, and remaining duration. We further propose SurgAnt-ViVQA, a video-language model that adapts a large language model using a GRU-Gated Temporal Cross-Attention module. A bidirectional GRU encodes frame-to-frame dynamics, while an adaptive gate injects visual context into the language stream at the token level. Parameter-efficient fine-tuning customizes the language backbone to the surgical domain. On PitVQA-Anticipation, SurgAnt-ViVQA achieved BLEU-4 72.38, ROUGE-L 84.94, and METEOR 87.05, outperforming the evaluated image-based and video-based baselines. It also generalized to the EndoVis18-VQA benchmark. The ablation results support the effectiveness of the combined GRU-gated temporal fusion module for anticipatory VQA, while further controlled experiments are required to fully disentangle the independent contributions of recurrence and adaptive gating. A frame-budget study indicates a trade-off: 8 frames maximize linguistic overlap metrics, whereas 32 frames slightly reduce BLEU but improve numeric time estimation. By pairing a temporally aware encoder with fine-grained gated cross-attention, SurgAnt-ViVQA advances surgical VQA from retrospective description toward proactive anticipation. PitVQA-Anticipation provides a computational benchmark for future-aware surgical reasoning; prospective clinical utility requires further validation with surgeons and operating-room staff.",
+      "authors": [
+        "Dhake SC",
+        "Huang J",
+        "He R",
+        "Khan DZ",
+        "Mazomenos EB",
+        "Bano S",
+        "Marcus HJ",
+        "Stoyanov D",
+        "Clarkson MJ",
+        "Hoque MI."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-08-26T00:00:00+00:00",
+      "updated_at": "2026-08-27T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.1007/s11548-026-03784-z",
+        "pmid": "42645636"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/42645636"
+      },
+      "evidence": [
+        {
+          "term": "We introduce PitVQA",
+          "excerpt": "trument needs, or remaining procedure time. Existing surgical VQA datasets likewise focus primarily on the current scene rather than the near future. We introduce PitVQA-Anticipation, a VQA dataset designed for forward-looking surgical reasoning. It comprises 33.5 h of operative video and 734,769 question-answer pairs built from temporally grouped clips and expert annotations across four tasks: predicting",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42645636"
+        },
+        {
+          "term": "We introduce PitVQA-Anticipation, a VQA dataset",
+          "excerpt": "trument needs, or remaining procedure time. Existing surgical VQA datasets likewise focus primarily on the current scene rather than the near future. We introduce PitVQA-Anticipation, a VQA dataset designed for forward-looking surgical reasoning. It comprises 33.5 h of operative video and 734,769 question-answer pairs built from temporally grouped clips and expert annotations across four tasks: predicting the future phase, next step,",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42645636"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "4 72.38, ROUGE-L 84.94, and METEOR 87.05, outperforming the evaluated image-based and video-based baselines. It also generalized to the EndoVis18-VQA benchmark. The ablation results support the effectiveness of the combined GRU-gated temporal fusion module for anticipatory VQA, while further controlled experiments are required to fully disentangle the independent contributions of recurrence and a",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42645636"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "ve description toward proactive anticipation. PitVQA-Anticipation provides a computational benchmark for future-aware surgical reasoning; prospective clinical utility requires further validation with surgeons and operating-room staff. Anticipating forthcoming surgical events is vital for real-time assistance in endonasal transsphenoidal pituitary surgery, where visibility is limited and workflow",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42645636"
+        },
+        {
+          "term": "vision-language",
+          "excerpt": "surgery, where visibility is limited and workflow changes rapidly. Most visual question answering (VQA) systems reason on isolated frames with static vision-language alignment, providing limited support for forecasting forthcoming steps, instrument needs, or remaining procedure time. Existing surgical VQA datasets likewise focus primarily on the current scene rather than the near future. We introduce P",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42645636"
+        }
+      ],
+      "related_benchmarks": [
+        "SurgAnt-ViVQA",
+        "VQA",
+        "PitVQA",
+        "EndoVis18-VQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 20,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "a801469c64090ee3be74737476506cb21a2e5f59c3cc82e9da1383b0029f6868",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}

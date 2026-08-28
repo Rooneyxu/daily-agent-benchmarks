@@ -53,9 +53,21 @@ def test_static_snapshot_contains_index_meta_day_and_page(tmp_path: Path) -> Non
     assert index["total"] == 1
     assert index["entries"][0]["topic"] == "general_text"
     assert index["entries"][0]["contribution_type"] == "new_benchmark"
+    assert "first_seen_at" not in index["entries"][0]
+    assert "event_at" not in index["entries"][0]
     assert (tmp_path / "data" / "meta.json").exists()
-    assert (tmp_path / "data" / "days" / "2026-01-02.json").exists()
+    assert (tmp_path / "data" / "days" / "2026-01-01.json").exists()
     assert (tmp_path / "p" / f"{sample_entry().slug}.html").exists()
+
+
+def test_frontend_uses_only_publication_date() -> None:
+    root = Path(__file__).resolve().parents[1]
+    app = (root / "docs" / "bio" / "js" / "app.js").read_text()
+    item = (root / "docs" / "bio" / "js" / "item.js").read_text()
+    assert 'function dateOf(entry) { return entry.published_at || ""; }' in app
+    assert "entry.event_at" not in app
+    assert "entry.first_seen_at" not in app
+    assert "entry.first_seen_at" not in item
 
 
 def test_committed_seed_catalog_has_seventy_eight_unique_confirmed_records() -> None:

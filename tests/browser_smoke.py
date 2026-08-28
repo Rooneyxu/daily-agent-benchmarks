@@ -18,6 +18,7 @@ def main() -> None:
     payload = json.loads((Path(__file__).resolve().parents[1] / "docs" / "bio" / "data" / "index.json").read_text())
     total = payload["total"]
     main_entries = payload["entries"]
+    latest_publication = max(entry["published_at"] for entry in main_entries)[:10]
     methodology_count = sum(entry["contribution_type"] == "methodology" for entry in main_entries)
     experiment_count = sum(entry["topic"] == "experiment_agent" for entry in main_entries)
     with sync_playwright() as playwright:
@@ -31,12 +32,14 @@ def main() -> None:
         page.wait_for_selector(".bio-row")
 
         assert page.locator(".hero__stats b").first.text_content() == str(total)
+        assert page.locator(".hero__stats b").nth(1).text_content() == latest_publication
         assert page.locator(".bio-row").count() == min(24, len(main_entries))
+        assert page.locator(".bio-row .meta span").first.text_content() == latest_publication
         assert page.get_by_role("button", name="P0", exact=True).count() == 0
         assert page.get_by_text("Watchlist", exact=True).count() == 0
         page.screenshot(path="/private/tmp/daily-agent-benchmarks-bio-home.png", full_page=True)
 
-        page.get_by_role("button", name="Methodology", exact=True).click()
+        page.get_by_role("button", name="Construction, generation & QC", exact=True).click()
         assert page.locator(".bio-row").count() == min(24, methodology_count)
 
         page.get_by_role("button", name="All", exact=True).nth(0).click()
@@ -44,6 +47,10 @@ def main() -> None:
         assert page.locator(".bio-row").count() == min(24, experiment_count)
 
         page.locator("[data-topic='all']").click()
+        page.locator("#bio-q").fill("自动化评测")
+        page.wait_for_timeout(250)
+        assert page.locator(".bio-row").count() >= 1
+
         page.locator("#bio-q").fill("LAB-Bench")
         page.wait_for_timeout(250)
         assert page.locator(".bio-row").count() >= 1
@@ -55,6 +62,7 @@ def main() -> None:
         page.locator(".bio-row h3 a").first.click()
         page.wait_for_selector(".evidence-card")
         assert page.locator(".bio-definition").is_visible()
+        assert page.get_by_text("首次发现", exact=True).count() == 0
         assert page.get_by_role("link", name="Agent").is_visible()
 
         page.screenshot(path="/private/tmp/daily-agent-benchmarks-bio-detail.png", full_page=True)

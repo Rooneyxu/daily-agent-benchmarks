@@ -1,0 +1,271 @@
+{
+  "date": "2026-08-24",
+  "count": 3,
+  "entries": [
+    {
+      "id": "arxiv:2608.23898",
+      "slug": "arxiv-2608-23898-277d7aee4e",
+      "kind": "paper",
+      "title": "BenchBench-Protocol: Evaluating Real-World Wet-Lab Protocol Reasoning and Modification",
+      "abstract": "We introduce BenchBench-Protocol, a benchmark for large language models of 149 protocol-modification tasks recovered from modifications that scientists made to published protocols during real experimental work. Adapting a published protocol to a new experiment is a routine task for a wet-lab scientist, and a correct modification requires accounting for prior choices and downstream steps. Recent life-science benchmarks have moved toward open-ended, rubric-graded tasks, but tasks are typically elicited from experts rather than reconstructed from real-world modifications. BenchBench-Protocol tasks are derived from differences between a published protocol and a version a scientist modified, which provides the basis for the query and the weighted rubric elements for a correct response. The benchmark draws from 96 source protocols across nine domains of wet-lab biology and only includes tasks rated highly after review by domain experts. We evaluate nine closed and open models; Claude Opus 5 scores highest at 59.2% normalized rubric score, with other models between 34.1% and 47.1%, and the benchmark remains unsaturated when taking the best of ten attempts. As models are increasingly helpful in life-sciences research, evaluating them on routine wet-lab tasks becomes correspondingly important. We present BenchBench-Protocol as both a grounded assessment of wet-lab reasoning and evidence for the utility of real-world experiments to construct benchmark tasks.",
+      "authors": [
+        "Aditya Sivakumar",
+        "Ashu Singhal",
+        "Nicholas Larus-Stone",
+        "Nithin Parsan"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-24T23:11:35+00:00",
+      "updated_at": "2026-08-24T23:11:35+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.23898"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.23898v1",
+        "pdf": "https://arxiv.org/pdf/2608.23898v1",
+        "html": "https://arxiv.org/html/2608.23898"
+      },
+      "evidence": [
+        {
+          "term": "We introduce BenchBench",
+          "excerpt": "BenchBench-Protocol: Evaluating Real-World Wet-Lab Protocol Reasoning and Modification We introduce BenchBench-Protocol, a benchmark for large language models of 149 protocol-modification tasks recovered from modifications that scientists made to published protocols during real experimental work. Adapting a published protocol to a new experiment is",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.23898"
+        },
+        {
+          "term": "We introduce BenchBench-Protocol, a benchmark",
+          "excerpt": "BenchBench-Protocol: Evaluating Real-World Wet-Lab Protocol Reasoning and Modification We introduce BenchBench-Protocol, a benchmark for large language models of 149 protocol-modification tasks recovered from modifications that scientists made to published protocols during real experimental work. Adapting a published protocol to a new experiment is a routine task for a",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.23898"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "is a routine task for a wet-lab scientist, and a correct modification requires accounting for prior choices and downstream steps. Recent life-science benchmarks have moved toward open-ended, rubric-graded tasks, but tasks are typically elicited from experts rather than reconstructed from real-world modifications. BenchBench-Protocol tasks are derived from differences between a published protocol a",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.23898"
+        },
+        {
+          "term": "biology",
+          "excerpt": "is for the query and the weighted rubric elements for a correct response. The benchmark draws from 96 source protocols across nine domains of wet-lab biology and only includes tasks rated highly after review by domain experts. We evaluate nine closed and open models; Claude Opus 5 scores highest at 59.2% normalized rubric score, with other models between 34.1% and 47.1%, and the benchmark remai",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.23898"
+        },
+        {
+          "term": "life-science",
+          "excerpt": "w experiment is a routine task for a wet-lab scientist, and a correct modification requires accounting for prior choices and downstream steps. Recent life-science benchmarks have moved toward open-ended, rubric-graded tasks, but tasks are typically elicited from experts rather than reconstructed from real-world modifications. BenchBench-Protocol tasks are derived from differences between a published",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.23898"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "Opus and GPT-series models perform strongly on staining and imaging tasks relative to open-source models, which may be due to general improvements in multimodal reasoning in these models versus open series. Figure 6 summarizes these results; full values are reported in Table E1 . [[SECTION 5.4 Model Token Usage and Cost]] 5.4 Model Token Usage and Cost Figure 7 visualizes average input and output",
+          "location": "5.3 Performance by Source-Protocol Domain",
+          "source_url": "https://arxiv.org/html/2608.23898"
+        },
+        {
+          "term": "microscopy",
+          "excerpt": "ncing, which is assigned to genomics, transcriptomics, and sequencing. Sample fixation, permeabilization, labeling with antibodies or dyes, mounting, microscopy, image acquisition, flow cytometry, and analysis of the resulting images or cytometry data. Nucleic acid extraction for sequencing, library preparation, quantification and quality control of libraries, sequencing runs, and associated sampl",
+          "location": "A.1 Protocol Domains",
+          "source_url": "https://arxiv.org/html/2608.23898"
+        },
+        {
+          "term": "ProtocolQA",
+          "excerpt": "-Bench has an extensive suite of biology research tasks ( Laurent et al., 2024 ) , with LABBench2 expanding these tests with free-response questions (ProtocolQA2, LitQA3, FigQA2, and others) that show whether models can troubleshoot protocols and understand and evaluate figures, tables, and data from research papers and databases ( Laurent et al., 2026 ) . BioProBench assesses model capabilities i",
+          "location": "2 Related Work",
+          "source_url": "https://arxiv.org/html/2608.23898"
+        }
+      ],
+      "related_benchmarks": [
+        "BenchBench",
+        "BioProBench",
+        "TroubleshootingBench",
+        "ProtocolQA",
+        "BixBench",
+        "ScienceAgentBench",
+        "AstaBench",
+        "GeneBench",
+        "LifeSciBench",
+        "LAB-Bench",
+        "LABBench2"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 26,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "20be0d00085be659e2a6556a11d4c7e762238f30b8964f868cf981aed436c346",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.22917",
+      "slug": "arxiv-2608-22917-68bd63d60a",
+      "kind": "paper",
+      "title": "TSWAP: A Multilingual Retrieval-Augmented Thai Wellness Advisor",
+      "abstract": "We present TSWAP, a deployed eight-language conversational wellness advisor grounded, via retrieval-augmented generation, in a verified knowledge base of Thai traditional medicine and certified wellness providers. An unmodified open-weight LLM (Qwen3.6-35B-A3B on vLLM) is grounded on a ~30.6K-chunk Thai index by a hybrid dense-sparse retriever with cross-encoder reranking; a first-turn query classifier forces tool-based retrieval for entity lookups; a rule-based safety layer enforces medical scope and Thai emergency routing; and all eight languages are served zero-shot with translate-then-retrieve. We release the first Thai traditional-medicine/wellness retrieval benchmark (50 questions with gold document IDs; Recall@5 = 0.88), production QA logs (91.1% test-retest pass over 259 cases), and a 71-question frontier no-retrieval probe showing what each grounding pillar contributes: without the safety prompt the backend model family produced a full drug-dosing schedule and complied with out-of-scope requests, and without the knowledge base it produced zero verifiable provider recommendations. We further report two transferable deployment findings: English-calibrated 4-bit AWQ quantization corrupts Thai tone marks, and forced-retrieval routing is necessary for reliable grounding.",
+      "authors": [
+        "Pornthep Ukosaramig",
+        "Kobkrit Viriyayudhakorn"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-24T07:54:07+00:00",
+      "updated_at": "2026-08-24T07:54:07+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.22917"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.22917v1",
+        "pdf": "https://arxiv.org/pdf/2608.22917v1",
+        "code": "https://github.com/kobkrit/tswap-wellness-benchmark",
+        "data": "https://huggingface.co/datasets/iapp/tswap-wellness-benchmark",
+        "html": "https://arxiv.org/html/2608.22917"
+      },
+      "evidence": [
+        {
+          "term": "We release the first Thai traditional-medicine/wellness retrieval benchmark",
+          "excerpt": "rule-based safety layer enforces medical scope and Thai emergency routing; and all eight languages are served zero-shot with translate-then-retrieve. We release the first Thai traditional-medicine/wellness retrieval benchmark (50 questions with gold document IDs; Recall@5 = 0.88), production QA logs (91.1% test-retest pass over 259 cases), and a 71-question frontier no-retrieval probe showing what each grounding pillar contributes: without the safety prompt the",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.22917"
+        },
+        {
+          "term": "first Thai traditional-medicine/wellness retrieval benchmark",
+          "excerpt": "ty layer enforces medical scope and Thai emergency routing; and all eight languages are served zero-shot with translate-then-retrieve. We release the first Thai traditional-medicine/wellness retrieval benchmark (50 questions with gold document IDs; Recall@5 = 0.88), production QA logs (91.1% test-retest pass over 259 cases), and a 71-question frontier no-retrieval probe showing what each grounding pillar contributes: without the safety prompt the",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.22917"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "routing; and all eight languages are served zero-shot with translate-then-retrieve. We release the first Thai traditional-medicine/wellness retrieval benchmark (50 questions with gold document IDs; Recall@5 = 0.88), production QA logs (91.1% test-retest pass over 259 cases), and a 71-question frontier no-retrieval probe showing what each grounding pillar contributes: without the safety prompt the",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.22917"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "eployed eight-language conversational wellness advisor grounded, via retrieval-augmented generation, in a verified knowledge base of Thai traditional medicine and certified wellness providers. An unmodified open-weight LLM (Qwen3.6-35B-A3B on vLLM) is grounded on a ~30.6K-chunk Thai index by a hybrid dense-sparse retriever with cross-encoder reranking; a first-turn query classifier forces tool-b",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.22917"
+        },
+        {
+          "term": "medical",
+          "excerpt": "riever with cross-encoder reranking; a first-turn query classifier forces tool-based retrieval for entity lookups; a rule-based safety layer enforces medical scope and Thai emergency routing; and all eight languages are served zero-shot with translate-then-retrieve. We release the first Thai traditional-medicine/wellness retrieval benchmark (50 questions with gold document IDs; Recall@5 = 0.88)",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.22917"
+        },
+        {
+          "term": "Multimodal",
+          "excerpt": "s in Real-World Multilingual Settings. arXiv:2410.13671, 2024. [7] Zhang, W., Aljunied, S. M., Gao, C., Chia, Y. K., Bing, L. M3Exam: A Multilingual, Multimodal, Multilevel Benchmark for Examining Large Language Models. NeurIPS 2023, Datasets and Benchmarks Track , 2023. arXiv:2306.05179. [8] Xiong, G., Jin, Q., Lu, Z., Zhang, A. Benchmarking Retrieval-Augmented Generation for Medicine. Findings o",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2608.22917"
+        },
+        {
+          "term": "tool-using",
+          "excerpt": "rk. We release the first such benchmark with production evaluation logs, and contribute grounding and serving findings we expect to transfer to other tool-using RAG assistants in low-resource languages. [[SECTION Acknowledgments]] Acknowledgments This research project is financially supported by the Program Management Unit for Competitiveness (PMUC) under grant number C05F680144. [[SECTION Referen",
+          "location": "7 Conclusion",
+          "source_url": "https://arxiv.org/html/2608.22917"
+        }
+      ],
+      "related_benchmarks": [
+        "HealthBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 21,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "700207dd3c297d7fc778b980dff16c8b44f7f30a4ec06e520991ec687e492ca3",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.08.04.26359651",
+      "slug": "doi-10-64898-2026-08-04-26359651-387a49e3d0",
+      "kind": "paper",
+      "title": "MTS-Bench: A Manchester Triage System Benchmark for Language Model Triage Safety",
+      "abstract": "BackgroundGeneral purpose language models such as ChatGPT are increasingly used by physicians and triage nurses during emergency triage. A recent study reported 51.6% undertriage of emergencies when patients queried ChatGPT directly (Ramaswamy et al., 2026). DR. INFO is an agentic AI based clinical assistant that retrieves over a curated clinical knowledge base, and an MTS specific retrieval configuration is available in which the system also retrieves the Manchester Triage System (MTS) textbook at inference time. The safety of these systems as a triage adjunct against a structured framework has not been characterised.\n\nMethodsWe adapted the clinical scenarios published by Ramaswamy et al. and mapped them to the Manchester Triage System, yielding 39 emergency cases covering all five MTS priority levels. Each case was evaluated in two variants, one without and one with the objective clinical data block (vital signs, examination findings, and laboratory results), and permuted across two genders, giving 156 prompts per condition. Three systems were tested with and without a misleading GP referral statement prepended as an anchoring statement, giving 312 prompts per system: DR. INFO Baseline, DR. INFO with MTS retrieval, and OpenAI GPT-5.1. The primary outcome was the undertriage rate on the ordered MTS scale, tested with Fishers exact test.\n\nResultsGPT-5.1 undertriaged 44.2% of cases (69/156; 95% CI 36.7 to 52.1), including 75.0% of Red and 73.4% of Orange presentations. Both DR. INFO configurations under-triaged 11.5% of cases (18/156; 95% CI 7.4 to 17.5; Fishers exact p = 1.0 x 10-10 versus GPT-5.1). GPT-5.1 produced 6 dangerous misses (3.8%), and both DR. INFO configurations produced none (p = 0.030). When the anchoring statement was prepended, GPT-5.1 undertriaged 8 of 8 Red cases, while both DR. INFO configurations continued to undertriage none. Adding objective clinical data to the input reduced undertriage in DR. INFO with MTS retrieval from 19.2% to 3.8% (p = 0.005). DR. INFO Baseline and GPT-5.1 showed no comparable change. There was no significant effect of gender.\n\nConclusionOn this benchmark, replacing a general purpose language model with an agentic retrieval augmented system over a curated clinical knowledge base substantially reduced the undertriage and dangerous miss rates. Adding retrieval of the Manchester Triage System textbook to the agentic system was further associated with a reduced susceptibility to the anchoring statement and with an appropriate change in the assigned MTS priority when objective clinical data became available. Of the three configurations evaluated here, only DR. INFO with MTS retrieval combined a clinically conservative assignment at first contact with appropriate updating as additional clinical information arrived.",
+      "authors": [
+        "Ravichandran, S.",
+        "Romano, M.",
+        "Corga da Silva, R.",
+        "Mendes, T.",
+        "Absi, N.",
+        "Isidoro, M.",
+        "Kumar, S.",
+        "Van der Heijden, M.",
+        "Gnanapragasam, V. E."
+      ],
+      "source": "medrxiv",
+      "published_at": "2026-08-24T00:00:00+00:00",
+      "updated_at": "2026-08-24T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by",
+      "identifiers": {
+        "doi": "10.64898/2026.08.04.26359651"
+      },
+      "links": {
+        "abs": "https://www.medrxiv.org/content/10.64898/2026.08.04.26359651",
+        "pdf": "https://www.medrxiv.org/content/10.64898/2026.08.04.26359651.full.pdf",
+        "html": "https://www.medrxiv.org/content/10.64898/2026.08.04.26359651.full"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "MTS-Bench: A Manchester Triage System Benchmark for Language Model Triage Safety BackgroundGeneral purpose language models such as ChatGPT are increasingly used by physicians and triage nurses during emergency triage. A recent study reported 51.6% undertriage of emergencies when patient",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.08.04.26359651.full"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "cent study reported 51.6% undertriage of emergencies when patients queried ChatGPT directly (Ramaswamy et al., 2026). DR. INFO is an agentic AI based clinical assistant that retrieves over a curated clinical knowledge base, and an MTS specific retrieval configuration is available in which the system also retrieves the Manchester Triage System (MTS) textbook at inference time. The safety of these",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.08.04.26359651.full"
+        },
+        {
+          "term": "laboratory",
+          "excerpt": "y levels. Each case was evaluated in two variants, one without and one with the objective clinical data block (vital signs, examination findings, and laboratory results), and permuted across two genders, giving 156 prompts per condition. Three systems were tested with and without a misleading GP referral statement prepended as an anchoring statement, giving 312 prompts per system: DR. INFO Baselin",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.08.04.26359651.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 13,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.08.04.26359651.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "94459415a60be2b4d338b5e4ee93d64704a0b28f53f53fc052424a6fb08d2bfe",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}

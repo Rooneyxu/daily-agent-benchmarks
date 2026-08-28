@@ -29,7 +29,6 @@
         <div class="abstract"><p>${escape(entry.abstract)}</p></div>
         <dl class="bio-definition">
           ${definition(bioT(lang, "published"), escape((entry.published_at || "").slice(0, 10)))}
-          ${definition(bioT(lang, "firstSeen"), escape((entry.first_seen_at || "").slice(0, 10)))}
           ${definition(bioT(lang, "access"), escape(entry.access_status))}
           ${definition(bioT(lang, "topic"), escape(bioTopicLabel(entry.topic, lang)))}
           ${definition(bioT(lang, "contributionType"), escape(bioContributionLabel(entry.contribution_type, lang)))}

@@ -181,6 +181,28 @@ def test_proposing_automated_evaluation_is_methodology() -> None:
     assert result.priority == "P0"
 
 
+def test_automated_grader_is_benchmark_methodology() -> None:
+    result = classify(
+        document(
+            "BioGrade-Bench: Evaluating Open Scientific Reasoning",
+            "We introduce a biomedical benchmark with an LLM-based grader calibrated against expert rubrics.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+    assert result.priority == "P0"
+
+
+def test_synthetic_evaluation_data_is_benchmark_methodology() -> None:
+    result = classify(
+        document(
+            "GeneSynth-Bench: Controlled Genomics Evaluation",
+            "We introduce a genomics benchmark and generate synthetic evaluation data with provenance checks.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+    assert result.priority == "P0"
+
+
 def test_benchmark_for_an_auditing_task_is_still_a_new_benchmark() -> None:
     result = classify(
         document(

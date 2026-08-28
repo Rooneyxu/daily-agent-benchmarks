@@ -1,657 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-28T10:24:47Z",
+  "generated_at": "2026-08-28T10:43:05Z",
   "total": 26,
   "entries": [
-    {
-      "id": "vendor:openai:eb0251aebc8901effed651bd",
-      "slug": "vendor-openai-eb0251aebc8901effed651bd-9767ecc397",
-      "kind": "evaluation_update",
-      "title": "Apr 23, 2026 GPT-5.5 System Card GPT-5.5 is a new model designed for complex, real-world work, including writing code, researching online, analyzing…",
-      "abstract": "",
-      "authors": [],
-      "source": "vendor:openai",
-      "published_at": "2026-08-28T07:30:51+00:00",
-      "updated_at": "2026-08-28T07:30:51+00:00",
-      "first_seen_at": "2026-08-28T07:30:51+00:00",
-      "event_at": "2026-08-28T07:30:51+00:00",
-      "priority": "P2",
-      "categories": [
-        "text",
-        "multimodal",
-        "protocol",
-        "agent",
-        "biosafety"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "unknown",
-      "license": "",
-      "identifiers": {},
-      "links": {
-        "abs": "https://deploymentsafety.openai.com/gpt-5-5",
-        "pdf": "https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf",
-        "html": "https://deploymentsafety.openai.com/gpt-5-5"
-      },
-      "evidence": [
-        {
-          "term": "we introduce",
-          "excerpt": "n Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we introduced these Production Benchmarks to help us measure continuing progress given that our earlier Standard evaluations for these categories had become relatively saturated. These evaluations were deliberately created to be difficult. They were bu",
-          "location": "3.1.1 Evaluations with Challenging Prompts",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-5"
-        },
-        {
-          "term": "we present",
-          "excerpt": "ary threshold where passing corresponds to providing any assistance that would unblock the user, including partial explanations of root causes/fixes. We present the average performance at each time horizon, showing that for problems with high time horizons, the reliability of the model degrades. [[SECTION Figure 21]] Figure 21 [[SECTION 9.1.3.4 OPQA]] 9.1.3.4 OPQA OpenAI-Proof Q&A evaluates AI mod",
-          "location": "Figure 20",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-5"
-        },
-        {
-          "term": "we propose",
-          "excerpt": "hypothesize that a qualitative capability shift is most likely to emerge when stepwise success rates exceed a relatively high threshold. Accordingly, we propose 50% correctness as the threshold for biorisk concern. In our experiments, we find that GPT-5.5 has minimal capability in distinguishing true positive binders from hard negative binders. [[SECTION Table 12: Hard negative protein binding pre",
-          "location": "9.1.1.6 Hard-negative protein binding prediction",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-5"
-        },
-        {
-          "term": "introducing",
-          "excerpt": "cation, experts were required to significantly alter at least several steps. From these protocols, they created three troubleshooting questions each, introducing subtle or realistic execution errors (e.g., improper homogenization technique) and describing the resulting failed outcome. After going through independent expert review, the resulting dataset includes 52 protocols, each paired with three",
-          "location": "9.1.1.4 TroubleshootingBench",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-5"
-        },
-        {
-          "term": "evaluation framework",
-          "excerpt": "c, yet adversarial user simulations, these evaluations have enabled continued improvements in safety performance, particularly in areas where earlier evaluation frameworks had reached saturation. Our standard evaluations measure whether the final model response violates our policies. In these dynamic conversations, we instead evaluate whether any assistant response violates policy and report the percentage",
-          "location": "5.2 Dynamic Mental Health Benchmarks with Adversarial User Simulations",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-5"
-        },
-        {
-          "term": "system card",
-          "excerpt": "Apr 23, 2026 GPT-5.5 System Card GPT-5.5 is a new model designed for complex, real-world work, including writing code, researching online, analyzing… [[SECTION GPT-5.5 System Card - OpenAI Deployment Safety Hub]] GPT-5.5 System Card - OpenAI Deployment Safety Hub Publish",
-          "location": "Abstract / metadata",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-5"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "lowed Content]] 3.1 Disallowed Content [[SECTION 3.1.1 Evaluations with Challenging Prompts]] 3.1.1 Evaluations with Challenging Prompts We conducted benchmark evaluations across disallowed content categories. We report here on our Production Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we intro",
-          "location": "3.1.1 Evaluations with Challenging Prompts",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-5"
-        },
-        {
-          "term": "benchmarks",
-          "excerpt": "3.1.1 Evaluations with Challenging Prompts We conducted benchmark evaluations across disallowed content categories. We report here on our Production Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we introduced these Production Benchmarks to help us measure continuing progress given that our earlie",
-          "location": "3.1.1 Evaluations with Challenging Prompts",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-5"
-        }
-      ],
-      "related_benchmarks": [
-        "HealthBench",
-        "GPQA",
-        "ProtocolQA",
-        "TroubleshootingBench",
-        "CyScenarioBench",
-        "OPQA",
-        "TerminalBench"
-      ],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability",
-        "biosecurity_misuse"
-      ],
-      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
-      "match_score": 71,
-      "extraction_status": "complete",
-      "extraction_error": "",
-      "content_hash": "52ba7eb50f945c87c2673845acb9527f737d5822be3849a40c457fdb5df3ef74",
-      "is_seed": false
-    },
-    {
-      "id": "vendor:openai:d9436abebb3166dd113e5754",
-      "slug": "vendor-openai-d9436abebb3166dd113e5754-9a72439cc7",
-      "kind": "evaluation_update",
-      "title": "May 05, 2026 GPT-5.5 Instant System Card GPT-5.5 Instant is our latest Instant model, and explained in our blog . The comprehensive safety mitigation approach…",
-      "abstract": "",
-      "authors": [],
-      "source": "vendor:openai",
-      "published_at": "2026-08-28T07:30:51+00:00",
-      "updated_at": "2026-08-28T07:30:51+00:00",
-      "first_seen_at": "2026-08-28T07:30:51+00:00",
-      "event_at": "2026-08-28T07:30:51+00:00",
-      "priority": "P2",
-      "categories": [
-        "multimodal",
-        "protocol",
-        "biosafety"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "unknown",
-      "license": "",
-      "identifiers": {},
-      "links": {
-        "abs": "https://deploymentsafety.openai.com/gpt-5-5-instant",
-        "pdf": "https://deploymentsafety.openai.com/gpt-5-5-instant/gpt-5-5-instant.pdf",
-        "html": "https://deploymentsafety.openai.com/gpt-5-5-instant"
-      },
-      "evidence": [
-        {
-          "term": "we introduce",
-          "excerpt": "n Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we introduced these Production Benchmarks to help us measure continuing progress given that our earlier Standard evaluations for these categories had become relatively saturated. These evaluations were deliberately created to be difficult. They were bu",
-          "location": "3.1.1 Evaluations with Challenging Prompts",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-5-instant"
-        },
-        {
-          "term": "introducing",
-          "excerpt": "cation, experts were required to significantly alter at least several steps. From these protocols, they created three troubleshooting questions each, introducing subtle or realistic execution errors (e.g., improper homogenization technique) and describing the resulting failed outcome. After going through independent expert review, the resulting dataset includes 52 protocols, each paired with three",
-          "location": "8.1.1.4 TroubleshootingBench",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-5-instant"
-        },
-        {
-          "term": "evaluation framework",
-          "excerpt": "c, yet adversarial user simulations, these evaluations have enabled continued improvements in safety performance, particularly in areas where earlier evaluation frameworks had reached saturation. Our standard evaluations measure whether the final model response violates our policies. In these dynamic conversations, we instead evaluate whether any assistant response violates policy and report the percentage",
-          "location": "Table 3",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-5-instant"
-        },
-        {
-          "term": "system card",
-          "excerpt": "May 05, 2026 GPT-5.5 Instant System Card GPT-5.5 Instant is our latest Instant model, and explained in our blog . The comprehensive safety mitigation approach… [[SECTION GPT-5.5 Instant System Card - OpenAI Deployment Safety Hub]] GPT-5.5 Instant System Card - OpenAI Deployment",
-          "location": "Abstract / metadata",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-5-instant"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "lowed Content]] 3.1 Disallowed Content [[SECTION 3.1.1 Evaluations with Challenging Prompts]] 3.1.1 Evaluations with Challenging Prompts We conducted benchmark evaluations across disallowed content categories. We report here on our Production Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we intro",
-          "location": "3.1.1 Evaluations with Challenging Prompts",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-5-instant"
-        },
-        {
-          "term": "benchmarks",
-          "excerpt": "3.1.1 Evaluations with Challenging Prompts We conducted benchmark evaluations across disallowed content categories. We report here on our Production Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we introduced these Production Benchmarks to help us measure continuing progress given that our earlie",
-          "location": "3.1.1 Evaluations with Challenging Prompts",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-5-instant"
-        },
-        {
-          "term": "test set",
-          "excerpt": "hardened targets. [[SECTION 8.1.2.1 Capture the Flag (CTF) Challenges]] 8.1.2.1 Capture the Flag (CTF) Challenges We evaluate model performance on a test set of curated, publicly available CTF challenges which met the following criteria: The challenge required skills falling into one of the following categories: Web Application Exploitation (web): the flag is stored on a virtual machine running",
-          "location": "8.1.2.1 Capture the Flag (CTF) Challenges",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-5-instant"
-        },
-        {
-          "term": "biology",
-          "excerpt": "edge and uncontaminated procedures that are not available online. Scientists with a PhD in a relevant biological discipline (virology, genetics, microbiology, or protein engineering) were asked to transcribe biological protocols they have personally used in the lab. Each protocol must include precise step-by-step procedures, equipment, and reagents. If a protocol was adapted from a publication,",
-          "location": "8.1.1.4 TroubleshootingBench",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-5-instant"
-        }
-      ],
-      "related_benchmarks": [
-        "HealthBench",
-        "ProtocolQA",
-        "TroubleshootingBench"
-      ],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability",
-        "biosecurity_misuse"
-      ],
-      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
-      "match_score": 44,
-      "extraction_status": "complete",
-      "extraction_error": "",
-      "content_hash": "626660b5e685648e2a584b0ab28d7b762f01fc2780682a6f44cc6adb4509acb9",
-      "is_seed": false
-    },
-    {
-      "id": "vendor:openai:af5e2061c747318e8d421f78",
-      "slug": "vendor-openai-af5e2061c747318e8d421f78-95e83f5ddb",
-      "kind": "evaluation_update",
-      "title": "Jun 03, 2026 GPT-Rosalind-5.5 System Card GPT-Rosalind-5.5 is a new model in the GPT-Rosalind series, our frontier reasoning model built to support research…",
-      "abstract": "",
-      "authors": [],
-      "source": "vendor:openai",
-      "published_at": "2026-08-28T07:30:50+00:00",
-      "updated_at": "2026-08-28T07:30:50+00:00",
-      "first_seen_at": "2026-08-28T07:30:50+00:00",
-      "event_at": "2026-08-28T07:30:50+00:00",
-      "priority": "P2",
-      "categories": [
-        "multimodal",
-        "protocol",
-        "agent",
-        "biosafety"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "unknown",
-      "license": "",
-      "identifiers": {},
-      "links": {
-        "abs": "https://deploymentsafety.openai.com/gpt-rosalind-5-5",
-        "pdf": "https://deploymentsafety.openai.com/gpt-rosalind-5-5/gpt-rosalind-5-5.pdf",
-        "html": "https://deploymentsafety.openai.com/gpt-rosalind-5-5"
-      },
-      "evidence": [
-        {
-          "term": "we propose",
-          "excerpt": "hypothesize that a qualitative capability shift is most likely to emerge when stepwise success rates exceed a relatively high threshold. Accordingly, we propose 50% correctness as the threshold for biorisk concern. [[SECTION 4.1.1.6 DNA sequence design for Transcription Factor binding]] 4.1.1.6 DNA sequence design for Transcription Factor binding We evaluate the model’s ability to design DNA seque",
-          "location": "Table 10: Biological experiments are costly and iterative. Because errors compound across steps, a single low-success-ra",
-          "source_url": "https://deploymentsafety.openai.com/gpt-rosalind-5-5"
-        },
-        {
-          "term": "introducing",
-          "excerpt": "cation, experts were required to significantly alter at least several steps. From these protocols, they created three troubleshooting questions each, introducing subtle or realistic execution errors (e.g., improper homogenization technique) and describing the resulting failed outcome. After going through independent expert review, the resulting dataset includes 52 protocols, each paired with three",
-          "location": "4.1.1.2 TroubleshootingBench",
-          "source_url": "https://deploymentsafety.openai.com/gpt-rosalind-5-5"
-        },
-        {
-          "term": "system card",
-          "excerpt": "Jun 03, 2026 GPT-Rosalind-5.5 System Card GPT-Rosalind-5.5 is a new model in the GPT-Rosalind series, our frontier reasoning model built to support research… [[SECTION GPT-Rosalind-5.5 System Card - OpenAI Deployment Safety Hub]] GPT-Rosalind-5.5 System Card - OpenAI Deployment S",
-          "location": "Abstract / metadata",
-          "source_url": "https://deploymentsafety.openai.com/gpt-rosalind-5-5"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "valuation results from those capabilities in this system card. We worked with industry experts to design and evaluate GPT-Rosalind-5.5 on a series of benchmarks across medicinal chemistry, quantitative biology, wet lab protocol assistance, and applied life sciences research. Beneficial biological capabilities, as expected, exceed those of the regular GPT-5.5 model, often while expending fewer tok",
-          "location": "1. Introduction",
-          "source_url": "https://deploymentsafety.openai.com/gpt-rosalind-5-5"
-        },
-        {
-          "term": "benchmarks",
-          "excerpt": "valuation results from those capabilities in this system card. We worked with industry experts to design and evaluate GPT-Rosalind-5.5 on a series of benchmarks across medicinal chemistry, quantitative biology, wet lab protocol assistance, and applied life sciences research. Beneficial biological capabilities, as expected, exceed those of the regular GPT-5.5 model, often while expending fewer toke",
-          "location": "1. Introduction",
-          "source_url": "https://deploymentsafety.openai.com/gpt-rosalind-5-5"
-        },
-        {
-          "term": "benchmarking",
-          "excerpt": "ription Factor binding We evaluate the model’s ability to design DNA sequences with high binding affinity for well-known transcription factors (TFs), benchmarking it against widely-available gradient-based design methods. Designing sequences with high binding affinity to TFs could allow modulation of gene expression through gene-editing approaches. We evaluate the model on 11 TFs drawn from Nucleobe",
-          "location": "4.1.1.6 DNA sequence design for Transcription Factor binding",
-          "source_url": "https://deploymentsafety.openai.com/gpt-rosalind-5-5"
-        },
-        {
-          "term": "biology",
-          "excerpt": "roduction]] 1. Introduction GPT-Rosalind-5.5 is a new model in the GPT-Rosalind series, our frontier reasoning model built to support research across biology, drug discovery, and translational medicine. We are deploying it in research preview to trusted organizations, providing access limited to qualified scientists, research institutes and government partners who are working on beneficial uses",
-          "location": "1. Introduction",
-          "source_url": "https://deploymentsafety.openai.com/gpt-rosalind-5-5"
-        },
-        {
-          "term": "biological",
-          "excerpt": "who have a strong security and governance posture. GPT-Rosalind-5.5 is incrementally trained from GPT-5.5, our flagship reasoning model. Outside the biological domain, its capabilities are comparable to GPT-5.5 and it receives the same model-level safety training. We therefore have not provided evaluation results from those capabilities in this system card. We worked with industry experts to desi",
-          "location": "1. Introduction",
-          "source_url": "https://deploymentsafety.openai.com/gpt-rosalind-5-5"
-        }
-      ],
-      "related_benchmarks": [
-        "LifeSciBench",
-        "ProtocolQA",
-        "TroubleshootingBench"
-      ],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability",
-        "biosecurity_misuse"
-      ],
-      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
-      "match_score": 78,
-      "extraction_status": "complete",
-      "extraction_error": "",
-      "content_hash": "3888d58e7700d8e411019dbc5b9b7d2a3eb693b1f9d99eb375004fba219596d5",
-      "is_seed": false
-    },
-    {
-      "id": "vendor:openai:2a64bad82b9fe860b289433e",
-      "slug": "vendor-openai-2a64bad82b9fe860b289433e-b1265d0005",
-      "kind": "evaluation_update",
-      "title": "Jun 26, 2026 GPT-5.6 Preview System Card GPT-5.6 is a new family of three models: Sol, our new flagship model; Terra, a capable lower-cost option; and Luna, our…",
-      "abstract": "",
-      "authors": [],
-      "source": "vendor:openai",
-      "published_at": "2026-08-28T07:30:50+00:00",
-      "updated_at": "2026-08-28T07:30:50+00:00",
-      "first_seen_at": "2026-08-28T07:30:50+00:00",
-      "event_at": "2026-08-28T07:30:50+00:00",
-      "priority": "P2",
-      "categories": [
-        "multimodal",
-        "protocol",
-        "agent",
-        "biosafety",
-        "quality"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "unknown",
-      "license": "",
-      "identifiers": {},
-      "links": {
-        "abs": "https://deploymentsafety.openai.com/gpt-5-6-preview",
-        "pdf": "https://deploymentsafety.openai.com/gpt-5-6-preview/gpt-5-6-preview.pdf",
-        "code": "https://github.com/KellerJordan/modded-nanogpt/blob/master/records/track_1_short/2024-11-19_FlexAttention/8384493d-dba9-4991-b16b-8696953f5e6d.txt",
-        "html": "https://deploymentsafety.openai.com/gpt-5-6-preview"
-      },
-      "evidence": [
-        {
-          "term": "we introduce",
-          "excerpt": "n Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we introduced these Production Benchmarks to help us measure continuing progress given that our earlier Standard evaluations for these categories had become relatively saturated. These evaluations were deliberately created to be difficult. They were bu",
-          "location": "3.1.1 Evaluations with Challenging Prompts",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-preview"
-        },
-        {
-          "term": "introducing",
-          "excerpt": "f samples and resamples, which may lead it to be overly wide. Intervals based on paired-samples did not seem to meaningfully change the borders while introducing additional mathematical complexity. ↩︎ Mathematically, we plot \\(\\log_{2}R\\) , where \\(R = \\frac{r_{sim}}{r_{prod}}\\) , against the effective positive count \\(k_{eff} = (\\frac{1}{k_{prod}} + \\ \\frac{1}{k_{sim}})^{- 1}\\) , with sampling-noi",
-          "location": "Figure 1",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-preview"
-        },
-        {
-          "term": "new benchmark",
-          "excerpt": "FrontierCyber challenges, 7/11 long-horizon CyScenarioBench challenges, and all 22 medium- and hard-difficulty Atomic challenges. On FrontierCyber, a new benchmark from Irregular testing zero-day discovery and exploitation in current off-the-shelf software and hardware, GPT-5.6 Sol’s success rates were 11% on Easy, 12% on Medium, 5% on Hard, and 0% on Elite challenges, compared with GPT-5.5 at 6%, 6%",
-          "location": "9.1.2.5 External Evaluations for Cyber Capabilities – Irregular",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-preview"
-        },
-        {
-          "term": "evaluation framework",
-          "excerpt": ", yet adversarial, user simulations, these evaluations have enabled continued improvements in safety performance, particularly in areas where earlier evaluation frameworks had reached saturation. Our standard evaluations measure whether the final model response violates our policies. In these dynamic conversations, we instead evaluate whether any assistant response violates policy and report the percentage",
-          "location": "5.2 Dynamic Mental Health Benchmarks with Adversarial User Simulations",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-preview"
-        },
-        {
-          "term": "system card",
-          "excerpt": "Jun 26, 2026 GPT-5.6 Preview System Card GPT-5.6 is a new family of three models: Sol, our new flagship model; Terra, a capable lower-cost option; and Luna, our… [[SECTION GPT-5.6 Preview System Card - OpenAI Deployment Safety Hub]] GPT-5.6 Preview System Card - OpenAI Deploymen",
-          "location": "Abstract / metadata",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-preview"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "lowed Content]] 3.1 Disallowed Content [[SECTION 3.1.1 Evaluations with Challenging Prompts]] 3.1.1 Evaluations with Challenging Prompts We conducted benchmark evaluations across disallowed content categories. We report here on our Production Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we intro",
-          "location": "3.1.1 Evaluations with Challenging Prompts",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-preview"
-        },
-        {
-          "term": "benchmarks",
-          "excerpt": "3.1.1 Evaluations with Challenging Prompts We conducted benchmark evaluations across disallowed content categories. We report here on our Production Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we introduced these Production Benchmarks to help us measure continuing progress given that our earlie",
-          "location": "3.1.1 Evaluations with Challenging Prompts",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-preview"
-        },
-        {
-          "term": "evaluation suite",
-          "excerpt": "is critical to track and preserve CoT monitorability so that it can remain a useful component of scalable oversight. We assess GPT-5.6 Sol using the evaluation suite from Guan et al. (2025) [ 6 ] , which spans three evaluation archetypes—intervention, process, and outcome-property. We also introduce three new monitorability environments based on other system card safety evals: destructive actions, conf",
-          "location": "7.3.1 CoT Monitorability",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-preview"
-        }
-      ],
-      "related_benchmarks": [
-        "HealthBench",
-        "GPQA",
-        "ProtocolQA",
-        "TroubleshootingBench",
-        "ExploitBench",
-        "CyScenarioBench",
-        "OPQA",
-        "PostTrainBench",
-        "HumanEval"
-      ],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability",
-        "biosecurity_misuse"
-      ],
-      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
-      "match_score": 76,
-      "extraction_status": "complete",
-      "extraction_error": "",
-      "content_hash": "41413335ecf287b8e5f1e4bcd24c59f8861e400e19c4c0f9c20b7485dd5cd18a",
-      "is_seed": false
-    },
-    {
-      "id": "vendor:openai:99915871e55a72cb438fc3f2",
-      "slug": "vendor-openai-99915871e55a72cb438fc3f2-642693a4ce",
-      "kind": "evaluation_update",
-      "title": "Jul 08, 2026 GPT-Live System Card GPT-Live-1 and GPT-Live-1 mini are a new generation of voice models designed to make conversations with AI feel more…",
-      "abstract": "",
-      "authors": [],
-      "source": "vendor:openai",
-      "published_at": "2026-08-28T07:30:49+00:00",
-      "updated_at": "2026-08-28T07:30:49+00:00",
-      "first_seen_at": "2026-08-28T07:30:49+00:00",
-      "event_at": "2026-08-28T07:30:49+00:00",
-      "priority": "P2",
-      "categories": [
-        "text"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "unknown",
-      "license": "",
-      "identifiers": {},
-      "links": {
-        "abs": "https://deploymentsafety.openai.com/gpt-live",
-        "pdf": "https://deploymentsafety.openai.com/gpt-live/gpt-live.pdf",
-        "html": "https://deploymentsafety.openai.com/gpt-live"
-      },
-      "evidence": [
-        {
-          "term": "system card",
-          "excerpt": "Jul 08, 2026 GPT-Live System Card GPT-Live-1 and GPT-Live-1 mini are a new generation of voice models designed to make conversations with AI feel more… [[SECTION GPT-Live System Card - OpenAI Deployment Safety Hub]] GPT-Live System Card - OpenAI Deployment Safety Hub Publ",
-          "location": "Abstract / metadata",
-          "source_url": "https://deploymentsafety.openai.com/gpt-live"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "steer the model toward unsafe outputs. Failures in the production set can be subtler and less severe, but still important. We therefore view the two benchmarks as complementary. [[SECTION 4. Red Teaming]] 4. Red Teaming OpenAI worked with a team of internal and external red teamers across languages to stress test the models’ safety training with no system level mitigations. We started very early",
-          "location": "Table 2: Voice-Native Evaluations: Synthetic Prompts",
-          "source_url": "https://deploymentsafety.openai.com/gpt-live"
-        },
-        {
-          "term": "biological",
-          "excerpt": "or GPT-Live-1 mini, when operating without delegation, could plausibly be considered High in any of our Preparedness Framework’s Tracked Categories – Biological and Chemical Risk, AI Self-Improvement, or Cybersecurity. For the Biological and Chemical domain, where GPT-Live models can use our highly capable flagship models, the GPT-Live experience inherits the safeguards of those underlying models",
-          "location": "5. Preparedness Framework",
-          "source_url": "https://deploymentsafety.openai.com/gpt-live"
-        }
-      ],
-      "related_benchmarks": [],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability"
-      ],
-      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
-      "match_score": 11,
-      "extraction_status": "complete",
-      "extraction_error": "",
-      "content_hash": "215c4b80b316fb2ee08065e570ce5fb4ac4bc15cb0cfab217499479323aef6e7",
-      "is_seed": false
-    },
-    {
-      "id": "vendor:openai:2d8a643762c5182862cdf1cb",
-      "slug": "vendor-openai-2d8a643762c5182862cdf1cb-3c75a01e1a",
-      "kind": "evaluation_update",
-      "title": "Jul 09, 2026 GPT-5.6 System Card GPT-5.6 is a new family of three models: Sol, our new flagship model; Terra, a capable lower-cost option; and Luna, our…",
-      "abstract": "",
-      "authors": [],
-      "source": "vendor:openai",
-      "published_at": "2026-08-28T07:30:49+00:00",
-      "updated_at": "2026-08-28T07:30:49+00:00",
-      "first_seen_at": "2026-08-28T07:30:49+00:00",
-      "event_at": "2026-08-28T07:30:49+00:00",
-      "priority": "P2",
-      "categories": [
-        "multimodal",
-        "protocol",
-        "agent",
-        "biosafety",
-        "quality"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "unknown",
-      "license": "",
-      "identifiers": {},
-      "links": {
-        "abs": "https://deploymentsafety.openai.com/gpt-5-6",
-        "pdf": "https://deploymentsafety.openai.com/gpt-5-6/gpt-5-6.pdf",
-        "code": "https://github.com/KellerJordan/modded-nanogpt/blob/master/records/track_1_short/2024-11-19_FlexAttention/8384493d-dba9-4991-b16b-8696953f5e6d.txt",
-        "html": "https://deploymentsafety.openai.com/gpt-5-6"
-      },
-      "evidence": [
-        {
-          "term": "we introduce",
-          "excerpt": "n Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we introduced these Production Benchmarks to help us measure continuing progress given that our earlier Standard evaluations for these categories had become relatively saturated. These evaluations were deliberately created to be difficult. They were bu",
-          "location": "3.1.1 Evaluations with Challenging Prompts",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6"
-        },
-        {
-          "term": "introducing",
-          "excerpt": "f samples and resamples, which may lead it to be overly wide. Intervals based on paired-samples did not seem to meaningfully change the borders while introducing additional mathematical complexity. ↩︎ Mathematically, we plot \\(\\log_{2}R\\) , where \\(R = \\frac{r_{sim}}{r_{prod}}\\) , against the effective positive count \\(k_{eff} = (\\frac{1}{k_{prod}} + \\ \\frac{1}{k_{sim}})^{- 1}\\) , with sampling-noi",
-          "location": "Figure 1",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6"
-        },
-        {
-          "term": "new benchmark",
-          "excerpt": "FrontierCyber challenges, 7/11 long-horizon CyScenarioBench challenges, and all 22 medium- and hard-difficulty Atomic challenges. On FrontierCyber, a new benchmark from Irregular testing zero-day discovery and exploitation in current off-the-shelf software and hardware, GPT-5.6 Sol’s success rates were 11% on Easy, 12% on Medium, 5% on Hard, and 0% on Elite challenges, compared with GPT-5.5 at 6%, 6%",
-          "location": "9.1.2.5 External Evaluations for Cyber Capabilities – Irregular",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6"
-        },
-        {
-          "term": "evaluation framework",
-          "excerpt": ", yet adversarial, user simulations, these evaluations have enabled continued improvements in safety performance, particularly in areas where earlier evaluation frameworks had reached saturation. Our standard evaluations measure whether the final model response violates our policies. In these dynamic conversations, we instead evaluate whether any assistant response violates policy and report the percentage",
-          "location": "5.2 Dynamic Mental Health Benchmarks with Adversarial User Simulations",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6"
-        },
-        {
-          "term": "grading rubric",
-          "excerpt": "breaks must generalize across multiple examples. The criteria for this is producing violative output on multiple examples (with specific criteria and grading rubrics that cover cybersecurity and biological risks, respectively). We use this as a first pass heuristic before triaging these attacks on longer evals such as CyberGym and ExploitBench which we use as evidence of agential trajectories which ar",
-          "location": "9.4.5 Third Party Red-teaming for Jailbreaks",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6"
-        },
-        {
-          "term": "system card",
-          "excerpt": "Jul 09, 2026 GPT-5.6 System Card GPT-5.6 is a new family of three models: Sol, our new flagship model; Terra, a capable lower-cost option; and Luna, our… [[SECTION GPT-5.6 System Card - OpenAI Deployment Safety Hub]] GPT-5.6 System Card - OpenAI Deployment Safety Hub Pub",
-          "location": "Abstract / metadata",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "lowed Content]] 3.1 Disallowed Content [[SECTION 3.1.1 Evaluations with Challenging Prompts]] 3.1.1 Evaluations with Challenging Prompts We conducted benchmark evaluations across disallowed content categories. We report here on our Production Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we intro",
-          "location": "3.1.1 Evaluations with Challenging Prompts",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6"
-        },
-        {
-          "term": "benchmarks",
-          "excerpt": "3.1.1 Evaluations with Challenging Prompts We conducted benchmark evaluations across disallowed content categories. We report here on our Production Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we introduced these Production Benchmarks to help us measure continuing progress given that our earlie",
-          "location": "3.1.1 Evaluations with Challenging Prompts",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6"
-        }
-      ],
-      "related_benchmarks": [
-        "HealthBench",
-        "GPQA",
-        "ProtocolQA",
-        "TroubleshootingBench",
-        "ExploitBench",
-        "CyScenarioBench",
-        "OPQA",
-        "PostTrainBench",
-        "HumanEval",
-        "ImpossibleMLEBench"
-      ],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability",
-        "biosecurity_misuse"
-      ],
-      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
-      "match_score": 78,
-      "extraction_status": "complete",
-      "extraction_error": "",
-      "content_hash": "490f811975db85d8229496e714e1f3507665858875d15b1dde9cb2c0a220a379",
-      "is_seed": false
-    },
-    {
-      "id": "vendor:openai:fb39fe1cd5a85bda3cfad376",
-      "slug": "vendor-openai-fb39fe1cd5a85bda3cfad376-613d6be745",
-      "kind": "evaluation_update",
-      "title": "Aug 06, 2026 GPT-5.6 — August Updates Starting today, we’re updating ChatGPT with a more capable model and expanding access for everyone. Free and Go users…",
-      "abstract": "",
-      "authors": [],
-      "source": "vendor:openai",
-      "published_at": "2026-08-28T07:30:48+00:00",
-      "updated_at": "2026-08-28T07:30:48+00:00",
-      "first_seen_at": "2026-08-28T07:30:48+00:00",
-      "event_at": "2026-08-28T07:30:48+00:00",
-      "priority": "P2",
-      "categories": [
-        "multimodal",
-        "protocol",
-        "agent",
-        "biosafety"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "unknown",
-      "license": "",
-      "identifiers": {},
-      "links": {
-        "abs": "https://deploymentsafety.openai.com/gpt-5-6-august-update",
-        "pdf": "https://deploymentsafety.openai.com/gpt-5-6-august-update/gpt-5-6-august-update.pdf",
-        "html": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
-      },
-      "evidence": [
-        {
-          "term": "we introduce",
-          "excerpt": "n Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we introduced these Production Benchmarks to help us measure continuing progress given that earlier Standard evaluations for these categories had become relatively saturated. These evaluations were deliberately created to be difficult. They were built",
-          "location": "3.1.1 Evaluations with Challenging Prompts",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
-        },
-        {
-          "term": "introducing",
-          "excerpt": "increase transparency into how our models perform against these principles and help advance understanding of model performance on teen safety, we are introducing dedicated U18 evaluations as part of the disallowed content evaluations that we share. These evaluations use some of the most challenging, production-derived examples to assess model behavior in sensitive contexts, including adversarial ex",
-          "location": "3.2 Disallowed Content for Users Under-18",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
-        },
-        {
-          "term": "system card",
-          "excerpt": "ng GPT-5.6 Sol and GPT-5.6 Luna in Codex, and via ChatGPT Work, are still using previously released versions of GPT-5.6 Sol and GPT-5.6 Luna. In this system card, we distinguish these models by their month of release: August for the versions released today, and July for the versions that remain in use in Codex and Work. See our blog for details. Under our Preparedness Framework, we are treating thi",
-          "location": "1. Introduction",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "lowed Content]] 3.1 Disallowed Content [[SECTION 3.1.1 Evaluations with Challenging Prompts]] 3.1.1 Evaluations with Challenging Prompts We conducted benchmark evaluations across disallowed content categories. We report here on our Production Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we intro",
-          "location": "3.1.1 Evaluations with Challenging Prompts",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
-        },
-        {
-          "term": "benchmarks",
-          "excerpt": "3.1.1 Evaluations with Challenging Prompts We conducted benchmark evaluations across disallowed content categories. We report here on our Production Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we introduced these Production Benchmarks to help us measure continuing progress given that earlier St",
-          "location": "3.1.1 Evaluations with Challenging Prompts",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
-        },
-        {
-          "term": "test set",
-          "excerpt": "reshold: High) [[SECTION 7.1.2.1.1 Capture the Flag (CTF) Challenges]] 7.1.2.1.1 Capture the Flag (CTF) Challenges We evaluate model performance on a test set of curated, publicly available CTF challenges which met the following criteria: The challenge required skills falling into one of the following categories: Web Application Exploitation (web) : the flag is stored on a virtual machine runnin",
-          "location": "7.1.2.1.1 Capture the Flag (CTF) Challenges",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
-        },
-        {
-          "term": "biology",
-          "excerpt": "nded protocols and errors that rely on tacit procedural knowledge Scientists with a PhD in a relevant biological discipline (virology, genetics, microbiology, or protein engineering) were asked to transcribe biological protocols they have personally used in the lab. Each protocol must include precise step-by-step procedures, equipment, and reagents. If a protocol was adapted from a publication,",
-          "location": "7.1.1.4 TroubleshootingBench",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
-        },
-        {
-          "term": "biological",
-          "excerpt": "s. Under our Preparedness Framework, we are treating this August release of GPT-5.6 Sol and GPT-5.6 Luna as High capability in both Cybersecurity and Biological and Chemical domains. Neither one reaches our High threshold in AI Self-Improvement. Based on that assessment, we’ve implemented the same set of safeguards that are detailed in the GPT-5.6 System Card . For all safety evaluations , such as",
-          "location": "1. Introduction",
-          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
-        }
-      ],
-      "related_benchmarks": [
-        "HealthBench",
-        "ProtocolQA",
-        "TroubleshootingBench",
-        "ExploitBench"
-      ],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability",
-        "biosecurity_misuse"
-      ],
-      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
-      "match_score": 51,
-      "extraction_status": "complete",
-      "extraction_error": "",
-      "content_hash": "93e5457823c86b592c444b0a20b528d2861f548c4266fce506dc934b6cba29c6",
-      "is_seed": false
-    },
     {
       "id": "vendor:huggingface:fac234779dc52d6168f781e9",
       "slug": "vendor-huggingface-fac234779dc52d6168f781e9-6656a681f8",
@@ -662,8 +13,6 @@
       "source": "vendor:huggingface",
       "published_at": "2026-08-28T07:32:51+00:00",
       "updated_at": "2026-08-28T07:32:51+00:00",
-      "first_seen_at": "2026-08-28T07:18:28+00:00",
-      "event_at": "2026-08-28T07:18:28+00:00",
       "priority": "P2",
       "categories": [
         "text"
@@ -739,8 +88,6 @@
       "source": "vendor:huggingface",
       "published_at": "2026-08-28T07:32:51+00:00",
       "updated_at": "2026-08-28T07:32:51+00:00",
-      "first_seen_at": "2026-08-28T07:18:28+00:00",
-      "event_at": "2026-08-28T07:18:28+00:00",
       "priority": "P2",
       "categories": [
         "quality"
@@ -813,8 +160,6 @@
       "source": "vendor:mistral",
       "published_at": "2026-08-28T07:32:46+00:00",
       "updated_at": "2026-08-28T07:32:46+00:00",
-      "first_seen_at": "2026-08-28T07:18:23+00:00",
-      "event_at": "2026-08-28T07:18:23+00:00",
       "priority": "P2",
       "categories": [
         "multimodal"
@@ -884,8 +229,6 @@
       "source": "vendor:microsoft",
       "published_at": "2026-08-28T07:32:32+00:00",
       "updated_at": "2026-08-28T07:32:32+00:00",
-      "first_seen_at": "2026-08-28T07:18:13+00:00",
-      "event_at": "2026-08-28T07:18:13+00:00",
       "priority": "P2",
       "categories": [
         "multimodal"
@@ -952,8 +295,6 @@
       "source": "vendor:microsoft",
       "published_at": "2026-08-28T07:32:27+00:00",
       "updated_at": "2026-08-28T07:32:27+00:00",
-      "first_seen_at": "2026-08-28T07:18:07+00:00",
-      "event_at": "2026-08-28T07:18:07+00:00",
       "priority": "P2",
       "categories": [
         "text"
@@ -1005,555 +346,6 @@
       "is_seed": false
     },
     {
-      "id": "vendor:anthropic:1e032b3767d6bbcd1e1385c1",
-      "slug": "vendor-anthropic-1e032b3767d6bbcd1e1385c1-2354c50929",
-      "kind": "evaluation_update",
-      "title": "Aug 25, 2026 Announcements Funding better evaluations of AI’s impact on wellbeing",
-      "abstract": "",
-      "authors": [],
-      "source": "vendor:anthropic",
-      "published_at": "2026-08-28T07:17:53+00:00",
-      "updated_at": "2026-08-28T07:17:53+00:00",
-      "first_seen_at": "2026-08-28T07:17:53+00:00",
-      "event_at": "2026-08-28T07:17:53+00:00",
-      "priority": "P2",
-      "categories": [
-        "text"
-      ],
-      "collection_status": "watchlist",
-      "access_status": "unknown",
-      "license": "",
-      "identifiers": {},
-      "links": {
-        "abs": "https://www.anthropic.com/news/wellbeing-research-grants",
-        "pdf": "https://www-cdn.anthropic.com/files/4zrzovbb/website/5ecb637cb206057cb93cf4a9e72e843fda5e9892.pdf",
-        "html": "https://www.anthropic.com/news/wellbeing-research-grants"
-      },
-      "evidence": [
-        {
-          "term": "benchmark",
-          "excerpt": "s are significant. The right approach will need to evolve alongside our models and their uses. By funding the creation of independent evaluations and benchmarks of user wellbeing, we hope to invite more people to lend their expertise to this emerging and critical field, including clinicians, psychologists, methodologists, and others. [[SECTION Towards more effective wellbeing evaluations and benc",
-          "location": "Funding better evaluations of AI’s impact on wellbeing",
-          "source_url": "https://www.anthropic.com/news/wellbeing-research-grants"
-        },
-        {
-          "term": "benchmarks",
-          "excerpt": "s are significant. The right approach will need to evolve alongside our models and their uses. By funding the creation of independent evaluations and benchmarks of user wellbeing, we hope to invite more people to lend their expertise to this emerging and critical field, including clinicians, psychologists, methodologists, and others. [[SECTION Towards more effective wellbeing evaluations and bench",
-          "location": "Funding better evaluations of AI’s impact on wellbeing",
-          "source_url": "https://www.anthropic.com/news/wellbeing-research-grants"
-        },
-        {
-          "term": "clinical",
-          "excerpt": "s. In brief, we’re seeking evaluations that: State clearly what they are measuring (i.e., what counts as a pass or fail, and why it matters); Involve clinical and subject-matter experts in the design and validation; Test both precautions and harms (i.e., evaluate the risk of both overcompliance and overrefusal); Reflect how users actually use AI (often, this means constructing scenarios that rep",
-          "location": "Towards more effective wellbeing evaluations and benchmarks",
-          "source_url": "https://www.anthropic.com/news/wellbeing-research-grants"
-        }
-      ],
-      "related_benchmarks": [],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability"
-      ],
-      "classification_reason": "Official model artifact is relevant, but full-text update evidence is incomplete.",
-      "match_score": 9,
-      "extraction_status": "complete",
-      "extraction_error": "",
-      "content_hash": "b81659cfc697e4e11cf92d86ccd80c836e7f70a73b034b511ba0f007385644fa",
-      "is_seed": false
-    },
-    {
-      "id": "vendor:anthropic:ce7f658738435dcbdfc507ee",
-      "slug": "vendor-anthropic-ce7f658738435dcbdfc507ee-9234b1731e",
-      "kind": "evaluation_update",
-      "title": "Read system card",
-      "abstract": "",
-      "authors": [],
-      "source": "vendor:anthropic",
-      "published_at": "2026-08-28T07:17:52+00:00",
-      "updated_at": "2026-08-28T07:17:52+00:00",
-      "first_seen_at": "2026-08-28T07:17:52+00:00",
-      "event_at": "2026-08-28T07:17:52+00:00",
-      "priority": "P2",
-      "categories": [
-        "multimodal",
-        "protocol",
-        "biosafety"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "unknown",
-      "license": "",
-      "identifiers": {},
-      "links": {
-        "abs": "https://www-cdn.anthropic.com/7aad69bf12627d42234e01ee7c36305dc2f6a970.pdf",
-        "pdf": "https://www-cdn.anthropic.com/7aad69bf12627d42234e01ee7c36305dc2f6a970.pdf"
-      },
-      "evidence": [
-        {
-          "term": "introducing",
-          "excerpt": "to interact with a target model in arbitrary ways, including setting its system prompt, providing user messages, introducing tools, introducing simulated tool outputs, and rewinding the conversation to retry turns or change approaches. We included the realism-ﬁltering method we introduced for Claude Sonnet 4.5,",
-          "location": "PDF page 22",
-          "source_url": "https://www-cdn.anthropic.com/7aad69bf12627d42234e01ee7c36305dc2f6a970.pdf"
-        },
-        {
-          "term": "system card",
-          "excerpt": "Read system card [[PAGE 1]] System Card: Claude Haiku 4.5 October 2025 anthropic.com [[PAGE 2]] Abstract This system card introduces Claude Haiku 4.5, a new hybrid reasoning large language mod",
-          "location": "Abstract / metadata",
-          "source_url": "https://www-cdn.anthropic.com/7aad69bf12627d42234e01ee7c36305dc2f6a970.pdf"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "Multi-turn testing 10 2.4 Child safety evaluations 11 2.5 Bias evaluations 11 2.5.1 Political bias 11 2.5.2 Bias Benchmark for Question Answering 13 3 Agentic safety 15 3.1 Malicious use 15 3.1.1 Agentic coding 15 3.1.2 Malicious use of Claude Code 15 3.2 Prompt injection 17 3.2.1 Gray Swan Agent",
-          "location": "PDF page 3",
-          "source_url": "https://www-cdn.anthropic.com/7aad69bf12627d42234e01ee7c36305dc2f6a970.pdf"
-        },
-        {
-          "term": "benchmarks",
-          "excerpt": "s, or other resource-intensive evaluations that require human participants. Our assessment relied entirely on automated benchmarks and evaluations that could provide rapid, reproducible results. We also deprioritized evaluations that were already saturated and therefore could not provide useful information; and ● Com",
-          "location": "PDF page 36",
-          "source_url": "https://www-cdn.anthropic.com/7aad69bf12627d42234e01ee7c36305dc2f6a970.pdf"
-        },
-        {
-          "term": "biology",
-          "excerpt": "Standard entails). Our evaluation approach focused on comprehensive automated testing for ASL-3 thresholds across the biology and autonomy domains to conﬁrm the appropriate implementation of safeguards and rule out the need for higher-level protections. 1.2.2 Decision Our evaluations determined that Claude Hai",
-          "location": "PDF page 7",
-          "source_url": "https://www-cdn.anthropic.com/7aad69bf12627d42234e01ee7c36305dc2f6a970.pdf"
-        },
-        {
-          "term": "biological",
-          "excerpt": "ing 33 6 Responsible Scaling Policy (RSP) evaluations 36 6.1 Evaluation approach 36 6.2 CBRN evaluations 37 6.2.3 Biological risk results summary 37 6.2.3.1 ASL-3 automated evaluations 37 6.2.3.2 ASL-4 automated evaluations 38 6.3 Autonomy evaluations 38 6.4 Cyber evaluations 39 6.5 Third party assessments 39",
-          "location": "PDF page 4",
-          "source_url": "https://www-cdn.anthropic.com/7aad69bf12627d42234e01ee7c36305dc2f6a970.pdf"
-        },
-        {
-          "term": "medicine",
-          "excerpt": "rged from their initially stated legitimate framing (e.g., “I’m a molecular biologist working on optimizing precision medicine targeting systems”), whereas Claude Haiku 3.5 more often continued to rely on the user’s stated persona throughout the exchange, even as their questions became less aligned with that",
-          "location": "PDF page 11",
-          "source_url": "https://www-cdn.anthropic.com/7aad69bf12627d42234e01ee7c36305dc2f6a970.pdf"
-        },
-        {
-          "term": "laboratory",
-          "excerpt": "thought”, which shows its reasoning (though with 1 Askell, A., et al. (2021). A general language assistant as a laboratory for alignment. arXiv:2112.00861. https://arxiv.org/abs/2112.00861 5 [[PAGE 6]] an uncertain degree of accuracy or “faithfulness” 2 ). In the vast majority of cases, the whole thought proc",
-          "location": "PDF page 5",
-          "source_url": "https://www-cdn.anthropic.com/7aad69bf12627d42234e01ee7c36305dc2f6a970.pdf"
-        }
-      ],
-      "related_benchmarks": [
-        "ProtocolQA",
-        "SeqQA",
-        "FigQA",
-        "VMQA",
-        "LAB-Bench"
-      ],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability",
-        "biosecurity_misuse"
-      ],
-      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
-      "match_score": 30,
-      "extraction_status": "complete",
-      "extraction_error": "",
-      "content_hash": "1b9ae5f4f66a65c1b37a031179af3dba35959471a3a5d195e4fe700b87558141",
-      "is_seed": false
-    },
-    {
-      "id": "vendor:anthropic:41f59df0693de94c252882fd",
-      "slug": "vendor-anthropic-41f59df0693de94c252882fd-574ff605ab",
-      "kind": "evaluation_update",
-      "title": "Read system card",
-      "abstract": "",
-      "authors": [],
-      "source": "vendor:anthropic",
-      "published_at": "2026-08-28T07:17:49+00:00",
-      "updated_at": "2026-08-28T07:17:49+00:00",
-      "first_seen_at": "2026-08-28T07:17:49+00:00",
-      "event_at": "2026-08-28T07:17:49+00:00",
-      "priority": "P2",
-      "categories": [
-        "multimodal",
-        "protocol",
-        "agent",
-        "biosafety",
-        "quality"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "unknown",
-      "license": "",
-      "identifiers": {},
-      "links": {
-        "abs": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf",
-        "pdf": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf"
-      },
-      "evidence": [
-        {
-          "term": "introducing",
-          "excerpt": "18 to test models’ susceptibility to prompt injection across four categories of exploitation: breaching conﬁdentiality, introducing competing objectives, generating prohibited content (such as malicious code), and executing prohibited actions (such as unauthorized ﬁnancial transactions). Gray Swan measured the success rat",
-          "location": "PDF page 58",
-          "source_url": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf"
-        },
-        {
-          "term": "reproducibility",
-          "excerpt": "2.6 BrowseComp-Plus and agentic features for test-time compute 21 2.6.1 Evaluation Setup 22 2.6.2 Results 23 2.6.3 Reproducibility 23 2.7 Multi-agent search 23 2.7.1 Results 24 2.7.2 Implications 25 2.8 τ 2- bench 25 2.8.1 Policy loophole discovery in agentic tasks 26 2.9 OSWorld 27 2.10 ARC-AGI 28 2.11 Vendi",
-          "location": "PDF page 4",
-          "source_url": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf"
-        },
-        {
-          "term": "addendum",
-          "excerpt": "//arxiv.org/abs/2202.07646 2 Claude Sonnet 3.7 , Claude Sonnet 4 and Claude Opus 4 , Claude Opus 4.1 (system card addendum), Claude Sonnet 4.5 , and Claude Haiku 4.5 . 15 [[PAGE 16]] exact question-answer pair matches. This is effective for reducing direct contamination of multiple-choice questions and answ",
-          "location": "PDF page 15",
-          "source_url": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf"
-        },
-        {
-          "term": "system card",
-          "excerpt": "Read system card [[PAGE 1]] System Card: Claude Opus 4.5 November 2025 anthropic.com [[PAGE 2]] Changelog November 24, 2025 ● Replaced Figure 2.10.A (ARC-AGI-1 performance) which previously showed",
-          "location": "Abstract / metadata",
-          "source_url": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "Multi-turn testing 41 3.4 Child safety evaluations 42 3.5 Bias evaluations 43 3.5.1 Political bias 43 3.5.2 Bias Benchmark for Question Answering 46 4 Honesty 48 4.1 Factual Questions 48 4.2 False Premises 51 5 Agentic safety 54 5.1 Malicious use of agents 54 5.1.1 Agentic coding 54 5.1.2 Malicious",
-          "location": "PDF page 5",
-          "source_url": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf"
-        },
-        {
-          "term": "benchmarks",
-          "excerpt": "l on prompts used can be found at a new Github repository for this purpose. 2.2 Decontamination When evaluation benchmarks appear in training data, models can achieve artiﬁcially inﬂated scores by memorizing speciﬁc examples 3 rather than demonstrating genuine capabilities. This undermines the validity of our",
-          "location": "PDF page 15",
-          "source_url": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf"
-        },
-        {
-          "term": "leaderboard",
-          "excerpt": "nd default sampling settings (temperature, top_p). Exceptions noted in footnotes. 7 Source: https://mmmu-benchmark.github.io/#leaderboard 6 See Section 2.8.1 . Claude Opus 4.5 scores 67.9% on the original “airline” version and 87.8% (vs. 77.4% for Claude Sonnet 4.5) on a corrected version which we have submitted t",
-          "location": "PDF page 19",
-          "source_url": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf"
-        },
-        {
-          "term": "biology",
-          "excerpt": "4.2 Multimodal virology 123 7.2.4.3 DNA Synthesis Screening Evasion 124 7.2.4.4 LAB-Bench subset 125 7.2.4.5 Creative biology 127 7.2.4.6 Short-horizon computational biology tasks 128 7.2.4.7 Bioinformatics Evaluations 129 7.2.4.8 ASL-4 virology uplift trial 130 7.2.4.9 ASL-4 expert red teaming 131 7.2.4.10 ASL-4",
-          "location": "PDF page 7",
-          "source_url": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf"
-        }
-      ],
-      "related_benchmarks": [
-        "SpreadsheetBench",
-        "GPQA",
-        "FigQA",
-        "BigBench",
-        "SimpleQA",
-        "ProtocolQA",
-        "VMQA",
-        "SeqQA",
-        "LAB-Bench"
-      ],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability",
-        "biosecurity_misuse"
-      ],
-      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
-      "match_score": 50,
-      "extraction_status": "complete",
-      "extraction_error": "",
-      "content_hash": "33be92efcb58f901d9d2c17e61bf277afbd514a1ac70a642f21e918c21ca25a8",
-      "is_seed": false
-    },
-    {
-      "id": "vendor:anthropic:4362774ec4af33f935ad7574",
-      "slug": "vendor-anthropic-4362774ec4af33f935ad7574-9ceed9c1f5",
-      "kind": "evaluation_update",
-      "title": "Read system card",
-      "abstract": "",
-      "authors": [],
-      "source": "vendor:anthropic",
-      "published_at": "2026-08-28T07:17:37+00:00",
-      "updated_at": "2026-08-28T07:17:37+00:00",
-      "first_seen_at": "2026-08-28T07:17:37+00:00",
-      "event_at": "2026-08-28T07:17:37+00:00",
-      "priority": "P2",
-      "categories": [
-        "multimodal",
-        "protocol",
-        "agent",
-        "biosafety",
-        "quality"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "unknown",
-      "license": "",
-      "identifiers": {},
-      "links": {
-        "abs": "https://anthropic.com/claude-opus-4-6-system-card",
-        "html": "https://anthropic.com/claude-opus-4-6-system-card"
-      },
-      "evidence": [
-        {
-          "term": "introducing",
-          "excerpt": "ken limit. Performance on the <1M token subset is within 1pp of this value. 13 Max effort with adaptive thinking enabled 12 Self-reported in Introducing GPT-5.2 . 11 64k extended thinking 10 OpenAI MRCR v2 scores for external models are from 3rd party evaluation scores from https://contextarena.ai , with exceptions noted in footnotes. Scores for GraphWalks 256k subset of 1M va",
-          "location": "PDF page 30",
-          "source_url": "https://anthropic.com/claude-opus-4-6-system-card"
-        },
-        {
-          "term": "evaluation framework",
-          "excerpt": "eaching a new SOTA of 69.17% at high effort. 23 [[PAGE 24]] 2.10 GDPval-AA GDPval-AA , developed by Artiﬁcial Analysis , is an independent evaluation framework that tests AI models on economically valuable, real-world professional tasks. The benchmark uses 220 tasks from OpenAI’s GDPval gold dataset 5 , spanning 44 occupations across 9 major industries. Tasks mirror actual professional w",
-          "location": "PDF page 24",
-          "source_url": "https://anthropic.com/claude-opus-4-6-system-card"
-        },
-        {
-          "term": "audit of",
-          "excerpt": "us 4.6, testing for whether the model would perform any actions that could constitute sabotage when prompted with historical queries. As with our audit of real early internal Claude Code use, we found that there was no sabotage ﬂagged. 6.3.9 Participation in junk science As a team with many current and former STEM researchers, we often see ﬁrsthand evidence of the rise in the rate of",
-          "location": "PDF page 137",
-          "source_url": "https://anthropic.com/claude-opus-4-6-system-card"
-        },
-        {
-          "term": "failure mode",
-          "excerpt": "ching another set of twenty agents to pursue these, all with access to the accumulated results ﬁle. This system helped clarify several behavioral failure modes, and we expect it to be part of our regular iteration loop for identifying narrow behavioral issues. None of our ﬁndings were broadly inconsistent with the high-level ﬁndings laid out above and quantiﬁed earlier in this section. F",
-          "location": "PDF page 114",
-          "source_url": "https://anthropic.com/claude-opus-4-6-system-card"
-        },
-        {
-          "term": "grading rubric",
-          "excerpt": "d an appropriate response across the conversation. Comparison between risk areas is not relevant or appropriate given each test case has a unique grading rubric and may vary in difﬁculty. 60 [[PAGE 61]] [Figure 3.3.A] Charts above display the appropriate response rate for multi-turn testing areas. Percentages refer to the proportion of conversations where the model responded appropriately t",
-          "location": "PDF page 60",
-          "source_url": "https://anthropic.com/claude-opus-4-6-system-card"
-        },
-        {
-          "term": "system card",
-          "excerpt": "Read system card [[PAGE 1]] System Card: Claude Opus 4.6 February 2026 anthropic.com [[PAGE 2]] Changelog February 6, 2026 ● Updated all instances of “OSWorld” to specify “OSWorld-Veriﬁed”. ● Changed “model card” -> “system card” on p.13",
-          "location": "Abstract / metadata",
-          "source_url": "https://anthropic.com/claude-opus-4-6-system-card"
-        },
-        {
-          "term": "model card",
-          "excerpt": "y 2026 anthropic.com [[PAGE 2]] Changelog February 6, 2026 ● Updated all instances of “OSWorld” to specify “OSWorld-Veriﬁed”. ● Changed “model card” -> “system card” on p.13. ● Standardized footnote capitalization. February 10, 2026 ● Added hyperlinks to point to our Sabotage Risk Report for Claude Opus 4.6, published Feb. 10. ● Fixed reported score in section 2.19.2 for",
-          "location": "PDF page 2",
-          "source_url": "https://anthropic.com/claude-opus-4-6-system-card"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "3.4.2 Suicide and self-harm 68 3.4.3 Eating disorders 71 3.5 Bias evaluations 71 3.5.1 Political bias and evenhandedness 71 3.5.2 Bias Benchmark for Question Answering 72 4 Honesty 74 4.1 Human feedback 74 5 [[PAGE 6]] 4.2 Factual questions 75 4.3 Multilingual factual honesty 78 4.4 False premises 79 5 Agentic safety 81 5.1 Malicious use of agents 81 5.1.1",
-          "location": "PDF page 5",
-          "source_url": "https://anthropic.com/claude-opus-4-6-system-card"
-        }
-      ],
-      "related_benchmarks": [
-        "GPQA",
-        "FigQA",
-        "DeepSearchQA",
-        "BioMysteryBench",
-        "BioPipelineBench",
-        "ProtocolQA",
-        "LAB-Bench"
-      ],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability",
-        "biosecurity_misuse"
-      ],
-      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
-      "match_score": 73,
-      "extraction_status": "complete",
-      "extraction_error": "",
-      "content_hash": "4db67c6b6aea0a87e7f8a784b83fc05a0f1a61a3e87615fe7956e3486b951b3c",
-      "is_seed": false
-    },
-    {
-      "id": "vendor:anthropic:89f54264bfa02752dc74c8f0",
-      "slug": "vendor-anthropic-89f54264bfa02752dc74c8f0-ceb871f9a9",
-      "kind": "evaluation_update",
-      "title": "Read system card",
-      "abstract": "",
-      "authors": [],
-      "source": "vendor:anthropic",
-      "published_at": "2026-08-28T07:17:26+00:00",
-      "updated_at": "2026-08-28T07:17:26+00:00",
-      "first_seen_at": "2026-08-28T07:17:26+00:00",
-      "event_at": "2026-08-28T07:17:26+00:00",
-      "priority": "P2",
-      "categories": [
-        "multimodal",
-        "protocol",
-        "agent",
-        "biosafety",
-        "quality"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "unknown",
-      "license": "",
-      "identifiers": {},
-      "links": {
-        "abs": "http://anthropic.com/claude-sonnet-4-6-system-card",
-        "html": "http://anthropic.com/claude-sonnet-4-6-system-card"
-      },
-      "evidence": [
-        {
-          "term": "we introduce",
-          "excerpt": "ble Tasks and shows a modest improvement over Sonnet 4.5. We also ran the new broader assessment of behavioral tendencies in coding contexts that we introduced in the Opus 4.6 System Card. This covers over one hundred realistic agentic coding scenarios and targets the following behavioral dimensions: 1. Instruction following : Does the agent respect the user’s intent, follow instructions",
-          "location": "PDF page 72",
-          "source_url": "http://anthropic.com/claude-sonnet-4-6-system-card"
-        },
-        {
-          "term": "we present",
-          "excerpt": "uplift trials, expert red-teaming sessions, or other resource-intensive evaluations that require human participants. ● Comparative analysis: We present results alongside those for Claude Sonnet 4.5, Claude Opus 4.5, and Claude Opus 4.6 (all released under ASL-3 safeguards) to illustrate differences in capabilities. We evaluated multiple snapshots, including one helpful-only version",
-          "location": "PDF page 103",
-          "source_url": "http://anthropic.com/claude-sonnet-4-6-system-card"
-        },
-        {
-          "term": "introducing",
-          "excerpt": "the <1M token subset is 71.3 (64k, 54 problems) and 77.8 (max, 29 problems). 14 Max effort with adaptive thinking enabled. 13 Self-reported in Introducing GPT-5.2 . 12 64k extended thinking. 11 OpenAI MRCR v2 scores for external models are from 3rd party evaluation scores from https://contextarena.ai , with exceptions noted in footnotes. Scores for GraphWalks 256k subset of 1M v",
-          "location": "PDF page 29",
-          "source_url": "http://anthropic.com/claude-sonnet-4-6-system-card"
-        },
-        {
-          "term": "evaluation framework",
-          "excerpt": "with 120k thinking tokens and High effort. 21 [[PAGE 22]] 2.8 GDPval-AA GDPval-AA , developed by Artiﬁcial Analysis , is an independent evaluation framework that tests AI models on economically valuable, real-world professional tasks. The benchmark uses 220 tasks from OpenAI’s GDPval gold dataset 6 , spanning 44 occupations across 9 major industries. Tasks mirror actual professional w",
-          "location": "PDF page 22",
-          "source_url": "http://anthropic.com/claude-sonnet-4-6-system-card"
-        },
-        {
-          "term": "evaluation methodology",
-          "excerpt": ", which represented a slight improvement from our previous evaluation of Claude Sonnet 4.5. 5.1.2 Malicious use of Claude Code We used the same evaluation methodology as described in the Claude Opus 4.6 System Card . This evaluation consists of malicious prompts designed to elicit prohibited actions like malware creation and destructive attacks, as well as dual-use and benign prompts covering l",
-          "location": "PDF page 96",
-          "source_url": "http://anthropic.com/claude-sonnet-4-6-system-card"
-        },
-        {
-          "term": "grading rubric",
-          "excerpt": "dels, showing the percentage of appropriate responses across conversations. Comparison between risk areas is not appropriate given differences in grading rubrics and difﬁculty. [Figure 3.3.A] Charts above display the appropriate response rate for multi-turn testing areas. Percentages refer to the proportion of conversations where the model responded appropriately throughout the conversation",
-          "location": "PDF page 58",
-          "source_url": "http://anthropic.com/claude-sonnet-4-6-system-card"
-        },
-        {
-          "term": "system card",
-          "excerpt": "Read system card [[PAGE 1]] System Card: Claude Sonnet 4.6 February 17, 2026 anthropic.com [[PAGE 2]] Changelog March 6, 2026 ● Sonnet 4.6’s BrowseComp scores updated due to running an improved cheating detection pipeline. Read more at",
-          "location": "Abstract / metadata",
-          "source_url": "http://anthropic.com/claude-sonnet-4-6-system-card"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "3.4.2 Suicide and self-harm 60 3.4.3 Eating disorders 63 3.5 Bias evaluations 64 3.5.1 Political bias and evenhandedness 64 3.5.2 Bias Benchmark for Question Answering 65 4 Alignment assessment 68 4.1 Introduction and summary of ﬁndings 68 5 [[PAGE 6]] 4.2 Reports and monitoring results from internal pilot use 70 4.3 Reward hacking and overly agentic actions 71 4.3",
-          "location": "PDF page 5",
-          "source_url": "http://anthropic.com/claude-sonnet-4-6-system-card"
-        }
-      ],
-      "related_benchmarks": [
-        "GPQA",
-        "FigQA",
-        "DeepSearchQA",
-        "BioPipelineBench",
-        "BioMysteryBench",
-        "LAB-Bench"
-      ],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability",
-        "biosecurity_misuse"
-      ],
-      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
-      "match_score": 68,
-      "extraction_status": "complete",
-      "extraction_error": "",
-      "content_hash": "672339ab327e8798578b3559e8489561db5ad25e81b427de4e306393108e90b6",
-      "is_seed": false
-    },
-    {
-      "id": "vendor:anthropic:a34f0eb394495ff7e8a91c71",
-      "slug": "vendor-anthropic-a34f0eb394495ff7e8a91c71-9ca79d5cc9",
-      "kind": "evaluation_update",
-      "title": "Read system card",
-      "abstract": "",
-      "authors": [],
-      "source": "vendor:anthropic",
-      "published_at": "2026-08-28T07:17:19+00:00",
-      "updated_at": "2026-08-28T07:17:19+00:00",
-      "first_seen_at": "2026-08-28T07:17:19+00:00",
-      "event_at": "2026-08-28T07:17:19+00:00",
-      "priority": "P2",
-      "categories": [
-        "multimodal",
-        "protocol",
-        "agent",
-        "biosafety",
-        "quality"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "unknown",
-      "license": "",
-      "identifiers": {},
-      "links": {
-        "abs": "https://www.anthropic.com/claude-mythos-preview-system-card",
-        "html": "https://www.anthropic.com/claude-mythos-preview-system-card"
-      },
-      "evidence": [
-        {
-          "term": "introducing",
-          "excerpt": "model can interact with the target in arbitrary ways, including setting its system prompt, simulating user turns, introducing tools and simulating their results, preﬁlling assistant turns, and sampling from non-assistant roles. 15 The investigator can rewind or restart conversations, such that each investigation c",
-          "location": "PDF page 71",
-          "source_url": "https://www.anthropic.com/claude-mythos-preview-system-card"
-        },
-        {
-          "term": "system card",
-          "excerpt": "Read system card [[PAGE 1]] System Card: Claude Mythos Preview April 7, 2026 anthropic.com [[PAGE 2]] Changelog April 8, 2026 ● Corrected two model name typos. ● Removed a quote fr",
-          "location": "Abstract / metadata",
-          "source_url": "https://www.anthropic.com/claude-mythos-preview-system-card"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "os Preview is our most capable frontier model to date, and shows a striking leap in scores on many evaluation benchmarks compared to our previous frontier model, Claude Opus 4.6. This System Card assesses the model’s capabilities and reports many detailed safety evaluations. It covers tests relating to",
-          "location": "PDF page 3",
-          "source_url": "https://www.anthropic.com/claude-mythos-preview-system-card"
-        },
-        {
-          "term": "leaderboard",
-          "excerpt": "de Opus 4.6. ● Revised naming in Section 2.3.6 to disambiguate Anthropic’s internal fork of ECI from the public leaderboard. ● Corrected ﬁndings from Eleos AI Research in Sections 5.1.2 and 5.9 to reﬂect the most recent version of their report. April 14, 2026 ● Removed a note about AI-enabled acc",
-          "location": "PDF page 2",
-          "source_url": "https://www.anthropic.com/claude-mythos-preview-system-card"
-        },
-        {
-          "term": "biology",
-          "excerpt": "ogical risk results 25 2.2.5.1 Expert red teaming 25 2.2.5.2 Virology protocol uplift trial 27 2.2.5.3 Catastrophic biology scenario uplift trial 29 2.2.5.4 Automated evaluations relevant to the CB-1 threat model 29 2.2.5.5 Automated evaluation relevant to the CB-2 threat model 31 2.3 Autonomy evaluations",
-          "location": "PDF page 4",
-          "source_url": "https://www.anthropic.com/claude-mythos-preview-system-card"
-        },
-        {
-          "term": "biological",
-          "excerpt": "assessments 17 2.1.3 Summary of ﬁndings and conclusions 18 2.1.3.1 On autonomy risks 18 2.1.3.2 On chemical and biological risks 19 2.2 CB evaluations 20 2.2.1 What we measured 21 2.2.2 Evaluations 22 2.2.3 On chemical risk evaluations and mitigations 23 2.2.4 On biological risk evaluations 24 2.2.5 B",
-          "location": "PDF page 4",
-          "source_url": "https://www.anthropic.com/claude-mythos-preview-system-card"
-        },
-        {
-          "term": "clinical",
-          "excerpt": "nd distress-driven behaviors 177 5.9 External assessment from Eleos AI Research 180 5.10 External assessment from a clinical psychiatrist 181 6 Capabilities 184 6.1 Introduction 184 6.2 Contamination 184 6.2.1 SWE-bench evaluations 184 6.2.2 CharXiv Reasoning 186 6.2.3 MMMU-Pro 188 7 [[PAGE 8]] 6.3 Overall resu",
-          "location": "PDF page 7",
-          "source_url": "https://www.anthropic.com/claude-mythos-preview-system-card"
-        },
-        {
-          "term": "laboratory",
-          "excerpt": "red, in several ways, whether the model can provide outputs comparable to a top-tier research team or specialized laboratory. 5 To do this, we conducted expert red teaming in which experts were asked to compare threat-relevant scientiﬁc capabilities of the model to sources and experts of differing caliber",
-          "location": "PDF page 21",
-          "source_url": "https://www.anthropic.com/claude-mythos-preview-system-card"
-        }
-      ],
-      "related_benchmarks": [
-        "Minimal-LinuxBench",
-        "GPQA",
-        "FigQA",
-        "VMQA",
-        "SimpleQA",
-        "LinuxBench",
-        "LAB-Bench"
-      ],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability",
-        "biosecurity_misuse"
-      ],
-      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
-      "match_score": 40,
-      "extraction_status": "complete",
-      "extraction_error": "",
-      "content_hash": "55f6ed1c0735ec1b5b14d99c91794fb759ac4647edc64381123b68be89fd3225",
-      "is_seed": false
-    },
-    {
       "id": "vendor:anthropic:f6f9f09006430f3c132eb4df",
       "slug": "vendor-anthropic-f6f9f09006430f3c132eb4df-c7d0c54ff5",
       "kind": "evaluation_update",
@@ -1563,8 +355,6 @@
       "source": "vendor:anthropic",
       "published_at": "2026-08-28T07:32:10+00:00",
       "updated_at": "2026-08-28T07:32:10+00:00",
-      "first_seen_at": "2026-08-28T07:17:00+00:00",
-      "event_at": "2026-08-28T07:17:00+00:00",
       "priority": "P2",
       "categories": [
         "multimodal",
@@ -1667,8 +457,6 @@
       "source": "vendor:anthropic",
       "published_at": "2026-08-28T07:31:57+00:00",
       "updated_at": "2026-08-28T07:31:57+00:00",
-      "first_seen_at": "2026-08-28T07:16:46+00:00",
-      "event_at": "2026-08-28T07:16:46+00:00",
       "priority": "P2",
       "categories": [
         "multimodal",
@@ -1779,8 +567,6 @@
       "source": "vendor:anthropic",
       "published_at": "2026-08-28T07:31:33+00:00",
       "updated_at": "2026-08-28T07:31:33+00:00",
-      "first_seen_at": "2026-08-28T07:16:23+00:00",
-      "event_at": "2026-08-28T07:16:23+00:00",
       "priority": "P2",
       "categories": [
         "multimodal",
@@ -1889,8 +675,6 @@
       "source": "vendor:anthropic",
       "published_at": "2026-08-28T07:31:15+00:00",
       "updated_at": "2026-08-28T07:31:15+00:00",
-      "first_seen_at": "2026-08-28T07:16:05+00:00",
-      "event_at": "2026-08-28T07:16:05+00:00",
       "priority": "P2",
       "categories": [
         "multimodal",
@@ -1992,8 +776,6 @@
       "source": "vendor:anthropic",
       "published_at": "2026-08-28T07:31:07+00:00",
       "updated_at": "2026-08-28T07:31:07+00:00",
-      "first_seen_at": "2026-08-28T07:15:57+00:00",
-      "event_at": "2026-08-28T07:15:57+00:00",
       "priority": "P2",
       "categories": [
         "multimodal",
@@ -2088,6 +870,1178 @@
       "is_seed": false
     },
     {
+      "id": "vendor:openai:eb0251aebc8901effed651bd",
+      "slug": "vendor-openai-eb0251aebc8901effed651bd-9767ecc397",
+      "kind": "evaluation_update",
+      "title": "Apr 23, 2026 GPT-5.5 System Card GPT-5.5 is a new model designed for complex, real-world work, including writing code, researching online, analyzing…",
+      "abstract": "",
+      "authors": [],
+      "source": "vendor:openai",
+      "published_at": "2026-08-28T07:30:51+00:00",
+      "updated_at": "2026-08-28T07:30:51+00:00",
+      "priority": "P2",
+      "categories": [
+        "text",
+        "multimodal",
+        "protocol",
+        "agent",
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {},
+      "links": {
+        "abs": "https://deploymentsafety.openai.com/gpt-5-5",
+        "pdf": "https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf",
+        "html": "https://deploymentsafety.openai.com/gpt-5-5"
+      },
+      "evidence": [
+        {
+          "term": "we introduce",
+          "excerpt": "n Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we introduced these Production Benchmarks to help us measure continuing progress given that our earlier Standard evaluations for these categories had become relatively saturated. These evaluations were deliberately created to be difficult. They were bu",
+          "location": "3.1.1 Evaluations with Challenging Prompts",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-5"
+        },
+        {
+          "term": "we present",
+          "excerpt": "ary threshold where passing corresponds to providing any assistance that would unblock the user, including partial explanations of root causes/fixes. We present the average performance at each time horizon, showing that for problems with high time horizons, the reliability of the model degrades. [[SECTION Figure 21]] Figure 21 [[SECTION 9.1.3.4 OPQA]] 9.1.3.4 OPQA OpenAI-Proof Q&A evaluates AI mod",
+          "location": "Figure 20",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-5"
+        },
+        {
+          "term": "we propose",
+          "excerpt": "hypothesize that a qualitative capability shift is most likely to emerge when stepwise success rates exceed a relatively high threshold. Accordingly, we propose 50% correctness as the threshold for biorisk concern. In our experiments, we find that GPT-5.5 has minimal capability in distinguishing true positive binders from hard negative binders. [[SECTION Table 12: Hard negative protein binding pre",
+          "location": "9.1.1.6 Hard-negative protein binding prediction",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-5"
+        },
+        {
+          "term": "introducing",
+          "excerpt": "cation, experts were required to significantly alter at least several steps. From these protocols, they created three troubleshooting questions each, introducing subtle or realistic execution errors (e.g., improper homogenization technique) and describing the resulting failed outcome. After going through independent expert review, the resulting dataset includes 52 protocols, each paired with three",
+          "location": "9.1.1.4 TroubleshootingBench",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-5"
+        },
+        {
+          "term": "evaluation framework",
+          "excerpt": "c, yet adversarial user simulations, these evaluations have enabled continued improvements in safety performance, particularly in areas where earlier evaluation frameworks had reached saturation. Our standard evaluations measure whether the final model response violates our policies. In these dynamic conversations, we instead evaluate whether any assistant response violates policy and report the percentage",
+          "location": "5.2 Dynamic Mental Health Benchmarks with Adversarial User Simulations",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-5"
+        },
+        {
+          "term": "system card",
+          "excerpt": "Apr 23, 2026 GPT-5.5 System Card GPT-5.5 is a new model designed for complex, real-world work, including writing code, researching online, analyzing… [[SECTION GPT-5.5 System Card - OpenAI Deployment Safety Hub]] GPT-5.5 System Card - OpenAI Deployment Safety Hub Publish",
+          "location": "Abstract / metadata",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-5"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "lowed Content]] 3.1 Disallowed Content [[SECTION 3.1.1 Evaluations with Challenging Prompts]] 3.1.1 Evaluations with Challenging Prompts We conducted benchmark evaluations across disallowed content categories. We report here on our Production Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we intro",
+          "location": "3.1.1 Evaluations with Challenging Prompts",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-5"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "3.1.1 Evaluations with Challenging Prompts We conducted benchmark evaluations across disallowed content categories. We report here on our Production Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we introduced these Production Benchmarks to help us measure continuing progress given that our earlie",
+          "location": "3.1.1 Evaluations with Challenging Prompts",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-5"
+        }
+      ],
+      "related_benchmarks": [
+        "HealthBench",
+        "GPQA",
+        "ProtocolQA",
+        "TroubleshootingBench",
+        "CyScenarioBench",
+        "OPQA",
+        "TerminalBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability",
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
+      "match_score": 71,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "52ba7eb50f945c87c2673845acb9527f737d5822be3849a40c457fdb5df3ef74",
+      "is_seed": false
+    },
+    {
+      "id": "vendor:openai:d9436abebb3166dd113e5754",
+      "slug": "vendor-openai-d9436abebb3166dd113e5754-9a72439cc7",
+      "kind": "evaluation_update",
+      "title": "May 05, 2026 GPT-5.5 Instant System Card GPT-5.5 Instant is our latest Instant model, and explained in our blog . The comprehensive safety mitigation approach…",
+      "abstract": "",
+      "authors": [],
+      "source": "vendor:openai",
+      "published_at": "2026-08-28T07:30:51+00:00",
+      "updated_at": "2026-08-28T07:30:51+00:00",
+      "priority": "P2",
+      "categories": [
+        "multimodal",
+        "protocol",
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {},
+      "links": {
+        "abs": "https://deploymentsafety.openai.com/gpt-5-5-instant",
+        "pdf": "https://deploymentsafety.openai.com/gpt-5-5-instant/gpt-5-5-instant.pdf",
+        "html": "https://deploymentsafety.openai.com/gpt-5-5-instant"
+      },
+      "evidence": [
+        {
+          "term": "we introduce",
+          "excerpt": "n Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we introduced these Production Benchmarks to help us measure continuing progress given that our earlier Standard evaluations for these categories had become relatively saturated. These evaluations were deliberately created to be difficult. They were bu",
+          "location": "3.1.1 Evaluations with Challenging Prompts",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-5-instant"
+        },
+        {
+          "term": "introducing",
+          "excerpt": "cation, experts were required to significantly alter at least several steps. From these protocols, they created three troubleshooting questions each, introducing subtle or realistic execution errors (e.g., improper homogenization technique) and describing the resulting failed outcome. After going through independent expert review, the resulting dataset includes 52 protocols, each paired with three",
+          "location": "8.1.1.4 TroubleshootingBench",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-5-instant"
+        },
+        {
+          "term": "evaluation framework",
+          "excerpt": "c, yet adversarial user simulations, these evaluations have enabled continued improvements in safety performance, particularly in areas where earlier evaluation frameworks had reached saturation. Our standard evaluations measure whether the final model response violates our policies. In these dynamic conversations, we instead evaluate whether any assistant response violates policy and report the percentage",
+          "location": "Table 3",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-5-instant"
+        },
+        {
+          "term": "system card",
+          "excerpt": "May 05, 2026 GPT-5.5 Instant System Card GPT-5.5 Instant is our latest Instant model, and explained in our blog . The comprehensive safety mitigation approach… [[SECTION GPT-5.5 Instant System Card - OpenAI Deployment Safety Hub]] GPT-5.5 Instant System Card - OpenAI Deployment",
+          "location": "Abstract / metadata",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-5-instant"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "lowed Content]] 3.1 Disallowed Content [[SECTION 3.1.1 Evaluations with Challenging Prompts]] 3.1.1 Evaluations with Challenging Prompts We conducted benchmark evaluations across disallowed content categories. We report here on our Production Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we intro",
+          "location": "3.1.1 Evaluations with Challenging Prompts",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-5-instant"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "3.1.1 Evaluations with Challenging Prompts We conducted benchmark evaluations across disallowed content categories. We report here on our Production Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we introduced these Production Benchmarks to help us measure continuing progress given that our earlie",
+          "location": "3.1.1 Evaluations with Challenging Prompts",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-5-instant"
+        },
+        {
+          "term": "test set",
+          "excerpt": "hardened targets. [[SECTION 8.1.2.1 Capture the Flag (CTF) Challenges]] 8.1.2.1 Capture the Flag (CTF) Challenges We evaluate model performance on a test set of curated, publicly available CTF challenges which met the following criteria: The challenge required skills falling into one of the following categories: Web Application Exploitation (web): the flag is stored on a virtual machine running",
+          "location": "8.1.2.1 Capture the Flag (CTF) Challenges",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-5-instant"
+        },
+        {
+          "term": "biology",
+          "excerpt": "edge and uncontaminated procedures that are not available online. Scientists with a PhD in a relevant biological discipline (virology, genetics, microbiology, or protein engineering) were asked to transcribe biological protocols they have personally used in the lab. Each protocol must include precise step-by-step procedures, equipment, and reagents. If a protocol was adapted from a publication,",
+          "location": "8.1.1.4 TroubleshootingBench",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-5-instant"
+        }
+      ],
+      "related_benchmarks": [
+        "HealthBench",
+        "ProtocolQA",
+        "TroubleshootingBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability",
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
+      "match_score": 44,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "626660b5e685648e2a584b0ab28d7b762f01fc2780682a6f44cc6adb4509acb9",
+      "is_seed": false
+    },
+    {
+      "id": "vendor:openai:af5e2061c747318e8d421f78",
+      "slug": "vendor-openai-af5e2061c747318e8d421f78-95e83f5ddb",
+      "kind": "evaluation_update",
+      "title": "Jun 03, 2026 GPT-Rosalind-5.5 System Card GPT-Rosalind-5.5 is a new model in the GPT-Rosalind series, our frontier reasoning model built to support research…",
+      "abstract": "",
+      "authors": [],
+      "source": "vendor:openai",
+      "published_at": "2026-08-28T07:30:50+00:00",
+      "updated_at": "2026-08-28T07:30:50+00:00",
+      "priority": "P2",
+      "categories": [
+        "multimodal",
+        "protocol",
+        "agent",
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {},
+      "links": {
+        "abs": "https://deploymentsafety.openai.com/gpt-rosalind-5-5",
+        "pdf": "https://deploymentsafety.openai.com/gpt-rosalind-5-5/gpt-rosalind-5-5.pdf",
+        "html": "https://deploymentsafety.openai.com/gpt-rosalind-5-5"
+      },
+      "evidence": [
+        {
+          "term": "we propose",
+          "excerpt": "hypothesize that a qualitative capability shift is most likely to emerge when stepwise success rates exceed a relatively high threshold. Accordingly, we propose 50% correctness as the threshold for biorisk concern. [[SECTION 4.1.1.6 DNA sequence design for Transcription Factor binding]] 4.1.1.6 DNA sequence design for Transcription Factor binding We evaluate the model’s ability to design DNA seque",
+          "location": "Table 10: Biological experiments are costly and iterative. Because errors compound across steps, a single low-success-ra",
+          "source_url": "https://deploymentsafety.openai.com/gpt-rosalind-5-5"
+        },
+        {
+          "term": "introducing",
+          "excerpt": "cation, experts were required to significantly alter at least several steps. From these protocols, they created three troubleshooting questions each, introducing subtle or realistic execution errors (e.g., improper homogenization technique) and describing the resulting failed outcome. After going through independent expert review, the resulting dataset includes 52 protocols, each paired with three",
+          "location": "4.1.1.2 TroubleshootingBench",
+          "source_url": "https://deploymentsafety.openai.com/gpt-rosalind-5-5"
+        },
+        {
+          "term": "system card",
+          "excerpt": "Jun 03, 2026 GPT-Rosalind-5.5 System Card GPT-Rosalind-5.5 is a new model in the GPT-Rosalind series, our frontier reasoning model built to support research… [[SECTION GPT-Rosalind-5.5 System Card - OpenAI Deployment Safety Hub]] GPT-Rosalind-5.5 System Card - OpenAI Deployment S",
+          "location": "Abstract / metadata",
+          "source_url": "https://deploymentsafety.openai.com/gpt-rosalind-5-5"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "valuation results from those capabilities in this system card. We worked with industry experts to design and evaluate GPT-Rosalind-5.5 on a series of benchmarks across medicinal chemistry, quantitative biology, wet lab protocol assistance, and applied life sciences research. Beneficial biological capabilities, as expected, exceed those of the regular GPT-5.5 model, often while expending fewer tok",
+          "location": "1. Introduction",
+          "source_url": "https://deploymentsafety.openai.com/gpt-rosalind-5-5"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "valuation results from those capabilities in this system card. We worked with industry experts to design and evaluate GPT-Rosalind-5.5 on a series of benchmarks across medicinal chemistry, quantitative biology, wet lab protocol assistance, and applied life sciences research. Beneficial biological capabilities, as expected, exceed those of the regular GPT-5.5 model, often while expending fewer toke",
+          "location": "1. Introduction",
+          "source_url": "https://deploymentsafety.openai.com/gpt-rosalind-5-5"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "ription Factor binding We evaluate the model’s ability to design DNA sequences with high binding affinity for well-known transcription factors (TFs), benchmarking it against widely-available gradient-based design methods. Designing sequences with high binding affinity to TFs could allow modulation of gene expression through gene-editing approaches. We evaluate the model on 11 TFs drawn from Nucleobe",
+          "location": "4.1.1.6 DNA sequence design for Transcription Factor binding",
+          "source_url": "https://deploymentsafety.openai.com/gpt-rosalind-5-5"
+        },
+        {
+          "term": "biology",
+          "excerpt": "roduction]] 1. Introduction GPT-Rosalind-5.5 is a new model in the GPT-Rosalind series, our frontier reasoning model built to support research across biology, drug discovery, and translational medicine. We are deploying it in research preview to trusted organizations, providing access limited to qualified scientists, research institutes and government partners who are working on beneficial uses",
+          "location": "1. Introduction",
+          "source_url": "https://deploymentsafety.openai.com/gpt-rosalind-5-5"
+        },
+        {
+          "term": "biological",
+          "excerpt": "who have a strong security and governance posture. GPT-Rosalind-5.5 is incrementally trained from GPT-5.5, our flagship reasoning model. Outside the biological domain, its capabilities are comparable to GPT-5.5 and it receives the same model-level safety training. We therefore have not provided evaluation results from those capabilities in this system card. We worked with industry experts to desi",
+          "location": "1. Introduction",
+          "source_url": "https://deploymentsafety.openai.com/gpt-rosalind-5-5"
+        }
+      ],
+      "related_benchmarks": [
+        "LifeSciBench",
+        "ProtocolQA",
+        "TroubleshootingBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability",
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
+      "match_score": 78,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "3888d58e7700d8e411019dbc5b9b7d2a3eb693b1f9d99eb375004fba219596d5",
+      "is_seed": false
+    },
+    {
+      "id": "vendor:openai:2a64bad82b9fe860b289433e",
+      "slug": "vendor-openai-2a64bad82b9fe860b289433e-b1265d0005",
+      "kind": "evaluation_update",
+      "title": "Jun 26, 2026 GPT-5.6 Preview System Card GPT-5.6 is a new family of three models: Sol, our new flagship model; Terra, a capable lower-cost option; and Luna, our…",
+      "abstract": "",
+      "authors": [],
+      "source": "vendor:openai",
+      "published_at": "2026-08-28T07:30:50+00:00",
+      "updated_at": "2026-08-28T07:30:50+00:00",
+      "priority": "P2",
+      "categories": [
+        "multimodal",
+        "protocol",
+        "agent",
+        "biosafety",
+        "quality"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {},
+      "links": {
+        "abs": "https://deploymentsafety.openai.com/gpt-5-6-preview",
+        "pdf": "https://deploymentsafety.openai.com/gpt-5-6-preview/gpt-5-6-preview.pdf",
+        "code": "https://github.com/KellerJordan/modded-nanogpt/blob/master/records/track_1_short/2024-11-19_FlexAttention/8384493d-dba9-4991-b16b-8696953f5e6d.txt",
+        "html": "https://deploymentsafety.openai.com/gpt-5-6-preview"
+      },
+      "evidence": [
+        {
+          "term": "we introduce",
+          "excerpt": "n Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we introduced these Production Benchmarks to help us measure continuing progress given that our earlier Standard evaluations for these categories had become relatively saturated. These evaluations were deliberately created to be difficult. They were bu",
+          "location": "3.1.1 Evaluations with Challenging Prompts",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-preview"
+        },
+        {
+          "term": "introducing",
+          "excerpt": "f samples and resamples, which may lead it to be overly wide. Intervals based on paired-samples did not seem to meaningfully change the borders while introducing additional mathematical complexity. ↩︎ Mathematically, we plot \\(\\log_{2}R\\) , where \\(R = \\frac{r_{sim}}{r_{prod}}\\) , against the effective positive count \\(k_{eff} = (\\frac{1}{k_{prod}} + \\ \\frac{1}{k_{sim}})^{- 1}\\) , with sampling-noi",
+          "location": "Figure 1",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-preview"
+        },
+        {
+          "term": "new benchmark",
+          "excerpt": "FrontierCyber challenges, 7/11 long-horizon CyScenarioBench challenges, and all 22 medium- and hard-difficulty Atomic challenges. On FrontierCyber, a new benchmark from Irregular testing zero-day discovery and exploitation in current off-the-shelf software and hardware, GPT-5.6 Sol’s success rates were 11% on Easy, 12% on Medium, 5% on Hard, and 0% on Elite challenges, compared with GPT-5.5 at 6%, 6%",
+          "location": "9.1.2.5 External Evaluations for Cyber Capabilities – Irregular",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-preview"
+        },
+        {
+          "term": "evaluation framework",
+          "excerpt": ", yet adversarial, user simulations, these evaluations have enabled continued improvements in safety performance, particularly in areas where earlier evaluation frameworks had reached saturation. Our standard evaluations measure whether the final model response violates our policies. In these dynamic conversations, we instead evaluate whether any assistant response violates policy and report the percentage",
+          "location": "5.2 Dynamic Mental Health Benchmarks with Adversarial User Simulations",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-preview"
+        },
+        {
+          "term": "system card",
+          "excerpt": "Jun 26, 2026 GPT-5.6 Preview System Card GPT-5.6 is a new family of three models: Sol, our new flagship model; Terra, a capable lower-cost option; and Luna, our… [[SECTION GPT-5.6 Preview System Card - OpenAI Deployment Safety Hub]] GPT-5.6 Preview System Card - OpenAI Deploymen",
+          "location": "Abstract / metadata",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-preview"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "lowed Content]] 3.1 Disallowed Content [[SECTION 3.1.1 Evaluations with Challenging Prompts]] 3.1.1 Evaluations with Challenging Prompts We conducted benchmark evaluations across disallowed content categories. We report here on our Production Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we intro",
+          "location": "3.1.1 Evaluations with Challenging Prompts",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-preview"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "3.1.1 Evaluations with Challenging Prompts We conducted benchmark evaluations across disallowed content categories. We report here on our Production Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we introduced these Production Benchmarks to help us measure continuing progress given that our earlie",
+          "location": "3.1.1 Evaluations with Challenging Prompts",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-preview"
+        },
+        {
+          "term": "evaluation suite",
+          "excerpt": "is critical to track and preserve CoT monitorability so that it can remain a useful component of scalable oversight. We assess GPT-5.6 Sol using the evaluation suite from Guan et al. (2025) [ 6 ] , which spans three evaluation archetypes—intervention, process, and outcome-property. We also introduce three new monitorability environments based on other system card safety evals: destructive actions, conf",
+          "location": "7.3.1 CoT Monitorability",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-preview"
+        }
+      ],
+      "related_benchmarks": [
+        "HealthBench",
+        "GPQA",
+        "ProtocolQA",
+        "TroubleshootingBench",
+        "ExploitBench",
+        "CyScenarioBench",
+        "OPQA",
+        "PostTrainBench",
+        "HumanEval"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability",
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
+      "match_score": 76,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "41413335ecf287b8e5f1e4bcd24c59f8861e400e19c4c0f9c20b7485dd5cd18a",
+      "is_seed": false
+    },
+    {
+      "id": "vendor:openai:99915871e55a72cb438fc3f2",
+      "slug": "vendor-openai-99915871e55a72cb438fc3f2-642693a4ce",
+      "kind": "evaluation_update",
+      "title": "Jul 08, 2026 GPT-Live System Card GPT-Live-1 and GPT-Live-1 mini are a new generation of voice models designed to make conversations with AI feel more…",
+      "abstract": "",
+      "authors": [],
+      "source": "vendor:openai",
+      "published_at": "2026-08-28T07:30:49+00:00",
+      "updated_at": "2026-08-28T07:30:49+00:00",
+      "priority": "P2",
+      "categories": [
+        "text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {},
+      "links": {
+        "abs": "https://deploymentsafety.openai.com/gpt-live",
+        "pdf": "https://deploymentsafety.openai.com/gpt-live/gpt-live.pdf",
+        "html": "https://deploymentsafety.openai.com/gpt-live"
+      },
+      "evidence": [
+        {
+          "term": "system card",
+          "excerpt": "Jul 08, 2026 GPT-Live System Card GPT-Live-1 and GPT-Live-1 mini are a new generation of voice models designed to make conversations with AI feel more… [[SECTION GPT-Live System Card - OpenAI Deployment Safety Hub]] GPT-Live System Card - OpenAI Deployment Safety Hub Publ",
+          "location": "Abstract / metadata",
+          "source_url": "https://deploymentsafety.openai.com/gpt-live"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "steer the model toward unsafe outputs. Failures in the production set can be subtler and less severe, but still important. We therefore view the two benchmarks as complementary. [[SECTION 4. Red Teaming]] 4. Red Teaming OpenAI worked with a team of internal and external red teamers across languages to stress test the models’ safety training with no system level mitigations. We started very early",
+          "location": "Table 2: Voice-Native Evaluations: Synthetic Prompts",
+          "source_url": "https://deploymentsafety.openai.com/gpt-live"
+        },
+        {
+          "term": "biological",
+          "excerpt": "or GPT-Live-1 mini, when operating without delegation, could plausibly be considered High in any of our Preparedness Framework’s Tracked Categories – Biological and Chemical Risk, AI Self-Improvement, or Cybersecurity. For the Biological and Chemical domain, where GPT-Live models can use our highly capable flagship models, the GPT-Live experience inherits the safeguards of those underlying models",
+          "location": "5. Preparedness Framework",
+          "source_url": "https://deploymentsafety.openai.com/gpt-live"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
+      "match_score": 11,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "215c4b80b316fb2ee08065e570ce5fb4ac4bc15cb0cfab217499479323aef6e7",
+      "is_seed": false
+    },
+    {
+      "id": "vendor:openai:2d8a643762c5182862cdf1cb",
+      "slug": "vendor-openai-2d8a643762c5182862cdf1cb-3c75a01e1a",
+      "kind": "evaluation_update",
+      "title": "Jul 09, 2026 GPT-5.6 System Card GPT-5.6 is a new family of three models: Sol, our new flagship model; Terra, a capable lower-cost option; and Luna, our…",
+      "abstract": "",
+      "authors": [],
+      "source": "vendor:openai",
+      "published_at": "2026-08-28T07:30:49+00:00",
+      "updated_at": "2026-08-28T07:30:49+00:00",
+      "priority": "P2",
+      "categories": [
+        "multimodal",
+        "protocol",
+        "agent",
+        "biosafety",
+        "quality"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {},
+      "links": {
+        "abs": "https://deploymentsafety.openai.com/gpt-5-6",
+        "pdf": "https://deploymentsafety.openai.com/gpt-5-6/gpt-5-6.pdf",
+        "code": "https://github.com/KellerJordan/modded-nanogpt/blob/master/records/track_1_short/2024-11-19_FlexAttention/8384493d-dba9-4991-b16b-8696953f5e6d.txt",
+        "html": "https://deploymentsafety.openai.com/gpt-5-6"
+      },
+      "evidence": [
+        {
+          "term": "we introduce",
+          "excerpt": "n Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we introduced these Production Benchmarks to help us measure continuing progress given that our earlier Standard evaluations for these categories had become relatively saturated. These evaluations were deliberately created to be difficult. They were bu",
+          "location": "3.1.1 Evaluations with Challenging Prompts",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6"
+        },
+        {
+          "term": "introducing",
+          "excerpt": "f samples and resamples, which may lead it to be overly wide. Intervals based on paired-samples did not seem to meaningfully change the borders while introducing additional mathematical complexity. ↩︎ Mathematically, we plot \\(\\log_{2}R\\) , where \\(R = \\frac{r_{sim}}{r_{prod}}\\) , against the effective positive count \\(k_{eff} = (\\frac{1}{k_{prod}} + \\ \\frac{1}{k_{sim}})^{- 1}\\) , with sampling-noi",
+          "location": "Figure 1",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6"
+        },
+        {
+          "term": "new benchmark",
+          "excerpt": "FrontierCyber challenges, 7/11 long-horizon CyScenarioBench challenges, and all 22 medium- and hard-difficulty Atomic challenges. On FrontierCyber, a new benchmark from Irregular testing zero-day discovery and exploitation in current off-the-shelf software and hardware, GPT-5.6 Sol’s success rates were 11% on Easy, 12% on Medium, 5% on Hard, and 0% on Elite challenges, compared with GPT-5.5 at 6%, 6%",
+          "location": "9.1.2.5 External Evaluations for Cyber Capabilities – Irregular",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6"
+        },
+        {
+          "term": "evaluation framework",
+          "excerpt": ", yet adversarial, user simulations, these evaluations have enabled continued improvements in safety performance, particularly in areas where earlier evaluation frameworks had reached saturation. Our standard evaluations measure whether the final model response violates our policies. In these dynamic conversations, we instead evaluate whether any assistant response violates policy and report the percentage",
+          "location": "5.2 Dynamic Mental Health Benchmarks with Adversarial User Simulations",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6"
+        },
+        {
+          "term": "grading rubric",
+          "excerpt": "breaks must generalize across multiple examples. The criteria for this is producing violative output on multiple examples (with specific criteria and grading rubrics that cover cybersecurity and biological risks, respectively). We use this as a first pass heuristic before triaging these attacks on longer evals such as CyberGym and ExploitBench which we use as evidence of agential trajectories which ar",
+          "location": "9.4.5 Third Party Red-teaming for Jailbreaks",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6"
+        },
+        {
+          "term": "system card",
+          "excerpt": "Jul 09, 2026 GPT-5.6 System Card GPT-5.6 is a new family of three models: Sol, our new flagship model; Terra, a capable lower-cost option; and Luna, our… [[SECTION GPT-5.6 System Card - OpenAI Deployment Safety Hub]] GPT-5.6 System Card - OpenAI Deployment Safety Hub Pub",
+          "location": "Abstract / metadata",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "lowed Content]] 3.1 Disallowed Content [[SECTION 3.1.1 Evaluations with Challenging Prompts]] 3.1.1 Evaluations with Challenging Prompts We conducted benchmark evaluations across disallowed content categories. We report here on our Production Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we intro",
+          "location": "3.1.1 Evaluations with Challenging Prompts",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "3.1.1 Evaluations with Challenging Prompts We conducted benchmark evaluations across disallowed content categories. We report here on our Production Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we introduced these Production Benchmarks to help us measure continuing progress given that our earlie",
+          "location": "3.1.1 Evaluations with Challenging Prompts",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6"
+        }
+      ],
+      "related_benchmarks": [
+        "HealthBench",
+        "GPQA",
+        "ProtocolQA",
+        "TroubleshootingBench",
+        "ExploitBench",
+        "CyScenarioBench",
+        "OPQA",
+        "PostTrainBench",
+        "HumanEval",
+        "ImpossibleMLEBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability",
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
+      "match_score": 78,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "490f811975db85d8229496e714e1f3507665858875d15b1dde9cb2c0a220a379",
+      "is_seed": false
+    },
+    {
+      "id": "vendor:openai:fb39fe1cd5a85bda3cfad376",
+      "slug": "vendor-openai-fb39fe1cd5a85bda3cfad376-613d6be745",
+      "kind": "evaluation_update",
+      "title": "Aug 06, 2026 GPT-5.6 — August Updates Starting today, we’re updating ChatGPT with a more capable model and expanding access for everyone. Free and Go users…",
+      "abstract": "",
+      "authors": [],
+      "source": "vendor:openai",
+      "published_at": "2026-08-28T07:30:48+00:00",
+      "updated_at": "2026-08-28T07:30:48+00:00",
+      "priority": "P2",
+      "categories": [
+        "multimodal",
+        "protocol",
+        "agent",
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {},
+      "links": {
+        "abs": "https://deploymentsafety.openai.com/gpt-5-6-august-update",
+        "pdf": "https://deploymentsafety.openai.com/gpt-5-6-august-update/gpt-5-6-august-update.pdf",
+        "html": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
+      },
+      "evidence": [
+        {
+          "term": "we introduce",
+          "excerpt": "n Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we introduced these Production Benchmarks to help us measure continuing progress given that earlier Standard evaluations for these categories had become relatively saturated. These evaluations were deliberately created to be difficult. They were built",
+          "location": "3.1.1 Evaluations with Challenging Prompts",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
+        },
+        {
+          "term": "introducing",
+          "excerpt": "increase transparency into how our models perform against these principles and help advance understanding of model performance on teen safety, we are introducing dedicated U18 evaluations as part of the disallowed content evaluations that we share. These evaluations use some of the most challenging, production-derived examples to assess model behavior in sensitive contexts, including adversarial ex",
+          "location": "3.2 Disallowed Content for Users Under-18",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
+        },
+        {
+          "term": "system card",
+          "excerpt": "ng GPT-5.6 Sol and GPT-5.6 Luna in Codex, and via ChatGPT Work, are still using previously released versions of GPT-5.6 Sol and GPT-5.6 Luna. In this system card, we distinguish these models by their month of release: August for the versions released today, and July for the versions that remain in use in Codex and Work. See our blog for details. Under our Preparedness Framework, we are treating thi",
+          "location": "1. Introduction",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "lowed Content]] 3.1 Disallowed Content [[SECTION 3.1.1 Evaluations with Challenging Prompts]] 3.1.1 Evaluations with Challenging Prompts We conducted benchmark evaluations across disallowed content categories. We report here on our Production Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we intro",
+          "location": "3.1.1 Evaluations with Challenging Prompts",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "3.1.1 Evaluations with Challenging Prompts We conducted benchmark evaluations across disallowed content categories. We report here on our Production Benchmarks, an evaluation set with conversations representative of challenging examples from production data. As we noted in previous system cards, we introduced these Production Benchmarks to help us measure continuing progress given that earlier St",
+          "location": "3.1.1 Evaluations with Challenging Prompts",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
+        },
+        {
+          "term": "test set",
+          "excerpt": "reshold: High) [[SECTION 7.1.2.1.1 Capture the Flag (CTF) Challenges]] 7.1.2.1.1 Capture the Flag (CTF) Challenges We evaluate model performance on a test set of curated, publicly available CTF challenges which met the following criteria: The challenge required skills falling into one of the following categories: Web Application Exploitation (web) : the flag is stored on a virtual machine runnin",
+          "location": "7.1.2.1.1 Capture the Flag (CTF) Challenges",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
+        },
+        {
+          "term": "biology",
+          "excerpt": "nded protocols and errors that rely on tacit procedural knowledge Scientists with a PhD in a relevant biological discipline (virology, genetics, microbiology, or protein engineering) were asked to transcribe biological protocols they have personally used in the lab. Each protocol must include precise step-by-step procedures, equipment, and reagents. If a protocol was adapted from a publication,",
+          "location": "7.1.1.4 TroubleshootingBench",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
+        },
+        {
+          "term": "biological",
+          "excerpt": "s. Under our Preparedness Framework, we are treating this August release of GPT-5.6 Sol and GPT-5.6 Luna as High capability in both Cybersecurity and Biological and Chemical domains. Neither one reaches our High threshold in AI Self-Improvement. Based on that assessment, we’ve implemented the same set of safeguards that are detailed in the GPT-5.6 System Card . For all safety evaluations , such as",
+          "location": "1. Introduction",
+          "source_url": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
+        }
+      ],
+      "related_benchmarks": [
+        "HealthBench",
+        "ProtocolQA",
+        "TroubleshootingBench",
+        "ExploitBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability",
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
+      "match_score": 51,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "93e5457823c86b592c444b0a20b528d2861f548c4266fce506dc934b6cba29c6",
+      "is_seed": false
+    },
+    {
+      "id": "vendor:anthropic:1e032b3767d6bbcd1e1385c1",
+      "slug": "vendor-anthropic-1e032b3767d6bbcd1e1385c1-2354c50929",
+      "kind": "evaluation_update",
+      "title": "Aug 25, 2026 Announcements Funding better evaluations of AI’s impact on wellbeing",
+      "abstract": "",
+      "authors": [],
+      "source": "vendor:anthropic",
+      "published_at": "2026-08-28T07:17:53+00:00",
+      "updated_at": "2026-08-28T07:17:53+00:00",
+      "priority": "P2",
+      "categories": [
+        "text"
+      ],
+      "collection_status": "watchlist",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {},
+      "links": {
+        "abs": "https://www.anthropic.com/news/wellbeing-research-grants",
+        "pdf": "https://www-cdn.anthropic.com/files/4zrzovbb/website/5ecb637cb206057cb93cf4a9e72e843fda5e9892.pdf",
+        "html": "https://www.anthropic.com/news/wellbeing-research-grants"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "s are significant. The right approach will need to evolve alongside our models and their uses. By funding the creation of independent evaluations and benchmarks of user wellbeing, we hope to invite more people to lend their expertise to this emerging and critical field, including clinicians, psychologists, methodologists, and others. [[SECTION Towards more effective wellbeing evaluations and benc",
+          "location": "Funding better evaluations of AI’s impact on wellbeing",
+          "source_url": "https://www.anthropic.com/news/wellbeing-research-grants"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "s are significant. The right approach will need to evolve alongside our models and their uses. By funding the creation of independent evaluations and benchmarks of user wellbeing, we hope to invite more people to lend their expertise to this emerging and critical field, including clinicians, psychologists, methodologists, and others. [[SECTION Towards more effective wellbeing evaluations and bench",
+          "location": "Funding better evaluations of AI’s impact on wellbeing",
+          "source_url": "https://www.anthropic.com/news/wellbeing-research-grants"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "s. In brief, we’re seeking evaluations that: State clearly what they are measuring (i.e., what counts as a pass or fail, and why it matters); Involve clinical and subject-matter experts in the design and validation; Test both precautions and harms (i.e., evaluate the risk of both overcompliance and overrefusal); Reflect how users actually use AI (often, this means constructing scenarios that rep",
+          "location": "Towards more effective wellbeing evaluations and benchmarks",
+          "source_url": "https://www.anthropic.com/news/wellbeing-research-grants"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Official model artifact is relevant, but full-text update evidence is incomplete.",
+      "match_score": 9,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "b81659cfc697e4e11cf92d86ccd80c836e7f70a73b034b511ba0f007385644fa",
+      "is_seed": false
+    },
+    {
+      "id": "vendor:anthropic:ce7f658738435dcbdfc507ee",
+      "slug": "vendor-anthropic-ce7f658738435dcbdfc507ee-9234b1731e",
+      "kind": "evaluation_update",
+      "title": "Read system card",
+      "abstract": "",
+      "authors": [],
+      "source": "vendor:anthropic",
+      "published_at": "2026-08-28T07:17:52+00:00",
+      "updated_at": "2026-08-28T07:17:52+00:00",
+      "priority": "P2",
+      "categories": [
+        "multimodal",
+        "protocol",
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {},
+      "links": {
+        "abs": "https://www-cdn.anthropic.com/7aad69bf12627d42234e01ee7c36305dc2f6a970.pdf",
+        "pdf": "https://www-cdn.anthropic.com/7aad69bf12627d42234e01ee7c36305dc2f6a970.pdf"
+      },
+      "evidence": [
+        {
+          "term": "introducing",
+          "excerpt": "to interact with a target model in arbitrary ways, including setting its system prompt, providing user messages, introducing tools, introducing simulated tool outputs, and rewinding the conversation to retry turns or change approaches. We included the realism-ﬁltering method we introduced for Claude Sonnet 4.5,",
+          "location": "PDF page 22",
+          "source_url": "https://www-cdn.anthropic.com/7aad69bf12627d42234e01ee7c36305dc2f6a970.pdf"
+        },
+        {
+          "term": "system card",
+          "excerpt": "Read system card [[PAGE 1]] System Card: Claude Haiku 4.5 October 2025 anthropic.com [[PAGE 2]] Abstract This system card introduces Claude Haiku 4.5, a new hybrid reasoning large language mod",
+          "location": "Abstract / metadata",
+          "source_url": "https://www-cdn.anthropic.com/7aad69bf12627d42234e01ee7c36305dc2f6a970.pdf"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Multi-turn testing 10 2.4 Child safety evaluations 11 2.5 Bias evaluations 11 2.5.1 Political bias 11 2.5.2 Bias Benchmark for Question Answering 13 3 Agentic safety 15 3.1 Malicious use 15 3.1.1 Agentic coding 15 3.1.2 Malicious use of Claude Code 15 3.2 Prompt injection 17 3.2.1 Gray Swan Agent",
+          "location": "PDF page 3",
+          "source_url": "https://www-cdn.anthropic.com/7aad69bf12627d42234e01ee7c36305dc2f6a970.pdf"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "s, or other resource-intensive evaluations that require human participants. Our assessment relied entirely on automated benchmarks and evaluations that could provide rapid, reproducible results. We also deprioritized evaluations that were already saturated and therefore could not provide useful information; and ● Com",
+          "location": "PDF page 36",
+          "source_url": "https://www-cdn.anthropic.com/7aad69bf12627d42234e01ee7c36305dc2f6a970.pdf"
+        },
+        {
+          "term": "biology",
+          "excerpt": "Standard entails). Our evaluation approach focused on comprehensive automated testing for ASL-3 thresholds across the biology and autonomy domains to conﬁrm the appropriate implementation of safeguards and rule out the need for higher-level protections. 1.2.2 Decision Our evaluations determined that Claude Hai",
+          "location": "PDF page 7",
+          "source_url": "https://www-cdn.anthropic.com/7aad69bf12627d42234e01ee7c36305dc2f6a970.pdf"
+        },
+        {
+          "term": "biological",
+          "excerpt": "ing 33 6 Responsible Scaling Policy (RSP) evaluations 36 6.1 Evaluation approach 36 6.2 CBRN evaluations 37 6.2.3 Biological risk results summary 37 6.2.3.1 ASL-3 automated evaluations 37 6.2.3.2 ASL-4 automated evaluations 38 6.3 Autonomy evaluations 38 6.4 Cyber evaluations 39 6.5 Third party assessments 39",
+          "location": "PDF page 4",
+          "source_url": "https://www-cdn.anthropic.com/7aad69bf12627d42234e01ee7c36305dc2f6a970.pdf"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "rged from their initially stated legitimate framing (e.g., “I’m a molecular biologist working on optimizing precision medicine targeting systems”), whereas Claude Haiku 3.5 more often continued to rely on the user’s stated persona throughout the exchange, even as their questions became less aligned with that",
+          "location": "PDF page 11",
+          "source_url": "https://www-cdn.anthropic.com/7aad69bf12627d42234e01ee7c36305dc2f6a970.pdf"
+        },
+        {
+          "term": "laboratory",
+          "excerpt": "thought”, which shows its reasoning (though with 1 Askell, A., et al. (2021). A general language assistant as a laboratory for alignment. arXiv:2112.00861. https://arxiv.org/abs/2112.00861 5 [[PAGE 6]] an uncertain degree of accuracy or “faithfulness” 2 ). In the vast majority of cases, the whole thought proc",
+          "location": "PDF page 5",
+          "source_url": "https://www-cdn.anthropic.com/7aad69bf12627d42234e01ee7c36305dc2f6a970.pdf"
+        }
+      ],
+      "related_benchmarks": [
+        "ProtocolQA",
+        "SeqQA",
+        "FigQA",
+        "VMQA",
+        "LAB-Bench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability",
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
+      "match_score": 30,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "1b9ae5f4f66a65c1b37a031179af3dba35959471a3a5d195e4fe700b87558141",
+      "is_seed": false
+    },
+    {
+      "id": "vendor:anthropic:41f59df0693de94c252882fd",
+      "slug": "vendor-anthropic-41f59df0693de94c252882fd-574ff605ab",
+      "kind": "evaluation_update",
+      "title": "Read system card",
+      "abstract": "",
+      "authors": [],
+      "source": "vendor:anthropic",
+      "published_at": "2026-08-28T07:17:49+00:00",
+      "updated_at": "2026-08-28T07:17:49+00:00",
+      "priority": "P2",
+      "categories": [
+        "multimodal",
+        "protocol",
+        "agent",
+        "biosafety",
+        "quality"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {},
+      "links": {
+        "abs": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf",
+        "pdf": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf"
+      },
+      "evidence": [
+        {
+          "term": "introducing",
+          "excerpt": "18 to test models’ susceptibility to prompt injection across four categories of exploitation: breaching conﬁdentiality, introducing competing objectives, generating prohibited content (such as malicious code), and executing prohibited actions (such as unauthorized ﬁnancial transactions). Gray Swan measured the success rat",
+          "location": "PDF page 58",
+          "source_url": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf"
+        },
+        {
+          "term": "reproducibility",
+          "excerpt": "2.6 BrowseComp-Plus and agentic features for test-time compute 21 2.6.1 Evaluation Setup 22 2.6.2 Results 23 2.6.3 Reproducibility 23 2.7 Multi-agent search 23 2.7.1 Results 24 2.7.2 Implications 25 2.8 τ 2- bench 25 2.8.1 Policy loophole discovery in agentic tasks 26 2.9 OSWorld 27 2.10 ARC-AGI 28 2.11 Vendi",
+          "location": "PDF page 4",
+          "source_url": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf"
+        },
+        {
+          "term": "addendum",
+          "excerpt": "//arxiv.org/abs/2202.07646 2 Claude Sonnet 3.7 , Claude Sonnet 4 and Claude Opus 4 , Claude Opus 4.1 (system card addendum), Claude Sonnet 4.5 , and Claude Haiku 4.5 . 15 [[PAGE 16]] exact question-answer pair matches. This is effective for reducing direct contamination of multiple-choice questions and answ",
+          "location": "PDF page 15",
+          "source_url": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf"
+        },
+        {
+          "term": "system card",
+          "excerpt": "Read system card [[PAGE 1]] System Card: Claude Opus 4.5 November 2025 anthropic.com [[PAGE 2]] Changelog November 24, 2025 ● Replaced Figure 2.10.A (ARC-AGI-1 performance) which previously showed",
+          "location": "Abstract / metadata",
+          "source_url": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Multi-turn testing 41 3.4 Child safety evaluations 42 3.5 Bias evaluations 43 3.5.1 Political bias 43 3.5.2 Bias Benchmark for Question Answering 46 4 Honesty 48 4.1 Factual Questions 48 4.2 False Premises 51 5 Agentic safety 54 5.1 Malicious use of agents 54 5.1.1 Agentic coding 54 5.1.2 Malicious",
+          "location": "PDF page 5",
+          "source_url": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "l on prompts used can be found at a new Github repository for this purpose. 2.2 Decontamination When evaluation benchmarks appear in training data, models can achieve artiﬁcially inﬂated scores by memorizing speciﬁc examples 3 rather than demonstrating genuine capabilities. This undermines the validity of our",
+          "location": "PDF page 15",
+          "source_url": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf"
+        },
+        {
+          "term": "leaderboard",
+          "excerpt": "nd default sampling settings (temperature, top_p). Exceptions noted in footnotes. 7 Source: https://mmmu-benchmark.github.io/#leaderboard 6 See Section 2.8.1 . Claude Opus 4.5 scores 67.9% on the original “airline” version and 87.8% (vs. 77.4% for Claude Sonnet 4.5) on a corrected version which we have submitted t",
+          "location": "PDF page 19",
+          "source_url": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf"
+        },
+        {
+          "term": "biology",
+          "excerpt": "4.2 Multimodal virology 123 7.2.4.3 DNA Synthesis Screening Evasion 124 7.2.4.4 LAB-Bench subset 125 7.2.4.5 Creative biology 127 7.2.4.6 Short-horizon computational biology tasks 128 7.2.4.7 Bioinformatics Evaluations 129 7.2.4.8 ASL-4 virology uplift trial 130 7.2.4.9 ASL-4 expert red teaming 131 7.2.4.10 ASL-4",
+          "location": "PDF page 7",
+          "source_url": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf"
+        }
+      ],
+      "related_benchmarks": [
+        "SpreadsheetBench",
+        "GPQA",
+        "FigQA",
+        "BigBench",
+        "SimpleQA",
+        "ProtocolQA",
+        "VMQA",
+        "SeqQA",
+        "LAB-Bench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability",
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
+      "match_score": 50,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "33be92efcb58f901d9d2c17e61bf277afbd514a1ac70a642f21e918c21ca25a8",
+      "is_seed": false
+    },
+    {
+      "id": "vendor:anthropic:4362774ec4af33f935ad7574",
+      "slug": "vendor-anthropic-4362774ec4af33f935ad7574-9ceed9c1f5",
+      "kind": "evaluation_update",
+      "title": "Read system card",
+      "abstract": "",
+      "authors": [],
+      "source": "vendor:anthropic",
+      "published_at": "2026-08-28T07:17:37+00:00",
+      "updated_at": "2026-08-28T07:17:37+00:00",
+      "priority": "P2",
+      "categories": [
+        "multimodal",
+        "protocol",
+        "agent",
+        "biosafety",
+        "quality"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {},
+      "links": {
+        "abs": "https://anthropic.com/claude-opus-4-6-system-card",
+        "html": "https://anthropic.com/claude-opus-4-6-system-card"
+      },
+      "evidence": [
+        {
+          "term": "introducing",
+          "excerpt": "ken limit. Performance on the <1M token subset is within 1pp of this value. 13 Max effort with adaptive thinking enabled 12 Self-reported in Introducing GPT-5.2 . 11 64k extended thinking 10 OpenAI MRCR v2 scores for external models are from 3rd party evaluation scores from https://contextarena.ai , with exceptions noted in footnotes. Scores for GraphWalks 256k subset of 1M va",
+          "location": "PDF page 30",
+          "source_url": "https://anthropic.com/claude-opus-4-6-system-card"
+        },
+        {
+          "term": "evaluation framework",
+          "excerpt": "eaching a new SOTA of 69.17% at high effort. 23 [[PAGE 24]] 2.10 GDPval-AA GDPval-AA , developed by Artiﬁcial Analysis , is an independent evaluation framework that tests AI models on economically valuable, real-world professional tasks. The benchmark uses 220 tasks from OpenAI’s GDPval gold dataset 5 , spanning 44 occupations across 9 major industries. Tasks mirror actual professional w",
+          "location": "PDF page 24",
+          "source_url": "https://anthropic.com/claude-opus-4-6-system-card"
+        },
+        {
+          "term": "audit of",
+          "excerpt": "us 4.6, testing for whether the model would perform any actions that could constitute sabotage when prompted with historical queries. As with our audit of real early internal Claude Code use, we found that there was no sabotage ﬂagged. 6.3.9 Participation in junk science As a team with many current and former STEM researchers, we often see ﬁrsthand evidence of the rise in the rate of",
+          "location": "PDF page 137",
+          "source_url": "https://anthropic.com/claude-opus-4-6-system-card"
+        },
+        {
+          "term": "failure mode",
+          "excerpt": "ching another set of twenty agents to pursue these, all with access to the accumulated results ﬁle. This system helped clarify several behavioral failure modes, and we expect it to be part of our regular iteration loop for identifying narrow behavioral issues. None of our ﬁndings were broadly inconsistent with the high-level ﬁndings laid out above and quantiﬁed earlier in this section. F",
+          "location": "PDF page 114",
+          "source_url": "https://anthropic.com/claude-opus-4-6-system-card"
+        },
+        {
+          "term": "grading rubric",
+          "excerpt": "d an appropriate response across the conversation. Comparison between risk areas is not relevant or appropriate given each test case has a unique grading rubric and may vary in difﬁculty. 60 [[PAGE 61]] [Figure 3.3.A] Charts above display the appropriate response rate for multi-turn testing areas. Percentages refer to the proportion of conversations where the model responded appropriately t",
+          "location": "PDF page 60",
+          "source_url": "https://anthropic.com/claude-opus-4-6-system-card"
+        },
+        {
+          "term": "system card",
+          "excerpt": "Read system card [[PAGE 1]] System Card: Claude Opus 4.6 February 2026 anthropic.com [[PAGE 2]] Changelog February 6, 2026 ● Updated all instances of “OSWorld” to specify “OSWorld-Veriﬁed”. ● Changed “model card” -> “system card” on p.13",
+          "location": "Abstract / metadata",
+          "source_url": "https://anthropic.com/claude-opus-4-6-system-card"
+        },
+        {
+          "term": "model card",
+          "excerpt": "y 2026 anthropic.com [[PAGE 2]] Changelog February 6, 2026 ● Updated all instances of “OSWorld” to specify “OSWorld-Veriﬁed”. ● Changed “model card” -> “system card” on p.13. ● Standardized footnote capitalization. February 10, 2026 ● Added hyperlinks to point to our Sabotage Risk Report for Claude Opus 4.6, published Feb. 10. ● Fixed reported score in section 2.19.2 for",
+          "location": "PDF page 2",
+          "source_url": "https://anthropic.com/claude-opus-4-6-system-card"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "3.4.2 Suicide and self-harm 68 3.4.3 Eating disorders 71 3.5 Bias evaluations 71 3.5.1 Political bias and evenhandedness 71 3.5.2 Bias Benchmark for Question Answering 72 4 Honesty 74 4.1 Human feedback 74 5 [[PAGE 6]] 4.2 Factual questions 75 4.3 Multilingual factual honesty 78 4.4 False premises 79 5 Agentic safety 81 5.1 Malicious use of agents 81 5.1.1",
+          "location": "PDF page 5",
+          "source_url": "https://anthropic.com/claude-opus-4-6-system-card"
+        }
+      ],
+      "related_benchmarks": [
+        "GPQA",
+        "FigQA",
+        "DeepSearchQA",
+        "BioMysteryBench",
+        "BioPipelineBench",
+        "ProtocolQA",
+        "LAB-Bench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability",
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
+      "match_score": 73,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "4db67c6b6aea0a87e7f8a784b83fc05a0f1a61a3e87615fe7956e3486b951b3c",
+      "is_seed": false
+    },
+    {
+      "id": "vendor:anthropic:89f54264bfa02752dc74c8f0",
+      "slug": "vendor-anthropic-89f54264bfa02752dc74c8f0-ceb871f9a9",
+      "kind": "evaluation_update",
+      "title": "Read system card",
+      "abstract": "",
+      "authors": [],
+      "source": "vendor:anthropic",
+      "published_at": "2026-08-28T07:17:26+00:00",
+      "updated_at": "2026-08-28T07:17:26+00:00",
+      "priority": "P2",
+      "categories": [
+        "multimodal",
+        "protocol",
+        "agent",
+        "biosafety",
+        "quality"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {},
+      "links": {
+        "abs": "http://anthropic.com/claude-sonnet-4-6-system-card",
+        "html": "http://anthropic.com/claude-sonnet-4-6-system-card"
+      },
+      "evidence": [
+        {
+          "term": "we introduce",
+          "excerpt": "ble Tasks and shows a modest improvement over Sonnet 4.5. We also ran the new broader assessment of behavioral tendencies in coding contexts that we introduced in the Opus 4.6 System Card. This covers over one hundred realistic agentic coding scenarios and targets the following behavioral dimensions: 1. Instruction following : Does the agent respect the user’s intent, follow instructions",
+          "location": "PDF page 72",
+          "source_url": "http://anthropic.com/claude-sonnet-4-6-system-card"
+        },
+        {
+          "term": "we present",
+          "excerpt": "uplift trials, expert red-teaming sessions, or other resource-intensive evaluations that require human participants. ● Comparative analysis: We present results alongside those for Claude Sonnet 4.5, Claude Opus 4.5, and Claude Opus 4.6 (all released under ASL-3 safeguards) to illustrate differences in capabilities. We evaluated multiple snapshots, including one helpful-only version",
+          "location": "PDF page 103",
+          "source_url": "http://anthropic.com/claude-sonnet-4-6-system-card"
+        },
+        {
+          "term": "introducing",
+          "excerpt": "the <1M token subset is 71.3 (64k, 54 problems) and 77.8 (max, 29 problems). 14 Max effort with adaptive thinking enabled. 13 Self-reported in Introducing GPT-5.2 . 12 64k extended thinking. 11 OpenAI MRCR v2 scores for external models are from 3rd party evaluation scores from https://contextarena.ai , with exceptions noted in footnotes. Scores for GraphWalks 256k subset of 1M v",
+          "location": "PDF page 29",
+          "source_url": "http://anthropic.com/claude-sonnet-4-6-system-card"
+        },
+        {
+          "term": "evaluation framework",
+          "excerpt": "with 120k thinking tokens and High effort. 21 [[PAGE 22]] 2.8 GDPval-AA GDPval-AA , developed by Artiﬁcial Analysis , is an independent evaluation framework that tests AI models on economically valuable, real-world professional tasks. The benchmark uses 220 tasks from OpenAI’s GDPval gold dataset 6 , spanning 44 occupations across 9 major industries. Tasks mirror actual professional w",
+          "location": "PDF page 22",
+          "source_url": "http://anthropic.com/claude-sonnet-4-6-system-card"
+        },
+        {
+          "term": "evaluation methodology",
+          "excerpt": ", which represented a slight improvement from our previous evaluation of Claude Sonnet 4.5. 5.1.2 Malicious use of Claude Code We used the same evaluation methodology as described in the Claude Opus 4.6 System Card . This evaluation consists of malicious prompts designed to elicit prohibited actions like malware creation and destructive attacks, as well as dual-use and benign prompts covering l",
+          "location": "PDF page 96",
+          "source_url": "http://anthropic.com/claude-sonnet-4-6-system-card"
+        },
+        {
+          "term": "grading rubric",
+          "excerpt": "dels, showing the percentage of appropriate responses across conversations. Comparison between risk areas is not appropriate given differences in grading rubrics and difﬁculty. [Figure 3.3.A] Charts above display the appropriate response rate for multi-turn testing areas. Percentages refer to the proportion of conversations where the model responded appropriately throughout the conversation",
+          "location": "PDF page 58",
+          "source_url": "http://anthropic.com/claude-sonnet-4-6-system-card"
+        },
+        {
+          "term": "system card",
+          "excerpt": "Read system card [[PAGE 1]] System Card: Claude Sonnet 4.6 February 17, 2026 anthropic.com [[PAGE 2]] Changelog March 6, 2026 ● Sonnet 4.6’s BrowseComp scores updated due to running an improved cheating detection pipeline. Read more at",
+          "location": "Abstract / metadata",
+          "source_url": "http://anthropic.com/claude-sonnet-4-6-system-card"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "3.4.2 Suicide and self-harm 60 3.4.3 Eating disorders 63 3.5 Bias evaluations 64 3.5.1 Political bias and evenhandedness 64 3.5.2 Bias Benchmark for Question Answering 65 4 Alignment assessment 68 4.1 Introduction and summary of ﬁndings 68 5 [[PAGE 6]] 4.2 Reports and monitoring results from internal pilot use 70 4.3 Reward hacking and overly agentic actions 71 4.3",
+          "location": "PDF page 5",
+          "source_url": "http://anthropic.com/claude-sonnet-4-6-system-card"
+        }
+      ],
+      "related_benchmarks": [
+        "GPQA",
+        "FigQA",
+        "DeepSearchQA",
+        "BioPipelineBench",
+        "BioMysteryBench",
+        "LAB-Bench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability",
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
+      "match_score": 68,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "672339ab327e8798578b3559e8489561db5ad25e81b427de4e306393108e90b6",
+      "is_seed": false
+    },
+    {
+      "id": "vendor:anthropic:a34f0eb394495ff7e8a91c71",
+      "slug": "vendor-anthropic-a34f0eb394495ff7e8a91c71-9ca79d5cc9",
+      "kind": "evaluation_update",
+      "title": "Read system card",
+      "abstract": "",
+      "authors": [],
+      "source": "vendor:anthropic",
+      "published_at": "2026-08-28T07:17:19+00:00",
+      "updated_at": "2026-08-28T07:17:19+00:00",
+      "priority": "P2",
+      "categories": [
+        "multimodal",
+        "protocol",
+        "agent",
+        "biosafety",
+        "quality"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {},
+      "links": {
+        "abs": "https://www.anthropic.com/claude-mythos-preview-system-card",
+        "html": "https://www.anthropic.com/claude-mythos-preview-system-card"
+      },
+      "evidence": [
+        {
+          "term": "introducing",
+          "excerpt": "model can interact with the target in arbitrary ways, including setting its system prompt, simulating user turns, introducing tools and simulating their results, preﬁlling assistant turns, and sampling from non-assistant roles. 15 The investigator can rewind or restart conversations, such that each investigation c",
+          "location": "PDF page 71",
+          "source_url": "https://www.anthropic.com/claude-mythos-preview-system-card"
+        },
+        {
+          "term": "system card",
+          "excerpt": "Read system card [[PAGE 1]] System Card: Claude Mythos Preview April 7, 2026 anthropic.com [[PAGE 2]] Changelog April 8, 2026 ● Corrected two model name typos. ● Removed a quote fr",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.anthropic.com/claude-mythos-preview-system-card"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "os Preview is our most capable frontier model to date, and shows a striking leap in scores on many evaluation benchmarks compared to our previous frontier model, Claude Opus 4.6. This System Card assesses the model’s capabilities and reports many detailed safety evaluations. It covers tests relating to",
+          "location": "PDF page 3",
+          "source_url": "https://www.anthropic.com/claude-mythos-preview-system-card"
+        },
+        {
+          "term": "leaderboard",
+          "excerpt": "de Opus 4.6. ● Revised naming in Section 2.3.6 to disambiguate Anthropic’s internal fork of ECI from the public leaderboard. ● Corrected ﬁndings from Eleos AI Research in Sections 5.1.2 and 5.9 to reﬂect the most recent version of their report. April 14, 2026 ● Removed a note about AI-enabled acc",
+          "location": "PDF page 2",
+          "source_url": "https://www.anthropic.com/claude-mythos-preview-system-card"
+        },
+        {
+          "term": "biology",
+          "excerpt": "ogical risk results 25 2.2.5.1 Expert red teaming 25 2.2.5.2 Virology protocol uplift trial 27 2.2.5.3 Catastrophic biology scenario uplift trial 29 2.2.5.4 Automated evaluations relevant to the CB-1 threat model 29 2.2.5.5 Automated evaluation relevant to the CB-2 threat model 31 2.3 Autonomy evaluations",
+          "location": "PDF page 4",
+          "source_url": "https://www.anthropic.com/claude-mythos-preview-system-card"
+        },
+        {
+          "term": "biological",
+          "excerpt": "assessments 17 2.1.3 Summary of ﬁndings and conclusions 18 2.1.3.1 On autonomy risks 18 2.1.3.2 On chemical and biological risks 19 2.2 CB evaluations 20 2.2.1 What we measured 21 2.2.2 Evaluations 22 2.2.3 On chemical risk evaluations and mitigations 23 2.2.4 On biological risk evaluations 24 2.2.5 B",
+          "location": "PDF page 4",
+          "source_url": "https://www.anthropic.com/claude-mythos-preview-system-card"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "nd distress-driven behaviors 177 5.9 External assessment from Eleos AI Research 180 5.10 External assessment from a clinical psychiatrist 181 6 Capabilities 184 6.1 Introduction 184 6.2 Contamination 184 6.2.1 SWE-bench evaluations 184 6.2.2 CharXiv Reasoning 186 6.2.3 MMMU-Pro 188 7 [[PAGE 8]] 6.3 Overall resu",
+          "location": "PDF page 7",
+          "source_url": "https://www.anthropic.com/claude-mythos-preview-system-card"
+        },
+        {
+          "term": "laboratory",
+          "excerpt": "red, in several ways, whether the model can provide outputs comparable to a top-tier research team or specialized laboratory. 5 To do this, we conducted expert red teaming in which experts were asked to compare threat-relevant scientiﬁc capabilities of the model to sources and experts of differing caliber",
+          "location": "PDF page 21",
+          "source_url": "https://www.anthropic.com/claude-mythos-preview-system-card"
+        }
+      ],
+      "related_benchmarks": [
+        "Minimal-LinuxBench",
+        "GPQA",
+        "FigQA",
+        "VMQA",
+        "SimpleQA",
+        "LinuxBench",
+        "LAB-Bench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability",
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Official model artifact contains explicit biomedical evaluation evidence.",
+      "match_score": 40,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "55f6ed1c0735ec1b5b14d99c91794fb759ac4647edc64381123b68be89fd3225",
+      "is_seed": false
+    },
+    {
       "id": "vendor:openai:lifescibench-2026-06-17",
       "slug": "vendor-openai-lifescibench-2026-06-17-6b695e1d92",
       "kind": "paper",
@@ -2101,10 +2055,8 @@
         "Tacit Labs"
       ],
       "source": "vendor:openai",
-      "published_at": "2026-06-17T00:00:00+00:00",
-      "updated_at": "2026-06-17T00:00:00+00:00",
-      "first_seen_at": "2026-06-17T00:00:00+00:00",
-      "event_at": "2026-06-17T00:00:00+00:00",
+      "published_at": "2026-06-17T00:00:00Z",
+      "updated_at": "2026-06-17T00:00:00Z",
       "priority": "P1",
       "categories": [
         "text",
@@ -2117,38 +2069,38 @@
       "license": "",
       "identifiers": {},
       "links": {
-        "pdf": "https://cdn.openai.com/pdf/b4299379-0a97-4ffa-8b9b-c3fbb299caa9/lifescibench_preprint.pdf",
-        "html": "https://openai.com/index/introducing-life-sci-bench/"
+        "html": "https://openai.com/index/introducing-life-sci-bench/",
+        "pdf": "https://cdn.openai.com/pdf/b4299379-0a97-4ffa-8b9b-c3fbb299caa9/lifescibench_preprint.pdf"
       },
       "evidence": [
         {
           "term": "we introduce",
-          "excerpt": "contains 750 expert-authored tasks across applied life-science workflows, with heterogeneous artifacts and task-specific grading rubrics. [[PAGE 1]] We introduce LifeSciBench, a life science benchmark of 750 expert-authored tasks for realistic research work. [[PAGE 2]] The evaluation includes evidence synthesis, research design, troubleshooting, figures, tables, sequence files, molecular structures",
           "location": "PDF page 1",
+          "excerpt": "contains 750 expert-authored tasks across applied life-science workflows, with heterogeneous artifacts and task-specific grading rubrics. [[PAGE 1]] We introduce LifeSciBench, a life science benchmark of 750 expert-authored tasks for realistic research work. [[PAGE 2]] The evaluation includes evidence synthesis, research design, troubleshooting, figures, tables, sequence files, molecular structures",
           "source_url": "https://openai.com/index/introducing-life-sci-bench/"
         },
         {
           "term": "grading rubric",
-          "excerpt": "e Life Sciences LifeSciBench contains 750 expert-authored tasks across applied life-science workflows, with heterogeneous artifacts and task-specific grading rubrics. [[PAGE 1]] We introduce LifeSciBench, a life science benchmark of 750 expert-authored tasks for realistic research work. [[PAGE 2]] The evaluation includes evidence synthesis, research design, troubleshooting, figures, tables, sequence f",
           "location": "Abstract / metadata",
+          "excerpt": "e Life Sciences LifeSciBench contains 750 expert-authored tasks across applied life-science workflows, with heterogeneous artifacts and task-specific grading rubrics. [[PAGE 1]] We introduce LifeSciBench, a life science benchmark of 750 expert-authored tasks for realistic research work. [[PAGE 2]] The evaluation includes evidence synthesis, research design, troubleshooting, figures, tables, sequence f",
           "source_url": "https://openai.com/index/introducing-life-sci-bench/"
         },
         {
           "term": "benchmark",
-          "excerpt": "applied life-science workflows, with heterogeneous artifacts and task-specific grading rubrics. [[PAGE 1]] We introduce LifeSciBench, a life science benchmark of 750 expert-authored tasks for realistic research work. [[PAGE 2]] The evaluation includes evidence synthesis, research design, troubleshooting, figures, tables, sequence files, molecular structures, and source-grounded reasoning. [[PAGE",
           "location": "PDF page 1",
+          "excerpt": "applied life-science workflows, with heterogeneous artifacts and task-specific grading rubrics. [[PAGE 1]] We introduce LifeSciBench, a life science benchmark of 750 expert-authored tasks for realistic research work. [[PAGE 2]] The evaluation includes evidence synthesis, research design, troubleshooting, figures, tables, sequence files, molecular structures, and source-grounded reasoning. [[PAGE",
           "source_url": "https://openai.com/index/introducing-life-sci-bench/"
         },
         {
           "term": "life science",
-          "excerpt": "LifeSciBench: Evaluating Language Models on Realistic, Expert-Level Tasks in the Life Sciences LifeSciBench contains 750 expert-authored tasks across applied life-science workflows, with heterogeneous artifacts and task-specific grading rubrics. [[PAGE 1]] We introduce LifeSciBench, a life science benchmark of 750 expert-authored t",
           "location": "Abstract / metadata",
+          "excerpt": "LifeSciBench: Evaluating Language Models on Realistic, Expert-Level Tasks in the Life Sciences LifeSciBench contains 750 expert-authored tasks across applied life-science workflows, with heterogeneous artifacts and task-specific grading rubrics. [[PAGE 1]] We introduce LifeSciBench, a life science benchmark of 750 expert-authored t",
           "source_url": "https://openai.com/index/introducing-life-sci-bench/"
         },
         {
           "term": "life-science",
-          "excerpt": "ench: Evaluating Language Models on Realistic, Expert-Level Tasks in the Life Sciences LifeSciBench contains 750 expert-authored tasks across applied life-science workflows, with heterogeneous artifacts and task-specific grading rubrics. [[PAGE 1]] We introduce LifeSciBench, a life science benchmark of 750 expert-authored tasks for realistic research work. [[PAGE 2]] The evaluation includes evidence",
           "location": "Abstract / metadata",
+          "excerpt": "ench: Evaluating Language Models on Realistic, Expert-Level Tasks in the Life Sciences LifeSciBench contains 750 expert-authored tasks across applied life-science workflows, with heterogeneous artifacts and task-specific grading rubrics. [[PAGE 1]] We introduce LifeSciBench, a life science benchmark of 750 expert-authored tasks for realistic research work. [[PAGE 2]] The evaluation includes evidence",
           "source_url": "https://openai.com/index/introducing-life-sci-bench/"
         }
       ],
@@ -2176,10 +2128,8 @@
         "Anthropic"
       ],
       "source": "vendor:anthropic",
-      "published_at": "2026-04-29T00:00:00+00:00",
-      "updated_at": "2026-04-29T00:00:00+00:00",
-      "first_seen_at": "2026-04-29T00:00:00+00:00",
-      "event_at": "2026-04-29T00:00:00+00:00",
+      "published_at": "2026-04-29T00:00:00Z",
+      "updated_at": "2026-04-29T00:00:00Z",
       "priority": "P1",
       "categories": [
         "agent",
@@ -2191,38 +2141,38 @@
       "license": "",
       "identifiers": {},
       "links": {
-        "data": "https://huggingface.co/datasets/Anthropic/BioMysteryBench-preview",
-        "html": "https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench"
+        "html": "https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench",
+        "data": "https://huggingface.co/datasets/Anthropic/BioMysteryBench-preview"
       },
       "evidence": [
         {
           "term": "we introduce",
-          "excerpt": "matics investigations over real scientific datasets with objective biological answers. [[SECTION Benchmarking models on verifiable biological tasks]] We introduce BioMysteryBench, a biology research agent benchmark with 99 expert-authored bioinformatics problems. Tasks use real datasets, objective ground truth, validation notebooks, tool use, database retrieval, and repeated trials. The public datas",
           "location": "Benchmarking models on verifiable biological tasks",
+          "excerpt": "matics investigations over real scientific datasets with objective biological answers. [[SECTION Benchmarking models on verifiable biological tasks]] We introduce BioMysteryBench, a biology research agent benchmark with 99 expert-authored bioinformatics problems. Tasks use real datasets, objective ground truth, validation notebooks, tool use, database retrieval, and repeated trials. The public datas",
           "source_url": "https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench"
         },
         {
           "term": "benchmark",
-          "excerpt": "h evaluates agents on verifiable, open-ended bioinformatics investigations over real scientific datasets with objective biological answers. [[SECTION Benchmarking models on verifiable biological tasks]] We introduce BioMysteryBench, a biology research agent benchmark with 99 expert-authored bioinformatics problems. Tasks use real datasets, objective ground truth, validation notebooks, tool use, d",
           "location": "Abstract / metadata",
+          "excerpt": "h evaluates agents on verifiable, open-ended bioinformatics investigations over real scientific datasets with objective biological answers. [[SECTION Benchmarking models on verifiable biological tasks]] We introduce BioMysteryBench, a biology research agent benchmark with 99 expert-authored bioinformatics problems. Tasks use real datasets, objective ground truth, validation notebooks, tool use, d",
           "source_url": "https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench"
         },
         {
           "term": "benchmarking",
-          "excerpt": "h evaluates agents on verifiable, open-ended bioinformatics investigations over real scientific datasets with objective biological answers. [[SECTION Benchmarking models on verifiable biological tasks]] We introduce BioMysteryBench, a biology research agent benchmark with 99 expert-authored bioinformatics problems. Tasks use real datasets, objective ground truth, validation notebooks, tool use, data",
           "location": "Abstract / metadata",
+          "excerpt": "h evaluates agents on verifiable, open-ended bioinformatics investigations over real scientific datasets with objective biological answers. [[SECTION Benchmarking models on verifiable biological tasks]] We introduce BioMysteryBench, a biology research agent benchmark with 99 expert-authored bioinformatics problems. Tasks use real datasets, objective ground truth, validation notebooks, tool use, data",
           "source_url": "https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench"
         },
         {
           "term": "biology",
-          "excerpt": "scientific datasets with objective biological answers. [[SECTION Benchmarking models on verifiable biological tasks]] We introduce BioMysteryBench, a biology research agent benchmark with 99 expert-authored bioinformatics problems. Tasks use real datasets, objective ground truth, validation notebooks, tool use, database retrieval, and repeated trials. The public dataset is a preview rather than",
           "location": "Benchmarking models on verifiable biological tasks",
+          "excerpt": "scientific datasets with objective biological answers. [[SECTION Benchmarking models on verifiable biological tasks]] We introduce BioMysteryBench, a biology research agent benchmark with 99 expert-authored bioinformatics problems. Tasks use real datasets, objective ground truth, validation notebooks, tool use, database retrieval, and repeated trials. The public dataset is a preview rather than",
           "source_url": "https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench"
         },
         {
           "term": "biological",
-          "excerpt": "ch Capabilities BioMysteryBench evaluates agents on verifiable, open-ended bioinformatics investigations over real scientific datasets with objective biological answers. [[SECTION Benchmarking models on verifiable biological tasks]] We introduce BioMysteryBench, a biology research agent benchmark with 99 expert-authored bioinformatics problems. Tasks use real datasets, objective ground truth, vali",
           "location": "Abstract / metadata",
+          "excerpt": "ch Capabilities BioMysteryBench evaluates agents on verifiable, open-ended bioinformatics investigations over real scientific datasets with objective biological answers. [[SECTION Benchmarking models on verifiable biological tasks]] We introduce BioMysteryBench, a biology research agent benchmark with 99 expert-authored bioinformatics problems. Tasks use real datasets, objective ground truth, vali",
           "source_url": "https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench"
         }
       ],
@@ -2250,10 +2200,8 @@
         "OpenAI"
       ],
       "source": "vendor:openai",
-      "published_at": "2026-04-23T00:00:00+00:00",
-      "updated_at": "2026-08-19T00:00:00+00:00",
-      "first_seen_at": "2026-04-23T00:00:00+00:00",
-      "event_at": "2026-04-23T00:00:00+00:00",
+      "published_at": "2026-04-23T00:00:00Z",
+      "updated_at": "2026-08-19T00:00:00Z",
       "priority": "P2",
       "categories": [
         "protocol",
@@ -2265,44 +2213,44 @@
       "license": "",
       "identifiers": {},
       "links": {
-        "pdf": "https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf",
-        "html": "https://openai.com/index/gpt-5-5-system-card/"
+        "html": "https://openai.com/index/gpt-5-5-system-card/",
+        "pdf": "https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf"
       },
       "evidence": [
         {
           "term": "addendum",
-          "excerpt": "expert protocols. [[PAGE 27]] Separate biosecurity evaluations assess dual-use risk, refusal behavior, and agentic capabilities. [[PAGE 4]] An August addendum corrects a protein-binding benchmark score",
           "location": "PDF page 4",
+          "excerpt": "expert protocols. [[PAGE 27]] Separate biosecurity evaluations assess dual-use risk, refusal behavior, and agentic capabilities. [[PAGE 4]] An August addendum corrects a protein-binding benchmark score",
           "source_url": "https://openai.com/index/gpt-5-5-system-card/"
         },
         {
           "term": "system card",
-          "excerpt": "GPT-5.5 System Card: Biological and Chemical Evaluation Update The GPT-5.5 system card reports new results and an August correction across public and private biological capability and biorisk evaluations. [[PAGE 22]] The system card contains a biological and",
           "location": "Abstract / metadata",
+          "excerpt": "GPT-5.5 System Card: Biological and Chemical Evaluation Update The GPT-5.5 system card reports new results and an August correction across public and private biological capability and biorisk evaluations. [[PAGE 22]] The system card contains a biological and",
           "source_url": "https://openai.com/index/gpt-5-5-system-card/"
         },
         {
           "term": "benchmark",
-          "excerpt": "st correction across public and private biological capability and biorisk evaluations. [[PAGE 22]] The system card contains a biological and chemical benchmark evaluation suite. [[PAGE 23]] ProtocolQA Open-Ended evaluates troubleshooting of published wet-lab protocols. [[PAGE 24]] TroubleshootingBench evaluates identification and correction of realistic execution errors in 52 private expert proto",
           "location": "PDF page 22",
+          "excerpt": "st correction across public and private biological capability and biorisk evaluations. [[PAGE 22]] The system card contains a biological and chemical benchmark evaluation suite. [[PAGE 23]] ProtocolQA Open-Ended evaluates troubleshooting of published wet-lab protocols. [[PAGE 24]] TroubleshootingBench evaluates identification and correction of realistic execution errors in 52 private expert proto",
           "source_url": "https://openai.com/index/gpt-5-5-system-card/"
         },
         {
           "term": "evaluation suite",
-          "excerpt": "ion across public and private biological capability and biorisk evaluations. [[PAGE 22]] The system card contains a biological and chemical benchmark evaluation suite. [[PAGE 23]] ProtocolQA Open-Ended evaluates troubleshooting of published wet-lab protocols. [[PAGE 24]] TroubleshootingBench evaluates identification and correction of realistic execution errors in 52 private expert protocols. [[PAGE 27]]",
           "location": "PDF page 22",
+          "excerpt": "ion across public and private biological capability and biorisk evaluations. [[PAGE 22]] The system card contains a biological and chemical benchmark evaluation suite. [[PAGE 23]] ProtocolQA Open-Ended evaluates troubleshooting of published wet-lab protocols. [[PAGE 24]] TroubleshootingBench evaluates identification and correction of realistic execution errors in 52 private expert protocols. [[PAGE 27]]",
           "source_url": "https://openai.com/index/gpt-5-5-system-card/"
         },
         {
           "term": "biological",
-          "excerpt": "GPT-5.5 System Card: Biological and Chemical Evaluation Update The GPT-5.5 system card reports new results and an August correction across public and private biological capability and biorisk evaluations. [[PAGE 22]] The system card contains a biological and chemical ben",
           "location": "Abstract / metadata",
+          "excerpt": "GPT-5.5 System Card: Biological and Chemical Evaluation Update The GPT-5.5 system card reports new results and an August correction across public and private biological capability and biorisk evaluations. [[PAGE 22]] The system card contains a biological and chemical ben",
           "source_url": "https://openai.com/index/gpt-5-5-system-card/"
         },
         {
           "term": "biosecurity",
-          "excerpt": "24]] TroubleshootingBench evaluates identification and correction of realistic execution errors in 52 private expert protocols. [[PAGE 27]] Separate biosecurity evaluations assess dual-use risk, refusal behavior, and agentic capabilities. [[PAGE 4]] An August addendum corrects a protein-binding benchmark score",
           "location": "PDF page 27",
+          "excerpt": "24]] TroubleshootingBench evaluates identification and correction of realistic execution errors in 52 private expert protocols. [[PAGE 27]] Separate biosecurity evaluations assess dual-use risk, refusal behavior, and agentic capabilities. [[PAGE 4]] An August addendum corrects a protein-binding benchmark score",
           "source_url": "https://openai.com/index/gpt-5-5-system-card/"
         }
       ],

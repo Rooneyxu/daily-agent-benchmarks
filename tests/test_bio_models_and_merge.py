@@ -3,7 +3,7 @@ from __future__ import annotations
 from copy import deepcopy
 from types import SimpleNamespace
 
-from bio.models import BioEntry, SourceCandidate, SourceDocument, canonical_id, slug_for
+from bio.models import BioEntry, SourceCandidate, SourceDocument, canonical_id, entry_from_dict, slug_for
 from bio.storage import SupabaseStore, merge_entries
 from bio.update import _source_row
 
@@ -44,6 +44,17 @@ def test_canonical_id_prefers_doi() -> None:
     assert canonical_id("arxiv", "1234.56789", {"doi": "https://doi.org/10.1/ABC", "arxiv": "1234.56789"}) == "doi:10.1/abc"
 
 
+def test_public_entry_without_backend_dates_can_be_loaded_locally() -> None:
+    row = entry().to_dict()
+    row.pop("first_seen_at")
+    row.pop("event_at")
+
+    loaded = entry_from_dict(row)
+
+    assert loaded.first_seen_at == loaded.published_at
+    assert loaded.event_at == loaded.published_at
+
+
 def test_metadata_only_change_does_not_resurface_entry() -> None:
     old = entry()
     new = deepcopy(old)
@@ -54,12 +65,54 @@ def test_metadata_only_change_does_not_resurface_entry() -> None:
     assert merged[0].first_seen_at == old.first_seen_at
 
 
-def test_meaningful_evidence_change_resurfaces_entry() -> None:
+def test_meaningful_evidence_change_does_not_resurface_ordinary_paper() -> None:
     old = entry()
     new = deepcopy(old)
     new.evidence.append({"term": "failure mode", "location": "Page 5", "excerpt": "new failure mode", "source_url": ""})
     merged = merge_entries([old], [new], "2026-02-02T00:00:00Z")
+    assert merged[0].event_at == old.event_at
+
+
+def test_meaningful_evidence_change_can_resurface_evaluation_update() -> None:
+    old = entry()
+    old.kind = "evaluation_update"
+    new = deepcopy(old)
+    new.evidence.append({"term": "failure mode", "location": "Page 5", "excerpt": "new failure mode", "source_url": ""})
+    merged = merge_entries([old], [new], "2026-02-02T00:00:00Z")
     assert merged[0].event_at == "2026-02-02T00:00:00Z"
+
+
+def test_automatic_refetch_cannot_change_seed_publication_date() -> None:
+    seed = entry()
+    seed.is_seed = True
+    seed.event_at = seed.published_at
+    refetched = deepcopy(seed)
+    refetched.is_seed = False
+    refetched.published_at = "2026-02-01T00:00:00Z"
+    refetched.event_at = "2026-02-02T00:00:00Z"
+    refetched.evidence.append({"term": "new evidence", "location": "Page 2", "excerpt": "new", "source_url": ""})
+
+    merged = merge_entries([seed], [refetched], "2026-02-02T00:00:00Z")
+
+    assert merged[0].is_seed is True
+    assert merged[0].published_at == "2026-01-01T00:00:00Z"
+    assert merged[0].event_at == "2026-01-01T00:00:00Z"
+
+
+def test_manual_seed_publication_date_overrides_stored_candidate_date() -> None:
+    candidate = entry()
+    candidate.published_at = "2026-02-01T00:00:00Z"
+    candidate.event_at = "2026-02-02T00:00:00Z"
+    seed = deepcopy(candidate)
+    seed.is_seed = True
+    seed.published_at = "2026-01-01T00:00:00Z"
+    seed.event_at = seed.published_at
+
+    merged = merge_entries([candidate], [seed], "2026-02-02T00:00:00Z")
+
+    assert merged[0].is_seed is True
+    assert merged[0].published_at == "2026-01-01T00:00:00Z"
+    assert merged[0].event_at == "2026-01-01T00:00:00Z"
 
 
 def test_failed_source_does_not_clear_last_success_timestamp() -> None:

@@ -23,7 +23,7 @@
   };
 
   function escape(value) { return BM25.escapeHtml(value == null ? "" : String(value)); }
-  function dateOf(entry) { return entry.event_at || entry.published_at || entry.first_seen_at || ""; }
+  function dateOf(entry) { return entry.published_at || ""; }
 
   function setTheme(theme) {
     state.theme = theme;

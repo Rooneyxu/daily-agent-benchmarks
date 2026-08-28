@@ -45,14 +45,24 @@ def merge_entries(existing: list[BioEntry], incoming: list[BioEntry], seen_at: s
             by_id[entry.id] = entry
             continue
         entry.first_seen_at = previous.first_seen_at or entry.first_seen_at
-        entry.is_seed = previous.is_seed or entry.is_seed
-        if _meaningful_signature(previous) == _meaningful_signature(entry):
+        previous_is_seed = previous.is_seed
+        incoming_is_seed = entry.is_seed
+        entry.is_seed = previous_is_seed or incoming_is_seed
+        if entry.kind == "paper":
+            if previous_is_seed or incoming_is_seed:
+                entry.published_at = (
+                    entry.published_at if incoming_is_seed else previous.published_at
+                ) or entry.published_at
+                entry.event_at = entry.published_at
+            else:
+                entry.event_at = previous.event_at or entry.event_at
+        elif _meaningful_signature(previous) == _meaningful_signature(entry):
             entry.event_at = previous.event_at
-        elif not entry.is_seed:
+        else:
             entry.event_at = seen_at
         by_id[entry.id] = entry
     rows = list(by_id.values())
-    rows.sort(key=lambda entry: (entry.event_at, entry.published_at, entry.id), reverse=True)
+    rows.sort(key=lambda entry: (entry.published_at, entry.id), reverse=True)
     return rows
 
 

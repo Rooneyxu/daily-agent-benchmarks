@@ -88,7 +88,8 @@ class ArxivAdapter(SourceAdapter):
         '(ti:benchmark OR ti:bench) AND (all:"wet lab" OR all:protocol OR all:biosecurity OR all:biosafety)',
         '((all:benchmark OR all:benchmarking OR all:"evaluation suite" OR all:"evaluation dataset") AND '
         '(all:construction OR all:curation OR all:"quality control" OR all:"quality assurance" OR '
-        'all:verifier OR all:"question generation" OR all:"judge calibration") AND '
+        'all:verifier OR all:grader OR all:"question generation" OR all:"automated evaluation" OR '
+        'all:"synthetic evaluation data" OR all:"judge calibration") AND '
         '(all:biomedical OR all:medical OR all:clinical OR all:biology OR all:biological OR '
         'all:"life science" OR all:genomics OR all:proteomics))',
         '((all:benchmark OR all:benchmarking OR all:"evaluation suite" OR all:"evaluation dataset") AND '
@@ -177,7 +178,9 @@ class EuropePmcAdapter(SourceAdapter):
             '(TITLE_ABS:"benchmark construction" OR TITLE_ABS:"benchmark curation" OR '
             'TITLE_ABS:"benchmark validation" OR TITLE_ABS:"quality control" OR '
             'TITLE_ABS:"quality assurance" OR TITLE_ABS:"question generation" OR '
-            'TITLE_ABS:"automated verifier" OR TITLE_ABS:"judge calibration")'
+            'TITLE_ABS:"automated verifier" OR TITLE_ABS:"automated evaluation" OR '
+            'TITLE_ABS:"benchmark grader" OR TITLE_ABS:"synthetic evaluation data" OR '
+            'TITLE_ABS:"judge calibration")'
         )
         audit_clause = (
             '(TITLE_ABS:"benchmark audit" OR TITLE_ABS:"benchmark contamination" OR '
@@ -317,6 +320,9 @@ class OpenReviewAdapter(SourceAdapter):
         "biomedical benchmark construction",
         "biology benchmark curation",
         "medical benchmark quality control",
+        "biomedical automatic question generation",
+        "medical automated evaluation grader",
+        "biology benchmark verifier",
         "biomedical benchmark audit",
         "medical benchmark contamination",
         "biology benchmark reproducibility",

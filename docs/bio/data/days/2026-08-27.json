@@ -1,0 +1,735 @@
+{
+  "date": "2026-08-27",
+  "count": 8,
+  "entries": [
+    {
+      "id": "arxiv:2608.27212",
+      "slug": "arxiv-2608-27212-e3ab5cc305",
+      "kind": "paper",
+      "title": "Constrained estimation of rotational invariants of the cumulant expansion (RICE) for rapid tensor-valued diffusion MRI",
+      "abstract": "Purpose: To complement 1.5-minute measurements of common tensor-valued diffusion MRI (dMRI) markers with rapid constrained fitting. Methods: Fast dMRI protocols for obtaining rotational invariants of the cumulant expansion (RICE) were paired with constrained weighted linear least squares (CWLLS) to stabilize the more fragile WLLS fit. A compact constraint set was formulated, including a novel mean-dependent upper bound on total diffusional variance. Evaluation used diffusion tensor distribution (DTD) simulations, healthy-volunteer data with a resolution-dependent SNR experiment, and a glioma patient dataset. A 5-minute q-space trajectory imaging (QTI) protocol served as a reference. Results: Across experiments, CWLLS reduced unphysical estimates and fit outliers in parameters such as microscopic FA and isotropic diffusivity variance. In simulations, it narrowed error distributions most clearly in the CSF-dominant case, while some metrics showed a bias-variance trade-off. In vivo, CWLLS removed negative variance estimates, truncated out-of-bounds tails, and reduced artifacts in fluid-contaminated voxels while preserving anatomical contrast. It also retained more stable maps than WLLS at higher resolution, although both estimators degraded in the lowest-SNR setting. Notably, the new mean-dependent variance bound was violated in 15.4% of voxels in the patient dataset, accounting for nearly half of the 32.7% that violated at least one constraint. Healthy-volunteer benchmarking showed that CWLLS completed in under 30 seconds. The constrained QTI fit required 72 minutes, making CWLLS 160 times faster. Conclusion: CWLLS for fast RICE yielded high-quality parameter maps at an online-ready computational cost. This may enhance the reliability of dMRI tissue characterization and strengthen the path toward clinical translation.",
+      "authors": [
+        "Jinyang Yu",
+        "Oliver Gödicke",
+        "Frederik B. Laun",
+        "Obada T. Alhalabi",
+        "Iris A. Kohler",
+        "Jürgen Hesser",
+        "Sandro M. Krieg",
+        "Bogdana Suchorska",
+        "Heinz-Peter Schlemmer",
+        "Mark E. Ladd",
+        "David Bonekamp",
+        "Johann M. E. Jende",
+        "Tristan A. Kuder"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-27T14:55:55+00:00",
+      "updated_at": "2026-08-27T14:55:55+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.27212"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.27212v1",
+        "pdf": "https://arxiv.org/pdf/2608.27212v1",
+        "html": "https://arxiv.org/html/2608.27212"
+      },
+      "evidence": [
+        {
+          "term": "new mean-dependent variance bound was violated in 15.4% of voxels in the patient dataset",
+          "excerpt": "contrast. It also retained more stable maps than WLLS at higher resolution, although both estimators degraded in the lowest-SNR setting. Notably, the new mean-dependent variance bound was violated in 15.4% of voxels in the patient dataset, accounting for nearly half of the 32.7% that violated at least one constraint. Healthy-volunteer benchmarking showed that CWLLS completed in under 30 seconds. The constrained QTI fit required 72 minutes, making CWLLS 160 times faster. Con",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27212"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "violated in 15.4% of voxels in the patient dataset, accounting for nearly half of the 32.7% that violated at least one constraint. Healthy-volunteer benchmarking showed that CWLLS completed in under 30 seconds. The constrained QTI fit required 72 minutes, making CWLLS 160 times faster. Conclusion: CWLLS for fast RICE yielded high-quality parameter maps at an online-ready computational cost. This",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27212"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "violated in 15.4% of voxels in the patient dataset, accounting for nearly half of the 32.7% that violated at least one constraint. Healthy-volunteer benchmarking showed that CWLLS completed in under 30 seconds. The constrained QTI fit required 72 minutes, making CWLLS 160 times faster. Conclusion: CWLLS for fast RICE yielded high-quality parameter maps at an online-ready computational cost. This ma",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27212"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "parameter maps at an online-ready computational cost. This may enhance the reliability of dMRI tissue characterization and strengthen the path toward clinical translation. [[SECTION Constrained estimation of rotational invariants of the cumulant expansion (RICE) for rapid tensor-valued diffusion MRI]] Constrained estimation of rotational invariants of the cumulant expansion (RICE) for rapid tens",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27212"
+        },
+        {
+          "term": "patient",
+          "excerpt": "nce. Evaluation used diffusion tensor distribution (DTD) simulations, healthy-volunteer data with a resolution-dependent SNR experiment, and a glioma patient dataset. A 5-minute q-space trajectory imaging (QTI) protocol served as a reference. Results: Across experiments, CWLLS reduced unphysical estimates and fit outliers in parameters such as microscopic FA and isotropic diffusivity variance",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27212"
+        },
+        {
+          "term": "microscopic",
+          "excerpt": "imaging (QTI) protocol served as a reference. Results: Across experiments, CWLLS reduced unphysical estimates and fit outliers in parameters such as microscopic FA and isotropic diffusivity variance. In simulations, it narrowed error distributions most clearly in the CSF-dominant case, while some metrics showed a bias-variance trade-off. In vivo, CWLLS removed negative variance estimates, truncate",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27212"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "e59aaa8b4a55155ae8d7de90419706d28303d1d68655dee3be8a46117e3e06ce",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.27110",
+      "slug": "arxiv-2608-27110-d72c667f58",
+      "kind": "paper",
+      "title": "DocTalkBN: A Novel Dataset of Expert Telemedicine Conversations in Bengali",
+      "abstract": "Reliable medical conversational AI requires authentic expert--patient interaction data, yet such datasets remain scarce, especially for low-resource languages such as Bengali. We present DocTalkBN, a large-scale multimodal dataset of real-world expert telemedicine conversations in Bengali, collected from nationally broadcast telemedicine programs featuring board-certified physicians. DocTalkBN contains 557.63 hours of paired audio and text, 1,515 multi-turn patient calls, 10,274 host--doctor question--answer exchanges, totaling 1.7M tokens, spanning 26 medical specialties. Unlike prior resources derived from medical forums, written health content, or synthetic data, our dataset preserves the spontaneity, contextual richness, and spoken characteristics of authentic medical interactions in a low-resource setting. To support benchmark-driven research, we further construct three downstream tasks from the corpus, medical triage classification, advice safety evaluation, and medical named entity recognition, and benchmark a diverse set of large language models and encoder-based baselines. Our results show that DocTalkBN is a practically useful resource, particularly for clinically grounded reasoning tasks. We release this resource to facilitate future research on reliable medical NLP and safer, more culturally grounded healthcare systems for low-resource languages. Our source codes and dataset are publicly available at https://anonymous.4open.science/r/doctalk.",
+      "authors": [
+        "Anik Saha",
+        "Fahmida Sultana Naznin",
+        "Sadatul Islam Sadi",
+        "Ananya Shahrin Promi",
+        "Wahid Al Azad Navid",
+        "Rifat Shahriyar"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-27T13:25:17+00:00",
+      "updated_at": "2026-08-27T13:25:17+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.27110"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.27110v1",
+        "pdf": "https://arxiv.org/pdf/2608.27110v1",
+        "code": "https://github.com/meta-llama/llama3/blob/main/MODEL_CARD.md",
+        "html": "https://arxiv.org/html/2608.27110"
+      },
+      "evidence": [
+        {
+          "term": "We present DocTalkBN, a large-scale multimodal dataset",
+          "excerpt": "ional AI requires authentic expert--patient interaction data, yet such datasets remain scarce, especially for low-resource languages such as Bengali. We present DocTalkBN, a large-scale multimodal dataset of real-world expert telemedicine conversations in Bengali, collected from nationally broadcast telemedicine programs featuring board-certified physicians. DocTalkBN contains 557.63 hours of paired audio and text, 1,515 multi-turn patient",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27110"
+        },
+        {
+          "term": "Novel Dataset",
+          "excerpt": "DocTalkBN: A Novel Dataset of Expert Telemedicine Conversations in Bengali Reliable medical conversational AI requires authentic expert--patient interaction data, yet such datasets remain scarce, especially for low-resource languages such as Bengali. We present DocT",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27110"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "et preserves the spontaneity, contextual richness, and spoken characteristics of authentic medical interactions in a low-resource setting. To support benchmark-driven research, we further construct three downstream tasks from the corpus, medical triage classification, advice safety evaluation, and medical named entity recognition, and benchmark a diverse set of large language models and encoder-b",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27110"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "DocTalkBN: A Novel Dataset of Expert Telemedicine Conversations in Bengali Reliable medical conversational AI requires authentic expert--patient interaction data, yet such datasets remain scarce, especially for low-resource languages such as Bengali. We present DocTalkBN, a large-scale mu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27110"
+        },
+        {
+          "term": "medical",
+          "excerpt": "DocTalkBN: A Novel Dataset of Expert Telemedicine Conversations in Bengali Reliable medical conversational AI requires authentic expert--patient interaction data, yet such datasets remain scarce, especially for low-resource languages such as Bengali. We present DocTalkBN, a large-scale multimodal dataset of real-world expert tele",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27110"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "diverse set of large language models and encoder-based baselines. Our results show that DocTalkBN is a practically useful resource, particularly for clinically grounded reasoning tasks. We release this resource to facilitate future research on reliable medical NLP and safer, more culturally grounded healthcare systems for low-resource languages. Our source codes and dataset are publicly availab",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27110"
+        },
+        {
+          "term": "healthcare",
+          "excerpt": "inically grounded reasoning tasks. We release this resource to facilitate future research on reliable medical NLP and safer, more culturally grounded healthcare systems for low-resource languages. Our source codes and dataset are publicly available at https://anonymous.4open.science/r/doctalk. [[SECTION DocTalkBN: A Novel Dataset of Expert Telemedicine Conversations in Bengali]] DocTalkBN: A Novel",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27110"
+        },
+        {
+          "term": "patient",
+          "excerpt": "DocTalkBN: A Novel Dataset of Expert Telemedicine Conversations in Bengali Reliable medical conversational AI requires authentic expert--patient interaction data, yet such datasets remain scarce, especially for low-resource languages such as Bengali. We present DocTalkBN, a large-scale multimodal dataset of real-world expert telemedicine conversations in Bengali, collected from nat",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27110"
+        }
+      ],
+      "related_benchmarks": [
+        "MEDIQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 32,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "4eafea69e07800c7878f1a642f858c11b90136e1d0b3adaa7d8f5b069f9b28fb",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.27004",
+      "slug": "arxiv-2608-27004-e7fc7bf47a",
+      "kind": "paper",
+      "title": "MVC-Bench: Benchmarking Calibration of Medical Vision-Language Models",
+      "abstract": "Reliable evaluation of vision-language models (VLMs) and medical vision-language models (Medical-VLMs) requires calibrated confidence, particularly under realistic clinical conditions. However, existing efforts mainly focused on improving accuracy, leaving calibration in the medical domain underexplored. To this end, we propose MVC-Bench, a calibration-centric benchmark for medical image classification with VLMs and Medical-VLMs. MVC-Bench assesses the calibration across three axes: (i) robustness to modality, backbone, and domain shift (ii) effectiveness of calibration strategies and prompt-tuning methods (iii) stability under prompt-template and random-seed variations. The benchmark covers eight different backbones, three medical modalities, including fundus imaging, histopathology, and chest X-ray under in-domain and domain shift settings. It compares post-hoc calibration, train-time calibration, and zero-shot inference methods, together with six prompt-tuning methods. Across more than 1638 controlled experiments, we report accuracy and Expected Calibration Error (ECE) as primary metrics, and further report results with complementary calibration measures, including Maximum Calibration Error (MCE) and Adaptive Calibration Error (ACE). We further investigate the underlying causes of miscalibration in VLMs and Medical-VLMs and propose a simple train-time calibration method, Multi-Class Margin (MCM) regularization, which achieves lowest ECE on 10 out of 12 settings in in-domain and remains competitive under domain shifts. Collectively, MVC-Bench provides a structured evaluation framework and actionable guidance for improving calibration in safety-critical medical workflows.",
+      "authors": [
+        "Ashshak Sharifdeen",
+        "Shihab Aaqil Ahamed",
+        "Ufaq Khan",
+        "Muhammad Akhtar Munir Sujair Ibrahim",
+        "Mohamed Rafeek Mareer Ahamed",
+        "Yutong Xie",
+        "Imran Razzak",
+        "Muhammad Haris Khan"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-27T11:49:46+00:00",
+      "updated_at": "2026-08-27T11:49:46+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.27004"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.27004v1",
+        "pdf": "https://arxiv.org/pdf/2608.27004v1",
+        "code": "https://github.com/ashshaksharifdeen/MVC-Bench",
+        "html": "https://arxiv.org/html/2608.27004"
+      },
+      "evidence": [
+        {
+          "term": "we propose MVC-Bench",
+          "excerpt": "cal conditions. However, existing efforts mainly focused on improving accuracy, leaving calibration in the medical domain underexplored. To this end, we propose MVC-Bench, a calibration-centric benchmark for medical image classification with VLMs and Medical-VLMs. MVC-Bench assesses the calibration across three axes: (i) robustness to modality, backbone, and domain shift (ii) effectiveness of calibration st",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27004"
+        },
+        {
+          "term": "we propose MVC-Bench, a calibration-centric benchmark",
+          "excerpt": "cal conditions. However, existing efforts mainly focused on improving accuracy, leaving calibration in the medical domain underexplored. To this end, we propose MVC-Bench, a calibration-centric benchmark for medical image classification with VLMs and Medical-VLMs. MVC-Bench assesses the calibration across three axes: (i) robustness to modality, backbone, and domain shift (ii) effectiveness of calibration strategies and prompt-tuning method",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27004"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "MVC-Bench: Benchmarking Calibration of Medical Vision-Language Models Reliable evaluation of vision-language models (VLMs) and medical vision-language models (Medical-VLMs) requires calibrated confidence, particularly under realistic clinical conditions. Howev",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27004"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "MVC-Bench: Benchmarking Calibration of Medical Vision-Language Models Reliable evaluation of vision-language models (VLMs) and medical vision-language models (Medical-VLMs) requires calibrated confidence, particularly under realistic clinical conditions. However,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27004"
+        },
+        {
+          "term": "medical",
+          "excerpt": "MVC-Bench: Benchmarking Calibration of Medical Vision-Language Models Reliable evaluation of vision-language models (VLMs) and medical vision-language models (Medical-VLMs) requires calibrated confidence, particularly under realistic clinical conditions. However, existing efforts mainl",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27004"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "ation of vision-language models (VLMs) and medical vision-language models (Medical-VLMs) requires calibrated confidence, particularly under realistic clinical conditions. However, existing efforts mainly focused on improving accuracy, leaving calibration in the medical domain underexplored. To this end, we propose MVC-Bench, a calibration-centric benchmark for medical image classification with V",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27004"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "prompt-template and random-seed variations. The benchmark covers eight different backbones, three medical modalities, including fundus imaging, histopathology, and chest X-ray under in-domain and domain shift settings. It compares post-hoc calibration, train-time calibration, and zero-shot inference methods, together with six prompt-tuning methods. Across more than 1638 controlled experiments, w",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27004"
+        },
+        {
+          "term": "Vision-Language",
+          "excerpt": "MVC-Bench: Benchmarking Calibration of Medical Vision-Language Models Reliable evaluation of vision-language models (VLMs) and medical vision-language models (Medical-VLMs) requires calibrated confidence, particularly under realistic clinical conditions. However, existing efforts mainly focused on imp",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.27004"
+        }
+      ],
+      "related_benchmarks": [
+        "VQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 29,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "e6116c66ae1795b04375e28724c38ef6bd63a367b541a19fb961ae8a71b3517e",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.26856",
+      "slug": "arxiv-2608-26856-6397c0bcd7",
+      "kind": "paper",
+      "title": "From Reasoning to Pixels: Grounded Medical Multimodal LLMs for VQA and Segmentation",
+      "abstract": "Although Multimodal Large Language Models (MLLMs) have demonstrated impressive performance in Medical Visual Question Answering (Med-VQA), their reliance on global image features often lacks precise pixel-level grounding, thereby limiting clinical trustworthiness. To bridge the semantic gap between high-level clinical reasoning and spatial localization, we propose \\textsc{\\textsc{MedREAL}} (\\textbf{Med}ical \\textbf{RE}asoning-driven \\textbf{A}nswering and \\textbf{L}ocalization), a unified framework that seamlessly aligns linguistic reasoning with spatial grounding. Specifically, \\textsc{MedREAL} introduces \\textbf{S}eg \\textbf{A}nchored \\textbf{R}easoning \\textbf{P}ooling (SARP) to distill task-relevant semantic evidence directly from \\texttt{[SEG]} tokens within the MLLM's hidden states. Furthermore, a \\textbf{R}easoning-to-\\textbf{V}isual (R2V) fusion mechanism is proposed to effectively inject these reasoning-aware features into a segmentation pipeline for accurate mask decoding. To facilitate this paradigm, we construct MedRAVS-13K, a comprehensive dataset comprising 13,824 expertly validated samples across four diverse imaging modalities. Extensive experiments demonstrate that \\textsc{MedREAL} significantly outperforms state-of-the-arts, achieving 68.49\\% gIoU and 70.47\\% cIoU on benchmark evaluations. By generating evidence masks that are strictly consistent with textual diagnoses, \\textsc{MedREAL} provides a robust, interpretable framework for reasoning-driven medical image analysis.",
+      "authors": [
+        "Haowen Gu",
+        "Gensheng Pei",
+        "Junzhu Mao",
+        "Qiong Wang",
+        "Mingwu Ren",
+        "Yazhou Yao"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-27T09:23:16+00:00",
+      "updated_at": "2026-08-27T09:23:16+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.26856"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.26856v1",
+        "pdf": "https://arxiv.org/pdf/2608.26856v1",
+        "code": "https://github.com/NUST-Machine-Intelligence-Laboratory/MedREAL",
+        "html": "https://arxiv.org/html/2608.26856"
+      },
+      "evidence": [
+        {
+          "term": "we construct MedRAVS-13K, a comprehensive dataset",
+          "excerpt": "s proposed to effectively inject these reasoning-aware features into a segmentation pipeline for accurate mask decoding. To facilitate this paradigm, we construct MedRAVS-13K, a comprehensive dataset comprising 13,824 expertly validated samples across four diverse imaging modalities. Extensive experiments demonstrate that \\textsc{MedREAL} significantly outperforms state-of-the-arts, achieving 68.49\\% gIoU and 70.47\\% cIoU on benchmark",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26856"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "ties. Extensive experiments demonstrate that \\textsc{MedREAL} significantly outperforms state-of-the-arts, achieving 68.49\\% gIoU and 70.47\\% cIoU on benchmark evaluations. By generating evidence masks that are strictly consistent with textual diagnoses, \\textsc{MedREAL} provides a robust, interpretable framework for reasoning-driven medical image analysis. [[SECTION From Reasoning to Pixels: Gro",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26856"
+        },
+        {
+          "term": "medical",
+          "excerpt": "From Reasoning to Pixels: Grounded Medical Multimodal LLMs for VQA and Segmentation Although Multimodal Large Language Models (MLLMs) have demonstrated impressive performance in Medical Visual Question Answering (Med-VQA), their reliance on global image features often lacks precise",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26856"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "e in Medical Visual Question Answering (Med-VQA), their reliance on global image features often lacks precise pixel-level grounding, thereby limiting clinical trustworthiness. To bridge the semantic gap between high-level clinical reasoning and spatial localization, we propose \\textsc{\\textsc{MedREAL}} (\\textbf{Med}ical \\textbf{RE}asoning-driven \\textbf{A}nswering and \\textbf{L}ocalization), a u",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26856"
+        },
+        {
+          "term": "Multimodal",
+          "excerpt": "From Reasoning to Pixels: Grounded Medical Multimodal LLMs for VQA and Segmentation Although Multimodal Large Language Models (MLLMs) have demonstrated impressive performance in Medical Visual Question Answering (Med-VQA), their reliance on global image features often lacks precise pixel-leve",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26856"
+        },
+        {
+          "term": "pathological",
+          "excerpt": "practice often demands explicit localization of the visual evidence that supports a decision, such as identifying a lesion, anatomical structure, or pathological region. This requirement highlights a critical limitation of existing Med-VQA systems: while recent multimodal large language models (MLLMs) [ 3 , 35 , 34 , 1 , 13 , 51 ] demonstrate strong reasoning capabilities, they typically provide an",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2608.26856"
+        },
+        {
+          "term": "visual grounding",
+          "excerpt": "uestions. Because the masks exhibit substantial variation in scale and morphology across the four modalities, the dataset presents highly challenging visual grounding scenarios that demand the joint optimization of reasoning, segmentation, and answer prediction. [[SECTION 5 Experiments]] 5 Experiments [[SECTION 5.1 Experiment Setup]] 5.1 Experiment Setup Datasets. To evaluate the performance of MedREAL",
+          "location": "4.2 Data Generation and Curation",
+          "source_url": "https://arxiv.org/html/2608.26856"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "hezloo, M. S. Seyfioglu, R. Soraki, W. O. Ikezogwo, B. Li, T. Vivekanandan, J. G. Elmore, R. Krishna, and L. Shapiro (2025) Pathfinder: a multi-modal multi-agent system for medical diagnostic decision-making applied to histopathology . In Proceedings of the IEEE/CVF International Conference on Computer Vision , pp. 23431–23441 . Cited by: §2 . [16] H. Gong, G. Chen, S. Liu, Y. Yu, and G. Li (2021)",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2608.26856"
+        }
+      ],
+      "related_benchmarks": [
+        "VQA",
+        "Med-VQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "d5b4f93657f130875c005cc85a1b87dd9d1651be53bad246c4841da9c973ab31",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.26848",
+      "slug": "arxiv-2608-26848-06029fb2ad",
+      "kind": "paper",
+      "title": "MedFG-VQA: Low-Frequency Memory and Graph Attention for Lightweight Medical VQA",
+      "abstract": "Medical Visual Question Answering (Med-VQA) holds significant promise for clinical decision support, yet faces challenges due to limited annotated data and the high computational demands of existing large vision-language models. We propose MedFG-VQA, a lightweight framework that leverages a memory bank to augment DCT-based low-frequency features and employs graph-enhanced cross-attention for effective visual-textual alignment. Specifically, our approach features two key components: Frequency-Memory Fusion (FMF), which enhances low-frequency features by retrieving from a learnable memory bank built on DCT decomposition, and Graph-Aware Cross-Attention (GACA), which aligns visual-textual features via cross-attention and refines them through graph-convolutional aggregation. To address data scarcity, we construct SynMed-VQA, a large-scale synthetic dataset comprising over 2 million question-answer pairs across 9 imaging modalities and 10 major organs, generated with GPT-4o. Extensive experiments on SynMed-VQA and three other standard biomedical VQA benchmarks demonstrate that MedFG-VQA achieves competitive or superior performance compared to much larger models while maintaining significantly lower computational costs, highlighting its efficiency and potential for clinical deployment.",
+      "authors": [
+        "Haowen Gu",
+        "Gensheng Pei",
+        "Zeren Sun",
+        "Mingwu Ren",
+        "Xiangbo Shu",
+        "Yazhou Yao",
+        "Fumin Shen"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-27T09:16:14+00:00",
+      "updated_at": "2026-08-27T09:16:14+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.26848"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.26848v1",
+        "pdf": "https://arxiv.org/pdf/2608.26848v1",
+        "code": "https://github.com/NUST-Machine-Intelligence-Laboratory/MedFG",
+        "html": "https://arxiv.org/html/2608.26848"
+      },
+      "evidence": [
+        {
+          "term": "We propose MedFG-VQA",
+          "excerpt": "cal decision support, yet faces challenges due to limited annotated data and the high computational demands of existing large vision-language models. We propose MedFG-VQA, a lightweight framework that leverages a memory bank to augment DCT-based low-frequency features and employs graph-enhanced cross-attention for effective visual-textual alignment. Specifically, our approach features two key components: Fr",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26848"
+        },
+        {
+          "term": "we construct SynMed-VQA, a large-scale synthetic dataset",
+          "excerpt": "(GACA), which aligns visual-textual features via cross-attention and refines them through graph-convolutional aggregation. To address data scarcity, we construct SynMed-VQA, a large-scale synthetic dataset comprising over 2 million question-answer pairs across 9 imaging modalities and 10 major organs, generated with GPT-4o. Extensive experiments on SynMed-VQA and three other standard biomedical VQA benchmarks demonstrate that MedFG-VQA achie",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26848"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "s across 9 imaging modalities and 10 major organs, generated with GPT-4o. Extensive experiments on SynMed-VQA and three other standard biomedical VQA benchmarks demonstrate that MedFG-VQA achieves competitive or superior performance compared to much larger models while maintaining significantly lower computational costs, highlighting its efficiency and potential for clinical deployment. [[SECTION",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26848"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "ion-answer pairs across 9 imaging modalities and 10 major organs, generated with GPT-4o. Extensive experiments on SynMed-VQA and three other standard biomedical VQA benchmarks demonstrate that MedFG-VQA achieves competitive or superior performance compared to much larger models while maintaining significantly lower computational costs, highlighting its efficiency and potential for clinical deploym",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26848"
+        },
+        {
+          "term": "medical",
+          "excerpt": "MedFG-VQA: Low-Frequency Memory and Graph Attention for Lightweight Medical VQA Medical Visual Question Answering (Med-VQA) holds significant promise for clinical decision support, yet faces challenges due to limited annotated data and the high computational demands of existing large vision-language models. We pro",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26848"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "G-VQA: Low-Frequency Memory and Graph Attention for Lightweight Medical VQA Medical Visual Question Answering (Med-VQA) holds significant promise for clinical decision support, yet faces challenges due to limited annotated data and the high computational demands of existing large vision-language models. We propose MedFG-VQA, a lightweight framework that leverages a memory bank to augment DCT-bas",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26848"
+        },
+        {
+          "term": "vision-language",
+          "excerpt": "ficant promise for clinical decision support, yet faces challenges due to limited annotated data and the high computational demands of existing large vision-language models. We propose MedFG-VQA, a lightweight framework that leverages a memory bank to augment DCT-based low-frequency features and employs graph-enhanced cross-attention for effective visual-textual alignment. Specifically, our approach fe",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26848"
+        },
+        {
+          "term": "pathological",
+          "excerpt": "g one of four core aspects: (1) imaging features ( e.g . , signal intensity, enhancement pattern, morphology), (2) visible anatomical structures, (3) pathological manifestations ( e.g . , mass effect, edema, invasion), and (4) clinical implications ( e.g . , symptoms, functional impact, management considerations). Within each aspect, emphasis is customized per disease domain, for instance, brain tum",
+          "location": "4.2 Data Generation",
+          "source_url": "https://arxiv.org/html/2608.26848"
+        }
+      ],
+      "related_benchmarks": [
+        "MedFG-VQA",
+        "VQA",
+        "Med-VQA",
+        "SynMed-VQA",
+        "SynMedVQA",
+        "PathVQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 29,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "43294e76202e4a9013a40f1c2cdb95b513f509eafe28aace12ce6d330c8a2f1c",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.26592",
+      "slug": "arxiv-2608-26592-9b935f3bd8",
+      "kind": "paper",
+      "title": "Benchmarking Clinical Decision Pathway Adherence in Large Language Models",
+      "abstract": "Following clinical decision pathways (CDPs) defined by clinical practice guidelines is essential for safe and reliable medical decision-making. However, existing medical large language model (LLM) benchmarks mainly evaluate final-answer accuracy, providing limited evaluation of models' ability to adhere to guidelines. To address this gap, we introduce MEGA-CDP, a benchmark for evaluating whether medical LLMs can generate guideline-adherent CDPs using provided guidelines as references. MEGA-CDP is constructed from 2,274 English and Chinese clinical practice guidelines through a guideline-to-case pipeline, yielding 42,353 clinical cases with explicit reference CDPs. It supports both single-turn vignette and multi-turn interactive settings, and introduces a CDP-oriented evaluation framework for measuring pathway consistency. Experiments on 16 representative LLMs show that reliable clinical decision support remains challenging for current models, demonstrating the need for CDP-oriented evaluation and the value of MEGA-CDP for advancing guideline adherence in medical LLMs.",
+      "authors": [
+        "Nuo Chen",
+        "Xinyang Jiang",
+        "Zilong Wang",
+        "Zhifei Zhang",
+        "Xiaoye Qu",
+        "Jiajun Deng",
+        "Yulan Guo",
+        "Cairong Zhao"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-27T04:17:12+00:00",
+      "updated_at": "2026-08-27T04:17:12+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.26592"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.26592v1",
+        "pdf": "https://arxiv.org/pdf/2608.26592v1",
+        "html": "https://arxiv.org/html/2608.26592"
+      },
+      "evidence": [
+        {
+          "term": "we introduce MEGA-CDP, a benchmark",
+          "excerpt": "(LLM) benchmarks mainly evaluate final-answer accuracy, providing limited evaluation of models' ability to adhere to guidelines. To address this gap, we introduce MEGA-CDP, a benchmark for evaluating whether medical LLMs can generate guideline-adherent CDPs using provided guidelines as references. MEGA-CDP is constructed from 2,274 English and Chinese clinical practice guidelines through a guideline-to-case pipeline, yie",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26592"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Benchmarking Clinical Decision Pathway Adherence in Large Language Models Following clinical decision pathways (CDPs) defined by clinical practice guidelines is essential for safe and reliable medical decision-making. However, existing medical large",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26592"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "ined by clinical practice guidelines is essential for safe and reliable medical decision-making. However, existing medical large language model (LLM) benchmarks mainly evaluate final-answer accuracy, providing limited evaluation of models' ability to adhere to guidelines. To address this gap, we introduce MEGA-CDP, a benchmark for evaluating whether medical LLMs can generate guideline-adherent CDP",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26592"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "Benchmarking Clinical Decision Pathway Adherence in Large Language Models Following clinical decision pathways (CDPs) defined by clinical practice guidelines is essential for safe and reliable medical decision-making. However, existing medical large la",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26592"
+        },
+        {
+          "term": "medical",
+          "excerpt": "rence in Large Language Models Following clinical decision pathways (CDPs) defined by clinical practice guidelines is essential for safe and reliable medical decision-making. However, existing medical large language model (LLM) benchmarks mainly evaluate final-answer accuracy, providing limited evaluation of models' ability to adhere to guidelines. To address this gap, we introduce MEGA-CDP, a",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26592"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Benchmarking Clinical Decision Pathway Adherence in Large Language Models Following clinical decision pathways (CDPs) defined by clinical practice guidelines is essential for safe and reliable medical decision-making. However, existing medical large language mo",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.26592"
+        },
+        {
+          "term": "Multi-Agent",
+          "excerpt": "eport . External Links: 2505.09388 , Link Cited by: §3.3 , §4.1 . Yue et al. (2024) L. Yue, S. Xing, J. Chen, and T. Fu ClinicalAgent: Clinical Trial Multi-Agent System with Large Language Model-based Reasoning . In Proceedings of the 15th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics , pp. 1–10 . Cited by: §2 . Zeng et al. (2020) G. Zeng, W. Yang, Z",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2608.26592"
+        }
+      ],
+      "related_benchmarks": [
+        "MedQA",
+        "MedMCQA",
+        "PubMedQA",
+        "CliMedBench",
+        "LLMEval",
+        "CPGBench",
+        "MedicalAgentsBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "2a1a5e497069f76984833add5a6820409aee6b33e673c333898f147b667f94f9",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.08.24.746635",
+      "slug": "doi-10-64898-2026-08-24-746635-252c1b1089",
+      "kind": "paper",
+      "title": "Cognitive Fitness in Ageing (COFITAGE): A Multimodal and Longitudinal Neuroimaging Dataset",
+      "abstract": "Purpose: Brain aging involves interrelated changes in molecular processes, neuroinflammatory mechanisms, brain macro- and microstructure, sleep physiology, and cognition. The 50 to 70 years age range represents a critical transition period, in which these subtle alterations may precede measurable cognitive decline and the onset of clinical neurodegenerative disease. To allow systematic investigation of these early alterations and the subsequent progression in brain aging, we provide an open-access data resource from a multidisciplinary longitudinal study integrating neuroimaging, genetics, sleep, and neuropsychological phenotyping with assessments at baseline and at 2-year follow-up. Acquisition and Validation Methods: The baseline cohort comprises 101 community-dwelling participants (50-69 years old) who underwent magnetic resonance imaging (MRI) using a 3T protocol that included high-resolution structural imaging (T1- and T2-weighted), quantitative multi-parametric acquisitions with B1 mapping, and multi-shell diffusion-weighted imaging. Moreover, positron emission tomography (PET) imaging was performed using [18F]Flutemetamol or [18F]Florbetapir (amyloid-beta tracers) in all participants, with a subset also undergoing [18F]THK-5351 PET (tau-related/neuroinflammation). The dataset was complemented by extensive phenotypic data, including sleep and neuropsychological assessments, and by genotype data through genetic analysis. 66 participants underwent a 2-year cognitive follow-up, enabling longitudinal analyses of cognitive trajectories. Data acquisition and curation were performed using standardized procedures, with systematic quality control to support reliable cross-sectional and longitudinal analyses. Data Format and Usage Notes: All data are distributed in a BIDS-compliant format, and released in open-access (EBRAINS). Potential Applications: This dataset supports multimodal analyses, allowing the identification of interpretable patterns characterizing brain aging from multiple perspectives. It enables the comparison of different models to derive (semi)quantitative MRI parameters, the discovery of imaging biomarkers associated with early cognitive decline, and the monitoring or prediction of brain aging progression. In addition, it offers focused coverage of adults aged 50-70 years, which is often underrepresented in existing healthy subjects public datasets.",
+      "authors": [
+        "Jacquemin, A.",
+        "Huang, J.",
+        "Beliy, N.",
+        "Degueldre, C.",
+        "Meyer, F.",
+        "Chylinski, D.",
+        "Narbutas, J.",
+        "Van Egroo, M.",
+        "Salmon, E.",
+        "Talwar, P.",
+        "Collette, F.",
+        "Vandewalle, G.",
+        "Bastin, C.",
+        "Bahri, M. A.",
+        "Phillips, C."
+      ],
+      "source": "biorxiv",
+      "published_at": "2026-08-27T00:00:00+00:00",
+      "updated_at": "2026-08-27T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by_nc",
+      "identifiers": {
+        "doi": "10.64898/2026.08.24.746635"
+      },
+      "links": {
+        "abs": "https://www.biorxiv.org/content/10.64898/2026.08.24.746635",
+        "pdf": "https://www.biorxiv.org/content/10.64898/2026.08.24.746635.full.pdf",
+        "html": "https://www.biorxiv.org/content/10.64898/2026.08.24.746635.full"
+      },
+      "evidence": [
+        {
+          "term": "clinical",
+          "excerpt": "years age range represents a critical transition period, in which these subtle alterations may precede measurable cognitive decline and the onset of clinical neurodegenerative disease. To allow systematic investigation of these early alterations and the subsequent progression in brain aging, we provide an open-access data resource from a multidisciplinary longitudinal study integrating neuroima",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.24.746635.full"
+        },
+        {
+          "term": "Multimodal",
+          "excerpt": "Cognitive Fitness in Ageing (COFITAGE): A Multimodal and Longitudinal Neuroimaging Dataset Purpose: Brain aging involves interrelated changes in molecular processes, neuroinflammatory mechanisms, brain macro- and microstructure, sleep physiology, and cognition. The 50 to 70 years age range r",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.24.746635.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 15,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.08.24.746635.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "1723fda14d431781416a461dc76ad5f3edeb91adae2907c9a4bd9b5607ab31dc",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.08.20.26360939",
+      "slug": "doi-10-64898-2026-08-20-26360939-ab7decf5bb",
+      "kind": "paper",
+      "title": "Intent Drift in LLM-Assisted Brain Computer Interface Communication: An In-Silico Benchmark Under Simulated Decoder Corruption",
+      "abstract": "Background Large language models are increasingly proposed to post-edit decoded text in communication brain-computer interfaces and augmentative communication. A fluent model can substitute a different intent than attempted (intent drift). Whether meaning survives or confidence flags failure is unmeasured. Methods In-silico benchmark of 20 open-weight models post-editing text (4,252,326 labeled generations) corrupted with an empirical P300 confusion matrix at five levels (0-40% character error rate, CER) across the ALS message-banking vocabulary (AUTH), a message-critical probe set, and matched controls. Outputs were scored faithful, degraded, or drift by an ensemble benchmarked against physicians. A substudy re-ran 562 messages under six interface policies (seven-model panel). Findings Detected drift rose steeply with corruption in all three corpora, from 2.2% to 60.3% at 0-40% target CER in AUTH, a stress-test upper bound, not an expected clinical rate (odds ratio 2.30 per 10-percentage-point rise in target CER). Stated confidence discriminated faithful outputs reasonably well (AUROC 0.83, 0.80-0.85) but was poorly calibrated (expected calibration error 0.32, 0.27-0.37): 28.4% of outputs at confidence 90 or higher were not faithful. Message-critical content carried a small excess after matching, surviving detector removal (rule-free OR 1.10). The ratio of faithful rescues to fluent errors exceeded 1 at low corruption but fell below 1 at 20-30% target CER. No interface policy removed drift: conservative editing and abstention lowered it, alternatives and expansion raised it; the best drifted on 18.0 per 100. A 2,281-item panel (16 of 20 models) gave moderate ensemble-versus-consensus agreement (kappa 0.41); correction lowered pooled drift 31.4% to 28.3%, and a CER-stratified physician-corrected re-analysis confirmed the dose-response at each level. Interpretation Language-model post-editing produced fluent semantic substitutions that rose with corruption, confidence did not reliably flag, and no interface policy removed. This does not demonstrate clinical harm; prospective human-in-the-loop evaluation is needed. Funding: A.G. and E.K. were supported in part by the Clinical and Translational Science Awards (CTSA) grant UL1TR002541 from the National Center for Advancing Translational Sciences, through the Harvard Catalyst | The Harvard Clinical and Translational Science Center Pilot Award Program. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health. Competing interests: The authors declare that they have no competing interests.",
+      "authors": [
+        "Gorenshtein, A.",
+        "Omar, M.",
+        "Jia, E. L.",
+        "Adiniaev, Y.",
+        "Daniel, O.",
+        "Kruskal, J.",
+        "Ahmed, M.",
+        "Brook, O.",
+        "Klang, E.",
+        "Barash, Y."
+      ],
+      "source": "medrxiv",
+      "published_at": "2026-08-27T00:00:00+00:00",
+      "updated_at": "2026-08-27T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by_nc",
+      "identifiers": {
+        "doi": "10.64898/2026.08.20.26360939"
+      },
+      "links": {
+        "abs": "https://www.medrxiv.org/content/10.64898/2026.08.20.26360939",
+        "pdf": "https://www.medrxiv.org/content/10.64898/2026.08.20.26360939.full.pdf",
+        "html": "https://www.medrxiv.org/content/10.64898/2026.08.20.26360939.full"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "Intent Drift in LLM-Assisted Brain Computer Interface Communication: An In-Silico Benchmark Under Simulated Decoder Corruption Background Large language models are increasingly proposed to post-edit decoded text in communication brain-computer interfaces and augmentative communication. A fluent model can substitute a different in",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.08.20.26360939.full"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "d drift rose steeply with corruption in all three corpora, from 2.2% to 60.3% at 0-40% target CER in AUTH, a stress-test upper bound, not an expected clinical rate (odds ratio 2.30 per 10-percentage-point rise in target CER). Stated confidence discriminated faithful outputs reasonably well (AUROC 0.83, 0.80-0.85) but was poorly calibrated (expected calibration error 0.32, 0.27-0.37): 28.4% of ou",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.08.20.26360939.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 10,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.08.20.26360939.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "c2f7100a15f3d74efea164ea1f3cf7c61656db8c71181cf8c84af302ce8060df",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}

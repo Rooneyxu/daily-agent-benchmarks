@@ -109,6 +109,9 @@ METHODOLOGY_PATTERNS = (
     r"\b(?:automatic|automated|programmatic) verifier\b",
     r"\b(?:answerability|uniqueness|evidence entailment|answer provenance|citation grounding) (?:check|checking|verification|verifier)\b",
     r"\b(?:automatic|automated|programmatic) (?:grading|scoring|rubric generation)\b|\bautomatic rubric generation\b",
+    r"\b(?:automatic|automated|programmatic|model[- ]based|llm[- ]based) (?:evaluation|grading|scoring) (?:pipeline|framework|method|system|workflow)\b",
+    r"\b(?:automatic|automated|programmatic|model[- ]based|llm[- ]based) graders?\b|\bbenchmark graders?\b",
+    r"\bsynthetic evaluation (?:data|datasets?|items?|questions?|tasks?)\b",
     r"\bjudge calibration\b|\b(?:introduce|propose|develop|present|calibrate|validate) .{0,100}\bllm[- ]as[- ]a[- ]judge\b",
     r"\b(?:introduce|propose|develop|present) .{0,100}\b(?:automatic|automated|scalable) (?:evaluation|grading|scoring) (?:framework|method|pipeline)\b",
     r"\b(?:item response theory|irt analysis) (?:for|of|on) .{0,80}\b(?:benchmarks?|evaluation datasets?|test items?)\b|\b(?:benchmark|item|difficulty) calibration (?:framework|method|procedure|protocol|decision rule|that|which)\b",
@@ -187,7 +190,10 @@ CONTRIBUTION_BY_PRIORITY = {
 
 CONTRIBUTION_LABELS = {
     "new_benchmark": {"en": "New benchmark", "zh": "新 Benchmark"},
-    "methodology": {"en": "Benchmark methodology", "zh": "构建与质检方法"},
+    "methodology": {
+        "en": "Automated construction, generation & evaluation",
+        "zh": "自动构建、出题与评测质检",
+    },
     "audit": {"en": "Benchmark audit", "zh": "Benchmark 审计"},
 }
 

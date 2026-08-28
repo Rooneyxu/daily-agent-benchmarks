@@ -71,6 +71,8 @@ def attach_agent_links(entries: list[BioEntry], agent_index: Path) -> None:
 
 def _public_entry(entry: BioEntry) -> dict[str, Any]:
     row = entry.to_dict()
+    row.pop("first_seen_at", None)
+    row.pop("event_at", None)
     row["topic"] = entry.categories[0] if entry.categories else "general_text"
     row["contribution_type"] = CONTRIBUTION_BY_PRIORITY.get(entry.priority, "new_benchmark")
     return row
@@ -83,7 +85,7 @@ def build_payload(entries: list[BioEntry], generated_at: str, source_health: lis
     context_counts = Counter(context for entry in entries for context in entry.evaluation_contexts)
     by_day: dict[str, list[str]] = defaultdict(list)
     for entry in entries:
-        day = (entry.event_at or entry.published_at or entry.first_seen_at)[:10]
+        day = entry.published_at[:10]
         if day:
             by_day[day].append(entry.id)
     days = [
@@ -122,6 +124,7 @@ def validate_payload(payload: dict[str, Any]) -> None:
             "slug",
             "kind",
             "title",
+            "published_at",
             "priority",
             "categories",
             "collection_status",
@@ -142,6 +145,8 @@ def validate_payload(payload: dict[str, Any]) -> None:
             raise ValueError(f"Invalid public collection status for {row['id']}")
         if row["collection_status"] != "confirmed":
             raise ValueError(f"Non-confirmed entry exported publicly: {row['id']}")
+        if "first_seen_at" in row or "event_at" in row:
+            raise ValueError(f"Backend tracking dates leaked for {row['id']}")
         if row["topic"] not in TOPIC_LABELS:
             raise ValueError(f"Invalid topic for {row['id']}")
         if row["contribution_type"] not in CONTRIBUTION_LABELS:
@@ -154,11 +159,17 @@ def write_vendor_archive(
     entries: list[BioEntry],
     generated_at: str,
 ) -> dict[str, Any]:
+    rows = []
+    for entry in entries:
+        row = entry.to_dict()
+        row.pop("first_seen_at", None)
+        row.pop("event_at", None)
+        rows.append(row)
     payload = {
         "schema_version": 1,
         "generated_at": generated_at,
         "total": len(entries),
-        "entries": [entry.to_dict() for entry in entries],
+        "entries": rows,
     }
     data_dir = output_dir / "data"
     data_dir.mkdir(parents=True, exist_ok=True)

@@ -30,6 +30,7 @@ def test_arxiv_atom_parser() -> None:
 def test_arxiv_has_metadata_methodology_and_audit_queries() -> None:
     lowered = [query.lower() for query in ArxivAdapter.queries]
     assert any("all:construction" in query and "ti:benchmark" not in query for query in lowered)
+    assert any('all:"automated evaluation"' in query and "all:grader" in query for query in lowered)
     assert any("all:contamination" in query and "ti:benchmark" not in query for query in lowered)
 
 
@@ -77,6 +78,7 @@ def test_europe_pmc_core_and_jats_full_text() -> None:
 def test_europe_pmc_has_independent_methodology_and_audit_queries() -> None:
     queries = EuropePmcAdapter._queries("2026-01-01", "2026-01-31")
     assert any('TITLE_ABS:"benchmark construction"' in query for query in queries)
+    assert any('TITLE_ABS:"automated evaluation"' in query for query in queries)
     assert any('TITLE_ABS:"benchmark contamination"' in query for query in queries)
     assert all('TITLE_ABS:"medical"' in query for query in queries)
 
@@ -137,6 +139,8 @@ def test_openreview_v2_wrapped_and_v1_plain_content() -> None:
     assert {row.source_id for row in rows} == {"v1-note", "v2-note"}
     assert {row.title for row in rows} == {"BioBench V1", "BioBench V2"}
     assert "biomedical benchmark construction" in OpenReviewAdapter.queries
+    assert "biomedical automatic question generation" in OpenReviewAdapter.queries
+    assert "medical automated evaluation grader" in OpenReviewAdapter.queries
     assert "biomedical benchmark audit" in OpenReviewAdapter.queries
 
 
