@@ -59,14 +59,32 @@
     return `<span class="bio-contribution bio-contribution--${entry.contribution_type}">${escape(bioContributionLabel(entry.contribution_type, state.lang))}</span>`;
   }
 
+  function priorityBadge(entry) {
+    return entry.priority ? `<span class="bio-priority bio-priority--${escape(entry.priority.toLowerCase())}">${escape(entry.priority)}</span>` : "";
+  }
+
+  function resourceLinks(entry) {
+    const labels = { abs: "Paper", pdf: "PDF", code: "Code", data: "Data", project: "Project", leaderboard: "Leaderboard" };
+    return Object.entries(entry.links || {})
+      .filter(([key, value]) => value && labels[key])
+      .map(([key, value]) => `<a href="${escape(value)}" target="_blank" rel="noopener">${labels[key]}</a>`)
+      .join("");
+  }
+
   function row(entry, query = "") {
     const title = query ? BM25.highlight(entry.title, query) : escape(entry.title);
     const topicChip = `<span class="chip">${escape(bioTopicLabel(entry.topic, state.lang))}</span>`;
+    const inclusionEvidence = entry.evidence?.[0]?.term || entry.classification_reason || "";
     return `<article class="row bio-row">
       <div class="row__main">
-        <div class="themes">${badge(entry)}${topicChip}</div>
+        <div class="themes">${priorityBadge(entry)}${badge(entry)}${topicChip}</div>
         <h3><a href="./p/${encodeURIComponent(entry.slug)}.html">${title}</a></h3>
-        <div class="meta"><span>${escape(dateOf(entry).slice(0, 10))}</span><span>· ${escape(entry.source)}</span><span>· ${escape((entry.authors || []).slice(0, 3).join(", "))}${(entry.authors || []).length > 3 ? " et al." : ""}</span></div>
+        <p class="bio-row__abstract">${escape(entry.abstract)}</p>
+        ${inclusionEvidence ? `<p class="bio-row__reason"><span class="bio-row__reason-label">${bioT(state.lang, "inclusionEvidence")}</span><span class="bio-row__reason-text">${escape(inclusionEvidence)}</span></p>` : ""}
+        <div class="bio-row__footer">
+          <div class="meta"><span>${escape(dateOf(entry).slice(0, 10))}</span><span>· ${escape(entry.source)}</span></div>
+          <div class="bio-row__links">${resourceLinks(entry)}</div>
+        </div>
       </div>
       <div class="row__side"><a class="row__go" href="./p/${encodeURIComponent(entry.slug)}.html">${bioT(state.lang, "details")}</a></div>
     </article>`;
