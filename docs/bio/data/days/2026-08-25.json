@@ -33,11 +33,11 @@
         "Nicholas D. Lane"
       ],
       "source": "arxiv",
-      "published_at": "2026-08-25T20:09:44Z",
-      "updated_at": "2026-08-25T20:09:44Z",
+      "published_at": "2026-08-25T20:09:44+00:00",
+      "updated_at": "2026-08-25T20:09:44+00:00",
       "priority": "P0",
       "categories": [
-        "general_text"
+        "multimodal"
       ],
       "collection_status": "confirmed",
       "access_status": "public",
@@ -47,59 +47,70 @@
       },
       "links": {
         "abs": "https://arxiv.org/abs/2608.25114v1",
-        "html": "https://arxiv.org/html/2608.25114",
-        "pdf": "https://arxiv.org/pdf/2608.25114v1"
+        "pdf": "https://arxiv.org/pdf/2608.25114v1",
+        "data": "https://huggingface.co/datasets/flwrlabs/fed-brats",
+        "html": "https://arxiv.org/html/2608.25114"
       },
       "evidence": [
         {
           "term": "Reproducible Benchmarking Platform",
-          "location": "Abstract / metadata",
           "excerpt": "Flower Hub: A Reproducible Benchmarking Platform for Federated Learning in Simulation and Deployment Federated learning (FL) has emerged as a key approach for training models across decentralized data, yet benchmarking in FL remains difficult to reproduce, compare, and extend. Existing e",
+          "location": "Abstract / metadata",
           "source_url": "https://arxiv.org/html/2608.25114"
         },
         {
           "term": "benchmark",
-          "location": "Abstract / metadata",
           "excerpt": "Flower Hub: A Reproducible Benchmarking Platform for Federated Learning in Simulation and Deployment Federated learning (FL) has emerged as a key approach for training models across decentralized data, yet benchmarking in FL remains difficult to reproduce, compare, and extend",
+          "location": "Abstract / metadata",
           "source_url": "https://arxiv.org/html/2608.25114"
         },
         {
           "term": "benchmarks",
-          "location": "Abstract / metadata",
           "excerpt": "rm for publishing, discovering, and executing decentralized and federated applications. We show how it enables reproducible benchmarking by packaging benchmarks as executable, versioned applications with standardized metadata, pinned dependencies, and explicit evaluation workflows. We instantiate this approach with a multi-domain benchmark suite spanning cross-silo and cross-device settings, and i",
+          "location": "Abstract / metadata",
           "source_url": "https://arxiv.org/html/2608.25114"
         },
         {
           "term": "benchmarking",
-          "location": "Abstract / metadata",
           "excerpt": "Flower Hub: A Reproducible Benchmarking Platform for Federated Learning in Simulation and Deployment Federated learning (FL) has emerged as a key approach for training models across decentralized data, yet benchmarking in FL remains difficult to reproduce, compare, and extend. E",
+          "location": "Abstract / metadata",
           "source_url": "https://arxiv.org/html/2608.25114"
         },
         {
           "term": "medical",
-          "location": "Abstract / metadata",
           "excerpt": "ion workflows. We instantiate this approach with a multi-domain benchmark suite spanning cross-silo and cross-device settings, and including tasks in medical imaging, financial tabular learning, legal instruction tuning, phishing URL detection, and audio tagging. We further demonstrate that the same benchmarking application can run across both simulation and deployment runtimes without changing",
+          "location": "Abstract / metadata",
           "source_url": "https://arxiv.org/html/2608.25114"
         },
         {
           "term": "medical imaging",
-          "location": "Abstract / metadata",
           "excerpt": "ion workflows. We instantiate this approach with a multi-domain benchmark suite spanning cross-silo and cross-device settings, and including tasks in medical imaging, financial tabular learning, legal instruction tuning, phishing URL detection, and audio tagging. We further demonstrate that the same benchmarking application can run across both simulation and deployment runtimes without changing the app",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25114"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "dix F.1 . Medical image segmentation 2 2 2 https://huggingface.co/datasets/flwrlabs/fed-brats . We use the BraTS-GLI dataset [ 30 ] , which comprises multimodal glioma MRI scans with four input sequences: T1-native, T1-contrast enhanced, T2-weighted, and T2-FLAIR, together with corresponding tumor segmentation masks. To emulate a realistic federated setting, the data are partitioned according to a",
+          "location": "3.1 FL Dataset Construction",
           "source_url": "https://arxiv.org/html/2608.25114"
         }
       ],
-      "related_benchmarks": [],
+      "related_benchmarks": [
+        "LegalBench",
+        "FLBench",
+        "FedEval"
+      ],
       "related_agent_url": "",
       "evaluation_contexts": [
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
-      "match_score": 19,
-      "extraction_status": "metadata_only",
+      "match_score": 21,
+      "extraction_status": "complete",
       "extraction_error": "",
-      "content_hash": "metadata:arxiv:2608.25114",
+      "content_hash": "afe6785e8b1f47b2a6b87de95178263a0dcd72b1ea30bba9f9445fbae405f88f",
       "is_seed": true,
-      "topic": "general_text",
+      "topic": "multimodal",
       "contribution_type": "methodology"
     },
     {
@@ -194,7 +205,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 23,
+      "match_score": 27,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "51e3dbc296543ab6960c72de350c8f2cb6bffed675a7052a09e57a7a61749819",

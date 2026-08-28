@@ -246,7 +246,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 20,
+      "match_score": 22,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "c924be31ff9bf2d2c7a2e12da7e9d2b3bbbe041f663bf594f551d277739ce4e4",
@@ -271,8 +271,8 @@
         "Jon M. Laurent"
       ],
       "source": "arxiv",
-      "published_at": "2026-08-26T01:45:55Z",
-      "updated_at": "2026-08-26T01:45:55Z",
+      "published_at": "2026-08-26T01:45:55+00:00",
+      "updated_at": "2026-08-26T01:45:55+00:00",
       "priority": "P1",
       "categories": [
         "experiment_agent"
@@ -285,53 +285,82 @@
       },
       "links": {
         "abs": "https://arxiv.org/abs/2608.25286v1",
-        "html": "https://arxiv.org/html/2608.25286",
-        "pdf": "https://arxiv.org/pdf/2608.25286v1"
+        "pdf": "https://arxiv.org/pdf/2608.25286v1",
+        "code": "https://github.com/EdisonScientific/BixBench3",
+        "data": "https://huggingface.co/datasets/EdisonScientific/BixBench3",
+        "html": "https://arxiv.org/html/2608.25286"
       },
       "evidence": [
         {
-          "term": "we introduce",
+          "term": "we introduce BixBench3, a benchmark",
+          "excerpt": "Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been systematically evaluated. Here we introduce BixBench3, a benchmark that measures the capacity of AI agents to process raw biological data through to scientific results. We designed BixBench3 tasks to mirror the delegation of work from a scientist to an agent: the scientist chooses the research question an",
           "location": "Abstract / metadata",
-          "excerpt": "Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been systematically evaluated. Here we introduce BixBench3, a benchmark that measures the capacity of AI agents to process raw biological data through to scientific results. We designed BixBench3 tasks to mirror the delegation of work from a scientist to an agent: the scientist chooses t",
           "source_url": "https://arxiv.org/html/2608.25286"
         },
         {
           "term": "benchmark",
-          "location": "Abstract / metadata",
           "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology",
+          "location": "Abstract / metadata",
           "source_url": "https://arxiv.org/html/2608.25286"
         },
         {
           "term": "benchmarking",
-          "location": "Abstract / metadata",
           "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology at",
+          "location": "Abstract / metadata",
           "source_url": "https://arxiv.org/html/2608.25286"
         },
         {
           "term": "biology",
-          "location": "Abstract / metadata",
           "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been syst",
+          "location": "Abstract / metadata",
           "source_url": "https://arxiv.org/html/2608.25286"
         },
         {
           "term": "biological",
-          "location": "Abstract / metadata",
           "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been systematically evaluated. Here we introduce BixBench3, a benchmark that m",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.25286"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "Li, S. Zhao, R. Cao, J. H. Toh, Z. Cheng, D. Shin, F. Lei, Y. Liu, Y. Xu, S. Zhou, S. Savarese, C. Xiong, V. Zhong, and T. Yu OSWorld: benchmarking multimodal agents for open-ended tasks in real computer environments . In Advances in Neural Information Processing Systems , Vol. 37 , pp. 52040–52094 . Note: Datasets and Benchmarks Track External Links: Document Cited by: §1.1 . Xin et al. (2024)",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2608.25286"
+        },
+        {
+          "term": "troubleshooting",
+          "excerpt": "isolated analyses. LAB-Bench and LABBench2 test domain knowledge and practical research skills through questions about literature retrieval, protocol troubleshooting, and sequence manipulation, while BioProBench focuses on biological protocol understanding ( Laurent et al., 2024 ; Laurent et al., 2026 ; Liu et al., 2025 ) . DISCOVERYWORLD required agents to make scientific discoveries in a virtual envi",
+          "location": "1.1 Related work",
+          "source_url": "https://arxiv.org/html/2608.25286"
+        },
+        {
+          "term": "tool use",
+          "excerpt": "etence. BixBench3 combines the long-horizon challenge of the former with the domain-specificity of the latter. Long-horizon agent benchmarks evaluate tool use, planning, and execution over many steps. As agentic capabilities have improved, the length of tasks that models can complete has increased from those taking humans minutes in 2024 ( Zhou et al., 2024 ; Xie et al., 2024 ) to those taking h",
+          "location": "1.1 Related work",
           "source_url": "https://arxiv.org/html/2608.25286"
         }
       ],
       "related_benchmarks": [
-        "BixBench3"
+        "PaperBench",
+        "BioProBench",
+        "BixBench",
+        "CompBioBench",
+        "BAISBench",
+        "GeneBench",
+        "SpatialBench",
+        "VariantBench",
+        "LAB-Bench",
+        "LABBench2"
       ],
       "related_agent_url": "../../p/2608.25286.html",
       "evaluation_contexts": [
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 16,
-      "extraction_status": "metadata_only",
+      "match_score": 20,
+      "extraction_status": "complete",
       "extraction_error": "",
-      "content_hash": "seed:2608.25286",
+      "content_hash": "f32bbf5d1b22de2ff05c8456288b53a6807b1d172b6d3d055eceb51c18369c4a",
       "is_seed": true,
       "topic": "experiment_agent",
       "contribution_type": "new_benchmark"
