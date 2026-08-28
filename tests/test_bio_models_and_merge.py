@@ -3,8 +3,8 @@ from __future__ import annotations
 from copy import deepcopy
 from types import SimpleNamespace
 
-from bio.models import BioEntry, canonical_id, slug_for
-from bio.storage import merge_entries
+from bio.models import BioEntry, SourceCandidate, SourceDocument, canonical_id, slug_for
+from bio.storage import SupabaseStore, merge_entries
 from bio.update import _source_row
 
 
@@ -74,3 +74,38 @@ def test_failed_source_does_not_clear_last_success_timestamp() -> None:
     )
     assert "last_success_at" not in row
     assert row["last_error"] == "temporary failure"
+
+
+def test_document_upsert_deduplicates_canonical_ids_within_batch() -> None:
+    captured: list[dict[str, object]] = []
+
+    class Query:
+        def upsert(self, rows: list[dict[str, object]], on_conflict: str) -> "Query":
+            assert on_conflict == "id"
+            captured.extend(rows)
+            return self
+
+        def execute(self) -> None:
+            return None
+
+    class Client:
+        def table(self, name: str) -> Query:
+            assert name == "documents"
+            return Query()
+
+    first = SourceDocument(
+        SourceCandidate(source="arxiv", source_id="1234.5678", kind="paper", title="BioBench"),
+        body="one",
+        content_hash="one",
+    )
+    second = SourceDocument(
+        SourceCandidate(source="europepmc", source_id="123456", kind="paper", title="BioBench"),
+        body="two",
+        content_hash="two",
+    )
+    store = object.__new__(SupabaseStore)
+    store.client = Client()
+    store.upsert_documents([(first, "doi:10.1/biobench"), (second, "doi:10.1/biobench")])
+
+    assert len(captured) == 1
+    assert captured[0]["source_id"] == "europepmc"

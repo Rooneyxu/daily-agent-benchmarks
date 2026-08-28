@@ -84,28 +84,27 @@ class SupabaseStore:
             self.client.table("sources").upsert(rows, on_conflict="id").execute()
 
     def upsert_documents(self, rows: list[tuple[SourceDocument, str]]) -> None:
-        payload = []
+        documents_by_id: dict[str, dict[str, Any]] = {}
         for document, document_id in rows:
             candidate = document.candidate
-            payload.append(
-                {
-                    "id": document_id,
-                    "source_id": candidate.source,
-                    "source_record_id": candidate.source_id,
-                    "kind": candidate.kind,
-                    "title": candidate.title,
-                    "abstract": candidate.abstract,
-                    "authors": candidate.authors,
-                    "published_at": candidate.published_at or None,
-                    "updated_at_source": candidate.updated_at or None,
-                    "identifiers": candidate.identifiers,
-                    "links": candidate.links,
-                    "metadata": candidate.metadata,
-                    "content_hash": document.content_hash,
-                    "extraction_status": document.extraction_status,
-                    "extraction_error": document.extraction_error,
-                }
-            )
+            documents_by_id[document_id] = {
+                "id": document_id,
+                "source_id": candidate.source,
+                "source_record_id": candidate.source_id,
+                "kind": candidate.kind,
+                "title": candidate.title,
+                "abstract": candidate.abstract,
+                "authors": candidate.authors,
+                "published_at": candidate.published_at or None,
+                "updated_at_source": candidate.updated_at or None,
+                "identifiers": candidate.identifiers,
+                "links": candidate.links,
+                "metadata": candidate.metadata,
+                "content_hash": document.content_hash,
+                "extraction_status": document.extraction_status,
+                "extraction_error": document.extraction_error,
+            }
+        payload = list(documents_by_id.values())
         for offset in range(0, len(payload), 200):
             self.client.table("documents").upsert(payload[offset : offset + 200], on_conflict="id").execute()
 
