@@ -86,6 +86,16 @@ class ArxivAdapter(SourceAdapter):
         '(ti:benchmark OR ti:bench OR ti:"evaluation suite") AND (all:biology OR all:biological OR all:"life science")',
         '(ti:benchmark OR ti:bench) AND (all:genomics OR all:proteomics OR all:"protein design")',
         '(ti:benchmark OR ti:bench) AND (all:"wet lab" OR all:protocol OR all:biosecurity OR all:biosafety)',
+        '((all:benchmark OR all:benchmarking OR all:"evaluation suite" OR all:"evaluation dataset") AND '
+        '(all:construction OR all:curation OR all:"quality control" OR all:"quality assurance" OR '
+        'all:verifier OR all:"question generation" OR all:"judge calibration") AND '
+        '(all:biomedical OR all:medical OR all:clinical OR all:biology OR all:biological OR '
+        'all:"life science" OR all:genomics OR all:proteomics))',
+        '((all:benchmark OR all:benchmarking OR all:"evaluation suite" OR all:"evaluation dataset") AND '
+        '(all:audit OR all:auditing OR all:contamination OR all:leakage OR all:reproducibility OR '
+        'all:robustness OR all:validity OR all:diagnostic OR all:"stress test") AND '
+        '(all:biomedical OR all:medical OR all:clinical OR all:biology OR all:biological OR '
+        'all:"life science" OR all:genomics OR all:proteomics))',
     )
 
     def _entry(self, entry: ET.Element) -> SourceCandidate:
@@ -150,56 +160,79 @@ class EuropePmcAdapter(SourceAdapter):
     name = "Europe PMC"
     endpoint = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
 
-    def discover(self, date_from: str, date_to: str) -> list[SourceCandidate]:
-        query = (
-            f'FIRST_PDATE:[{date_from} TO {date_to}] AND '
-            '((TITLE_ABS:"benchmark" OR TITLE_ABS:"evaluation suite" OR TITLE_ABS:"challenge set") AND '
+    @staticmethod
+    def _queries(date_from: str, date_to: str) -> tuple[str, ...]:
+        date_clause = f"FIRST_PDATE:[{date_from} TO {date_to}]"
+        domain_clause = (
             '(TITLE_ABS:"biomedical" OR TITLE_ABS:"medical" OR TITLE_ABS:"clinical" OR '
             'TITLE_ABS:"biology" OR TITLE_ABS:"biological" OR TITLE_ABS:"life science" OR '
             'TITLE_ABS:"genomics" OR TITLE_ABS:"proteomics" OR TITLE_ABS:"wet lab" OR '
-            'TITLE_ABS:"biosecurity" OR TITLE_ABS:"biosafety"))'
+            'TITLE_ABS:"biosecurity" OR TITLE_ABS:"biosafety")'
         )
-        cursor = "*"
-        rows: list[SourceCandidate] = []
-        for _ in range(5):
-            response = self._get(
-                self.endpoint,
-                params={
-                    "query": query,
-                    "format": "json",
-                    "resultType": "core",
-                    "pageSize": 200,
-                    "cursorMark": cursor,
-                },
-            )
-            payload = response.json()
-            results = payload.get("resultList", {}).get("result", [])
-            for result in results:
-                source_id = str(result.get("id") or result.get("pmid") or result.get("doi") or "")
-                if not source_id:
-                    continue
-                pmcid = str(result.get("pmcid") or "")
-                pmid = str(result.get("pmid") or "")
-                doi = str(result.get("doi") or "")
-                page_url = f"https://europepmc.org/article/{result.get('source', 'MED')}/{source_id}"
-                links = {"abs": page_url}
-                content_url = ""
-                content_type = "text"
-                if pmcid:
-                    content_url = f"https://www.ebi.ac.uk/europepmc/webservices/rest/{pmcid}/fullTextXML"
-                    content_type = "html"
-                    links["html"] = page_url
-                identifiers = {}
-                if doi:
-                    identifiers["doi"] = doi
-                if pmid:
-                    identifiers["pmid"] = pmid
-                if pmcid:
-                    identifiers["pmcid"] = pmcid
-                author_text = result.get("authorString") or ""
-                authors = [name.strip() for name in str(author_text).split(",") if name.strip()]
-                rows.append(
-                    SourceCandidate(
+        artifact_clause = (
+            '(TITLE_ABS:"benchmark" OR TITLE_ABS:"benchmarking" OR TITLE_ABS:"evaluation suite" OR '
+            'TITLE_ABS:"evaluation dataset" OR TITLE_ABS:"challenge set")'
+        )
+        methodology_clause = (
+            '(TITLE_ABS:"benchmark construction" OR TITLE_ABS:"benchmark curation" OR '
+            'TITLE_ABS:"benchmark validation" OR TITLE_ABS:"quality control" OR '
+            'TITLE_ABS:"quality assurance" OR TITLE_ABS:"question generation" OR '
+            'TITLE_ABS:"automated verifier" OR TITLE_ABS:"judge calibration")'
+        )
+        audit_clause = (
+            '(TITLE_ABS:"benchmark audit" OR TITLE_ABS:"benchmark contamination" OR '
+            'TITLE_ABS:"benchmark leakage" OR TITLE_ABS:"benchmark reproducibility" OR '
+            'TITLE_ABS:"benchmark robustness" OR TITLE_ABS:"benchmark validity" OR '
+            'TITLE_ABS:"diagnostic framework" OR TITLE_ABS:"stress test")'
+        )
+        return (
+            f"{date_clause} AND {artifact_clause} AND {domain_clause}",
+            f"{date_clause} AND {methodology_clause} AND {domain_clause}",
+            f"{date_clause} AND {audit_clause} AND {domain_clause}",
+        )
+
+    def discover(self, date_from: str, date_to: str) -> list[SourceCandidate]:
+        rows: dict[str, SourceCandidate] = {}
+        for query in self._queries(date_from, date_to):
+            cursor = "*"
+            for _ in range(5):
+                response = self._get(
+                    self.endpoint,
+                    params={
+                        "query": query,
+                        "format": "json",
+                        "resultType": "core",
+                        "pageSize": 200,
+                        "cursorMark": cursor,
+                    },
+                )
+                payload = response.json()
+                results = payload.get("resultList", {}).get("result", [])
+                for result in results:
+                    source_id = str(result.get("id") or result.get("pmid") or result.get("doi") or "")
+                    if not source_id:
+                        continue
+                    pmcid = str(result.get("pmcid") or "")
+                    pmid = str(result.get("pmid") or "")
+                    doi = str(result.get("doi") or "")
+                    page_url = f"https://europepmc.org/article/{result.get('source', 'MED')}/{source_id}"
+                    links = {"abs": page_url}
+                    content_url = ""
+                    content_type = "text"
+                    if pmcid:
+                        content_url = f"https://www.ebi.ac.uk/europepmc/webservices/rest/{pmcid}/fullTextXML"
+                        content_type = "html"
+                        links["html"] = page_url
+                    identifiers = {}
+                    if doi:
+                        identifiers["doi"] = doi
+                    if pmid:
+                        identifiers["pmid"] = pmid
+                    if pmcid:
+                        identifiers["pmcid"] = pmcid
+                    author_text = result.get("authorString") or ""
+                    authors = [name.strip() for name in str(author_text).split(",") if name.strip()]
+                    rows[source_id] = SourceCandidate(
                         source=self.id,
                         source_id=source_id,
                         kind="paper",
@@ -218,12 +251,11 @@ class EuropePmcAdapter(SourceAdapter):
                             "is_open_access": str(result.get("isOpenAccess") or "").upper() == "Y",
                         },
                     )
-                )
-            next_cursor = payload.get("nextCursorMark")
-            if not results or not next_cursor or next_cursor == cursor:
-                break
-            cursor = next_cursor
-        return rows
+                next_cursor = payload.get("nextCursorMark")
+                if not results or not next_cursor or next_cursor == cursor:
+                    break
+                cursor = next_cursor
+        return list(rows.values())
 
 
 class BioRxivAdapter(SourceAdapter):
@@ -277,10 +309,24 @@ class OpenReviewAdapter(SourceAdapter):
     id = "openreview"
     name = "OpenReview"
     endpoint = "https://api2.openreview.net/notes/search"
+    queries = (
+        "benchmark biology",
+        "benchmark biomedical",
+        "benchmark medical",
+        "benchmark biosecurity",
+        "biomedical benchmark construction",
+        "biology benchmark curation",
+        "medical benchmark quality control",
+        "biomedical benchmark audit",
+        "medical benchmark contamination",
+        "biology benchmark reproducibility",
+        "biomedical benchmark robustness",
+        "medical benchmark diagnostic framework",
+    )
 
     def discover(self, date_from: str, date_to: str) -> list[SourceCandidate]:
         rows: dict[str, SourceCandidate] = {}
-        for query in ("benchmark biology", "benchmark biomedical", "benchmark medical", "benchmark biosecurity"):
+        for query in self.queries:
             payload = self._get(
                 self.endpoint,
                 params={"query": query, "content": "all", "sort": "tmdate:desc", "limit": 200},

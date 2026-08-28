@@ -4864,6 +4864,1549 @@
       "extraction_error": "",
       "content_hash": "seed:cac723e5ff29f65e3fcbb0739ae91bee",
       "is_seed": true
+    },
+    {
+      "extraction_status": "metadata_only",
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "match_score": 23,
+      "source": "arxiv",
+      "related_agent_url": "",
+      "id": "arxiv:2509.10744",
+      "is_seed": true,
+      "event_at": "2025-09-12T23:22:49Z",
+      "published_at": "2025-09-12T23:22:49Z",
+      "priority": "P0",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "content_hash": "metadata:arxiv:2509.10744",
+      "related_benchmarks": [
+        "MCQA"
+      ],
+      "evidence": [
+        {
+          "term": "framework for generating multiple-choice question-answering (MCQA) benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "enchmarks must evolve to reflect new discoveries and ensure language models are tested on current, diverse literature. We propose a scalable, modular framework for generating multiple-choice question-answering (MCQA) benchmarks directly from large corpora of scientific papers. Our pipeline automates every stage of MCQA creation, including PDF parsing, semantic chunking, question generation, and model evaluation. As a case study, we generate more than 16,000 MCQs",
+          "source_url": "https://arxiv.org/html/2509.10744"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "Automated MCQA Benchmarking at Scale: Evaluating Reasoning Traces as Retrieval Sources for Domain Adaptation of Small Language Models As scientific knowledge grows at an unprecedented pace, evaluation benchmarks must evolve to reflect new discoveries and ensure la",
+          "source_url": "https://arxiv.org/html/2509.10744"
+        },
+        {
+          "term": "benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "asoning Traces as Retrieval Sources for Domain Adaptation of Small Language Models As scientific knowledge grows at an unprecedented pace, evaluation benchmarks must evolve to reflect new discoveries and ensure language models are tested on current, diverse literature. We propose a scalable, modular framework for generating multiple-choice question-answering (MCQA) benchmarks directly from large c",
+          "source_url": "https://arxiv.org/html/2509.10744"
+        },
+        {
+          "term": "benchmarking",
+          "location": "Abstract / metadata",
+          "excerpt": "Automated MCQA Benchmarking at Scale: Evaluating Reasoning Traces as Retrieval Sources for Domain Adaptation of Small Language Models As scientific knowledge grows at an unprecedented pace, evaluation benchmarks must evolve to reflect new discoveries and ensure langu",
+          "source_url": "https://arxiv.org/html/2509.10744"
+        },
+        {
+          "term": "biology",
+          "location": "Abstract / metadata",
+          "excerpt": "uestion generation, and model evaluation. As a case study, we generate more than 16,000 MCQs from 22,000 open-access articles in radiation and cancer biology. We then evaluate a suite of small language models (1.1B-14B parameters) on these questions, comparing baseline accuracy with retrieval-augmented generation (RAG) from paper-derived semantic chunks and from reasoning traces distilled from",
+          "source_url": "https://arxiv.org/html/2509.10744"
+        },
+        {
+          "term": "cancer",
+          "location": "Abstract / metadata",
+          "excerpt": "king, question generation, and model evaluation. As a case study, we generate more than 16,000 MCQs from 22,000 open-access articles in radiation and cancer biology. We then evaluate a suite of small language models (1.1B-14B parameters) on these questions, comparing baseline accuracy with retrieval-augmented generation (RAG) from paper-derived semantic chunks and from reasoning traces distill",
+          "source_url": "https://arxiv.org/html/2509.10744"
+        }
+      ],
+      "identifiers": {
+        "arxiv": "2509.10744"
+      },
+      "license": "",
+      "abstract": "As scientific knowledge grows at an unprecedented pace, evaluation benchmarks must evolve to reflect new discoveries and ensure language models are tested on current, diverse literature. We propose a scalable, modular framework for generating multiple-choice question-answering (MCQA) benchmarks directly from large corpora of scientific papers. Our pipeline automates every stage of MCQA creation, including PDF parsing, semantic chunking, question generation, and model evaluation. As a case study, we generate more than 16,000 MCQs from 22,000 open-access articles in radiation and cancer biology. We then evaluate a suite of small language models (1.1B-14B parameters) on these questions, comparing baseline accuracy with retrieval-augmented generation (RAG) from paper-derived semantic chunks and from reasoning traces distilled from GPT-4.1. We find that reasoning-trace retrieval consistently improves performance on both synthetic and expert-annotated benchmarks, enabling several small models to surpass GPT-4 on the 2023 Astro Radiation and Cancer Biology exam.",
+      "extraction_error": "",
+      "authors": [
+        "Ozan Gokdemir",
+        "Neil Getty",
+        "Robert Underwood",
+        "Sandeep Madireddy",
+        "Franck Cappello",
+        "Arvind Ramanathan",
+        "Ian T. Foster",
+        "Rick L. Stevens"
+      ],
+      "categories": [
+        "general_text"
+      ],
+      "kind": "paper",
+      "first_seen_at": "2025-09-12T23:22:49Z",
+      "title": "Automated MCQA Benchmarking at Scale: Evaluating Reasoning Traces as Retrieval Sources for Domain Adaptation of Small Language Models",
+      "updated_at": "2025-09-12T23:22:49Z",
+      "slug": "arxiv-2509-10744-b8396c8566",
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "links": {
+        "abs": "https://arxiv.org/abs/2509.10744v1",
+        "html": "https://arxiv.org/html/2509.10744",
+        "pdf": "https://arxiv.org/pdf/2509.10744v1"
+      }
+    },
+    {
+      "extraction_status": "metadata_only",
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "match_score": 19,
+      "source": "arxiv",
+      "related_agent_url": "",
+      "id": "arxiv:2510.12617",
+      "is_seed": true,
+      "event_at": "2025-10-14T15:16:56Z",
+      "published_at": "2025-10-14T15:16:56Z",
+      "priority": "P2",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "content_hash": "metadata:arxiv:2510.12617",
+      "related_benchmarks": [],
+      "evidence": [
+        {
+          "term": "compromise benchmark validity",
+          "location": "Abstract / metadata",
+          "excerpt": "at intersects genomic's domain-specific challenges and machine learning methodologies, where seemingly minor implementation details can significantly compromise benchmark validity. We demonstrate this through BEND (Benchmarking DNA Language Models), where hardware-dependent hyperparameters -- number of data loading workers and buffer sizes -- create spurious performance variations of up to 4% for identical models. T",
+          "source_url": "https://arxiv.org/html/2510.12617"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "Same model, better performance: the impact of shuffling on DNA Language Models benchmarking Large Language Models are increasingly popular in genomics due to their potential to decode complex biological sequences. Hence, researchers require a standardized benchmark to evaluate DNA Language Models (DNA LMs) capabilities. Howeve",
+          "source_url": "https://arxiv.org/html/2510.12617"
+        },
+        {
+          "term": "benchmarking",
+          "location": "Abstract / metadata",
+          "excerpt": "Same model, better performance: the impact of shuffling on DNA Language Models benchmarking Large Language Models are increasingly popular in genomics due to their potential to decode complex biological sequences. Hence, researchers require a standardized benchmark to evaluate DNA Language Models (DNA LMs) capabilities. However,",
+          "source_url": "https://arxiv.org/html/2510.12617"
+        },
+        {
+          "term": "biological",
+          "location": "Abstract / metadata",
+          "excerpt": "of shuffling on DNA Language Models benchmarking Large Language Models are increasingly popular in genomics due to their potential to decode complex biological sequences. Hence, researchers require a standardized benchmark to evaluate DNA Language Models (DNA LMs) capabilities. However, evaluating DNA LMs is a complex task that intersects genomic's domain-specific challenges and machine learning",
+          "source_url": "https://arxiv.org/html/2510.12617"
+        },
+        {
+          "term": "genomic",
+          "location": "Abstract / metadata",
+          "excerpt": "Same model, better performance: the impact of shuffling on DNA Language Models benchmarking Large Language Models are increasingly popular in genomics due to their potential to decode complex biological sequences. Hence, researchers require a standardized benchmark to evaluate DNA Language Models (DNA LMs) capabilities. However, evaluating DNA LMs is a complex task that intersects genom",
+          "source_url": "https://arxiv.org/html/2510.12617"
+        },
+        {
+          "term": "genomics",
+          "location": "Abstract / metadata",
+          "excerpt": "Same model, better performance: the impact of shuffling on DNA Language Models benchmarking Large Language Models are increasingly popular in genomics due to their potential to decode complex biological sequences. Hence, researchers require a standardized benchmark to evaluate DNA Language Models (DNA LMs) capabilities. However, evaluating DNA LMs is a complex task that intersects genomi",
+          "source_url": "https://arxiv.org/html/2510.12617"
+        }
+      ],
+      "identifiers": {
+        "arxiv": "2510.12617"
+      },
+      "license": "",
+      "abstract": "Large Language Models are increasingly popular in genomics due to their potential to decode complex biological sequences. Hence, researchers require a standardized benchmark to evaluate DNA Language Models (DNA LMs) capabilities. However, evaluating DNA LMs is a complex task that intersects genomic's domain-specific challenges and machine learning methodologies, where seemingly minor implementation details can significantly compromise benchmark validity. We demonstrate this through BEND (Benchmarking DNA Language Models), where hardware-dependent hyperparameters -- number of data loading workers and buffer sizes -- create spurious performance variations of up to 4% for identical models. The problem stems from inadequate data shuffling interacting with domain specific data characteristics. Experiments with three DNA language models (HyenaDNA, DNABERT-2, ResNet-LM) show these artifacts affect both absolute performance and relative model rankings. We propose a simple solution: pre-shuffling data before storage eliminates hardware dependencies while maintaining efficiency. This work highlights how standard ML practices can interact unexpectedly with domain-specific data characteristics, with broader implications for benchmark design in specialized domains.",
+      "extraction_error": "",
+      "authors": [
+        "Davide Greco",
+        "Konrad Rawlik"
+      ],
+      "categories": [
+        "general_text"
+      ],
+      "kind": "paper",
+      "first_seen_at": "2025-10-14T15:16:56Z",
+      "title": "Same model, better performance: the impact of shuffling on DNA Language Models benchmarking",
+      "updated_at": "2025-12-10T22:00:37Z",
+      "slug": "arxiv-2510-12617-d31b36ff27",
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "links": {
+        "abs": "https://arxiv.org/abs/2510.12617v2",
+        "html": "https://arxiv.org/html/2510.12617",
+        "pdf": "https://arxiv.org/pdf/2510.12617v2"
+      }
+    },
+    {
+      "extraction_status": "metadata_only",
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "match_score": 53,
+      "source": "arxiv",
+      "related_agent_url": "",
+      "id": "arxiv:2511.09576",
+      "is_seed": true,
+      "event_at": "2025-11-12T06:13:50Z",
+      "published_at": "2025-11-12T06:13:50Z",
+      "priority": "P0",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "content_hash": "metadata:arxiv:2511.09576",
+      "related_benchmarks": [
+        "Prostate-VarBench"
+      ],
+      "evidence": [
+        {
+          "term": "We introduce Prostate-VarBench",
+          "location": "Abstract / metadata",
+          "excerpt": "omplete. Progress is further limited by inconsistent annotations across sources and the absence of a prostate-specific benchmark for fair comparison. We introduce Prostate-VarBench, a curated pipeline for creating prostate-specific benchmarks that integrates COSMIC (somatic cancer mutations), ClinVar (expert-curated clinical variants), and TCGA-PRAD (prostate tumor genomics from The Cancer Genome Atlas) into a harmon",
+          "source_url": "https://arxiv.org/html/2511.09576"
+        },
+        {
+          "term": "We introduce Prostate-VarBench, a curated pipeline for creating prostate-specific benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "omplete. Progress is further limited by inconsistent annotations across sources and the absence of a prostate-specific benchmark for fair comparison. We introduce Prostate-VarBench, a curated pipeline for creating prostate-specific benchmarks that integrates COSMIC (somatic cancer mutations), ClinVar (expert-curated clinical variants), and TCGA-PRAD (prostate tumor genomics from The Cancer Genome Atlas) into a harmonized dataset of 193,278 variants supporting patient- or gene-a",
+          "source_url": "https://arxiv.org/html/2511.09576"
+        },
+        {
+          "term": "creating prostate-specific benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "notations across sources and the absence of a prostate-specific benchmark for fair comparison. We introduce Prostate-VarBench, a curated pipeline for creating prostate-specific benchmarks that integrates COSMIC (somatic cancer mutations), ClinVar (expert-curated clinical variants), and TCGA-PRAD (prostate tumor genomics from The Cancer Genome Atlas) into a harmonized dataset of 193,278 variants supporting patient- or gene-a",
+          "source_url": "https://arxiv.org/html/2511.09576"
+        },
+        {
+          "term": "pipeline for creating prostate-specific benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "consistent annotations across sources and the absence of a prostate-specific benchmark for fair comparison. We introduce Prostate-VarBench, a curated pipeline for creating prostate-specific benchmarks that integrates COSMIC (somatic cancer mutations), ClinVar (expert-curated clinical variants), and TCGA-PRAD (prostate tumor genomics from The Cancer Genome Atlas) into a harmonized dataset of 193,278 variants supporting patient- or gene-a",
+          "source_url": "https://arxiv.org/html/2511.09576"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "Prostate-VarBench: A Benchmark with Interpretable TabNet Framework for Prostate Cancer Variant Classification Variants of Uncertain Significance (VUS) limit the clinical utility of prostate cancer genomics by delaying diagnosis and therapy when evidence for pathogenicit",
+          "source_url": "https://arxiv.org/html/2511.09576"
+        },
+        {
+          "term": "benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "d the absence of a prostate-specific benchmark for fair comparison. We introduce Prostate-VarBench, a curated pipeline for creating prostate-specific benchmarks that integrates COSMIC (somatic cancer mutations), ClinVar (expert-curated clinical variants), and TCGA-PRAD (prostate tumor genomics from The Cancer Genome Atlas) into a harmonized dataset of 193,278 variants supporting patient- or gene-a",
+          "source_url": "https://arxiv.org/html/2511.09576"
+        },
+        {
+          "term": "test set",
+          "location": "Abstract / metadata",
+          "excerpt": "riant pathogenicity, whose step-wise sparse masks provide per-case rationales consistent with molecular tumor board review practices. On the held-out test set, the model achieved 89.9% accuracy with balanced class metrics, and the VEP correction yields an 6.5% absolute reduction in VUS. Variants of Uncertain Significance (VUS) limit the clinical utility of prostate cancer genomics by delaying di",
+          "source_url": "https://arxiv.org/html/2511.09576"
+        },
+        {
+          "term": "clinical",
+          "location": "Abstract / metadata",
+          "excerpt": "rBench: A Benchmark with Interpretable TabNet Framework for Prostate Cancer Variant Classification Variants of Uncertain Significance (VUS) limit the clinical utility of prostate cancer genomics by delaying diagnosis and therapy when evidence for pathogenicity or benignity is incomplete. Progress is further limited by inconsistent annotations across sources and the absence of a prostate-specific",
+          "source_url": "https://arxiv.org/html/2511.09576"
+        }
+      ],
+      "identifiers": {
+        "arxiv": "2511.09576"
+      },
+      "license": "",
+      "abstract": "Variants of Uncertain Significance (VUS) limit the clinical utility of prostate cancer genomics by delaying diagnosis and therapy when evidence for pathogenicity or benignity is incomplete. Progress is further limited by inconsistent annotations across sources and the absence of a prostate-specific benchmark for fair comparison. We introduce Prostate-VarBench, a curated pipeline for creating prostate-specific benchmarks that integrates COSMIC (somatic cancer mutations), ClinVar (expert-curated clinical variants), and TCGA-PRAD (prostate tumor genomics from The Cancer Genome Atlas) into a harmonized dataset of 193,278 variants supporting patient- or gene-aware splits to prevent data leakage. To ensure data integrity, we corrected a Variant Effect Predictor (VEP) issue that merged multiple transcript records, introducing ambiguity in clinical significance fields. We then standardized 56 interpretable features across eight clinically relevant tiers, including population frequency, variant type, and clinical context. AlphaMissense pathogenicity scores were incorporated to enhance missense variant classification and reduce VUS uncertainty. Building on this resource, we trained an interpretable TabNet model to classify variant pathogenicity, whose step-wise sparse masks provide per-case rationales consistent with molecular tumor board review practices. On the held-out test set, the model achieved 89.9% accuracy with balanced class metrics, and the VEP correction yields an 6.5% absolute reduction in VUS.",
+      "extraction_error": "",
+      "authors": [
+        "Abraham Francisco Arellano Tavara",
+        "Umesh Kumar",
+        "Jathurshan Pradeepkumar",
+        "Jimeng Sun"
+      ],
+      "categories": [
+        "general_text"
+      ],
+      "kind": "paper",
+      "first_seen_at": "2025-11-12T06:13:50Z",
+      "title": "Prostate-VarBench: A Benchmark with Interpretable TabNet Framework for Prostate Cancer Variant Classification",
+      "updated_at": "2025-11-12T06:13:50Z",
+      "slug": "arxiv-2511-09576-0982262025",
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "links": {
+        "abs": "https://arxiv.org/abs/2511.09576v1",
+        "html": "https://arxiv.org/html/2511.09576",
+        "pdf": "https://arxiv.org/pdf/2511.09576v1"
+      }
+    },
+    {
+      "extraction_status": "metadata_only",
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "match_score": 24,
+      "source": "arxiv",
+      "related_agent_url": "",
+      "id": "arxiv:2511.19925",
+      "is_seed": true,
+      "event_at": "2025-11-25T05:07:08Z",
+      "published_at": "2025-11-25T05:07:08Z",
+      "priority": "P0",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "content_hash": "metadata:arxiv:2511.19925",
+      "related_benchmarks": [],
+      "evidence": [
+        {
+          "term": "method for generating benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "bjective human judgment, limited availability for domain-specific applications, and unclear definitions of equivalence. This paper introduces a novel method for generating benchmarks to evaluate semantic similarity methods for LLM outputs, specifically addressing these limitations. Our approach leverages knowledge graphs (KGs) to generate pairs of natural-language statements that are semantically similar or dissimilar,",
+          "source_url": "https://arxiv.org/html/2511.19925"
+        },
+        {
+          "term": "present important implications for the use of LLM-as-a-judge",
+          "location": "Abstract / metadata",
+          "excerpt": "as well as the domain of the benchmark impact the performance of semantic similarity methods, with no method being consistently superior. Our results present important implications for the use of LLM-as-a-judge in detecting the semantic content of text. Code is available at https://github.com/QiyaoWei/semantic-kg and the dataset is available at https://huggingface.co/datasets/QiyaoWei/Semantic-KG. Evaluating the open-form textual responses genera",
+          "source_url": "https://arxiv.org/html/2511.19925"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "Semantic-KG: Using Knowledge Graphs to Construct Benchmarks for Measuring Semantic Similarity Evaluating the open-form textual responses generated by Large Language Models (LLMs) typically requires measuring the semantic similarity of the response to a (human generated) reference. However, there i",
+          "source_url": "https://arxiv.org/html/2511.19925"
+        },
+        {
+          "term": "benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "Semantic-KG: Using Knowledge Graphs to Construct Benchmarks for Measuring Semantic Similarity Evaluating the open-form textual responses generated by Large Language Models (LLMs) typically requires measuring the semantic similarity of the response to a (human generated) reference. However, there is",
+          "source_url": "https://arxiv.org/html/2511.19925"
+        },
+        {
+          "term": "biology",
+          "location": "Abstract / metadata",
+          "excerpt": "ilar pairs categorized into one of four sub-types. We generate benchmark datasets in four different domains (general knowledge, biomedicine, finance, biology), and conduct a comparative study of semantic similarity methods including traditional natural language processing scores and LLM-as-a-judge predictions. We observe that the sub-type of semantic variation, as well as the domain of the benc",
+          "source_url": "https://arxiv.org/html/2511.19925"
+        },
+        {
+          "term": "medicine",
+          "location": "Abstract / metadata",
+          "excerpt": "imilar, with dissimilar pairs categorized into one of four sub-types. We generate benchmark datasets in four different domains (general knowledge, biomedicine, finance, biology), and conduct a comparative study of semantic similarity methods including traditional natural language processing scores and LLM-as-a-judge predictions. We observe that the sub-type of semantic variation, as well as the",
+          "source_url": "https://arxiv.org/html/2511.19925"
+        }
+      ],
+      "identifiers": {
+        "arxiv": "2511.19925"
+      },
+      "license": "",
+      "abstract": "Evaluating the open-form textual responses generated by Large Language Models (LLMs) typically requires measuring the semantic similarity of the response to a (human generated) reference. However, there is evidence that current semantic similarity methods may capture syntactic or lexical forms over semantic content. While benchmarks exist for semantic equivalence, they often suffer from high generation costs due to reliance on subjective human judgment, limited availability for domain-specific applications, and unclear definitions of equivalence. This paper introduces a novel method for generating benchmarks to evaluate semantic similarity methods for LLM outputs, specifically addressing these limitations. Our approach leverages knowledge graphs (KGs) to generate pairs of natural-language statements that are semantically similar or dissimilar, with dissimilar pairs categorized into one of four sub-types. We generate benchmark datasets in four different domains (general knowledge, biomedicine, finance, biology), and conduct a comparative study of semantic similarity methods including traditional natural language processing scores and LLM-as-a-judge predictions. We observe that the sub-type of semantic variation, as well as the domain of the benchmark impact the performance of semantic similarity methods, with no method being consistently superior. Our results present important implications for the use of LLM-as-a-judge in detecting the semantic content of text. Code is available at https://github.com/QiyaoWei/semantic-kg and the dataset is available at https://huggingface.co/datasets/QiyaoWei/Semantic-KG.",
+      "extraction_error": "",
+      "authors": [
+        "Qiyao Wei",
+        "Edward Morrell",
+        "Lea Goetz",
+        "Mihaela van der Schaar"
+      ],
+      "categories": [
+        "general_text"
+      ],
+      "kind": "paper",
+      "first_seen_at": "2025-11-25T05:07:08Z",
+      "title": "Semantic-KG: Using Knowledge Graphs to Construct Benchmarks for Measuring Semantic Similarity",
+      "updated_at": "2025-11-25T05:07:08Z",
+      "slug": "arxiv-2511-19925-38926f619a",
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "links": {
+        "abs": "https://arxiv.org/abs/2511.19925v1",
+        "html": "https://arxiv.org/html/2511.19925",
+        "pdf": "https://arxiv.org/pdf/2511.19925v1"
+      }
+    },
+    {
+      "extraction_status": "metadata_only",
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "match_score": 15,
+      "source": "arxiv",
+      "related_agent_url": "",
+      "id": "arxiv:2606.10066",
+      "is_seed": true,
+      "event_at": "2026-06-08T18:40:10Z",
+      "published_at": "2026-06-08T18:40:10Z",
+      "priority": "P2",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "content_hash": "metadata:arxiv:2606.10066",
+      "related_benchmarks": [
+        "PathVQA",
+        "VQA",
+        "OmniMedVQA"
+      ],
+      "evidence": [
+        {
+          "term": "Audit of Pretraining Contamination in Public Medical Vision-Language Benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "A Controlled Audit of Pretraining Contamination in Public Medical Vision-Language Benchmarks Medical vision-language models (VLMs) are evaluated on public benchmarks whose images and question-answer pairs have been freely downloadable for years, yet reported accuracy assumes these examples were absent from pretraining. We audit op",
+          "source_url": "https://arxiv.org/html/2606.10066"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "A Controlled Audit of Pretraining Contamination in Public Medical Vision-Language Benchmarks Medical vision-language models (VLMs) are evaluated on public benchmarks whose images and question-answer pairs have been freely downloadable for years, yet reported accuracy assumes these examples were absent from pretraining. We audit o",
+          "source_url": "https://arxiv.org/html/2606.10066"
+        },
+        {
+          "term": "medical",
+          "location": "Abstract / metadata",
+          "excerpt": "A Controlled Audit of Pretraining Contamination in Public Medical Vision-Language Benchmarks Medical vision-language models (VLMs) are evaluated on public benchmarks whose images and question-answer pairs have been freely downloadable for years, yet reported accuracy assumes these examples were absent fr",
+          "source_url": "https://arxiv.org/html/2606.10066"
+        },
+        {
+          "term": "Vision-Language",
+          "location": "Abstract / metadata",
+          "excerpt": "A Controlled Audit of Pretraining Contamination in Public Medical Vision-Language Benchmarks Medical vision-language models (VLMs) are evaluated on public benchmarks whose images and question-answer pairs have been freely downloadable for years, yet reported accuracy assumes these examples were absent from pretraining",
+          "source_url": "https://arxiv.org/html/2606.10066"
+        }
+      ],
+      "identifiers": {
+        "arxiv": "2606.10066"
+      },
+      "license": "",
+      "abstract": "Medical vision-language models (VLMs) are evaluated on public benchmarks whose images and question-answer pairs have been freely downloadable for years, yet reported accuracy assumes these examples were absent from pretraining. We audit open VLMs on SLAKE-En, PathVQA, VQA-RAD, and an auxiliary public OmniMedVQA mirror using four detector families: image-side near-neighbour overlap against PMC-OA-beta, canonical-order exchangeability, cohort-relative Min-K%++ tail enrichment, and cross-model top-K overlap. We find measurable image-side source overlap on SLAKE-En: 19.8% of images are flagged under SigLIP-B-16 and 4.2% under SigLIP-SO400M, while out-of-domain controls produce 0/2000 flags. Manual adjudication shows same-modality, same-projection matches to different patients rather than verified pixel-level duplicates, so we interpret this as source or distributional overlap rather than confirmed per-image memorization. On the text side, Qwen2.5-VL on SLAKE-En shows a canonical-order exchangeability signal that survives ordering ablation and external non-medical baselines. On the OmniMedVQA mirror, exchangeability fires for five medical and general VLMs while BLIP-2 remains clean. In contrast, cohort-relative Min-K%++ tail enrichment and cross-model top-K overlap collapse under an external pre-domain baseline: BLIP-2 reproduces the apparent positive signals despite lacking plausible medical-VQA exposure. We conclude that these cohort-relative detectors are unreliable as standalone membership-inference signals on small medical-VLM cohorts.",
+      "extraction_error": "",
+      "authors": [
+        "Bruce Changlong Xu",
+        "Lan Wu",
+        "Alexander Ryu"
+      ],
+      "categories": [
+        "multimodal"
+      ],
+      "kind": "paper",
+      "first_seen_at": "2026-06-08T18:40:10Z",
+      "title": "A Controlled Audit of Pretraining Contamination in Public Medical Vision-Language Benchmarks",
+      "updated_at": "2026-06-08T18:40:10Z",
+      "slug": "arxiv-2606-10066-c96016600b",
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "links": {
+        "abs": "https://arxiv.org/abs/2606.10066v1",
+        "html": "https://arxiv.org/html/2606.10066",
+        "pdf": "https://arxiv.org/pdf/2606.10066v1"
+      }
+    },
+    {
+      "extraction_status": "metadata_only",
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "match_score": 16,
+      "source": "arxiv",
+      "related_agent_url": "",
+      "id": "arxiv:2607.08203",
+      "is_seed": true,
+      "event_at": "2026-07-09T08:01:55Z",
+      "published_at": "2026-07-09T08:01:55Z",
+      "priority": "P2",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "content_hash": "metadata:arxiv:2607.08203",
+      "related_benchmarks": [],
+      "evidence": [
+        {
+          "term": "Audit of Evaluation Inconsistencies in Colonoscopy Polyp Segmentation Benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "Metrics or Mirage? An Audit of Evaluation Inconsistencies in Colonoscopy Polyp Segmentation Benchmarks Progress in colonoscopy polyp segmentation is routinely reported through leaderboard comparisons on a small set of public benchmarks. We argue that this apparent progress is difficult to verify: a systematic audit of \\textbf{27 papers} pub",
+          "source_url": "https://arxiv.org/html/2607.08203"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "Metrics or Mirage? An Audit of Evaluation Inconsistencies in Colonoscopy Polyp Segmentation Benchmarks Progress in colonoscopy polyp segmentation is routinely reported through leaderboard comparisons on a small set of public benchmarks. We argue that this apparent progress is difficult to verify: a systematic audit of \\textbf{27 papers} pu",
+          "source_url": "https://arxiv.org/html/2607.08203"
+        },
+        {
+          "term": "leaderboard",
+          "location": "Abstract / metadata",
+          "excerpt": "t of Evaluation Inconsistencies in Colonoscopy Polyp Segmentation Benchmarks Progress in colonoscopy polyp segmentation is routinely reported through leaderboard comparisons on a small set of public benchmarks. We argue that this apparent progress is difficult to verify: a systematic audit of \\textbf{27 papers} published between 2015 and 2026 reveals three structural problems in how the community e",
+          "source_url": "https://arxiv.org/html/2607.08203"
+        },
+        {
+          "term": "clinical",
+          "location": "Abstract / metadata",
+          "excerpt": "evaluates models. \\textbf{First}, 25 of 27 papers \\textit{omit the Hausdorff distance}. Hausdorff distance is a boundary-accuracy metric with direct clinical relevance for detecting flat or small polyps, and is a standard in radiotherapy segmentation. \\textbf{Second}, at least five \\textit{incompatible train/test split protocols} co-exist across papers reporting results on the same two datasets",
+          "source_url": "https://arxiv.org/html/2607.08203"
+        }
+      ],
+      "identifiers": {
+        "arxiv": "2607.08203"
+      },
+      "license": "",
+      "abstract": "Progress in colonoscopy polyp segmentation is routinely reported through leaderboard comparisons on a small set of public benchmarks. We argue that this apparent progress is difficult to verify: a systematic audit of \\textbf{27 papers} published between 2015 and 2026 reveals three structural problems in how the community evaluates models. \\textbf{First}, 25 of 27 papers \\textit{omit the Hausdorff distance}. Hausdorff distance is a boundary-accuracy metric with direct clinical relevance for detecting flat or small polyps, and is a standard in radiotherapy segmentation. \\textbf{Second}, at least five \\textit{incompatible train/test split protocols} co-exist across papers reporting results on the same two datasets (Kvasir-SEG and CVC-ClinicDB), making published Dice scores non-comparable even when they appear in the same leaderboard column. \\textbf{Third}, 26 of 27 papers make \\textit{performance claims without any statistical significance test}. Strikingly, four papers published \\emph{after} the Metrics Reloaded framework~\\cite{metricsreloaded2024} (Maier-Hein et al., \\textit{Nature Methods} 2024) perpetuate these same problems, suggesting that general-purpose metric guidance has not yet reached the colonoscopy sub-community. To show these problems are not merely cosmetic, we re-evaluate five representative models under three controlled protocols with a single uniform scorer, and find that the reported metric conceals large boundary and recall failures, that the ``best'' model changes with the metric, and that near-tied rankings reverse across random splits. We propose a five-point \\textbf{Polyp Segmentation Reporting Checklist}~(PSRC) as a lightweight, domain-adapted corrective.",
+      "extraction_error": "",
+      "authors": [
+        "Aisha Urooj",
+        "Zain Ul Abdien",
+        "Neelu Madan"
+      ],
+      "categories": [
+        "general_text"
+      ],
+      "kind": "paper",
+      "first_seen_at": "2026-07-09T08:01:55Z",
+      "title": "Metrics or Mirage? An Audit of Evaluation Inconsistencies in Colonoscopy Polyp Segmentation Benchmarks",
+      "updated_at": "2026-07-09T08:01:55Z",
+      "slug": "arxiv-2607-08203-bb3a3e16f5",
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.08203v1",
+        "html": "https://arxiv.org/html/2607.08203",
+        "pdf": "https://arxiv.org/pdf/2607.08203v1"
+      }
+    },
+    {
+      "extraction_status": "metadata_only",
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "match_score": 21,
+      "source": "arxiv",
+      "related_agent_url": "",
+      "id": "arxiv:2607.18696",
+      "is_seed": true,
+      "event_at": "2026-07-21T04:34:35Z",
+      "published_at": "2026-07-21T04:34:35Z",
+      "priority": "P0",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "content_hash": "metadata:arxiv:2607.18696",
+      "related_benchmarks": [],
+      "evidence": [
+        {
+          "term": "We introduce a dry-lab benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "nsition models, explicit value functions, planning, and updating across scientific, regulatory, BD, commercial, financial, and execution constraints. We introduce a dry-lab benchmark for testing whether AI-agent organizations should mimic departments or operate around such a world model. The benchmark contains 45 retrospective public-information decision cases with strict time cutoffs, hidden outcomes, common schemas,",
+          "source_url": "https://arxiv.org/html/2607.18696"
+        },
+        {
+          "term": "benchmark contains",
+          "location": "Abstract / metadata",
+          "excerpt": "aints. We introduce a dry-lab benchmark for testing whether AI-agent organizations should mimic departments or operate around such a world model. The benchmark contains 45 retrospective public-information decision cases with strict time cutoffs, hidden outcomes, common schemas, automatic scoring, and blinded pairwise judging. We compare human-org-mimic, stronger human-org-mimic-plus, AI-native asset-centr",
+          "source_url": "https://arxiv.org/html/2607.18696"
+        },
+        {
+          "term": "automatic scoring",
+          "location": "Abstract / metadata",
+          "excerpt": "h a world model. The benchmark contains 45 retrospective public-information decision cases with strict time cutoffs, hidden outcomes, common schemas, automatic scoring, and blinded pairwise judging. We compare human-org-mimic, stronger human-org-mimic-plus, AI-native asset-centric, and AI-native value-conversion architectures. The value-conversion architecture is a prompt-level approximation of a Company",
+          "source_url": "https://arxiv.org/html/2607.18696"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "Do AI-Native Biotechs Need Departments? Benchmarking Company World Models for AI-Driven Drug Development AI-native biotechnology companies are often designed by copying human biotech org charts into agent roles. We argue for a different abstraction: a Company World Model, defined as a per",
+          "source_url": "https://arxiv.org/html/2607.18696"
+        },
+        {
+          "term": "benchmarking",
+          "location": "Abstract / metadata",
+          "excerpt": "Do AI-Native Biotechs Need Departments? Benchmarking Company World Models for AI-Driven Drug Development AI-native biotechnology companies are often designed by copying human biotech org charts into agent roles. We argue for a different abstraction: a Company World Model, defined as a persis",
+          "source_url": "https://arxiv.org/html/2607.18696"
+        },
+        {
+          "term": "clinical",
+          "location": "Abstract / metadata",
+          "excerpt": "ared, predictive asset-to-value state rather than a static human org chart. The study is dry-lab only and does not establish real-world drug success, clinical benefit, or revenue prediction accuracy. AI-native biotechnology companies are often designed by copying human biotech org charts into agent roles. We argue for a different abstraction: a Company World Model, defined as a persistent asset-",
+          "source_url": "https://arxiv.org/html/2607.18696"
+        }
+      ],
+      "identifiers": {
+        "arxiv": "2607.18696"
+      },
+      "license": "",
+      "abstract": "AI-native biotechnology companies are often designed by copying human biotech org charts into agent roles. We argue for a different abstraction: a Company World Model, defined as a persistent asset-to-value state representation with transition models, explicit value functions, planning, and updating across scientific, regulatory, BD, commercial, financial, and execution constraints. We introduce a dry-lab benchmark for testing whether AI-agent organizations should mimic departments or operate around such a world model. The benchmark contains 45 retrospective public-information decision cases with strict time cutoffs, hidden outcomes, common schemas, automatic scoring, and blinded pairwise judging. We compare human-org-mimic, stronger human-org-mimic-plus, AI-native asset-centric, and AI-native value-conversion architectures. The value-conversion architecture is a prompt-level approximation of a Company World Model: a Live Asset Value Record updated by Deal, Approval, Revenue, and Investment Arbiter loops. Under a success function defined by external BD, regulatory approval and launch, and revenue discipline, it achieved the highest automatic value-conversion score and was strongly preferred over the original baselines by value-specific blinded judges. Stress tests narrowed the claim: a stronger human baseline remained competitive, and a neutral judge did not show robust value-conversion dominance. Codex-only mechanistic ablations suggest that Revenue Room, Deal Room, and Approval Room carry useful work under the target objective. The central finding is objective-sensitive: departments may remain useful governance views, but the core AI-native operating primitive should be a shared, predictive asset-to-value state rather than a static human org chart. The study is dry-lab only and does not establish real-world drug success, clinical benefit, or revenue prediction accuracy.",
+      "extraction_error": "",
+      "authors": [
+        "Yinan Wang"
+      ],
+      "categories": [
+        "general_text"
+      ],
+      "kind": "paper",
+      "first_seen_at": "2026-07-21T04:34:35Z",
+      "title": "Do AI-Native Biotechs Need Departments? Benchmarking Company World Models for AI-Driven Drug Development",
+      "updated_at": "2026-07-21T04:34:35Z",
+      "slug": "arxiv-2607-18696-7b5fe3c9c7",
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.18696v1",
+        "html": "https://arxiv.org/html/2607.18696",
+        "pdf": "https://arxiv.org/pdf/2607.18696v1"
+      }
+    },
+    {
+      "extraction_status": "metadata_only",
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "match_score": 25,
+      "source": "arxiv",
+      "related_agent_url": "",
+      "id": "arxiv:2607.25589",
+      "is_seed": true,
+      "event_at": "2026-07-28T11:19:38Z",
+      "published_at": "2026-07-28T11:19:38Z",
+      "priority": "P2",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "content_hash": "metadata:arxiv:2607.25589",
+      "related_benchmarks": [],
+      "evidence": [
+        {
+          "term": "Audit of a Radiology Vision-Language Model Benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "Forensic Reproducibility Audit of a Radiology Vision-Language Model Benchmark: From Intended Protocol to Released Artifact Medical-imaging AI benchmarks combine datasets, DICOM rendering, prompts, provider APIs, automated labels, statistical code, manuscripts, and repository releases. Agreement across these artifact",
+          "source_url": "https://arxiv.org/html/2607.25589"
+        },
+        {
+          "term": "benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "Forensic Reproducibility Audit of a Radiology Vision-Language Model Benchmark: From Intended Protocol to Released Artifact Medical-imaging AI benchmarks combine datasets, DICOM rendering, prompts, provider APIs, automated labels, statistical code, manuscripts, and repository releases. Agreement across these artifacts is usually assumed rather than tested. We performed a retrospective foren",
+          "source_url": "https://arxiv.org/html/2607.25589"
+        },
+        {
+          "term": "medical",
+          "location": "Abstract / metadata",
+          "excerpt": "Forensic Reproducibility Audit of a Radiology Vision-Language Model Benchmark: From Intended Protocol to Released Artifact Medical-imaging AI benchmarks combine datasets, DICOM rendering, prompts, provider APIs, automated labels, statistical code, manuscripts, and repository releases. Agreement across these artifacts is usually assumed rather than tested. We performed",
+          "source_url": "https://arxiv.org/html/2607.25589"
+        },
+        {
+          "term": "clinical",
+          "location": "Abstract / metadata",
+          "excerpt": "fter Holm adjustment. These values describe only the archived automated-label matrix; they do not recover the intended prompt comparison or establish clinical performance. We withdraw the original performance, ranking, prompt-effect, and clinical claims and specify machine-verifiable controls for cohort, DICOM rendering, prompt and model identity, call status, annotation provenance, keyed analys",
+          "source_url": "https://arxiv.org/html/2607.25589"
+        },
+        {
+          "term": "medical-imaging",
+          "location": "Abstract / metadata",
+          "excerpt": "Forensic Reproducibility Audit of a Radiology Vision-Language Model Benchmark: From Intended Protocol to Released Artifact Medical-imaging AI benchmarks combine datasets, DICOM rendering, prompts, provider APIs, automated labels, statistical code, manuscripts, and repository releases. Agreement across these artifacts is usually assumed rather than tested. We performed a retro",
+          "source_url": "https://arxiv.org/html/2607.25589"
+        },
+        {
+          "term": "Vision-Language",
+          "location": "Abstract / metadata",
+          "excerpt": "Forensic Reproducibility Audit of a Radiology Vision-Language Model Benchmark: From Intended Protocol to Released Artifact Medical-imaging AI benchmarks combine datasets, DICOM rendering, prompts, provider APIs, automated labels, statistical code, manuscripts, and repository releases. Agreement acros",
+          "source_url": "https://arxiv.org/html/2607.25589"
+        }
+      ],
+      "identifiers": {
+        "arxiv": "2607.25589"
+      },
+      "license": "",
+      "abstract": "Medical-imaging AI benchmarks combine datasets, DICOM rendering, prompts, provider APIs, automated labels, statistical code, manuscripts, and repository releases. Agreement across these artifacts is usually assumed rather than tested. We performed a retrospective forensic reproducibility audit of a preserved chest-radiograph vision-language model (VLM) pilot; no model was called again and no image or report was newly annotated. We traced prompt bindings, DICOM metadata, output completeness, label extraction, matched analyses, and release propagation. Of 300 planned model-prompt calls, 297 yielded nonempty reports. Sixty Claude calls labeled A/B were executed with the same C prompt. The 30 studies represented 28 patients. Four MONOCHROME1 images were rendered without required polarity inversion, dataset split membership was not retained, and the unvalidated extractor truncated five reports to 4000 characters. Reconstructing one common cohort of 369 complete case-finding blocks changed Cochran's Q from 154.73 to 182.29. Of 45 McNemar comparisons, 27 had unadjusted p < 0.05 and 20 remained below 0.05 after Holm adjustment. These values describe only the archived automated-label matrix; they do not recover the intended prompt comparison or establish clinical performance. We withdraw the original performance, ranking, prompt-effect, and clinical claims and specify machine-verifiable controls for cohort, DICOM rendering, prompt and model identity, call status, annotation provenance, keyed analysis, and derived artifacts.",
+      "extraction_error": "",
+      "authors": [
+        "Mateusz Kozłowski"
+      ],
+      "categories": [
+        "multimodal"
+      ],
+      "kind": "paper",
+      "first_seen_at": "2026-07-28T11:19:38Z",
+      "title": "Forensic Reproducibility Audit of a Radiology Vision-Language Model Benchmark: From Intended Protocol to Released Artifact",
+      "updated_at": "2026-08-10T21:09:30Z",
+      "slug": "arxiv-2607-25589-86cbde21c4",
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.25589v2",
+        "html": "https://arxiv.org/html/2607.25589",
+        "pdf": "https://arxiv.org/pdf/2607.25589v2"
+      }
+    },
+    {
+      "extraction_status": "metadata_only",
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "match_score": 30,
+      "source": "arxiv",
+      "related_agent_url": "",
+      "id": "arxiv:2607.28318",
+      "is_seed": true,
+      "event_at": "2026-07-30T14:53:51Z",
+      "published_at": "2026-07-30T14:53:51Z",
+      "priority": "P0",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "content_hash": "metadata:arxiv:2607.28318",
+      "related_benchmarks": [
+        "VQA"
+      ],
+      "evidence": [
+        {
+          "term": "We introduce PathVU, a vision-anchored benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "valuations provide limited insight into whether a model understands the multiscale visual content needed for pathology reasoning and decision-making. We introduce PathVU, a vision-anchored benchmark for fine-grained and multiscale visual understanding in computational pathology. Built from 23 public pathology imaging datasets with human-supervised labels and spatial annotations, PathVU evaluates MLLM understanding in two fields of vie",
+          "source_url": "https://arxiv.org/html/2607.28318"
+        },
+        {
+          "term": "benchmark contains",
+          "location": "Abstract / metadata",
+          "excerpt": "ables programmatic scoring of region localization, visual recognition, quantity estimation, spatial reasoning, and insufficient-context judgment. The benchmark contains 14 VQA-style tasks, 61,673 images, and 308,070 samples across 28 organs and 7,253,526 annotations. Evaluating 18 representative general-purpose, medical-domain, and pathology-oriented MLLMs, we observe substantial limitations even in advan",
+          "source_url": "https://arxiv.org/html/2607.28318"
+        },
+        {
+          "term": "programmatic scoring",
+          "location": "Abstract / metadata",
+          "excerpt": "igh-resolution local regions and Slide FOV for macro whole-slide views. By converting raw annotations into deterministic task targets, PathVU enables programmatic scoring of region localization, visual recognition, quantity estimation, spatial reasoning, and insufficient-context judgment. The benchmark contains 14 VQA-style tasks, 61,673 images, and 308,070 samples across 28 organs and 7,253,526 annotations",
+          "source_url": "https://arxiv.org/html/2607.28318"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "tanding of Pathology Images? Multimodal large language models (MLLMs) are increasingly used to analyze pathology images. However, dominant multimodal benchmarks in pathology mainly score final diagnostic answers, captions, or reports. These evaluations provide limited insight into whether a model understands the multiscale visual content needed for pathology reasoning and decision-making. We intr",
+          "source_url": "https://arxiv.org/html/2607.28318"
+        },
+        {
+          "term": "benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "tanding of Pathology Images? Multimodal large language models (MLLMs) are increasingly used to analyze pathology images. However, dominant multimodal benchmarks in pathology mainly score final diagnostic answers, captions, or reports. These evaluations provide limited insight into whether a model understands the multiscale visual content needed for pathology reasoning and decision-making. We intro",
+          "source_url": "https://arxiv.org/html/2607.28318"
+        },
+        {
+          "term": "medical",
+          "location": "Abstract / metadata",
+          "excerpt": "ains 14 VQA-style tasks, 61,673 images, and 308,070 samples across 28 organs and 7,253,526 annotations. Evaluating 18 representative general-purpose, medical-domain, and pathology-oriented MLLMs, we observe substantial limitations even in advanced models on fine-grained visual tasks across multiscale pathology images. PathVU provides a reproducible basis for developing and evaluating pathology",
+          "source_url": "https://arxiv.org/html/2607.28318"
+        },
+        {
+          "term": "pathology",
+          "location": "Abstract / metadata",
+          "excerpt": "PathView-Bench: Can Multimodal Large Language Models Achieve Fine-grained Multiscale Understanding of Pathology Images? Multimodal large language models (MLLMs) are increasingly used to analyze pathology images. However, dominant multimodal benchmarks in pathology mainly score final diagnostic answers, captions, or reports. These evaluations provide",
+          "source_url": "https://arxiv.org/html/2607.28318"
+        },
+        {
+          "term": "Multimodal",
+          "location": "Abstract / metadata",
+          "excerpt": "PathView-Bench: Can Multimodal Large Language Models Achieve Fine-grained Multiscale Understanding of Pathology Images? Multimodal large language models (MLLMs) are increasingly used to analyze pathology images. However, dominant multimodal benchmarks in pathology mainl",
+          "source_url": "https://arxiv.org/html/2607.28318"
+        }
+      ],
+      "identifiers": {
+        "arxiv": "2607.28318"
+      },
+      "license": "",
+      "abstract": "Multimodal large language models (MLLMs) are increasingly used to analyze pathology images. However, dominant multimodal benchmarks in pathology mainly score final diagnostic answers, captions, or reports. These evaluations provide limited insight into whether a model understands the multiscale visual content needed for pathology reasoning and decision-making. We introduce PathVU, a vision-anchored benchmark for fine-grained and multiscale visual understanding in computational pathology. Built from 23 public pathology imaging datasets with human-supervised labels and spatial annotations, PathVU evaluates MLLM understanding in two fields of view: Region FOV for high-resolution local regions and Slide FOV for macro whole-slide views. By converting raw annotations into deterministic task targets, PathVU enables programmatic scoring of region localization, visual recognition, quantity estimation, spatial reasoning, and insufficient-context judgment. The benchmark contains 14 VQA-style tasks, 61,673 images, and 308,070 samples across 28 organs and 7,253,526 annotations. Evaluating 18 representative general-purpose, medical-domain, and pathology-oriented MLLMs, we observe substantial limitations even in advanced models on fine-grained visual tasks across multiscale pathology images. PathVU provides a reproducible basis for developing and evaluating pathology MLLMs with explicit multiscale visual understanding.",
+      "extraction_error": "",
+      "authors": [
+        "Zongyi Chen",
+        "Yu Liang",
+        "Jie Lin",
+        "Liansheng Wang"
+      ],
+      "categories": [
+        "multimodal"
+      ],
+      "kind": "paper",
+      "first_seen_at": "2026-07-30T14:53:51Z",
+      "title": "PathView-Bench: Can Multimodal Large Language Models Achieve Fine-grained Multiscale Understanding of Pathology Images?",
+      "updated_at": "2026-07-30T14:53:51Z",
+      "slug": "arxiv-2607-28318-16a97c5092",
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "links": {
+        "abs": "https://arxiv.org/abs/2607.28318v1",
+        "html": "https://arxiv.org/html/2607.28318",
+        "pdf": "https://arxiv.org/pdf/2607.28318v1"
+      }
+    },
+    {
+      "extraction_status": "metadata_only",
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "match_score": 19,
+      "source": "arxiv",
+      "related_agent_url": "",
+      "id": "arxiv:2608.25114",
+      "is_seed": true,
+      "event_at": "2026-08-25T20:09:44Z",
+      "published_at": "2026-08-25T20:09:44Z",
+      "priority": "P0",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "content_hash": "metadata:arxiv:2608.25114",
+      "related_benchmarks": [],
+      "evidence": [
+        {
+          "term": "Reproducible Benchmarking Platform",
+          "location": "Abstract / metadata",
+          "excerpt": "Flower Hub: A Reproducible Benchmarking Platform for Federated Learning in Simulation and Deployment Federated learning (FL) has emerged as a key approach for training models across decentralized data, yet benchmarking in FL remains difficult to reproduce, compare, and extend. Existing e",
+          "source_url": "https://arxiv.org/html/2608.25114"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "Flower Hub: A Reproducible Benchmarking Platform for Federated Learning in Simulation and Deployment Federated learning (FL) has emerged as a key approach for training models across decentralized data, yet benchmarking in FL remains difficult to reproduce, compare, and extend",
+          "source_url": "https://arxiv.org/html/2608.25114"
+        },
+        {
+          "term": "benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "rm for publishing, discovering, and executing decentralized and federated applications. We show how it enables reproducible benchmarking by packaging benchmarks as executable, versioned applications with standardized metadata, pinned dependencies, and explicit evaluation workflows. We instantiate this approach with a multi-domain benchmark suite spanning cross-silo and cross-device settings, and i",
+          "source_url": "https://arxiv.org/html/2608.25114"
+        },
+        {
+          "term": "benchmarking",
+          "location": "Abstract / metadata",
+          "excerpt": "Flower Hub: A Reproducible Benchmarking Platform for Federated Learning in Simulation and Deployment Federated learning (FL) has emerged as a key approach for training models across decentralized data, yet benchmarking in FL remains difficult to reproduce, compare, and extend. E",
+          "source_url": "https://arxiv.org/html/2608.25114"
+        },
+        {
+          "term": "medical",
+          "location": "Abstract / metadata",
+          "excerpt": "ion workflows. We instantiate this approach with a multi-domain benchmark suite spanning cross-silo and cross-device settings, and including tasks in medical imaging, financial tabular learning, legal instruction tuning, phishing URL detection, and audio tagging. We further demonstrate that the same benchmarking application can run across both simulation and deployment runtimes without changing",
+          "source_url": "https://arxiv.org/html/2608.25114"
+        },
+        {
+          "term": "medical imaging",
+          "location": "Abstract / metadata",
+          "excerpt": "ion workflows. We instantiate this approach with a multi-domain benchmark suite spanning cross-silo and cross-device settings, and including tasks in medical imaging, financial tabular learning, legal instruction tuning, phishing URL detection, and audio tagging. We further demonstrate that the same benchmarking application can run across both simulation and deployment runtimes without changing the app",
+          "source_url": "https://arxiv.org/html/2608.25114"
+        }
+      ],
+      "identifiers": {
+        "arxiv": "2608.25114"
+      },
+      "license": "",
+      "abstract": "Federated learning (FL) has emerged as a key approach for training models across decentralized data, yet benchmarking in FL remains difficult to reproduce, compare, and extend. Existing evaluations are often tied to custom infrastructure, released as incomplete research code, and conducted primarily in simulation, which limits portability and practical relevance. We present Flower Hub, a platform for publishing, discovering, and executing decentralized and federated applications. We show how it enables reproducible benchmarking by packaging benchmarks as executable, versioned applications with standardized metadata, pinned dependencies, and explicit evaluation workflows. We instantiate this approach with a multi-domain benchmark suite spanning cross-silo and cross-device settings, and including tasks in medical imaging, financial tabular learning, legal instruction tuning, phishing URL detection, and audio tagging. We further demonstrate that the same benchmarking application can run across both simulation and deployment runtimes without changing the application code, enabling unified evaluation across varying learning environments. Beyond model quality, our benchmark design supports system-aware reporting, including runtime and communication metrics. This work advances benchmarking in FL settings from ad hoc code artifacts towards portable, executable, and reusable benchmark applications.",
+      "extraction_error": "",
+      "authors": [
+        "Yan Gao",
+        "Mohammad Naseri",
+        "Javier Fernandez-Marques",
+        "Dimitris Stripelis",
+        "Lorenzo Sani",
+        "Davide Eynard",
+        "Fan Zhang",
+        "Hong Jia",
+        "Ting Dang",
+        "D. B. Emerson",
+        "Fatemeh Tavakoli",
+        "Ole Werger",
+        "Lars Wulfert",
+        "Petros Demetrakopoulos",
+        "Sofia Tsekeridou",
+        "InSeo Song",
+        "KangYoon Lee",
+        "Honghao Li",
+        "Lingjuan Lyu",
+        "John P Dickerson",
+        "Daniel Janes Beutel",
+        "Nicholas D. Lane"
+      ],
+      "categories": [
+        "general_text"
+      ],
+      "kind": "paper",
+      "first_seen_at": "2026-08-25T20:09:44Z",
+      "title": "Flower Hub: A Reproducible Benchmarking Platform for Federated Learning in Simulation and Deployment",
+      "updated_at": "2026-08-25T20:09:44Z",
+      "slug": "arxiv-2608-25114-3f8d2598a5",
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.25114v1",
+        "html": "https://arxiv.org/html/2608.25114",
+        "pdf": "https://arxiv.org/pdf/2608.25114v1"
+      }
+    },
+    {
+      "extraction_status": "metadata_only",
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "match_score": 21,
+      "source": "europepmc",
+      "related_agent_url": "",
+      "id": "doi:10.1038/s41746-025-02208-7",
+      "is_seed": true,
+      "event_at": "2025-12-06T00:00:00Z",
+      "published_at": "2025-12-06T00:00:00Z",
+      "priority": "P0",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "content_hash": "metadata:doi:10.1038/s41746-025-02208-7",
+      "related_benchmarks": [],
+      "evidence": [
+        {
+          "term": "we present MedThink-Bench",
+          "location": "Abstract / metadata",
+          "excerpt": "ical reasoning capability either suffer from unsatisfactory assessment or poor scalability, and a rigorous benchmark remains absent. To address this, we present MedThink-Bench, a benchmark designed for rigorous and scalable assessment of LLMs' medical reasoning. MedThink-Bench comprises 500 high-complexity questions spanning ten medical domains, accompanied by expert-authored, step-by-step rationales that elucid",
+          "source_url": "https://europepmc.org/article/MED/41353516"
+        },
+        {
+          "term": "we present MedThink-Bench, a benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "ical reasoning capability either suffer from unsatisfactory assessment or poor scalability, and a rigorous benchmark remains absent. To address this, we present MedThink-Bench, a benchmark designed for rigorous and scalable assessment of LLMs' medical reasoning. MedThink-Bench comprises 500 high-complexity questions spanning ten medical domains, accompanied by expert-authored, step-by-step rationales that elucidate intermedi",
+          "source_url": "https://europepmc.org/article/MED/41353516"
+        },
+        {
+          "term": "introduce LLM-w-Rationale, an evaluation framework that combines fine-grained rationale assessment with an LLM-as-a-Judge",
+          "location": "Abstract / metadata",
+          "excerpt": "ns spanning ten medical domains, accompanied by expert-authored, step-by-step rationales that elucidate intermediate reasoning processes. Further, we introduce LLM-w-Rationale, an evaluation framework that combines fine-grained rationale assessment with an LLM-as-a-Judge paradigm, enabling expert-level fidelity in evaluating reasoning quality while preserving scalability. Results show that LLM-w-Rationale correlates strongly with expert evaluation (Pearson coefficient up to 0.87) while requiring only 1.4%",
+          "source_url": "https://europepmc.org/article/MED/41353516"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "current evaluation strategies of LLMs' medical reasoning capability either suffer from unsatisfactory assessment or poor scalability, and a rigorous benchmark remains absent. To address this, we present MedThink-Bench, a benchmark designed for rigorous and scalable assessment of LLMs' medical reasoning. MedThink-Bench comprises 500 high-complexity questions spanning ten medical domains, accompan",
+          "source_url": "https://europepmc.org/article/MED/41353516"
+        },
+        {
+          "term": "medical",
+          "location": "Abstract / metadata",
+          "excerpt": "Automating expert-level medical reasoning evaluation of large language models. As large language models (LLMs) become increasingly integrated into clinical decision-making, ensuring trustworthy reasoning is paramount. However, current evaluation strategies of LLMs' medic",
+          "source_url": "https://europepmc.org/article/MED/41353516"
+        },
+        {
+          "term": "clinical",
+          "location": "Abstract / metadata",
+          "excerpt": "Automating expert-level medical reasoning evaluation of large language models. As large language models (LLMs) become increasingly integrated into clinical decision-making, ensuring trustworthy reasoning is paramount. However, current evaluation strategies of LLMs' medical reasoning capability either suffer from unsatisfactory assessment or poor scalability, and a rigorous benchmark remains a",
+          "source_url": "https://europepmc.org/article/MED/41353516"
+        }
+      ],
+      "identifiers": {
+        "doi": "10.1038/s41746-025-02208-7",
+        "pmid": "41353516",
+        "pmcid": "PMC12796170"
+      },
+      "license": "cc by",
+      "abstract": "As large language models (LLMs) become increasingly integrated into clinical decision-making, ensuring trustworthy reasoning is paramount. However, current evaluation strategies of LLMs' medical reasoning capability either suffer from unsatisfactory assessment or poor scalability, and a rigorous benchmark remains absent. To address this, we present MedThink-Bench, a benchmark designed for rigorous and scalable assessment of LLMs' medical reasoning. MedThink-Bench comprises 500 high-complexity questions spanning ten medical domains, accompanied by expert-authored, step-by-step rationales that elucidate intermediate reasoning processes. Further, we introduce LLM-w-Rationale, an evaluation framework that combines fine-grained rationale assessment with an LLM-as-a-Judge paradigm, enabling expert-level fidelity in evaluating reasoning quality while preserving scalability. Results show that LLM-w-Rationale correlates strongly with expert evaluation (Pearson coefficient up to 0.87) while requiring only 1.4% of the evaluation time. Overall, MedThink-Bench establishes a rigorous and scalable standard for evaluating medical reasoning in LLMs, advancing their safe and responsible deployment in clinical practice.",
+      "extraction_error": "",
+      "authors": [
+        "Zhou S",
+        "Xie W",
+        "Li J",
+        "Zhan Z",
+        "Song M",
+        "Yang H",
+        "Espinoza C",
+        "Welton L",
+        "Mai X",
+        "Jin Y",
+        "Xu Z",
+        "Chung YH",
+        "Xing Y",
+        "Tsai MH",
+        "Schaffer E",
+        "Shi Y",
+        "Liu N",
+        "Liu Z",
+        "Zhang R."
+      ],
+      "categories": [
+        "general_text"
+      ],
+      "kind": "paper",
+      "first_seen_at": "2025-12-06T00:00:00Z",
+      "title": "Automating expert-level medical reasoning evaluation of large language models.",
+      "updated_at": "2025-12-08T00:00:00Z",
+      "slug": "doi-10-1038-s41746-025-02208-7-8830dd669a",
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "links": {
+        "abs": "https://europepmc.org/article/MED/41353516",
+        "html": "https://europepmc.org/article/MED/41353516"
+      }
+    },
+    {
+      "extraction_status": "metadata_only",
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "match_score": 20,
+      "source": "europepmc",
+      "related_agent_url": "",
+      "id": "doi:10.1038/s41746-026-02567-9",
+      "is_seed": true,
+      "event_at": "2026-03-31T00:00:00Z",
+      "published_at": "2026-03-31T00:00:00Z",
+      "priority": "P0",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "content_hash": "metadata:doi:10.1038/s41746-026-02567-9",
+      "related_benchmarks": [],
+      "evidence": [
+        {
+          "term": "developing medical benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "Structured taxonomy and framework for developing medical benchmark in large language models derived from scoping review. With the rapid advancement of large language model technology, numerous studies have explored its application in the medical field. Robust evaluation is crucial for ensuring reliability",
+          "source_url": "https://europepmc.org/article/MED/41917165"
+        },
+        {
+          "term": "benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "development framework built on five principles - Reliable, Ethical, Annotated, Diverse, Yield-validated - to support the systematic design of medical benchmarks and strengthen future evaluation practices. To establish the taxonomy and framework, we systematically reviewed benchmark datasets designed for evaluating LLMs in medical context. A comprehensive literature search yielded 55 relevant studi",
+          "source_url": "https://europepmc.org/article/MED/41917165"
+        },
+        {
+          "term": "medical",
+          "location": "Abstract / metadata",
+          "excerpt": "Structured taxonomy and framework for developing medical benchmark in large language models derived from scoping review. With the rapid advancement of large language model technology, numerous studies have explored its application in the medical field. Robust evaluation is crucial for ensuring r",
+          "source_url": "https://europepmc.org/article/MED/41917165"
+        },
+        {
+          "term": "clinical",
+          "location": "Abstract / metadata",
+          "excerpt": "agreement. We anticipate that this research will promote more rigorous and ethical LLM evaluation, paving the way for the safe application of LLMs in clinical settings. With the rapid advancement of large language model technology, numerous studies have explored its application in the medical field. Robust evaluation is crucial for ensuring reliability and safety, leading to the development of d",
+          "source_url": "https://europepmc.org/article/MED/41917165"
+        }
+      ],
+      "identifiers": {
+        "doi": "10.1038/s41746-026-02567-9",
+        "pmid": "41917165"
+      },
+      "license": "",
+      "abstract": "With the rapid advancement of large language model technology, numerous studies have explored its application in the medical field. Robust evaluation is crucial for ensuring reliability and safety, leading to the development of diverse benchmark datasets. In this study, we propose a structured taxonomy to provide researchers with practical guidance for benchmark selection. Furthermore, we introduce READY, a development framework built on five principles - Reliable, Ethical, Annotated, Diverse, Yield-validated - to support the systematic design of medical benchmarks and strengthen future evaluation practices. To establish the taxonomy and framework, we systematically reviewed benchmark datasets designed for evaluating LLMs in medical context. A comprehensive literature search yielded 55 relevant studies. Each benchmark was analyzed using a structured framework encompassing the dataset construction and evaluation methodology. To assess the applicability of the proposed framework, five domain experts independently applied the READY framework to benchmark studies, demonstrating consistent inter-rater agreement. We anticipate that this research will promote more rigorous and ethical LLM evaluation, paving the way for the safe application of LLMs in clinical settings.",
+      "extraction_error": "",
+      "authors": [
+        "Lee J",
+        "Shin J",
+        "Cho B."
+      ],
+      "categories": [
+        "general_text"
+      ],
+      "kind": "paper",
+      "first_seen_at": "2026-03-31T00:00:00Z",
+      "title": "Structured taxonomy and framework for developing medical benchmark in large language models derived from scoping review.",
+      "updated_at": "2026-04-01T00:00:00Z",
+      "slug": "doi-10-1038-s41746-026-02567-9-a906708679",
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "links": {
+        "abs": "https://europepmc.org/article/MED/41917165"
+      }
+    },
+    {
+      "extraction_status": "metadata_only",
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "match_score": 31,
+      "source": "europepmc",
+      "related_agent_url": "",
+      "id": "doi:10.1039/d6sc01799a",
+      "is_seed": true,
+      "event_at": "2026-07-22T00:00:00Z",
+      "published_at": "2026-07-22T00:00:00Z",
+      "priority": "P2",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "content_hash": "metadata:doi:10.1039/d6sc01799a",
+      "related_benchmarks": [],
+      "evidence": [
+        {
+          "term": "Auditing widely used biomolecular benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "Auditing widely used biomolecular benchmarks reveals systematic data inconsistencies. Machine learning accelerates molecular discovery and relies heavily on standardised benchmark datasets to evaluate computational performance. To learn transferable structure-activity relationships (",
+          "source_url": "https://europepmc.org/article/MED/42540466"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "Auditing widely used biomolecular benchmarks reveals systematic data inconsistencies. Machine learning accelerates molecular discovery and relies heavily on standardised benchmark datasets to evaluate computational performance. To learn transferable structure-activity relationships",
+          "source_url": "https://europepmc.org/article/MED/42540466"
+        },
+        {
+          "term": "benchmarking",
+          "location": "Abstract / metadata",
+          "excerpt": "akage and structural inconsistencies across widely used biomolecular benchmarks. Here, we demonstrate that several prominent chemical and biochemical benchmarking suites have pervasive cross-split contamination, unresolved label conflicts, and severe structural redundancies. By auditing over fifty dataset configurations, we reveal that tasks previously considered robust evaluation environments often",
+          "source_url": "https://europepmc.org/article/MED/42540466"
+        },
+        {
+          "term": "test set",
+          "location": "Abstract / metadata",
+          "excerpt": "rics. A complementary counterfactual leaderboard analysis further shows that leading-model conclusions can change when the audited composition of the test set is altered, particularly when label conflicts are enriched. These findings suggest that many leaderboard and leading-model conclusions should be interpreted in light of benchmark composition and data quality, rather than as automatic evide",
+          "source_url": "https://europepmc.org/article/MED/42540466"
+        },
+        {
+          "term": "leaderboard",
+          "location": "Abstract / metadata",
+          "excerpt": "n overlap. Controlled noise-injection experiments show that these artefacts can systematically bias benchmark metrics. A complementary counterfactual leaderboard analysis further shows that leading-model conclusions can change when the audited composition of the test set is altered, particularly when label conflicts are enriched. These findings suggest that many leaderboard and leading-model conclu",
+          "source_url": "https://europepmc.org/article/MED/42540466"
+        },
+        {
+          "term": "biological",
+          "location": "Abstract / metadata",
+          "excerpt": "l performance. To learn transferable structure-activity relationships (SARs), models must be trained on datasets that accurately reflect chemical and biological realities without introducing artificial redundancies. Although standardised benchmarks are ubiquitous, the integrity of their underlying data is often assumed rather than rigorously verified. Currently, there is a lack of systematic and q",
+          "source_url": "https://europepmc.org/article/MED/42540466"
+        },
+        {
+          "term": "protein",
+          "location": "Abstract / metadata",
+          "excerpt": "t tasks previously considered robust evaluation environments often have hidden flaws, particularly in drug-target interaction datasets with extensive protein overlap. Controlled noise-injection experiments show that these artefacts can systematically bias benchmark metrics. A complementary counterfactual leaderboard analysis further shows that leading-model conclusions can change when the audit",
+          "source_url": "https://europepmc.org/article/MED/42540466"
+        },
+        {
+          "term": "molecular",
+          "location": "Abstract / metadata",
+          "excerpt": "Auditing widely used biomolecular benchmarks reveals systematic data inconsistencies. Machine learning accelerates molecular discovery and relies heavily on standardised benchmark datasets to evaluate computational performance. To learn transferable structure-activity rela",
+          "source_url": "https://europepmc.org/article/MED/42540466"
+        }
+      ],
+      "identifiers": {
+        "doi": "10.1039/d6sc01799a",
+        "pmid": "42540466"
+      },
+      "license": "",
+      "abstract": "Machine learning accelerates molecular discovery and relies heavily on standardised benchmark datasets to evaluate computational performance. To learn transferable structure-activity relationships (SARs), models must be trained on datasets that accurately reflect chemical and biological realities without introducing artificial redundancies. Although standardised benchmarks are ubiquitous, the integrity of their underlying data is often assumed rather than rigorously verified. Currently, there is a lack of systematic and quantitative assessments of hidden data leakage and structural inconsistencies across widely used biomolecular benchmarks. Here, we demonstrate that several prominent chemical and biochemical benchmarking suites have pervasive cross-split contamination, unresolved label conflicts, and severe structural redundancies. By auditing over fifty dataset configurations, we reveal that tasks previously considered robust evaluation environments often have hidden flaws, particularly in drug-target interaction datasets with extensive protein overlap. Controlled noise-injection experiments show that these artefacts can systematically bias benchmark metrics. A complementary counterfactual leaderboard analysis further shows that leading-model conclusions can change when the audited composition of the test set is altered, particularly when label conflicts are enriched. These findings suggest that many leaderboard and leading-model conclusions should be interpreted in light of benchmark composition and data quality, rather than as automatic evidence of robust methodological superiority. Our findings highlight the importance of auditing evaluations, reporting chemically meaningful test-set composition, and using leakage-resistant data splits to accurately measure model generalisability. Moving from uncritical leaderboard optimisation to rigorous dataset auditing will yield more reliable computational tools. Ultimately, this will ensure that artificial intelligence models can be reliably translated into real-world applications in therapeutic design.",
+      "extraction_error": "",
+      "authors": [
+        "Schuh MG",
+        "Daniluk A",
+        "Sieber SA."
+      ],
+      "categories": [
+        "general_text"
+      ],
+      "kind": "paper",
+      "first_seen_at": "2026-07-22T00:00:00Z",
+      "title": "Auditing widely used biomolecular benchmarks reveals systematic data inconsistencies.",
+      "updated_at": "2026-08-03T00:00:00Z",
+      "slug": "doi-10-1039-d6sc01799a-76c2a63088",
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "links": {
+        "abs": "https://europepmc.org/article/MED/42540466"
+      }
+    },
+    {
+      "extraction_status": "metadata_only",
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "match_score": 27,
+      "source": "europepmc",
+      "related_agent_url": "",
+      "id": "doi:10.1093/bioinformatics/btag608",
+      "is_seed": true,
+      "event_at": "2026-08-20T00:00:00Z",
+      "published_at": "2026-08-20T00:00:00Z",
+      "priority": "P2",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "content_hash": "metadata:doi:10.1093/bioinformatics/btag608",
+      "related_benchmarks": [],
+      "evidence": [
+        {
+          "term": "assess the impact of data leakage",
+          "location": "Abstract / metadata",
+          "excerpt": "and test sets, (2) the model leverages illegitimate features, or (3) the test set does not accurately reflect real-world inference.<h4>Results</h4>We assess the impact of data leakage on KGE-based link prediction across three biomedical knowledge graphs, using decoder-only and GNN-based models. We first demonstrate the impact of train-test redundancies and implement a systematic procedure to detect and remove them. Usin",
+          "source_url": "https://europepmc.org/article/MED/42623034"
+        },
+        {
+          "term": "Benchmarking the Impact of Data Leakage",
+          "location": "Abstract / metadata",
+          "excerpt": "Benchmarking the Impact of Data Leakage on the Performance of Knowledge Graph Embedding Models for Biomedical Link Prediction. <h4>Motivation</h4>Knowledge Graphs (KGs) organize complex biomedical knowledge into structured representations of entities and relations. Knowledge Gra",
+          "source_url": "https://europepmc.org/article/MED/42623034"
+        },
+        {
+          "term": "inflate performance and undermine benchmark validity",
+          "location": "Abstract / metadata",
+          "excerpt": "iomedical link prediction. Despite extensive work on KGE models, current evaluations often overlook the issue of data leakage, which can artificially inflate performance and undermine benchmark validity. Data leakage can arise when (1) there is redundancy between training and test sets, (2) the model leverages illegitimate features, or (3) the test set does not accurately reflect real-world inference.<h4>Results</h4>We assess the impact o",
+          "source_url": "https://europepmc.org/article/MED/42623034"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "Benchmarking the Impact of Data Leakage on the Performance of Knowledge Graph Embedding Models for Biomedical Link Prediction. <h4>Motivation</h4>Knowledge Graphs (KGs) organize complex biomedical knowledge into structured representations of entitie",
+          "source_url": "https://europepmc.org/article/MED/42623034"
+        },
+        {
+          "term": "benchmarking",
+          "location": "Abstract / metadata",
+          "excerpt": "Benchmarking the Impact of Data Leakage on the Performance of Knowledge Graph Embedding Models for Biomedical Link Prediction. <h4>Motivation</h4>Knowledge Graphs (KGs) organize complex biomedical knowledge into structured representations of entities a",
+          "source_url": "https://europepmc.org/article/MED/42623034"
+        },
+        {
+          "term": "test set",
+          "location": "Abstract / metadata",
+          "excerpt": "which can artificially inflate performance and undermine benchmark validity. Data leakage can arise when (1) there is redundancy between training and test sets, (2) the model leverages illegitimate features, or (3) the test set does not accurately reflect real-world inference.<h4>Results</h4>We assess the impact of data leakage on KGE-based link prediction across three biomedical knowledge graph",
+          "source_url": "https://europepmc.org/article/MED/42623034"
+        },
+        {
+          "term": "biomedical",
+          "location": "Abstract / metadata",
+          "excerpt": "Benchmarking the Impact of Data Leakage on the Performance of Knowledge Graph Embedding Models for Biomedical Link Prediction. <h4>Motivation</h4>Knowledge Graphs (KGs) organize complex biomedical knowledge into structured representations of entities and relations. Knowledge Graph Embedding (KGE) models learn compact representations of KGs, and ar",
+          "source_url": "https://europepmc.org/article/MED/42623034"
+        }
+      ],
+      "identifiers": {
+        "doi": "10.1093/bioinformatics/btag608",
+        "pmid": "42623034"
+      },
+      "license": "",
+      "abstract": "<h4>Motivation</h4>Knowledge Graphs (KGs) organize complex biomedical knowledge into structured representations of entities and relations. Knowledge Graph Embedding (KGE) models learn compact representations of KGs, and are widely applied for biomedical link prediction. Despite extensive work on KGE models, current evaluations often overlook the issue of data leakage, which can artificially inflate performance and undermine benchmark validity. Data leakage can arise when (1) there is redundancy between training and test sets, (2) the model leverages illegitimate features, or (3) the test set does not accurately reflect real-world inference.<h4>Results</h4>We assess the impact of data leakage on KGE-based link prediction across three biomedical knowledge graphs, using decoder-only and GNN-based models. We first demonstrate the impact of train-test redundancies and implement a systematic procedure to detect and remove them. Using permutation experiments, we also investigate whether node degree acts as an illegitimate predictive feature, and find no evidence that predictions are driven by degree alone. Finally, we evaluate how well common test set sampling strategies reflect real-world inference in drug repurposing. We compare random and cold-start data splits with an independent test set from Orphanet, and observe a substantial performance drop on the latter, indicating that current benchmarking practices may overestimate how well KGE models generalize to practical applications. Overall, our findings highlight the importance of rigorous benchmark design and careful evaluation of the generalization ability of KGE models for biomedical link prediction.<h4>Availability and implementation</h4>Code and results are openly available on GitHub at https://github.com/galadrielbriere/data_leakage_kge_benchmark.git and archived on Zenodo at https://doi.org/10.5281/zenodo.21885112.<h4>Supplementary information</h4>Supplementary data are available.",
+      "extraction_error": "",
+      "authors": [
+        "Bri Ere G",
+        "Stosskopf T",
+        "Loire B",
+        "Baudot A."
+      ],
+      "categories": [
+        "general_text"
+      ],
+      "kind": "paper",
+      "first_seen_at": "2026-08-20T00:00:00Z",
+      "title": "Benchmarking the Impact of Data Leakage on the Performance of Knowledge Graph Embedding Models for Biomedical Link Prediction.",
+      "updated_at": "2026-08-22T00:00:00Z",
+      "slug": "doi-10-1093-bioinformatics-btag608-66869c13c7",
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "links": {
+        "abs": "https://europepmc.org/article/MED/42623034"
+      }
+    },
+    {
+      "extraction_status": "metadata_only",
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "match_score": 16,
+      "source": "europepmc",
+      "related_agent_url": "",
+      "id": "doi:10.21203/rs.3.rs-10064275/v1",
+      "is_seed": true,
+      "event_at": "2026-07-06T00:00:00Z",
+      "published_at": "2026-07-06T00:00:00Z",
+      "priority": "P2",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "content_hash": "metadata:doi:10.21203/rs.3.rs-10064275/v1",
+      "related_benchmarks": [
+        "PubMedQA"
+      ],
+      "evidence": [
+        {
+          "term": "Benchmark Audit",
+          "location": "Abstract / metadata",
+          "excerpt": "Can Large Language Models Detect Contradicted Biomedical Evidence? A Dual-Annotator Benchmark Audit <title>Abstract</title> <p>Background: Biomedical question answering systems increasingly use retrieval-augmented generation, yet generated answers may be unsupported by, or actively contradict, retrieved evidence. In the configurations t",
+          "source_url": "https://europepmc.org/article/PPR/PPR1274755"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "Can Large Language Models Detect Contradicted Biomedical Evidence? A Dual-Annotator Benchmark Audit <title>Abstract</title> <p>Background: Biomedical question answering systems increasingly use retrieval-augmented generation, yet generated answers may be unsupported by, or actively contradict, retrieved evidence. In the configurat",
+          "source_url": "https://europepmc.org/article/PPR/PPR1274755"
+        },
+        {
+          "term": "biomedical",
+          "location": "Abstract / metadata",
+          "excerpt": "Can Large Language Models Detect Contradicted Biomedical Evidence? A Dual-Annotator Benchmark Audit <title>Abstract</title> <p>Background: Biomedical question answering systems increasingly use retrieval-augmented generation, yet generated answers may be unsupported by, or actively contradict,",
+          "source_url": "https://europepmc.org/article/PPR/PPR1274755"
+        },
+        {
+          "term": "clinical",
+          "location": "Abstract / metadata",
+          "excerpt": "tradicted cases into insufficient. Current LLM-based verification may support offline audit and system comparison, but these results do not establish clinical readiness for autonomous contradiction screening.</p> <title>Abstract</title> <p>Background: Biomedical question answering systems increasingly use retrieval-augmented generation, yet generated answers may be unsupported by, or actively c",
+          "source_url": "https://europepmc.org/article/PPR/PPR1274755"
+        }
+      ],
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-10064275/v1"
+      },
+      "license": "cc by",
+      "abstract": "<title>Abstract</title>  <p>Background: Biomedical question answering systems increasingly use retrieval-augmented generation, yet generated answers may be unsupported by, or actively contradict, retrieved evidence. In the configurations tested in this study, all LLM verifiers substantially under-detected gold contradictions, with the best automated recall only 5/23 (21.7%). We audited this failure mode and tested whether knowledge-graph-guided reranking improved answer accuracy. <h4>Methods:</h4> We evaluated KG-guided reranking (KG-RRAG) against standard RAG on 300 PubMedQA questions. We also constructed Set B (n = 150) for evidence-answer verification: supported = 81, insufficient = 46, contradicted = 23. Verifiers included GPT-5.5, DeepSeek-v4-pro and glm-5.1 prompt configurations, DistilBERT-MNLI, PubMedBERT-MedNLI, rule-based, hybrid, and proxy baselines. A second human annotator provided a blind first-pass sample and a focused contradiction review. <h4>Results:</h4> KG-RRAG did not improve answer accuracy (0.500 vs. 0.510; McNemar p = 0.766; 95% CI for \\((\\Delta)\\)[\\((-)\\)0.053, +0.033]). The best automated configuration, E1-glm-5.1, detected 5/23 contradictions (Wilson 95% CI [9.6%, 42.2%]). GPT-5.5 achieved three-way accuracy 0.6067, macro-F1 0.5216, \\((\\kappa)\\) = 0.3566, and contradiction recall 4/23 (Wilson 95% CI [6.9%, 36.8%]). DeepSeek E1 detected 3/23, DeepSeek V2.1 detected 1/23, and PubMedBERT-MedNLI detected 2/23 contradictions. Human2 detected 0/7 contradictions in a blind sample30 first pass but 13/23 in a focused, known-contradiction review; these protocols are not directly comparable. H2-vs-GPT-5.5 \\((\\kappa)\\) = 0.6053 reflected shared conservative agreement rather than correctness validation. <h4>Conclusions:</h4> The tested automated verifiers showed substantial contradiction under-detection, mainly absorbing contradicted cases into insufficient. Current LLM-based verification may support offline audit and system comparison, but these results do not establish clinical readiness for autonomous contradiction screening.</p>",
+      "extraction_error": "",
+      "authors": [
+        "Chen x."
+      ],
+      "categories": [
+        "general_text"
+      ],
+      "kind": "paper",
+      "first_seen_at": "2026-07-06T00:00:00Z",
+      "title": "Can Large Language Models Detect Contradicted Biomedical Evidence? A Dual-Annotator Benchmark Audit",
+      "updated_at": "2026-07-09T00:00:00Z",
+      "slug": "doi-10-21203-rs-3-rs-10064275-v1-1bfa1a9a43",
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1274755"
+      }
+    },
+    {
+      "extraction_status": "metadata_only",
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "match_score": 46,
+      "source": "europepmc",
+      "related_agent_url": "",
+      "id": "doi:10.64898/2026.04.06.716850",
+      "is_seed": true,
+      "event_at": "2026-04-09T00:00:00Z",
+      "published_at": "2026-04-09T00:00:00Z",
+      "priority": "P0",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "content_hash": "metadata:doi:10.64898/2026.04.06.716850",
+      "related_benchmarks": [
+        "CompBioBench"
+      ],
+      "evidence": [
+        {
+          "term": "we propose a new benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "n, biological data are inherently noisy and open to interpretation. To enable objective evaluation without reducing tasks to prescriptive checklists, we propose a new benchmark construction strategy based on synthetic/augmented data and metadata scrambling/scrubbing of real datasets to create challenging problems that have a single ground-truth answer and require multi-step reasoning, tool use, bespoke code, and",
+          "source_url": "https://europepmc.org/article/PPR/PPR1212822"
+        },
+        {
+          "term": "We introduce CompBioBench",
+          "location": "Abstract / metadata",
+          "excerpt": "Agentic systems are adept at solving well-scoped, verifiable problems in computational biology We introduce CompBioBench, a benchmark of 100 diverse tasks for evaluating agentic systems in computational biology. Unlike mathematics and programming, which more readily admit systematic verification, biological data are inherently noisy and open to interpretatio",
+          "source_url": "https://europepmc.org/article/PPR/PPR1212822"
+        },
+        {
+          "term": "We introduce CompBioBench, a benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "Agentic systems are adept at solving well-scoped, verifiable problems in computational biology We introduce CompBioBench, a benchmark of 100 diverse tasks for evaluating agentic systems in computational biology. Unlike mathematics and programming, which more readily admit systematic verification, biological data are inherently noisy and open to interpretation. To enable",
+          "source_url": "https://europepmc.org/article/PPR/PPR1212822"
+        },
+        {
+          "term": "new benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "data are inherently noisy and open to interpretation. To enable objective evaluation without reducing tasks to prescriptive checklists, we propose a new benchmark construction strategy based on synthetic/augmented data and metadata scrambling/scrubbing of real datasets to create challenging problems that have a single ground-truth answer and require multi-step reasoning, tool use, bespoke code, and",
+          "source_url": "https://europepmc.org/article/PPR/PPR1212822"
+        },
+        {
+          "term": "benchmark construction strategy",
+          "location": "Abstract / metadata",
+          "excerpt": "a are inherently noisy and open to interpretation. To enable objective evaluation without reducing tasks to prescriptive checklists, we propose a new benchmark construction strategy based on synthetic/augmented data and metadata scrambling/scrubbing of real datasets to create challenging problems that have a single ground-truth answer and require multi-step reasoning, tool use, bespoke code, and interaction with real-",
+          "source_url": "https://europepmc.org/article/PPR/PPR1212822"
+        },
+        {
+          "term": "leaderboard",
+          "location": "Abstract / metadata",
+          "excerpt": "a practical testbed for measuring the progress of agentic systems in computational biology and for guiding future benchmark design. Data and a public leaderboard are available at https://huggingface.co/collections/Genentech/compbiobench-v1. We introduce CompBioBench, a benchmark of 100 diverse tasks for evaluating agentic systems in computational biology. Unlike mathematics and programming, which m",
+          "source_url": "https://europepmc.org/article/PPR/PPR1212822"
+        },
+        {
+          "term": "biology",
+          "location": "Abstract / metadata",
+          "excerpt": "Agentic systems are adept at solving well-scoped, verifiable problems in computational biology We introduce CompBioBench, a benchmark of 100 diverse tasks for evaluating agentic systems in computational biology. Unlike mathematics and programming, which more readily admit systematic verification, biological data are inherently noisy",
+          "source_url": "https://europepmc.org/article/PPR/PPR1212822"
+        },
+        {
+          "term": "biological",
+          "location": "Abstract / metadata",
+          "excerpt": "tasks for evaluating agentic systems in computational biology. Unlike mathematics and programming, which more readily admit systematic verification, biological data are inherently noisy and open to interpretation. To enable objective evaluation without reducing tasks to prescriptive checklists, we propose a new benchmark construction strategy based on synthetic/augmented data and metadata scrambl",
+          "source_url": "https://europepmc.org/article/PPR/PPR1212822"
+        }
+      ],
+      "identifiers": {
+        "doi": "10.64898/2026.04.06.716850"
+      },
+      "license": "cc by-nc",
+      "abstract": "We introduce CompBioBench, a benchmark of 100 diverse tasks for evaluating agentic systems in computational biology. Unlike mathematics and programming, which more readily admit systematic verification, biological data are inherently noisy and open to interpretation. To enable objective evaluation without reducing tasks to prescriptive checklists, we propose a new benchmark construction strategy based on synthetic/augmented data and metadata scrambling/scrubbing of real datasets to create challenging problems that have a single ground-truth answer and require multi-step reasoning, tool use, bespoke code, and interaction with real-world external resources. The benchmark spans genomics, transcriptomics, epigenomics, single-cell analysis, human genetics, and machine learning workflows. Questions are curated by domain experts to cover a broad range of skills with varying difficulty. We evaluate leading general-purpose agentic systems starting from a bare-minimum environment, requiring them to fetch data and tools as needed to solve each problem. We find strong end-to-end performance, with Codex CLI (GPT 5.4) reaching 83% accuracy, Gemini CLI (3.1 Pro) reaching 82%, Claude Code (Opus 4.6) reaching 81%, and Claude Code (Opus 4.7) reaching 78%. On the hardest questions, Claude Code (Opus 4.6) reaches 69%, Codex CLI (GPT 5.4) reaches 59%, and Gemini CLI (3.1 Pro) reaches 49%. CompBioBench provides a practical testbed for measuring the progress of agentic systems in computational biology and for guiding future benchmark design. Data and a public leaderboard are available at https://huggingface.co/collections/Genentech/compbiobench-v1.",
+      "extraction_error": "",
+      "authors": [
+        "Nair S",
+        "Gunsalus L",
+        "Orcutt-Jahns B",
+        "Rossen J",
+        "Lal A",
+        "Donno CD",
+        "Celik MH",
+        "Fletez-Brant K",
+        "Xie X",
+        "Bravo HC",
+        "Eraslan G."
+      ],
+      "categories": [
+        "experiment_agent"
+      ],
+      "kind": "paper",
+      "first_seen_at": "2026-04-09T00:00:00Z",
+      "title": "Agentic systems are adept at solving well-scoped, verifiable problems in computational biology",
+      "updated_at": "2026-05-19T00:00:00Z",
+      "slug": "doi-10-64898-2026-04-06-716850-f7083b346f",
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1212822"
+      }
+    },
+    {
+      "extraction_status": "metadata_only",
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "match_score": 23,
+      "source": "openreview",
+      "related_agent_url": "",
+      "id": "openreview:5qnlonbcyn",
+      "is_seed": true,
+      "event_at": "2026-01-22T11:34:09Z",
+      "published_at": "2026-01-22T11:34:09Z",
+      "priority": "P2",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "content_hash": "metadata:openreview:5qnlonbcyn",
+      "related_benchmarks": [],
+      "evidence": [
+        {
+          "term": "audited frontier models using recent medical exam data, which confirmed a high probability of data contamination",
+          "location": "Abstract / metadata",
+          "excerpt": "medical guidelines; and (3) jurisdictional divergence, where global averaging ignores local legal and ethical standards. To validate these risks, we audited frontier models using recent medical exam data, which confirmed a high probability of data contamination. To resolve such integrity issues in medical evaluation, we propose Sovereign Medical Evaluation (SME). Instead of public leaderboards, SME establishes a national infrastructure where health authorities manage private, isolated evaluation",
+          "source_url": "https://openreview.net/forum?id=5QNloNBcyn"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "Position: The Open Benchmark Paradox Must Be Resolved through Sovereign Medical Evaluation As generative medical large language models become increasingly involved in clinical actions, public benchmarks are often treated as proxies of deployment-readiness. However, th",
+          "source_url": "https://openreview.net/forum?id=5QNloNBcyn"
+        },
+        {
+          "term": "benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "Be Resolved through Sovereign Medical Evaluation As generative medical large language models become increasingly involved in clinical actions, public benchmarks are often treated as proxies of deployment-readiness. However, this reliance creates a false sense of security because public scores are often based on data the models have already seen. We call this the Open Benchmark Paradox: making eval",
+          "source_url": "https://openreview.net/forum?id=5QNloNBcyn"
+        },
+        {
+          "term": "leaderboard",
+          "location": "Abstract / metadata",
+          "excerpt": "ility of data contamination. To resolve such integrity issues in medical evaluation, we propose Sovereign Medical Evaluation (SME). Instead of public leaderboards, SME establishes a national infrastructure where health authorities manage private, isolated evaluation pipelines. Within this secure system, evaluations are automatically updated using live medical data and legal changes, ensuring they",
+          "source_url": "https://openreview.net/forum?id=5QNloNBcyn"
+        },
+        {
+          "term": "medical",
+          "location": "Abstract / metadata",
+          "excerpt": "Position: The Open Benchmark Paradox Must Be Resolved through Sovereign Medical Evaluation As generative medical large language models become increasingly involved in clinical actions, public benchmarks are often treated as proxies of deployment-readiness. However, this reliance creates a false sense of security becau",
+          "source_url": "https://openreview.net/forum?id=5QNloNBcyn"
+        },
+        {
+          "term": "clinical",
+          "location": "Abstract / metadata",
+          "excerpt": "n Benchmark Paradox Must Be Resolved through Sovereign Medical Evaluation As generative medical large language models become increasingly involved in clinical actions, public benchmarks are often treated as proxies of deployment-readiness. However, this reliance creates a false sense of security because public scores are often based on data the models have already seen. We call this the Open Ben",
+          "source_url": "https://openreview.net/forum?id=5QNloNBcyn"
+        }
+      ],
+      "identifiers": {
+        "openreview": "5QNloNBcyn"
+      },
+      "license": "",
+      "abstract": "As generative medical large language models become increasingly involved in clinical actions, public benchmarks are often treated as proxies of deployment-readiness. However, this reliance creates a false sense of security because public scores are often based on data the models have already seen. We call this the Open Benchmark Paradox: making evaluation data public for research progress also makes data contamination inevitable, ruining its value as a reliable safety signal. This paradox induces three structural failures: (1) hidden contamination, where it is impossible to prove evaluation independence; (2) outdated standards, where static datasets fail to track evolving medical guidelines; and (3) jurisdictional divergence, where global averaging ignores local legal and ethical standards.\nTo validate these risks, we audited frontier models using recent medical exam data, which confirmed a high probability of data contamination. To resolve such integrity issues in medical evaluation, we propose Sovereign Medical Evaluation (SME). Instead of public leaderboards, SME establishes a national infrastructure where health authorities manage private, isolated evaluation pipelines. \nWithin this secure system, evaluations are automatically updated using live medical data and legal changes, ensuring they remain current and strictly separated from model training. SME provides the essential transition to a controlled, auditable, and legally grounded safety gate for clinically deployed generative medical LLMs.",
+      "extraction_error": "",
+      "authors": [
+        "Keonwoo Kim",
+        "Hyeseon Ko",
+        "Hyejeong Jo",
+        "Sewon Kim",
+        "Yera Choi",
+        "JaeDeok Lee",
+        "Heeyoung Kwak",
+        "Yunwook Sung",
+        "Haanju Yoo"
+      ],
+      "categories": [
+        "general_text"
+      ],
+      "kind": "paper",
+      "first_seen_at": "2026-01-22T11:34:09Z",
+      "title": "Position: The Open Benchmark Paradox Must Be Resolved through Sovereign Medical Evaluation",
+      "updated_at": "2026-06-24T22:49:16Z",
+      "slug": "openreview-5qnlonbcyn-eff598c263",
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "links": {
+        "abs": "https://openreview.net/forum?id=5QNloNBcyn",
+        "pdf": "https://openreview.net/pdf?id=5QNloNBcyn"
+      }
+    },
+    {
+      "extraction_status": "metadata_only",
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "match_score": 32,
+      "source": "openreview",
+      "related_agent_url": "",
+      "id": "openreview:pj1z7dwm4v",
+      "is_seed": true,
+      "event_at": "2026-01-21T12:22:03Z",
+      "published_at": "2026-01-21T12:22:03Z",
+      "priority": "P0",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "content_hash": "metadata:openreview:pj1z7dwm4v",
+      "related_benchmarks": [
+        "VQA"
+      ],
+      "evidence": [
+        {
+          "term": "we propose a principled benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "er models can derive conclusions through causal interpretation of experimental observations. To address these critical gaps in reasoning evaluation, we propose a principled benchmark construction framework that reconstructs scientific reasoning paths directly from biomedical literature. By jointly modeling clusters of experimentally related images together with their captions and context, the framework generates tightl",
+          "source_url": "https://openreview.net/forum?id=Pj1Z7dWm4v"
+        },
+        {
+          "term": "benchmark construction framework",
+          "location": "Abstract / metadata",
+          "excerpt": "clusions through causal interpretation of experimental observations. To address these critical gaps in reasoning evaluation, we propose a principled benchmark construction framework that reconstructs scientific reasoning paths directly from biomedical literature. By jointly modeling clusters of experimentally related images together with their captions and context, the framework generates tightly coupled question–reas",
+          "source_url": "https://openreview.net/forum?id=Pj1Z7dWm4v"
+        },
+        {
+          "term": "benchmark",
+          "location": "Abstract / metadata",
+          "excerpt": "Benchmarking the Scientific Mind: A Pathology-Derived Biomedical VQA Benchmark for Complex Scientific Reasoning Despite progress of Multimodal Large Language Models (MLLMs) in biomedical visual question answering (VQA), existing benchmarks provide l",
+          "source_url": "https://openreview.net/forum?id=Pj1Z7dWm4v"
+        },
+        {
+          "term": "benchmarks",
+          "location": "Abstract / metadata",
+          "excerpt": "for Complex Scientific Reasoning Despite progress of Multimodal Large Language Models (MLLMs) in biomedical visual question answering (VQA), existing benchmarks provide limited assessment of their scientific reasoning capabilities. Most datasets adopt single-image question construction and outcome-oriented evaluation, where correctness is judged by answer plausibility rather than alignment with ex",
+          "source_url": "https://openreview.net/forum?id=Pj1Z7dWm4v"
+        },
+        {
+          "term": "benchmarking",
+          "location": "Abstract / metadata",
+          "excerpt": "Benchmarking the Scientific Mind: A Pathology-Derived Biomedical VQA Benchmark for Complex Scientific Reasoning Despite progress of Multimodal Large Language Models (MLLMs) in biomedical visual question answering (VQA), existing benchmarks provide limi",
+          "source_url": "https://openreview.net/forum?id=Pj1Z7dWm4v"
+        },
+        {
+          "term": "biomedical",
+          "location": "Abstract / metadata",
+          "excerpt": "Benchmarking the Scientific Mind: A Pathology-Derived Biomedical VQA Benchmark for Complex Scientific Reasoning Despite progress of Multimodal Large Language Models (MLLMs) in biomedical visual question answering (VQA), existing benchmarks provide limited assessment of their scientific reasoning capabil",
+          "source_url": "https://openreview.net/forum?id=Pj1Z7dWm4v"
+        },
+        {
+          "term": "pathology",
+          "location": "Abstract / metadata",
+          "excerpt": "Benchmarking the Scientific Mind: A Pathology-Derived Biomedical VQA Benchmark for Complex Scientific Reasoning Despite progress of Multimodal Large Language Models (MLLMs) in biomedical visual question answering (VQA), existing benchmarks provide limited assessment of their scientifi",
+          "source_url": "https://openreview.net/forum?id=Pj1Z7dWm4v"
+        },
+        {
+          "term": "Multimodal",
+          "location": "Abstract / metadata",
+          "excerpt": "Benchmarking the Scientific Mind: A Pathology-Derived Biomedical VQA Benchmark for Complex Scientific Reasoning Despite progress of Multimodal Large Language Models (MLLMs) in biomedical visual question answering (VQA), existing benchmarks provide limited assessment of their scientific reasoning capabilities. Most datasets adopt single-image question construction and outcome-orie",
+          "source_url": "https://openreview.net/forum?id=Pj1Z7dWm4v"
+        }
+      ],
+      "identifiers": {
+        "openreview": "Pj1Z7dWm4v"
+      },
+      "license": "",
+      "abstract": "Despite progress of Multimodal Large Language Models (MLLMs) in biomedical visual question answering (VQA), existing benchmarks provide limited assessment of their scientific reasoning capabilities. Most datasets adopt single-image question construction and outcome-oriented evaluation, where correctness is judged by answer plausibility rather than alignment with experimental evidence. Such formulations fail to capture the evidence-constrained, multi-step nature of biomedical reasoning, and obscure whether models can derive conclusions through causal interpretation of experimental observations.\n\nTo address these critical gaps in reasoning evaluation, we propose a principled benchmark construction framework that reconstructs scientific reasoning paths directly from biomedical literature. By jointly modeling clusters of experimentally related images together with their captions and context, the framework generates tightly coupled question–reasoning–answer triples that require multi-image integration and explicit evidence-driven inference. Based on this framework, we introduce SORBE (Scientific Observation & Reasoning for Biomedical Evaluation), a large-scale multi-image pathology-derived biomedical VQA benchmark designed to evaluate evidence alignment and multi-step experimental reasoning. Under a process-oriented evaluation metric, state-of-the-art biomedical-specialized MLLMs exhibit substantial performance degradation, revealing systematic limitations in evidence grounding and causal reasoning that are not reflected by existing benchmarks. Data and code are available at: https://github.com/UniverseOfUniverse/SORBE.git.",
+      "extraction_error": "",
+      "authors": [
+        "Ziyu Zhao",
+        "Yiyang Liu",
+        "Yajiao Wang",
+        "Xiaotao Wang",
+        "Yang Li",
+        "Yuyang Peng",
+        "Jiaheng Zhou",
+        "Jinqiao Wang",
+        "Yingying Chen",
+        "Ge Yang",
+        "Haixin Wang"
+      ],
+      "categories": [
+        "multimodal"
+      ],
+      "kind": "paper",
+      "first_seen_at": "2026-01-21T12:22:03Z",
+      "title": "Benchmarking the Scientific Mind: A Pathology-Derived Biomedical VQA Benchmark for Complex Scientific Reasoning",
+      "updated_at": "2026-06-24T23:20:09Z",
+      "slug": "openreview-pj1z7dwm4v-e1594d2543",
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "links": {
+        "abs": "https://openreview.net/forum?id=Pj1Z7dWm4v",
+        "pdf": "https://openreview.net/pdf?id=Pj1Z7dWm4v"
+      }
     }
   ]
 }

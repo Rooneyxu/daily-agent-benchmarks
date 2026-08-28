@@ -58,8 +58,9 @@ def test_static_snapshot_contains_index_meta_day_and_page(tmp_path: Path) -> Non
     assert (tmp_path / "p" / f"{sample_entry().slug}.html").exists()
 
 
-def test_committed_seed_catalog_has_sixty_confirmed_records() -> None:
+def test_committed_seed_catalog_has_seventy_eight_unique_confirmed_records() -> None:
     root = Path(__file__).resolve().parents[1]
     payload = json.loads((root / "data" / "bio-seeds.json").read_text())
-    assert len(payload["entries"]) == 60
+    assert len(payload["entries"]) == 78
+    assert len({row["id"] for row in payload["entries"]}) == 78
     assert all(row["collection_status"] == "confirmed" for row in payload["entries"])

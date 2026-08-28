@@ -62,6 +62,213 @@ def test_benchmark_audit_is_confirmed() -> None:
     assert result.categories == ["general_text"]
 
 
+def test_benchmark_curation_framework_is_methodology() -> None:
+    result = classify(
+        document(
+            "A framework for biomedical benchmark curation",
+            "We study a pipeline for the curation of evaluation datasets with provenance and answerability checks.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+    assert result.priority == "P0"
+
+
+def test_reproducible_benchmarking_platform_is_methodology() -> None:
+    result = classify(
+        document(
+            "Flower Hub: A Reproducible Benchmarking Platform for Federated Learning",
+            "The platform supports medical-imaging evaluation through versioned benchmark applications.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+    assert result.priority == "P0"
+
+
+def test_corpus_centric_benchmark_diagnostics_is_audit() -> None:
+    result = classify(
+        document(
+            "What Do Biomedical NER and Entity Linking Benchmarks Measure?",
+            "We present a corpus-centric diagnostic framework for benchmark-relevant properties and train-test overlap.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+    assert result.priority == "P2"
+
+
+def test_auditing_widely_used_biomolecular_benchmarks_is_audit() -> None:
+    result = classify(
+        document(
+            "Auditing widely used biomolecular benchmarks reveals systematic data inconsistencies",
+            "We analyze protein benchmark datasets and quantify label conflicts and structural leakage.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+    assert result.priority == "P2"
+
+
+def test_harmonised_benchmarking_with_findings_is_audit() -> None:
+    result = classify(
+        document(
+            "Harmonised benchmarking of foundation models for spatial transcriptomics reveals context-dependent generalisation",
+            "The biomedical benchmark shows that rankings shift with modality, preprocessing, and domain shift.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+    assert result.priority == "P2"
+
+
+def test_plain_model_robustness_is_not_a_benchmark_audit() -> None:
+    result = classify(
+        document(
+            "Robustness validation of a clinical prediction model",
+            "We validate a medical model across three hospitals and report calibration and sensitivity.",
+        )
+    )
+    assert result.collection_status == "excluded"
+
+
+def test_new_diagnostic_benchmark_is_not_mislabeled_as_an_audit() -> None:
+    result = classify(
+        document(
+            "DDX-TRACE: A Benchmark for Medical Diagnostic Trajectories",
+            "We introduce a benchmark for evaluating diagnostic reasoning in clinical cases.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+    assert result.priority == "P1"
+
+
+def test_new_stress_testing_benchmark_is_not_mislabeled_as_an_audit() -> None:
+    result = classify(
+        document(
+            "SafeMedBench: A Benchmark for Medical Safety Alignment",
+            "We present a benchmark for stress testing language models on high-risk medical queries.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+    assert result.priority == "P1"
+
+
+def test_new_contamination_free_benchmark_is_not_mislabeled_as_an_audit() -> None:
+    result = classify(
+        document(
+            "LiveProteinBench: A Contamination-Free Benchmark for Protein Science",
+            "Existing datasets risk data contamination, so we introduce a new biological benchmark with a future-only test set.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+    assert result.priority == "P1"
+
+
+def test_using_an_llm_judge_does_not_make_a_paper_methodology() -> None:
+    result = classify(
+        document(
+            "Benchmarking LLM recommendations for personalized health interventions",
+            "We compare medical model responses using an LLM-as-a-Judge and a clinician-validated scoring rubric.",
+        )
+    )
+    assert result.collection_status == "watchlist"
+
+
+def test_proposing_automated_evaluation_is_methodology() -> None:
+    result = classify(
+        document(
+            "Automating expert-level medical reasoning evaluation",
+            "We introduce MedThink-Bench and propose a scalable evaluation framework with an automated verifier.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+    assert result.priority == "P0"
+
+
+def test_benchmark_for_an_auditing_task_is_still_a_new_benchmark() -> None:
+    result = classify(
+        document(
+            "PhysDox: A Physical Feasibility Auditing Benchmark for Biomedical Protocols",
+            "We introduce a benchmark for detecting infeasible physiological sensing procedures.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+    assert result.priority == "P1"
+
+
+def test_benchmark_named_for_a_response_audit_is_not_an_audit_of_a_benchmark() -> None:
+    result = classify(
+        document(
+            "MIRA: A Bilingual Benchmark for Medical Information Response Audit",
+            "We introduce Medical Information Response Audit, a controlled clinical benchmark for evaluating model responses.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+    assert result.priority == "P1"
+
+
+def test_systematic_model_comparison_is_not_a_benchmark_audit() -> None:
+    result = classify(
+        document(
+            "A molecular structure prediction system",
+            "Systematic benchmarking reveals strong performance on a biological benchmark dataset.",
+        )
+    )
+    assert result.collection_status == "watchlist"
+
+
+def test_incidental_medical_domain_mention_stays_internal() -> None:
+    result = classify(
+        document(
+            "Benchmarking Speech-to-Speech Translation Models",
+            "We introduce a reproducible benchmark and validate it across podcasts, dubbing, and medical domains.",
+        )
+    )
+    assert result.collection_status == "watchlist"
+
+
+def test_incidental_biological_word_stays_internal() -> None:
+    result = classify(
+        document(
+            "A Synthetic Underwater Image Enhancement Benchmark",
+            "The renderer uses biologically resolved absorption to construct an underwater benchmark dataset.",
+        )
+    )
+    assert result.collection_status == "watchlist"
+
+
+def test_cancer_biology_case_study_is_a_strong_domain_signal() -> None:
+    result = classify(
+        document(
+            "Automated MCQA Benchmarking at Scale",
+            "We propose automated benchmark construction from 22,000 papers in radiation and cancer biology.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+    assert result.priority == "P0"
+
+
+def test_missing_abstract_stays_internal() -> None:
+    result = classify(document("Audit of Benchmark Contamination in Medical VLM Evaluation", ""))
+    assert result.collection_status == "watchlist"
+
+
+def test_biobench_name_is_a_strong_domain_signal() -> None:
+    result = classify(
+        document(
+            "BioBench",
+            "We introduce a benchmark for biology.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+
+
+def test_biology_as_an_explicit_multidomain_task_is_included() -> None:
+    result = classify(
+        document(
+            "A Capability-Oriented Benchmark for AI Scientists",
+            "We introduce a benchmark across five domains: Biology, Chemistry, Environment, Geography, and Physics.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+
+
 def test_full_text_cannot_promote_a_routine_evaluation() -> None:
     result = classify(
         document(

@@ -8,6 +8,7 @@ from .config import (
     AUDIT_PATTERNS,
     BENCHMARK_TERMS,
     BIO_TERMS,
+    CORE_BIO_TERMS,
     MAX_EVIDENCE,
     METHODOLOGY_PATTERNS,
     NEW_BENCHMARK_PATTERNS,
@@ -20,6 +21,14 @@ from .models import Classification, Evidence, SourceDocument
 def _contains(text: str, terms: tuple[str, ...]) -> list[str]:
     lowered = text.lower()
     return [term for term in terms if term in lowered]
+
+
+def _contains_phrases(text: str, terms: tuple[str, ...]) -> list[str]:
+    return [
+        term
+        for term in terms
+        if re.search(rf"(?<![a-z0-9]){re.escape(term)}(?![a-z0-9])", text, re.IGNORECASE)
+    ]
 
 
 def _pattern_hits(text: str, patterns: tuple[str, ...]) -> list[str]:
@@ -86,9 +95,30 @@ def _evidence(text: str, terms: list[str], source_url: str) -> list[Evidence]:
 def classify(document: SourceDocument) -> Classification:
     candidate = document.candidate
     title = candidate.title or ""
-    metadata_text = re.sub(r"\s+", " ", f"{title} {candidate.abstract}").strip()
+    metadata_text = re.sub(r"\s+", " ", f"{title}. {candidate.abstract}").strip()
     full_text = f"{title}\n{candidate.abstract}\n{document.body}".strip()
-    domain_hits = _contains(metadata_text, BIO_TERMS)
+    core_domain_hits = _contains_phrases(metadata_text, CORE_BIO_TERMS)
+    domain_hits = list(dict.fromkeys([*_contains(metadata_text, BIO_TERMS), *core_domain_hits]))
+    title_domain_hits = list(
+        dict.fromkeys([*_contains(title, BIO_TERMS), *_contains_phrases(title, CORE_BIO_TERMS)])
+    )
+    named_domain_artifact = bool(
+        re.search(r"\b(?:bio|med|clinic|health|life)[a-z0-9_-]*(?:bench|benchmark|eval|qa)\b", title, re.IGNORECASE)
+    )
+    scoped_domain_signal = bool(
+        re.search(
+            r"\b(?:domains?|tasks?|datasets?)\s*(?::|\(|include(?:s|d)?|including|span(?:s|ned)?|spanning)\s*[^.;]{0,100}\b(?:biology|biomedical|medicine|medical)\b",
+            metadata_text,
+            re.IGNORECASE,
+        )
+    )
+    strong_domain_signal = bool(
+        title_domain_hits
+        or core_domain_hits
+        or named_domain_artifact
+        or scoped_domain_signal
+        or len(set(domain_hits)) >= 2
+    )
     benchmark_hits = _contains(metadata_text, BENCHMARK_TERMS)
     new_hits = _pattern_hits(metadata_text, NEW_BENCHMARK_PATTERNS)
     methodology_hits = _pattern_hits(metadata_text, METHODOLOGY_PATTERNS)
@@ -122,6 +152,12 @@ def classify(document: SourceDocument) -> Classification:
     if not domain_hits:
         status = "excluded"
         reason = "No explicit biological or medical domain signal."
+    elif not candidate.abstract.strip():
+        status = "watchlist"
+        reason = "The title may be relevant, but the source did not provide an abstract for admission review."
+    elif not strong_domain_signal:
+        status = "watchlist"
+        reason = "Only a weak or incidental biological or medical domain signal appears in the title and abstract."
     elif audit_hits and benchmark_signal:
         status = "confirmed"
         reason = "Title or abstract explicitly identifies a biomedical benchmark audit."
