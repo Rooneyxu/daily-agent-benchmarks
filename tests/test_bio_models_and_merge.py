@@ -109,3 +109,31 @@ def test_document_upsert_deduplicates_canonical_ids_within_batch() -> None:
 
     assert len(captured) == 1
     assert captured[0]["source_id"] == "europepmc"
+
+
+def test_benchmark_links_deduplicate_normalized_names() -> None:
+    captured: dict[str, list[dict[str, object]]] = {"benchmarks": [], "entry_benchmarks": []}
+
+    class Query:
+        def __init__(self, table_name: str) -> None:
+            self.table_name = table_name
+
+        def upsert(self, rows: list[dict[str, object]], on_conflict: str) -> "Query":
+            captured[self.table_name].extend(rows)
+            return self
+
+        def execute(self) -> None:
+            return None
+
+    class Client:
+        def table(self, name: str) -> Query:
+            return Query(name)
+
+    row = entry()
+    row.related_benchmarks = ["BioBench", "biobench"]
+    store = object.__new__(SupabaseStore)
+    store.client = Client()
+    store.upsert_benchmarks([row])
+
+    assert len(captured["benchmarks"]) == 1
+    assert len(captured["entry_benchmarks"]) == 1

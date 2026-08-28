@@ -120,7 +120,7 @@ class SupabaseStore:
 
     def upsert_benchmarks(self, entries: list[BioEntry]) -> None:
         benchmarks: dict[str, dict[str, Any]] = {}
-        links = []
+        links: dict[tuple[str, str], dict[str, str]] = {}
         for entry in entries:
             for name in entry.related_benchmarks:
                 benchmark_id = name.lower().replace("_", "-")
@@ -131,12 +131,15 @@ class SupabaseStore:
                     "categories": entry.categories,
                     "access_status": entry.access_status,
                 }
-                links.append({"entry_id": entry.id, "benchmark_id": benchmark_id})
+                links[(entry.id, benchmark_id)] = {
+                    "entry_id": entry.id,
+                    "benchmark_id": benchmark_id,
+                }
         if benchmarks:
             self.client.table("benchmarks").upsert(list(benchmarks.values()), on_conflict="id").execute()
         if links:
             self.client.table("entry_benchmarks").upsert(
-                links,
+                list(links.values()),
                 on_conflict="entry_id,benchmark_id",
             ).execute()
 
