@@ -1,6 +1,6 @@
 {
   "date": "2026-08-25",
-  "count": 5,
+  "count": 4,
   "entries": [
     {
       "id": "arxiv:2608.25114",
@@ -381,65 +381,6 @@
       "content_hash": "d450d91adc0e12748e88d66bce936999902b92871a0cc0063d8b7bd2c20d834f",
       "is_seed": false,
       "topic": "multimodal",
-      "contribution_type": "new_benchmark"
-    },
-    {
-      "id": "doi:10.64898/2026.08.20.26360960",
-      "slug": "doi-10-64898-2026-08-20-26360960-9dbbca3470",
-      "kind": "paper",
-      "title": "PathEQA: Feature-Graph-Guided Random Forests for Multianalyte External Quality Assessment",
-      "abstract": "External quality assessment (EQA) of multianalyte assays is commonly interpreted analyte by analyte, although many panels contain known relations among measured features that may reveal joint quality patterns. We propose PathEQA, a feature-graph-guided random forest framework in which a user-supplied graph can represent biochemical pathways, molecular interactions, shared measurement processes, or other domain relations. The same graph is allowed to influence feature representation, node-level candidate generation, and split selection, with an optional local grouped decision. We evaluated the framework in graph-aligned and graph-misspecified simulations and used a six-analyte catecholamine-related liquid chromatography-tandem mass spectrometry EQA data set as an illustrative case study (929 records from 58 laboratories and 117 complete multianalyte panels). In graph-aligned simulations, the grouped variant reduced test root mean squared error by 7.4-9.4% relative to ordinary random forest across training sizes of 60-240, whereas graph misspecification could worsen prediction. In the catecholamine case study, full PathEQA was comparable with ordinary random forest in laboratory-grouped cross-validation (RMSE 0.570 versus 0.569) and modestly better in the final-round temporal holdout (0.307 versus 0.318); a simpler static network-sampling baseline performed best. Dopamine-norepinephrine was the strongest pair, whereas dopamine-norepinephrine-epinephrine best estimated multianalyte failure burden. These results support a general conclusion: feature-graph guidance can improve small-sample multivariate quality assessment when the supplied structure is outcome-relevant, but graph relevance must be tested rather than assumed. Catecholamines serve here as a worked example rather than a restriction of the framework.",
-      "authors": [
-        "Li, Q.",
-        "Yu, K."
-      ],
-      "source": "medrxiv",
-      "published_at": "2026-08-25T00:00:00+00:00",
-      "updated_at": "2026-08-25T00:00:00+00:00",
-      "priority": "P1",
-      "categories": [
-        "general_text"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "cc_no",
-      "identifiers": {
-        "doi": "10.64898/2026.08.20.26360960"
-      },
-      "links": {
-        "abs": "https://www.medrxiv.org/content/10.64898/2026.08.20.26360960",
-        "pdf": "https://www.medrxiv.org/content/10.64898/2026.08.20.26360960.full.pdf",
-        "html": "https://www.medrxiv.org/content/10.64898/2026.08.20.26360960.full"
-      },
-      "evidence": [
-        {
-          "term": "We propose PathEQA",
-          "excerpt": "commonly interpreted analyte by analyte, although many panels contain known relations among measured features that may reveal joint quality patterns. We propose PathEQA, a feature-graph-guided random forest framework in which a user-supplied graph can represent biochemical pathways, molecular interactions, shared measurement processes, or other domain relations. The same graph is allowed to influence feat",
-          "location": "Abstract / metadata",
-          "source_url": "https://www.medrxiv.org/content/10.64898/2026.08.20.26360960.full"
-        },
-        {
-          "term": "laboratory",
-          "excerpt": ", whereas graph misspecification could worsen prediction. In the catecholamine case study, full PathEQA was comparable with ordinary random forest in laboratory-grouped cross-validation (RMSE 0.570 versus 0.569) and modestly better in the final-round temporal holdout (0.307 versus 0.318); a simpler static network-sampling baseline performed best. Dopamine-norepinephrine was the strongest pair, whe",
-          "location": "Abstract / metadata",
-          "source_url": "https://www.medrxiv.org/content/10.64898/2026.08.20.26360960.full"
-        }
-      ],
-      "related_benchmarks": [
-        "PathEQA",
-        "EQA"
-      ],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability"
-      ],
-      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 14,
-      "extraction_status": "incomplete",
-      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.08.20.26360960.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
-      "content_hash": "24cb5fe9f7bb023576dc3467043f6bb420b9f1073e3916c83241b0e3857f9e7e",
-      "is_seed": false,
-      "topic": "general_text",
       "contribution_type": "new_benchmark"
     }
   ]

@@ -1,25 +1,25 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-08-29T11:15:54Z",
-  "total": 83,
+  "generated_at": "2026-08-29T14:06:05Z",
+  "total": 70,
   "counts": {
     "topics": {
-      "experiment_agent": 18,
-      "multimodal": 23,
-      "general_text": 35,
-      "biosafety": 7
+      "experiment_agent": 15,
+      "multimodal": 20,
+      "general_text": 29,
+      "biosafety": 6
     },
     "contribution_types": {
-      "new_benchmark": 58,
+      "new_benchmark": 46,
       "methodology": 14,
-      "audit": 11
+      "audit": 10
     },
     "kinds": {
-      "paper": 83
+      "paper": 70
     },
     "evaluation_contexts": {
-      "beneficial_capability": 76,
-      "biosecurity_misuse": 7
+      "beneficial_capability": 64,
+      "biosecurity_misuse": 6
     }
   },
   "topic_labels": {
@@ -59,28 +59,28 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-08-29T11:16:00Z",
-      "finished_at": "2026-08-29T11:16:46Z",
+      "started_at": "2026-08-29T14:06:10Z",
+      "finished_at": "2026-08-29T14:06:57Z",
       "discovered": 38,
-      "published": 24,
+      "published": 22,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-08-29T11:16:46Z",
-      "finished_at": "2026-08-29T11:16:51Z",
+      "started_at": "2026-08-29T14:06:57Z",
+      "finished_at": "2026-08-29T14:07:03Z",
       "discovered": 72,
-      "published": 40,
+      "published": 39,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "failed",
-      "started_at": "2026-08-29T11:16:51Z",
-      "finished_at": "2026-08-29T11:16:51Z",
+      "started_at": "2026-08-29T14:07:03Z",
+      "finished_at": "2026-08-29T14:07:04Z",
       "discovered": 0,
       "published": 0,
       "error": "Server error '503 Service Unavailable' for url 'https://api.biorxiv.org/details/biorxiv/2026-08-25/2026-08-29/0'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
@@ -89,21 +89,21 @@
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "failed",
-      "started_at": "2026-08-29T11:16:51Z",
-      "finished_at": "2026-08-29T11:16:52Z",
+      "started_at": "2026-08-29T14:07:04Z",
+      "finished_at": "2026-08-29T14:07:04Z",
       "discovered": 0,
       "published": 0,
-      "error": "Server error '503 Service Unavailable' for url 'https://api.biorxiv.org/details/medrxiv/2026-08-25/2026-08-29/90'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+      "error": "Server error '503 Service Unavailable' for url 'https://api.biorxiv.org/details/medrxiv/2026-08-25/2026-08-29/0'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
     },
     {
       "source": "openreview",
       "name": "OpenReview",
-      "status": "success",
-      "started_at": "2026-08-29T11:16:52Z",
-      "finished_at": "2026-08-29T11:17:26Z",
+      "status": "failed",
+      "started_at": "2026-08-29T14:07:04Z",
+      "finished_at": "2026-08-29T14:07:04Z",
       "discovered": 0,
       "published": 0,
-      "error": ""
+      "error": "Client error '403 Forbidden' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
     }
   ],
   "days": [
@@ -121,25 +121,21 @@
     },
     {
       "date": "2026-08-26",
-      "count": 6,
+      "count": 3,
       "entry_ids": [
-        "arxiv:2608.26416",
-        "arxiv:2608.25630",
         "arxiv:2608.25286",
         "doi:10.64898/2026.08.24.746336",
-        "doi:10.64898/2026.08.21.746347",
         "doi:10.1007/s11548-026-03784-z"
       ]
     },
     {
       "date": "2026-08-25",
-      "count": 5,
+      "count": 4,
       "entry_ids": [
         "arxiv:2608.25114",
         "arxiv:2608.25085",
         "arxiv:2608.25071",
-        "arxiv:2608.24118",
-        "doi:10.64898/2026.08.20.26360960"
+        "arxiv:2608.24118"
       ]
     },
     {
@@ -163,13 +159,6 @@
       "count": 1,
       "entry_ids": [
         "doi:10.1093/bioinformatics/btag608"
-      ]
-    },
-    {
-      "date": "2026-08-19",
-      "count": 1,
-      "entry_ids": [
-        "arxiv:2608.18618"
       ]
     },
     {
@@ -233,13 +222,6 @@
       ]
     },
     {
-      "date": "2026-07-10",
-      "count": 1,
-      "entry_ids": [
-        "arxiv:2607.09880"
-      ]
-    },
-    {
       "date": "2026-07-09",
       "count": 2,
       "entry_ids": [
@@ -249,9 +231,8 @@
     },
     {
       "date": "2026-07-06",
-      "count": 2,
+      "count": 1,
       "entry_ids": [
-        "arxiv:2607.05084",
         "doi:10.21203/rs.3.rs-10064275/v1"
       ]
     },
@@ -260,13 +241,6 @@
       "count": 1,
       "entry_ids": [
         "arxiv:2606.26563"
-      ]
-    },
-    {
-      "date": "2026-06-16",
-      "count": 1,
-      "entry_ids": [
-        "arxiv:2606.18215"
       ]
     },
     {
@@ -281,20 +255,6 @@
       "count": 1,
       "entry_ids": [
         "arxiv:2606.10066"
-      ]
-    },
-    {
-      "date": "2026-06-04",
-      "count": 1,
-      "entry_ids": [
-        "arxiv:2606.05980"
-      ]
-    },
-    {
-      "date": "2026-06-03",
-      "count": 1,
-      "entry_ids": [
-        "arxiv:2606.05139"
       ]
     },
     {
@@ -321,9 +281,8 @@
     },
     {
       "date": "2026-05-27",
-      "count": 3,
+      "count": 2,
       "entry_ids": [
-        "arxiv:2605.28161",
         "arxiv:2605.28065",
         "arxiv:2605.28025"
       ]
@@ -346,17 +305,15 @@
     },
     {
       "date": "2026-05-22",
-      "count": 2,
+      "count": 1,
       "entry_ids": [
-        "arxiv:2605.23629",
-        "arxiv:2605.23242"
+        "arxiv:2605.23629"
       ]
     },
     {
       "date": "2026-05-21",
-      "count": 4,
+      "count": 3,
       "entry_ids": [
-        "arxiv:2605.23068",
         "arxiv:2605.22734",
         "arxiv:2605.22080",
         "arxiv:2605.21852"
@@ -1050,183 +1007,6 @@
       "contribution_type": "new_benchmark"
     },
     {
-      "id": "arxiv:2608.26416",
-      "slug": "arxiv-2608-26416-494d00034f",
-      "kind": "paper",
-      "title": "IoMT-SecAlarmBench: A Counterfactual Benchmark for Integrity Attacks in IoMT",
-      "abstract": "The Internet of Medical Things (IoMT) combines clinical physiological data with cyber-system information, creating challenges in determining whether an abnormal reading reflects a genuine physiological event, a device fault, or a cyber-attack within the expected physiological range. Answering this requires counterfactual ground truth, which no existing dataset provides. We present IoMT-SecAlarmBench, a semi-synthetic benchmark that injects controlled integrity attacks into genuine coupled ECG+PPG recordings using a structured experimental design combining four attack morphologies, four severity levels, two physiological plausibility conditions, and replay attacks. Each injected window retains its cause, attack subtype, and the clean signal that would have been observed without the attack. We evaluate six detectors from five method families using threshold-independent measures and a matched false-alarm budget. Results show no method consistently detects the most difficult cases: replay attacks and low-amplitude transient spikes remain close to chance-level performance across detectors. Results also reveal a trade-off between detecting attacks and distinguishing them from sensor faults: the best-performing detector on hard cases flags fault/artifact windows at 5.3 times its false-alarm rate on normal data. Three-way classification performs poorly for genuine physiological events, and a leakage audit of a dual-modality network dataset indicates previously reported IoMT intrusion-detection performance is partly driven by identifying information. Benchmark, generation code, preprocessing, evaluation tools, and datasheet are released.",
-      "authors": [
-        "Emmanuel C. Ugwuabonyi",
-        "Dmitri Perkins"
-      ],
-      "source": "arxiv",
-      "published_at": "2026-08-26T21:29:26+00:00",
-      "updated_at": "2026-08-26T21:29:26+00:00",
-      "priority": "P1",
-      "categories": [
-        "general_text"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "",
-      "identifiers": {
-        "arxiv": "2608.26416"
-      },
-      "links": {
-        "abs": "https://arxiv.org/abs/2608.26416v1",
-        "pdf": "https://arxiv.org/pdf/2608.26416v1",
-        "code": "https://github.com/techosystem/IoMT_SecAlarmBench",
-        "html": "https://arxiv.org/html/2608.26416"
-      },
-      "evidence": [
-        {
-          "term": "We present IoMT-SecAlarmBench",
-          "excerpt": ", or a cyber-attack within the expected physiological range. Answering this requires counterfactual ground truth, which no existing dataset provides. We present IoMT-SecAlarmBench, a semi-synthetic benchmark that injects controlled integrity attacks into genuine coupled ECG+PPG recordings using a structured experimental design combining four attack morphologies, four severity levels, two physiological plausibility c",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2608.26416"
-        },
-        {
-          "term": "We present IoMT-SecAlarmBench, a semi-synthetic benchmark",
-          "excerpt": ", or a cyber-attack within the expected physiological range. Answering this requires counterfactual ground truth, which no existing dataset provides. We present IoMT-SecAlarmBench, a semi-synthetic benchmark that injects controlled integrity attacks into genuine coupled ECG+PPG recordings using a structured experimental design combining four attack morphologies, four severity levels, two physiological plausibility conditions, and replay attack",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2608.26416"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "IoMT-SecAlarmBench: A Counterfactual Benchmark for Integrity Attacks in IoMT The Internet of Medical Things (IoMT) combines clinical physiological data with cyber-system information, creating challenges in determining whether an abnormal reading reflects a genuine physiological event,",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2608.26416"
-        },
-        {
-          "term": "medical",
-          "excerpt": "IoMT-SecAlarmBench: A Counterfactual Benchmark for Integrity Attacks in IoMT The Internet of Medical Things (IoMT) combines clinical physiological data with cyber-system information, creating challenges in determining whether an abnormal reading reflects a genuine physiological event, a device fault, or a cyber-attack within the expected",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2608.26416"
-        },
-        {
-          "term": "clinical",
-          "excerpt": "IoMT-SecAlarmBench: A Counterfactual Benchmark for Integrity Attacks in IoMT The Internet of Medical Things (IoMT) combines clinical physiological data with cyber-system information, creating challenges in determining whether an abnormal reading reflects a genuine physiological event, a device fault, or a cyber-attack within the expected physiological range. Answering t",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2608.26416"
-        }
-      ],
-      "related_benchmarks": [
-        "IoMT-SecAlarmBench",
-        "IoMT_SecAlarmBench"
-      ],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability"
-      ],
-      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 21,
-      "extraction_status": "complete",
-      "extraction_error": "",
-      "content_hash": "bf62b13a08458aea5f6f9daf16733bfd82dd624e7319da2ec60e744a48e61dbf",
-      "is_seed": false,
-      "topic": "general_text",
-      "contribution_type": "new_benchmark"
-    },
-    {
-      "id": "arxiv:2608.25630",
-      "slug": "arxiv-2608-25630-4457d77e67",
-      "kind": "paper",
-      "title": "SeVeR: Selective Visual Exposure and Retrieval for 3D Medical Image Question Answering",
-      "abstract": "Volumetric medical VQA requires reasoning over long and redundant 3D visual token sequences, especially in multi-sequence MRI where complementary modalities provide diverse diagnostic cues but expose the decoder to many repeated anatomical regions. To investigate reasoning under multi-sequence visual redundancy, we first introduce BreMRIs-VQA, a clinically curated breast MRI benchmark with 1.19M QA pairs from 71.0K sequences and 12.9K patients, covering both free-text and multiple-choice questions. We further propose SeVeR, a selective visual exposure framework that compresses dense volumes into modality-wise prototypes and retrieves complementary multi-level evidence with change-aware gated attention during decoding, trained with a marginal-utility self-consistency objective that suppresses unhelpful retrieval. Experiments on BreMRIs-VQA and public benchmarks show that SeVeR improves both discriminative and generative performance while exposing substantially fewer visual tokens.",
-      "authors": [
-        "Yaojun Hu",
-        "Danyang Tu",
-        "Yang Liu",
-        "Jiajin Zhang",
-        "Wei Fang",
-        "Zhiqiang Liu",
-        "Chunlai Dong",
-        "Yingda Xia",
-        "Haochao Ying",
-        "Jian Wu",
-        "Ling Zhang"
-      ],
-      "source": "arxiv",
-      "published_at": "2026-08-26T10:58:45+00:00",
-      "updated_at": "2026-08-26T10:58:45+00:00",
-      "priority": "P1",
-      "categories": [
-        "multimodal"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "",
-      "identifiers": {
-        "arxiv": "2608.25630"
-      },
-      "links": {
-        "abs": "https://arxiv.org/abs/2608.25630v1",
-        "pdf": "https://arxiv.org/pdf/2608.25630v1",
-        "html": "https://arxiv.org/html/2608.25630"
-      },
-      "evidence": [
-        {
-          "term": "first introduce BreMRIs-VQA, a clinically curated breast MRI benchmark",
-          "excerpt": "verse diagnostic cues but expose the decoder to many repeated anatomical regions. To investigate reasoning under multi-sequence visual redundancy, we first introduce BreMRIs-VQA, a clinically curated breast MRI benchmark with 1.19M QA pairs from 71.0K sequences and 12.9K patients, covering both free-text and multiple-choice questions. We further propose SeVeR, a selective visual exposure framework that compresses dense volumes into modality-wise prototypes",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2608.25630"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "anatomical regions. To investigate reasoning under multi-sequence visual redundancy, we first introduce BreMRIs-VQA, a clinically curated breast MRI benchmark with 1.19M QA pairs from 71.0K sequences and 12.9K patients, covering both free-text and multiple-choice questions. We further propose SeVeR, a selective visual exposure framework that compresses dense volumes into modality-wise prototypes",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2608.25630"
-        },
-        {
-          "term": "benchmarks",
-          "excerpt": "uring decoding, trained with a marginal-utility self-consistency objective that suppresses unhelpful retrieval. Experiments on BreMRIs-VQA and public benchmarks show that SeVeR improves both discriminative and generative performance while exposing substantially fewer visual tokens. [[SECTION SeVeR: Selective Visual Exposure and Retrieval for 3D Medical Image Question Answering]] SeVeR: Selective V",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2608.25630"
-        },
-        {
-          "term": "medical",
-          "excerpt": "SeVeR: Selective Visual Exposure and Retrieval for 3D Medical Image Question Answering Volumetric medical VQA requires reasoning over long and redundant 3D visual token sequences, especially in multi-sequence MRI where complementary modalities provide diverse diagnostic cues but expose the decoder to",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2608.25630"
-        },
-        {
-          "term": "clinical",
-          "excerpt": "e the decoder to many repeated anatomical regions. To investigate reasoning under multi-sequence visual redundancy, we first introduce BreMRIs-VQA, a clinically curated breast MRI benchmark with 1.19M QA pairs from 71.0K sequences and 12.9K patients, covering both free-text and multiple-choice questions. We further propose SeVeR, a selective visual exposure framework that compresses dense volume",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2608.25630"
-        },
-        {
-          "term": "multimodal",
-          "excerpt": "Alvar et al. (2025) Saeed Ranjbar Alvar, Gursimran Singh, Mohammad Akbari, and Yong Zhang. Divprune: Diversity-based visual token pruning for large multimodal models. In IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) , 2025. Bai et al. (2024) Fan Bai, Yuxin Du, Tiejun Huang, Max Q-H Meng, and Bo Zhao. M3d: Advancing 3d medical image analysis with multi-modal large language",
-          "location": "References",
-          "source_url": "https://arxiv.org/html/2608.25630"
-        },
-        {
-          "term": "pathology",
-          "excerpt": "K breast MRI sequences from a cohort of 12.9K patients, where each contains at least 3 different MRI modalities, paired with a radiology report and a pathology report verified by two radiologists. Then, we design a QA generation pipeline consisting of multi-stage extraction, task construction, paraphrasing, and validation, which enables BreMRIs-VQA to contain 1.19M VQA pairs, including 671.6K fre",
-          "location": "1 Introduction",
-          "source_url": "https://arxiv.org/html/2608.25630"
-        }
-      ],
-      "related_benchmarks": [
-        "VQA",
-        "BreMRIs-VQA",
-        "DeepTumorVQA"
-      ],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability"
-      ],
-      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 22,
-      "extraction_status": "complete",
-      "extraction_error": "",
-      "content_hash": "c924be31ff9bf2d2c7a2e12da7e9d2b3bbbe041f663bf594f551d277739ce4e4",
-      "is_seed": false,
-      "topic": "multimodal",
-      "contribution_type": "new_benchmark"
-    },
-    {
       "id": "arxiv:2608.25286",
       "slug": "arxiv-2608-25286-b5917eeae1",
       "kind": "paper",
@@ -1431,81 +1211,6 @@
       "content_hash": "7e4c864b07f05ed56a6b8df178a5e86d862280303776154b120b890700fc59c1",
       "is_seed": false,
       "topic": "multimodal",
-      "contribution_type": "new_benchmark"
-    },
-    {
-      "id": "doi:10.64898/2026.08.21.746347",
-      "slug": "doi-10-64898-2026-08-21-746347-92d1fe89b0",
-      "kind": "paper",
-      "title": "BatchRefiner: fast, significant improvement in batch integration of single-cell embeddings with ensemble refinement",
-      "abstract": "Data from single-cell RNA sequencing (scRNA-seq) and the Assay for Transposase-Accessible Chromatin (scATAC-seq) are high-dimensional, sparse, and undesirably capture technical variability between experiments or batches. Many analysis methods thus seek to produce a low-dimensional cell-by-feature embedding space that groups together biologically similar cells across batches while distancing dissimilar cells. Here, we introduce ensemble refinement for scRNA-seq and scATAC-seq embeddings, inspired by ensemble methods from statistical machine learning, and implement BatchRefiner, a fast post-processing tool to enhance batch integration. We extensively benchmark widely-used scRNA-seq embedding methods on both batch integration and biological conservation over a wide range of datasets, before and after the addition of BatchRefiner. We extend these benchmarking approaches to provide the first comprehensive benchmark of batch integration for scATAC-seq embedding methods, including BatchRefiner. Importantly, we formalize a significance statistic, which we use to demonstrate BatchRefiner's significant improvement in batch integration across a wide range of embedding methods, atlas-scale datasets, and established metrics.",
-      "authors": [
-        "Schäffer DE",
-        "Kang H",
-        "Aksu ED",
-        "Edelman D",
-        "Berger B."
-      ],
-      "source": "europepmc",
-      "published_at": "2026-08-26T00:00:00+00:00",
-      "updated_at": "2026-08-27T00:00:00+00:00",
-      "priority": "P1",
-      "categories": [
-        "general_text"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "unknown",
-      "license": "",
-      "identifiers": {
-        "doi": "10.64898/2026.08.21.746347"
-      },
-      "links": {
-        "abs": "https://europepmc.org/article/PPR/PPR1305945"
-      },
-      "evidence": [
-        {
-          "term": "first comprehensive benchmark",
-          "excerpt": "cal conservation over a wide range of datasets, before and after the addition of BatchRefiner. We extend these benchmarking approaches to provide the first comprehensive benchmark of batch integration for scATAC-seq embedding methods, including BatchRefiner. Importantly, we formalize a significance statistic, which we use to demonstrate BatchRefiner's significant improvement in batch integration across a wide range",
-          "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/PPR/PPR1305945"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "emble methods from statistical machine learning, and implement BatchRefiner, a fast post-processing tool to enhance batch integration. We extensively benchmark widely-used scRNA-seq embedding methods on both batch integration and biological conservation over a wide range of datasets, before and after the addition of BatchRefiner. We extend these benchmarking approaches to provide the first compre",
-          "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/PPR/PPR1305945"
-        },
-        {
-          "term": "benchmarking",
-          "excerpt": "s on both batch integration and biological conservation over a wide range of datasets, before and after the addition of BatchRefiner. We extend these benchmarking approaches to provide the first comprehensive benchmark of batch integration for scATAC-seq embedding methods, including BatchRefiner. Importantly, we formalize a significance statistic, which we use to demonstrate BatchRefiner's significa",
-          "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/PPR/PPR1305945"
-        },
-        {
-          "term": "biological",
-          "excerpt": "ity between experiments or batches. Many analysis methods thus seek to produce a low-dimensional cell-by-feature embedding space that groups together biologically similar cells across batches while distancing dissimilar cells. Here, we introduce ensemble refinement for scRNA-seq and scATAC-seq embeddings, inspired by ensemble methods from statistical machine learning, and implement BatchRefiner, a",
-          "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/PPR/PPR1305945"
-        },
-        {
-          "term": "single-cell",
-          "excerpt": "BatchRefiner: fast, significant improvement in batch integration of single-cell embeddings with ensemble refinement Data from single-cell RNA sequencing (scRNA-seq) and the Assay for Transposase-Accessible Chromatin (scATAC-seq) are high-dimensional, sparse, and undesirably capture technical variability between experi",
-          "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/PPR/PPR1305945"
-        }
-      ],
-      "related_benchmarks": [],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability"
-      ],
-      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 16,
-      "extraction_status": "complete",
-      "extraction_error": "",
-      "content_hash": "8a0bf7fa2e1644f7566410a46947d4b91e6527b4e4fbf9fdffdd6995b1d1f325",
-      "is_seed": false,
-      "topic": "general_text",
       "contribution_type": "new_benchmark"
     },
     {
@@ -1976,65 +1681,6 @@
       "contribution_type": "new_benchmark"
     },
     {
-      "id": "doi:10.64898/2026.08.20.26360960",
-      "slug": "doi-10-64898-2026-08-20-26360960-9dbbca3470",
-      "kind": "paper",
-      "title": "PathEQA: Feature-Graph-Guided Random Forests for Multianalyte External Quality Assessment",
-      "abstract": "External quality assessment (EQA) of multianalyte assays is commonly interpreted analyte by analyte, although many panels contain known relations among measured features that may reveal joint quality patterns. We propose PathEQA, a feature-graph-guided random forest framework in which a user-supplied graph can represent biochemical pathways, molecular interactions, shared measurement processes, or other domain relations. The same graph is allowed to influence feature representation, node-level candidate generation, and split selection, with an optional local grouped decision. We evaluated the framework in graph-aligned and graph-misspecified simulations and used a six-analyte catecholamine-related liquid chromatography-tandem mass spectrometry EQA data set as an illustrative case study (929 records from 58 laboratories and 117 complete multianalyte panels). In graph-aligned simulations, the grouped variant reduced test root mean squared error by 7.4-9.4% relative to ordinary random forest across training sizes of 60-240, whereas graph misspecification could worsen prediction. In the catecholamine case study, full PathEQA was comparable with ordinary random forest in laboratory-grouped cross-validation (RMSE 0.570 versus 0.569) and modestly better in the final-round temporal holdout (0.307 versus 0.318); a simpler static network-sampling baseline performed best. Dopamine-norepinephrine was the strongest pair, whereas dopamine-norepinephrine-epinephrine best estimated multianalyte failure burden. These results support a general conclusion: feature-graph guidance can improve small-sample multivariate quality assessment when the supplied structure is outcome-relevant, but graph relevance must be tested rather than assumed. Catecholamines serve here as a worked example rather than a restriction of the framework.",
-      "authors": [
-        "Li, Q.",
-        "Yu, K."
-      ],
-      "source": "medrxiv",
-      "published_at": "2026-08-25T00:00:00+00:00",
-      "updated_at": "2026-08-25T00:00:00+00:00",
-      "priority": "P1",
-      "categories": [
-        "general_text"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "cc_no",
-      "identifiers": {
-        "doi": "10.64898/2026.08.20.26360960"
-      },
-      "links": {
-        "abs": "https://www.medrxiv.org/content/10.64898/2026.08.20.26360960",
-        "pdf": "https://www.medrxiv.org/content/10.64898/2026.08.20.26360960.full.pdf",
-        "html": "https://www.medrxiv.org/content/10.64898/2026.08.20.26360960.full"
-      },
-      "evidence": [
-        {
-          "term": "We propose PathEQA",
-          "excerpt": "commonly interpreted analyte by analyte, although many panels contain known relations among measured features that may reveal joint quality patterns. We propose PathEQA, a feature-graph-guided random forest framework in which a user-supplied graph can represent biochemical pathways, molecular interactions, shared measurement processes, or other domain relations. The same graph is allowed to influence feat",
-          "location": "Abstract / metadata",
-          "source_url": "https://www.medrxiv.org/content/10.64898/2026.08.20.26360960.full"
-        },
-        {
-          "term": "laboratory",
-          "excerpt": ", whereas graph misspecification could worsen prediction. In the catecholamine case study, full PathEQA was comparable with ordinary random forest in laboratory-grouped cross-validation (RMSE 0.570 versus 0.569) and modestly better in the final-round temporal holdout (0.307 versus 0.318); a simpler static network-sampling baseline performed best. Dopamine-norepinephrine was the strongest pair, whe",
-          "location": "Abstract / metadata",
-          "source_url": "https://www.medrxiv.org/content/10.64898/2026.08.20.26360960.full"
-        }
-      ],
-      "related_benchmarks": [
-        "PathEQA",
-        "EQA"
-      ],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability"
-      ],
-      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 14,
-      "extraction_status": "incomplete",
-      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.08.20.26360960.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
-      "content_hash": "24cb5fe9f7bb023576dc3467043f6bb420b9f1073e3916c83241b0e3857f9e7e",
-      "is_seed": false,
-      "topic": "general_text",
-      "contribution_type": "new_benchmark"
-    },
-    {
       "id": "arxiv:2608.23898",
       "slug": "arxiv-2608-23898-277d7aee4e",
       "kind": "paper",
@@ -2457,86 +2103,6 @@
       "is_seed": true,
       "topic": "general_text",
       "contribution_type": "audit"
-    },
-    {
-      "id": "arxiv:2608.18618",
-      "slug": "arxiv-2608-18618-eba1ae50f2",
-      "kind": "paper",
-      "title": "LabDex: A Hierarchical Benchmark for Dexterous Manipulation in Laboratories",
-      "abstract": "Autonomous laboratories hold great promise for accelerating scientific discovery. To achieve this vision, robots are supposed to dexterously manipulate diverse labware and instruments and execute long-horizon, state-dependent experimental procedures. Yet existing benchmarks do not jointly capture dexterous hand use, real-world laboratory interactions, and multi-stage experimental procedures, limiting systematic training and evaluation. To bridge this gap, we introduce LabDex, a large-scale real-world dataset and benchmark for dexterous manipulation in chemistry laboratories, organized around a hierarchical task taxonomy spanning atomic skills, compositional tasks, and long-horizon experiments. First, LabDex is cross-platform and, for the first time, unifies real-world and simulation platforms under a common framework, providing standardized task definitions, demonstrations, and evaluation protocols. Second, LabDex is large-scale and systematically organizes chemistry laboratory operations into three interconnected levels: Atomic Skills, which characterize fundamental dexterous manipulation capabilities; Compositional Skills; and Long-Horizon Laboratory Workflows. This hierarchical design not only supports the evaluation of end-task performance, but also enables the analysis of how fundamental dexterous skills compose and influence more complex laboratory operations. We conduct cross-level evaluations of representative robot learning methods in both real-world and simulation environments. The experimental results validate the effectiveness of the LabDex task design and demonstration data, and show that the benchmark supports the training and systematic evaluation of existing robotic policies across laboratory dexterous manipulation tasks at different levels, providing a foundation for further research and development of autonomous laboratory robots.",
-      "authors": [
-        "Zhipeng Tang",
-        "Sihang Chen",
-        "Sha Zhang",
-        "Peihao Yang",
-        "Yan Liu",
-        "Wentao Zhao",
-        "Xinrui Liu",
-        "Rui Huang",
-        "Wensheng Du",
-        "Yuting Huang",
-        "Jiajun Deng",
-        "Lidian Wang",
-        "Yuan Zhang",
-        "Yanyong Zhang"
-      ],
-      "source": "arxiv",
-      "published_at": "2026-08-19T07:11:06+00:00",
-      "updated_at": "2026-08-19T07:11:06+00:00",
-      "priority": "P1",
-      "categories": [
-        "experiment_agent"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "",
-      "identifiers": {
-        "arxiv": "2608.18618"
-      },
-      "links": {
-        "abs": "https://arxiv.org/abs/2608.18618v1",
-        "pdf": "https://arxiv.org/pdf/2608.18618v1",
-        "html": "https://arxiv.org/html/2608.18618"
-      },
-      "evidence": [
-        {
-          "term": "we introduce",
-          "excerpt": "nd use, real-world laboratory interactions, and multi-stage experimental procedures, limiting systematic training and evaluation. To bridge this gap, we introduce LabDex, a large-scale real-world dataset and benchmark for dexterous manipulation in chemistry laboratories, organized around a hierarchical task taxonomy spanning atomic skills, compositional tasks, and long-horizon experiments. First, La",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2608.18618"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "LabDex: A Hierarchical Benchmark for Dexterous Manipulation in Laboratories Autonomous laboratories hold great promise for accelerating scientific discovery. To achieve this vision, robots are supposed to dexterously manipulate diverse labware and instruments and execute",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2608.18618"
-        },
-        {
-          "term": "benchmarks",
-          "excerpt": "re supposed to dexterously manipulate diverse labware and instruments and execute long-horizon, state-dependent experimental procedures. Yet existing benchmarks do not jointly capture dexterous hand use, real-world laboratory interactions, and multi-stage experimental procedures, limiting systematic training and evaluation. To bridge this gap, we introduce LabDex, a large-scale real-world dataset",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2608.18618"
-        },
-        {
-          "term": "laboratory",
-          "excerpt": "ents and execute long-horizon, state-dependent experimental procedures. Yet existing benchmarks do not jointly capture dexterous hand use, real-world laboratory interactions, and multi-stage experimental procedures, limiting systematic training and evaluation. To bridge this gap, we introduce LabDex, a large-scale real-world dataset and benchmark for dexterous manipulation in chemistry laboratorie",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2608.18618"
-        }
-      ],
-      "related_benchmarks": [],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability"
-      ],
-      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 17,
-      "extraction_status": "metadata_only",
-      "extraction_error": "",
-      "content_hash": "seed:2608.18618",
-      "is_seed": true,
-      "topic": "experiment_agent",
-      "contribution_type": "new_benchmark"
     },
     {
       "id": "arxiv:2608.02595",
@@ -3504,90 +3070,6 @@
       "contribution_type": "new_benchmark"
     },
     {
-      "id": "arxiv:2607.09880",
-      "slug": "arxiv-2607-09880-01fcfd21f5",
-      "kind": "paper",
-      "title": "CLIR-Bench: Benchmarking Multimodal Question Answering over Irregular Clinical Time Series",
-      "abstract": "Clinical time series are central to patient monitoring, risk assessment, and clinical decision support. However, they are often sparse, irregularly sampled, and asynchronous, making it difficult for models to identify the temporal evidence required for clinical Question Answering (QA). Existing benchmarks primarily focus on regularly sampled time-series QA or medical QA over static data, and therefore rarely assess whether models can faithfully ground their answers in irregular temporal observations. To fill this gap, we introduce CLIR-Bench, a benchmark for irregular clinical time series QA constructed from de-identified ICU records through a principled four-stage pipeline. CLIR-Bench contains 6,600 QA instances spanning 11 clinical variables, organized into four capability dimensions and 11 tasks. Each question is linked to explicit temporal evidence and task-specific answer derivation rules, enabling evaluation of both answer accuracy and evidence use. Experiments show that existing generalist models struggle to retrieve and reason over sparse clinical evidence, highlighting the need for stronger irregular time-series reasoning methods. Our code and data are available at https://huggingface.co/datasets/winall/CLIR-Bench.",
-      "authors": [
-        "Frank Nie",
-        "Ethan B. Liu",
-        "Yuan Zhu",
-        "Loe Yan",
-        "Wei Fan",
-        "Jindong Han"
-      ],
-      "source": "arxiv",
-      "published_at": "2026-07-10T18:13:54+00:00",
-      "updated_at": "2026-07-10T18:13:54+00:00",
-      "priority": "P1",
-      "categories": [
-        "biosafety"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "",
-      "identifiers": {
-        "arxiv": "2607.09880"
-      },
-      "links": {
-        "abs": "https://arxiv.org/abs/2607.09880v1",
-        "pdf": "https://arxiv.org/pdf/2607.09880v1",
-        "html": "https://arxiv.org/html/2607.09880"
-      },
-      "evidence": [
-        {
-          "term": "we introduce",
-          "excerpt": "ver static data, and therefore rarely assess whether models can faithfully ground their answers in irregular temporal observations. To fill this gap, we introduce CLIR-Bench, a benchmark for irregular clinical time series QA constructed from de-identified ICU records through a principled four-stage pipeline. CLIR-Bench contains 6,600 QA instances spanning 11 clinical variables, organized into four c",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2607.09880"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "CLIR-Bench: Benchmarking Multimodal Question Answering over Irregular Clinical Time Series Clinical time series are central to patient monitoring, risk assessment, and clinical decision support. However, they are often sparse, irregularly sampled, and asynchron",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2607.09880"
-        },
-        {
-          "term": "benchmarks",
-          "excerpt": "y sampled, and asynchronous, making it difficult for models to identify the temporal evidence required for clinical Question Answering (QA). Existing benchmarks primarily focus on regularly sampled time-series QA or medical QA over static data, and therefore rarely assess whether models can faithfully ground their answers in irregular temporal observations. To fill this gap, we introduce CLIR-Benc",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2607.09880"
-        },
-        {
-          "term": "benchmarking",
-          "excerpt": "CLIR-Bench: Benchmarking Multimodal Question Answering over Irregular Clinical Time Series Clinical time series are central to patient monitoring, risk assessment, and clinical decision support. However, they are often sparse, irregularly sampled, and asynchronous",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2607.09880"
-        },
-        {
-          "term": "medical",
-          "excerpt": "ntify the temporal evidence required for clinical Question Answering (QA). Existing benchmarks primarily focus on regularly sampled time-series QA or medical QA over static data, and therefore rarely assess whether models can faithfully ground their answers in irregular temporal observations. To fill this gap, we introduce CLIR-Bench, a benchmark for irregular clinical time series QA constructe",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2607.09880"
-        },
-        {
-          "term": "clinical",
-          "excerpt": "CLIR-Bench: Benchmarking Multimodal Question Answering over Irregular Clinical Time Series Clinical time series are central to patient monitoring, risk assessment, and clinical decision support. However, they are often sparse, irregularly sampled, and asynchronous, making it difficult for models to identify the tempo",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2607.09880"
-        }
-      ],
-      "related_benchmarks": [],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "biosecurity_misuse"
-      ],
-      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 34,
-      "extraction_status": "metadata_only",
-      "extraction_error": "",
-      "content_hash": "seed:2607.09880",
-      "is_seed": true,
-      "topic": "biosafety",
-      "contribution_type": "new_benchmark"
-    },
-    {
       "id": "arxiv:2607.08758",
       "slug": "arxiv-2607-08758-8844b1182e",
       "kind": "paper",
@@ -3741,76 +3223,6 @@
       "extraction_status": "metadata_only",
       "extraction_error": "",
       "content_hash": "metadata:arxiv:2607.08203",
-      "is_seed": true,
-      "topic": "general_text",
-      "contribution_type": "audit"
-    },
-    {
-      "id": "arxiv:2607.05084",
-      "slug": "arxiv-2607-05084-8d561b9d8e",
-      "kind": "paper",
-      "title": "Rethinking Benchmarks and Models for Enzyme Specificity Prediction",
-      "abstract": "Artificial Intelligence has had a profound impact on the biological sciences, and in particular has accelerated research on protein form and function. Enzymes are no exception: a surge of predictive models have been recently developed to address a range of enzyme tasks. Models addressing enzyme-substrate (ES) or enzyme-reaction (ER) compatibility could be especially valuable for enzyme annotation, biosynthetic pathway elucidation, and biocatalyst retrieval, the central challenge of which is the identification of a true catalyst (or truly compatible reaction) among many similar candidates. While existing models report strong performance on alternative benchmarks, less is known about their capabilities in this regime. Herein, we benchmark four recently released ES and ER prediction models, using tasks and datasets tailored to this setting. We first show that two representative ES prediction models perform near random baselines across two enzyme families when considering enzymes and substrates not encountered during training. To evaluate additional models across a consistent dataset, we next assemble the largest cytochrome P450 (CYP) reaction dataset to date, 2,922 reactions across 768 enzymes, and construct a CYP ranking benchmark requiring the correct enzyme to be prioritized among all CYPs in its native organism. We again find that most models do not outperform sequence-based (BLAST) baselines even after fine-tuning. We finally adapt the bimolecular structure prediction model Boltz to ES prediction by training supervised classifiers on residue-ligand pair embeddings, and show that this approach consistently surpasses the BLAST baselines on our CYP ranking benchmark. Together, our results argue for more discovery-relevant benchmarking and suggest that interaction-aware representations from full biomolecular complexes may provide a promising basis for enzyme prioritization.",
-      "authors": [
-        "Elizabeth H. Mahood",
-        "Natália Komorníková",
-        "Tomáš Pluskal",
-        "Pranam Chatterjee"
-      ],
-      "source": "arxiv",
-      "published_at": "2026-07-06T13:48:02+00:00",
-      "updated_at": "2026-07-06T13:48:02+00:00",
-      "priority": "P2",
-      "categories": [
-        "general_text"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "",
-      "identifiers": {
-        "arxiv": "2607.05084"
-      },
-      "links": {
-        "abs": "https://arxiv.org/abs/2607.05084v1",
-        "pdf": "https://arxiv.org/pdf/2607.05084v1",
-        "html": "https://arxiv.org/html/2607.05084"
-      },
-      "evidence": [
-        {
-          "term": "benchmark",
-          "excerpt": "Rethinking Benchmarks and Models for Enzyme Specificity Prediction Artificial Intelligence has had a profound impact on the biological sciences, and in particular has accelerated research on protein form and function. Enzymes are no exception: a surge of predi",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2607.05084"
-        },
-        {
-          "term": "benchmarks",
-          "excerpt": "Rethinking Benchmarks and Models for Enzyme Specificity Prediction Artificial Intelligence has had a profound impact on the biological sciences, and in particular has accelerated research on protein form and function. Enzymes are no exception: a surge of predic",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2607.05084"
-        },
-        {
-          "term": "benchmarking",
-          "excerpt": "w that this approach consistently surpasses the BLAST baselines on our CYP ranking benchmark. Together, our results argue for more discovery-relevant benchmarking and suggest that interaction-aware representations from full biomolecular complexes may provide a promising basis for enzyme prioritization. Artificial Intelligence has had a profound impact on the biological sciences, and in particular ha",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2607.05084"
-        },
-        {
-          "term": "biological",
-          "excerpt": "Rethinking Benchmarks and Models for Enzyme Specificity Prediction Artificial Intelligence has had a profound impact on the biological sciences, and in particular has accelerated research on protein form and function. Enzymes are no exception: a surge of predictive models have been recently developed to address a range of enzyme tasks. Models addressing enzyme-substrate (",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2607.05084"
-        }
-      ],
-      "related_benchmarks": [],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability"
-      ],
-      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
-      "match_score": 22,
-      "extraction_status": "metadata_only",
-      "extraction_error": "",
-      "content_hash": "seed:2607.05084",
       "is_seed": true,
       "topic": "general_text",
       "contribution_type": "audit"
@@ -3978,85 +3390,6 @@
       "contribution_type": "new_benchmark"
     },
     {
-      "id": "arxiv:2606.18215",
-      "slug": "arxiv-2606-18215-ed778ac0df",
-      "kind": "paper",
-      "title": "A benchmark suite of intracellular Boolean model variants and multiscale simulations for computational biology",
-      "abstract": "We present PhysiBench, an open resource for developing and evaluating computational methods in systems biology including a benchmark suite of 612 executable intracellular Boolean regulatory network variants and a dataset of 120,000 time-resolved multiscale stochastic simulations. The benchmark models are derived from seven published Boolean networks spanning cell-cycle control, developmental patterning, cancer signaling, immune response, and cell-fate decisions, and are executable in the PhysiBoSS/PhysiCell multiscale simulation framework. Model variants are generated through mutation-based model construction, online behavioral filtering, and offline sensitivity evaluation. The simulation dataset is produced from 60 selected models under systematically sampled stimulation protocols and fixed model-level initial configurations. Each trajectory is linked to its model identifier, input-parameter file, stochastic seed, and cell-level output file. PhysiBench supports direct simulation, surrogate modeling, data-driven inference, simulation-based optimization, and comparative benchmarking. Technical validation includes file-integrity and executability checks, graph-based structural diversity analyses, and behavioral heterogeneity assessment from multiscale simulation outputs.",
-      "authors": [
-        "Marco Masera",
-        "Riccardo Smeriglio",
-        "Roberta Bardini",
-        "Alessandro Savino",
-        "Stefano Di Carlo"
-      ],
-      "source": "arxiv",
-      "published_at": "2026-06-16T17:45:05+00:00",
-      "updated_at": "2026-06-16T17:45:05+00:00",
-      "priority": "P1",
-      "categories": [
-        "experiment_agent"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "",
-      "identifiers": {
-        "arxiv": "2606.18215"
-      },
-      "links": {
-        "abs": "https://arxiv.org/abs/2606.18215v1",
-        "pdf": "https://arxiv.org/pdf/2606.18215v1",
-        "html": "https://arxiv.org/html/2606.18215"
-      },
-      "evidence": [
-        {
-          "term": "we present",
-          "excerpt": "A benchmark suite of intracellular Boolean model variants and multiscale simulations for computational biology We present PhysiBench, an open resource for developing and evaluating computational methods in systems biology including a benchmark suite of 612 executable intracellular Boolean regulatory network variants and a dataset of 120,000 time-resolved mult",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2606.18215"
-        },
-        {
-          "term": "benchmark suite",
-          "excerpt": "A benchmark suite of intracellular Boolean model variants and multiscale simulations for computational biology We present PhysiBench, an open resource for developing and evaluating computational methods in systems biology including a benchmark suite of 612",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2606.18215"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "A benchmark suite of intracellular Boolean model variants and multiscale simulations for computational biology We present PhysiBench, an open resource for developing and evaluating computational methods in systems biology including a benchmark suite o",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2606.18215"
-        },
-        {
-          "term": "benchmarking",
-          "excerpt": "l-level output file. PhysiBench supports direct simulation, surrogate modeling, data-driven inference, simulation-based optimization, and comparative benchmarking. Technical validation includes file-integrity and executability checks, graph-based structural diversity analyses, and behavioral heterogeneity assessment from multiscale simulation outputs. We present PhysiBench, an open resource for deve",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2606.18215"
-        },
-        {
-          "term": "biology",
-          "excerpt": "A benchmark suite of intracellular Boolean model variants and multiscale simulations for computational biology We present PhysiBench, an open resource for developing and evaluating computational methods in systems biology including a benchmark suite of 612 executable intracellular Boolean regulatory network variants and a dataset of 120,000 time-re",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2606.18215"
-        }
-      ],
-      "related_benchmarks": [
-        "PhysiBench"
-      ],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability"
-      ],
-      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 16,
-      "extraction_status": "metadata_only",
-      "extraction_error": "",
-      "content_hash": "seed:2606.18215",
-      "is_seed": true,
-      "topic": "experiment_agent",
-      "contribution_type": "new_benchmark"
-    },
-    {
       "id": "arxiv:2606.11150",
       "slug": "arxiv-2606-11150-4227c00d58",
       "kind": "paper",
@@ -4220,159 +3553,6 @@
       "is_seed": true,
       "topic": "multimodal",
       "contribution_type": "audit"
-    },
-    {
-      "id": "arxiv:2606.05980",
-      "slug": "arxiv-2606-05980-970edcf166",
-      "kind": "paper",
-      "title": "On the Promises and Limits of Multi-omics Integration for Deconvolution: The HADACA3 Benchmark",
-      "abstract": "Understanding the cellular composition of complex tissues, such as tumors, is a key challenge in biology and medicine. A common approach, known as deconvolution, aims to estimate the cellular composition from bulk molecular measurements. With the growing availability of multiple types of molecular data, it is often assumed that combining data sources should improve deconvolution performance. Here, we present HADACA3, a community-driven benchmark designed to evaluate this assumption. We conducted a four-day collaborative competition followed by a large-scale computational benchmark, testing more than 250,000 analysis pipelines across nine datasets with matched DNA methylation (DNAm) and RNA profiles, representing a wide range of biological and experimental conditions. Our framework jointly evaluates the impact of preprocessing, feature selection, modeling, and integration strategies. We find that DNAm alone achieves the highest median performance across datasets, making it the most stable and reliable single-modality approach. However, multi-omics integration strategies can regularly achieve higher top performance in specific datasets and pipeline configurations. Among the tested strategies, late integration based on error-weighted averaging provides a strong and reliable baseline, while non-linear early integration methods, such as optimal transport, show promising results on real biological datasets. Overall, our results show that multi-omics integration does not systematically improve average performance over DNAm alone, but can improve best-case performance in specific settings. This highlights a trade-off between robustness and peak performance, and emphasizes the importance of aligning integration strategies with the statistical properties of the data. All data, code, and evaluation tools are publicly available to support reproducible research and future method development.",
-      "authors": [
-        "Hugo Barbot",
-        "Elise Amblard",
-        "Nicolas Homberg",
-        "Lucie Lamothe",
-        "Morgane Térézol",
-        "Hadaca Consortium",
-        "Mira Ayadi",
-        "Aurélia Baurès",
-        "Yasmina Kermezli",
-        "Carl Herrmann",
-        "Sebastien Dejean",
-        "Lionel Spinelli",
-        "David Causeur",
-        "Florent Chuffart",
-        "Anaïs Baudot",
-        "Yuna Blum",
-        "Magali Richard"
-      ],
-      "source": "arxiv",
-      "published_at": "2026-06-04T10:23:13+00:00",
-      "updated_at": "2026-06-04T10:23:13+00:00",
-      "priority": "P1",
-      "categories": [
-        "general_text"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "",
-      "identifiers": {
-        "arxiv": "2606.05980"
-      },
-      "links": {
-        "abs": "https://arxiv.org/abs/2606.05980v1",
-        "pdf": "https://arxiv.org/pdf/2606.05980v1",
-        "html": "https://arxiv.org/html/2606.05980"
-      },
-      "evidence": [
-        {
-          "term": "we present",
-          "excerpt": "ing availability of multiple types of molecular data, it is often assumed that combining data sources should improve deconvolution performance. Here, we present HADACA3, a community-driven benchmark designed to evaluate this assumption. We conducted a four-day collaborative competition followed by a large-scale computational benchmark, testing more than 250,000 analysis pipelines across nine datas",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2606.05980"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "On the Promises and Limits of Multi-omics Integration for Deconvolution: The HADACA3 Benchmark Understanding the cellular composition of complex tissues, such as tumors, is a key challenge in biology and medicine. A common approach, known as deconvolution, aims to estimate the cellular composition from bulk molecular measurements. W",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2606.05980"
-        },
-        {
-          "term": "biology",
-          "excerpt": "Integration for Deconvolution: The HADACA3 Benchmark Understanding the cellular composition of complex tissues, such as tumors, is a key challenge in biology and medicine. A common approach, known as deconvolution, aims to estimate the cellular composition from bulk molecular measurements. With the growing availability of multiple types of molecular data, it is often assumed that combining data",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2606.05980"
-        },
-        {
-          "term": "biological",
-          "excerpt": "testing more than 250,000 analysis pipelines across nine datasets with matched DNA methylation (DNAm) and RNA profiles, representing a wide range of biological and experimental conditions. Our framework jointly evaluates the impact of preprocessing, feature selection, modeling, and integration strategies. We find that DNAm alone achieves the highest median performance across datasets, making it t",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2606.05980"
-        },
-        {
-          "term": "medicine",
-          "excerpt": "for Deconvolution: The HADACA3 Benchmark Understanding the cellular composition of complex tissues, such as tumors, is a key challenge in biology and medicine. A common approach, known as deconvolution, aims to estimate the cellular composition from bulk molecular measurements. With the growing availability of multiple types of molecular data, it is often assumed that combining data sources shou",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2606.05980"
-        }
-      ],
-      "related_benchmarks": [],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability"
-      ],
-      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 23,
-      "extraction_status": "metadata_only",
-      "extraction_error": "",
-      "content_hash": "seed:2606.05980",
-      "is_seed": true,
-      "topic": "general_text",
-      "contribution_type": "new_benchmark"
-    },
-    {
-      "id": "arxiv:2606.05139",
-      "slug": "arxiv-2606-05139-1cb109bb43",
-      "kind": "paper",
-      "title": "BBOmix: A Tabular Benchmark for Hyperparameter Optimization of Unsupervised Biological Representation Learning",
-      "abstract": "The rapid advancement of high-throughput sequencing has led to large, high-dimensional omics datasets. Deep unsupervised learning architectures, particularly Autoencoders (AEs), are increasingly used for dimensionality reduction and representation learning in this domain. However, AEs are highly sensitive to architectural choices and hyperparameters, and unsupervised optimization typically relies on reconstruction loss, which may be a poor proxy for downstream utility. Exhaustive hyperparameter optimization (HPO) is computationally expensive, leading researchers to frequently rely on suboptimal default configurations. To democratize access to large-scale unsupervised HPO research, we introduce $\\textbf{BBOmix}$, the first open-source tabular benchmark for unsupervised representation learning on real-world biological data. Our benchmark includes 105,000 evaluations across four AE architectures and seven multi-omics modalities from the TCGA and SCHC datasets. We quantify the correlation between reconstruction loss and downstream task performance and provide an extensive evaluation of state-of-the-art single-fidelity, multi-fidelity, and transfer learning HPO methods, establishing a rigorous baseline for future research in unsupervised biological representation learning.",
-      "authors": [
-        "Luca Thale-Bombien",
-        "Jan Ewald",
-        "Ralf König",
-        "Aaron Klein"
-      ],
-      "source": "arxiv",
-      "published_at": "2026-06-03T17:48:31+00:00",
-      "updated_at": "2026-06-03T17:48:31+00:00",
-      "priority": "P1",
-      "categories": [
-        "general_text"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "",
-      "identifiers": {
-        "arxiv": "2606.05139"
-      },
-      "links": {
-        "abs": "https://arxiv.org/abs/2606.05139v1",
-        "pdf": "https://arxiv.org/pdf/2606.05139v1",
-        "html": "https://arxiv.org/html/2606.05139"
-      },
-      "evidence": [
-        {
-          "term": "we introduce",
-          "excerpt": "pensive, leading researchers to frequently rely on suboptimal default configurations. To democratize access to large-scale unsupervised HPO research, we introduce $\\textbf{BBOmix}$, the first open-source tabular benchmark for unsupervised representation learning on real-world biological data. Our benchmark includes 105,000 evaluations across four AE architectures and seven multi-omics modalities fro",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2606.05139"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "BBOmix: A Tabular Benchmark for Hyperparameter Optimization of Unsupervised Biological Representation Learning The rapid advancement of high-throughput sequencing has led to large, high-dimensional omics datasets. Deep unsupervised learning architectures, particularl",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2606.05139"
-        },
-        {
-          "term": "biological",
-          "excerpt": "BBOmix: A Tabular Benchmark for Hyperparameter Optimization of Unsupervised Biological Representation Learning The rapid advancement of high-throughput sequencing has led to large, high-dimensional omics datasets. Deep unsupervised learning architectures, particularly Autoencoders (AEs), are increasingly used for dimensional",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2606.05139"
-        }
-      ],
-      "related_benchmarks": [],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability"
-      ],
-      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 14,
-      "extraction_status": "metadata_only",
-      "extraction_error": "",
-      "content_hash": "seed:2606.05139",
-      "is_seed": true,
-      "topic": "general_text",
-      "contribution_type": "new_benchmark"
     },
     {
       "id": "arxiv:2607.22566",
@@ -4703,79 +3883,6 @@
       "content_hash": "seed:2605.30295",
       "is_seed": true,
       "topic": "general_text",
-      "contribution_type": "new_benchmark"
-    },
-    {
-      "id": "arxiv:2605.28161",
-      "slug": "arxiv-2605-28161-c1088320a3",
-      "kind": "paper",
-      "title": "MeniOmni: A Structured Multimodal Benchmark for Holistic Meniscus Injury Assessment",
-      "abstract": "Clinical diagnosis of meniscus injuries requires radiologists to integrate volumetric MRI evidence with patient context (e.g., sex, age, BMI) and to produce structured diagnostic reports. Existing knee MRI benchmarks are typically unimodal and rely on coarse labels, limiting their ability to evaluate holistic clinical reasoning. We introduce MeniOmni, a structured multimodal benchmark for meniscus injury assessment, consisting of 746 multi-center MRI studies with tri-planar volumetric inputs, Clinical Priors, and expert-annotated clinical text. MeniOmni supports two tasks: (1) fine-grained Stoller severity grading and (2) diagnostic report generation. We further propose risk-aware ordinal evaluation and a semantic consistency metric (Meni-Score) to better reflect clinical relevance. Baseline experiments show that incorporating Clinical Priors improves grading performance and reduces severe errors, highlighting the value of multimodal context for safer assessment. Code and data are available at https://github.com/ShuruiXu/MeniOmni.",
-      "authors": [
-        "Shurui Xu",
-        "Siqi Yang",
-        "Weiping Ding",
-        "Hui Wang",
-        "Mengzhen Fan",
-        "Yuyu Sun",
-        "Shuyan Li"
-      ],
-      "source": "arxiv",
-      "published_at": "2026-05-27T08:44:46+00:00",
-      "updated_at": "2026-05-27T08:44:46+00:00",
-      "priority": "P1",
-      "categories": [
-        "multimodal"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "",
-      "identifiers": {
-        "arxiv": "2605.28161"
-      },
-      "links": {
-        "abs": "https://arxiv.org/abs/2605.28161v1",
-        "pdf": "https://arxiv.org/pdf/2605.28161v1",
-        "html": "https://arxiv.org/html/2605.28161"
-      },
-      "evidence": [
-        {
-          "term": "we introduce",
-          "excerpt": "ports. Existing knee MRI benchmarks are typically unimodal and rely on coarse labels, limiting their ability to evaluate holistic clinical reasoning. We introduce MeniOmni, a structured multimodal benchmark for meniscus injury assessment, consisting of 746 multi-center MRI studies with tri-planar volumetric inputs, Clinical Priors, and expert-annotated clinical text. MeniOmni supports two tasks: (1)",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2605.28161"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "MeniOmni: A Structured Multimodal Benchmark for Holistic Meniscus Injury Assessment Clinical diagnosis of meniscus injuries requires radiologists to integrate volumetric MRI evidence with patient context (e.g., sex, age, BMI) and to produce structured diagnostic reports. Existing kn",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2605.28161"
-        },
-        {
-          "term": "benchmarks",
-          "excerpt": "gists to integrate volumetric MRI evidence with patient context (e.g., sex, age, BMI) and to produce structured diagnostic reports. Existing knee MRI benchmarks are typically unimodal and rely on coarse labels, limiting their ability to evaluate holistic clinical reasoning. We introduce MeniOmni, a structured multimodal benchmark for meniscus injury assessment, consisting of 746 multi-center MRI s",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2605.28161"
-        },
-        {
-          "term": "clinical",
-          "excerpt": "MeniOmni: A Structured Multimodal Benchmark for Holistic Meniscus Injury Assessment Clinical diagnosis of meniscus injuries requires radiologists to integrate volumetric MRI evidence with patient context (e.g., sex, age, BMI) and to produce structured diagnostic reports. Existing knee MRI benchmarks are typically unimodal and rely",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2605.28161"
-        }
-      ],
-      "related_benchmarks": [],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability"
-      ],
-      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 22,
-      "extraction_status": "metadata_only",
-      "extraction_error": "",
-      "content_hash": "seed:2605.28161",
-      "is_seed": true,
-      "topic": "multimodal",
       "contribution_type": "new_benchmark"
     },
     {
@@ -5344,145 +4451,6 @@
       "extraction_status": "metadata_only",
       "extraction_error": "",
       "content_hash": "seed:2605.23629",
-      "is_seed": true,
-      "topic": "multimodal",
-      "contribution_type": "new_benchmark"
-    },
-    {
-      "id": "arxiv:2605.23242",
-      "slug": "arxiv-2605-23242-0d775f470f",
-      "kind": "paper",
-      "title": "Cogniscope: A Synthetic Longitudinal Benchmark and Browser-Based Evaluation Framework for Early-Risk Cognitive AI Systems",
-      "abstract": "We present Cogniscope, an open evaluation framework for studying longitudinal early-risk AI systems under controlled behavioral drift, sparse observations, delayed evidence, and heterogeneous progression patterns. Cogniscope combines two complementary components: a synthetic simulation engine that generates privacy-preserving longitudinal behavioral traces aligned with configurable latent risk trajectories, and a browser-based data-collection instrument implemented as a Chrome extension for capturing naturalistic video interaction telemetry and micro-question responses during YouTube playback. The released benchmark includes 200,000 simulated video-interaction records from 200 users over 200 days, a 504-session schema-aligned synthetic deployment dataset across nine behavioral profiles, an 18-table relational schema, baseline evaluation scripts, and time-aware metrics including Early Risk Detection Error (ERDE) and time-to-detection (TTD). We emphasize that Cogniscope is not a diagnostic system and does not claim clinical validity. Instead, it provides a reusable testbed for evaluating how sequential models behave under known longitudinal challenges before deployment with real human-subject data. Experiments show that simple behavioral coherence signals separate simulated risk states under controlled priors, while rule-based deployment-profile classification remains challenging, motivating learned temporal models and robust evaluation protocols.",
-      "authors": [
-        "Mahfuza Farooque",
-        "Ananya Drishti",
-        "Mukhil Muruganantham Prakaash",
-        "Uttkarsh Agarwal",
-        "Zahra Abdul Basit",
-        "Asish Kondragunta"
-      ],
-      "source": "arxiv",
-      "published_at": "2026-05-22T05:24:37+00:00",
-      "updated_at": "2026-05-22T05:24:37+00:00",
-      "priority": "P1",
-      "categories": [
-        "experiment_agent"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "",
-      "identifiers": {
-        "arxiv": "2605.23242"
-      },
-      "links": {
-        "abs": "https://arxiv.org/abs/2605.23242v1",
-        "pdf": "https://arxiv.org/pdf/2605.23242v1",
-        "html": "https://arxiv.org/html/2605.23242"
-      },
-      "evidence": [
-        {
-          "term": "we present",
-          "excerpt": "Cogniscope: A Synthetic Longitudinal Benchmark and Browser-Based Evaluation Framework for Early-Risk Cognitive AI Systems We present Cogniscope, an open evaluation framework for studying longitudinal early-risk AI systems under controlled behavioral drift, sparse observations, delayed evidence, and heterogeneous progression patterns. Cogniscope combines two complementar",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2605.23242"
-        },
-        {
-          "term": "evaluation framework",
-          "excerpt": "Cogniscope: A Synthetic Longitudinal Benchmark and Browser-Based Evaluation Framework for Early-Risk Cognitive AI Systems We present Cogniscope, an open evaluation framework for studying longitudinal early-risk AI systems under controlled behavioral drift, sparse observations, delayed evidence, and heterogeneous progression",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2605.23242"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "Cogniscope: A Synthetic Longitudinal Benchmark and Browser-Based Evaluation Framework for Early-Risk Cognitive AI Systems We present Cogniscope, an open evaluation framework for studying longitudinal early-risk AI systems under controlled behavioral drift, sparse observations, delayed",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2605.23242"
-        },
-        {
-          "term": "clinical",
-          "excerpt": "s including Early Risk Detection Error (ERDE) and time-to-detection (TTD). We emphasize that Cogniscope is not a diagnostic system and does not claim clinical validity. Instead, it provides a reusable testbed for evaluating how sequential models behave under known longitudinal challenges before deployment with real human-subject data. Experiments show that simple behavioral coherence signals sep",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2605.23242"
-        }
-      ],
-      "related_benchmarks": [],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability"
-      ],
-      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 10,
-      "extraction_status": "metadata_only",
-      "extraction_error": "",
-      "content_hash": "seed:2605.23242",
-      "is_seed": true,
-      "topic": "experiment_agent",
-      "contribution_type": "new_benchmark"
-    },
-    {
-      "id": "arxiv:2605.23068",
-      "slug": "arxiv-2605-23068-17f29c24a2",
-      "kind": "paper",
-      "title": "RoboSurg-VQA: A Multimodal Benchmark for Surgical Segmentation-Aware Visual Question Answering",
-      "abstract": "Reliable visual understanding in robot-assisted and minimally invasive surgery (RMIS/MIS) demands more than accurate masks: in clinical practice, clinicians pose language-like questions about procedural context, visibility, artefacts, and the presence of anatomical structures and surgical instruments, often under degraded views caused by occlusion, smoke, bleeding, and specular highlights. We present \\textbf{RoboSurg-VQA}, a segmentation-aware visual question answering (VQA) benchmark built by repurposing public surgical segmentation datasets under a shared schema. Each frame is paired with a fixed set of clinically motivated questions spanning procedure context, anatomy (including region), imaging modality/view, surgical artefacts, image quality, and basic visibility and spatial attributes, with closed answer sets to enable consistent evaluation. To scale annotation, we generate candidate answers via constrained prompting with automatic validity and consistency checks, followed by human auditing to improve plausibility and label consistency. We report benchmark statistics, sanity baselines, and common evaluation challenges under challenging surgical conditions. The code will be available on https://github.com/ziyangwang007/Robosurg-VQA.",
-      "authors": [
-        "Chengyi Zhang",
-        "Zi Ye",
-        "Ziyang Wang"
-      ],
-      "source": "arxiv",
-      "published_at": "2026-05-21T21:58:11+00:00",
-      "updated_at": "2026-05-21T21:58:11+00:00",
-      "priority": "P1",
-      "categories": [
-        "multimodal"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "",
-      "identifiers": {
-        "arxiv": "2605.23068"
-      },
-      "links": {
-        "abs": "https://arxiv.org/abs/2605.23068v1",
-        "pdf": "https://arxiv.org/pdf/2605.23068v1",
-        "html": "https://arxiv.org/html/2605.23068"
-      },
-      "evidence": [
-        {
-          "term": "we present",
-          "excerpt": "presence of anatomical structures and surgical instruments, often under degraded views caused by occlusion, smoke, bleeding, and specular highlights. We present \\textbf{RoboSurg-VQA}, a segmentation-aware visual question answering (VQA) benchmark built by repurposing public surgical segmentation datasets under a shared schema. Each frame is paired with a fixed set of clinically motivated questions",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2605.23068"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "RoboSurg-VQA: A Multimodal Benchmark for Surgical Segmentation-Aware Visual Question Answering Reliable visual understanding in robot-assisted and minimally invasive surgery (RMIS/MIS) demands more than accurate masks: in clinical practice, clinicians pose language-like quest",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2605.23068"
-        },
-        {
-          "term": "clinical",
-          "excerpt": "ual Question Answering Reliable visual understanding in robot-assisted and minimally invasive surgery (RMIS/MIS) demands more than accurate masks: in clinical practice, clinicians pose language-like questions about procedural context, visibility, artefacts, and the presence of anatomical structures and surgical instruments, often under degraded views caused by occlusion, smoke, bleeding, and spe",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2605.23068"
-        }
-      ],
-      "related_benchmarks": [
-        "RoboSurg-VQA",
-        "VQA",
-        "Robosurg-VQA"
-      ],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability"
-      ],
-      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 12,
-      "extraction_status": "metadata_only",
-      "extraction_error": "",
-      "content_hash": "seed:2605.23068",
       "is_seed": true,
       "topic": "multimodal",
       "contribution_type": "new_benchmark"

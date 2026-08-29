@@ -1,6 +1,6 @@
 {
   "date": "2026-05-22",
-  "count": 2,
+  "count": 1,
   "entries": [
     {
       "id": "arxiv:2605.23629",
@@ -82,78 +82,6 @@
       "content_hash": "seed:2605.23629",
       "is_seed": true,
       "topic": "multimodal",
-      "contribution_type": "new_benchmark"
-    },
-    {
-      "id": "arxiv:2605.23242",
-      "slug": "arxiv-2605-23242-0d775f470f",
-      "kind": "paper",
-      "title": "Cogniscope: A Synthetic Longitudinal Benchmark and Browser-Based Evaluation Framework for Early-Risk Cognitive AI Systems",
-      "abstract": "We present Cogniscope, an open evaluation framework for studying longitudinal early-risk AI systems under controlled behavioral drift, sparse observations, delayed evidence, and heterogeneous progression patterns. Cogniscope combines two complementary components: a synthetic simulation engine that generates privacy-preserving longitudinal behavioral traces aligned with configurable latent risk trajectories, and a browser-based data-collection instrument implemented as a Chrome extension for capturing naturalistic video interaction telemetry and micro-question responses during YouTube playback. The released benchmark includes 200,000 simulated video-interaction records from 200 users over 200 days, a 504-session schema-aligned synthetic deployment dataset across nine behavioral profiles, an 18-table relational schema, baseline evaluation scripts, and time-aware metrics including Early Risk Detection Error (ERDE) and time-to-detection (TTD). We emphasize that Cogniscope is not a diagnostic system and does not claim clinical validity. Instead, it provides a reusable testbed for evaluating how sequential models behave under known longitudinal challenges before deployment with real human-subject data. Experiments show that simple behavioral coherence signals separate simulated risk states under controlled priors, while rule-based deployment-profile classification remains challenging, motivating learned temporal models and robust evaluation protocols.",
-      "authors": [
-        "Mahfuza Farooque",
-        "Ananya Drishti",
-        "Mukhil Muruganantham Prakaash",
-        "Uttkarsh Agarwal",
-        "Zahra Abdul Basit",
-        "Asish Kondragunta"
-      ],
-      "source": "arxiv",
-      "published_at": "2026-05-22T05:24:37+00:00",
-      "updated_at": "2026-05-22T05:24:37+00:00",
-      "priority": "P1",
-      "categories": [
-        "experiment_agent"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "",
-      "identifiers": {
-        "arxiv": "2605.23242"
-      },
-      "links": {
-        "abs": "https://arxiv.org/abs/2605.23242v1",
-        "pdf": "https://arxiv.org/pdf/2605.23242v1",
-        "html": "https://arxiv.org/html/2605.23242"
-      },
-      "evidence": [
-        {
-          "term": "we present",
-          "excerpt": "Cogniscope: A Synthetic Longitudinal Benchmark and Browser-Based Evaluation Framework for Early-Risk Cognitive AI Systems We present Cogniscope, an open evaluation framework for studying longitudinal early-risk AI systems under controlled behavioral drift, sparse observations, delayed evidence, and heterogeneous progression patterns. Cogniscope combines two complementar",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2605.23242"
-        },
-        {
-          "term": "evaluation framework",
-          "excerpt": "Cogniscope: A Synthetic Longitudinal Benchmark and Browser-Based Evaluation Framework for Early-Risk Cognitive AI Systems We present Cogniscope, an open evaluation framework for studying longitudinal early-risk AI systems under controlled behavioral drift, sparse observations, delayed evidence, and heterogeneous progression",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2605.23242"
-        },
-        {
-          "term": "benchmark",
-          "excerpt": "Cogniscope: A Synthetic Longitudinal Benchmark and Browser-Based Evaluation Framework for Early-Risk Cognitive AI Systems We present Cogniscope, an open evaluation framework for studying longitudinal early-risk AI systems under controlled behavioral drift, sparse observations, delayed",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2605.23242"
-        },
-        {
-          "term": "clinical",
-          "excerpt": "s including Early Risk Detection Error (ERDE) and time-to-detection (TTD). We emphasize that Cogniscope is not a diagnostic system and does not claim clinical validity. Instead, it provides a reusable testbed for evaluating how sequential models behave under known longitudinal challenges before deployment with real human-subject data. Experiments show that simple behavioral coherence signals sep",
-          "location": "Abstract / metadata",
-          "source_url": "https://arxiv.org/html/2605.23242"
-        }
-      ],
-      "related_benchmarks": [],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability"
-      ],
-      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 10,
-      "extraction_status": "metadata_only",
-      "extraction_error": "",
-      "content_hash": "seed:2605.23242",
-      "is_seed": true,
-      "topic": "experiment_agent",
       "contribution_type": "new_benchmark"
     }
   ]
