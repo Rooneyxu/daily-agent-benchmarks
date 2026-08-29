@@ -160,28 +160,38 @@ PLANT_SCOPE_PATTERNS = (
     r"\b(?:agriculture|agricultural|agronom(?:y|ic)|crop|crops|plant|plants|plant pathology|plant biology|arabidopsis|botanical|horticultur(?:e|al))\b",
 )
 
-SPECIALIZED_BENCHMARK_PATTERNS = (
+SPECIALIZED_MODEL_EVALUAND_PATTERNS = (
     r"\b(?:protein|peptide|amino[- ]acid|nucleotide|dna|rna|genomic|genome|transcriptomic|proteomic) (?:foundation|language|representation|generative) models?\b",
     r"\b(?:single[- ]cell|spatial transcriptomic|pathology|medical imaging) (?:foundation|representation) models?\b",
     r"\b(?:foundation|language|representation|generative) models? (?:for|of|on) (?:protein|peptide|nucleotide|dna|rna|genomics?|single[- ]cell|spatial transcriptomics?|pathology|medical imaging)\b",
+)
+
+SPECIALIZED_PREDICTION_TASK_PATTERNS = (
     r"\b(?:protein|peptide|amino[- ]acid|nucleotide|dna|rna|gene|genomic|genome|molecular|molecule|small[- ]molecule)\b.{0,100}\b(?:structure|sequence|property|properties|activity|affinity|fitness|function|phenotype|variant|mutation) (?:prediction|classification|regression|generation|design|modeling|modelling)\b",
     r"\b(?:protein fitness|protein structure|sequence classification|molecular propert(?:y|ies)|drug design|binding affinity|mutation effect|phenotype prediction)\b",
 )
 
 GENERAL_AI_EVALUAND_PATTERNS = (
     r"\b(?:large|multimodal large) language models?\b|\b(?:llms?|mllms?)\b",
+    r"\blanguage models?\b",
     r"\bvision[- ]language models?\b|\bvlms?\b",
     r"\b(?:ai|llm|language|research|scientific|biomedical|biology) agents?\b|\bagentic\b",
+    r"\bagents? (?:must|use|using|solve|perform|recover|plan|execute|interact)\b|\bai scientists?\b",
     r"\bfrontier (?:ai )?models?\b|\bgeneral[- ]purpose (?:ai )?(?:models?|systems?)\b",
 )
 
 TRANSFERABLE_METHOD_PATTERNS = (
     r"\b(?:automatic|automated) (?:question|item|task) generation\b",
     r"\b(?:automatic|automated|programmatic|synthetic) benchmark construction\b",
+    r"\bbenchmark (?:construction|curation|generation|validation|quality control|quality assurance)\b",
+    r"\breproducible benchmarking (?:platform|framework|pipeline|workflow|infrastructure)\b",
     r"\b(?:automatic|automated|programmatic) (?:verifier|grader|grading|scoring|quality control|quality assurance)\b",
     r"\b(?:answerability|uniqueness|evidence entailment|answer provenance|citation grounding) (?:check|checking|verification|verifier)\b",
+    r"\bsynthetic evaluation (?:data|datasets?|items?|questions?|tasks?)\b",
     r"\b(?:benchmark|data|dataset|pretraining|training[- ]data|test[- ]set) (?:contamination|leakage)\b|\b(?:contamination|leakage) (?:in|of|across) .{0,80}\bbenchmarks?\b|\b(?:near[- ]duplicate|train[- ]test overlap|dataset overlap)s?\b",
     r"\b(?:data inconsistenc(?:y|ies)|label conflicts?|structural leakage|reproducibility audit)\b",
+    r"\bbenchmark (?:reliability|validity|reproducibility)\b|\bevaluation inconsistenc(?:y|ies)\b",
+    r"\btrain/test split protocols?\b|\bstatistical significance tests?\b|\breporting checklist\b",
     r"\b(?:adversarial filtering|generator[- ]verifier|item response theory|judge calibration|rubric generation)\b",
 )
 

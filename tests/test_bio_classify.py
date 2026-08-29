@@ -20,7 +20,7 @@ def test_new_medical_knowledge_benchmark_is_included() -> None:
     result = classify(
         document(
             "ClinicQA: A New Benchmark for Medical Question Answering",
-            "We introduce a benchmark for clinical knowledge and medical question answering.",
+            "We introduce a benchmark for evaluating large language models on clinical knowledge and medical question answering.",
         )
     )
     assert result.collection_status == "confirmed"
@@ -130,7 +130,7 @@ def test_new_diagnostic_benchmark_is_not_mislabeled_as_an_audit() -> None:
     result = classify(
         document(
             "DDX-TRACE: A Benchmark for Medical Diagnostic Trajectories",
-            "We introduce a benchmark for evaluating diagnostic reasoning in clinical cases.",
+            "We introduce a benchmark for evaluating large language model diagnostic reasoning in clinical cases.",
         )
     )
     assert result.collection_status == "confirmed"
@@ -206,7 +206,7 @@ def test_benchmark_for_an_auditing_task_is_still_a_new_benchmark() -> None:
     result = classify(
         document(
             "PhysDox: A Physical Feasibility Auditing Benchmark for Biomedical Protocols",
-            "We introduce a benchmark for detecting infeasible physiological sensing procedures.",
+            "We introduce a benchmark for evaluating whether language models detect infeasible physiological sensing procedures.",
         )
     )
     assert result.collection_status == "confirmed"
@@ -217,7 +217,7 @@ def test_benchmark_named_for_a_response_audit_is_not_an_audit_of_a_benchmark() -
     result = classify(
         document(
             "MIRA: A Bilingual Benchmark for Medical Information Response Audit",
-            "We introduce Medical Information Response Audit, a controlled clinical benchmark for evaluating model responses.",
+            "We introduce Medical Information Response Audit, a controlled clinical benchmark for evaluating language model responses.",
         )
     )
     assert result.collection_status == "confirmed"
@@ -277,7 +277,7 @@ def test_biobench_name_is_a_strong_domain_signal() -> None:
             "We introduce a benchmark for biology.",
         )
     )
-    assert result.collection_status == "confirmed"
+    assert result.collection_status == "excluded"
 
 
 def test_biology_as_an_explicit_multidomain_task_is_included() -> None:
@@ -305,7 +305,7 @@ def test_full_text_can_refine_topic_after_metadata_admission() -> None:
     result = classify(
         document(
             "CellScope: A new biomedical benchmark",
-            "We introduce a new benchmark for biomedical research evaluation.",
+            "We introduce a new benchmark for evaluating multimodal large language models in biomedical research.",
             body="The tasks require microscopy images, pathology figures, and visual grounding.",
         )
     )
@@ -471,8 +471,80 @@ def test_internal_data_auditing_does_not_turn_a_new_suite_into_an_audit() -> Non
     result = classify(
         document(
             "RoboSurg-VQA: A Multimodal Benchmark for Surgical Question Answering",
-            "We present RoboSurg-VQA, a biomedical benchmark built from public datasets with manual auditing to improve label consistency.",
+            "We present RoboSurg-VQA, a biomedical benchmark for multimodal large language models built from public datasets with manual auditing to improve label consistency.",
         )
     )
     assert result.collection_status == "confirmed"
     assert result.priority == "P1"
+
+
+def test_computational_biology_simulation_benchmark_without_general_ai_is_excluded() -> None:
+    result = classify(
+        document(
+            "A benchmark suite of intracellular Boolean model variants and multiscale simulations for computational biology",
+            "We present PhysiBench, an open resource for developing and evaluating computational methods in systems biology, including executable Boolean regulatory network variants and stochastic simulations.",
+        )
+    )
+    assert result.collection_status == "excluded"
+
+
+def test_multiomics_deconvolution_benchmark_without_general_ai_is_excluded() -> None:
+    result = classify(
+        document(
+            "On the Promises and Limits of Multi-omics Integration for Deconvolution: The HADACA3 Benchmark",
+            "We present HADACA3, a biomedical benchmark testing deconvolution pipelines across matched DNA methylation and RNA datasets.",
+        )
+    )
+    assert result.collection_status == "excluded"
+
+
+def test_generic_language_model_evaluand_is_included() -> None:
+    result = classify(
+        document(
+            "onepot-Bench: Towards Lab-Aware Chemistry Benchmarks",
+            "Language models are increasingly used for experiment planning. We introduce a biomedical benchmark for measuring reliable laboratory decisions.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+
+
+def test_standalone_agent_evaluand_is_included() -> None:
+    result = classify(
+        document(
+            "scBench-Long: Verifiable Benchmarking of Long-Horizon Single-Cell Biology",
+            "We introduce a single-cell biology benchmark in which agents must recover scientific claims through multi-step analysis workflows.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+
+
+def test_pure_robotic_lab_manipulation_benchmark_is_excluded() -> None:
+    result = classify(
+        document(
+            "LabDex: A Hierarchical Benchmark for Dexterous Manipulation in Laboratories",
+            "We introduce a laboratory benchmark for robots that manipulate labware and execute long-horizon experimental procedures.",
+        )
+    )
+    assert result.collection_status == "excluded"
+
+
+def test_evaluation_protocol_audit_is_transferable() -> None:
+    result = classify(
+        document(
+            "An Audit of Evaluation Inconsistencies in Medical Segmentation Benchmarks",
+            "We audit incompatible train/test split protocols, missing statistical significance tests, and ranking reversals across metrics, then propose a reporting checklist.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+    assert result.priority == "P2"
+
+
+def test_specialized_model_benchmark_validity_audit_is_transferable() -> None:
+    result = classify(
+        document(
+            "The Impact of Shuffling on DNA Language Model Benchmarking",
+            "We show that hardware-dependent data shuffling compromises biomedical benchmark validity and changes model rankings for identical models.",
+        )
+    )
+    assert result.collection_status == "confirmed"
+    assert result.priority == "P2"

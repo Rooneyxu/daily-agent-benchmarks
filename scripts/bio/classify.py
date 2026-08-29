@@ -16,7 +16,8 @@ from .config import (
     NEW_BENCHMARK_PATTERNS,
     PLANT_SCOPE_PATTERNS,
     ROUTINE_EVAL_TERMS,
-    SPECIALIZED_BENCHMARK_PATTERNS,
+    SPECIALIZED_MODEL_EVALUAND_PATTERNS,
+    SPECIALIZED_PREDICTION_TASK_PATTERNS,
     TOPIC_PATTERNS,
     TRANSFERABLE_METHOD_PATTERNS,
 )
@@ -130,7 +131,8 @@ def classify(document: SourceDocument) -> Classification:
     audit_hits = _pattern_hits(metadata_text, AUDIT_PATTERNS)
     evaluation_dataset_hits = _pattern_hits(metadata_text, EVALUATION_DATASET_PATTERNS)
     plant_scope_hits = _pattern_hits(metadata_text, PLANT_SCOPE_PATTERNS)
-    specialized_benchmark_hits = _pattern_hits(metadata_text, SPECIALIZED_BENCHMARK_PATTERNS)
+    specialized_model_hits = _pattern_hits(metadata_text, SPECIALIZED_MODEL_EVALUAND_PATTERNS)
+    specialized_prediction_hits = _pattern_hits(metadata_text, SPECIALIZED_PREDICTION_TASK_PATTERNS)
     general_ai_evaluand_hits = _pattern_hits(metadata_text, GENERAL_AI_EVALUAND_PATTERNS)
     transferable_method_hits = _pattern_hits(metadata_text, TRANSFERABLE_METHOD_PATTERNS)
     routine_hits = _contains(metadata_text, ROUTINE_EVAL_TERMS)
@@ -167,13 +169,16 @@ def classify(document: SourceDocument) -> Classification:
     benchmark_signal = bool(benchmark_hits) or title_artifact or bool(new_hits) or bool(evaluation_dataset_hits)
 
     transferable_scope_override = bool(transferable_method_hits)
+    qualifying_scope = bool(general_ai_evaluand_hits) or transferable_scope_override
     excluded_plant_scope = bool(plant_scope_hits) and not transferable_scope_override
-    excluded_specialized_scope = bool(specialized_benchmark_hits) and not (
-        general_ai_evaluand_hits or transferable_scope_override
+    excluded_specialized_scope = (
+        bool(specialized_model_hits) and not transferable_scope_override
+    ) or (
+        bool(specialized_prediction_hits) and not qualifying_scope
     )
     strong_domain_signal = strong_domain_signal or bool(
-        (plant_scope_hits or specialized_benchmark_hits)
-        and (general_ai_evaluand_hits or transferable_scope_override)
+        (plant_scope_hits or specialized_model_hits or specialized_prediction_hits)
+        and qualifying_scope
     )
 
     score = 3 * len(set(domain_hits)) + 3 * len(set(benchmark_hits))
@@ -202,6 +207,9 @@ def classify(document: SourceDocument) -> Classification:
     elif not strong_domain_signal:
         status = "watchlist"
         reason = "Only a weak or incidental biological or medical domain signal appears in the title and abstract."
+    elif (audit_hits or methodology_hits or qualifying_new_artifact) and benchmark_signal and not qualifying_scope:
+        status = "excluded"
+        reason = "No explicit LLM, MLLM, VLM, Agent, or transferable benchmark-method signal in the title and abstract."
     elif audit_hits and benchmark_signal:
         status = "confirmed"
         reason = "Title or abstract explicitly identifies a biomedical benchmark audit."
