@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-08-29T14:06:05Z",
+  "generated_at": "2026-08-30T10:01:34Z",
   "total": 70,
   "counts": {
     "topics": {
       "experiment_agent": 15,
-      "multimodal": 20,
-      "general_text": 29,
+      "multimodal": 19,
+      "general_text": 30,
       "biosafety": 6
     },
     "contribution_types": {
@@ -58,52 +58,52 @@
     {
       "source": "arxiv",
       "name": "arXiv",
-      "status": "success",
-      "started_at": "2026-08-29T14:06:10Z",
-      "finished_at": "2026-08-29T14:06:57Z",
-      "discovered": 38,
-      "published": 22,
-      "error": ""
+      "status": "failed",
+      "started_at": "2026-08-30T10:01:39Z",
+      "finished_at": "2026-08-30T10:01:39Z",
+      "discovered": 0,
+      "published": 0,
+      "error": "Client error '429 Unknown Error' for url 'https://export.arxiv.org/api/query?search_query=%28ti%3Abenchmark+OR+ti%3Abench+OR+ti%3A%22evaluation+suite%22%29+AND+%28all%3Abiomedical+OR+all%3Amedical+OR+all%3Aclinical%29&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-08-29T14:06:57Z",
-      "finished_at": "2026-08-29T14:07:03Z",
-      "discovered": 72,
-      "published": 39,
+      "started_at": "2026-08-30T10:01:39Z",
+      "finished_at": "2026-08-30T10:01:41Z",
+      "discovered": 36,
+      "published": 18,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "failed",
-      "started_at": "2026-08-29T14:07:03Z",
-      "finished_at": "2026-08-29T14:07:04Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "Server error '503 Service Unavailable' for url 'https://api.biorxiv.org/details/biorxiv/2026-08-25/2026-08-29/0'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+      "status": "success",
+      "started_at": "2026-08-30T10:01:41Z",
+      "finished_at": "2026-08-30T10:03:30Z",
+      "discovered": 898,
+      "published": 59,
+      "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "failed",
-      "started_at": "2026-08-29T14:07:04Z",
-      "finished_at": "2026-08-29T14:07:04Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "Server error '503 Service Unavailable' for url 'https://api.biorxiv.org/details/medrxiv/2026-08-25/2026-08-29/0'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+      "status": "success",
+      "started_at": "2026-08-30T10:03:30Z",
+      "finished_at": "2026-08-30T10:03:43Z",
+      "discovered": 165,
+      "published": 13,
+      "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
-      "status": "failed",
-      "started_at": "2026-08-29T14:07:04Z",
-      "finished_at": "2026-08-29T14:07:04Z",
+      "status": "success",
+      "started_at": "2026-08-30T10:03:43Z",
+      "finished_at": "2026-08-30T10:04:20Z",
       "discovered": 0,
       "published": 0,
-      "error": "Client error '403 Forbidden' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+      "error": ""
     }
   ],
   "days": [
@@ -528,7 +528,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 34,
+      "match_score": 32,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "4eafea69e07800c7878f1a642f858c11b90136e1d0b3adaa7d8f5b069f9b28fb",
@@ -729,7 +729,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 21,
+      "match_score": 19,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "d5b4f93657f130875c005cc85a1b87dd9d1651be53bad246c4841da9c973ab31",
@@ -934,7 +934,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 21,
+      "match_score": 19,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "2a1a5e497069f76984833add5a6820409aee6b33e673c333898f147b667f94f9",
@@ -1038,14 +1038,12 @@
       "links": {
         "abs": "https://arxiv.org/abs/2608.25286v1",
         "pdf": "https://arxiv.org/pdf/2608.25286v1",
-        "code": "https://github.com/EdisonScientific/BixBench3",
-        "data": "https://huggingface.co/datasets/EdisonScientific/BixBench3",
         "html": "https://arxiv.org/html/2608.25286"
       },
       "evidence": [
         {
-          "term": "we introduce BixBench3, a benchmark",
-          "excerpt": "Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been systematically evaluated. Here we introduce BixBench3, a benchmark that measures the capacity of AI agents to process raw biological data through to scientific results. We designed BixBench3 tasks to mirror the delegation of work from a scientist to an agent: the scientist chooses the research question an",
+          "term": "we introduce",
+          "excerpt": "Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been systematically evaluated. Here we introduce BixBench3, a benchmark that measures the capacity of AI agents to process raw biological data through to scientific results. We designed BixBench3 tasks to mirror the delegation of work from a scientist to an agent: the scientist chooses t",
           "location": "Abstract / metadata",
           "source_url": "https://arxiv.org/html/2608.25286"
         },
@@ -1072,47 +1070,20 @@
           "excerpt": "BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks Artificial intelligence (AI) promises to accelerate biological research by automating computational analyses. Yet the ability of AI agents to carry out computational biology at the scale of complete research studies has not been systematically evaluated. Here we introduce BixBench3, a benchmark that m",
           "location": "Abstract / metadata",
           "source_url": "https://arxiv.org/html/2608.25286"
-        },
-        {
-          "term": "multimodal",
-          "excerpt": "Li, S. Zhao, R. Cao, J. H. Toh, Z. Cheng, D. Shin, F. Lei, Y. Liu, Y. Xu, S. Zhou, S. Savarese, C. Xiong, V. Zhong, and T. Yu OSWorld: benchmarking multimodal agents for open-ended tasks in real computer environments . In Advances in Neural Information Processing Systems , Vol. 37 , pp. 52040–52094 . Note: Datasets and Benchmarks Track External Links: Document Cited by: §1.1 . Xin et al. (2024)",
-          "location": "References",
-          "source_url": "https://arxiv.org/html/2608.25286"
-        },
-        {
-          "term": "troubleshooting",
-          "excerpt": "isolated analyses. LAB-Bench and LABBench2 test domain knowledge and practical research skills through questions about literature retrieval, protocol troubleshooting, and sequence manipulation, while BioProBench focuses on biological protocol understanding ( Laurent et al., 2024 ; Laurent et al., 2026 ; Liu et al., 2025 ) . DISCOVERYWORLD required agents to make scientific discoveries in a virtual envi",
-          "location": "1.1 Related work",
-          "source_url": "https://arxiv.org/html/2608.25286"
-        },
-        {
-          "term": "tool use",
-          "excerpt": "etence. BixBench3 combines the long-horizon challenge of the former with the domain-specificity of the latter. Long-horizon agent benchmarks evaluate tool use, planning, and execution over many steps. As agentic capabilities have improved, the length of tasks that models can complete has increased from those taking humans minutes in 2024 ( Zhou et al., 2024 ; Xie et al., 2024 ) to those taking h",
-          "location": "1.1 Related work",
-          "source_url": "https://arxiv.org/html/2608.25286"
         }
       ],
       "related_benchmarks": [
-        "PaperBench",
-        "BioProBench",
-        "BixBench",
-        "CompBioBench",
-        "BAISBench",
-        "GeneBench",
-        "SpatialBench",
-        "VariantBench",
-        "LAB-Bench",
-        "LABBench2"
+        "BixBench3"
       ],
       "related_agent_url": "../../p/2608.25286.html",
       "evaluation_contexts": [
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 20,
-      "extraction_status": "complete",
+      "match_score": 16,
+      "extraction_status": "metadata_only",
       "extraction_error": "",
-      "content_hash": "f32bbf5d1b22de2ff05c8456288b53a6807b1d172b6d3d055eceb51c18369c4a",
+      "content_hash": "seed:2608.25286",
       "is_seed": true,
       "topic": "experiment_agent",
       "contribution_type": "new_benchmark"
@@ -1124,79 +1095,81 @@
       "title": "CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry",
       "abstract": "In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the next. Immunologists instead annotate by manual gating, splitting one parent population at a time on a two-marker plot, down an expert-defined hierarchy. We introduce CytoGate-Bench, a benchmark that reformulates this per-step procedure as a zero-shot, panel-agnostic task for large language models. It comprises 23,646 expert-annotated instances re-curated from 11 public flow- and mass-cytometry cohorts spanning eight marker panels. Across six open- and closed-weight backbones, the strongest formulation draws one rectangular gate per candidate and falls within the range of trained, panel-specialized baselines. It degrades less under distribution shift. Walking the hierarchy stepwise outperforms predicting every cell type at once. Ablations trace the signal to the data distribution shape and curated marker priors. However, adding vision or a self-verification loop systematically tightens gates.",
       "authors": [
-        "Kim J",
-        "Lee B",
-        "Ahn N",
-        "Ionita M",
-        "McKeague ML",
-        "Lee ME",
-        "Jeong C",
-        "Apostolidis SA",
-        "Baxter AE",
-        "Shwetank",
-        "Greenplate AR",
-        "Wherry EJ",
-        "Sohn K",
-        "Kim D."
+        "Kim, J.",
+        "Lee, B.",
+        "Ahn, N.",
+        "Ionita, M.",
+        "McKeague, M. L.",
+        "Lee, M. E.",
+        "Jeong, C.-U.",
+        "Apostolidis, S. A.",
+        "Baxter, A. E.",
+        "Shwetank,",
+        "Greenplate, A. R.",
+        "Wherry, E. J.",
+        "Sohn, K.-A.",
+        "Kim, D."
       ],
-      "source": "europepmc",
+      "source": "biorxiv",
       "published_at": "2026-08-26T00:00:00+00:00",
-      "updated_at": "2026-08-27T00:00:00+00:00",
+      "updated_at": "2026-08-26T00:00:00+00:00",
       "priority": "P1",
       "categories": [
         "multimodal"
       ],
       "collection_status": "confirmed",
-      "access_status": "unknown",
-      "license": "",
+      "access_status": "public",
+      "license": "cc_by_nc_nd",
       "identifiers": {
         "doi": "10.64898/2026.08.24.746336"
       },
       "links": {
-        "abs": "https://europepmc.org/article/PPR/PPR1305902"
+        "abs": "https://www.biorxiv.org/content/10.64898/2026.08.24.746336",
+        "pdf": "https://www.biorxiv.org/content/10.64898/2026.08.24.746336.full.pdf",
+        "html": "https://www.biorxiv.org/content/10.64898/2026.08.24.746336.full"
       },
       "evidence": [
         {
           "term": "We introduce CytoGate-Bench",
           "excerpt": "t. Immunologists instead annotate by manual gating, splitting one parent population at a time on a two-marker plot, down an expert-defined hierarchy. We introduce CytoGate-Bench, a benchmark that reformulates this per-step procedure as a zero-shot, panel-agnostic task for large language models. It comprises 23,646 expert-annotated instances re-curated from 11 public flow- and mass-cytometry cohorts spanning eight",
           "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/PPR/PPR1305902"
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.24.746336.full"
         },
         {
           "term": "We introduce CytoGate-Bench, a benchmark",
           "excerpt": "t. Immunologists instead annotate by manual gating, splitting one parent population at a time on a two-marker plot, down an expert-defined hierarchy. We introduce CytoGate-Bench, a benchmark that reformulates this per-step procedure as a zero-shot, panel-agnostic task for large language models. It comprises 23,646 expert-annotated instances re-curated from 11 public flow- and mass-cytometry cohorts spanning eight marker panels",
           "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/PPR/PPR1305902"
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.24.746336.full"
         },
         {
           "term": "benchmark",
           "excerpt": "CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the nex",
           "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/PPR/PPR1305902"
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.24.746336.full"
         },
         {
           "term": "clinical",
           "excerpt": "CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the next. Immunologists instead annotate by manual gating, splitting one parent population at a time on a two-m",
           "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/PPR/PPR1305902"
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.24.746336.full"
         },
         {
           "term": "single-cell",
           "excerpt": "CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the next. Immunologists instead annotate by manual gating, splitting one parent populati",
           "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/PPR/PPR1305902"
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.24.746336.full"
         },
         {
           "term": "immunology",
           "excerpt": "CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the next. Immunologists instead annotate by manual gating, splitting one parent population at a time on a two-marker plot,",
           "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/PPR/PPR1305902"
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.24.746336.full"
         },
         {
           "term": "cross-panel",
           "excerpt": "CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry In cytometry, the workhorse single-cell technology of clinical immunology, every study defines its own antibody panel and cell-type vocabulary, so a classifier trained on one cannot annotate the next. Immunologists",
           "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/PPR/PPR1305902"
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.24.746336.full"
         }
       ],
       "related_benchmarks": [],
@@ -1206,8 +1179,8 @@
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
       "match_score": 26,
-      "extraction_status": "complete",
-      "extraction_error": "",
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.08.24.746336.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
       "content_hash": "7e4c864b07f05ed56a6b8df178a5e86d862280303776154b120b890700fc59c1",
       "is_seed": false,
       "topic": "multimodal",
@@ -1334,7 +1307,7 @@
       "updated_at": "2026-08-25T20:09:44+00:00",
       "priority": "P0",
       "categories": [
-        "multimodal"
+        "general_text"
       ],
       "collection_status": "confirmed",
       "access_status": "public",
@@ -1345,7 +1318,6 @@
       "links": {
         "abs": "https://arxiv.org/abs/2608.25114v1",
         "pdf": "https://arxiv.org/pdf/2608.25114v1",
-        "data": "https://huggingface.co/datasets/flwrlabs/fed-brats",
         "html": "https://arxiv.org/html/2608.25114"
       },
       "evidence": [
@@ -1384,30 +1356,20 @@
           "excerpt": "ion workflows. We instantiate this approach with a multi-domain benchmark suite spanning cross-silo and cross-device settings, and including tasks in medical imaging, financial tabular learning, legal instruction tuning, phishing URL detection, and audio tagging. We further demonstrate that the same benchmarking application can run across both simulation and deployment runtimes without changing the app",
           "location": "Abstract / metadata",
           "source_url": "https://arxiv.org/html/2608.25114"
-        },
-        {
-          "term": "multimodal",
-          "excerpt": "dix F.1 . Medical image segmentation 2 2 2 https://huggingface.co/datasets/flwrlabs/fed-brats . We use the BraTS-GLI dataset [ 30 ] , which comprises multimodal glioma MRI scans with four input sequences: T1-native, T1-contrast enhanced, T2-weighted, and T2-FLAIR, together with corresponding tumor segmentation masks. To emulate a realistic federated setting, the data are partitioned according to a",
-          "location": "3.1 FL Dataset Construction",
-          "source_url": "https://arxiv.org/html/2608.25114"
         }
       ],
-      "related_benchmarks": [
-        "LegalBench",
-        "FLBench",
-        "FedEval"
-      ],
+      "related_benchmarks": [],
       "related_agent_url": "",
       "evaluation_contexts": [
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
-      "match_score": 21,
-      "extraction_status": "complete",
+      "match_score": 19,
+      "extraction_status": "metadata_only",
       "extraction_error": "",
-      "content_hash": "afe6785e8b1f47b2a6b87de95178263a0dcd72b1ea30bba9f9445fbae405f88f",
+      "content_hash": "metadata:arxiv:2608.25114",
       "is_seed": true,
-      "topic": "multimodal",
+      "topic": "general_text",
       "contribution_type": "methodology"
     },
     {
@@ -1502,7 +1464,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 27,
+      "match_score": 23,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "51e3dbc296543ab6960c72de350c8f2cb6bffed675a7052a09e57a7a61749819",

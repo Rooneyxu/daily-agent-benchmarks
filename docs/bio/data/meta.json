@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-08-29T14:06:05Z",
+  "generated_at": "2026-08-30T10:01:34Z",
   "total": 70,
   "day_count": 43,
   "latest_date": "2026-08-27",
   "counts": {
     "topics": {
       "experiment_agent": 15,
-      "multimodal": 20,
-      "general_text": 29,
+      "multimodal": 19,
+      "general_text": 30,
       "biosafety": 6
     },
     "contribution_types": {
@@ -28,52 +28,52 @@
     {
       "source": "arxiv",
       "name": "arXiv",
-      "status": "success",
-      "started_at": "2026-08-29T14:06:10Z",
-      "finished_at": "2026-08-29T14:06:57Z",
-      "discovered": 38,
-      "published": 22,
-      "error": ""
+      "status": "failed",
+      "started_at": "2026-08-30T10:01:39Z",
+      "finished_at": "2026-08-30T10:01:39Z",
+      "discovered": 0,
+      "published": 0,
+      "error": "Client error '429 Unknown Error' for url 'https://export.arxiv.org/api/query?search_query=%28ti%3Abenchmark+OR+ti%3Abench+OR+ti%3A%22evaluation+suite%22%29+AND+%28all%3Abiomedical+OR+all%3Amedical+OR+all%3Aclinical%29&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-08-29T14:06:57Z",
-      "finished_at": "2026-08-29T14:07:03Z",
-      "discovered": 72,
-      "published": 39,
+      "started_at": "2026-08-30T10:01:39Z",
+      "finished_at": "2026-08-30T10:01:41Z",
+      "discovered": 36,
+      "published": 18,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "failed",
-      "started_at": "2026-08-29T14:07:03Z",
-      "finished_at": "2026-08-29T14:07:04Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "Server error '503 Service Unavailable' for url 'https://api.biorxiv.org/details/biorxiv/2026-08-25/2026-08-29/0'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+      "status": "success",
+      "started_at": "2026-08-30T10:01:41Z",
+      "finished_at": "2026-08-30T10:03:30Z",
+      "discovered": 898,
+      "published": 59,
+      "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "failed",
-      "started_at": "2026-08-29T14:07:04Z",
-      "finished_at": "2026-08-29T14:07:04Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "Server error '503 Service Unavailable' for url 'https://api.biorxiv.org/details/medrxiv/2026-08-25/2026-08-29/0'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+      "status": "success",
+      "started_at": "2026-08-30T10:03:30Z",
+      "finished_at": "2026-08-30T10:03:43Z",
+      "discovered": 165,
+      "published": 13,
+      "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
-      "status": "failed",
-      "started_at": "2026-08-29T14:07:04Z",
-      "finished_at": "2026-08-29T14:07:04Z",
+      "status": "success",
+      "started_at": "2026-08-30T10:03:43Z",
+      "finished_at": "2026-08-30T10:04:20Z",
       "discovered": 0,
       "published": 0,
-      "error": "Client error '403 Forbidden' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+      "error": ""
     }
   ]
 }
