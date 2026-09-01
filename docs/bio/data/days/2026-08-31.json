@@ -1,0 +1,499 @@
+{
+  "date": "2026-08-31",
+  "count": 6,
+  "entries": [
+    {
+      "id": "arxiv:2608.31016",
+      "slug": "arxiv-2608-31016-60889e471f",
+      "kind": "paper",
+      "title": "LLM Judges Verify Presence, Not Absence: Omission Blindness in AI Clinical Notes and What Recovers It",
+      "abstract": "Ambient AI scribes draft clinical notes, and published audits find their dominant error is omission: information the encounter established that the note fails to record. The standard check is an LLM judge: a second model reads the note against the transcript and flags problems. We ask whether judges detect omissions. Public corpora cannot supply the answer key: their clinician reference notes and transcripts are materially discrepant. Our benchmark has 500 single-error note pairs from audited fact sheets, 298 with a named fact certainly absent and 202 added-or-altered controls. Across eight judge designs, paired discrimination (the flawed note below its clean twin, 0.5 a coin flip) reads 0.79-0.94 on added or altered content and 0.50-0.63 on omissions. On single notes, no design flags omissions reliably more often than perfect notes. Wording changes, voting and GEPA prompt optimisation move the operating point without creating usable detection. Restructuring the task recovers it: list the facts the transcript establishes, then check the note for each. Two methods reach it independently and trade off: a per-fact pipeline, and a GEPA-evolved prompt doing the same in one call. The pipeline's flags name the missing fact and its severity at 2.7% false alarms. The single call detects more (36.9% against 24.6%, p=0.002) at 6.2% false alarms and a tenth of the cost per note. A physician author validated 70 items and, where the two routes disagree, sided with the pipeline on 10 of 10 (p=0.002). A second clinician, not an author, graded the severity rubric blind and agrees to within a grade. On real vendor notes from a companion census no benchmark threshold transfers, but the re-calibrated single call detects more than the best of the eight at half its false-alarm rate. Omissions whose fact is restated elsewhere defeat both routes. We release the benchmark, prompts and judgements.",
+      "authors": [
+        "Sebastian Fox",
+        "Luke Markham",
+        "Ryan Lail",
+        "Michael Karotsieris"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-31T15:59:54+00:00",
+      "updated_at": "2026-08-31T15:59:54+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.31016"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.31016v1",
+        "pdf": "https://arxiv.org/pdf/2608.31016v1",
+        "code": "https://github.com/composo-ai/omission-bench",
+        "data": "https://huggingface.co/datasets/ComposoAI/OmissionBench",
+        "html": "https://arxiv.org/html/2608.31016"
+      },
+      "evidence": [
+        {
+          "term": "We release the benchmark",
+          "excerpt": "ated single call detects more than the best of the eight at half its false-alarm rate. Omissions whose fact is restated elsewhere defeat both routes. We release the benchmark, prompts and judgements. [[SECTION LLM Judges Verify Presence, Not Absence: Omission Blindness in AI Clinical Notes and What Recovers It]] LLM Judges Verify Presence, Not Absence: Omission Blindness in AI Clinical Notes and What Recovers I",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.31016"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "judges detect omissions. Public corpora cannot supply the answer key: their clinician reference notes and transcripts are materially discrepant. Our benchmark has 500 single-error note pairs from audited fact sheets, 298 with a named fact certainly absent and 202 added-or-altered controls. Across eight judge designs, paired discrimination (the flawed note below its clean twin, 0.5 a coin flip) r",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.31016"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "LLM Judges Verify Presence, Not Absence: Omission Blindness in AI Clinical Notes and What Recovers It Ambient AI scribes draft clinical notes, and published audits find their dominant error is omission: information the encounter established that the note fails to record. The standard check is an LLM judge: a seco",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.31016"
+        }
+      ],
+      "related_benchmarks": [
+        "AbsenceBench",
+        "OmissionBench",
+        "QuestEval"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 10,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "5c274ec715573e1a975acc94960711a7ff8bd2a10f99db282e99534da120c7b5",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.31014",
+      "slug": "arxiv-2608-31014-ae3294bed3",
+      "kind": "paper",
+      "title": "Evidence-Bounded Mental Health Reasoning from Heterogeneous Speech Protocols",
+      "abstract": "Computational mental health screening using multimodal speech and text has shown great promise. However, existing models often assume all clinical speech protocols carry equivalent evidentiary validity. In reality, heterogeneous protocols, from free interviews to fixed reading tasks, support fundamentally different evidence. Forcing uniform reasoning flattens these boundaries, causing models to hallucinate symptoms from irrelevant text or overclaim support. Even advanced long chain-of-thought LLMs fail to resolve this issue, as free-form reasoning can exacerbate boundary violations. To address this, we reformulate multimodal screening as an evidence-bounded reasoning problem. We introduce the Evidence Package Benchmark, integrating 1,870 packages across six heterogeneous sources with explicit modality masks and evidence permissions. We further propose EviBound, a protocol-aware evidence control framework. Unlike direct LLM prompting, EviBound uses a profile-aware planner to restrict reasoning scope, orchestrates evidence tools via five-way acoustic consensus, and enforces a boundary critic to suppress unsupported claims. Empirical results show EviBound achieves a held-out test Depression AUROC of 0.8658, exceeding the strongest direct omni-modal baseline by +0.0811 AUROC while maintaining zero claim violations. Our work moves beyond unconstrained accuracy toward evidence-consistent, protocol-aware systems for safer clinical NLP research.",
+      "authors": [
+        "Chengyuan Gao",
+        "Jiang Wu",
+        "Tao Lu",
+        "Jiayan Guo",
+        "Mingkun Xu",
+        "Tianyi Zang",
+        "Shangyang Li"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-31T15:58:22+00:00",
+      "updated_at": "2026-08-31T15:58:22+00:00",
+      "priority": "P1",
+      "categories": [
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.31014"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.31014v1",
+        "pdf": "https://arxiv.org/pdf/2608.31014v1",
+        "html": "https://arxiv.org/html/2608.31014"
+      },
+      "evidence": [
+        {
+          "term": "We introduce the Evidence Package Benchmark",
+          "excerpt": "ree-form reasoning can exacerbate boundary violations. To address this, we reformulate multimodal screening as an evidence-bounded reasoning problem. We introduce the Evidence Package Benchmark, integrating 1,870 packages across six heterogeneous sources with explicit modality masks and evidence permissions. We further propose EviBound, a protocol-aware evidence control framework. Unlike direct LLM prompting, EviBound uses a prof",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.31014"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "boundary violations. To address this, we reformulate multimodal screening as an evidence-bounded reasoning problem. We introduce the Evidence Package Benchmark, integrating 1,870 packages across six heterogeneous sources with explicit modality masks and evidence permissions. We further propose EviBound, a protocol-aware evidence control framework. Unlike direct LLM prompting, EviBound uses a prof",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.31014"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "h Protocols Computational mental health screening using multimodal speech and text has shown great promise. However, existing models often assume all clinical speech protocols carry equivalent evidentiary validity. In reality, heterogeneous protocols, from free interviews to fixed reading tasks, support fundamentally different evidence. Forcing uniform reasoning flattens these boundaries, causin",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.31014"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "Evidence-Bounded Mental Health Reasoning from Heterogeneous Speech Protocols Computational mental health screening using multimodal speech and text has shown great promise. However, existing models often assume all clinical speech protocols carry equivalent evidentiary validity. In reality, heterogeneous protocols, from free interviews to fixed reading tasks, support f",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.31014"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "entic workflow . External Links: 2503.18968 , Link Cited by: §2 . Yue et al. (2024) L. Yue, S. Xing, J. Chen, and T. Fu Clinicalagent: clinical trial multi-agent system with large language model-based reasoning . In Proceedings of the 15th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics , pp. 1–10 . Cited by: §2 . Zhang et al. (2026) W. Zhang, J. Chen, E",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2608.31014"
+        },
+        {
+          "term": "risk assessment",
+          "excerpt": "timodal Mental Health Screening and Clinical Benchmarks. Speech-based mental health research spans interview modeling, multimodal fusion, audiovisual risk assessment, and recent large multimodal reasoning systems for psychiatric analysis Al Hanai et al. (2018) ; Fang et al. (2023) ; Dhelim et al. (2023) ; Zhang et al. (2026) ; Qin et al. (2025) ; WANG et al. (2026) . Public resources such as DAIC-WOZ/E",
+          "location": "Multimodal Mental Health Screening and Clinical Benchmarks.",
+          "source_url": "https://arxiv.org/html/2608.31014"
+        }
+      ],
+      "related_benchmarks": [
+        "HealthBench",
+        "MentalBench",
+        "PsychiatryBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 16,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "336d13801a9199d0d4c817abde8e4b0ae12a15ab2c78f486767c12571bcf4f16",
+      "is_seed": false,
+      "topic": "biosafety",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.30556",
+      "slug": "arxiv-2608-30556-1e9ee0c3e2",
+      "kind": "paper",
+      "title": "AdaPath: Query-Adaptive Path-Finding via Path-Bank for Multi-Hop Implicit Biomedical KGQA",
+      "abstract": "Path-finding over knowledge graphs has become an effective way to ground LLM reasoning on multi-hop questions. However, biomedical QA introduces two distinct challenges that general-domain methods are not designed for: (i) queries do not expose intermediate reasoning and can be answered through multiple valid pathways, and (ii) biomedical knowledge graphs are densely connected, so path-finding methods easily take wrong turns. To address these challenges, we propose AdaPath, a path-finding framework that retrieves query-adaptive meta-paths from Path-Bank, which captures both query semantics and biomedical knowledge graph structure. AdaPath provides the missing cues in biomedical queries while effectively pruning dense knowledge graph neighborhoods during multi-hop reasoning. We further release BioStrat-QA, a biomedical KGQA benchmark that stratifies multi-hop queries by how much intermediate reasoning they expose. Across biomedical KGQA benchmarks, AdaPath consistently outperforms baselines, sustaining meaningful path-finding even when multi-hop queries expose less surface information. The source code is available at https://github.com/Jun-Hyeong-Kim/AdaPath.",
+      "authors": [
+        "Jun Hyeong Kim",
+        "Dongki Kim",
+        "Yinhua Piao",
+        "Sung Ju Hwang"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-31T10:32:23+00:00",
+      "updated_at": "2026-08-31T10:32:23+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.30556"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.30556v1",
+        "pdf": "https://arxiv.org/pdf/2608.30556v1",
+        "code": "https://github.com/Jun-Hyeong-Kim/AdaPath",
+        "html": "https://arxiv.org/html/2608.30556"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "l queries while effectively pruning dense knowledge graph neighborhoods during multi-hop reasoning. We further release BioStrat-QA, a biomedical KGQA benchmark that stratifies multi-hop queries by how much intermediate reasoning they expose. Across biomedical KGQA benchmarks, AdaPath consistently outperforms baselines, sustaining meaningful path-finding even when multi-hop queries expose less sur",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.30556"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "ase BioStrat-QA, a biomedical KGQA benchmark that stratifies multi-hop queries by how much intermediate reasoning they expose. Across biomedical KGQA benchmarks, AdaPath consistently outperforms baselines, sustaining meaningful path-finding even when multi-hop queries expose less surface information. The source code is available at https://github.com/Jun-Hyeong-Kim/AdaPath. [[SECTION AdaPath: Quer",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.30556"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "AdaPath: Query-Adaptive Path-Finding via Path-Bank for Multi-Hop Implicit Biomedical KGQA Path-finding over knowledge graphs has become an effective way to ground LLM reasoning on multi-hop questions. However, biomedical QA introduces two distinct challenges that general-domain methods are not designed for: (i) queries do",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.30556"
+        }
+      ],
+      "related_benchmarks": [
+        "KGQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 16,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "da9e9c21da1c75599610fff44305a05a8973341576e5c59f9bcc88c07a9b6092",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.30405",
+      "slug": "arxiv-2608-30405-1c89a9363f",
+      "kind": "paper",
+      "title": "Dense Clinical Contrasts Enhance Medical Knowledge Updating in Large Language Models",
+      "abstract": "Medical knowledge changes continually, making large language models vulnerable to relying on outdated yet clinically plausible information. We study whether the format of supervision affects medical knowledge updating under a matched training-budget setting. We introduce SEER-Bench, a temporally anchored oncology-staging benchmark curated from the latest versioned SEER Research Data release, and render identical medical update events from NCCN oncology guidelines into four supervision formats: EMQ, MSQ, FITB, and SAQ. Across SEER-Bench and HealthBench Professional, EMQ gives the most stable external transfer and retention among same-budget SFT variants. With EMQ supervision, the updated 4B model produces competitive results on temporally anchored oncology staging, reaching 64.8% answer accuracy and 59.6% rationale accuracy on SEER-Bench. Diagnostic analyses suggest that EMQ exposes denser clinical contrast signals while preserving discriminative representations with smaller movement from the base model. These results show that medical knowledge updating depends not only on the update algorithm, but also on how knowledge is structured as supervision.",
+      "authors": [
+        "Yangmin Huang",
+        "Shu Quan",
+        "He Geng",
+        "Xin Ye",
+        "Qianyun Du",
+        "Zhiyang He",
+        "Jiaxue Hu",
+        "Xiaodong Tao"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-31T07:59:15+00:00",
+      "updated_at": "2026-08-31T07:59:15+00:00",
+      "priority": "P1",
+      "categories": [
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.30405"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.30405v1",
+        "pdf": "https://arxiv.org/pdf/2608.30405v1",
+        "code": "https://github.com/Iflytek-Medical-SouthChina/SeerBench",
+        "html": "https://arxiv.org/html/2608.30405"
+      },
+      "evidence": [
+        {
+          "term": "We introduce SEER-Bench",
+          "excerpt": "nically plausible information. We study whether the format of supervision affects medical knowledge updating under a matched training-budget setting. We introduce SEER-Bench, a temporally anchored oncology-staging benchmark curated from the latest versioned SEER Research Data release, and render identical medical update events from NCCN oncology guidelines into four supervision formats: EMQ, MSQ, FITB, and SAQ",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.30405"
+        },
+        {
+          "term": "We introduce SEER-Bench, a temporally anchored oncology-staging benchmark",
+          "excerpt": "nically plausible information. We study whether the format of supervision affects medical knowledge updating under a matched training-budget setting. We introduce SEER-Bench, a temporally anchored oncology-staging benchmark curated from the latest versioned SEER Research Data release, and render identical medical update events from NCCN oncology guidelines into four supervision formats: EMQ, MSQ, FITB, and SAQ. Across SEER-Bench and HealthBench Professional,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.30405"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "pervision affects medical knowledge updating under a matched training-budget setting. We introduce SEER-Bench, a temporally anchored oncology-staging benchmark curated from the latest versioned SEER Research Data release, and render identical medical update events from NCCN oncology guidelines into four supervision formats: EMQ, MSQ, FITB, and SAQ. Across SEER-Bench and HealthBench Professional,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.30405"
+        },
+        {
+          "term": "medical",
+          "excerpt": "Dense Clinical Contrasts Enhance Medical Knowledge Updating in Large Language Models Medical knowledge changes continually, making large language models vulnerable to relying on outdated yet clinically plausible information. We study whether the format of supervision affects medi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.30405"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Dense Clinical Contrasts Enhance Medical Knowledge Updating in Large Language Models Medical knowledge changes continually, making large language models vulnerable to relying on outdated yet clinically plausible information. We study whether the format o",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.30405"
+        },
+        {
+          "term": "Pathology",
+          "excerpt": "dels . PLoS digital health 2 ( 2 ), pp. e0000198 . Cited by: §2 . Kutob and Schneider (2020) L. Kutob and F. Schneider Lung cancer staging . Surgical Pathology Clinics 13 ( 1 ), pp. 57–71 . External Links: Document Cited by: Table 13 . Lazaridou et al. (2021) A. Lazaridou, A. Kuncoro, E. Gribovskaya, D. Agrawal, A. Liska, T. Terzi, M. Gimenez, C. de Masson d’Autume, T. Kocisky, S. Ruder, et al. M",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2608.30405"
+        },
+        {
+          "term": "biosecurity",
+          "excerpt": "n et al. (2026) S. Quan, T. Hao, S. Fang, H. Geng, J. Zhou, B. Chen, K. Wang, D. Hong, J. Dai, Y. Yang, et al. A blind spot in alignment: quantifying biosecurity risks in large language models . arXiv preprint arXiv:2608.02684 . Cited by: §2 . Qwen Team (2025a) Qwen Team Qwen3-1.7B . Note: Hugging Face model card External Links: Link Cited by: Table 8 . Qwen Team (2025b) Qwen Team Qwen3-14B . Note:",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2608.30405"
+        }
+      ],
+      "related_benchmarks": [
+        "HealthBench",
+        "SeerBench",
+        "MedMCQA",
+        "LiveMedBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 21,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "651329f1367f543f31e997628ed7a4edb3b877ce0912ced5b36b6295cea30803",
+      "is_seed": false,
+      "topic": "biosafety",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.30188",
+      "slug": "arxiv-2608-30188-08d31b821d",
+      "kind": "paper",
+      "title": "GPAgentBench-2K: Benchmarking Large Language Model Agents in Complex Clinical Action Space",
+      "abstract": "Large Language Models (LLMs) show great potential as clinical agents, yet existing benchmarks reduce clinical workflows to static predictions or unconstrained Markov Decision Processes (MDPs) with coarse action sets. To address this, we introduce GPAgentBench-2K, the first Constrained MDP (CMDP) LLM-agent benchmark for primary-care clinical decision-making, constructed from expert-validated records of real-world GP encounters. Our environment models a full spectrum of six foundational clinical actions, imposes a topological workflow prior over the action space, and operationalizes safety-informed abstention as a first-class outcome. Evaluating 16 state-of-the-art LLMs reveals a significant performance degradation as the action space scales. Crucially, we uncover a clinical quality-safety gap: even frontier models with the highest diagnosis accuracy violate safety constraints in over half of high-risk cases. Finally, we establish a reference point using Constrained Group Relative Policy Optimization (C-GRPO), and show that while explicitly modeling constraints improves performance over unconstrained RL methods, it remains far from clinically acceptable safety.",
+      "authors": [
+        "Boqi Chen",
+        "Xudong Liu",
+        "Yunke Ao",
+        "Heejin Do",
+        "Jianing Qiu"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-31T03:13:47+00:00",
+      "updated_at": "2026-08-31T03:13:47+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.30188"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.30188v1",
+        "pdf": "https://arxiv.org/pdf/2608.30188v1",
+        "code": "https://github.com/jianing-lab/GPAgentBench",
+        "html": "https://arxiv.org/html/2608.30188"
+      },
+      "evidence": [
+        {
+          "term": "we introduce GPAgentBench",
+          "excerpt": "enchmarks reduce clinical workflows to static predictions or unconstrained Markov Decision Processes (MDPs) with coarse action sets. To address this, we introduce GPAgentBench-2K, the first Constrained MDP (CMDP) LLM-agent benchmark for primary-care clinical decision-making, constructed from expert-validated records of real-world GP encounters. Our environment models a full spectrum of six foundational clinical",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.30188"
+        },
+        {
+          "term": "first Constrained MDP (CMDP) LLM-agent benchmark",
+          "excerpt": "s to static predictions or unconstrained Markov Decision Processes (MDPs) with coarse action sets. To address this, we introduce GPAgentBench-2K, the first Constrained MDP (CMDP) LLM-agent benchmark for primary-care clinical decision-making, constructed from expert-validated records of real-world GP encounters. Our environment models a full spectrum of six foundational clinical actions, imposes a topological workflow prior over the ac",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.30188"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "GPAgentBench-2K: Benchmarking Large Language Model Agents in Complex Clinical Action Space Large Language Models (LLMs) show great potential as clinical agents, yet existing benchmarks reduce clinical workflows to static predictions or unconstrained Markov Decision",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.30188"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "rking Large Language Model Agents in Complex Clinical Action Space Large Language Models (LLMs) show great potential as clinical agents, yet existing benchmarks reduce clinical workflows to static predictions or unconstrained Markov Decision Processes (MDPs) with coarse action sets. To address this, we introduce GPAgentBench-2K, the first Constrained MDP (CMDP) LLM-agent benchmark for primary-care",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.30188"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "GPAgentBench-2K: Benchmarking Large Language Model Agents in Complex Clinical Action Space Large Language Models (LLMs) show great potential as clinical agents, yet existing benchmarks reduce clinical workflows to static predictions or unconstrained Markov Decision Pro",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.30188"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "GPAgentBench-2K: Benchmarking Large Language Model Agents in Complex Clinical Action Space Large Language Models (LLMs) show great potential as clinical agents, yet existing benchmarks reduce clinical workflows to static predictions or unconstrained Markov Decision Processes (MDPs) with coarse action sets. To addres",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.30188"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "Chen, X. Liu, J. Peng, M. Frey-Marti, K. Lam, B. Zheng, L. Li, and J. Qiu MEDSYN: benchmarking multi-EviDence SYNthesis in complex clinical cases for multimodal large language models . In Findings of the Association for Computational Linguistics: ACL 2026 , M. Liakata, V. P. Moreira, J. Zhang, and D. Jurgens (Eds.) , San Diego, California, United States , pp. 23631–23655 . External Links: Link , D",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2608.30188"
+        },
+        {
+          "term": "pathological",
+          "excerpt": "rdiovascular), and an average of 2.9 diagnostic tests, with a total of 584 unique test items across 4 different types (blood, imaging, functional and pathological test). The comprehensive statistics of the dataset is in Appendix A.4 . Finally, all cases undergo de-identification to ensure patient privacy. We employ Gemini-3-Flash Google (2025) to transform clinical records into standardized JSON fil",
+          "location": "3 Benchmark Construction",
+          "source_url": "https://arxiv.org/html/2608.30188"
+        }
+      ],
+      "related_benchmarks": [
+        "GPAgentBench",
+        "MedAgentBench",
+        "PhysicianBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 28,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "88fc4b3f4d77551da7fdf56df188907de3b663fe73f6db481a8183d3663f42e5",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.08.05.26359794",
+      "slug": "doi-10-64898-2026-08-05-26359794-73adac6040",
+      "kind": "paper",
+      "title": "Context-Dependent FHIR Serialisation Strategies for Clinical LLM Deployment: A Multi-Layer Benchmark on UK Core Data",
+      "abstract": "The choice of FHIR-to-text serialisation format significantly impacts clinical LLM quality (Kruskal-Wallis H=163.86, p<10^-33, delta=0.24 on a 5-point scale), yet remains unstudied as a clinical deployment variable. We present FHIRBench-UK, evaluating five large language models across six serialisation formats and three clinical tasks on 100 UK Core FHIR patient bundles (18,000 scored prompts across clean and perturbed cohorts). Our findings converge with independent work on open-weight models (Pator, 2026). The optimal format is context-dependent: raw_json dominates for clinical QA, hybrid_adaptive for clinical reasoning, and structured_markdown for summarisation. In 58% of model-task-complexity scenarios, raw_json is suboptimal. Model capability moderates format sensitivity: Claude Sonnet 4.5 shows 0.10-point sensitivity versus Llama 3.3's 0.39, making adaptive serialisation most valuable for budget-constrained deployments using mid-tier models. All findings replicate under clinically realistic data perturbation. The study additionally confirms a complete ranking inversion between token-level F1 and clinical quality (rho=-0.90), replicating US findings across UK Core profiles. We recommend task-aware serialisation routing as a zero-cost quality intervention for NHS FHIR-based LLM deployments.",
+      "authors": [
+        "Chong, J."
+      ],
+      "source": "medrxiv",
+      "published_at": "2026-08-31T00:00:00+00:00",
+      "updated_at": "2026-08-31T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by",
+      "identifiers": {
+        "doi": "10.64898/2026.08.05.26359794"
+      },
+      "links": {
+        "abs": "https://www.medrxiv.org/content/10.64898/2026.08.05.26359794",
+        "pdf": "https://www.medrxiv.org/content/10.64898/2026.08.05.26359794.full.pdf",
+        "html": "https://www.medrxiv.org/content/10.64898/2026.08.05.26359794.full"
+      },
+      "evidence": [
+        {
+          "term": "We present FHIRBench",
+          "excerpt": "cts clinical LLM quality (Kruskal-Wallis H=163.86, p<10^-33, delta=0.24 on a 5-point scale), yet remains unstudied as a clinical deployment variable. We present FHIRBench-UK, evaluating five large language models across six serialisation formats and three clinical tasks on 100 UK Core FHIR patient bundles (18,000 scored prompts across clean and perturbed cohorts). Our findings converge with independent work",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.08.05.26359794.full"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Context-Dependent FHIR Serialisation Strategies for Clinical LLM Deployment: A Multi-Layer Benchmark on UK Core Data The choice of FHIR-to-text serialisation format significantly impacts clinical LLM quality (Kruskal-Wallis H=163.86, p<10^-33, delta=0.24 on a 5-point scale), yet remains unstudied as a clinical deployment variable. We pres",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.08.05.26359794.full"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Context-Dependent FHIR Serialisation Strategies for Clinical LLM Deployment: A Multi-Layer Benchmark on UK Core Data The choice of FHIR-to-text serialisation format significantly impacts clinical LLM quality (Kruskal-Wallis H=163.86, p<10^-33, delta=0.24 on a 5-point scale), yet remains unstudied as",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.08.05.26359794.full"
+        },
+        {
+          "term": "patient",
+          "excerpt": "ariable. We present FHIRBench-UK, evaluating five large language models across six serialisation formats and three clinical tasks on 100 UK Core FHIR patient bundles (18,000 scored prompts across clean and perturbed cohorts). Our findings converge with independent work on open-weight models (Pator, 2026). The optimal format is context-dependent: raw_json dominates for clinical QA, hybrid_adapti",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.08.05.26359794.full"
+        }
+      ],
+      "related_benchmarks": [
+        "FHIRBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 17,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.08.05.26359794.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "9d18102e37f3774b4196975397edb13e2d7b953e744ca7f76a6a6716dffe508d",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}

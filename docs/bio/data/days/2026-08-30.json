@@ -1,0 +1,275 @@
+{
+  "date": "2026-08-30",
+  "count": 3,
+  "entries": [
+    {
+      "id": "arxiv:2608.29677",
+      "slug": "arxiv-2608-29677-e66a22b8fd",
+      "kind": "paper",
+      "title": "MedSegBenchmarker: A Raw-Count-First Framework for Controlled 2D Medical Image Segmentation Benchmarks",
+      "abstract": "Despite rapid advances in MIS, fair and reproducible comparisons of segmentation models remain challenging due to heterogeneous datasets, inconsistent evaluation protocols, and rapidly evolving architectures. In particular, comparisons often implicitly assume that model rankings are invariant to data partitioning, preprocessing, metric aggregation, uncertainty estimation, and computational constraints. The lack of extensible and unified evaluation frameworks further limits systematic investigation of new models, datasets, and training paradigms. We present MEDSEGBENCHMARKER (MSB), a configuration-driven framework for controlled benchmarking of 2D MIS. It integrates duplicate and near-duplicate image detection, group-aware data splitting, YAML study specifications, resumable training, hyperparameter optimization, cross-validation, and checkpoint-based evaluation. Rather than retaining only aggregate performance measures, MSB exports sample- and class-level pixel counts and predictions together with the evaluation context. These elementary artifacts enable post-hoc analyses without repeated inference. We demonstrate MSB in a case study involving three heterogeneous 2D datasets and multiple MIS and general-purpose vision models evaluated at 256- and 512-pixel input resolutions. Reaggregation of identical predictions changes the top-ranked architecture in three of six dataset-resolution settings, despite high rank correlations between aggregation strategies. Increasing input resolution produces model- and dataset-dependent performance gains and losses that must be considered alongside empirically measured inference complexity. These results show that seemingly minor choices in evaluation and experimental setup can affect benchmark conclusions. MSB, available at GitHub, provides a practical and extensible basis for making benchmark conditions and evaluation choices explicit and reproducible.",
+      "authors": [
+        "Vanessa Borst",
+        "Lukas Horn",
+        "Daniel Grillmeyer",
+        "Thomas Prantl",
+        "Samuel Kounev"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-30T09:20:38+00:00",
+      "updated_at": "2026-08-30T09:20:38+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.29677"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.29677v1",
+        "pdf": "https://arxiv.org/pdf/2608.29677v1",
+        "code": "https://github.com/open-mmlab/mmsegmentation",
+        "html": "https://arxiv.org/html/2608.29677"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "MedSegBenchmarker: A Raw-Count-First Framework for Controlled 2D Medical Image Segmentation Benchmarks Despite rapid advances in MIS, fair and reproducible comparisons of segmentation models remain challenging due to heterogeneous datasets, inconsistent e",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.29677"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "MedSegBenchmarker: A Raw-Count-First Framework for Controlled 2D Medical Image Segmentation Benchmarks Despite rapid advances in MIS, fair and reproducible comparisons of segmentation models remain challenging due to heterogeneous datasets, inconsistent evaluation protocols, and rapidly evolving architectures. In particular, comparisons oft",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.29677"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "ic investigation of new models, datasets, and training paradigms. We present MEDSEGBENCHMARKER (MSB), a configuration-driven framework for controlled benchmarking of 2D MIS. It integrates duplicate and near-duplicate image detection, group-aware data splitting, YAML study specifications, resumable training, hyperparameter optimization, cross-validation, and checkpoint-based evaluation. Rather than r",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.29677"
+        },
+        {
+          "term": "medical",
+          "excerpt": "MedSegBenchmarker: A Raw-Count-First Framework for Controlled 2D Medical Image Segmentation Benchmarks Despite rapid advances in MIS, fair and reproducible comparisons of segmentation models remain challenging due to heterogeneous datasets, inconsistent evaluation protocols, and rapidly evolving architectures",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.29677"
+        },
+        {
+          "term": "experimental protocol",
+          "excerpt": "For this case study, we reused the 256 × 256 256\\times 256 final-evaluation artifacts generated as part of prior work [ 2 ] and reproduced the same experimental protocol at 512 × 512 512\\times 512 , including hyperparameter selection followed by five-fold cross-validation. This protocol was applied to all methods except CENet with PVTv2-B3, which exceeded the available GPU memory at the increased input res",
+          "location": "4.1 Datasets, Model Cohort, and Artifact Scope",
+          "source_url": "https://arxiv.org/html/2608.29677"
+        }
+      ],
+      "related_benchmarks": [
+        "MedSegBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "12bd925194909025b643319eb166cb9ef6cc59aa86b4b0db0cbfbbd7e69b0217",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.29582",
+      "slug": "arxiv-2608-29582-c32da3e648",
+      "kind": "paper",
+      "title": "SUP-MIMIC: A Multi-Task Clinical Diagnosis Benchmark for Evaluating LLMs' Robustness to Contradictory Evidence",
+      "abstract": "Current evaluations of large language models (LLMs) primarily focus on factual knowledge retrieval, overlooking the fundamental challenge of navigating the complex, non-bijective mappings between clinical indicators and diagnoses. Existing benchmarks fail to assess whether large language models truly possess the reasoning capability required for diagnostic ambiguity scenarios, where identical clinical presentations may correspond to different etiologies, and diagnostic convergence scenarios, where heterogeneous symptoms ultimately indicate the same disease. To address this issue, we propose SUP-MIMIC, a multi-task framework utilizing MIMIC-IV-v3.1 that comprises Basic Assessment (BA), Diagnostic Divergence Task (DDT), and Diagnostic Convergence Task (DCT). Specifically, DDT is designed to evaluate the model's \"one-to-many\" disambiguation capability among phenotypically similar cases, while DCT assesses the model's ability to identify \"many-to-one\" diagnostic patterns across different pathophysiological pathways. Comprehensive evaluation of state-of-the-art LLMs reveals substantial performance degradation on DDT and DCT compared to baseline tasks, exposing a systemic reliance on statistical shortcuts over genuine causal reasoning. Our findings further highlight a conservative bias toward \"healthy\" predictions, implying non-trivial risks for missed diagnoses in realistic medical settings. This work establishes a rigorous methodology for quantifying clinical reasoning robustness and provides a roadmap for enhancing the safety of language models in clinical medicine.",
+      "authors": [
+        "Yi Yu",
+        "Bo Wang",
+        "Chong Feng",
+        "Ge Shi",
+        "Xia Liu",
+        "Ziyi Yang",
+        "Xuewen Shi"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-30T05:59:47+00:00",
+      "updated_at": "2026-08-30T05:59:47+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.29582"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.29582v1",
+        "pdf": "https://arxiv.org/pdf/2608.29582v1",
+        "html": "https://arxiv.org/html/2608.29582"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "SUP-MIMIC: A Multi-Task Clinical Diagnosis Benchmark for Evaluating LLMs' Robustness to Contradictory Evidence Current evaluations of large language models (LLMs) primarily focus on factual knowledge retrieval, overlooking the fundamental challenge of navigating the complex, non-bijective ma",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.29582"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "etrieval, overlooking the fundamental challenge of navigating the complex, non-bijective mappings between clinical indicators and diagnoses. Existing benchmarks fail to assess whether large language models truly possess the reasoning capability required for diagnostic ambiguity scenarios, where identical clinical presentations may correspond to different etiologies, and diagnostic convergence scen",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.29582"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "s a rigorous methodology for quantifying clinical reasoning robustness and provides a roadmap for enhancing the safety of language models in clinical medicine. [[SECTION SUP-MIMIC: A Multi-Task Clinical Diagnosis Benchmark for Evaluating LLMs’ Robustness to Contradictory Evidence]] SUP-MIMIC: A Multi-Task Clinical Diagnosis Benchmark for Evaluating LLMs’ Robustness to Contradictory Evidence Cont",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.29582"
+        },
+        {
+          "term": "medical",
+          "excerpt": "soning. Our findings further highlight a conservative bias toward \"healthy\" predictions, implying non-trivial risks for missed diagnoses in realistic medical settings. This work establishes a rigorous methodology for quantifying clinical reasoning robustness and provides a roadmap for enhancing the safety of language models in clinical medicine. [[SECTION SUP-MIMIC: A Multi-Task Clinical Diagno",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.29582"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "SUP-MIMIC: A Multi-Task Clinical Diagnosis Benchmark for Evaluating LLMs' Robustness to Contradictory Evidence Current evaluations of large language models (LLMs) primarily focus on factual knowledge retrieval, overlooking the fundamental challenge of navigating the compl",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.29582"
+        },
+        {
+          "term": "disease",
+          "excerpt": "presentations may correspond to different etiologies, and diagnostic convergence scenarios, where heterogeneous symptoms ultimately indicate the same disease. To address this issue, we propose SUP-MIMIC, a multi-task framework utilizing MIMIC-IV-v3.1 that comprises Basic Assessment (BA), Diagnostic Divergence Task (DDT), and Diagnostic Convergence Task (DCT). Specifically, DDT is designed to ev",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.29582"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "ate selection bias and expand diagnostic coverage. Second, this study relied solely on structured EHR features for evaluation and did not incorporate multimodal information such as medical imaging and waveform data. Nevertheless, our feature set covers 448 clinical indicators, including multiple dimensions such as vital signs and laboratory tests, and has been validated by experts to possess suffi",
+          "location": "Limitations",
+          "source_url": "https://arxiv.org/html/2608.29582"
+        },
+        {
+          "term": "pathological",
+          "excerpt": "an on disease samples. This phenomenon indicates a systematic healthy prediction bias, suggesting that current LLMs tend to favor conservative or non-pathological predictions under diagnostic uncertainty. Among all evaluated models, GPT-4o and HuatuoGPT-o1 achieve the highest disease recall while maintaining relatively strong healthy-case recognition, demonstrating a more balanced diagnostic capabil",
+          "location": "B.2 Confusion Pattern & Healthy Bias",
+          "source_url": "https://arxiv.org/html/2608.29582"
+        }
+      ],
+      "related_benchmarks": [
+        "MedQA",
+        "PubMedQA",
+        "LLMEval",
+        "EHRNoteQA",
+        "LLM-MedQA",
+        "MedMCQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 24,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "3fd860b420bbe44ea672f93f54e363d60437b37d75feca4b6a3c5261da934091",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2608.29528",
+      "slug": "arxiv-2608-29528-b9542d851e",
+      "kind": "paper",
+      "title": "MedCache: Efficient and Temporally Valid Memory for Longitudinal Clinical Agents",
+      "abstract": "Longitudinal clinical agents must maintain an evolving patient state from evidence distributed across visits, time points, and specialties. However, how agent memory should be designed for this setting remains unclear. We introduce a benchmark of multi-visit, multi-specialty patient records that evaluates long-context evidence retrieval, cross-time evidence aggregation, and cross-specialty clinical reasoning. Using this benchmark, we systematically study four memory design choices: curation, organization, retrieval, and memory-augmented reasoning. We find that temporal validity is more important than simply retaining more history; specialty-factorized memory reduces context but can hide shared evidence; and multiple agents help when specialists must reason together, not merely when evidence comes from multiple memories. Guided by these findings, we propose \\textit{MedCache}, a hybrid framework that constructs temporally valid patient memory, organizes evidence into overlapping specialty views, routes each query to relevant memories, and adaptively invokes one or multiple specialists. Experiments show that MedCache improves reasoning accuracy and memory efficiency over strong single-agent and multi-agent baselines, while generalizing across model backbones and external datasets.",
+      "authors": [
+        "Hei Ting",
+        "Chan",
+        "Chenwei Wu",
+        "Xueshen Liu",
+        "Boyuan Zheng",
+        "Liyue Shen",
+        "Jiasi Chen",
+        "Z. Morley Mao"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-08-30T03:28:56+00:00",
+      "updated_at": "2026-08-30T03:28:56+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2608.29528"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.29528v1",
+        "pdf": "https://arxiv.org/pdf/2608.29528v1",
+        "html": "https://arxiv.org/html/2608.29528"
+      },
+      "evidence": [
+        {
+          "term": "We introduce a benchmark",
+          "excerpt": "from evidence distributed across visits, time points, and specialties. However, how agent memory should be designed for this setting remains unclear. We introduce a benchmark of multi-visit, multi-specialty patient records that evaluates long-context evidence retrieval, cross-time evidence aggregation, and cross-specialty clinical reasoning. Using this benchmark, we systematically study four memory design choic",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.29528"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "istributed across visits, time points, and specialties. However, how agent memory should be designed for this setting remains unclear. We introduce a benchmark of multi-visit, multi-specialty patient records that evaluates long-context evidence retrieval, cross-time evidence aggregation, and cross-specialty clinical reasoning. Using this benchmark, we systematically study four memory design choic",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.29528"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "MedCache: Efficient and Temporally Valid Memory for Longitudinal Clinical Agents Longitudinal clinical agents must maintain an evolving patient state from evidence distributed across visits, time points, and specialties. However, how agent memory should be designed for this setting remains unclear. We introduce",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.29528"
+        },
+        {
+          "term": "patient",
+          "excerpt": "MedCache: Efficient and Temporally Valid Memory for Longitudinal Clinical Agents Longitudinal clinical agents must maintain an evolving patient state from evidence distributed across visits, time points, and specialties. However, how agent memory should be designed for this setting remains unclear. We introduce a benchmark of multi-visit, multi-specialty patient records that evalu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.29528"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "ly invokes one or multiple specialists. Experiments show that MedCache improves reasoning accuracy and memory efficiency over strong single-agent and multi-agent baselines, while generalizing across model backbones and external datasets. [[SECTION MedCache: Efficient and Temporally Valid Memory for Longitudinal Clinical Agents]] MedCache: Efficient and Temporally Valid Memory for Longitudinal Clini",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2608.29528"
+        }
+      ],
+      "related_benchmarks": [
+        "EHRNoteQA",
+        "MedAgentBench",
+        "MedicalAgentsBench",
+        "MedAgentsBench"
+      ],
+      "related_agent_url": "../../p/2608.29528.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 15,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "f674f16e97f20ae535d3960dd74638b90970f4fa12d414ca51a180c623025857",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
