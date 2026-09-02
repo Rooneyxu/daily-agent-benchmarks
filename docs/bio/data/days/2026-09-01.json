@@ -1,0 +1,251 @@
+{
+  "date": "2026-09-01",
+  "count": 3,
+  "entries": [
+    {
+      "id": "arxiv:2609.01361",
+      "slug": "arxiv-2609-01361-0fc351d91b",
+      "kind": "paper",
+      "title": "Investigating Linear Probe Robustness to Linguistic Register, Medical Specialty, and Corpus Shifts in Medical QA",
+      "abstract": "Linear classifiers trained on hidden states of a large language model (LLM), linear probes, can flag factual errors from a single forward pass. Geometrically, that implies that true and false statements separate along a stable direction in hidden state space, i.e., the truth direction. Prior work disagrees on whether this generalises across input shifts, but the disagreement is hard to interpret because cross-dataset probe transfer experiments confound several kinds of input change at once. We isolate three such variables in medical question-answering (QA): writing style (register), domain (medical specialty), and corpus (dataset). We build a benchmark using 500 MedQA entries, each rewritten into four styles (textbook, patient, clinical note, colloquial), annotated with clinical specialty, and grouped with two other exam corpora, MedMCQA and MMLU-medical, for cross-dataset evaluation. Probing four open-weight LLMs (2--8B), we find that the truth direction is largely robust to writing style (mean $Δ_\\text{register} \\approx 0.10$ AUROC on held-out facts) and to medical specialty ($Δ_\\text{specialty} \\approx 0.03$), but degrades unevenly across corpora: by $0.12$ AUROC on MMLU-medical and by $0.21$ on MedMCQA, roughly twice the register gap. The register result replicates with a second generator and carries over to human-written patient questions. The truth direction is therefore largely stable within the medical domain but breaks under some corpus shifts, and question format does not explain the break, which suggests that the signal a linear probe recovers is partly bound to dataset structure rather than to medical knowledge alone.",
+      "authors": [
+        "Nishant Mishra",
+        "Ameen Abu-Hanna",
+        "Iacer Calixto"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-01T15:01:47+00:00",
+      "updated_at": "2026-09-01T15:01:47+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.01361"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.01361v1",
+        "pdf": "https://arxiv.org/pdf/2609.01361v1",
+        "code": "https://github.com/mnishant2/MedProbe_release",
+        "html": "https://arxiv.org/html/2609.01361"
+      },
+      "evidence": [
+        {
+          "term": "We build a benchmark",
+          "excerpt": "once. We isolate three such variables in medical question-answering (QA): writing style (register), domain (medical specialty), and corpus (dataset). We build a benchmark using 500 MedQA entries, each rewritten into four styles (textbook, patient, clinical note, colloquial), annotated with clinical specialty, and grouped with two other exam corpora, MedMCQA and MMLU-medical, for cross-dataset evaluation. Pr",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.01361"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "olate three such variables in medical question-answering (QA): writing style (register), domain (medical specialty), and corpus (dataset). We build a benchmark using 500 MedQA entries, each rewritten into four styles (textbook, patient, clinical note, colloquial), annotated with clinical specialty, and grouped with two other exam corpora, MedMCQA and MMLU-medical, for cross-dataset evaluation. Pr",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.01361"
+        },
+        {
+          "term": "medical",
+          "excerpt": "Investigating Linear Probe Robustness to Linguistic Register, Medical Specialty, and Corpus Shifts in Medical QA Linear classifiers trained on hidden states of a large language model (LLM), linear probes, can flag factual errors from a single forward pass. Geometrically, that implies that true and false stat",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.01361"
+        },
+        {
+          "term": "clinical",
+          "excerpt": ", domain (medical specialty), and corpus (dataset). We build a benchmark using 500 MedQA entries, each rewritten into four styles (textbook, patient, clinical note, colloquial), annotated with clinical specialty, and grouped with two other exam corpora, MedMCQA and MMLU-medical, for cross-dataset evaluation. Probing four open-weight LLMs (2--8B), we find that the truth direction is largely robus",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.01361"
+        },
+        {
+          "term": "patient",
+          "excerpt": "register), domain (medical specialty), and corpus (dataset). We build a benchmark using 500 MedQA entries, each rewritten into four styles (textbook, patient, clinical note, colloquial), annotated with clinical specialty, and grouped with two other exam corpora, MedMCQA and MMLU-medical, for cross-dataset evaluation. Probing four open-weight LLMs (2--8B), we find that the truth direction is lar",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.01361"
+        }
+      ],
+      "related_benchmarks": [
+        "MedQA",
+        "MedMCQA",
+        "S-MedQA",
+        "MedRedQA",
+        "Within-MedMCQA",
+        "CheckEval",
+        "MedQA-to-MedMCQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 16,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "5ed261ad48faa78a3760d4343f74b3d405ca59d2817da4ca2ecdb407af13d44d",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.21203/rs.3.rs-10875799/v1",
+      "slug": "doi-10-21203-rs-3-rs-10875799-v1-6b3a67dd2c",
+      "kind": "paper",
+      "title": "Machine Learning Validation Pipelines: From Tabular Benchmarking to Conformal Calibration and Execution-Grounded Agentic Testing",
+      "abstract": "<title>Abstract</title>  <p>  Machine learning systems are increasingly required to be multi-layered for software engineering validation protocols, and multiple checks are imposed instead of just one. Many important failure modes, such as deep class imbalance, poor probability calibration, ungrounded execution, and ”attributional” issues, come to a head in low-level deployments, such as automated code generation, credit underwriting, and clinical triage, where failures can be devastating. In clinical triage, credit underwriting, and the automated generation of code situations that are of a high stakes regularly show up critical failure modes such as severe class imbalance, poor probability calibration, unfaithful attribution, and ungrounded execution, for which standard k-fold cross-validation and regularized baselines are entirely inadequate. By combining the findings from 41 empirical studies, this review identifies three main levels of architecture: data leakage prevention and baseline benchmarking (Level 1), post-hoc interpretability audits and glass-box comparisons (Level 2), and distribution-free uncertainty quantification (Level 3). It is particularly important to note that a meta-analysis of 297 financial machine learning papers reveals a general disregard for diagnosis; only 7.1% of the papers examined included Remove and Retrain (ROAR) benchmarks for testing the faithfulness of the explanations, whereas 93.9% used TreeSHAP for feature attribution. The existence of multi-tier verification frameworks is especially important in order to prevent silent failure modes in safetycritical software systems, as these findings demonstrate. Class-conditional Mondrian conformal calibration answers the Minority Coverage Collapse Theorem, recovering +61.7 percentage points of minority coverage (p < 10  <sup>−80</sup>  ), and pairs with conformalized quantile regression and cost-optimal selective human deferral (θ  <sup>∗</sup>  = ch/CFN). Layer 4 is pre-deployment gating: on models above 0.85 AUROC, where static toolkits report nothing amiss, the RISED framework surfaces decision threshold-flip rates of 49.1% to 64.2% under minor input perturbations. Layer 5 covers execution-grounded multi-agent verification: closed-loop Abstract Syntax Tree validation with transactional rollback (ExecuGraph), lightweight multi-vector screening (TriEval), arity-matched action fairness auditing (AgentFairBench), and prompt-sensitivity benchmarking of the LLM judges such pipelines rely on to score free-form output (JudgeSense). We then formalize how the layers couple, and set out the order in which they should run.  </p>",
+      "authors": [
+        "Gaur N",
+        "Tambe WMA",
+        "Tripathi S."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-09-01T00:00:00+00:00",
+      "updated_at": "2026-09-02T00:00:00+00:00",
+      "priority": "P2",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-10875799/v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1309712"
+      },
+      "evidence": [
+        {
+          "term": "data leakage prevention and baseline benchmarking (Level 1), post-hoc interpretability audits",
+          "excerpt": "zed baselines are entirely inadequate. By combining the findings from 41 empirical studies, this review identifies three main levels of architecture: data leakage prevention and baseline benchmarking (Level 1), post-hoc interpretability audits and glass-box comparisons (Level 2), and distribution-free uncertainty quantification (Level 3). It is particularly important to note that a meta-analysis of 297 financial machine learning papers reveals a general disregard for diagnosis;",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1309712"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Machine Learning Validation Pipelines: From Tabular Benchmarking to Conformal Calibration and Execution-Grounded Agentic Testing <title>Abstract</title> <p> Machine learning systems are increasingly required to be multi-layered for software engineering validation protocols, and multiple checks are",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1309712"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "297 financial machine learning papers reveals a general disregard for diagnosis; only 7.1% of the papers examined included Remove and Retrain (ROAR) benchmarks for testing the faithfulness of the explanations, whereas 93.9% used TreeSHAP for feature attribution. The existence of multi-tier verification frameworks is especially important in order to prevent silent failure modes in safetycritical s",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1309712"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "Machine Learning Validation Pipelines: From Tabular Benchmarking to Conformal Calibration and Execution-Grounded Agentic Testing <title>Abstract</title> <p> Machine learning systems are increasingly required to be multi-layered for software engineering validation protocols, and multiple checks are imp",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1309712"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "ngrounded execution, and ”attributional” issues, come to a head in low-level deployments, such as automated code generation, credit underwriting, and clinical triage, where failures can be devastating. In clinical triage, credit underwriting, and the automated generation of code situations that are of a high stakes regularly show up critical failure modes such as severe class imbalance, poor pro",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1309712"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "miss, the RISED framework surfaces decision threshold-flip rates of 49.1% to 64.2% under minor input perturbations. Layer 5 covers execution-grounded multi-agent verification: closed-loop Abstract Syntax Tree validation with transactional rollback (ExecuGraph), lightweight multi-vector screening (TriEval), arity-matched action fairness auditing (AgentFairBench), and prompt-sensitivity benchmarking",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1309712"
+        }
+      ],
+      "related_benchmarks": [
+        "TriEval",
+        "AgentFairBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c3d0836ffb8110babfb59dcd0a83bd53367d1e6653fe9096881651e143241c78",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "audit"
+    },
+    {
+      "id": "doi:10.21203/rs.3.rs-10825548/v1",
+      "slug": "doi-10-21203-rs-3-rs-10825548-v1-cda7837929",
+      "kind": "paper",
+      "title": "RheumBench: A Specialist-Validated Rubric-Based Benchmark for Evaluating Large Language Models in Rheumatology",
+      "abstract": "<title>Abstract</title>  <p>Large language models (LLMs) are increasingly used for clinical decision support, yet scalable and specialty-specific methods for evaluating their performance and safety remain limited. We developed RheumBench, the first rubric-based LLM benchmark in rheumatology, providing a specialist-validated framework for open-ended evaluation. We evaluated ten systems, comprising three frontier proprietary general-purpose LLMs, one frontier open-weight general-purpose LLM, and six clinical retrieval-augmented generation (RAG) systems, including two certified medical products and one rheumatology-specific RAG system. RheumBench comprised 100 clinical cases (70 diagnostic and 30 diverse clinical management) and 1,020 case-specific rubric criteria independently reviewed and weighted for clinical appropriateness and potential harm by two board-certified rheumatologists. Systems were evaluated for answer quality, prompt sensitivity, potential harm, diagnostic accuracy, and system confidence. Responses were scored by a three LLM judge panel, yielding 50,553 rubric-level LLM evaluations, with high agreement with rheumatologist consensus (Cohen’s κ = 0.91). Overall system performance (0-100%) varied substantially, with a maximum RheumBench score of 54.0% (Claude Fable 5), and frontier general-purpose LLMs generally outperformed clinical RAG systems, including certified Prof. Valmed and DR.INFO. Management case performance varied widely, with thorough prompting improving mean management scores in 9 of 10 systems and yielding a peak score of 72.9% with GPT-5.6 Sol. Potentially severe errors occurred with all systems and were predominantly omission errors. Diagnostic top-1 accuracy reached 57.1% (GPT-5.6 Sol), while top-3 accuracy reached 67.1% (Claude Fable 5). Self-reported system confidence was generally high and diagnostic calibration analyses showed systematic overconfidence for all systems, with the lowest Brier score of 0.203 (Claude Fable 5). RheumBench identified substantial differences that were not explained by clinical specialization or medical product certification. These findings highlight limitations of current LLM-based clinical decision support, and underscore the need for human oversight. RheumBench will be continuously expanded and updated to enable ongoing safety analyses and support system improvement.</p>",
+      "authors": [
+        "Lechner F",
+        "Bamberger J",
+        "Kremer P",
+        "Richter J",
+        "Schneider M",
+        "Kiltz U",
+        "Kuhn S",
+        "Flek L",
+        "Klemm P",
+        "Hueber AJ",
+        "Krusche M",
+        "Labinsky H",
+        "Knitza J."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-09-01T00:00:00+00:00",
+      "updated_at": "2026-09-02T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-10825548/v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1309575"
+      },
+      "evidence": [
+        {
+          "term": "first rubric-based LLM benchmark",
+          "excerpt": "ecision support, yet scalable and specialty-specific methods for evaluating their performance and safety remain limited. We developed RheumBench, the first rubric-based LLM benchmark in rheumatology, providing a specialist-validated framework for open-ended evaluation. We evaluated ten systems, comprising three frontier proprietary general-purpose LLMs, one frontier open-weight general-purpose LLM, and six clinical ret",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1309575"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "RheumBench: A Specialist-Validated Rubric-Based Benchmark for Evaluating Large Language Models in Rheumatology <title>Abstract</title> <p>Large language models (LLMs) are increasingly used for clinical decision support, yet scalable and specialty-specific methods for evaluating their performance",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1309575"
+        },
+        {
+          "term": "medical",
+          "excerpt": "al-purpose LLMs, one frontier open-weight general-purpose LLM, and six clinical retrieval-augmented generation (RAG) systems, including two certified medical products and one rheumatology-specific RAG system. RheumBench comprised 100 clinical cases (70 diagnostic and 30 diverse clinical management) and 1,020 case-specific rubric criteria independently reviewed and weighted for clinical appropri",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1309575"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "sed Benchmark for Evaluating Large Language Models in Rheumatology <title>Abstract</title> <p>Large language models (LLMs) are increasingly used for clinical decision support, yet scalable and specialty-specific methods for evaluating their performance and safety remain limited. We developed RheumBench, the first rubric-based LLM benchmark in rheumatology, providing a specialist-validated frame",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1309575"
+        }
+      ],
+      "related_benchmarks": [
+        "RheumBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 17,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "e3c24460f24585dafa5b5ab0e726d0f13980f90a5d96652562a767c85be2b72e",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
