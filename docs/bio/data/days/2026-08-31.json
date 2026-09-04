@@ -153,7 +153,7 @@
         "biosecurity_misuse"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 12,
+      "match_score": 16,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "336d13801a9199d0d4c817abde8e4b0ae12a15ab2c78f486767c12571bcf4f16",
@@ -318,7 +318,7 @@
         "biosecurity_misuse"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 17,
+      "match_score": 21,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "651329f1367f543f31e997628ed7a4edb3b877ce0912ced5b36b6295cea30803",
@@ -341,7 +341,7 @@
       ],
       "source": "arxiv",
       "published_at": "2026-08-31T03:13:47+00:00",
-      "updated_at": "2026-08-31T03:13:47+00:00",
+      "updated_at": "2026-09-02T01:43:33+00:00",
       "priority": "P1",
       "categories": [
         "experiment_agent"
@@ -353,8 +353,8 @@
         "arxiv": "2608.30188"
       },
       "links": {
-        "abs": "https://arxiv.org/abs/2608.30188v1",
-        "pdf": "https://arxiv.org/pdf/2608.30188v1",
+        "abs": "https://arxiv.org/abs/2608.30188v2",
+        "pdf": "https://arxiv.org/pdf/2608.30188v2",
         "code": "https://github.com/jianing-lab/GPAgentBench",
         "html": "https://arxiv.org/html/2608.30188"
       },
@@ -418,10 +418,10 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 24,
+      "match_score": 28,
       "extraction_status": "complete",
       "extraction_error": "",
-      "content_hash": "88fc4b3f4d77551da7fdf56df188907de3b663fe73f6db481a8183d3663f42e5",
+      "content_hash": "1256df4af6a621f462fe0eb153cc1a81dc13e26f2e61646307b42571cc68beba",
       "is_seed": false,
       "topic": "experiment_agent",
       "contribution_type": "new_benchmark"
@@ -431,7 +431,7 @@
       "slug": "doi-10-64898-2026-08-05-26359794-73adac6040",
       "kind": "paper",
       "title": "Context-Dependent FHIR Serialisation Strategies for Clinical LLM Deployment: A Multi-Layer Benchmark on UK Core Data",
-      "abstract": "The choice of FHIR-to-text serialisation format significantly impacts clinical LLM quality (Kruskal-Wallis H=163.86, p<10^-33, delta=0.24 on a 5-point scale), yet remains unstudied as a clinical deployment variable. We present FHIRBench-UK, evaluating five large language models across six serialisation formats and three clinical tasks on 100 UK Core FHIR patient bundles (18,000 scored prompts across clean and perturbed cohorts). Our findings converge with independent work on open-weight models (Pator, 2026). The optimal format is context-dependent: raw_json dominates for clinical QA, hybrid_adaptive for clinical reasoning, and structured_markdown for summarisation. In 58% of model-task-complexity scenarios, raw_json is suboptimal. Model capability moderates format sensitivity: Claude Sonnet 4.5 shows 0.10-point sensitivity versus Llama 3.3's 0.39, making adaptive serialisation most valuable for budget-constrained deployments using mid-tier models. All findings replicate under clinically realistic data perturbation. The study additionally confirms a complete ranking inversion between token-level F1 and clinical quality (rho=-0.90), replicating US findings across UK Core profiles. We recommend task-aware serialisation routing as a zero-cost quality intervention for NHS FHIR-based LLM deployments.",
+      "abstract": "The choice of FHIR-to-text serialisation format significantly impacts clinical LLM quality (Kruskal-Wallis H=163.86, p< 10-33, {Delta}=0.24 on a 5-point scale), yet remains unstudied as a clinical deployment variable. We present FHIRBench-UK, evaluating five large language models across six serialisation formats and three clinical tasks on 100 UK Core FHIR patient bundles (18,000 scored prompts across clean and perturbed cohorts). The optimal format is context-dependent: raw_json dominates for clinical QA, hybrid_adaptive for clinical reasoning, and structured_markdown for summarisation. In 58% of model-task-complexity scenarios, raw_json is suboptimal. Model capability moderates format sensitivity: Claude Sonnet 4.5 shows 0.10-point sensitivity versus Llama 3.3s 0.39, making adaptive serialisation most valuable for budget-constrained deployments using mid-tier models. All findings replicate under clinically realistic data perturbation. The study additionally confirms a complete ranking inversion between token-level F1 and clinical quality ({rho}=-0.90), replicating US findings across UK Core profiles, and converges with independent work on open-weight models [1] to establish serialisation strategy as a replicable determinant of clinical LLM performance. We recommend task-aware serialisation routing as a zero-cost quality intervention for NHS FHIR-based LLM deployments.",
       "authors": [
         "Chong, J."
       ],
@@ -440,7 +440,7 @@
       "updated_at": "2026-08-31T00:00:00+00:00",
       "priority": "P1",
       "categories": [
-        "multimodal"
+        "biosafety"
       ],
       "collection_status": "confirmed",
       "access_status": "public",
@@ -457,49 +457,58 @@
       "evidence": [
         {
           "term": "We present FHIRBench",
-          "excerpt": "cts clinical LLM quality (Kruskal-Wallis H=163.86, p<10^-33, delta=0.24 on a 5-point scale), yet remains unstudied as a clinical deployment variable. We present FHIRBench-UK, evaluating five large language models across six serialisation formats and three clinical tasks on 100 UK Core FHIR patient bundles (18,000 scored prompts across clean and perturbed cohorts). Our findings converge with independent work",
+          "excerpt": "s clinical LLM quality (Kruskal-Wallis H=163.86, p< 10-33, {Delta}=0.24 on a 5-point scale), yet remains unstudied as a clinical deployment variable. We present FHIRBench-UK, evaluating five large language models across six serialisation formats and three clinical tasks on 100 UK Core FHIR patient bundles (18,000 scored prompts across clean and perturbed cohorts). The optimal format is context-dependent: ra",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.08.05.26359794.full"
         },
         {
           "term": "benchmark",
-          "excerpt": "Context-Dependent FHIR Serialisation Strategies for Clinical LLM Deployment: A Multi-Layer Benchmark on UK Core Data The choice of FHIR-to-text serialisation format significantly impacts clinical LLM quality (Kruskal-Wallis H=163.86, p<10^-33, delta=0.24 on a 5-point scale), yet remains unstudied as a clinical deployment variable. We pres",
+          "excerpt": "Context-Dependent FHIR Serialisation Strategies for Clinical LLM Deployment: A Multi-Layer Benchmark on UK Core Data The choice of FHIR-to-text serialisation format significantly impacts clinical LLM quality (Kruskal-Wallis H=163.86, p< 10-33, {Delta}=0.24 on a 5-point scale), yet remains unstudied as a clinical deployment variable. We pr",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.08.05.26359794.full"
         },
         {
           "term": "clinical",
-          "excerpt": "Context-Dependent FHIR Serialisation Strategies for Clinical LLM Deployment: A Multi-Layer Benchmark on UK Core Data The choice of FHIR-to-text serialisation format significantly impacts clinical LLM quality (Kruskal-Wallis H=163.86, p<10^-33, delta=0.24 on a 5-point scale), yet remains unstudied as",
+          "excerpt": "Context-Dependent FHIR Serialisation Strategies for Clinical LLM Deployment: A Multi-Layer Benchmark on UK Core Data The choice of FHIR-to-text serialisation format significantly impacts clinical LLM quality (Kruskal-Wallis H=163.86, p< 10-33, {Delta}=0.24 on a 5-point scale), yet remains unstudied",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.08.05.26359794.full"
         },
         {
           "term": "patient",
-          "excerpt": "ariable. We present FHIRBench-UK, evaluating five large language models across six serialisation formats and three clinical tasks on 100 UK Core FHIR patient bundles (18,000 scored prompts across clean and perturbed cohorts). Our findings converge with independent work on open-weight models (Pator, 2026). The optimal format is context-dependent: raw_json dominates for clinical QA, hybrid_adapti",
+          "excerpt": "ariable. We present FHIRBench-UK, evaluating five large language models across six serialisation formats and three clinical tasks on 100 UK Core FHIR patient bundles (18,000 scored prompts across clean and perturbed cohorts). The optimal format is context-dependent: raw_json dominates for clinical QA, hybrid_adaptive for clinical reasoning, and structured_markdown for summarisation. In 58% of m",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.08.05.26359794.full"
         },
         {
           "term": "Pathology",
-          "excerpt": "Environmental Health (1001) Oncology (3575) Ophthalmology (1038) Orthopedics (393) Otolaryngology (446) Pain Medicine (466) Palliative Medicine (139) Pathology (704) Pediatrics (1775) Pharmacology and Therapeutics (733) Primary Care Research (759) Psychiatry and Clinical Psychology (5836) Public and Global Health (9697) Radiology and Imaging (2389) Rehabilitation Medicine and Physical Therapy (14",
+          "excerpt": "Environmental Health (1002) Oncology (3580) Ophthalmology (1038) Orthopedics (393) Otolaryngology (448) Pain Medicine (466) Palliative Medicine (139) Pathology (704) Pediatrics (1779) Pharmacology and Therapeutics (733) Primary Care Research (759) Psychiatry and Clinical Psychology (5841) Public and Global Health (9703) Radiology and Imaging (2390) Rehabilitation Medicine and Physical Therapy (14",
           "location": "Subject Area",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.08.05.26359794.full"
+        },
+        {
+          "term": "risk assessment",
+          "excerpt": "Complete preservation of identifiers, codes, and system URIs provides verbatim access to exact tokens needed. Clinical reasoning (drug interactions, risk assessment): hybrid_adaptive and clinical_template outperform raw_json. Reasoning tasks benefit from semantic organisation that groups related clinical concepts. Clinical reasoning (drug interactions, risk assessment): hybrid_adaptive and clinical_te",
+          "location": "3.2 The Optimal Serialiser Is Context-Dependent",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.08.05.26359794.full"
         }
       ],
       "related_benchmarks": [
-        "FHIRBench"
+        "FHIRBench",
+        "FHIR-AgentBench",
+        "FHIR-AgentEval",
+        "MedA-gentBench"
       ],
       "related_agent_url": "",
       "evaluation_contexts": [
-        "beneficial_capability"
+        "biosecurity_misuse"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 19,
+      "match_score": 21,
       "extraction_status": "complete",
       "extraction_error": "",
-      "content_hash": "2417cda923ec6438f40b341bdf4cdac076e953a0879b5a755ae59d72b3f1f782",
+      "content_hash": "a6bce2072dfa12f0c6d94ac56fcf7b42ef228efc93865b98f8af337033e30ee6",
       "is_seed": false,
-      "topic": "multimodal",
+      "topic": "biosafety",
       "contribution_type": "new_benchmark"
     }
   ]

@@ -1,0 +1,176 @@
+{
+  "date": "2026-09-03",
+  "count": 2,
+  "entries": [
+    {
+      "id": "arxiv:2609.03690",
+      "slug": "arxiv-2609-03690-4d940ddfab",
+      "kind": "paper",
+      "title": "MetaStructAtlas: A Grounded 3D Vision-Language Dataset and Benchmark for Functional and Structural Reasoning in Whole-Body PET/CT",
+      "abstract": "The joint interpretation of metabolic function and anatomical structure is essential for clinical diagnosis in whole-body PET/CT. Although recent advances in 3D medical vision-language models have demonstrated remarkable progress, current efforts are limited to regional CT imaging, leaving a critical void in comprehensive whole-body PET/CT analysis. In this work, we introduce MetaStructAtlas, a large-scale dataset for grounded whole-body PET/CT interpretation that synthesizes multimodal imaging with integrated anatomical, metabolic, and semantic annotations. MetaStructAtlas provides 490 co-registered 3D PET and CT volumes with 50,470 organ-level segmentation masks and grounded radiology reports. To facilitate interactive reasoning, we further developed MetaStructVQA, a standardized 3D grounded visual question-answering benchmark containing 100,565 QA pairs. This framework explicitly links diagnostic queries to visual evidence across modalities, encompassing anatomical, morphological, and metabolic characteristics. Finally, we evaluate state-of-the-art 3D medical VLMs on MetaStructVQA, establishing a robust foundation for multimodal representation learning and integrated whole-body reasoning in nuclear medicine.",
+      "authors": [
+        "Chenguang Zheng",
+        "Le Xue",
+        "Yichi Zhang",
+        "Wenbo Zhang",
+        "Zehui Ling",
+        "Gang Feng",
+        "Xin Gao",
+        "Yuan Qi",
+        "Yuan Cheng",
+        "Zixin Hu",
+        "Mei Tian"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-03T11:27:22+00:00",
+      "updated_at": "2026-09-03T11:27:22+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.03690"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.03690v1",
+        "pdf": "https://arxiv.org/pdf/2609.03690v1",
+        "code": "https://github.com/withtst/MetaStructVQA",
+        "data": "https://huggingface.co/datasets/withtst/MetaStructAtlas",
+        "html": "https://arxiv.org/html/2609.03690"
+      },
+      "evidence": [
+        {
+          "term": "we introduce MetaStructAtlas, a large-scale dataset",
+          "excerpt": "able progress, current efforts are limited to regional CT imaging, leaving a critical void in comprehensive whole-body PET/CT analysis. In this work, we introduce MetaStructAtlas, a large-scale dataset for grounded whole-body PET/CT interpretation that synthesizes multimodal imaging with integrated anatomical, metabolic, and semantic annotations. MetaStructAtlas provides 490 co-registered 3D PET and CT volumes with 50,470 organ-level seg",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.03690"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "MetaStructAtlas: A Grounded 3D Vision-Language Dataset and Benchmark for Functional and Structural Reasoning in Whole-Body PET/CT The joint interpretation of metabolic function and anatomical structure is essential for clinical diagnosis in whole-body PET/CT. Although recent advances in 3D medical vision-la",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.03690"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "medical VLMs on MetaStructVQA, establishing a robust foundation for multimodal representation learning and integrated whole-body reasoning in nuclear medicine. [[SECTION MetaStructAtlas: A Grounded 3D Vision-Language Dataset and Benchmark for Functional and Structural Reasoning in Whole-Body PET/CT]] MetaStructAtlas: A Grounded 3D Vision-Language Dataset and Benchmark for Functional and Structur",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.03690"
+        },
+        {
+          "term": "medical",
+          "excerpt": "nterpretation of metabolic function and anatomical structure is essential for clinical diagnosis in whole-body PET/CT. Although recent advances in 3D medical vision-language models have demonstrated remarkable progress, current efforts are limited to regional CT imaging, leaving a critical void in comprehensive whole-body PET/CT analysis. In this work, we introduce MetaStructAtlas, a large-scal",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.03690"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "for Functional and Structural Reasoning in Whole-Body PET/CT The joint interpretation of metabolic function and anatomical structure is essential for clinical diagnosis in whole-body PET/CT. Although recent advances in 3D medical vision-language models have demonstrated remarkable progress, current efforts are limited to regional CT imaging, leaving a critical void in comprehensive whole-body PE",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.03690"
+        },
+        {
+          "term": "Vision-Language",
+          "excerpt": "MetaStructAtlas: A Grounded 3D Vision-Language Dataset and Benchmark for Functional and Structural Reasoning in Whole-Body PET/CT The joint interpretation of metabolic function and anatomical structure is essential for clinical diagnosis in whole-body PET/CT. Although recent advances i",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.03690"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "ed radiology question-answering dataset [ 22 ] , SLAKE augmented radiology QA with semantically labeled knowledge [ 23 ] , PathVQA scaled the task to pathology [ 24 ] , and MedMNIST v2 standardized lightweight 2D and 3D biomedical classification benchmarking [ 25 ] . On the model side, MedPaLM demonstrated that large language models can encode clinical knowledge [ 26 ] , while LLaVA-Med [ 27 ] an",
+          "location": "2.3 Medical visual question answering benchmarks",
+          "source_url": "https://arxiv.org/html/2609.03690"
+        },
+        {
+          "term": "visual grounding",
+          "excerpt": "dels across escalating levels of clinical complexity. It systematically deconstructs diagnostic reasoning into three progressive stages: foundational visual grounding (organ/modality identification), targeted clinical characterization (mask-guided morphological and metabolic assessment), and advanced autonomous reasoning (mask-free localization and comprehensive multimodal synthesis). An overview of Met",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2609.03690"
+        }
+      ],
+      "related_benchmarks": [
+        "MetaStructVQA",
+        "VQA",
+        "PathVQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 22,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "fae30bbe209bcf0e784bb421c74c03f48d1f16d0faf1de3e964ba86f287c3a41",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.08.28.747622",
+      "slug": "doi-10-64898-2026-08-28-747622-8bf7146807",
+      "kind": "paper",
+      "title": "Cell-type separability predicts annotation accuracy and outweighs algorithm choice: a factorial benchmark across seven scRNA paradigms",
+      "abstract": "Automated cell-type annotation is a prerequisite for most single-cell RNA-sequencing (scRNA-seq) analyses, but the rapid proliferation of methods spanning marker-based, correlation-based, classical machine-learning, deep-learning, semi-supervised, large-language-model (LLM), and transformer foundation-model paradigms has outpaced head-to-head evaluation. Existing benchmarks rely on convenience samples of real datasets in which cell count, class imbalance, cell-type number, and differential-expression strength co-vary uncontrollably, precluding causal attribution of performance to any dataset property. To resolve this, we benchmarked 63 tools across seven paradigms using a Taguchi L9(34) orthogonal array that varies four dataset properties independently, progressively reconfiguring experimental control across five phases: fully controlled simulation, within-platform and cross-platform real-data validation, database-connected and LLM-based annotation under ontology-aware scoring, and fine-tuned foundation models. Using standardized oracle inputs and Cohen's {kappa}, we found that, within the ranges tested, the major paradigms achieved comparable accuracy. Accuracy was predicted near-linearly by the separability of cell types in a shared expression embedding, measured as k-nearest-neighbor (kNN) purity, a relationship that held across sequencing platforms and in fine-tuned foundation models. We attributed the vast majority of {kappa} variance to dataset structure and only a small share to tool identity. Computational cost traded against workflow accessibility rather than accuracy: accessible correlation-based and LLM-based approaches performed competitively, while foundation models matched them only after fine-tuning. Because our oracle design isolates algorithmic capability from upstream noise, these results reframe how methods should be selected: the field's near-term gains lie in strengthening infrastructure--prioritizing tool accessibility, standardized evaluation, and robustness to pipeline variation.",
+      "authors": [
+        "Wardhana, O.",
+        "Zeng, Z.",
+        "Lu, X."
+      ],
+      "source": "biorxiv",
+      "published_at": "2026-09-03T00:00:00+00:00",
+      "updated_at": "2026-09-03T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by",
+      "identifiers": {
+        "doi": "10.64898/2026.08.28.747622"
+      },
+      "links": {
+        "abs": "https://www.biorxiv.org/content/10.64898/2026.08.28.747622",
+        "pdf": "https://www.biorxiv.org/content/10.64898/2026.08.28.747622.full.pdf",
+        "html": "https://www.biorxiv.org/content/10.64898/2026.08.28.747622.full"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "Cell-type separability predicts annotation accuracy and outweighs algorithm choice: a factorial benchmark across seven scRNA paradigms Automated cell-type annotation is a prerequisite for most single-cell RNA-sequencing (scRNA-seq) analyses, but the rapid proliferation of methods spanning marker-based, correlation-based, classical machine-lear",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.28.747622.full"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "deep-learning, semi-supervised, large-language-model (LLM), and transformer foundation-model paradigms has outpaced head-to-head evaluation. Existing benchmarks rely on convenience samples of real datasets in which cell count, class imbalance, cell-type number, and differential-expression strength co-vary uncontrollably, precluding causal attribution of performance to any dataset property. To reso",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.28.747622.full"
+        },
+        {
+          "term": "single-cell",
+          "excerpt": "accuracy and outweighs algorithm choice: a factorial benchmark across seven scRNA paradigms Automated cell-type annotation is a prerequisite for most single-cell RNA-sequencing (scRNA-seq) analyses, but the rapid proliferation of methods spanning marker-based, correlation-based, classical machine-learning, deep-learning, semi-supervised, large-language-model (LLM), and transformer foundation-model",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.28.747622.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 13,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.08.28.747622.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "8a8e5652c7b850c1e8390886cb973b08e75f442bce8ed769e12a92508f1a9a69",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}

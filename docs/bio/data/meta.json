@@ -1,76 +1,76 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-03T09:03:45Z",
-  "total": 82,
-  "day_count": 46,
-  "latest_date": "2026-09-01",
+  "generated_at": "2026-09-04T08:56:41Z",
+  "total": 85,
+  "day_count": 48,
+  "latest_date": "2026-09-03",
   "counts": {
     "topics": {
-      "general_text": 34,
+      "multimodal": 22,
+      "general_text": 35,
       "experiment_agent": 19,
-      "biosafety": 8,
-      "multimodal": 21
+      "biosafety": 9
     },
     "contribution_types": {
-      "new_benchmark": 57,
+      "new_benchmark": 60,
       "audit": 11,
       "methodology": 14
     },
     "kinds": {
-      "paper": 82
+      "paper": 85
     },
     "evaluation_contexts": {
-      "beneficial_capability": 74,
-      "biosecurity_misuse": 8
+      "beneficial_capability": 76,
+      "biosecurity_misuse": 9
     }
   },
   "source_health": [
     {
       "source": "arxiv",
       "name": "arXiv",
-      "status": "failed",
-      "started_at": "2026-09-03T09:03:52Z",
-      "finished_at": "2026-09-03T09:04:35Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "Server error '500 Internal Server Error' for url 'https://export.arxiv.org/api/query?search_query=%28%28all%3Abenchmark+OR+all%3Abenchmarking+OR+all%3A%22evaluation+suite%22+OR+all%3A%22evaluation+dataset%22%29+AND+%28all%3Aconstruction+OR+all%3Acuration+OR+all%3A%22quality+control%22+OR+all%3A%22quality+assurance%22+OR+all%3Averifier+OR+all%3Agrader+OR+all%3A%22question+generation%22+OR+all%3A%22automated+evaluation%22+OR+all%3A%22synthetic+evaluation+data%22+OR+all%3A%22judge+calibration%22%29+AND+%28all%3Abiomedical+OR+all%3Amedical+OR+all%3Aclinical+OR+all%3Abiology+OR+all%3Abiological+OR+"
+      "status": "success",
+      "started_at": "2026-09-04T08:56:48Z",
+      "finished_at": "2026-09-04T08:57:18Z",
+      "discovered": 57,
+      "published": 29,
+      "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-09-03T09:04:35Z",
-      "finished_at": "2026-09-03T09:04:50Z",
-      "discovered": 125,
-      "published": 68,
+      "started_at": "2026-09-04T08:57:18Z",
+      "finished_at": "2026-09-04T08:57:23Z",
+      "discovered": 159,
+      "published": 92,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "failed",
-      "started_at": "2026-09-03T09:04:50Z",
-      "finished_at": "2026-09-03T09:05:35Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "The read operation timed out"
+      "status": "success",
+      "started_at": "2026-09-04T08:57:23Z",
+      "finished_at": "2026-09-04T08:59:31Z",
+      "discovered": 1098,
+      "published": 61,
+      "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-09-03T09:05:35Z",
-      "finished_at": "2026-09-03T09:05:52Z",
-      "discovered": 312,
-      "published": 25,
+      "started_at": "2026-09-04T08:59:31Z",
+      "finished_at": "2026-09-04T08:59:51Z",
+      "discovered": 375,
+      "published": 36,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "success",
-      "started_at": "2026-09-03T09:05:52Z",
-      "finished_at": "2026-09-03T09:06:42Z",
+      "started_at": "2026-09-04T08:59:51Z",
+      "finished_at": "2026-09-04T09:00:42Z",
       "discovered": 0,
       "published": 0,
       "error": ""
