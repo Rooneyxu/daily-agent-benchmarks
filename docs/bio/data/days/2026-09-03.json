@@ -1,6 +1,6 @@
 {
   "date": "2026-09-03",
-  "count": 2,
+  "count": 3,
   "entries": [
     {
       "id": "arxiv:2609.03690",
@@ -168,6 +168,90 @@
       "extraction_status": "incomplete",
       "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.08.28.747622.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
       "content_hash": "8a8e5652c7b850c1e8390886cb973b08e75f442bce8ed769e12a92508f1a9a69",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.1007/s12194-026-01133-y",
+      "slug": "doi-10-1007-s12194-026-01133-y-9918b95660",
+      "kind": "paper",
+      "title": "RadTechBERT: a domain-specific language model for radiological technology evaluated using Japanese national examination-derived cloze questions.",
+      "abstract": "Specialized language models can improve performance in expert domains; however, in radiological technology, evaluation datasets and models tailored to radiological technologists' practice remain limited and are not widely available. In this study, RadTechBERT was developed by pretraining a Bidirectional Encoder Representations from Transformers on a radiological technology-specific corpus from the initial pretraining stage, without relying on continued pretraining of existing general models. To enable systematic evaluation, a new cloze question dataset was constructed from items derived from the Japanese national examination for radiological technologists, and subject labels were added to support subject-level analyses. To develop the model, Unigram and Byte Pair Encoding (BPE) tokenizers were compared with vocabulary sizes of 32 K, 50 K, and 100 K. RadTechBERT was trained under two settings: using only the domain-specific corpus and using a mixed corpus that additionally included Wikipedia. For benchmarking, baseline models pretrained on general corpora such as Wikipedia, as well as existing and medical textbook-based models, were also evaluated. Performance was assessed using Top-5 accuracy on the cloze task, both overall and by subject. RadTechBERT with BPE_32K outperformed baselines in many subjects, with more than a twofold improvement in radiation safety management and radiation measurement relative to the strongest baseline. In contrast, gains were smaller in subjects having substantial overlap with general medicine, and Wikipedia mixing did not yield consistent improvements. The optimal tokenizer and vocabulary size were subject-dependent.",
+      "authors": [
+        "Yagahara A",
+        "Yokohama N",
+        "Uesugi M",
+        "Aizawa M",
+        "Ando D",
+        "Ishikawa T",
+        "Sudo M",
+        "Nishimoto N",
+        "Tanikawa T",
+        "Aoki Y",
+        "Tani Y",
+        "Banno T",
+        "Kawamata M."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-09-03T00:00:00+00:00",
+      "updated_at": "2026-09-04T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.1007/s12194-026-01133-y",
+        "pmid": "42690576"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/42690576"
+      },
+      "evidence": [
+        {
+          "term": "new cloze question dataset",
+          "excerpt": "ic corpus from the initial pretraining stage, without relying on continued pretraining of existing general models. To enable systematic evaluation, a new cloze question dataset was constructed from items derived from the Japanese national examination for radiological technologists, and subject labels were added to support subject-level analyses. To develop the model, Unigram and Byte Pair Encoding (BPE) tokenizer",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42690576"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "RadTechBERT was trained under two settings: using only the domain-specific corpus and using a mixed corpus that additionally included Wikipedia. For benchmarking, baseline models pretrained on general corpora such as Wikipedia, as well as existing and medical textbook-based models, were also evaluated. Performance was assessed using Top-5 accuracy on the cloze task, both overall and by subject",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42690576"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "RadTechBERT was trained under two settings: using only the domain-specific corpus and using a mixed corpus that additionally included Wikipedia. For benchmarking, baseline models pretrained on general corpora such as Wikipedia, as well as existing and medical textbook-based models, were also evaluated. Performance was assessed using Top-5 accuracy on the cloze task, both overall and by subject. Rad",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42690576"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "ent and radiation measurement relative to the strongest baseline. In contrast, gains were smaller in subjects having substantial overlap with general medicine, and Wikipedia mixing did not yield consistent improvements. The optimal tokenizer and vocabulary size were subject-dependent. Specialized language models can improve performance in expert domains; however, in radiological technology, eval",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42690576"
+        },
+        {
+          "term": "medical",
+          "excerpt": "rpus that additionally included Wikipedia. For benchmarking, baseline models pretrained on general corpora such as Wikipedia, as well as existing and medical textbook-based models, were also evaluated. Performance was assessed using Top-5 accuracy on the cloze task, both overall and by subject. RadTechBERT with BPE_32K outperformed baselines in many subjects, with more than a twofold improvemen",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42690576"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 16,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c4c80e2afdb84393a0182545339273893995d43effff045996502600847d7d25",
       "is_seed": false,
       "topic": "general_text",
       "contribution_type": "new_benchmark"

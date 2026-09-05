@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-04T08:56:41Z",
-  "total": 85,
+  "generated_at": "2026-09-05T08:27:29Z",
+  "total": 86,
   "counts": {
     "topics": {
       "multimodal": 22,
-      "general_text": 35,
+      "general_text": 36,
       "experiment_agent": 19,
       "biosafety": 9
     },
     "contribution_types": {
-      "new_benchmark": 60,
+      "new_benchmark": 61,
       "audit": 11,
       "methodology": 14
     },
     "kinds": {
-      "paper": 85
+      "paper": 86
     },
     "evaluation_contexts": {
-      "beneficial_capability": 76,
+      "beneficial_capability": 77,
       "biosecurity_misuse": 9
     }
   },
@@ -59,48 +59,48 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-09-04T08:56:48Z",
-      "finished_at": "2026-09-04T08:57:18Z",
-      "discovered": 57,
-      "published": 29,
+      "started_at": "2026-09-05T08:27:36Z",
+      "finished_at": "2026-09-05T08:27:59Z",
+      "discovered": 37,
+      "published": 16,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-09-04T08:57:18Z",
-      "finished_at": "2026-09-04T08:57:23Z",
-      "discovered": 159,
-      "published": 92,
+      "started_at": "2026-09-05T08:27:59Z",
+      "finished_at": "2026-09-05T08:28:04Z",
+      "discovered": 158,
+      "published": 90,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-09-04T08:57:23Z",
-      "finished_at": "2026-09-04T08:59:31Z",
-      "discovered": 1098,
-      "published": 61,
+      "started_at": "2026-09-05T08:28:04Z",
+      "finished_at": "2026-09-05T08:31:33Z",
+      "discovered": 1075,
+      "published": 68,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-09-04T08:59:31Z",
-      "finished_at": "2026-09-04T08:59:51Z",
-      "discovered": 375,
-      "published": 36,
+      "started_at": "2026-09-05T08:31:33Z",
+      "finished_at": "2026-09-05T08:31:56Z",
+      "discovered": 268,
+      "published": 23,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "success",
-      "started_at": "2026-09-04T08:59:51Z",
-      "finished_at": "2026-09-04T09:00:42Z",
+      "started_at": "2026-09-05T08:31:56Z",
+      "finished_at": "2026-09-05T08:32:40Z",
       "discovered": 0,
       "published": 0,
       "error": ""
@@ -109,10 +109,11 @@
   "days": [
     {
       "date": "2026-09-03",
-      "count": 2,
+      "count": 3,
       "entry_ids": [
         "arxiv:2609.03690",
-        "doi:10.64898/2026.08.28.747622"
+        "doi:10.64898/2026.08.28.747622",
+        "doi:10.1007/s12194-026-01133-y"
       ]
     },
     {
@@ -653,6 +654,90 @@
       "contribution_type": "new_benchmark"
     },
     {
+      "id": "doi:10.1007/s12194-026-01133-y",
+      "slug": "doi-10-1007-s12194-026-01133-y-9918b95660",
+      "kind": "paper",
+      "title": "RadTechBERT: a domain-specific language model for radiological technology evaluated using Japanese national examination-derived cloze questions.",
+      "abstract": "Specialized language models can improve performance in expert domains; however, in radiological technology, evaluation datasets and models tailored to radiological technologists' practice remain limited and are not widely available. In this study, RadTechBERT was developed by pretraining a Bidirectional Encoder Representations from Transformers on a radiological technology-specific corpus from the initial pretraining stage, without relying on continued pretraining of existing general models. To enable systematic evaluation, a new cloze question dataset was constructed from items derived from the Japanese national examination for radiological technologists, and subject labels were added to support subject-level analyses. To develop the model, Unigram and Byte Pair Encoding (BPE) tokenizers were compared with vocabulary sizes of 32 K, 50 K, and 100 K. RadTechBERT was trained under two settings: using only the domain-specific corpus and using a mixed corpus that additionally included Wikipedia. For benchmarking, baseline models pretrained on general corpora such as Wikipedia, as well as existing and medical textbook-based models, were also evaluated. Performance was assessed using Top-5 accuracy on the cloze task, both overall and by subject. RadTechBERT with BPE_32K outperformed baselines in many subjects, with more than a twofold improvement in radiation safety management and radiation measurement relative to the strongest baseline. In contrast, gains were smaller in subjects having substantial overlap with general medicine, and Wikipedia mixing did not yield consistent improvements. The optimal tokenizer and vocabulary size were subject-dependent.",
+      "authors": [
+        "Yagahara A",
+        "Yokohama N",
+        "Uesugi M",
+        "Aizawa M",
+        "Ando D",
+        "Ishikawa T",
+        "Sudo M",
+        "Nishimoto N",
+        "Tanikawa T",
+        "Aoki Y",
+        "Tani Y",
+        "Banno T",
+        "Kawamata M."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-09-03T00:00:00+00:00",
+      "updated_at": "2026-09-04T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.1007/s12194-026-01133-y",
+        "pmid": "42690576"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/42690576"
+      },
+      "evidence": [
+        {
+          "term": "new cloze question dataset",
+          "excerpt": "ic corpus from the initial pretraining stage, without relying on continued pretraining of existing general models. To enable systematic evaluation, a new cloze question dataset was constructed from items derived from the Japanese national examination for radiological technologists, and subject labels were added to support subject-level analyses. To develop the model, Unigram and Byte Pair Encoding (BPE) tokenizer",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42690576"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "RadTechBERT was trained under two settings: using only the domain-specific corpus and using a mixed corpus that additionally included Wikipedia. For benchmarking, baseline models pretrained on general corpora such as Wikipedia, as well as existing and medical textbook-based models, were also evaluated. Performance was assessed using Top-5 accuracy on the cloze task, both overall and by subject",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42690576"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "RadTechBERT was trained under two settings: using only the domain-specific corpus and using a mixed corpus that additionally included Wikipedia. For benchmarking, baseline models pretrained on general corpora such as Wikipedia, as well as existing and medical textbook-based models, were also evaluated. Performance was assessed using Top-5 accuracy on the cloze task, both overall and by subject. Rad",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42690576"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "ent and radiation measurement relative to the strongest baseline. In contrast, gains were smaller in subjects having substantial overlap with general medicine, and Wikipedia mixing did not yield consistent improvements. The optimal tokenizer and vocabulary size were subject-dependent. Specialized language models can improve performance in expert domains; however, in radiological technology, eval",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42690576"
+        },
+        {
+          "term": "medical",
+          "excerpt": "rpus that additionally included Wikipedia. For benchmarking, baseline models pretrained on general corpora such as Wikipedia, as well as existing and medical textbook-based models, were also evaluated. Performance was assessed using Top-5 accuracy on the cloze task, both overall and by subject. RadTechBERT with BPE_32K outperformed baselines in many subjects, with more than a twofold improvemen",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42690576"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 16,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c4c80e2afdb84393a0182545339273893995d43effff045996502600847d7d25",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "arxiv:2609.02985",
       "slug": "arxiv-2609-02985-5735cb447a",
       "kind": "paper",
@@ -1149,7 +1234,7 @@
         "biosecurity_misuse"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 16,
+      "match_score": 12,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "336d13801a9199d0d4c817abde8e4b0ae12a15ab2c78f486767c12571bcf4f16",
@@ -1314,7 +1399,7 @@
         "biosecurity_misuse"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 21,
+      "match_score": 17,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "651329f1367f543f31e997628ed7a4edb3b877ce0912ced5b36b6295cea30803",
@@ -1414,7 +1499,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 28,
+      "match_score": 24,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "1256df4af6a621f462fe0eb153cc1a81dc13e26f2e61646307b42571cc68beba",
@@ -1499,7 +1584,7 @@
         "biosecurity_misuse"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 21,
+      "match_score": 17,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "a6bce2072dfa12f0c6d94ac56fcf7b42ef228efc93865b98f8af337033e30ee6",
