@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-06T08:45:18Z",
-  "total": 86,
+  "generated_at": "2026-09-07T09:32:22Z",
+  "total": 89,
   "counts": {
     "topics": {
-      "multimodal": 22,
+      "experiment_agent": 21,
+      "multimodal": 23,
       "general_text": 36,
-      "experiment_agent": 19,
       "biosafety": 9
     },
     "contribution_types": {
-      "new_benchmark": 61,
+      "new_benchmark": 64,
       "audit": 11,
       "methodology": 14
     },
     "kinds": {
-      "paper": 86
+      "paper": 89
     },
     "evaluation_contexts": {
-      "beneficial_capability": 77,
+      "beneficial_capability": 80,
       "biosecurity_misuse": 9
     }
   },
@@ -59,48 +59,48 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-09-06T08:45:26Z",
-      "finished_at": "2026-09-06T08:46:02Z",
-      "discovered": 24,
-      "published": 9,
+      "started_at": "2026-09-07T09:32:30Z",
+      "finished_at": "2026-09-07T09:33:10Z",
+      "discovered": 21,
+      "published": 10,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-09-06T08:46:02Z",
-      "finished_at": "2026-09-06T08:46:06Z",
-      "discovered": 86,
-      "published": 54,
+      "started_at": "2026-09-07T09:33:10Z",
+      "finished_at": "2026-09-07T09:33:13Z",
+      "discovered": 62,
+      "published": 34,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "success",
-      "started_at": "2026-09-06T08:46:06Z",
-      "finished_at": "2026-09-06T08:47:22Z",
-      "discovered": 814,
-      "published": 51,
-      "error": ""
+      "status": "failed",
+      "started_at": "2026-09-07T09:33:13Z",
+      "finished_at": "2026-09-07T09:35:14Z",
+      "discovered": 0,
+      "published": 0,
+      "error": "The read operation timed out"
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-09-06T08:47:22Z",
-      "finished_at": "2026-09-06T08:47:35Z",
-      "discovered": 246,
-      "published": 23,
+      "started_at": "2026-09-07T09:35:14Z",
+      "finished_at": "2026-09-07T09:35:30Z",
+      "discovered": 186,
+      "published": 17,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "success",
-      "started_at": "2026-09-06T08:47:35Z",
-      "finished_at": "2026-09-06T08:48:28Z",
+      "started_at": "2026-09-07T09:35:30Z",
+      "finished_at": "2026-09-07T09:36:24Z",
       "discovered": 0,
       "published": 0,
       "error": ""
@@ -108,9 +108,18 @@
   ],
   "days": [
     {
-      "date": "2026-09-03",
-      "count": 3,
+      "date": "2026-09-04",
+      "count": 2,
       "entry_ids": [
+        "arxiv:2609.04842",
+        "arxiv:2609.04598"
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "count": 4,
+      "entry_ids": [
+        "arxiv:2609.04494",
         "arxiv:2609.03690",
         "doi:10.64898/2026.08.28.747622",
         "doi:10.1007/s12194-026-01133-y"
@@ -484,6 +493,317 @@
   ],
   "entries": [
     {
+      "id": "arxiv:2609.04842",
+      "slug": "arxiv-2609-04842-da099c7407",
+      "kind": "paper",
+      "title": "MMTClinic: Multimodal, Multilingual Time Series Question Answering and Reasoning Benchmark for Clinical Domain",
+      "abstract": "Time-series data in clinical settings is crucial for capturing dynamic changes in a patient's health over time, enabling timely diagnosis, personalized treatment, and early detection of critical events. However, the development of clinically reliable and linguistically inclusive medical AI systems remains a significant challenge, primarily due to the lack of multimodal, multilingual, and time-series-grounded benchmarks that reflect the complexity of real-world clinical scenarios. To fill this gap, we present MMTClinic, a benchmark designed to evaluate large language models (LLMs) on complex reasoning and question-answering tasks involving clinical time-series. MMTClinic combines text, medical images, and multivariate physiological signals and includes 30,000 QA pairs (15,000 multiple choice questions (MCQs) and 15,000 open-ended questions) across five languages: English, Hindi, Bengali, Marathi, and Tamil. These questions cover three important clinical tasks---mortality prediction, heart rate forecasting, and SOFA score estimation. We evaluate 13 state-of-the-art LLMs in zero-shot, few-shot, and chain-of-thought settings. Our evaluation reveals notable differences in model performance across tasks, languages, and modalities, highlighting current limitations in clinical reasoning capabilities. MMTClinic provides a valuable resource for advancing multilingual, multimodal, and time-series-aware medical AI research. The dataset will be made publicly available on successful acceptance of the work.",
+      "authors": [
+        "Sourav Malakar",
+        "Harshit Nigam",
+        "Akash Ghosh",
+        "Sriparna Saha",
+        "Amlan Chakrabarti",
+        "Saptarsi Goswami",
+        "Priti Singh"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-04T07:59:19+00:00",
+      "updated_at": "2026-09-04T07:59:19+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.04842"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.04842v1",
+        "pdf": "https://arxiv.org/pdf/2609.04842v1",
+        "code": "https://github.com/rakhujoy/MMTClinic",
+        "html": "https://arxiv.org/html/2609.04842"
+      },
+      "evidence": [
+        {
+          "term": "we present MMTClinic, a benchmark",
+          "excerpt": "lack of multimodal, multilingual, and time-series-grounded benchmarks that reflect the complexity of real-world clinical scenarios. To fill this gap, we present MMTClinic, a benchmark designed to evaluate large language models (LLMs) on complex reasoning and question-answering tasks involving clinical time-series. MMTClinic combines text, medical images, and multivariate physiological signals and includes 30,000 QA pair",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04842"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "MMTClinic: Multimodal, Multilingual Time Series Question Answering and Reasoning Benchmark for Clinical Domain Time-series data in clinical settings is crucial for capturing dynamic changes in a patient's health over time, enabling timely diagnosis, personalized treatment, and early detection of critical events. However, the dev",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04842"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "tically inclusive medical AI systems remains a significant challenge, primarily due to the lack of multimodal, multilingual, and time-series-grounded benchmarks that reflect the complexity of real-world clinical scenarios. To fill this gap, we present MMTClinic, a benchmark designed to evaluate large language models (LLMs) on complex reasoning and question-answering tasks involving clinical time-s",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04842"
+        },
+        {
+          "term": "medical",
+          "excerpt": "agnosis, personalized treatment, and early detection of critical events. However, the development of clinically reliable and linguistically inclusive medical AI systems remains a significant challenge, primarily due to the lack of multimodal, multilingual, and time-series-grounded benchmarks that reflect the complexity of real-world clinical scenarios. To fill this gap, we present MMTClinic, a",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04842"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "MMTClinic: Multimodal, Multilingual Time Series Question Answering and Reasoning Benchmark for Clinical Domain Time-series data in clinical settings is crucial for capturing dynamic changes in a patient's health over time, enabling timely diagnosis, personalized treatment, and early detection of critical events. However, the development of c",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04842"
+        },
+        {
+          "term": "patient",
+          "excerpt": "es Question Answering and Reasoning Benchmark for Clinical Domain Time-series data in clinical settings is crucial for capturing dynamic changes in a patient's health over time, enabling timely diagnosis, personalized treatment, and early detection of critical events. However, the development of clinically reliable and linguistically inclusive medical AI systems remains a significant challenge,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04842"
+        },
+        {
+          "term": "Multimodal",
+          "excerpt": "MMTClinic: Multimodal, Multilingual Time Series Question Answering and Reasoning Benchmark for Clinical Domain Time-series data in clinical settings is crucial for capturing dynamic changes in a patient's health over time, enabling timely diagnosis, personalize",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04842"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "ss evaluation for healthcare LLMs across languages Ghosh et al. (2025b) , multimodal medical query analysis in Indian languages Ghosh et al. (2026) , multi-agent multimodal medical reasoning in Indic languages Halder et al. (2026) , and summarization of code-mixed clinical queries Ghosh et al. (2024b) . However, these efforts largely address text or text-only reasoning and do not incorporate physio",
+          "location": "2 Related Works",
+          "source_url": "https://arxiv.org/html/2609.04842"
+        }
+      ],
+      "related_benchmarks": [
+        "MedExpQA",
+        "IndicQA",
+        "MedQA",
+        "MedMCQA",
+        "EHRNoteQA",
+        "EHRXQA",
+        "IndicMedQA",
+        "WeatherBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 23,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "cd8fc6c63aeff477906eb658c96fef3f827a210f1b070e1c707ca7e1f4588fd4",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2609.04598",
+      "slug": "arxiv-2609-04598-7ce2cf9e33",
+      "kind": "paper",
+      "title": "PetQA: Benchmarking Veterinary Knowledge and Clinical Reasoning",
+      "abstract": "We introduce PetQA, a Korean long-form question-answering (QA) benchmark for evaluating veterinary knowledge and clinical reasoning in large language models (LLMs) and large vision-language models (LVLMs). PetQA contains 10,076 text-only and 8,751 multimodal QA pairs derived from real-world questions about dogs and cats, paired with answers from expert veterinarians. Its test split, PetQA-Bench, further includes annotations for question types and clinical conditions. We evaluate eighteen models using ROUGE, BERTScore, and LLM-as-a-judge metrics for factuality and helpfulness under three settings: zero-shot inference, retrieval-augmented generation (RAG), and supervised fine-tuning (SFT). The benchmarking results provide an overview of the strengths and limitations of current models in addressing veterinary clinical queries and highlight the need for more effective adaptation methods to develop clinically reliable AI systems for veterinary care. To facilitate broader use, we additionally provide translated versions of PetQA-Bench in five languages.",
+      "authors": [
+        "Taegyun Kim",
+        "Youngwook Ham",
+        "Jungwook Rhim",
+        "Ju-Hyun An",
+        "Sungkyu Park",
+        "Kunwoo Park"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-04T00:54:04+00:00",
+      "updated_at": "2026-09-04T00:54:04+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.04598"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.04598v1",
+        "pdf": "https://arxiv.org/pdf/2609.04598v1",
+        "code": "https://github.com/ssu-humane/PetQA",
+        "html": "https://arxiv.org/html/2609.04598"
+      },
+      "evidence": [
+        {
+          "term": "We introduce PetQA",
+          "excerpt": "PetQA: Benchmarking Veterinary Knowledge and Clinical Reasoning We introduce PetQA, a Korean long-form question-answering (QA) benchmark for evaluating veterinary knowledge and clinical reasoning in large language models (LLMs) and large vision-language models (LVLMs). PetQA contains 10,076 text-only and 8,751 multimodal",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04598"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "PetQA: Benchmarking Veterinary Knowledge and Clinical Reasoning We introduce PetQA, a Korean long-form question-answering (QA) benchmark for evaluating veterinary knowledge and clinical reasoning in large language models (LLMs) and large vision-language mo",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04598"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "PetQA: Benchmarking Veterinary Knowledge and Clinical Reasoning We introduce PetQA, a Korean long-form question-answering (QA) benchmark for evaluating veterinary knowledge and clinical reasoning in large language models (LLMs) and large vision-language model",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04598"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "PetQA: Benchmarking Veterinary Knowledge and Clinical Reasoning We introduce PetQA, a Korean long-form question-answering (QA) benchmark for evaluating veterinary knowledge and clinical reasoning in large language models (LLMs) and large vision-language models (LVLMs). PetQA contains 10,076 t",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04598"
+        },
+        {
+          "term": "vision-language",
+          "excerpt": "rean long-form question-answering (QA) benchmark for evaluating veterinary knowledge and clinical reasoning in large language models (LLMs) and large vision-language models (LVLMs). PetQA contains 10,076 text-only and 8,751 multimodal QA pairs derived from real-world questions about dogs and cats, paired with answers from expert veterinarians. Its test split, PetQA-Bench, further includes annotations f",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04598"
+        }
+      ],
+      "related_benchmarks": [
+        "PetQA",
+        "PubMedQA",
+        "MedQA",
+        "MedMCQA",
+        "MedBench",
+        "KorMedMCQA",
+        "MedXpertQA",
+        "MCQA",
+        "ReMedQA",
+        "MultiSpanQA",
+        "SemEval",
+        "MedRedQA",
+        "LLMEval"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "93cdab25002d08801e4181c4f16c117f2e42db9d12ff87757d2fd554fabdcfb3",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2609.04494",
+      "slug": "arxiv-2609-04494-9106fe9595",
+      "kind": "paper",
+      "title": "Hakken: Predicting future discoveries to fill the gaps in today's knowledge",
+      "abstract": "We present Hakken, a domain-agnostic prediction and explanation system performing knowledge prediction, i.e., growing scientific knowledge by establishing novel relationships, ones that are not limited to the deductive hull of previous knowledge. Hakken uses a transformer-based prediction model built on temporal sequences of knowledge graphs extracted from vast bodies of research publications, fused with an LLM's semantic knowledge, to predict the presence and define the type of as-yet undocumented relationships between scientific concepts. It then calls a model-agnostic explanation framework to provide accompanying information for each prediction that allows scientists to evaluate the suggested new relationship. While general purpose, we demonstrate Hakken's practical capabilities by applying it to the biomedical domain. There, Hakken's prediction model establishes a new benchmark for time-aware multi-label relation prediction, and we show that the model's output stays coherent and informative over extended time spans in historic data. In addition, we scored 1.5 million above-confidence-threshold hypotheses related to aging, qualitatively validated batches of these predictions with biologists and progressed three of them for empirical validation in wet-lab. Two predictions with potentially significant impact in the context of drug discovery and repurposing were confirmed, introducing previously undocumented interactions between TP53 and BAMBI, and between RAF1 and TNF, to biomedical science.",
+      "authors": [
+        "Tarek R. Besold",
+        "Uchenna Akujuobi",
+        "Pablo Sanchez",
+        "Alessandra Toniato",
+        "Kana Maruyama",
+        "Jihun Choi",
+        "Samy Badreddine",
+        "Frederick Gifford",
+        "Daniel Evans-Yamamoto",
+        "Sucheendra K. Palaniappan",
+        "Miquel Ferrer",
+        "Kae Nagano",
+        "Iris Rossell",
+        "Tom Joy",
+        "Hatem ElShazly",
+        "Chrysa Iliopoulou",
+        "Christoph Wehner",
+        "Thiviyan Thanapalasingam",
+        "Susana Nunes",
+        "Pedro G. Cotovio",
+        "Peter Wurman",
+        "Peter Stone",
+        "Hiroaki Kitano",
+        "Michael Spranger"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-03T21:28:36+00:00",
+      "updated_at": "2026-09-03T21:28:36+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.04494"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.04494v1",
+        "pdf": "https://arxiv.org/pdf/2609.04494v1",
+        "code": "https://github.com/SonyResearch/HakkenOSS",
+        "html": "https://arxiv.org/html/2609.04494"
+      },
+      "evidence": [
+        {
+          "term": "new benchmark",
+          "excerpt": "neral purpose, we demonstrate Hakken's practical capabilities by applying it to the biomedical domain. There, Hakken's prediction model establishes a new benchmark for time-aware multi-label relation prediction, and we show that the model's output stays coherent and informative over extended time spans in historic data. In addition, we scored 1.5 million above-confidence-threshold hypotheses related",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04494"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "l purpose, we demonstrate Hakken's practical capabilities by applying it to the biomedical domain. There, Hakken's prediction model establishes a new benchmark for time-aware multi-label relation prediction, and we show that the model's output stays coherent and informative over extended time spans in historic data. In addition, we scored 1.5 million above-confidence-threshold hypotheses related",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04494"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "ws scientists to evaluate the suggested new relationship. While general purpose, we demonstrate Hakken's practical capabilities by applying it to the biomedical domain. There, Hakken's prediction model establishes a new benchmark for time-aware multi-label relation prediction, and we show that the model's output stays coherent and informative over extended time spans in historic data. In addition,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04494"
+        },
+        {
+          "term": "medical",
+          "excerpt": "scientists to evaluate the suggested new relationship. While general purpose, we demonstrate Hakken's practical capabilities by applying it to the biomedical domain. There, Hakken's prediction model establishes a new benchmark for time-aware multi-label relation prediction, and we show that the model's output stays coherent and informative over extended time spans in historic data. In addition,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04494"
+        },
+        {
+          "term": "drug discovery",
+          "excerpt": "th biologists and progressed three of them for empirical validation in wet-lab. Two predictions with potentially significant impact in the context of drug discovery and repurposing were confirmed, introducing previously undocumented interactions between TP53 and BAMBI, and between RAF1 and TNF, to biomedical science. [[SECTION Hakken: Predicting future discoveries to fill the gaps in today’s knowledge",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04494"
+        },
+        {
+          "term": "Experimental protocols",
+          "excerpt": "Nutlin-3 concentrations suggest a subtle and context-dependent relationship that may require further investigation to fully elucidate. [[SECTION 11.4 Experimental protocols]] 11.4 Experimental protocols For each selected hypothesis, we designed human cell line experiments to test the hypothesis. All equipment used for experimental validation is listed in Table 9 . Equipment/Software Name Cat No./ID No./Serial",
+          "location": "11.3 Wet-lab hypothesis validation",
+          "source_url": "https://arxiv.org/html/2609.04494"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "regards resources, we are convinced that major added value can be obtained when both paradigms are combined. AI Co-Scientist, for instance, employs a multi-agent architecture built upon Google’s Gemini 2.0 model with the intent to reproduce the scientific reasoning process. Scientists can input a research goal in natural language for the system’s LLM agents to then summarize and synthesize prior li",
+          "location": "5 Discussion",
+          "source_url": "https://arxiv.org/html/2609.04494"
+        }
+      ],
+      "related_benchmarks": [
+        "IAEval"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c57836c3bcb7acba0bd9eb6144e9768b808dcd3dc19cc98e4caa329a69e11942",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "arxiv:2609.03690",
       "slug": "arxiv-2609-03690-4d940ddfab",
       "kind": "paper",
@@ -830,7 +1150,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 21,
+      "match_score": 19,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "4d3128f9bc77b861e9396e3107819972a9fd8466973958ff62db480313ec446e",

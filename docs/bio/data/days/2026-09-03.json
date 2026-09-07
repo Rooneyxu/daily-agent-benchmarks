@@ -1,7 +1,118 @@
 {
   "date": "2026-09-03",
-  "count": 3,
+  "count": 4,
   "entries": [
+    {
+      "id": "arxiv:2609.04494",
+      "slug": "arxiv-2609-04494-9106fe9595",
+      "kind": "paper",
+      "title": "Hakken: Predicting future discoveries to fill the gaps in today's knowledge",
+      "abstract": "We present Hakken, a domain-agnostic prediction and explanation system performing knowledge prediction, i.e., growing scientific knowledge by establishing novel relationships, ones that are not limited to the deductive hull of previous knowledge. Hakken uses a transformer-based prediction model built on temporal sequences of knowledge graphs extracted from vast bodies of research publications, fused with an LLM's semantic knowledge, to predict the presence and define the type of as-yet undocumented relationships between scientific concepts. It then calls a model-agnostic explanation framework to provide accompanying information for each prediction that allows scientists to evaluate the suggested new relationship. While general purpose, we demonstrate Hakken's practical capabilities by applying it to the biomedical domain. There, Hakken's prediction model establishes a new benchmark for time-aware multi-label relation prediction, and we show that the model's output stays coherent and informative over extended time spans in historic data. In addition, we scored 1.5 million above-confidence-threshold hypotheses related to aging, qualitatively validated batches of these predictions with biologists and progressed three of them for empirical validation in wet-lab. Two predictions with potentially significant impact in the context of drug discovery and repurposing were confirmed, introducing previously undocumented interactions between TP53 and BAMBI, and between RAF1 and TNF, to biomedical science.",
+      "authors": [
+        "Tarek R. Besold",
+        "Uchenna Akujuobi",
+        "Pablo Sanchez",
+        "Alessandra Toniato",
+        "Kana Maruyama",
+        "Jihun Choi",
+        "Samy Badreddine",
+        "Frederick Gifford",
+        "Daniel Evans-Yamamoto",
+        "Sucheendra K. Palaniappan",
+        "Miquel Ferrer",
+        "Kae Nagano",
+        "Iris Rossell",
+        "Tom Joy",
+        "Hatem ElShazly",
+        "Chrysa Iliopoulou",
+        "Christoph Wehner",
+        "Thiviyan Thanapalasingam",
+        "Susana Nunes",
+        "Pedro G. Cotovio",
+        "Peter Wurman",
+        "Peter Stone",
+        "Hiroaki Kitano",
+        "Michael Spranger"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-03T21:28:36+00:00",
+      "updated_at": "2026-09-03T21:28:36+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.04494"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.04494v1",
+        "pdf": "https://arxiv.org/pdf/2609.04494v1",
+        "code": "https://github.com/SonyResearch/HakkenOSS",
+        "html": "https://arxiv.org/html/2609.04494"
+      },
+      "evidence": [
+        {
+          "term": "new benchmark",
+          "excerpt": "neral purpose, we demonstrate Hakken's practical capabilities by applying it to the biomedical domain. There, Hakken's prediction model establishes a new benchmark for time-aware multi-label relation prediction, and we show that the model's output stays coherent and informative over extended time spans in historic data. In addition, we scored 1.5 million above-confidence-threshold hypotheses related",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04494"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "l purpose, we demonstrate Hakken's practical capabilities by applying it to the biomedical domain. There, Hakken's prediction model establishes a new benchmark for time-aware multi-label relation prediction, and we show that the model's output stays coherent and informative over extended time spans in historic data. In addition, we scored 1.5 million above-confidence-threshold hypotheses related",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04494"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "ws scientists to evaluate the suggested new relationship. While general purpose, we demonstrate Hakken's practical capabilities by applying it to the biomedical domain. There, Hakken's prediction model establishes a new benchmark for time-aware multi-label relation prediction, and we show that the model's output stays coherent and informative over extended time spans in historic data. In addition,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04494"
+        },
+        {
+          "term": "medical",
+          "excerpt": "scientists to evaluate the suggested new relationship. While general purpose, we demonstrate Hakken's practical capabilities by applying it to the biomedical domain. There, Hakken's prediction model establishes a new benchmark for time-aware multi-label relation prediction, and we show that the model's output stays coherent and informative over extended time spans in historic data. In addition,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04494"
+        },
+        {
+          "term": "drug discovery",
+          "excerpt": "th biologists and progressed three of them for empirical validation in wet-lab. Two predictions with potentially significant impact in the context of drug discovery and repurposing were confirmed, introducing previously undocumented interactions between TP53 and BAMBI, and between RAF1 and TNF, to biomedical science. [[SECTION Hakken: Predicting future discoveries to fill the gaps in today’s knowledge",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04494"
+        },
+        {
+          "term": "Experimental protocols",
+          "excerpt": "Nutlin-3 concentrations suggest a subtle and context-dependent relationship that may require further investigation to fully elucidate. [[SECTION 11.4 Experimental protocols]] 11.4 Experimental protocols For each selected hypothesis, we designed human cell line experiments to test the hypothesis. All equipment used for experimental validation is listed in Table 9 . Equipment/Software Name Cat No./ID No./Serial",
+          "location": "11.3 Wet-lab hypothesis validation",
+          "source_url": "https://arxiv.org/html/2609.04494"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "regards resources, we are convinced that major added value can be obtained when both paradigms are combined. AI Co-Scientist, for instance, employs a multi-agent architecture built upon Google’s Gemini 2.0 model with the intent to reproduce the scientific reasoning process. Scientists can input a research goal in natural language for the system’s LLM agents to then summarize and synthesize prior li",
+          "location": "5 Discussion",
+          "source_url": "https://arxiv.org/html/2609.04494"
+        }
+      ],
+      "related_benchmarks": [
+        "IAEval"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c57836c3bcb7acba0bd9eb6144e9768b808dcd3dc19cc98e4caa329a69e11942",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
     {
       "id": "arxiv:2609.03690",
       "slug": "arxiv-2609-03690-4d940ddfab",

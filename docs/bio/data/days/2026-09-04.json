@@ -1,0 +1,206 @@
+{
+  "date": "2026-09-04",
+  "count": 2,
+  "entries": [
+    {
+      "id": "arxiv:2609.04842",
+      "slug": "arxiv-2609-04842-da099c7407",
+      "kind": "paper",
+      "title": "MMTClinic: Multimodal, Multilingual Time Series Question Answering and Reasoning Benchmark for Clinical Domain",
+      "abstract": "Time-series data in clinical settings is crucial for capturing dynamic changes in a patient's health over time, enabling timely diagnosis, personalized treatment, and early detection of critical events. However, the development of clinically reliable and linguistically inclusive medical AI systems remains a significant challenge, primarily due to the lack of multimodal, multilingual, and time-series-grounded benchmarks that reflect the complexity of real-world clinical scenarios. To fill this gap, we present MMTClinic, a benchmark designed to evaluate large language models (LLMs) on complex reasoning and question-answering tasks involving clinical time-series. MMTClinic combines text, medical images, and multivariate physiological signals and includes 30,000 QA pairs (15,000 multiple choice questions (MCQs) and 15,000 open-ended questions) across five languages: English, Hindi, Bengali, Marathi, and Tamil. These questions cover three important clinical tasks---mortality prediction, heart rate forecasting, and SOFA score estimation. We evaluate 13 state-of-the-art LLMs in zero-shot, few-shot, and chain-of-thought settings. Our evaluation reveals notable differences in model performance across tasks, languages, and modalities, highlighting current limitations in clinical reasoning capabilities. MMTClinic provides a valuable resource for advancing multilingual, multimodal, and time-series-aware medical AI research. The dataset will be made publicly available on successful acceptance of the work.",
+      "authors": [
+        "Sourav Malakar",
+        "Harshit Nigam",
+        "Akash Ghosh",
+        "Sriparna Saha",
+        "Amlan Chakrabarti",
+        "Saptarsi Goswami",
+        "Priti Singh"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-04T07:59:19+00:00",
+      "updated_at": "2026-09-04T07:59:19+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.04842"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.04842v1",
+        "pdf": "https://arxiv.org/pdf/2609.04842v1",
+        "code": "https://github.com/rakhujoy/MMTClinic",
+        "html": "https://arxiv.org/html/2609.04842"
+      },
+      "evidence": [
+        {
+          "term": "we present MMTClinic, a benchmark",
+          "excerpt": "lack of multimodal, multilingual, and time-series-grounded benchmarks that reflect the complexity of real-world clinical scenarios. To fill this gap, we present MMTClinic, a benchmark designed to evaluate large language models (LLMs) on complex reasoning and question-answering tasks involving clinical time-series. MMTClinic combines text, medical images, and multivariate physiological signals and includes 30,000 QA pair",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04842"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "MMTClinic: Multimodal, Multilingual Time Series Question Answering and Reasoning Benchmark for Clinical Domain Time-series data in clinical settings is crucial for capturing dynamic changes in a patient's health over time, enabling timely diagnosis, personalized treatment, and early detection of critical events. However, the dev",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04842"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "tically inclusive medical AI systems remains a significant challenge, primarily due to the lack of multimodal, multilingual, and time-series-grounded benchmarks that reflect the complexity of real-world clinical scenarios. To fill this gap, we present MMTClinic, a benchmark designed to evaluate large language models (LLMs) on complex reasoning and question-answering tasks involving clinical time-s",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04842"
+        },
+        {
+          "term": "medical",
+          "excerpt": "agnosis, personalized treatment, and early detection of critical events. However, the development of clinically reliable and linguistically inclusive medical AI systems remains a significant challenge, primarily due to the lack of multimodal, multilingual, and time-series-grounded benchmarks that reflect the complexity of real-world clinical scenarios. To fill this gap, we present MMTClinic, a",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04842"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "MMTClinic: Multimodal, Multilingual Time Series Question Answering and Reasoning Benchmark for Clinical Domain Time-series data in clinical settings is crucial for capturing dynamic changes in a patient's health over time, enabling timely diagnosis, personalized treatment, and early detection of critical events. However, the development of c",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04842"
+        },
+        {
+          "term": "patient",
+          "excerpt": "es Question Answering and Reasoning Benchmark for Clinical Domain Time-series data in clinical settings is crucial for capturing dynamic changes in a patient's health over time, enabling timely diagnosis, personalized treatment, and early detection of critical events. However, the development of clinically reliable and linguistically inclusive medical AI systems remains a significant challenge,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04842"
+        },
+        {
+          "term": "Multimodal",
+          "excerpt": "MMTClinic: Multimodal, Multilingual Time Series Question Answering and Reasoning Benchmark for Clinical Domain Time-series data in clinical settings is crucial for capturing dynamic changes in a patient's health over time, enabling timely diagnosis, personalize",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04842"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "ss evaluation for healthcare LLMs across languages Ghosh et al. (2025b) , multimodal medical query analysis in Indian languages Ghosh et al. (2026) , multi-agent multimodal medical reasoning in Indic languages Halder et al. (2026) , and summarization of code-mixed clinical queries Ghosh et al. (2024b) . However, these efforts largely address text or text-only reasoning and do not incorporate physio",
+          "location": "2 Related Works",
+          "source_url": "https://arxiv.org/html/2609.04842"
+        }
+      ],
+      "related_benchmarks": [
+        "MedExpQA",
+        "IndicQA",
+        "MedQA",
+        "MedMCQA",
+        "EHRNoteQA",
+        "EHRXQA",
+        "IndicMedQA",
+        "WeatherBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 23,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "cd8fc6c63aeff477906eb658c96fef3f827a210f1b070e1c707ca7e1f4588fd4",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2609.04598",
+      "slug": "arxiv-2609-04598-7ce2cf9e33",
+      "kind": "paper",
+      "title": "PetQA: Benchmarking Veterinary Knowledge and Clinical Reasoning",
+      "abstract": "We introduce PetQA, a Korean long-form question-answering (QA) benchmark for evaluating veterinary knowledge and clinical reasoning in large language models (LLMs) and large vision-language models (LVLMs). PetQA contains 10,076 text-only and 8,751 multimodal QA pairs derived from real-world questions about dogs and cats, paired with answers from expert veterinarians. Its test split, PetQA-Bench, further includes annotations for question types and clinical conditions. We evaluate eighteen models using ROUGE, BERTScore, and LLM-as-a-judge metrics for factuality and helpfulness under three settings: zero-shot inference, retrieval-augmented generation (RAG), and supervised fine-tuning (SFT). The benchmarking results provide an overview of the strengths and limitations of current models in addressing veterinary clinical queries and highlight the need for more effective adaptation methods to develop clinically reliable AI systems for veterinary care. To facilitate broader use, we additionally provide translated versions of PetQA-Bench in five languages.",
+      "authors": [
+        "Taegyun Kim",
+        "Youngwook Ham",
+        "Jungwook Rhim",
+        "Ju-Hyun An",
+        "Sungkyu Park",
+        "Kunwoo Park"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-04T00:54:04+00:00",
+      "updated_at": "2026-09-04T00:54:04+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.04598"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.04598v1",
+        "pdf": "https://arxiv.org/pdf/2609.04598v1",
+        "code": "https://github.com/ssu-humane/PetQA",
+        "html": "https://arxiv.org/html/2609.04598"
+      },
+      "evidence": [
+        {
+          "term": "We introduce PetQA",
+          "excerpt": "PetQA: Benchmarking Veterinary Knowledge and Clinical Reasoning We introduce PetQA, a Korean long-form question-answering (QA) benchmark for evaluating veterinary knowledge and clinical reasoning in large language models (LLMs) and large vision-language models (LVLMs). PetQA contains 10,076 text-only and 8,751 multimodal",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04598"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "PetQA: Benchmarking Veterinary Knowledge and Clinical Reasoning We introduce PetQA, a Korean long-form question-answering (QA) benchmark for evaluating veterinary knowledge and clinical reasoning in large language models (LLMs) and large vision-language mo",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04598"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "PetQA: Benchmarking Veterinary Knowledge and Clinical Reasoning We introduce PetQA, a Korean long-form question-answering (QA) benchmark for evaluating veterinary knowledge and clinical reasoning in large language models (LLMs) and large vision-language model",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04598"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "PetQA: Benchmarking Veterinary Knowledge and Clinical Reasoning We introduce PetQA, a Korean long-form question-answering (QA) benchmark for evaluating veterinary knowledge and clinical reasoning in large language models (LLMs) and large vision-language models (LVLMs). PetQA contains 10,076 t",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04598"
+        },
+        {
+          "term": "vision-language",
+          "excerpt": "rean long-form question-answering (QA) benchmark for evaluating veterinary knowledge and clinical reasoning in large language models (LLMs) and large vision-language models (LVLMs). PetQA contains 10,076 text-only and 8,751 multimodal QA pairs derived from real-world questions about dogs and cats, paired with answers from expert veterinarians. Its test split, PetQA-Bench, further includes annotations f",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.04598"
+        }
+      ],
+      "related_benchmarks": [
+        "PetQA",
+        "PubMedQA",
+        "MedQA",
+        "MedMCQA",
+        "MedBench",
+        "KorMedMCQA",
+        "MedXpertQA",
+        "MCQA",
+        "ReMedQA",
+        "MultiSpanQA",
+        "SemEval",
+        "MedRedQA",
+        "LLMEval"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "93cdab25002d08801e4181c4f16c117f2e42db9d12ff87757d2fd554fabdcfb3",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
