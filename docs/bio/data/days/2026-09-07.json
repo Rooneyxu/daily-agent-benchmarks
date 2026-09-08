@@ -1,0 +1,63 @@
+{
+  "date": "2026-09-07",
+  "count": 1,
+  "entries": [
+    {
+      "id": "doi:10.21203/rs.3.rs-10438275/v1",
+      "slug": "doi-10-21203-rs-3-rs-10438275-v1-beecc8322d",
+      "kind": "paper",
+      "title": "Inconsistent and divergent large language model safety guidance during intraoperative crises: a guideline- anchored benchmark",
+      "abstract": "<title>Abstract</title>  <p>Large language models (LLMs) are increasingly proposed for clinical decision support, yet no benchmark tests whether they perform guideline-anchored safety actions or give consistent guidance across repeated runs during intraoperative crises, where a single omission or contraindicated recommendation may cause immediate harm. We developed a phase-based benchmark of ten intraoperative crisis archetypes, each unfolding over five to seven deterioration phases and scored against 150 binary sentinel actions anchored to clinical practice guidelines and published crisis checklists. Three frontier LLMs (ChatGPT 5.2, Claude Opus 4.6, Gemini 3.1 Pro) were evaluated through consumer web interfaces, three runs per scenario, and independently double-scored by blinded clinicians. The proportion of required safety actions a model completed varied across repeated runs of the same scenario in 29 of 30 model-scenario combinations. Between two runs of the same model, completion differed by a mean of 14.7 to 18.1 percentage points, with overlapping confidence intervals that do not rank the models by stability. Omissions fell most on communication and escalation actions, where omission varied nearly threefold across models under an identical prompt (24.6 to 72.6 percent). In a secondary comparison, aggregate completion also differed (Claude 83.7 percent, ChatGPT 69.0 percent, Gemini 61.2 percent), but unsafe actions were rare with overlapping intervals. Frontier LLMs gave inconsistent safety guidance across repeated runs and diverged sharply on communication and escalation under an identical prompt. Models proposed for perioperative crisis roles should be judged on how reliably and reproducibly they act, not on aggregate accuracy alone.</p>",
+      "authors": [
+        "Park BH",
+        "Soria CS",
+        "Suresh P",
+        "Broderick R",
+        "Sandler B."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-09-07T00:00:00+00:00",
+      "updated_at": "2026-09-08T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-10438275/v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1313541"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "Inconsistent and divergent large language model safety guidance during intraoperative crises: a guideline- anchored benchmark <title>Abstract</title> <p>Large language models (LLMs) are increasingly proposed for clinical decision support, yet no benchmark tests whether they perform guideline-anchored safety actions or give consistent guidance across repeated run",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1313541"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "during intraoperative crises: a guideline- anchored benchmark <title>Abstract</title> <p>Large language models (LLMs) are increasingly proposed for clinical decision support, yet no benchmark tests whether they perform guideline-anchored safety actions or give consistent guidance across repeated runs during intraoperative crises, where a single omission or contraindicated recommendation may ca",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1313541"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 10,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "9a3f6bf98adbc96e6950d45b1d383337328ccf9ec49b97ea242bac98f76dc5b6",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
