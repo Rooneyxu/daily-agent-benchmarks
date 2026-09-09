@@ -1,7 +1,280 @@
 {
   "date": "2026-09-07",
-  "count": 1,
+  "count": 4,
   "entries": [
+    {
+      "id": "arxiv:2609.07595",
+      "slug": "arxiv-2609-07595-1029962b20",
+      "kind": "paper",
+      "title": "Same Problem, Different Field: Cross-Domain Solution Import via Domain-Stripped Computational Fingerprints",
+      "abstract": "The same underlying computational problem is solved across unrelated fields under different names: recursive Bayesian state estimation appears as a \"Kalman filter\" in control, \"Bayesian forecasting\" in pharmacokinetics, and \"data assimilation\" in geoscience. Topical and citation-based scientific embeddings cannot see this shared problem. We distill each paper once into a domain- and method-name-stripped faceted computational fingerprint, a free-text mechanism skeleton plus controlled computational facets. We define a tunable, facet-selectable distance over it. The goal is solution import: surface cross-field pairs solving the same problem, so a bespoke implementation can be swapped for another field's standard, specialized solver. On a benchmark of 18 method families across 109 papers, the skeleton lifts cross-domain retrieval average precision over the abstract from 0.222 to 0.513, and the whole fingerprint reaches 0.557. Strikingly, four trained scientific embedders all fall below plain abstract+TF-IDF: they encode topical and citation similarity, the wrong signal for this task. The gain is the representation: the abstract-to-skeleton swap lifts every embedder, and the pipeline is one cached LLM call per paper plus a cheap embedder. An interventional re-skin / math-edit test shows the fingerprint tracks the computation, not the field. On a 501-paper wild corpus, known twins dominate the top of the ranking (23 of the top 30); with planted pairs excluded from the results, three blind LLM judges rate 3 of the top 5 and 8 of the top 30 pairs genuine import candidates, and 0 of 30 random ones. The human verification is the four executed imports: in one, an open standard solver reproduces a bespoke clinical dosing engine's output. We release the benchmark, the code, and the distillation prompt.",
+      "authors": [
+        "Eryk Kulikowski"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-07T15:06:22+00:00",
+      "updated_at": "2026-09-07T15:06:22+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.07595"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.07595v1",
+        "pdf": "https://arxiv.org/pdf/2609.07595v1",
+        "code": "https://github.com/ErykKul/same-problem-different-field",
+        "html": "https://arxiv.org/html/2609.07595"
+      },
+      "evidence": [
+        {
+          "term": "We release the benchmark",
+          "excerpt": "ndom ones. The human verification is the four executed imports: in one, an open standard solver reproduces a bespoke clinical dosing engine's output. We release the benchmark, the code, and the distillation prompt. [[SECTION Same Problem, Different Field: Cross-Domain Solution Import via Domain-Stripped Computational Fingerprints]] Same Problem, Different Field: Cross-Domain Solution Import via Domain-Stripped",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.07595"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "surface cross-field pairs solving the same problem, so a bespoke implementation can be swapped for another field's standard, specialized solver. On a benchmark of 18 method families across 109 papers, the skeleton lifts cross-domain retrieval average precision over the abstract from 0.222 to 0.513, and the whole fingerprint reaches 0.557. Strikingly, four trained scientific embedders all fall bel",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.07595"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "import candidates, and 0 of 30 random ones. The human verification is the four executed imports: in one, an open standard solver reproduces a bespoke clinical dosing engine's output. We release the benchmark, the code, and the distillation prompt. [[SECTION Same Problem, Different Field: Cross-Domain Solution Import via Domain-Stripped Computational Fingerprints]] Same Problem, Different Field:",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.07595"
+        }
+      ],
+      "related_benchmarks": [
+        "CQG-MBQA",
+        "SciRepEval"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 10,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "368a4792bc1e03d672d86c5dbb190e09fde326f9c87173b32eb07048dc6268ed",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.1007/978-3-032-37657-2_32",
+      "slug": "doi-10-1007-978-3-032-37657-2-32-08cd956fd2",
+      "kind": "paper",
+      "title": "EmoMed: An Emotionally-Aware Agent for Multimodal Medical Support with Real-Time Information Retrieval",
+      "abstract": "We present EmoMed - a multimodal medical consultation agent that adapts its responses based on users' emotional states while maintaining clinical accuracy. The system processes text and medical images, detects affect indicators (anxiety, confusion, urgency) from user input, and adjusts response tone, structure, and detail level accordingly. To ensure factual reliability, the agent grounds clinical information through a dual retrieval mechanism: web-based fact-checking and an API-connected, continuously updated medical knowledge base. We evaluate our approach across seven state-of-the-art language models (GPT-4/5, Qwen3, Llama 4, Gemini 2.5, Grok4, Claude3) using comprehensive metrics including LLM-as-judge assessments, MedQA style accuracy tests, BERT Score, safety/helpfulness ratings, and multimodal medical benchmarks. The results demonstrate that emotionally adaptive responses consistently outperform neutral baseline across evaluation dimensions, without compromising clinical accuracy. A controlled user study validated these findings, with participants reporting improved perceived empathy and communication clarity, while maintaining trust in factual accuracy. Source code: https://github.com/NasonovIvan/EmoMed-Agent",
+      "authors": [
+        "Ivan Nasonov",
+        "Nikita Glazkov",
+        "Ivan Makovetskiy",
+        "Mikhail Mozikov",
+        "Daniil Sukhorukov",
+        "Andrey Savchenko",
+        "Ilya Makarov"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-07T08:19:03+00:00",
+      "updated_at": "2026-09-07T08:19:03+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "doi": "10.1007/978-3-032-37657-2_32",
+        "arxiv": "2609.07194"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.07194v1",
+        "pdf": "https://arxiv.org/pdf/2609.07194v1",
+        "code": "https://github.com/NasonovIvan/EmoMed-Agent",
+        "html": "https://arxiv.org/html/2609.07194"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "comprehensive metrics including LLM-as-judge assessments, MedQA style accuracy tests, BERT Score, safety/helpfulness ratings, and multimodal medical benchmarks. The results demonstrate that emotionally adaptive responses consistently outperform neutral baseline across evaluation dimensions, without compromising clinical accuracy. A controlled user study validated these findings, with participant",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.07194"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "comprehensive metrics including LLM-as-judge assessments, MedQA style accuracy tests, BERT Score, safety/helpfulness ratings, and multimodal medical benchmarks. The results demonstrate that emotionally adaptive responses consistently outperform neutral baseline across evaluation dimensions, without compromising clinical accuracy. A controlled user study validated these findings, with participants",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.07194"
+        },
+        {
+          "term": "medical",
+          "excerpt": "EmoMed: An Emotionally-Aware Agent for Multimodal Medical Support with Real-Time Information Retrieval We present EmoMed - a multimodal medical consultation agent that adapts its responses based on users' emotional states while maintaining clinical accuracy. The system processes text and medical",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.07194"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "on Retrieval We present EmoMed - a multimodal medical consultation agent that adapts its responses based on users' emotional states while maintaining clinical accuracy. The system processes text and medical images, detects affect indicators (anxiety, confusion, urgency) from user input, and adjusts response tone, structure, and detail level accordingly. To ensure factual reliability, the agent g",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.07194"
+        },
+        {
+          "term": "Multimodal",
+          "excerpt": "EmoMed: An Emotionally-Aware Agent for Multimodal Medical Support with Real-Time Information Retrieval We present EmoMed - a multimodal medical consultation agent that adapts its responses based on users' emotional states while maintaining clinical accuracy. The system processes text and",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.07194"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "oning without proper constraints can amplify harm on unsafe inputs [ 49 ] . Many clinical questions are image-grounded (e.g., dermatology, radiology, pathology), making multimodality a necessity. Vision–language models (VLMs / MLLMs) have advanced medical visual question answering (Med-VQA) and report generation [ 32 , 16 , 44 ] . The ecosystem of datasets and benchmarks continues to expand (PMC-",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2609.07194"
+        },
+        {
+          "term": "tool-using",
+          "excerpt": "rsistent risks include hallucinations, uneven domain coverage, and knowledge drift in dynamic medical contexts [ 21 , 25 ] . Moving from bare LLMs to tool-using agents (function calls, web search, access to medical databases, and retrieval-augmented generation (RAG)) improves recency, grounding, and traceability of clinical information [ 31 , 12 ] . At the same time, safety becomes central: dynami",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2609.07194"
+        }
+      ],
+      "related_benchmarks": [
+        "MedQA",
+        "MultiMedQA",
+        "Med-VQA",
+        "PMC-VQA",
+        "VQA",
+        "PathVQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 20,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "f7ec6c96a5c5c49c66f08dbe109113250a71794dc6d1a88b1adfc4624ff65893",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2609.06976",
+      "slug": "arxiv-2609-06976-7a923caf2e",
+      "kind": "paper",
+      "title": "HealthLoopQA: A Context-Aware Question Answering Benchmark for Interpreting Wearable Monitoring Data in Diabetes Care",
+      "abstract": "As medical wearables become integrated into daily chronic disease care, effectively interpreting longitudinal monitoring data is essential for patients and clinicians to understand health trends, detect safety-critical events, and make informed decisions. While large language models (LLMs) show promise for transforming this streaming physiological data into personalized health insights, evaluating their reasoning capability and analytical rigor in diverse monitoring tasks remains a fundamental challenge. Existing medical wearable question answering (QA) benchmarks primarily assess short-horizon classification or statistical summaries, largely ignoring the long-term patterns, therapeutic and behavioural contexts, and potential system failures inherent in real-world deployments. To address this, we introduce HealthLoopQA, a comprehensive diagnostic benchmark for evaluating LLM reasoning over continuous diabetes monitoring data. Grounded in a novel taxonomy of eleven atomic reasoning abilities, HealthLoopQA comprises 127 tasks and over 1,500 QA instances spanning process mining, anomaly detection, and prediction over 30-day horizons. To systematically evaluate safety awareness, we complement real-world datasets with a fault-injected simulation testbed modeling diverse device malfunctions and cyber-physical attacks to generate physiologically plausible hazard scenarios. Evaluating state-of-the-art LLMs across prompting and agentic frameworks reveals severe limitations in complex temporal pattern mining. Furthermore, we identify a broader phenomenon of In-context Laziness under long-context prompting, highlighting critical open challenges in deploying LLMs for rigorous long-horizon medical reasoning.",
+      "authors": [
+        "Yuchen Niu",
+        "Yanan Ma",
+        "Srinivasan Nandakumar",
+        "Maolin Chen",
+        "Viktor Schlegel",
+        "Kexin Wei",
+        "Ling Cheng",
+        "Anna Bird",
+        "Anil Anthony Bharath",
+        "Siew-Kei Lam"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-07T03:11:34+00:00",
+      "updated_at": "2026-09-07T03:11:34+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.06976"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.06976v1",
+        "pdf": "https://arxiv.org/pdf/2609.06976v1",
+        "code": "https://github.com/schlevik/py-mgipsim/tree/merge",
+        "html": "https://arxiv.org/html/2609.06976"
+      },
+      "evidence": [
+        {
+          "term": "we introduce HealthLoopQA",
+          "excerpt": "ring the long-term patterns, therapeutic and behavioural contexts, and potential system failures inherent in real-world deployments. To address this, we introduce HealthLoopQA, a comprehensive diagnostic benchmark for evaluating LLM reasoning over continuous diabetes monitoring data. Grounded in a novel taxonomy of eleven atomic reasoning abilities, HealthLoopQA comprises 127 tasks and over 1,500 QA instances sp",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.06976"
+        },
+        {
+          "term": "we introduce HealthLoopQA, a comprehensive diagnostic benchmark",
+          "excerpt": "ring the long-term patterns, therapeutic and behavioural contexts, and potential system failures inherent in real-world deployments. To address this, we introduce HealthLoopQA, a comprehensive diagnostic benchmark for evaluating LLM reasoning over continuous diabetes monitoring data. Grounded in a novel taxonomy of eleven atomic reasoning abilities, HealthLoopQA comprises 127 tasks and over 1,500 QA instances spanning process mining, anomaly detecti",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.06976"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "HealthLoopQA: A Context-Aware Question Answering Benchmark for Interpreting Wearable Monitoring Data in Diabetes Care As medical wearables become integrated into daily chronic disease care, effectively interpreting longitudinal monitoring data is essential for patients and clinicians to understand",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.06976"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "soning capability and analytical rigor in diverse monitoring tasks remains a fundamental challenge. Existing medical wearable question answering (QA) benchmarks primarily assess short-horizon classification or statistical summaries, largely ignoring the long-term patterns, therapeutic and behavioural contexts, and potential system failures inherent in real-world deployments. To address this, we in",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.06976"
+        },
+        {
+          "term": "medical",
+          "excerpt": "HealthLoopQA: A Context-Aware Question Answering Benchmark for Interpreting Wearable Monitoring Data in Diabetes Care As medical wearables become integrated into daily chronic disease care, effectively interpreting longitudinal monitoring data is essential for patients and clinicians to understand health trends, detect safety-critical events, and make informed decis",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.06976"
+        },
+        {
+          "term": "disease",
+          "excerpt": "are Question Answering Benchmark for Interpreting Wearable Monitoring Data in Diabetes Care As medical wearables become integrated into daily chronic disease care, effectively interpreting longitudinal monitoring data is essential for patients and clinicians to understand health trends, detect safety-critical events, and make informed decisions. While large language models (LLMs) show promise f",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.06976"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "14752 . Cited by: §2 . Chan et al. (2024) N. Chan, F. Parker, W. Bennett, T. Wu, M. Y. Jia, J. Fackler, and K. Ghobadi Medtsllm: leveraging llms for multimodal medical time series analysis . arXiv preprint arXiv:2408.07773 . Cited by: §1 . Chen et al. (2025) J. Chen, A. Feng, Z. Zhao, J. Garza, G. Nurbek, C. Qin, A. Maatouk, L. Tassiulas, Y. Gao, and R. Ying Mtbench: a multimodal time series benc",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2609.06976"
+        },
+        {
+          "term": "tool use",
+          "excerpt": "their reasoning or computational capabilities, models should either explicitly admit uncertainty or proactively invoke appropriate tools (or require tool use from the user) to complete the required analysis. Method Correct (✓and ✓*) Applicable Total Accuracy Structured 30-day 20 44 45.5% Structured 7-day 16 41 39.0% Structured 1-day 22 34 64.7% Timelined 30-day 25 44 56.8% Agent 30-day 34 44 77",
+          "location": "Appendix E Failure analysis: in-context laziness",
+          "source_url": "https://arxiv.org/html/2609.06976"
+        }
+      ],
+      "related_benchmarks": [
+        "HealthLoopQA",
+        "DeepSQA",
+        "SensorQA",
+        "MTBench",
+        "Time-MQA",
+        "GlucoBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 28,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "fba97b2352f9c39274696526c297de861d5ec8a1e6b49ba36483713c8400cc67",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
     {
       "id": "doi:10.21203/rs.3.rs-10438275/v1",
       "slug": "doi-10-21203-rs-3-rs-10438275-v1-beecc8322d",

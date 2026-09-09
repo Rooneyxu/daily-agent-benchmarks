@@ -1,0 +1,194 @@
+{
+  "date": "2026-09-08",
+  "count": 2,
+  "entries": [
+    {
+      "id": "arxiv:2609.08364",
+      "slug": "arxiv-2609-08364-14c5b1b31a",
+      "kind": "paper",
+      "title": "SentryLine: Evidence-Grounded Question Answering over Evolving Documents in Oncology Care",
+      "abstract": "Oncology care operates at constant pressure of absorbing rapidly evolving evidence base in biomedicine. The American Society of Clinical Oncology (ASCO) addresses this through living guidelines, but the format introduces a new burden: any recommendation can change at any point, across multiple versioned documents. We present SENTRYLINE, a living guideline-aware clinical question answering system. SENTRYLINE retrieves guideline passages through a vectorless hierarchical RAG pipeline and returns a role-specific answer with inline citations, factual and temporal verification reports, and drift detection notes that surface when a guideline has been updated. We construct ASCOBENCH, a benchmark of 405 three-turn conversations across four question categories with gold answers from expert annotators(clinicians), and use test set to evaluate SENTRYLINE against five baselines under an LLM-as-judge framework. Experiments across three generation backbones show consistent improvements over four retrieval baselines and ASCO's guideline assistant, with particularly strong gains on Reasoning and Role-Specific questions where multi-hop synthesis and register adaptation are required",
+      "authors": [
+        "Tampu Ravi Kumar",
+        "Gaurav Najpande",
+        "Muhammad Ali Khan",
+        "Kaneez Zahra Rubab Khakwani",
+        "Karan Kathuria",
+        "Shorya Azriel Moses",
+        "Yuvraj Kalia",
+        "M Bassam Sonbol",
+        "Irbaz Bin Riaz",
+        "Vivek Gupta"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-08T07:33:01+00:00",
+      "updated_at": "2026-09-08T07:33:01+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.08364"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.08364v1",
+        "pdf": "https://arxiv.org/pdf/2609.08364v1",
+        "code": "https://github.com/CoRAL-ASU/SentryLine",
+        "html": "https://arxiv.org/html/2609.08364"
+      },
+      "evidence": [
+        {
+          "term": "We construct ASCOBENCH",
+          "excerpt": "ic answer with inline citations, factual and temporal verification reports, and drift detection notes that surface when a guideline has been updated. We construct ASCOBENCH, a benchmark of 405 three-turn conversations across four question categories with gold answers from expert annotators(clinicians), and use test set to evaluate SENTRYLINE against five baselines under an LLM-as-judge framework. Experiments",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.08364"
+        },
+        {
+          "term": "We construct ASCOBENCH, a benchmark",
+          "excerpt": "ic answer with inline citations, factual and temporal verification reports, and drift detection notes that surface when a guideline has been updated. We construct ASCOBENCH, a benchmark of 405 three-turn conversations across four question categories with gold answers from expert annotators(clinicians), and use test set to evaluate SENTRYLINE against five baselines under an LLM-as-judge framework. Experiments across three",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.08364"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "tions, factual and temporal verification reports, and drift detection notes that surface when a guideline has been updated. We construct ASCOBENCH, a benchmark of 405 three-turn conversations across four question categories with gold answers from expert annotators(clinicians), and use test set to evaluate SENTRYLINE against five baselines under an LLM-as-judge framework. Experiments across three",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.08364"
+        },
+        {
+          "term": "test set",
+          "excerpt": "ASCOBENCH, a benchmark of 405 three-turn conversations across four question categories with gold answers from expert annotators(clinicians), and use test set to evaluate SENTRYLINE against five baselines under an LLM-as-judge framework. Experiments across three generation backbones show consistent improvements over four retrieval baselines and ASCO's guideline assistant, with particularly stron",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.08364"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "tion Answering over Evolving Documents in Oncology Care Oncology care operates at constant pressure of absorbing rapidly evolving evidence base in biomedicine. The American Society of Clinical Oncology (ASCO) addresses this through living guidelines, but the format introduces a new burden: any recommendation can change at any point, across multiple versioned documents. We present SENTRYLINE, a l",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.08364"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "ents in Oncology Care Oncology care operates at constant pressure of absorbing rapidly evolving evidence base in biomedicine. The American Society of Clinical Oncology (ASCO) addresses this through living guidelines, but the format introduces a new burden: any recommendation can change at any point, across multiple versioned documents. We present SENTRYLINE, a living guideline-aware clinical que",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.08364"
+        }
+      ],
+      "related_benchmarks": [
+        "ASCOBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 20,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "7a83a78d20e7c0dd0e20d0d5c339b69627a0f6ca1723728f8bb67c641fbcd7d7",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.09.03.749010",
+      "slug": "doi-10-64898-2026-09-03-749010-7e8649c356",
+      "kind": "paper",
+      "title": "BioSecBench-Function: A Verifiable Benchmark for Reasoning about Biological Function from Experimental Data",
+      "abstract": "Inferring biological function from experimental data is central to understanding emerging pathogens and developing effective countermeasures, yet interpreting these data remains slow and expert-intensive. AI agents could help accelerate this process by reasoning across sequence, structural, and biophysical evidence. We present BioSecBench-Function, a verifiable benchmark for recovering biosecurity-relevant function from real biological data. The benchmark comprises 111 evaluations built from published datasets and graded deterministically against ground truth. We organize evaluations along two dimensions: threat axis (spanning seven biosecurity-relevant question types) and biological question (indicating whether the solution depends primarily on sequence, structure, or biophysical assay data). Across 7,326 runs from twenty-two model-harness configurations, Opus 5 under Claude Code led on endpoint pass rate at 50.3%, and Grok 4.6 under Grok Build led on overall pass rate at 44.1% when refusals counted as failures. Performance varied substantially across both model-harness configurations and task categories. Refusal rates differed sharply by provider, and cost was a poor predictor of accuracy: several configurations exceeded 40% pass rate at low cost. BioSecBench-Function provides a standard for measuring whether agents can be trusted to interpret what a new pathogen or variant does when the next outbreak arrives.",
+      "authors": [
+        "Wang, D.",
+        "Xu, Q.",
+        "Banerjee, A.",
+        "Jain, R.",
+        "Vermani, A.",
+        "Felix, J.",
+        "Moreno, G.",
+        "AlZaben, F.",
+        "Keul, N.",
+        "Seeyave, E.",
+        "Bhasin, H."
+      ],
+      "source": "biorxiv",
+      "published_at": "2026-09-08T00:00:00+00:00",
+      "updated_at": "2026-09-08T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by",
+      "identifiers": {
+        "doi": "10.64898/2026.09.03.749010"
+      },
+      "links": {
+        "abs": "https://www.biorxiv.org/content/10.64898/2026.09.03.749010",
+        "pdf": "https://www.biorxiv.org/content/10.64898/2026.09.03.749010.full.pdf",
+        "html": "https://www.biorxiv.org/content/10.64898/2026.09.03.749010.full"
+      },
+      "evidence": [
+        {
+          "term": "We present BioSecBench",
+          "excerpt": "a remains slow and expert-intensive. AI agents could help accelerate this process by reasoning across sequence, structural, and biophysical evidence. We present BioSecBench-Function, a verifiable benchmark for recovering biosecurity-relevant function from real biological data. The benchmark comprises 111 evaluations built from published datasets and graded deterministically against ground truth. We organize e",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.03.749010.full"
+        },
+        {
+          "term": "We present BioSecBench-Function, a verifiable benchmark",
+          "excerpt": "a remains slow and expert-intensive. AI agents could help accelerate this process by reasoning across sequence, structural, and biophysical evidence. We present BioSecBench-Function, a verifiable benchmark for recovering biosecurity-relevant function from real biological data. The benchmark comprises 111 evaluations built from published datasets and graded deterministically against ground truth. We organize evaluations along two dimensions:",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.03.749010.full"
+        },
+        {
+          "term": "benchmark comprises",
+          "excerpt": "hysical evidence. We present BioSecBench-Function, a verifiable benchmark for recovering biosecurity-relevant function from real biological data. The benchmark comprises 111 evaluations built from published datasets and graded deterministically against ground truth. We organize evaluations along two dimensions: threat axis (spanning seven biosecurity-relevant question types) and biological question (indica",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.03.749010.full"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "BioSecBench-Function: A Verifiable Benchmark for Reasoning about Biological Function from Experimental Data Inferring biological function from experimental data is central to understanding emerging pathogens and developing effective countermeasures, yet interpreting these data remain",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.03.749010.full"
+        },
+        {
+          "term": "biological",
+          "excerpt": "BioSecBench-Function: A Verifiable Benchmark for Reasoning about Biological Function from Experimental Data Inferring biological function from experimental data is central to understanding emerging pathogens and developing effective countermeasures, yet interpreting these data remains slow and expert-intensive. AI",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.03.749010.full"
+        },
+        {
+          "term": "biosecurity",
+          "excerpt": "is process by reasoning across sequence, structural, and biophysical evidence. We present BioSecBench-Function, a verifiable benchmark for recovering biosecurity-relevant function from real biological data. The benchmark comprises 111 evaluations built from published datasets and graded deterministically against ground truth. We organize evaluations along two dimensions: threat axis (spanning seven",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.03.749010.full"
+        },
+        {
+          "term": "biophysical",
+          "excerpt": "interpreting these data remains slow and expert-intensive. AI agents could help accelerate this process by reasoning across sequence, structural, and biophysical evidence. We present BioSecBench-Function, a verifiable benchmark for recovering biosecurity-relevant function from real biological data. The benchmark comprises 111 evaluations built from published datasets and graded deterministically ag",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.03.749010.full"
+        }
+      ],
+      "related_benchmarks": [
+        "BioSecBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 30,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.09.03.749010v1.full-text'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "e1dc2086bb21a235e7c4787a68ee1a5c651b8cc25e172013cf651ea69b169297",
+      "is_seed": false,
+      "topic": "biosafety",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}

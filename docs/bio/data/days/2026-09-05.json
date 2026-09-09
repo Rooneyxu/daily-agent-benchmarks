@@ -1,0 +1,200 @@
+{
+  "date": "2026-09-05",
+  "count": 2,
+  "entries": [
+    {
+      "id": "arxiv:2609.06080",
+      "slug": "arxiv-2609-06080-b441ff5722",
+      "kind": "paper",
+      "title": "PhenoBench: Mapping What a Deeply Phenotyped Human Cohort Can Tell Us",
+      "abstract": "Deeply phenotyped cohorts combine clinical, imaging, molecular, and wearable observations across timescales from seconds to years. This breadth can reveal which measurements inform which health-related questions, but heterogeneous analyses are not directly comparable. We present PhenoBench, an executable benchmark built around the Human Phenotype Project, in which more than 13,000 participants have completed the initial visit. Each question fixes the target, eligible population, timing, and allowed information; its evaluation contract specifies the split, metric, baseline, and claim boundary. The benchmark defines 90 clinically grounded tasks across 15 domains and 26 input modalities. Measurements showed question- and representation-dependent predictive value, including positive, near-zero, and negative changes in held-out performance relative to matched baselines. We used PhenoBench to evaluate emerging tabular foundation models across 160 matched regression comparisons spanning 52 tasks. These models ranked above standard task-specific models in aggregate but, averaged across the three pretrained models within each cell, improved on ridge by a median of only 0.004 $R^2$ (95% CI, 0.002--0.006). We then used the same cohort data and evaluation contracts to evaluate 14 language models, collectively covering 40 tasks spanning phenotype recovery, classification, follow-up forecasting, and participant ordering. Without cohort-specific fitting, language models made informative predictions on some tasks, but showed task-specific capability gaps, shared failures of scale, and rarely surpassed models fitted on the same fields. PhenoBench turns a multimodal longitudinal cohort into a versioned, auditable evaluation system where new questions, measurements, and models can be added without redefining existing comparisons.",
+      "authors": [
+        "Gal Sapir",
+        "Alon Diament",
+        "Adva Wolf",
+        "Doron Yaya-Stupp",
+        "Dikla Gelbard Solodkin",
+        "Dana Azouri",
+        "Anat Etzion-Fuchs",
+        "Guy Lutsker",
+        "Eran Segal",
+        "Hagai Rossman"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-05T13:15:40+00:00",
+      "updated_at": "2026-09-05T13:15:40+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.06080"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.06080v1",
+        "pdf": "https://arxiv.org/pdf/2609.06080v1",
+        "code": "https://github.com/galsapir/phenobench-benchmark",
+        "html": "https://arxiv.org/html/2609.06080"
+      },
+      "evidence": [
+        {
+          "term": "We present PhenoBench",
+          "excerpt": "s to years. This breadth can reveal which measurements inform which health-related questions, but heterogeneous analyses are not directly comparable. We present PhenoBench, an executable benchmark built around the Human Phenotype Project, in which more than 13,000 participants have completed the initial visit. Each question fixes the target, eligible population, timing, and allowed information; its evaluatio",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.06080"
+        },
+        {
+          "term": "We present PhenoBench, an executable benchmark",
+          "excerpt": "s to years. This breadth can reveal which measurements inform which health-related questions, but heterogeneous analyses are not directly comparable. We present PhenoBench, an executable benchmark built around the Human Phenotype Project, in which more than 13,000 participants have completed the initial visit. Each question fixes the target, eligible population, timing, and allowed information; its evaluation contract specifies the",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.06080"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "hich measurements inform which health-related questions, but heterogeneous analyses are not directly comparable. We present PhenoBench, an executable benchmark built around the Human Phenotype Project, in which more than 13,000 participants have completed the initial visit. Each question fixes the target, eligible population, timing, and allowed information; its evaluation contract specifies the",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.06080"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "PhenoBench: Mapping What a Deeply Phenotyped Human Cohort Can Tell Us Deeply phenotyped cohorts combine clinical, imaging, molecular, and wearable observations across timescales from seconds to years. This breadth can reveal which measurements inform which health-related questions, but heterogeneous analyses are not directly comparable. We present Ph",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.06080"
+        },
+        {
+          "term": "molecular",
+          "excerpt": "PhenoBench: Mapping What a Deeply Phenotyped Human Cohort Can Tell Us Deeply phenotyped cohorts combine clinical, imaging, molecular, and wearable observations across timescales from seconds to years. This breadth can reveal which measurements inform which health-related questions, but heterogeneous analyses are not directly comparable. We present PhenoBench, an executa",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.06080"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "tasks, but showed task-specific capability gaps, shared failures of scale, and rarely surpassed models fitted on the same fields. PhenoBench turns a multimodal longitudinal cohort into a versioned, auditable evaluation system where new questions, measurements, and models can be added without redefining existing comparisons. [[SECTION PhenoBench: Mapping What a Deeply Phenotyped Human Cohort Can T",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.06080"
+        },
+        {
+          "term": "tool-using",
+          "excerpt": "ix C Machine-querying PhenoBench evidence]] Appendix C Machine-querying PhenoBench evidence This appendix reports an additional evaluation of whether tool-using language models can query a frozen PhenoBench evidence snapshot. Extended Data Figure 1 summarizes the experiment. [[SECTION C.1 Results]] C.1 Results We tested whether tool-using language models could retrieve and compare PhenoBench evide",
+          "location": "Appendix C Machine-querying PhenoBench evidence",
+          "source_url": "https://arxiv.org/html/2609.06080"
+        }
+      ],
+      "related_benchmarks": [
+        "PhenoBench",
+        "MedAgentBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 25,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "4a9aeb8d6ae599c043f3d8f782a0b00957b0f455483c85c4712b39198561e97e",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2609.05818",
+      "slug": "arxiv-2609-05818-b075eba475",
+      "kind": "paper",
+      "title": "Agentic BAIM-LLM Evaluation (ABLE): Benchmarking LLM Use of Protein Design Tools",
+      "abstract": "We introduce ABLE, a benchmark for evaluating LLM agents' ability to use biological AI models (BAIMs), such as ProteinMPNN and AlphaFold3, in dual-use protein design workflows. ABLE assesses agent performance through a set of tasks spanning structure retrieval, sequence generation, and design validation. We evaluate 15 frontier models and find that seven refuse all tasks, while the remaining models exhibit substantial performance differences. Claude Sonnet 4 and Gemini 3 Pro achieve the highest scores across information retrieval, tool selection, and tool use. We further compare model performance on a subset of tasks against an expert human baseline. Our results suggest that current LLMs can substantially lower barriers to protein design, but remain inconsistent in planning, strategy generation, and integrating biological knowledge with tool use.",
+      "authors": [
+        "Bryce Cai",
+        "Geetha Jeyapragasan",
+        "Samira Nedungadi",
+        "Jake Yukich",
+        "Seth Donoughe"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-05T02:28:21+00:00",
+      "updated_at": "2026-09-05T02:28:21+00:00",
+      "priority": "P1",
+      "categories": [
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.05818"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.05818v1",
+        "pdf": "https://arxiv.org/pdf/2609.05818v1",
+        "code": "https://github.com/UKGovernmentBEIS/inspect_ai",
+        "html": "https://arxiv.org/html/2609.05818"
+      },
+      "evidence": [
+        {
+          "term": "We introduce ABLE, a benchmark",
+          "excerpt": "Agentic BAIM-LLM Evaluation (ABLE): Benchmarking LLM Use of Protein Design Tools We introduce ABLE, a benchmark for evaluating LLM agents' ability to use biological AI models (BAIMs), such as ProteinMPNN and AlphaFold3, in dual-use protein design workflows. ABLE assesses agent performance through a set of tasks spanning structure retrieval, sequence",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.05818"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Agentic BAIM-LLM Evaluation (ABLE): Benchmarking LLM Use of Protein Design Tools We introduce ABLE, a benchmark for evaluating LLM agents' ability to use biological AI models (BAIMs), such as ProteinMPNN and AlphaFold3, in dual-use protein design workflows. ABLE assesses agent perform",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.05818"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "Agentic BAIM-LLM Evaluation (ABLE): Benchmarking LLM Use of Protein Design Tools We introduce ABLE, a benchmark for evaluating LLM agents' ability to use biological AI models (BAIMs), such as ProteinMPNN and AlphaFold3, in dual-use protein design workflows. ABLE assesses agent performanc",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.05818"
+        },
+        {
+          "term": "biological",
+          "excerpt": "tic BAIM-LLM Evaluation (ABLE): Benchmarking LLM Use of Protein Design Tools We introduce ABLE, a benchmark for evaluating LLM agents' ability to use biological AI models (BAIMs), such as ProteinMPNN and AlphaFold3, in dual-use protein design workflows. ABLE assesses agent performance through a set of tasks spanning structure retrieval, sequence generation, and design validation. We evaluate 15 fr",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.05818"
+        },
+        {
+          "term": "protein design",
+          "excerpt": "Agentic BAIM-LLM Evaluation (ABLE): Benchmarking LLM Use of Protein Design Tools We introduce ABLE, a benchmark for evaluating LLM agents' ability to use biological AI models (BAIMs), such as ProteinMPNN and AlphaFold3, in dual-use protein design workflows. ABLE assesses agent performance through a set of tasks s",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.05818"
+        },
+        {
+          "term": "protein",
+          "excerpt": "Agentic BAIM-LLM Evaluation (ABLE): Benchmarking LLM Use of Protein Design Tools We introduce ABLE, a benchmark for evaluating LLM agents' ability to use biological AI models (BAIMs), such as ProteinMPNN and AlphaFold3, in dual-use protein design workflows. ABLE assesses agent performance through a set of",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.05818"
+        },
+        {
+          "term": "Multimodal",
+          "excerpt": "tting, J., Medeiros, P., Sanders, J. G., Li, N., Phan, L., Elabd, K., Justen, L., Hendrycks, D., and Donoughe, S. Virology Capabilities Test (VCT): A Multimodal Virology Q&A Benchmark. arXiv [cs.CY] , 2025. Jimenez et al. (2024) Jimenez, C. E., Yang, J., Wettig, A., Yao, S., Pei, K., Press, O., and Narasimhan, K. SWE-bench: Can Language Models Resolve Real-World GitHub Issues? In Proceedings of th",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2609.05818"
+        },
+        {
+          "term": "tool use",
+          "excerpt": "it substantial performance differences. Claude Sonnet 4 and Gemini 3 Pro achieve the highest scores across information retrieval, tool selection, and tool use. We further compare model performance on a subset of tasks against an expert human baseline. Our results suggest that current LLMs can substantially lower barriers to protein design, but remain inconsistent in planning, strategy generation",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.05818"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "../../p/2609.05818.html",
+      "evaluation_contexts": [
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 25,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "38d95e79d99210fc1f3f3d4237ae604c019be00e2951b04b246c2426754b8070",
+      "is_seed": false,
+      "topic": "biosafety",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
