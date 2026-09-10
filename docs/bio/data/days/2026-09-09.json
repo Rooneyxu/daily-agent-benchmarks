@@ -1,0 +1,73 @@
+{
+  "date": "2026-09-09",
+  "count": 1,
+  "entries": [
+    {
+      "id": "arxiv:2609.10055",
+      "slug": "arxiv-2609-10055-5351478129",
+      "kind": "paper",
+      "title": "OntologyAligner: Ontology-Aligned Retrieval and Hierarchy-Guided Large Language Model Reranking for Biomedical Ontology Normalization",
+      "abstract": "Biomedical ontology normalization maps free-text expressions to standardized concepts, enabling consistent integration and analysis of biomedical data. This task remains challenging because lexical variation and subtle distinctions among hierarchically related concepts can obscure concept boundaries. We present OntologyAligner, a three-stage framework that combines ontology-aligned retrieval, large language model candidate reranking, and selective hierarchy-guided refinement. We also construct PhenoNormBench, a unified benchmark comprising 13,390 samples from seven Human Phenotype Ontology datasets. OntologyAligner achieved state-of-the-art performance on HPO normalization, with 88.78% Macro Top-1 Accuracy and 86.75% Micro Top-1 Accuracy, exceeding the strongest baseline by 4.85 and 5.07 percentage points, respectively. Ablation analyses showed complementary contributions from all three stages, and sensitivity analyses demonstrated stability across candidate-set sizes and model backbones. Applications to MONDO, MEDIC, and NCBITaxon further established portability to other ontologies. OntologyAligner offers a generalizable framework for accurate mapping of biomedical text to structured ontology concepts. PhenoNormBench and the code are publicly available at https://github.com/zhelishisongjie/OntologyAligner.",
+      "authors": [
+        "Jie Song",
+        "Zhichuan Xu",
+        "Ziyu Lu",
+        "Meng Xiao",
+        "Cheng Bi",
+        "Yuxin Zhang",
+        "Xin Zheng",
+        "Xiaoran Li",
+        "Qiongfang Cao",
+        "Hao Yang",
+        "Bairong Shen"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-09T11:30:25+00:00",
+      "updated_at": "2026-09-09T11:30:25+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.10055"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.10055v1",
+        "pdf": "https://arxiv.org/pdf/2609.10055v1",
+        "html": "https://arxiv.org/html/2609.10055"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "y-aligned retrieval, large language model candidate reranking, and selective hierarchy-guided refinement. We also construct PhenoNormBench, a unified benchmark comprising 13,390 samples from seven Human Phenotype Ontology datasets. OntologyAligner achieved state-of-the-art performance on HPO normalization, with 88.78% Macro Top-1 Accuracy and 86.75% Micro Top-1 Accuracy, exceeding the strongest b",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.10055"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "OntologyAligner: Ontology-Aligned Retrieval and Hierarchy-Guided Large Language Model Reranking for Biomedical Ontology Normalization Biomedical ontology normalization maps free-text expressions to standardized concepts, enabling consistent integration and analysis of biomedical data. This task remains challenging because lexical variation and subt",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.10055"
+        }
+      ],
+      "related_benchmarks": [
+        "PhenoNormBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 13,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '404 Not Found' for url 'https://arxiv.org/html/2609.10055'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+      "content_hash": "45b1ae9813707b58b71d090b3c03f32f50a51dd75b512d54dcc4dbdec6c4f98b",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
