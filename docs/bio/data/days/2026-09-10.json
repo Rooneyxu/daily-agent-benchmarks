@@ -1,0 +1,93 @@
+{
+  "date": "2026-09-10",
+  "count": 1,
+  "entries": [
+    {
+      "id": "arxiv:2609.11185",
+      "slug": "arxiv-2609-11185-be69c690a2",
+      "kind": "paper",
+      "title": "Can LLMs Follow Medical Expert Logic? A Benchmark for Hierarchical Logical Consistency in Risk-of-Bias Assessment",
+      "abstract": "Evidence-based medicine demands strict logical consistency, yet current evaluations of large language models (LLMs) prioritize superficial label matching over genuine reasoning. We introduce LogiMed-RoB, a benchmark grounded in Cochrane Risk of Bias (RoB) 2.0 expert logic, comprising 860 randomized controlled trials (RCTs) and 14,820 queries. It evaluates models under the Hierarchical Logical Consistency (HLC) framework across four dimensions: Atomic Consistency, Domain Consistency, Aggregation Consistency, and Evidential Faithfulness. Experiments on 10 state-of-the-art LLMs reveal a catastrophic Error Compounding Effect: despite the top model reaching 98.88% Atomic Consistency, its end-to-end consistency collapses to 45.13%, with several open-weight architectures plummeting to nearly 0%. We further uncover a systematic evidence-reasoning gap: even when models retrieve high-quality evidence, they fail to deduce correct outcomes in 18.63-40.05% of cases, while Blind Guess Rates reach 48.28%. LogiMed-RoB demonstrates that high outcome accuracy can conceal critical reasoning flaws, underscoring the necessity of white-box logical verification for clinical deployment.",
+      "authors": [
+        "Jiayu Huang",
+        "Zichen Tang",
+        "Qianhui Ling",
+        "Zemin Kuang",
+        "Haihong E"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-10T07:46:41+00:00",
+      "updated_at": "2026-09-10T07:46:41+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.11185"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.11185v1",
+        "pdf": "https://arxiv.org/pdf/2609.11185v1",
+        "code": "https://github.com/BUPT-Reasoning-Lab/LogiMed-RoB",
+        "data": "https://huggingface.co/datasets/BUPT-Reasoning-Lab/LogiMed-RoB",
+        "html": "https://arxiv.org/html/2609.11185"
+      },
+      "evidence": [
+        {
+          "term": "We introduce LogiMed-RoB, a benchmark",
+          "excerpt": "nds strict logical consistency, yet current evaluations of large language models (LLMs) prioritize superficial label matching over genuine reasoning. We introduce LogiMed-RoB, a benchmark grounded in Cochrane Risk of Bias (RoB) 2.0 expert logic, comprising 860 randomized controlled trials (RCTs) and 14,820 queries. It evaluates models under the Hierarchical Logical Consistency (HLC) framework across four dimensions: Atomic",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.11185"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Can LLMs Follow Medical Expert Logic? A Benchmark for Hierarchical Logical Consistency in Risk-of-Bias Assessment Evidence-based medicine demands strict logical consistency, yet current evaluations of large language models (LLMs) prioritize superficial label matching over genuine reasonin",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.11185"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "Can LLMs Follow Medical Expert Logic? A Benchmark for Hierarchical Logical Consistency in Risk-of-Bias Assessment Evidence-based medicine demands strict logical consistency, yet current evaluations of large language models (LLMs) prioritize superficial label matching over genuine reasoning. We introduce LogiMed-RoB, a benchmark grounded in Cochrane Risk of Bias (RoB) 2.0 exp",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.11185"
+        },
+        {
+          "term": "medical",
+          "excerpt": "Can LLMs Follow Medical Expert Logic? A Benchmark for Hierarchical Logical Consistency in Risk-of-Bias Assessment Evidence-based medicine demands strict logical consistency, yet current evaluations of large language models (LLMs) prioritize superficial label matc",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.11185"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "ed-RoB demonstrates that high outcome accuracy can conceal critical reasoning flaws, underscoring the necessity of white-box logical verification for clinical deployment. [[SECTION Can LLMs Follow Medical Expert Logic? A Benchmark for Hierarchical Logical Consistency in Risk-of-Bias Assessment]] Can LLMs Follow Medical Expert Logic? A Benchmark for Hierarchical Logical Consistency in Risk-of-Bia",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.11185"
+        },
+        {
+          "term": "failure diagnosis",
+          "excerpt": "on is essential. [[SECTION Appendix D Systematic Error Decomposition]] Appendix D Systematic Error Decomposition To address the need for fine-grained failure diagnosis, we decompose model errors into a four-level taxonomy aligned with the HLC framework. Each level targets a distinct reasoning failure mode, enabling precise localization of where and how models deviate from expert logic. [[SECTION D.1 Erro",
+          "location": "Appendix D Systematic Error Decomposition",
+          "source_url": "https://arxiv.org/html/2609.11185"
+        }
+      ],
+      "related_benchmarks": [
+        "MedXpertQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "64f3225d3bd44caeac4131a0b001862463e3fd3f8f76cd28c61d17710f84845a",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
