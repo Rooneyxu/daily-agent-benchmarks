@@ -1,0 +1,177 @@
+{
+  "date": "2026-09-11",
+  "count": 2,
+  "entries": [
+    {
+      "id": "doi:10.64898/2026.09.10.26361944",
+      "slug": "doi-10-64898-2026-09-10-26361944-14b7d272dc",
+      "kind": "paper",
+      "title": "Accuracy Overstates Evidence Grounding and Abstention Reliability in Mammography Vision-Language Models",
+      "abstract": "Answer accuracy alone cannot determine whether a Vision-Language Model (VLM) relies on clinically relevant mammographic evidence or recognizes when that evidence is unavailable. We introduce an evidence-grounded selective evaluation benchmark that evaluates Pathology classification and Abnormality identification together with label-aware lesion localization. Each original image--task instance is paired with a lesion-removal counterfactual and, when feasible, a size-matched non-lesion random-removal control. Lesion evidence is removed by local tissue reconstruction, while the random-removal view provides a task-irrelevant regional perturbation baseline of comparable spatial extent. We evaluate 16 general-purpose and medically specialized VLMs, including open-source and proprietary models, under a common protocol with the same prompt, image conditions, label spaces, and structured-output requirements. The results show substantial gaps between classification performance and evidence-grounded reliability. InternVL3.5-8B achieved the highest Pathology Macro-F1 at 53.75\\%, Huatuo Vision-34B achieved the highest Abnormality Exact Match at 52.44\\%, and GPT-5.6 Sol achieved the highest Grounded Answer Success at 21.99\\%. Lingshu-7B achieved the highest Counterfactual Specificity at 35.19\\%, whereas GPT-5.6 Sol achieved the highest Joint Reliability at 6.47\\%. These findings suggest that answer accuracy and abstention behavior can substantially overstate the reliability of current VLMs when predictions are not verified against the visual evidence on which they should depend.",
+      "authors": [
+        "Qu, B.",
+        "Liu, w.",
+        "Murrow, M.",
+        "Burger, M.",
+        "Guo, X.",
+        "Vaidya, M. S.",
+        "Rose, S. L.",
+        "Kantarcioglu, M.",
+        "Malin, B. A.",
+        "Yin, Z."
+      ],
+      "source": "medrxiv",
+      "published_at": "2026-09-11T00:00:00+00:00",
+      "updated_at": "2026-09-11T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_no",
+      "identifiers": {
+        "doi": "10.64898/2026.09.10.26361944"
+      },
+      "links": {
+        "abs": "https://www.medrxiv.org/content/10.64898/2026.09.10.26361944",
+        "pdf": "https://www.medrxiv.org/content/10.64898/2026.09.10.26361944.full.pdf",
+        "html": "https://www.medrxiv.org/content/10.64898/2026.09.10.26361944.full"
+      },
+      "evidence": [
+        {
+          "term": "We introduce an evidence-grounded selective evaluation benchmark",
+          "excerpt": "determine whether a Vision-Language Model (VLM) relies on clinically relevant mammographic evidence or recognizes when that evidence is unavailable. We introduce an evidence-grounded selective evaluation benchmark that evaluates Pathology classification and Abnormality identification together with label-aware lesion localization. Each original image--task instance is paired with a lesion-removal counterfactual and, when feasible, a size-matched non-",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.09.10.26361944.full"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "on clinically relevant mammographic evidence or recognizes when that evidence is unavailable. We introduce an evidence-grounded selective evaluation benchmark that evaluates Pathology classification and Abnormality identification together with label-aware lesion localization. Each original image--task instance is paired with a lesion-removal counterfactual and, when feasible, a size-matched non-",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.09.10.26361944.full"
+        },
+        {
+          "term": "medical",
+          "excerpt": "le the random-removal view provides a task-irrelevant regional perturbation baseline of comparable spatial extent. We evaluate 16 general-purpose and medically specialized VLMs, including open-source and proprietary models, under a common protocol with the same prompt, image conditions, label spaces, and structured-output requirements. The results show substantial gaps between classification pe",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.09.10.26361944.full"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "d Abstention Reliability in Mammography Vision-Language Models Answer accuracy alone cannot determine whether a Vision-Language Model (VLM) relies on clinically relevant mammographic evidence or recognizes when that evidence is unavailable. We introduce an evidence-grounded selective evaluation benchmark that evaluates Pathology classification and Abnormality identification together with label-a",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.09.10.26361944.full"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "ammographic evidence or recognizes when that evidence is unavailable. We introduce an evidence-grounded selective evaluation benchmark that evaluates Pathology classification and Abnormality identification together with label-aware lesion localization. Each original image--task instance is paired with a lesion-removal counterfactual and, when feasible, a size-matched non-lesion random-removal con",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.09.10.26361944.full"
+        },
+        {
+          "term": "Vision-Language",
+          "excerpt": "Accuracy Overstates Evidence Grounding and Abstention Reliability in Mammography Vision-Language Models Answer accuracy alone cannot determine whether a Vision-Language Model (VLM) relies on clinically relevant mammographic evidence or recognizes when that evidence is unavailable. We introduce an evidence-grounded selective evaluation",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.09.10.26361944.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.09.10.26361944.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "5246c7c89a6126c03a6d65486bd522dc3df84cb50b3ea525b12517f71d4846d5",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.21203/rs.3.rs-10747614/v1",
+      "slug": "doi-10-21203-rs-3-rs-10747614-v1-9ec2129043",
+      "kind": "paper",
+      "title": "An Automated, Contamination-Controlled VQA Benchmark for Evaluating Vision-Language Models on 3D Oncology Imaging",
+      "abstract": "<title>Abstract</title>  <p>Vision-language models (VLMs) are increasingly applied to medical imaging, yet public benchmarks may reward memorization over perception: their images and questions can enter pretraining corpora, and many items remain answerable from question text alone. We present an automated, agent-driven pipeline that builds multiple-choice benchmarks directly from paired private radiology reports and three-dimensional oncology imaging. It generates two complementary question types: schema-driven items populated deterministically from established reporting frameworks, and report-derived items verified against the source text. Because the source reports are private and single-institution, the resulting questions cannot have entered any model’s pretraining data, controlling instance-level contamination by construction. We applied the pipeline to four oncology cohorts (liver CT, liver MRI, lung CT and brain MRI; 2,509 cases and 33,870 questions) and evaluated five contemporary VLMs zero-shot. Accuracies ranged from 0.28 to 0.81 and no model was reliable across cohorts. Replacing the image with a blank input changed accuracy little for the highest-scoring models, and on schema-driven brain questions frontier models scored 0.17–0.19 higher on public than on matched private imaging. The benchmark thus separates image-dependent performance from question-text and dataset-familiarity effects, and the released pipeline lets institutions regenerate it on their own reports and images.</p>",
+      "authors": [
+        "Liu B",
+        "Gu H",
+        "Li X",
+        "Zhu Z",
+        "Ellison J",
+        "Wang K",
+        "Sheng K",
+        "Braunstein S",
+        "Lupo J",
+        "Yang Y",
+        "Lin H."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-09-11T00:00:00+00:00",
+      "updated_at": "2026-09-12T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-10747614/v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1317340"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "An Automated, Contamination-Controlled VQA Benchmark for Evaluating Vision-Language Models on 3D Oncology Imaging <title>Abstract</title> <p>Vision-language models (VLMs) are increasingly applied to medical imaging, yet public benchmarks may reward memorization over perception: their images",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1317340"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "guage Models on 3D Oncology Imaging <title>Abstract</title> <p>Vision-language models (VLMs) are increasingly applied to medical imaging, yet public benchmarks may reward memorization over perception: their images and questions can enter pretraining corpora, and many items remain answerable from question text alone. We present an automated, agent-driven pipeline that builds multiple-choice benchm",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1317340"
+        },
+        {
+          "term": "medical",
+          "excerpt": "rk for Evaluating Vision-Language Models on 3D Oncology Imaging <title>Abstract</title> <p>Vision-language models (VLMs) are increasingly applied to medical imaging, yet public benchmarks may reward memorization over perception: their images and questions can enter pretraining corpora, and many items remain answerable from question text alone. We present an automated, agent-driven pipeline tha",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1317340"
+        },
+        {
+          "term": "medical imaging",
+          "excerpt": "rk for Evaluating Vision-Language Models on 3D Oncology Imaging <title>Abstract</title> <p>Vision-language models (VLMs) are increasingly applied to medical imaging, yet public benchmarks may reward memorization over perception: their images and questions can enter pretraining corpora, and many items remain answerable from question text alone. We present an automated, agent-driven pipeline that builds",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1317340"
+        },
+        {
+          "term": "Vision-Language",
+          "excerpt": "An Automated, Contamination-Controlled VQA Benchmark for Evaluating Vision-Language Models on 3D Oncology Imaging <title>Abstract</title> <p>Vision-language models (VLMs) are increasingly applied to medical imaging, yet public benchmarks may reward memorization over perception: their images and questions can enter pretra",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1317340"
+        }
+      ],
+      "related_benchmarks": [
+        "VQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "87382ed80d4abd9c7c6ee96dff1168e1df31ce72e6248614627117afacbec6e7",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}

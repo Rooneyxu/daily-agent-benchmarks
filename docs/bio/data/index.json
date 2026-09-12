@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-11T09:00:13Z",
-  "total": 99,
+  "generated_at": "2026-09-12T08:43:48Z",
+  "total": 101,
   "counts": {
     "topics": {
+      "multimodal": 26,
       "experiment_agent": 24,
       "general_text": 40,
-      "biosafety": 11,
-      "multimodal": 24
+      "biosafety": 11
     },
     "contribution_types": {
-      "new_benchmark": 74,
+      "new_benchmark": 76,
       "audit": 11,
       "methodology": 14
     },
     "kinds": {
-      "paper": 99
+      "paper": 101
     },
     "evaluation_contexts": {
-      "beneficial_capability": 88,
+      "beneficial_capability": 90,
       "biosecurity_misuse": 11
     }
   },
@@ -59,54 +59,62 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-09-11T09:00:21Z",
-      "finished_at": "2026-09-11T09:00:53Z",
-      "discovered": 58,
-      "published": 26,
+      "started_at": "2026-09-12T08:43:58Z",
+      "finished_at": "2026-09-12T08:44:21Z",
+      "discovered": 41,
+      "published": 18,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-09-11T09:00:53Z",
-      "finished_at": "2026-09-11T09:00:56Z",
-      "discovered": 121,
-      "published": 73,
+      "started_at": "2026-09-12T08:44:21Z",
+      "finished_at": "2026-09-12T08:44:24Z",
+      "discovered": 111,
+      "published": 68,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "failed",
-      "started_at": "2026-09-11T09:00:56Z",
-      "finished_at": "2026-09-11T09:00:56Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "Expecting value: line 1 column 1 (char 0)"
+      "status": "success",
+      "started_at": "2026-09-12T08:44:24Z",
+      "finished_at": "2026-09-12T08:46:57Z",
+      "discovered": 1032,
+      "published": 68,
+      "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "failed",
-      "started_at": "2026-09-11T09:00:56Z",
-      "finished_at": "2026-09-11T09:00:56Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "Expecting value: line 1 column 1 (char 0)"
+      "status": "success",
+      "started_at": "2026-09-12T08:46:57Z",
+      "finished_at": "2026-09-12T08:47:18Z",
+      "discovered": 351,
+      "published": 30,
+      "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "success",
-      "started_at": "2026-09-11T09:00:56Z",
-      "finished_at": "2026-09-11T09:01:45Z",
+      "started_at": "2026-09-12T08:47:18Z",
+      "finished_at": "2026-09-12T08:48:02Z",
       "discovered": 1,
       "published": 0,
       "error": ""
     }
   ],
   "days": [
+    {
+      "date": "2026-09-11",
+      "count": 2,
+      "entry_ids": [
+        "doi:10.64898/2026.09.10.26361944",
+        "doi:10.21203/rs.3.rs-10747614/v1"
+      ]
+    },
     {
       "date": "2026-09-10",
       "count": 1,
@@ -533,6 +541,177 @@
   ],
   "entries": [
     {
+      "id": "doi:10.64898/2026.09.10.26361944",
+      "slug": "doi-10-64898-2026-09-10-26361944-14b7d272dc",
+      "kind": "paper",
+      "title": "Accuracy Overstates Evidence Grounding and Abstention Reliability in Mammography Vision-Language Models",
+      "abstract": "Answer accuracy alone cannot determine whether a Vision-Language Model (VLM) relies on clinically relevant mammographic evidence or recognizes when that evidence is unavailable. We introduce an evidence-grounded selective evaluation benchmark that evaluates Pathology classification and Abnormality identification together with label-aware lesion localization. Each original image--task instance is paired with a lesion-removal counterfactual and, when feasible, a size-matched non-lesion random-removal control. Lesion evidence is removed by local tissue reconstruction, while the random-removal view provides a task-irrelevant regional perturbation baseline of comparable spatial extent. We evaluate 16 general-purpose and medically specialized VLMs, including open-source and proprietary models, under a common protocol with the same prompt, image conditions, label spaces, and structured-output requirements. The results show substantial gaps between classification performance and evidence-grounded reliability. InternVL3.5-8B achieved the highest Pathology Macro-F1 at 53.75\\%, Huatuo Vision-34B achieved the highest Abnormality Exact Match at 52.44\\%, and GPT-5.6 Sol achieved the highest Grounded Answer Success at 21.99\\%. Lingshu-7B achieved the highest Counterfactual Specificity at 35.19\\%, whereas GPT-5.6 Sol achieved the highest Joint Reliability at 6.47\\%. These findings suggest that answer accuracy and abstention behavior can substantially overstate the reliability of current VLMs when predictions are not verified against the visual evidence on which they should depend.",
+      "authors": [
+        "Qu, B.",
+        "Liu, w.",
+        "Murrow, M.",
+        "Burger, M.",
+        "Guo, X.",
+        "Vaidya, M. S.",
+        "Rose, S. L.",
+        "Kantarcioglu, M.",
+        "Malin, B. A.",
+        "Yin, Z."
+      ],
+      "source": "medrxiv",
+      "published_at": "2026-09-11T00:00:00+00:00",
+      "updated_at": "2026-09-11T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_no",
+      "identifiers": {
+        "doi": "10.64898/2026.09.10.26361944"
+      },
+      "links": {
+        "abs": "https://www.medrxiv.org/content/10.64898/2026.09.10.26361944",
+        "pdf": "https://www.medrxiv.org/content/10.64898/2026.09.10.26361944.full.pdf",
+        "html": "https://www.medrxiv.org/content/10.64898/2026.09.10.26361944.full"
+      },
+      "evidence": [
+        {
+          "term": "We introduce an evidence-grounded selective evaluation benchmark",
+          "excerpt": "determine whether a Vision-Language Model (VLM) relies on clinically relevant mammographic evidence or recognizes when that evidence is unavailable. We introduce an evidence-grounded selective evaluation benchmark that evaluates Pathology classification and Abnormality identification together with label-aware lesion localization. Each original image--task instance is paired with a lesion-removal counterfactual and, when feasible, a size-matched non-",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.09.10.26361944.full"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "on clinically relevant mammographic evidence or recognizes when that evidence is unavailable. We introduce an evidence-grounded selective evaluation benchmark that evaluates Pathology classification and Abnormality identification together with label-aware lesion localization. Each original image--task instance is paired with a lesion-removal counterfactual and, when feasible, a size-matched non-",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.09.10.26361944.full"
+        },
+        {
+          "term": "medical",
+          "excerpt": "le the random-removal view provides a task-irrelevant regional perturbation baseline of comparable spatial extent. We evaluate 16 general-purpose and medically specialized VLMs, including open-source and proprietary models, under a common protocol with the same prompt, image conditions, label spaces, and structured-output requirements. The results show substantial gaps between classification pe",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.09.10.26361944.full"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "d Abstention Reliability in Mammography Vision-Language Models Answer accuracy alone cannot determine whether a Vision-Language Model (VLM) relies on clinically relevant mammographic evidence or recognizes when that evidence is unavailable. We introduce an evidence-grounded selective evaluation benchmark that evaluates Pathology classification and Abnormality identification together with label-a",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.09.10.26361944.full"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "ammographic evidence or recognizes when that evidence is unavailable. We introduce an evidence-grounded selective evaluation benchmark that evaluates Pathology classification and Abnormality identification together with label-aware lesion localization. Each original image--task instance is paired with a lesion-removal counterfactual and, when feasible, a size-matched non-lesion random-removal con",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.09.10.26361944.full"
+        },
+        {
+          "term": "Vision-Language",
+          "excerpt": "Accuracy Overstates Evidence Grounding and Abstention Reliability in Mammography Vision-Language Models Answer accuracy alone cannot determine whether a Vision-Language Model (VLM) relies on clinically relevant mammographic evidence or recognizes when that evidence is unavailable. We introduce an evidence-grounded selective evaluation",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.09.10.26361944.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.09.10.26361944.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "5246c7c89a6126c03a6d65486bd522dc3df84cb50b3ea525b12517f71d4846d5",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.21203/rs.3.rs-10747614/v1",
+      "slug": "doi-10-21203-rs-3-rs-10747614-v1-9ec2129043",
+      "kind": "paper",
+      "title": "An Automated, Contamination-Controlled VQA Benchmark for Evaluating Vision-Language Models on 3D Oncology Imaging",
+      "abstract": "<title>Abstract</title>  <p>Vision-language models (VLMs) are increasingly applied to medical imaging, yet public benchmarks may reward memorization over perception: their images and questions can enter pretraining corpora, and many items remain answerable from question text alone. We present an automated, agent-driven pipeline that builds multiple-choice benchmarks directly from paired private radiology reports and three-dimensional oncology imaging. It generates two complementary question types: schema-driven items populated deterministically from established reporting frameworks, and report-derived items verified against the source text. Because the source reports are private and single-institution, the resulting questions cannot have entered any model’s pretraining data, controlling instance-level contamination by construction. We applied the pipeline to four oncology cohorts (liver CT, liver MRI, lung CT and brain MRI; 2,509 cases and 33,870 questions) and evaluated five contemporary VLMs zero-shot. Accuracies ranged from 0.28 to 0.81 and no model was reliable across cohorts. Replacing the image with a blank input changed accuracy little for the highest-scoring models, and on schema-driven brain questions frontier models scored 0.17–0.19 higher on public than on matched private imaging. The benchmark thus separates image-dependent performance from question-text and dataset-familiarity effects, and the released pipeline lets institutions regenerate it on their own reports and images.</p>",
+      "authors": [
+        "Liu B",
+        "Gu H",
+        "Li X",
+        "Zhu Z",
+        "Ellison J",
+        "Wang K",
+        "Sheng K",
+        "Braunstein S",
+        "Lupo J",
+        "Yang Y",
+        "Lin H."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-09-11T00:00:00+00:00",
+      "updated_at": "2026-09-12T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-10747614/v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1317340"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "An Automated, Contamination-Controlled VQA Benchmark for Evaluating Vision-Language Models on 3D Oncology Imaging <title>Abstract</title> <p>Vision-language models (VLMs) are increasingly applied to medical imaging, yet public benchmarks may reward memorization over perception: their images",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1317340"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "guage Models on 3D Oncology Imaging <title>Abstract</title> <p>Vision-language models (VLMs) are increasingly applied to medical imaging, yet public benchmarks may reward memorization over perception: their images and questions can enter pretraining corpora, and many items remain answerable from question text alone. We present an automated, agent-driven pipeline that builds multiple-choice benchm",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1317340"
+        },
+        {
+          "term": "medical",
+          "excerpt": "rk for Evaluating Vision-Language Models on 3D Oncology Imaging <title>Abstract</title> <p>Vision-language models (VLMs) are increasingly applied to medical imaging, yet public benchmarks may reward memorization over perception: their images and questions can enter pretraining corpora, and many items remain answerable from question text alone. We present an automated, agent-driven pipeline tha",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1317340"
+        },
+        {
+          "term": "medical imaging",
+          "excerpt": "rk for Evaluating Vision-Language Models on 3D Oncology Imaging <title>Abstract</title> <p>Vision-language models (VLMs) are increasingly applied to medical imaging, yet public benchmarks may reward memorization over perception: their images and questions can enter pretraining corpora, and many items remain answerable from question text alone. We present an automated, agent-driven pipeline that builds",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1317340"
+        },
+        {
+          "term": "Vision-Language",
+          "excerpt": "An Automated, Contamination-Controlled VQA Benchmark for Evaluating Vision-Language Models on 3D Oncology Imaging <title>Abstract</title> <p>Vision-language models (VLMs) are increasingly applied to medical imaging, yet public benchmarks may reward memorization over perception: their images and questions can enter pretra",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1317340"
+        }
+      ],
+      "related_benchmarks": [
+        "VQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "87382ed80d4abd9c7c6ee96dff1168e1df31ce72e6248614627117afacbec6e7",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "arxiv:2609.11185",
       "slug": "arxiv-2609-11185-be69c690a2",
       "kind": "paper",
@@ -784,76 +963,78 @@
       "title": "BioSecBench-Function: A Verifiable Benchmark for Reasoning about Biological Function from Experimental Data",
       "abstract": "Inferring biological function from experimental data is central to understanding emerging pathogens and developing effective countermeasures, yet interpreting these data remains slow and expert-intensive. AI agents could help accelerate this process by reasoning across sequence, structural, and biophysical evidence. We present BioSecBench-Function, a verifiable benchmark for recovering biosecurity-relevant function from real biological data. The benchmark comprises 111 evaluations built from published datasets and graded deterministically against ground truth. We organize evaluations along two dimensions: threat axis (spanning seven biosecurity-relevant question types) and biological question (indicating whether the solution depends primarily on sequence, structure, or biophysical assay data). Across 7,326 runs from twenty-two model-harness configurations, Opus 5 under Claude Code led on endpoint pass rate at 50.3%, and Grok 4.6 under Grok Build led on overall pass rate at 44.1% when refusals counted as failures. Performance varied substantially across both model-harness configurations and task categories. Refusal rates differed sharply by provider, and cost was a poor predictor of accuracy: several configurations exceeded 40% pass rate at low cost. BioSecBench-Function provides a standard for measuring whether agents can be trusted to interpret what a new pathogen or variant does when the next outbreak arrives.",
       "authors": [
-        "Wang D",
-        "Xu Q",
-        "Banerjee A",
-        "Jain R",
-        "Vermani A",
-        "Felix J",
-        "Moreno G",
-        "AlZaben F",
-        "Keul N",
-        "Seeyave E",
-        "Bhasin H."
+        "Wang, D.",
+        "Xu, Q.",
+        "Banerjee, A.",
+        "Jain, R.",
+        "Vermani, A.",
+        "Felix, J.",
+        "Moreno, G.",
+        "AlZaben, F.",
+        "Keul, N.",
+        "Seeyave, E.",
+        "Bhasin, H."
       ],
-      "source": "europepmc",
+      "source": "biorxiv",
       "published_at": "2026-09-08T00:00:00+00:00",
-      "updated_at": "2026-09-10T00:00:00+00:00",
+      "updated_at": "2026-09-08T00:00:00+00:00",
       "priority": "P1",
       "categories": [
         "biosafety"
       ],
       "collection_status": "confirmed",
-      "access_status": "unknown",
-      "license": "",
+      "access_status": "public",
+      "license": "cc_by",
       "identifiers": {
         "doi": "10.64898/2026.09.03.749010"
       },
       "links": {
-        "abs": "https://europepmc.org/article/PPR/PPR1316072"
+        "abs": "https://www.biorxiv.org/content/10.64898/2026.09.03.749010",
+        "pdf": "https://www.biorxiv.org/content/10.64898/2026.09.03.749010.full.pdf",
+        "html": "https://www.biorxiv.org/content/10.64898/2026.09.03.749010.full"
       },
       "evidence": [
         {
           "term": "We present BioSecBench",
           "excerpt": "a remains slow and expert-intensive. AI agents could help accelerate this process by reasoning across sequence, structural, and biophysical evidence. We present BioSecBench-Function, a verifiable benchmark for recovering biosecurity-relevant function from real biological data. The benchmark comprises 111 evaluations built from published datasets and graded deterministically against ground truth. We organize e",
           "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/PPR/PPR1316072"
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.03.749010.full"
         },
         {
           "term": "We present BioSecBench-Function, a verifiable benchmark",
           "excerpt": "a remains slow and expert-intensive. AI agents could help accelerate this process by reasoning across sequence, structural, and biophysical evidence. We present BioSecBench-Function, a verifiable benchmark for recovering biosecurity-relevant function from real biological data. The benchmark comprises 111 evaluations built from published datasets and graded deterministically against ground truth. We organize evaluations along two dimensions:",
           "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/PPR/PPR1316072"
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.03.749010.full"
         },
         {
           "term": "benchmark comprises",
           "excerpt": "hysical evidence. We present BioSecBench-Function, a verifiable benchmark for recovering biosecurity-relevant function from real biological data. The benchmark comprises 111 evaluations built from published datasets and graded deterministically against ground truth. We organize evaluations along two dimensions: threat axis (spanning seven biosecurity-relevant question types) and biological question (indica",
           "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/PPR/PPR1316072"
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.03.749010.full"
         },
         {
           "term": "benchmark",
           "excerpt": "BioSecBench-Function: A Verifiable Benchmark for Reasoning about Biological Function from Experimental Data Inferring biological function from experimental data is central to understanding emerging pathogens and developing effective countermeasures, yet interpreting these data remain",
           "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/PPR/PPR1316072"
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.03.749010.full"
         },
         {
           "term": "biological",
           "excerpt": "BioSecBench-Function: A Verifiable Benchmark for Reasoning about Biological Function from Experimental Data Inferring biological function from experimental data is central to understanding emerging pathogens and developing effective countermeasures, yet interpreting these data remains slow and expert-intensive. AI",
           "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/PPR/PPR1316072"
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.03.749010.full"
         },
         {
           "term": "biosecurity",
           "excerpt": "is process by reasoning across sequence, structural, and biophysical evidence. We present BioSecBench-Function, a verifiable benchmark for recovering biosecurity-relevant function from real biological data. The benchmark comprises 111 evaluations built from published datasets and graded deterministically against ground truth. We organize evaluations along two dimensions: threat axis (spanning seven",
           "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/PPR/PPR1316072"
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.03.749010.full"
         },
         {
           "term": "biophysical",
           "excerpt": "interpreting these data remains slow and expert-intensive. AI agents could help accelerate this process by reasoning across sequence, structural, and biophysical evidence. We present BioSecBench-Function, a verifiable benchmark for recovering biosecurity-relevant function from real biological data. The benchmark comprises 111 evaluations built from published datasets and graded deterministically ag",
           "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/PPR/PPR1316072"
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.03.749010.full"
         }
       ],
       "related_benchmarks": [
@@ -865,8 +1046,8 @@
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
       "match_score": 30,
-      "extraction_status": "complete",
-      "extraction_error": "",
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.09.03.749010.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
       "content_hash": "e1dc2086bb21a235e7c4787a68ee1a5c651b8cc25e172013cf651ea69b169297",
       "is_seed": false,
       "topic": "biosafety",
@@ -1029,7 +1210,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 20,
+      "match_score": 18,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "f7ec6c96a5c5c49c66f08dbe109113250a71794dc6d1a88b1adfc4624ff65893",
@@ -1137,7 +1318,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 28,
+      "match_score": 24,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "fba97b2352f9c39274696526c297de861d5ec8a1e6b49ba36483713c8400cc67",
