@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-12T08:43:48Z",
-  "total": 101,
+  "generated_at": "2026-09-13T09:38:43Z",
+  "total": 102,
   "counts": {
     "topics": {
-      "multimodal": 26,
+      "multimodal": 27,
       "experiment_agent": 24,
       "general_text": 40,
       "biosafety": 11
     },
     "contribution_types": {
-      "new_benchmark": 76,
+      "new_benchmark": 77,
       "audit": 11,
       "methodology": 14
     },
     "kinds": {
-      "paper": 101
+      "paper": 102
     },
     "evaluation_contexts": {
-      "beneficial_capability": 90,
+      "beneficial_capability": 91,
       "biosecurity_misuse": 11
     }
   },
@@ -58,49 +58,49 @@
     {
       "source": "arxiv",
       "name": "arXiv",
-      "status": "success",
-      "started_at": "2026-09-12T08:43:58Z",
-      "finished_at": "2026-09-12T08:44:21Z",
-      "discovered": 41,
-      "published": 18,
-      "error": ""
+      "status": "failed",
+      "started_at": "2026-09-13T09:38:51Z",
+      "finished_at": "2026-09-13T09:38:51Z",
+      "discovered": 0,
+      "published": 0,
+      "error": "Client error '429 Unknown Error' for url 'https://export.arxiv.org/api/query?search_query=%28ti%3Abenchmark+OR+ti%3Abench+OR+ti%3A%22evaluation+suite%22%29+AND+%28all%3Abiomedical+OR+all%3Amedical+OR+all%3Aclinical%29&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-09-12T08:44:21Z",
-      "finished_at": "2026-09-12T08:44:24Z",
-      "discovered": 111,
-      "published": 68,
+      "started_at": "2026-09-13T09:38:51Z",
+      "finished_at": "2026-09-13T09:38:55Z",
+      "discovered": 99,
+      "published": 59,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-09-12T08:44:24Z",
-      "finished_at": "2026-09-12T08:46:57Z",
-      "discovered": 1032,
-      "published": 68,
+      "started_at": "2026-09-13T09:38:55Z",
+      "finished_at": "2026-09-13T09:40:29Z",
+      "discovered": 906,
+      "published": 62,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-09-12T08:46:57Z",
-      "finished_at": "2026-09-12T08:47:18Z",
-      "discovered": 351,
-      "published": 30,
+      "started_at": "2026-09-13T09:40:29Z",
+      "finished_at": "2026-09-13T09:40:45Z",
+      "discovered": 272,
+      "published": 21,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "success",
-      "started_at": "2026-09-12T08:47:18Z",
-      "finished_at": "2026-09-12T08:48:02Z",
+      "started_at": "2026-09-13T09:40:45Z",
+      "finished_at": "2026-09-13T09:41:27Z",
       "discovered": 1,
       "published": 0,
       "error": ""
@@ -109,9 +109,10 @@
   "days": [
     {
       "date": "2026-09-11",
-      "count": 2,
+      "count": 3,
       "entry_ids": [
         "doi:10.64898/2026.09.10.26361944",
+        "doi:10.2196/94755",
         "doi:10.21203/rs.3.rs-10747614/v1"
       ]
     },
@@ -629,6 +630,80 @@
       "contribution_type": "new_benchmark"
     },
     {
+      "id": "doi:10.2196/94755",
+      "slug": "doi-10-2196-94755-2e181bd376",
+      "kind": "paper",
+      "title": "Evaluating Large Language Models in Clinical Audiology (AUDIOLOGYBENCH): Benchmark Development and Validation Study.",
+      "abstract": "<h4>Background</h4>Large language models (LLMs) are increasingly being explored for clinical decision support, but their performance in audiology has not been systematically benchmarked using clinically grounded case materials and rubric-based safety evaluations.<h4>Objective</h4>This study aimed to develop and evaluate AUDIOLOGYBENCH, a 3-tier benchmark for characterizing frontier LLM capability in clinical audiology along (1) curated domain knowledge, (2) literature-derived evidence, and (3) clinical reasoning under multimodal case input, with an explicit human audit of the automated adjudicator on the primary end point.<h4>Methods</h4>The benchmark comprises 3139 objective items from educational resources, 3175 research article-derived items from peer-reviewed articles published between 2015 and 2025, and 67 multimodal clinical case studies graded against a standardized A-F rubric with 6 prespecified critical-error types that cap scores at D or F. Eight models were evaluated on the educational objective items: 4 frontier multimodal models (Gemini 2.5 Pro, Grok 4, OpenAI O3, and Claude Sonnet 4 Thinking) were evaluated on the research article-derived items, and on 804 case study evaluations. Adjudication used Gemini 2.5 Pro (objective and research-derived items) and Claude Opus 4.5 (case studies). The case study adjudicator was independently audited against PhD-level audiologist consensus on blinded subsamples, supplemented by a post-stratified human-calibrated sensitivity analysis.<h4>Results</h4>A striking task-type dissociation emerged on case studies: clinical recommendations (Q3) achieved a mean score of 89.74 (SD 13.92, 95% CI 88.07-91.41), a 98.1% (263/268) pass rate, and no dangerous recommendations; audiometric numerical interpretation (Q1) achieved a mean score of 67.89 (SD 18.47, 95% CI 65.68-70.10), with a 35.4% (95/268) critical-error rate; and differential diagnosis (Q2) achieved a mean score of 67.79 (SD 15.33, 95% CI 65.95-69.63). Question type, not model selection, dominated performance (eta-squared_H=0.333 vs 0.001; rank biserial <i>r</i>≥0.679). Interreviewer reliability between audiologists was high (quadratic-weighted κ of 0.78 and 0.85 across the 80-item and 50-item audits, respectively). When 2 audiologists regraded all 80 model Q1 responses with the diagnostic images available, the adjudicator's per-item Q1 labels diverged from human judgment (κ=0.05; overflagging; sensitivity: 19/26, 73%; positive predictive value: 19/53, 36%), yet its reweighted Q1 critical-error rate (36.2%) was broadly consistent with the image-grounded human estimates (28%-34%), suggesting no systematic inflation of the headline rate. The principal Q3>{Q1, Q2} ranking was preserved under post-stratified human calibration. Web-style multiple-choice items showed ceiling effects (>95% accuracy); short-answer prompts remained challenging (best 30%).<h4>Conclusions</h4>Current frontier LLMs show strong recommendation generation but substantial limitations in audiometric numerical interpretation that are shared across models and that an automated adjudicator partially miscalibrated at the per-item level. AUDIOLOGYBENCH characterizes capability boundaries rather than certifying clinical readiness. Deployment of LLM-assisted audiology workflows requires structured human verification of all numerical findings and awareness of fabrication and severity misclassification failure modes documented here.",
+      "authors": [
+        "Li L",
+        "Mo C",
+        "Zhou H",
+        "Yu H",
+        "Lu C",
+        "Wang S",
+        "Athreya VM",
+        "Fitzgerald MB",
+        "Wang SX."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-09-11T00:00:00+00:00",
+      "updated_at": "2026-09-12T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.2196/94755",
+        "pmid": "42727086"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/42727086"
+      },
+      "evidence": [
+        {
+          "term": "benchmark comprises",
+          "excerpt": "linical reasoning under multimodal case input, with an explicit human audit of the automated adjudicator on the primary end point.<h4>Methods</h4>The benchmark comprises 3139 objective items from educational resources, 3175 research article-derived items from peer-reviewed articles published between 2015 and 2025, and 67 multimodal clinical case studies graded against a standardized A-F rubric with 6 presp",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42727086"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Evaluating Large Language Models in Clinical Audiology (AUDIOLOGYBENCH): Benchmark Development and Validation Study. <h4>Background</h4>Large language models (LLMs) are increasingly being explored for clinical decision support, but their performance in audiology has not been systematically benchmarked using clinically gr",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42727086"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Evaluating Large Language Models in Clinical Audiology (AUDIOLOGYBENCH): Benchmark Development and Validation Study. <h4>Background</h4>Large language models (LLMs) are increasingly being explored for clinical decision support, but their performance in audiology has not been systemat",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42727086"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "g frontier LLM capability in clinical audiology along (1) curated domain knowledge, (2) literature-derived evidence, and (3) clinical reasoning under multimodal case input, with an explicit human audit of the automated adjudicator on the primary end point.<h4>Methods</h4>The benchmark comprises 3139 objective items from educational resources, 3175 research article-derived items from peer-reviewed",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42727086"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 16,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "e9ca4b9a0b314dda0d5824e63746de79f5acdc24f5d37c7cff2d4b7fc54c5f1f",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "doi:10.21203/rs.3.rs-10747614/v1",
       "slug": "doi-10-21203-rs-3-rs-10747614-v1-9ec2129043",
       "kind": "paper",
@@ -790,7 +865,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 18,
+      "match_score": 16,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "64f3225d3bd44caeac4131a0b001862463e3fd3f8f76cd28c61d17710f84845a",
