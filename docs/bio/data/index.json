@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-13T09:38:43Z",
-  "total": 102,
+  "generated_at": "2026-09-14T10:01:37Z",
+  "total": 104,
   "counts": {
     "topics": {
-      "multimodal": 27,
+      "general_text": 41,
+      "multimodal": 28,
       "experiment_agent": 24,
-      "general_text": 40,
       "biosafety": 11
     },
     "contribution_types": {
-      "new_benchmark": 77,
-      "audit": 11,
-      "methodology": 14
+      "new_benchmark": 78,
+      "methodology": 15,
+      "audit": 11
     },
     "kinds": {
-      "paper": 102
+      "paper": 104
     },
     "evaluation_contexts": {
-      "beneficial_capability": 91,
+      "beneficial_capability": 93,
       "biosecurity_misuse": 11
     }
   },
@@ -59,8 +59,8 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "failed",
-      "started_at": "2026-09-13T09:38:51Z",
-      "finished_at": "2026-09-13T09:38:51Z",
+      "started_at": "2026-09-14T10:01:48Z",
+      "finished_at": "2026-09-14T10:01:48Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '429 Unknown Error' for url 'https://export.arxiv.org/api/query?search_query=%28ti%3Abenchmark+OR+ti%3Abench+OR+ti%3A%22evaluation+suite%22%29+AND+%28all%3Abiomedical+OR+all%3Amedical+OR+all%3Aclinical%29&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
@@ -69,44 +69,58 @@
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-09-13T09:38:51Z",
-      "finished_at": "2026-09-13T09:38:55Z",
-      "discovered": 99,
-      "published": 59,
+      "started_at": "2026-09-14T10:01:48Z",
+      "finished_at": "2026-09-14T10:01:55Z",
+      "discovered": 81,
+      "published": 48,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "success",
-      "started_at": "2026-09-13T09:38:55Z",
-      "finished_at": "2026-09-13T09:40:29Z",
-      "discovered": 906,
-      "published": 62,
-      "error": ""
+      "status": "failed",
+      "started_at": "2026-09-14T10:01:55Z",
+      "finished_at": "2026-09-14T10:03:38Z",
+      "discovered": 0,
+      "published": 0,
+      "error": "Server disconnected without sending a response."
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-09-13T09:40:29Z",
-      "finished_at": "2026-09-13T09:40:45Z",
-      "discovered": 272,
-      "published": 21,
+      "started_at": "2026-09-14T10:03:38Z",
+      "finished_at": "2026-09-14T10:05:39Z",
+      "discovered": 247,
+      "published": 23,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "success",
-      "started_at": "2026-09-13T09:40:45Z",
-      "finished_at": "2026-09-13T09:41:27Z",
-      "discovered": 1,
+      "started_at": "2026-09-14T10:05:39Z",
+      "finished_at": "2026-09-14T10:06:25Z",
+      "discovered": 0,
       "published": 0,
       "error": ""
     }
   ],
   "days": [
+    {
+      "date": "2026-09-13",
+      "count": 1,
+      "entry_ids": [
+        "doi:10.64898/2026.09.10.26362796"
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "count": 1,
+      "entry_ids": [
+        "doi:10.1007/s11517-026-03658-1"
+      ]
+    },
     {
       "date": "2026-09-11",
       "count": 3,
@@ -542,6 +556,145 @@
   ],
   "entries": [
     {
+      "id": "doi:10.64898/2026.09.10.26362796",
+      "slug": "doi-10-64898-2026-09-10-26362796-08053563c6",
+      "kind": "paper",
+      "title": "Hybrid lexical-semantic retrieval over SNOMED CT: combining two retrieval paradigms to facilitate clinical data entry",
+      "abstract": "Objectives: Searching a reference terminology such as SNOMED CT confronts two retrieval technologies of fundamentally opposite nature. Deterministic lexical matching is precise, order-independent and character-level, and lets a clinician refine a query incrementally, but it is confined to the wording and language of the curated descriptions. Learned semantic matching bridges paraphrase and language, but poorly represents abbreviations and partial, as-typed input. Their requirements and failure modes are so different that combining them naively can let the channel that is wrong for a given query degrade the one that is right. The conventional way to avoid adding a semantic channel at all has been to strengthen the lexical one (curating an additional local interface vocabulary so that more expressions match by surface form), but such vocabularies are labour-intensive to maintain and their quality degrades over time. We ask whether these two opposite paradigms can instead be made to *coexist* in one retrieval flow (each serving the input regime it is strong at, neither harming the other) over SNOMED CT's own curated descriptions, and study the query interpretation, rank fusion and re-ranking design that makes this coexistence safe. Materials and Methods: We implemented one reproducible instance of this architecture over the SNOMED CT International edition. It combines deterministic, order-independent multi-prefix search with three learned components: BioLORD-2023-M embeddings for semantic retrieval, an optional BGE cross-encoder for re-ranking, and a local LLM (gemma 4) for query normalization and structured clinical entity extraction. Lexical and semantic rankings are combined with Reciprocal Rank Fusion, and results can be constrained with a hierarchy (descendant) filter. As an external evaluation we measured search-only linking accuracy on 542 disease mentions from the DisTEMIST corpus (Spanish, zero-shot), resolving gold codes through SNOMED CT historical associations and ablating query pre-processing, re-ranking, and each retrieval channel in isolation; and, on a second corpus of English real-EHR discharge notes (the SNOMED CT Entity Linking Challenge, 12,897 mentions), we estimated field-scoped typeahead performance and tested a context-aware pre-process. Results: Illustrative tests showed complementary behaviour: the lexical and semantic paths resolved different query types, while LLM pre-processing supported cross-lingual and abbreviated input. On a search-only linking evaluation over 542 disease mentions from the DisTEMIST corpus (Spanish, zero-shot), the best and computationally cheapest configuration, semantic search with re-ranking and *no* LLM query pre-processing, placed the exact concept first for 60% of mentions (accuracy@1 = 0.60) and within the top-10 candidates a picker would show for 80% (recall@10 = 0.80). Because these search-only figures are computed on gold mention spans, they isolate normalization from mention detection and are not directly comparable to the DisTEMIST shared task's end-to-end scores. LLM query pre-processing helped dirty, lay input but slightly hurt clean terminology-like queries, and a near-miss analysis showed that many remaining cases retrieved a parent or child of the intended concept. Isolating the channels showed the two coexist without a trade-off: on this clean-normalization corpus the semantic channel carried the accuracy and adding the lexical channel neither helped nor harmed it (accuracy@1 0.60 vs 0.61), because rank fusion followed by re-ranking suppresses whichever channel is off-task; the lexical channel's own strength, partial as-typed input, is a regime this corpus does not test. On the English real-EHR corpus, a field-scoped typeahead (each query constrained to its entry field's domain) placed the concept on the top-10 picker list for 73% of 12,897 mentions across all clinical domains (accuracy@1 0.52; findings 0.54, close to DisTEMIST). Most residual errors were soft (the gold on the list but not first, or a hierarchical neighbour); the hard misses were dominated by ambiguous EHR shorthand, and a single context-aware pre-processing call (normalizing a mention with its surrounding note text) roughly doubled recovery of those hard misses, though, as with LLM normalization on the clean terms of DisTEMIST, applying it to every mention slightly lowered overall accuracy by perturbing the easy majority, so it is best used as a selective rescue. Results are specific to the evaluated configuration, not an architecture-independent estimate. Discussion: The findings support the technical feasibility of a reference architecture that computes additional access routes over SNOMED CT's curated descriptions, and indicate that making the lexical and semantic paradigms *coexist*, rather than choosing between them, is what makes those computed routes safe to add. This shifts rather than eliminates maintenance, from local phrase authoring toward governance and validation of retrieval services. Conclusion: Hybrid concept retrieval lets lexical precision and semantic flexibility coexist over SNOMED CT's maintained descriptions without a trade-off between them, offering an implementation pattern that may reduce additional local lexical curation where direct search is appropriate, while curated interface vocabularies remain useful in selected guided workflows.",
+      "authors": [
+        "Lopez Osornio, A.",
+        "Randorff Hoejen, A.",
+        "Kewley, K."
+      ],
+      "source": "medrxiv",
+      "published_at": "2026-09-13T00:00:00+00:00",
+      "updated_at": "2026-09-13T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by",
+      "identifiers": {
+        "doi": "10.64898/2026.09.10.26362796"
+      },
+      "links": {
+        "abs": "https://www.medrxiv.org/content/10.64898/2026.09.10.26362796",
+        "pdf": "https://www.medrxiv.org/content/10.64898/2026.09.10.26362796.full.pdf",
+        "html": "https://www.medrxiv.org/content/10.64898/2026.09.10.26362796.full"
+      },
+      "evidence": [
+        {
+          "term": "clinical",
+          "excerpt": "Hybrid lexical-semantic retrieval over SNOMED CT: combining two retrieval paradigms to facilitate clinical data entry Objectives: Searching a reference terminology such as SNOMED CT confronts two retrieval technologies of fundamentally opposite nature. Deterministic lexical matching is precise, order-independent and character-level, and lets a",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.09.10.26362796.full"
+        },
+        {
+          "term": "disease",
+          "excerpt": "usion, and results can be constrained with a hierarchy (descendant) filter. As an external evaluation we measured search-only linking accuracy on 542 disease mentions from the DisTEMIST corpus (Spanish, zero-shot), resolving gold codes through SNOMED CT historical associations and ablating query pre-processing, re-ranking, and each retrieval channel in isolation; and, on a second corpus of Engl",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.09.10.26362796.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 10,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.09.10.26362796.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "c9986ec36da46867509ecfeb41a022411911a03856cb4e2b9c5ee9a752c9f6a3",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.1007/s11517-026-03658-1",
+      "slug": "doi-10-1007-s11517-026-03658-1-a80d5aa509",
+      "kind": "paper",
+      "title": "Gastric mucosa intestinal metaplasia segmentation and grading via transformer-CNN fusion architecture: an interpretable digital pathology diagnostic framework.",
+      "abstract": "Intestinal metaplasia (IM) is a critical stage in the precancerous lesions of gastric cancer, and its accurate grading is essential for clinical risk stratification and early intervention. However, traditional diagnosis relies on the subjective assessment of pathologists, which suffers from inefficiency and low consistency. To address these limitations, this study proposes a deep learning framework based on whole slide images (WSI), utilizing multi-scale image patch cropping and a Transformer-CNN hybrid network (UDTransNet) to achieve pixel-level segmentation of intestinal metaplasia regions in gastric mucosa. The framework quantifies the area proportion of metaplastic glands according to the Sydney system criteria, enabling automated grading of IM severity. The results show that on the internal test set, the model achieved a segmentation performance with a Dice coefficient of 0.9698 and a grading accuracy of 0.8879 (Kappa value 0.85), demonstrating high consistency with pathological experts' diagnoses. The model significantly outperformed the diagnostic consistency between junior and intermediate pathologists (Kappa 0.67-0.82). Additionally, the model achieved specificity in identifying completely normal tissues, with a recall rate of 92.1% and an F1 score of 95.9%, effectively assisting clinical \"negative exclusion\" workflows. This study is the first to establish a digital mapping between pathological morphological features and the Sydney system criteria, addressing the challenges of strong subjectivity and low reproducibility in traditional diagnosis. It provides an efficient and interpretable solution for intelligent screening of gastric precancerous lesions.",
+      "authors": [
+        "Jin Y",
+        "Zhu L",
+        "Yan X",
+        "Lin L",
+        "Zhu M",
+        "Yang L",
+        "Han S",
+        "Li T",
+        "Zeng Y",
+        "Ji Y",
+        "Li H."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-09-12T00:00:00+00:00",
+      "updated_at": "2026-09-13T00:00:00+00:00",
+      "priority": "P0",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.1007/s11517-026-03658-1",
+        "pmid": "42730990"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/42730990"
+      },
+      "evidence": [
+        {
+          "term": "automated grading",
+          "excerpt": "lasia regions in gastric mucosa. The framework quantifies the area proportion of metaplastic glands according to the Sydney system criteria, enabling automated grading of IM severity. The results show that on the internal test set, the model achieved a segmentation performance with a Dice coefficient of 0.9698 and a grading accuracy of 0.8879 (Kappa value 0.85), demonstrating high consistency with pathol",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42730990"
+        },
+        {
+          "term": "test set",
+          "excerpt": "rtion of metaplastic glands according to the Sydney system criteria, enabling automated grading of IM severity. The results show that on the internal test set, the model achieved a segmentation performance with a Dice coefficient of 0.9698 and a grading accuracy of 0.8879 (Kappa value 0.85), demonstrating high consistency with pathological experts' diagnoses. The model significantly outperformed",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42730990"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "ic framework. Intestinal metaplasia (IM) is a critical stage in the precancerous lesions of gastric cancer, and its accurate grading is essential for clinical risk stratification and early intervention. However, traditional diagnosis relies on the subjective assessment of pathologists, which suffers from inefficiency and low consistency. To address these limitations, this study proposes a deep l",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42730990"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "Gastric mucosa intestinal metaplasia segmentation and grading via transformer-CNN fusion architecture: an interpretable digital pathology diagnostic framework. Intestinal metaplasia (IM) is a critical stage in the precancerous lesions of gastric cancer, and its accurate grading is essential for clinical risk stratification and early intervention. However, traditional diagnos",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42730990"
+        },
+        {
+          "term": "cancer",
+          "excerpt": "ransformer-CNN fusion architecture: an interpretable digital pathology diagnostic framework. Intestinal metaplasia (IM) is a critical stage in the precancerous lesions of gastric cancer, and its accurate grading is essential for clinical risk stratification and early intervention. However, traditional diagnosis relies on the subjective assessment of pathologists, which suffers from inefficienc",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42730990"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "2caa8498848fcee0f9dd88d95ae3fc7bde391024a726da9c46daeadaabcdd42c",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "methodology"
+    },
+    {
       "id": "doi:10.64898/2026.09.10.26361944",
       "slug": "doi-10-64898-2026-09-10-26361944-14b7d272dc",
       "kind": "paper",
@@ -654,14 +807,16 @@
         "multimodal"
       ],
       "collection_status": "confirmed",
-      "access_status": "unknown",
-      "license": "",
+      "access_status": "public",
+      "license": "cc by",
       "identifiers": {
         "doi": "10.2196/94755",
-        "pmid": "42727086"
+        "pmid": "42727086",
+        "pmcid": "PMC13568690"
       },
       "links": {
-        "abs": "https://europepmc.org/article/MED/42727086"
+        "abs": "https://europepmc.org/article/MED/42727086",
+        "html": "https://europepmc.org/article/MED/42727086"
       },
       "evidence": [
         {
@@ -689,7 +844,12 @@
           "source_url": "https://europepmc.org/article/MED/42727086"
         }
       ],
-      "related_benchmarks": [],
+      "related_benchmarks": [
+        "MedQA",
+        "MedMCQA",
+        "HealthBench",
+        "AudiologyQA"
+      ],
       "related_agent_url": "",
       "evaluation_contexts": [
         "beneficial_capability"
@@ -698,7 +858,7 @@
       "match_score": 16,
       "extraction_status": "complete",
       "extraction_error": "",
-      "content_hash": "e9ca4b9a0b314dda0d5824e63746de79f5acdc24f5d37c7cff2d4b7fc54c5f1f",
+      "content_hash": "c1298adfccb0dbe9839d7ce5be1b3349ff99feec5e239f646fd2c6c80f6d436d",
       "is_seed": false,
       "topic": "multimodal",
       "contribution_type": "new_benchmark"

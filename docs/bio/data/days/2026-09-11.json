@@ -115,14 +115,16 @@
         "multimodal"
       ],
       "collection_status": "confirmed",
-      "access_status": "unknown",
-      "license": "",
+      "access_status": "public",
+      "license": "cc by",
       "identifiers": {
         "doi": "10.2196/94755",
-        "pmid": "42727086"
+        "pmid": "42727086",
+        "pmcid": "PMC13568690"
       },
       "links": {
-        "abs": "https://europepmc.org/article/MED/42727086"
+        "abs": "https://europepmc.org/article/MED/42727086",
+        "html": "https://europepmc.org/article/MED/42727086"
       },
       "evidence": [
         {
@@ -150,7 +152,12 @@
           "source_url": "https://europepmc.org/article/MED/42727086"
         }
       ],
-      "related_benchmarks": [],
+      "related_benchmarks": [
+        "MedQA",
+        "MedMCQA",
+        "HealthBench",
+        "AudiologyQA"
+      ],
       "related_agent_url": "",
       "evaluation_contexts": [
         "beneficial_capability"
@@ -159,7 +166,7 @@
       "match_score": 16,
       "extraction_status": "complete",
       "extraction_error": "",
-      "content_hash": "e9ca4b9a0b314dda0d5824e63746de79f5acdc24f5d37c7cff2d4b7fc54c5f1f",
+      "content_hash": "c1298adfccb0dbe9839d7ce5be1b3349ff99feec5e239f646fd2c6c80f6d436d",
       "is_seed": false,
       "topic": "multimodal",
       "contribution_type": "new_benchmark"

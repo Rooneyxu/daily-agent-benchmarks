@@ -1,26 +1,26 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-13T09:38:43Z",
-  "total": 102,
-  "day_count": 55,
-  "latest_date": "2026-09-11",
+  "generated_at": "2026-09-14T10:01:37Z",
+  "total": 104,
+  "day_count": 57,
+  "latest_date": "2026-09-13",
   "counts": {
     "topics": {
-      "multimodal": 27,
+      "general_text": 41,
+      "multimodal": 28,
       "experiment_agent": 24,
-      "general_text": 40,
       "biosafety": 11
     },
     "contribution_types": {
-      "new_benchmark": 77,
-      "audit": 11,
-      "methodology": 14
+      "new_benchmark": 78,
+      "methodology": 15,
+      "audit": 11
     },
     "kinds": {
-      "paper": 102
+      "paper": 104
     },
     "evaluation_contexts": {
-      "beneficial_capability": 91,
+      "beneficial_capability": 93,
       "biosecurity_misuse": 11
     }
   },
@@ -29,8 +29,8 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "failed",
-      "started_at": "2026-09-13T09:38:51Z",
-      "finished_at": "2026-09-13T09:38:51Z",
+      "started_at": "2026-09-14T10:01:48Z",
+      "finished_at": "2026-09-14T10:01:48Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '429 Unknown Error' for url 'https://export.arxiv.org/api/query?search_query=%28ti%3Abenchmark+OR+ti%3Abench+OR+ti%3A%22evaluation+suite%22%29+AND+%28all%3Abiomedical+OR+all%3Amedical+OR+all%3Aclinical%29&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
@@ -39,39 +39,39 @@
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-09-13T09:38:51Z",
-      "finished_at": "2026-09-13T09:38:55Z",
-      "discovered": 99,
-      "published": 59,
+      "started_at": "2026-09-14T10:01:48Z",
+      "finished_at": "2026-09-14T10:01:55Z",
+      "discovered": 81,
+      "published": 48,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "success",
-      "started_at": "2026-09-13T09:38:55Z",
-      "finished_at": "2026-09-13T09:40:29Z",
-      "discovered": 906,
-      "published": 62,
-      "error": ""
+      "status": "failed",
+      "started_at": "2026-09-14T10:01:55Z",
+      "finished_at": "2026-09-14T10:03:38Z",
+      "discovered": 0,
+      "published": 0,
+      "error": "Server disconnected without sending a response."
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-09-13T09:40:29Z",
-      "finished_at": "2026-09-13T09:40:45Z",
-      "discovered": 272,
-      "published": 21,
+      "started_at": "2026-09-14T10:03:38Z",
+      "finished_at": "2026-09-14T10:05:39Z",
+      "discovered": 247,
+      "published": 23,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "success",
-      "started_at": "2026-09-13T09:40:45Z",
-      "finished_at": "2026-09-13T09:41:27Z",
-      "discovered": 1,
+      "started_at": "2026-09-14T10:05:39Z",
+      "finished_at": "2026-09-14T10:06:25Z",
+      "discovered": 0,
       "published": 0,
       "error": ""
     }
