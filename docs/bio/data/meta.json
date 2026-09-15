@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-14T10:01:37Z",
+  "generated_at": "2026-09-15T09:31:23Z",
   "total": 104,
   "day_count": 57,
   "latest_date": "2026-09-13",
@@ -29,48 +29,48 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "failed",
-      "started_at": "2026-09-14T10:01:48Z",
-      "finished_at": "2026-09-14T10:01:48Z",
+      "started_at": "2026-09-15T09:31:33Z",
+      "finished_at": "2026-09-15T09:32:19Z",
       "discovered": 0,
       "published": 0,
-      "error": "Client error '429 Unknown Error' for url 'https://export.arxiv.org/api/query?search_query=%28ti%3Abenchmark+OR+ti%3Abench+OR+ti%3A%22evaluation+suite%22%29+AND+%28all%3Abiomedical+OR+all%3Amedical+OR+all%3Aclinical%29&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "error": "The read operation timed out"
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-09-14T10:01:48Z",
-      "finished_at": "2026-09-14T10:01:55Z",
-      "discovered": 81,
-      "published": 48,
+      "started_at": "2026-09-15T09:32:19Z",
+      "finished_at": "2026-09-15T09:32:24Z",
+      "discovered": 53,
+      "published": 30,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "failed",
-      "started_at": "2026-09-14T10:01:55Z",
-      "finished_at": "2026-09-14T10:03:38Z",
+      "started_at": "2026-09-15T09:32:24Z",
+      "finished_at": "2026-09-15T09:32:25Z",
       "discovered": 0,
       "published": 0,
-      "error": "Server disconnected without sending a response."
+      "error": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "success",
-      "started_at": "2026-09-14T10:03:38Z",
-      "finished_at": "2026-09-14T10:05:39Z",
-      "discovered": 247,
-      "published": 23,
-      "error": ""
+      "status": "failed",
+      "started_at": "2026-09-15T09:32:25Z",
+      "finished_at": "2026-09-15T09:32:25Z",
+      "discovered": 0,
+      "published": 0,
+      "error": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "success",
-      "started_at": "2026-09-14T10:05:39Z",
-      "finished_at": "2026-09-14T10:06:25Z",
+      "started_at": "2026-09-15T09:32:25Z",
+      "finished_at": "2026-09-15T09:33:15Z",
       "discovered": 0,
       "published": 0,
       "error": ""
