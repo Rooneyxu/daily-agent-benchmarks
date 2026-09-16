@@ -1,0 +1,91 @@
+{
+  "date": "2026-09-13",
+  "count": 1,
+  "report": {
+    "date": "2026-09-13",
+    "count": 1,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      }
+    ],
+    "en": {
+      "headline": "1 new agent benchmark",
+      "summary": "On September 13, 2026, arXiv listed 1 new agent benchmark: CoArena: Evaluating Computer-Use and Multi-Agent Systems in Real Time.",
+      "highlights": [
+        {
+          "id": "2609.14239",
+          "title": "CoArena: Evaluating Computer-Use and Multi-Agent Systems in Real Time",
+          "blurb": "Static benchmarks for computer-use agents fix a task set at release and score every system against it once."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 1 篇 Agent Benchmark",
+      "summary": "2026年9月13日，arXiv 新增 1 篇 Agent Benchmark：CoArena: Evaluating Computer-Use and Multi-Agent Systems in Real Time。",
+      "highlights": [
+        {
+          "id": "2609.14239",
+          "title": "CoArena: Evaluating Computer-Use and Multi-Agent Systems in Real Time",
+          "blurb": "Static benchmarks for computer-use agents fix a task set at release and score every system against it once."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2609.14239",
+      "title": "CoArena: Evaluating Computer-Use and Multi-Agent Systems in Real Time",
+      "abstract": "Static benchmarks for computer-use agents fix a task set at release and score every system against it once. That makes them reproducible, and it lets them drift from what they should measure: a fixed task set ages, leaks into training corpora, and cannot follow how people actually use agents from week to week. CoArena measures use directly. Real users submit tasks; two systems, each a single model or a multi-agent pipeline behind the same tool interface, execute the same task concurrently in identical sandboxed desktops; users judge the two outcomes without knowing which system produced them; and a public leaderboard is refit from those judgments. The central contribution is a formal account of what makes such an evaluation real-time. We define real-time as five measurable properties, each with an equation and a worked example: continuous task arrival, live concurrent execution, online rating updates, freshness with contamination resistance, and bounded feedback latency from a failed run to a reusable training environment. The rating methodology follows in full: the Bradley-Terry pairwise model, its likelihood with weighted observations and ties, the penalized maximum-likelihood estimator, and the streaming update applied when a single vote arrives (a stochastic-gradient step on the same likelihood, recovering Elo). It gives confidence intervals from the observed information and a cluster-robust sandwich, rank bands from a parametric bootstrap, the rule by which a new system enters the board, and the convergence rate of the estimate. Vote quality is treated with inter-judge agreement statistics, redundant judging, and explicit handling of ties and abstentions. A five-system example with 211 votes is carried from the vote matrix to ratings, intervals, and rank bands. Every number is derived from stated inputs or labeled illustrative; none is a measurement of a deployed system.",
+      "authors": [
+        "Nitish Kovuru",
+        "Prateek Jannu"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-09-13T02:22:37Z",
+      "updated": "2026-09-13T02:22:37Z",
+      "announced_date": "2026-09-13",
+      "first_seen": "2026-09-13",
+      "comment": "29 pages, 9 figures, 4 tables, 4 algorithm listings. All figures are drawn in TikZ/pgfplots from the source. Project page: https://coarena.ai",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.14239v1",
+        "pdf": "https://arxiv.org/pdf/2609.14239v1",
+        "html": "https://arxiv.org/html/2609.14239"
+      },
+      "score": 20,
+      "tags": [
+        "tool-use",
+        "multi-agent",
+        "computer-use",
+        "safety"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    }
+  ]
+}
