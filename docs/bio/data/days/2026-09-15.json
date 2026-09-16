@@ -1,0 +1,301 @@
+{
+  "date": "2026-09-15",
+  "count": 4,
+  "entries": [
+    {
+      "id": "arxiv:2609.16739",
+      "slug": "arxiv-2609-16739-e0a2d882c6",
+      "kind": "paper",
+      "title": "Japanese Stroke LLM Evaluation: A Conversational Benchmark for Safe Stroke Care in Japanese Using Large Language Models",
+      "abstract": "Background: Large language models (LLMs) have achieved physician-comparable performance on multiple-choice medical knowledge examinations, but their capabilities in clinical history taking, urgency assessment, and safety remain insufficiently evaluated. We proposed Japanese Stroke LLM Evaluation, a multi-turn conversational benchmark for stroke care in Japanese, and evaluated LLM performance and safety under practice-oriented conditions. Methods: We created 10 stroke and related-condition cases and evaluated LLMs in multi-turn Japanese conversations. The LLM acted as physician, while a board-certified neurosurgeon acted as simulated patient and evaluator. Each case comprised history-taking and action phases scored using pre-specified criteria. Errors that could directly threaten life were defined as critical mistakes. The safety threshold was at least 80% overall with zero critical mistakes. Eighteen models were evaluated in October 2025 and June 2026. Results: Claude Fable 5 achieved the highest score (87.4%) with zero critical mistakes, followed by Claude Opus 4.7 (80.3%) and GLM-5.2 (75.6%). Two leaders met the safety threshold. Eleven models made 17 critical mistakes, including failure to confirm laboratory results or blood glucose before t-PA, surgery before airway stabilization, omission of cervical vascular evaluation, and t-PA outside its indication. History-taking question count correlated with history-taking score (r = 0.648, p = 0.007). Conclusions: Japanese Stroke LLM Evaluation provides a benchmark for LLM performance under practice-oriented conditions, including a cap on history-taking questions. Cases and evaluations were created by neurosurgical specialists rather than using an LLM-as-judge approach. Performance improved across cloud-based and on-premise models in 2026, with some exceeding the safety threshold. Further evaluation using real-world cases is required.",
+      "authors": [
+        "Keisuke Masuda",
+        "Kazutaka Yatsushiro",
+        "Hirohumi Iwamoto",
+        "Hirofumi Hirano",
+        "Ryosuke Hanaya"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-15T07:13:49+00:00",
+      "updated_at": "2026-09-15T07:13:49+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.16739"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.16739v1",
+        "pdf": "https://arxiv.org/pdf/2609.16739v1",
+        "html": "https://arxiv.org/html/2609.16739"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "Japanese Stroke LLM Evaluation: A Conversational Benchmark for Safe Stroke Care in Japanese Using Large Language Models Background: Large language models (LLMs) have achieved physician-comparable performance on multiple-choice medical knowledge examinations, but their capabilities in clinical hist",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.16739"
+        },
+        {
+          "term": "medical",
+          "excerpt": "re in Japanese Using Large Language Models Background: Large language models (LLMs) have achieved physician-comparable performance on multiple-choice medical knowledge examinations, but their capabilities in clinical history taking, urgency assessment, and safety remain insufficiently evaluated. We proposed Japanese Stroke LLM Evaluation, a multi-turn conversational benchmark for stroke care in",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.16739"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "ge language models (LLMs) have achieved physician-comparable performance on multiple-choice medical knowledge examinations, but their capabilities in clinical history taking, urgency assessment, and safety remain insufficiently evaluated. We proposed Japanese Stroke LLM Evaluation, a multi-turn conversational benchmark for stroke care in Japanese, and evaluated LLM performance and safety under p",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.16739"
+        },
+        {
+          "term": "laboratory",
+          "excerpt": "ude Opus 4.7 (80.3%) and GLM-5.2 (75.6%). Two leaders met the safety threshold. Eleven models made 17 critical mistakes, including failure to confirm laboratory results or blood glucose before t-PA, surgery before airway stabilization, omission of cervical vascular evaluation, and t-PA outside its indication. History-taking question count correlated with history-taking score (r = 0.648, p = 0.007)",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.16739"
+        },
+        {
+          "term": "patient",
+          "excerpt": "on cases and evaluated LLMs in multi-turn Japanese conversations. The LLM acted as physician, while a board-certified neurosurgeon acted as simulated patient and evaluator. Each case comprised history-taking and action phases scored using pre-specified criteria. Errors that could directly threaten life were defined as critical mistakes. The safety threshold was at least 80% overall with zero cr",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.16739"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '404 Not Found' for url 'https://arxiv.org/html/2609.16739'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+      "content_hash": "9f7eb01046b812993b663f55611c428b7f0f86c2297b51a6327840cf26744625",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.21203/rs.3.rs-11018466/v1",
+      "slug": "doi-10-21203-rs-3-rs-11018466-v1-01a74cc065",
+      "kind": "paper",
+      "title": "Token Probability Beats Verbalized Condence for Error Detection in Small Open-Weight Language Models: A Medical and Psychiatric Benchmark Study",
+      "abstract": "<title>Abstract</title>  <p>Bentegeac et al. (2025) show that across several medical question-answering benchmarks, a large language model's own token probability is a substantially better predictor of whether its answer is correct than the condence it verbally reports (AUROC 0.710.87 vs. 0.520.68) but their study did not include open-weight models small enough to run on a single workstation, the class most likely to be deployed under the privacy and cost constraints of many clinical settings. Two companion pilots in this series found that four such models (1.2B9.2B parameters), evaluated locally via Ollama, have severely miscalibrated and for one model chance-level verbalized condence on general-medicine and psychiatric-knowledge multiple-choice questions, and that a prompted say I don't know option reliably harmed only the smallest model, replicated across both domains. This paper closes the gap Bentegeac et al. leave open by extracting each model's token-level probability for its emitted answer from the same generation call that also elicits its verbalized condence, across 1,600 matched items (4 models ×4 benchmarks ×100 items). Token probability beats verbalized condence for error detection in every one of the four models, with bootstrap 95% condence intervals on the AUROC dierence excluding zero in all four cases (∆ = +0.072 to +0.230). The gap is largest for the smallest model (1.2B: token-probability AUROC 0.740 vs. verbalized-condence AUROC 0.510 indistinguishable from chance) and smallest for the model with the best verbalized condence of the four (7.6B: 0.686 vs. 0.614, still a signicant gap). Riskcoverage curves built from token probability show real, usable accuracy gains as coverage narrows for all four models; curves built from verbalized condence are at or actively backwards for three of the four. We read the 1.2B model's result as a plausible mechanism for a puzzle left open in the companion pilots: its abstention behavior was unreliable because the signal it was asked to introspect and report (verbalized condence) carries almost no information, even though a genuinely useful signal (token probability) was available in the same forward pass and simply never surfaced to it. This is a pilot. n = 100/benchmark/model, one prompt, one seed, greedy decoding with a measured 2.34.8% run-to-run correctness mismatch on repeated identical calls (see Limitations). Read as hypotheses for a larger study, not deployment guidance.</p>",
+      "authors": [
+        "Dhanda K."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-09-15T00:00:00+00:00",
+      "updated_at": "2026-09-16T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-11018466/v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1319794"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "Token Probability Beats Verbalized Condence for Error Detection in Small Open-Weight Language Models: A Medical and Psychiatric Benchmark Study <title>Abstract</title> <p>Bentegeac et al. (2025) show that across several medical question-answering benchmarks, a large language model's own token probability is a substantially better predictor of whether its answer is correct t",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1319794"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "ls: A Medical and Psychiatric Benchmark Study <title>Abstract</title> <p>Bentegeac et al. (2025) show that across several medical question-answering benchmarks, a large language model's own token probability is a substantially better predictor of whether its answer is correct than the condence it verbally reports (AUROC 0.710.87 vs. 0.520.68) but their study did not include open-weight models sma",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1319794"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "models (1.2B9.2B parameters), evaluated locally via Ollama, have severely miscalibrated and for one model chance-level verbalized condence on general-medicine and psychiatric-knowledge multiple-choice questions, and that a prompted say I don't know option reliably harmed only the smallest model, replicated across both domains. This paper closes the gap Bentegeac et al. leave open by extracting e",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1319794"
+        },
+        {
+          "term": "medical",
+          "excerpt": "Token Probability Beats Verbalized Condence for Error Detection in Small Open-Weight Language Models: A Medical and Psychiatric Benchmark Study <title>Abstract</title> <p>Bentegeac et al. (2025) show that across several medical question-answering benchmarks, a large language model's own token probability is a substantially better predictor of wheth",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1319794"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "e open-weight models small enough to run on a single workstation, the class most likely to be deployed under the privacy and cost constraints of many clinical settings. Two companion pilots in this series found that four such models (1.2B9.2B parameters), evaluated locally via Ollama, have severely miscalibrated and for one model chance-level verbalized condence on general-medicine and psychiatr",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1319794"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "4a94c955738aa7f2a7a1cc84ba910325e91b04376a6fa0b29d1aa2af5ec4de93",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.21203/rs.3.rs-10675560/v1",
+      "slug": "doi-10-21203-rs-3-rs-10675560-v1-a0eecf577a",
+      "kind": "paper",
+      "title": "Auditing Data Leakage Candidate Coverage and Calibration in Clinical Abbreviation Disambiguation Benchmarks",
+      "abstract": "<title>Abstract</title>  <p>Clinical natural language processing (NLP) systems for abbreviation disambiguation can report benchmark accuracies above 95%, but such scores can confound genuine selection quality with two benchmark construction artifacts: duplicate contexts that cross training and test partitions, and candidate inventories from which rare senses have been silently removed. We present an auditable evaluation protocol that measures a clinical NLP benchmark against its own construction choices rather than reporting a single closed set accuracy. The protocol isolates duplicate contexts before partitioning, routes low support senses to an explicit candidate coverage audit instead of deleting them, freezes calibration and abstention thresholds on validation data, and reports resource cost alongside predictive performance. Applied to all 75 abbreviations in the Clinical Abbreviation Sense Inventory (CASI), the protocol yielded 36,192 unique contexts without conflicting annotations spanning 207 core and 141 rare sense classes. A paired test ablation that removed 280 training rows overlapping a fixed test set changed aggregate accuracy by only +0.02 percentage points overall, while the 142 originally exposed test rows changed by +1.41 percentage points. A confidence gate fitted on validation data and scaled by temperature retained 90% of validation items and still passed 131 of 226 (58.0%) deliberately constructed candidate coverage stress cases. Comparing three TF-IDF selectors and a frozen clinical transformer further shows that accuracy, macro F1 and computational cost do not rank models identically. High benchmark accuracy therefore does not by itself establish leakage robustness, candidate support or calibrated reliability, and clinical NLP evaluation should report these properties separately rather than compress them into a single score.</p>",
+      "authors": [
+        "Yang T",
+        "Li Q",
+        "Wu J",
+        "Qiu X."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-09-15T00:00:00+00:00",
+      "updated_at": "2026-09-16T00:00:00+00:00",
+      "priority": "P2",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-10675560/v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1319832"
+      },
+      "evidence": [
+        {
+          "term": "Auditing Data Leakage",
+          "excerpt": "Auditing Data Leakage Candidate Coverage and Calibration in Clinical Abbreviation Disambiguation Benchmarks <title>Abstract</title> <p>Clinical natural language processing (NLP) systems for abbreviation disambiguation can report benchmark accuracies above 95%,",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1319832"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Auditing Data Leakage Candidate Coverage and Calibration in Clinical Abbreviation Disambiguation Benchmarks <title>Abstract</title> <p>Clinical natural language processing (NLP) systems for abbreviation disambiguation can report benchmark accuracies above 95%, but such scores can confound genuine selection quality with two benchmark constructi",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1319832"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "Auditing Data Leakage Candidate Coverage and Calibration in Clinical Abbreviation Disambiguation Benchmarks <title>Abstract</title> <p>Clinical natural language processing (NLP) systems for abbreviation disambiguation can report benchmark accuracies above 95%, but such scores can confound genuine selection quality with two benchmark constructio",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1319832"
+        },
+        {
+          "term": "test set",
+          "excerpt": "thout conflicting annotations spanning 207 core and 141 rare sense classes. A paired test ablation that removed 280 training rows overlapping a fixed test set changed aggregate accuracy by only +0.02 percentage points overall, while the 142 originally exposed test rows changed by +1.41 percentage points. A confidence gate fitted on validation data and scaled by temperature retained 90% of valida",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1319832"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Auditing Data Leakage Candidate Coverage and Calibration in Clinical Abbreviation Disambiguation Benchmarks <title>Abstract</title> <p>Clinical natural language processing (NLP) systems for abbreviation disambiguation can report benchmark accuracies above 95%, but such scores can confound genuine selection",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1319832"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "match_score": 16,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "fa46b67c03eb77344fd19a9bb9419922bcfaa004045b4c3adb342007e84767fd",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "audit"
+    },
+    {
+      "id": "doi:10.21203/rs.3.rs-10655389/v1",
+      "slug": "doi-10-21203-rs-3-rs-10655389-v1-00a80c8840",
+      "kind": "paper",
+      "title": "A Community-driven Hub for High-Quality Text2Cypher Benchmarks and Resources",
+      "abstract": "<title>Abstract</title>  <p>Property graphs (PGs) are increasingly adopted to represent interconnected data in several application domains. Recent advances in Large Language Models have considerably improved the translation of natural language (NL) questions into executable Cypher queries (usually referred to as the Text2Cypher task). However, the development and evaluation of new Text2Cypher methodologies remain hindered by the limited availability of high-quality benchmark resources and the lack of a common framework for sharing and comparing datasets, graph snapshots, source code, models, and evaluation artifacts. We introduce Text2Cypher-Hub, a community platform designed to facilitate the dissemination, discovery, and reuse of Text2Cypher resources. As the initial contribution to this ecosystem, we release three curated benchmarks---bio2C, twt2C, and fin2C---covering biomedical, social-media, and financial PGs. Together, they comprise 6,500 technically and semantically validated NL--Cypher pairs spanning five complexity categories and capturing realistic domain information needs rather than template-generated query variations. The paper describes the curation workflow adopted to construct the datasets and demonstrates their suitability for supervised fine-tuning and retrieval-augmented generation pipelines. Text2Cypher-Hub complements these benchmarks through a community-driven registry that provides standardized descriptions of Text2Cypher resources while allowing contributors to maintain their artifacts in their preferred repositories. By combining high-quality benchmark resources with an open community platform, Text2Cypher-Hub establishes a foundation for reproducible evaluation and collaborative progress in the Text2Cypher task.</p>",
+      "authors": [
+        "Cavalleri E",
+        "Kanaan NB",
+        "Mesiti M."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-09-15T00:00:00+00:00",
+      "updated_at": "2026-09-16T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-10655389/v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1319831"
+      },
+      "evidence": [
+        {
+          "term": "we release three curated benchmarks",
+          "excerpt": "nity platform designed to facilitate the dissemination, discovery, and reuse of Text2Cypher resources. As the initial contribution to this ecosystem, we release three curated benchmarks---bio2C, twt2C, and fin2C---covering biomedical, social-media, and financial PGs. Together, they comprise 6,500 technically and semantically validated NL--Cypher pairs spanning five complexity categories and capturing realistic domain info",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1319831"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "A Community-driven Hub for High-Quality Text2Cypher Benchmarks and Resources <title>Abstract</title> <p>Property graphs (PGs) are increasingly adopted to represent interconnected data in several application domains. Recent advances in Large Language Models have considerably improved the translation",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1319831"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "A Community-driven Hub for High-Quality Text2Cypher Benchmarks and Resources <title>Abstract</title> <p>Property graphs (PGs) are increasingly adopted to represent interconnected data in several application domains. Recent advances in Large Language Models have considerably improved the translation o",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1319831"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "use of Text2Cypher resources. As the initial contribution to this ecosystem, we release three curated benchmarks---bio2C, twt2C, and fin2C---covering biomedical, social-media, and financial PGs. Together, they comprise 6,500 technically and semantically validated NL--Cypher pairs spanning five complexity categories and capturing realistic domain information needs rather than template-generated que",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1319831"
+        },
+        {
+          "term": "medical",
+          "excerpt": "of Text2Cypher resources. As the initial contribution to this ecosystem, we release three curated benchmarks---bio2C, twt2C, and fin2C---covering biomedical, social-media, and financial PGs. Together, they comprise 6,500 technically and semantically validated NL--Cypher pairs spanning five complexity categories and capturing realistic domain information needs rather than template-generated que",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1319831"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 16,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "7f55c68e54e4ee449cdd223e382ea4158f503e2343a7c959ebeb06dce90aa81d",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}

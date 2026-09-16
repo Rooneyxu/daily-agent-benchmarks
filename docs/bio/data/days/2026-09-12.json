@@ -1,7 +1,90 @@
 {
   "date": "2026-09-12",
-  "count": 1,
+  "count": 2,
   "entries": [
+    {
+      "id": "arxiv:2609.13760",
+      "slug": "arxiv-2609-13760-a90b989566",
+      "kind": "paper",
+      "title": "Positioning manuscripts in the scientific landscape with agentic AI",
+      "abstract": "Publishing a research manuscript is a routine yet demanding part of scientific life: time-consuming, stressful, and often uncertain in outcome. Recent advances in large language model (LLM)-based agentic AI have shown promise across a range of scientific tasks, and here we ask whether agentic AI can help researchers navigate the publication process itself by reliably inferring a manuscript's eventual publication venue from its content and literature context. We introduce PASS (Publication-oriented Agentic Scientific System), an agentic system that understands manuscripts within their domain-specific literature context and predicts top-matched publication venues. PASS positions each manuscript within its surrounding literature landscape by reconstructing its local scientific neighborhood, tracing its topic trajectory, and reasoning over field-specific journal spaces. Evaluated on a leakage-audited benchmark of over 2,000 preprints across 16 biomedical fields, PASS achieved Top-1 accuracy of 50.3% and Top-5 accuracy of 86.1%, outperforming state-of-the-art LLM baselines and established journal-selection tools. PASS-produced quality scores, such as impact potential and novelty, aligned with independent measures of publication outcome. We also found that the designed literature retrieval module is the strongest performance contributor, particularly for positioning manuscripts relative to nearby work, and that PASS maintained near-full performance from the abstract alone, whereas LLM baselines required the full manuscript text. An independent human evaluation found strong researcher agreement with PASS's manuscript understanding and recommendation rationale. PASS has been released as a public platform (https://ratemypaper.ai/) for broad researcher access.",
+      "authors": [
+        "Jiawen Chen",
+        "Zichen Zhang",
+        "Bingxuan Li",
+        "Quan Sun",
+        "Yiyan Zhang",
+        "Edric Tam",
+        "Jinjie Lin",
+        "Didong Li",
+        "Yun Li",
+        "Bingxin Zhao"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-12T07:10:14+00:00",
+      "updated_at": "2026-09-12T07:10:14+00:00",
+      "priority": "P2",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.13760"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.13760v1",
+        "pdf": "https://arxiv.org/pdf/2609.13760v1",
+        "data": "https://huggingface.co/datasets/jiawennnn/PASS-benchmark",
+        "html": "https://arxiv.org/html/2609.13760"
+      },
+      "evidence": [
+        {
+          "term": "audited benchmark",
+          "excerpt": "onstructing its local scientific neighborhood, tracing its topic trajectory, and reasoning over field-specific journal spaces. Evaluated on a leakage-audited benchmark of over 2,000 preprints across 16 biomedical fields, PASS achieved Top-1 accuracy of 50.3% and Top-5 accuracy of 86.1%, outperforming state-of-the-art LLM baselines and established journal-selection tools. PASS-produced quality scores, suc",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.13760"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "ing its local scientific neighborhood, tracing its topic trajectory, and reasoning over field-specific journal spaces. Evaluated on a leakage-audited benchmark of over 2,000 preprints across 16 biomedical fields, PASS achieved Top-1 accuracy of 50.3% and Top-5 accuracy of 86.1%, outperforming state-of-the-art LLM baselines and established journal-selection tools. PASS-produced quality scores, suc",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.13760"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "ng its topic trajectory, and reasoning over field-specific journal spaces. Evaluated on a leakage-audited benchmark of over 2,000 preprints across 16 biomedical fields, PASS achieved Top-1 accuracy of 50.3% and Top-5 accuracy of 86.1%, outperforming state-of-the-art LLM baselines and established journal-selection tools. PASS-produced quality scores, such as impact potential and novelty, aligned wi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.13760"
+        },
+        {
+          "term": "medical",
+          "excerpt": "its topic trajectory, and reasoning over field-specific journal spaces. Evaluated on a leakage-audited benchmark of over 2,000 preprints across 16 biomedical fields, PASS achieved Top-1 accuracy of 50.3% and Top-5 accuracy of 86.1%, outperforming state-of-the-art LLM baselines and established journal-selection tools. PASS-produced quality scores, such as impact potential and novelty, aligned wi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.13760"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "Gyimesi, Jon M. Laurent, Samantha M. Wright, Muhammed T. Razzak, Andrew D. White, Silvia C. Finnemann, Michaela M. Hinks, and Samuel G. Rodriques. A multi-agent system for automating scientific discovery. Nature , 655(8122):497–505, 2026. [6] Juraj Gottweis, Wei-Hung Weng, Alexander Daryin, Tao Tu, Petar Sirkovic, Artiom Myaskovsky, Grzegorz Glowaty, Felix Weissenberger, Alessio Orlandi, Dan Popov",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2609.13760"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "match_score": 15,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "dad243586681734ddf813eefca4fd8314cac887ba233577d991e8542a50620c8",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "audit"
+    },
     {
       "id": "doi:10.1007/s11517-026-03658-1",
       "slug": "doi-10-1007-s11517-026-03658-1-a80d5aa509",

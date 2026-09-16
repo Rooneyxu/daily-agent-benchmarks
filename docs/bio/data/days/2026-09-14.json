@@ -1,7 +1,96 @@
 {
-  "date": "2026-09-13",
-  "count": 1,
+  "date": "2026-09-14",
+  "count": 2,
   "entries": [
+    {
+      "id": "arxiv:2609.15855",
+      "slug": "arxiv-2609-15855-c12e413107",
+      "kind": "paper",
+      "title": "K-Bench: a clinically calibrated benchmark for evaluating large language models in high-risk mental health conversations",
+      "abstract": "People increasingly use large language models (LLMs) for mental health support, yet their safety in evolving, high-risk conversations remains poorly characterised. We developed K-Bench, a clinician-calibrated, protected benchmark evaluating 125 model configurations representing 33 base models from 14 providers across a fixed cohort of 200 multi-turn vignettes involving suicide, self-harm, domestic violence, substance misuse, and no-risk presentations. Synthetic patient conversations showed substantial distributional overlap with real human-AI conversations. A frozen GPT-4o judge achieved 94.2% exact agreement with clinician consensus across 6,751 eligible item comparisons from 151 clinician-rated transcripts. Leading models combined strong supportive conversation with combined-risk scores above 95, whereas risk exploration exposed substantial variation among lower-performing configurations. Therapeutic prompting produced configuration-specific gains concentrated among weaker models, while elevated reasoning produced no average improvement. K-Bench combines broader clinical coverage and configuration-scale comparison with a continuously updated public leaderboard whose operational test materials are protected from direct optimisation. The leaderboard is available at www.k-bench.ai.",
+      "authors": [
+        "Laura M. Vowels",
+        "Matthew J. Vowels",
+        "Shivali Sharma",
+        "Apoorv Jha",
+        "Rehnuma Choudhury",
+        "Wasseem El Sarraj",
+        "Rachel Francois-Walcott",
+        "Aruba Hussain",
+        "Sarah Ingram",
+        "Angela Loulopoulou",
+        "Adva Segal",
+        "Elena Volkova"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-14T16:49:23+00:00",
+      "updated_at": "2026-09-15T07:30:50+00:00",
+      "priority": "P1",
+      "categories": [
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.15855"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.15855v2",
+        "pdf": "https://arxiv.org/pdf/2609.15855v2",
+        "html": "https://arxiv.org/html/2609.15855"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "K-Bench: a clinically calibrated benchmark for evaluating large language models in high-risk mental health conversations People increasingly use large language models (LLMs) for mental health support, yet their safety in evolving, high-risk conversations remains poorly characterise",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.15855"
+        },
+        {
+          "term": "leaderboard",
+          "excerpt": "ing produced no average improvement. K-Bench combines broader clinical coverage and configuration-scale comparison with a continuously updated public leaderboard whose operational test materials are protected from direct optimisation. The leaderboard is available at www.k-bench.ai. [[SECTION K-Bench: a clinically calibrated benchmark for evaluating large language models in high-risk mental health c",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.15855"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "K-Bench: a clinically calibrated benchmark for evaluating large language models in high-risk mental health conversations People increasingly use large language models (LLMs) for mental health support, yet their safety in evolving, high-risk conversations rema",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.15855"
+        },
+        {
+          "term": "patient",
+          "excerpt": "ss a fixed cohort of 200 multi-turn vignettes involving suicide, self-harm, domestic violence, substance misuse, and no-risk presentations. Synthetic patient conversations showed substantial distributional overlap with real human-AI conversations. A frozen GPT-4o judge achieved 94.2% exact agreement with clinician consensus across 6,751 eligible item comparisons from 151 clinician-rated transcr",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.15855"
+        },
+        {
+          "term": "risk assessment",
+          "excerpt": "H. Bentley, C. J. Kennedy, P. N. Khadse, J. R. Brooks Stephens, E. M. Madsen, M. J. Flics, H. Lee, J. W. Smoller, and T. A. Burke Clinician suicide risk assessment for prediction of suicide attempt in a large health care system . JAMA Psychiatry 82 ( 6 ), pp. 599–608 . External Links: Document Cited by: Discussion . Byun et al. (2026) G. Byun, R. Lipschutz, S. T. Minton, A. Powers, and J. D. Choi CRA",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2609.15855"
+        }
+      ],
+      "related_benchmarks": [
+        "MindBench",
+        "HealthBench",
+        "PsychiatryBench",
+        "CounselBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "a7450ccbacf059b799c8c771f4c56a6f85f4265b2742d7dec43aeef677f73a37",
+      "is_seed": false,
+      "topic": "biosafety",
+      "contribution_type": "new_benchmark"
+    },
     {
       "id": "doi:10.64898/2026.09.10.26362796",
       "slug": "doi-10-64898-2026-09-10-26362796-08053563c6",
@@ -14,8 +103,8 @@
         "Kewley, K."
       ],
       "source": "medrxiv",
-      "published_at": "2026-09-13T00:00:00+00:00",
-      "updated_at": "2026-09-13T00:00:00+00:00",
+      "published_at": "2026-09-14T00:00:00+00:00",
+      "updated_at": "2026-09-14T00:00:00+00:00",
       "priority": "P1",
       "categories": [
         "general_text"
