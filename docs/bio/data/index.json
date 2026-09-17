@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-16T09:24:10Z",
-  "total": 110,
+  "generated_at": "2026-09-17T09:33:58Z",
+  "total": 111,
   "counts": {
     "topics": {
-      "general_text": 45,
+      "general_text": 46,
       "biosafety": 12,
       "experiment_agent": 25,
       "multimodal": 28
     },
     "contribution_types": {
-      "new_benchmark": 82,
+      "new_benchmark": 83,
       "audit": 13,
       "methodology": 15
     },
     "kinds": {
-      "paper": 110
+      "paper": 111
     },
     "evaluation_contexts": {
-      "beneficial_capability": 98,
+      "beneficial_capability": 99,
       "biosecurity_misuse": 12
     }
   },
@@ -59,48 +59,48 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-09-16T09:24:21Z",
-      "finished_at": "2026-09-16T09:24:58Z",
-      "discovered": 36,
-      "published": 18,
+      "started_at": "2026-09-17T09:34:08Z",
+      "finished_at": "2026-09-17T09:34:31Z",
+      "discovered": 43,
+      "published": 23,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-09-16T09:24:58Z",
-      "finished_at": "2026-09-16T09:25:01Z",
-      "discovered": 50,
-      "published": 28,
+      "started_at": "2026-09-17T09:34:31Z",
+      "finished_at": "2026-09-17T09:34:38Z",
+      "discovered": 75,
+      "published": 36,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "success",
-      "started_at": "2026-09-16T09:25:01Z",
-      "finished_at": "2026-09-16T09:26:21Z",
-      "discovered": 717,
-      "published": 59,
-      "error": ""
+      "status": "failed",
+      "started_at": "2026-09-17T09:34:38Z",
+      "finished_at": "2026-09-17T09:35:39Z",
+      "discovered": 0,
+      "published": 0,
+      "error": "The read operation timed out"
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-09-16T09:26:21Z",
-      "finished_at": "2026-09-16T09:26:38Z",
-      "discovered": 217,
-      "published": 19,
+      "started_at": "2026-09-17T09:35:39Z",
+      "finished_at": "2026-09-17T09:36:01Z",
+      "discovered": 265,
+      "published": 25,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "success",
-      "started_at": "2026-09-16T09:26:38Z",
-      "finished_at": "2026-09-16T09:27:31Z",
+      "started_at": "2026-09-17T09:36:01Z",
+      "finished_at": "2026-09-17T09:36:50Z",
       "discovered": 0,
       "published": 0,
       "error": ""
@@ -109,12 +109,13 @@
   "days": [
     {
       "date": "2026-09-15",
-      "count": 4,
+      "count": 5,
       "entry_ids": [
         "arxiv:2609.16739",
         "doi:10.21203/rs.3.rs-11018466/v1",
         "doi:10.21203/rs.3.rs-10675560/v1",
-        "doi:10.21203/rs.3.rs-10655389/v1"
+        "doi:10.21203/rs.3.rs-10655389/v1",
+        "doi:10.1371/journal.pone.0343858"
       ]
     },
     {
@@ -863,6 +864,82 @@
       "contribution_type": "new_benchmark"
     },
     {
+      "id": "doi:10.1371/journal.pone.0343858",
+      "slug": "doi-10-1371-journal-pone-0343858-ddb1084a05",
+      "kind": "paper",
+      "title": "Sino-US-DrugQA: A benchmark for evaluating large language models in cross-jurisdictional pharmaceutical regulation.",
+      "abstract": "Cross-jurisdictional pharmaceutical compliance requires comparison of regulatory requirements across administrative systems such as the US Food and Drug Administration and China's National Medical Products Administration. Although large language models (LLMs) are increasingly explored for healthcare and regulatory applications, their performance in cross-jurisdictional pharmaceutical regulation has not been systematically evaluated using a dedicated benchmark. We introduce Sino-US-DrugQA, a bilingual multiple-choice benchmark covering Monolingual, Comparative, and Parallel regulatory question-answer tasks. The 11,871 candidate items underwent deterministic structural validation and full-dataset semantic quality screening, followed by risk-stratified independent review of 1,432 items by two regulatory experts. The final release comprised 11,444 items, including 10,122 classified as pass and 1,322 as borderline. Among 500 items sampled from the semantic screen-negative population, 18 were subsequently classified as material errors, corresponding to an observed residual material-error proportion of 3.60% (Wilson 95% confidence interval, 2.29%-5.62%). Four representative LLMs-gpt-5.6-terra, gemini-3.6-flash, deepseek-v4-flash, and qwen-3.5-max-were evaluated under a standardized zero-shot protocol. Overall accuracy ranged from 83.21% to 86.43%. Comparative accuracy was consistently lower than Monolingual accuracy, with absolute differences of 4.42-8.98 percentage points across models. The two highest-scoring models, GPT and Gemini, did not differ significantly after adjustment for multiple comparisons. These results indicate that explicit comparison across non-equivalent regulatory systems remains more challenging than single-jurisdiction question answering. Sino-US-DrugQA provides a validated and reproducible resource for evaluating bilingual regulatory reasoning. The findings support further investigation of expert-supervised decision-support workflows rather than autonomous regulatory interpretation. The stable dataset release and evaluation resources are available at https://github.com/DodgeLU/Sino-US-DrugQA.",
+      "authors": [
+        "Fu X",
+        "Chen Z",
+        "Lu W."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-09-15T00:00:00+00:00",
+      "updated_at": "2026-09-16T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.1371/journal.pone.0343858",
+        "pmid": "42743305"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/42743305"
+      },
+      "evidence": [
+        {
+          "term": "We introduce Sino-US-DrugQA",
+          "excerpt": "applications, their performance in cross-jurisdictional pharmaceutical regulation has not been systematically evaluated using a dedicated benchmark. We introduce Sino-US-DrugQA, a bilingual multiple-choice benchmark covering Monolingual, Comparative, and Parallel regulatory question-answer tasks. The 11,871 candidate items underwent deterministic structural validation and full-dataset semantic quality screening,",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42743305"
+        },
+        {
+          "term": "We introduce Sino-US-DrugQA, a bilingual multiple-choice benchmark",
+          "excerpt": "applications, their performance in cross-jurisdictional pharmaceutical regulation has not been systematically evaluated using a dedicated benchmark. We introduce Sino-US-DrugQA, a bilingual multiple-choice benchmark covering Monolingual, Comparative, and Parallel regulatory question-answer tasks. The 11,871 candidate items underwent deterministic structural validation and full-dataset semantic quality screening, followed by risk-stratified independent",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42743305"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Sino-US-DrugQA: A benchmark for evaluating large language models in cross-jurisdictional pharmaceutical regulation. Cross-jurisdictional pharmaceutical compliance requires comparison of regulatory requirements across administrative systems such as the US Food and Dru",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42743305"
+        },
+        {
+          "term": "medical",
+          "excerpt": "pliance requires comparison of regulatory requirements across administrative systems such as the US Food and Drug Administration and China's National Medical Products Administration. Although large language models (LLMs) are increasingly explored for healthcare and regulatory applications, their performance in cross-jurisdictional pharmaceutical regulation has not been systematically evaluated",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42743305"
+        },
+        {
+          "term": "healthcare",
+          "excerpt": "ood and Drug Administration and China's National Medical Products Administration. Although large language models (LLMs) are increasingly explored for healthcare and regulatory applications, their performance in cross-jurisdictional pharmaceutical regulation has not been systematically evaluated using a dedicated benchmark. We introduce Sino-US-DrugQA, a bilingual multiple-choice benchmark covering",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42743305"
+        }
+      ],
+      "related_benchmarks": [
+        "Sino-US-DrugQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 21,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "fab9901f30cc59e65fac539a37a1c850c96f5b825fda02aea819a4201cb61e80",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "arxiv:2609.15855",
       "slug": "arxiv-2609-15855-c12e413107",
       "kind": "paper",
@@ -1083,7 +1160,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
-      "match_score": 15,
+      "match_score": 13,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "dad243586681734ddf813eefca4fd8314cac887ba233577d991e8542a50620c8",
