@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-17T09:33:58Z",
-  "total": 111,
+  "generated_at": "2026-09-18T09:06:16Z",
+  "total": 113,
   "counts": {
     "topics": {
-      "general_text": 46,
-      "biosafety": 12,
-      "experiment_agent": 25,
-      "multimodal": 28
+      "multimodal": 30,
+      "experiment_agent": 26,
+      "general_text": 45,
+      "biosafety": 12
     },
     "contribution_types": {
-      "new_benchmark": 83,
+      "new_benchmark": 85,
       "audit": 13,
       "methodology": 15
     },
     "kinds": {
-      "paper": 111
+      "paper": 113
     },
     "evaluation_contexts": {
-      "beneficial_capability": 99,
+      "beneficial_capability": 101,
       "biosecurity_misuse": 12
     }
   },
@@ -59,48 +59,48 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-09-17T09:34:08Z",
-      "finished_at": "2026-09-17T09:34:31Z",
-      "discovered": 43,
-      "published": 23,
+      "started_at": "2026-09-18T09:06:26Z",
+      "finished_at": "2026-09-18T09:07:24Z",
+      "discovered": 45,
+      "published": 24,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-09-17T09:34:31Z",
-      "finished_at": "2026-09-17T09:34:38Z",
-      "discovered": 75,
-      "published": 36,
+      "started_at": "2026-09-18T09:07:24Z",
+      "finished_at": "2026-09-18T09:07:28Z",
+      "discovered": 90,
+      "published": 43,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "failed",
-      "started_at": "2026-09-17T09:34:38Z",
-      "finished_at": "2026-09-17T09:35:39Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "The read operation timed out"
+      "status": "success",
+      "started_at": "2026-09-18T09:07:28Z",
+      "finished_at": "2026-09-18T09:13:28Z",
+      "discovered": 1044,
+      "published": 85,
+      "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-09-17T09:35:39Z",
-      "finished_at": "2026-09-17T09:36:01Z",
-      "discovered": 265,
-      "published": 25,
+      "started_at": "2026-09-18T09:13:28Z",
+      "finished_at": "2026-09-18T09:13:52Z",
+      "discovered": 301,
+      "published": 28,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "success",
-      "started_at": "2026-09-17T09:36:01Z",
-      "finished_at": "2026-09-17T09:36:50Z",
+      "started_at": "2026-09-18T09:13:52Z",
+      "finished_at": "2026-09-18T09:14:33Z",
       "discovered": 0,
       "published": 0,
       "error": ""
@@ -108,9 +108,17 @@
   ],
   "days": [
     {
-      "date": "2026-09-15",
-      "count": 5,
+      "date": "2026-09-17",
+      "count": 1,
       "entry_ids": [
+        "arxiv:2609.19585"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "count": 6,
+      "entry_ids": [
+        "arxiv:2609.19180",
         "arxiv:2609.16739",
         "doi:10.21203/rs.3.rs-11018466/v1",
         "doi:10.21203/rs.3.rs-10675560/v1",
@@ -569,6 +577,199 @@
   ],
   "entries": [
     {
+      "id": "arxiv:2609.19585",
+      "slug": "arxiv-2609-19585-af5d2d279c",
+      "kind": "paper",
+      "title": "CliniCIRCA: A Modular LLM Framework for Constructing Longitudinal Mental Health Patient Journeys from Raw EHR Narratives",
+      "abstract": "In mental health care, reasoning over patient journeys is a key task for clinicians. Yet these journeys, encompassing a longitudinal progression of biological, psychological, and social events, are often spread across disparate unstructured text narratives, making temporal recovery challenging. We present CliniCIRCA, a multi-stage LLM framework for Calendar-anchored, Imprecision-aware Reconstruction of Clinical Annals. To our knowledge, CliniCIRCA is the first to temporally classify clinical events across unstructured discharge summaries without event-level timestamps. From 14,882 MIMIC-III mental health admissions, we first construct a benchmark of 52 discharge summaries on which CliniCIRCA produces 15,891 temporally tagged events. After correcting 629 errors based on a clinician-in-the-loop evaluation, we produce verified gold-standard labels. Finally, the corrected timelines drive a temporally grounded summarization stage that compresses each source 1.52 times into a date-grouped chronological record. We then scale the framework to generate 1,000 silver-standard timelines and evaluate them as training data. Compared with zero- and few-shot prompting, instruction tuning generally improves five open-weight models on event extraction, temporal tagging, and summarization across silver and clinician-verified evaluations.",
+      "authors": [
+        "Aiwei Ivy Zhang",
+        "Nimra Ishfaq",
+        "Mohit Chandra",
+        "Santiago Alvarez Lesmes",
+        "Adam Coscia",
+        "Khatiya Chelidze Moon",
+        "Xiaohan Ding",
+        "Munmun De Choudhury"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-17T02:13:21+00:00",
+      "updated_at": "2026-09-17T02:13:21+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.19585"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.19585v1",
+        "pdf": "https://arxiv.org/pdf/2609.19585v1",
+        "html": "https://arxiv.org/html/2609.19585"
+      },
+      "evidence": [
+        {
+          "term": "first construct a benchmark",
+          "excerpt": "y classify clinical events across unstructured discharge summaries without event-level timestamps. From 14,882 MIMIC-III mental health admissions, we first construct a benchmark of 52 discharge summaries on which CliniCIRCA produces 15,891 temporally tagged events. After correcting 629 errors based on a clinician-in-the-loop evaluation, we produce verified gold-standard labels. Finally, the corrected timelines dri",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.19585"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "l events across unstructured discharge summaries without event-level timestamps. From 14,882 MIMIC-III mental health admissions, we first construct a benchmark of 52 discharge summaries on which CliniCIRCA produces 15,891 temporally tagged events. After correcting 629 errors based on a clinician-in-the-loop evaluation, we produce verified gold-standard labels. Finally, the corrected timelines dri",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.19585"
+        },
+        {
+          "term": "biological",
+          "excerpt": "s In mental health care, reasoning over patient journeys is a key task for clinicians. Yet these journeys, encompassing a longitudinal progression of biological, psychological, and social events, are often spread across disparate unstructured text narratives, making temporal recovery challenging. We present CliniCIRCA, a multi-stage LLM framework for Calendar-anchored, Imprecision-aware Reconstruc",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.19585"
+        },
+        {
+          "term": "clinical",
+          "excerpt": ", making temporal recovery challenging. We present CliniCIRCA, a multi-stage LLM framework for Calendar-anchored, Imprecision-aware Reconstruction of Clinical Annals. To our knowledge, CliniCIRCA is the first to temporally classify clinical events across unstructured discharge summaries without event-level timestamps. From 14,882 MIMIC-III mental health admissions, we first construct a benchmark",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.19585"
+        },
+        {
+          "term": "patient",
+          "excerpt": "CliniCIRCA: A Modular LLM Framework for Constructing Longitudinal Mental Health Patient Journeys from Raw EHR Narratives In mental health care, reasoning over patient journeys is a key task for clinicians. Yet these journeys, encompassing a longitudinal progression of biological, psychological, and social events, are often sp",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.19585"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "idance and support. [[SECTION References]] References Abouelenin et al. (2025) A. Abouelenin et al. Phi-4-Mini Technical Report: compact yet powerful multimodal language models via mixture-of-loras . arXiv preprint arXiv:2503.01743 . Cited by: Table A4 , §4.1 . Alfattni et al. (2020) G. Alfattni, N. Peek, and G. Nenadic Extraction of temporal relations from clinical free text: A systematic review",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2609.19585"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "xanis, A. B. De Gonzalez, P. Coulson, J. S. Almeida, and M. García-Closas Leveraging large language models for structured information extraction from pathology reports . Journal of Pathology Informatics 19 , pp. 100521 ( en ). External Links: ISSN 21533539 , Link , Document Cited by: §8 . Bavaresco et al. (2025) A. Bavaresco, R. Bernardi, L. Bertolazzi, D. Elliott, R. Fernández, A. Gatt, E. Ghale",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2609.19585"
+        }
+      ],
+      "related_benchmarks": [
+        "HaluEval"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "214045c14c7312bac90dc8654ddcab8281a261db2735c9413ecfe7e8857c5a72",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2609.19180",
+      "slug": "arxiv-2609-19180-26c2b36346",
+      "kind": "paper",
+      "title": "BioPhys-Bridge: A Benchmark for Interdisciplinary Scientific Reasoning in Physics-Grounded Biological Research",
+      "abstract": "Language models face unique challenges in analyzing interdisciplinary scientific research literature. In biophysics research, faithful answers require grounding observed data in source evidence, interpreting it through a quantitative physics model, and linking it to a biological mechanism. To address this challenge, we introduce BioPhys-Bridge, a novel benchmark dataset for evidence-grounded scientific reasoning over biophysical literature. Each case contains evidence blocks, stable evidence IDs, quantitative values, units, equations, assumptions, mechanisms, and next decisions as grounding targets for question answering (QA) and retrieval-augmented generation (RAG). The initial release contains 500 cases, 1,517 agent-facing tasks, and covers six biological domains and nine physical model families, including three sparse families reserved for future expansion. We enforce strict quality gates for all cases in schema, evidence-integrity, quantitative-grounding, source-license, duplicate, unit-normalization, with domain expert review and annotation for 81 cases. Preliminary evaluations show that DeepSeek-V4-Flash obtain the highest evidence-ID $F_1$ score (0.360), followed by Qwen3.7-Max (0.316) and GPT-4o-mini (0.294). BioPhys-Bridge is an interdisciplinary benchmark for evaluating attribution, faithfulness, hallucination reduction, and biological experiment design with complex, multi-step scientific reasoning. Future works will increase the size and complexity of the dataset and perform comprehensive evaluations. Code and data are available in the GitHub repository and on Hugging Face.",
+      "authors": [
+        "Qingyang Xu"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-15T12:53:16+00:00",
+      "updated_at": "2026-09-15T12:53:16+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.19180"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.19180v1",
+        "pdf": "https://arxiv.org/pdf/2609.19180v1",
+        "code": "https://github.com/qyxu1994/BioPhys-Bridge",
+        "data": "https://huggingface.co/datasets/qyxu1994/BioPhys-Bridge",
+        "html": "https://arxiv.org/html/2609.19180"
+      },
+      "evidence": [
+        {
+          "term": "we introduce BioPhys-Bridge, a novel benchmark dataset",
+          "excerpt": "d data in source evidence, interpreting it through a quantitative physics model, and linking it to a biological mechanism. To address this challenge, we introduce BioPhys-Bridge, a novel benchmark dataset for evidence-grounded scientific reasoning over biophysical literature. Each case contains evidence blocks, stable evidence IDs, quantitative values, units, equations, assumptions, mechanisms, and next decisions as grounding targets for qu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.19180"
+        },
+        {
+          "term": "novel benchmark dataset",
+          "excerpt": "rpreting it through a quantitative physics model, and linking it to a biological mechanism. To address this challenge, we introduce BioPhys-Bridge, a novel benchmark dataset for evidence-grounded scientific reasoning over biophysical literature. Each case contains evidence blocks, stable evidence IDs, quantitative values, units, equations, assumptions, mechanisms, and next decisions as grounding targets for qu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.19180"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "BioPhys-Bridge: A Benchmark for Interdisciplinary Scientific Reasoning in Physics-Grounded Biological Research Language models face unique challenges in analyzing interdisciplinary scientific research literature. In biophysics research, faithful answers require groun",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.19180"
+        },
+        {
+          "term": "biological",
+          "excerpt": "BioPhys-Bridge: A Benchmark for Interdisciplinary Scientific Reasoning in Physics-Grounded Biological Research Language models face unique challenges in analyzing interdisciplinary scientific research literature. In biophysics research, faithful answers require grounding observed data in source evidence, interpreting it through a quantitat",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.19180"
+        },
+        {
+          "term": "biophysical",
+          "excerpt": "ological mechanism. To address this challenge, we introduce BioPhys-Bridge, a novel benchmark dataset for evidence-grounded scientific reasoning over biophysical literature. Each case contains evidence blocks, stable evidence IDs, quantitative values, units, equations, assumptions, mechanisms, and next decisions as grounding targets for question answering (QA) and retrieval-augmented generation (RA",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.19180"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "capabilities, including literature reasoning, database use, figure interpretation, and sequence manipulation ( Laurent et al., 2024 ) . SPIQA targets multimodal question answering over scientific paper figures ( Pramanick et al., 2024 ) . These resources make scientific documents central to evaluation, but their primary supervision is usually an answer, paper-level evidence, retrieval target, or d",
+          "location": "2.1 Grounded Language Models and Scientific RAG",
+          "source_url": "https://arxiv.org/html/2609.19180"
+        },
+        {
+          "term": "tool use",
+          "excerpt": "ther realistic agent benchmarks, including SWE-bench, WebArena, AgentBench, MINT, ToolBench, and MLE-bench, evaluate software repair, web navigation, tool use, and machine-learning engineering with functional, human-referenced, or environment-based scoring ( Jimenez et al., 2024 ; Zhou et al., 2024 ; Liu et al., 2024 ; Wang et al., 2024c ; Qin et al., 2024 ; Chan et al., 2025 ) . BioPhys-Bridge",
+          "location": "2.3 AI-for-Science and Physical-Model Benchmarks",
+          "source_url": "https://arxiv.org/html/2609.19180"
+        }
+      ],
+      "related_benchmarks": [
+        "PaperQA",
+        "LitQA",
+        "SPIQA",
+        "ScienceQA",
+        "SciBench",
+        "GPQA",
+        "LongBench",
+        "PDEBench",
+        "AgentBench",
+        "ToolBench",
+        "LAB-Bench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 25,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "f84f6a5fb77053cbd3be19dc827d008b3d7019480c5d7e862a48a2da930dd25b",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "arxiv:2609.16739",
       "slug": "arxiv-2609-16739-e0a2d882c6",
       "kind": "paper",
@@ -882,14 +1083,16 @@
         "general_text"
       ],
       "collection_status": "confirmed",
-      "access_status": "unknown",
-      "license": "",
+      "access_status": "public",
+      "license": "cc by",
       "identifiers": {
         "doi": "10.1371/journal.pone.0343858",
-        "pmid": "42743305"
+        "pmid": "42743305",
+        "pmcid": "PMC13577527"
       },
       "links": {
-        "abs": "https://europepmc.org/article/MED/42743305"
+        "abs": "https://europepmc.org/article/MED/42743305",
+        "html": "https://europepmc.org/article/MED/42743305"
       },
       "evidence": [
         {
@@ -924,7 +1127,9 @@
         }
       ],
       "related_benchmarks": [
-        "Sino-US-DrugQA"
+        "Sino-US-DrugQA",
+        "LawBench",
+        "MedMCQA"
       ],
       "related_agent_url": "",
       "evaluation_contexts": [
@@ -934,7 +1139,7 @@
       "match_score": 21,
       "extraction_status": "complete",
       "extraction_error": "",
-      "content_hash": "fab9901f30cc59e65fac539a37a1c850c96f5b825fda02aea819a4201cb61e80",
+      "content_hash": "5bcf044933feb271de42972522da76dac5d71f394d7dacb94b796b8488aeeb55",
       "is_seed": false,
       "topic": "general_text",
       "contribution_type": "new_benchmark"
@@ -1033,7 +1238,7 @@
       "slug": "doi-10-64898-2026-09-10-26362796-08053563c6",
       "kind": "paper",
       "title": "Hybrid lexical-semantic retrieval over SNOMED CT: combining two retrieval paradigms to facilitate clinical data entry",
-      "abstract": "Objectives: Searching a reference terminology such as SNOMED CT confronts two retrieval technologies of fundamentally opposite nature. Deterministic lexical matching is precise, order-independent and character-level, and lets a clinician refine a query incrementally, but it is confined to the wording and language of the curated descriptions. Learned semantic matching bridges paraphrase and language, but poorly represents abbreviations and partial, as-typed input. Their requirements and failure modes are so different that combining them naively can let the channel that is wrong for a given query degrade the one that is right. The conventional way to avoid adding a semantic channel at all has been to strengthen the lexical one (curating an additional local interface vocabulary so that more expressions match by surface form), but such vocabularies are labour-intensive to maintain and their quality degrades over time. We ask whether these two opposite paradigms can instead be made to *coexist* in one retrieval flow (each serving the input regime it is strong at, neither harming the other) over SNOMED CT's own curated descriptions, and study the query interpretation, rank fusion and re-ranking design that makes this coexistence safe. Materials and Methods: We implemented one reproducible instance of this architecture over the SNOMED CT International edition. It combines deterministic, order-independent multi-prefix search with three learned components: BioLORD-2023-M embeddings for semantic retrieval, an optional BGE cross-encoder for re-ranking, and a local LLM (gemma 4) for query normalization and structured clinical entity extraction. Lexical and semantic rankings are combined with Reciprocal Rank Fusion, and results can be constrained with a hierarchy (descendant) filter. As an external evaluation we measured search-only linking accuracy on 542 disease mentions from the DisTEMIST corpus (Spanish, zero-shot), resolving gold codes through SNOMED CT historical associations and ablating query pre-processing, re-ranking, and each retrieval channel in isolation; and, on a second corpus of English real-EHR discharge notes (the SNOMED CT Entity Linking Challenge, 12,897 mentions), we estimated field-scoped typeahead performance and tested a context-aware pre-process. Results: Illustrative tests showed complementary behaviour: the lexical and semantic paths resolved different query types, while LLM pre-processing supported cross-lingual and abbreviated input. On a search-only linking evaluation over 542 disease mentions from the DisTEMIST corpus (Spanish, zero-shot), the best and computationally cheapest configuration, semantic search with re-ranking and *no* LLM query pre-processing, placed the exact concept first for 60% of mentions (accuracy@1 = 0.60) and within the top-10 candidates a picker would show for 80% (recall@10 = 0.80). Because these search-only figures are computed on gold mention spans, they isolate normalization from mention detection and are not directly comparable to the DisTEMIST shared task's end-to-end scores. LLM query pre-processing helped dirty, lay input but slightly hurt clean terminology-like queries, and a near-miss analysis showed that many remaining cases retrieved a parent or child of the intended concept. Isolating the channels showed the two coexist without a trade-off: on this clean-normalization corpus the semantic channel carried the accuracy and adding the lexical channel neither helped nor harmed it (accuracy@1 0.60 vs 0.61), because rank fusion followed by re-ranking suppresses whichever channel is off-task; the lexical channel's own strength, partial as-typed input, is a regime this corpus does not test. On the English real-EHR corpus, a field-scoped typeahead (each query constrained to its entry field's domain) placed the concept on the top-10 picker list for 73% of 12,897 mentions across all clinical domains (accuracy@1 0.52; findings 0.54, close to DisTEMIST). Most residual errors were soft (the gold on the list but not first, or a hierarchical neighbour); the hard misses were dominated by ambiguous EHR shorthand, and a single context-aware pre-processing call (normalizing a mention with its surrounding note text) roughly doubled recovery of those hard misses, though, as with LLM normalization on the clean terms of DisTEMIST, applying it to every mention slightly lowered overall accuracy by perturbing the easy majority, so it is best used as a selective rescue. Results are specific to the evaluated configuration, not an architecture-independent estimate. Discussion: The findings support the technical feasibility of a reference architecture that computes additional access routes over SNOMED CT's curated descriptions, and indicate that making the lexical and semantic paradigms *coexist*, rather than choosing between them, is what makes those computed routes safe to add. This shifts rather than eliminates maintenance, from local phrase authoring toward governance and validation of retrieval services. Conclusion: Hybrid concept retrieval lets lexical precision and semantic flexibility coexist over SNOMED CT's maintained descriptions without a trade-off between them, offering an implementation pattern that may reduce additional local lexical curation where direct search is appropriate, while curated interface vocabularies remain useful in selected guided workflows.",
+      "abstract": "ObjectivesSearching a reference terminology such as SNOMED CT confronts two retrieval technologies of fundamentally opposite nature. Deterministic lexical matching is precise, order-independent and character-level, and lets a clinician refine a query incrementally, but it is confined to the wording and language of the curated descriptions. Learned semantic matching bridges paraphrase and language, but poorly represents abbreviations and partial, as-typed input. Their requirements and failure modes are so different that combining them naively can let the channel that is wrong for a given query degrade the one that is right. The conventional way to avoid adding a semantic channel at all has been to strengthen the lexical one (curating an additional local interface vocabulary so that more expressions match by surface form), but such vocabularies are labour-intensive to maintain and their quality degrades over time. We ask whether these two opposite paradigms can instead be made to coexist in one retrieval flow (each serving the input regime it is strong at, neither harming the other) over SNOMED CTs own curated descriptions, and study the query interpretation, rank fusion and re-ranking design that makes this coexistence safe.\n\nMaterials and MethodsWe implemented one reproducible instance of this architecture over the SNOMED CT International edition. It combines deterministic, order-independent multi-prefix search with three learned components: BioLORD-2023-M embeddings for semantic retrieval, an optional BGE cross-encoder for re-ranking, and a local LLM (gemma 4) for query normalization and structured clinical entity extraction. Lexical and semantic rankings are combined with Reciprocal Rank Fusion, and results can be constrained with a hierarchy (descendant) filter. As an external evaluation we measured search-only linking accuracy on 542 disease mentions from the DisTEMIST corpus (Spanish, zero-shot), resolving gold codes through SNOMED CT historical associations and ablating query pre-processing, re-ranking, and each retrieval channel in isolation; and, on a second corpus of English real-EHR discharge notes (the SNOMED CT Entity Linking Challenge, 12,897 mentions), we estimated field-scoped typeahead performance and tested a context-aware pre-process.\n\nResultsIllustrative tests showed complementary behaviour: the lexical and semantic paths resolved different query types, while LLM pre-processing supported cross-lingual and abbreviated input. On a search-only linking evaluation over 542 disease mentions from the DisTEMIST corpus (Spanish, zero-shot), the best and computationally cheapest configuration, semantic search with re-ranking and no LLM query pre-processing, placed the exact concept first for 60% of mentions (accuracy@1 = 0.60) and within the top-10 candidates a picker would show for 80% (recall@10 = 0.80). Because these search-only figures are computed on gold mention spans, they isolate normalization from mention detection and are not directly comparable to the DisTEMIST shared tasks end-to-end scores. LLM query pre-processing helped dirty, lay input but slightly hurt clean terminology-like queries, and a near-miss analysis showed that many remaining cases retrieved a parent or child of the intended concept. Isolating the channels showed the two coexist without a trade-off: on this clean-normalization corpus the semantic channel carried the accuracy and adding the lexical channel neither helped nor harmed it (accuracy@1 0.60 vs 0.61), because rank fusion followed by re-ranking suppresses whichever channel is off-task; the lexical channels own strength, partial as-typed input, is a regime this corpus does not test. On the English real-EHR corpus, a field-scoped typeahead (each query constrained to its entry fields domain) placed the concept on the top-10 picker list for 73% of 12,897 mentions across all clinical domains (accuracy@1 0.52; findings 0.54, close to DisTEMIST). Most residual errors were soft (the gold on the list but not first, or a hierarchical neighbour); the hard misses were dominated by ambiguous EHR shorthand, and a single context-aware pre-processing call (normalizing a mention with its surrounding note text) roughly doubled recovery of those hard misses -- though, as with LLM normalization on the clean terms of DisTEMIST, applying it to every mention slightly lowered overall accuracy by perturbing the easy majority, so it is best used as a selective rescue. Results are specific to the evaluated configuration, not an architecture-independent estimate.\n\nDiscussionThe findings support the technical feasibility of a reference architecture that computes additional access routes over SNOMED CTs curated descriptions, and indicate that making the lexical and semantic paradigms coexist, rather than choosing between them, is what makes those computed routes safe to add. This shifts rather than eliminates maintenance, from local phrase authoring toward governance and validation of retrieval services.\n\nConclusionHybrid concept retrieval lets lexical precision and semantic flexibility coexist over SNOMED CTs maintained descriptions without a trade-off between them, offering an implementation pattern that may reduce additional local lexical curation where direct search is appropriate, while curated interface vocabularies remain useful in selected guided workflows.",
       "authors": [
         "Lopez Osornio, A.",
         "Randorff Hoejen, A.",
@@ -1044,7 +1249,7 @@
       "updated_at": "2026-09-14T00:00:00+00:00",
       "priority": "P1",
       "categories": [
-        "general_text"
+        "multimodal"
       ],
       "collection_status": "confirmed",
       "access_status": "public",
@@ -1055,12 +1260,13 @@
       "links": {
         "abs": "https://www.medrxiv.org/content/10.64898/2026.09.10.26362796",
         "pdf": "https://www.medrxiv.org/content/10.64898/2026.09.10.26362796.full.pdf",
+        "code": "https://github.com/alopezo/snomed-hybrid-search",
         "html": "https://www.medrxiv.org/content/10.64898/2026.09.10.26362796.full"
       },
       "evidence": [
         {
           "term": "clinical",
-          "excerpt": "Hybrid lexical-semantic retrieval over SNOMED CT: combining two retrieval paradigms to facilitate clinical data entry Objectives: Searching a reference terminology such as SNOMED CT confronts two retrieval technologies of fundamentally opposite nature. Deterministic lexical matching is precise, order-independent and character-level, and lets a",
+          "excerpt": "Hybrid lexical-semantic retrieval over SNOMED CT: combining two retrieval paradigms to facilitate clinical data entry ObjectivesSearching a reference terminology such as SNOMED CT confronts two retrieval technologies of fundamentally opposite nature. Deterministic lexical matching is precise, order-independent and character-level, and lets a cl",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.09.10.26362796.full"
         },
@@ -1068,6 +1274,12 @@
           "term": "disease",
           "excerpt": "usion, and results can be constrained with a hierarchy (descendant) filter. As an external evaluation we measured search-only linking accuracy on 542 disease mentions from the DisTEMIST corpus (Spanish, zero-shot), resolving gold codes through SNOMED CT historical associations and ablating query pre-processing, re-ranking, and each retrieval channel in isolation; and, on a second corpus of Engl",
           "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.09.10.26362796.full"
+        },
+        {
+          "term": "Pathology",
+          "excerpt": "Environmental Health (1005) Oncology (3613) Ophthalmology (1054) Orthopedics (398) Otolaryngology (457) Pain Medicine (472) Palliative Medicine (139) Pathology (709) Pediatrics (1805) Pharmacology and Therapeutics (737) Primary Care Research (768) Psychiatry and Clinical Psychology (5911) Public and Global Health (9767) Radiology and Imaging (2429) Rehabilitation Medicine and Physical Therapy (14",
+          "location": "Subject Area",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.09.10.26362796.full"
         }
       ],
@@ -1077,12 +1289,12 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 10,
-      "extraction_status": "incomplete",
-      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.09.10.26362796.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
-      "content_hash": "c9986ec36da46867509ecfeb41a022411911a03856cb4e2b9c5ee9a752c9f6a3",
+      "match_score": 12,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "3908e1dc8c9bdac8fcc573f3b58cd1c459dfd0fd5e7baaf09e4b2e08803d2187",
       "is_seed": false,
-      "topic": "general_text",
+      "topic": "multimodal",
       "contribution_type": "new_benchmark"
     },
     {

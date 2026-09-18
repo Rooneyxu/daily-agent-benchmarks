@@ -1,0 +1,100 @@
+{
+  "date": "2026-09-17",
+  "count": 1,
+  "entries": [
+    {
+      "id": "arxiv:2609.19585",
+      "slug": "arxiv-2609-19585-af5d2d279c",
+      "kind": "paper",
+      "title": "CliniCIRCA: A Modular LLM Framework for Constructing Longitudinal Mental Health Patient Journeys from Raw EHR Narratives",
+      "abstract": "In mental health care, reasoning over patient journeys is a key task for clinicians. Yet these journeys, encompassing a longitudinal progression of biological, psychological, and social events, are often spread across disparate unstructured text narratives, making temporal recovery challenging. We present CliniCIRCA, a multi-stage LLM framework for Calendar-anchored, Imprecision-aware Reconstruction of Clinical Annals. To our knowledge, CliniCIRCA is the first to temporally classify clinical events across unstructured discharge summaries without event-level timestamps. From 14,882 MIMIC-III mental health admissions, we first construct a benchmark of 52 discharge summaries on which CliniCIRCA produces 15,891 temporally tagged events. After correcting 629 errors based on a clinician-in-the-loop evaluation, we produce verified gold-standard labels. Finally, the corrected timelines drive a temporally grounded summarization stage that compresses each source 1.52 times into a date-grouped chronological record. We then scale the framework to generate 1,000 silver-standard timelines and evaluate them as training data. Compared with zero- and few-shot prompting, instruction tuning generally improves five open-weight models on event extraction, temporal tagging, and summarization across silver and clinician-verified evaluations.",
+      "authors": [
+        "Aiwei Ivy Zhang",
+        "Nimra Ishfaq",
+        "Mohit Chandra",
+        "Santiago Alvarez Lesmes",
+        "Adam Coscia",
+        "Khatiya Chelidze Moon",
+        "Xiaohan Ding",
+        "Munmun De Choudhury"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-17T02:13:21+00:00",
+      "updated_at": "2026-09-17T02:13:21+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.19585"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.19585v1",
+        "pdf": "https://arxiv.org/pdf/2609.19585v1",
+        "html": "https://arxiv.org/html/2609.19585"
+      },
+      "evidence": [
+        {
+          "term": "first construct a benchmark",
+          "excerpt": "y classify clinical events across unstructured discharge summaries without event-level timestamps. From 14,882 MIMIC-III mental health admissions, we first construct a benchmark of 52 discharge summaries on which CliniCIRCA produces 15,891 temporally tagged events. After correcting 629 errors based on a clinician-in-the-loop evaluation, we produce verified gold-standard labels. Finally, the corrected timelines dri",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.19585"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "l events across unstructured discharge summaries without event-level timestamps. From 14,882 MIMIC-III mental health admissions, we first construct a benchmark of 52 discharge summaries on which CliniCIRCA produces 15,891 temporally tagged events. After correcting 629 errors based on a clinician-in-the-loop evaluation, we produce verified gold-standard labels. Finally, the corrected timelines dri",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.19585"
+        },
+        {
+          "term": "biological",
+          "excerpt": "s In mental health care, reasoning over patient journeys is a key task for clinicians. Yet these journeys, encompassing a longitudinal progression of biological, psychological, and social events, are often spread across disparate unstructured text narratives, making temporal recovery challenging. We present CliniCIRCA, a multi-stage LLM framework for Calendar-anchored, Imprecision-aware Reconstruc",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.19585"
+        },
+        {
+          "term": "clinical",
+          "excerpt": ", making temporal recovery challenging. We present CliniCIRCA, a multi-stage LLM framework for Calendar-anchored, Imprecision-aware Reconstruction of Clinical Annals. To our knowledge, CliniCIRCA is the first to temporally classify clinical events across unstructured discharge summaries without event-level timestamps. From 14,882 MIMIC-III mental health admissions, we first construct a benchmark",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.19585"
+        },
+        {
+          "term": "patient",
+          "excerpt": "CliniCIRCA: A Modular LLM Framework for Constructing Longitudinal Mental Health Patient Journeys from Raw EHR Narratives In mental health care, reasoning over patient journeys is a key task for clinicians. Yet these journeys, encompassing a longitudinal progression of biological, psychological, and social events, are often sp",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.19585"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "idance and support. [[SECTION References]] References Abouelenin et al. (2025) A. Abouelenin et al. Phi-4-Mini Technical Report: compact yet powerful multimodal language models via mixture-of-loras . arXiv preprint arXiv:2503.01743 . Cited by: Table A4 , §4.1 . Alfattni et al. (2020) G. Alfattni, N. Peek, and G. Nenadic Extraction of temporal relations from clinical free text: A systematic review",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2609.19585"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "xanis, A. B. De Gonzalez, P. Coulson, J. S. Almeida, and M. García-Closas Leveraging large language models for structured information extraction from pathology reports . Journal of Pathology Informatics 19 , pp. 100521 ( en ). External Links: ISSN 21533539 , Link , Document Cited by: §8 . Bavaresco et al. (2025) A. Bavaresco, R. Bernardi, L. Bertolazzi, D. Elliott, R. Fernández, A. Gatt, E. Ghale",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2609.19585"
+        }
+      ],
+      "related_benchmarks": [
+        "HaluEval"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "214045c14c7312bac90dc8654ddcab8281a261db2735c9413ecfe7e8857c5a72",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}

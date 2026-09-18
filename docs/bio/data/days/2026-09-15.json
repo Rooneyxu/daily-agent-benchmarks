@@ -1,7 +1,106 @@
 {
   "date": "2026-09-15",
-  "count": 5,
+  "count": 6,
   "entries": [
+    {
+      "id": "arxiv:2609.19180",
+      "slug": "arxiv-2609-19180-26c2b36346",
+      "kind": "paper",
+      "title": "BioPhys-Bridge: A Benchmark for Interdisciplinary Scientific Reasoning in Physics-Grounded Biological Research",
+      "abstract": "Language models face unique challenges in analyzing interdisciplinary scientific research literature. In biophysics research, faithful answers require grounding observed data in source evidence, interpreting it through a quantitative physics model, and linking it to a biological mechanism. To address this challenge, we introduce BioPhys-Bridge, a novel benchmark dataset for evidence-grounded scientific reasoning over biophysical literature. Each case contains evidence blocks, stable evidence IDs, quantitative values, units, equations, assumptions, mechanisms, and next decisions as grounding targets for question answering (QA) and retrieval-augmented generation (RAG). The initial release contains 500 cases, 1,517 agent-facing tasks, and covers six biological domains and nine physical model families, including three sparse families reserved for future expansion. We enforce strict quality gates for all cases in schema, evidence-integrity, quantitative-grounding, source-license, duplicate, unit-normalization, with domain expert review and annotation for 81 cases. Preliminary evaluations show that DeepSeek-V4-Flash obtain the highest evidence-ID $F_1$ score (0.360), followed by Qwen3.7-Max (0.316) and GPT-4o-mini (0.294). BioPhys-Bridge is an interdisciplinary benchmark for evaluating attribution, faithfulness, hallucination reduction, and biological experiment design with complex, multi-step scientific reasoning. Future works will increase the size and complexity of the dataset and perform comprehensive evaluations. Code and data are available in the GitHub repository and on Hugging Face.",
+      "authors": [
+        "Qingyang Xu"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-15T12:53:16+00:00",
+      "updated_at": "2026-09-15T12:53:16+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.19180"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.19180v1",
+        "pdf": "https://arxiv.org/pdf/2609.19180v1",
+        "code": "https://github.com/qyxu1994/BioPhys-Bridge",
+        "data": "https://huggingface.co/datasets/qyxu1994/BioPhys-Bridge",
+        "html": "https://arxiv.org/html/2609.19180"
+      },
+      "evidence": [
+        {
+          "term": "we introduce BioPhys-Bridge, a novel benchmark dataset",
+          "excerpt": "d data in source evidence, interpreting it through a quantitative physics model, and linking it to a biological mechanism. To address this challenge, we introduce BioPhys-Bridge, a novel benchmark dataset for evidence-grounded scientific reasoning over biophysical literature. Each case contains evidence blocks, stable evidence IDs, quantitative values, units, equations, assumptions, mechanisms, and next decisions as grounding targets for qu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.19180"
+        },
+        {
+          "term": "novel benchmark dataset",
+          "excerpt": "rpreting it through a quantitative physics model, and linking it to a biological mechanism. To address this challenge, we introduce BioPhys-Bridge, a novel benchmark dataset for evidence-grounded scientific reasoning over biophysical literature. Each case contains evidence blocks, stable evidence IDs, quantitative values, units, equations, assumptions, mechanisms, and next decisions as grounding targets for qu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.19180"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "BioPhys-Bridge: A Benchmark for Interdisciplinary Scientific Reasoning in Physics-Grounded Biological Research Language models face unique challenges in analyzing interdisciplinary scientific research literature. In biophysics research, faithful answers require groun",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.19180"
+        },
+        {
+          "term": "biological",
+          "excerpt": "BioPhys-Bridge: A Benchmark for Interdisciplinary Scientific Reasoning in Physics-Grounded Biological Research Language models face unique challenges in analyzing interdisciplinary scientific research literature. In biophysics research, faithful answers require grounding observed data in source evidence, interpreting it through a quantitat",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.19180"
+        },
+        {
+          "term": "biophysical",
+          "excerpt": "ological mechanism. To address this challenge, we introduce BioPhys-Bridge, a novel benchmark dataset for evidence-grounded scientific reasoning over biophysical literature. Each case contains evidence blocks, stable evidence IDs, quantitative values, units, equations, assumptions, mechanisms, and next decisions as grounding targets for question answering (QA) and retrieval-augmented generation (RA",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.19180"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "capabilities, including literature reasoning, database use, figure interpretation, and sequence manipulation ( Laurent et al., 2024 ) . SPIQA targets multimodal question answering over scientific paper figures ( Pramanick et al., 2024 ) . These resources make scientific documents central to evaluation, but their primary supervision is usually an answer, paper-level evidence, retrieval target, or d",
+          "location": "2.1 Grounded Language Models and Scientific RAG",
+          "source_url": "https://arxiv.org/html/2609.19180"
+        },
+        {
+          "term": "tool use",
+          "excerpt": "ther realistic agent benchmarks, including SWE-bench, WebArena, AgentBench, MINT, ToolBench, and MLE-bench, evaluate software repair, web navigation, tool use, and machine-learning engineering with functional, human-referenced, or environment-based scoring ( Jimenez et al., 2024 ; Zhou et al., 2024 ; Liu et al., 2024 ; Wang et al., 2024c ; Qin et al., 2024 ; Chan et al., 2025 ) . BioPhys-Bridge",
+          "location": "2.3 AI-for-Science and Physical-Model Benchmarks",
+          "source_url": "https://arxiv.org/html/2609.19180"
+        }
+      ],
+      "related_benchmarks": [
+        "PaperQA",
+        "LitQA",
+        "SPIQA",
+        "ScienceQA",
+        "SciBench",
+        "GPQA",
+        "LongBench",
+        "PDEBench",
+        "AgentBench",
+        "ToolBench",
+        "LAB-Bench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 25,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "f84f6a5fb77053cbd3be19dc827d008b3d7019480c5d7e862a48a2da930dd25b",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
     {
       "id": "arxiv:2609.16739",
       "slug": "arxiv-2609-16739-e0a2d882c6",
@@ -316,14 +415,16 @@
         "general_text"
       ],
       "collection_status": "confirmed",
-      "access_status": "unknown",
-      "license": "",
+      "access_status": "public",
+      "license": "cc by",
       "identifiers": {
         "doi": "10.1371/journal.pone.0343858",
-        "pmid": "42743305"
+        "pmid": "42743305",
+        "pmcid": "PMC13577527"
       },
       "links": {
-        "abs": "https://europepmc.org/article/MED/42743305"
+        "abs": "https://europepmc.org/article/MED/42743305",
+        "html": "https://europepmc.org/article/MED/42743305"
       },
       "evidence": [
         {
@@ -358,7 +459,9 @@
         }
       ],
       "related_benchmarks": [
-        "Sino-US-DrugQA"
+        "Sino-US-DrugQA",
+        "LawBench",
+        "MedMCQA"
       ],
       "related_agent_url": "",
       "evaluation_contexts": [
@@ -368,7 +471,7 @@
       "match_score": 21,
       "extraction_status": "complete",
       "extraction_error": "",
-      "content_hash": "fab9901f30cc59e65fac539a37a1c850c96f5b825fda02aea819a4201cb61e80",
+      "content_hash": "5bcf044933feb271de42972522da76dac5d71f394d7dacb94b796b8488aeeb55",
       "is_seed": false,
       "topic": "general_text",
       "contribution_type": "new_benchmark"
