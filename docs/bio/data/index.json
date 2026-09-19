@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-18T09:06:16Z",
-  "total": 113,
+  "generated_at": "2026-09-19T08:53:11Z",
+  "total": 115,
   "counts": {
     "topics": {
-      "multimodal": 30,
+      "multimodal": 32,
       "experiment_agent": 26,
       "general_text": 45,
       "biosafety": 12
     },
     "contribution_types": {
-      "new_benchmark": 85,
+      "new_benchmark": 87,
       "audit": 13,
       "methodology": 15
     },
     "kinds": {
-      "paper": 113
+      "paper": 115
     },
     "evaluation_contexts": {
-      "beneficial_capability": 101,
+      "beneficial_capability": 103,
       "biosecurity_misuse": 12
     }
   },
@@ -59,48 +59,48 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-09-18T09:06:26Z",
-      "finished_at": "2026-09-18T09:07:24Z",
-      "discovered": 45,
-      "published": 24,
+      "started_at": "2026-09-19T08:53:24Z",
+      "finished_at": "2026-09-19T08:54:03Z",
+      "discovered": 33,
+      "published": 17,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-09-18T09:07:24Z",
-      "finished_at": "2026-09-18T09:07:28Z",
-      "discovered": 90,
-      "published": 43,
+      "started_at": "2026-09-19T08:54:03Z",
+      "finished_at": "2026-09-19T08:54:51Z",
+      "discovered": 107,
+      "published": 54,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-09-18T09:07:28Z",
-      "finished_at": "2026-09-18T09:13:28Z",
-      "discovered": 1044,
-      "published": 85,
+      "started_at": "2026-09-19T08:54:51Z",
+      "finished_at": "2026-09-19T08:58:57Z",
+      "discovered": 1159,
+      "published": 81,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-09-18T09:13:28Z",
-      "finished_at": "2026-09-18T09:13:52Z",
-      "discovered": 301,
-      "published": 28,
+      "started_at": "2026-09-19T08:58:57Z",
+      "finished_at": "2026-09-19T08:59:06Z",
+      "discovered": 248,
+      "published": 25,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "success",
-      "started_at": "2026-09-18T09:13:52Z",
-      "finished_at": "2026-09-18T09:14:33Z",
+      "started_at": "2026-09-19T08:59:06Z",
+      "finished_at": "2026-09-19T08:59:44Z",
       "discovered": 0,
       "published": 0,
       "error": ""
@@ -108,10 +108,18 @@
   ],
   "days": [
     {
-      "date": "2026-09-17",
+      "date": "2026-09-18",
       "count": 1,
       "entry_ids": [
-        "arxiv:2609.19585"
+        "doi:10.64898/2026.09.17.752482"
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "count": 2,
+      "entry_ids": [
+        "arxiv:2609.19585",
+        "doi:10.2196/104092"
       ]
     },
     {
@@ -577,6 +585,82 @@
   ],
   "entries": [
     {
+      "id": "doi:10.64898/2026.09.17.752482",
+      "slug": "doi-10-64898-2026-09-17-752482-975c374fff",
+      "kind": "paper",
+      "title": "BoneGraph: A Domain-Specialised, Self-Correcting Reasoning System for Bone Science Retrieval, Grounded Inference, and Image Mechanics",
+      "abstract": "Bone science literature spans biology, mechanics, materials science, and clinical medicine, and its volume makes reliable knowledge synthesis increasingly difficult. General-purpose large language models (LLMs) answer fluently but under-represent this niche domain, cannot cite specific evidence, and offer no mechanism to be corrected durably. Here we present BoneGraph, a domain-specialised system for bone science delivered as a five-tab web application over a shared substrate: a curated full-text corpus of 7,449 documents embedded into 248,629 passage vectors using SPECTER2, a scientific-paper embedding model, and a bone knowledge graph of 1,597 concepts with 1,699 causal relations. The five tabs are: (I) Chat, retrieval-augmented question answering with server-rebuilt inline citations; (II) Search, raw semantic retrieval with no LLM in the loop; (III) Reasoning, a self-correcting loop in which a deterministic physics check and a literature/knowledge-graph critic constrain the answer, and a user's feedback becomes a durable, per-user rule; (IV) Vision, a bone-region classifier trained on frozen BiomedCLIP features that grounds a vision-language model, guarded against out-of-distribution inputs and augmented with image-embedding correction memory; and (V) Mechanics, integrating our previous data-driven image mechanics (D2IM) model that predicts displacement and strain fields from a single undeformed micro-CT image. All inference is performed locally, without third-party API calls, and the public beta is served at bonegraph.org. Retrieval attains a mean reciprocal rank (MRR) of 0.928 on a 30-question, seven-domain benchmark, and the Vision classifier attains 92.6% accuracy on the held-out MURA (MUsculoskeletal RAdiographs) dataset. A grounded-reasoning benchmark shows that, with the correct passage, BoneGraph raises answer accuracy from 42% to 78%. BoneGraph makes a major contribution to bone-science informatics: to our knowledge it is the first domain-specialised system to unify curated retrieval, deterministic physics-grounded self-correction, and durable per-user learning for bone science.",
+      "authors": [
+        "Valijonov, J.",
+        "Soar, P.",
+        "Le Houx, J.",
+        "Tozzi, G."
+      ],
+      "source": "biorxiv",
+      "published_at": "2026-09-18T00:00:00+00:00",
+      "updated_at": "2026-09-18T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by",
+      "identifiers": {
+        "doi": "10.64898/2026.09.17.752482"
+      },
+      "links": {
+        "abs": "https://www.biorxiv.org/content/10.64898/2026.09.17.752482",
+        "pdf": "https://www.biorxiv.org/content/10.64898/2026.09.17.752482.full.pdf",
+        "html": "https://www.biorxiv.org/content/10.64898/2026.09.17.752482.full"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "rty API calls, and the public beta is served at bonegraph.org. Retrieval attains a mean reciprocal rank (MRR) of 0.928 on a 30-question, seven-domain benchmark, and the Vision classifier attains 92.6% accuracy on the held-out MURA (MUsculoskeletal RAdiographs) dataset. A grounded-reasoning benchmark shows that, with the correct passage, BoneGraph raises answer accuracy from 42% to 78%. BoneGraph",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.17.752482.full"
+        },
+        {
+          "term": "biology",
+          "excerpt": "omain-Specialised, Self-Correcting Reasoning System for Bone Science Retrieval, Grounded Inference, and Image Mechanics Bone science literature spans biology, mechanics, materials science, and clinical medicine, and its volume makes reliable knowledge synthesis increasingly difficult. General-purpose large language models (LLMs) answer fluently but under-represent this niche domain, cannot cite",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.17.752482.full"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "for Bone Science Retrieval, Grounded Inference, and Image Mechanics Bone science literature spans biology, mechanics, materials science, and clinical medicine, and its volume makes reliable knowledge synthesis increasingly difficult. General-purpose large language models (LLMs) answer fluently but under-represent this niche domain, cannot cite specific evidence, and offer no mechanism to be corr",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.17.752482.full"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "g System for Bone Science Retrieval, Grounded Inference, and Image Mechanics Bone science literature spans biology, mechanics, materials science, and clinical medicine, and its volume makes reliable knowledge synthesis increasingly difficult. General-purpose large language models (LLMs) answer fluently but under-represent this niche domain, cannot cite specific evidence, and offer no mechanism t",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.17.752482.full"
+        },
+        {
+          "term": "vision-language",
+          "excerpt": "r, and a user's feedback becomes a durable, per-user rule; (IV) Vision, a bone-region classifier trained on frozen BiomedCLIP features that grounds a vision-language model, guarded against out-of-distribution inputs and augmented with image-embedding correction memory; and (V) Mechanics, integrating our previous data-driven image mechanics (D2IM) model that predicts displacement and strain fields from",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.17.752482.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.09.17.752482.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "11162399367ef8459e74670f46280aff302701b7832c3c42492c3454151d78c4",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "arxiv:2609.19585",
       "slug": "arxiv-2609-19585-af5d2d279c",
       "kind": "paper",
@@ -666,6 +750,106 @@
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "214045c14c7312bac90dc8654ddcab8281a261db2735c9413ecfe7e8857c5a72",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.2196/104092",
+      "slug": "doi-10-2196-104092-a2ae35c8ac",
+      "kind": "paper",
+      "title": "Fine-Tuning, Retrieval-Augmented Generation, and Hybrid Adaptation of Language Models for Clinical Decision-Making in Health Care: Systematic Review.",
+      "abstract": "<h4>Background</h4>Large language models (LLMs) demonstrate strong performance on medical knowledge benchmarks, but their safe and effective use in clinical practice depends on posttraining adaptation rather than raw model capability. Fine-tuning, retrieval-augmented generation (RAG), and hybrid approaches are principal strategies for grounding language models in clinical evidence, yet their comparative effectiveness remains unclear.<h4>Objective</h4>This systematic review aims to synthesize evidence on fine-tuning, RAG, and hybrid posttraining strategies for clinical diagnosis and decision-support tasks and to identify strategy-task alignments and methodological features associated with improved performance.<h4>Methods</h4>We conducted a systematic review in accordance with PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) 2020 guidelines. PubMed/MEDLINE, Scopus, and Web of Science were searched from January 2018 through May 2026. Eligible studies evaluated transformer-based language models that underwent posttraining adaptation, retrieval augmentation, or both for clinical decision support, diagnosis, triage, risk stratification, or related health care applications. Studies evaluating nonadapted models, non-language-model AI systems, prompt engineering without performance evaluation, or nonclinical applications were excluded. Data extracted included model architecture, adaptation strategy, clinical domain, validation approach, and performance outcomes. Risk of bias was assessed using PROBAST+AI (Prediction model Risk of Bias Assessment Tool for AI). Studies were grouped according to the primary enhancement strategy (fine-tuning or parameter-efficient fine-tuning, RAG, or hybrid approaches), and findings were synthesized descriptively.<h4>Results</h4>Of 1890 identified records, 35 studies published between 2024 and 2026 met eligibility criteria. Enhancement strategies included RAG (17/35, 48.6%), fine-tuning or parameter-efficient fine-tuning (7/35, 20%), and hybrid approaches (11/35, 31.4%). Studies included diverse specialties from oncology, neurology, radiology, mental health, cardiology, ophthalmology, and surgical care. Fine-tuning demonstrated strong performance for task-specific applications, achieving area under the receiver operating characteristic curve values up to 0.912 for cancer detection and area under curve of 0.892 for major depressive disorder prediction, while matching clinician-level diagnostic performance in several studies. RAG improved guideline adherence and diagnostic accuracy, with increases from 71.1% to 92.1% and from 78.9% to 94.7% in guideline-based decision-support tasks. However, benefits were inconsistent across larger reasoning-capable models. Hybrid systems generally achieved the strongest performance in complex clinical workflows, with external validation accuracies exceeding 90% in stroke triage, dermatology, multimodal imaging, and oncology applications. Risk-of-bias assessment identified substantial methodological limitations, with 25 studies judged as high risk, 9 as unclear risk, and only 1 as low risk overall. Common concerns included inadequate external validation, lack of calibration assessment, nonrepresentative participant selection, and insufficient reporting of analytical methods.<h4>Conclusions</h4>Adaptation strategies should align with task needs, using fine-tuning for narrow classification, RAG for guideline-grounded reasoning, and hybrid approaches for complex multimodal tasks. However, the evidence base remains largely retrospective or benchmark-based. Prospective studies with external validation, calibration, and standardized safety reporting are needed before broader clinical use.",
+      "authors": [
+        "Patel A",
+        "Khand Y",
+        "Vallamchetla SK",
+        "Li P",
+        "Tao C",
+        "Cheung J."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-09-17T00:00:00+00:00",
+      "updated_at": "2026-09-18T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc by",
+      "identifiers": {
+        "doi": "10.2196/104092",
+        "pmid": "42753254",
+        "pmcid": "PMC13585368"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/42753254",
+        "html": "https://europepmc.org/article/MED/42753254"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "ecision-Making in Health Care: Systematic Review. <h4>Background</h4>Large language models (LLMs) demonstrate strong performance on medical knowledge benchmarks, but their safe and effective use in clinical practice depends on posttraining adaptation rather than raw model capability. Fine-tuning, retrieval-augmented generation (RAG), and hybrid approaches are principal strategies for grounding la",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42753254"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "ecision-Making in Health Care: Systematic Review. <h4>Background</h4>Large language models (LLMs) demonstrate strong performance on medical knowledge benchmarks, but their safe and effective use in clinical practice depends on posttraining adaptation rather than raw model capability. Fine-tuning, retrieval-augmented generation (RAG), and hybrid approaches are principal strategies for grounding lan",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42753254"
+        },
+        {
+          "term": "medical",
+          "excerpt": "els for Clinical Decision-Making in Health Care: Systematic Review. <h4>Background</h4>Large language models (LLMs) demonstrate strong performance on medical knowledge benchmarks, but their safe and effective use in clinical practice depends on posttraining adaptation rather than raw model capability. Fine-tuning, retrieval-augmented generation (RAG), and hybrid approaches are principal strateg",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42753254"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Fine-Tuning, Retrieval-Augmented Generation, and Hybrid Adaptation of Language Models for Clinical Decision-Making in Health Care: Systematic Review. <h4>Background</h4>Large language models (LLMs) demonstrate strong performance on medical knowledge benchmarks, but their safe and effective use in clinical practice depends on posttrainin",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42753254"
+        },
+        {
+          "term": "cancer",
+          "excerpt": "monstrated strong performance for task-specific applications, achieving area under the receiver operating characteristic curve values up to 0.912 for cancer detection and area under curve of 0.892 for major depressive disorder prediction, while matching clinician-level diagnostic performance in several studies. RAG improved guideline adherence and diagnostic accuracy, with increases from 71.1%",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42753254"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "ly achieved the strongest performance in complex clinical workflows, with external validation accuracies exceeding 90% in stroke triage, dermatology, multimodal imaging, and oncology applications. Risk-of-bias assessment identified substantial methodological limitations, with 25 studies judged as high risk, 9 as unclear risk, and only 1 as low risk overall. Common concerns included inadequate exte",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42753254"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "d if they met all the following criteria: (1) studies were required to involve clinical datasets derived from electronic health records, radiology or pathology reports, laboratory results, discharge summaries, structured symptom descriptions, clinical vignettes, clinical textbooks, or multimodal clinical datasets across any health care domain; and (2) the study was required to evaluate at least o",
+          "location": "Eligibility Criteria",
+          "source_url": "https://europepmc.org/article/MED/42753254"
+        },
+        {
+          "term": "tool using",
+          "excerpt": "cal data]] A vision–language foundation model for Alzheimer’s disease diagnosis using MRI and clinical data [[SECTION Stroke diagnosis and prediction tool using ChatGLM: development and validation study]] Stroke diagnosis and prediction tool using ChatGLM: development and validation study [[SECTION Diagnosis assistant for liver cancer utilizing a large language model with three types of knowledge]",
+          "location": "A vision–language foundation model for Alzheimer’s disease diagnosis using MRI and clinical data",
+          "source_url": "https://europepmc.org/article/MED/42753254"
+        }
+      ],
+      "related_benchmarks": [
+        "MultiMedQA",
+        "MedQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 23,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "5a2e727bd842a960683799d51acd984f0cf3438fbb99118cf6d0bb2a3f44f2b2",
       "is_seed": false,
       "topic": "multimodal",
       "contribution_type": "new_benchmark"
@@ -1225,7 +1409,7 @@
         "biosecurity_misuse"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 18,
+      "match_score": 16,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "a7450ccbacf059b799c8c771f4c56a6f85f4265b2742d7dec43aeef677f73a37",
@@ -1289,7 +1473,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 12,
+      "match_score": 10,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "3908e1dc8c9bdac8fcc573f3b58cd1c459dfd0fd5e7baaf09e4b2e08803d2187",

@@ -1,6 +1,6 @@
 {
   "date": "2026-09-17",
-  "count": 1,
+  "count": 2,
   "entries": [
     {
       "id": "arxiv:2609.19585",
@@ -92,6 +92,106 @@
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "214045c14c7312bac90dc8654ddcab8281a261db2735c9413ecfe7e8857c5a72",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.2196/104092",
+      "slug": "doi-10-2196-104092-a2ae35c8ac",
+      "kind": "paper",
+      "title": "Fine-Tuning, Retrieval-Augmented Generation, and Hybrid Adaptation of Language Models for Clinical Decision-Making in Health Care: Systematic Review.",
+      "abstract": "<h4>Background</h4>Large language models (LLMs) demonstrate strong performance on medical knowledge benchmarks, but their safe and effective use in clinical practice depends on posttraining adaptation rather than raw model capability. Fine-tuning, retrieval-augmented generation (RAG), and hybrid approaches are principal strategies for grounding language models in clinical evidence, yet their comparative effectiveness remains unclear.<h4>Objective</h4>This systematic review aims to synthesize evidence on fine-tuning, RAG, and hybrid posttraining strategies for clinical diagnosis and decision-support tasks and to identify strategy-task alignments and methodological features associated with improved performance.<h4>Methods</h4>We conducted a systematic review in accordance with PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) 2020 guidelines. PubMed/MEDLINE, Scopus, and Web of Science were searched from January 2018 through May 2026. Eligible studies evaluated transformer-based language models that underwent posttraining adaptation, retrieval augmentation, or both for clinical decision support, diagnosis, triage, risk stratification, or related health care applications. Studies evaluating nonadapted models, non-language-model AI systems, prompt engineering without performance evaluation, or nonclinical applications were excluded. Data extracted included model architecture, adaptation strategy, clinical domain, validation approach, and performance outcomes. Risk of bias was assessed using PROBAST+AI (Prediction model Risk of Bias Assessment Tool for AI). Studies were grouped according to the primary enhancement strategy (fine-tuning or parameter-efficient fine-tuning, RAG, or hybrid approaches), and findings were synthesized descriptively.<h4>Results</h4>Of 1890 identified records, 35 studies published between 2024 and 2026 met eligibility criteria. Enhancement strategies included RAG (17/35, 48.6%), fine-tuning or parameter-efficient fine-tuning (7/35, 20%), and hybrid approaches (11/35, 31.4%). Studies included diverse specialties from oncology, neurology, radiology, mental health, cardiology, ophthalmology, and surgical care. Fine-tuning demonstrated strong performance for task-specific applications, achieving area under the receiver operating characteristic curve values up to 0.912 for cancer detection and area under curve of 0.892 for major depressive disorder prediction, while matching clinician-level diagnostic performance in several studies. RAG improved guideline adherence and diagnostic accuracy, with increases from 71.1% to 92.1% and from 78.9% to 94.7% in guideline-based decision-support tasks. However, benefits were inconsistent across larger reasoning-capable models. Hybrid systems generally achieved the strongest performance in complex clinical workflows, with external validation accuracies exceeding 90% in stroke triage, dermatology, multimodal imaging, and oncology applications. Risk-of-bias assessment identified substantial methodological limitations, with 25 studies judged as high risk, 9 as unclear risk, and only 1 as low risk overall. Common concerns included inadequate external validation, lack of calibration assessment, nonrepresentative participant selection, and insufficient reporting of analytical methods.<h4>Conclusions</h4>Adaptation strategies should align with task needs, using fine-tuning for narrow classification, RAG for guideline-grounded reasoning, and hybrid approaches for complex multimodal tasks. However, the evidence base remains largely retrospective or benchmark-based. Prospective studies with external validation, calibration, and standardized safety reporting are needed before broader clinical use.",
+      "authors": [
+        "Patel A",
+        "Khand Y",
+        "Vallamchetla SK",
+        "Li P",
+        "Tao C",
+        "Cheung J."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-09-17T00:00:00+00:00",
+      "updated_at": "2026-09-18T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc by",
+      "identifiers": {
+        "doi": "10.2196/104092",
+        "pmid": "42753254",
+        "pmcid": "PMC13585368"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/42753254",
+        "html": "https://europepmc.org/article/MED/42753254"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "ecision-Making in Health Care: Systematic Review. <h4>Background</h4>Large language models (LLMs) demonstrate strong performance on medical knowledge benchmarks, but their safe and effective use in clinical practice depends on posttraining adaptation rather than raw model capability. Fine-tuning, retrieval-augmented generation (RAG), and hybrid approaches are principal strategies for grounding la",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42753254"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "ecision-Making in Health Care: Systematic Review. <h4>Background</h4>Large language models (LLMs) demonstrate strong performance on medical knowledge benchmarks, but their safe and effective use in clinical practice depends on posttraining adaptation rather than raw model capability. Fine-tuning, retrieval-augmented generation (RAG), and hybrid approaches are principal strategies for grounding lan",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42753254"
+        },
+        {
+          "term": "medical",
+          "excerpt": "els for Clinical Decision-Making in Health Care: Systematic Review. <h4>Background</h4>Large language models (LLMs) demonstrate strong performance on medical knowledge benchmarks, but their safe and effective use in clinical practice depends on posttraining adaptation rather than raw model capability. Fine-tuning, retrieval-augmented generation (RAG), and hybrid approaches are principal strateg",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42753254"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Fine-Tuning, Retrieval-Augmented Generation, and Hybrid Adaptation of Language Models for Clinical Decision-Making in Health Care: Systematic Review. <h4>Background</h4>Large language models (LLMs) demonstrate strong performance on medical knowledge benchmarks, but their safe and effective use in clinical practice depends on posttrainin",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42753254"
+        },
+        {
+          "term": "cancer",
+          "excerpt": "monstrated strong performance for task-specific applications, achieving area under the receiver operating characteristic curve values up to 0.912 for cancer detection and area under curve of 0.892 for major depressive disorder prediction, while matching clinician-level diagnostic performance in several studies. RAG improved guideline adherence and diagnostic accuracy, with increases from 71.1%",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42753254"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "ly achieved the strongest performance in complex clinical workflows, with external validation accuracies exceeding 90% in stroke triage, dermatology, multimodal imaging, and oncology applications. Risk-of-bias assessment identified substantial methodological limitations, with 25 studies judged as high risk, 9 as unclear risk, and only 1 as low risk overall. Common concerns included inadequate exte",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42753254"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "d if they met all the following criteria: (1) studies were required to involve clinical datasets derived from electronic health records, radiology or pathology reports, laboratory results, discharge summaries, structured symptom descriptions, clinical vignettes, clinical textbooks, or multimodal clinical datasets across any health care domain; and (2) the study was required to evaluate at least o",
+          "location": "Eligibility Criteria",
+          "source_url": "https://europepmc.org/article/MED/42753254"
+        },
+        {
+          "term": "tool using",
+          "excerpt": "cal data]] A vision–language foundation model for Alzheimer’s disease diagnosis using MRI and clinical data [[SECTION Stroke diagnosis and prediction tool using ChatGLM: development and validation study]] Stroke diagnosis and prediction tool using ChatGLM: development and validation study [[SECTION Diagnosis assistant for liver cancer utilizing a large language model with three types of knowledge]",
+          "location": "A vision–language foundation model for Alzheimer’s disease diagnosis using MRI and clinical data",
+          "source_url": "https://europepmc.org/article/MED/42753254"
+        }
+      ],
+      "related_benchmarks": [
+        "MultiMedQA",
+        "MedQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 23,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "5a2e727bd842a960683799d51acd984f0cf3438fbb99118cf6d0bb2a3f44f2b2",
       "is_seed": false,
       "topic": "multimodal",
       "contribution_type": "new_benchmark"
