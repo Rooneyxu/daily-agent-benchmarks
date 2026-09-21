@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-20T09:23:00Z",
-  "total": 115,
+  "generated_at": "2026-09-21T10:06:30Z",
+  "total": 116,
   "counts": {
     "topics": {
+      "experiment_agent": 27,
       "multimodal": 32,
-      "experiment_agent": 26,
       "general_text": 45,
       "biosafety": 12
     },
     "contribution_types": {
-      "new_benchmark": 87,
+      "new_benchmark": 88,
       "audit": 13,
       "methodology": 15
     },
     "kinds": {
-      "paper": 115
+      "paper": 116
     },
     "evaluation_contexts": {
-      "beneficial_capability": 103,
+      "beneficial_capability": 104,
       "biosecurity_misuse": 12
     }
   },
@@ -59,48 +59,48 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-09-20T09:23:13Z",
-      "finished_at": "2026-09-20T09:23:40Z",
-      "discovered": 22,
-      "published": 12,
+      "started_at": "2026-09-21T10:06:47Z",
+      "finished_at": "2026-09-21T10:07:10Z",
+      "discovered": 23,
+      "published": 13,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-09-20T09:23:40Z",
-      "finished_at": "2026-09-20T09:23:44Z",
-      "discovered": 77,
-      "published": 42,
+      "started_at": "2026-09-21T10:07:10Z",
+      "finished_at": "2026-09-21T10:07:15Z",
+      "discovered": 78,
+      "published": 46,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "success",
-      "started_at": "2026-09-20T09:23:44Z",
-      "finished_at": "2026-09-20T09:27:54Z",
-      "discovered": 983,
-      "published": 58,
-      "error": ""
+      "status": "failed",
+      "started_at": "2026-09-21T10:07:15Z",
+      "finished_at": "2026-09-21T10:07:35Z",
+      "discovered": 0,
+      "published": 0,
+      "error": "Server error '503 Service Unavailable' for url 'https://api.biorxiv.org/details/biorxiv/2026-09-17/2026-09-21/0'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "success",
-      "started_at": "2026-09-20T09:27:54Z",
-      "finished_at": "2026-09-20T09:28:13Z",
-      "discovered": 185,
-      "published": 20,
-      "error": ""
+      "status": "failed",
+      "started_at": "2026-09-21T10:07:35Z",
+      "finished_at": "2026-09-21T10:07:56Z",
+      "discovered": 0,
+      "published": 0,
+      "error": "Server disconnected without sending a response."
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "success",
-      "started_at": "2026-09-20T09:28:13Z",
-      "finished_at": "2026-09-20T09:28:51Z",
+      "started_at": "2026-09-21T10:07:56Z",
+      "finished_at": "2026-09-21T10:08:52Z",
       "discovered": 0,
       "published": 0,
       "error": ""
@@ -109,8 +109,9 @@
   "days": [
     {
       "date": "2026-09-18",
-      "count": 1,
+      "count": 2,
       "entry_ids": [
+        "arxiv:2609.22064",
         "doi:10.64898/2026.09.17.752482"
       ]
     },
@@ -585,65 +586,198 @@
   ],
   "entries": [
     {
+      "id": "arxiv:2609.22064",
+      "slug": "arxiv-2609-22064-5996c5241e",
+      "kind": "paper",
+      "title": "BrainWideBench: Benchmarking large-scale pretraining and across-animal transfer in multi-region neural recordings",
+      "abstract": "Advances in large-scale neural recording have made it possible to collect data across many animals and distributed brain regions, raising the question of whether this scale can be exploited to learn general-purpose neural representations transferable across diverse downstream tasks. Yet, progress toward this goal has been limited by fragmented evaluation protocols and a narrow focus on individual task domains. Here, we present BrainWideBench, a benchmark for evaluating across-animal transfer on multi-region neural recordings, built on the International Brain Laboratory Brainwide Map dataset of neural and behavioral recordings spanning 276 brain regions from 139 mice performing a sensory-guided decision-making task. The benchmark is organized around three complementary task suites that evaluate whether learned representations support downstream decoding of behavior, can predict masked or future neural activity, and can recover biologically meaningful anatomical organization. With this benchmark, we systematically evaluate pretraining methods across transfer settings, including finetuning on downstream objectives and zero-shot generalization to unseen animals. Our results confirm pretraining improves performance over matched single-session baselines, but we show current methods exhibit heterogeneity in transfer capabilities: gains depend strongly on the alignment between pretraining objectives and downstream tasks. No single approach performs uniformly well across all three suites, and most methods are designed to only address a subset of them. Together, these findings suggest that learning representations that jointly generalize across behavior, dynamics, and anatomy remains an open challenge. By providing a unified and reproducible evaluation suite, BrainWideBench establishes a framework for measuring progress toward general-purpose models of the mouse brain.",
+      "authors": [
+        "Alexandre Andre",
+        "Shivashriganesh P. Mahato",
+        "Vinam Arora",
+        "Keshav Balaji",
+        "Divyansha Lachi",
+        "Nanda H. Krishna",
+        "Jingyun Xiao",
+        "Yizi Zhang",
+        "Ximeng Mao",
+        "Wenrui Ma",
+        "Han Yu",
+        "International Brain Laboratory",
+        "Daniel Birman",
+        "Niccolò Bonacchi",
+        "Gaelle A. Chapuis",
+        "Joana A. Catarino",
+        "Felicia Davatolhagh",
+        "Mayo Faulkner",
+        "Laura Freitas-Silva",
+        "Fei Hu",
+        "Julia M. Huntenburg",
+        "Anup Khanal",
+        "Inês Laranjeira",
+        "Petrina Lau",
+        "Guido T. Meijer",
+        "Nathaniel J. Miska",
+        "Jean-Paul Noel",
+        "Alejandro Pan-Vazquez",
+        "Georg Raiser",
+        "Cyrille Rossant",
+        "Karolina Z. Socha",
+        "Anne E. Urai",
+        "Miles J. Wells",
+        "Steven J. West",
+        "Olivier Winter",
+        "Blake Richards",
+        "Guillaume Lajoie",
+        "Cole Hurwitz",
+        "Mehdi Azabou",
+        "Matthew R. Whiteway",
+        "Liam Paninski",
+        "Eva L. Dyer"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-18T17:54:32+00:00",
+      "updated_at": "2026-09-18T17:54:32+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.22064"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.22064v1",
+        "pdf": "https://arxiv.org/pdf/2609.22064v1",
+        "code": "https://github.com/brainbench-org/ibl-bwb",
+        "html": "https://arxiv.org/html/2609.22064"
+      },
+      "evidence": [
+        {
+          "term": "we present BrainWideBench",
+          "excerpt": "stream tasks. Yet, progress toward this goal has been limited by fragmented evaluation protocols and a narrow focus on individual task domains. Here, we present BrainWideBench, a benchmark for evaluating across-animal transfer on multi-region neural recordings, built on the International Brain Laboratory Brainwide Map dataset of neural and behavioral recordings spanning 276 brain regions from 139 mice performing",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.22064"
+        },
+        {
+          "term": "we present BrainWideBench, a benchmark",
+          "excerpt": "stream tasks. Yet, progress toward this goal has been limited by fragmented evaluation protocols and a narrow focus on individual task domains. Here, we present BrainWideBench, a benchmark for evaluating across-animal transfer on multi-region neural recordings, built on the International Brain Laboratory Brainwide Map dataset of neural and behavioral recordings spanning 276 brain regions from 139 mice performing a sensory-gu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.22064"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "BrainWideBench: Benchmarking large-scale pretraining and across-animal transfer in multi-region neural recordings Advances in large-scale neural recording have made it possible to collect data across many animals and distributed brain regions, raising the question",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.22064"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "BrainWideBench: Benchmarking large-scale pretraining and across-animal transfer in multi-region neural recordings Advances in large-scale neural recording have made it possible to collect data across many animals and distributed brain regions, raising the question of",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.22064"
+        },
+        {
+          "term": "evaluation suite",
+          "excerpt": "ing representations that jointly generalize across behavior, dynamics, and anatomy remains an open challenge. By providing a unified and reproducible evaluation suite, BrainWideBench establishes a framework for measuring progress toward general-purpose models of the mouse brain. [[SECTION BrainWideBench: Benchmarking large-scale pretraining and across-animal transfer in multi-region neural recordings]]",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.22064"
+        },
+        {
+          "term": "biological",
+          "excerpt": "that evaluate whether learned representations support downstream decoding of behavior, can predict masked or future neural activity, and can recover biologically meaningful anatomical organization. With this benchmark, we systematically evaluate pretraining methods across transfer settings, including finetuning on downstream objectives and zero-shot generalization to unseen animals. Our results c",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.22064"
+        },
+        {
+          "term": "laboratory",
+          "excerpt": "ere, we present BrainWideBench, a benchmark for evaluating across-animal transfer on multi-region neural recordings, built on the International Brain Laboratory Brainwide Map dataset of neural and behavioral recordings spanning 276 brain regions from 139 mice performing a sensory-guided decision-making task. The benchmark is organized around three complementary task suites that evaluate whether le",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.22064"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "pipeline in our codebase for reproducibility. . This enables scalable and reproducible benchmarking workflows. Together, the scale, standardization, multimodality, and brain-wide coverage of the IBL dataset make it particularly well suited for our benchmark. [[SECTION 3 BrainWideBench Task Suites]] 3 BrainWideBench Task Suites In the following sections, we detail the task suites that constitute t",
+          "location": "2.2 Why this dataset?",
+          "source_url": "https://arxiv.org/html/2609.22064"
+        }
+      ],
+      "related_benchmarks": [
+        "BrainWideBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 31,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "df4c2bbf83c9feaa2c3f2cbe1f30f1bdeaa973168cf73f9e6f64a5b80598a588",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "doi:10.64898/2026.09.17.752482",
       "slug": "doi-10-64898-2026-09-17-752482-975c374fff",
       "kind": "paper",
       "title": "BoneGraph: A Domain-Specialised, Self-Correcting Reasoning System for Bone Science Retrieval, Grounded Inference, and Image Mechanics",
       "abstract": "Bone science literature spans biology, mechanics, materials science, and clinical medicine, and its volume makes reliable knowledge synthesis increasingly difficult. General-purpose large language models (LLMs) answer fluently but under-represent this niche domain, cannot cite specific evidence, and offer no mechanism to be corrected durably. Here we present BoneGraph, a domain-specialised system for bone science delivered as a five-tab web application over a shared substrate: a curated full-text corpus of 7,449 documents embedded into 248,629 passage vectors using SPECTER2, a scientific-paper embedding model, and a bone knowledge graph of 1,597 concepts with 1,699 causal relations. The five tabs are: (I) Chat, retrieval-augmented question answering with server-rebuilt inline citations; (II) Search, raw semantic retrieval with no LLM in the loop; (III) Reasoning, a self-correcting loop in which a deterministic physics check and a literature/knowledge-graph critic constrain the answer, and a user's feedback becomes a durable, per-user rule; (IV) Vision, a bone-region classifier trained on frozen BiomedCLIP features that grounds a vision-language model, guarded against out-of-distribution inputs and augmented with image-embedding correction memory; and (V) Mechanics, integrating our previous data-driven image mechanics (D2IM) model that predicts displacement and strain fields from a single undeformed micro-CT image. All inference is performed locally, without third-party API calls, and the public beta is served at bonegraph.org. Retrieval attains a mean reciprocal rank (MRR) of 0.928 on a 30-question, seven-domain benchmark, and the Vision classifier attains 92.6% accuracy on the held-out MURA (MUsculoskeletal RAdiographs) dataset. A grounded-reasoning benchmark shows that, with the correct passage, BoneGraph raises answer accuracy from 42% to 78%. BoneGraph makes a major contribution to bone-science informatics: to our knowledge it is the first domain-specialised system to unify curated retrieval, deterministic physics-grounded self-correction, and durable per-user learning for bone science.",
       "authors": [
-        "Valijonov, J.",
-        "Soar, P.",
-        "Le Houx, J.",
-        "Tozzi, G."
+        "Valijonov J",
+        "Soar P",
+        "Le Houx J",
+        "Tozzi G."
       ],
-      "source": "biorxiv",
+      "source": "europepmc",
       "published_at": "2026-09-18T00:00:00+00:00",
-      "updated_at": "2026-09-18T00:00:00+00:00",
+      "updated_at": "2026-09-19T00:00:00+00:00",
       "priority": "P1",
       "categories": [
         "multimodal"
       ],
       "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "cc_by",
+      "access_status": "unknown",
+      "license": "",
       "identifiers": {
         "doi": "10.64898/2026.09.17.752482"
       },
       "links": {
-        "abs": "https://www.biorxiv.org/content/10.64898/2026.09.17.752482",
-        "pdf": "https://www.biorxiv.org/content/10.64898/2026.09.17.752482.full.pdf",
-        "html": "https://www.biorxiv.org/content/10.64898/2026.09.17.752482.full"
+        "abs": "https://europepmc.org/article/PPR/PPR1322429"
       },
       "evidence": [
         {
           "term": "benchmark",
           "excerpt": "rty API calls, and the public beta is served at bonegraph.org. Retrieval attains a mean reciprocal rank (MRR) of 0.928 on a 30-question, seven-domain benchmark, and the Vision classifier attains 92.6% accuracy on the held-out MURA (MUsculoskeletal RAdiographs) dataset. A grounded-reasoning benchmark shows that, with the correct passage, BoneGraph raises answer accuracy from 42% to 78%. BoneGraph",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.17.752482.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1322429"
         },
         {
           "term": "biology",
           "excerpt": "omain-Specialised, Self-Correcting Reasoning System for Bone Science Retrieval, Grounded Inference, and Image Mechanics Bone science literature spans biology, mechanics, materials science, and clinical medicine, and its volume makes reliable knowledge synthesis increasingly difficult. General-purpose large language models (LLMs) answer fluently but under-represent this niche domain, cannot cite",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.17.752482.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1322429"
         },
         {
           "term": "medicine",
           "excerpt": "for Bone Science Retrieval, Grounded Inference, and Image Mechanics Bone science literature spans biology, mechanics, materials science, and clinical medicine, and its volume makes reliable knowledge synthesis increasingly difficult. General-purpose large language models (LLMs) answer fluently but under-represent this niche domain, cannot cite specific evidence, and offer no mechanism to be corr",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.17.752482.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1322429"
         },
         {
           "term": "clinical",
           "excerpt": "g System for Bone Science Retrieval, Grounded Inference, and Image Mechanics Bone science literature spans biology, mechanics, materials science, and clinical medicine, and its volume makes reliable knowledge synthesis increasingly difficult. General-purpose large language models (LLMs) answer fluently but under-represent this niche domain, cannot cite specific evidence, and offer no mechanism t",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.17.752482.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1322429"
         },
         {
           "term": "vision-language",
           "excerpt": "r, and a user's feedback becomes a durable, per-user rule; (IV) Vision, a bone-region classifier trained on frozen BiomedCLIP features that grounds a vision-language model, guarded against out-of-distribution inputs and augmented with image-embedding correction memory; and (V) Mechanics, integrating our previous data-driven image mechanics (D2IM) model that predicts displacement and strain fields from",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.17.752482.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1322429"
         }
       ],
       "related_benchmarks": [],
@@ -653,8 +787,8 @@
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
       "match_score": 18,
-      "extraction_status": "incomplete",
-      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.09.17.752482.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "extraction_status": "complete",
+      "extraction_error": "",
       "content_hash": "11162399367ef8459e74670f46280aff302701b7832c3c42492c3454151d78c4",
       "is_seed": false,
       "topic": "multimodal",
