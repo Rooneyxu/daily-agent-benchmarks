@@ -1,0 +1,117 @@
+{
+  "date": "2026-09-20",
+  "count": 1,
+  "entries": [
+    {
+      "id": "arxiv:2609.23435",
+      "slug": "arxiv-2609-23435-8e1f408b78",
+      "kind": "paper",
+      "title": "Tool-Augmented On-Policy Distillation for LLM Domain Adaptation in Sequence-Based Omics Tasks",
+      "abstract": "Multi-omics sequences contain complex biological patterns, yet deciphering their mechanisms for automated scientific discovery remains challenging. As large language models (LLMs) interpret these sequences, evaluating both predictions and scientific reasoning is critical. However, existing benchmarks for multi-omics sequence tasks rely on classification and regression metrics, neglecting whether models grasp the underlying biological evidence. We introduce OmicsBench, the first reasoning benchmark for multi-omics sequences, comprising 1,160 expert-validated questions across six tasks spanning DNA regulation, RNA processing, and protein function. OmicsBench requires traceable evidence chains, evaluated using instance-specific rubrics developed with domain experts. Evaluating 17 LLMs reveals an inverse relationship: while scientific LLMs outperform general-purpose LLMs in sequence classification accuracy, they fail to provide valid evidence to support their predictions. One plausible interpretation is shortcut learning: specialized models may rely on statistical patterns rather than the biological mechanisms needed for scientific discovery. Motivated by this finding, we introduce tool-augmented on-policy distillation (TA-OPD), a post-training method to align sequence prediction with evidence-grounded biological reasoning. Across five Qwen3.5 models spanning 0.8B to 27B parameters, TA-OPD consistently strengthens biological evidence grounding while improving predictive performance on most tasks. These gains persist across model scales, indicating that stronger sequence reasoning does not arise solely from increased model capacity, but can be improved through evidence-aware training. Together, OmicsBench and TA-OPD provide a framework for diagnosing reasoning failures in multi-omics LLMs and a path toward models whose predictions are better grounded in biologically meaningful evidence.",
+      "authors": [
+        "Jie Ying",
+        "Zhefan Wang",
+        "Zihong Chen",
+        "Zhengqing Li",
+        "Jinzhe Li",
+        "Gang Li",
+        "Jian Liu",
+        "Fang Hu",
+        "Tao Luo",
+        "Zhonghang Yuan",
+        "Wanli Ouyang",
+        "Stan Z. Li",
+        "Fan Yang",
+        "Nanqing Dong"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-20T08:08:34+00:00",
+      "updated_at": "2026-09-20T08:08:34+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.23435"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.23435v1",
+        "pdf": "https://arxiv.org/pdf/2609.23435v1",
+        "code": "https://github.com/SeedScientist/OmicsBench",
+        "data": "https://huggingface.co/datasets/yj12869741/TA-OPD-10K",
+        "html": "https://arxiv.org/html/2609.23435"
+      },
+      "evidence": [
+        {
+          "term": "We introduce OmicsBench",
+          "excerpt": "rks for multi-omics sequence tasks rely on classification and regression metrics, neglecting whether models grasp the underlying biological evidence. We introduce OmicsBench, the first reasoning benchmark for multi-omics sequences, comprising 1,160 expert-validated questions across six tasks spanning DNA regulation, RNA processing, and protein function. OmicsBench requires traceable evidence chains, evaluated",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.23435"
+        },
+        {
+          "term": "We introduce OmicsBench, the first reasoning benchmark",
+          "excerpt": "rks for multi-omics sequence tasks rely on classification and regression metrics, neglecting whether models grasp the underlying biological evidence. We introduce OmicsBench, the first reasoning benchmark for multi-omics sequences, comprising 1,160 expert-validated questions across six tasks spanning DNA regulation, RNA processing, and protein function. OmicsBench requires traceable evidence chains, evaluated using instance-specific rubrics",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.23435"
+        },
+        {
+          "term": "first reasoning benchmark",
+          "excerpt": "tasks rely on classification and regression metrics, neglecting whether models grasp the underlying biological evidence. We introduce OmicsBench, the first reasoning benchmark for multi-omics sequences, comprising 1,160 expert-validated questions across six tasks spanning DNA regulation, RNA processing, and protein function. OmicsBench requires traceable evidence chains, evaluated using instance-specific rubrics",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.23435"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "nging. As large language models (LLMs) interpret these sequences, evaluating both predictions and scientific reasoning is critical. However, existing benchmarks for multi-omics sequence tasks rely on classification and regression metrics, neglecting whether models grasp the underlying biological evidence. We introduce OmicsBench, the first reasoning benchmark for multi-omics sequences, comprising",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.23435"
+        },
+        {
+          "term": "biological",
+          "excerpt": "Tool-Augmented On-Policy Distillation for LLM Domain Adaptation in Sequence-Based Omics Tasks Multi-omics sequences contain complex biological patterns, yet deciphering their mechanisms for automated scientific discovery remains challenging. As large language models (LLMs) interpret these sequences, evaluating both predictions and scientific reasoning is critical. However, existi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.23435"
+        },
+        {
+          "term": "protein",
+          "excerpt": "soning benchmark for multi-omics sequences, comprising 1,160 expert-validated questions across six tasks spanning DNA regulation, RNA processing, and protein function. OmicsBench requires traceable evidence chains, evaluated using instance-specific rubrics developed with domain experts. Evaluating 17 LLMs reveals an inverse relationship: while scientific LLMs outperform general-purpose LLMs in",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.23435"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "de Almeida, B.P., Richard, G., Dalla-Torre, H., Blum, C., Hexemer, L., Pandey, P., Laurent, S., Rajesh, C., Lopez, M., Laterre, A., et al. (2025). A multimodal conversational agent for DNA, RNA and protein tasks . Nat Mach Intell 7, 928–941. Dong et al. (2024) Dong, Q., Li, L., Dai, D., Zheng, C., Ma, J., Li, R., Xia, H., Xu, J., Wu, Z., Chang, B., et al. (2024). A survey on in-context learning",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2609.23435"
+        },
+        {
+          "term": "biomedical agents",
+          "excerpt": "ith more flexible measures of biological reasoning. [[SECTION 3.2 Implications of TA-OPD]] 3.2 Implications of TA-OPD TA-OPD offers a way to transfer biomedical agents’ ability to reason from evidence to LLMs through post-training. Across the five model sizes, larger mean predictive gains were accompanied by larger increases in Avg Recall. At 27B, EMP, Prom, TFBS and ncRNA showed clear gains in both pred",
+          "location": "3.2 Implications of TA-OPD",
+          "source_url": "https://arxiv.org/html/2609.23435"
+        }
+      ],
+      "related_benchmarks": [
+        "OmicsBench",
+        "HealthBench",
+        "SeedBench",
+        "LAB-Bench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 28,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "6d98f03a93685d96c370519cf462313f822f68eb43029f114c46dfdcc18f97df",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
