@@ -1,0 +1,90 @@
+{
+  "date": "2026-09-21",
+  "count": 1,
+  "entries": [
+    {
+      "id": "doi:10.2196/92090",
+      "slug": "doi-10-2196-92090-6725826927",
+      "kind": "paper",
+      "title": "Improving Reliability and Explainability of Medical Question Answering Through Atomic Fact-Checking in Retrieval-Augmented Large Language Models: Creation and Validation Study.",
+      "abstract": "<h4>Background</h4>Large language models (LLMs) exhibit extensive medical knowledge but are prone to hallucinations and show low fact-level explainability, limiting clinical adoption and regulatory compliance. Existing approaches, such as retrieval-augmented generation, partially address these issues by grounding answers in source documents; however, the aforementioned problems persist.<h4>Objective</h4>We propose the application of an atomic fact-checking framework designed to enhance the reliability and explainability of LLMs in medical long-form question answering. By decomposing generated answers into discrete atomic facts and verifying each against an authoritative knowledge base of medical guidelines, this approach enables precise identification and correction of incorrect statements, alongside explicit linkage to supporting literature.<h4>Methods</h4>The fact-checking algorithm operates within a retrieval-augmented generation framework: LLM-generated answers are decomposed into atomic facts (smallest and self-contained information units), each of which is assessed and corrected if FALSE. To determine an optimal strategy, the validation-question and answer (Q&A) set on prostate cancer treatment was tested under varying instructions. An extensive evaluation, including multireader assessments by human medical experts and the automated open Q&A benchmark AMEGA (Autonomous Medical Evaluation for Guideline Adherence), was conducted for the final pipeline. In addition to another radiooncologic test-Q&A set, anonymized real-world tumor board cases and an independent, established neurology-Q&A set were used. Given their transparency and accessibility advantages, we compared various open-source models in pairs of generalist models and their medical fine-tuned counterparts, with regard to performance and improvements by fact-checking.<h4>Results</h4>The framework significantly reduced hallucinations and inaccuracies. Medical expert assessment and automated benchmarks demonstrated significant improvements in factual accuracy, achieving up to a 50% overall answer improvement and an 80% hallucination detection rate. Notably, the observed gain was strongest in real tumor-board questions-the most challenging dataset. Additionally, the framework achieved high explainability by tracing each atomic fact back to the most relevant chunks from the database, providing a granular, transparent explanation of the generated responses.<h4>Conclusions</h4>To conclude, we present the application of an atomic fact-checking algorithm to medical Q&A. It identifies factual inaccuracies and hallucinations in LLM-generated answers, achieving the greatest gains on clinically realistic, complex questions. Correction via fact-checking improves the overall answer quality while achieving fact-wise explainability, paving the way for more credible clinical use of LLMs.",
+      "authors": [
+        "Vladika J",
+        "Domres A",
+        "Nguyen M",
+        "Moser R",
+        "Nano J",
+        "Busch F",
+        "Adams L",
+        "Bressem KK",
+        "Bernhardt D",
+        "Combs SE",
+        "Borm K",
+        "Matthes F",
+        "Peeken JC."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-09-21T00:00:00+00:00",
+      "updated_at": "2026-09-23T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.2196/92090",
+        "pmid": "42770666"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/42770666"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "was tested under varying instructions. An extensive evaluation, including multireader assessments by human medical experts and the automated open Q&A benchmark AMEGA (Autonomous Medical Evaluation for Guideline Adherence), was conducted for the final pipeline. In addition to another radiooncologic test-Q&A set, anonymized real-world tumor board cases and an independent, established neurology-Q&A",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42770666"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "vements by fact-checking.<h4>Results</h4>The framework significantly reduced hallucinations and inaccuracies. Medical expert assessment and automated benchmarks demonstrated significant improvements in factual accuracy, achieving up to a 50% overall answer improvement and an 80% hallucination detection rate. Notably, the observed gain was strongest in real tumor-board questions-the most challengin",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42770666"
+        },
+        {
+          "term": "medical",
+          "excerpt": "Improving Reliability and Explainability of Medical Question Answering Through Atomic Fact-Checking in Retrieval-Augmented Large Language Models: Creation and Validation Study. <h4>Background</h4>Large language models (LLMs) exhibit extensive medical knowledge but are prone to hallucination",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42770666"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "/h4>Large language models (LLMs) exhibit extensive medical knowledge but are prone to hallucinations and show low fact-level explainability, limiting clinical adoption and regulatory compliance. Existing approaches, such as retrieval-augmented generation, partially address these issues by grounding answers in source documents; however, the aforementioned problems persist.<h4>Objective</h4>We pro",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42770666"
+        },
+        {
+          "term": "cancer",
+          "excerpt": "units), each of which is assessed and corrected if FALSE. To determine an optimal strategy, the validation-question and answer (Q&A) set on prostate cancer treatment was tested under varying instructions. An extensive evaluation, including multireader assessments by human medical experts and the automated open Q&A benchmark AMEGA (Autonomous Medical Evaluation for Guideline Adherence), was co",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42770666"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c176e4ebeccd1696787d97c19494e604ef701802761fd7898dd06a5a3bb6fa64",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
