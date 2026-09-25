@@ -1,0 +1,111 @@
+{
+  "date": "2026-09-24",
+  "count": 1,
+  "entries": [
+    {
+      "id": "arxiv:2609.30205",
+      "slug": "arxiv-2609-30205-255c477fe0",
+      "kind": "paper",
+      "title": "A Living Benchmark for Information Retrieval from Electronic Health Records",
+      "abstract": "Large language model (LLM)-based clinical assistants are increasingly being integrated into electronic health record (EHR) systems, transforming how clinicians retrieve and synthesize information from patient records. Their safety and utility depend on rigorous evaluation, yet existing benchmarks are manually curated, costly to update, and rapidly become obsolete with evolving technological advancements. We present a scalable framework that automatically generates question--answer pairs from longitudinal EHR notes. Nineteen clinicians validate the benchmark generator, producing the Benchmark for Retrieving Information in EHRs (BRIE), a continuously maintainable evaluation dataset. Across nine LLMs and five inference strategies, state-of-the-art systems frequently omit clinically important information, particularly for questions requiring synthesis across multiple documents and encounters. Because the generator itself is validated, BRIE supports evaluations that static benchmarks cannot, including the generation of multiple answers that reflect variation in clinician reasoning for robust performance assessment and continuously refreshing benchmark content to guard against leakage. Our results demonstrate that scalable benchmark generation enables rigorous, up-to-date evaluation of clinical LLMs as they are deployed in rapidly evolving healthcare settings.",
+      "authors": [
+        "Jordan L. Cahoon",
+        "Chloe O. Stanwyck",
+        "Sulaiman Somani",
+        "Philip Chung",
+        "Kevin R Keet",
+        "Kameron C. Black",
+        "Andrea T. Fisher",
+        "Sarita Khemani",
+        "Jerry Liu",
+        "Stephen Ma",
+        "Saloni K. Maharaj",
+        "Rita M. Pandya",
+        "Eduardo Perez-Guerrero",
+        "Priyanka Pillai",
+        "Lisa Shieh",
+        "David J. H. Wu",
+        "James Xie",
+        "James C. McAvoy",
+        "Teresa Nguyen",
+        "Jessica Tran",
+        "Lucy Yin",
+        "Bridget Lin",
+        "Alison Callahan",
+        "Jason A. Fries",
+        "Nigam H. Shah",
+        "Emily Alsentzer"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-24T17:41:16+00:00",
+      "updated_at": "2026-09-24T17:41:16+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.30205"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.30205v1",
+        "pdf": "https://arxiv.org/pdf/2609.30205v1",
+        "code": "https://github.com/alsentzerlab/brie",
+        "html": "https://arxiv.org/html/2609.30205"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "A Living Benchmark for Information Retrieval from Electronic Health Records Large language model (LLM)-based clinical assistants are increasingly being integrated into electronic health record (EHR) systems, transforming how clinicians retrieve and synthesiz",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.30205"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "forming how clinicians retrieve and synthesize information from patient records. Their safety and utility depend on rigorous evaluation, yet existing benchmarks are manually curated, costly to update, and rapidly become obsolete with evolving technological advancements. We present a scalable framework that automatically generates question--answer pairs from longitudinal EHR notes. Nineteen clinici",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.30205"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "A Living Benchmark for Information Retrieval from Electronic Health Records Large language model (LLM)-based clinical assistants are increasingly being integrated into electronic health record (EHR) systems, transforming how clinicians retrieve and synthesize information from patient records. Their safety and utility depend on rigorous evaluation, yet exi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.30205"
+        },
+        {
+          "term": "healthcare",
+          "excerpt": "ults demonstrate that scalable benchmark generation enables rigorous, up-to-date evaluation of clinical LLMs as they are deployed in rapidly evolving healthcare settings. [[SECTION A Living Benchmark for Information Retrieval from Electronic Health Records]] A Living Benchmark for Information Retrieval from Electronic Health Records Content selection saved. Describe the issue below: [[SECTION A Li",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.30205"
+        },
+        {
+          "term": "patient",
+          "excerpt": "s are increasingly being integrated into electronic health record (EHR) systems, transforming how clinicians retrieve and synthesize information from patient records. Their safety and utility depend on rigorous evaluation, yet existing benchmarks are manually curated, costly to update, and rapidly become obsolete with evolving technological advancements. We present a scalable framework that aut",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.30205"
+        },
+        {
+          "term": "tool use",
+          "excerpt": "ich ranks document chunks by semantic similarity. Finally, we evaluated an Agentic configuration that performs LLM-guided retrieval through iterative tool use with conditional stopping. The large number of model and retrieval configurations makes exhaustive manual evaluation infeasible. We therefore developed and validated two automated LLM-as-a-judge methods [ Bedi2026 ] . The first uses fact e",
+          "location": "BRIE: benchmark for retrieving information in electronic health records",
+          "source_url": "https://arxiv.org/html/2609.30205"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 21,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "7ade910b35483c7355a33d531472fc7ee3b963dd337c9479239a7af24028d605",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
