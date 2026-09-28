@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-27T10:07:03Z",
-  "total": 120,
+  "generated_at": "2026-09-28T11:06:41Z",
+  "total": 124,
   "counts": {
     "topics": {
+      "multimodal": 34,
+      "general_text": 49,
       "experiment_agent": 29,
-      "general_text": 47,
-      "multimodal": 32,
       "biosafety": 12
     },
     "contribution_types": {
-      "new_benchmark": 91,
+      "new_benchmark": 95,
       "methodology": 16,
       "audit": 13
     },
     "kinds": {
-      "paper": 120
+      "paper": 124
     },
     "evaluation_contexts": {
-      "beneficial_capability": 108,
+      "beneficial_capability": 112,
       "biosecurity_misuse": 12
     }
   },
@@ -59,48 +59,48 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-09-27T10:07:17Z",
-      "finished_at": "2026-09-27T10:07:44Z",
-      "discovered": 21,
-      "published": 13,
+      "started_at": "2026-09-28T11:06:51Z",
+      "finished_at": "2026-09-28T11:07:12Z",
+      "discovered": 30,
+      "published": 15,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-09-27T10:07:44Z",
-      "finished_at": "2026-09-27T10:07:46Z",
-      "discovered": 14,
-      "published": 6,
+      "started_at": "2026-09-28T11:07:12Z",
+      "finished_at": "2026-09-28T11:08:17Z",
+      "discovered": 63,
+      "published": 36,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "failed",
-      "started_at": "2026-09-27T10:07:46Z",
-      "finished_at": "2026-09-27T10:07:46Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "Expecting value: line 1 column 1 (char 0)"
+      "status": "success",
+      "started_at": "2026-09-28T11:08:17Z",
+      "finished_at": "2026-09-28T11:09:24Z",
+      "discovered": 938,
+      "published": 63,
+      "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "failed",
-      "started_at": "2026-09-27T10:07:46Z",
-      "finished_at": "2026-09-27T10:07:46Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "Expecting value: line 1 column 1 (char 0)"
+      "status": "success",
+      "started_at": "2026-09-28T11:09:24Z",
+      "finished_at": "2026-09-28T11:09:37Z",
+      "discovered": 155,
+      "published": 11,
+      "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-09-27T10:07:46Z",
-      "finished_at": "2026-09-27T10:07:46Z",
+      "started_at": "2026-09-28T11:09:37Z",
+      "finished_at": "2026-09-28T11:09:38Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
@@ -108,9 +108,19 @@
   ],
   "days": [
     {
-      "date": "2026-09-24",
-      "count": 1,
+      "date": "2026-09-25",
+      "count": 3,
       "entry_ids": [
+        "arxiv:2609.30928",
+        "doi:10.64898/2026.09.20.752967",
+        "doi:10.21203/rs.3.rs-10531914/v1"
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "count": 2,
+      "entry_ids": [
+        "arxiv:2609.30489",
         "arxiv:2609.30205"
       ]
     },
@@ -613,6 +623,395 @@
     }
   ],
   "entries": [
+    {
+      "id": "arxiv:2609.30928",
+      "slug": "arxiv-2609-30928-9003602e11",
+      "kind": "paper",
+      "title": "UltraG-Bench: A Multi-task Benchmark for assessing Large Vision-Language Models on Pixel-level Evidence Grounding in Ultrasound",
+      "abstract": "Ultrasound is one of the most widely used medical imaging modalities, and recent large vision-language models(VLMs) have shown increasing capabilities in ultrasound image understanding. However, these models fail to provide pixel-level visual evidence aligned with their semantic predictions, and their fine-grained grounding capability in ultrasound remains largely unclear. We introduce UltraG-Bench, a large-scale multi-task benchmark for evaluating pixel-level evidence grounding in ultrasound. UltraG-Bench is built by annotating 40 public ultrasound segmentation datasets spanning 13 anatomical categories, and comprises three progressive tasks: instruction-guided segmentation, evidence-grounded VQA, and evidence-grounded report generation, with 331125, 666779, and 138832 annotations, respectively. Comprehensive evaluation of 14 state-of-the-art models reveals a substantial gap between semantic understanding and fine-grained pixel-level localization. We further propose UltraG-Agent, which combines the semantic reasoning capabilities of a VLM with the ultrasound-specific segmentation capability of UltraSAM3. Experiments show that UltraG-Agent substantially improves both semantic prediction and pixel-level visual grounding. Our dataset and code are available at https://github.com/zhuqh19/UltraG-Bench.",
+      "authors": [
+        "Quanhao Zhu",
+        "Bo Xu",
+        "Rui Lin",
+        "Chenyuan Wang",
+        "Yu Shao",
+        "Boling Zhu",
+        "Jiuyan Sun",
+        "Liang Zhao",
+        "Hongfei Lin",
+        "Feng Xia"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-25T07:43:12+00:00",
+      "updated_at": "2026-09-25T07:43:12+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.30928"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.30928v1",
+        "pdf": "https://arxiv.org/pdf/2609.30928v1",
+        "code": "https://github.com/zhuqh19/UltraG-Bench",
+        "html": "https://arxiv.org/html/2609.30928"
+      },
+      "evidence": [
+        {
+          "term": "We introduce UltraG-Bench",
+          "excerpt": "xel-level visual evidence aligned with their semantic predictions, and their fine-grained grounding capability in ultrasound remains largely unclear. We introduce UltraG-Bench, a large-scale multi-task benchmark for evaluating pixel-level evidence grounding in ultrasound. UltraG-Bench is built by annotating 40 public ultrasound segmentation datasets spanning 13 anatomical categories, and comprises three progress",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.30928"
+        },
+        {
+          "term": "We introduce UltraG-Bench, a large-scale multi-task benchmark",
+          "excerpt": "xel-level visual evidence aligned with their semantic predictions, and their fine-grained grounding capability in ultrasound remains largely unclear. We introduce UltraG-Bench, a large-scale multi-task benchmark for evaluating pixel-level evidence grounding in ultrasound. UltraG-Bench is built by annotating 40 public ultrasound segmentation datasets spanning 13 anatomical categories, and comprises three progressive tasks: instruction-guided segmen",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.30928"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "UltraG-Bench: A Multi-task Benchmark for assessing Large Vision-Language Models on Pixel-level Evidence Grounding in Ultrasound Ultrasound is one of the most widely used medical imaging modalities, and recent large vision-language models(VLMs) have shown increasing capabiliti",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.30928"
+        },
+        {
+          "term": "medical",
+          "excerpt": "i-task Benchmark for assessing Large Vision-Language Models on Pixel-level Evidence Grounding in Ultrasound Ultrasound is one of the most widely used medical imaging modalities, and recent large vision-language models(VLMs) have shown increasing capabilities in ultrasound image understanding. However, these models fail to provide pixel-level visual evidence aligned with their semantic predictio",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.30928"
+        },
+        {
+          "term": "medical imaging",
+          "excerpt": "i-task Benchmark for assessing Large Vision-Language Models on Pixel-level Evidence Grounding in Ultrasound Ultrasound is one of the most widely used medical imaging modalities, and recent large vision-language models(VLMs) have shown increasing capabilities in ultrasound image understanding. However, these models fail to provide pixel-level visual evidence aligned with their semantic predictions, and",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.30928"
+        },
+        {
+          "term": "Vision-Language",
+          "excerpt": "UltraG-Bench: A Multi-task Benchmark for assessing Large Vision-Language Models on Pixel-level Evidence Grounding in Ultrasound Ultrasound is one of the most widely used medical imaging modalities, and recent large vision-language models(VLMs) have shown increasing capabilities in ultrasound image understanding",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.30928"
+        },
+        {
+          "term": "pathological",
+          "excerpt": "construction, we explicitly preserve the correspondence between textual statements and the original segmentation masks, while restricting diagnostic, pathological, and treatment-related claims that are unsupported by the available pixel-level annotations, thereby ensuring that each grounded statement is backed by traceable visual evidence. Based on this benchmark, we systematically evaluate 15 state",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2609.30928"
+        },
+        {
+          "term": "visual grounding",
+          "excerpt": "und-specific segmentation capability of UltraSAM3. Experiments show that UltraG-Agent substantially improves both semantic prediction and pixel-level visual grounding. Our dataset and code are available at https://github.com/zhuqh19/UltraG-Bench. [[SECTION UltraG-Bench: A Multi-task Benchmark for assessing Large Vision-Language Models on Pixel-level Evidence Grounding in Ultrasound]] UltraG-Bench: A Mul",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.30928"
+        }
+      ],
+      "related_benchmarks": [
+        "VQA",
+        "PathVQA",
+        "OmniMedVQA",
+        "Med-VQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 23,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "3271dc55b1e403b6084f17e7d34c4fe20593df440dcef8a098558f7f20099537",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.09.20.752967",
+      "slug": "doi-10-64898-2026-09-20-752967-fabdd3831d",
+      "kind": "paper",
+      "title": "AnewDDE: An Agentic Drug Discovery Engine for Biomolecular Interaction Modelling and Closed-Loop Design",
+      "abstract": "Accurate modelling of biomolecular interactions is fundamental to drug discovery, yet current artificial intelligence (AI) workflows remain fragmented across structure prediction, affinity estimation, molecular design, and experimental decision-making. We introduce AnewDDE, an agentic Drug Discovery Engine that connects these capabilities into a closed-loop system for biomolecular interaction modelling and design. We demonstrate several components of this system: AnewFold delivers superior performance on challenging targets, including antibody-antigen complexes and molecular glues, providing more reliable structural hypotheses together with pocket identification and conformational analysis; AnewDesign achieves a 10.7% success rate in identifying binders with single-digit-nanomolar affinities measured by surface plasmon resonance (SPR) in a representative nanobody discovery campaign, substantially reducing the experimental search burden; AnewAffinity combines accuracy approaching that of free-energy perturbation (FEP) methods with the speed required for high-throughput screening and prioritizes promising transformations; and AnewMind, a large language model (LLM) at the hundred-billion-parameter scale that underwent in-house full-parameter post-training, provides scientific reasoning and absorption, distribution, metabolism, excretion, and toxicity (ADMET) prediction for pharmaceutical research and development (R&D). To systematically evaluate AnewMind, we introduce PharmBench, an internal benchmark designed by pharmaceutical R&D experts to evaluate long-horizon decision-making in drug discovery. Evaluations on ADMET tasks and PharmBench show that AnewMind performs competitively with leading frontier models. Together, these capabilities establish AnewDDE as an integrated engine for addressing challenging therapeutic targets and translating molecular insights into experimentally validated candidates at scale.",
+      "authors": [
+        "Anew Labs Team,",
+        "Liu, K."
+      ],
+      "source": "biorxiv",
+      "published_at": "2026-09-25T00:00:00+00:00",
+      "updated_at": "2026-09-25T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by_nc",
+      "identifiers": {
+        "doi": "10.64898/2026.09.20.752967"
+      },
+      "links": {
+        "abs": "https://www.biorxiv.org/content/10.64898/2026.09.20.752967",
+        "pdf": "https://www.biorxiv.org/content/10.64898/2026.09.20.752967.full.pdf",
+        "html": "https://www.biorxiv.org/content/10.64898/2026.09.20.752967.full"
+      },
+      "evidence": [
+        {
+          "term": "we introduce PharmBench",
+          "excerpt": "ution, metabolism, excretion, and toxicity (ADMET) prediction for pharmaceutical research and development (R&D). To systematically evaluate AnewMind, we introduce PharmBench, an internal benchmark designed by pharmaceutical R&D experts to evaluate long-horizon decision-making in drug discovery. Evaluations on ADMET tasks and PharmBench show that AnewMind performs competitively with leading frontier models. Tog",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.20.752967.full"
+        },
+        {
+          "term": "we introduce PharmBench, an internal benchmark",
+          "excerpt": "ution, metabolism, excretion, and toxicity (ADMET) prediction for pharmaceutical research and development (R&D). To systematically evaluate AnewMind, we introduce PharmBench, an internal benchmark designed by pharmaceutical R&D experts to evaluate long-horizon decision-making in drug discovery. Evaluations on ADMET tasks and PharmBench show that AnewMind performs competitively with leading frontier models. Together, these capabiliti",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.20.752967.full"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "icity (ADMET) prediction for pharmaceutical research and development (R&D). To systematically evaluate AnewMind, we introduce PharmBench, an internal benchmark designed by pharmaceutical R&D experts to evaluate long-horizon decision-making in drug discovery. Evaluations on ADMET tasks and PharmBench show that AnewMind performs competitively with leading frontier models. Together, these capabiliti",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.20.752967.full"
+        },
+        {
+          "term": "drug discovery",
+          "excerpt": "AnewDDE: An Agentic Drug Discovery Engine for Biomolecular Interaction Modelling and Closed-Loop Design Accurate modelling of biomolecular interactions is fundamental to drug discovery, yet current artificial intelligence (AI) workflows remain fragmented across structure pr",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.20.752967.full"
+        },
+        {
+          "term": "molecular",
+          "excerpt": "AnewDDE: An Agentic Drug Discovery Engine for Biomolecular Interaction Modelling and Closed-Loop Design Accurate modelling of biomolecular interactions is fundamental to drug discovery, yet current artificial intelligence (AI) workflows remain fragmented across structure prediction, affinity estim",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.20.752967.full"
+        }
+      ],
+      "related_benchmarks": [
+        "PharmBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 20,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.09.20.752967.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "a5c27342f479c95d7566a02774e57b8061b82ab6c4f8fa2f7970350783652b5c",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.21203/rs.3.rs-10531914/v1",
+      "slug": "doi-10-21203-rs-3-rs-10531914-v1-7ca929b2d4",
+      "kind": "paper",
+      "title": "MedConclusion: A Benchmark for Biomedical Conclusion Generation from Structured Abstracts",
+      "abstract": "<title>Abstract</title>  <p>Large language models (LLMs) are widely explored for reasoning-intensive research tasks, yet resources for testing whether they can infer scientific conclusions from structured biomedical evidence remain limited. We introduce MedConclusion, a large-scale dataset of 5.7M PubMed structured abstracts for biomedical conclusion generation. Each instance pairs the non-conclusion sections of an abstract with the original author-written conclusion, providing naturally occurring supervision for evidence-to-conclusion reasoning. MedConclusion also includes journal-level metadata such as biomedical category and SJR, enabling subgroup analysis across biomedical domains. As an initial study, we evaluate diverse LLMs under conclusion and summary prompting settings and score outputs with both reference-based metrics and LLM-as-a-judge. We find that conclusion writing is behaviorally distinct from summary writing, strong models remain closely clustered under current automatic metrics, and judge identity can substantially shift absolute scores. MedConclusion provides a reusable data resource for studying scientific evidence-to-conclusion reasoning. Our code and data are available at: https://github.com/Harvard-AI-and-Robotics-Lab/MedConclusion.</p>",
+      "authors": [
+        "Wang M",
+        "Li W",
+        "Qian R",
+        "Li Y",
+        "Li Y",
+        "Long Y",
+        "Cai J",
+        "Luo Y."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-09-25T00:00:00+00:00",
+      "updated_at": "2026-09-26T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-10531914/v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1327683"
+      },
+      "evidence": [
+        {
+          "term": "We introduce MedConclusion, a large-scale dataset",
+          "excerpt": "intensive research tasks, yet resources for testing whether they can infer scientific conclusions from structured biomedical evidence remain limited. We introduce MedConclusion, a large-scale dataset of 5.7M PubMed structured abstracts for biomedical conclusion generation. Each instance pairs the non-conclusion sections of an abstract with the original author-written conclusion, providing naturally occurring supervision for evidence-to",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1327683"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "MedConclusion: A Benchmark for Biomedical Conclusion Generation from Structured Abstracts <title>Abstract</title> <p>Large language models (LLMs) are widely explored for reasoning-intensive research tasks, yet resources for testing whether they can infer scientific",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1327683"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "MedConclusion: A Benchmark for Biomedical Conclusion Generation from Structured Abstracts <title>Abstract</title> <p>Large language models (LLMs) are widely explored for reasoning-intensive research tasks, yet resources for testing whether they can infer scientific conclusions fr",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1327683"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 17,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "8fe8c1ac0771822d9bc40c06af9e2740e89dd1e27f6256f6a87ac0d4565bc584",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2609.30489",
+      "slug": "arxiv-2609-30489-4ab50925c1",
+      "kind": "paper",
+      "title": "BioEVAL: A global, multi-institutional benchmark of large language and multimodal models for bioengineering",
+      "abstract": "Large Language Models (LLMs) have demonstrated historic breakthroughs in general reasoning with early successes in biomedical science. However, existing LLM benchmarking emphasizes factual recall, offering limited insight into model performance on frontier and multimodal tasks. We assembled BioEVAL (BioEngineering Validation of AI and LLMs), a global, multi-institutional initiative designed to assess experimental reasoning capability across bioengineering (BE) subfields. BioEVAL spans 11 major BE subfields plus a set of uncategorized items, bringing together 22 research groups to create a PhD-level benchmark comprising 608 evaluation items: 1) 380 multiple-choice questions (MCQs, 359 retained after audit), 2) 218 literature synthesis tasks, and 3) 10 multimodal problems with experimental image interpretation. Benchmark items underwent authoring-group expert review and centralized quality control before evaluation. Following evaluation, a blinded cross-group consensus audit of the highest- and lowest-accuracy MCQ items flagged 21 questions for revision or removal; these were withheld, and all reported MCQ results are computed on the 359 retained items. We evaluated diverse cloud-scale foundation/multimodal models (e.g., ChatGPT, Gemini, and Grok) and locally deployable models suitable for inference on consumer-grade GPUs. Models achieved the highest accuracy of up to 90% on MCQs, similarity score of 0.72 on literature synthesis, and accuracy of 80% on a small sample of multimodal reasoning questions, with substantial performance variation across subfields. Leaderboard rankings characterize current capabilities, limitations, and development priorities across the evaluated BE task categories. BioEVAL is maintained as an extensible benchmark with standardized protocols for continuing expert item contribution and model evaluation.",
+      "authors": [
+        "Shun Ye",
+        "Vinny Chandran Suja",
+        "Chenlong Li",
+        "Chongming Jiang",
+        "Reza Zamani",
+        "Xiang Li",
+        "Christopher Bain",
+        "Yuqi Zhou",
+        "Walker Peterson",
+        "Huidong Wang",
+        "Chenglang Hu",
+        "Jongchan Park",
+        "Xiao Cheng",
+        "Benjamin Swedlund",
+        "Sandra Murillo",
+        "Anjali Sivanandan",
+        "Shiyu Sun",
+        "Liang Lanfeng",
+        "Mohammad Tariqul Islam",
+        "Baju C. Joy",
+        "Ishaq N. Khan",
+        "Sreedhar S. Kumar",
+        "Gabriel Mercado-Vásquez",
+        "James V. Vizzard",
+        "Jonathan M. Matthews",
+        "Helen Huang",
+        "Xiaolu Guo",
+        "Ethan Nicklow",
+        "Guorui Chen",
+        "Ryan A. Neff",
+        "Surjendu Maity",
+        "Hyeonjin Park",
+        "Han-ho Joo",
+        "Katherine Dong",
+        "Yuyan Cai",
+        "Weihang Huang",
+        "Yichen Zou",
+        "Rui Yan",
+        "Raphael Figueroa",
+        "Artem Goncharov",
+        "Bella Rose Schremmer",
+        "Lian Elsa Linton",
+        "Keisuke Goda",
+        "Liang Gao",
+        "Ke Cheng",
+        "Leonardo Morsut",
+        "Jennifer L. Wilson",
+        "Jianping Fu",
+        "Lim Chwee Teck",
+        "Deblina Sarkar",
+        "Andreas Hierlemann",
+        "Savaş Tay",
+        "Alexander Hoffmann",
+        "Donald Richieri Griffin",
+        "Jun Chen",
+        "Shana O. Kelley",
+        "Shyni Varghese",
+        "Jinwoo Cheon",
+        "Wilbur A. Lam",
+        "James J. Moon",
+        "Wilson W. Wong",
+        "Samir Mitragotri",
+        "Dino Di Carlo"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-24T19:26:39+00:00",
+      "updated_at": "2026-09-24T19:26:39+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.30489"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.30489v1",
+        "pdf": "https://arxiv.org/pdf/2609.30489v1",
+        "html": "https://arxiv.org/html/2609.30489"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "BioEVAL: A global, multi-institutional benchmark of large language and multimodal models for bioengineering Large Language Models (LLMs) have demonstrated historic breakthroughs in general reasoning with early successes in biomedical science. However, existing LLM benchmarking emphasizes",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.30489"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "anguage Models (LLMs) have demonstrated historic breakthroughs in general reasoning with early successes in biomedical science. However, existing LLM benchmarking emphasizes factual recall, offering limited insight into model performance on frontier and multimodal tasks. We assembled BioEVAL (BioEngineering Validation of AI and LLMs), a global, multi-institutional initiative designed to assess exper",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.30489"
+        },
+        {
+          "term": "leaderboard",
+          "excerpt": "terature synthesis, and accuracy of 80% on a small sample of multimodal reasoning questions, with substantial performance variation across subfields. Leaderboard rankings characterize current capabilities, limitations, and development priorities across the evaluated BE task categories. BioEVAL is maintained as an extensible benchmark with standardized protocols for continuing expert item contributi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.30489"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "ltimodal models for bioengineering Large Language Models (LLMs) have demonstrated historic breakthroughs in general reasoning with early successes in biomedical science. However, existing LLM benchmarking emphasizes factual recall, offering limited insight into model performance on frontier and multimodal tasks. We assembled BioEVAL (BioEngineering Validation of AI and LLMs), a global, multi-insti",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.30489"
+        },
+        {
+          "term": "medical",
+          "excerpt": "modal models for bioengineering Large Language Models (LLMs) have demonstrated historic breakthroughs in general reasoning with early successes in biomedical science. However, existing LLM benchmarking emphasizes factual recall, offering limited insight into model performance on frontier and multimodal tasks. We assembled BioEVAL (BioEngineering Validation of AI and LLMs), a global, multi-insti",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.30489"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "BioEVAL: A global, multi-institutional benchmark of large language and multimodal models for bioengineering Large Language Models (LLMs) have demonstrated historic breakthroughs in general reasoning with early successes in biomedical science. However, existing LLM benchmarking emphasizes factual recall, offering limited",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.30489"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 21,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '404 Not Found' for url 'https://arxiv.org/html/2609.30489'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+      "content_hash": "056d4be11c842b6f2f2e65fb414289b3e2bf66164df4d2d690c5e72576333359",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
     {
       "id": "arxiv:2609.30205",
       "slug": "arxiv-2609-30205-255c477fe0",
