@@ -1,0 +1,433 @@
+{
+  "date": "2026-09-25",
+  "count": 9,
+  "report": {
+    "date": "2026-09-25",
+    "count": 9,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      }
+    ],
+    "en": {
+      "headline": "9 new agent benchmarks",
+      "summary": "On September 25, 2026, arXiv listed 9 new agent benchmarks. Work clustered around Planning / reasoning (3), Tool use (3), Multi-agent (2), and Safety (1).",
+      "highlights": [
+        {
+          "id": "2609.31906",
+          "title": "EmailBench: A Benchmark for Evaluating LLM Agents on Enterprise Email and Productivity Tasks",
+          "blurb": "Enterprise email agents must combine information retrieval, structured state changes, temporal reasoning, and multi-step coordination."
+        },
+        {
+          "id": "2609.30717",
+          "title": "RecToolBench: Benchmarking Recommendation-Specific Tool Orchestration under Fuzzy User Intent",
+          "blurb": "Recent advances in agentic recommender systems are shifting recommender systems from passive filtering engines to instruction-following agents that use external tools to resolve user intent."
+        },
+        {
+          "id": "2609.30971",
+          "title": "SciHorizon-eLab: An Agentic Protocol-to-Task Compiler for Scalable Benchmarking of Scientific Embodied Agents",
+          "blurb": "Embodied agents offer a promising route to automating scientific experimentation, yet their progress is constrained by the lack of reliable and systematic evaluation environments."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 9 篇 Agent Benchmark",
+      "summary": "2026年9月25日，arXiv 新增 9 篇 Agent Benchmark。当日主题集中在规划 / 推理（3）、工具使用（3）、多智能体（2）、安全（1）。",
+      "highlights": [
+        {
+          "id": "2609.31906",
+          "title": "EmailBench: A Benchmark for Evaluating LLM Agents on Enterprise Email and Productivity Tasks",
+          "blurb": "Enterprise email agents must combine information retrieval, structured state changes, temporal reasoning, and multi-step coordination."
+        },
+        {
+          "id": "2609.30717",
+          "title": "RecToolBench: Benchmarking Recommendation-Specific Tool Orchestration under Fuzzy User Intent",
+          "blurb": "Recent advances in agentic recommender systems are shifting recommender systems from passive filtering engines to instruction-following agents that use external tools to resolve user intent."
+        },
+        {
+          "id": "2609.30971",
+          "title": "SciHorizon-eLab: An Agentic Protocol-to-Task Compiler for Scalable Benchmarking of Scientific Embodied Agents",
+          "blurb": "Embodied agents offer a promising route to automating scientific experimentation, yet their progress is constrained by the lack of reliable and systematic evaluation environments."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2609.31967",
+      "title": "IndicFDB: Benchmarking Full-Duplex Voice Agents across Indian Languages",
+      "abstract": "Full-duplex voice agents must handle pauses, take turns, backchannel, and respond to user interruptions in real time. Full-Duplex-Bench evaluates these behaviors, but its English-only corpus and reliance on word-timestamped ASR and an English-prompted LLM judge make it difficult to extend to Indian languages. We introduce IndicFDB, which extends it to ten languages spoken in India with 12,350 samples, nearly 17 times as many as the original. We address three challenges: finding conversational events in multilingual speech, evaluating their timing without reliable word-level alignment, and judging responses across languages. We mine pause handling, turn taking, and backchanneling samples from roughly 50,000 hours of channel-separated conversations using voice activity detection (VAD), and construct human-validated synthetic user interruption samples. Language-independent VAD heuristics evaluate timing, while an open-weight transcription and translation pipeline converts responses to English for LLM ratings of relevance and quality. Across seven voice agents, commercial APIs show unexpectedly consistent behavior across languages but are either fast or robust to pauses, never both, while monolingual open full-duplex models expose further tradeoffs among backchanneling, response quality, and latency.",
+      "authors": [
+        "Rajarshi Roy",
+        "Shobhit Banga",
+        "Jonathan Raiman",
+        "Supriya Paul",
+        "Bhaskar Singh",
+        "Manmeet Kaur",
+        "Sagar Jain",
+        "Hanuman Sidh",
+        "Pranav Sharma",
+        "Aditya Singh",
+        "Aaditya Pareek",
+        "Manas Dhir",
+        "Adi Margolin",
+        "Niket Agarwal",
+        "Bryan Catanzaro"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-09-25T20:11:18Z",
+      "updated": "2026-09-25T20:11:18Z",
+      "announced_date": "2026-09-25",
+      "first_seen": "2026-09-25",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.31967v1",
+        "pdf": "https://arxiv.org/pdf/2609.31967v1",
+        "html": "https://arxiv.org/html/2609.31967"
+      },
+      "score": 5,
+      "tags": [
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2609.31957",
+      "title": "CaptchaArena: A Large-Scale, Fine-Grained Dataset for Training Computer-Use Agents on Interactive CAPTCHAs",
+      "abstract": "Interactive CAPTCHAs remain challenging for computer-use agents, while existing datasets face trade-offs among type coverage, interaction fidelity, and trajectory supervision. To address these gaps, we present CaptchaArena, the first large-scale, fine-grained training dataset for interactive CAPTCHA solving. It contains 50K puzzles across 20 CAPTCHA types and 5 interaction modes, with every solution verified through execution. CaptchaArena provides 50K screenshot-action trajectories, including 46K with step-by-step reasoning annotations. It also includes fine-grained pixel-mask annotations for irregular targets. Using CaptchaArena, we train CaptchaAgent, a single 9B policy for all 20 CAPTCHA types, with supervised fine-tuning followed by reinforcement learning. The environment verifier directly provides the RL reward. Supervised fine-tuning reaches 70.5 Pass@1, and reinforcement learning further improves it to 71.7, while also improving performance on two external benchmarks. These results demonstrate the value of large-scale, fine-grained computer-use supervision for training interactive CAPTCHA agents. We release CaptchaArena and CaptchaAgent at https://github.com/X0X0X00/CaptchaArena.",
+      "authors": [
+        "Zhenhao Zhang",
+        "Zhaoyu Fan",
+        "Haohan Ying",
+        "Jingwen Hu",
+        "Hancen Fan",
+        "Junhao Zhou",
+        "Zitian Chen",
+        "Linchao Zhu"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-09-25T20:04:24Z",
+      "updated": "2026-09-25T20:04:24Z",
+      "announced_date": "2026-09-25",
+      "first_seen": "2026-09-25",
+      "comment": "30 pages, 4 figures, 16 tables. Code and data: https://github.com/X0X0X00/CaptchaArena",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.31957v1",
+        "pdf": "https://arxiv.org/pdf/2609.31957v1",
+        "html": "https://arxiv.org/html/2609.31957"
+      },
+      "score": 13,
+      "tags": [
+        "gui",
+        "computer-use",
+        "planning"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2609.31906",
+      "title": "EmailBench: A Benchmark for Evaluating LLM Agents on Enterprise Email and Productivity Tasks",
+      "abstract": "Enterprise email agents must combine information retrieval, structured state changes, temporal reasoning, and multi-step coordination. Recent agent benchmarks include productivity tasks, but few center on typed email workflows in a self-contained environment. We introduce EmailBench, a benchmark of 206 email and productivity scenarios across 16 task categories. The benchmark couples a typed email API specification with provider-neutral naming, a deterministic synthetic Enron-inspired corpus, and a scenario suite whose topic selection was informed by aggregate task-intent telemetry from an interactive prototype. Its hybrid evaluation protocol combines 258 executable static assertions with 211 LLM rubrics. We evaluate eight LM configurations on a fixed single-user corpus. The best-performing configuration passes only 33.5% of scenarios despite 99.7% of its tool calls completing without an observed API failure, with pass rates varying substantially across task categories. This gap shows that valid tool execution is not equivalent to task completion. EmailBench provides a self-contained environment for end-to-end email-agent evaluation, with broader tool coverage, multi-persona testing, and repeated-run evaluation as future work areas.",
+      "authors": [
+        "Mukul Singh",
+        "Mansi Uniyal",
+        "Devin Devlin",
+        "Wen Xie",
+        "Big Thadawasin",
+        "Ritam Dutt",
+        "Vivian Lai",
+        "Hyeonsu B. Kang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-25T18:49:33Z",
+      "updated": "2026-09-25T18:49:33Z",
+      "announced_date": "2026-09-25",
+      "first_seen": "2026-09-25",
+      "comment": "32 pages, including references and appendices",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.31906v1",
+        "pdf": "https://arxiv.org/pdf/2609.31906v1",
+        "html": "https://arxiv.org/html/2609.31906"
+      },
+      "score": 25,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2609.31590",
+      "title": "AgentWorld: Benchmarking Long-Horizon Collaboration of Multi-agent LLMs",
+      "abstract": "Existing multi-agent benchmarks primarily test in competitive settings, short-horizon interactions under 20 steps, or simply aggregate individual performance, failing to isolate and highlight genuine collaboration capabilities of LLM-based agents. We introduce AgentWorld, a benchmark of 100 human-annotated tasks (with 100 augmented variants) for evaluating long-horizon, multi-agent collaboration. Tasks span 50+ interaction rounds across a rich MMORPG sandbox and require 3-20 agents with asymmetric roles and abilities to coordinate through communication, joint planning, and resource sharing under a blackbox setting where each agent acts independently without access to others' internal states. To quantify collaboration effectiveness in addition to conventional binary task success, we propose Causal Collaboration Effectiveness (CCE), a graph-based metric that traces causal dependencies between agent actions and measures what fraction of a team's effort actually contributed to the outcome. Experiments with Gemini 3 Flash, Claude Haiku 4.5, GPT-5 Mini, and DeepSeek R1-70B show that even the best model achieves only 52.0% task success, with systematic failure modes including communication breakdowns, role confusion, and inability to maintain shared plans across rounds. AgentWorld is fully open-source.",
+      "authors": [
+        "Raphael Shu",
+        "Yusen Zhang",
+        "Young Min Cho",
+        "Jin Mo Yang",
+        "Yuan Yuan",
+        "Wenliang Zheng",
+        "Sharath Chandra Guntuku",
+        "Lyle Ungar",
+        "Zhou Yu",
+        "Rui Zhang"
+      ],
+      "categories": [
+        "cs.MA"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-09-25T17:44:03Z",
+      "updated": "2026-09-25T17:44:03Z",
+      "announced_date": "2026-09-25",
+      "first_seen": "2026-09-25",
+      "comment": "Accepted at COLM 2026. Project website: https://agentworld.io",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.31590v1",
+        "pdf": "https://arxiv.org/pdf/2609.31590v1",
+        "html": "https://arxiv.org/html/2609.31590"
+      },
+      "score": 16,
+      "tags": [
+        "multi-agent",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2609.31587",
+      "title": "Compact Documentation for Coding Agents: A Benchmark, an Optimizer, and Why It Does Not Transfer",
+      "abstract": "We investigate whether natural-language documentation helps coding agents resolve software issues, and we build the tools to construct and evaluate it. We introduce a roundtrip benchmark that scores code descriptions by whether code regenerated from them passes the original tests, and show that completeness, not length, drives a description's fidelity. Using the benchmark as an optimization signal, we discover a description-writing prompt that reaches full fidelity and generalizes to unseen files. We then test the hypothesis that motivated the work: that better documentation helps an agent resolve real repository issues. Across two model families and ten repositories, and against a positive control confirming that our evaluation can detect a genuine improvement, we find that it does not. When the source is present, neither static compact documentation nor retrieved context beats the issue alone. We report this negative result together with the benchmark and the optimizer, and we characterize the boundary at which documentation helps.",
+      "authors": [
+        "Md Shohel Arman",
+        "Igor Molybog"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-09-25T17:42:22Z",
+      "updated": "2026-09-25T17:42:22Z",
+      "announced_date": "2026-09-25",
+      "first_seen": "2026-09-25",
+      "comment": "13 pages. Code and data: https://github.com/haw-ai-i/roundtrip",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.31587v1",
+        "pdf": "https://arxiv.org/pdf/2609.31587v1",
+        "html": "https://arxiv.org/html/2609.31587"
+      },
+      "score": 13,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2609.31468",
+      "title": "PriceBench: A Diagnostic Benchmark for Price, Quality, and Brand Preferences in LLM Booking Agents",
+      "abstract": "LLMs increasingly act as purchasing agents, which makes the LLM, not the user, the one choosing among the options that satisfy a request; its preferences quietly fix what gets bought and what it costs. Hotel booking is a clean instance: a high-volume choice settled on a few comparable attributes, where the pick reveals those preferences. We introduce PriceBench, a diagnostic benchmark that recovers an LLM's price, quality, and brand preferences from its booking choices with a logit choice model, applied to 28 LLMs from 8 providers on 3,600 hotel tasks from 179 real New York City properties. We find that capability is associated with how consistently an LLM chooses, not with what it chooses: more capable LLMs hold stronger, more consistent preferences, while weaker ones either lock onto one position, exploitable by whoever controls listing order, or choose almost indifferently. What those preferences favor varies sharply across providers and even within one family: price sensitivity spans more than an order of magnitude, and the price/quality trade-off moves mean booked nightly price from \\$247 to \\$393 on identical tasks. What an agent buys must therefore be measured per LLM, not inferred, and we release the tasks, code, and all 28 response sets.",
+      "authors": [
+        "Pavel Kireyev"
+      ],
+      "categories": [
+        "econ.GN",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "econ.GN",
+      "published": "2026-09-25T16:17:28Z",
+      "updated": "2026-09-25T16:17:28Z",
+      "announced_date": "2026-09-25",
+      "first_seen": "2026-09-25",
+      "comment": "Accepted to EMNLP 2026 Industry Track. 19 pages, 10 figures, 6 tables. Code and data: https://github.com/Pashasan/pricebench-emnlp",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.31468v1",
+        "pdf": "https://arxiv.org/pdf/2609.31468v1",
+        "html": "https://arxiv.org/html/2609.31468"
+      },
+      "score": 11,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2609.30971",
+      "title": "SciHorizon-eLab: An Agentic Protocol-to-Task Compiler for Scalable Benchmarking of Scientific Embodied Agents",
+      "abstract": "Embodied agents offer a promising route to automating scientific experimentation, yet their progress is constrained by the lack of reliable and systematic evaluation environments. Existing simulation-based laboratory benchmarks rely heavily on manual task engineering, making it challenging to systematically compile diverse scientific protocols into executable and verifiable embodied tasks at scale. To address this challenge, we introduce SciHorizon-eLab, an agentic protocol-to-task compiler that formulates scientific embodied task construction as a compilation problem. Given a natural-language protocol of scientific experiments, SciHorizon-eLab progressively compiles laboratory protocols into semantic-preserving embodied tasks through semantic grounding, executable task synthesis, and multi-stage simulation-based certification. The system generates semantically grounded environments, executable manipulation programs, and step-level success specifications, while enabling reproducible generation of expert demonstrations and execution traces. Using this pipeline, we further construct \\BenchName, a ready-to-use benchmark comprising 300 certified tasks across diverse laboratory operations. It supports HIL task execution, reproducible expert-demonstration generation, and ordered step-level evaluation. Across representative tasks, the strongest policy attains an average success rate of only 49.7%, with further evaluations revealing pronounced weaknesses in human and embodied agent coordination. We publicly release the code, benchmark data, and evaluation toolkit at https://github.com/SciHorizon-elab/SciHorizon-elab.",
+      "authors": [
+        "Maokai Qin",
+        "Chuan Qin",
+        "Qi Zhang",
+        "Dianyu Liu",
+        "Zirui Liu",
+        "Hongting Niu",
+        "Yuanchun Zhou",
+        "Hengshu Zhu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-25T08:18:45Z",
+      "updated": "2026-09-25T08:18:45Z",
+      "announced_date": "2026-09-25",
+      "first_seen": "2026-09-25",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.30971v1",
+        "pdf": "https://arxiv.org/pdf/2609.30971v1",
+        "html": "https://arxiv.org/html/2609.30971"
+      },
+      "score": 18,
+      "tags": [
+        "embodied",
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2609.30813",
+      "title": "A Benchmark and Diagnostic Study of Epistemic Admission in Shared Agent Memory",
+      "abstract": "Evaluating claim admission in shared agent memory is challenging because repeated claims may be mistaken for independent evidence. An agent may copy or paraphrase a retrieved belief, while admitting a false claim exposes subsequent agents to it. To study this problem, we introduce the Correlated Promotion Benchmark (CPB), which evaluates whether candidate claims should be admitted to shared memory.CPB-Static constructs a frozen test split from publicly annotated sources with fixed gold actions. CPB-Live runs multi-agent teams over a shared store, records all writes and retrievals, and tracks source lineage defined by each scenario. A separate consumer answers from the store alone. We evaluate eight admission policies across four agent families. Our results show that policies which deduplicate sources reject many true claims alongside false ones, whereas policies preserving answer coverage admit nearly as many false claims as unrestricted sharing. Gating on declared source type reduces false adoption to 0.06--0.09, compared with 0.22--0.47 for other answering policies. Once an uncontested false belief enters memory, the consumer asserts it in 0.97--0.99 of probes across all families. No non-oracle policy consistently rejects false claims across verbatim copies, paraphrases, and paraphrases declared authoritative. These findings reveal the limitations of admission policies without access to source lineage.",
+      "authors": [
+        "Xiaoyang Li",
+        "Yiqi Wang",
+        "Chencheng Zhu",
+        "KE XU",
+        "Wencheng Yang",
+        "Zequn Sun",
+        "Pingan Song",
+        "Yiqun Duan",
+        "Taotao Cai"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-25T04:48:31Z",
+      "updated": "2026-09-25T04:48:31Z",
+      "announced_date": "2026-09-25",
+      "first_seen": "2026-09-25",
+      "comment": "preprint",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.30813v1",
+        "pdf": "https://arxiv.org/pdf/2609.30813v1",
+        "html": "https://arxiv.org/html/2609.30813"
+      },
+      "score": 9,
+      "tags": [
+        "multi-agent",
+        "memory"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2609.30717",
+      "title": "RecToolBench: Benchmarking Recommendation-Specific Tool Orchestration under Fuzzy User Intent",
+      "abstract": "Recent advances in agentic recommender systems are shifting recommender systems from passive filtering engines to instruction-following agents that use external tools to resolve user intent. However, existing benchmarks often assume explicit user intent, simplified tool environments, or isolated function calls, leaving realistic tool orchestration for recommendation underexplored. To bridge this gap, we propose RecToolBench, a Model Context Protocol (MCP)-based benchmark for evaluating tool-using recommender agents under fuzzy user instructions. RecToolBench contains more than 1,200 executable tasks across three recommendation domains, 13 MCP servers, and 32 tools, spanning single-tool calls, parallel tool calls, sequential tool chains, and hybrid tool orchestration. We construct RecToolBench with a scalable synthesize--fuzzify--judge pipeline that generates executable fuzzy recommendation tasks, and evaluates agent trajectories using rule-based execution checks and rubric-based LLM evaluation. Experiments on representative LLMs show that syntactically valid tool calls do not guarantee successful recommendations. Models struggle with semantic parameter grounding, multi-step evidence integration, and grounded final recommendations, especially as orchestration complexity increases. Our results identify tool orchestration under fuzzy user intent as a major bottleneck for agentic recommender systems. Our data and code are available at https://github.com/ShawnChenn/RecToolBench.",
+      "authors": [
+        "Xiao Chen",
+        "Yicheng Zhao",
+        "Yingying Wu",
+        "Zhendong Chu",
+        "Changyi Ma",
+        "Qingsong Wen",
+        "Xuan Song"
+      ],
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-09-25T02:44:07Z",
+      "updated": "2026-09-25T02:44:07Z",
+      "announced_date": "2026-09-25",
+      "first_seen": "2026-09-25",
+      "comment": "EMNLP 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.30717v1",
+        "pdf": "https://arxiv.org/pdf/2609.30717v1",
+        "html": "https://arxiv.org/html/2609.30717"
+      },
+      "score": 18,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    }
+  ]
+}
