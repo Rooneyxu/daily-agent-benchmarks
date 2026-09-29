@@ -1,26 +1,26 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-28T11:06:41Z",
-  "total": 124,
-  "day_count": 65,
-  "latest_date": "2026-09-25",
+  "generated_at": "2026-09-29T10:49:10Z",
+  "total": 131,
+  "day_count": 68,
+  "latest_date": "2026-09-28",
   "counts": {
     "topics": {
-      "multimodal": 34,
-      "general_text": 49,
-      "experiment_agent": 29,
+      "multimodal": 37,
+      "experiment_agent": 30,
+      "general_text": 52,
       "biosafety": 12
     },
     "contribution_types": {
-      "new_benchmark": 95,
+      "new_benchmark": 102,
       "methodology": 16,
       "audit": 13
     },
     "kinds": {
-      "paper": 124
+      "paper": 131
     },
     "evaluation_contexts": {
-      "beneficial_capability": 112,
+      "beneficial_capability": 119,
       "biosecurity_misuse": 12
     }
   },
@@ -29,48 +29,48 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-09-28T11:06:51Z",
-      "finished_at": "2026-09-28T11:07:12Z",
-      "discovered": 30,
-      "published": 15,
+      "started_at": "2026-09-29T10:49:26Z",
+      "finished_at": "2026-09-29T10:50:00Z",
+      "discovered": 65,
+      "published": 32,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
-      "status": "success",
-      "started_at": "2026-09-28T11:07:12Z",
-      "finished_at": "2026-09-28T11:08:17Z",
-      "discovered": 63,
-      "published": 36,
-      "error": ""
+      "status": "failed",
+      "started_at": "2026-09-29T10:50:00Z",
+      "finished_at": "2026-09-29T10:50:01Z",
+      "discovered": 0,
+      "published": 0,
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=FIRST_PDATE%3A%5B2026-09-25+TO+2026-09-29%5D+AND+%28TITLE_ABS%3A%22benchmark%22+OR+TITLE_ABS%3A%22benchmarking%22+OR+TITLE_ABS%3A%22evaluation+suite%22+OR+TITLE_ABS%3A%22evaluation+dataset%22+OR+TITLE_ABS%3A%22challenge+set%22%29+AND+%28TITLE_ABS%3A%22biomedical%22+OR+TITLE_ABS%3A%22medical%22+OR+TITLE_ABS%3A%22clinical%22+OR+TITLE_ABS%3A%22biology%22+OR+TITLE_ABS%3A%22biological%22+OR+TITLE_ABS%3A%22life+science%22+OR+TITLE_ABS%3A%22genomics%22+OR+TITLE_ABS%3A%22proteomics"
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-09-28T11:08:17Z",
-      "finished_at": "2026-09-28T11:09:24Z",
-      "discovered": 938,
-      "published": 63,
+      "started_at": "2026-09-29T10:50:01Z",
+      "finished_at": "2026-09-29T10:51:25Z",
+      "discovered": 845,
+      "published": 51,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-09-28T11:09:24Z",
-      "finished_at": "2026-09-28T11:09:37Z",
-      "discovered": 155,
-      "published": 11,
+      "started_at": "2026-09-29T10:51:25Z",
+      "finished_at": "2026-09-29T10:51:45Z",
+      "discovered": 172,
+      "published": 14,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-09-28T11:09:37Z",
-      "finished_at": "2026-09-28T11:09:38Z",
+      "started_at": "2026-09-29T10:51:45Z",
+      "finished_at": "2026-09-29T10:51:45Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"

@@ -1,0 +1,301 @@
+{
+  "date": "2026-09-26",
+  "count": 3,
+  "entries": [
+    {
+      "id": "arxiv:2609.33014",
+      "slug": "arxiv-2609-33014-618bc369b8",
+      "kind": "paper",
+      "title": "TCMQA: A 38K-Question Traditional Chinese Medicine Benchmark with a Licensed-Practitioner Reference",
+      "abstract": "Medical benchmarks for language models are built almost entirely on Western biomedicine. Traditional Chinese Medicine (TCM) is a separate system, with its own diagnostic framework and its own literature, and it remains largely unmeasured. The few TCM evaluations that exist are small, narrow, and rarely paired with a human reference. We present TCMQA, an open benchmark of 38,279 questions from Chinese TCM licensing examinations, paired with 15,151 responses from 101 licensed practitioners. We evaluate 29 instruction-tuned models from 9 families, spanning 0.27B to 14.8B parameters. Accuracy ranges over 59 points, and no model approaches saturation. Pretraining data predicts TCM ability far better than scale: a 12B Western-pretrained model reaches 39.6%, while a Chinese-pretrained model an eighth its size reaches 60.8%. Nine models exceed the practitioner majority vote of 64.9%, the best by 21.8 points, and all nine come from that same Chinese-pretrained family. Yet difficulty does not transfer between models and practitioners: accuracy is flat across practitioner-rated difficulty, item-level agreement is near zero for all 29 models, and on $8.4\\%$ of items the practitioners are correct where the leading model is wrong. We release the corpus, the practitioner responses, the harness, and per-item model outputs at https://huggingface.co/datasets/TechTCM/TCMQA.",
+      "authors": [
+        "Tzu-Heng Huang",
+        "Jet Lin",
+        "Eric Lin"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-26T23:11:48+00:00",
+      "updated_at": "2026-09-26T23:11:48+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.33014"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.33014v1",
+        "pdf": "https://arxiv.org/pdf/2609.33014v1",
+        "data": "https://huggingface.co/datasets/TechTCM/TCMQA",
+        "html": "https://arxiv.org/html/2609.33014"
+      },
+      "evidence": [
+        {
+          "term": "We present TCMQA",
+          "excerpt": "ts own literature, and it remains largely unmeasured. The few TCM evaluations that exist are small, narrow, and rarely paired with a human reference. We present TCMQA, an open benchmark of 38,279 questions from Chinese TCM licensing examinations, paired with 15,151 responses from 101 licensed practitioners. We evaluate 29 instruction-tuned models from 9 families, spanning 0.27B to 14.8B parameters. Accu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.33014"
+        },
+        {
+          "term": "We present TCMQA, an open benchmark",
+          "excerpt": "ts own literature, and it remains largely unmeasured. The few TCM evaluations that exist are small, narrow, and rarely paired with a human reference. We present TCMQA, an open benchmark of 38,279 questions from Chinese TCM licensing examinations, paired with 15,151 responses from 101 licensed practitioners. We evaluate 29 instruction-tuned models from 9 families, spanning 0.27B to 14.8B parameters. Accuracy ranges over 59",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.33014"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "TCMQA: A 38K-Question Traditional Chinese Medicine Benchmark with a Licensed-Practitioner Reference Medical benchmarks for language models are built almost entirely on Western biomedicine. Traditional Chinese Medicine (TCM) is a separate system, with its own diagnostic framework and its own literatu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.33014"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "TCMQA: A 38K-Question Traditional Chinese Medicine Benchmark with a Licensed-Practitioner Reference Medical benchmarks for language models are built almost entirely on Western biomedicine. Traditional Chinese Medicine (TCM) is a separate system, with its own diagnostic framework and its own literature, and it remains largely unmeasured. The few TCM evaluat",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.33014"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "TCMQA: A 38K-Question Traditional Chinese Medicine Benchmark with a Licensed-Practitioner Reference Medical benchmarks for language models are built almost entirely on Western biomedicine. Traditional Chinese Medicine (TCM) is a separate system, with its own diagnostic framework and its ow",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.33014"
+        },
+        {
+          "term": "medical",
+          "excerpt": "TCMQA: A 38K-Question Traditional Chinese Medicine Benchmark with a Licensed-Practitioner Reference Medical benchmarks for language models are built almost entirely on Western biomedicine. Traditional Chinese Medicine (TCM) is a separate system, with its own diagnostic framework and its own literature, and it remains largely unmeasured. The few",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.33014"
+        }
+      ],
+      "related_benchmarks": [
+        "TCMQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 24,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "b42544f62418fedaa37586f386acc701044aef2cb15076e5d4d2726c8280db8c",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2609.32810",
+      "slug": "arxiv-2609-32810-1a63a594e4",
+      "kind": "paper",
+      "title": "OpenTumorBoard: A Real-World Benchmark of Multidisciplinary Tumor Board Discussion Trajectories",
+      "abstract": "Multidisciplinary tumor boards integrate multimodal clinical observations and longitudinal patient histories through specialist discussions, yet benchmarks rarely capture these real-world trajectories. We introduce OpenTumorBoard, a benchmark with 611 patient cases and 19,157 discussion turns across ten specialist roles, transcribed from 12,534 minutes of publicly available tumor board recordings on YouTube. The benchmark evaluates two settings: SPECIALIST TURN, in which an LLM responds to a clinically significant question posed during a real discussion, and BOARD SIMULATION, in which it generates an entire back-and-forth discussion and reaches a consensus on therapy recommendations, surgical plans, next actions and clinical trial matching. Evaluation of 14 general-purpose frontier and medical LLMs reveals substantial limitations: the best models score 3.43 out of 5 in clinical equivalence to specialist answers and 2.78 out of 5 in alignment with recorded board conclusions. Supervised finetuning and reinforcement learning improve performance on a held-out test set, suggesting that real-world discussion trajectories can support model adaptation. Three M.D. experts review a subset of the benchmark, finding high information coverage and factuality of patient cases and strong fidelity of extracted consensus conclusions. We will release OpenTumorBoard and its automated curation pipeline to support the development and evaluation of LLMs for multidisciplinary, personalized cancer decision-making.",
+      "authors": [
+        "Anqi Li",
+        "Zhixuan Ge",
+        "Yixuan Duan",
+        "Jiarong Qian",
+        "Chi-Yu Chen",
+        "MingYu Lu",
+        "Huan-Yu Hsu",
+        "Yu Gu",
+        "Yue Guo",
+        "Sheng Wang",
+        "Wei Qiu",
+        "Hanwen Xu"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-26T17:35:10+00:00",
+      "updated_at": "2026-09-26T17:35:10+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.32810"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.32810v1",
+        "pdf": "https://arxiv.org/pdf/2609.32810v1",
+        "html": "https://arxiv.org/html/2609.32810"
+      },
+      "evidence": [
+        {
+          "term": "We introduce OpenTumorBoard, a benchmark",
+          "excerpt": "clinical observations and longitudinal patient histories through specialist discussions, yet benchmarks rarely capture these real-world trajectories. We introduce OpenTumorBoard, a benchmark with 611 patient cases and 19,157 discussion turns across ten specialist roles, transcribed from 12,534 minutes of publicly available tumor board recordings on YouTube. The benchmark evaluates two settings: SPECIALIST TURN, in which an LLM",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32810"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "OpenTumorBoard: A Real-World Benchmark of Multidisciplinary Tumor Board Discussion Trajectories Multidisciplinary tumor boards integrate multimodal clinical observations and longitudinal patient histories through specialist discussions, yet benchmarks rarely capture these real-",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32810"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "ries Multidisciplinary tumor boards integrate multimodal clinical observations and longitudinal patient histories through specialist discussions, yet benchmarks rarely capture these real-world trajectories. We introduce OpenTumorBoard, a benchmark with 611 patient cases and 19,157 discussion turns across ten specialist roles, transcribed from 12,534 minutes of publicly available tumor board record",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32810"
+        },
+        {
+          "term": "test set",
+          "excerpt": "rs and 2.78 out of 5 in alignment with recorded board conclusions. Supervised finetuning and reinforcement learning improve performance on a held-out test set, suggesting that real-world discussion trajectories can support model adaptation. Three M.D. experts review a subset of the benchmark, finding high information coverage and factuality of patient cases and strong fidelity of extracted conse",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32810"
+        },
+        {
+          "term": "medical",
+          "excerpt": "aches a consensus on therapy recommendations, surgical plans, next actions and clinical trial matching. Evaluation of 14 general-purpose frontier and medical LLMs reveals substantial limitations: the best models score 3.43 out of 5 in clinical equivalence to specialist answers and 2.78 out of 5 in alignment with recorded board conclusions. Supervised finetuning and reinforcement learning improv",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32810"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "OpenTumorBoard: A Real-World Benchmark of Multidisciplinary Tumor Board Discussion Trajectories Multidisciplinary tumor boards integrate multimodal clinical observations and longitudinal patient histories through specialist discussions, yet benchmarks rarely capture these real-world trajectories. We introduce OpenTumorBoard, a benchmark with 611 patient cases and 19,157 discussion turns across",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32810"
+        },
+        {
+          "term": "cancer",
+          "excerpt": "will release OpenTumorBoard and its automated curation pipeline to support the development and evaluation of LLMs for multidisciplinary, personalized cancer decision-making. [[SECTION OpenTumorBoard: A Real-World Benchmark of Multidisciplinary Tumor Board Discussion Trajectories]] OpenTumorBoard: A Real-World Benchmark of Multidisciplinary Tumor Board Discussion Trajectories Content selection",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32810"
+        },
+        {
+          "term": "patient",
+          "excerpt": "k of Multidisciplinary Tumor Board Discussion Trajectories Multidisciplinary tumor boards integrate multimodal clinical observations and longitudinal patient histories through specialist discussions, yet benchmarks rarely capture these real-world trajectories. We introduce OpenTumorBoard, a benchmark with 611 patient cases and 19,157 discussion turns across ten specialist roles, transcribed fro",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32810"
+        }
+      ],
+      "related_benchmarks": [
+        "MTBBench",
+        "MedQA",
+        "MedAgentBench",
+        "MedXpertQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 33,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "30624f57b77a7500d6108680ca4a9749d57b803b7708a7e6fb0f24f61d73e3c3",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2609.32352",
+      "slug": "arxiv-2609-32352-3a5b32115a",
+      "kind": "paper",
+      "title": "EyeVQA: Benchmarking Ophthalmic Vision-Language Models from Recognition to Spatial Grounding",
+      "abstract": "Vision-language models (VLMs) have shown increasing potential for medical image understanding, yet their capabilities in ophthalmic imaging remain insufficiently characterized. Existing ophthalmic datasets are typically designed for individual diseases or specialized tasks, making it difficult to systematically evaluate whether VLMs can move beyond disease recognition toward comparative reasoning and fine-grained spatial grounding. We introduce EyeVQA, a unified visual question answering benchmark for comprehensive evaluation of ophthalmic VLMs. EyeVQA is constructed from 21 available ophthalmic datasets and contains 20,000 question-answer pairs spanning six disease groups and seven question types: Single-Choice, Multi-Select, Variable-Select, True-False, Ranking, Point Location, and Bounding Box. Gold answers are deterministically derived from source-provided diagnoses, severity grades, clinical findings, segmentation masks, bounding boxes, and anatomical landmarks, enabling reproducible evaluation without relying on model-generated annotations. Notably, 44.5% of the questions require reasoning across multiple images, extending evaluation beyond conventional single-image medical VQA. We benchmark fourteen representative general-purpose, scientific, and medically specialized VLMs under a unified zero-shot protocol. The best-performing model only achieves an overall score of 62.8, while substantial gaps remain in spatial grounding and cross-task generalization. These results highlight the limitations of current VLMs in comprehensive ophthalmic visual understanding and establish EyeVQA as a diagnostic benchmark for developing more reliable and spatially grounded ophthalmic multimodal models. The project page is available at https://github.com/PKUTHM/EyeVQA.",
+      "authors": [
+        "Gujie Shao",
+        "Zixun Xie",
+        "Xuechun Xing",
+        "Ruixiang Wang",
+        "Ziyun Lan",
+        "Yanlin Qi",
+        "Gangyi Zhang",
+        "Yuxin Yang",
+        "Dawei Li",
+        "Haiming Tang"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-26T08:15:17+00:00",
+      "updated_at": "2026-09-26T08:15:17+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.32352"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.32352v1",
+        "pdf": "https://arxiv.org/pdf/2609.32352v1",
+        "code": "https://github.com/PKUTHM/EyeVQA",
+        "html": "https://arxiv.org/html/2609.32352"
+      },
+      "evidence": [
+        {
+          "term": "We introduce EyeVQA",
+          "excerpt": "ifficult to systematically evaluate whether VLMs can move beyond disease recognition toward comparative reasoning and fine-grained spatial grounding. We introduce EyeVQA, a unified visual question answering benchmark for comprehensive evaluation of ophthalmic VLMs. EyeVQA is constructed from 21 available ophthalmic datasets and contains 20,000 question-answer pairs spanning six disease groups and seven que",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32352"
+        },
+        {
+          "term": "We introduce EyeVQA, a unified visual question answering benchmark",
+          "excerpt": "ifficult to systematically evaluate whether VLMs can move beyond disease recognition toward comparative reasoning and fine-grained spatial grounding. We introduce EyeVQA, a unified visual question answering benchmark for comprehensive evaluation of ophthalmic VLMs. EyeVQA is constructed from 21 available ophthalmic datasets and contains 20,000 question-answer pairs spanning six disease groups and seven question types: Single-Choice, Multi-Select, Varia",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32352"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "EyeVQA: Benchmarking Ophthalmic Vision-Language Models from Recognition to Spatial Grounding Vision-language models (VLMs) have shown increasing potential for medical image understanding, yet their capabilities in ophthalmic imaging remain insufficiently ch",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32352"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "EyeVQA: Benchmarking Ophthalmic Vision-Language Models from Recognition to Spatial Grounding Vision-language models (VLMs) have shown increasing potential for medical image understanding, yet their capabilities in ophthalmic imaging remain insufficiently chara",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32352"
+        },
+        {
+          "term": "medical",
+          "excerpt": "enchmarking Ophthalmic Vision-Language Models from Recognition to Spatial Grounding Vision-language models (VLMs) have shown increasing potential for medical image understanding, yet their capabilities in ophthalmic imaging remain insufficiently characterized. Existing ophthalmic datasets are typically designed for individual diseases or specialized tasks, making it difficult to systematically",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32352"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "t, True-False, Ranking, Point Location, and Bounding Box. Gold answers are deterministically derived from source-provided diagnoses, severity grades, clinical findings, segmentation masks, bounding boxes, and anatomical landmarks, enabling reproducible evaluation without relying on model-generated annotations. Notably, 44.5% of the questions require reasoning across multiple images, extending ev",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32352"
+        },
+        {
+          "term": "disease",
+          "excerpt": "yet their capabilities in ophthalmic imaging remain insufficiently characterized. Existing ophthalmic datasets are typically designed for individual diseases or specialized tasks, making it difficult to systematically evaluate whether VLMs can move beyond disease recognition toward comparative reasoning and fine-grained spatial grounding. We introduce EyeVQA, a unified visual question answerin",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32352"
+        },
+        {
+          "term": "Vision-Language",
+          "excerpt": "EyeVQA: Benchmarking Ophthalmic Vision-Language Models from Recognition to Spatial Grounding Vision-language models (VLMs) have shown increasing potential for medical image understanding, yet their capabilities in ophthalmic imaging remain insufficiently characterized. Existing ophthalm",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32352"
+        }
+      ],
+      "related_benchmarks": [
+        "EyeVQA",
+        "VQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 29,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "614452dca6a89094c0550fabae4528f9ac9c84825903681eb55fc1b71f7035ad",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}

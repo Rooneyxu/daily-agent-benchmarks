@@ -1,0 +1,85 @@
+{
+  "date": "2026-09-27",
+  "count": 1,
+  "entries": [
+    {
+      "id": "arxiv:2609.34024",
+      "slug": "arxiv-2609-34024-e4b8de8f97",
+      "kind": "paper",
+      "title": "Jev in Medicine: A Benchmark Evaluation. Preliminary Results",
+      "abstract": "Jev is a non-generative \"System One\" model that assigns probabilities to predefined answer options and cannot answer outside them. Its accuracy and calibration on medical question-answering and case-based diagnostic-reasoning tasks are unknown. We evaluated Jev 1.13 on four medical benchmarks: MetaMedQA, PubMedQA, DiagnosisArena-MCQ and the NEJM Case Challenges. GPT-6 Sol, with (medium) and without reasoning, was the reference. The primary outcome was top-1 accuracy; key secondary outcomes were calibration, selective prediction and recognition of unanswerable questions. All 8,469 requests returned a valid answer. Jev's accuracy was similar to that of GPT-6 Sol with medium reasoning on PubMedQA (78.4% vs 78.2%;), lower on MetaMedQA (74.8% vs 82.7%) and much lower on DiagnosisArena-MCQ (59.8% vs 82.4%;) and the NEJM cases (61.8% vs 82.4%). On MetaMedQA, Jev's probabilities were the best calibrated (expected calibration error 0.063 vs 0.146), and its answers with a probability of at least 0.9 (52.9% of questions) were 93.4% accurate, but GPT-6 Sol was as accurate when it accepted a similar proportion of questions. On DiagnosisArena-MCQ, Jev's probabilities discriminated poorly (AUROC 0.645 vs 0.768). Of the 162 questions whose correct answer was \"I don't know or cannot answer\", Jev chose that option for 10.5% (GPT-6 Sol, 8.6%). Median latency was 0.27-0.31 s; all 2,823 items cost USD 0.08. Jev was fast and inexpensive, and its accuracy was similar to that of a frontier LLM on research abstracts but lower on examination questions and much lower on complex diagnostic cases. Task-specific validation is required before clinical use.",
+      "authors": [
+        "Alfredo Madrid-García",
+        "Beatriz Merino-Barbancho"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-27T23:33:04+00:00",
+      "updated_at": "2026-09-27T23:33:04+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.34024"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.34024v1",
+        "pdf": "https://arxiv.org/pdf/2609.34024v1",
+        "code": "https://github.com/JunMa11/MedJev",
+        "html": "https://arxiv.org/html/2609.34024"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "Jev in Medicine: A Benchmark Evaluation. Preliminary Results Jev is a non-generative \"System One\" model that assigns probabilities to predefined answer options and cannot answer outside them. Its accuracy and calibration on medical question-answering and case-based di",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34024"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "s accuracy and calibration on medical question-answering and case-based diagnostic-reasoning tasks are unknown. We evaluated Jev 1.13 on four medical benchmarks: MetaMedQA, PubMedQA, DiagnosisArena-MCQ and the NEJM Case Challenges. GPT-6 Sol, with (medium) and without reasoning, was the reference. The primary outcome was top-1 accuracy; key secondary outcomes were calibration, selective prediction",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34024"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "Jev in Medicine: A Benchmark Evaluation. Preliminary Results Jev is a non-generative \"System One\" model that assigns probabilities to predefined answer options and cannot answer outside them. Its accuracy and calibration on medical question-answering and",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34024"
+        },
+        {
+          "term": "medical",
+          "excerpt": "generative \"System One\" model that assigns probabilities to predefined answer options and cannot answer outside them. Its accuracy and calibration on medical question-answering and case-based diagnostic-reasoning tasks are unknown. We evaluated Jev 1.13 on four medical benchmarks: MetaMedQA, PubMedQA, DiagnosisArena-MCQ and the NEJM Case Challenges. GPT-6 Sol, with (medium) and without reasonin",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34024"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "LLM on research abstracts but lower on examination questions and much lower on complex diagnostic cases. Task-specific validation is required before clinical use. [[SECTION Jev in Medicine: A Benchmark Evaluation. Preliminary results.]] Jev in Medicine: A Benchmark Evaluation. Preliminary results. Content selection saved. Describe the issue below: [[SECTION Jev in Medicine: A Benchmark Evaluati",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34024"
+        }
+      ],
+      "related_benchmarks": [
+        "MetaMedQA",
+        "PubMedQA",
+        "MedQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "64e0a4dd089e134cb6b42e20a24c8cdab3c7e1f048fa09d5f8cd0b16baa63b91",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}

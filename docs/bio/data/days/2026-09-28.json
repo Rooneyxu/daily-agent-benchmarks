@@ -1,0 +1,270 @@
+{
+  "date": "2026-09-28",
+  "count": 3,
+  "entries": [
+    {
+      "id": "arxiv:2609.34652",
+      "slug": "arxiv-2609-34652-95c18927a1",
+      "kind": "paper",
+      "title": "Revitalizing Medical Time Series with Vision-Informed Retrieval: A Vision-Language Perspective",
+      "abstract": "Medical time series (MedTS) underpin many clinical classification tasks, yet existing methods usually represent them only as numerical sequences and underuse the morphology that is explicit in waveform inspection. To bridge this gap, we introduce Vision-Informed Retrieval (ViRe), which uses a frozen VLM-derived waveform representation as a morphology-aware Query to guide retrieval from raw numerical MedTS features. Specifically, a Vision Query is extracted using pre-trained vision-language models (VLMs) to obtain morphology-aware priors from waveform plots. A tailored attention-based cross-modal retrieval mechanism then uses the Vision Query to select morphology-relevant temporal and channel evidence from the numerical representation. ViRe demonstrates strong effectiveness against ten established baselines, yielding an overall 6.42% relative improvement over the previous state of the art across six public benchmarks. Code, training scripts, and reproducibility materials are publicly available in the GitHub Repository: https://github.com/Levi-Ackman/ViRe.",
+      "authors": [
+        "Guoqi Yu",
+        "Juncheng Wang",
+        "Shujun Wang"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-28T08:58:34+00:00",
+      "updated_at": "2026-09-28T08:58:34+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.34652"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.34652v1",
+        "pdf": "https://arxiv.org/pdf/2609.34652v1",
+        "code": "https://github.com/Levi-Ackman/ViRe",
+        "html": "https://arxiv.org/html/2609.34652"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "effectiveness against ten established baselines, yielding an overall 6.42% relative improvement over the previous state of the art across six public benchmarks. Code, training scripts, and reproducibility materials are publicly available in the GitHub Repository: https://github.com/Levi-Ackman/ViRe. [[SECTION Revitalizing Medical Time Series with Vision-Informed Retrieval: A Vision-Language Pers",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34652"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "effectiveness against ten established baselines, yielding an overall 6.42% relative improvement over the previous state of the art across six public benchmarks. Code, training scripts, and reproducibility materials are publicly available in the GitHub Repository: https://github.com/Levi-Ackman/ViRe. [[SECTION Revitalizing Medical Time Series with Vision-Informed Retrieval: A Vision-Language Persp",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34652"
+        },
+        {
+          "term": "medical",
+          "excerpt": "Revitalizing Medical Time Series with Vision-Informed Retrieval: A Vision-Language Perspective Medical time series (MedTS) underpin many clinical classification tasks, yet existing methods usually represent them only as numerical sequences and underuse the mor",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34652"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Revitalizing Medical Time Series with Vision-Informed Retrieval: A Vision-Language Perspective Medical time series (MedTS) underpin many clinical classification tasks, yet existing methods usually represent them only as numerical sequences and underuse the morphology that is explicit in waveform inspection. To bridge this gap, we introduce Vision-Informed Retrieval (ViRe), which use",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34652"
+        },
+        {
+          "term": "Vision-Language",
+          "excerpt": "Revitalizing Medical Time Series with Vision-Informed Retrieval: A Vision-Language Perspective Medical time series (MedTS) underpin many clinical classification tasks, yet existing methods usually represent them only as numerical sequences and underuse the morphology that is explicit in waveform inspection. To bridge thi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34652"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "cb941b947e1bc8c84edd4de00de1667d6c28697876583133c35cc7f5464ac350",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2609.34274",
+      "slug": "arxiv-2609-34274-0521e39dc7",
+      "kind": "paper",
+      "title": "BIABench: Evaluating AI agents on real-world bioimage analysis tasks",
+      "abstract": "Artificial-intelligence (AI) agents hold promise for automating bioimage analysis, yet no benchmark evaluates whether they can carry out real-world analyses end to end. Such analyses are hard for agents because 2D images, 3D volumes and time-lapse sequences are often too large to read as context, so an agent must choose and run an analysis through code, specialized software and rendered views. Published studies make this capability testable, because each pairs raw images with a peer-reviewed result. We introduce BIABench, a benchmark of 16 tasks reconstructed from published biological studies that retain their scientific questions, imaging data and ground truth. The tasks span eleven analysis subtasks and modalities from H&E histology to single-molecule localization microscopy. Each submission receives an outcome score, which compares the output files with the ground truth using field-standard metrics, and a process score, in which a vision-language model judges method choice and quality control against an expert-written rubric. We evaluated general-purpose and biology-specific agents across several language models, with repeated runs of every task. Routine two-dimensional tasks were solved well, but on some tasks that added a third dimension or a time axis no agent scored above 0.19. Neither biological specialization, stronger models nor detailed expert instructions closed this gap. The agents were also unreliable, with scores varying more between repeated runs of one agent than between different agents, and without ground truth a correct run could not be told from a wrong one by its process score or by the time spent. Released openly with its data and code, BIABench provides a verifiable framework for evaluating, and eventually training, agents for reliable long-horizon bioimage analysis.",
+      "authors": [
+        "Zixuan Pan",
+        "Davide Panzeri",
+        "Lukas Johanns",
+        "Marilin Moor",
+        "Yu Zhou",
+        "Hedi Peterson",
+        "Yiyu Shi",
+        "Jianxu Chen"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-28T04:22:51+00:00",
+      "updated_at": "2026-09-28T04:22:51+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.34274"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.34274v1",
+        "pdf": "https://arxiv.org/pdf/2609.34274v1",
+        "code": "https://github.com/BIABench/BIABench",
+        "html": "https://arxiv.org/html/2609.34274"
+      },
+      "evidence": [
+        {
+          "term": "We introduce BIABench",
+          "excerpt": "specialized software and rendered views. Published studies make this capability testable, because each pairs raw images with a peer-reviewed result. We introduce BIABench, a benchmark of 16 tasks reconstructed from published biological studies that retain their scientific questions, imaging data and ground truth. The tasks span eleven analysis subtasks and modalities from H&E histology to single-molecule lo",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34274"
+        },
+        {
+          "term": "We introduce BIABench, a benchmark",
+          "excerpt": "specialized software and rendered views. Published studies make this capability testable, because each pairs raw images with a peer-reviewed result. We introduce BIABench, a benchmark of 16 tasks reconstructed from published biological studies that retain their scientific questions, imaging data and ground truth. The tasks span eleven analysis subtasks and modalities from H&E histology to single-molecule localization mi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34274"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Evaluating AI agents on real-world bioimage analysis tasks Artificial-intelligence (AI) agents hold promise for automating bioimage analysis, yet no benchmark evaluates whether they can carry out real-world analyses end to end. Such analyses are hard for agents because 2D images, 3D volumes and time-lapse sequences are often too large to read as context, so an agent must choose and run an analys",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34274"
+        },
+        {
+          "term": "biology",
+          "excerpt": "s score, in which a vision-language model judges method choice and quality control against an expert-written rubric. We evaluated general-purpose and biology-specific agents across several language models, with repeated runs of every task. Routine two-dimensional tasks were solved well, but on some tasks that added a third dimension or a time axis no agent scored above 0.19. Neither biological",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34274"
+        },
+        {
+          "term": "biological",
+          "excerpt": "lity testable, because each pairs raw images with a peer-reviewed result. We introduce BIABench, a benchmark of 16 tasks reconstructed from published biological studies that retain their scientific questions, imaging data and ground truth. The tasks span eleven analysis subtasks and modalities from H&E histology to single-molecule localization microscopy. Each submission receives an outcome score,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34274"
+        },
+        {
+          "term": "microscopy",
+          "excerpt": "c questions, imaging data and ground truth. The tasks span eleven analysis subtasks and modalities from H&E histology to single-molecule localization microscopy. Each submission receives an outcome score, which compares the output files with the ground truth using field-standard metrics, and a process score, in which a vision-language model judges method choice and quality control against an exper",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34274"
+        },
+        {
+          "term": "molecule",
+          "excerpt": "retain their scientific questions, imaging data and ground truth. The tasks span eleven analysis subtasks and modalities from H&E histology to single-molecule localization microscopy. Each submission receives an outcome score, which compares the output files with the ground truth using field-standard metrics, and a process score, in which a vision-language model judges method choice and quality",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34274"
+        },
+        {
+          "term": "vision-language",
+          "excerpt": "ission receives an outcome score, which compares the output files with the ground truth using field-standard metrics, and a process score, in which a vision-language model judges method choice and quality control against an expert-written rubric. We evaluated general-purpose and biology-specific agents across several language models, with repeated runs of every task. Routine two-dimensional tasks were",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34274"
+        }
+      ],
+      "related_benchmarks": [
+        "BIABench",
+        "AgentBench",
+        "StartupBench",
+        "BixBench",
+        "MicroVQA",
+        "BiomniBench",
+        "LAB-Bench",
+        "LABBench2"
+      ],
+      "related_agent_url": "../../p/2609.34274.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 31,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "f9fabdb963742ba17379f853677a1cd25f028794834ee915c956f0ecfcaa7373",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.07.15.26358188",
+      "slug": "doi-10-64898-2026-07-15-26358188-0c7e283c2c",
+      "kind": "paper",
+      "title": "A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data",
+      "abstract": "The Cancer Genome Atlas (TCGA) holds clinical data for over 11,000 patients across 33 cancer types, but access is hard because of complex file structures, heterogeneous formats, and the need for programming. We present an agentic system for natural language querying and statistical analysis of TCGA clinical data. The system uses a large language model as an autonomous ReAct agent that selects from eight computational tools, including data extraction, descriptive statistics, Kaplan-Meier survival analysis with log-rank tests, hypothesis testing, and verification against the curated TCGA Pan-Cancer Clinical Data Resource (CDR). The agent reasons about intermediate results, adapts its approach, and returns clinically contextualized responses with source attribution and auditable traces. We introduce TCGA-Agent-Bench, 440 queries across five difficulty tiers with ground truth from the independently curated TCGA-CDR, evaluated with dual metrics of numerical accuracy and clinical completeness. The system achieves 93.4% overall accuracy (100% single-patient lookups, 99.1% cohort statistics, 92.8% comparative analyses), outperforming a fixed rule-based pipeline (87.1%), a single-pass LLM (81.8%), and retrieval-augmented generation (66.9% on a subset). Most of the benchmark is answerable from the CDR alone, so we locate the extraction layer's value in fields the CDR lacks (drug treatments, TNM components, biomarkers, biospecimen metadata): on 26 queries targeting these, the full system answers 100% versus 3.8% for CDR-only. Ablations show the reasoning loop is most impactful (+9.1% accuracy, +22.0 completeness points). A tool-based agentic architecture enables accurate, auditable analysis of clinical repositories, with value driven by tool design and recovered fields rather than model scale.",
+      "authors": [
+        "Korutla, R.",
+        "Amal, S."
+      ],
+      "source": "medrxiv",
+      "published_at": "2026-09-28T00:00:00+00:00",
+      "updated_at": "2026-09-28T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by",
+      "identifiers": {
+        "doi": "10.64898/2026.07.15.26358188"
+      },
+      "links": {
+        "abs": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188",
+        "pdf": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full.pdf",
+        "html": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
+      },
+      "evidence": [
+        {
+          "term": "We introduce TCGA-Agent-Bench",
+          "excerpt": "easons about intermediate results, adapts its approach, and returns clinically contextualized responses with source attribution and auditable traces. We introduce TCGA-Agent-Bench, 440 queries across five difficulty tiers with ground truth from the independently curated TCGA-CDR, evaluated with dual metrics of numerical accuracy and clinical completeness. The system achieves 93.4% overall accuracy (100% single-patie",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "s), outperforming a fixed rule-based pipeline (87.1%), a single-pass LLM (81.8%), and retrieval-augmented generation (66.9% on a subset). Most of the benchmark is answerable from the CDR alone, so we locate the extraction layer's value in fields the CDR lacks (drug treatments, TNM components, biomarkers, biospecimen metadata): on 26 queries targeting these, the full system answers 100% versus 3.8",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data The Cancer Genome Atlas (TCGA) holds clinical data for over 11,000 patients across 33 cancer types, but access is hard because of complex file structures, heterogeneous formats, and the need for programming. We present an agentic syst",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
+        },
+        {
+          "term": "genome",
+          "excerpt": "A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data The Cancer Genome Atlas (TCGA) holds clinical data for over 11,000 patients across 33 cancer types, but access is hard because of complex file structures, heterogeneous formats, and the need for programming. We present",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
+        },
+        {
+          "term": "cancer",
+          "excerpt": "A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data The Cancer Genome Atlas (TCGA) holds clinical data for over 11,000 patients across 33 cancer types, but access is hard because of complex file structures, heterogeneous formats, and the need for programming. We p",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
+        },
+        {
+          "term": "patient",
+          "excerpt": "anguage Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data The Cancer Genome Atlas (TCGA) holds clinical data for over 11,000 patients across 33 cancer types, but access is hard because of complex file structures, heterogeneous formats, and the need for programming. We present an agentic system for natural language querying and statistical analysis of TCGA clinical data",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "e9deef0374850b8d221c54bbf5ac8a7e28bdfae2d5a9a456c73a98c35710ec51",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}

@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-28T11:06:41Z",
-  "total": 124,
+  "generated_at": "2026-09-29T10:49:10Z",
+  "total": 131,
   "counts": {
     "topics": {
-      "multimodal": 34,
-      "general_text": 49,
-      "experiment_agent": 29,
+      "multimodal": 37,
+      "experiment_agent": 30,
+      "general_text": 52,
       "biosafety": 12
     },
     "contribution_types": {
-      "new_benchmark": 95,
+      "new_benchmark": 102,
       "methodology": 16,
       "audit": 13
     },
     "kinds": {
-      "paper": 124
+      "paper": 131
     },
     "evaluation_contexts": {
-      "beneficial_capability": 112,
+      "beneficial_capability": 119,
       "biosecurity_misuse": 12
     }
   },
@@ -59,54 +59,79 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-09-28T11:06:51Z",
-      "finished_at": "2026-09-28T11:07:12Z",
-      "discovered": 30,
-      "published": 15,
+      "started_at": "2026-09-29T10:49:26Z",
+      "finished_at": "2026-09-29T10:50:00Z",
+      "discovered": 65,
+      "published": 32,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
-      "status": "success",
-      "started_at": "2026-09-28T11:07:12Z",
-      "finished_at": "2026-09-28T11:08:17Z",
-      "discovered": 63,
-      "published": 36,
-      "error": ""
+      "status": "failed",
+      "started_at": "2026-09-29T10:50:00Z",
+      "finished_at": "2026-09-29T10:50:01Z",
+      "discovered": 0,
+      "published": 0,
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=FIRST_PDATE%3A%5B2026-09-25+TO+2026-09-29%5D+AND+%28TITLE_ABS%3A%22benchmark%22+OR+TITLE_ABS%3A%22benchmarking%22+OR+TITLE_ABS%3A%22evaluation+suite%22+OR+TITLE_ABS%3A%22evaluation+dataset%22+OR+TITLE_ABS%3A%22challenge+set%22%29+AND+%28TITLE_ABS%3A%22biomedical%22+OR+TITLE_ABS%3A%22medical%22+OR+TITLE_ABS%3A%22clinical%22+OR+TITLE_ABS%3A%22biology%22+OR+TITLE_ABS%3A%22biological%22+OR+TITLE_ABS%3A%22life+science%22+OR+TITLE_ABS%3A%22genomics%22+OR+TITLE_ABS%3A%22proteomics"
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-09-28T11:08:17Z",
-      "finished_at": "2026-09-28T11:09:24Z",
-      "discovered": 938,
-      "published": 63,
+      "started_at": "2026-09-29T10:50:01Z",
+      "finished_at": "2026-09-29T10:51:25Z",
+      "discovered": 845,
+      "published": 51,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-09-28T11:09:24Z",
-      "finished_at": "2026-09-28T11:09:37Z",
-      "discovered": 155,
-      "published": 11,
+      "started_at": "2026-09-29T10:51:25Z",
+      "finished_at": "2026-09-29T10:51:45Z",
+      "discovered": 172,
+      "published": 14,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-09-28T11:09:37Z",
-      "finished_at": "2026-09-28T11:09:38Z",
+      "started_at": "2026-09-29T10:51:45Z",
+      "finished_at": "2026-09-29T10:51:45Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
     }
   ],
   "days": [
+    {
+      "date": "2026-09-28",
+      "count": 3,
+      "entry_ids": [
+        "arxiv:2609.34652",
+        "arxiv:2609.34274",
+        "doi:10.64898/2026.07.15.26358188"
+      ]
+    },
+    {
+      "date": "2026-09-27",
+      "count": 1,
+      "entry_ids": [
+        "arxiv:2609.34024"
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "count": 3,
+      "entry_ids": [
+        "arxiv:2609.33014",
+        "arxiv:2609.32810",
+        "arxiv:2609.32352"
+      ]
+    },
     {
       "date": "2026-09-25",
       "count": 3,
@@ -624,6 +649,644 @@
   ],
   "entries": [
     {
+      "id": "arxiv:2609.34652",
+      "slug": "arxiv-2609-34652-95c18927a1",
+      "kind": "paper",
+      "title": "Revitalizing Medical Time Series with Vision-Informed Retrieval: A Vision-Language Perspective",
+      "abstract": "Medical time series (MedTS) underpin many clinical classification tasks, yet existing methods usually represent them only as numerical sequences and underuse the morphology that is explicit in waveform inspection. To bridge this gap, we introduce Vision-Informed Retrieval (ViRe), which uses a frozen VLM-derived waveform representation as a morphology-aware Query to guide retrieval from raw numerical MedTS features. Specifically, a Vision Query is extracted using pre-trained vision-language models (VLMs) to obtain morphology-aware priors from waveform plots. A tailored attention-based cross-modal retrieval mechanism then uses the Vision Query to select morphology-relevant temporal and channel evidence from the numerical representation. ViRe demonstrates strong effectiveness against ten established baselines, yielding an overall 6.42% relative improvement over the previous state of the art across six public benchmarks. Code, training scripts, and reproducibility materials are publicly available in the GitHub Repository: https://github.com/Levi-Ackman/ViRe.",
+      "authors": [
+        "Guoqi Yu",
+        "Juncheng Wang",
+        "Shujun Wang"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-28T08:58:34+00:00",
+      "updated_at": "2026-09-28T08:58:34+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.34652"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.34652v1",
+        "pdf": "https://arxiv.org/pdf/2609.34652v1",
+        "code": "https://github.com/Levi-Ackman/ViRe",
+        "html": "https://arxiv.org/html/2609.34652"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "effectiveness against ten established baselines, yielding an overall 6.42% relative improvement over the previous state of the art across six public benchmarks. Code, training scripts, and reproducibility materials are publicly available in the GitHub Repository: https://github.com/Levi-Ackman/ViRe. [[SECTION Revitalizing Medical Time Series with Vision-Informed Retrieval: A Vision-Language Pers",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34652"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "effectiveness against ten established baselines, yielding an overall 6.42% relative improvement over the previous state of the art across six public benchmarks. Code, training scripts, and reproducibility materials are publicly available in the GitHub Repository: https://github.com/Levi-Ackman/ViRe. [[SECTION Revitalizing Medical Time Series with Vision-Informed Retrieval: A Vision-Language Persp",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34652"
+        },
+        {
+          "term": "medical",
+          "excerpt": "Revitalizing Medical Time Series with Vision-Informed Retrieval: A Vision-Language Perspective Medical time series (MedTS) underpin many clinical classification tasks, yet existing methods usually represent them only as numerical sequences and underuse the mor",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34652"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Revitalizing Medical Time Series with Vision-Informed Retrieval: A Vision-Language Perspective Medical time series (MedTS) underpin many clinical classification tasks, yet existing methods usually represent them only as numerical sequences and underuse the morphology that is explicit in waveform inspection. To bridge this gap, we introduce Vision-Informed Retrieval (ViRe), which use",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34652"
+        },
+        {
+          "term": "Vision-Language",
+          "excerpt": "Revitalizing Medical Time Series with Vision-Informed Retrieval: A Vision-Language Perspective Medical time series (MedTS) underpin many clinical classification tasks, yet existing methods usually represent them only as numerical sequences and underuse the morphology that is explicit in waveform inspection. To bridge thi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34652"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "cb941b947e1bc8c84edd4de00de1667d6c28697876583133c35cc7f5464ac350",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2609.34274",
+      "slug": "arxiv-2609-34274-0521e39dc7",
+      "kind": "paper",
+      "title": "BIABench: Evaluating AI agents on real-world bioimage analysis tasks",
+      "abstract": "Artificial-intelligence (AI) agents hold promise for automating bioimage analysis, yet no benchmark evaluates whether they can carry out real-world analyses end to end. Such analyses are hard for agents because 2D images, 3D volumes and time-lapse sequences are often too large to read as context, so an agent must choose and run an analysis through code, specialized software and rendered views. Published studies make this capability testable, because each pairs raw images with a peer-reviewed result. We introduce BIABench, a benchmark of 16 tasks reconstructed from published biological studies that retain their scientific questions, imaging data and ground truth. The tasks span eleven analysis subtasks and modalities from H&E histology to single-molecule localization microscopy. Each submission receives an outcome score, which compares the output files with the ground truth using field-standard metrics, and a process score, in which a vision-language model judges method choice and quality control against an expert-written rubric. We evaluated general-purpose and biology-specific agents across several language models, with repeated runs of every task. Routine two-dimensional tasks were solved well, but on some tasks that added a third dimension or a time axis no agent scored above 0.19. Neither biological specialization, stronger models nor detailed expert instructions closed this gap. The agents were also unreliable, with scores varying more between repeated runs of one agent than between different agents, and without ground truth a correct run could not be told from a wrong one by its process score or by the time spent. Released openly with its data and code, BIABench provides a verifiable framework for evaluating, and eventually training, agents for reliable long-horizon bioimage analysis.",
+      "authors": [
+        "Zixuan Pan",
+        "Davide Panzeri",
+        "Lukas Johanns",
+        "Marilin Moor",
+        "Yu Zhou",
+        "Hedi Peterson",
+        "Yiyu Shi",
+        "Jianxu Chen"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-28T04:22:51+00:00",
+      "updated_at": "2026-09-28T04:22:51+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.34274"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.34274v1",
+        "pdf": "https://arxiv.org/pdf/2609.34274v1",
+        "code": "https://github.com/BIABench/BIABench",
+        "html": "https://arxiv.org/html/2609.34274"
+      },
+      "evidence": [
+        {
+          "term": "We introduce BIABench",
+          "excerpt": "specialized software and rendered views. Published studies make this capability testable, because each pairs raw images with a peer-reviewed result. We introduce BIABench, a benchmark of 16 tasks reconstructed from published biological studies that retain their scientific questions, imaging data and ground truth. The tasks span eleven analysis subtasks and modalities from H&E histology to single-molecule lo",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34274"
+        },
+        {
+          "term": "We introduce BIABench, a benchmark",
+          "excerpt": "specialized software and rendered views. Published studies make this capability testable, because each pairs raw images with a peer-reviewed result. We introduce BIABench, a benchmark of 16 tasks reconstructed from published biological studies that retain their scientific questions, imaging data and ground truth. The tasks span eleven analysis subtasks and modalities from H&E histology to single-molecule localization mi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34274"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Evaluating AI agents on real-world bioimage analysis tasks Artificial-intelligence (AI) agents hold promise for automating bioimage analysis, yet no benchmark evaluates whether they can carry out real-world analyses end to end. Such analyses are hard for agents because 2D images, 3D volumes and time-lapse sequences are often too large to read as context, so an agent must choose and run an analys",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34274"
+        },
+        {
+          "term": "biology",
+          "excerpt": "s score, in which a vision-language model judges method choice and quality control against an expert-written rubric. We evaluated general-purpose and biology-specific agents across several language models, with repeated runs of every task. Routine two-dimensional tasks were solved well, but on some tasks that added a third dimension or a time axis no agent scored above 0.19. Neither biological",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34274"
+        },
+        {
+          "term": "biological",
+          "excerpt": "lity testable, because each pairs raw images with a peer-reviewed result. We introduce BIABench, a benchmark of 16 tasks reconstructed from published biological studies that retain their scientific questions, imaging data and ground truth. The tasks span eleven analysis subtasks and modalities from H&E histology to single-molecule localization microscopy. Each submission receives an outcome score,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34274"
+        },
+        {
+          "term": "microscopy",
+          "excerpt": "c questions, imaging data and ground truth. The tasks span eleven analysis subtasks and modalities from H&E histology to single-molecule localization microscopy. Each submission receives an outcome score, which compares the output files with the ground truth using field-standard metrics, and a process score, in which a vision-language model judges method choice and quality control against an exper",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34274"
+        },
+        {
+          "term": "molecule",
+          "excerpt": "retain their scientific questions, imaging data and ground truth. The tasks span eleven analysis subtasks and modalities from H&E histology to single-molecule localization microscopy. Each submission receives an outcome score, which compares the output files with the ground truth using field-standard metrics, and a process score, in which a vision-language model judges method choice and quality",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34274"
+        },
+        {
+          "term": "vision-language",
+          "excerpt": "ission receives an outcome score, which compares the output files with the ground truth using field-standard metrics, and a process score, in which a vision-language model judges method choice and quality control against an expert-written rubric. We evaluated general-purpose and biology-specific agents across several language models, with repeated runs of every task. Routine two-dimensional tasks were",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34274"
+        }
+      ],
+      "related_benchmarks": [
+        "BIABench",
+        "AgentBench",
+        "StartupBench",
+        "BixBench",
+        "MicroVQA",
+        "BiomniBench",
+        "LAB-Bench",
+        "LABBench2"
+      ],
+      "related_agent_url": "../../p/2609.34274.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 31,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "f9fabdb963742ba17379f853677a1cd25f028794834ee915c956f0ecfcaa7373",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.07.15.26358188",
+      "slug": "doi-10-64898-2026-07-15-26358188-0c7e283c2c",
+      "kind": "paper",
+      "title": "A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data",
+      "abstract": "The Cancer Genome Atlas (TCGA) holds clinical data for over 11,000 patients across 33 cancer types, but access is hard because of complex file structures, heterogeneous formats, and the need for programming. We present an agentic system for natural language querying and statistical analysis of TCGA clinical data. The system uses a large language model as an autonomous ReAct agent that selects from eight computational tools, including data extraction, descriptive statistics, Kaplan-Meier survival analysis with log-rank tests, hypothesis testing, and verification against the curated TCGA Pan-Cancer Clinical Data Resource (CDR). The agent reasons about intermediate results, adapts its approach, and returns clinically contextualized responses with source attribution and auditable traces. We introduce TCGA-Agent-Bench, 440 queries across five difficulty tiers with ground truth from the independently curated TCGA-CDR, evaluated with dual metrics of numerical accuracy and clinical completeness. The system achieves 93.4% overall accuracy (100% single-patient lookups, 99.1% cohort statistics, 92.8% comparative analyses), outperforming a fixed rule-based pipeline (87.1%), a single-pass LLM (81.8%), and retrieval-augmented generation (66.9% on a subset). Most of the benchmark is answerable from the CDR alone, so we locate the extraction layer's value in fields the CDR lacks (drug treatments, TNM components, biomarkers, biospecimen metadata): on 26 queries targeting these, the full system answers 100% versus 3.8% for CDR-only. Ablations show the reasoning loop is most impactful (+9.1% accuracy, +22.0 completeness points). A tool-based agentic architecture enables accurate, auditable analysis of clinical repositories, with value driven by tool design and recovered fields rather than model scale.",
+      "authors": [
+        "Korutla, R.",
+        "Amal, S."
+      ],
+      "source": "medrxiv",
+      "published_at": "2026-09-28T00:00:00+00:00",
+      "updated_at": "2026-09-28T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by",
+      "identifiers": {
+        "doi": "10.64898/2026.07.15.26358188"
+      },
+      "links": {
+        "abs": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188",
+        "pdf": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full.pdf",
+        "html": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
+      },
+      "evidence": [
+        {
+          "term": "We introduce TCGA-Agent-Bench",
+          "excerpt": "easons about intermediate results, adapts its approach, and returns clinically contextualized responses with source attribution and auditable traces. We introduce TCGA-Agent-Bench, 440 queries across five difficulty tiers with ground truth from the independently curated TCGA-CDR, evaluated with dual metrics of numerical accuracy and clinical completeness. The system achieves 93.4% overall accuracy (100% single-patie",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "s), outperforming a fixed rule-based pipeline (87.1%), a single-pass LLM (81.8%), and retrieval-augmented generation (66.9% on a subset). Most of the benchmark is answerable from the CDR alone, so we locate the extraction layer's value in fields the CDR lacks (drug treatments, TNM components, biomarkers, biospecimen metadata): on 26 queries targeting these, the full system answers 100% versus 3.8",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data The Cancer Genome Atlas (TCGA) holds clinical data for over 11,000 patients across 33 cancer types, but access is hard because of complex file structures, heterogeneous formats, and the need for programming. We present an agentic syst",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
+        },
+        {
+          "term": "genome",
+          "excerpt": "A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data The Cancer Genome Atlas (TCGA) holds clinical data for over 11,000 patients across 33 cancer types, but access is hard because of complex file structures, heterogeneous formats, and the need for programming. We present",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
+        },
+        {
+          "term": "cancer",
+          "excerpt": "A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data The Cancer Genome Atlas (TCGA) holds clinical data for over 11,000 patients across 33 cancer types, but access is hard because of complex file structures, heterogeneous formats, and the need for programming. We p",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
+        },
+        {
+          "term": "patient",
+          "excerpt": "anguage Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data The Cancer Genome Atlas (TCGA) holds clinical data for over 11,000 patients across 33 cancer types, but access is hard because of complex file structures, heterogeneous formats, and the need for programming. We present an agentic system for natural language querying and statistical analysis of TCGA clinical data",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "e9deef0374850b8d221c54bbf5ac8a7e28bdfae2d5a9a456c73a98c35710ec51",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2609.34024",
+      "slug": "arxiv-2609-34024-e4b8de8f97",
+      "kind": "paper",
+      "title": "Jev in Medicine: A Benchmark Evaluation. Preliminary Results",
+      "abstract": "Jev is a non-generative \"System One\" model that assigns probabilities to predefined answer options and cannot answer outside them. Its accuracy and calibration on medical question-answering and case-based diagnostic-reasoning tasks are unknown. We evaluated Jev 1.13 on four medical benchmarks: MetaMedQA, PubMedQA, DiagnosisArena-MCQ and the NEJM Case Challenges. GPT-6 Sol, with (medium) and without reasoning, was the reference. The primary outcome was top-1 accuracy; key secondary outcomes were calibration, selective prediction and recognition of unanswerable questions. All 8,469 requests returned a valid answer. Jev's accuracy was similar to that of GPT-6 Sol with medium reasoning on PubMedQA (78.4% vs 78.2%;), lower on MetaMedQA (74.8% vs 82.7%) and much lower on DiagnosisArena-MCQ (59.8% vs 82.4%;) and the NEJM cases (61.8% vs 82.4%). On MetaMedQA, Jev's probabilities were the best calibrated (expected calibration error 0.063 vs 0.146), and its answers with a probability of at least 0.9 (52.9% of questions) were 93.4% accurate, but GPT-6 Sol was as accurate when it accepted a similar proportion of questions. On DiagnosisArena-MCQ, Jev's probabilities discriminated poorly (AUROC 0.645 vs 0.768). Of the 162 questions whose correct answer was \"I don't know or cannot answer\", Jev chose that option for 10.5% (GPT-6 Sol, 8.6%). Median latency was 0.27-0.31 s; all 2,823 items cost USD 0.08. Jev was fast and inexpensive, and its accuracy was similar to that of a frontier LLM on research abstracts but lower on examination questions and much lower on complex diagnostic cases. Task-specific validation is required before clinical use.",
+      "authors": [
+        "Alfredo Madrid-García",
+        "Beatriz Merino-Barbancho"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-27T23:33:04+00:00",
+      "updated_at": "2026-09-27T23:33:04+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.34024"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.34024v1",
+        "pdf": "https://arxiv.org/pdf/2609.34024v1",
+        "code": "https://github.com/JunMa11/MedJev",
+        "html": "https://arxiv.org/html/2609.34024"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "Jev in Medicine: A Benchmark Evaluation. Preliminary Results Jev is a non-generative \"System One\" model that assigns probabilities to predefined answer options and cannot answer outside them. Its accuracy and calibration on medical question-answering and case-based di",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34024"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "s accuracy and calibration on medical question-answering and case-based diagnostic-reasoning tasks are unknown. We evaluated Jev 1.13 on four medical benchmarks: MetaMedQA, PubMedQA, DiagnosisArena-MCQ and the NEJM Case Challenges. GPT-6 Sol, with (medium) and without reasoning, was the reference. The primary outcome was top-1 accuracy; key secondary outcomes were calibration, selective prediction",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34024"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "Jev in Medicine: A Benchmark Evaluation. Preliminary Results Jev is a non-generative \"System One\" model that assigns probabilities to predefined answer options and cannot answer outside them. Its accuracy and calibration on medical question-answering and",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34024"
+        },
+        {
+          "term": "medical",
+          "excerpt": "generative \"System One\" model that assigns probabilities to predefined answer options and cannot answer outside them. Its accuracy and calibration on medical question-answering and case-based diagnostic-reasoning tasks are unknown. We evaluated Jev 1.13 on four medical benchmarks: MetaMedQA, PubMedQA, DiagnosisArena-MCQ and the NEJM Case Challenges. GPT-6 Sol, with (medium) and without reasonin",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34024"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "LLM on research abstracts but lower on examination questions and much lower on complex diagnostic cases. Task-specific validation is required before clinical use. [[SECTION Jev in Medicine: A Benchmark Evaluation. Preliminary results.]] Jev in Medicine: A Benchmark Evaluation. Preliminary results. Content selection saved. Describe the issue below: [[SECTION Jev in Medicine: A Benchmark Evaluati",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.34024"
+        }
+      ],
+      "related_benchmarks": [
+        "MetaMedQA",
+        "PubMedQA",
+        "MedQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "64e0a4dd089e134cb6b42e20a24c8cdab3c7e1f048fa09d5f8cd0b16baa63b91",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2609.33014",
+      "slug": "arxiv-2609-33014-618bc369b8",
+      "kind": "paper",
+      "title": "TCMQA: A 38K-Question Traditional Chinese Medicine Benchmark with a Licensed-Practitioner Reference",
+      "abstract": "Medical benchmarks for language models are built almost entirely on Western biomedicine. Traditional Chinese Medicine (TCM) is a separate system, with its own diagnostic framework and its own literature, and it remains largely unmeasured. The few TCM evaluations that exist are small, narrow, and rarely paired with a human reference. We present TCMQA, an open benchmark of 38,279 questions from Chinese TCM licensing examinations, paired with 15,151 responses from 101 licensed practitioners. We evaluate 29 instruction-tuned models from 9 families, spanning 0.27B to 14.8B parameters. Accuracy ranges over 59 points, and no model approaches saturation. Pretraining data predicts TCM ability far better than scale: a 12B Western-pretrained model reaches 39.6%, while a Chinese-pretrained model an eighth its size reaches 60.8%. Nine models exceed the practitioner majority vote of 64.9%, the best by 21.8 points, and all nine come from that same Chinese-pretrained family. Yet difficulty does not transfer between models and practitioners: accuracy is flat across practitioner-rated difficulty, item-level agreement is near zero for all 29 models, and on $8.4\\%$ of items the practitioners are correct where the leading model is wrong. We release the corpus, the practitioner responses, the harness, and per-item model outputs at https://huggingface.co/datasets/TechTCM/TCMQA.",
+      "authors": [
+        "Tzu-Heng Huang",
+        "Jet Lin",
+        "Eric Lin"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-26T23:11:48+00:00",
+      "updated_at": "2026-09-26T23:11:48+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.33014"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.33014v1",
+        "pdf": "https://arxiv.org/pdf/2609.33014v1",
+        "data": "https://huggingface.co/datasets/TechTCM/TCMQA",
+        "html": "https://arxiv.org/html/2609.33014"
+      },
+      "evidence": [
+        {
+          "term": "We present TCMQA",
+          "excerpt": "ts own literature, and it remains largely unmeasured. The few TCM evaluations that exist are small, narrow, and rarely paired with a human reference. We present TCMQA, an open benchmark of 38,279 questions from Chinese TCM licensing examinations, paired with 15,151 responses from 101 licensed practitioners. We evaluate 29 instruction-tuned models from 9 families, spanning 0.27B to 14.8B parameters. Accu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.33014"
+        },
+        {
+          "term": "We present TCMQA, an open benchmark",
+          "excerpt": "ts own literature, and it remains largely unmeasured. The few TCM evaluations that exist are small, narrow, and rarely paired with a human reference. We present TCMQA, an open benchmark of 38,279 questions from Chinese TCM licensing examinations, paired with 15,151 responses from 101 licensed practitioners. We evaluate 29 instruction-tuned models from 9 families, spanning 0.27B to 14.8B parameters. Accuracy ranges over 59",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.33014"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "TCMQA: A 38K-Question Traditional Chinese Medicine Benchmark with a Licensed-Practitioner Reference Medical benchmarks for language models are built almost entirely on Western biomedicine. Traditional Chinese Medicine (TCM) is a separate system, with its own diagnostic framework and its own literatu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.33014"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "TCMQA: A 38K-Question Traditional Chinese Medicine Benchmark with a Licensed-Practitioner Reference Medical benchmarks for language models are built almost entirely on Western biomedicine. Traditional Chinese Medicine (TCM) is a separate system, with its own diagnostic framework and its own literature, and it remains largely unmeasured. The few TCM evaluat",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.33014"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "TCMQA: A 38K-Question Traditional Chinese Medicine Benchmark with a Licensed-Practitioner Reference Medical benchmarks for language models are built almost entirely on Western biomedicine. Traditional Chinese Medicine (TCM) is a separate system, with its own diagnostic framework and its ow",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.33014"
+        },
+        {
+          "term": "medical",
+          "excerpt": "TCMQA: A 38K-Question Traditional Chinese Medicine Benchmark with a Licensed-Practitioner Reference Medical benchmarks for language models are built almost entirely on Western biomedicine. Traditional Chinese Medicine (TCM) is a separate system, with its own diagnostic framework and its own literature, and it remains largely unmeasured. The few",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.33014"
+        }
+      ],
+      "related_benchmarks": [
+        "TCMQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 24,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "b42544f62418fedaa37586f386acc701044aef2cb15076e5d4d2726c8280db8c",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2609.32810",
+      "slug": "arxiv-2609-32810-1a63a594e4",
+      "kind": "paper",
+      "title": "OpenTumorBoard: A Real-World Benchmark of Multidisciplinary Tumor Board Discussion Trajectories",
+      "abstract": "Multidisciplinary tumor boards integrate multimodal clinical observations and longitudinal patient histories through specialist discussions, yet benchmarks rarely capture these real-world trajectories. We introduce OpenTumorBoard, a benchmark with 611 patient cases and 19,157 discussion turns across ten specialist roles, transcribed from 12,534 minutes of publicly available tumor board recordings on YouTube. The benchmark evaluates two settings: SPECIALIST TURN, in which an LLM responds to a clinically significant question posed during a real discussion, and BOARD SIMULATION, in which it generates an entire back-and-forth discussion and reaches a consensus on therapy recommendations, surgical plans, next actions and clinical trial matching. Evaluation of 14 general-purpose frontier and medical LLMs reveals substantial limitations: the best models score 3.43 out of 5 in clinical equivalence to specialist answers and 2.78 out of 5 in alignment with recorded board conclusions. Supervised finetuning and reinforcement learning improve performance on a held-out test set, suggesting that real-world discussion trajectories can support model adaptation. Three M.D. experts review a subset of the benchmark, finding high information coverage and factuality of patient cases and strong fidelity of extracted consensus conclusions. We will release OpenTumorBoard and its automated curation pipeline to support the development and evaluation of LLMs for multidisciplinary, personalized cancer decision-making.",
+      "authors": [
+        "Anqi Li",
+        "Zhixuan Ge",
+        "Yixuan Duan",
+        "Jiarong Qian",
+        "Chi-Yu Chen",
+        "MingYu Lu",
+        "Huan-Yu Hsu",
+        "Yu Gu",
+        "Yue Guo",
+        "Sheng Wang",
+        "Wei Qiu",
+        "Hanwen Xu"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-26T17:35:10+00:00",
+      "updated_at": "2026-09-26T17:35:10+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.32810"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.32810v1",
+        "pdf": "https://arxiv.org/pdf/2609.32810v1",
+        "html": "https://arxiv.org/html/2609.32810"
+      },
+      "evidence": [
+        {
+          "term": "We introduce OpenTumorBoard, a benchmark",
+          "excerpt": "clinical observations and longitudinal patient histories through specialist discussions, yet benchmarks rarely capture these real-world trajectories. We introduce OpenTumorBoard, a benchmark with 611 patient cases and 19,157 discussion turns across ten specialist roles, transcribed from 12,534 minutes of publicly available tumor board recordings on YouTube. The benchmark evaluates two settings: SPECIALIST TURN, in which an LLM",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32810"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "OpenTumorBoard: A Real-World Benchmark of Multidisciplinary Tumor Board Discussion Trajectories Multidisciplinary tumor boards integrate multimodal clinical observations and longitudinal patient histories through specialist discussions, yet benchmarks rarely capture these real-",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32810"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "ries Multidisciplinary tumor boards integrate multimodal clinical observations and longitudinal patient histories through specialist discussions, yet benchmarks rarely capture these real-world trajectories. We introduce OpenTumorBoard, a benchmark with 611 patient cases and 19,157 discussion turns across ten specialist roles, transcribed from 12,534 minutes of publicly available tumor board record",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32810"
+        },
+        {
+          "term": "test set",
+          "excerpt": "rs and 2.78 out of 5 in alignment with recorded board conclusions. Supervised finetuning and reinforcement learning improve performance on a held-out test set, suggesting that real-world discussion trajectories can support model adaptation. Three M.D. experts review a subset of the benchmark, finding high information coverage and factuality of patient cases and strong fidelity of extracted conse",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32810"
+        },
+        {
+          "term": "medical",
+          "excerpt": "aches a consensus on therapy recommendations, surgical plans, next actions and clinical trial matching. Evaluation of 14 general-purpose frontier and medical LLMs reveals substantial limitations: the best models score 3.43 out of 5 in clinical equivalence to specialist answers and 2.78 out of 5 in alignment with recorded board conclusions. Supervised finetuning and reinforcement learning improv",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32810"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "OpenTumorBoard: A Real-World Benchmark of Multidisciplinary Tumor Board Discussion Trajectories Multidisciplinary tumor boards integrate multimodal clinical observations and longitudinal patient histories through specialist discussions, yet benchmarks rarely capture these real-world trajectories. We introduce OpenTumorBoard, a benchmark with 611 patient cases and 19,157 discussion turns across",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32810"
+        },
+        {
+          "term": "cancer",
+          "excerpt": "will release OpenTumorBoard and its automated curation pipeline to support the development and evaluation of LLMs for multidisciplinary, personalized cancer decision-making. [[SECTION OpenTumorBoard: A Real-World Benchmark of Multidisciplinary Tumor Board Discussion Trajectories]] OpenTumorBoard: A Real-World Benchmark of Multidisciplinary Tumor Board Discussion Trajectories Content selection",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32810"
+        },
+        {
+          "term": "patient",
+          "excerpt": "k of Multidisciplinary Tumor Board Discussion Trajectories Multidisciplinary tumor boards integrate multimodal clinical observations and longitudinal patient histories through specialist discussions, yet benchmarks rarely capture these real-world trajectories. We introduce OpenTumorBoard, a benchmark with 611 patient cases and 19,157 discussion turns across ten specialist roles, transcribed fro",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32810"
+        }
+      ],
+      "related_benchmarks": [
+        "MTBBench",
+        "MedQA",
+        "MedAgentBench",
+        "MedXpertQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 33,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "30624f57b77a7500d6108680ca4a9749d57b803b7708a7e6fb0f24f61d73e3c3",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2609.32352",
+      "slug": "arxiv-2609-32352-3a5b32115a",
+      "kind": "paper",
+      "title": "EyeVQA: Benchmarking Ophthalmic Vision-Language Models from Recognition to Spatial Grounding",
+      "abstract": "Vision-language models (VLMs) have shown increasing potential for medical image understanding, yet their capabilities in ophthalmic imaging remain insufficiently characterized. Existing ophthalmic datasets are typically designed for individual diseases or specialized tasks, making it difficult to systematically evaluate whether VLMs can move beyond disease recognition toward comparative reasoning and fine-grained spatial grounding. We introduce EyeVQA, a unified visual question answering benchmark for comprehensive evaluation of ophthalmic VLMs. EyeVQA is constructed from 21 available ophthalmic datasets and contains 20,000 question-answer pairs spanning six disease groups and seven question types: Single-Choice, Multi-Select, Variable-Select, True-False, Ranking, Point Location, and Bounding Box. Gold answers are deterministically derived from source-provided diagnoses, severity grades, clinical findings, segmentation masks, bounding boxes, and anatomical landmarks, enabling reproducible evaluation without relying on model-generated annotations. Notably, 44.5% of the questions require reasoning across multiple images, extending evaluation beyond conventional single-image medical VQA. We benchmark fourteen representative general-purpose, scientific, and medically specialized VLMs under a unified zero-shot protocol. The best-performing model only achieves an overall score of 62.8, while substantial gaps remain in spatial grounding and cross-task generalization. These results highlight the limitations of current VLMs in comprehensive ophthalmic visual understanding and establish EyeVQA as a diagnostic benchmark for developing more reliable and spatially grounded ophthalmic multimodal models. The project page is available at https://github.com/PKUTHM/EyeVQA.",
+      "authors": [
+        "Gujie Shao",
+        "Zixun Xie",
+        "Xuechun Xing",
+        "Ruixiang Wang",
+        "Ziyun Lan",
+        "Yanlin Qi",
+        "Gangyi Zhang",
+        "Yuxin Yang",
+        "Dawei Li",
+        "Haiming Tang"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-26T08:15:17+00:00",
+      "updated_at": "2026-09-26T08:15:17+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.32352"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.32352v1",
+        "pdf": "https://arxiv.org/pdf/2609.32352v1",
+        "code": "https://github.com/PKUTHM/EyeVQA",
+        "html": "https://arxiv.org/html/2609.32352"
+      },
+      "evidence": [
+        {
+          "term": "We introduce EyeVQA",
+          "excerpt": "ifficult to systematically evaluate whether VLMs can move beyond disease recognition toward comparative reasoning and fine-grained spatial grounding. We introduce EyeVQA, a unified visual question answering benchmark for comprehensive evaluation of ophthalmic VLMs. EyeVQA is constructed from 21 available ophthalmic datasets and contains 20,000 question-answer pairs spanning six disease groups and seven que",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32352"
+        },
+        {
+          "term": "We introduce EyeVQA, a unified visual question answering benchmark",
+          "excerpt": "ifficult to systematically evaluate whether VLMs can move beyond disease recognition toward comparative reasoning and fine-grained spatial grounding. We introduce EyeVQA, a unified visual question answering benchmark for comprehensive evaluation of ophthalmic VLMs. EyeVQA is constructed from 21 available ophthalmic datasets and contains 20,000 question-answer pairs spanning six disease groups and seven question types: Single-Choice, Multi-Select, Varia",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32352"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "EyeVQA: Benchmarking Ophthalmic Vision-Language Models from Recognition to Spatial Grounding Vision-language models (VLMs) have shown increasing potential for medical image understanding, yet their capabilities in ophthalmic imaging remain insufficiently ch",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32352"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "EyeVQA: Benchmarking Ophthalmic Vision-Language Models from Recognition to Spatial Grounding Vision-language models (VLMs) have shown increasing potential for medical image understanding, yet their capabilities in ophthalmic imaging remain insufficiently chara",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32352"
+        },
+        {
+          "term": "medical",
+          "excerpt": "enchmarking Ophthalmic Vision-Language Models from Recognition to Spatial Grounding Vision-language models (VLMs) have shown increasing potential for medical image understanding, yet their capabilities in ophthalmic imaging remain insufficiently characterized. Existing ophthalmic datasets are typically designed for individual diseases or specialized tasks, making it difficult to systematically",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32352"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "t, True-False, Ranking, Point Location, and Bounding Box. Gold answers are deterministically derived from source-provided diagnoses, severity grades, clinical findings, segmentation masks, bounding boxes, and anatomical landmarks, enabling reproducible evaluation without relying on model-generated annotations. Notably, 44.5% of the questions require reasoning across multiple images, extending ev",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32352"
+        },
+        {
+          "term": "disease",
+          "excerpt": "yet their capabilities in ophthalmic imaging remain insufficiently characterized. Existing ophthalmic datasets are typically designed for individual diseases or specialized tasks, making it difficult to systematically evaluate whether VLMs can move beyond disease recognition toward comparative reasoning and fine-grained spatial grounding. We introduce EyeVQA, a unified visual question answerin",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32352"
+        },
+        {
+          "term": "Vision-Language",
+          "excerpt": "EyeVQA: Benchmarking Ophthalmic Vision-Language Models from Recognition to Spatial Grounding Vision-language models (VLMs) have shown increasing potential for medical image understanding, yet their capabilities in ophthalmic imaging remain insufficiently characterized. Existing ophthalm",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.32352"
+        }
+      ],
+      "related_benchmarks": [
+        "EyeVQA",
+        "VQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 29,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "614452dca6a89094c0550fabae4528f9ac9c84825903681eb55fc1b71f7035ad",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "arxiv:2609.30928",
       "slug": "arxiv-2609-30928-9003602e11",
       "kind": "paper",
@@ -1109,7 +1772,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 21,
+      "match_score": 19,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "7ade910b35483c7355a33d531472fc7ee3b963dd337c9479239a7af24028d605",
