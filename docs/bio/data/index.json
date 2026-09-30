@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-29T10:49:10Z",
-  "total": 131,
+  "generated_at": "2026-09-30T10:36:53Z",
+  "total": 132,
   "counts": {
     "topics": {
+      "experiment_agent": 31,
       "multimodal": 37,
-      "experiment_agent": 30,
       "general_text": 52,
       "biosafety": 12
     },
     "contribution_types": {
-      "new_benchmark": 102,
+      "new_benchmark": 103,
       "methodology": 16,
       "audit": 13
     },
     "kinds": {
-      "paper": 131
+      "paper": 132
     },
     "evaluation_contexts": {
-      "beneficial_capability": 119,
+      "beneficial_capability": 120,
       "biosecurity_misuse": 12
     }
   },
@@ -59,48 +59,48 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-09-29T10:49:26Z",
-      "finished_at": "2026-09-29T10:50:00Z",
-      "discovered": 65,
-      "published": 32,
+      "started_at": "2026-09-30T10:37:08Z",
+      "finished_at": "2026-09-30T10:37:47Z",
+      "discovered": 79,
+      "published": 41,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "failed",
-      "started_at": "2026-09-29T10:50:00Z",
-      "finished_at": "2026-09-29T10:50:01Z",
+      "started_at": "2026-09-30T10:37:47Z",
+      "finished_at": "2026-09-30T10:38:33Z",
       "discovered": 0,
       "published": 0,
-      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=FIRST_PDATE%3A%5B2026-09-25+TO+2026-09-29%5D+AND+%28TITLE_ABS%3A%22benchmark%22+OR+TITLE_ABS%3A%22benchmarking%22+OR+TITLE_ABS%3A%22evaluation+suite%22+OR+TITLE_ABS%3A%22evaluation+dataset%22+OR+TITLE_ABS%3A%22challenge+set%22%29+AND+%28TITLE_ABS%3A%22biomedical%22+OR+TITLE_ABS%3A%22medical%22+OR+TITLE_ABS%3A%22clinical%22+OR+TITLE_ABS%3A%22biology%22+OR+TITLE_ABS%3A%22biological%22+OR+TITLE_ABS%3A%22life+science%22+OR+TITLE_ABS%3A%22genomics%22+OR+TITLE_ABS%3A%22proteomics"
+      "error": "The read operation timed out"
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-09-29T10:50:01Z",
-      "finished_at": "2026-09-29T10:51:25Z",
-      "discovered": 845,
-      "published": 51,
+      "started_at": "2026-09-30T10:38:33Z",
+      "finished_at": "2026-09-30T10:39:07Z",
+      "discovered": 864,
+      "published": 53,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-09-29T10:51:25Z",
-      "finished_at": "2026-09-29T10:51:45Z",
-      "discovered": 172,
-      "published": 14,
+      "started_at": "2026-09-30T10:39:07Z",
+      "finished_at": "2026-09-30T10:39:21Z",
+      "discovered": 213,
+      "published": 17,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-09-29T10:51:45Z",
-      "finished_at": "2026-09-29T10:51:45Z",
+      "started_at": "2026-09-30T10:39:21Z",
+      "finished_at": "2026-09-30T10:39:21Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
@@ -109,8 +109,9 @@
   "days": [
     {
       "date": "2026-09-28",
-      "count": 3,
+      "count": 4,
       "entry_ids": [
+        "arxiv:2609.36392",
         "arxiv:2609.34652",
         "arxiv:2609.34274",
         "doi:10.64898/2026.07.15.26358188"
@@ -649,6 +650,76 @@
   ],
   "entries": [
     {
+      "id": "arxiv:2609.36392",
+      "slug": "arxiv-2609-36392-69cc6e73ff",
+      "kind": "paper",
+      "title": "ARCagent: An Adaptive Retrieval Calibration Agent for Clinical Question Answering",
+      "abstract": "In diseases where clinical guidelines are incomplete, contested, or mutually contradictory, knowledge completeness and dynamic conflict-aware synthesis are two safety-critical properties that standard Retrieval-Augmented Generation systems do not provide. Therefore, we present \\sysname, an adaptive retrieval calibration clinical question-answering agent for ME/CFS, a disease where diagnostic frameworks coexist and major guidelines actively contradict each other on treatment. ARCagent contributes three components. First, a 1,706-chunk, 10-source knowledge base with a structured inter-guideline conflict registry spanning all active ME/CFS diagnostic frameworks. Second, a conflict-aware retrieval calibration pipeline that re-ranks retrieved evidence using query-specific focus and conflict signals. Third, a benchmark scored by LLM-as-Judge, avoiding systematic underestimation averaging 10.1 percentage points caused by keyword matching. ARCagent achieves 95.3%, outperforming all base LLMs. Code is available at https://github.com/Yukyin/ARCagent.",
+      "authors": [
+        "Yuyan Chen"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-28T23:45:13+00:00",
+      "updated_at": "2026-09-28T23:45:13+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.36392"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.36392v1",
+        "pdf": "https://arxiv.org/pdf/2609.36392v1",
+        "code": "https://github.com/Yukyin/ARCagent",
+        "html": "https://arxiv.org/html/2609.36392"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "s. Second, a conflict-aware retrieval calibration pipeline that re-ranks retrieved evidence using query-specific focus and conflict signals. Third, a benchmark scored by LLM-as-Judge, avoiding systematic underestimation averaging 10.1 percentage points caused by keyword matching. ARCagent achieves 95.3%, outperforming all base LLMs. Code is available at https://github.com/Yukyin/ARCagent. [[SECTI",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.36392"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "ARCagent: An Adaptive Retrieval Calibration Agent for Clinical Question Answering In diseases where clinical guidelines are incomplete, contested, or mutually contradictory, knowledge completeness and dynamic conflict-aware synthesis are two safety-critical properties that standard Retrieval-Augmented",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.36392"
+        },
+        {
+          "term": "disease",
+          "excerpt": "ARCagent: An Adaptive Retrieval Calibration Agent for Clinical Question Answering In diseases where clinical guidelines are incomplete, contested, or mutually contradictory, knowledge completeness and dynamic conflict-aware synthesis are two safety-critical properties that standard Retrieval-Augmented Generation systems do not pro",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.36392"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "2024) T. Liang, Z. He, W. Jiao, X. Wang, Y. Wang, R. Wang, Y. Yang, S. Shi, and Z. Tu Encouraging divergent thinking in large language models through multi-agent debate . In Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing , pp. 17889–17904 . Cited by: §4.3 . Liu (2011) T. Liu Learning to rank for information retrieval . Springer . Cited by: §4.2 . ME/CFS Clini",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2609.36392"
+        }
+      ],
+      "related_benchmarks": [
+        "PubMedQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 15,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c16a35dc93842a5ecf7ae73049077f77f3707af5ac6421cedbe20d76e2bb8f42",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "arxiv:2609.34652",
       "slug": "arxiv-2609-34652-95c18927a1",
       "kind": "paper",
@@ -1097,7 +1168,7 @@
       ],
       "source": "arxiv",
       "published_at": "2026-09-26T17:35:10+00:00",
-      "updated_at": "2026-09-26T17:35:10+00:00",
+      "updated_at": "2026-09-29T07:50:22+00:00",
       "priority": "P1",
       "categories": [
         "multimodal"
@@ -1109,8 +1180,9 @@
         "arxiv": "2609.32810"
       },
       "links": {
-        "abs": "https://arxiv.org/abs/2609.32810v1",
-        "pdf": "https://arxiv.org/pdf/2609.32810v1",
+        "abs": "https://arxiv.org/abs/2609.32810v2",
+        "pdf": "https://arxiv.org/pdf/2609.32810v2",
+        "data": "https://huggingface.co/datasets/al1219/OpenTumorBoard",
         "html": "https://arxiv.org/html/2609.32810"
       },
       "evidence": [
@@ -1177,7 +1249,7 @@
       "match_score": 33,
       "extraction_status": "complete",
       "extraction_error": "",
-      "content_hash": "30624f57b77a7500d6108680ca4a9749d57b803b7708a7e6fb0f24f61d73e3c3",
+      "content_hash": "6a0bbe50e7ead887015f2f8e48a1e7c9e31dfa933493a0553b2cc959734cdced",
       "is_seed": false,
       "topic": "multimodal",
       "contribution_type": "new_benchmark"
@@ -1202,7 +1274,7 @@
       ],
       "source": "arxiv",
       "published_at": "2026-09-26T08:15:17+00:00",
-      "updated_at": "2026-09-26T08:15:17+00:00",
+      "updated_at": "2026-09-29T01:27:10+00:00",
       "priority": "P1",
       "categories": [
         "multimodal"
@@ -1214,8 +1286,8 @@
         "arxiv": "2609.32352"
       },
       "links": {
-        "abs": "https://arxiv.org/abs/2609.32352v1",
-        "pdf": "https://arxiv.org/pdf/2609.32352v1",
+        "abs": "https://arxiv.org/abs/2609.32352v2",
+        "pdf": "https://arxiv.org/pdf/2609.32352v2",
         "code": "https://github.com/PKUTHM/EyeVQA",
         "html": "https://arxiv.org/html/2609.32352"
       },
@@ -1281,7 +1353,7 @@
       "match_score": 29,
       "extraction_status": "complete",
       "extraction_error": "",
-      "content_hash": "614452dca6a89094c0550fabae4528f9ac9c84825903681eb55fc1b71f7035ad",
+      "content_hash": "a6997b1ffc370f11e11814b0c1745a8216480050c76546b2ad37e0ce04ca06d9",
       "is_seed": false,
       "topic": "multimodal",
       "contribution_type": "new_benchmark"

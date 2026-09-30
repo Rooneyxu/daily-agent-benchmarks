@@ -1,7 +1,77 @@
 {
   "date": "2026-09-28",
-  "count": 3,
+  "count": 4,
   "entries": [
+    {
+      "id": "arxiv:2609.36392",
+      "slug": "arxiv-2609-36392-69cc6e73ff",
+      "kind": "paper",
+      "title": "ARCagent: An Adaptive Retrieval Calibration Agent for Clinical Question Answering",
+      "abstract": "In diseases where clinical guidelines are incomplete, contested, or mutually contradictory, knowledge completeness and dynamic conflict-aware synthesis are two safety-critical properties that standard Retrieval-Augmented Generation systems do not provide. Therefore, we present \\sysname, an adaptive retrieval calibration clinical question-answering agent for ME/CFS, a disease where diagnostic frameworks coexist and major guidelines actively contradict each other on treatment. ARCagent contributes three components. First, a 1,706-chunk, 10-source knowledge base with a structured inter-guideline conflict registry spanning all active ME/CFS diagnostic frameworks. Second, a conflict-aware retrieval calibration pipeline that re-ranks retrieved evidence using query-specific focus and conflict signals. Third, a benchmark scored by LLM-as-Judge, avoiding systematic underestimation averaging 10.1 percentage points caused by keyword matching. ARCagent achieves 95.3%, outperforming all base LLMs. Code is available at https://github.com/Yukyin/ARCagent.",
+      "authors": [
+        "Yuyan Chen"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-28T23:45:13+00:00",
+      "updated_at": "2026-09-28T23:45:13+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.36392"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.36392v1",
+        "pdf": "https://arxiv.org/pdf/2609.36392v1",
+        "code": "https://github.com/Yukyin/ARCagent",
+        "html": "https://arxiv.org/html/2609.36392"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "s. Second, a conflict-aware retrieval calibration pipeline that re-ranks retrieved evidence using query-specific focus and conflict signals. Third, a benchmark scored by LLM-as-Judge, avoiding systematic underestimation averaging 10.1 percentage points caused by keyword matching. ARCagent achieves 95.3%, outperforming all base LLMs. Code is available at https://github.com/Yukyin/ARCagent. [[SECTI",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.36392"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "ARCagent: An Adaptive Retrieval Calibration Agent for Clinical Question Answering In diseases where clinical guidelines are incomplete, contested, or mutually contradictory, knowledge completeness and dynamic conflict-aware synthesis are two safety-critical properties that standard Retrieval-Augmented",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.36392"
+        },
+        {
+          "term": "disease",
+          "excerpt": "ARCagent: An Adaptive Retrieval Calibration Agent for Clinical Question Answering In diseases where clinical guidelines are incomplete, contested, or mutually contradictory, knowledge completeness and dynamic conflict-aware synthesis are two safety-critical properties that standard Retrieval-Augmented Generation systems do not pro",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.36392"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "2024) T. Liang, Z. He, W. Jiao, X. Wang, Y. Wang, R. Wang, Y. Yang, S. Shi, and Z. Tu Encouraging divergent thinking in large language models through multi-agent debate . In Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing , pp. 17889–17904 . Cited by: §4.3 . Liu (2011) T. Liu Learning to rank for information retrieval . Springer . Cited by: §4.2 . ME/CFS Clini",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2609.36392"
+        }
+      ],
+      "related_benchmarks": [
+        "PubMedQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 15,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c16a35dc93842a5ecf7ae73049077f77f3707af5ac6421cedbe20d76e2bb8f42",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
     {
       "id": "arxiv:2609.34652",
       "slug": "arxiv-2609-34652-95c18927a1",
