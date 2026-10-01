@@ -261,7 +261,7 @@
       "slug": "doi-10-64898-2026-07-15-26358188-0c7e283c2c",
       "kind": "paper",
       "title": "A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data",
-      "abstract": "The Cancer Genome Atlas (TCGA) holds clinical data for over 11,000 patients across 33 cancer types, but access is hard because of complex file structures, heterogeneous formats, and the need for programming. We present an agentic system for natural language querying and statistical analysis of TCGA clinical data. The system uses a large language model as an autonomous ReAct agent that selects from eight computational tools, including data extraction, descriptive statistics, Kaplan-Meier survival analysis with log-rank tests, hypothesis testing, and verification against the curated TCGA Pan-Cancer Clinical Data Resource (CDR). The agent reasons about intermediate results, adapts its approach, and returns clinically contextualized responses with source attribution and auditable traces. We introduce TCGA-Agent-Bench, 440 queries across five difficulty tiers with ground truth from the independently curated TCGA-CDR, evaluated with dual metrics of numerical accuracy and clinical completeness. The system achieves 93.4% overall accuracy (100% single-patient lookups, 99.1% cohort statistics, 92.8% comparative analyses), outperforming a fixed rule-based pipeline (87.1%), a single-pass LLM (81.8%), and retrieval-augmented generation (66.9% on a subset). Most of the benchmark is answerable from the CDR alone, so we locate the extraction layer's value in fields the CDR lacks (drug treatments, TNM components, biomarkers, biospecimen metadata): on 26 queries targeting these, the full system answers 100% versus 3.8% for CDR-only. Ablations show the reasoning loop is most impactful (+9.1% accuracy, +22.0 completeness points). A tool-based agentic architecture enables accurate, auditable analysis of clinical repositories, with value driven by tool design and recovered fields rather than model scale.",
+      "abstract": "The Cancer Genome Atlas (TCGA) holds clinical data for over 11,000 patients across 33 cancer types, but access is hard because of complex file structures, heterogeneous formats, and the need for programming. We present an agentic system for natural language querying and statistical analysis of TCGA clinical data. The system uses a large language model (LLM) as an autonomous Reasoning and Acting (ReAct) agent that selects from eight computational tools, including data extraction, descriptive statistics, Kaplan-Meier survival analysis with log-rank tests, hypothesis testing, and verification against the curated TCGA Pan-Cancer Clinical Data Resource (CDR). The agent reasons about intermediate results, adapts its approach, and returns clinically contextualized responses with source attribution and auditable traces. We introduce TCGA-Agent-Bench, 440 queries across five difficulty tiers with ground truth from the independently curated CDR, evaluated with dual metrics for numerical accuracy and clinical completeness. The system achieves 93.4% overall accuracy, outperforming a fixed rule-based pipeline (87.1%), a single-pass LLM (81.8%), and retrieval-augmented generation (66.9% on a 50-query subset). Most of the benchmark is answerable from the CDR alone, so we locate the extraction layers value in fields the CDR lacks, such as drug treatments, TNM components, and biomarkers: on 26 queries targeting these, the full system answers 100% versus 3.8% for a CDR-only configuration. A tool-based agentic architecture enables accurate, auditable natural language analysis of clinical repositories, with value driven by tool design and recovered fields rather than model scale.",
       "authors": [
         "Korutla, R.",
         "Amal, S."
@@ -287,13 +287,13 @@
       "evidence": [
         {
           "term": "We introduce TCGA-Agent-Bench",
-          "excerpt": "easons about intermediate results, adapts its approach, and returns clinically contextualized responses with source attribution and auditable traces. We introduce TCGA-Agent-Bench, 440 queries across five difficulty tiers with ground truth from the independently curated TCGA-CDR, evaluated with dual metrics of numerical accuracy and clinical completeness. The system achieves 93.4% overall accuracy (100% single-patie",
+          "excerpt": "easons about intermediate results, adapts its approach, and returns clinically contextualized responses with source attribution and auditable traces. We introduce TCGA-Agent-Bench, 440 queries across five difficulty tiers with ground truth from the independently curated CDR, evaluated with dual metrics for numerical accuracy and clinical completeness. The system achieves 93.4% overall accuracy, outperforming a fixed",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
         },
         {
           "term": "benchmark",
-          "excerpt": "s), outperforming a fixed rule-based pipeline (87.1%), a single-pass LLM (81.8%), and retrieval-augmented generation (66.9% on a subset). Most of the benchmark is answerable from the CDR alone, so we locate the extraction layer's value in fields the CDR lacks (drug treatments, TNM components, biomarkers, biospecimen metadata): on 26 queries targeting these, the full system answers 100% versus 3.8",
+          "excerpt": "rforming a fixed rule-based pipeline (87.1%), a single-pass LLM (81.8%), and retrieval-augmented generation (66.9% on a 50-query subset). Most of the benchmark is answerable from the CDR alone, so we locate the extraction layers value in fields the CDR lacks, such as drug treatments, TNM components, and biomarkers: on 26 queries targeting these, the full system answers 100% versus 3.8% for a CDR-",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
         },
@@ -314,12 +314,6 @@
           "excerpt": "A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data The Cancer Genome Atlas (TCGA) holds clinical data for over 11,000 patients across 33 cancer types, but access is hard because of complex file structures, heterogeneous formats, and the need for programming. We p",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
-        },
-        {
-          "term": "patient",
-          "excerpt": "anguage Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data The Cancer Genome Atlas (TCGA) holds clinical data for over 11,000 patients across 33 cancer types, but access is hard because of complex file structures, heterogeneous formats, and the need for programming. We present an agentic system for natural language querying and statistical analysis of TCGA clinical data",
-          "location": "Abstract / metadata",
-          "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
         }
       ],
       "related_benchmarks": [],
@@ -328,10 +322,10 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 19,
+      "match_score": 16,
       "extraction_status": "incomplete",
-      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
-      "content_hash": "e9deef0374850b8d221c54bbf5ac8a7e28bdfae2d5a9a456c73a98c35710ec51",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.07.15.26358188v2.full-text'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "a5c498810425a2466c0b6f3c92b237e73d7322ba3c2869d6e3b8533714738b59",
       "is_seed": false,
       "topic": "general_text",
       "contribution_type": "new_benchmark"

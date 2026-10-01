@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-30T10:36:53Z",
-  "total": 132,
+  "generated_at": "2026-10-01T11:04:51Z",
+  "total": 134,
   "counts": {
     "topics": {
-      "experiment_agent": 31,
-      "multimodal": 37,
+      "multimodal": 38,
+      "experiment_agent": 32,
       "general_text": 52,
       "biosafety": 12
     },
     "contribution_types": {
-      "new_benchmark": 103,
+      "new_benchmark": 105,
       "methodology": 16,
       "audit": 13
     },
     "kinds": {
-      "paper": 132
+      "paper": 134
     },
     "evaluation_contexts": {
-      "beneficial_capability": 120,
+      "beneficial_capability": 122,
       "biosecurity_misuse": 12
     }
   },
@@ -59,39 +59,39 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-09-30T10:37:08Z",
-      "finished_at": "2026-09-30T10:37:47Z",
-      "discovered": 79,
-      "published": 41,
+      "started_at": "2026-10-01T11:05:04Z",
+      "finished_at": "2026-10-01T11:05:43Z",
+      "discovered": 91,
+      "published": 52,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
-      "status": "failed",
-      "started_at": "2026-09-30T10:37:47Z",
-      "finished_at": "2026-09-30T10:38:33Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "The read operation timed out"
+      "status": "success",
+      "started_at": "2026-10-01T11:05:43Z",
+      "finished_at": "2026-10-01T11:05:49Z",
+      "discovered": 43,
+      "published": 22,
+      "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-09-30T10:38:33Z",
-      "finished_at": "2026-09-30T10:39:07Z",
-      "discovered": 864,
-      "published": 53,
+      "started_at": "2026-10-01T11:05:49Z",
+      "finished_at": "2026-10-01T11:07:58Z",
+      "discovered": 1120,
+      "published": 69,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-09-30T10:39:07Z",
-      "finished_at": "2026-09-30T10:39:21Z",
-      "discovered": 213,
+      "started_at": "2026-10-01T11:07:58Z",
+      "finished_at": "2026-10-01T11:08:23Z",
+      "discovered": 242,
       "published": 17,
       "error": ""
     },
@@ -99,14 +99,22 @@
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-09-30T10:39:21Z",
-      "finished_at": "2026-09-30T10:39:21Z",
+      "started_at": "2026-10-01T11:08:23Z",
+      "finished_at": "2026-10-01T11:08:23Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
     }
   ],
   "days": [
+    {
+      "date": "2026-09-29",
+      "count": 2,
+      "entry_ids": [
+        "arxiv:2609.38600",
+        "arxiv:2609.38480"
+      ]
+    },
     {
       "date": "2026-09-28",
       "count": 4,
@@ -650,6 +658,199 @@
   ],
   "entries": [
     {
+      "id": "arxiv:2609.38600",
+      "slug": "arxiv-2609-38600-05b942eabc",
+      "kind": "paper",
+      "title": "Sense and Sensitivity: Benchmarking LLM Clinical Triage Recommendations with Physician Experts",
+      "abstract": "As large language models (LLMs) are increasingly used in clinical settings, it is critical to evaluate their reliability under realistic variation in clinical text. We study this question in clinical triage, comparing LLMs to practicing physicians under text perturbations that preserve the underlying clinical setting. We introduce a benchmark of over 6,000 clinical scenarios, 7,000 physician annotations, and 225,000 model responses. Using this benchmark, we make two key observations. First, LLMs are more likely than physicians to recommend unnecessary care at baseline, and this tendency increases under perturbed inputs. Further, we find that LLM recommendations are more sensitive to gender and tone perturbations than human recommendations. Together, these results demonstrate that LLMs can vary under clinically irrelevant textual changes, highlighting the need for deployment-oriented evaluations grounded in expert physician behavior.",
+      "authors": [
+        "Abinitha Gourabathina",
+        "Haoran Zhang",
+        "Yuexing Hao",
+        "Walter Gerych",
+        "Marzyeh Ghassemi"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-29T22:00:16+00:00",
+      "updated_at": "2026-09-29T22:00:16+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.38600"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.38600v1",
+        "pdf": "https://arxiv.org/pdf/2609.38600v1",
+        "code": "https://github.com/abinithago/Sen2Med",
+        "html": "https://arxiv.org/html/2609.38600"
+      },
+      "evidence": [
+        {
+          "term": "We introduce a benchmark",
+          "excerpt": "udy this question in clinical triage, comparing LLMs to practicing physicians under text perturbations that preserve the underlying clinical setting. We introduce a benchmark of over 6,000 clinical scenarios, 7,000 physician annotations, and 225,000 model responses. Using this benchmark, we make two key observations. First, LLMs are more likely than physicians to recommend unnecessary care at baseline, and this",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.38600"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Sense and Sensitivity: Benchmarking LLM Clinical Triage Recommendations with Physician Experts As large language models (LLMs) are increasingly used in clinical settings, it is critical to evaluate their reliability under realistic variation in clinical text. We study thi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.38600"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "Sense and Sensitivity: Benchmarking LLM Clinical Triage Recommendations with Physician Experts As large language models (LLMs) are increasingly used in clinical settings, it is critical to evaluate their reliability under realistic variation in clinical text. We study this q",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.38600"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Sense and Sensitivity: Benchmarking LLM Clinical Triage Recommendations with Physician Experts As large language models (LLMs) are increasingly used in clinical settings, it is critical to evaluate their reliability under realistic variation in clinical text. We study this question in cl",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.38600"
+        },
+        {
+          "term": "Vision-language",
+          "excerpt": "o hospital visits . Scientific reports 10 ( 1 ), pp. 4346 . Cited by: §1 . Hall et al. (2023) M. Hall, L. Gustafson, A. Adcock, I. Misra, and C. Ross Vision-language models performing zero-shot tasks exhibit gender-based disparities . arXiv preprint arXiv:2301.11100 . Cited by: Appendix D . Hao et al. (2025a) Y. Hao, K. Alhamoud, H. Jeong, H. Zhang, I. Puri, P. Torr, M. Schaekermann, A. D. Stern, and M",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2609.38600"
+        }
+      ],
+      "related_benchmarks": [
+        "OncQA",
+        "MedQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 15,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "fb1b8edb11bb012bcb33396c2516c007fcbc0da40149acef2abdfb2998aa71c3",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2609.38480",
+      "slug": "arxiv-2609-38480-81d52349f0",
+      "kind": "paper",
+      "title": "KlinikeBench: Evaluating Language Models Beyond Diagnostic Accuracy",
+      "abstract": "Most clinical benchmarks evaluate language models (LMs) on diagnosis using complete case descriptions. In clinical practice, however, patients present information in different ways, and clinicians must obtain relevant history and determine which examinations are needed before reaching a diagnosis. Diagnostic accuracy alone therefore cannot establish whether an agent gathered essential information or conducted an appropriate clinical assessment. Furthermore, existing benchmarks lack professional clinicians' verification. To address this gap, we introduce KlinikeBench, a benchmark of 333 clinician-authored tasks, each providing an isolated sandbox environment with a virtual patient, clinical tools, and task-specific success criteria. More than 35 clinicians contributed to case authoring and benchmark evaluation. In an empirical study, clinicians gave simulated dialogues higher mean quality ratings than reference conversations, which is adapted from real conversation. In each task, an LM has a fixed budget of turns to communicate with the patient, ask about relevant history, request examinations, follow action constraints, and record a final diagnosis. We score these steps separately as well as together. Across 31 models and seven model families, the best-performing models (e.g., GPT-6-astra and Claude Opus 5) succeed on less than 30% of tasks, even though their diagnosis accuracy reaches 90.7%. Some models benefit from talking with the patient; others diagnose well from a complete chart but perform much worse in conversation. Overall, KlinikeBench provides a testbed for evaluating the full clinical encounter and reveals a substantial gap between diagnostic accuracy and performance in interactive clinical assessment.",
+      "authors": [
+        "Xueting Fang",
+        "Zehui Li",
+        "Yang Yang",
+        "Camilla Giovino",
+        "Shubh K. Patel",
+        "Shailly Prajapati",
+        "Vallijah Subasri",
+        "Caihua Shan"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-29T20:08:21+00:00",
+      "updated_at": "2026-09-29T20:08:21+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2609.38480"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.38480v1",
+        "pdf": "https://arxiv.org/pdf/2609.38480v1",
+        "code": "https://github.com/Zehui127/klinikebench-train",
+        "data": "https://huggingface.co/datasets/anon-caa-neurips/KLINIKEBENCH-Trajectories",
+        "html": "https://arxiv.org/html/2609.38480"
+      },
+      "evidence": [
+        {
+          "term": "we introduce KlinikeBench",
+          "excerpt": "on or conducted an appropriate clinical assessment. Furthermore, existing benchmarks lack professional clinicians' verification. To address this gap, we introduce KlinikeBench, a benchmark of 333 clinician-authored tasks, each providing an isolated sandbox environment with a virtual patient, clinical tools, and task-specific success criteria. More than 35 clinicians contributed to case authoring and benchmark ev",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.38480"
+        },
+        {
+          "term": "we introduce KlinikeBench, a benchmark",
+          "excerpt": "on or conducted an appropriate clinical assessment. Furthermore, existing benchmarks lack professional clinicians' verification. To address this gap, we introduce KlinikeBench, a benchmark of 333 clinician-authored tasks, each providing an isolated sandbox environment with a virtual patient, clinical tools, and task-specific success criteria. More than 35 clinicians contributed to case authoring and benchmark evaluation. In",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.38480"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "KlinikeBench: Evaluating Language Models Beyond Diagnostic Accuracy Most clinical benchmarks evaluate language models (LMs) on diagnosis using complete case descriptions. In clinical practice, however, patients present information in different ways, and clinicians must obtain relevant history and determine which examinations are",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.38480"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "KlinikeBench: Evaluating Language Models Beyond Diagnostic Accuracy Most clinical benchmarks evaluate language models (LMs) on diagnosis using complete case descriptions. In clinical practice, however, patients present information in different ways, and clinicians must obtain relevant history and determine which examinations are n",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.38480"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "KlinikeBench: Evaluating Language Models Beyond Diagnostic Accuracy Most clinical benchmarks evaluate language models (LMs) on diagnosis using complete case descriptions. In clinical practice, however, patients present information in different ways, and clinicians must obtain relevant history and determine which examina",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.38480"
+        },
+        {
+          "term": "patient",
+          "excerpt": "nostic Accuracy Most clinical benchmarks evaluate language models (LMs) on diagnosis using complete case descriptions. In clinical practice, however, patients present information in different ways, and clinicians must obtain relevant history and determine which examinations are needed before reaching a diagnosis. Diagnostic accuracy alone therefore cannot establish whether an agent gathered ess",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2609.38480"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "3–13826 . Cited by: §2.1 . Schmidgall et al. (2026) S. Schmidgall, R. Ziaei, C. Harris, J. W. Kim, E. P. Reis, J. Jopling, and M. Moor AgentClinic: a multimodal benchmark for tool-using clinical ai agents . npj Digital Medicine . External Links: Document Cited by: Appendix E , Table 1 , §1 . Shao et al. (2024) Z. Shao, P. Wang, Q. Zhu, R. Xu, J. Song, X. Bi, H. Zhang, M. Zhang, Y. Li, Y. Wu, et al",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2609.38480"
+        },
+        {
+          "term": "tool use",
+          "excerpt": "test results. The verifier assesses the resulting transcript against the clinician-authored requirements, including diagnostic correctness, required tool use, action constraints, and must-ask topics. To ensure the robustness of each task, KlinikeBench adopts clinician-led task construction. Furthermore, a data annotation platform is developed for clinicians to write patient personas, test the s",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2609.38480"
+        }
+      ],
+      "related_benchmarks": [
+        "KlinikeBench",
+        "MedQA",
+        "MCQA",
+        "MedMCQA",
+        "HealthBench",
+        "MedAgentBench",
+        "PhysicianBench",
+        "MedConsultBench",
+        "ObGynLongBench",
+        "LongMedBench",
+        "PubMedQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 28,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "00d8dc31559d065bf83b3a718a185e09bf377f180ee984982948521e2ba9b0fc",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "arxiv:2609.36392",
       "slug": "arxiv-2609-36392-69cc6e73ff",
       "kind": "paper",
@@ -908,7 +1109,7 @@
       "slug": "doi-10-64898-2026-07-15-26358188-0c7e283c2c",
       "kind": "paper",
       "title": "A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data",
-      "abstract": "The Cancer Genome Atlas (TCGA) holds clinical data for over 11,000 patients across 33 cancer types, but access is hard because of complex file structures, heterogeneous formats, and the need for programming. We present an agentic system for natural language querying and statistical analysis of TCGA clinical data. The system uses a large language model as an autonomous ReAct agent that selects from eight computational tools, including data extraction, descriptive statistics, Kaplan-Meier survival analysis with log-rank tests, hypothesis testing, and verification against the curated TCGA Pan-Cancer Clinical Data Resource (CDR). The agent reasons about intermediate results, adapts its approach, and returns clinically contextualized responses with source attribution and auditable traces. We introduce TCGA-Agent-Bench, 440 queries across five difficulty tiers with ground truth from the independently curated TCGA-CDR, evaluated with dual metrics of numerical accuracy and clinical completeness. The system achieves 93.4% overall accuracy (100% single-patient lookups, 99.1% cohort statistics, 92.8% comparative analyses), outperforming a fixed rule-based pipeline (87.1%), a single-pass LLM (81.8%), and retrieval-augmented generation (66.9% on a subset). Most of the benchmark is answerable from the CDR alone, so we locate the extraction layer's value in fields the CDR lacks (drug treatments, TNM components, biomarkers, biospecimen metadata): on 26 queries targeting these, the full system answers 100% versus 3.8% for CDR-only. Ablations show the reasoning loop is most impactful (+9.1% accuracy, +22.0 completeness points). A tool-based agentic architecture enables accurate, auditable analysis of clinical repositories, with value driven by tool design and recovered fields rather than model scale.",
+      "abstract": "The Cancer Genome Atlas (TCGA) holds clinical data for over 11,000 patients across 33 cancer types, but access is hard because of complex file structures, heterogeneous formats, and the need for programming. We present an agentic system for natural language querying and statistical analysis of TCGA clinical data. The system uses a large language model (LLM) as an autonomous Reasoning and Acting (ReAct) agent that selects from eight computational tools, including data extraction, descriptive statistics, Kaplan-Meier survival analysis with log-rank tests, hypothesis testing, and verification against the curated TCGA Pan-Cancer Clinical Data Resource (CDR). The agent reasons about intermediate results, adapts its approach, and returns clinically contextualized responses with source attribution and auditable traces. We introduce TCGA-Agent-Bench, 440 queries across five difficulty tiers with ground truth from the independently curated CDR, evaluated with dual metrics for numerical accuracy and clinical completeness. The system achieves 93.4% overall accuracy, outperforming a fixed rule-based pipeline (87.1%), a single-pass LLM (81.8%), and retrieval-augmented generation (66.9% on a 50-query subset). Most of the benchmark is answerable from the CDR alone, so we locate the extraction layers value in fields the CDR lacks, such as drug treatments, TNM components, and biomarkers: on 26 queries targeting these, the full system answers 100% versus 3.8% for a CDR-only configuration. A tool-based agentic architecture enables accurate, auditable natural language analysis of clinical repositories, with value driven by tool design and recovered fields rather than model scale.",
       "authors": [
         "Korutla, R.",
         "Amal, S."
@@ -934,13 +1135,13 @@
       "evidence": [
         {
           "term": "We introduce TCGA-Agent-Bench",
-          "excerpt": "easons about intermediate results, adapts its approach, and returns clinically contextualized responses with source attribution and auditable traces. We introduce TCGA-Agent-Bench, 440 queries across five difficulty tiers with ground truth from the independently curated TCGA-CDR, evaluated with dual metrics of numerical accuracy and clinical completeness. The system achieves 93.4% overall accuracy (100% single-patie",
+          "excerpt": "easons about intermediate results, adapts its approach, and returns clinically contextualized responses with source attribution and auditable traces. We introduce TCGA-Agent-Bench, 440 queries across five difficulty tiers with ground truth from the independently curated CDR, evaluated with dual metrics for numerical accuracy and clinical completeness. The system achieves 93.4% overall accuracy, outperforming a fixed",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
         },
         {
           "term": "benchmark",
-          "excerpt": "s), outperforming a fixed rule-based pipeline (87.1%), a single-pass LLM (81.8%), and retrieval-augmented generation (66.9% on a subset). Most of the benchmark is answerable from the CDR alone, so we locate the extraction layer's value in fields the CDR lacks (drug treatments, TNM components, biomarkers, biospecimen metadata): on 26 queries targeting these, the full system answers 100% versus 3.8",
+          "excerpt": "rforming a fixed rule-based pipeline (87.1%), a single-pass LLM (81.8%), and retrieval-augmented generation (66.9% on a 50-query subset). Most of the benchmark is answerable from the CDR alone, so we locate the extraction layers value in fields the CDR lacks, such as drug treatments, TNM components, and biomarkers: on 26 queries targeting these, the full system answers 100% versus 3.8% for a CDR-",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
         },
@@ -961,12 +1162,6 @@
           "excerpt": "A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data The Cancer Genome Atlas (TCGA) holds clinical data for over 11,000 patients across 33 cancer types, but access is hard because of complex file structures, heterogeneous formats, and the need for programming. We p",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
-        },
-        {
-          "term": "patient",
-          "excerpt": "anguage Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data The Cancer Genome Atlas (TCGA) holds clinical data for over 11,000 patients across 33 cancer types, but access is hard because of complex file structures, heterogeneous formats, and the need for programming. We present an agentic system for natural language querying and statistical analysis of TCGA clinical data",
-          "location": "Abstract / metadata",
-          "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
         }
       ],
       "related_benchmarks": [],
@@ -975,10 +1170,10 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 19,
+      "match_score": 16,
       "extraction_status": "incomplete",
-      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
-      "content_hash": "e9deef0374850b8d221c54bbf5ac8a7e28bdfae2d5a9a456c73a98c35710ec51",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.07.15.26358188v2.full-text'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "a5c498810425a2466c0b6f3c92b237e73d7322ba3c2869d6e3b8533714738b59",
       "is_seed": false,
       "topic": "general_text",
       "contribution_type": "new_benchmark"
@@ -1246,7 +1441,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 33,
+      "match_score": 31,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "6a0bbe50e7ead887015f2f8e48a1e7c9e31dfa933493a0553b2cc959734cdced",
