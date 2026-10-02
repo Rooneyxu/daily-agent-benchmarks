@@ -1,6 +1,6 @@
 {
   "date": "2026-09-28",
-  "count": 4,
+  "count": 5,
   "entries": [
     {
       "id": "arxiv:2609.36392",
@@ -64,7 +64,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 15,
+      "match_score": 13,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "c16a35dc93842a5ecf7ae73049077f77f3707af5ac6421cedbe20d76e2bb8f42",
@@ -248,7 +248,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 31,
+      "match_score": 29,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "f9fabdb963742ba17379f853677a1cd25f028794834ee915c956f0ecfcaa7373",
@@ -271,7 +271,7 @@
       "updated_at": "2026-09-28T00:00:00+00:00",
       "priority": "P1",
       "categories": [
-        "general_text"
+        "experiment_agent"
       ],
       "collection_status": "confirmed",
       "access_status": "public",
@@ -314,6 +314,18 @@
           "excerpt": "A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data The Cancer Genome Atlas (TCGA) holds clinical data for over 11,000 patients across 33 cancer types, but access is hard because of complex file structures, heterogeneous formats, and the need for programming. We p",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "ecific pre-training on clinical notes improves task performance; Kefeli and Tatonetti [ 18 ] used ClinicalBERT for cancer type classification on TCGA pathology reports, and Kefeli et al. [ 19 ] developed a model for TNM stage classification (area under the receiver operating characteristic curve 0.815 to 0.942). Singhal et al. [ 4 ] showed LLMs encode clinical knowledge but stressed the need for",
+          "location": "II. R elated W ork",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
+        },
+        {
+          "term": "tool-use",
+          "excerpt": "[ 7 ], where an LLM alternates reasoning traces with tool-calling actions, works well for multi-step decision-making, yet agentic systems with formal tool-use have not been applied to clinical data repositories like TCGA. Earlier TCGA-accessibility work centers on programmatic tools such as TCGA-Assembler [ 8 ] and TCGAbiolinks [ 9 ], which require coding, and web platforms like the UCSC Cancer",
+          "location": "I. I ntroduction",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188.full"
         }
       ],
       "related_benchmarks": [],
@@ -322,10 +334,88 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 20,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "e320f4f69d589522d526fdd05966a1fd3d1a6674f03c1e51d6ffbc09f334fbd6",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.1136/bmjment-2026-302921",
+      "slug": "doi-10-1136-bmjment-2026-302921-d80271be70",
+      "kind": "paper",
+      "title": "Making medical AI benchmarks clinically interpretable: the case of mental health.",
+      "abstract": "Medical artificial intelligence (AI) benchmarks are increasingly used to assess the readiness of large language models for health-related tasks, but aggregate performance scores can obscure clinically meaningful variation across domains. HealthBench, an open benchmark of 5000 multi-turn health conversations, represents a salient example: the score is difficult to interpret for decisions about specific clinical use cases, including those with mental health needs. Conversations involving suicidality, psychosis, eating disorders, trauma or relational dependence require recognising ambiguous disclosures, responding safely under uncertainty, avoiding reinforcement of harmful beliefs or over-reliance and knowing when to escalate to human-based crisis support. We propose that HealthBench and similar benchmarks report domain-specific results. To demonstrate feasibility and utility, we adopted OpenAI's classified dataset to identify 332 mental health conversations, validated against human review (sensitivity 0.980, specificity 1.000, positive predictive value 1.000, negative predictive value 0.980, F1 0.990, inter-rater agreement 99.0%). We analysed mental health domain performance separately from overall HealthBench performance using a stratified random sample of 500 conversations. Across deployments, mental health point estimates differed from overall estimates by -0.034 to +0.047. Mental health domain composition was also uneven: for example, postpartum depression represented 26.8% of mental health conversations compared with 4.5% for suicidal crisis, 0.9% for psychosis and 1.5% for eating disorders. The findings suggest benchmark averages can mask domain-specific insights relevant to clinical safety. We argue that interpretable medical AI evaluation requires transparent domain composition; subgroup and failure mode reporting; calibration against clinically meaningful anchors, including human expert performance; and reproducible versioned analyses as models, grader systems and deployment contexts evolve.",
+      "authors": [
+        "McBain RK",
+        "Huang E",
+        "Figueroa C",
+        "Zhang LA",
+        "Cantor J."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-09-28T00:00:00+00:00",
+      "updated_at": "2026-09-29T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.1136/bmjment-2026-302921",
+        "pmid": "42805769"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/42805769"
+      },
+      "evidence": [
+        {
+          "term": "We propose that HealthBench and similar benchmarks",
+          "excerpt": "ding safely under uncertainty, avoiding reinforcement of harmful beliefs or over-reliance and knowing when to escalate to human-based crisis support. We propose that HealthBench and similar benchmarks report domain-specific results. To demonstrate feasibility and utility, we adopted OpenAI's classified dataset to identify 332 mental health conversations, validated against human review (sensitivity 0.980, specificity 1.000, positive pred",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42805769"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Making medical AI benchmarks clinically interpretable: the case of mental health. Medical artificial intelligence (AI) benchmarks are increasingly used to assess the readiness of large language models for health-related tasks, but aggregate performance scores can obs",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42805769"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "Making medical AI benchmarks clinically interpretable: the case of mental health. Medical artificial intelligence (AI) benchmarks are increasingly used to assess the readiness of large language models for health-related tasks, but aggregate performance scores can obsc",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42805769"
+        },
+        {
+          "term": "medical",
+          "excerpt": "Making medical AI benchmarks clinically interpretable: the case of mental health. Medical artificial intelligence (AI) benchmarks are increasingly used to assess the readiness of large language models for health-related tasks, but aggregate performance s",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42805769"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Making medical AI benchmarks clinically interpretable: the case of mental health. Medical artificial intelligence (AI) benchmarks are increasingly used to assess the readiness of large language models for health-related tasks, but aggregate performance scores can obscure clini",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42805769"
+        }
+      ],
+      "related_benchmarks": [
+        "HealthBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
       "match_score": 16,
-      "extraction_status": "incomplete",
-      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.07.15.26358188v2.full-text'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
-      "content_hash": "a5c498810425a2466c0b6f3c92b237e73d7322ba3c2869d6e3b8533714738b59",
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "98863f5a56f3776647f4e031e6145c16693fde42a90adef05761e8e1d20f1113",
       "is_seed": false,
       "topic": "general_text",
       "contribution_type": "new_benchmark"

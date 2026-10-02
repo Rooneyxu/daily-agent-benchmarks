@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-01",
+  "count": 1,
+  "entries": [
+    {
+      "id": "doi:10.64898/2026.09.10.26362796",
+      "slug": "doi-10-64898-2026-09-10-26362796-08053563c6",
+      "kind": "paper",
+      "title": "Hybrid lexical-semantic retrieval over SNOMED CT: combining two retrieval paradigms to facilitate clinical data entry",
+      "abstract": "Objectives: Searching SNOMED CT pits two retrieval technologies of opposite nature against each other. Deterministic lexical matching is precise and handles partial, out-of-order, as-typed input, but cannot cross a wording or language gap; learned semantic matching bridges paraphrase and language, but represents abbreviations and half-typed fragments poorly. Combining them naively lets the channel that is wrong for a given query degrade the one that is right, and the usual alternative, curating an additional local interface vocabulary, is labour-intensive to maintain. We ask whether the two paradigms can instead *coexist* in one retrieval flow over SNOMED CT's own curated descriptions, and study the query interpretation, rank fusion and re-ranking that make this coexistence safe. Materials and Methods: We built one open-source, reproducible implementation over the SNOMED CT International edition, combining order-independent multi-prefix lexical search, BioLORD-2023-M semantic embeddings, an optional cross-encoder re-ranker, and a local LLM for query normalization and entity extraction, with the two rankings fused by Reciprocal Rank Fusion and an optional hierarchy (descendant) filter. We measured search-only linking accuracy on 542 disease mentions from DisTEMIST (Spanish, zero-shot), ablating each optional component and each retrieval channel, and on 12,897 mentions from the SNOMED CT Entity Linking Challenge (English real-EHR discharge notes) under a field-scoped typeahead. Results: On DisTEMIST the best and cheapest configuration, semantic search with re-ranking and no LLM pre-processing, placed the exact concept first for 60% of mentions (accuracy@1 = 0.60) and within the top-10 for 80% (recall@10 = 0.80). Channel ablation showed the two paradigms coexist without a trade-off: rank fusion followed by re-ranking keeps the on-task channel's result and suppresses the off-task one. On the English real-EHR corpus a field-scoped typeahead reached the top-10 for 73% of mentions across all clinical domains (accuracy@1 0.52). LLM normalization slightly hurt clean, terminology-like input but rescued the messy shorthand of real EHR text, most of all when given the surrounding note context, so it is best applied selectively rather than to every query. Results are specific to the evaluated configuration, not an architecture-independent estimate. Conclusion: Lexical precision and semantic flexibility can coexist over SNOMED CT's maintained descriptions without trading one off against the other, secured by rank fusion and re-ranking rather than by choosing between the paradigms. This shifts maintenance from local phrase authoring toward governing and validating retrieval services rather than removing it, and may reduce additional local lexical curation where direct search is appropriate, while curated interface vocabularies retain a role in guided workflows.",
+      "authors": [
+        "Lopez Osornio, A.",
+        "Randorff Hoejen, A.",
+        "Kewley, K."
+      ],
+      "source": "medrxiv",
+      "published_at": "2026-10-01T00:00:00+00:00",
+      "updated_at": "2026-10-01T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by",
+      "identifiers": {
+        "doi": "10.64898/2026.09.10.26362796"
+      },
+      "links": {
+        "abs": "https://www.medrxiv.org/content/10.64898/2026.09.10.26362796",
+        "pdf": "https://www.medrxiv.org/content/10.64898/2026.09.10.26362796.full.pdf",
+        "html": "https://www.medrxiv.org/content/10.64898/2026.09.10.26362796.full"
+      },
+      "evidence": [
+        {
+          "term": "clinical",
+          "excerpt": "Hybrid lexical-semantic retrieval over SNOMED CT: combining two retrieval paradigms to facilitate clinical data entry Objectives: Searching SNOMED CT pits two retrieval technologies of opposite nature against each other. Deterministic lexical matching is precise and handles partial, out-of-order, as-typed input, but cannot cross a wording or la",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.09.10.26362796.full"
+        },
+        {
+          "term": "disease",
+          "excerpt": "with the two rankings fused by Reciprocal Rank Fusion and an optional hierarchy (descendant) filter. We measured search-only linking accuracy on 542 disease mentions from DisTEMIST (Spanish, zero-shot), ablating each optional component and each retrieval channel, and on 12,897 mentions from the SNOMED CT Entity Linking Challenge (English real-EHR discharge notes) under a field-scoped typeahead",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.09.10.26362796.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 10,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.09.10.26362796.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "f1d2cd16b4d684adbb0a0938113152f27ae0d31c60f76b42403b65598fdb493f",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
