@@ -1,25 +1,25 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-02T10:37:36Z",
-  "total": 135,
+  "generated_at": "2026-10-03T09:58:08Z",
+  "total": 137,
   "counts": {
     "topics": {
+      "biosafety": 13,
       "general_text": 53,
-      "multimodal": 37,
-      "experiment_agent": 33,
-      "biosafety": 12
+      "multimodal": 38,
+      "experiment_agent": 33
     },
     "contribution_types": {
-      "new_benchmark": 106,
+      "new_benchmark": 108,
       "methodology": 16,
       "audit": 13
     },
     "kinds": {
-      "paper": 135
+      "paper": 137
     },
     "evaluation_contexts": {
-      "beneficial_capability": 123,
-      "biosecurity_misuse": 12
+      "biosecurity_misuse": 13,
+      "beneficial_capability": 124
     }
   },
   "topic_labels": {
@@ -58,20 +58,20 @@
     {
       "source": "arxiv",
       "name": "arXiv",
-      "status": "failed",
-      "started_at": "2026-10-02T10:37:54Z",
-      "finished_at": "2026-10-02T10:38:39Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "The read operation timed out"
+      "status": "success",
+      "started_at": "2026-10-03T09:58:27Z",
+      "finished_at": "2026-10-03T09:59:06Z",
+      "discovered": 73,
+      "published": 45,
+      "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-10-02T10:38:39Z",
-      "finished_at": "2026-10-02T10:39:02Z",
-      "discovered": 132,
+      "started_at": "2026-10-03T09:59:06Z",
+      "finished_at": "2026-10-03T09:59:19Z",
+      "discovered": 134,
       "published": 65,
       "error": ""
     },
@@ -79,28 +79,28 @@
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-02T10:39:02Z",
-      "finished_at": "2026-10-02T10:40:06Z",
-      "discovered": 1340,
-      "published": 86,
+      "started_at": "2026-10-03T09:59:19Z",
+      "finished_at": "2026-10-03T10:00:27Z",
+      "discovered": 1038,
+      "published": 68,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-02T10:40:06Z",
-      "finished_at": "2026-10-02T10:40:29Z",
-      "discovered": 279,
-      "published": 20,
+      "started_at": "2026-10-03T10:00:27Z",
+      "finished_at": "2026-10-03T10:00:58Z",
+      "discovered": 317,
+      "published": 28,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-10-02T10:40:29Z",
-      "finished_at": "2026-10-02T10:40:29Z",
+      "started_at": "2026-10-03T10:00:58Z",
+      "finished_at": "2026-10-03T10:00:58Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
@@ -109,9 +109,17 @@
   "days": [
     {
       "date": "2026-10-01",
+      "count": 2,
+      "entry_ids": [
+        "arxiv:2610.01497",
+        "doi:10.64898/2026.09.10.26362796"
+      ]
+    },
+    {
+      "date": "2026-09-30",
       "count": 1,
       "entry_ids": [
-        "doi:10.64898/2026.09.10.26362796"
+        "arxiv:2610.00421"
       ]
     },
     {
@@ -665,6 +673,103 @@
   ],
   "entries": [
     {
+      "id": "arxiv:2610.01497",
+      "slug": "arxiv-2610-01497-966740ed88",
+      "kind": "paper",
+      "title": "OpenMTB-Audit: Exposing Over-Refusal and Clinical Expert Perspectives in LLM-Based Molecular Tumor Board Safety Evaluation",
+      "abstract": "Molecular tumor boards integrate genomic findings, clinical context, and therapeutic evidence to support precision oncology. As AI enters this workflow, a key safety challenge is distinguishing truly unsupported recommendations from evidence-supported options that still require oncologist review because of incomplete information, poor ECOG performance status, or other clinical caveats. We introduce OpenMTB-Audit, an open-source benchmark of 500 synthetic non-small cell lung cancer cases spanning five adversarial error categories and four safety labels: Supported, Partially Supported, Unsupported, and Insufficient Information. Across eight large language model configurations, we identify pervasive over-refusal: all LLM configurations failed to retain the Partially Supported label in 83.3-100% of true Partially Supported cases, achieving high aggregate safety scores through label collapse rather than clinically calibrated reasoning. To address this limitation, we developed MTB-AuditAgent, a deterministic seven-module framework separating evidence verification, missing-information detection, safety classification, and abstention. It reduces over-refusal to 6.7% and achieves 91.2% accuracy (95% CI: 88.6-93.6%). A two-oncologist annotation study found disagreement concentrated at the boundary between information sufficiency and treatment optimization, underscoring the need to preserve clinically meaningful distinctions.",
+      "authors": [
+        "Negin Ashrafi",
+        "Jia Luo",
+        "Stacey M. Frumm",
+        "Roxana Daneshjou"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-01T11:39:31+00:00",
+      "updated_at": "2026-10-01T11:39:31+00:00",
+      "priority": "P1",
+      "categories": [
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.01497"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.01497v1",
+        "pdf": "https://arxiv.org/pdf/2610.01497v1",
+        "code": "https://github.com/Negiiinx/OpenMTB-Audit",
+        "html": "https://arxiv.org/html/2610.01497"
+      },
+      "evidence": [
+        {
+          "term": "We introduce OpenMTB-Audit, an open-source benchmark",
+          "excerpt": "ce-supported options that still require oncologist review because of incomplete information, poor ECOG performance status, or other clinical caveats. We introduce OpenMTB-Audit, an open-source benchmark of 500 synthetic non-small cell lung cancer cases spanning five adversarial error categories and four safety labels: Supported, Partially Supported, Unsupported, and Insufficient Information. Across eight large language model configuration",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.01497"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "ologist review because of incomplete information, poor ECOG performance status, or other clinical caveats. We introduce OpenMTB-Audit, an open-source benchmark of 500 synthetic non-small cell lung cancer cases spanning five adversarial error categories and four safety labels: Supported, Partially Supported, Unsupported, and Insufficient Information. Across eight large language model configuration",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.01497"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "OpenMTB-Audit: Exposing Over-Refusal and Clinical Expert Perspectives in LLM-Based Molecular Tumor Board Safety Evaluation Molecular tumor boards integrate genomic findings, clinical context, and therapeutic evidence to support precision oncology. As AI enters this workflow, a key safety",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.01497"
+        },
+        {
+          "term": "genomic",
+          "excerpt": "B-Audit: Exposing Over-Refusal and Clinical Expert Perspectives in LLM-Based Molecular Tumor Board Safety Evaluation Molecular tumor boards integrate genomic findings, clinical context, and therapeutic evidence to support precision oncology. As AI enters this workflow, a key safety challenge is distinguishing truly unsupported recommendations from evidence-supported options that still require o",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.01497"
+        },
+        {
+          "term": "molecular",
+          "excerpt": "OpenMTB-Audit: Exposing Over-Refusal and Clinical Expert Perspectives in LLM-Based Molecular Tumor Board Safety Evaluation Molecular tumor boards integrate genomic findings, clinical context, and therapeutic evidence to support precision oncology. As AI enters this workflow, a key safety challenge is distinguishing truly unsupport",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.01497"
+        },
+        {
+          "term": "cancer",
+          "excerpt": "n, poor ECOG performance status, or other clinical caveats. We introduce OpenMTB-Audit, an open-source benchmark of 500 synthetic non-small cell lung cancer cases spanning five adversarial error categories and four safety labels: Supported, Partially Supported, Unsupported, and Insufficient Information. Across eight large language model configurations, we identify pervasive over-refusal: all L",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.01497"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "ries, drug approvals, and guidelines, but was evaluated on only ten fictional cases and focused on recommendation relevance. [ 8 ] MTBBench evaluates multimodal and longitudinal oncology decision-making and reports persistent challenges in hallucination, evidence reconciliation, and temporal reasoning. [ 9 ] In contrast, our work focuses on downstream safety auditing: given an existing recommendat",
+          "location": "2.1 LLMs for Molecular Tumor Board Support",
+          "source_url": "https://arxiv.org/html/2610.01497"
+        },
+        {
+          "term": "dual-use",
+          "excerpt": "S shows that models may both comply with harmful requests and over-refuse safe medical prompts, [ 17 ] and Health-ORSC-Bench extends this analysis to dual-use health prompts. [ 18 ] The failure studied here differs from conventional textual refusal: in molecular tumor board auditing, a model may respond yet fail to assign the Partially Supported label to a recommendation that warrants qualified",
+          "location": "2.3 Over-Refusal and Safety Calibration",
+          "source_url": "https://arxiv.org/html/2610.01497"
+        }
+      ],
+      "related_benchmarks": [
+        "MTBBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 23,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "5eef3e3548cbf829a3324364ed4d084fc574f882db9c1442bf41110e5db4c24b",
+      "is_seed": false,
+      "topic": "biosafety",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "doi:10.64898/2026.09.10.26362796",
       "slug": "doi-10-64898-2026-09-10-26362796-08053563c6",
       "kind": "paper",
@@ -719,6 +824,100 @@
       "content_hash": "f1d2cd16b4d684adbb0a0938113152f27ae0d31c60f76b42403b65598fdb493f",
       "is_seed": false,
       "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.00421",
+      "slug": "arxiv-2610-00421-43975bf8e4",
+      "kind": "paper",
+      "title": "Scores That Hold, Benchmarks That Leak: Measuring Dataset Contamination in Public Brain-Tumor MRI Classification",
+      "abstract": "Automated classification of brain tumors from MRI is a heavily published application of deep learning in medical imaging, with reported accuracies on public benchmarks routinely exceeding 98%. However, accuracy does not capture a critical dimension of benchmark quality: dataset integrity, defined as the independence of test from training data at the image, patient, and acquisition-source levels. We introduce a three-layer contamination framework comprising duplicate, patient, and source-label leakage to assess the public corpora on which this literature rests. We audit the three most widely used corpora against a chest-radiograph negative control and quantify each layer's effect on measured performance across nine architectures and three evaluation conditions. Contamination is severe at every layer: 28.8% of the dominant corpus's official test split has a near-twin in its own training split, a second corpus leaks 22.3% of its test images byte-identically, 95.5% of traceable test images share a patient with training, and file-header features containing no anatomy separate tumor from no-tumor at 0.959 balanced accuracy, at parity with fine-tuned ResNet backbones. The unexpected result is that removing every identified leaked test image leaves balanced accuracy essentially unchanged: stable performance after deduplication does not establish benchmark integrity. Our findings establish dataset integrity as a distinct, measurable axis of benchmark quality that a stable leaderboard cannot certify. For biomedical research, reported accuracy on these corpora alone does not establish that a model has learned to recognize tumors rather than exploit dataset-specific cues. We release the contaminated-file lists, recovered patient identifiers, and deduplicated splits.",
+      "authors": [
+        "Bhanu Prakash Vangala",
+        "Sowmya Guda",
+        "Latha Peddi",
+        "Navya Vangala"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-09-30T15:08:28+00:00",
+      "updated_at": "2026-09-30T15:08:28+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.00421"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.00421v1",
+        "pdf": "https://arxiv.org/pdf/2610.00421v1",
+        "html": "https://arxiv.org/html/2610.00421"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "Scores That Hold, Benchmarks That Leak: Measuring Dataset Contamination in Public Brain-Tumor MRI Classification Automated classification of brain tumors from MRI is a heavily published application of deep learning in medical imaging, with reported accuracies on publ",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.00421"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "Scores That Hold, Benchmarks That Leak: Measuring Dataset Contamination in Public Brain-Tumor MRI Classification Automated classification of brain tumors from MRI is a heavily published application of deep learning in medical imaging, with reported accuracies on publi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.00421"
+        },
+        {
+          "term": "leaderboard",
+          "excerpt": "on does not establish benchmark integrity. Our findings establish dataset integrity as a distinct, measurable axis of benchmark quality that a stable leaderboard cannot certify. For biomedical research, reported accuracy on these corpora alone does not establish that a model has learned to recognize tumors rather than exploit dataset-specific cues. We release the contaminated-file lists, recovered",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.00421"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "integrity. Our findings establish dataset integrity as a distinct, measurable axis of benchmark quality that a stable leaderboard cannot certify. For biomedical research, reported accuracy on these corpora alone does not establish that a model has learned to recognize tumors rather than exploit dataset-specific cues. We release the contaminated-file lists, recovered patient identifiers, and dedupl",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.00421"
+        },
+        {
+          "term": "medical",
+          "excerpt": "ion in Public Brain-Tumor MRI Classification Automated classification of brain tumors from MRI is a heavily published application of deep learning in medical imaging, with reported accuracies on public benchmarks routinely exceeding 98%. However, accuracy does not capture a critical dimension of benchmark quality: dataset integrity, defined as the independence of test from training data at the",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.00421"
+        },
+        {
+          "term": "medical imaging",
+          "excerpt": "ion in Public Brain-Tumor MRI Classification Automated classification of brain tumors from MRI is a heavily published application of deep learning in medical imaging, with reported accuracies on public benchmarks routinely exceeding 98%. However, accuracy does not capture a critical dimension of benchmark quality: dataset integrity, defined as the independence of test from training data at the image, p",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.00421"
+        },
+        {
+          "term": "patient",
+          "excerpt": "y does not capture a critical dimension of benchmark quality: dataset integrity, defined as the independence of test from training data at the image, patient, and acquisition-source levels. We introduce a three-layer contamination framework comprising duplicate, patient, and source-label leakage to assess the public corpora on which this literature rests. We audit the three most widely used cor",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.00421"
+        },
+        {
+          "term": "vision-language",
+          "excerpt": "ivity itself, attribution mass inside versus outside the brain for leaked versus clean images, and a difference-in-differences attempt with zero-shot vision-language controls. Mechanism Attribution. Whether performance on leaked images is driven by memorization, tested three independent ways: the deduplication sensitivity itself, attribution mass inside versus outside the brain for leaked versus clean",
+          "location": "V Evaluation Dimensions",
+          "source_url": "https://arxiv.org/html/2610.00421"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 27,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "b38851be92ba4f4ab2899586bf94c220349737829dbc8a6884f2c2c33365d7aa",
+      "is_seed": false,
+      "topic": "multimodal",
       "contribution_type": "new_benchmark"
     },
     {
@@ -794,7 +993,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 13,
+      "match_score": 15,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "fb1b8edb11bb012bcb33396c2516c007fcbc0da40149acef2abdfb2998aa71c3",
@@ -906,7 +1105,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 24,
+      "match_score": 28,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "00d8dc31559d065bf83b3a718a185e09bf377f180ee984982948521e2ba9b0fc",
@@ -1246,7 +1445,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 20,
+      "match_score": 16,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "e320f4f69d589522d526fdd05966a1fd3d1a6674f03c1e51d6ffbc09f334fbd6",

@@ -1,7 +1,104 @@
 {
   "date": "2026-10-01",
-  "count": 1,
+  "count": 2,
   "entries": [
+    {
+      "id": "arxiv:2610.01497",
+      "slug": "arxiv-2610-01497-966740ed88",
+      "kind": "paper",
+      "title": "OpenMTB-Audit: Exposing Over-Refusal and Clinical Expert Perspectives in LLM-Based Molecular Tumor Board Safety Evaluation",
+      "abstract": "Molecular tumor boards integrate genomic findings, clinical context, and therapeutic evidence to support precision oncology. As AI enters this workflow, a key safety challenge is distinguishing truly unsupported recommendations from evidence-supported options that still require oncologist review because of incomplete information, poor ECOG performance status, or other clinical caveats. We introduce OpenMTB-Audit, an open-source benchmark of 500 synthetic non-small cell lung cancer cases spanning five adversarial error categories and four safety labels: Supported, Partially Supported, Unsupported, and Insufficient Information. Across eight large language model configurations, we identify pervasive over-refusal: all LLM configurations failed to retain the Partially Supported label in 83.3-100% of true Partially Supported cases, achieving high aggregate safety scores through label collapse rather than clinically calibrated reasoning. To address this limitation, we developed MTB-AuditAgent, a deterministic seven-module framework separating evidence verification, missing-information detection, safety classification, and abstention. It reduces over-refusal to 6.7% and achieves 91.2% accuracy (95% CI: 88.6-93.6%). A two-oncologist annotation study found disagreement concentrated at the boundary between information sufficiency and treatment optimization, underscoring the need to preserve clinically meaningful distinctions.",
+      "authors": [
+        "Negin Ashrafi",
+        "Jia Luo",
+        "Stacey M. Frumm",
+        "Roxana Daneshjou"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-01T11:39:31+00:00",
+      "updated_at": "2026-10-01T11:39:31+00:00",
+      "priority": "P1",
+      "categories": [
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.01497"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.01497v1",
+        "pdf": "https://arxiv.org/pdf/2610.01497v1",
+        "code": "https://github.com/Negiiinx/OpenMTB-Audit",
+        "html": "https://arxiv.org/html/2610.01497"
+      },
+      "evidence": [
+        {
+          "term": "We introduce OpenMTB-Audit, an open-source benchmark",
+          "excerpt": "ce-supported options that still require oncologist review because of incomplete information, poor ECOG performance status, or other clinical caveats. We introduce OpenMTB-Audit, an open-source benchmark of 500 synthetic non-small cell lung cancer cases spanning five adversarial error categories and four safety labels: Supported, Partially Supported, Unsupported, and Insufficient Information. Across eight large language model configuration",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.01497"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "ologist review because of incomplete information, poor ECOG performance status, or other clinical caveats. We introduce OpenMTB-Audit, an open-source benchmark of 500 synthetic non-small cell lung cancer cases spanning five adversarial error categories and four safety labels: Supported, Partially Supported, Unsupported, and Insufficient Information. Across eight large language model configuration",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.01497"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "OpenMTB-Audit: Exposing Over-Refusal and Clinical Expert Perspectives in LLM-Based Molecular Tumor Board Safety Evaluation Molecular tumor boards integrate genomic findings, clinical context, and therapeutic evidence to support precision oncology. As AI enters this workflow, a key safety",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.01497"
+        },
+        {
+          "term": "genomic",
+          "excerpt": "B-Audit: Exposing Over-Refusal and Clinical Expert Perspectives in LLM-Based Molecular Tumor Board Safety Evaluation Molecular tumor boards integrate genomic findings, clinical context, and therapeutic evidence to support precision oncology. As AI enters this workflow, a key safety challenge is distinguishing truly unsupported recommendations from evidence-supported options that still require o",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.01497"
+        },
+        {
+          "term": "molecular",
+          "excerpt": "OpenMTB-Audit: Exposing Over-Refusal and Clinical Expert Perspectives in LLM-Based Molecular Tumor Board Safety Evaluation Molecular tumor boards integrate genomic findings, clinical context, and therapeutic evidence to support precision oncology. As AI enters this workflow, a key safety challenge is distinguishing truly unsupport",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.01497"
+        },
+        {
+          "term": "cancer",
+          "excerpt": "n, poor ECOG performance status, or other clinical caveats. We introduce OpenMTB-Audit, an open-source benchmark of 500 synthetic non-small cell lung cancer cases spanning five adversarial error categories and four safety labels: Supported, Partially Supported, Unsupported, and Insufficient Information. Across eight large language model configurations, we identify pervasive over-refusal: all L",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.01497"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "ries, drug approvals, and guidelines, but was evaluated on only ten fictional cases and focused on recommendation relevance. [ 8 ] MTBBench evaluates multimodal and longitudinal oncology decision-making and reports persistent challenges in hallucination, evidence reconciliation, and temporal reasoning. [ 9 ] In contrast, our work focuses on downstream safety auditing: given an existing recommendat",
+          "location": "2.1 LLMs for Molecular Tumor Board Support",
+          "source_url": "https://arxiv.org/html/2610.01497"
+        },
+        {
+          "term": "dual-use",
+          "excerpt": "S shows that models may both comply with harmful requests and over-refuse safe medical prompts, [ 17 ] and Health-ORSC-Bench extends this analysis to dual-use health prompts. [ 18 ] The failure studied here differs from conventional textual refusal: in molecular tumor board auditing, a model may respond yet fail to assign the Partially Supported label to a recommendation that warrants qualified",
+          "location": "2.3 Over-Refusal and Safety Calibration",
+          "source_url": "https://arxiv.org/html/2610.01497"
+        }
+      ],
+      "related_benchmarks": [
+        "MTBBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 23,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "5eef3e3548cbf829a3324364ed4d084fc574f882db9c1442bf41110e5db4c24b",
+      "is_seed": false,
+      "topic": "biosafety",
+      "contribution_type": "new_benchmark"
+    },
     {
       "id": "doi:10.64898/2026.09.10.26362796",
       "slug": "doi-10-64898-2026-09-10-26362796-08053563c6",
