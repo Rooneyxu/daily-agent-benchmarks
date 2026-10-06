@@ -1,25 +1,25 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-05T11:42:44Z",
-  "total": 138,
+  "generated_at": "2026-10-06T11:24:22Z",
+  "total": 143,
   "counts": {
     "topics": {
-      "general_text": 54,
-      "biosafety": 13,
-      "multimodal": 38,
-      "experiment_agent": 33
+      "multimodal": 40,
+      "biosafety": 14,
+      "experiment_agent": 34,
+      "general_text": 55
     },
     "contribution_types": {
-      "new_benchmark": 109,
-      "methodology": 16,
+      "new_benchmark": 113,
+      "methodology": 17,
       "audit": 13
     },
     "kinds": {
-      "paper": 138
+      "paper": 143
     },
     "evaluation_contexts": {
-      "beneficial_capability": 125,
-      "biosecurity_misuse": 13
+      "beneficial_capability": 129,
+      "biosecurity_misuse": 14
     }
   },
   "topic_labels": {
@@ -59,48 +59,48 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-10-05T11:43:00Z",
-      "finished_at": "2026-10-05T11:43:31Z",
-      "discovered": 30,
-      "published": 19,
+      "started_at": "2026-10-06T11:24:39Z",
+      "finished_at": "2026-10-06T11:25:06Z",
+      "discovered": 49,
+      "published": 22,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-10-05T11:43:31Z",
-      "finished_at": "2026-10-05T11:43:37Z",
-      "discovered": 96,
-      "published": 45,
+      "started_at": "2026-10-06T11:25:06Z",
+      "finished_at": "2026-10-06T11:25:14Z",
+      "discovered": 47,
+      "published": 30,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-05T11:43:37Z",
-      "finished_at": "2026-10-05T11:44:06Z",
-      "discovered": 432,
-      "published": 33,
+      "started_at": "2026-10-06T11:25:14Z",
+      "finished_at": "2026-10-06T11:25:52Z",
+      "discovered": 569,
+      "published": 38,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-05T11:44:06Z",
-      "finished_at": "2026-10-05T11:44:16Z",
-      "discovered": 176,
-      "published": 22,
+      "started_at": "2026-10-06T11:25:52Z",
+      "finished_at": "2026-10-06T11:26:09Z",
+      "discovered": 223,
+      "published": 25,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-10-05T11:44:16Z",
-      "finished_at": "2026-10-05T11:44:16Z",
+      "started_at": "2026-10-06T11:26:09Z",
+      "finished_at": "2026-10-06T11:26:09Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
@@ -108,9 +108,26 @@
   ],
   "days": [
     {
-      "date": "2026-10-03",
-      "count": 1,
+      "date": "2026-10-05",
+      "count": 2,
       "entry_ids": [
+        "arxiv:2610.06571",
+        "arxiv:2610.06170"
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "count": 2,
+      "entry_ids": [
+        "arxiv:2610.05590",
+        "arxiv:2610.05140"
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "count": 2,
+      "entry_ids": [
+        "arxiv:2610.04215",
         "doi:10.64898/2026.07.07.26356930"
       ]
     },
@@ -680,6 +697,472 @@
   ],
   "entries": [
     {
+      "id": "arxiv:2610.06571",
+      "slug": "arxiv-2610-06571-56d82f54ea",
+      "kind": "paper",
+      "title": "BrainTRACE: Tracing Longitudinal, Multimodal, and Volumetric Evidence in Brain MRI Clinical Reasoning",
+      "abstract": "Brain MRI interpretation is a longitudinal clinical reasoning problem: radiologists compare serial studies, integrate information across MRI sequences, localize findings within volumetric anatomy, and translate this evidence into report-grounded assessments. Existing medical VQA and 3D imaging benchmarks capture important parts of this workflow, but often evaluate brain MRI through isolated images, static volumes, or ungrounded report-style answers, thereby obscuring failures in the evidence chain that support clinical validity. We introduce BrainTRACE, a report-grounded benchmark for evaluating whether vision-language models can trace the evidence structure required for longitudinal brain MRI interpretation. BrainTRACE contains 7,273 scored VQA instances derived from 1,778 longitudinal patients, 7,299 MRI studies, and approximately 29k co-registered 3D MRI sequence volumes. The benchmark is organized by five levels of clinical reasoning, from acquisition recognition to case-level synthesis, and by evidence demands covering longitudinal comparison, report-grounded references, multi-sequence integration, and volumetric spatial evidence. BrainTRACE supports rendered inputs compatible with standard VLM interfaces, a 3D-evidence condition, and a decomposed case-reasoning track that audits six steps in a longitudinal evidence chain. Evaluation of 20 VLM configurations shows that current systems can identify isolated visual cues but rarely compose them into grounded longitudinal interpretations. We release the benchmark specification, evaluation lists, scoring implementation, scoring rubrics, and audit-record format to support reproducible progress in brain MRI VLM evaluation.",
+      "authors": [
+        "Qizhen Lan",
+        "Mengchen Fan",
+        "Hang Zhang",
+        "Jingwei Duan",
+        "Moule Lin",
+        "Jialin Chen",
+        "Baocheng Geng",
+        "Xiaoqian Jiang"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-05T15:52:37+00:00",
+      "updated_at": "2026-10-05T15:52:37+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.06571"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.06571v1",
+        "pdf": "https://arxiv.org/pdf/2610.06571v1",
+        "code": "https://github.com/lanqz7766/BrainTRACE",
+        "data": "https://huggingface.co/datasets/lanqz7766/BrainTRACE",
+        "html": "https://arxiv.org/html/2610.06571"
+      },
+      "evidence": [
+        {
+          "term": "We release the benchmark",
+          "excerpt": "0 VLM configurations shows that current systems can identify isolated visual cues but rarely compose them into grounded longitudinal interpretations. We release the benchmark specification, evaluation lists, scoring implementation, scoring rubrics, and audit-record format to support reproducible progress in brain MRI VLM evaluation. [[SECTION BrainTRACE: Tracing Longitudinal, Multimodal, and Volumetric Evidence",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.06571"
+        },
+        {
+          "term": "We introduce BrainTRACE, a report-grounded benchmark",
+          "excerpt": "isolated images, static volumes, or ungrounded report-style answers, thereby obscuring failures in the evidence chain that support clinical validity. We introduce BrainTRACE, a report-grounded benchmark for evaluating whether vision-language models can trace the evidence structure required for longitudinal brain MRI interpretation. BrainTRACE contains 7,273 scored VQA instances derived from 1,778 longitudinal patients, 7,299 MRI studies,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.06571"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "ences, localize findings within volumetric anatomy, and translate this evidence into report-grounded assessments. Existing medical VQA and 3D imaging benchmarks capture important parts of this workflow, but often evaluate brain MRI through isolated images, static volumes, or ungrounded report-style answers, thereby obscuring failures in the evidence chain that support clinical validity. We introd",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.06571"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "ences, localize findings within volumetric anatomy, and translate this evidence into report-grounded assessments. Existing medical VQA and 3D imaging benchmarks capture important parts of this workflow, but often evaluate brain MRI through isolated images, static volumes, or ungrounded report-style answers, thereby obscuring failures in the evidence chain that support clinical validity. We introdu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.06571"
+        },
+        {
+          "term": "medical",
+          "excerpt": "information across MRI sequences, localize findings within volumetric anatomy, and translate this evidence into report-grounded assessments. Existing medical VQA and 3D imaging benchmarks capture important parts of this workflow, but often evaluate brain MRI through isolated images, static volumes, or ungrounded report-style answers, thereby obscuring failures in the evidence chain that support",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.06571"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "BrainTRACE: Tracing Longitudinal, Multimodal, and Volumetric Evidence in Brain MRI Clinical Reasoning Brain MRI interpretation is a longitudinal clinical reasoning problem: radiologists compare serial studies, integrate information across MRI sequences, localize findings within volumetric anatomy, and translate this evidence into",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.06571"
+        },
+        {
+          "term": "Multimodal",
+          "excerpt": "BrainTRACE: Tracing Longitudinal, Multimodal, and Volumetric Evidence in Brain MRI Clinical Reasoning Brain MRI interpretation is a longitudinal clinical reasoning problem: radiologists compare serial studies, integrate information across MRI sequences, localize findings within volum",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.06571"
+        },
+        {
+          "term": "Pathology",
+          "excerpt": "Year Scale L M V C Primary task 2D medical VQA / report benchmarks VQA-RAD [ 27 ] 2018 315 imgs / 3.5k QA 2D VQA PathVQA [ 17 ] 2020 5k imgs / 33k QA Pathology VQA SLAKE [ 32 ] 2021 642 imgs / 14k QA Bilingual VQA MIMIC-CXR [ 23 ] 2019 65k pts / 227k studies CXR report gen CheXpert [ 21 ] 2019 65k pts / 224k imgs ∘ \\circ CXR class. ReXrank / ReXPref-Prior [ 55 ] 2024 10k studies CXR report leader",
+          "location": "Appendix A Benchmark positioning and scope",
+          "source_url": "https://arxiv.org/html/2610.06571"
+        }
+      ],
+      "related_benchmarks": [
+        "VQA",
+        "Medical-Diff-VQA",
+        "GMAI-MMBench",
+        "OmniBrainBench",
+        "CXReasonBench",
+        "SGMRI-VQA",
+        "MedMCQA",
+        "PathVQA",
+        "OmniMedVQA",
+        "MCQA",
+        "MedQA",
+        "RadBench",
+        "BrainBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 22,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "0ecad578d639667af5dc0ae39e2c161123df0067c521980a02611f0e2661c8a2",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.06170",
+      "slug": "arxiv-2610-06170-f811541dbc",
+      "kind": "paper",
+      "title": "MS-Exam-Gen: Source-Grounded Benchmark Construction for Evaluating LLMs on Textual Multiple Sclerosis MRI Knowledge",
+      "abstract": "Biomedical large language model (LLM) evaluation requires auditable assessment of narrow, evolving, source-grounded subspecialty knowledge. Multiple sclerosis MRI (MS-MRI) provides a high-stakes textual-knowledge test case because correct reasoning requires current diagnostic criteria, standardized acquisition and reporting knowledge, longitudinal monitoring concepts, lesion morphology, and recognition of difficult mimics. We present MS-Exam-Gen, a reproducible framework for constructing and auditing a text-based multiple-choice question (MCQ) benchmark for MS-MRI knowledge; it does not evaluate direct MRI image interpretation. MS-Exam-Gen targets source-grounded criteria, protocols, reporting, and differential diagnosis. The framework combines expert-source indexing, exam-oriented topic induction, evidence-grounded MCQ generation, automated quality audits, a same-family consistency screen, and empirical calibration. From a 66-source corpus indexed into 4,289 retrieval chunks, the pipeline produced a locked 3,058-item candidate benchmark spanning 16 topics and 53 subtopics. Evaluation across 12 primary LLM endpoints yielded 36,696 item-level predictions and separated performance over a 42.8-percentage-point accuracy range (89.7% to 46.9%). Across these endpoints, 25.5% of items were missed by at least four. Post-generation audits showed that refreshed construction reduced measurable answer cues, while option-order testing showed that absolute MCQ scores remain position-sensitive. Generated construction labels remain metadata rather than validated psychometric categories. Because expert adjudication and full option-order counterbalancing remain future work, MS-Exam-Gen is not a clinically certified examination. It should be interpreted as an automatically filtered, source-grounded candidate benchmark and reproducible audit workflow for item-level and topic-specific LLM evaluation.",
+      "authors": [
+        "Abdul Basit",
+        "Muhammad Abdullah Hanif",
+        "Muhammad Shafique"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-05T11:41:57+00:00",
+      "updated_at": "2026-10-05T11:41:57+00:00",
+      "priority": "P0",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.06170"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.06170v1",
+        "pdf": "https://arxiv.org/pdf/2610.06170v1",
+        "html": "https://arxiv.org/html/2610.06170"
+      },
+      "evidence": [
+        {
+          "term": "framework for constructing and auditing a text-based multiple-choice question (MCQ) benchmark",
+          "excerpt": "reporting knowledge, longitudinal monitoring concepts, lesion morphology, and recognition of difficult mimics. We present MS-Exam-Gen, a reproducible framework for constructing and auditing a text-based multiple-choice question (MCQ) benchmark for MS-MRI knowledge; it does not evaluate direct MRI image interpretation. MS-Exam-Gen targets source-grounded criteria, protocols, reporting, and differential diagnosis. The framework combines expert-source indexing, exam-oriented topic",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.06170"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "MS-Exam-Gen: Source-Grounded Benchmark Construction for Evaluating LLMs on Textual Multiple Sclerosis MRI Knowledge Biomedical large language model (LLM) evaluation requires auditable assessment of narrow, evolving, source-grounded subspecialty knowledge. Multiple sclerosis MRI",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.06170"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "MS-Exam-Gen: Source-Grounded Benchmark Construction for Evaluating LLMs on Textual Multiple Sclerosis MRI Knowledge Biomedical large language model (LLM) evaluation requires auditable assessment of narrow, evolving, source-grounded subspecialty knowledge. Multiple sclerosis MRI (MS-MRI) provides a high-stakes textual-knowledge test case because correct reasoning r",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.06170"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "r than validated psychometric categories. Because expert adjudication and full option-order counterbalancing remain future work, MS-Exam-Gen is not a clinically certified examination. It should be interpreted as an automatically filtered, source-grounded candidate benchmark and reproducible audit workflow for item-level and topic-specific LLM evaluation. [[SECTION MS-Exam-Gen: Source-Grounded Be",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.06170"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "and MultiMedQA [ 5 , 6 , 7 , 16 , 2 ] Broad text/exam QA Not organized around MS-MRI criteria, protocols, reporting, or mimics. ✗ Partial ✗ Clinical/multimodal suites MultiMedQA-style and broader medical benchmark suites [ 2 , 17 ] Clinical QA and scenarios Coverage and provenance vary; usually not a locked MS-MRI source-grounded MCQ bank. ✗ Variable Variable Radiology VQA/report Radiology founda",
+          "location": "II Background and Related Work",
+          "source_url": "https://arxiv.org/html/2610.06170"
+        }
+      ],
+      "related_benchmarks": [
+        "MedQA",
+        "PubMedQA",
+        "MedMCQA",
+        "MultiMedQA",
+        "VQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "match_score": 22,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "141e031e41c289243cef22e619a5b6f6b29609cf86475a99e409490e9e792142",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "methodology"
+    },
+    {
+      "id": "arxiv:2610.05590",
+      "slug": "arxiv-2610-05590-755627392a",
+      "kind": "paper",
+      "title": "ColdDDI: Evaluating Knowledge Utilization in Cold-Start Drug-Drug Interaction Prediction",
+      "abstract": "Cold-start drug-drug interaction (DDI) prediction tests whether models can identify clinically significant interactions for drugs without training-time interaction history. Existing benchmarks mostly report aggregate edge-prediction scores, leaving a key evaluation question unanswered: when models receive molecular, textual, or knowledge-graph (KG) evidence, do they actually use the evidence that pharmacologically supports the interaction? We introduce ColdDDI, a reconstructible diagnostic benchmark built from DrugBank 5.1.13, with 1,900 approved small-molecule drugs and 565,731 positive DDI pairs. ColdDDI evaluates pairs with zero, one, or two unseen drugs. It also annotates each interaction by whether it changes drug exposure or drug effect, and by whether the biomedical knowledge graph contains shared enzymes, transporters, or targets that can plausibly mediate the interaction. These annotations separate evidence availability from predictive dependence. We evaluate eight conventional DDI methods and 13 LLMs; for open-weight LLMs, we test five prompt patterns and use masking, drug replacement, and channel-sensitivity metrics to probe knowledge utilization. ColdDDI exposes that, in the hardest split where both drugs are unseen, the main performance divide is mediator availability. A fine-tuned 1B LLM recovers 89-93% of interactions with a shared enzyme, transporter, or target, but only 40-62% without such a mediator. More importantly, KG-provided evidence is not always used; several KG-augmented baselines change little when the shared mediator is masked or disrupted, whereas fine-tuned LLMs respond strongly to this intervention. Thus, ColdDDI evaluates knowledge utilization rather than knowledge access alone, showing where cold-start DDI models rely on mechanistic evidence and where they fail despite receiving it. Code is available at https://github.com/0217ljh/ColdDDI-NeurIPS2026.",
+      "authors": [
+        "Jiheng Liang",
+        "Chen Zhao",
+        "Di Wu",
+        "Chenyang Bu",
+        "Yunpeng Hong",
+        "Xingquan Zhu",
+        "Yi He"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-04T22:54:19+00:00",
+      "updated_at": "2026-10-04T22:54:19+00:00",
+      "priority": "P1",
+      "categories": [
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.05590"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.05590v1",
+        "pdf": "https://arxiv.org/pdf/2610.05590v1",
+        "code": "https://github.com/0217ljh/ColdDDI-NeurIPS2026",
+        "html": "https://arxiv.org/html/2610.05590"
+      },
+      "evidence": [
+        {
+          "term": "We introduce ColdDDI, a reconstructible diagnostic benchmark",
+          "excerpt": "dels receive molecular, textual, or knowledge-graph (KG) evidence, do they actually use the evidence that pharmacologically supports the interaction? We introduce ColdDDI, a reconstructible diagnostic benchmark built from DrugBank 5.1.13, with 1,900 approved small-molecule drugs and 565,731 positive DDI pairs. ColdDDI evaluates pairs with zero, one, or two unseen drugs. It also annotates each interaction by whether it changes drug exposure or dru",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05590"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "(DDI) prediction tests whether models can identify clinically significant interactions for drugs without training-time interaction history. Existing benchmarks mostly report aggregate edge-prediction scores, leaving a key evaluation question unanswered: when models receive molecular, textual, or knowledge-graph (KG) evidence, do they actually use the evidence that pharmacologically supports the",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05590"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "(DDI) prediction tests whether models can identify clinically significant interactions for drugs without training-time interaction history. Existing benchmarks mostly report aggregate edge-prediction scores, leaving a key evaluation question unanswered: when models receive molecular, textual, or knowledge-graph (KG) evidence, do they actually use the evidence that pharmacologically supports the i",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05590"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "pairs with zero, one, or two unseen drugs. It also annotates each interaction by whether it changes drug exposure or drug effect, and by whether the biomedical knowledge graph contains shared enzymes, transporters, or targets that can plausibly mediate the interaction. These annotations separate evidence availability from predictive dependence. We evaluate eight conventional DDI methods and 13 LL",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05590"
+        },
+        {
+          "term": "medical",
+          "excerpt": "irs with zero, one, or two unseen drugs. It also annotates each interaction by whether it changes drug exposure or drug effect, and by whether the biomedical knowledge graph contains shared enzymes, transporters, or targets that can plausibly mediate the interaction. These annotations separate evidence availability from predictive dependence. We evaluate eight conventional DDI methods and 13 LL",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05590"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "wledge Utilization in Cold-Start Drug-Drug Interaction Prediction Cold-start drug-drug interaction (DDI) prediction tests whether models can identify clinically significant interactions for drugs without training-time interaction history. Existing benchmarks mostly report aggregate edge-prediction scores, leaving a key evaluation question unanswered: when models receive molecular, textual, or kn",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05590"
+        },
+        {
+          "term": "molecular",
+          "excerpt": "action history. Existing benchmarks mostly report aggregate edge-prediction scores, leaving a key evaluation question unanswered: when models receive molecular, textual, or knowledge-graph (KG) evidence, do they actually use the evidence that pharmacologically supports the interaction? We introduce ColdDDI, a reconstructible diagnostic benchmark built from DrugBank 5.1.13, with 1,900 approved sma",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05590"
+        },
+        {
+          "term": "molecule",
+          "excerpt": "ogically supports the interaction? We introduce ColdDDI, a reconstructible diagnostic benchmark built from DrugBank 5.1.13, with 1,900 approved small-molecule drugs and 565,731 positive DDI pairs. ColdDDI evaluates pairs with zero, one, or two unseen drugs. It also annotates each interaction by whether it changes drug exposure or drug effect, and by whether the biomedical knowledge graph contain",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05590"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 29,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "ad4073893a06f67283a5e57ea48e259161790ed095bc7a8c658c4960a3d68f29",
+      "is_seed": false,
+      "topic": "biosafety",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.05140",
+      "slug": "arxiv-2610-05140-5fbdba4a62",
+      "kind": "paper",
+      "title": "AutoSciBench: Autonomous Benchmark Generation for Evaluating Scientific Agents",
+      "abstract": "As agents rapidly evolve, existing benchmarks can become saturated, limiting their ability to distinguish capabilities and reveal remaining failure modes. Particularly in scientific domains, constructing and updating benchmarks requires substantial time, labor, and domain expertise, making it difficult to keep evaluation aligned with advances in agent capabilities. We address this challenge by investigating whether scientific-agent benchmarks can be automatically generated and iteratively adapted as agent capabilities evolve. We introduce AutoSciBench, a framework that represents each task as a high-level concept specifying the scientific domain, data modality, and required reasoning approach, together with a low-level recipe specifying how the question, environment, and ground-truth answer are constructed and verified. Agents attempt to solve each task, producing solver trajectories and corresponding judge feedback which AutoSciBench uses to revise the recipe or concept, closing observed shortcuts and shifting tasks toward raw-data re-examination, interpretation of intermediate results, and evidence integration. Experience distilled from completed refinement trajectories further guides new concept generation, allowing lessons from earlier task refinement to inform subsequent benchmark construction. Starting from existing benchmarks, we evaluate AutoSciBench across computational biology, materials science, and clinical imaging. Generated benchmarks reduce average solver accuracy by 22.4 and 25.5 percentage points relative to the human-curated benchmarks in computational biology and materials science, respectively, while generated tasks receive higher average quality ratings across all three domains, suggesting that scientific-agent evaluation can adapt as agent capabilities advance.",
+      "authors": [
+        "Dongki Kim",
+        "Namkyeong Lee",
+        "Surag Nair",
+        "Carl Edwards",
+        "Xiner Li",
+        "Edward De Brouwer",
+        "Jenna Lynn Collier",
+        "Sung Ju Hwang",
+        "Gabriele Scalia",
+        "Ehsan Hajiramezanali"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-04T11:40:11+00:00",
+      "updated_at": "2026-10-04T11:40:11+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.05140"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.05140v1",
+        "pdf": "https://arxiv.org/pdf/2610.05140v1",
+        "html": "https://arxiv.org/html/2610.05140"
+      },
+      "evidence": [
+        {
+          "term": "We introduce AutoSciBench",
+          "excerpt": "s challenge by investigating whether scientific-agent benchmarks can be automatically generated and iteratively adapted as agent capabilities evolve. We introduce AutoSciBench, a framework that represents each task as a high-level concept specifying the scientific domain, data modality, and required reasoning approach, together with a low-level recipe specifying how the question, environment, and ground-truth an",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05140"
+        },
+        {
+          "term": "constructing and updating benchmarks",
+          "excerpt": "arks can become saturated, limiting their ability to distinguish capabilities and reveal remaining failure modes. Particularly in scientific domains, constructing and updating benchmarks requires substantial time, labor, and domain expertise, making it difficult to keep evaluation aligned with advances in agent capabilities. We address this challenge by investigating whether scientific-agent benchmarks can be automatically",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05140"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "AutoSciBench: Autonomous Benchmark Generation for Evaluating Scientific Agents As agents rapidly evolve, existing benchmarks can become saturated, limiting their ability to distinguish capabilities and reveal remaining failure modes. Particularly in scientific domains, cons",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05140"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "AutoSciBench: Autonomous Benchmark Generation for Evaluating Scientific Agents As agents rapidly evolve, existing benchmarks can become saturated, limiting their ability to distinguish capabilities and reveal remaining failure modes. Particularly in scientific domains, constructing and updating benchmarks requires substantial time, labor, and domain expertise, m",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05140"
+        },
+        {
+          "term": "biology",
+          "excerpt": "earlier task refinement to inform subsequent benchmark construction. Starting from existing benchmarks, we evaluate AutoSciBench across computational biology, materials science, and clinical imaging. Generated benchmarks reduce average solver accuracy by 22.4 and 25.5 percentage points relative to the human-curated benchmarks in computational biology and materials science, respectively, while g",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05140"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "m subsequent benchmark construction. Starting from existing benchmarks, we evaluate AutoSciBench across computational biology, materials science, and clinical imaging. Generated benchmarks reduce average solver accuracy by 22.4 and 25.5 percentage points relative to the human-curated benchmarks in computational biology and materials science, respectively, while generated tasks receive higher ave",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05140"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "Li, S. Zhao, R. Cao, T. J. Hua, Z. Cheng, D. Shin, F. Lei, Y. Liu, Y. Xu, S. Zhou, S. Savarese, C. Xiong, V. Zhong, and T. Yu OSWorld: benchmarking multimodal agents for open-ended tasks in real computer environments . In Advances in Neural Information Processing Systems, NeurIPS , Cited by: §1 , §2 . Yu et al. (2025) F. Yu, H. Xiao, D. Song, X. Yang, S. Huang, Y. Wang, M. Bai, X. Yao, K. Shu, a",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.05140"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "MedCTA ( Ashraf et al., 2026 ) evaluates clinical tool agents on clinician-validated tasks grounded in multimodal inputs, including radiology images, pathology slides, and clinical reports. Its step-implicit questions require agents to determine how to acquire and integrate evidence without being given the intended tool sequence. This benchmark leverages the LLM evaluator to score the quality of",
+          "location": "MedCTA",
+          "source_url": "https://arxiv.org/html/2610.05140"
+        }
+      ],
+      "related_benchmarks": [
+        "AutoSciBench",
+        "ScienceAgentBench",
+        "CompBioBench",
+        "GPQA",
+        "LAB-Bench"
+      ],
+      "related_agent_url": "../../p/2610.05140.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 28,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "733301416b4f0ef02294a75077bf3e540d1e26f69bf3e70b160fc2f832aaf8c8",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.04215",
+      "slug": "arxiv-2610-04215-d02816492f",
+      "kind": "paper",
+      "title": "TCMClinicalReason-Bench: Can Language Models Reason from Pathogenesis to Prescription over Real-World Clinical Cases?",
+      "abstract": "Large language models (LLMs) can generate clinical narratives that are insufficiently grounded in patient-specific evidence. In traditional Chinese medicine (TCM), errors can propagate from etiology and pathogenesis through syndrome diagnosis and treatment principles to prescription generation. We developed TCMClinicalReason-Bench using 2,000 multicenter electronic health record cases to distinguish case-grounded responses from fluent but unsupported diagnostic and therapeutic conclusions. Five general-purpose and two TCM-specific LLMs were evaluated in zero-shot settings. An evidence-constrained rubric assessed seven diagnostic and therapeutic components and three cross-block relations, allowing case-supported alternatives. Qwen3.7-Plus with TCM retrieval served as the automated judge, alongside parallel blinded ratings by five senior TCM clinicians on a 600-case subset. Structural completeness was nearly saturated (99.3-100.0%), but normalized content scores ranged from 40.7% to 54.1%. The five general-purpose models averaged 50.0%, versus 41.3% for the two smaller TCM-specific models. Cross-block logic consistency ranged from 60.8% to 66.8% and correlated moderately with content across cases (Pearson's r = 0.515-0.656). Deficits were greatest in prescription generation, prescription analysis, and symptom-guided modification. In judge stress testing on 100 independent cases, perturbation detection rates across the three relations were 57%, 56%, and 31%, with contradictions detected more reliably than omissions. Separating component quality from cross-block consistency localizes failures missed by endpoint and completeness metrics and identifies where clinician oversight remains necessary.",
+      "authors": [
+        "Jirui Dai",
+        "Chenkai Zhang",
+        "Yan Jia",
+        "Yukai Wang",
+        "Ruiyang He",
+        "Changyong Luo",
+        "Zhi Liu"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-03T02:05:17+00:00",
+      "updated_at": "2026-10-03T02:05:17+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.04215"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.04215v1",
+        "pdf": "https://arxiv.org/pdf/2610.04215v1",
+        "html": "https://arxiv.org/html/2610.04215"
+      },
+      "evidence": [
+        {
+          "term": "medicine",
+          "excerpt": "? Large language models (LLMs) can generate clinical narratives that are insufficiently grounded in patient-specific evidence. In traditional Chinese medicine (TCM), errors can propagate from etiology and pathogenesis through syndrome diagnosis and treatment principles to prescription generation. We developed TCMClinicalReason-Bench using 2,000 multicenter electronic health record cases to disti",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.04215"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "TCMClinicalReason-Bench: Can Language Models Reason from Pathogenesis to Prescription over Real-World Clinical Cases? Large language models (LLMs) can generate clinical narratives that are insufficiently grounded in patient-specific evidence. In tradi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.04215"
+        },
+        {
+          "term": "patient",
+          "excerpt": "sis to Prescription over Real-World Clinical Cases? Large language models (LLMs) can generate clinical narratives that are insufficiently grounded in patient-specific evidence. In traditional Chinese medicine (TCM), errors can propagate from etiology and pathogenesis through syndrome diagnosis and treatment principles to prescription generation. We developed TCMClinicalReason-Bench using 2,000",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.04215"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 13,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '404 Not Found' for url 'https://arxiv.org/html/2610.04215'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+      "content_hash": "31408ce6d48234399012438418c98616786b0edffa42737618626038f43c58c7",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "doi:10.64898/2026.07.07.26356930",
       "slug": "doi-10-64898-2026-07-07-26356930-108d9db50e",
       "kind": "paper",
@@ -883,7 +1366,7 @@
         "biosecurity_misuse"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 23,
+      "match_score": 21,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "5eef3e3548cbf829a3324364ed4d084fc574f882db9c1442bf41110e5db4c24b",

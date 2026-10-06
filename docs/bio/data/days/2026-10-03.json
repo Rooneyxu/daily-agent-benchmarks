@@ -1,7 +1,74 @@
 {
   "date": "2026-10-03",
-  "count": 1,
+  "count": 2,
   "entries": [
+    {
+      "id": "arxiv:2610.04215",
+      "slug": "arxiv-2610-04215-d02816492f",
+      "kind": "paper",
+      "title": "TCMClinicalReason-Bench: Can Language Models Reason from Pathogenesis to Prescription over Real-World Clinical Cases?",
+      "abstract": "Large language models (LLMs) can generate clinical narratives that are insufficiently grounded in patient-specific evidence. In traditional Chinese medicine (TCM), errors can propagate from etiology and pathogenesis through syndrome diagnosis and treatment principles to prescription generation. We developed TCMClinicalReason-Bench using 2,000 multicenter electronic health record cases to distinguish case-grounded responses from fluent but unsupported diagnostic and therapeutic conclusions. Five general-purpose and two TCM-specific LLMs were evaluated in zero-shot settings. An evidence-constrained rubric assessed seven diagnostic and therapeutic components and three cross-block relations, allowing case-supported alternatives. Qwen3.7-Plus with TCM retrieval served as the automated judge, alongside parallel blinded ratings by five senior TCM clinicians on a 600-case subset. Structural completeness was nearly saturated (99.3-100.0%), but normalized content scores ranged from 40.7% to 54.1%. The five general-purpose models averaged 50.0%, versus 41.3% for the two smaller TCM-specific models. Cross-block logic consistency ranged from 60.8% to 66.8% and correlated moderately with content across cases (Pearson's r = 0.515-0.656). Deficits were greatest in prescription generation, prescription analysis, and symptom-guided modification. In judge stress testing on 100 independent cases, perturbation detection rates across the three relations were 57%, 56%, and 31%, with contradictions detected more reliably than omissions. Separating component quality from cross-block consistency localizes failures missed by endpoint and completeness metrics and identifies where clinician oversight remains necessary.",
+      "authors": [
+        "Jirui Dai",
+        "Chenkai Zhang",
+        "Yan Jia",
+        "Yukai Wang",
+        "Ruiyang He",
+        "Changyong Luo",
+        "Zhi Liu"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-03T02:05:17+00:00",
+      "updated_at": "2026-10-03T02:05:17+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.04215"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.04215v1",
+        "pdf": "https://arxiv.org/pdf/2610.04215v1",
+        "html": "https://arxiv.org/html/2610.04215"
+      },
+      "evidence": [
+        {
+          "term": "medicine",
+          "excerpt": "? Large language models (LLMs) can generate clinical narratives that are insufficiently grounded in patient-specific evidence. In traditional Chinese medicine (TCM), errors can propagate from etiology and pathogenesis through syndrome diagnosis and treatment principles to prescription generation. We developed TCMClinicalReason-Bench using 2,000 multicenter electronic health record cases to disti",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.04215"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "TCMClinicalReason-Bench: Can Language Models Reason from Pathogenesis to Prescription over Real-World Clinical Cases? Large language models (LLMs) can generate clinical narratives that are insufficiently grounded in patient-specific evidence. In tradi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.04215"
+        },
+        {
+          "term": "patient",
+          "excerpt": "sis to Prescription over Real-World Clinical Cases? Large language models (LLMs) can generate clinical narratives that are insufficiently grounded in patient-specific evidence. In traditional Chinese medicine (TCM), errors can propagate from etiology and pathogenesis through syndrome diagnosis and treatment principles to prescription generation. We developed TCMClinicalReason-Bench using 2,000",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.04215"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 13,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '404 Not Found' for url 'https://arxiv.org/html/2610.04215'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+      "content_hash": "31408ce6d48234399012438418c98616786b0edffa42737618626038f43c58c7",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
     {
       "id": "doi:10.64898/2026.07.07.26356930",
       "slug": "doi-10-64898-2026-07-07-26356930-108d9db50e",

@@ -1,0 +1,210 @@
+{
+  "date": "2026-10-04",
+  "count": 2,
+  "entries": [
+    {
+      "id": "arxiv:2610.05590",
+      "slug": "arxiv-2610-05590-755627392a",
+      "kind": "paper",
+      "title": "ColdDDI: Evaluating Knowledge Utilization in Cold-Start Drug-Drug Interaction Prediction",
+      "abstract": "Cold-start drug-drug interaction (DDI) prediction tests whether models can identify clinically significant interactions for drugs without training-time interaction history. Existing benchmarks mostly report aggregate edge-prediction scores, leaving a key evaluation question unanswered: when models receive molecular, textual, or knowledge-graph (KG) evidence, do they actually use the evidence that pharmacologically supports the interaction? We introduce ColdDDI, a reconstructible diagnostic benchmark built from DrugBank 5.1.13, with 1,900 approved small-molecule drugs and 565,731 positive DDI pairs. ColdDDI evaluates pairs with zero, one, or two unseen drugs. It also annotates each interaction by whether it changes drug exposure or drug effect, and by whether the biomedical knowledge graph contains shared enzymes, transporters, or targets that can plausibly mediate the interaction. These annotations separate evidence availability from predictive dependence. We evaluate eight conventional DDI methods and 13 LLMs; for open-weight LLMs, we test five prompt patterns and use masking, drug replacement, and channel-sensitivity metrics to probe knowledge utilization. ColdDDI exposes that, in the hardest split where both drugs are unseen, the main performance divide is mediator availability. A fine-tuned 1B LLM recovers 89-93% of interactions with a shared enzyme, transporter, or target, but only 40-62% without such a mediator. More importantly, KG-provided evidence is not always used; several KG-augmented baselines change little when the shared mediator is masked or disrupted, whereas fine-tuned LLMs respond strongly to this intervention. Thus, ColdDDI evaluates knowledge utilization rather than knowledge access alone, showing where cold-start DDI models rely on mechanistic evidence and where they fail despite receiving it. Code is available at https://github.com/0217ljh/ColdDDI-NeurIPS2026.",
+      "authors": [
+        "Jiheng Liang",
+        "Chen Zhao",
+        "Di Wu",
+        "Chenyang Bu",
+        "Yunpeng Hong",
+        "Xingquan Zhu",
+        "Yi He"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-04T22:54:19+00:00",
+      "updated_at": "2026-10-04T22:54:19+00:00",
+      "priority": "P1",
+      "categories": [
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.05590"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.05590v1",
+        "pdf": "https://arxiv.org/pdf/2610.05590v1",
+        "code": "https://github.com/0217ljh/ColdDDI-NeurIPS2026",
+        "html": "https://arxiv.org/html/2610.05590"
+      },
+      "evidence": [
+        {
+          "term": "We introduce ColdDDI, a reconstructible diagnostic benchmark",
+          "excerpt": "dels receive molecular, textual, or knowledge-graph (KG) evidence, do they actually use the evidence that pharmacologically supports the interaction? We introduce ColdDDI, a reconstructible diagnostic benchmark built from DrugBank 5.1.13, with 1,900 approved small-molecule drugs and 565,731 positive DDI pairs. ColdDDI evaluates pairs with zero, one, or two unseen drugs. It also annotates each interaction by whether it changes drug exposure or dru",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05590"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "(DDI) prediction tests whether models can identify clinically significant interactions for drugs without training-time interaction history. Existing benchmarks mostly report aggregate edge-prediction scores, leaving a key evaluation question unanswered: when models receive molecular, textual, or knowledge-graph (KG) evidence, do they actually use the evidence that pharmacologically supports the",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05590"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "(DDI) prediction tests whether models can identify clinically significant interactions for drugs without training-time interaction history. Existing benchmarks mostly report aggregate edge-prediction scores, leaving a key evaluation question unanswered: when models receive molecular, textual, or knowledge-graph (KG) evidence, do they actually use the evidence that pharmacologically supports the i",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05590"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "pairs with zero, one, or two unseen drugs. It also annotates each interaction by whether it changes drug exposure or drug effect, and by whether the biomedical knowledge graph contains shared enzymes, transporters, or targets that can plausibly mediate the interaction. These annotations separate evidence availability from predictive dependence. We evaluate eight conventional DDI methods and 13 LL",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05590"
+        },
+        {
+          "term": "medical",
+          "excerpt": "irs with zero, one, or two unseen drugs. It also annotates each interaction by whether it changes drug exposure or drug effect, and by whether the biomedical knowledge graph contains shared enzymes, transporters, or targets that can plausibly mediate the interaction. These annotations separate evidence availability from predictive dependence. We evaluate eight conventional DDI methods and 13 LL",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05590"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "wledge Utilization in Cold-Start Drug-Drug Interaction Prediction Cold-start drug-drug interaction (DDI) prediction tests whether models can identify clinically significant interactions for drugs without training-time interaction history. Existing benchmarks mostly report aggregate edge-prediction scores, leaving a key evaluation question unanswered: when models receive molecular, textual, or kn",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05590"
+        },
+        {
+          "term": "molecular",
+          "excerpt": "action history. Existing benchmarks mostly report aggregate edge-prediction scores, leaving a key evaluation question unanswered: when models receive molecular, textual, or knowledge-graph (KG) evidence, do they actually use the evidence that pharmacologically supports the interaction? We introduce ColdDDI, a reconstructible diagnostic benchmark built from DrugBank 5.1.13, with 1,900 approved sma",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05590"
+        },
+        {
+          "term": "molecule",
+          "excerpt": "ogically supports the interaction? We introduce ColdDDI, a reconstructible diagnostic benchmark built from DrugBank 5.1.13, with 1,900 approved small-molecule drugs and 565,731 positive DDI pairs. ColdDDI evaluates pairs with zero, one, or two unseen drugs. It also annotates each interaction by whether it changes drug exposure or drug effect, and by whether the biomedical knowledge graph contain",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05590"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 29,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "ad4073893a06f67283a5e57ea48e259161790ed095bc7a8c658c4960a3d68f29",
+      "is_seed": false,
+      "topic": "biosafety",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.05140",
+      "slug": "arxiv-2610-05140-5fbdba4a62",
+      "kind": "paper",
+      "title": "AutoSciBench: Autonomous Benchmark Generation for Evaluating Scientific Agents",
+      "abstract": "As agents rapidly evolve, existing benchmarks can become saturated, limiting their ability to distinguish capabilities and reveal remaining failure modes. Particularly in scientific domains, constructing and updating benchmarks requires substantial time, labor, and domain expertise, making it difficult to keep evaluation aligned with advances in agent capabilities. We address this challenge by investigating whether scientific-agent benchmarks can be automatically generated and iteratively adapted as agent capabilities evolve. We introduce AutoSciBench, a framework that represents each task as a high-level concept specifying the scientific domain, data modality, and required reasoning approach, together with a low-level recipe specifying how the question, environment, and ground-truth answer are constructed and verified. Agents attempt to solve each task, producing solver trajectories and corresponding judge feedback which AutoSciBench uses to revise the recipe or concept, closing observed shortcuts and shifting tasks toward raw-data re-examination, interpretation of intermediate results, and evidence integration. Experience distilled from completed refinement trajectories further guides new concept generation, allowing lessons from earlier task refinement to inform subsequent benchmark construction. Starting from existing benchmarks, we evaluate AutoSciBench across computational biology, materials science, and clinical imaging. Generated benchmarks reduce average solver accuracy by 22.4 and 25.5 percentage points relative to the human-curated benchmarks in computational biology and materials science, respectively, while generated tasks receive higher average quality ratings across all three domains, suggesting that scientific-agent evaluation can adapt as agent capabilities advance.",
+      "authors": [
+        "Dongki Kim",
+        "Namkyeong Lee",
+        "Surag Nair",
+        "Carl Edwards",
+        "Xiner Li",
+        "Edward De Brouwer",
+        "Jenna Lynn Collier",
+        "Sung Ju Hwang",
+        "Gabriele Scalia",
+        "Ehsan Hajiramezanali"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-04T11:40:11+00:00",
+      "updated_at": "2026-10-04T11:40:11+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.05140"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.05140v1",
+        "pdf": "https://arxiv.org/pdf/2610.05140v1",
+        "html": "https://arxiv.org/html/2610.05140"
+      },
+      "evidence": [
+        {
+          "term": "We introduce AutoSciBench",
+          "excerpt": "s challenge by investigating whether scientific-agent benchmarks can be automatically generated and iteratively adapted as agent capabilities evolve. We introduce AutoSciBench, a framework that represents each task as a high-level concept specifying the scientific domain, data modality, and required reasoning approach, together with a low-level recipe specifying how the question, environment, and ground-truth an",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05140"
+        },
+        {
+          "term": "constructing and updating benchmarks",
+          "excerpt": "arks can become saturated, limiting their ability to distinguish capabilities and reveal remaining failure modes. Particularly in scientific domains, constructing and updating benchmarks requires substantial time, labor, and domain expertise, making it difficult to keep evaluation aligned with advances in agent capabilities. We address this challenge by investigating whether scientific-agent benchmarks can be automatically",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05140"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "AutoSciBench: Autonomous Benchmark Generation for Evaluating Scientific Agents As agents rapidly evolve, existing benchmarks can become saturated, limiting their ability to distinguish capabilities and reveal remaining failure modes. Particularly in scientific domains, cons",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05140"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "AutoSciBench: Autonomous Benchmark Generation for Evaluating Scientific Agents As agents rapidly evolve, existing benchmarks can become saturated, limiting their ability to distinguish capabilities and reveal remaining failure modes. Particularly in scientific domains, constructing and updating benchmarks requires substantial time, labor, and domain expertise, m",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05140"
+        },
+        {
+          "term": "biology",
+          "excerpt": "earlier task refinement to inform subsequent benchmark construction. Starting from existing benchmarks, we evaluate AutoSciBench across computational biology, materials science, and clinical imaging. Generated benchmarks reduce average solver accuracy by 22.4 and 25.5 percentage points relative to the human-curated benchmarks in computational biology and materials science, respectively, while g",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05140"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "m subsequent benchmark construction. Starting from existing benchmarks, we evaluate AutoSciBench across computational biology, materials science, and clinical imaging. Generated benchmarks reduce average solver accuracy by 22.4 and 25.5 percentage points relative to the human-curated benchmarks in computational biology and materials science, respectively, while generated tasks receive higher ave",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.05140"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "Li, S. Zhao, R. Cao, T. J. Hua, Z. Cheng, D. Shin, F. Lei, Y. Liu, Y. Xu, S. Zhou, S. Savarese, C. Xiong, V. Zhong, and T. Yu OSWorld: benchmarking multimodal agents for open-ended tasks in real computer environments . In Advances in Neural Information Processing Systems, NeurIPS , Cited by: §1 , §2 . Yu et al. (2025) F. Yu, H. Xiao, D. Song, X. Yang, S. Huang, Y. Wang, M. Bai, X. Yao, K. Shu, a",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.05140"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "MedCTA ( Ashraf et al., 2026 ) evaluates clinical tool agents on clinician-validated tasks grounded in multimodal inputs, including radiology images, pathology slides, and clinical reports. Its step-implicit questions require agents to determine how to acquire and integrate evidence without being given the intended tool sequence. This benchmark leverages the LLM evaluator to score the quality of",
+          "location": "MedCTA",
+          "source_url": "https://arxiv.org/html/2610.05140"
+        }
+      ],
+      "related_benchmarks": [
+        "AutoSciBench",
+        "ScienceAgentBench",
+        "CompBioBench",
+        "GPQA",
+        "LAB-Bench"
+      ],
+      "related_agent_url": "../../p/2610.05140.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 28,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "733301416b4f0ef02294a75077bf3e540d1e26f69bf3e70b160fc2f832aaf8c8",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
