@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-06T11:24:22Z",
-  "total": 143,
+  "generated_at": "2026-10-07T11:12:57Z",
+  "total": 146,
   "counts": {
     "topics": {
+      "experiment_agent": 35,
+      "general_text": 57,
       "multimodal": 40,
-      "biosafety": 14,
-      "experiment_agent": 34,
-      "general_text": 55
+      "biosafety": 14
     },
     "contribution_types": {
-      "new_benchmark": 113,
+      "new_benchmark": 116,
       "methodology": 17,
       "audit": 13
     },
     "kinds": {
-      "paper": 143
+      "paper": 146
     },
     "evaluation_contexts": {
-      "beneficial_capability": 129,
+      "beneficial_capability": 132,
       "biosecurity_misuse": 14
     }
   },
@@ -59,19 +59,19 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-10-06T11:24:39Z",
-      "finished_at": "2026-10-06T11:25:06Z",
-      "discovered": 49,
-      "published": 22,
+      "started_at": "2026-10-07T11:13:14Z",
+      "finished_at": "2026-10-07T11:13:42Z",
+      "discovered": 47,
+      "published": 23,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-10-06T11:25:06Z",
-      "finished_at": "2026-10-06T11:25:14Z",
-      "discovered": 47,
+      "started_at": "2026-10-07T11:13:42Z",
+      "finished_at": "2026-10-07T11:13:45Z",
+      "discovered": 46,
       "published": 30,
       "error": ""
     },
@@ -79,38 +79,47 @@
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-06T11:25:14Z",
-      "finished_at": "2026-10-06T11:25:52Z",
-      "discovered": 569,
-      "published": 38,
+      "started_at": "2026-10-07T11:13:45Z",
+      "finished_at": "2026-10-07T11:14:43Z",
+      "discovered": 797,
+      "published": 54,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-06T11:25:52Z",
-      "finished_at": "2026-10-06T11:26:09Z",
-      "discovered": 223,
-      "published": 25,
+      "started_at": "2026-10-07T11:14:43Z",
+      "finished_at": "2026-10-07T11:14:53Z",
+      "discovered": 222,
+      "published": 17,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-10-06T11:26:09Z",
-      "finished_at": "2026-10-06T11:26:09Z",
+      "started_at": "2026-10-07T11:14:53Z",
+      "finished_at": "2026-10-07T11:14:53Z",
       "discovered": 0,
       "published": 0,
-      "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      "error": "Client error '403 Forbidden' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
     }
   ],
   "days": [
     {
-      "date": "2026-10-05",
+      "date": "2026-10-06",
       "count": 2,
       "entry_ids": [
+        "doi:10.64898/2026.10.05.756819",
+        "doi:10.64898/2026.09.30.755660"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "count": 3,
+      "entry_ids": [
+        "arxiv:2610.07502",
         "arxiv:2610.06571",
         "arxiv:2610.06170"
       ]
@@ -696,6 +705,251 @@
     }
   ],
   "entries": [
+    {
+      "id": "doi:10.64898/2026.10.05.756819",
+      "slug": "doi-10-64898-2026-10-05-756819-98252379fe",
+      "kind": "paper",
+      "title": "MetagenomicsBench: A Verifiable Benchmark for Agentic Metagenomics Analysis",
+      "abstract": "Metagenomics has transformed our ability to characterize microbial communities without relying on cultivation, but translating complex microbiome datasets into reliable biological conclusions remains a major analytical challenge. Although AI agents have improved substantially at software engineering and general data analysis, it remains unclear whether they can reliably analyze and interpret real-world metagenomic data. We introduce MetagenomicsBench, a benchmark of 100 verifiable evaluations derived from published datasets spanning community structure, host-microbiome associations, microbial function, longitudinal dynamics, and microbiome interventions. Each evaluation provides experimental data and a deterministic grader that evaluates recovery of a key analytical or biological result. Across 10,200 trajectories from 34 model-harness configurations, the strongest configuration achieved a 60.0% pass rate. Performance varied across functional domains, data modalities, and biological systems, while greater cost, token usage, and tool use did not consistently correspond to higher accuracy. Trajectory analysis showed that agents often produced technically plausible analyses while making mistakes in problem interpretation, statistical reasoning, and biological interpretation. MetagenomicsBench provides a framework for measuring progress toward AI agents that can reliably make and validate the analytical and biological decisions required for metagenomic research.",
+      "authors": [
+        "Yang, Z.",
+        "Connolly, J.",
+        "Banerjee, A.",
+        "Madad, S."
+      ],
+      "source": "biorxiv",
+      "published_at": "2026-10-06T00:00:00+00:00",
+      "updated_at": "2026-10-06T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by",
+      "identifiers": {
+        "doi": "10.64898/2026.10.05.756819"
+      },
+      "links": {
+        "abs": "https://www.biorxiv.org/content/10.64898/2026.10.05.756819",
+        "pdf": "https://www.biorxiv.org/content/10.64898/2026.10.05.756819.full.pdf",
+        "html": "https://www.biorxiv.org/content/10.64898/2026.10.05.756819.full"
+      },
+      "evidence": [
+        {
+          "term": "We introduce MetagenomicsBench",
+          "excerpt": "ly at software engineering and general data analysis, it remains unclear whether they can reliably analyze and interpret real-world metagenomic data. We introduce MetagenomicsBench, a benchmark of 100 verifiable evaluations derived from published datasets spanning community structure, host-microbiome associations, microbial function, longitudinal dynamics, and microbiome interventions. Each evaluation provides experi",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.05.756819.full"
+        },
+        {
+          "term": "We introduce MetagenomicsBench, a benchmark",
+          "excerpt": "ly at software engineering and general data analysis, it remains unclear whether they can reliably analyze and interpret real-world metagenomic data. We introduce MetagenomicsBench, a benchmark of 100 verifiable evaluations derived from published datasets spanning community structure, host-microbiome associations, microbial function, longitudinal dynamics, and microbiome interventions. Each evaluation provides experimental data a",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.05.756819.full"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "MetagenomicsBench: A Verifiable Benchmark for Agentic Metagenomics Analysis Metagenomics has transformed our ability to characterize microbial communities without relying on cultivation, but translating complex microbiome datasets into reliable biological conclusions remains a maj",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.05.756819.full"
+        },
+        {
+          "term": "biological",
+          "excerpt": "ansformed our ability to characterize microbial communities without relying on cultivation, but translating complex microbiome datasets into reliable biological conclusions remains a major analytical challenge. Although AI agents have improved substantially at software engineering and general data analysis, it remains unclear whether they can reliably analyze and interpret real-world metagenomic d",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.05.756819.full"
+        },
+        {
+          "term": "genomic",
+          "excerpt": "MetagenomicsBench: A Verifiable Benchmark for Agentic Metagenomics Analysis Metagenomics has transformed our ability to characterize microbial communities without relying on cultivation, but translating complex microbiome datasets into reliable biolog",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.05.756819.full"
+        },
+        {
+          "term": "genomics",
+          "excerpt": "MetagenomicsBench: A Verifiable Benchmark for Agentic Metagenomics Analysis Metagenomics has transformed our ability to characterize microbial communities without relying on cultivation, but translating complex microbiome datasets into reliable biologi",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.05.756819.full"
+        },
+        {
+          "term": "tool use",
+          "excerpt": "hieved a 60.0% pass rate. Performance varied across functional domains, data modalities, and biological systems, while greater cost, token usage, and tool use did not consistently correspond to higher accuracy. Trajectory analysis showed that agents often produced technically plausible analyses while making mistakes in problem interpretation, statistical reasoning, and biological interpretation",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.05.756819.full"
+        }
+      ],
+      "related_benchmarks": [
+        "MetagenomicsBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 26,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.10.05.756819.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "04f727707af03750d2f663684418d5f38faadaef9aba7070f4c85059769531da",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.09.30.755660",
+      "slug": "doi-10-64898-2026-09-30-755660-e2b65419e4",
+      "kind": "paper",
+      "title": "pre-miRBench: a multispecies benchmark and reference model for animal precursor microRNA prediction",
+      "abstract": "Motivation: Precursor microRNA (pre-miRNA) prediction is used to prioritize genomic hairpins for miRNA annotation. Published predictors are trained and evaluated on different species collections, negative sets and data partitions, making reported gains difficult to compare. Results: We introduce pre-miRBench, a benchmark of 7,056 200-nt windows centered on curated pre-miRNA loci and 70,560 genomic negatives with predicted hairpin structures from 71 animal species, with a fixed 1:10 positive-to-negative ratio in every partition. Four test sets cross whether the species and miRNA family are represented in training: known species/known family, known species/held-out family, held-out species/known family, and held-out species/held-out family. We retrained six published pre-miRNA predictors (DeepMir, deepMiRGene, dnnPreMiR, mirDNN, miRe2e and MuStARD) under the same benchmark splits and evaluated them alongside the pre-miRBench model, an ensemble of three neural networks developed with Agentomics, an autonomous LLM-agent system for biomedical machine learning. The pre-miRBench model achieved the highest mean average precision (AP) across the four test sets (0.9809; dnnPreMiR, 0.9719) and led three tests. The two held-out species were Gallus gallus and Drosophila melanogaster, and the joint species-and-family holdout contained 69 positives and 690 negatives. dnnPreMiR had the highest AP on the joint species-and-family holdout (0.9677 versus 0.9659). The AP difference (pre-miRBench minus dnnPreMiR) was -0.0018, with a paired bootstrap 95% confidence interval of -0.0445 to 0.0341. pre-miRBench establishes a common evaluation for species and miRNA-family holdouts and provides a reproducible reference model for future comparisons. Availability and implementation: Reproducible source code is available at https://github.com/dimostzim/pre-miRBench. Datasets, trained model weights, record-level predictions, evaluation metrics and species-panel metadata for pre-miRBench and the six retrained predictors are available at https://zenodo.org/records/22813044.",
+      "authors": [
+        "Tzimotoudis, D.",
+        "Chatzitolios, V. K.",
+        "Alexiou, P.",
+        "Georgakilas, G."
+      ],
+      "source": "biorxiv",
+      "published_at": "2026-10-06T00:00:00+00:00",
+      "updated_at": "2026-10-06T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by",
+      "identifiers": {
+        "doi": "10.64898/2026.09.30.755660"
+      },
+      "links": {
+        "abs": "https://www.biorxiv.org/content/10.64898/2026.09.30.755660",
+        "pdf": "https://www.biorxiv.org/content/10.64898/2026.09.30.755660.full.pdf",
+        "html": "https://www.biorxiv.org/content/10.64898/2026.09.30.755660.full"
+      },
+      "evidence": [
+        {
+          "term": "We introduce pre-miRBench",
+          "excerpt": "s are trained and evaluated on different species collections, negative sets and data partitions, making reported gains difficult to compare. Results: We introduce pre-miRBench, a benchmark of 7,056 200-nt windows centered on curated pre-miRNA loci and 70,560 genomic negatives with predicted hairpin structures from 71 animal species, with a fixed 1:10 positive-to-negative ratio in every partition. Four test sets",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.30.755660.full"
+        },
+        {
+          "term": "We introduce pre-miRBench, a benchmark",
+          "excerpt": "s are trained and evaluated on different species collections, negative sets and data partitions, making reported gains difficult to compare. Results: We introduce pre-miRBench, a benchmark of 7,056 200-nt windows centered on curated pre-miRNA loci and 70,560 genomic negatives with predicted hairpin structures from 71 animal species, with a fixed 1:10 positive-to-negative ratio in every partition. Four test sets cross whether",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.30.755660.full"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "pre-miRBench: a multispecies benchmark and reference model for animal precursor microRNA prediction Motivation: Precursor microRNA (pre-miRNA) prediction is used to prioritize genomic hairpins for miRNA annotation. Published predictors are trained and evaluated on different spe",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.30.755660.full"
+        },
+        {
+          "term": "test set",
+          "excerpt": "560 genomic negatives with predicted hairpin structures from 71 animal species, with a fixed 1:10 positive-to-negative ratio in every partition. Four test sets cross whether the species and miRNA family are represented in training: known species/known family, known species/held-out family, held-out species/known family, and held-out species/held-out family. We retrained six published pre-miRNA p",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.30.755660.full"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "d evaluated them alongside the pre-miRBench model, an ensemble of three neural networks developed with Agentomics, an autonomous LLM-agent system for biomedical machine learning. The pre-miRBench model achieved the highest mean average precision (AP) across the four test sets (0.9809; dnnPreMiR, 0.9719) and led three tests. The two held-out species were Gallus gallus and Drosophila melanogaster, a",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.30.755660.full"
+        },
+        {
+          "term": "medical",
+          "excerpt": "valuated them alongside the pre-miRBench model, an ensemble of three neural networks developed with Agentomics, an autonomous LLM-agent system for biomedical machine learning. The pre-miRBench model achieved the highest mean average precision (AP) across the four test sets (0.9809; dnnPreMiR, 0.9719) and led three tests. The two held-out species were Gallus gallus and Drosophila melanogaster, a",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.30.755660.full"
+        },
+        {
+          "term": "genomic",
+          "excerpt": "es benchmark and reference model for animal precursor microRNA prediction Motivation: Precursor microRNA (pre-miRNA) prediction is used to prioritize genomic hairpins for miRNA annotation. Published predictors are trained and evaluated on different species collections, negative sets and data partitions, making reported gains difficult to compare. Results: We introduce pre-miRBench, a benchmark",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.30.755660.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 27,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.09.30.755660.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "2467a26b681c84487b2f19db58f6e95e307a313095d65b25549730ec10b461fc",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.07502",
+      "slug": "arxiv-2610-07502-e7955d36b8",
+      "kind": "paper",
+      "title": "Closing Ambient Clinical Documentation Gaps with Automated Provider Queries",
+      "abstract": "Provider queries are clarifying requests sent by clinical documentation specialists to physicians to close gaps in the clinical note and ensure accurate billing. Prior work automates note drafting, ICD-10 coding, and order extraction assuming a complete transcript, leaving these gaps unaddressed. We study whether an LLM can automate the query loop, termed DAU (Draft, Ask, Update), across those three tasks. An audit of 3,000 real visits identifies the sources of missing documentation, from which we build five transcript-degradation benchmarks on public data. Analyzing 21k clarification turns on real conversations, we find useful-question predictors are task-specific: oracle confidence dominates, but note completeness needs only simple recall questions while ICD-10 coding needs harder, multi-option ones. About 9% of turns hurt performance, driven by redundant questions and non-answers that still trigger a rewrite. Deployment depends on learning \"when not\" as much as \"what to\" ask.",
+      "authors": [
+        "Joseph Paul Cohen",
+        "Raj Shah",
+        "Han-Chin Shing",
+        "Fang Wang",
+        "Susan Nguyen",
+        "Chaitanya Shivade",
+        "Jack Moriarty"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-05T23:07:16+00:00",
+      "updated_at": "2026-10-05T23:07:16+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.07502"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.07502v1",
+        "pdf": "https://arxiv.org/pdf/2610.07502v1",
+        "html": "https://arxiv.org/html/2610.07502"
+      },
+      "evidence": [
+        {
+          "term": "we build five transcript-degradation benchmarks",
+          "excerpt": "termed DAU (Draft, Ask, Update), across those three tasks. An audit of 3,000 real visits identifies the sources of missing documentation, from which we build five transcript-degradation benchmarks on public data. Analyzing 21k clarification turns on real conversations, we find useful-question predictors are task-specific: oracle confidence dominates, but note completeness needs only simple recall questions while ICD-10 coding needs",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.07502"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "oss those three tasks. An audit of 3,000 real visits identifies the sources of missing documentation, from which we build five transcript-degradation benchmarks on public data. Analyzing 21k clarification turns on real conversations, we find useful-question predictors are task-specific: oracle confidence dominates, but note completeness needs only simple recall questions while ICD-10 coding needs",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.07502"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Closing Ambient Clinical Documentation Gaps with Automated Provider Queries Provider queries are clarifying requests sent by clinical documentation specialists to physicians to close gaps in the clinical note and ensure accurate billing. Prior work automates note",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.07502"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 13,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '404 Not Found' for url 'https://arxiv.org/html/2610.07502'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+      "content_hash": "3512aa33e67c101f7c021d9caa76eb7226b13b11d2f1e58be5e7c4cf7e847fc2",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
     {
       "id": "arxiv:2610.06571",
       "slug": "arxiv-2610-06571-56d82f54ea",

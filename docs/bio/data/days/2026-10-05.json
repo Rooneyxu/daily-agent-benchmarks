@@ -1,7 +1,74 @@
 {
   "date": "2026-10-05",
-  "count": 2,
+  "count": 3,
   "entries": [
+    {
+      "id": "arxiv:2610.07502",
+      "slug": "arxiv-2610-07502-e7955d36b8",
+      "kind": "paper",
+      "title": "Closing Ambient Clinical Documentation Gaps with Automated Provider Queries",
+      "abstract": "Provider queries are clarifying requests sent by clinical documentation specialists to physicians to close gaps in the clinical note and ensure accurate billing. Prior work automates note drafting, ICD-10 coding, and order extraction assuming a complete transcript, leaving these gaps unaddressed. We study whether an LLM can automate the query loop, termed DAU (Draft, Ask, Update), across those three tasks. An audit of 3,000 real visits identifies the sources of missing documentation, from which we build five transcript-degradation benchmarks on public data. Analyzing 21k clarification turns on real conversations, we find useful-question predictors are task-specific: oracle confidence dominates, but note completeness needs only simple recall questions while ICD-10 coding needs harder, multi-option ones. About 9% of turns hurt performance, driven by redundant questions and non-answers that still trigger a rewrite. Deployment depends on learning \"when not\" as much as \"what to\" ask.",
+      "authors": [
+        "Joseph Paul Cohen",
+        "Raj Shah",
+        "Han-Chin Shing",
+        "Fang Wang",
+        "Susan Nguyen",
+        "Chaitanya Shivade",
+        "Jack Moriarty"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-05T23:07:16+00:00",
+      "updated_at": "2026-10-05T23:07:16+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.07502"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.07502v1",
+        "pdf": "https://arxiv.org/pdf/2610.07502v1",
+        "html": "https://arxiv.org/html/2610.07502"
+      },
+      "evidence": [
+        {
+          "term": "we build five transcript-degradation benchmarks",
+          "excerpt": "termed DAU (Draft, Ask, Update), across those three tasks. An audit of 3,000 real visits identifies the sources of missing documentation, from which we build five transcript-degradation benchmarks on public data. Analyzing 21k clarification turns on real conversations, we find useful-question predictors are task-specific: oracle confidence dominates, but note completeness needs only simple recall questions while ICD-10 coding needs",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.07502"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "oss those three tasks. An audit of 3,000 real visits identifies the sources of missing documentation, from which we build five transcript-degradation benchmarks on public data. Analyzing 21k clarification turns on real conversations, we find useful-question predictors are task-specific: oracle confidence dominates, but note completeness needs only simple recall questions while ICD-10 coding needs",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.07502"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Closing Ambient Clinical Documentation Gaps with Automated Provider Queries Provider queries are clarifying requests sent by clinical documentation specialists to physicians to close gaps in the clinical note and ensure accurate billing. Prior work automates note",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.07502"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 13,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '404 Not Found' for url 'https://arxiv.org/html/2610.07502'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+      "content_hash": "3512aa33e67c101f7c021d9caa76eb7226b13b11d2f1e58be5e7c4cf7e847fc2",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
     {
       "id": "arxiv:2610.06571",
       "slug": "arxiv-2610-06571-56d82f54ea",
