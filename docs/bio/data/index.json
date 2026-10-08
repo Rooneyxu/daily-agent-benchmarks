@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-07T11:12:57Z",
-  "total": 146,
+  "generated_at": "2026-10-08T11:30:32Z",
+  "total": 148,
   "counts": {
     "topics": {
+      "multimodal": 41,
+      "general_text": 58,
       "experiment_agent": 35,
-      "general_text": 57,
-      "multimodal": 40,
       "biosafety": 14
     },
     "contribution_types": {
-      "new_benchmark": 116,
+      "new_benchmark": 118,
       "methodology": 17,
       "audit": 13
     },
     "kinds": {
-      "paper": 146
+      "paper": 148
     },
     "evaluation_contexts": {
-      "beneficial_capability": 132,
+      "beneficial_capability": 134,
       "biosecurity_misuse": 14
     }
   },
@@ -59,54 +59,62 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-10-07T11:13:14Z",
-      "finished_at": "2026-10-07T11:13:42Z",
-      "discovered": 47,
-      "published": 23,
+      "started_at": "2026-10-08T11:30:50Z",
+      "finished_at": "2026-10-08T11:31:21Z",
+      "discovered": 50,
+      "published": 25,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-10-07T11:13:42Z",
-      "finished_at": "2026-10-07T11:13:45Z",
-      "discovered": 46,
-      "published": 30,
+      "started_at": "2026-10-08T11:31:21Z",
+      "finished_at": "2026-10-08T11:31:30Z",
+      "discovered": 47,
+      "published": 28,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "success",
-      "started_at": "2026-10-07T11:13:45Z",
-      "finished_at": "2026-10-07T11:14:43Z",
-      "discovered": 797,
-      "published": 54,
-      "error": ""
+      "status": "failed",
+      "started_at": "2026-10-08T11:31:30Z",
+      "finished_at": "2026-10-08T11:31:31Z",
+      "discovered": 0,
+      "published": 0,
+      "error": "Server error '500 Internal Server Error' for url 'https://api.biorxiv.org/details/biorxiv/2026-10-04/2026-10-08/0'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "success",
-      "started_at": "2026-10-07T11:14:43Z",
-      "finished_at": "2026-10-07T11:14:53Z",
-      "discovered": 222,
-      "published": 17,
-      "error": ""
+      "status": "failed",
+      "started_at": "2026-10-08T11:31:31Z",
+      "finished_at": "2026-10-08T11:31:31Z",
+      "discovered": 0,
+      "published": 0,
+      "error": "Server error '500 Internal Server Error' for url 'https://api.biorxiv.org/details/medrxiv/2026-10-04/2026-10-08/60'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-10-07T11:14:53Z",
-      "finished_at": "2026-10-07T11:14:53Z",
+      "started_at": "2026-10-08T11:31:31Z",
+      "finished_at": "2026-10-08T11:31:31Z",
       "discovered": 0,
       "published": 0,
-      "error": "Client error '403 Forbidden' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+      "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
     }
   ],
   "days": [
+    {
+      "date": "2026-10-07",
+      "count": 2,
+      "entry_ids": [
+        "arxiv:2610.10156",
+        "arxiv:2610.09554"
+      ]
+    },
     {
       "date": "2026-10-06",
       "count": 2,
@@ -706,77 +714,284 @@
   ],
   "entries": [
     {
+      "id": "arxiv:2610.10156",
+      "slug": "arxiv-2610-10156-80262e7bea",
+      "kind": "paper",
+      "title": "HeiCo-FOCUS: A Clinically Grounded Dataset for Long-Context Video Understanding",
+      "abstract": "Recent advances in Vision-Language Models (VLMs) have led to rapid progress in video understanding across a wide range of benchmark tasks. However, existing evaluations largely focus on short-term reasoning, failing to assess a critical capability: maintaining cumulative temporal consistency over extended time horizons. To close this evaluation gap, we introduce HeiCo-FOCUS, a clinically grounded dataset for evaluating long-context video understanding through the task of Foreign Object Contextual Understanding in Surgery. Built on a dataset of Heidelberg Colorectal surgeries, this task requires models to continuously track multiple objects as they are inserted, manipulated, occluded, and removed over procedures lasting up to hours. HeiCo-FOCUS comprises 30,000 visual question answering (VQA) pairs covering five core capabilities: object recognition, temporal grounding, aggregation, event and procedural understanding, and complex reasoning. The dataset was constructed through a rigorous multi-stage annotation pipeline involving large-scale crowd annotation and 39 surgical domain experts to ensure high quality and clinical relevance. To systematically probe model behavior, we introduce a multi-track evaluation framework that progressively increases temporal and contextual demands from single frames to full procedures. Experiments with ten frontier VLMs show that HeiCo-FOCUS tasks are far from solved: only around half of the models clearly outperform a text-only baseline. Across the video tracks, models perform best on event and procedural understanding (mean Accuracy: 56.5% across all models), while temporal grounding remains particularly challenging for all evaluated models (mean Accuracy: 19.7%). We therefore expect HeiCo-FOCUS to serve as a catalyst for the development of models capable of reliable, temporally consistent reasoning over hours-long videos.",
+      "authors": [
+        "Leon Mayer",
+        "Lucas Luttner",
+        "Patrick Godau",
+        "Kai Fritzsche",
+        "Annika Reinke",
+        "Leonie Boland",
+        "Jule Brandt",
+        "Janne Heinecke",
+        "Chloe K. Nobuhara",
+        "Niklas Holzwarth",
+        "Evangelia Christodoulou",
+        "Marcel Knopp",
+        "Dominik Michael",
+        "Pascale Piermarco",
+        "Saliq Neyaz",
+        "Korhan Derin Özarslan",
+        "Jakob Hennighausen",
+        "Carlos Aumente-Maestro",
+        "Tim Rädsch",
+        "Dheeraj Baji",
+        "Peter Maximilian Full",
+        "Finn Aichholz",
+        "Justus Veit Erpenbeck",
+        "Linus Finn Schott",
+        "Bastian Winkelhausen",
+        "Claas de Boer",
+        "Bianca Güttner",
+        "Anneli Hummel",
+        "Gregor Just",
+        "Max Kirchner",
+        "Chenyang Li",
+        "Rozenn Raffaut",
+        "Ariel Rodriguez",
+        "Danush Kumar Venkatesh",
+        "Kevin Wang",
+        "Jinjing Xu",
+        "Mona Sheikh Zeinoddin",
+        "Salman Khan",
+        "Thomas M. Pausch",
+        "Stefanie Speidel",
+        "Danail Stoyanov",
+        "Daniel A. Hashimoto",
+        "Fiona R. Kolbinger",
+        "Thomas G. Weiser",
+        "Lena Maier-Hein"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-07T14:33:47+00:00",
+      "updated_at": "2026-10-07T14:33:47+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.10156"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.10156v1",
+        "pdf": "https://arxiv.org/pdf/2610.10156v1",
+        "code": "https://github.com/IMSY-DKFZ/orena-focus",
+        "html": "https://arxiv.org/html/2610.10156"
+      },
+      "evidence": [
+        {
+          "term": "we introduce HeiCo-FOCUS, a clinically grounded dataset",
+          "excerpt": "ning, failing to assess a critical capability: maintaining cumulative temporal consistency over extended time horizons. To close this evaluation gap, we introduce HeiCo-FOCUS, a clinically grounded dataset for evaluating long-context video understanding through the task of Foreign Object Contextual Understanding in Surgery. Built on a dataset of Heidelberg Colorectal surgeries, this task requires models to continuously track multiple objects",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.10156"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Context Video Understanding Recent advances in Vision-Language Models (VLMs) have led to rapid progress in video understanding across a wide range of benchmark tasks. However, existing evaluations largely focus on short-term reasoning, failing to assess a critical capability: maintaining cumulative temporal consistency over extended time horizons. To close this evaluation gap, we introduce HeiCo-",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.10156"
+        },
+        {
+          "term": "dataset for evaluating",
+          "excerpt": "aintaining cumulative temporal consistency over extended time horizons. To close this evaluation gap, we introduce HeiCo-FOCUS, a clinically grounded dataset for evaluating long-context video understanding through the task of Foreign Object Contextual Understanding in Surgery. Built on a dataset of Heidelberg Colorectal surgeries, this task requires models to continuously track multiple objects as they are in",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.10156"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "HeiCo-FOCUS: A Clinically Grounded Dataset for Long-Context Video Understanding Recent advances in Vision-Language Models (VLMs) have led to rapid progress in video understanding across a wide range of benchmark tasks. However, existing evaluations largely focus",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.10156"
+        },
+        {
+          "term": "Vision-Language",
+          "excerpt": "HeiCo-FOCUS: A Clinically Grounded Dataset for Long-Context Video Understanding Recent advances in Vision-Language Models (VLMs) have led to rapid progress in video understanding across a wide range of benchmark tasks. However, existing evaluations largely focus on short-term reasoning, failing to assess a critical capability: maintaining cumulative te",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.10156"
+        }
+      ],
+      "related_benchmarks": [
+        "VQA",
+        "Cholec80-VQA",
+        "EndoVis-18-VQA",
+        "PSI-AVA-VQA",
+        "PiTVQA",
+        "SSG-VQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "83973638fa85ea0c02e170595797da69cfdc52ba3948d3658efe007b90b8b050",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.09554",
+      "slug": "arxiv-2610-09554-f31cadb7dc",
+      "kind": "paper",
+      "title": "Reliability of LLM Judges for Evaluating Entity Alignment",
+      "abstract": "Entity Alignment (EA) identifies equivalent entities across knowledge graphs and is critical for knowledge base integration and ontology merging. Evaluating EA systems at scale requires expensive expert annotation, making systematic assessment across diverse domains practically infeasible. LLM-as-judge evaluation offers a potentially scalable alternative, yet its reliability for structured prediction tasks like EA remains unstudied. We present the first systematic benchmarking study across three frontier models, three datasets, and four EA systems, using perturbation bias diagnostics, meta-evaluation across all dataset-judge-prompt combinations, and counterfactual label-flip tests. We identify anchor bias, a failure mode in which judges invert discrimination when the system's decision label is visible. Label exposure causally collapses judge discrimination (J-ROC-AUC 0.12-0.87), while a label-free protocol recovers near-ceiling capability on distinctive-name datasets (0.93-1.00) and significant recovery on biomedical pairs (0.93-0.95). Counterfactual experiments confirm causality (FSR 53-99%) and reveal a frontier model paradox: stronger judges exhibit greater label sensitivity, not less. A blinded two-annotator human evaluation (102 pairs, Cohen's kappa=0.902) confirms this mechanism directly. We release the first biomedical EA benchmark (MeSH-SNOMED CT, 15K pairs) and a reproducible auditing framework for LLM judge reliability in EA. Code and data are available at https://github.com/vaibhavalakshmiravideshik/llm-as-a-judge-entity-alignment.",
+      "authors": [
+        "Vaibhava Lakshmi Ravideshik",
+        "Mayank Kejriwal"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-07T06:55:45+00:00",
+      "updated_at": "2026-10-07T06:55:45+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.09554"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.09554v1",
+        "pdf": "https://arxiv.org/pdf/2610.09554v1",
+        "code": "https://github.com/vaibhavalakshmiravideshik/llm-as-a-judge-entity-alignment",
+        "data": "https://huggingface.co/datasets/vaibhavalakshmiravideshik/mesh-snomed-entity-alignment-15k",
+        "html": "https://arxiv.org/html/2610.09554"
+      },
+      "evidence": [
+        {
+          "term": "We release the first biomedical EA benchmark",
+          "excerpt": "ibit greater label sensitivity, not less. A blinded two-annotator human evaluation (102 pairs, Cohen's kappa=0.902) confirms this mechanism directly. We release the first biomedical EA benchmark (MeSH-SNOMED CT, 15K pairs) and a reproducible auditing framework for LLM judge reliability in EA. Code and data are available at https://github.com/vaibhavalakshmiravideshik/llm-as-a-judge-entity-alignment. [[SECTION Reliability of LLM Ju",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.09554"
+        },
+        {
+          "term": "first biomedical EA benchmark",
+          "excerpt": "bel sensitivity, not less. A blinded two-annotator human evaluation (102 pairs, Cohen's kappa=0.902) confirms this mechanism directly. We release the first biomedical EA benchmark (MeSH-SNOMED CT, 15K pairs) and a reproducible auditing framework for LLM judge reliability in EA. Code and data are available at https://github.com/vaibhavalakshmiravideshik/llm-as-a-judge-entity-alignment. [[SECTION Reliability of LLM Ju",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.09554"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "rs a potentially scalable alternative, yet its reliability for structured prediction tasks like EA remains unstudied. We present the first systematic benchmarking study across three frontier models, three datasets, and four EA systems, using perturbation bias diagnostics, meta-evaluation across all dataset-judge-prompt combinations, and counterfactual label-flip tests. We identify anchor bias, a",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.09554"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "rs a potentially scalable alternative, yet its reliability for structured prediction tasks like EA remains unstudied. We present the first systematic benchmarking study across three frontier models, three datasets, and four EA systems, using perturbation bias diagnostics, meta-evaluation across all dataset-judge-prompt combinations, and counterfactual label-flip tests. We identify anchor bias, a fai",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.09554"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "ROC-AUC 0.12-0.87), while a label-free protocol recovers near-ceiling capability on distinctive-name datasets (0.93-1.00) and significant recovery on biomedical pairs (0.93-0.95). Counterfactual experiments confirm causality (FSR 53-99%) and reveal a frontier model paradox: stronger judges exhibit greater label sensitivity, not less. A blinded two-annotator human evaluation (102 pairs, Cohen's kap",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.09554"
+        },
+        {
+          "term": "medical",
+          "excerpt": "-AUC 0.12-0.87), while a label-free protocol recovers near-ceiling capability on distinctive-name datasets (0.93-1.00) and significant recovery on biomedical pairs (0.93-0.95). Counterfactual experiments confirm causality (FSR 53-99%) and reveal a frontier model paradox: stronger judges exhibit greater label sensitivity, not less. A blinded two-annotator human evaluation (102 pairs, Cohen's kap",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.09554"
+        }
+      ],
+      "related_benchmarks": [
+        "AlpacaEval"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 20,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c21dee515b6df4d5799a7e64e80d28fcf946a6c5093f95b32a50b635afc5388c",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "doi:10.64898/2026.10.05.756819",
       "slug": "doi-10-64898-2026-10-05-756819-98252379fe",
       "kind": "paper",
       "title": "MetagenomicsBench: A Verifiable Benchmark for Agentic Metagenomics Analysis",
       "abstract": "Metagenomics has transformed our ability to characterize microbial communities without relying on cultivation, but translating complex microbiome datasets into reliable biological conclusions remains a major analytical challenge. Although AI agents have improved substantially at software engineering and general data analysis, it remains unclear whether they can reliably analyze and interpret real-world metagenomic data. We introduce MetagenomicsBench, a benchmark of 100 verifiable evaluations derived from published datasets spanning community structure, host-microbiome associations, microbial function, longitudinal dynamics, and microbiome interventions. Each evaluation provides experimental data and a deterministic grader that evaluates recovery of a key analytical or biological result. Across 10,200 trajectories from 34 model-harness configurations, the strongest configuration achieved a 60.0% pass rate. Performance varied across functional domains, data modalities, and biological systems, while greater cost, token usage, and tool use did not consistently correspond to higher accuracy. Trajectory analysis showed that agents often produced technically plausible analyses while making mistakes in problem interpretation, statistical reasoning, and biological interpretation. MetagenomicsBench provides a framework for measuring progress toward AI agents that can reliably make and validate the analytical and biological decisions required for metagenomic research.",
       "authors": [
-        "Yang, Z.",
-        "Connolly, J.",
-        "Banerjee, A.",
-        "Madad, S."
+        "Yang Z",
+        "Connolly J",
+        "Banerjee A",
+        "Madad S."
       ],
-      "source": "biorxiv",
+      "source": "europepmc",
       "published_at": "2026-10-06T00:00:00+00:00",
-      "updated_at": "2026-10-06T00:00:00+00:00",
+      "updated_at": "2026-10-08T00:00:00+00:00",
       "priority": "P1",
       "categories": [
         "experiment_agent"
       ],
       "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "cc_by",
+      "access_status": "unknown",
+      "license": "",
       "identifiers": {
         "doi": "10.64898/2026.10.05.756819"
       },
       "links": {
-        "abs": "https://www.biorxiv.org/content/10.64898/2026.10.05.756819",
-        "pdf": "https://www.biorxiv.org/content/10.64898/2026.10.05.756819.full.pdf",
-        "html": "https://www.biorxiv.org/content/10.64898/2026.10.05.756819.full"
+        "abs": "https://europepmc.org/article/PPR/PPR1336198"
       },
       "evidence": [
         {
           "term": "We introduce MetagenomicsBench",
           "excerpt": "ly at software engineering and general data analysis, it remains unclear whether they can reliably analyze and interpret real-world metagenomic data. We introduce MetagenomicsBench, a benchmark of 100 verifiable evaluations derived from published datasets spanning community structure, host-microbiome associations, microbial function, longitudinal dynamics, and microbiome interventions. Each evaluation provides experi",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.05.756819.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1336198"
         },
         {
           "term": "We introduce MetagenomicsBench, a benchmark",
           "excerpt": "ly at software engineering and general data analysis, it remains unclear whether they can reliably analyze and interpret real-world metagenomic data. We introduce MetagenomicsBench, a benchmark of 100 verifiable evaluations derived from published datasets spanning community structure, host-microbiome associations, microbial function, longitudinal dynamics, and microbiome interventions. Each evaluation provides experimental data a",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.05.756819.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1336198"
         },
         {
           "term": "benchmark",
           "excerpt": "MetagenomicsBench: A Verifiable Benchmark for Agentic Metagenomics Analysis Metagenomics has transformed our ability to characterize microbial communities without relying on cultivation, but translating complex microbiome datasets into reliable biological conclusions remains a maj",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.05.756819.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1336198"
         },
         {
           "term": "biological",
           "excerpt": "ansformed our ability to characterize microbial communities without relying on cultivation, but translating complex microbiome datasets into reliable biological conclusions remains a major analytical challenge. Although AI agents have improved substantially at software engineering and general data analysis, it remains unclear whether they can reliably analyze and interpret real-world metagenomic d",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.05.756819.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1336198"
         },
         {
           "term": "genomic",
           "excerpt": "MetagenomicsBench: A Verifiable Benchmark for Agentic Metagenomics Analysis Metagenomics has transformed our ability to characterize microbial communities without relying on cultivation, but translating complex microbiome datasets into reliable biolog",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.05.756819.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1336198"
         },
         {
           "term": "genomics",
           "excerpt": "MetagenomicsBench: A Verifiable Benchmark for Agentic Metagenomics Analysis Metagenomics has transformed our ability to characterize microbial communities without relying on cultivation, but translating complex microbiome datasets into reliable biologi",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.05.756819.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1336198"
         },
         {
           "term": "tool use",
           "excerpt": "hieved a 60.0% pass rate. Performance varied across functional domains, data modalities, and biological systems, while greater cost, token usage, and tool use did not consistently correspond to higher accuracy. Trajectory analysis showed that agents often produced technically plausible analyses while making mistakes in problem interpretation, statistical reasoning, and biological interpretation",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.05.756819.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1336198"
         }
       ],
       "related_benchmarks": [
@@ -788,8 +1003,8 @@
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
       "match_score": 26,
-      "extraction_status": "incomplete",
-      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.10.05.756819.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "extraction_status": "complete",
+      "extraction_error": "",
       "content_hash": "04f727707af03750d2f663684418d5f38faadaef9aba7070f4c85059769531da",
       "is_seed": false,
       "topic": "experiment_agent",
@@ -800,73 +1015,71 @@
       "slug": "doi-10-64898-2026-09-30-755660-e2b65419e4",
       "kind": "paper",
       "title": "pre-miRBench: a multispecies benchmark and reference model for animal precursor microRNA prediction",
-      "abstract": "Motivation: Precursor microRNA (pre-miRNA) prediction is used to prioritize genomic hairpins for miRNA annotation. Published predictors are trained and evaluated on different species collections, negative sets and data partitions, making reported gains difficult to compare. Results: We introduce pre-miRBench, a benchmark of 7,056 200-nt windows centered on curated pre-miRNA loci and 70,560 genomic negatives with predicted hairpin structures from 71 animal species, with a fixed 1:10 positive-to-negative ratio in every partition. Four test sets cross whether the species and miRNA family are represented in training: known species/known family, known species/held-out family, held-out species/known family, and held-out species/held-out family. We retrained six published pre-miRNA predictors (DeepMir, deepMiRGene, dnnPreMiR, mirDNN, miRe2e and MuStARD) under the same benchmark splits and evaluated them alongside the pre-miRBench model, an ensemble of three neural networks developed with Agentomics, an autonomous LLM-agent system for biomedical machine learning. The pre-miRBench model achieved the highest mean average precision (AP) across the four test sets (0.9809; dnnPreMiR, 0.9719) and led three tests. The two held-out species were Gallus gallus and Drosophila melanogaster, and the joint species-and-family holdout contained 69 positives and 690 negatives. dnnPreMiR had the highest AP on the joint species-and-family holdout (0.9677 versus 0.9659). The AP difference (pre-miRBench minus dnnPreMiR) was -0.0018, with a paired bootstrap 95% confidence interval of -0.0445 to 0.0341. pre-miRBench establishes a common evaluation for species and miRNA-family holdouts and provides a reproducible reference model for future comparisons. Availability and implementation: Reproducible source code is available at https://github.com/dimostzim/pre-miRBench. Datasets, trained model weights, record-level predictions, evaluation metrics and species-panel metadata for pre-miRBench and the six retrained predictors are available at https://zenodo.org/records/22813044.",
+      "abstract": "Motivation: Precursor microRNA (pre-miRNA) prediction is used to prioritize genomic hairpins for miRNA annotation. Published predictors are trained and evaluated on different species collections, negative sets and data partitions, making reported gains difficult to compare. <h4>Results:</h4> We introduce pre-miRBench, a benchmark of 7,056 200-nt windows centered on curated pre-miRNA loci and 70,560 genomic negatives with predicted hairpin structures from 71 animal species, with a fixed 1:10 positive-to-negative ratio in every partition. Four test sets cross whether the species and miRNA family are represented in training: known species/known family, known species/held-out family, held-out species/known family, and held-out species/held-out family. We retrained six published pre-miRNA predictors (DeepMir, deepMiRGene, dnnPreMiR, mirDNN, miRe2e and MuStARD) under the same benchmark splits and evaluated them alongside the pre-miRBench model, an ensemble of three neural networks developed with Agentomics, an autonomous LLM-agent system for biomedical machine learning. The pre-miRBench model achieved the highest mean average precision (AP) across the four test sets (0.9809; dnnPreMiR, 0.9719) and led three tests. The two held-out species were Gallus gallus and Drosophila melanogaster, and the joint species-and-family holdout contained 69 positives and 690 negatives. dnnPreMiR had the highest AP on the joint species-and-family holdout (0.9677 versus 0.9659). The AP difference (pre-miRBench minus dnnPreMiR) was −0.0018, with a paired bootstrap 95% confidence interval of −0.0445 to 0.0341. pre-miRBench establishes a common evaluation for species and miRNA-family holdouts and provides a reproducible reference model for future comparisons. Availability and implementation: Reproducible source code is available at https://github.com/dimostzim/pre-miRBench. Datasets, trained model weights, record-level predictions, evaluation metrics and species-panel metadata for pre-miRBench and the six retrained predictors are available at https://zenodo.org/records/22813044.",
       "authors": [
-        "Tzimotoudis, D.",
-        "Chatzitolios, V. K.",
-        "Alexiou, P.",
-        "Georgakilas, G."
+        "Tzimotoudis D",
+        "Chatzitolios VK",
+        "Alexiou P",
+        "Georgakilas G."
       ],
-      "source": "biorxiv",
+      "source": "europepmc",
       "published_at": "2026-10-06T00:00:00+00:00",
-      "updated_at": "2026-10-06T00:00:00+00:00",
+      "updated_at": "2026-10-08T00:00:00+00:00",
       "priority": "P1",
       "categories": [
         "general_text"
       ],
       "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "cc_by",
+      "access_status": "unknown",
+      "license": "",
       "identifiers": {
         "doi": "10.64898/2026.09.30.755660"
       },
       "links": {
-        "abs": "https://www.biorxiv.org/content/10.64898/2026.09.30.755660",
-        "pdf": "https://www.biorxiv.org/content/10.64898/2026.09.30.755660.full.pdf",
-        "html": "https://www.biorxiv.org/content/10.64898/2026.09.30.755660.full"
+        "abs": "https://europepmc.org/article/PPR/PPR1336215"
       },
       "evidence": [
         {
           "term": "We introduce pre-miRBench",
-          "excerpt": "s are trained and evaluated on different species collections, negative sets and data partitions, making reported gains difficult to compare. Results: We introduce pre-miRBench, a benchmark of 7,056 200-nt windows centered on curated pre-miRNA loci and 70,560 genomic negatives with predicted hairpin structures from 71 animal species, with a fixed 1:10 positive-to-negative ratio in every partition. Four test sets",
+          "excerpt": "ined and evaluated on different species collections, negative sets and data partitions, making reported gains difficult to compare. <h4>Results:</h4> We introduce pre-miRBench, a benchmark of 7,056 200-nt windows centered on curated pre-miRNA loci and 70,560 genomic negatives with predicted hairpin structures from 71 animal species, with a fixed 1:10 positive-to-negative ratio in every partition. Four test sets",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.30.755660.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1336215"
         },
         {
           "term": "We introduce pre-miRBench, a benchmark",
-          "excerpt": "s are trained and evaluated on different species collections, negative sets and data partitions, making reported gains difficult to compare. Results: We introduce pre-miRBench, a benchmark of 7,056 200-nt windows centered on curated pre-miRNA loci and 70,560 genomic negatives with predicted hairpin structures from 71 animal species, with a fixed 1:10 positive-to-negative ratio in every partition. Four test sets cross whether",
+          "excerpt": "ined and evaluated on different species collections, negative sets and data partitions, making reported gains difficult to compare. <h4>Results:</h4> We introduce pre-miRBench, a benchmark of 7,056 200-nt windows centered on curated pre-miRNA loci and 70,560 genomic negatives with predicted hairpin structures from 71 animal species, with a fixed 1:10 positive-to-negative ratio in every partition. Four test sets cross whether",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.30.755660.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1336215"
         },
         {
           "term": "benchmark",
           "excerpt": "pre-miRBench: a multispecies benchmark and reference model for animal precursor microRNA prediction Motivation: Precursor microRNA (pre-miRNA) prediction is used to prioritize genomic hairpins for miRNA annotation. Published predictors are trained and evaluated on different spe",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.30.755660.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1336215"
         },
         {
           "term": "test set",
           "excerpt": "560 genomic negatives with predicted hairpin structures from 71 animal species, with a fixed 1:10 positive-to-negative ratio in every partition. Four test sets cross whether the species and miRNA family are represented in training: known species/known family, known species/held-out family, held-out species/known family, and held-out species/held-out family. We retrained six published pre-miRNA p",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.30.755660.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1336215"
         },
         {
           "term": "biomedical",
           "excerpt": "d evaluated them alongside the pre-miRBench model, an ensemble of three neural networks developed with Agentomics, an autonomous LLM-agent system for biomedical machine learning. The pre-miRBench model achieved the highest mean average precision (AP) across the four test sets (0.9809; dnnPreMiR, 0.9719) and led three tests. The two held-out species were Gallus gallus and Drosophila melanogaster, a",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.30.755660.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1336215"
         },
         {
           "term": "medical",
           "excerpt": "valuated them alongside the pre-miRBench model, an ensemble of three neural networks developed with Agentomics, an autonomous LLM-agent system for biomedical machine learning. The pre-miRBench model achieved the highest mean average precision (AP) across the four test sets (0.9809; dnnPreMiR, 0.9719) and led three tests. The two held-out species were Gallus gallus and Drosophila melanogaster, a",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.30.755660.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1336215"
         },
         {
           "term": "genomic",
-          "excerpt": "es benchmark and reference model for animal precursor microRNA prediction Motivation: Precursor microRNA (pre-miRNA) prediction is used to prioritize genomic hairpins for miRNA annotation. Published predictors are trained and evaluated on different species collections, negative sets and data partitions, making reported gains difficult to compare. Results: We introduce pre-miRBench, a benchmark",
+          "excerpt": "es benchmark and reference model for animal precursor microRNA prediction Motivation: Precursor microRNA (pre-miRNA) prediction is used to prioritize genomic hairpins for miRNA annotation. Published predictors are trained and evaluated on different species collections, negative sets and data partitions, making reported gains difficult to compare. <h4>Results:</h4> We introduce pre-miRBench, a b",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.30.755660.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1336215"
         }
       ],
       "related_benchmarks": [],
@@ -876,9 +1089,9 @@
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
       "match_score": 27,
-      "extraction_status": "incomplete",
-      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.09.30.755660.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
-      "content_hash": "2467a26b681c84487b2f19db58f6e95e307a313095d65b25549730ec10b461fc",
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "b1c830ef097f270bcc50a4dd606765674ef20652a8a251ec59147aea1777f8a8",
       "is_seed": false,
       "topic": "general_text",
       "contribution_type": "new_benchmark"

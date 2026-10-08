@@ -1,0 +1,215 @@
+{
+  "date": "2026-10-07",
+  "count": 2,
+  "entries": [
+    {
+      "id": "arxiv:2610.10156",
+      "slug": "arxiv-2610-10156-80262e7bea",
+      "kind": "paper",
+      "title": "HeiCo-FOCUS: A Clinically Grounded Dataset for Long-Context Video Understanding",
+      "abstract": "Recent advances in Vision-Language Models (VLMs) have led to rapid progress in video understanding across a wide range of benchmark tasks. However, existing evaluations largely focus on short-term reasoning, failing to assess a critical capability: maintaining cumulative temporal consistency over extended time horizons. To close this evaluation gap, we introduce HeiCo-FOCUS, a clinically grounded dataset for evaluating long-context video understanding through the task of Foreign Object Contextual Understanding in Surgery. Built on a dataset of Heidelberg Colorectal surgeries, this task requires models to continuously track multiple objects as they are inserted, manipulated, occluded, and removed over procedures lasting up to hours. HeiCo-FOCUS comprises 30,000 visual question answering (VQA) pairs covering five core capabilities: object recognition, temporal grounding, aggregation, event and procedural understanding, and complex reasoning. The dataset was constructed through a rigorous multi-stage annotation pipeline involving large-scale crowd annotation and 39 surgical domain experts to ensure high quality and clinical relevance. To systematically probe model behavior, we introduce a multi-track evaluation framework that progressively increases temporal and contextual demands from single frames to full procedures. Experiments with ten frontier VLMs show that HeiCo-FOCUS tasks are far from solved: only around half of the models clearly outperform a text-only baseline. Across the video tracks, models perform best on event and procedural understanding (mean Accuracy: 56.5% across all models), while temporal grounding remains particularly challenging for all evaluated models (mean Accuracy: 19.7%). We therefore expect HeiCo-FOCUS to serve as a catalyst for the development of models capable of reliable, temporally consistent reasoning over hours-long videos.",
+      "authors": [
+        "Leon Mayer",
+        "Lucas Luttner",
+        "Patrick Godau",
+        "Kai Fritzsche",
+        "Annika Reinke",
+        "Leonie Boland",
+        "Jule Brandt",
+        "Janne Heinecke",
+        "Chloe K. Nobuhara",
+        "Niklas Holzwarth",
+        "Evangelia Christodoulou",
+        "Marcel Knopp",
+        "Dominik Michael",
+        "Pascale Piermarco",
+        "Saliq Neyaz",
+        "Korhan Derin Özarslan",
+        "Jakob Hennighausen",
+        "Carlos Aumente-Maestro",
+        "Tim Rädsch",
+        "Dheeraj Baji",
+        "Peter Maximilian Full",
+        "Finn Aichholz",
+        "Justus Veit Erpenbeck",
+        "Linus Finn Schott",
+        "Bastian Winkelhausen",
+        "Claas de Boer",
+        "Bianca Güttner",
+        "Anneli Hummel",
+        "Gregor Just",
+        "Max Kirchner",
+        "Chenyang Li",
+        "Rozenn Raffaut",
+        "Ariel Rodriguez",
+        "Danush Kumar Venkatesh",
+        "Kevin Wang",
+        "Jinjing Xu",
+        "Mona Sheikh Zeinoddin",
+        "Salman Khan",
+        "Thomas M. Pausch",
+        "Stefanie Speidel",
+        "Danail Stoyanov",
+        "Daniel A. Hashimoto",
+        "Fiona R. Kolbinger",
+        "Thomas G. Weiser",
+        "Lena Maier-Hein"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-07T14:33:47+00:00",
+      "updated_at": "2026-10-07T14:33:47+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.10156"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.10156v1",
+        "pdf": "https://arxiv.org/pdf/2610.10156v1",
+        "code": "https://github.com/IMSY-DKFZ/orena-focus",
+        "html": "https://arxiv.org/html/2610.10156"
+      },
+      "evidence": [
+        {
+          "term": "we introduce HeiCo-FOCUS, a clinically grounded dataset",
+          "excerpt": "ning, failing to assess a critical capability: maintaining cumulative temporal consistency over extended time horizons. To close this evaluation gap, we introduce HeiCo-FOCUS, a clinically grounded dataset for evaluating long-context video understanding through the task of Foreign Object Contextual Understanding in Surgery. Built on a dataset of Heidelberg Colorectal surgeries, this task requires models to continuously track multiple objects",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.10156"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Context Video Understanding Recent advances in Vision-Language Models (VLMs) have led to rapid progress in video understanding across a wide range of benchmark tasks. However, existing evaluations largely focus on short-term reasoning, failing to assess a critical capability: maintaining cumulative temporal consistency over extended time horizons. To close this evaluation gap, we introduce HeiCo-",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.10156"
+        },
+        {
+          "term": "dataset for evaluating",
+          "excerpt": "aintaining cumulative temporal consistency over extended time horizons. To close this evaluation gap, we introduce HeiCo-FOCUS, a clinically grounded dataset for evaluating long-context video understanding through the task of Foreign Object Contextual Understanding in Surgery. Built on a dataset of Heidelberg Colorectal surgeries, this task requires models to continuously track multiple objects as they are in",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.10156"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "HeiCo-FOCUS: A Clinically Grounded Dataset for Long-Context Video Understanding Recent advances in Vision-Language Models (VLMs) have led to rapid progress in video understanding across a wide range of benchmark tasks. However, existing evaluations largely focus",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.10156"
+        },
+        {
+          "term": "Vision-Language",
+          "excerpt": "HeiCo-FOCUS: A Clinically Grounded Dataset for Long-Context Video Understanding Recent advances in Vision-Language Models (VLMs) have led to rapid progress in video understanding across a wide range of benchmark tasks. However, existing evaluations largely focus on short-term reasoning, failing to assess a critical capability: maintaining cumulative te",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.10156"
+        }
+      ],
+      "related_benchmarks": [
+        "VQA",
+        "Cholec80-VQA",
+        "EndoVis-18-VQA",
+        "PSI-AVA-VQA",
+        "PiTVQA",
+        "SSG-VQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "83973638fa85ea0c02e170595797da69cfdc52ba3948d3658efe007b90b8b050",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.09554",
+      "slug": "arxiv-2610-09554-f31cadb7dc",
+      "kind": "paper",
+      "title": "Reliability of LLM Judges for Evaluating Entity Alignment",
+      "abstract": "Entity Alignment (EA) identifies equivalent entities across knowledge graphs and is critical for knowledge base integration and ontology merging. Evaluating EA systems at scale requires expensive expert annotation, making systematic assessment across diverse domains practically infeasible. LLM-as-judge evaluation offers a potentially scalable alternative, yet its reliability for structured prediction tasks like EA remains unstudied. We present the first systematic benchmarking study across three frontier models, three datasets, and four EA systems, using perturbation bias diagnostics, meta-evaluation across all dataset-judge-prompt combinations, and counterfactual label-flip tests. We identify anchor bias, a failure mode in which judges invert discrimination when the system's decision label is visible. Label exposure causally collapses judge discrimination (J-ROC-AUC 0.12-0.87), while a label-free protocol recovers near-ceiling capability on distinctive-name datasets (0.93-1.00) and significant recovery on biomedical pairs (0.93-0.95). Counterfactual experiments confirm causality (FSR 53-99%) and reveal a frontier model paradox: stronger judges exhibit greater label sensitivity, not less. A blinded two-annotator human evaluation (102 pairs, Cohen's kappa=0.902) confirms this mechanism directly. We release the first biomedical EA benchmark (MeSH-SNOMED CT, 15K pairs) and a reproducible auditing framework for LLM judge reliability in EA. Code and data are available at https://github.com/vaibhavalakshmiravideshik/llm-as-a-judge-entity-alignment.",
+      "authors": [
+        "Vaibhava Lakshmi Ravideshik",
+        "Mayank Kejriwal"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-07T06:55:45+00:00",
+      "updated_at": "2026-10-07T06:55:45+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.09554"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.09554v1",
+        "pdf": "https://arxiv.org/pdf/2610.09554v1",
+        "code": "https://github.com/vaibhavalakshmiravideshik/llm-as-a-judge-entity-alignment",
+        "data": "https://huggingface.co/datasets/vaibhavalakshmiravideshik/mesh-snomed-entity-alignment-15k",
+        "html": "https://arxiv.org/html/2610.09554"
+      },
+      "evidence": [
+        {
+          "term": "We release the first biomedical EA benchmark",
+          "excerpt": "ibit greater label sensitivity, not less. A blinded two-annotator human evaluation (102 pairs, Cohen's kappa=0.902) confirms this mechanism directly. We release the first biomedical EA benchmark (MeSH-SNOMED CT, 15K pairs) and a reproducible auditing framework for LLM judge reliability in EA. Code and data are available at https://github.com/vaibhavalakshmiravideshik/llm-as-a-judge-entity-alignment. [[SECTION Reliability of LLM Ju",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.09554"
+        },
+        {
+          "term": "first biomedical EA benchmark",
+          "excerpt": "bel sensitivity, not less. A blinded two-annotator human evaluation (102 pairs, Cohen's kappa=0.902) confirms this mechanism directly. We release the first biomedical EA benchmark (MeSH-SNOMED CT, 15K pairs) and a reproducible auditing framework for LLM judge reliability in EA. Code and data are available at https://github.com/vaibhavalakshmiravideshik/llm-as-a-judge-entity-alignment. [[SECTION Reliability of LLM Ju",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.09554"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "rs a potentially scalable alternative, yet its reliability for structured prediction tasks like EA remains unstudied. We present the first systematic benchmarking study across three frontier models, three datasets, and four EA systems, using perturbation bias diagnostics, meta-evaluation across all dataset-judge-prompt combinations, and counterfactual label-flip tests. We identify anchor bias, a",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.09554"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "rs a potentially scalable alternative, yet its reliability for structured prediction tasks like EA remains unstudied. We present the first systematic benchmarking study across three frontier models, three datasets, and four EA systems, using perturbation bias diagnostics, meta-evaluation across all dataset-judge-prompt combinations, and counterfactual label-flip tests. We identify anchor bias, a fai",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.09554"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "ROC-AUC 0.12-0.87), while a label-free protocol recovers near-ceiling capability on distinctive-name datasets (0.93-1.00) and significant recovery on biomedical pairs (0.93-0.95). Counterfactual experiments confirm causality (FSR 53-99%) and reveal a frontier model paradox: stronger judges exhibit greater label sensitivity, not less. A blinded two-annotator human evaluation (102 pairs, Cohen's kap",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.09554"
+        },
+        {
+          "term": "medical",
+          "excerpt": "-AUC 0.12-0.87), while a label-free protocol recovers near-ceiling capability on distinctive-name datasets (0.93-1.00) and significant recovery on biomedical pairs (0.93-0.95). Counterfactual experiments confirm causality (FSR 53-99%) and reveal a frontier model paradox: stronger judges exhibit greater label sensitivity, not less. A blinded two-annotator human evaluation (102 pairs, Cohen's kap",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.09554"
+        }
+      ],
+      "related_benchmarks": [
+        "AlpacaEval"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 20,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c21dee515b6df4d5799a7e64e80d28fcf946a6c5093f95b32a50b635afc5388c",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}

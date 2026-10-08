@@ -1,26 +1,26 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-07T11:12:57Z",
-  "total": 146,
-  "day_count": 75,
-  "latest_date": "2026-10-06",
+  "generated_at": "2026-10-08T11:30:32Z",
+  "total": 148,
+  "day_count": 76,
+  "latest_date": "2026-10-07",
   "counts": {
     "topics": {
+      "multimodal": 41,
+      "general_text": 58,
       "experiment_agent": 35,
-      "general_text": 57,
-      "multimodal": 40,
       "biosafety": 14
     },
     "contribution_types": {
-      "new_benchmark": 116,
+      "new_benchmark": 118,
       "methodology": 17,
       "audit": 13
     },
     "kinds": {
-      "paper": 146
+      "paper": 148
     },
     "evaluation_contexts": {
-      "beneficial_capability": 132,
+      "beneficial_capability": 134,
       "biosecurity_misuse": 14
     }
   },
@@ -29,51 +29,51 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-10-07T11:13:14Z",
-      "finished_at": "2026-10-07T11:13:42Z",
-      "discovered": 47,
-      "published": 23,
+      "started_at": "2026-10-08T11:30:50Z",
+      "finished_at": "2026-10-08T11:31:21Z",
+      "discovered": 50,
+      "published": 25,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-10-07T11:13:42Z",
-      "finished_at": "2026-10-07T11:13:45Z",
-      "discovered": 46,
-      "published": 30,
+      "started_at": "2026-10-08T11:31:21Z",
+      "finished_at": "2026-10-08T11:31:30Z",
+      "discovered": 47,
+      "published": 28,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "success",
-      "started_at": "2026-10-07T11:13:45Z",
-      "finished_at": "2026-10-07T11:14:43Z",
-      "discovered": 797,
-      "published": 54,
-      "error": ""
+      "status": "failed",
+      "started_at": "2026-10-08T11:31:30Z",
+      "finished_at": "2026-10-08T11:31:31Z",
+      "discovered": 0,
+      "published": 0,
+      "error": "Server error '500 Internal Server Error' for url 'https://api.biorxiv.org/details/biorxiv/2026-10-04/2026-10-08/0'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "success",
-      "started_at": "2026-10-07T11:14:43Z",
-      "finished_at": "2026-10-07T11:14:53Z",
-      "discovered": 222,
-      "published": 17,
-      "error": ""
+      "status": "failed",
+      "started_at": "2026-10-08T11:31:31Z",
+      "finished_at": "2026-10-08T11:31:31Z",
+      "discovered": 0,
+      "published": 0,
+      "error": "Server error '500 Internal Server Error' for url 'https://api.biorxiv.org/details/medrxiv/2026-10-04/2026-10-08/60'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-10-07T11:14:53Z",
-      "finished_at": "2026-10-07T11:14:53Z",
+      "started_at": "2026-10-08T11:31:31Z",
+      "finished_at": "2026-10-08T11:31:31Z",
       "discovered": 0,
       "published": 0,
-      "error": "Client error '403 Forbidden' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+      "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
     }
   ]
 }
