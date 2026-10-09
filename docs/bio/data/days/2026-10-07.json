@@ -1,6 +1,6 @@
 {
   "date": "2026-10-07",
-  "count": 2,
+  "count": 3,
   "entries": [
     {
       "id": "arxiv:2610.10156",
@@ -207,6 +207,72 @@
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "c21dee515b6df4d5799a7e64e80d28fcf946a6c5093f95b32a50b635afc5388c",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.10.06.26364825",
+      "slug": "doi-10-64898-2026-10-06-26364825-3f2b15c189",
+      "kind": "paper",
+      "title": "Feature-Engineering Strategies for EEG-Based ADHD Classification in Children: A Controlled Benchmark of Expert, LLM-Guided and Full-Space Comparators",
+      "abstract": "EEG-based machine-learning studies of attention-deficit/hyperactivity disorder (ADHD) are vulnerable to optimistic performance estimates when feature selection or model choice is informed by data outside the training fold. We compared expert-reconstructed, large language model (LLM)-guided and full-space feature strategies under leakage-controlled subject-level validation in a frozen cohort of 77 children (45 ADHD, 32 controls) represented by 1,185 gamma-free EEG features. Four classifiers (SVM, GMM, random forest [RF] and XGBoost) were evaluated with nested leave-one-subject-out cross-validation (LOOCV), with all data-dependent operations restricted to outer-training subjects. Across 100 repetitions of stratified 10-fold cross-validation, RF/expert achieved mean accuracy 62.8% (SD 3.5%; empirical 95% interval 55.8% -- 69.5%), mean balanced accuracy 62.3% and mean AUC-ROC 0.618. The corresponding LOOCV point estimate was 71.4% accuracy and 71.0% balanced accuracy (AUC-ROC 0.673). GMM/expert achieved the highest AUC-ROC (0.699), indicating metric-dependent model ranking. The expert-reconstructed strategy achieved the highest accuracy and balanced accuracy for every classifier, whereas the LLM-guided strategy showed no consistent advantage over the full feature space. Pairwise classifier differences were not significant after Holm correction. A pre-specified 200 V artifact gate reduced RF/expert accuracy to approximately 55.8%, below the 58.4% no-information rate; this drop may reflect removal of artifact-related signal and/or reduced epoch counts leading to noisier feature estimates. These findings support cautious benchmarking and external validation rather than claims of algorithmic or LLM superiority. Keywords: ADHD; electroencephalography; machine learning; benchmarking; feature engineering; subject-level validation; nested cross-validation; random forest; clinical prediction",
+      "authors": [
+        "Rohani, F.",
+        "Alhatab, H.",
+        "Jarrud, M.",
+        "Salous, N.",
+        "Kasimoglu, S.",
+        "Mueller, A."
+      ],
+      "source": "medrxiv",
+      "published_at": "2026-10-07T00:00:00+00:00",
+      "updated_at": "2026-10-07T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by",
+      "identifiers": {
+        "doi": "10.64898/2026.10.06.26364825"
+      },
+      "links": {
+        "abs": "https://www.medrxiv.org/content/10.64898/2026.10.06.26364825",
+        "pdf": "https://www.medrxiv.org/content/10.64898/2026.10.06.26364825.full.pdf",
+        "html": "https://www.medrxiv.org/content/10.64898/2026.10.06.26364825.full"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "Feature-Engineering Strategies for EEG-Based ADHD Classification in Children: A Controlled Benchmark of Expert, LLM-Guided and Full-Space Comparators EEG-based machine-learning studies of attention-deficit/hyperactivity disorder (ADHD) are vulnerable to optimistic performance estimates when feature selection or model choice is informed by",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.06.26364825.full"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "drop may reflect removal of artifact-related signal and/or reduced epoch counts leading to noisier feature estimates. These findings support cautious benchmarking and external validation rather than claims of algorithmic or LLM superiority. Keywords: ADHD; electroencephalography; machine learning; benchmarking; feature engineering; subject-level validation; nested cross-validation; random forest; cl",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.06.26364825.full"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "ADHD; electroencephalography; machine learning; benchmarking; feature engineering; subject-level validation; nested cross-validation; random forest; clinical prediction EEG-based machine-learning studies of attention-deficit/hyperactivity disorder (ADHD) are vulnerable to optimistic performance estimates when feature selection or model choice is informed by data outside the training fold. We co",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.06.26364825.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 13,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.06.26364825.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "52dc7e8860c762870f46f1da2816698abc4480eb0106d512391c142b0d43bfea",
       "is_seed": false,
       "topic": "general_text",
       "contribution_type": "new_benchmark"

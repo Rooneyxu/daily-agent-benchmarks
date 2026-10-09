@@ -1,0 +1,223 @@
+{
+  "date": "2026-10-08",
+  "count": 2,
+  "entries": [
+    {
+      "id": "arxiv:2610.11329",
+      "slug": "arxiv-2610-11329-33a2df05d7",
+      "kind": "paper",
+      "title": "PathLang: A Language-Centered Benchmark for Vision-Language Models in Computational Pathology",
+      "abstract": "Pathology vision-language models (VLMs) have shown strong visual perception ability, but their robustness in the language domain remains poorly characterized. Existing pathology VLM benchmarks largely rely on canonical closed-set prompts or perturb only generic templates, treating language as a fixed evaluation component rather than a variable axis of model behavior. In clinical practice, however, diagnostic language varies across reports, institutions, and candidate diagnoses. We introduce PathLang, a language-centered and clinically grounded zero-shot benchmark. PathLang holds the underlying slides, ground-truth labels, and image-text evaluation direction fixed while systematically varying only the diagnostic language, so that performance differences reflect how a diagnosis is phrased rather than what is imaged. The language variation follows how pathologists actually rephrase diagnoses (terminology, specificity, and reporting style), and all prompts and candidate pools are validated by six board-certified pathologists. PathLang covers four task families: (1) zero-shot classification with image-text alignment analysis, (2) cross-modal retrieval, (3) paraphrase robustness, including semantic-equivalence paraphrases, length and reporting-style variation, and prompt ensembling, and (4) open-vocabulary diagnosis retrieval over four candidate pools with distinct forms of semantic competition. Across nine VLMs and five public datasets spanning four organs, we find that performance is highly sensitive to clinically equivalent paraphrases, varies substantially across forms of semantic competition, and that image-text alignment quality does not necessarily translate into inter-class separability. We release the prompt corpus, candidate pools, pre-computed text embeddings, and evaluation code at https://anonymous.4open.science/r/PathLang.",
+      "authors": [
+        "Fanqi Cheng",
+        "Kuo Gong",
+        "Shangke Liu",
+        "Beidi Zhao",
+        "Junchao Zhu",
+        "Zheyu Zhu",
+        "Leiyue Zhao",
+        "Fengbei Liu",
+        "John Cannon",
+        "Gang Wang",
+        "Zu-hua Gao",
+        "Kenji Ikemura",
+        "Yihe Yang",
+        "Yaohong Wang",
+        "Yuankai Huo",
+        "Xiaoxiao Li",
+        "Mert R. Sabuncu",
+        "Ruining Deng"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-08T06:27:42+00:00",
+      "updated_at": "2026-10-08T06:27:42+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.11329"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.11329v1",
+        "pdf": "https://arxiv.org/pdf/2610.11329v1",
+        "html": "https://arxiv.org/html/2610.11329"
+      },
+      "evidence": [
+        {
+          "term": "We introduce PathLang, a language-centered and clinically grounded zero-shot benchmark",
+          "excerpt": "n a variable axis of model behavior. In clinical practice, however, diagnostic language varies across reports, institutions, and candidate diagnoses. We introduce PathLang, a language-centered and clinically grounded zero-shot benchmark. PathLang holds the underlying slides, ground-truth labels, and image-text evaluation direction fixed while systematically varying only the diagnostic language, so that performance differences reflect how a diagnosis is phrased rather than",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.11329"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "PathLang: A Language-Centered Benchmark for Vision-Language Models in Computational Pathology Pathology vision-language models (VLMs) have shown strong visual perception ability, but their robustness in the language domain remains poorly characterized. Existing pathology VLM ben",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.11329"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "(VLMs) have shown strong visual perception ability, but their robustness in the language domain remains poorly characterized. Existing pathology VLM benchmarks largely rely on canonical closed-set prompts or perturb only generic templates, treating language as a fixed evaluation component rather than a variable axis of model behavior. In clinical practice, however, diagnostic language varies acro",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.11329"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "ed-set prompts or perturb only generic templates, treating language as a fixed evaluation component rather than a variable axis of model behavior. In clinical practice, however, diagnostic language varies across reports, institutions, and candidate diagnoses. We introduce PathLang, a language-centered and clinically grounded zero-shot benchmark. PathLang holds the underlying slides, ground-truth",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.11329"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "PathLang: A Language-Centered Benchmark for Vision-Language Models in Computational Pathology Pathology vision-language models (VLMs) have shown strong visual perception ability, but their robustness in the language domain remains poorly characterized. Existing pathology VLM benchmarks largely rely on canonical closed-set prompts o",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.11329"
+        },
+        {
+          "term": "Vision-Language",
+          "excerpt": "PathLang: A Language-Centered Benchmark for Vision-Language Models in Computational Pathology Pathology vision-language models (VLMs) have shown strong visual perception ability, but their robustness in the language domain remains poorly characterized. Existing pathology VLM benchmarks largely rely",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.11329"
+        },
+        {
+          "term": "Experimental protocols",
+          "excerpt": "-pool corpus (Section 3.3 ) and a unified patch-to-slide aggregation strategy for fair slide-level comparison across patch-based VLMs (Section 3.4 ). Experimental protocols and implementation details are provided in Section 4 . Figure 1 summarizes PathLang: the left panel shows the evaluated pathology VLMs and five multi-organ datasets; the center panel illustrates the four task families, including zero-shot",
+          "location": "3.1 Overview",
+          "source_url": "https://arxiv.org/html/2610.11329"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "C., Zhang, K., Shui, Z., Li, J., Gong, X., Lyu, X., Lin, T., Yang, L., 2025. PathGen-1.6M: 1.6 million pathology image-text pairs generation through multi-agent collaboration, in: International Conference on Learning Representations. Wang et al. [2024] Wang, L., Chen, X., Deng, X., Wen, H., You, M., Liu, W., Li, Q., Li, J., 2024. Prompt engineering in consistency and reliability with the evidence-",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.11329"
+        }
+      ],
+      "related_benchmarks": [
+        "PathBench",
+        "OmniPathoVQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 24,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "aebbd58b50f92b093f0eb4a3d55baf825c3490b771d7ee0077bcc565274ac580",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.11312",
+      "slug": "arxiv-2610-11312-4f937f36ee",
+      "kind": "paper",
+      "title": "MedBenchAgent: Towards Systematic Automation of Medical VLM Benchmark Construction",
+      "abstract": "Large-scale construction of medical vision-language model (VLM) benchmarks is increasingly feasible with richly annotated imaging datasets and large language models (LLMs), yet existing automation largely focuses on generating evaluation items within predefined benchmark specifications. We study the broader problem of automatically deriving the specification itself: what to evaluate, which annotations support each task, and how to translate this evidence into reliable evaluation items. We formulate benchmark construction as constrained compilation, in which the benchmark specification is progressively derived from evaluation requirements, heterogeneous annotations, and medical knowledge. Based on this formulation, we introduce MedBenchAgent, a multi-agent framework with a Benchmark Intermediate Representation (BIR) that encodes task definitions, evidence mappings, evaluation protocols, and item specifications across construction stages. MedBenchAgent separates planning, which derives and verifies the specification, from instantiation, which constructs and audits items under the locked specification. MedBenchAgent achieves a Task-Space F1 of 90.9%, outperforming direct task induction (79.2-80.0%) and prior-guided induction (85.1%); 994 of 1,000 sampled items from correctly identified tasks pass human audit. We further demonstrate portability to a specialized medical domain and evaluate twelve VLMs, revealing task- and setting-specific variation obscured by aggregate scores. These results establish constrained compilation as a scalable and auditable framework for medical VLM benchmark construction beyond question generation.",
+      "authors": [
+        "Yulin Fu",
+        "Junren Wang",
+        "Guangjing Yang",
+        "Zhangyuan Yu",
+        "Wanran Sun",
+        "Jiabao Zhou",
+        "Jin Yin",
+        "Qicheng Lao"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-08T06:17:33+00:00",
+      "updated_at": "2026-10-08T06:17:33+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.11312"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.11312v1",
+        "pdf": "https://arxiv.org/pdf/2610.11312v1",
+        "html": "https://arxiv.org/html/2610.11312"
+      },
+      "evidence": [
+        {
+          "term": "we introduce MedBenchAgent, a multi-agent framework with a Benchmark",
+          "excerpt": "ark specification is progressively derived from evaluation requirements, heterogeneous annotations, and medical knowledge. Based on this formulation, we introduce MedBenchAgent, a multi-agent framework with a Benchmark Intermediate Representation (BIR) that encodes task definitions, evidence mappings, evaluation protocols, and item specifications across construction stages. MedBenchAgent separates planning, which derives and verifies the specification, f",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.11312"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "MedBenchAgent: Towards Systematic Automation of Medical VLM Benchmark Construction Large-scale construction of medical vision-language model (VLM) benchmarks is increasingly feasible with richly annotated imaging datasets and large language models (LLMs), yet existing automation largely focuses on generating",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.11312"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "MedBenchAgent: Towards Systematic Automation of Medical VLM Benchmark Construction Large-scale construction of medical vision-language model (VLM) benchmarks is increasingly feasible with richly annotated imaging datasets and large language models (LLMs), yet existing automation largely focuses on generating evaluation items within predefined benchmark specifications. We study the broader probl",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.11312"
+        },
+        {
+          "term": "medical",
+          "excerpt": "MedBenchAgent: Towards Systematic Automation of Medical VLM Benchmark Construction Large-scale construction of medical vision-language model (VLM) benchmarks is increasingly feasible with richly annotated imaging datasets and large language models (LLMs), yet existing automation largely focuses",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.11312"
+        },
+        {
+          "term": "vision-language",
+          "excerpt": "MedBenchAgent: Towards Systematic Automation of Medical VLM Benchmark Construction Large-scale construction of medical vision-language model (VLM) benchmarks is increasingly feasible with richly annotated imaging datasets and large language models (LLMs), yet existing automation largely focuses on generating evaluation items within predefined benchmark specifications. We",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.11312"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "kin_thickening image.annotation.skin_thickening BrEaST assessment_category image.annotation.birads BrEaST diagnosis image.annotation.diagnosis BrEaST pathology_status image.annotation.classification BUS-BRA: 6 retained proposals BUS-BRA finding_type image.annotation.histology BUS-BRA assessment_category image.annotation.birads BUS-BRA diagnosis image.annotation.histology BUS-BRA pathology_status",
+          "location": "Appendix A Constructed Breast-Imaging Benchmark",
+          "source_url": "https://arxiv.org/html/2610.11312"
+        },
+        {
+          "term": "visual grounding",
+          "excerpt": "confirmed task Label Review rationale MedBenchAgent BUS-BRA finding type FP Duplicated diagnosis on the histology answer axis. MedBenchAgent BUS-BRA visual grounding FP Did not define a capability distinct from generic lesion detection. MedBenchAgent VinDr view identification FP Burned-in view markers exposed the target as a shortcut. MedBenchAgent VinDr finding-level assessment FN Finding-level BI-RAD",
+          "location": "B.2 Task-Space Results and Discrepancy Analysis",
+          "source_url": "https://arxiv.org/html/2610.11312"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "vely derived from evaluation requirements, heterogeneous annotations, and medical knowledge. Based on this formulation, we introduce MedBenchAgent, a multi-agent framework with a Benchmark Intermediate Representation (BIR) that encodes task definitions, evidence mappings, evaluation protocols, and item specifications across construction stages. MedBenchAgent separates planning, which derives and ve",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.11312"
+        }
+      ],
+      "related_benchmarks": [
+        "VQA",
+        "PMC-VQA",
+        "OmniMedVQA",
+        "GMAI-MMBench",
+        "EHRBench",
+        "EHRXQA",
+        "MultiMedEval"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 21,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "cb234b98bc850fd1c6a3d7afd7945908419b5c734d38a4db634a140105da874b",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}

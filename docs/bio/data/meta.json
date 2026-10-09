@@ -1,26 +1,26 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-08T11:30:32Z",
-  "total": 148,
-  "day_count": 76,
-  "latest_date": "2026-10-07",
+  "generated_at": "2026-10-09T11:26:03Z",
+  "total": 151,
+  "day_count": 77,
+  "latest_date": "2026-10-08",
   "counts": {
     "topics": {
-      "multimodal": 41,
-      "general_text": 58,
-      "experiment_agent": 35,
+      "experiment_agent": 36,
+      "multimodal": 42,
+      "general_text": 59,
       "biosafety": 14
     },
     "contribution_types": {
-      "new_benchmark": 118,
+      "new_benchmark": 121,
       "methodology": 17,
       "audit": 13
     },
     "kinds": {
-      "paper": 148
+      "paper": 151
     },
     "evaluation_contexts": {
-      "beneficial_capability": 134,
+      "beneficial_capability": 137,
       "biosecurity_misuse": 14
     }
   },
@@ -29,48 +29,48 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-10-08T11:30:50Z",
-      "finished_at": "2026-10-08T11:31:21Z",
-      "discovered": 50,
-      "published": 25,
+      "started_at": "2026-10-09T11:26:23Z",
+      "finished_at": "2026-10-09T11:26:54Z",
+      "discovered": 59,
+      "published": 30,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-10-08T11:31:21Z",
-      "finished_at": "2026-10-08T11:31:30Z",
-      "discovered": 47,
-      "published": 28,
+      "started_at": "2026-10-09T11:26:54Z",
+      "finished_at": "2026-10-09T11:27:00Z",
+      "discovered": 54,
+      "published": 31,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "failed",
-      "started_at": "2026-10-08T11:31:30Z",
-      "finished_at": "2026-10-08T11:31:31Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "Server error '500 Internal Server Error' for url 'https://api.biorxiv.org/details/biorxiv/2026-10-04/2026-10-08/0'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      "status": "success",
+      "started_at": "2026-10-09T11:27:00Z",
+      "finished_at": "2026-10-09T11:27:46Z",
+      "discovered": 1236,
+      "published": 82,
+      "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "failed",
-      "started_at": "2026-10-08T11:31:31Z",
-      "finished_at": "2026-10-08T11:31:31Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "Server error '500 Internal Server Error' for url 'https://api.biorxiv.org/details/medrxiv/2026-10-04/2026-10-08/60'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      "status": "success",
+      "started_at": "2026-10-09T11:27:46Z",
+      "finished_at": "2026-10-09T11:27:55Z",
+      "discovered": 364,
+      "published": 26,
+      "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-10-08T11:31:31Z",
-      "finished_at": "2026-10-08T11:31:31Z",
+      "started_at": "2026-10-09T11:27:55Z",
+      "finished_at": "2026-10-09T11:27:55Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
