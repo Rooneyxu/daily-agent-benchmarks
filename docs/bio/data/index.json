@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-09T11:26:03Z",
-  "total": 151,
+  "generated_at": "2026-10-10T10:43:36Z",
+  "total": 153,
   "counts": {
     "topics": {
+      "general_text": 61,
       "experiment_agent": 36,
       "multimodal": 42,
-      "general_text": 59,
       "biosafety": 14
     },
     "contribution_types": {
-      "new_benchmark": 121,
+      "new_benchmark": 123,
       "methodology": 17,
       "audit": 13
     },
     "kinds": {
-      "paper": 151
+      "paper": 153
     },
     "evaluation_contexts": {
-      "beneficial_capability": 137,
+      "beneficial_capability": 139,
       "biosecurity_misuse": 14
     }
   },
@@ -59,48 +59,48 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-10-09T11:26:23Z",
-      "finished_at": "2026-10-09T11:26:54Z",
-      "discovered": 59,
-      "published": 30,
+      "started_at": "2026-10-10T10:43:57Z",
+      "finished_at": "2026-10-10T10:44:23Z",
+      "discovered": 46,
+      "published": 24,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-10-09T11:26:54Z",
-      "finished_at": "2026-10-09T11:27:00Z",
-      "discovered": 54,
-      "published": 31,
+      "started_at": "2026-10-10T10:44:23Z",
+      "finished_at": "2026-10-10T10:44:25Z",
+      "discovered": 49,
+      "published": 32,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-09T11:27:00Z",
-      "finished_at": "2026-10-09T11:27:46Z",
-      "discovered": 1236,
-      "published": 82,
+      "started_at": "2026-10-10T10:44:25Z",
+      "finished_at": "2026-10-10T10:45:28Z",
+      "discovered": 1342,
+      "published": 93,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-09T11:27:46Z",
-      "finished_at": "2026-10-09T11:27:55Z",
-      "discovered": 364,
-      "published": 26,
+      "started_at": "2026-10-10T10:45:28Z",
+      "finished_at": "2026-10-10T10:45:40Z",
+      "discovered": 296,
+      "published": 23,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-10-09T11:27:55Z",
-      "finished_at": "2026-10-09T11:27:55Z",
+      "started_at": "2026-10-10T10:45:40Z",
+      "finished_at": "2026-10-10T10:45:41Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
@@ -108,11 +108,19 @@
   ],
   "days": [
     {
+      "date": "2026-10-09",
+      "count": 1,
+      "entry_ids": [
+        "doi:10.21203/rs.3.rs-11294579/v1"
+      ]
+    },
+    {
       "date": "2026-10-08",
-      "count": 2,
+      "count": 3,
       "entry_ids": [
         "arxiv:2610.11329",
-        "arxiv:2610.11312"
+        "arxiv:2610.11312",
+        "doi:10.20944/preprints202610.0511.v1"
       ]
     },
     {
@@ -723,6 +731,89 @@
   ],
   "entries": [
     {
+      "id": "doi:10.21203/rs.3.rs-11294579/v1",
+      "slug": "doi-10-21203-rs-3-rs-11294579-v1-6a5b0bb7ac",
+      "kind": "paper",
+      "title": "DocuStore: Domain Constrained Retrieval Augmented Generation for Drug Discovery Documents",
+      "abstract": "<title>Abstract</title>  <p>Retrieval-augmented generation (RAG) can ground large language models in external documents, but conventional retrieval remains poorly suited to drug discovery literature. Scientific evidence in these documents is encoded across prose, tables, compound identifiers, molecular structure diagrams and quantitative bioactivity measurements. Here we introduce DocuStore, a domain-constrained RAG architecture that extracts and links molecular structures, typed biological entities, textual evidence and compound-associated bioactivity records while preserving their provenance. These linked representations allow resolved chemical and biological identities to constrain semantic retrieval. To evaluate DocuStore, we introduce DocQABench, a human-validated benchmark comprising 1,093 question–answer pairs over 109 medicinal-chemistry presentations. Across four generative models, DocuStore increases mean end-to-end correctness from 46.6\\% with conventional dense RAG to 75.4\\%, while also increasing evidence retrieval from 41.6\\% to 87.0\\%. Our results demonstrate that incorporating domain-specific chemical representations into document ingestion and retrieval can substantially improve question answering over heterogeneous drug discovery documents.</p>",
+      "authors": [
+        "Rath S",
+        "Panda S",
+        "Rathi M",
+        "Berthel S",
+        "Sacchettini J."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-10-09T00:00:00+00:00",
+      "updated_at": "2026-10-10T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-11294579/v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1337858"
+      },
+      "evidence": [
+        {
+          "term": "we introduce DocQABench",
+          "excerpt": "ir provenance. These linked representations allow resolved chemical and biological identities to constrain semantic retrieval. To evaluate DocuStore, we introduce DocQABench, a human-validated benchmark comprising 1,093 question–answer pairs over 109 medicinal-chemistry presentations. Across four generative models, DocuStore increases mean end-to-end correctness from 46.6\\% with conventional dense RAG to 75.4\\",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1337858"
+        },
+        {
+          "term": "we introduce DocQABench, a human-validated benchmark",
+          "excerpt": "ir provenance. These linked representations allow resolved chemical and biological identities to constrain semantic retrieval. To evaluate DocuStore, we introduce DocQABench, a human-validated benchmark comprising 1,093 question–answer pairs over 109 medicinal-chemistry presentations. Across four generative models, DocuStore increases mean end-to-end correctness from 46.6\\% with conventional dense RAG to 75.4\\%, while also increasing evid",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1337858"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "allow resolved chemical and biological identities to constrain semantic retrieval. To evaluate DocuStore, we introduce DocQABench, a human-validated benchmark comprising 1,093 question–answer pairs over 109 medicinal-chemistry presentations. Across four generative models, DocuStore increases mean end-to-end correctness from 46.6\\% with conventional dense RAG to 75.4\\%, while also increasing evid",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1337858"
+        },
+        {
+          "term": "biological",
+          "excerpt": "tive bioactivity measurements. Here we introduce DocuStore, a domain-constrained RAG architecture that extracts and links molecular structures, typed biological entities, textual evidence and compound-associated bioactivity records while preserving their provenance. These linked representations allow resolved chemical and biological identities to constrain semantic retrieval. To evaluate DocuStore",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1337858"
+        },
+        {
+          "term": "drug discovery",
+          "excerpt": "DocuStore: Domain Constrained Retrieval Augmented Generation for Drug Discovery Documents <title>Abstract</title> <p>Retrieval-augmented generation (RAG) can ground large language models in external documents, but conventional retrieval remains poorly suited to drug discovery literature. Scientific evidence in these",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1337858"
+        },
+        {
+          "term": "molecular",
+          "excerpt": "val remains poorly suited to drug discovery literature. Scientific evidence in these documents is encoded across prose, tables, compound identifiers, molecular structure diagrams and quantitative bioactivity measurements. Here we introduce DocuStore, a domain-constrained RAG architecture that extracts and links molecular structures, typed biological entities, textual evidence and compound-associa",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1337858"
+        }
+      ],
+      "related_benchmarks": [
+        "DocQABench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 24,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "7485134f3cb3fefbe75a3b959b743f6fa0d99352b8396552a7d537be23170f33",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "arxiv:2610.11329",
       "slug": "arxiv-2610-11329-33a2df05d7",
       "kind": "paper",
@@ -937,6 +1028,71 @@
       "content_hash": "cb234b98bc850fd1c6a3d7afd7945908419b5c734d38a4db634a140105da874b",
       "is_seed": false,
       "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.20944/preprints202610.0511.v1",
+      "slug": "doi-10-20944-preprints202610-0511-v1-d70d06744c",
+      "kind": "paper",
+      "title": "Long-Tail Pharmacovigilance: The Semaglutide–NAION Case and a Pilot Benchmark for Language Models",
+      "abstract": "Drug-safety systems are built for the head of the distribution: common, anticipated adverse events that trials list in advance and frequency statistics rank first. The harms that matter most after wide use often lie in the tail—rare, unanticipated, or confined to vulnerable individuals. In 2023, clinicians saw three patients taking semaglutide with non-arteritic anterior ischemic optic neuropathy (NAION), a rare cause of permanent vision loss, within one week. We propose long-tail pharmacovigilance, a research program that makes the tail the primary target of safety evaluation, and RARE-Bench, its first benchmark, which tests whether language models can rank uncommon drug harms for clinical review. This pilot tests ranking only. Across 60 drugs, frequency baselines retrieved almost none of the low-prevalence label terms (0–0.5%); the model retrieved 3.8–4.3%. Against similar-drug transfer (2.9%), the model's edge was unresolved overall (+0.013, 95% CI −0.018 to +0.039) but differed by neighborhood (+0.034 without same-class neighbors, −0.026 with; interaction p = 0.038; exploratory). A class-only control matched the name tier (0.034 versus 0.034), so the tail advantage cannot be separated from class-level knowledge. No fabricated terms appeared among 40 audited candidates. For the case drugs, free ranking never mentioned the eye. Eye-directed questioning returned eye terms for case and negative-control drugs alike; only a reasoning model with marginal exposure named NAION itself. Tail retrieval is therefore measurable, but the pilot does not show that the method predicts new harms, benefits from paired molecular profiles, or improves trial decisions.",
+      "authors": [
+        "Xiong J."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "updated_at": "2026-10-10T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.20944/preprints202610.0511.v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1337369"
+      },
+      "evidence": [
+        {
+          "term": "first benchmark",
+          "excerpt": "one week. We propose long-tail pharmacovigilance, a research program that makes the tail the primary target of safety evaluation, and RARE-Bench, its first benchmark, which tests whether language models can rank uncommon drug harms for clinical review. This pilot tests ranking only. Across 60 drugs, frequency baselines retrieved almost none of the low-prevalence label terms (0–0.5%); the model retrieve",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1337369"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Long-Tail Pharmacovigilance: The Semaglutide–NAION Case and a Pilot Benchmark for Language Models Drug-safety systems are built for the head of the distribution: common, anticipated adverse events that trials list in advance and frequency statistics rank first. The harms that matter most after wide use often lie in",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1337369"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "il the primary target of safety evaluation, and RARE-Bench, its first benchmark, which tests whether language models can rank uncommon drug harms for clinical review. This pilot tests ranking only. Across 60 drugs, frequency baselines retrieved almost none of the low-prevalence label terms (0–0.5%); the model retrieved 3.8–4.3%. Against similar-drug transfer (2.9%), the model's edge was unresolv",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1337369"
+        },
+        {
+          "term": "molecular",
+          "excerpt": "sure named NAION itself. Tail retrieval is therefore measurable, but the pilot does not show that the method predicts new harms, benefits from paired molecular profiles, or improves trial decisions. Drug-safety systems are built for the head of the distribution: common, anticipated adverse events that trials list in advance and frequency statistics rank first. The harms that matter most after wid",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1337369"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 13,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "f8d7f04fc87beec8617d0bbdc4794d6719ff733718924b55fe95dfa57c76b598",
+      "is_seed": false,
+      "topic": "general_text",
       "contribution_type": "new_benchmark"
     },
     {
@@ -1646,7 +1802,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
-      "match_score": 22,
+      "match_score": 20,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "141e031e41c289243cef22e619a5b6f6b29609cf86475a99e409490e9e792142",

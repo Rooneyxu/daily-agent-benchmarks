@@ -1,6 +1,6 @@
 {
   "date": "2026-10-08",
-  "count": 2,
+  "count": 3,
   "entries": [
     {
       "id": "arxiv:2610.11329",
@@ -217,6 +217,71 @@
       "content_hash": "cb234b98bc850fd1c6a3d7afd7945908419b5c734d38a4db634a140105da874b",
       "is_seed": false,
       "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.20944/preprints202610.0511.v1",
+      "slug": "doi-10-20944-preprints202610-0511-v1-d70d06744c",
+      "kind": "paper",
+      "title": "Long-Tail Pharmacovigilance: The Semaglutide–NAION Case and a Pilot Benchmark for Language Models",
+      "abstract": "Drug-safety systems are built for the head of the distribution: common, anticipated adverse events that trials list in advance and frequency statistics rank first. The harms that matter most after wide use often lie in the tail—rare, unanticipated, or confined to vulnerable individuals. In 2023, clinicians saw three patients taking semaglutide with non-arteritic anterior ischemic optic neuropathy (NAION), a rare cause of permanent vision loss, within one week. We propose long-tail pharmacovigilance, a research program that makes the tail the primary target of safety evaluation, and RARE-Bench, its first benchmark, which tests whether language models can rank uncommon drug harms for clinical review. This pilot tests ranking only. Across 60 drugs, frequency baselines retrieved almost none of the low-prevalence label terms (0–0.5%); the model retrieved 3.8–4.3%. Against similar-drug transfer (2.9%), the model's edge was unresolved overall (+0.013, 95% CI −0.018 to +0.039) but differed by neighborhood (+0.034 without same-class neighbors, −0.026 with; interaction p = 0.038; exploratory). A class-only control matched the name tier (0.034 versus 0.034), so the tail advantage cannot be separated from class-level knowledge. No fabricated terms appeared among 40 audited candidates. For the case drugs, free ranking never mentioned the eye. Eye-directed questioning returned eye terms for case and negative-control drugs alike; only a reasoning model with marginal exposure named NAION itself. Tail retrieval is therefore measurable, but the pilot does not show that the method predicts new harms, benefits from paired molecular profiles, or improves trial decisions.",
+      "authors": [
+        "Xiong J."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "updated_at": "2026-10-10T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.20944/preprints202610.0511.v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1337369"
+      },
+      "evidence": [
+        {
+          "term": "first benchmark",
+          "excerpt": "one week. We propose long-tail pharmacovigilance, a research program that makes the tail the primary target of safety evaluation, and RARE-Bench, its first benchmark, which tests whether language models can rank uncommon drug harms for clinical review. This pilot tests ranking only. Across 60 drugs, frequency baselines retrieved almost none of the low-prevalence label terms (0–0.5%); the model retrieve",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1337369"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Long-Tail Pharmacovigilance: The Semaglutide–NAION Case and a Pilot Benchmark for Language Models Drug-safety systems are built for the head of the distribution: common, anticipated adverse events that trials list in advance and frequency statistics rank first. The harms that matter most after wide use often lie in",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1337369"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "il the primary target of safety evaluation, and RARE-Bench, its first benchmark, which tests whether language models can rank uncommon drug harms for clinical review. This pilot tests ranking only. Across 60 drugs, frequency baselines retrieved almost none of the low-prevalence label terms (0–0.5%); the model retrieved 3.8–4.3%. Against similar-drug transfer (2.9%), the model's edge was unresolv",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1337369"
+        },
+        {
+          "term": "molecular",
+          "excerpt": "sure named NAION itself. Tail retrieval is therefore measurable, but the pilot does not show that the method predicts new harms, benefits from paired molecular profiles, or improves trial decisions. Drug-safety systems are built for the head of the distribution: common, anticipated adverse events that trials list in advance and frequency statistics rank first. The harms that matter most after wid",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1337369"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 13,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "f8d7f04fc87beec8617d0bbdc4794d6719ff733718924b55fe95dfa57c76b598",
+      "is_seed": false,
+      "topic": "general_text",
       "contribution_type": "new_benchmark"
     }
   ]

@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-09",
+  "count": 1,
+  "entries": [
+    {
+      "id": "doi:10.21203/rs.3.rs-11294579/v1",
+      "slug": "doi-10-21203-rs-3-rs-11294579-v1-6a5b0bb7ac",
+      "kind": "paper",
+      "title": "DocuStore: Domain Constrained Retrieval Augmented Generation for Drug Discovery Documents",
+      "abstract": "<title>Abstract</title>  <p>Retrieval-augmented generation (RAG) can ground large language models in external documents, but conventional retrieval remains poorly suited to drug discovery literature. Scientific evidence in these documents is encoded across prose, tables, compound identifiers, molecular structure diagrams and quantitative bioactivity measurements. Here we introduce DocuStore, a domain-constrained RAG architecture that extracts and links molecular structures, typed biological entities, textual evidence and compound-associated bioactivity records while preserving their provenance. These linked representations allow resolved chemical and biological identities to constrain semantic retrieval. To evaluate DocuStore, we introduce DocQABench, a human-validated benchmark comprising 1,093 question–answer pairs over 109 medicinal-chemistry presentations. Across four generative models, DocuStore increases mean end-to-end correctness from 46.6\\% with conventional dense RAG to 75.4\\%, while also increasing evidence retrieval from 41.6\\% to 87.0\\%. Our results demonstrate that incorporating domain-specific chemical representations into document ingestion and retrieval can substantially improve question answering over heterogeneous drug discovery documents.</p>",
+      "authors": [
+        "Rath S",
+        "Panda S",
+        "Rathi M",
+        "Berthel S",
+        "Sacchettini J."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-10-09T00:00:00+00:00",
+      "updated_at": "2026-10-10T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-11294579/v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1337858"
+      },
+      "evidence": [
+        {
+          "term": "we introduce DocQABench",
+          "excerpt": "ir provenance. These linked representations allow resolved chemical and biological identities to constrain semantic retrieval. To evaluate DocuStore, we introduce DocQABench, a human-validated benchmark comprising 1,093 question–answer pairs over 109 medicinal-chemistry presentations. Across four generative models, DocuStore increases mean end-to-end correctness from 46.6\\% with conventional dense RAG to 75.4\\",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1337858"
+        },
+        {
+          "term": "we introduce DocQABench, a human-validated benchmark",
+          "excerpt": "ir provenance. These linked representations allow resolved chemical and biological identities to constrain semantic retrieval. To evaluate DocuStore, we introduce DocQABench, a human-validated benchmark comprising 1,093 question–answer pairs over 109 medicinal-chemistry presentations. Across four generative models, DocuStore increases mean end-to-end correctness from 46.6\\% with conventional dense RAG to 75.4\\%, while also increasing evid",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1337858"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "allow resolved chemical and biological identities to constrain semantic retrieval. To evaluate DocuStore, we introduce DocQABench, a human-validated benchmark comprising 1,093 question–answer pairs over 109 medicinal-chemistry presentations. Across four generative models, DocuStore increases mean end-to-end correctness from 46.6\\% with conventional dense RAG to 75.4\\%, while also increasing evid",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1337858"
+        },
+        {
+          "term": "biological",
+          "excerpt": "tive bioactivity measurements. Here we introduce DocuStore, a domain-constrained RAG architecture that extracts and links molecular structures, typed biological entities, textual evidence and compound-associated bioactivity records while preserving their provenance. These linked representations allow resolved chemical and biological identities to constrain semantic retrieval. To evaluate DocuStore",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1337858"
+        },
+        {
+          "term": "drug discovery",
+          "excerpt": "DocuStore: Domain Constrained Retrieval Augmented Generation for Drug Discovery Documents <title>Abstract</title> <p>Retrieval-augmented generation (RAG) can ground large language models in external documents, but conventional retrieval remains poorly suited to drug discovery literature. Scientific evidence in these",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1337858"
+        },
+        {
+          "term": "molecular",
+          "excerpt": "val remains poorly suited to drug discovery literature. Scientific evidence in these documents is encoded across prose, tables, compound identifiers, molecular structure diagrams and quantitative bioactivity measurements. Here we introduce DocuStore, a domain-constrained RAG architecture that extracts and links molecular structures, typed biological entities, textual evidence and compound-associa",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1337858"
+        }
+      ],
+      "related_benchmarks": [
+        "DocQABench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 24,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "7485134f3cb3fefbe75a3b959b743f6fa0d99352b8396552a7d537be23170f33",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
