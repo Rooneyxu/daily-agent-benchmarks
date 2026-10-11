@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-10T10:43:36Z",
+  "generated_at": "2026-10-11T10:56:26Z",
   "total": 153,
   "counts": {
     "topics": {
@@ -59,48 +59,48 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-10-10T10:43:57Z",
-      "finished_at": "2026-10-10T10:44:23Z",
-      "discovered": 46,
-      "published": 24,
+      "started_at": "2026-10-11T10:56:48Z",
+      "finished_at": "2026-10-11T10:57:17Z",
+      "discovered": 30,
+      "published": 16,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-10-10T10:44:23Z",
-      "finished_at": "2026-10-10T10:44:25Z",
-      "discovered": 49,
-      "published": 32,
+      "started_at": "2026-10-11T10:57:17Z",
+      "finished_at": "2026-10-11T10:57:19Z",
+      "discovered": 30,
+      "published": 20,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-10T10:44:25Z",
-      "finished_at": "2026-10-10T10:45:28Z",
-      "discovered": 1342,
-      "published": 93,
+      "started_at": "2026-10-11T10:57:19Z",
+      "finished_at": "2026-10-11T10:58:07Z",
+      "discovered": 1106,
+      "published": 79,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-10T10:45:28Z",
-      "finished_at": "2026-10-10T10:45:40Z",
-      "discovered": 296,
-      "published": 23,
+      "started_at": "2026-10-11T10:58:07Z",
+      "finished_at": "2026-10-11T10:58:16Z",
+      "discovered": 208,
+      "published": 15,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-10-10T10:45:40Z",
-      "finished_at": "2026-10-10T10:45:41Z",
+      "started_at": "2026-10-11T10:58:16Z",
+      "finished_at": "2026-10-11T10:58:16Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
@@ -1309,51 +1309,49 @@
       "slug": "doi-10-64898-2026-10-06-26364825-3f2b15c189",
       "kind": "paper",
       "title": "Feature-Engineering Strategies for EEG-Based ADHD Classification in Children: A Controlled Benchmark of Expert, LLM-Guided and Full-Space Comparators",
-      "abstract": "EEG-based machine-learning studies of attention-deficit/hyperactivity disorder (ADHD) are vulnerable to optimistic performance estimates when feature selection or model choice is informed by data outside the training fold. We compared expert-reconstructed, large language model (LLM)-guided and full-space feature strategies under leakage-controlled subject-level validation in a frozen cohort of 77 children (45 ADHD, 32 controls) represented by 1,185 gamma-free EEG features. Four classifiers (SVM, GMM, random forest [RF] and XGBoost) were evaluated with nested leave-one-subject-out cross-validation (LOOCV), with all data-dependent operations restricted to outer-training subjects. Across 100 repetitions of stratified 10-fold cross-validation, RF/expert achieved mean accuracy 62.8% (SD 3.5%; empirical 95% interval 55.8% -- 69.5%), mean balanced accuracy 62.3% and mean AUC-ROC 0.618. The corresponding LOOCV point estimate was 71.4% accuracy and 71.0% balanced accuracy (AUC-ROC 0.673). GMM/expert achieved the highest AUC-ROC (0.699), indicating metric-dependent model ranking. The expert-reconstructed strategy achieved the highest accuracy and balanced accuracy for every classifier, whereas the LLM-guided strategy showed no consistent advantage over the full feature space. Pairwise classifier differences were not significant after Holm correction. A pre-specified 200 V artifact gate reduced RF/expert accuracy to approximately 55.8%, below the 58.4% no-information rate; this drop may reflect removal of artifact-related signal and/or reduced epoch counts leading to noisier feature estimates. These findings support cautious benchmarking and external validation rather than claims of algorithmic or LLM superiority. Keywords: ADHD; electroencephalography; machine learning; benchmarking; feature engineering; subject-level validation; nested cross-validation; random forest; clinical prediction",
+      "abstract": "EEG-based machine-learning studies of attention-deficit/hyperactivity disorder (ADHD) are vulnerable to optimistic performance estimates when feature selection or model choice is informed by data outside the training fold. We compared expert-reconstructed, large language model (LLM)-guided and full-space feature strategies under leakage-controlled subject-level validation in a frozen cohort of 77 children (45 ADHD, 32 controls) represented by 1,185 gamma-free EEG features. Four classifiers (SVM, GMM, random forest [RF] and XGBoost) were evaluated with nested leave-one-subject-out cross-validation (LOOCV), with all data-dependent operations restricted to outer-training subjects. Across 100 repetitions of stratified 10-fold cross-validation, RF/expert achieved mean accuracy 62.8% (SD 3.5%; empirical 95% interval 55.8% — 69.5%), mean balanced accuracy 62.3% and mean AUC-ROC 0.618. The corresponding LOOCV point estimate was 71.4% accuracy and 71.0% balanced accuracy (AUC-ROC 0.673). GMM/expert achieved the highest AUC-ROC (0.699), indicating metric-dependent model ranking. The expert-reconstructed strategy achieved the highest accuracy and balanced accuracy for every classifier, whereas the LLM-guided strategy showed no consistent advantage over the full feature space. Pairwise classifier differences were not significant after Holm correction. A pre-specified 200 μV artifact gate reduced RF/expert accuracy to approximately 55.8%, below the 58.4% no-information rate; this drop may reflect removal of artifact-related signal and/or reduced epoch counts leading to noisier feature estimates. These findings support cautious benchmarking and external validation rather than claims of algorithmic or LLM superiority. <h4>Keywords:</h4> ADHD; electroencephalography; machine learning; benchmarking; feature engineering; subject-level validation; nested cross-validation; random forest; clinical prediction",
       "authors": [
-        "Rohani, F.",
-        "Alhatab, H.",
-        "Jarrud, M.",
-        "Salous, N.",
-        "Kasimoglu, S.",
-        "Mueller, A."
+        "Rohani F",
+        "Alhatab H",
+        "Jarrud M",
+        "Salous N",
+        "Kasimoglu S",
+        "Mueller A."
       ],
-      "source": "medrxiv",
+      "source": "europepmc",
       "published_at": "2026-10-07T00:00:00+00:00",
-      "updated_at": "2026-10-07T00:00:00+00:00",
+      "updated_at": "2026-10-09T00:00:00+00:00",
       "priority": "P1",
       "categories": [
         "general_text"
       ],
       "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "cc_by",
+      "access_status": "unknown",
+      "license": "",
       "identifiers": {
         "doi": "10.64898/2026.10.06.26364825"
       },
       "links": {
-        "abs": "https://www.medrxiv.org/content/10.64898/2026.10.06.26364825",
-        "pdf": "https://www.medrxiv.org/content/10.64898/2026.10.06.26364825.full.pdf",
-        "html": "https://www.medrxiv.org/content/10.64898/2026.10.06.26364825.full"
+        "abs": "https://europepmc.org/article/PPR/PPR1337163"
       },
       "evidence": [
         {
           "term": "benchmark",
           "excerpt": "Feature-Engineering Strategies for EEG-Based ADHD Classification in Children: A Controlled Benchmark of Expert, LLM-Guided and Full-Space Comparators EEG-based machine-learning studies of attention-deficit/hyperactivity disorder (ADHD) are vulnerable to optimistic performance estimates when feature selection or model choice is informed by",
           "location": "Abstract / metadata",
-          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.06.26364825.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1337163"
         },
         {
           "term": "benchmarking",
-          "excerpt": "drop may reflect removal of artifact-related signal and/or reduced epoch counts leading to noisier feature estimates. These findings support cautious benchmarking and external validation rather than claims of algorithmic or LLM superiority. Keywords: ADHD; electroencephalography; machine learning; benchmarking; feature engineering; subject-level validation; nested cross-validation; random forest; cl",
+          "excerpt": "drop may reflect removal of artifact-related signal and/or reduced epoch counts leading to noisier feature estimates. These findings support cautious benchmarking and external validation rather than claims of algorithmic or LLM superiority. <h4>Keywords:</h4> ADHD; electroencephalography; machine learning; benchmarking; feature engineering; subject-level validation; nested cross-validation; random f",
           "location": "Abstract / metadata",
-          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.06.26364825.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1337163"
         },
         {
           "term": "clinical",
           "excerpt": "ADHD; electroencephalography; machine learning; benchmarking; feature engineering; subject-level validation; nested cross-validation; random forest; clinical prediction EEG-based machine-learning studies of attention-deficit/hyperactivity disorder (ADHD) are vulnerable to optimistic performance estimates when feature selection or model choice is informed by data outside the training fold. We co",
           "location": "Abstract / metadata",
-          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.06.26364825.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1337163"
         }
       ],
       "related_benchmarks": [],
@@ -1363,9 +1361,9 @@
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
       "match_score": 13,
-      "extraction_status": "incomplete",
-      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.06.26364825.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
-      "content_hash": "52dc7e8860c762870f46f1da2816698abc4480eb0106d512391c142b0d43bfea",
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "cb2d904a1e4a44e4247cafa057d91e0ccf1ceb1596e167933222a3611cde1089",
       "is_seed": false,
       "topic": "general_text",
       "contribution_type": "new_benchmark"
