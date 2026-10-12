@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-11",
+  "count": 1,
+  "entries": [
+    {
+      "id": "doi:10.64898/2026.10.07.26365005",
+      "slug": "doi-10-64898-2026-10-07-26365005-663d76e45b",
+      "kind": "paper",
+      "title": "From examinations to consultations: a physician-reviewed Japanese benchmark for large language models in traditional Kampo medicine",
+      "abstract": "Objectives: Patients and clinicians increasingly ask large language models (LLMs) about Kampo, Japan's traditional medicine. Yet evaluations of LLMs have measured accuracy on examination questions, which ask what a model knows; a consultation asks whether it can apply that knowledge to the patient at hand. No benchmark had measured that. Materials and Methods: KampoBench comprises 74 consultation scenarios and 310 conversation-specific rubric criteria, following the design of HealthBench. Scenarios, criteria and reference answers were drafted by an LLM and revised by board-certified Kampo physicians. Ten current models from three vendors were evaluated. Because LLM graders are known to favor their own family, each response was graded by a model from each vendor. Results: The best model reached 74.8-86.3% across graders, the physician-revised reference answers 87.9-92.4%. Rankings were stable across graders (Spearman's rho 0.952-0.976), and the family-favoring deviation was 0.4 to 0.6 percentage points, below the bootstrap standard deviation of one measurement; grader leniency varied by 14.3 points. Models were most reliable on criteria about advising that care be sought (83.6%) and least reliable on those requiring a known crude-drug risk to be tied to the case (17.5%), though 79.2% of those responses named the drug. Discussion: The shortfall lay in applying knowledge to the case rather than in holding it - a distinction examination-format evaluations cannot make. Conclusion: Evaluation in traditional medicine should measure the judgments a consultation requires, not recall alone. Quoted alongside the grader that produced it, a KampoBench score is a usable measure of those judgments.",
+      "authors": [
+        "Takata, H.",
+        "Harada, Y.",
+        "Inoue, H.",
+        "Uneda, K.",
+        "Yoshino, T.",
+        "Nogami, T."
+      ],
+      "source": "medrxiv",
+      "published_at": "2026-10-11T00:00:00+00:00",
+      "updated_at": "2026-10-11T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by",
+      "identifiers": {
+        "doi": "10.64898/2026.10.07.26365005"
+      },
+      "links": {
+        "abs": "https://www.medrxiv.org/content/10.64898/2026.10.07.26365005",
+        "pdf": "https://www.medrxiv.org/content/10.64898/2026.10.07.26365005.full.pdf",
+        "html": "https://www.medrxiv.org/content/10.64898/2026.10.07.26365005.full"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "From examinations to consultations: a physician-reviewed Japanese benchmark for large language models in traditional Kampo medicine Objectives: Patients and clinicians increasingly ask large language models (LLMs) about Kampo, Japan's traditional medicine. Yet evaluations of LLMs have measured accuracy on examinat",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26365005.full"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "From examinations to consultations: a physician-reviewed Japanese benchmark for large language models in traditional Kampo medicine Objectives: Patients and clinicians increasingly ask large language models (LLMs) about Kampo, Japan's traditional medicine. Yet evaluations of LLMs have measured accuracy on examination questions, which ask what a model knows; a consultat",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26365005.full"
+        },
+        {
+          "term": "patient",
+          "excerpt": "From examinations to consultations: a physician-reviewed Japanese benchmark for large language models in traditional Kampo medicine Objectives: Patients and clinicians increasingly ask large language models (LLMs) about Kampo, Japan's traditional medicine. Yet evaluations of LLMs have measured accuracy on examination questions, which ask what a model knows; a consultation asks whether it",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26365005.full"
+        }
+      ],
+      "related_benchmarks": [
+        "KampoBench",
+        "HealthBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 13,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.07.26365005.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "ffa6f9dfb02680239df50583c0dbb760320df06fe66d531625cd0867c5e39fcd",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
