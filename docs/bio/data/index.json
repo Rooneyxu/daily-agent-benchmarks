@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-12T12:16:12Z",
-  "total": 154,
+  "generated_at": "2026-10-13T12:00:15Z",
+  "total": 155,
   "counts": {
     "topics": {
-      "general_text": 62,
+      "general_text": 63,
       "experiment_agent": 36,
       "multimodal": 42,
       "biosafety": 14
     },
     "contribution_types": {
+      "methodology": 18,
       "new_benchmark": 124,
-      "methodology": 17,
       "audit": 13
     },
     "kinds": {
-      "paper": 154
+      "paper": 155
     },
     "evaluation_contexts": {
-      "beneficial_capability": 140,
+      "beneficial_capability": 141,
       "biosecurity_misuse": 14
     }
   },
@@ -59,54 +59,61 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "failed",
-      "started_at": "2026-10-12T12:16:34Z",
-      "finished_at": "2026-10-12T12:17:19Z",
+      "started_at": "2026-10-13T12:00:35Z",
+      "finished_at": "2026-10-13T12:01:45Z",
       "discovered": 0,
       "published": 0,
-      "error": "The read operation timed out"
+      "error": "Server error '503 Service Unavailable' for url 'https://export.arxiv.org/api/query?search_query=%28%28all%3Abenchmark+OR+all%3Abenchmarking+OR+all%3A%22evaluation+suite%22+OR+all%3A%22evaluation+dataset%22%29+AND+%28all%3Aconstruction+OR+all%3Acuration+OR+all%3A%22quality+control%22+OR+all%3A%22quality+assurance%22+OR+all%3Averifier+OR+all%3Agrader+OR+all%3A%22question+generation%22+OR+all%3A%22automated+evaluation%22+OR+all%3A%22synthetic+evaluation+data%22+OR+all%3A%22judge+calibration%22%29+AND+%28all%3Abiomedical+OR+all%3Amedical+OR+all%3Aclinical+OR+all%3Abiology+OR+all%3Abiological+OR+al"
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-10-12T12:17:19Z",
-      "finished_at": "2026-10-12T12:17:21Z",
-      "discovered": 24,
-      "published": 20,
+      "started_at": "2026-10-13T12:01:45Z",
+      "finished_at": "2026-10-13T12:01:47Z",
+      "discovered": 12,
+      "published": 12,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-12T12:17:21Z",
-      "finished_at": "2026-10-12T12:18:14Z",
-      "discovered": 1060,
-      "published": 87,
+      "started_at": "2026-10-13T12:01:47Z",
+      "finished_at": "2026-10-13T12:02:53Z",
+      "discovered": 974,
+      "published": 68,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-12T12:18:14Z",
-      "finished_at": "2026-10-12T12:18:33Z",
-      "discovered": 201,
-      "published": 17,
+      "started_at": "2026-10-13T12:02:53Z",
+      "finished_at": "2026-10-13T12:03:03Z",
+      "discovered": 200,
+      "published": 15,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-10-12T12:18:33Z",
-      "finished_at": "2026-10-12T12:18:33Z",
+      "started_at": "2026-10-13T12:03:03Z",
+      "finished_at": "2026-10-13T12:03:03Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
     }
   ],
   "days": [
+    {
+      "date": "2026-10-12",
+      "count": 1,
+      "entry_ids": [
+        "doi:10.64898/2026.10.10.26365233"
+      ]
+    },
     {
       "date": "2026-10-11",
       "count": 1,
@@ -738,6 +745,78 @@
   ],
   "entries": [
     {
+      "id": "doi:10.64898/2026.10.10.26365233",
+      "slug": "doi-10-64898-2026-10-10-26365233-587b87f1a5",
+      "kind": "paper",
+      "title": "ClinStigma: A Clinician-Guided Framework for Developing Synthetic Benchmarks of Contextual Stigmatizing Language in Clinical Documentation",
+      "abstract": "Objective Large language models (LLMs) are increasingly used to generate, summarize, and evaluate clinical documentation, yet standardized methods for evaluating nuanced, context-dependent clinical language remain limited. Existing approaches rely primarily on annotated clinical corpora or keyword-based methods, restricting reproducibility, public dissemination, and systematic comparison across models. We present ClinStigma, a clinician-guided framework for constructing, annotating, and evaluating synthetic benchmarks of contextual stigmatizing language, demonstrated through ClinStigma-SUD, its inaugural implementation for substance use disorder documentation. Materials and Methods Candidate clinical sentences were generated using a frontier language model and iteratively reviewed according to a clinician-developed annotation rubric refined through expert review in stigmatizing language. The resulting benchmark intentionally incorporates explicit stigmatizing, neutral, and contextually ambiguous (\"gray-zone\") documentation requiring clinical reasoning rather than keyword recognition. Three locally deployed open-weight LLMs were evaluated using zero-shot inference, followed by external evaluation using independently annotated clinical documentation from MIMIC-IV. Results ClinStigma-SUD consists of 500 clinician-adjudicated synthetic clinical documentation sentences. Inter-rater agreement was 98.8% across the full benchmark (Cohen's {kappa} = 0.976) and 94.0% within the intentionally ambiguous subset ({kappa} = 0.880). Under zero-shot prompting, binary accuracy ranged from 84.8% to 91.8% across evaluated models, while F1 for the ambiguous (gray) class ranged from 0.038 to 0.423. Zero-shot external evaluation on 3,716 annotated examples from the independently annotated Harrigian MIMIC-IV corpus yielded 84.4% accuracy (84.4% balanced accuracy; macro F1 0.824), against a 69.9% majority-class baseline. Stigmatizing-class F1 was 0.879 in the substance-related subgroup and 0.883 in the full external corpus. Discussion and Conclusion ClinStigma establishes a reproducible clinician-guided framework for developing synthetic evaluation benchmarks for contextual clinical language. By combining structured clinical expertise, explicit annotation guidance, synthetic benchmark generation, and external evaluation, the framework enables open, privacy-preserving evaluation of language models while providing a scalable foundation for benchmark development across additional clinical specialties, including obstetrics, emergency medicine, and mental health.",
+      "authors": [
+        "Izzo, J. A.",
+        "McIntyre, A. M.",
+        "Nguyen, J.",
+        "Bashaw, D.",
+        "Torrance, C. A.",
+        "Foster, J."
+      ],
+      "source": "medrxiv",
+      "published_at": "2026-10-12T00:00:00+00:00",
+      "updated_at": "2026-10-12T00:00:00+00:00",
+      "priority": "P0",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by_nc",
+      "identifiers": {
+        "doi": "10.64898/2026.10.10.26365233"
+      },
+      "links": {
+        "abs": "https://www.medrxiv.org/content/10.64898/2026.10.10.26365233",
+        "pdf": "https://www.medrxiv.org/content/10.64898/2026.10.10.26365233.full.pdf",
+        "html": "https://www.medrxiv.org/content/10.64898/2026.10.10.26365233.full"
+      },
+      "evidence": [
+        {
+          "term": "Developing Synthetic Benchmarks",
+          "excerpt": "ClinStigma: A Clinician-Guided Framework for Developing Synthetic Benchmarks of Contextual Stigmatizing Language in Clinical Documentation Objective Large language models (LLMs) are increasingly used to generate, summarize, and evaluate clinical documentation, yet standardized methods for evaluating nuanced, contex",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.10.26365233.full"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "ClinStigma: A Clinician-Guided Framework for Developing Synthetic Benchmarks of Contextual Stigmatizing Language in Clinical Documentation Objective Large language models (LLMs) are increasingly used to generate, summarize, and evaluate clinical documentation, yet standardized methods for evaluating nuanced, conte",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.10.26365233.full"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "nguage models while providing a scalable foundation for benchmark development across additional clinical specialties, including obstetrics, emergency medicine, and mental health. Objective Large language models (LLMs) are increasingly used to generate, summarize, and evaluate clinical documentation, yet standardized methods for evaluating nuanced, context-dependent clinical language remain limit",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.10.26365233.full"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "ClinStigma: A Clinician-Guided Framework for Developing Synthetic Benchmarks of Contextual Stigmatizing Language in Clinical Documentation Objective Large language models (LLMs) are increasingly used to generate, summarize, and evaluate clinical documentation, yet standardized methods for evaluating nuanced, context-dependent clinical language remain limited. Ex",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.10.26365233.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "match_score": 24,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.10.26365233v1.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "e0b21cc7e3365032faf1fe96e3358ac82d062e19e08152b085568c0b86ee3ab3",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "methodology"
+    },
+    {
       "id": "doi:10.64898/2026.10.07.26365005",
       "slug": "doi-10-64898-2026-10-07-26365005-663d76e45b",
       "kind": "paper",
@@ -800,7 +879,7 @@
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
       "match_score": 13,
       "extraction_status": "incomplete",
-      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.07.26365005.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.07.26365005v1.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
       "content_hash": "ffa6f9dfb02680239df50583c0dbb760320df06fe66d531625cd0867c5e39fcd",
       "is_seed": false,
       "topic": "general_text",
