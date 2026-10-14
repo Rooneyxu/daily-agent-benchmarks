@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-13T12:00:15Z",
-  "total": 155,
+  "generated_at": "2026-10-14T09:38:07Z",
+  "total": 158,
   "counts": {
     "topics": {
-      "general_text": 63,
-      "experiment_agent": 36,
-      "multimodal": 42,
+      "general_text": 64,
+      "experiment_agent": 37,
+      "multimodal": 43,
       "biosafety": 14
     },
     "contribution_types": {
+      "new_benchmark": 127,
       "methodology": 18,
-      "new_benchmark": 124,
       "audit": 13
     },
     "kinds": {
-      "paper": 155
+      "paper": 158
     },
     "evaluation_contexts": {
-      "beneficial_capability": 141,
+      "beneficial_capability": 144,
       "biosecurity_misuse": 14
     }
   },
@@ -58,49 +58,49 @@
     {
       "source": "arxiv",
       "name": "arXiv",
-      "status": "failed",
-      "started_at": "2026-10-13T12:00:35Z",
-      "finished_at": "2026-10-13T12:01:45Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "Server error '503 Service Unavailable' for url 'https://export.arxiv.org/api/query?search_query=%28%28all%3Abenchmark+OR+all%3Abenchmarking+OR+all%3A%22evaluation+suite%22+OR+all%3A%22evaluation+dataset%22%29+AND+%28all%3Aconstruction+OR+all%3Acuration+OR+all%3A%22quality+control%22+OR+all%3A%22quality+assurance%22+OR+all%3Averifier+OR+all%3Agrader+OR+all%3A%22question+generation%22+OR+all%3A%22automated+evaluation%22+OR+all%3A%22synthetic+evaluation+data%22+OR+all%3A%22judge+calibration%22%29+AND+%28all%3Abiomedical+OR+all%3Amedical+OR+all%3Aclinical+OR+all%3Abiology+OR+all%3Abiological+OR+al"
+      "status": "success",
+      "started_at": "2026-10-14T09:38:30Z",
+      "finished_at": "2026-10-14T09:39:11Z",
+      "discovered": 50,
+      "published": 24,
+      "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-10-13T12:01:45Z",
-      "finished_at": "2026-10-13T12:01:47Z",
-      "discovered": 12,
-      "published": 12,
+      "started_at": "2026-10-14T09:39:11Z",
+      "finished_at": "2026-10-14T09:39:13Z",
+      "discovered": 6,
+      "published": 6,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-13T12:01:47Z",
-      "finished_at": "2026-10-13T12:02:53Z",
-      "discovered": 974,
-      "published": 68,
+      "started_at": "2026-10-14T09:39:13Z",
+      "finished_at": "2026-10-14T09:40:06Z",
+      "discovered": 891,
+      "published": 62,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-13T12:02:53Z",
-      "finished_at": "2026-10-13T12:03:03Z",
-      "discovered": 200,
-      "published": 15,
+      "started_at": "2026-10-14T09:40:06Z",
+      "finished_at": "2026-10-14T09:40:25Z",
+      "discovered": 251,
+      "published": 18,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-10-13T12:03:03Z",
-      "finished_at": "2026-10-13T12:03:03Z",
+      "started_at": "2026-10-14T09:40:25Z",
+      "finished_at": "2026-10-14T09:40:25Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
@@ -109,15 +109,18 @@
   "days": [
     {
       "date": "2026-10-12",
-      "count": 1,
+      "count": 2,
       "entry_ids": [
+        "arxiv:2610.16346",
         "doi:10.64898/2026.10.10.26365233"
       ]
     },
     {
       "date": "2026-10-11",
-      "count": 1,
+      "count": 3,
       "entry_ids": [
+        "arxiv:2610.15714",
+        "arxiv:2610.15239",
         "doi:10.64898/2026.10.07.26365005"
       ]
     },
@@ -745,6 +748,97 @@
   ],
   "entries": [
     {
+      "id": "arxiv:2610.16346",
+      "slug": "arxiv-2610-16346-25c8530729",
+      "kind": "paper",
+      "title": "CellChain: Benchmarking Cross-Scale Evidence Use for Perturbation Reasoning",
+      "abstract": "Recent advances in foundation models and large-scale cellular perturbation datasets have driven growing interest in using LLMs to predict and reason about cellular responses. Biological reasoning in this setting involves relating molecular mechanisms, cellular responses, and functional outcomes across scales. Evaluating foundation models therefore requires assessing not only whether their predictions are correct, but also how those predictions depend on the biological evidence provided. We introduce CellChain, an experimentally grounded benchmark comprising 590 biological cases and 2,360 matched evidence-condition instances across gene-dependency prediction, cytokine-axis identification, and drug-sensitivity ranking. CellChain links perturbation experiments and external biological resources through a provenance-aware evidence graph spanning molecular, pathway, transcriptional, and phenotypic information. Task-specific conditions vary evidence coverage, composition, or assignment while preserving questions, candidate answers, reference targets, and scoring rules. Across 18 foundation models, the highest accuracies under prespecified target-evidence conditions are 57.5%, 75.5%, and 70.8%, respectively, and broader evidence coverage does not consistently improve accuracy. On the drug-sensitivity benchmark cohort, matched reference histories outperform swapped histories by an average of 13.0 percentage points in cluster-weighted accuracy. Decision-transition analysis separates corrections, newly introduced errors, and wrong-answer switches, revealing substantial answer changes hidden by small net accuracy differences. CellChain provides controlled comparisons for attributing changes in model predictions to prespecified expansions of biological context, including changes in evidence coverage, composition, and biological assignment.",
+      "authors": [
+        "Xue Xia",
+        "Yue Wang",
+        "Shuizhou Chen",
+        "Lang Yu",
+        "Hao Wu",
+        "Wenxuan Huang",
+        "Chengkai Yao",
+        "Zhangyang Gao",
+        "Siqi Sun"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-12T08:04:27+00:00",
+      "updated_at": "2026-10-12T08:04:27+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.16346"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.16346v1",
+        "pdf": "https://arxiv.org/pdf/2610.16346v1",
+        "html": "https://arxiv.org/html/2610.16346"
+      },
+      "evidence": [
+        {
+          "term": "We introduce CellChain, an experimentally grounded benchmark",
+          "excerpt": "erefore requires assessing not only whether their predictions are correct, but also how those predictions depend on the biological evidence provided. We introduce CellChain, an experimentally grounded benchmark comprising 590 biological cases and 2,360 matched evidence-condition instances across gene-dependency prediction, cytokine-axis identification, and drug-sensitivity ranking. CellChain links perturbation experiments and external biological",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.16346"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "CellChain: Benchmarking Cross-Scale Evidence Use for Perturbation Reasoning Recent advances in foundation models and large-scale cellular perturbation datasets have driven growing interest in using LLMs to predict and reason about cellular responses. Biologica",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.16346"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "CellChain: Benchmarking Cross-Scale Evidence Use for Perturbation Reasoning Recent advances in foundation models and large-scale cellular perturbation datasets have driven growing interest in using LLMs to predict and reason about cellular responses. Biological r",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.16346"
+        },
+        {
+          "term": "biological",
+          "excerpt": "tion models and large-scale cellular perturbation datasets have driven growing interest in using LLMs to predict and reason about cellular responses. Biological reasoning in this setting involves relating molecular mechanisms, cellular responses, and functional outcomes across scales. Evaluating foundation models therefore requires assessing not only whether their predictions are correct, but also",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.16346"
+        },
+        {
+          "term": "gene",
+          "excerpt": "d. We introduce CellChain, an experimentally grounded benchmark comprising 590 biological cases and 2,360 matched evidence-condition instances across gene-dependency prediction, cytokine-axis identification, and drug-sensitivity ranking. CellChain links perturbation experiments and external biological resources through a provenance-aware evidence graph spanning molecular, pathway, transcript",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.16346"
+        },
+        {
+          "term": "molecular",
+          "excerpt": "ets have driven growing interest in using LLMs to predict and reason about cellular responses. Biological reasoning in this setting involves relating molecular mechanisms, cellular responses, and functional outcomes across scales. Evaluating foundation models therefore requires assessing not only whether their predictions are correct, but also how those predictions depend on the biological eviden",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.16346"
+        }
+      ],
+      "related_benchmarks": [
+        "PerturbQA",
+        "PertReasonQA",
+        "AssayBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "8b732d6812b5e897efbc08cd31d3a067d912a3f35542b1d01541e8304d7791d3",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "doi:10.64898/2026.10.10.26365233",
       "slug": "doi-10-64898-2026-10-10-26365233-587b87f1a5",
       "kind": "paper",
@@ -810,11 +904,204 @@
       "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
       "match_score": 24,
       "extraction_status": "incomplete",
-      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.10.26365233v1.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.10.26365233.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
       "content_hash": "e0b21cc7e3365032faf1fe96e3358ac82d062e19e08152b085568c0b86ee3ab3",
       "is_seed": false,
       "topic": "general_text",
       "contribution_type": "methodology"
+    },
+    {
+      "id": "arxiv:2610.15714",
+      "slug": "arxiv-2610-15714-971b4b72de",
+      "kind": "paper",
+      "title": "MedHarnessBench: A Unified Benchmark for Healthcare Agent Evaluation",
+      "abstract": "Healthcare agents must transform longitudinal clinical evidence into reliable actions through heterogeneous tools and stateful workflows, conditions under which model-centric systems may lose context, misuse tools, fail to verify consequential transitions, or cross authorization boundaries. Existing medical-agent benchmarks primarily emphasize terminal task outcomes, making it difficult to determine whether execution failures arise from the agent model, the runtime harness, or their interaction. We present the Medical Harness Protocol, an outcome-preserving framework that independently evaluates seven healthcare-specific process dimensions: Care Action Fulfillment, Clinical Resource Competence, Patient-Evidence Alignment, Clinical Workflow Continuity, Clinical Auditability, Closed-Loop Verification, and Clinical Conduct Boundaries. A normalized intervention trace further tracks whether runtime support is available, activated, delivered, adopted by the agent, and propagated into subsequent behavior. We instantiate the protocol as MedHarnessBench, comprising 342 executable tasks across FHIR/EHR operations, healthcare-administration interfaces, and multimodal clinical tools. Across more than 16,000 controlled task executions, MedHarness yields broad improvements in terminal task success, intermediate subtask completion, and healthcare-specific process quality. We further evaluate MedHarness against multiple general-purpose harnesses and use controlled single-fault perturbations to verify the sensitivity and discrimination of the seven-dimensional evaluation. These results demonstrate that healthcare-specific runtime support can substantially improve both task completion and execution quality, while revealing failures that terminal outcomes alone cannot capture. Code and resources are available at https://github.com/Tomry1114/Awesome-Agent-Harness-for-Healthcare.",
+      "authors": [
+        "Rui Tang",
+        "Hongqiu Wang"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-11T15:57:52+00:00",
+      "updated_at": "2026-10-11T15:57:52+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.15714"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.15714v1",
+        "pdf": "https://arxiv.org/pdf/2610.15714v1",
+        "code": "https://github.com/Tomry1114/Awesome-Agent-Harness-for-Healthcare",
+        "html": "https://arxiv.org/html/2610.15714"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "MedHarnessBench: A Unified Benchmark for Healthcare Agent Evaluation Healthcare agents must transform longitudinal clinical evidence into reliable actions through heterogeneous tools and stateful workflows, conditions under which model-centric systems may lose context, misuse",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15714"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "l-centric systems may lose context, misuse tools, fail to verify consequential transitions, or cross authorization boundaries. Existing medical-agent benchmarks primarily emphasize terminal task outcomes, making it difficult to determine whether execution failures arise from the agent model, the runtime harness, or their interaction. We present the Medical Harness Protocol, an outcome-preserving f",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15714"
+        },
+        {
+          "term": "medical",
+          "excerpt": "der which model-centric systems may lose context, misuse tools, fail to verify consequential transitions, or cross authorization boundaries. Existing medical-agent benchmarks primarily emphasize terminal task outcomes, making it difficult to determine whether execution failures arise from the agent model, the runtime harness, or their interaction. We present the Medical Harness Protocol, an out",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15714"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "MedHarnessBench: A Unified Benchmark for Healthcare Agent Evaluation Healthcare agents must transform longitudinal clinical evidence into reliable actions through heterogeneous tools and stateful workflows, conditions under which model-centric systems may lose context, misuse tools, fail to verify consequential transitions, or cross authorization boundaries. Ex",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15714"
+        },
+        {
+          "term": "healthcare",
+          "excerpt": "MedHarnessBench: A Unified Benchmark for Healthcare Agent Evaluation Healthcare agents must transform longitudinal clinical evidence into reliable actions through heterogeneous tools and stateful workflows, conditions under which model-centric systems may lose context, misuse tools, fail to",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15714"
+        },
+        {
+          "term": "patient",
+          "excerpt": "reserving framework that independently evaluates seven healthcare-specific process dimensions: Care Action Fulfillment, Clinical Resource Competence, Patient-Evidence Alignment, Clinical Workflow Continuity, Clinical Auditability, Closed-Loop Verification, and Clinical Conduct Boundaries. A normalized intervention trace further tracks whether runtime support is available, activated, delivered,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15714"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "We instantiate the protocol as MedHarnessBench, comprising 342 executable tasks across FHIR/EHR operations, healthcare-administration interfaces, and multimodal clinical tools. Across more than 16,000 controlled task executions, MedHarness yields broad improvements in terminal task success, intermediate subtask completion, and healthcare-specific process quality. We further evaluate MedHarness aga",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15714"
+        },
+        {
+          "term": "tool use",
+          "excerpt": "ools, maintains state, supports recovery, verifies actions, and enforces permissions. Consequently, failures caused by unavailable resources, invalid tool use, missing verification, or incorrect model decisions may appear indistinguishable, while unreliable intermediate behavior may remain hidden behind successful task completion. We formalize this runtime layer as the Medical Harness and introd",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2610.15714"
+        }
+      ],
+      "related_benchmarks": [
+        "MedHarnessBench",
+        "PhysicianBench",
+        "HealthAdminBench",
+        "HealthBench",
+        "MedAgentBench",
+        "HealthAgentBench"
+      ],
+      "related_agent_url": "../../p/2610.15714.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 26,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "d79f3e956afe0f4f00051f8e88f1864d34b0fd54741bbf33cc13838022c4a6ec",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.15239",
+      "slug": "arxiv-2610-15239-ac62da6738",
+      "kind": "paper",
+      "title": "ClinEdge: An Expert-Graded Benchmark of Real Patient Edge Cases Where Frontier Multimodal Models Fail",
+      "abstract": "Most benchmarks for large language models in medicine are built from licensing examinations and theoretical questions. The few that draw on real clinical data do so only in part, and rarely require a model to read a patient's own imaging. ClinEdge addresses this gap with 32 real, de-identified patient cases from active clinical practice, each evaluated across seven frontier systems for a total of 224 expert-graded evaluations. Each case pairs primary imaging with a short vignette, contains a feature known to defeat pattern-matched reasoning, and is scored against the patient's documented clinical course. The suite is built for depth rather than volume. Grading followed a two-stage expert process. First, a senior orthopaedic surgeon graded all 224 responses on a weighted rubric and a pass-or-fail verdict. Second, a panel of nineteen physicians, largely senior specialists at teaching medical colleges, independently reviewed every case and every one of the 224 grades. All seven production systems were evaluated through their public interfaces, and all 224 conversations are preserved as replayable links. Performance was poor across all systems, and the failures were shared: different vendors missed the same findings and converged on the same wrong plans. From the experts' notes we catalogue 18 recurring failure modes in five families. The models stop reading an image at the first finding. They give generic plans and lean toward over-treatment. They trust a misleading history over correct imaging. Their answers vary across systems and runs, and change with question format. Failing answers were delivered fluently and without any expressed uncertainty. Four cases are released in full; the remaining 28 are held out, and we invite frontier AI labs and healthcare AI companies to evaluate their models against them (research@futrbridge.com)",
+      "authors": [
+        "Anurag Sharma",
+        "Aditya Sharma",
+        "Sapna Baalwan"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-11T00:17:47+00:00",
+      "updated_at": "2026-10-11T00:17:47+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.15239"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.15239v1",
+        "pdf": "https://arxiv.org/pdf/2610.15239v1",
+        "html": "https://arxiv.org/html/2610.15239"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "ClinEdge: An Expert-Graded Benchmark of Real Patient Edge Cases Where Frontier Multimodal Models Fail Most benchmarks for large language models in medicine are built from licensing examinations and theoretical questions. The few that draw on real clinical data do so only in p",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15239"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "ClinEdge: An Expert-Graded Benchmark of Real Patient Edge Cases Where Frontier Multimodal Models Fail Most benchmarks for large language models in medicine are built from licensing examinations and theoretical questions. The few that draw on real clinical data do so only in part, and rarely require a model to read a patient's own imaging. ClinEdge address",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15239"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "ClinEdge: An Expert-Graded Benchmark of Real Patient Edge Cases Where Frontier Multimodal Models Fail Most benchmarks for large language models in medicine are built from licensing examinations and theoretical questions. The few that draw on real clinical data do so only in part, and rarely require a model to read a patient's own imaging. ClinEdge addresses this gap with 32 real, de-identifie",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15239"
+        },
+        {
+          "term": "medical",
+          "excerpt": "ded all 224 responses on a weighted rubric and a pass-or-fail verdict. Second, a panel of nineteen physicians, largely senior specialists at teaching medical colleges, independently reviewed every case and every one of the 224 grades. All seven production systems were evaluated through their public interfaces, and all 224 conversations are preserved as replayable links. Performance was poor acr",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15239"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Fail Most benchmarks for large language models in medicine are built from licensing examinations and theoretical questions. The few that draw on real clinical data do so only in part, and rarely require a model to read a patient's own imaging. ClinEdge addresses this gap with 32 real, de-identified patient cases from active clinical practice, each evaluated across seven frontier systems for a to",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15239"
+        },
+        {
+          "term": "healthcare",
+          "excerpt": "ed fluently and without any expressed uncertainty. Four cases are released in full; the remaining 28 are held out, and we invite frontier AI labs and healthcare AI companies to evaluate their models against them (research@futrbridge.com) Most benchmarks for large language models in medicine are built from licensing examinations and theoretical questions. The few that draw on real clinical data do",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15239"
+        },
+        {
+          "term": "patient",
+          "excerpt": "ClinEdge: An Expert-Graded Benchmark of Real Patient Edge Cases Where Frontier Multimodal Models Fail Most benchmarks for large language models in medicine are built from licensing examinations and theoretical questions. The few that draw on real clinical data do so only in part, and rarely",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15239"
+        },
+        {
+          "term": "Multimodal",
+          "excerpt": "ClinEdge: An Expert-Graded Benchmark of Real Patient Edge Cases Where Frontier Multimodal Models Fail Most benchmarks for large language models in medicine are built from licensing examinations and theoretical questions. The few that draw on real clinical data do so only in part, and rarely require a model to read a patient's o",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15239"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 27,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '404 Not Found' for url 'https://arxiv.org/html/2610.15239'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+      "content_hash": "edbabb1883f412f257f07f33b8d9bf947b5b10d83e8e73c8396cf97c90113723",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
     },
     {
       "id": "doi:10.64898/2026.10.07.26365005",
@@ -879,7 +1166,7 @@
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
       "match_score": 13,
       "extraction_status": "incomplete",
-      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.07.26365005v1.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.07.26365005.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
       "content_hash": "ffa6f9dfb02680239df50583c0dbb760320df06fe66d531625cd0867c5e39fcd",
       "is_seed": false,
       "topic": "general_text",

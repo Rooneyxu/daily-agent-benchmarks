@@ -1,7 +1,200 @@
 {
   "date": "2026-10-11",
-  "count": 1,
+  "count": 3,
   "entries": [
+    {
+      "id": "arxiv:2610.15714",
+      "slug": "arxiv-2610-15714-971b4b72de",
+      "kind": "paper",
+      "title": "MedHarnessBench: A Unified Benchmark for Healthcare Agent Evaluation",
+      "abstract": "Healthcare agents must transform longitudinal clinical evidence into reliable actions through heterogeneous tools and stateful workflows, conditions under which model-centric systems may lose context, misuse tools, fail to verify consequential transitions, or cross authorization boundaries. Existing medical-agent benchmarks primarily emphasize terminal task outcomes, making it difficult to determine whether execution failures arise from the agent model, the runtime harness, or their interaction. We present the Medical Harness Protocol, an outcome-preserving framework that independently evaluates seven healthcare-specific process dimensions: Care Action Fulfillment, Clinical Resource Competence, Patient-Evidence Alignment, Clinical Workflow Continuity, Clinical Auditability, Closed-Loop Verification, and Clinical Conduct Boundaries. A normalized intervention trace further tracks whether runtime support is available, activated, delivered, adopted by the agent, and propagated into subsequent behavior. We instantiate the protocol as MedHarnessBench, comprising 342 executable tasks across FHIR/EHR operations, healthcare-administration interfaces, and multimodal clinical tools. Across more than 16,000 controlled task executions, MedHarness yields broad improvements in terminal task success, intermediate subtask completion, and healthcare-specific process quality. We further evaluate MedHarness against multiple general-purpose harnesses and use controlled single-fault perturbations to verify the sensitivity and discrimination of the seven-dimensional evaluation. These results demonstrate that healthcare-specific runtime support can substantially improve both task completion and execution quality, while revealing failures that terminal outcomes alone cannot capture. Code and resources are available at https://github.com/Tomry1114/Awesome-Agent-Harness-for-Healthcare.",
+      "authors": [
+        "Rui Tang",
+        "Hongqiu Wang"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-11T15:57:52+00:00",
+      "updated_at": "2026-10-11T15:57:52+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.15714"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.15714v1",
+        "pdf": "https://arxiv.org/pdf/2610.15714v1",
+        "code": "https://github.com/Tomry1114/Awesome-Agent-Harness-for-Healthcare",
+        "html": "https://arxiv.org/html/2610.15714"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "MedHarnessBench: A Unified Benchmark for Healthcare Agent Evaluation Healthcare agents must transform longitudinal clinical evidence into reliable actions through heterogeneous tools and stateful workflows, conditions under which model-centric systems may lose context, misuse",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15714"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "l-centric systems may lose context, misuse tools, fail to verify consequential transitions, or cross authorization boundaries. Existing medical-agent benchmarks primarily emphasize terminal task outcomes, making it difficult to determine whether execution failures arise from the agent model, the runtime harness, or their interaction. We present the Medical Harness Protocol, an outcome-preserving f",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15714"
+        },
+        {
+          "term": "medical",
+          "excerpt": "der which model-centric systems may lose context, misuse tools, fail to verify consequential transitions, or cross authorization boundaries. Existing medical-agent benchmarks primarily emphasize terminal task outcomes, making it difficult to determine whether execution failures arise from the agent model, the runtime harness, or their interaction. We present the Medical Harness Protocol, an out",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15714"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "MedHarnessBench: A Unified Benchmark for Healthcare Agent Evaluation Healthcare agents must transform longitudinal clinical evidence into reliable actions through heterogeneous tools and stateful workflows, conditions under which model-centric systems may lose context, misuse tools, fail to verify consequential transitions, or cross authorization boundaries. Ex",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15714"
+        },
+        {
+          "term": "healthcare",
+          "excerpt": "MedHarnessBench: A Unified Benchmark for Healthcare Agent Evaluation Healthcare agents must transform longitudinal clinical evidence into reliable actions through heterogeneous tools and stateful workflows, conditions under which model-centric systems may lose context, misuse tools, fail to",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15714"
+        },
+        {
+          "term": "patient",
+          "excerpt": "reserving framework that independently evaluates seven healthcare-specific process dimensions: Care Action Fulfillment, Clinical Resource Competence, Patient-Evidence Alignment, Clinical Workflow Continuity, Clinical Auditability, Closed-Loop Verification, and Clinical Conduct Boundaries. A normalized intervention trace further tracks whether runtime support is available, activated, delivered,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15714"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "We instantiate the protocol as MedHarnessBench, comprising 342 executable tasks across FHIR/EHR operations, healthcare-administration interfaces, and multimodal clinical tools. Across more than 16,000 controlled task executions, MedHarness yields broad improvements in terminal task success, intermediate subtask completion, and healthcare-specific process quality. We further evaluate MedHarness aga",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15714"
+        },
+        {
+          "term": "tool use",
+          "excerpt": "ools, maintains state, supports recovery, verifies actions, and enforces permissions. Consequently, failures caused by unavailable resources, invalid tool use, missing verification, or incorrect model decisions may appear indistinguishable, while unreliable intermediate behavior may remain hidden behind successful task completion. We formalize this runtime layer as the Medical Harness and introd",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2610.15714"
+        }
+      ],
+      "related_benchmarks": [
+        "MedHarnessBench",
+        "PhysicianBench",
+        "HealthAdminBench",
+        "HealthBench",
+        "MedAgentBench",
+        "HealthAgentBench"
+      ],
+      "related_agent_url": "../../p/2610.15714.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 26,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "d79f3e956afe0f4f00051f8e88f1864d34b0fd54741bbf33cc13838022c4a6ec",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.15239",
+      "slug": "arxiv-2610-15239-ac62da6738",
+      "kind": "paper",
+      "title": "ClinEdge: An Expert-Graded Benchmark of Real Patient Edge Cases Where Frontier Multimodal Models Fail",
+      "abstract": "Most benchmarks for large language models in medicine are built from licensing examinations and theoretical questions. The few that draw on real clinical data do so only in part, and rarely require a model to read a patient's own imaging. ClinEdge addresses this gap with 32 real, de-identified patient cases from active clinical practice, each evaluated across seven frontier systems for a total of 224 expert-graded evaluations. Each case pairs primary imaging with a short vignette, contains a feature known to defeat pattern-matched reasoning, and is scored against the patient's documented clinical course. The suite is built for depth rather than volume. Grading followed a two-stage expert process. First, a senior orthopaedic surgeon graded all 224 responses on a weighted rubric and a pass-or-fail verdict. Second, a panel of nineteen physicians, largely senior specialists at teaching medical colleges, independently reviewed every case and every one of the 224 grades. All seven production systems were evaluated through their public interfaces, and all 224 conversations are preserved as replayable links. Performance was poor across all systems, and the failures were shared: different vendors missed the same findings and converged on the same wrong plans. From the experts' notes we catalogue 18 recurring failure modes in five families. The models stop reading an image at the first finding. They give generic plans and lean toward over-treatment. They trust a misleading history over correct imaging. Their answers vary across systems and runs, and change with question format. Failing answers were delivered fluently and without any expressed uncertainty. Four cases are released in full; the remaining 28 are held out, and we invite frontier AI labs and healthcare AI companies to evaluate their models against them (research@futrbridge.com)",
+      "authors": [
+        "Anurag Sharma",
+        "Aditya Sharma",
+        "Sapna Baalwan"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-11T00:17:47+00:00",
+      "updated_at": "2026-10-11T00:17:47+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.15239"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.15239v1",
+        "pdf": "https://arxiv.org/pdf/2610.15239v1",
+        "html": "https://arxiv.org/html/2610.15239"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "ClinEdge: An Expert-Graded Benchmark of Real Patient Edge Cases Where Frontier Multimodal Models Fail Most benchmarks for large language models in medicine are built from licensing examinations and theoretical questions. The few that draw on real clinical data do so only in p",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15239"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "ClinEdge: An Expert-Graded Benchmark of Real Patient Edge Cases Where Frontier Multimodal Models Fail Most benchmarks for large language models in medicine are built from licensing examinations and theoretical questions. The few that draw on real clinical data do so only in part, and rarely require a model to read a patient's own imaging. ClinEdge address",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15239"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "ClinEdge: An Expert-Graded Benchmark of Real Patient Edge Cases Where Frontier Multimodal Models Fail Most benchmarks for large language models in medicine are built from licensing examinations and theoretical questions. The few that draw on real clinical data do so only in part, and rarely require a model to read a patient's own imaging. ClinEdge addresses this gap with 32 real, de-identifie",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15239"
+        },
+        {
+          "term": "medical",
+          "excerpt": "ded all 224 responses on a weighted rubric and a pass-or-fail verdict. Second, a panel of nineteen physicians, largely senior specialists at teaching medical colleges, independently reviewed every case and every one of the 224 grades. All seven production systems were evaluated through their public interfaces, and all 224 conversations are preserved as replayable links. Performance was poor acr",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15239"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Fail Most benchmarks for large language models in medicine are built from licensing examinations and theoretical questions. The few that draw on real clinical data do so only in part, and rarely require a model to read a patient's own imaging. ClinEdge addresses this gap with 32 real, de-identified patient cases from active clinical practice, each evaluated across seven frontier systems for a to",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15239"
+        },
+        {
+          "term": "healthcare",
+          "excerpt": "ed fluently and without any expressed uncertainty. Four cases are released in full; the remaining 28 are held out, and we invite frontier AI labs and healthcare AI companies to evaluate their models against them (research@futrbridge.com) Most benchmarks for large language models in medicine are built from licensing examinations and theoretical questions. The few that draw on real clinical data do",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15239"
+        },
+        {
+          "term": "patient",
+          "excerpt": "ClinEdge: An Expert-Graded Benchmark of Real Patient Edge Cases Where Frontier Multimodal Models Fail Most benchmarks for large language models in medicine are built from licensing examinations and theoretical questions. The few that draw on real clinical data do so only in part, and rarely",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15239"
+        },
+        {
+          "term": "Multimodal",
+          "excerpt": "ClinEdge: An Expert-Graded Benchmark of Real Patient Edge Cases Where Frontier Multimodal Models Fail Most benchmarks for large language models in medicine are built from licensing examinations and theoretical questions. The few that draw on real clinical data do so only in part, and rarely require a model to read a patient's o",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.15239"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 27,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '404 Not Found' for url 'https://arxiv.org/html/2610.15239'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+      "content_hash": "edbabb1883f412f257f07f33b8d9bf947b5b10d83e8e73c8396cf97c90113723",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
     {
       "id": "doi:10.64898/2026.10.07.26365005",
       "slug": "doi-10-64898-2026-10-07-26365005-663d76e45b",
@@ -65,7 +258,7 @@
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
       "match_score": 13,
       "extraction_status": "incomplete",
-      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.07.26365005v1.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.07.26365005.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
       "content_hash": "ffa6f9dfb02680239df50583c0dbb760320df06fe66d531625cd0867c5e39fcd",
       "is_seed": false,
       "topic": "general_text",

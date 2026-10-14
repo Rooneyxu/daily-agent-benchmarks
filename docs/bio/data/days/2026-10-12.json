@@ -1,7 +1,98 @@
 {
   "date": "2026-10-12",
-  "count": 1,
+  "count": 2,
   "entries": [
+    {
+      "id": "arxiv:2610.16346",
+      "slug": "arxiv-2610-16346-25c8530729",
+      "kind": "paper",
+      "title": "CellChain: Benchmarking Cross-Scale Evidence Use for Perturbation Reasoning",
+      "abstract": "Recent advances in foundation models and large-scale cellular perturbation datasets have driven growing interest in using LLMs to predict and reason about cellular responses. Biological reasoning in this setting involves relating molecular mechanisms, cellular responses, and functional outcomes across scales. Evaluating foundation models therefore requires assessing not only whether their predictions are correct, but also how those predictions depend on the biological evidence provided. We introduce CellChain, an experimentally grounded benchmark comprising 590 biological cases and 2,360 matched evidence-condition instances across gene-dependency prediction, cytokine-axis identification, and drug-sensitivity ranking. CellChain links perturbation experiments and external biological resources through a provenance-aware evidence graph spanning molecular, pathway, transcriptional, and phenotypic information. Task-specific conditions vary evidence coverage, composition, or assignment while preserving questions, candidate answers, reference targets, and scoring rules. Across 18 foundation models, the highest accuracies under prespecified target-evidence conditions are 57.5%, 75.5%, and 70.8%, respectively, and broader evidence coverage does not consistently improve accuracy. On the drug-sensitivity benchmark cohort, matched reference histories outperform swapped histories by an average of 13.0 percentage points in cluster-weighted accuracy. Decision-transition analysis separates corrections, newly introduced errors, and wrong-answer switches, revealing substantial answer changes hidden by small net accuracy differences. CellChain provides controlled comparisons for attributing changes in model predictions to prespecified expansions of biological context, including changes in evidence coverage, composition, and biological assignment.",
+      "authors": [
+        "Xue Xia",
+        "Yue Wang",
+        "Shuizhou Chen",
+        "Lang Yu",
+        "Hao Wu",
+        "Wenxuan Huang",
+        "Chengkai Yao",
+        "Zhangyang Gao",
+        "Siqi Sun"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-12T08:04:27+00:00",
+      "updated_at": "2026-10-12T08:04:27+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.16346"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.16346v1",
+        "pdf": "https://arxiv.org/pdf/2610.16346v1",
+        "html": "https://arxiv.org/html/2610.16346"
+      },
+      "evidence": [
+        {
+          "term": "We introduce CellChain, an experimentally grounded benchmark",
+          "excerpt": "erefore requires assessing not only whether their predictions are correct, but also how those predictions depend on the biological evidence provided. We introduce CellChain, an experimentally grounded benchmark comprising 590 biological cases and 2,360 matched evidence-condition instances across gene-dependency prediction, cytokine-axis identification, and drug-sensitivity ranking. CellChain links perturbation experiments and external biological",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.16346"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "CellChain: Benchmarking Cross-Scale Evidence Use for Perturbation Reasoning Recent advances in foundation models and large-scale cellular perturbation datasets have driven growing interest in using LLMs to predict and reason about cellular responses. Biologica",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.16346"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "CellChain: Benchmarking Cross-Scale Evidence Use for Perturbation Reasoning Recent advances in foundation models and large-scale cellular perturbation datasets have driven growing interest in using LLMs to predict and reason about cellular responses. Biological r",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.16346"
+        },
+        {
+          "term": "biological",
+          "excerpt": "tion models and large-scale cellular perturbation datasets have driven growing interest in using LLMs to predict and reason about cellular responses. Biological reasoning in this setting involves relating molecular mechanisms, cellular responses, and functional outcomes across scales. Evaluating foundation models therefore requires assessing not only whether their predictions are correct, but also",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.16346"
+        },
+        {
+          "term": "gene",
+          "excerpt": "d. We introduce CellChain, an experimentally grounded benchmark comprising 590 biological cases and 2,360 matched evidence-condition instances across gene-dependency prediction, cytokine-axis identification, and drug-sensitivity ranking. CellChain links perturbation experiments and external biological resources through a provenance-aware evidence graph spanning molecular, pathway, transcript",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.16346"
+        },
+        {
+          "term": "molecular",
+          "excerpt": "ets have driven growing interest in using LLMs to predict and reason about cellular responses. Biological reasoning in this setting involves relating molecular mechanisms, cellular responses, and functional outcomes across scales. Evaluating foundation models therefore requires assessing not only whether their predictions are correct, but also how those predictions depend on the biological eviden",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.16346"
+        }
+      ],
+      "related_benchmarks": [
+        "PerturbQA",
+        "PertReasonQA",
+        "AssayBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "8b732d6812b5e897efbc08cd31d3a067d912a3f35542b1d01541e8304d7791d3",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
     {
       "id": "doi:10.64898/2026.10.10.26365233",
       "slug": "doi-10-64898-2026-10-10-26365233-587b87f1a5",
@@ -68,7 +159,7 @@
       "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
       "match_score": 24,
       "extraction_status": "incomplete",
-      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.10.26365233v1.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.10.26365233.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
       "content_hash": "e0b21cc7e3365032faf1fe96e3358ac82d062e19e08152b085568c0b86ee3ab3",
       "is_seed": false,
       "topic": "general_text",
