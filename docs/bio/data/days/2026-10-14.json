@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-14",
+  "count": 1,
+  "entries": [
+    {
+      "id": "arxiv:2610.19663",
+      "slug": "arxiv-2610-19663-9f0570d6e7",
+      "kind": "paper",
+      "title": "Learning When to Trust Medical Knowledge: Regression-Safe Routing for Clinical Reasoning",
+      "abstract": "Clinical reasoning LLMs need external medical knowledge, but retrieved evidence and reasoning chains can be outdated, poisoned, or hallucinated. Harmful knowledge can cause regression: changing a correct answer into an incorrect one. We construct a medical knowledge-poisoning benchmark covering retrieved evidence and reasoning chains, with seven attack families filtered by a three-judge \"subtle-but-wrong\" vote and paired clean exams that separate poisoning effects from question difficulty. No fixed knowledge-use strategy is robust across these settings: strong RAG methods trade robustness to poisoned evidence against accuracy when evidence is useful. We formulate knowledge use as per-instance routing and introduce Med-TrustRouter, a lightweight controller that keeps the solver frozen. From leakage-free runtime signals, it estimates each action's expected correctness gain and uncertainty, preserving the base answer unless another action is confidently better. Across seven medical reasoning settings, Med-TrustRouter achieves 78.9 macro and 69.2 worst-case accuracy, matching the strongest competitor on macro accuracy while substantially improving the worst-case floor. Its gains transfer across solvers and evidence judges, unlike a hand-coded router using the same signals. Similar performance across linear, tree, and neural action-value heads suggests that the benefit comes from routing rather than estimator complexity. These results support learning when to trust external knowledge for robust clinical reasoning.",
+      "authors": [
+        "Hui Zhang",
+        "Yujia Zeng",
+        "Yuhao Xin"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-14T06:39:13+00:00",
+      "updated_at": "2026-10-14T06:39:13+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.19663"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.19663v1",
+        "pdf": "https://arxiv.org/pdf/2610.19663v1",
+        "html": "https://arxiv.org/html/2610.19663"
+      },
+      "evidence": [
+        {
+          "term": "We construct a medical knowledge-poisoning benchmark",
+          "excerpt": "reasoning chains can be outdated, poisoned, or hallucinated. Harmful knowledge can cause regression: changing a correct answer into an incorrect one. We construct a medical knowledge-poisoning benchmark covering retrieved evidence and reasoning chains, with seven attack families filtered by a three-judge \"subtle-but-wrong\" vote and paired clean exams that separate poisoning effects from question difficulty. No fixed knowledge-use strategy",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.19663"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "or hallucinated. Harmful knowledge can cause regression: changing a correct answer into an incorrect one. We construct a medical knowledge-poisoning benchmark covering retrieved evidence and reasoning chains, with seven attack families filtered by a three-judge \"subtle-but-wrong\" vote and paired clean exams that separate poisoning effects from question difficulty. No fixed knowledge-use strategy",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.19663"
+        },
+        {
+          "term": "medical",
+          "excerpt": "Learning When to Trust Medical Knowledge: Regression-Safe Routing for Clinical Reasoning Clinical reasoning LLMs need external medical knowledge, but retrieved evidence and reasoning chains can be outdated, poisoned, or hallucinated. Harmful knowledge can cause regressi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.19663"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Learning When to Trust Medical Knowledge: Regression-Safe Routing for Clinical Reasoning Clinical reasoning LLMs need external medical knowledge, but retrieved evidence and reasoning chains can be outdated, poisoned, or hallucinated. Harmful knowledge can cause regression: changing a correct answer into an incorrect",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.19663"
+        }
+      ],
+      "related_benchmarks": [
+        "PubMedQA",
+        "MedQA",
+        "MedMCQA",
+        "MMCQA",
+        "PubMQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 13,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "ae4b58100191ded5f6987b75ff926a40ac4998c4ab1063b34dfa186f3c998532",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
