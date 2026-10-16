@@ -1,0 +1,292 @@
+{
+  "date": "2026-10-15",
+  "count": 3,
+  "entries": [
+    {
+      "id": "arxiv:2610.22298",
+      "slug": "arxiv-2610-22298-0cb755e191",
+      "kind": "paper",
+      "title": "AI Consilium: a Benchmark of LLM Clinical Multidisciplinary Second Opinions",
+      "abstract": "Large language models (LLMs) can generate differential diagnoses for complex cases, but a useful second opinion must also be factually grounded, clinically coherent, actionable, and safe. We developed a multidimensional benchmark using 300 diagnostically resolved NEJM--MedQA cases: 110 for physician reference ratings and Judge calibration and 190 for held-out evaluation. Eight single-model pipelines generated independent role-specific opinions and interactive-consilium reports under free-form and structured clinical-reasoning conditions. A physician-calibrated LLM Judge evaluated 3,040 final reports and the corresponding structured primary-role outputs. Model identity separated report quality more strongly than response format. Structured final reports had higher overall mean scores in seven of eight model pipelines, with their clearest advantage in management (2.740 vs. 2.436). Compared with the structured pre-consilium primary-role opinion, the complete structured synthesis had higher pooled scores across all five shared criteria, with the largest increases in problem prioritization, factual grounding, and reasoning coherence. GPT-5.6-Sol led every evaluated component and reached consensus in the fewest review rounds. These findings show that the benchmark can distinguish model capability, the contribution of multidisciplinary synthesis, criterion-specific effects of response structure, deliberation dynamics, and inference requirements within one common-case evaluation.",
+      "authors": [
+        "Alexey A. Bokov",
+        "Ivan I. Panin",
+        "Nikolay B. Nechaev",
+        "Mikhail Yu. Valkov",
+        "Valeria Yu. Chernina",
+        "Natalia Gombolevskaya",
+        "Ayyaz Hussain",
+        "Vladimir M. Agafonov",
+        "Victor A. Gombolevskiy",
+        "Aleksandr V. Nesterov",
+        "Iaroslav R. Bespalov",
+        "Ivan V. Oseledets",
+        "Dmitry V. Dylov"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-15T17:46:37+00:00",
+      "updated_at": "2026-10-15T17:46:37+00:00",
+      "priority": "P0",
+      "categories": [
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.22298"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.22298v1",
+        "pdf": "https://arxiv.org/pdf/2610.22298v1",
+        "data": "https://huggingface.co/datasets/katielink/nejm-medqa-diagnostic-reasoning-dataset",
+        "html": "https://arxiv.org/html/2610.22298"
+      },
+      "evidence": [
+        {
+          "term": "Judge calibration",
+          "excerpt": "ble, and safe. We developed a multidimensional benchmark using 300 diagnostically resolved NEJM--MedQA cases: 110 for physician reference ratings and Judge calibration and 190 for held-out evaluation. Eight single-model pipelines generated independent role-specific opinions and interactive-consilium reports under free-form and structured clinical-reasoning conditions. A physician-calibrated LLM Judge eva",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.22298"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "AI Consilium: a Benchmark of LLM Clinical Multidisciplinary Second Opinions Large language models (LLMs) can generate differential diagnoses for complex cases, but a useful second opinion must also be factually grounded, clinically coherent, actionable, and safe. W",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.22298"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "AI Consilium: a Benchmark of LLM Clinical Multidisciplinary Second Opinions Large language models (LLMs) can generate differential diagnoses for complex cases, but a useful second opinion must also be factually grounded, clinically coherent, actionable, and safe. We developed a mu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.22298"
+        },
+        {
+          "term": "Pathology",
+          "excerpt": "and management. Pediatric Surgery: Assesses the enlarging solid breast mass for excisional biopsy or definitive surgical resection and management. • Pathology: Provides histologic diagnosis from tissue obtained via diagnostic procedures to confirm the mass etiology. Pathology: Provides histologic diagnosis from tissue obtained via diagnostic procedures to confirm the mass etiology. [[SECTION C.3",
+          "location": "C.3.2 Concilium Participants",
+          "source_url": "https://arxiv.org/html/2610.22298"
+        },
+        {
+          "term": "Multi-Agent",
+          "excerpt": "sed systems. MDAgents dynamically selects between individual and collaborative modes depending on estimated medical complexity ( Kim et al., 2024 ) . Multi-Agent Conversation (MAC) employs multiple physician agents and a supervising agent that iteratively discuss clinical cases ( Chen et al., 2025 ) . Model Confrontation and Collaboration (MCC) implements structured debate among heterogeneous LLMs",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2610.22298"
+        },
+        {
+          "term": "risk assessment",
+          "excerpt": "dures, and treatments. Score Assign this score when 0 A fabricated or distorted clinically significant fact is present and could alter the diagnosis, risk assessment, or management strategy; or the conclusion directly contradicts the source data. 1 There are several factual errors or one important unsupported interpretation; the sources are unclear; however, the entire conclusion does not depend exclus",
+          "location": "Factual accuracy and sources",
+          "source_url": "https://arxiv.org/html/2610.22298"
+        }
+      ],
+      "related_benchmarks": [
+        "MedQA",
+        "LLMEval",
+        "NEJM-MedQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "match_score": 20,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "1854dcd0beec023cd241256a63e0f24ad71645db6f082590c314910d390aed60",
+      "is_seed": false,
+      "topic": "biosafety",
+      "contribution_type": "methodology"
+    },
+    {
+      "id": "arxiv:2610.21270",
+      "slug": "arxiv-2610-21270-07bcfd98a8",
+      "kind": "paper",
+      "title": "Auditing Escalation Reliability in Healthcare LLM Agents: A Perturbation-Controlled Benchmark of Workflow-State Failures",
+      "abstract": "Trustworthy biomedical AI requires reliable action selection when evidence is missing, stale, conflicting, or late, not only accurate answers on static inputs. We instantiate an episode-level evaluation protocol as 400 synthetic healthcare workflow episodes: 40 hand-authored semantic seeds across four task classes, two surface parameterizations, and five controlled variants, scored on ANSWER/ASK CLARIFICATION/ABSTAIN/ESCALATE under a pre-declared 5:1 missed-versus-unnecessary escalation cost. Reference actions are single-author study-policy labels, not clinician-adjudicated ground truth. Across five open-weight configurations (1.7B--9.7B), clean decision accuracy reaches 0.97, yet uncertainty-prompted models miss 32--97% of required escalations. The stronger 9.7B configuration narrows but does not remove the gap, falling from 0.97 clean accuracy to 0.78 under conflict. Verbalized confidence is inconsistent (ECE 0.10--0.54; failure AUROC 0.48--0.77), and a development-tuned confidence-only policy yields no utility gain. A transparent workflow-aware controller improves 5:1 utility for every model and reduces missed escalations to 0.12--0.24, at specificity 0.83--0.93. However, a 30-concept lexical stress test reduces each rule detector's recall from 1.00 on trigger phrases to 0.00 on unseen paraphrases, limiting the controller claim to this benchmark. Seed-clustered statistics, ablations, cross-task transfer, raw outputs, and manifests are packaged for audit. The results motivate explicit workflow-state evaluation while showing that apparently effective routing controls need their own generalization tests.",
+      "authors": [
+        "Zihao Zheng",
+        "Junyi Yao",
+        "Baichuan Li",
+        "Jiayu Long"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-15T05:04:10+00:00",
+      "updated_at": "2026-10-15T05:04:10+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.21270"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.21270v1",
+        "pdf": "https://arxiv.org/pdf/2610.21270v1",
+        "html": "https://arxiv.org/html/2610.21270"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "Auditing Escalation Reliability in Healthcare LLM Agents: A Perturbation-Controlled Benchmark of Workflow-State Failures Trustworthy biomedical AI requires reliable action selection when evidence is missing, stale, conflicting, or late, not only accurate answers on static inputs. We instantiate an episode-level evaluation protocol",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.21270"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "Auditing Escalation Reliability in Healthcare LLM Agents: A Perturbation-Controlled Benchmark of Workflow-State Failures Trustworthy biomedical AI requires reliable action selection when evidence is missing, stale, conflicting, or late, not only accurate answers on static inputs. We instantiate an episode-level evaluation protocol as 400 synthetic healthcare workflow episodes: 40",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.21270"
+        },
+        {
+          "term": "healthcare",
+          "excerpt": "Auditing Escalation Reliability in Healthcare LLM Agents: A Perturbation-Controlled Benchmark of Workflow-State Failures Trustworthy biomedical AI requires reliable action selection when evidence is missing, stale, conflicting, or late, not only accurate answers on static inputs. We i",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.21270"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "rge language models in patient interaction tasks (CRAFT-MD),” Nature Medicine , vol. 31, pp. 77–86, 2025. [13] S. Schmidgall et al. , “AgentClinic: A multimodal benchmark for tool-using clinical AI agents,” npj Digital Medicine , vol. 9, Art. no. 499, 2026. [14] T. Tu et al. , “Towards conversational diagnostic artificial intelligence,” Nature , 2025. [15] V. Liévin et al. , “Towards conversationa",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.21270"
+        },
+        {
+          "term": "tool-using",
+          "excerpt": "tient interaction tasks (CRAFT-MD),” Nature Medicine , vol. 31, pp. 77–86, 2025. [13] S. Schmidgall et al. , “AgentClinic: A multimodal benchmark for tool-using clinical AI agents,” npj Digital Medicine , vol. 9, Art. no. 499, 2026. [14] T. Tu et al. , “Towards conversational diagnostic artificial intelligence,” Nature , 2025. [15] V. Liévin et al. , “Towards conversational artificial intelligence",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.21270"
+        }
+      ],
+      "related_benchmarks": [
+        "AbstentionBench",
+        "MedAgentBench",
+        "HealthBench",
+        "PatientAgentBench",
+        "MedDistractQA",
+        "EHRNoteQA"
+      ],
+      "related_agent_url": "../../p/2610.21270.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 20,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "86170f8c2b215f95c08a6c4662452bdfb3886e5d64b9425194bfc694296b290a",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.21266",
+      "slug": "arxiv-2610-21266-5724c99202",
+      "kind": "paper",
+      "title": "TRACER: A Multimodal Harness for Patient Care in Hospitals",
+      "abstract": "Continuous video and clinical records provide complementary information for understanding how patient behavior evolves over a hospital stay. A central challenge is how to represent behavior across the entire stay while preserving access to fine-grained visual and clinical evidence. We introduce TRACER, a training-free multimodal harness that constructs minute-level action records from video and combines them with clinical records into hourly reports. The harness equips an LLM agent with tools to query this hierarchy, inspect relevant video, and retrieve clinical records. To evaluate TRACER, we construct two benchmarks. The first contains 397 annotated one-minute clips spanning 15 atomic actions; the second poses 144 clinician-informed multiple-choice questions, grounded in 264 hours of video and clinical records from two ICU patients. TRACER achieves up to 84.8% accuracy for action detection and 61.0% QA accuracy versus 49.3% for the strongest baseline using the same backbone. Across 280 patients spanning approximately 60,000 camera-hours, TRACER identifies significantly less purposeful activity in patients with a positive delirium assessment during their stay than in those without (p < 0.0001). Our results show that combining continuous video with clinical records can support understanding of patient behavior over time and across patient cohorts without training on protected health data.",
+      "authors": [
+        "Zane Durante",
+        "Paul Tang",
+        "Keshigeyan Chandrasegaran",
+        "Amit Kaushal",
+        "Shrinidhi Kowshika Lakshmikanth",
+        "Feolu Kolawole",
+        "Yu Jun Zheng",
+        "Yifan Geng",
+        "Shobhit Agarwal",
+        "Kevin Schulman",
+        "Juan Carlos Niebles",
+        "Ehsan Adeli",
+        "Arnold Milstein",
+        "Li Fei-Fei"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-15T05:00:47+00:00",
+      "updated_at": "2026-10-15T05:00:47+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.21266"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.21266v1",
+        "pdf": "https://arxiv.org/pdf/2610.21266v1",
+        "code": "https://github.com/zanedurante/tracer-harness",
+        "html": "https://arxiv.org/html/2610.21266"
+      },
+      "evidence": [
+        {
+          "term": "we construct two benchmarks",
+          "excerpt": "ports. The harness equips an LLM agent with tools to query this hierarchy, inspect relevant video, and retrieve clinical records. To evaluate TRACER, we construct two benchmarks. The first contains 397 annotated one-minute clips spanning 15 atomic actions; the second poses 144 clinician-informed multiple-choice questions, grounded in 264 hours of video and clinical records from two ICU patients. TRACER achieves up",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.21266"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "s equips an LLM agent with tools to query this hierarchy, inspect relevant video, and retrieve clinical records. To evaluate TRACER, we construct two benchmarks. The first contains 397 annotated one-minute clips spanning 15 atomic actions; the second poses 144 clinician-informed multiple-choice questions, grounded in 264 hours of video and clinical records from two ICU patients. TRACER achieves u",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.21266"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "s equips an LLM agent with tools to query this hierarchy, inspect relevant video, and retrieve clinical records. To evaluate TRACER, we construct two benchmarks. The first contains 397 annotated one-minute clips spanning 15 atomic actions; the second poses 144 clinician-informed multiple-choice questions, grounded in 264 hours of video and clinical records from two ICU patients. TRACER achieves up",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.21266"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "TRACER: A Multimodal Harness for Patient Care in Hospitals Continuous video and clinical records provide complementary information for understanding how patient behavior evolves over a hospital stay. A central challenge is how to represent behavior across the entire stay while preserving access to fine-grained visual and clini",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.21266"
+        },
+        {
+          "term": "patient",
+          "excerpt": "TRACER: A Multimodal Harness for Patient Care in Hospitals Continuous video and clinical records provide complementary information for understanding how patient behavior evolves over a hospital stay. A central challenge is how to represent behavior across the entire stay while pr",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.21266"
+        },
+        {
+          "term": "Multimodal",
+          "excerpt": "TRACER: A Multimodal Harness for Patient Care in Hospitals Continuous video and clinical records provide complementary information for understanding how patient behavior evolves over a hospital stay. A central challenge is how to represent behavior across the",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.21266"
+        },
+        {
+          "term": "tool use",
+          "excerpt": "ore at most 83.8% on EHR-related questions, while TRACER scores 96.2%. With the same language model and the same data sources, TRACER’s hierarchy and tool use outperform the long-context and Socratic baselines (+11.7 points over the strongest baseline; 95% CI [4.4, 18.9], paired bootstrap over questions). Video EHR Cross-modal Avg. Agent tools < < 5 min 5–30 min > > 30 min Record only Video + EH",
+          "location": "4.2 Longitudinal Reasoning on TRAJECTORY-144",
+          "source_url": "https://arxiv.org/html/2610.21266"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "ynchronous modality (EHR) into our temporal hierarchy. LLM agents in medicine generally operate over text or structured data. Existing works focus on multi-agent question answering ( Tang et al., 2024 ) , code generation over electronic records ( Shi et al., 2024 ) , tool orchestration over single images ( Fallahpour et al., 2025 ) , and diagnostic dialogue ( Tu et al., 2025 ) . Recent work finds t",
+          "location": "5 Related Work",
+          "source_url": "https://arxiv.org/html/2610.21266"
+        }
+      ],
+      "related_benchmarks": [
+        "LongVideoBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 20,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "43cd29b8677c27ef7e1918b555dd340e6728c0df9c64e3e7ab5de747ab899c09",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}

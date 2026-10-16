@@ -98,7 +98,7 @@
       "slug": "doi-10-64898-2026-10-10-26365233-587b87f1a5",
       "kind": "paper",
       "title": "ClinStigma: A Clinician-Guided Framework for Developing Synthetic Benchmarks of Contextual Stigmatizing Language in Clinical Documentation",
-      "abstract": "Objective Large language models (LLMs) are increasingly used to generate, summarize, and evaluate clinical documentation, yet standardized methods for evaluating nuanced, context-dependent clinical language remain limited. Existing approaches rely primarily on annotated clinical corpora or keyword-based methods, restricting reproducibility, public dissemination, and systematic comparison across models. We present ClinStigma, a clinician-guided framework for constructing, annotating, and evaluating synthetic benchmarks of contextual stigmatizing language, demonstrated through ClinStigma-SUD, its inaugural implementation for substance use disorder documentation. Materials and Methods Candidate clinical sentences were generated using a frontier language model and iteratively reviewed according to a clinician-developed annotation rubric refined through expert review in stigmatizing language. The resulting benchmark intentionally incorporates explicit stigmatizing, neutral, and contextually ambiguous (\"gray-zone\") documentation requiring clinical reasoning rather than keyword recognition. Three locally deployed open-weight LLMs were evaluated using zero-shot inference, followed by external evaluation using independently annotated clinical documentation from MIMIC-IV. Results ClinStigma-SUD consists of 500 clinician-adjudicated synthetic clinical documentation sentences. Inter-rater agreement was 98.8% across the full benchmark (Cohen's {kappa} = 0.976) and 94.0% within the intentionally ambiguous subset ({kappa} = 0.880). Under zero-shot prompting, binary accuracy ranged from 84.8% to 91.8% across evaluated models, while F1 for the ambiguous (gray) class ranged from 0.038 to 0.423. Zero-shot external evaluation on 3,716 annotated examples from the independently annotated Harrigian MIMIC-IV corpus yielded 84.4% accuracy (84.4% balanced accuracy; macro F1 0.824), against a 69.9% majority-class baseline. Stigmatizing-class F1 was 0.879 in the substance-related subgroup and 0.883 in the full external corpus. Discussion and Conclusion ClinStigma establishes a reproducible clinician-guided framework for developing synthetic evaluation benchmarks for contextual clinical language. By combining structured clinical expertise, explicit annotation guidance, synthetic benchmark generation, and external evaluation, the framework enables open, privacy-preserving evaluation of language models while providing a scalable foundation for benchmark development across additional clinical specialties, including obstetrics, emergency medicine, and mental health.",
+      "abstract": "ObjectiveLarge language models (LLMs) are increasingly used to generate, summarize, and evaluate clinical documentation, yet standardized methods for evaluating nuanced, context-dependent clinical language remain limited. Existing approaches rely primarily on annotated clinical corpora or keyword-based methods, restricting reproducibility, public dissemination, and systematic comparison across models. We present ClinStigma, a clinician-guided framework for constructing, annotating, and evaluating synthetic benchmarks of contextual stigmatizing language, demonstrated through ClinStigma-SUD, its inaugural implementation for substance use disorder documentation.\n\nMaterials and MethodsCandidate clinical sentences were generated using a frontier language model and iteratively reviewed according to a clinician-developed annotation rubric refined through expert review in stigmatizing language. The resulting benchmark intentionally incorporates explicit stigmatizing, neutral, and contextually ambiguous (\"gray-zone\") documentation requiring clinical reasoning rather than keyword recognition. Three locally deployed open-weight LLMs were evaluated using zero-shot inference, followed by external evaluation using independently annotated clinical documentation from MIMIC-IV.\n\nResultsClinStigma-SUD consists of 500 clinician-adjudicated synthetic clinical documentation sentences. Inter-rater agreement was 98.8% across the full benchmark (Cohens {kappa} = 0.976) and 94.0% within the intentionally ambiguous subset ({kappa} = 0.880). Under zero-shot prompting, binary accuracy ranged from 84.8% to 91.8% across evaluated models, while F1 for the ambiguous (gray) class ranged from 0.038 to 0.423. Zero-shot external evaluation on 3,716 annotated examples from the independently annotated Harrigian MIMIC-IV corpus yielded 84.4% accuracy (84.4% balanced accuracy; macro F1 0.824), against a 69.9% majority-class baseline. Stigmatizing-class F1 was 0.879 in the substance-related subgroup and 0.883 in the full external corpus.\n\nDiscussion and ConclusionClinStigma establishes a reproducible clinician-guided framework for developing synthetic evaluation benchmarks for contextual clinical language. By combining structured clinical expertise, explicit annotation guidance, synthetic benchmark generation, and external evaluation, the framework enables open, privacy-preserving evaluation of language models while providing a scalable foundation for benchmark development across additional clinical specialties, including obstetrics, emergency medicine, and mental health.",
       "authors": [
         "Izzo, J. A.",
         "McIntyre, A. M.",
@@ -112,7 +112,7 @@
       "updated_at": "2026-10-12T00:00:00+00:00",
       "priority": "P0",
       "categories": [
-        "general_text"
+        "multimodal"
       ],
       "collection_status": "confirmed",
       "access_status": "public",
@@ -123,31 +123,39 @@
       "links": {
         "abs": "https://www.medrxiv.org/content/10.64898/2026.10.10.26365233",
         "pdf": "https://www.medrxiv.org/content/10.64898/2026.10.10.26365233.full.pdf",
+        "code": "https://github.com/izzomd/ClinStigma",
+        "data": "https://huggingface.co/datasets/ClinStigma/ClinStigma-SUD",
         "html": "https://www.medrxiv.org/content/10.64898/2026.10.10.26365233.full"
       },
       "evidence": [
         {
           "term": "Developing Synthetic Benchmarks",
-          "excerpt": "ClinStigma: A Clinician-Guided Framework for Developing Synthetic Benchmarks of Contextual Stigmatizing Language in Clinical Documentation Objective Large language models (LLMs) are increasingly used to generate, summarize, and evaluate clinical documentation, yet standardized methods for evaluating nuanced, contex",
+          "excerpt": "ClinStigma: A Clinician-Guided Framework for Developing Synthetic Benchmarks of Contextual Stigmatizing Language in Clinical Documentation ObjectiveLarge language models (LLMs) are increasingly used to generate, summarize, and evaluate clinical documentation, yet standardized methods for evaluating nuanced, context",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.10.26365233.full"
         },
         {
           "term": "benchmark",
-          "excerpt": "ClinStigma: A Clinician-Guided Framework for Developing Synthetic Benchmarks of Contextual Stigmatizing Language in Clinical Documentation Objective Large language models (LLMs) are increasingly used to generate, summarize, and evaluate clinical documentation, yet standardized methods for evaluating nuanced, conte",
+          "excerpt": "ClinStigma: A Clinician-Guided Framework for Developing Synthetic Benchmarks of Contextual Stigmatizing Language in Clinical Documentation ObjectiveLarge language models (LLMs) are increasingly used to generate, summarize, and evaluate clinical documentation, yet standardized methods for evaluating nuanced, contex",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.10.26365233.full"
         },
         {
           "term": "medicine",
-          "excerpt": "nguage models while providing a scalable foundation for benchmark development across additional clinical specialties, including obstetrics, emergency medicine, and mental health. Objective Large language models (LLMs) are increasingly used to generate, summarize, and evaluate clinical documentation, yet standardized methods for evaluating nuanced, context-dependent clinical language remain limit",
+          "excerpt": "nguage models while providing a scalable foundation for benchmark development across additional clinical specialties, including obstetrics, emergency medicine, and mental health. [[SECTION ClinStigma: A Clinician-Guided Framework for Developing Synthetic Benchmarks of Contextual Stigmatizing Language in Clinical Documentation | medRxiv]] ClinStigma: A Clinician-Guided Framework for Developing Sy",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.10.26365233.full"
         },
         {
           "term": "clinical",
-          "excerpt": "ClinStigma: A Clinician-Guided Framework for Developing Synthetic Benchmarks of Contextual Stigmatizing Language in Clinical Documentation Objective Large language models (LLMs) are increasingly used to generate, summarize, and evaluate clinical documentation, yet standardized methods for evaluating nuanced, context-dependent clinical language remain limited. Ex",
+          "excerpt": "ClinStigma: A Clinician-Guided Framework for Developing Synthetic Benchmarks of Contextual Stigmatizing Language in Clinical Documentation ObjectiveLarge language models (LLMs) are increasingly used to generate, summarize, and evaluate clinical documentation, yet standardized methods for evaluating nuanced, context-dependent clinical language remain limited. Exi",
           "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.10.26365233.full"
+        },
+        {
+          "term": "Pathology",
+          "excerpt": "Environmental Health (1022) Oncology (3692) Ophthalmology (1077) Orthopedics (400) Otolaryngology (461) Pain Medicine (488) Palliative Medicine (142) Pathology (715) Pediatrics (1837) Pharmacology and Therapeutics (745) Primary Care Research (780) Psychiatry and Clinical Psychology (6041) Public and Global Health (9888) Radiology and Imaging (2481) Rehabilitation Medicine and Physical Therapy (14",
+          "location": "Subject Area",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.10.26365233.full"
         }
       ],
@@ -157,12 +165,12 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
-      "match_score": 24,
-      "extraction_status": "incomplete",
-      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.10.26365233.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
-      "content_hash": "e0b21cc7e3365032faf1fe96e3358ac82d062e19e08152b085568c0b86ee3ab3",
+      "match_score": 26,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "437d9fd08a40add5336eb3c45a519de2dd2c7dfe220547611f334ae6344b7e26",
       "is_seed": false,
-      "topic": "general_text",
+      "topic": "multimodal",
       "contribution_type": "methodology"
     }
   ]

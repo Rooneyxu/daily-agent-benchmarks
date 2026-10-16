@@ -1,7 +1,99 @@
 {
   "date": "2026-10-14",
-  "count": 1,
+  "count": 2,
   "entries": [
+    {
+      "id": "arxiv:2610.20830",
+      "slug": "arxiv-2610-20830-052e52fef1",
+      "kind": "paper",
+      "title": "PEDBench: Can Speech Models Detect Phonetic Errors?",
+      "abstract": "Phonetic error detection (PED) aims to identify phoneme-level substitutions, deletions, and insertions and is essential for educational and clinical speech assessment and intervention. Despite recent advances in speech models for phoneme recognition, their ability to reliably detect fine-grained phonetic errors remains unclear because of a lack of high-quality evaluation data. To address this gap, we introduce PEDBench, the first PED benchmark spanning a continuum from natural to controlled speech. It comprises real-world recordings of spoken errors made by children (N=334), scripted error productions by human actors (N=1,188), and synthetic error productions generated using phone-conditioned text-to-speech (N=1,083). All phonetic annotations were transcribed and verified by two phonetically trained annotators. Our evaluation of 13 state-of-the-art speech models shows that they fail to reliably detect phonetic errors, even under controlled conditions with acted and synthetic speech, where acoustic variability is reduced. The models also exhibit low precision, frequently misclassifying correctly pronounced phonemes as errors. Our speech-language models, fine-tuned on synthetic data, outperform commercial and open-source baselines on word-level PED, although a sim-to-real domain gap remains. We plan to publicly release our code and recipes, along with our acted and synthetic datasets, to support the development of more accurate PED systems.",
+      "authors": [
+        "Zhonghao Shi",
+        "Zackary Rackauckas",
+        "Jasmine Yip",
+        "Savannah Halpern",
+        "Simon Campos",
+        "Lauren Brace",
+        "Emma Yang",
+        "Tiantian Feng",
+        "Xuan Shi",
+        "Shrikanth Narayanan",
+        "Teresa Satterfield",
+        "Ying Xu"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-14T19:15:48+00:00",
+      "updated_at": "2026-10-14T19:15:48+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.20830"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.20830v1",
+        "pdf": "https://arxiv.org/pdf/2610.20830v1",
+        "html": "https://arxiv.org/html/2610.20830"
+      },
+      "evidence": [
+        {
+          "term": "we introduce PEDBench",
+          "excerpt": "their ability to reliably detect fine-grained phonetic errors remains unclear because of a lack of high-quality evaluation data. To address this gap, we introduce PEDBench, the first PED benchmark spanning a continuum from natural to controlled speech. It comprises real-world recordings of spoken errors made by children (N=334), scripted error productions by human actors (N=1,188), and synthetic error produc",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.20830"
+        },
+        {
+          "term": "we introduce PEDBench, the first PED benchmark",
+          "excerpt": "their ability to reliably detect fine-grained phonetic errors remains unclear because of a lack of high-quality evaluation data. To address this gap, we introduce PEDBench, the first PED benchmark spanning a continuum from natural to controlled speech. It comprises real-world recordings of spoken errors made by children (N=334), scripted error productions by human actors (N=1,188), and synthetic error productions generated using pho",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.20830"
+        },
+        {
+          "term": "first PED benchmark",
+          "excerpt": "etect fine-grained phonetic errors remains unclear because of a lack of high-quality evaluation data. To address this gap, we introduce PEDBench, the first PED benchmark spanning a continuum from natural to controlled speech. It comprises real-world recordings of spoken errors made by children (N=334), scripted error productions by human actors (N=1,188), and synthetic error productions generated using pho",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.20830"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "-grained phonetic errors remains unclear because of a lack of high-quality evaluation data. To address this gap, we introduce PEDBench, the first PED benchmark spanning a continuum from natural to controlled speech. It comprises real-world recordings of spoken errors made by children (N=334), scripted error productions by human actors (N=1,188), and synthetic error productions generated using pho",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.20830"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "c Errors? Phonetic error detection (PED) aims to identify phoneme-level substitutions, deletions, and insertions and is essential for educational and clinical speech assessment and intervention. Despite recent advances in speech models for phoneme recognition, their ability to reliably detect fine-grained phonetic errors remains unclear because of a lack of high-quality evaluation data. To addre",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.20830"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "evel pronunciation assessment aims to detect phonetic errors in speech, with applications ranging from literacy education to clinical speech-language pathology. The need for scalable assessment and support is substantial. Recent national assessment results show that 40% of U.S. fourth-grade students perform below basic level in reading U.S. Department of Education, Institute of Education Sciences",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2610.20830"
+        }
+      ],
+      "related_benchmarks": [
+        "PEDBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 24,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "037e9eec4aeb6a76c68a5555ba44a01a9b5fc510c1daa0d8fce8a95fe97e727e",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
     {
       "id": "arxiv:2610.19663",
       "slug": "arxiv-2610-19663-9f0570d6e7",
