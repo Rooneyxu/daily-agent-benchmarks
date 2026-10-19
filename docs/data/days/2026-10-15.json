@@ -1,15 +1,21 @@
 {
   "date": "2026-10-15",
-  "count": 10,
+  "count": 11,
   "report": {
     "date": "2026-10-15",
-    "count": 10,
+    "count": 11,
     "themes": [
       {
         "id": "science",
         "count": 3,
         "en": "Science lab",
         "zh": "科学实验"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
       },
       {
         "id": "planning",
@@ -28,17 +34,11 @@
         "count": 1,
         "en": "Coding agents",
         "zh": "代码智能体"
-      },
-      {
-        "id": "tool-use",
-        "count": 1,
-        "en": "Tool use",
-        "zh": "工具使用"
       }
     ],
     "en": {
-      "headline": "10 new agent benchmarks",
-      "summary": "On October 15, 2026, arXiv listed 10 new agent benchmarks. Work clustered around Science lab (3), Planning / reasoning (2), Memory (2), and Coding agents (1).",
+      "headline": "11 new agent benchmarks",
+      "summary": "On October 15, 2026, arXiv listed 11 new agent benchmarks. Work clustered around Science lab (3), Tool use (2), Planning / reasoning (2), and Memory (2).",
       "highlights": [
         {
           "id": "2610.21074",
@@ -46,20 +46,20 @@
           "blurb": "Computational biologists increasingly delegate substantial analyses to AI agents in long-horizon, multi-turn sessions, yet most benchmarks of agents' bioinformatics capabilities pose a single short task with a single-sho…"
         },
         {
+          "id": "2610.22511",
+          "title": "AuditKIT: A Unified Evaluation Spine for Benchmarking, Judging, and Comparing Large Language Models and Agentic Systems",
+          "blurb": "Evaluating language models and agents requires combining benchmark accuracy, judge-based assessment, runtime performance, tool-use behavior, and retrieval quality."
+        },
+        {
           "id": "2610.22269",
           "title": "X-RIC: An Agentic RAN-Intelligent Controller Benchmark for Enhancing Reinforcement Learning",
           "blurb": "The O-RAN ALLIANCE introduces architectural flexibility through disaggregation and AI-driven control."
-        },
-        {
-          "id": "2610.21270",
-          "title": "Auditing Escalation Reliability in Healthcare LLM Agents: A Perturbation-Controlled Benchmark of Workflow-State Failures",
-          "blurb": "Trustworthy biomedical AI requires reliable action selection when evidence is missing, stale, conflicting, or late, not only accurate answers on static inputs."
         }
       ]
     },
     "zh": {
-      "headline": "新增 10 篇 Agent Benchmark",
-      "summary": "2026年10月15日，arXiv 新增 10 篇 Agent Benchmark。当日主题集中在科学实验（3）、规划 / 推理（2）、记忆（2）、代码智能体（1）。",
+      "headline": "新增 11 篇 Agent Benchmark",
+      "summary": "2026年10月15日，arXiv 新增 11 篇 Agent Benchmark。当日主题集中在科学实验（3）、工具使用（2）、规划 / 推理（2）、记忆（2）。",
       "highlights": [
         {
           "id": "2610.21074",
@@ -67,19 +67,57 @@
           "blurb": "Computational biologists increasingly delegate substantial analyses to AI agents in long-horizon, multi-turn sessions, yet most benchmarks of agents' bioinformatics capabilities pose a single short task with a single-sho…"
         },
         {
+          "id": "2610.22511",
+          "title": "AuditKIT: A Unified Evaluation Spine for Benchmarking, Judging, and Comparing Large Language Models and Agentic Systems",
+          "blurb": "Evaluating language models and agents requires combining benchmark accuracy, judge-based assessment, runtime performance, tool-use behavior, and retrieval quality."
+        },
+        {
           "id": "2610.22269",
           "title": "X-RIC: An Agentic RAN-Intelligent Controller Benchmark for Enhancing Reinforcement Learning",
           "blurb": "The O-RAN ALLIANCE introduces architectural flexibility through disaggregation and AI-driven control."
-        },
-        {
-          "id": "2610.21270",
-          "title": "Auditing Escalation Reliability in Healthcare LLM Agents: A Perturbation-Controlled Benchmark of Workflow-State Failures",
-          "blurb": "Trustworthy biomedical AI requires reliable action selection when evidence is missing, stale, conflicting, or late, not only accurate answers on static inputs."
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2610.22511",
+      "title": "AuditKIT: A Unified Evaluation Spine for Benchmarking, Judging, and Comparing Large Language Models and Agentic Systems",
+      "abstract": "Evaluating language models and agents requires combining benchmark accuracy, judge-based assessment, runtime performance, tool-use behavior, and retrieval quality. Differences in interfaces, metric semantics, and trace formats complicate these comparisons and can hide failures in agentic workflows. We present AuditKIT, a source-available evaluation library that records these measurements in one result representation, with direction-aware metric contracts, configuration fingerprints, and extensible metrics and backends. For agents, it provides turn-aware tool-call matching, separates parallel from sequential execution, and distinguishes verified task outcomes from trajectory-level diagnostics. Missing or unobservable evidence is marked unscored rather than counted as failure. For retrieval-augmented generation, it combines ranked retrieval metrics, judged grounding, and deterministic evidence checks. Seven case studies spanning model comparison, serving runtimes, retrieval, tool calling, and interoperability show how answer extraction, runtime behavior, and metric selection change evaluation outcomes.",
+      "authors": [
+        "Shreeyans Arora",
+        "Utsav Avaiya",
+        "Zera Lyngkhoi",
+        "Hem Gosalia",
+        "Ram Mohan Rao Kadiyala",
+        "Vinay Kumar Sankarapu",
+        "Pratinav Seth"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-15T18:05:10Z",
+      "updated": "2026-10-15T18:05:10Z",
+      "announced_date": "2026-10-15",
+      "first_seen": "2026-10-15",
+      "comment": "25 pages, 2 figures, 13 tables. Code: https://github.com/Lexsi-Labs/AuditKIT. Shreeyans Arora and Utsav Avaiya contributed equally; work done while at Lexsi Labs",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.22511v1",
+        "pdf": "https://arxiv.org/pdf/2610.22511v1",
+        "html": "https://arxiv.org/html/2610.22511"
+      },
+      "score": 17,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
     {
       "id": "2610.22269",
       "title": "X-RIC: An Agentic RAN-Intelligent Controller Benchmark for Enhancing Reinforcement Learning",
@@ -160,7 +198,7 @@
         "Jingxuan Xu",
         "Yanan Wu",
         "Haoyang Huang",
-        "Ken Deng"
+        "Aerial Deng"
       ],
       "categories": [
         "cs.SE",
@@ -168,14 +206,14 @@
       ],
       "primary_category": "cs.SE",
       "published": "2026-10-15T15:12:56Z",
-      "updated": "2026-10-15T15:12:56Z",
+      "updated": "2026-10-16T06:44:17Z",
       "announced_date": "2026-10-15",
       "first_seen": "2026-10-15",
       "comment": "22 pages, including appendix",
       "doi": "",
       "links": {
-        "abs": "https://arxiv.org/abs/2610.22039v1",
-        "pdf": "https://arxiv.org/pdf/2610.22039v1",
+        "abs": "https://arxiv.org/abs/2610.22039v2",
+        "pdf": "https://arxiv.org/pdf/2610.22039v2",
         "html": "https://arxiv.org/html/2610.22039"
       },
       "score": 8,
