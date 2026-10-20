@@ -1,0 +1,298 @@
+{
+  "date": "2026-10-19",
+  "count": 3,
+  "entries": [
+    {
+      "id": "arxiv:2610.26787",
+      "slug": "arxiv-2610-26787-e5311f24d4",
+      "kind": "paper",
+      "title": "LG-Bench: A Graph-Structured Evaluation Benchmark for Life Sciences",
+      "abstract": "Traditional evaluation benchmarks reduce inherently interconnected scientific knowledge in life sciences into flat lists of questions, disregarding the underlying topological structure of the knowledge. We introduce, the first graph-structured benchmark for life sciences, featuring over 10,000 high-quality multiple-choice questions across medicine, biology, and chemistry. Our approach constructs a weighted evaluation graph using bidirectional matching and semantic similarity algorithms, where nodes represent questions and edge weights capture their semantic relationships. Leveraging this graph topology, we design two novel evaluation metrics. The Global Coherence Score (GCS) measures a model's consistency within semantically related neighborhoods, while Knowledge Balance Score (KBS) analyzes how model errors are distributed across the graph to reveal conceptual blind spots. LG-Bench facilitates fine-grained comparison of LLMs by surfacing differences in conceptual coherence and patterns of knowledge organization across models. Our framework shifts the evaluation paradigm from flat accuracy metrics to structure-aware analysis, offering a new lens for diagnosing and improving LLM performance in the life sciences domain.",
+      "authors": [
+        "Lu Sun",
+        "Xiangyi Zhang",
+        "Xiangyang Zhu",
+        "Kaiyuan Ji",
+        "Zijian Chen",
+        "Qiang Hu",
+        "Zicheng Zhang",
+        "Yuan Tian",
+        "Guangtao Zhai"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-19T17:38:05+00:00",
+      "updated_at": "2026-10-19T17:38:05+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.26787"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.26787v1",
+        "pdf": "https://arxiv.org/pdf/2610.26787v1",
+        "html": "https://arxiv.org/html/2610.26787"
+      },
+      "evidence": [
+        {
+          "term": "first graph-structured benchmark",
+          "excerpt": "ntific knowledge in life sciences into flat lists of questions, disregarding the underlying topological structure of the knowledge. We introduce, the first graph-structured benchmark for life sciences, featuring over 10,000 high-quality multiple-choice questions across medicine, biology, and chemistry. Our approach constructs a weighted evaluation graph using bidirectional matching and semantic similarity algorithms, w",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.26787"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "LG-Bench: A Graph-Structured Evaluation Benchmark for Life Sciences Traditional evaluation benchmarks reduce inherently interconnected scientific knowledge in life sciences into flat lists of questions, disregarding the underlying topological structure of the knowledge. We introduce, the",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.26787"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "LG-Bench: A Graph-Structured Evaluation Benchmark for Life Sciences Traditional evaluation benchmarks reduce inherently interconnected scientific knowledge in life sciences into flat lists of questions, disregarding the underlying topological structure of the knowledge. We introduce, the first graph-structured benchmark for life sciences,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.26787"
+        },
+        {
+          "term": "biology",
+          "excerpt": "We introduce, the first graph-structured benchmark for life sciences, featuring over 10,000 high-quality multiple-choice questions across medicine, biology, and chemistry. Our approach constructs a weighted evaluation graph using bidirectional matching and semantic similarity algorithms, where nodes represent questions and edge weights capture their semantic relationships. Leveraging this gra",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.26787"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "knowledge. We introduce, the first graph-structured benchmark for life sciences, featuring over 10,000 high-quality multiple-choice questions across medicine, biology, and chemistry. Our approach constructs a weighted evaluation graph using bidirectional matching and semantic similarity algorithms, where nodes represent questions and edge weights capture their semantic relationships. Leveraging",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.26787"
+        },
+        {
+          "term": "life science",
+          "excerpt": "LG-Bench: A Graph-Structured Evaluation Benchmark for Life Sciences Traditional evaluation benchmarks reduce inherently interconnected scientific knowledge in life sciences into flat lists of questions, disregarding the underlying topological structure of the knowledge. We introduce, the first graph-struc",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.26787"
+        },
+        {
+          "term": "microscopy",
+          "excerpt": "ting peptide coverage in MS. (A) Small complexes have lower protein copy numbers, depleting peptide coverage in MS. • (B) Spatial resolution of light microscopy limits detection of nanometre-scale complexes, causing small assemblies to be visually indistinguishable. (B) Spatial resolution of light microscopy limits detection of nanometre-scale complexes, causing small assemblies to be visually ind",
+          "location": "A.3.4 Sample Questions and Graph Structure from LG-Bench",
+          "source_url": "https://arxiv.org/html/2610.26787"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "r LG-Bench Construction]] A.3.3 Prompt Design for LG-Bench Construction The prompt design for the LG-Bench construction pipeline follows a structured multi-agent approach. The process begins with the Document Analysis Agent, whose core system prompt is illustrated in Figure 8 . This agent operates based on detailed difficulty instructions and Bloom’s taxonomy levels, as further specified in Figure",
+          "location": "A.3.3 Prompt Design for LG-Bench Construction",
+          "source_url": "https://arxiv.org/html/2610.26787"
+        }
+      ],
+      "related_benchmarks": [
+        "MedQA",
+        "PubMedQA",
+        "AIBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 27,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "73a36d908fbeb023ce4fd6eb7656f13a72d72447179f60e23ddcabfae62fd6bc",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.26088",
+      "slug": "arxiv-2610-26088-56e4e83075",
+      "kind": "paper",
+      "title": "LeakBench: Auditing Reward Hacking through Prediction-Time Leakage in Clinical Modeling Agents",
+      "abstract": "Autonomous clinical-modeling agents can optimize predictive performance while violating conditions that make a model usable. We introduce LeakBench, an executable, guideline-derived audit suite that tests agent decisions for prediction-time leakage, calibration, site-level evaluation, support awareness, and decision-curve net benefit. LeakBench combines a synthetic task with known failure structure and two real-data settings: MIMIC-IV (430k admissions) and governed multi-hospital inpatient record front-page (MHFP) data. Our primary analysis uses reward hacking descriptively, without attributing intent: an agent selects prediction-time-invalid inputs because they improve its validation reward. A deterministic optimizer and every evaluated unconstrained local-model configuration select a fatal leaking feature. In fully logged September 2026 A/B runs, DeepSeek Flash and GPT-6-astra each leak in 10/10 unconstrained runs and 0/10 runs with an explicit admission-time constraint. This contrast is version-sensitive: a blinded Claude/Fable-5.1 chat run does not leak in either condition, while explicit-constraint violations appear only in a historical August 2026 slice lacking raw trajectories. Replacing AUROC with AUPRC does not remove leakage selection. Renaming or disguising the leaking inputs changes neither selection nor provenance-based detection; a name-based filter fails. A deterministic provenance verifier-in-loop removes the leak, making the LLM repair loop defense-in-depth. Specific verifier feedback clears fatal leakage in a hosted agent, and a three-seed ablation finds principle-only feedback clears decision-level defects, though these mitigation results are limited. LeakBench treats trustworthy clinical prediction as a property of an agent's modeling process, not merely its score; it is an audit testbed with known-failure controls, not yet an expert-validated benchmark.",
+      "authors": [
+        "Xiaoyuan Bao",
+        "Jingsi Jiang",
+        "Jiao Shan",
+        "Yulong Cao",
+        "Haoyu Wang",
+        "Zida Liu",
+        "Jun Gao"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-19T09:50:57+00:00",
+      "updated_at": "2026-10-19T09:50:57+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.26088"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.26088v1",
+        "pdf": "https://arxiv.org/pdf/2610.26088v1",
+        "html": "https://arxiv.org/html/2610.26088"
+      },
+      "evidence": [
+        {
+          "term": "We introduce LeakBench",
+          "excerpt": "Clinical Modeling Agents Autonomous clinical-modeling agents can optimize predictive performance while violating conditions that make a model usable. We introduce LeakBench, an executable, guideline-derived audit suite that tests agent decisions for prediction-time leakage, calibration, site-level evaluation, support awareness, and decision-curve net benefit. LeakBench combines a synthetic task with known fai",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.26088"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "n as a property of an agent's modeling process, not merely its score; it is an audit testbed with known-failure controls, not yet an expert-validated benchmark. [[SECTION LeakBench: Auditing Reward Hacking through Prediction-Time Leakage in Clinical Modeling Agents]] LeakBench: Auditing Reward Hacking through Prediction-Time Leakage in Clinical Modeling Agents Content selection saved. Describe th",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.26088"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "LeakBench: Auditing Reward Hacking through Prediction-Time Leakage in Clinical Modeling Agents Autonomous clinical-modeling agents can optimize predictive performance while violating conditions that make a model usable. We introduce LeakBench, an executable, guideline-derived audit suite that tests agent decisions fo",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.26088"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "ducibility crisis in ML-based science. Patterns 4(9), 2023. arXiv:2207.07048. B. Al Jorf, F. E. Shamout. AgentRx: A benchmark study of LLM agents for multimodal clinical prediction. CHIL 2026. arXiv:2605.10286. B. Al Jorf, F. E. Shamout. AgentRx: A benchmark study of LLM agents for multimodal clinical prediction. CHIL 2026. arXiv:2605.10286. L. Yue et al. FactReview: Evidence-grounded peer review",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.26088"
+        },
+        {
+          "term": "tool-use",
+          "excerpt": "as new: the verifier is specialised for clinical prediction and acts as a critic inside the repair loop. The Reward Hacking Benchmark studies generic tool-use exploits. Here, the failure is a methodological validity violation. The data remain legitimately accessible and the evaluator operates as designed; the objective is incomplete. Appendix L gives a structured comparison. [[SECTION 3 Methodol",
+          "location": "2 Related Work and Positioning",
+          "source_url": "https://arxiv.org/html/2610.26088"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "et al. A prior-free blind detection of information leakage from model predictions. 2026. arXiv:2606.11267. Y. Zhu et al. MedAgentBoard: Benchmarking multi-agent collaboration with conventional methods for diverse medical tasks. NeurIPS 2025 (Datasets & Benchmarks). arXiv:2505.12371. Y. Zhu et al. MedAgentBoard: Benchmarking multi-agent collaboration with conventional methods for diverse medical ta",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.26088"
+        }
+      ],
+      "related_benchmarks": [
+        "LeakBench",
+        "MLAgentBench"
+      ],
+      "related_agent_url": "../../p/2610.26088.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "ed0f36ec8c5f1ad689406b4ed496e1afc9c6ce4036f28c465a670f1b28fce82c",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.25819",
+      "slug": "arxiv-2610-25819-ebfa7e769e",
+      "kind": "paper",
+      "title": "When to Stop Asking: Factor Coverage Bias and LLM Determinability Judgments with Underspecified Information in Medicine",
+      "abstract": "Clinical decision-making often begins with underspecified information and requires not only gathering missing information but also knowing when to stop. This calls for judging determinability (whether the available information is sufficient for a decision) by considering whether missing information could change the conclusion, not simply the amount of available decision-relevant information. Reliance on this amount as a cue for determinability, which we term \\textit{factor coverage bias}, could undermine the trustworthiness of large language models (LLMs) through premature conclusions or excessive information gathering, such as unnecessary invasive tests. Yet whether LLMs exhibit this bias remains insufficiently studied. To address this gap, we construct a controlled pairwise benchmark in which LLMs identify the determinable case within each determinable--undeterminable pair. We add a decision-relevant factor to either side while keeping each case's determinability unchanged, and similarly add irrelevant text to distinguish this bias from context-length effects. Adding a relevant factor made LLMs more likely to select the augmented case as determinable even when it remained undeterminable, an effect that persisted with increased reasoning effort, while adding irrelevant text made them less likely to select the augmented case, an effect that reasoning substantially reduced. These findings identify factor coverage bias as a failure mode distinct from context-length effects and a potential risk to LLM trustworthiness. Our work provides an evaluation framework for LLM trustworthiness under underspecification.",
+      "authors": [
+        "Yusuke Watanabe",
+        "Yohei Kobashi",
+        "Taisei Tosaki",
+        "Takeshi Kojima",
+        "Yusuke Iwasawa",
+        "Yasushi Okuno",
+        "Yutaka Matsuo"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-19T05:34:11+00:00",
+      "updated_at": "2026-10-19T05:34:11+00:00",
+      "priority": "P1",
+      "categories": [
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.25819"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.25819v1",
+        "pdf": "https://arxiv.org/pdf/2610.25819v1",
+        "code": "https://github.com/yusukewatanabe1208/when_to_stop_asking",
+        "html": "https://arxiv.org/html/2610.25819"
+      },
+      "evidence": [
+        {
+          "term": "we construct a controlled pairwise benchmark",
+          "excerpt": "ve information gathering, such as unnecessary invasive tests. Yet whether LLMs exhibit this bias remains insufficiently studied. To address this gap, we construct a controlled pairwise benchmark in which LLMs identify the determinable case within each determinable--undeterminable pair. We add a decision-relevant factor to either side while keeping each case's determinability unchanged, and similarly add irrelevant text to distingu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25819"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "nnecessary invasive tests. Yet whether LLMs exhibit this bias remains insufficiently studied. To address this gap, we construct a controlled pairwise benchmark in which LLMs identify the determinable case within each determinable--undeterminable pair. We add a decision-relevant factor to either side while keeping each case's determinability unchanged, and similarly add irrelevant text to distingu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25819"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "When to Stop Asking: Factor Coverage Bias and LLM Determinability Judgments with Underspecified Information in Medicine Clinical decision-making often begins with underspecified information and requires not only gathering missing information but also knowing when to stop. This calls for judging determinability (whether the available information is sufficien",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25819"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "When to Stop Asking: Factor Coverage Bias and LLM Determinability Judgments with Underspecified Information in Medicine Clinical decision-making often begins with underspecified information and requires not only gathering missing information but also knowing when to stop. This calls for judging determinability (whether the available information is sufficient for a d",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25819"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": ", Document Cited by: §2 . Schmidgall et al. (2026) S. Schmidgall, R. Ziaei, C. Harris, J. W. Kim, E. P. Reis, J. Jopling, and M. Moor AgentClinic: a multimodal benchmark for tool-using clinical AI agents . npj Digital Medicine 9 ( 1 ), pp. 499 . External Links: ISSN 2398-6352 , Document Cited by: §2 . Sharma et al. (2024) M. Sharma, M. Tong, T. Korbak, D. Duvenaud, A. Askell, S. Bowman, E. Durmus",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.25819"
+        },
+        {
+          "term": "tool-using",
+          "excerpt": "Schmidgall et al. (2026) S. Schmidgall, R. Ziaei, C. Harris, J. W. Kim, E. P. Reis, J. Jopling, and M. Moor AgentClinic: a multimodal benchmark for tool-using clinical AI agents . npj Digital Medicine 9 ( 1 ), pp. 499 . External Links: ISSN 2398-6352 , Document Cited by: §2 . Sharma et al. (2024) M. Sharma, M. Tong, T. Korbak, D. Duvenaud, A. Askell, S. Bowman, E. Durmus, Z. Hatfield-Dodds, S. J",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.25819"
+        },
+        {
+          "term": "Risk Assessment",
+          "excerpt": "Nogami, N. Sumitomo, and Japanese Circulation Society and Japanese Heart Rhythm Society Joint Working Group JCS/JHRS 2022 Guideline on Diagnosis and Risk Assessment of Arrhythmia . Circulation Journal: Official Journal of the Japanese Circulation Society 88 ( 9 ), pp. 1509–1595 . External Links: ISSN 1347-4820 , Document Cited by: Table A.2 . Tenner et al. (2013) S. Tenner, J. Baillie, J. DeWitt, S. S",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.25819"
+        }
+      ],
+      "related_benchmarks": [
+        "ClinDetBench",
+        "HealthBench",
+        "AlpacaEval",
+        "ClarifyCodeBench",
+        "AbstentionBench",
+        "QuestBench",
+        "MedMCQA",
+        "InsufficiencyBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "07258367451aebf3bcd2975b58d7fa9cb92b0b8bde94fa44244b475b644ea2a6",
+      "is_seed": false,
+      "topic": "biosafety",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}

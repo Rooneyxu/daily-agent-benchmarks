@@ -1,25 +1,25 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-19T10:06:48Z",
-  "total": 164,
+  "generated_at": "2026-10-20T09:32:54Z",
+  "total": 171,
   "counts": {
     "topics": {
-      "general_text": 65,
-      "biosafety": 15,
-      "experiment_agent": 39,
+      "experiment_agent": 44,
+      "biosafety": 16,
+      "general_text": 66,
       "multimodal": 45
     },
     "contribution_types": {
-      "new_benchmark": 132,
-      "methodology": 19,
-      "audit": 13
+      "new_benchmark": 138,
+      "audit": 14,
+      "methodology": 19
     },
     "kinds": {
-      "paper": 164
+      "paper": 171
     },
     "evaluation_contexts": {
-      "beneficial_capability": 149,
-      "biosecurity_misuse": 15
+      "beneficial_capability": 155,
+      "biosecurity_misuse": 16
     }
   },
   "topic_labels": {
@@ -58,49 +58,49 @@
     {
       "source": "arxiv",
       "name": "arXiv",
-      "status": "failed",
-      "started_at": "2026-10-19T10:07:06Z",
-      "finished_at": "2026-10-19T10:07:50Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "Server error '500 Internal Server Error' for url 'https://export.arxiv.org/api/query?search_query=%28%28all%3Abenchmark+OR+all%3Abenchmarking+OR+all%3A%22evaluation+suite%22+OR+all%3A%22evaluation+dataset%22%29+AND+%28all%3Aconstruction+OR+all%3Acuration+OR+all%3A%22quality+control%22+OR+all%3A%22quality+assurance%22+OR+all%3Averifier+OR+all%3Agrader+OR+all%3A%22question+generation%22+OR+all%3A%22automated+evaluation%22+OR+all%3A%22synthetic+evaluation+data%22+OR+all%3A%22judge+calibration%22%29+AND+%28all%3Abiomedical+OR+all%3Amedical+OR+all%3Aclinical+OR+all%3Abiology+OR+all%3Abiological+OR+"
+      "status": "success",
+      "started_at": "2026-10-20T09:33:13Z",
+      "finished_at": "2026-10-20T09:33:40Z",
+      "discovered": 43,
+      "published": 23,
+      "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-10-19T10:07:50Z",
-      "finished_at": "2026-10-19T10:07:52Z",
-      "discovered": 26,
-      "published": 18,
+      "started_at": "2026-10-20T09:33:40Z",
+      "finished_at": "2026-10-20T09:33:47Z",
+      "discovered": 56,
+      "published": 29,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-19T10:07:52Z",
-      "finished_at": "2026-10-19T10:08:29Z",
-      "discovered": 788,
-      "published": 52,
+      "started_at": "2026-10-20T09:33:47Z",
+      "finished_at": "2026-10-20T09:34:29Z",
+      "discovered": 930,
+      "published": 63,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-19T10:08:29Z",
-      "finished_at": "2026-10-19T10:08:41Z",
-      "discovered": 143,
-      "published": 18,
+      "started_at": "2026-10-20T09:34:29Z",
+      "finished_at": "2026-10-20T09:34:39Z",
+      "discovered": 163,
+      "published": 16,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-10-19T10:08:41Z",
-      "finished_at": "2026-10-19T10:08:41Z",
+      "started_at": "2026-10-20T09:34:39Z",
+      "finished_at": "2026-10-20T09:34:39Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
@@ -108,10 +108,35 @@
   ],
   "days": [
     {
+      "date": "2026-10-19",
+      "count": 3,
+      "entry_ids": [
+        "arxiv:2610.26787",
+        "arxiv:2610.26088",
+        "arxiv:2610.25819"
+      ]
+    },
+    {
+      "date": "2026-10-18",
+      "count": 3,
+      "entry_ids": [
+        "arxiv:2610.25540",
+        "arxiv:2610.25155",
+        "arxiv:2610.25069"
+      ]
+    },
+    {
       "date": "2026-10-17",
       "count": 1,
       "entry_ids": [
         "doi:10.64898/2026.10.14.26365587"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "count": 1,
+      "entry_ids": [
+        "arxiv:2610.23845"
       ]
     },
     {
@@ -772,6 +797,555 @@
   ],
   "entries": [
     {
+      "id": "arxiv:2610.26787",
+      "slug": "arxiv-2610-26787-e5311f24d4",
+      "kind": "paper",
+      "title": "LG-Bench: A Graph-Structured Evaluation Benchmark for Life Sciences",
+      "abstract": "Traditional evaluation benchmarks reduce inherently interconnected scientific knowledge in life sciences into flat lists of questions, disregarding the underlying topological structure of the knowledge. We introduce, the first graph-structured benchmark for life sciences, featuring over 10,000 high-quality multiple-choice questions across medicine, biology, and chemistry. Our approach constructs a weighted evaluation graph using bidirectional matching and semantic similarity algorithms, where nodes represent questions and edge weights capture their semantic relationships. Leveraging this graph topology, we design two novel evaluation metrics. The Global Coherence Score (GCS) measures a model's consistency within semantically related neighborhoods, while Knowledge Balance Score (KBS) analyzes how model errors are distributed across the graph to reveal conceptual blind spots. LG-Bench facilitates fine-grained comparison of LLMs by surfacing differences in conceptual coherence and patterns of knowledge organization across models. Our framework shifts the evaluation paradigm from flat accuracy metrics to structure-aware analysis, offering a new lens for diagnosing and improving LLM performance in the life sciences domain.",
+      "authors": [
+        "Lu Sun",
+        "Xiangyi Zhang",
+        "Xiangyang Zhu",
+        "Kaiyuan Ji",
+        "Zijian Chen",
+        "Qiang Hu",
+        "Zicheng Zhang",
+        "Yuan Tian",
+        "Guangtao Zhai"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-19T17:38:05+00:00",
+      "updated_at": "2026-10-19T17:38:05+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.26787"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.26787v1",
+        "pdf": "https://arxiv.org/pdf/2610.26787v1",
+        "html": "https://arxiv.org/html/2610.26787"
+      },
+      "evidence": [
+        {
+          "term": "first graph-structured benchmark",
+          "excerpt": "ntific knowledge in life sciences into flat lists of questions, disregarding the underlying topological structure of the knowledge. We introduce, the first graph-structured benchmark for life sciences, featuring over 10,000 high-quality multiple-choice questions across medicine, biology, and chemistry. Our approach constructs a weighted evaluation graph using bidirectional matching and semantic similarity algorithms, w",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.26787"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "LG-Bench: A Graph-Structured Evaluation Benchmark for Life Sciences Traditional evaluation benchmarks reduce inherently interconnected scientific knowledge in life sciences into flat lists of questions, disregarding the underlying topological structure of the knowledge. We introduce, the",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.26787"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "LG-Bench: A Graph-Structured Evaluation Benchmark for Life Sciences Traditional evaluation benchmarks reduce inherently interconnected scientific knowledge in life sciences into flat lists of questions, disregarding the underlying topological structure of the knowledge. We introduce, the first graph-structured benchmark for life sciences,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.26787"
+        },
+        {
+          "term": "biology",
+          "excerpt": "We introduce, the first graph-structured benchmark for life sciences, featuring over 10,000 high-quality multiple-choice questions across medicine, biology, and chemistry. Our approach constructs a weighted evaluation graph using bidirectional matching and semantic similarity algorithms, where nodes represent questions and edge weights capture their semantic relationships. Leveraging this gra",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.26787"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "knowledge. We introduce, the first graph-structured benchmark for life sciences, featuring over 10,000 high-quality multiple-choice questions across medicine, biology, and chemistry. Our approach constructs a weighted evaluation graph using bidirectional matching and semantic similarity algorithms, where nodes represent questions and edge weights capture their semantic relationships. Leveraging",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.26787"
+        },
+        {
+          "term": "life science",
+          "excerpt": "LG-Bench: A Graph-Structured Evaluation Benchmark for Life Sciences Traditional evaluation benchmarks reduce inherently interconnected scientific knowledge in life sciences into flat lists of questions, disregarding the underlying topological structure of the knowledge. We introduce, the first graph-struc",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.26787"
+        },
+        {
+          "term": "microscopy",
+          "excerpt": "ting peptide coverage in MS. (A) Small complexes have lower protein copy numbers, depleting peptide coverage in MS. • (B) Spatial resolution of light microscopy limits detection of nanometre-scale complexes, causing small assemblies to be visually indistinguishable. (B) Spatial resolution of light microscopy limits detection of nanometre-scale complexes, causing small assemblies to be visually ind",
+          "location": "A.3.4 Sample Questions and Graph Structure from LG-Bench",
+          "source_url": "https://arxiv.org/html/2610.26787"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "r LG-Bench Construction]] A.3.3 Prompt Design for LG-Bench Construction The prompt design for the LG-Bench construction pipeline follows a structured multi-agent approach. The process begins with the Document Analysis Agent, whose core system prompt is illustrated in Figure 8 . This agent operates based on detailed difficulty instructions and Bloom’s taxonomy levels, as further specified in Figure",
+          "location": "A.3.3 Prompt Design for LG-Bench Construction",
+          "source_url": "https://arxiv.org/html/2610.26787"
+        }
+      ],
+      "related_benchmarks": [
+        "MedQA",
+        "PubMedQA",
+        "AIBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 27,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "73a36d908fbeb023ce4fd6eb7656f13a72d72447179f60e23ddcabfae62fd6bc",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.26088",
+      "slug": "arxiv-2610-26088-56e4e83075",
+      "kind": "paper",
+      "title": "LeakBench: Auditing Reward Hacking through Prediction-Time Leakage in Clinical Modeling Agents",
+      "abstract": "Autonomous clinical-modeling agents can optimize predictive performance while violating conditions that make a model usable. We introduce LeakBench, an executable, guideline-derived audit suite that tests agent decisions for prediction-time leakage, calibration, site-level evaluation, support awareness, and decision-curve net benefit. LeakBench combines a synthetic task with known failure structure and two real-data settings: MIMIC-IV (430k admissions) and governed multi-hospital inpatient record front-page (MHFP) data. Our primary analysis uses reward hacking descriptively, without attributing intent: an agent selects prediction-time-invalid inputs because they improve its validation reward. A deterministic optimizer and every evaluated unconstrained local-model configuration select a fatal leaking feature. In fully logged September 2026 A/B runs, DeepSeek Flash and GPT-6-astra each leak in 10/10 unconstrained runs and 0/10 runs with an explicit admission-time constraint. This contrast is version-sensitive: a blinded Claude/Fable-5.1 chat run does not leak in either condition, while explicit-constraint violations appear only in a historical August 2026 slice lacking raw trajectories. Replacing AUROC with AUPRC does not remove leakage selection. Renaming or disguising the leaking inputs changes neither selection nor provenance-based detection; a name-based filter fails. A deterministic provenance verifier-in-loop removes the leak, making the LLM repair loop defense-in-depth. Specific verifier feedback clears fatal leakage in a hosted agent, and a three-seed ablation finds principle-only feedback clears decision-level defects, though these mitigation results are limited. LeakBench treats trustworthy clinical prediction as a property of an agent's modeling process, not merely its score; it is an audit testbed with known-failure controls, not yet an expert-validated benchmark.",
+      "authors": [
+        "Xiaoyuan Bao",
+        "Jingsi Jiang",
+        "Jiao Shan",
+        "Yulong Cao",
+        "Haoyu Wang",
+        "Zida Liu",
+        "Jun Gao"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-19T09:50:57+00:00",
+      "updated_at": "2026-10-19T09:50:57+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.26088"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.26088v1",
+        "pdf": "https://arxiv.org/pdf/2610.26088v1",
+        "html": "https://arxiv.org/html/2610.26088"
+      },
+      "evidence": [
+        {
+          "term": "We introduce LeakBench",
+          "excerpt": "Clinical Modeling Agents Autonomous clinical-modeling agents can optimize predictive performance while violating conditions that make a model usable. We introduce LeakBench, an executable, guideline-derived audit suite that tests agent decisions for prediction-time leakage, calibration, site-level evaluation, support awareness, and decision-curve net benefit. LeakBench combines a synthetic task with known fai",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.26088"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "n as a property of an agent's modeling process, not merely its score; it is an audit testbed with known-failure controls, not yet an expert-validated benchmark. [[SECTION LeakBench: Auditing Reward Hacking through Prediction-Time Leakage in Clinical Modeling Agents]] LeakBench: Auditing Reward Hacking through Prediction-Time Leakage in Clinical Modeling Agents Content selection saved. Describe th",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.26088"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "LeakBench: Auditing Reward Hacking through Prediction-Time Leakage in Clinical Modeling Agents Autonomous clinical-modeling agents can optimize predictive performance while violating conditions that make a model usable. We introduce LeakBench, an executable, guideline-derived audit suite that tests agent decisions fo",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.26088"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "ducibility crisis in ML-based science. Patterns 4(9), 2023. arXiv:2207.07048. B. Al Jorf, F. E. Shamout. AgentRx: A benchmark study of LLM agents for multimodal clinical prediction. CHIL 2026. arXiv:2605.10286. B. Al Jorf, F. E. Shamout. AgentRx: A benchmark study of LLM agents for multimodal clinical prediction. CHIL 2026. arXiv:2605.10286. L. Yue et al. FactReview: Evidence-grounded peer review",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.26088"
+        },
+        {
+          "term": "tool-use",
+          "excerpt": "as new: the verifier is specialised for clinical prediction and acts as a critic inside the repair loop. The Reward Hacking Benchmark studies generic tool-use exploits. Here, the failure is a methodological validity violation. The data remain legitimately accessible and the evaluator operates as designed; the objective is incomplete. Appendix L gives a structured comparison. [[SECTION 3 Methodol",
+          "location": "2 Related Work and Positioning",
+          "source_url": "https://arxiv.org/html/2610.26088"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "et al. A prior-free blind detection of information leakage from model predictions. 2026. arXiv:2606.11267. Y. Zhu et al. MedAgentBoard: Benchmarking multi-agent collaboration with conventional methods for diverse medical tasks. NeurIPS 2025 (Datasets & Benchmarks). arXiv:2505.12371. Y. Zhu et al. MedAgentBoard: Benchmarking multi-agent collaboration with conventional methods for diverse medical ta",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.26088"
+        }
+      ],
+      "related_benchmarks": [
+        "LeakBench",
+        "MLAgentBench"
+      ],
+      "related_agent_url": "../../p/2610.26088.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "ed0f36ec8c5f1ad689406b4ed496e1afc9c6ce4036f28c465a670f1b28fce82c",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.25819",
+      "slug": "arxiv-2610-25819-ebfa7e769e",
+      "kind": "paper",
+      "title": "When to Stop Asking: Factor Coverage Bias and LLM Determinability Judgments with Underspecified Information in Medicine",
+      "abstract": "Clinical decision-making often begins with underspecified information and requires not only gathering missing information but also knowing when to stop. This calls for judging determinability (whether the available information is sufficient for a decision) by considering whether missing information could change the conclusion, not simply the amount of available decision-relevant information. Reliance on this amount as a cue for determinability, which we term \\textit{factor coverage bias}, could undermine the trustworthiness of large language models (LLMs) through premature conclusions or excessive information gathering, such as unnecessary invasive tests. Yet whether LLMs exhibit this bias remains insufficiently studied. To address this gap, we construct a controlled pairwise benchmark in which LLMs identify the determinable case within each determinable--undeterminable pair. We add a decision-relevant factor to either side while keeping each case's determinability unchanged, and similarly add irrelevant text to distinguish this bias from context-length effects. Adding a relevant factor made LLMs more likely to select the augmented case as determinable even when it remained undeterminable, an effect that persisted with increased reasoning effort, while adding irrelevant text made them less likely to select the augmented case, an effect that reasoning substantially reduced. These findings identify factor coverage bias as a failure mode distinct from context-length effects and a potential risk to LLM trustworthiness. Our work provides an evaluation framework for LLM trustworthiness under underspecification.",
+      "authors": [
+        "Yusuke Watanabe",
+        "Yohei Kobashi",
+        "Taisei Tosaki",
+        "Takeshi Kojima",
+        "Yusuke Iwasawa",
+        "Yasushi Okuno",
+        "Yutaka Matsuo"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-19T05:34:11+00:00",
+      "updated_at": "2026-10-19T05:34:11+00:00",
+      "priority": "P1",
+      "categories": [
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.25819"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.25819v1",
+        "pdf": "https://arxiv.org/pdf/2610.25819v1",
+        "code": "https://github.com/yusukewatanabe1208/when_to_stop_asking",
+        "html": "https://arxiv.org/html/2610.25819"
+      },
+      "evidence": [
+        {
+          "term": "we construct a controlled pairwise benchmark",
+          "excerpt": "ve information gathering, such as unnecessary invasive tests. Yet whether LLMs exhibit this bias remains insufficiently studied. To address this gap, we construct a controlled pairwise benchmark in which LLMs identify the determinable case within each determinable--undeterminable pair. We add a decision-relevant factor to either side while keeping each case's determinability unchanged, and similarly add irrelevant text to distingu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25819"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "nnecessary invasive tests. Yet whether LLMs exhibit this bias remains insufficiently studied. To address this gap, we construct a controlled pairwise benchmark in which LLMs identify the determinable case within each determinable--undeterminable pair. We add a decision-relevant factor to either side while keeping each case's determinability unchanged, and similarly add irrelevant text to distingu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25819"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "When to Stop Asking: Factor Coverage Bias and LLM Determinability Judgments with Underspecified Information in Medicine Clinical decision-making often begins with underspecified information and requires not only gathering missing information but also knowing when to stop. This calls for judging determinability (whether the available information is sufficien",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25819"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "When to Stop Asking: Factor Coverage Bias and LLM Determinability Judgments with Underspecified Information in Medicine Clinical decision-making often begins with underspecified information and requires not only gathering missing information but also knowing when to stop. This calls for judging determinability (whether the available information is sufficient for a d",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25819"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": ", Document Cited by: §2 . Schmidgall et al. (2026) S. Schmidgall, R. Ziaei, C. Harris, J. W. Kim, E. P. Reis, J. Jopling, and M. Moor AgentClinic: a multimodal benchmark for tool-using clinical AI agents . npj Digital Medicine 9 ( 1 ), pp. 499 . External Links: ISSN 2398-6352 , Document Cited by: §2 . Sharma et al. (2024) M. Sharma, M. Tong, T. Korbak, D. Duvenaud, A. Askell, S. Bowman, E. Durmus",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.25819"
+        },
+        {
+          "term": "tool-using",
+          "excerpt": "Schmidgall et al. (2026) S. Schmidgall, R. Ziaei, C. Harris, J. W. Kim, E. P. Reis, J. Jopling, and M. Moor AgentClinic: a multimodal benchmark for tool-using clinical AI agents . npj Digital Medicine 9 ( 1 ), pp. 499 . External Links: ISSN 2398-6352 , Document Cited by: §2 . Sharma et al. (2024) M. Sharma, M. Tong, T. Korbak, D. Duvenaud, A. Askell, S. Bowman, E. Durmus, Z. Hatfield-Dodds, S. J",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.25819"
+        },
+        {
+          "term": "Risk Assessment",
+          "excerpt": "Nogami, N. Sumitomo, and Japanese Circulation Society and Japanese Heart Rhythm Society Joint Working Group JCS/JHRS 2022 Guideline on Diagnosis and Risk Assessment of Arrhythmia . Circulation Journal: Official Journal of the Japanese Circulation Society 88 ( 9 ), pp. 1509–1595 . External Links: ISSN 1347-4820 , Document Cited by: Table A.2 . Tenner et al. (2013) S. Tenner, J. Baillie, J. DeWitt, S. S",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.25819"
+        }
+      ],
+      "related_benchmarks": [
+        "ClinDetBench",
+        "HealthBench",
+        "AlpacaEval",
+        "ClarifyCodeBench",
+        "AbstentionBench",
+        "QuestBench",
+        "MedMCQA",
+        "InsufficiencyBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "07258367451aebf3bcd2975b58d7fa9cb92b0b8bde94fa44244b475b644ea2a6",
+      "is_seed": false,
+      "topic": "biosafety",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.25540",
+      "slug": "arxiv-2610-25540-cea7ea3b07",
+      "kind": "paper",
+      "title": "Auditing Tool Traces in Agentic LLMs: Source Localization and Counterfactual Dependence Testing",
+      "abstract": "Agentic LLMs increasingly support scientific prediction by grounding decisions in external evidence. In biology, they promise accurate, interpretable predictions for important problems by integrating complex experimental and computational evidence. However, serialized tool results can contain hidden label shortcuts, such as dataset identifiers or template artifacts, that create apparent success without biological reasoning. To address this risk, we introduce a two-stage audit. Stage 1, Per-Tool TF-IDF Decomposition (PT2D), localizes label-predictive patterns to individual tool results while avoiding signal dilution in the concatenated tool trace. Stage 2, Token-Class Redaction, counterfactually tests whether the frozen LLM depends on the localized shortcut. We apply this audit to TCR-pMHC binding, where tool augmentation substantially outperforms a no-evidence baseline. At face value, this suggests that the LLM has learned to use scientific evidence. The audit overturns this interpretation: PT2D localizes the strongest signal to identifiers in one tool result, and redacting them reduces performance to chance. These findings show how hidden label shortcuts can masquerade as scientific reasoning or discovery, motivating source-level audits before benchmark gains are trusted.",
+      "authors": [
+        "Junhao Liu",
+        "Tianxiao Li",
+        "Yongxian Wu",
+        "Ziheng Duan",
+        "Ren Li",
+        "Jing Zhang",
+        "Martin Renqiang Min"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-18T21:17:48+00:00",
+      "updated_at": "2026-10-18T21:17:48+00:00",
+      "priority": "P2",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.25540"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.25540v1",
+        "pdf": "https://arxiv.org/pdf/2610.25540v1",
+        "html": "https://arxiv.org/html/2610.25540"
+      },
+      "evidence": [
+        {
+          "term": "audits before benchmark",
+          "excerpt": "es performance to chance. These findings show how hidden label shortcuts can masquerade as scientific reasoning or discovery, motivating source-level audits before benchmark gains are trusted. [[SECTION Auditing Tool Traces in Agentic LLMs: Source Localization and Counterfactual Dependence Testing]] Auditing Tool Traces in Agentic LLMs: Source Localization and Counterfactual Dependence Testing Content selectio",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25540"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "to chance. These findings show how hidden label shortcuts can masquerade as scientific reasoning or discovery, motivating source-level audits before benchmark gains are trusted. [[SECTION Auditing Tool Traces in Agentic LLMs: Source Localization and Counterfactual Dependence Testing]] Auditing Tool Traces in Agentic LLMs: Source Localization and Counterfactual Dependence Testing Content selectio",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25540"
+        },
+        {
+          "term": "biology",
+          "excerpt": "ization and Counterfactual Dependence Testing Agentic LLMs increasingly support scientific prediction by grounding decisions in external evidence. In biology, they promise accurate, interpretable predictions for important problems by integrating complex experimental and computational evidence. However, serialized tool results can contain hidden label shortcuts, such as dataset identifiers or te",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25540"
+        },
+        {
+          "term": "biological",
+          "excerpt": ", serialized tool results can contain hidden label shortcuts, such as dataset identifiers or template artifacts, that create apparent success without biological reasoning. To address this risk, we introduce a two-stage audit. Stage 1, Per-Tool TF-IDF Decomposition (PT2D), localizes label-predictive patterns to individual tool results while avoiding signal dilution in the concatenated tool trace. S",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25540"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "04235 . Tickotsky et al. [2017] Nili Tickotsky, Tal Sagiv, Jaime Prilusky, Eric Shifrut, and Nir Friedman. McPAS-TCR: A manually curated catalogue of pathology-associated t cell receptor sequences. Bioinformatics , 33(18):2924–2929, 2017. doi: 10.1093/bioinformatics/btx286 . Yao et al. [2023] Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, and Yuan Cao. ReAct: Synerg",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.25540"
+        },
+        {
+          "term": "tool use",
+          "excerpt": "uction]] 1 Introduction Large language models (LLMs) are increasingly coupled to external evidence in scientific workflows. General paradigms include tool use ( Schick et al., 2023 ; Yao et al., 2023 ) , retrieval-augmented generation ( Lewis et al., 2020 ) , and agentic pipelines that chain multiple tools and return their results to the model ( Shen et al., 2023 ) ; domain systems have instanti",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2610.25540"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "match_score": 17,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "1542beedfe89c785e91154cc1d70abba34de2bf5ca82864ed2f77d4e17300c57",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "audit"
+    },
+    {
+      "id": "arxiv:2610.25155",
+      "slug": "arxiv-2610-25155-b5fde6189b",
+      "kind": "paper",
+      "title": "Morpheus: a fully local, defense-in-depth de-identification engine for Greek clinical text - a benchmark evaluation",
+      "abstract": "Background and Objective: Clinical free text cannot leave the hospital without de-identification, yet no de-identification system or benchmark exists for Greek clinical text. We evaluated Morpheus, a fully local de-identification pipeline for Greek clinical documents, on 500 synthetic discharge summaries. Methods: The notes (300 cardiac surgery, 100 cardiology, 100 nephrology) were generated by a frontier large language model (Gemini 3.1 Pro) constrained to authentic Greek hospital document layouts. Notes were pre-annotated at generation; two clinicians then independently reviewed and corrected every note, blinded to each other, with disagreements arbitrated. Primary outcomes were recall over must-redact identifiers and over-redaction of clinical content, measured over must-survive probes. Secondary outcomes: residual leaks flagged by an independent egress-review layer, processing time and reproducibility. Results: Inter-annotator agreement was F1 = 0.998. The de-identification rate was 96.59% (7,666/7,937 identifier instances; 95% CI 96.16-96.96): 98.49% for direct and 93.42% for quasi-identifiers. No patient's own complete identifier survived in any note; of 271 residual instances, 199 (73.4%) concerned institutional identity, chiefly the hospital letterhead. The over-redaction rate was 2.82% (190/6,747 probes; 95% CI 2.45-3.24). The egress guard flagged 2 of 271 residuals, both complete telephone numbers. Two independent runs gave identical verdicts. Conclusions: A fully local, deterministic pipeline removed 98.5% of direct patient identifiers from Greek clinical text while altering under 3% of protected clinical content; most residuals concerned the institution, not the patient. To our knowledge this is the first benchmark evaluation of clinical-text de-identification for Greek and the first quantified evaluation of an independent egress-guard layer.",
+      "authors": [
+        "Filippos-Paschalis Rorris",
+        "Nikoleta Stanitsa",
+        "Tatiana Rorri",
+        "Foteini Rorri",
+        "Constantine N. Antonopoulos"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-18T10:26:14+00:00",
+      "updated_at": "2026-10-18T10:26:14+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.25155"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.25155v1",
+        "pdf": "https://arxiv.org/pdf/2610.25155v1",
+        "html": "https://arxiv.org/html/2610.25155"
+      },
+      "evidence": [
+        {
+          "term": "first benchmark",
+          "excerpt": "l text while altering under 3% of protected clinical content; most residuals concerned the institution, not the patient. To our knowledge this is the first benchmark evaluation of clinical-text de-identification for Greek and the first quantified evaluation of an independent egress-guard layer. Background and Objective: Clinical free text cannot leave the hospital without de-identification, yet no de-i",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25155"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Morpheus: a fully local, defense-in-depth de-identification engine for Greek clinical text - a benchmark evaluation Background and Objective: Clinical free text cannot leave the hospital without de-identification, yet no de-identification system or benchmark exists for Greek clinical text. We evaluated Morpheus, a fully local de-identificatio",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25155"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Morpheus: a fully local, defense-in-depth de-identification engine for Greek clinical text - a benchmark evaluation Background and Objective: Clinical free text cannot leave the hospital without de-identification, yet no de-identification system or benchmark exists for Greek clinical text. We evaluated Morpheus, a fully loc",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25155"
+        },
+        {
+          "term": "patient",
+          "excerpt": "The de-identification rate was 96.59% (7,666/7,937 identifier instances; 95% CI 96.16-96.96): 98.49% for direct and 93.42% for quasi-identifiers. No patient's own complete identifier survived in any note; of 271 residual instances, 199 (73.4%) concerned institutional identity, chiefly the hospital letterhead. The over-redaction rate was 2.82% (190/6,747 probes; 95% CI 2.45-3.24). The egress gu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25155"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 13,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '404 Not Found' for url 'https://arxiv.org/html/2610.25155'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+      "content_hash": "3967ed4ed2b2c3f532d6da0412972dace7814a75f0558216cd08b929fde15c89",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.25069",
+      "slug": "arxiv-2610-25069-15f20077bd",
+      "kind": "paper",
+      "title": "Auto-MD-bench: Evaluating Autoresearch Agents for Real-World Medical Tasks",
+      "abstract": "Autonomous agents are increasingly capable of developing machine learning (ML) models end to end. In medical practice, however, strong performance on the target metric does not fully characterize how good the models are in real-world use cases. For example, medical ML models should also provide well-calibrated risk estimates and remain robust across patient populations. Yet autonomous model development is typically guided by task objectives that emphasize simple predictive discrimination (e.g. AUROC). This raises a key question: are these objectives sufficient to guide agents toward models that meet the broader requirements of real-world medical use? In this study, we introduce Auto-MD-bench, a benchmark of 15 real-world medical tasks from 10 clinical datasets, spanning survival analysis, classification and sequential prediction, with external validation across cohorts, hospitals and time periods. We evaluate four agents: AIDE, AI Scientist v2, Codex, and Autoresearch. The strongest agents achieve competitive primary scores, yet their predicted risks are less calibrated than those of the simple baseline models, which could lead to severe medical accidents. Moreover, models with nearly identical primary scores can exhibit markedly different calibration, while performance varies substantially across population shifts. These findings show that primary task performance alone is insufficient to assess autonomous clinical modeling and multiple different metrics widely used in healthcare practice need to be taken into consideration.",
+      "authors": [
+        "Shenqi Zhou",
+        "Qiran Zou",
+        "Wenhao Zhao",
+        "Zhenyu Liao",
+        "Dianbo Liu"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-18T07:19:05+00:00",
+      "updated_at": "2026-10-18T07:19:05+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.25069"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.25069v1",
+        "pdf": "https://arxiv.org/pdf/2610.25069v1",
+        "code": "https://github.com/Edwin0080/Auto-MD-bench",
+        "data": "https://huggingface.co/datasets/Edwin0080/Auto-MD-bench",
+        "html": "https://arxiv.org/html/2610.25069"
+      },
+      "evidence": [
+        {
+          "term": "we introduce Auto-MD-bench",
+          "excerpt": "question: are these objectives sufficient to guide agents toward models that meet the broader requirements of real-world medical use? In this study, we introduce Auto-MD-bench, a benchmark of 15 real-world medical tasks from 10 clinical datasets, spanning survival analysis, classification and sequential prediction, with external validation across cohorts, hospitals and time periods. We evaluate four agents: AIDE",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25069"
+        },
+        {
+          "term": "we introduce Auto-MD-bench, a benchmark",
+          "excerpt": "question: are these objectives sufficient to guide agents toward models that meet the broader requirements of real-world medical use? In this study, we introduce Auto-MD-bench, a benchmark of 15 real-world medical tasks from 10 clinical datasets, spanning survival analysis, classification and sequential prediction, with external validation across cohorts, hospitals and time periods. We evaluate four agents: AIDE, AI Scientis",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25069"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "s sufficient to guide agents toward models that meet the broader requirements of real-world medical use? In this study, we introduce Auto-MD-bench, a benchmark of 15 real-world medical tasks from 10 clinical datasets, spanning survival analysis, classification and sequential prediction, with external validation across cohorts, hospitals and time periods. We evaluate four agents: AIDE, AI Scientis",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25069"
+        },
+        {
+          "term": "medical",
+          "excerpt": "Auto-MD-bench: Evaluating Autoresearch Agents for Real-World Medical Tasks Autonomous agents are increasingly capable of developing machine learning (ML) models end to end. In medical practice, however, strong performance on the target metric does not fully characterize how good the models are in real-world",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25069"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "eet the broader requirements of real-world medical use? In this study, we introduce Auto-MD-bench, a benchmark of 15 real-world medical tasks from 10 clinical datasets, spanning survival analysis, classification and sequential prediction, with external validation across cohorts, hospitals and time periods. We evaluate four agents: AIDE, AI Scientist v2, Codex, and Autoresearch. The strongest age",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25069"
+        },
+        {
+          "term": "healthcare",
+          "excerpt": "indings show that primary task performance alone is insufficient to assess autonomous clinical modeling and multiple different metrics widely used in healthcare practice need to be taken into consideration. [[SECTION 1Introduction]] 1Introduction Content selection saved. Describe the issue below: Auto-MD-bench: Evaluating Autoresearch Agents for Real-World Medical Tasks Shenqi Zhou 1,2,* , Qiran Z",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25069"
+        },
+        {
+          "term": "patient",
+          "excerpt": "od the models are in real-world use cases. For example, medical ML models should also provide well-calibrated risk estimates and remain robust across patient populations. Yet autonomous model development is typically guided by task objectives that emphasize simple predictive discrimination (e.g. AUROC). This raises a key question: are these objectives sufficient to guide agents toward models th",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25069"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "MedAgentBoard Diverse medical tasks 100 ✗ ✗ MedAgentGym Biomedical data science 129 † ✗ ✗ AutoHealth Health prediction 17 ✓ ✗ ACP-Bench Computational pathology 41 ✓ ✗ BioML-bench Biomedical ML 24 ✗ ✗ BioXArena Biomedical ML 76 ✗ ✓ Auto-MD-bench (ours) Clinical prediction 15 ✓ ✓ [[SECTION 3 The Benchmark]] 3 The Benchmark Auto-MD-bench evaluates autoresearch agents that develop models for medical",
+          "location": "Evaluation for Medical Use.",
+          "source_url": "https://arxiv.org/html/2610.25069"
+        }
+      ],
+      "related_benchmarks": [
+        "MLAgentBench",
+        "DSBench",
+        "HealthAgentBench"
+      ],
+      "related_agent_url": "../../p/2610.25069.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 31,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c52a77dcbb51b539fbaaa38a29bb472ae8ebaeb550c28a171ad6ed93e6c75983",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "doi:10.64898/2026.10.14.26365587",
       "slug": "doi-10-64898-2026-10-14-26365587-b4c1a326dc",
       "kind": "paper",
@@ -835,6 +1409,93 @@
       "content_hash": "c387c09a5a15cf6338c1a038dd03a45a56f45edaa4a59af7c8d4b0bb79132959",
       "is_seed": false,
       "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.23845",
+      "slug": "arxiv-2610-23845-13dac6b11d",
+      "kind": "paper",
+      "title": "AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery",
+      "abstract": "Reproducible and analytically robust research findings are essential to scientific progress, but evaluating these properties typically requires costly manual effort. We investigate whether LLM agents can help automate reproduction and robustness analysis, using a medical case study grounded in the Surveillance, Epidemiology, and End Results (SEER) database, a widely used U.S. cancer registry underlying tens of thousands of published studies. First, we introduce SEER-Repro, a benchmark of 20 published SEER-based papers together with the data and resources required to reproduce their findings. Second, we create an AI agent that successfully reproduces 77.4% of 2,190 atomic claims, while providing executable baselines for further analysis. Third, we develop an agentic analysis pipeline to test the robustness of the medical findings by identifying analytical choices underlying each finding, proposing defensible alternatives, and rerunning the analysis to determine whether those choices affect the conclusion. Across published papers in SEER-Repro, our pipeline identifies potentially consequential analytical choices in 9.5% of fully reproduced findings and flags them for expert review. These results show how LLM agents can support scientific review by reproducing findings, systematically testing their robustness, and directing expert attention toward potentially consequential analytical choices.",
+      "authors": [
+        "Shicheng Liu",
+        "Krista Opsahl-Ong",
+        "Andrew Drozdov",
+        "Julian Killingback",
+        "Arnav Singhvi",
+        "Ronak Pradeep",
+        "Michael Bendersky",
+        "James C. Dickerson",
+        "Monica S. Lam"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-16T17:57:55+00:00",
+      "updated_at": "2026-10-16T17:57:55+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.23845"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.23845v1",
+        "pdf": "https://arxiv.org/pdf/2610.23845v1",
+        "html": "https://arxiv.org/html/2610.23845"
+      },
+      "evidence": [
+        {
+          "term": "we introduce SEER-Repro, a benchmark",
+          "excerpt": "eillance, Epidemiology, and End Results (SEER) database, a widely used U.S. cancer registry underlying tens of thousands of published studies. First, we introduce SEER-Repro, a benchmark of 20 published SEER-based papers together with the data and resources required to reproduce their findings. Second, we create an AI agent that successfully reproduces 77.4% of 2,190 atomic claims, while providing executable baselines for",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.23845"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "End Results (SEER) database, a widely used U.S. cancer registry underlying tens of thousands of published studies. First, we introduce SEER-Repro, a benchmark of 20 published SEER-based papers together with the data and resources required to reproduce their findings. Second, we create an AI agent that successfully reproduces 77.4% of 2,190 atomic claims, while providing executable baselines for",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.23845"
+        },
+        {
+          "term": "medical",
+          "excerpt": "properties typically requires costly manual effort. We investigate whether LLM agents can help automate reproduction and robustness analysis, using a medical case study grounded in the Surveillance, Epidemiology, and End Results (SEER) database, a widely used U.S. cancer registry underlying tens of thousands of published studies. First, we introduce SEER-Repro, a benchmark of 20 published SEER-",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.23845"
+        },
+        {
+          "term": "cancer",
+          "excerpt": "n and robustness analysis, using a medical case study grounded in the Surveillance, Epidemiology, and End Results (SEER) database, a widely used U.S. cancer registry underlying tens of thousands of published studies. First, we introduce SEER-Repro, a benchmark of 20 published SEER-based papers together with the data and resources required to reproduce their findings. Second, we create an AI ag",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.23845"
+        },
+        {
+          "term": "Research Agents",
+          "excerpt": "nks: Document Cited by: §1 , §2.1 . Du et al. (2025) M. Du, B. Xu, C. Zhu, X. Wang, and Z. Mao DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents . arXiv preprint arXiv:2506.11763 . External Links: Link Cited by: §2.2 . El-Serag et al. (2002) H. B. El-Serag, A. C. Mason, N. Petersen, and C. R. Key Epidemiological differences between adenocarcinoma of the oesophagus and adenocarcinom",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.23845"
+        }
+      ],
+      "related_benchmarks": [
+        "DeepResearchBench",
+        "ReportBench",
+        "InsightBench",
+        "DiscoveryBench",
+        "ScienceAgentBench"
+      ],
+      "related_agent_url": "../../p/2610.23845.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 15,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "81353b4078aac0bfd47c27aa5740949b3ce5d382c9db2f0dd7e767524c7762f8",
+      "is_seed": false,
+      "topic": "experiment_agent",
       "contribution_type": "new_benchmark"
     },
     {

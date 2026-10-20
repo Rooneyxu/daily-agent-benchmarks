@@ -1,0 +1,263 @@
+{
+  "date": "2026-10-18",
+  "count": 3,
+  "entries": [
+    {
+      "id": "arxiv:2610.25540",
+      "slug": "arxiv-2610-25540-cea7ea3b07",
+      "kind": "paper",
+      "title": "Auditing Tool Traces in Agentic LLMs: Source Localization and Counterfactual Dependence Testing",
+      "abstract": "Agentic LLMs increasingly support scientific prediction by grounding decisions in external evidence. In biology, they promise accurate, interpretable predictions for important problems by integrating complex experimental and computational evidence. However, serialized tool results can contain hidden label shortcuts, such as dataset identifiers or template artifacts, that create apparent success without biological reasoning. To address this risk, we introduce a two-stage audit. Stage 1, Per-Tool TF-IDF Decomposition (PT2D), localizes label-predictive patterns to individual tool results while avoiding signal dilution in the concatenated tool trace. Stage 2, Token-Class Redaction, counterfactually tests whether the frozen LLM depends on the localized shortcut. We apply this audit to TCR-pMHC binding, where tool augmentation substantially outperforms a no-evidence baseline. At face value, this suggests that the LLM has learned to use scientific evidence. The audit overturns this interpretation: PT2D localizes the strongest signal to identifiers in one tool result, and redacting them reduces performance to chance. These findings show how hidden label shortcuts can masquerade as scientific reasoning or discovery, motivating source-level audits before benchmark gains are trusted.",
+      "authors": [
+        "Junhao Liu",
+        "Tianxiao Li",
+        "Yongxian Wu",
+        "Ziheng Duan",
+        "Ren Li",
+        "Jing Zhang",
+        "Martin Renqiang Min"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-18T21:17:48+00:00",
+      "updated_at": "2026-10-18T21:17:48+00:00",
+      "priority": "P2",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.25540"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.25540v1",
+        "pdf": "https://arxiv.org/pdf/2610.25540v1",
+        "html": "https://arxiv.org/html/2610.25540"
+      },
+      "evidence": [
+        {
+          "term": "audits before benchmark",
+          "excerpt": "es performance to chance. These findings show how hidden label shortcuts can masquerade as scientific reasoning or discovery, motivating source-level audits before benchmark gains are trusted. [[SECTION Auditing Tool Traces in Agentic LLMs: Source Localization and Counterfactual Dependence Testing]] Auditing Tool Traces in Agentic LLMs: Source Localization and Counterfactual Dependence Testing Content selectio",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25540"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "to chance. These findings show how hidden label shortcuts can masquerade as scientific reasoning or discovery, motivating source-level audits before benchmark gains are trusted. [[SECTION Auditing Tool Traces in Agentic LLMs: Source Localization and Counterfactual Dependence Testing]] Auditing Tool Traces in Agentic LLMs: Source Localization and Counterfactual Dependence Testing Content selectio",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25540"
+        },
+        {
+          "term": "biology",
+          "excerpt": "ization and Counterfactual Dependence Testing Agentic LLMs increasingly support scientific prediction by grounding decisions in external evidence. In biology, they promise accurate, interpretable predictions for important problems by integrating complex experimental and computational evidence. However, serialized tool results can contain hidden label shortcuts, such as dataset identifiers or te",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25540"
+        },
+        {
+          "term": "biological",
+          "excerpt": ", serialized tool results can contain hidden label shortcuts, such as dataset identifiers or template artifacts, that create apparent success without biological reasoning. To address this risk, we introduce a two-stage audit. Stage 1, Per-Tool TF-IDF Decomposition (PT2D), localizes label-predictive patterns to individual tool results while avoiding signal dilution in the concatenated tool trace. S",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25540"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "04235 . Tickotsky et al. [2017] Nili Tickotsky, Tal Sagiv, Jaime Prilusky, Eric Shifrut, and Nir Friedman. McPAS-TCR: A manually curated catalogue of pathology-associated t cell receptor sequences. Bioinformatics , 33(18):2924–2929, 2017. doi: 10.1093/bioinformatics/btx286 . Yao et al. [2023] Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, and Yuan Cao. ReAct: Synerg",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.25540"
+        },
+        {
+          "term": "tool use",
+          "excerpt": "uction]] 1 Introduction Large language models (LLMs) are increasingly coupled to external evidence in scientific workflows. General paradigms include tool use ( Schick et al., 2023 ; Yao et al., 2023 ) , retrieval-augmented generation ( Lewis et al., 2020 ) , and agentic pipelines that chain multiple tools and return their results to the model ( Shen et al., 2023 ) ; domain systems have instanti",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2610.25540"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "match_score": 17,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "1542beedfe89c785e91154cc1d70abba34de2bf5ca82864ed2f77d4e17300c57",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "audit"
+    },
+    {
+      "id": "arxiv:2610.25155",
+      "slug": "arxiv-2610-25155-b5fde6189b",
+      "kind": "paper",
+      "title": "Morpheus: a fully local, defense-in-depth de-identification engine for Greek clinical text - a benchmark evaluation",
+      "abstract": "Background and Objective: Clinical free text cannot leave the hospital without de-identification, yet no de-identification system or benchmark exists for Greek clinical text. We evaluated Morpheus, a fully local de-identification pipeline for Greek clinical documents, on 500 synthetic discharge summaries. Methods: The notes (300 cardiac surgery, 100 cardiology, 100 nephrology) were generated by a frontier large language model (Gemini 3.1 Pro) constrained to authentic Greek hospital document layouts. Notes were pre-annotated at generation; two clinicians then independently reviewed and corrected every note, blinded to each other, with disagreements arbitrated. Primary outcomes were recall over must-redact identifiers and over-redaction of clinical content, measured over must-survive probes. Secondary outcomes: residual leaks flagged by an independent egress-review layer, processing time and reproducibility. Results: Inter-annotator agreement was F1 = 0.998. The de-identification rate was 96.59% (7,666/7,937 identifier instances; 95% CI 96.16-96.96): 98.49% for direct and 93.42% for quasi-identifiers. No patient's own complete identifier survived in any note; of 271 residual instances, 199 (73.4%) concerned institutional identity, chiefly the hospital letterhead. The over-redaction rate was 2.82% (190/6,747 probes; 95% CI 2.45-3.24). The egress guard flagged 2 of 271 residuals, both complete telephone numbers. Two independent runs gave identical verdicts. Conclusions: A fully local, deterministic pipeline removed 98.5% of direct patient identifiers from Greek clinical text while altering under 3% of protected clinical content; most residuals concerned the institution, not the patient. To our knowledge this is the first benchmark evaluation of clinical-text de-identification for Greek and the first quantified evaluation of an independent egress-guard layer.",
+      "authors": [
+        "Filippos-Paschalis Rorris",
+        "Nikoleta Stanitsa",
+        "Tatiana Rorri",
+        "Foteini Rorri",
+        "Constantine N. Antonopoulos"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-18T10:26:14+00:00",
+      "updated_at": "2026-10-18T10:26:14+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.25155"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.25155v1",
+        "pdf": "https://arxiv.org/pdf/2610.25155v1",
+        "html": "https://arxiv.org/html/2610.25155"
+      },
+      "evidence": [
+        {
+          "term": "first benchmark",
+          "excerpt": "l text while altering under 3% of protected clinical content; most residuals concerned the institution, not the patient. To our knowledge this is the first benchmark evaluation of clinical-text de-identification for Greek and the first quantified evaluation of an independent egress-guard layer. Background and Objective: Clinical free text cannot leave the hospital without de-identification, yet no de-i",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25155"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Morpheus: a fully local, defense-in-depth de-identification engine for Greek clinical text - a benchmark evaluation Background and Objective: Clinical free text cannot leave the hospital without de-identification, yet no de-identification system or benchmark exists for Greek clinical text. We evaluated Morpheus, a fully local de-identificatio",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25155"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Morpheus: a fully local, defense-in-depth de-identification engine for Greek clinical text - a benchmark evaluation Background and Objective: Clinical free text cannot leave the hospital without de-identification, yet no de-identification system or benchmark exists for Greek clinical text. We evaluated Morpheus, a fully loc",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25155"
+        },
+        {
+          "term": "patient",
+          "excerpt": "The de-identification rate was 96.59% (7,666/7,937 identifier instances; 95% CI 96.16-96.96): 98.49% for direct and 93.42% for quasi-identifiers. No patient's own complete identifier survived in any note; of 271 residual instances, 199 (73.4%) concerned institutional identity, chiefly the hospital letterhead. The over-redaction rate was 2.82% (190/6,747 probes; 95% CI 2.45-3.24). The egress gu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25155"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 13,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '404 Not Found' for url 'https://arxiv.org/html/2610.25155'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+      "content_hash": "3967ed4ed2b2c3f532d6da0412972dace7814a75f0558216cd08b929fde15c89",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.25069",
+      "slug": "arxiv-2610-25069-15f20077bd",
+      "kind": "paper",
+      "title": "Auto-MD-bench: Evaluating Autoresearch Agents for Real-World Medical Tasks",
+      "abstract": "Autonomous agents are increasingly capable of developing machine learning (ML) models end to end. In medical practice, however, strong performance on the target metric does not fully characterize how good the models are in real-world use cases. For example, medical ML models should also provide well-calibrated risk estimates and remain robust across patient populations. Yet autonomous model development is typically guided by task objectives that emphasize simple predictive discrimination (e.g. AUROC). This raises a key question: are these objectives sufficient to guide agents toward models that meet the broader requirements of real-world medical use? In this study, we introduce Auto-MD-bench, a benchmark of 15 real-world medical tasks from 10 clinical datasets, spanning survival analysis, classification and sequential prediction, with external validation across cohorts, hospitals and time periods. We evaluate four agents: AIDE, AI Scientist v2, Codex, and Autoresearch. The strongest agents achieve competitive primary scores, yet their predicted risks are less calibrated than those of the simple baseline models, which could lead to severe medical accidents. Moreover, models with nearly identical primary scores can exhibit markedly different calibration, while performance varies substantially across population shifts. These findings show that primary task performance alone is insufficient to assess autonomous clinical modeling and multiple different metrics widely used in healthcare practice need to be taken into consideration.",
+      "authors": [
+        "Shenqi Zhou",
+        "Qiran Zou",
+        "Wenhao Zhao",
+        "Zhenyu Liao",
+        "Dianbo Liu"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-18T07:19:05+00:00",
+      "updated_at": "2026-10-18T07:19:05+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.25069"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.25069v1",
+        "pdf": "https://arxiv.org/pdf/2610.25069v1",
+        "code": "https://github.com/Edwin0080/Auto-MD-bench",
+        "data": "https://huggingface.co/datasets/Edwin0080/Auto-MD-bench",
+        "html": "https://arxiv.org/html/2610.25069"
+      },
+      "evidence": [
+        {
+          "term": "we introduce Auto-MD-bench",
+          "excerpt": "question: are these objectives sufficient to guide agents toward models that meet the broader requirements of real-world medical use? In this study, we introduce Auto-MD-bench, a benchmark of 15 real-world medical tasks from 10 clinical datasets, spanning survival analysis, classification and sequential prediction, with external validation across cohorts, hospitals and time periods. We evaluate four agents: AIDE",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25069"
+        },
+        {
+          "term": "we introduce Auto-MD-bench, a benchmark",
+          "excerpt": "question: are these objectives sufficient to guide agents toward models that meet the broader requirements of real-world medical use? In this study, we introduce Auto-MD-bench, a benchmark of 15 real-world medical tasks from 10 clinical datasets, spanning survival analysis, classification and sequential prediction, with external validation across cohorts, hospitals and time periods. We evaluate four agents: AIDE, AI Scientis",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25069"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "s sufficient to guide agents toward models that meet the broader requirements of real-world medical use? In this study, we introduce Auto-MD-bench, a benchmark of 15 real-world medical tasks from 10 clinical datasets, spanning survival analysis, classification and sequential prediction, with external validation across cohorts, hospitals and time periods. We evaluate four agents: AIDE, AI Scientis",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25069"
+        },
+        {
+          "term": "medical",
+          "excerpt": "Auto-MD-bench: Evaluating Autoresearch Agents for Real-World Medical Tasks Autonomous agents are increasingly capable of developing machine learning (ML) models end to end. In medical practice, however, strong performance on the target metric does not fully characterize how good the models are in real-world",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25069"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "eet the broader requirements of real-world medical use? In this study, we introduce Auto-MD-bench, a benchmark of 15 real-world medical tasks from 10 clinical datasets, spanning survival analysis, classification and sequential prediction, with external validation across cohorts, hospitals and time periods. We evaluate four agents: AIDE, AI Scientist v2, Codex, and Autoresearch. The strongest age",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25069"
+        },
+        {
+          "term": "healthcare",
+          "excerpt": "indings show that primary task performance alone is insufficient to assess autonomous clinical modeling and multiple different metrics widely used in healthcare practice need to be taken into consideration. [[SECTION 1Introduction]] 1Introduction Content selection saved. Describe the issue below: Auto-MD-bench: Evaluating Autoresearch Agents for Real-World Medical Tasks Shenqi Zhou 1,2,* , Qiran Z",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25069"
+        },
+        {
+          "term": "patient",
+          "excerpt": "od the models are in real-world use cases. For example, medical ML models should also provide well-calibrated risk estimates and remain robust across patient populations. Yet autonomous model development is typically guided by task objectives that emphasize simple predictive discrimination (e.g. AUROC). This raises a key question: are these objectives sufficient to guide agents toward models th",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.25069"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "MedAgentBoard Diverse medical tasks 100 ✗ ✗ MedAgentGym Biomedical data science 129 † ✗ ✗ AutoHealth Health prediction 17 ✓ ✗ ACP-Bench Computational pathology 41 ✓ ✗ BioML-bench Biomedical ML 24 ✗ ✗ BioXArena Biomedical ML 76 ✗ ✓ Auto-MD-bench (ours) Clinical prediction 15 ✓ ✓ [[SECTION 3 The Benchmark]] 3 The Benchmark Auto-MD-bench evaluates autoresearch agents that develop models for medical",
+          "location": "Evaluation for Medical Use.",
+          "source_url": "https://arxiv.org/html/2610.25069"
+        }
+      ],
+      "related_benchmarks": [
+        "MLAgentBench",
+        "DSBench",
+        "HealthAgentBench"
+      ],
+      "related_agent_url": "../../p/2610.25069.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 31,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c52a77dcbb51b539fbaaa38a29bb472ae8ebaeb550c28a171ad6ed93e6c75983",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}

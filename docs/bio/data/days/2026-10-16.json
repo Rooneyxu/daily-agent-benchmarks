@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-16",
+  "count": 1,
+  "entries": [
+    {
+      "id": "arxiv:2610.23845",
+      "slug": "arxiv-2610-23845-13dac6b11d",
+      "kind": "paper",
+      "title": "AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery",
+      "abstract": "Reproducible and analytically robust research findings are essential to scientific progress, but evaluating these properties typically requires costly manual effort. We investigate whether LLM agents can help automate reproduction and robustness analysis, using a medical case study grounded in the Surveillance, Epidemiology, and End Results (SEER) database, a widely used U.S. cancer registry underlying tens of thousands of published studies. First, we introduce SEER-Repro, a benchmark of 20 published SEER-based papers together with the data and resources required to reproduce their findings. Second, we create an AI agent that successfully reproduces 77.4% of 2,190 atomic claims, while providing executable baselines for further analysis. Third, we develop an agentic analysis pipeline to test the robustness of the medical findings by identifying analytical choices underlying each finding, proposing defensible alternatives, and rerunning the analysis to determine whether those choices affect the conclusion. Across published papers in SEER-Repro, our pipeline identifies potentially consequential analytical choices in 9.5% of fully reproduced findings and flags them for expert review. These results show how LLM agents can support scientific review by reproducing findings, systematically testing their robustness, and directing expert attention toward potentially consequential analytical choices.",
+      "authors": [
+        "Shicheng Liu",
+        "Krista Opsahl-Ong",
+        "Andrew Drozdov",
+        "Julian Killingback",
+        "Arnav Singhvi",
+        "Ronak Pradeep",
+        "Michael Bendersky",
+        "James C. Dickerson",
+        "Monica S. Lam"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-16T17:57:55+00:00",
+      "updated_at": "2026-10-16T17:57:55+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.23845"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.23845v1",
+        "pdf": "https://arxiv.org/pdf/2610.23845v1",
+        "html": "https://arxiv.org/html/2610.23845"
+      },
+      "evidence": [
+        {
+          "term": "we introduce SEER-Repro, a benchmark",
+          "excerpt": "eillance, Epidemiology, and End Results (SEER) database, a widely used U.S. cancer registry underlying tens of thousands of published studies. First, we introduce SEER-Repro, a benchmark of 20 published SEER-based papers together with the data and resources required to reproduce their findings. Second, we create an AI agent that successfully reproduces 77.4% of 2,190 atomic claims, while providing executable baselines for",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.23845"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "End Results (SEER) database, a widely used U.S. cancer registry underlying tens of thousands of published studies. First, we introduce SEER-Repro, a benchmark of 20 published SEER-based papers together with the data and resources required to reproduce their findings. Second, we create an AI agent that successfully reproduces 77.4% of 2,190 atomic claims, while providing executable baselines for",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.23845"
+        },
+        {
+          "term": "medical",
+          "excerpt": "properties typically requires costly manual effort. We investigate whether LLM agents can help automate reproduction and robustness analysis, using a medical case study grounded in the Surveillance, Epidemiology, and End Results (SEER) database, a widely used U.S. cancer registry underlying tens of thousands of published studies. First, we introduce SEER-Repro, a benchmark of 20 published SEER-",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.23845"
+        },
+        {
+          "term": "cancer",
+          "excerpt": "n and robustness analysis, using a medical case study grounded in the Surveillance, Epidemiology, and End Results (SEER) database, a widely used U.S. cancer registry underlying tens of thousands of published studies. First, we introduce SEER-Repro, a benchmark of 20 published SEER-based papers together with the data and resources required to reproduce their findings. Second, we create an AI ag",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.23845"
+        },
+        {
+          "term": "Research Agents",
+          "excerpt": "nks: Document Cited by: §1 , §2.1 . Du et al. (2025) M. Du, B. Xu, C. Zhu, X. Wang, and Z. Mao DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents . arXiv preprint arXiv:2506.11763 . External Links: Link Cited by: §2.2 . El-Serag et al. (2002) H. B. El-Serag, A. C. Mason, N. Petersen, and C. R. Key Epidemiological differences between adenocarcinoma of the oesophagus and adenocarcinom",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.23845"
+        }
+      ],
+      "related_benchmarks": [
+        "DeepResearchBench",
+        "ReportBench",
+        "InsightBench",
+        "DiscoveryBench",
+        "ScienceAgentBench"
+      ],
+      "related_agent_url": "../../p/2610.23845.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 15,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "81353b4078aac0bfd47c27aa5740949b3ce5d382c9db2f0dd7e767524c7762f8",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
