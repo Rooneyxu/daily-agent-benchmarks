@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-20T09:32:54Z",
-  "total": 171,
+  "generated_at": "2026-10-21T09:28:33Z",
+  "total": 173,
   "counts": {
     "topics": {
-      "experiment_agent": 44,
+      "general_text": 67,
+      "experiment_agent": 45,
       "biosafety": 16,
-      "general_text": 66,
       "multimodal": 45
     },
     "contribution_types": {
-      "new_benchmark": 138,
+      "new_benchmark": 140,
       "audit": 14,
       "methodology": 19
     },
     "kinds": {
-      "paper": 171
+      "paper": 173
     },
     "evaluation_contexts": {
-      "beneficial_capability": 155,
+      "beneficial_capability": 157,
       "biosecurity_misuse": 16
     }
   },
@@ -59,8 +59,8 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-10-20T09:33:13Z",
-      "finished_at": "2026-10-20T09:33:40Z",
+      "started_at": "2026-10-21T09:28:57Z",
+      "finished_at": "2026-10-21T09:29:29Z",
       "discovered": 43,
       "published": 23,
       "error": ""
@@ -69,19 +69,19 @@
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-10-20T09:33:40Z",
-      "finished_at": "2026-10-20T09:33:47Z",
-      "discovered": 56,
-      "published": 29,
+      "started_at": "2026-10-21T09:29:29Z",
+      "finished_at": "2026-10-21T09:30:00Z",
+      "discovered": 59,
+      "published": 32,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-20T09:33:47Z",
-      "finished_at": "2026-10-20T09:34:29Z",
-      "discovered": 930,
+      "started_at": "2026-10-21T09:30:00Z",
+      "finished_at": "2026-10-21T09:30:31Z",
+      "discovered": 704,
       "published": 63,
       "error": ""
     },
@@ -89,24 +89,32 @@
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-20T09:34:29Z",
-      "finished_at": "2026-10-20T09:34:39Z",
-      "discovered": 163,
-      "published": 16,
+      "started_at": "2026-10-21T09:30:31Z",
+      "finished_at": "2026-10-21T09:30:35Z",
+      "discovered": 175,
+      "published": 12,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-10-20T09:34:39Z",
-      "finished_at": "2026-10-20T09:34:39Z",
+      "started_at": "2026-10-21T09:30:35Z",
+      "finished_at": "2026-10-21T09:30:35Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
     }
   ],
   "days": [
+    {
+      "date": "2026-10-20",
+      "count": 2,
+      "entry_ids": [
+        "arxiv:2610.27637",
+        "arxiv:2610.27541"
+      ]
+    },
     {
       "date": "2026-10-19",
       "count": 3,
@@ -796,6 +804,170 @@
     }
   ],
   "entries": [
+    {
+      "id": "arxiv:2610.27637",
+      "slug": "arxiv-2610-27637-da7aa00b15",
+      "kind": "paper",
+      "title": "SCODEL: Shared Canonical Ontology Definitions for Food Entity Linking and Ontology-Grounded Recipe Knowledge Graphs",
+      "abstract": "Identifying recipe entities and linking them to ontology concepts is fundamental for semantic recipe understanding. However, food mentions in recipes are often ambiguous, context-dependent, and lexically diverse, making ontology entity linking (EL) challenging. We propose SCODEL, a streamlined, model-agnostic approach based on a central idea: contextual food mentions and ontology concepts that refer to the same entity should learn the same canonical ontology-oriented definition. SCODEL uses these shared definitions as a semantic normalisation layer, providing complementary semantic information to existing EL models without requiring a new linking architecture. We further introduce ReciLinkD, the first benchmark for contextual food ontology entity linking in recipes. Experiments show that SCODEL consistently improves three modular EL models (ReFinED, GSM-EL, and BLINK): SCODEL x BLINK achieves the highest Hit@1 on seen concepts (88.33%), while SCODEL x GSM-EL achieves the highest Hit@1 on unseen concepts (83.15%), outperforming the strongest large language model (LLM) based EL baseline in each setting. Experiments on a biomedical ontology benchmark further demonstrate that SCODEL generalises beyond the food domain. Finally, we use SCODEL to ground food mentions at scale and construct an ontology-grounded recipe knowledge graph, demonstrating its utility for ontology-aware recipe retrieval and corpus-level food analysis.",
+      "authors": [
+        "Nuhu Ibrahim",
+        "Rishi Ravikumar",
+        "Ayuba Dauda",
+        "Fuqi Xu",
+        "Robert Stevens",
+        "Riza Batista-Navarro"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-20T05:02:01+00:00",
+      "updated_at": "2026-10-20T05:02:01+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.27637"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.27637v1",
+        "pdf": "https://arxiv.org/pdf/2610.27637v1",
+        "code": "https://github.com/nuhu-ibrahim/ReciLinkD",
+        "html": "https://arxiv.org/html/2610.27637"
+      },
+      "evidence": [
+        {
+          "term": "new linking architecture. We further introduce ReciLinkD, the first benchmark",
+          "excerpt": "es these shared definitions as a semantic normalisation layer, providing complementary semantic information to existing EL models without requiring a new linking architecture. We further introduce ReciLinkD, the first benchmark for contextual food ontology entity linking in recipes. Experiments show that SCODEL consistently improves three modular EL models (ReFinED, GSM-EL, and BLINK): SCODEL x BLINK achieves the highest Hit@1 on seen concepts (88.33%), while SCO",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.27637"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "ding complementary semantic information to existing EL models without requiring a new linking architecture. We further introduce ReciLinkD, the first benchmark for contextual food ontology entity linking in recipes. Experiments show that SCODEL consistently improves three modular EL models (ReFinED, GSM-EL, and BLINK): SCODEL x BLINK achieves the highest Hit@1 on seen concepts (88.33%), while SCO",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.27637"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "highest Hit@1 on unseen concepts (83.15%), outperforming the strongest large language model (LLM) based EL baseline in each setting. Experiments on a biomedical ontology benchmark further demonstrate that SCODEL generalises beyond the food domain. Finally, we use SCODEL to ground food mentions at scale and construct an ontology-grounded recipe knowledge graph, demonstrating its utility for ontolog",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.27637"
+        },
+        {
+          "term": "medical",
+          "excerpt": "hest Hit@1 on unseen concepts (83.15%), outperforming the strongest large language model (LLM) based EL baseline in each setting. Experiments on a biomedical ontology benchmark further demonstrate that SCODEL generalises beyond the food domain. Finally, we use SCODEL to ground food mentions at scale and construct an ontology-grounded recipe knowledge graph, demonstrating its utility for ontolog",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.27637"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 13,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "740301f5435b32cc118a6282123bcc50cf4df30576a2ea0c02a1eb79ccb4acca",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.27541",
+      "slug": "arxiv-2610-27541-bda2fc9692",
+      "kind": "paper",
+      "title": "EviDial: When Correct Depression Predictions Lack Evidence",
+      "abstract": "Depression dialogue benchmarks commonly assess models by comparing predicted symptom labels with clinical scale scores. However, a prediction may agree with a benchmark label even when the dialogue lacks enough evidence to justify it. We introduce EviDial, a benchmark that distinguishes label agreement from evidence-grounded assessment. EviDial comprises 382 depression dialogues from three sources and 2,744 participant-symptom cells, each classified as having absent, partial, conflicting, or sufficient evidence. Because evidence sufficiency lacks a directly observable gold standard, we derive calibrated evidence references from multiple judgments using generalizability theory, many-facet Rasch measurement, and random-effects latent class analysis. Our audit reveals that 82.8% of participant-symptom cells lack sufficient textual evidence for the corresponding symptom assessment, with substantial variation across sources. Across model families and prompting strategies, 69.2%-96.9% of predictions judged correct by benchmark labels are nonetheless unsupported by sufficient dialogue evidence. Further analyses show that strong agreement among LLM evaluators need not reflect independent evidence judgments, underscoring the need to calibrate automated reference panels. These findings demonstrate that label-based evaluation can overestimate evidence-grounded performance by conflating agreement with clinical labels and support in the observed dialogue. EviDial provides a measurement layer for separating these constructs and auditing LLM-based depression assessment more faithfully.",
+      "authors": [
+        "Junjie Xu",
+        "Jin Zhu",
+        "Yuzhe Yang",
+        "Luhan Wang",
+        "Xingjiao Wu",
+        "Daoguo Dong",
+        "Jing Yang",
+        "Wenxin Wu",
+        "Liang He"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-20T02:56:09+00:00",
+      "updated_at": "2026-10-20T02:56:09+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.27541"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.27541v1",
+        "pdf": "https://arxiv.org/pdf/2610.27541v1",
+        "html": "https://arxiv.org/html/2610.27541"
+      },
+      "evidence": [
+        {
+          "term": "We introduce EviDial, a benchmark",
+          "excerpt": "labels with clinical scale scores. However, a prediction may agree with a benchmark label even when the dialogue lacks enough evidence to justify it. We introduce EviDial, a benchmark that distinguishes label agreement from evidence-grounded assessment. EviDial comprises 382 depression dialogues from three sources and 2,744 participant-symptom cells, each classified as having absent, partial, conflicting, or sufficient",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.27541"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "EviDial: When Correct Depression Predictions Lack Evidence Depression dialogue benchmarks commonly assess models by comparing predicted symptom labels with clinical scale scores. However, a prediction may agree with a benchmark label even when the dialogue lacks enough evidence to justify it. We introduce EviDial, a benchmark",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.27541"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "EviDial: When Correct Depression Predictions Lack Evidence Depression dialogue benchmarks commonly assess models by comparing predicted symptom labels with clinical scale scores. However, a prediction may agree with a benchmark label even when the dialogue lacks enough evidence to justify it. We introduce EviDial, a benchmark t",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.27541"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "l: When Correct Depression Predictions Lack Evidence Depression dialogue benchmarks commonly assess models by comparing predicted symptom labels with clinical scale scores. However, a prediction may agree with a benchmark label even when the dialogue lacks enough evidence to justify it. We introduce EviDial, a benchmark that distinguishes label agreement from evidence-grounded assessment. EviDia",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.27541"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "Psychological Bulletin 56 ( 2 ), pp. 81–105 . Cited by: Appendix D . Cao et al. (2025) P. Cao, Y. Zhang, C. Zhang, W. Chen, Y. Liu, S. Xu, et al. A multimodal depression consultation dataset of speech and text with HAMD-17 assessments . Scientific Data 12 , pp. 1577 . External Links: Document Cited by: §1 , §2 . Chapman et al. (2001) W. W. Chapman, W. Bridewell, P. Hanbury, G. F. Cooper, and B",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.27541"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "s splits, models, and symptom distributions ( Ishikawa and Duke, 2026 ) . Broader psychiatric benchmarks evaluate diagnostic capabilities of LLMs and multi-agent systems ( Song et al., 2026 ; Xu et al., 2026 ) . These benchmarks primarily evaluate agreement with clinical labels or diagnostic targets. EviDial instead asks a complementary question: whether the processed dialogue itself contains suffi",
+          "location": "2 Related Work",
+          "source_url": "https://arxiv.org/html/2610.27541"
+        }
+      ],
+      "related_benchmarks": [
+        "MentalBench",
+        "JudgeBench",
+        "LingxiDiagBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 17,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "697700586d3a465b0eb2c4b2e145bb32e0faeff0cf2fc70500e605be1356885b",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
     {
       "id": "arxiv:2610.26787",
       "slug": "arxiv-2610-26787-e5311f24d4",
@@ -1490,7 +1662,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 15,
+      "match_score": 13,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "81353b4078aac0bfd47c27aa5740949b3ce5d382c9db2f0dd7e767524c7762f8",
