@@ -1,0 +1,366 @@
+{
+  "date": "2026-10-22",
+  "count": 4,
+  "entries": [
+    {
+      "id": "arxiv:2610.31606",
+      "slug": "arxiv-2610-31606-8132536b00",
+      "kind": "paper",
+      "title": "How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions",
+      "abstract": "Purpose: To describe an evidence-aware retrieval evaluation protocol for a clinical retrieval-augmented generation (RAG) system over breast lesion management literature, addressing the dependence of retrieval scores on annotation coverage. Methods: An 18-document corpus and an 18-query development benchmark, with one Yes/No or WH-question per document, were used. Retrieval combined dense embeddings, BM25, and cross-encoder reranking. Chunk sizes of 128 to 1024 tokens, overlaps of 0 to 20%, and four retriever configurations were evaluated. Relevance was defined by evidence spans mapped to all containing chunks, treating overlapping chunks with equivalent evidence as relevant. Retrieval was evaluated using R-Precision, Recall@K, MRR, and nDCG@K. Separately, generation was assessed on a 512-token index at K=1 to 5 using DeepEval claim-level metrics, with deepseek-v4-pro as the LLM judge, and BLEU/ROUGE metrics. Results: The selected hybrid retriever, using 384-token chunks and 20% overlap, retrieved accepted evidence in the top three results for 17 of 18 queries. Recall@3, R-Precision, MRR@3, and nDCG@3 each reached 0.94. Ground-truth curation increased evidence spans from 25 to 37 and accepted chunk targets from 36 to 51 without changing retrieval rankings. Conclusion: Cross-encoder reranking achieved the highest retrieval scores. Expanded relevance annotations increased recognized evidence without changing rankings, highlighting annotation sensitivity. The small development set and retrieval-informed curation require independent validation, including radiologist assessment of evidence sufficiency.",
+      "authors": [
+        "Miguel Mochizuki Silva",
+        "Samuel Ismael",
+        "Mateus C. Dias",
+        "Thaís Gaudêncio",
+        "Yuri Malheiros",
+        "Barufaldi"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-22T17:36:14+00:00",
+      "updated_at": "2026-10-22T17:36:14+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.31606"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.31606v1",
+        "pdf": "https://arxiv.org/pdf/2610.31606v1",
+        "html": "https://arxiv.org/html/2610.31606"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "nagement literature, addressing the dependence of retrieval scores on annotation coverage. Methods: An 18-document corpus and an 18-query development benchmark, with one Yes/No or WH-question per document, were used. Retrieval combined dense embeddings, BM25, and cross-encoder reranking. Chunk sizes of 128 to 1024 tokens, overlaps of 0 to 20%, and four retriever configurations were evaluated. Rel",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31606"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "e Evaluation of a Retrieval-Augmented Generation System for Breast Lesions Purpose: To describe an evidence-aware retrieval evaluation protocol for a clinical retrieval-augmented generation (RAG) system over breast lesion management literature, addressing the dependence of retrieval scores on annotation coverage. Methods: An 18-document corpus and an 18-query development benchmark, with one Yes/",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31606"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "ufficiency. [[SECTION 1 Introduction]] 1 Introduction Management of benign and high-risk breast lesions requires integrating imaging findings, biopsy pathology, radiologic–pathologic concordance, and patient risk. Supporting evidence is distributed across society guidelines, appropriateness criteria, and lesion-specific studies, which may differ in their recommendations. For lesions of uncertain",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2610.31606"
+        }
+      ],
+      "related_benchmarks": [
+        "DeepEval"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 12,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c6373ce3f0e053c452a11d1400063db22f5ab8cf1700be5cd2117f8e552302d2",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.31566",
+      "slug": "arxiv-2610-31566-61aa93c61b",
+      "kind": "paper",
+      "title": "CellTrack-Bench: Microscopic Cell Tracking Benchmark for Vision-Language Models",
+      "abstract": "Large language models have shown outstanding performance on text-first tasks such as coding, math, and writing. Recent efforts are shifting models' training to include scientific problems that often live in highly specialized domains beyond text, such as protein structure and biological images. However, in these scenarios, their general-purpose accuracy compared with specialized algorithms remains in question. One such domain is cell tracking, which requires spatiotemporal awareness of cell dynamics. To evaluate this, we created a new benchmark, CellTrack-Bench, which assesses Vision-Language Models' (VLMs) cell-tracking-related performance against specialized trackers. The full benchmark draws from 15 standard cell-tracking datasets across four imaging modalities and comprises 1,537 problems corresponding to 9,041 cell-linking decisions. We selected a hard subset requiring greater reasoning effort by identifying failures shared across distinct algorithmic trackers. With this proposed dataset, we: (i) evaluated different environment harnesses for VLMs; (ii) benchmarked 9 frontier closed-source models and 13 open-weight models; and (iii) provided a detailed analysis of their failure modes. Code, the stored model outputs, and a pipeline that regenerates the benchmark from the source datasets are available at https://github.com/royerlab/celltrack-bench.",
+      "authors": [
+        "Ilan Theodoro",
+        "Jordão Bragantini",
+        "Loïc A. Royer"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-22T17:09:12+00:00",
+      "updated_at": "2026-10-22T17:09:12+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.31566"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.31566v1",
+        "pdf": "https://arxiv.org/pdf/2610.31566v1",
+        "code": "https://github.com/royerlab/celltrack-bench",
+        "html": "https://arxiv.org/html/2610.31566"
+      },
+      "evidence": [
+        {
+          "term": "new benchmark",
+          "excerpt": "ithms remains in question. One such domain is cell tracking, which requires spatiotemporal awareness of cell dynamics. To evaluate this, we created a new benchmark, CellTrack-Bench, which assesses Vision-Language Models' (VLMs) cell-tracking-related performance against specialized trackers. The full benchmark draws from 15 standard cell-tracking datasets across four imaging modalities and comprises 1",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31566"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "CellTrack-Bench: Microscopic Cell Tracking Benchmark for Vision-Language Models Large language models have shown outstanding performance on text-first tasks such as coding, math, and writing. Recent efforts are shifting models' training to include scientific problems that often live in highl",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31566"
+        },
+        {
+          "term": "biological",
+          "excerpt": "are shifting models' training to include scientific problems that often live in highly specialized domains beyond text, such as protein structure and biological images. However, in these scenarios, their general-purpose accuracy compared with specialized algorithms remains in question. One such domain is cell tracking, which requires spatiotemporal awareness of cell dynamics. To evaluate this, we",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31566"
+        },
+        {
+          "term": "protein",
+          "excerpt": "iting. Recent efforts are shifting models' training to include scientific problems that often live in highly specialized domains beyond text, such as protein structure and biological images. However, in these scenarios, their general-purpose accuracy compared with specialized algorithms remains in question. One such domain is cell tracking, which requires spatiotemporal awareness of cell dynami",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31566"
+        },
+        {
+          "term": "Vision-Language",
+          "excerpt": "CellTrack-Bench: Microscopic Cell Tracking Benchmark for Vision-Language Models Large language models have shown outstanding performance on text-first tasks such as coding, math, and writing. Recent efforts are shifting models' training to include scientific problems that often live in highly specialized domain",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31566"
+        },
+        {
+          "term": "Microscopic",
+          "excerpt": "CellTrack-Bench: Microscopic Cell Tracking Benchmark for Vision-Language Models Large language models have shown outstanding performance on text-first tasks such as coding, math, and writing. Recent efforts are shifting models' training to include scientific problems",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31566"
+        },
+        {
+          "term": "tool use",
+          "excerpt": "turn-based conversations considering all problems, tasks, and conditions. Each request is given a total budget of 8,192 tokens for both reasoning and tool use, 2,048 of which are set aside for the final structured answer. The selection statistic, reported in Appendix Table 5 , is the average of the three dataset-macro Overall F1 scores; not to be confused with the diagnostic NN-residual linking",
+          "location": "3.6 Prompting and Harness Design",
+          "source_url": "https://arxiv.org/html/2610.31566"
+        }
+      ],
+      "related_benchmarks": [
+        "MicroVQA",
+        "OmniMedVQA",
+        "MedFrameQA",
+        "MVBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 21,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "af1228162bdd70303526502c58290d2f4ad5e2e34e5f8e2ffa062179d51fec2c",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.31256",
+      "slug": "arxiv-2610-31256-4ebe99a6b7",
+      "kind": "paper",
+      "title": "IndoNutriQA: An Indonesian Clinical Nutrition Question Answering Benchmark",
+      "abstract": "Clinical Question Answering (QA) underpins Clinical Intelligent Decision Support Systems, but progress is severely limited for low-resource languages such as Indonesian by the absence of public domain-specific data. We introduce IndoNutriQA, an expert-curated Indonesian clinical QA benchmark of 911 question-answer pairs built from real clinical-nutrition reports. Rather than a large-scale training corpus, it is positioned as a high-quality evaluation resource: every pair is grounded in a clinically relevant context, enriched with structured metadata (anthropometric assessment, medical diagnosis, document provenance, chunk segmentation). Eight standardised question types following the Nutrition Care Process (NCP), including the Problem, Etiology, Sign and Symptom (PES) diagnosis statement, are answered for every report, which was written by a graduate-level dietetic intern, by one of three nutritionists. Answers are free-form clinical prose rather than extractive spans, and an expert validation study finds 6-10% of reference answers contestable. The dataset supports generative, extractive and retrieval-augmented QA as well as zero- and few-shot LLM evaluation. We report fine-tuned baselines (IndoBERT variants, mT5, RAG) with 5-fold cross-validation, learning curves and bootstrap 95% confidence intervals, and benchmark eight contemporary LLMs zero- and five-shot. We further calibrate our LLM-as-judge rubric against three expert raters (one RD, two nutritionists), finding it human-comparable on factuality and completeness but unreliable on clinical safety, and a human error analysis shows it misses unsupported content that the raters identify. IndoNutriQA is released to foster research in Indonesian clinical NLP and nutritional decision support.",
+      "authors": [
+        "Tirana Noor Fatyanosa",
+        "Ummu Ditya Erliana",
+        "Mahendra Data",
+        "Muhammad Nurwegiono",
+        "Eleazar Tadeo Eman",
+        "Alham Fikri Aji"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-22T13:34:29+00:00",
+      "updated_at": "2026-10-22T13:34:29+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.31256"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.31256v1",
+        "pdf": "https://arxiv.org/pdf/2610.31256v1",
+        "code": "https://github.com/NLP-UB/IndoNutriQA",
+        "html": "https://arxiv.org/html/2610.31256"
+      },
+      "evidence": [
+        {
+          "term": "We introduce IndoNutriQA",
+          "excerpt": "cision Support Systems, but progress is severely limited for low-resource languages such as Indonesian by the absence of public domain-specific data. We introduce IndoNutriQA, an expert-curated Indonesian clinical QA benchmark of 911 question-answer pairs built from real clinical-nutrition reports. Rather than a large-scale training corpus, it is positioned as a high-quality evaluation resource: every pair is g",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31256"
+        },
+        {
+          "term": "We introduce IndoNutriQA, an expert-curated Indonesian clinical QA benchmark",
+          "excerpt": "cision Support Systems, but progress is severely limited for low-resource languages such as Indonesian by the absence of public domain-specific data. We introduce IndoNutriQA, an expert-curated Indonesian clinical QA benchmark of 911 question-answer pairs built from real clinical-nutrition reports. Rather than a large-scale training corpus, it is positioned as a high-quality evaluation resource: every pair is grounded in a clinically relevant context, enriched w",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31256"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "IndoNutriQA: An Indonesian Clinical Nutrition Question Answering Benchmark Clinical Question Answering (QA) underpins Clinical Intelligent Decision Support Systems, but progress is severely limited for low-resource languages such as Indonesian by the absence of public domain-specific data. We introduce IndoNutriQ",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31256"
+        },
+        {
+          "term": "medical",
+          "excerpt": "h-quality evaluation resource: every pair is grounded in a clinically relevant context, enriched with structured metadata (anthropometric assessment, medical diagnosis, document provenance, chunk segmentation). Eight standardised question types following the Nutrition Care Process (NCP), including the Problem, Etiology, Sign and Symptom (PES) diagnosis statement, are answered for every report,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31256"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "IndoNutriQA: An Indonesian Clinical Nutrition Question Answering Benchmark Clinical Question Answering (QA) underpins Clinical Intelligent Decision Support Systems, but progress is severely limited for low-resource languages such as Indonesian by the absence of public domain",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31256"
+        },
+        {
+          "term": "experimental protocol",
+          "excerpt": "scribed order, and a dietary-goals statement (Question 5) is bounded by the patient’s clinical condition and standard-of-care guidelines. Second, our experimental protocol uses metrics that are robust to clinically valid lexical variation: BERTScore, sentence-embedding cosine similarity, and the LLM-as-judge rubric of Section 6.5 explicitly do not penalize paraphrase, and the LLM judge scores factuality and",
+          "location": "Subjectivity and Inter-Annotator Agreement",
+          "source_url": "https://arxiv.org/html/2610.31256"
+        }
+      ],
+      "related_benchmarks": [
+        "IndoNutriQA",
+        "TyDiQA",
+        "PubMedQA",
+        "MedQA",
+        "MedMCQA",
+        "MedExQA",
+        "EmrQA",
+        "PQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 23,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "20837227f26563146403a71a0e4bca8d76de74b38ccbc42ff578f80e5f14ea89",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.31205",
+      "slug": "arxiv-2610-31205-a3a2b20a44",
+      "kind": "paper",
+      "title": "A Visual Grounding Benchmark for Retinal OCT with Multimodal Large Language Models",
+      "abstract": "Multimodal large language models (MLLMs) can answer clinical questions about medical images, but trustworthy use requires visual grounding: models should localize the pathology they report rather than rely on spurious shortcuts. Whether MLLMs can visually ground clinical findings in retinal optical coherence tomography (OCT), the most widely used imaging modality in ophthalmology, remains largely unexplored. To address this gap, we introduce RetinaGroundBench, the first benchmark for biomarker visual grounding in retinal OCT. It comprises 815 B-scans exhaustively annotated by ophthalmologists with 4,537 bounding boxes covering 13 biomarkers across 8 diseases. Because MLLMs often fragment a single lesion into multiple partial predictions, we propose AggIoU, a metric that evaluates whether the union of overlapping predicted boxes covers the annotated region. Across 27 open-source MLLMs (0.8-38B parameters), we find that visual grounding remains largely unsolved: the best general-purpose model achieves a macro F1 of just 23.7%, with consistently low recall, despite reaching up to 73% balanced accuracy on biomarker presence questions. To narrow this gap, we developed RetGrounder, an MLLM fine-tuned using an OCT-specific strategy integrating grounding and textual information. Despite its relatively small size (8B), RetGrounder improves grounding F1 to 33.9%, a 43% relative improvement. Our benchmark provides a reference point for measuring progress in the field of OCT diagnosis with MLLMs.",
+      "authors": [
+        "Ronald Fecso",
+        "José Morano",
+        "Botond Fazekas",
+        "Paul Widmann-Sedlnitzky",
+        "Dorota Himel",
+        "Laetita Hinterhuber",
+        "Virginia Mares",
+        "Andreas Pollreisz",
+        "Hrvoje Bogunović"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-22T12:54:19+00:00",
+      "updated_at": "2026-10-22T12:54:19+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.31205"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.31205v1",
+        "pdf": "https://arxiv.org/pdf/2610.31205v1",
+        "code": "https://github.com/MikhailKulyabin/OCTDL",
+        "html": "https://arxiv.org/html/2610.31205"
+      },
+      "evidence": [
+        {
+          "term": "we introduce RetinaGroundBench",
+          "excerpt": "retinal optical coherence tomography (OCT), the most widely used imaging modality in ophthalmology, remains largely unexplored. To address this gap, we introduce RetinaGroundBench, the first benchmark for biomarker visual grounding in retinal OCT. It comprises 815 B-scans exhaustively annotated by ophthalmologists with 4,537 bounding boxes covering 13 biomarkers across 8 diseases. Because MLLMs often fragment a sing",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31205"
+        },
+        {
+          "term": "we introduce RetinaGroundBench, the first benchmark",
+          "excerpt": "retinal optical coherence tomography (OCT), the most widely used imaging modality in ophthalmology, remains largely unexplored. To address this gap, we introduce RetinaGroundBench, the first benchmark for biomarker visual grounding in retinal OCT. It comprises 815 B-scans exhaustively annotated by ophthalmologists with 4,537 bounding boxes covering 13 biomarkers across 8 diseases. Because MLLMs often fragment a single lesion into multip",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31205"
+        },
+        {
+          "term": "first benchmark",
+          "excerpt": "y (OCT), the most widely used imaging modality in ophthalmology, remains largely unexplored. To address this gap, we introduce RetinaGroundBench, the first benchmark for biomarker visual grounding in retinal OCT. It comprises 815 B-scans exhaustively annotated by ophthalmologists with 4,537 bounding boxes covering 13 biomarkers across 8 diseases. Because MLLMs often fragment a single lesion into multip",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31205"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "A Visual Grounding Benchmark for Retinal OCT with Multimodal Large Language Models Multimodal large language models (MLLMs) can answer clinical questions about medical images, but trustworthy use requires visual grounding: models should localize the pathology they rep",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31205"
+        },
+        {
+          "term": "medical",
+          "excerpt": "rounding Benchmark for Retinal OCT with Multimodal Large Language Models Multimodal large language models (MLLMs) can answer clinical questions about medical images, but trustworthy use requires visual grounding: models should localize the pathology they report rather than rely on spurious shortcuts. Whether MLLMs can visually ground clinical findings in retinal optical coherence tomography (OC",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31205"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "A Visual Grounding Benchmark for Retinal OCT with Multimodal Large Language Models Multimodal large language models (MLLMs) can answer clinical questions about medical images, but trustworthy use requires visual grounding: models should localize the pathology they report rather than rely on spurious shortcuts. Whether MLLMs can visually ground clinical findings in retinal optical",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31205"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "language models (MLLMs) can answer clinical questions about medical images, but trustworthy use requires visual grounding: models should localize the pathology they report rather than rely on spurious shortcuts. Whether MLLMs can visually ground clinical findings in retinal optical coherence tomography (OCT), the most widely used imaging modality in ophthalmology, remains largely unexplored. To a",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31205"
+        },
+        {
+          "term": "Multimodal",
+          "excerpt": "A Visual Grounding Benchmark for Retinal OCT with Multimodal Large Language Models Multimodal large language models (MLLMs) can answer clinical questions about medical images, but trustworthy use requires visual grounding: models should localize the pathology they report rather than rely on spurious",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31205"
+        }
+      ],
+      "related_benchmarks": [
+        "RetinaGroundBench",
+        "VQA",
+        "MedBench",
+        "FunBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 26,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "6d21d15c34d75ebacbaf21696a8c1e0f2f3ed3ecfecdca4d162cc00d73b6bd63",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
