@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-25T09:16:08Z",
-  "total": 177,
+  "generated_at": "2026-10-26T10:21:23Z",
+  "total": 181,
   "counts": {
     "topics": {
+      "general_text": 69,
+      "experiment_agent": 48,
       "multimodal": 48,
-      "experiment_agent": 46,
-      "general_text": 67,
       "biosafety": 16
     },
     "contribution_types": {
-      "new_benchmark": 144,
+      "new_benchmark": 148,
       "audit": 14,
       "methodology": 19
     },
     "kinds": {
-      "paper": 177
+      "paper": 181
     },
     "evaluation_contexts": {
-      "beneficial_capability": 161,
+      "beneficial_capability": 165,
       "biosecurity_misuse": 16
     }
   },
@@ -59,48 +59,48 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-10-25T09:16:26Z",
-      "finished_at": "2026-10-25T09:16:48Z",
-      "discovered": 23,
-      "published": 12,
+      "started_at": "2026-10-26T10:21:44Z",
+      "finished_at": "2026-10-26T10:22:09Z",
+      "discovered": 29,
+      "published": 19,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-10-25T09:16:48Z",
-      "finished_at": "2026-10-25T09:16:57Z",
-      "discovered": 104,
-      "published": 63,
+      "started_at": "2026-10-26T10:22:09Z",
+      "finished_at": "2026-10-26T10:22:18Z",
+      "discovered": 84,
+      "published": 49,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-25T09:16:57Z",
-      "finished_at": "2026-10-25T09:17:51Z",
-      "discovered": 1000,
-      "published": 84,
+      "started_at": "2026-10-26T10:22:18Z",
+      "finished_at": "2026-10-26T10:23:04Z",
+      "discovered": 816,
+      "published": 63,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-25T09:17:51Z",
-      "finished_at": "2026-10-25T09:18:08Z",
-      "discovered": 309,
-      "published": 16,
+      "started_at": "2026-10-26T10:23:04Z",
+      "finished_at": "2026-10-26T10:23:21Z",
+      "discovered": 200,
+      "published": 9,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-10-25T09:18:08Z",
-      "finished_at": "2026-10-25T09:18:09Z",
+      "started_at": "2026-10-26T10:23:21Z",
+      "finished_at": "2026-10-26T10:23:21Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
@@ -108,9 +108,25 @@
   ],
   "days": [
     {
-      "date": "2026-10-22",
-      "count": 4,
+      "date": "2026-10-26",
+      "count": 1,
       "entry_ids": [
+        "doi:10.64898/2026.05.01.722166"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "count": 2,
+      "entry_ids": [
+        "arxiv:2610.32305",
+        "arxiv:2610.32221"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "count": 5,
+      "entry_ids": [
+        "arxiv:2610.31993",
         "arxiv:2610.31606",
         "arxiv:2610.31566",
         "arxiv:2610.31256",
@@ -815,6 +831,354 @@
   ],
   "entries": [
     {
+      "id": "doi:10.64898/2026.05.01.722166",
+      "slug": "doi-10-64898-2026-05-01-722166-3e6ae3a8fe",
+      "kind": "paper",
+      "title": "Building computational benchmarks: an Omnibenchmark reimplementation of a single-cell preprocessing pipeline evaluation",
+      "abstract": "Background: In the past few years, we have seen a veritable surge in single-cell (e.g., RNA-sequencing) techniques and datasets, enabling increasingly detailed characterization of cellular heterogeneity across tissues and conditions. This surge in single-cell techniques has been complemented by a large number of analysis frameworks and pipelines, and a large parameter space and researcher degrees of freedom to use them. Many neutral benchmarks have been presented for various computational tasks, but most make design decisions that render them incompatible with each other, e.g., through the use of different datasets, metrics, or parameter sets. Results: We showcase Omnibenchmark, a recently developed framework to build reproducible, extensible, and standardized method comparisons for an arms-length benchmark that evaluates five single-cell RNA sequencing pipelines, spanning filtering, normalization, dimensionality reduction, and clustering, on three datasets. The framework facilitates the broad investigation of pipelines used in single-cell data analysis while highlighting how the process of building benchmarks can be streamlined and unified. This standardization enables benchmarks to be extended in several directions, including broader parameter sweeps, comparisons across software versions and architectures, isolation of pipeline steps, and integration of additional pipelines, datasets, and metrics. As an example, our harmonization of pipelines highlighted that tools implement the (clustering) resolution parameter differently. Conclusions: Omnibenchmark provides a reproducible, extensible, and standardized approach for benchmarking. By unifying the process of benchmark construction, it can facilitate more consistent method comparisons and provides a foundation for broader, more flexible, and more sustainable benchmarking efforts.",
+      "authors": [
+        "Choudhury, A.",
+        "Kitak, T.",
+        "Carrillo, B.",
+        "Busch, P.",
+        "Emons, M.",
+        "Gunz, S.",
+        "Koderman, M.",
+        "Luo, S.",
+        "Mallona, I.",
+        "Meara, A.",
+        "Wissel, D.",
+        "Robinson, M. D."
+      ],
+      "source": "biorxiv",
+      "published_at": "2026-10-26T00:00:00+00:00",
+      "updated_at": "2026-10-26T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by",
+      "identifiers": {
+        "doi": "10.64898/2026.05.01.722166"
+      },
+      "links": {
+        "abs": "https://www.biorxiv.org/content/10.64898/2026.05.01.722166",
+        "pdf": "https://www.biorxiv.org/content/10.64898/2026.05.01.722166.full.pdf",
+        "html": "https://www.biorxiv.org/content/10.64898/2026.05.01.722166.full"
+      },
+      "evidence": [
+        {
+          "term": "Building computational benchmarks",
+          "excerpt": "Building computational benchmarks: an Omnibenchmark reimplementation of a single-cell preprocessing pipeline evaluation Background: In the past few years, we have seen a veritable surge in single-cell (e.g., RNA-sequencing) techniques and datasets, enabling increasingly de",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.05.01.722166.full"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Building computational benchmarks: an Omnibenchmark reimplementation of a single-cell preprocessing pipeline evaluation Background: In the past few years, we have seen a veritable surge in single-cell (e.g., RNA-sequencing) techniques and datasets, enabling increasingly d",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.05.01.722166.full"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "ment the (clustering) resolution parameter differently. Conclusions: Omnibenchmark provides a reproducible, extensible, and standardized approach for benchmarking. By unifying the process of benchmark construction, it can facilitate more consistent method comparisons and provides a foundation for broader, more flexible, and more sustainable benchmarking efforts. Background: In the past few years, we",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.05.01.722166.full"
+        },
+        {
+          "term": "single-cell",
+          "excerpt": "Building computational benchmarks: an Omnibenchmark reimplementation of a single-cell preprocessing pipeline evaluation Background: In the past few years, we have seen a veritable surge in single-cell (e.g., RNA-sequencing) techniques and datasets, enabling increasingly detailed characterization of cellular heterogeneity ac",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.05.01.722166.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 20,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.05.01.722166.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "5fa028041df5dca58b605a7d20c918f00f797575961aea585e4d6d24c9400162",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.32305",
+      "slug": "arxiv-2610-32305-67879a4d63",
+      "kind": "paper",
+      "title": "DMAIC-Bench: From Self-Reflection to Self-Restraint for Agents in Multi-Stage Analytical Tasks",
+      "abstract": "Multi-stage analytical tasks require LLM agents to use intermediate evidence to decide whether to continue, redirect or stop. Self-reflection, in which an agent critiques its output, is widely studied, yet a critique does not show whether evidence changed the next action. We call that capability self-restraint. Existing agent benchmarks largely measure task completion or output quality and leave it untested. DMAIC-Bench evaluates it with 97 seeded tasks across 15 industrial cases in four sectors, built around Lean Six Sigma's explicit statistical prerequisites. Paired counterfactual variants require opposite actions at the same workflow position, distinguishing warranted restraint from indiscriminate stopping. We assess execution traces with a private scorer and final claims through independent expert review. Across 13 models from six providers, execution-level routing accuracy averages 92% on matched GO decisions and 19% on NO-GO decisions, counting any forbidden downstream computation as a route error. Execution traces show agents reporting correct diagnostics before performing analyses that those results disallow. Separately, blinded expert review of the 11 audited agents estimates that reports act on invalid evidence at 47% of reached NO-GO decisions, with an interval from 31% to 61%. Explicit stopping permission helps some models without consistently restoring correct decisions at both GO and NO-GO forks. Sixteen life-sciences tasks in bulk ribonucleic acid sequencing (RNA-seq) and case-control genome-wide association studies (GWAS) show that the same framework can evaluate evidence-dependent decisions beyond industrial workflows. Project code and data are available at: https://github.com/psptpx/DMAIC-Bench-public.",
+      "authors": [
+        "Shan Peng",
+        "Shuaiqi Cheng",
+        "Miao Peng",
+        "Chenyi Zi",
+        "Jia Li"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-23T08:04:10+00:00",
+      "updated_at": "2026-10-23T08:04:10+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.32305"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.32305v1",
+        "pdf": "https://arxiv.org/pdf/2610.32305v1",
+        "code": "https://github.com/psptpx/DMAIC-Bench-public",
+        "html": "https://arxiv.org/html/2610.32305"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "put, is widely studied, yet a critique does not show whether evidence changed the next action. We call that capability self-restraint. Existing agent benchmarks largely measure task completion or output quality and leave it untested. DMAIC-Bench evaluates it with 97 seeded tasks across 15 industrial cases in four sectors, built around Lean Six Sigma's explicit statistical prerequisites. Paired co",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.32305"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "put, is widely studied, yet a critique does not show whether evidence changed the next action. We call that capability self-restraint. Existing agent benchmarks largely measure task completion or output quality and leave it untested. DMAIC-Bench evaluates it with 97 seeded tasks across 15 industrial cases in four sectors, built around Lean Six Sigma's explicit statistical prerequisites. Paired cou",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.32305"
+        },
+        {
+          "term": "life-science",
+          "excerpt": "from 31% to 61%. Explicit stopping permission helps some models without consistently restoring correct decisions at both GO and NO-GO forks. Sixteen life-sciences tasks in bulk ribonucleic acid sequencing (RNA-seq) and case-control genome-wide association studies (GWAS) show that the same framework can evaluate evidence-dependent decisions beyond industrial workflows. Project code and data are avai",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.32305"
+        },
+        {
+          "term": "genome",
+          "excerpt": "ly restoring correct decisions at both GO and NO-GO forks. Sixteen life-sciences tasks in bulk ribonucleic acid sequencing (RNA-seq) and case-control genome-wide association studies (GWAS) show that the same framework can evaluate evidence-dependent decisions beyond industrial workflows. Project code and data are available at: https://github.com/psptpx/DMAIC-Bench-public. [[SECTION DMAIC-Bench",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.32305"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "Chuanbiao Song, Jun Lan, Huijia Zhu, Weiqiang Wang, and Zhuosheng Zhang. Do GUI agents know when not to act? enabling conflict-aware termination for multimodal GUI agents. arXiv preprint arXiv:2609.03438 , 2026. Inan et al. (2023) Hakan Inan, Kartikeya Upasani, Jianfeng Chi, Rashi Rungta, Krithika Iyer, Yuning Mao, Michael Tontchev, Qing Hu, Brian Fuller, Davide Testuggine, et al. Llama Guard: LL",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.32305"
+        },
+        {
+          "term": "tool use",
+          "excerpt": "sess completed artifacts ( Jimenez et al., 2024 ; Chan et al., 2025 ; Starace et al., 2025 ; Merrill et al., 2026 ) ; τ \\tau -bench tests interactive tool use ( Yao et al., 2024 ; Barres et al., 2025 ) . In data analysis and statistics, StatQA, P-Bench, and StatEval probe analytical choices, inferential errors, and statistical reasoning ( Zhu et al., 2024 ; Miao et al., 2026 ; Lu et al., 2025 )",
+          "location": "Agent and statistical benchmarks.",
+          "source_url": "https://arxiv.org/html/2610.32305"
+        }
+      ],
+      "related_benchmarks": [
+        "PaperBench",
+        "StatQA",
+        "SDBench",
+        "StatEval",
+        "ScienceAgentBench",
+        "InfiAgent-DABench",
+        "MLAgentBench",
+        "AgentBench",
+        "DiscoveryBench",
+        "PlanBench"
+      ],
+      "related_agent_url": "../../p/2610.32305.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 20,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c9df45f422427743928dfa0603e7cd0689d10d87f273bd661c9ed4c652f120a1",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.32221",
+      "slug": "arxiv-2610-32221-7f98a10e40",
+      "kind": "paper",
+      "title": "RxnExBench: Benchmarking Vision-Language Models for Structured Chemical Reaction Extraction from Scientific Literature",
+      "abstract": "Screen Tables and Substrate Scopes are information-dense figures widely used in synthetic chemistry literature, yet automated extraction of structured reaction data from them remains challenging. We introduce RxnExBench, a multimodal benchmark for fine-grained reaction-level evaluation. Built from high-impact chemistry journals, it contains 3,565 expert-annotated reactions and 2,361 molecular structures. The dataset adopts a unified schema with 15 reaction roles and 26 core fields, supporting downstream AI-for-Chemistry tasks such as retrosynthetic planning, yield prediction, and reaction condition recommendation. RxnExBench further provides a reasoning-driven difficulty taxonomy, a modular annotation pipeline, and the Oracle-MolRec protocol, which disentangles molecular recognition from higher-level reasoning. Evaluation of 9 state-of-the-art VLMs shows that performance degrades substantially as schema complexity and reasoning demands increase. Under the Oracle-MolRec setting, results further reveal that accurate molecular recognition alone is insufficient, with multimodal integration and chemistry-aware reasoning remaining the primary bottlenecks. We release all data and code to facilitate future research in chemistry-aware multimodal understanding and AI-for-Chemistry dataset construction. The dataset and code will be released at https://github.com/opendatalab/RxnExBench.",
+      "authors": [
+        "Jiaxing Sun",
+        "Junyuan Gao",
+        "Ruikang Zhang",
+        "Hao Zheng",
+        "Lingli Ge",
+        "Xiao An",
+        "Jiang Wu",
+        "Huazheng Zeng",
+        "Jiahe Song",
+        "Chen Zhu",
+        "Haote Yang",
+        "Jingchao Wang",
+        "Lu Chen",
+        "Yuanyuan Cao",
+        "Ruijie Zhang",
+        "Shengxin Lu",
+        "Weijia Li",
+        "Lijun Wu",
+        "Conghui He"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-23T06:19:56+00:00",
+      "updated_at": "2026-10-23T06:19:56+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.32221"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.32221v1",
+        "pdf": "https://arxiv.org/pdf/2610.32221v1",
+        "code": "https://github.com/opendatalab/RxnExBench",
+        "html": "https://arxiv.org/html/2610.32221"
+      },
+      "evidence": [
+        {
+          "term": "We introduce RxnExBench",
+          "excerpt": "tion-dense figures widely used in synthetic chemistry literature, yet automated extraction of structured reaction data from them remains challenging. We introduce RxnExBench, a multimodal benchmark for fine-grained reaction-level evaluation. Built from high-impact chemistry journals, it contains 3,565 expert-annotated reactions and 2,361 molecular structures. The dataset adopts a unified schema with 15 reactio",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.32221"
+        },
+        {
+          "term": "We introduce RxnExBench, a multimodal benchmark",
+          "excerpt": "tion-dense figures widely used in synthetic chemistry literature, yet automated extraction of structured reaction data from them remains challenging. We introduce RxnExBench, a multimodal benchmark for fine-grained reaction-level evaluation. Built from high-impact chemistry journals, it contains 3,565 expert-annotated reactions and 2,361 molecular structures. The dataset adopts a unified schema with 15 reaction roles and 26 core fiel",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.32221"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "RxnExBench: Benchmarking Vision-Language Models for Structured Chemical Reaction Extraction from Scientific Literature Screen Tables and Substrate Scopes are information-dense figures widely used in synthetic chemistry literature, yet automated extraction of st",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.32221"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "RxnExBench: Benchmarking Vision-Language Models for Structured Chemical Reaction Extraction from Scientific Literature Screen Tables and Substrate Scopes are information-dense figures widely used in synthetic chemistry literature, yet automated extraction of struc",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.32221"
+        },
+        {
+          "term": "molecular",
+          "excerpt": "nchmark for fine-grained reaction-level evaluation. Built from high-impact chemistry journals, it contains 3,565 expert-annotated reactions and 2,361 molecular structures. The dataset adopts a unified schema with 15 reaction roles and 26 core fields, supporting downstream AI-for-Chemistry tasks such as retrosynthetic planning, yield prediction, and reaction condition recommendation. RxnExBench fu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.32221"
+        },
+        {
+          "term": "Vision-Language",
+          "excerpt": "RxnExBench: Benchmarking Vision-Language Models for Structured Chemical Reaction Extraction from Scientific Literature Screen Tables and Substrate Scopes are information-dense figures widely used in synthetic chemistry literature, yet automated extraction of structured reaction d",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.32221"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "model . arXiv preprint arXiv:2503.08156 . Cited by: §1 , §2 . [8] Y. Chen, C. T. Leung, B. Yu, J. Sun, Y. Huang, L. Li, H. Chen, and H. Gao (2025) A multi-agent system enables versatile information extraction from the chemical literature . arXiv preprint arXiv:2507.20230 . Cited by: §1 , §2 . [9] Z. Chen, J. Wu, W. Wang, W. Su, G. Chen, S. Xing, M. Zhong, Q. Zhang, X. Zhu, L. Lu, et al. (2024) Int",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.32221"
+        }
+      ],
+      "related_benchmarks": [
+        "RxnExBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 25,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "34f0bb2897e3c9d16b3082b1c95db4984aa8179a2ff9c08016104a8e878b6e91",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.31993",
+      "slug": "arxiv-2610-31993-13788eb4c2",
+      "kind": "paper",
+      "title": "AusClinBench: a deterministically scored benchmark of large language models against current Australian clinical policy",
+      "abstract": "AI models already inform clinical decisions and draft notes in Australian clinical software, usually without the practitioner being told which model is used. Existing medical benchmarks are written for other jurisdictions. We wrote 142 questions from Australian guidelines and schedules across five domains (PBS authority, MBS billing, Ahpra obligations, triage red flags, immunisation and screening), each with one verifiable answer scored by exact match. Each question ran blind and with the governing clause supplied, which separates failure to recall the current rule from failure to apply it. We tested 28 models between July and October 2026. Blind accuracy ranged from 51.5% to 92.7%, and the highest-scoring models could not be separated. Of 791 failed model-question pairs, 684 (86%) were wrong blind and right with the clause. Confident-error rates ranged from 6.6% to 47.8%. On five immunisation questions where the guideline gives no directive, 82% of answers stated one. On 20 Aboriginal and Torres Strait Islander health questions, models did no worse overall, but on a few the wrong answers gave the rule for the general population, an older rule or another country's rule. We propose treating the model as an ingredient of a clinical product, with a minimum standard on local rules that sits beside product evaluation. The keys are one general practitioner's and are not yet independently reviewed. The benchmark measures base models, not clinical products, and does not license any model for clinical use.",
+      "authors": [
+        "Daniel S. Epstein"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-22T23:25:04+00:00",
+      "updated_at": "2026-10-22T23:25:04+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.31993"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.31993v1",
+        "pdf": "https://arxiv.org/pdf/2610.31993v1",
+        "html": "https://arxiv.org/html/2610.31993"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "AusClinBench: a deterministically scored benchmark of large language models against current Australian clinical policy AI models already inform clinical decisions and draft notes in Australian clinical software, usually without the practitioner being told which model is used. Existing medi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31993"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "clinical decisions and draft notes in Australian clinical software, usually without the practitioner being told which model is used. Existing medical benchmarks are written for other jurisdictions. We wrote 142 questions from Australian guidelines and schedules across five domains (PBS authority, MBS billing, Ahpra obligations, triage red flags, immunisation and screening), each with one verifiabl",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31993"
+        },
+        {
+          "term": "medical",
+          "excerpt": "inform clinical decisions and draft notes in Australian clinical software, usually without the practitioner being told which model is used. Existing medical benchmarks are written for other jurisdictions. We wrote 142 questions from Australian guidelines and schedules across five domains (PBS authority, MBS billing, Ahpra obligations, triage red flags, immunisation and screening), each with on",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31993"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "AusClinBench: a deterministically scored benchmark of large language models against current Australian clinical policy AI models already inform clinical decisions and draft notes in Australian clinical software, usually without the practitioner being told which model is used. Existing medical benchmarks are written for other jurisdictions. We wrote",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.31993"
+        }
+      ],
+      "related_benchmarks": [
+        "AusClinBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 16,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '404 Not Found' for url 'https://arxiv.org/html/2610.31993'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+      "content_hash": "3f69ef5efe3868125062f2e4dcf8301f07c34133a64fbc7f556adf396c023876",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "arxiv:2610.31606",
       "slug": "arxiv-2610-31606-8132536b00",
       "kind": "paper",
@@ -826,11 +1190,11 @@
         "Mateus C. Dias",
         "Thaís Gaudêncio",
         "Yuri Malheiros",
-        "Barufaldi"
+        "Bruno Barufaldi"
       ],
       "source": "arxiv",
       "published_at": "2026-10-22T17:36:14+00:00",
-      "updated_at": "2026-10-22T17:36:14+00:00",
+      "updated_at": "2026-10-23T02:23:25+00:00",
       "priority": "P1",
       "categories": [
         "multimodal"
@@ -842,8 +1206,8 @@
         "arxiv": "2610.31606"
       },
       "links": {
-        "abs": "https://arxiv.org/abs/2610.31606v1",
-        "pdf": "https://arxiv.org/pdf/2610.31606v1",
+        "abs": "https://arxiv.org/abs/2610.31606v2",
+        "pdf": "https://arxiv.org/pdf/2610.31606v2",
         "html": "https://arxiv.org/html/2610.31606"
       },
       "evidence": [
@@ -877,7 +1241,7 @@
       "match_score": 12,
       "extraction_status": "complete",
       "extraction_error": "",
-      "content_hash": "c6373ce3f0e053c452a11d1400063db22f5ab8cf1700be5cd2117f8e552302d2",
+      "content_hash": "dd6262b4ef5f5dc62756eb3220aa5e2011d042f3ae3b30fc330c35856d51929a",
       "is_seed": false,
       "topic": "multimodal",
       "contribution_type": "new_benchmark"
