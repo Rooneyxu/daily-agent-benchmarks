@@ -1,10 +1,16 @@
 {
   "date": "2026-10-22",
-  "count": 9,
+  "count": 12,
   "report": {
     "date": "2026-10-22",
-    "count": 9,
+    "count": 12,
     "themes": [
+      {
+        "id": "coding",
+        "count": 3,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
       {
         "id": "safety",
         "count": 3,
@@ -42,12 +48,6 @@
         "zh": "工具使用"
       },
       {
-        "id": "coding",
-        "count": 1,
-        "en": "Coding agents",
-        "zh": "代码智能体"
-      },
-      {
         "id": "web",
         "count": 1,
         "en": "Web agents",
@@ -55,8 +55,8 @@
       }
     ],
     "en": {
-      "headline": "9 new agent benchmarks",
-      "summary": "On October 22, 2026, arXiv listed 9 new agent benchmarks. Work clustered around Safety (3), Multimodal (3), Memory (2), and Planning / reasoning (2).",
+      "headline": "12 new agent benchmarks",
+      "summary": "On October 22, 2026, arXiv listed 12 new agent benchmarks. Work clustered around Coding agents (3), Safety (3), Multimodal (3), and Memory (2).",
       "highlights": [
         {
           "id": "2610.31494",
@@ -64,20 +64,20 @@
           "blurb": "Vision-language models (VLMs) can perform a broad range of tasks across diverse settings, yet their performance in agentic contexts remains poorly understood."
         },
         {
+          "id": "2610.31710",
+          "title": "Compact-Bench: Measuring What Context Compaction Costs Long-Horizon Coding Agents",
+          "blurb": "Context compaction lets long-horizon coding agents continue beyond their context windows, but can erase the state needed to finish a task."
+        },
+        {
           "id": "2610.31650",
           "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
           "blurb": "Tool-using language model agents rely on environmental facts to decide whether an action is permitted."
-        },
-        {
-          "id": "2610.31404",
-          "title": "AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack",
-          "blurb": "Computer-use agents increasingly handle private information and act on users' behalf across desktop and web applications, including email."
         }
       ]
     },
     "zh": {
-      "headline": "新增 9 篇 Agent Benchmark",
-      "summary": "2026年10月22日，arXiv 新增 9 篇 Agent Benchmark。当日主题集中在安全（3）、多模态（3）、记忆（2）、规划 / 推理（2）。",
+      "headline": "新增 12 篇 Agent Benchmark",
+      "summary": "2026年10月22日，arXiv 新增 12 篇 Agent Benchmark。当日主题集中在代码智能体（3）、安全（3）、多模态（3）、记忆（2）。",
       "highlights": [
         {
           "id": "2610.31494",
@@ -85,19 +85,63 @@
           "blurb": "Vision-language models (VLMs) can perform a broad range of tasks across diverse settings, yet their performance in agentic contexts remains poorly understood."
         },
         {
+          "id": "2610.31710",
+          "title": "Compact-Bench: Measuring What Context Compaction Costs Long-Horizon Coding Agents",
+          "blurb": "Context compaction lets long-horizon coding agents continue beyond their context windows, but can erase the state needed to finish a task."
+        },
+        {
           "id": "2610.31650",
           "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
           "blurb": "Tool-using language model agents rely on environmental facts to decide whether an action is permitted."
-        },
-        {
-          "id": "2610.31404",
-          "title": "AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack",
-          "blurb": "Computer-use agents increasingly handle private information and act on users' behalf across desktop and web applications, including email."
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2610.31854",
+      "title": "SWE-Clar: Can Coding Agents Clarify Incomplete Client Requirements and Deliver Greenfield Software?",
+      "abstract": "Greenfield software development in freelance settings requires coding agents to turn incomplete client requests into working software. This makes requirement clarification essential, yet clients may be unable to provide continuous feedback over long development cycles, and receiving their answers does not guarantee correct understanding of complex requirements. These challenges motivate two benchmark design choices: clarification precedes code implementation, and its effectiveness is assessed through explicit tests of requirement understanding. Guided by these choices, we introduce SWE-Clar, a benchmark grounded in real, high-value client commissions to evaluate requirement clarification and code implementation in this setting. It comprises 100 tasks based on real software development jobs on Upwork, each with at least US\\$4,000 in total payments. Each task begins with multi-round interaction between a coding agent and a client agent, followed by separate runs for code implementation with acceptance testing and clarification assessment. For the latter, we construct 512 questions paired with reference answers from real client-freelancer interactions, covering both explicitly stated requirements and those inferred from the conversational context. Both runs begin from the same clarification context but remain isolated, preventing assessment questions from guiding code implementation. Experiments with nine frontier models show that even GPT-6 Astra, which has the highest observed implementation score, achieves a task pass rate of only 67%, underscoring the challenge of independent software delivery in this setting. The dataset and evaluation code are available at https://github.com/upwork/SWE-Clar.",
+      "authors": [
+        "Jialei Li",
+        "Dingxian Wang",
+        "Xiaoyan Zhao",
+        "Yimeng Bai",
+        "Xuanyi Zhu",
+        "Yang Zhang",
+        "Chao Yin",
+        "Wentao Shi",
+        "Ganesh Prabhu",
+        "Karthik Gomadam Rajagopal",
+        "Brett Levert",
+        "Darvin Yi",
+        "Andrew Rabinovich",
+        "Zhao Chen"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-22T19:36:48Z",
+      "updated": "2026-10-22T19:36:48Z",
+      "announced_date": "2026-10-22",
+      "first_seen": "2026-10-22",
+      "comment": "29 pages, 9 figures, 11 tables. Code and data: https://github.com/upwork/SWE-Clar",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.31854v1",
+        "pdf": "https://arxiv.org/pdf/2610.31854v1",
+        "html": "https://arxiv.org/html/2610.31854"
+      },
+      "score": 12,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
     {
       "id": "2610.31650",
       "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
@@ -415,6 +459,77 @@
         "safety"
       ],
       "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2610.31711",
+      "title": "MBABench-2.0: Evaluating AI Agents on Constructing Financial Spreadsheets Beyond Simple Verifiability",
+      "abstract": "Spreadsheets are the lingua franca of modern finance, driving valuation, forecast, audit, and many other core workflows of the industry. As LLM agents advance to automate knowledge work, spreadsheet construction is a natural and pertinent testbed. However, most existing spreadsheet benchmarks evaluate agents on fill-in-the-blank style tasks, where an agent performs minor edits in otherwise complete spreadsheets. This protocol fails to capture the most central and time-consuming part of the spreadsheet workflow: the modeling decisions, format design, and sheet layout regular knowledge workers need to toil through to build a workbook from scratch. We introduce MBABench-2.0, a benchmark of 101 original spreadsheet construction tasks, the hardest of which is estimated to take 33 hours for a modeler with 3+ years of experience. Unlike coding or math, where a unit test or a final answer can verify an agent's output, the quality of a financial spreadsheet that concerns readability, maintainability, or auditability, is not so simply verifiable. To holistically evaluate spreadsheet construction, we introduce 129 criteria spanning 12 categories that operationalize quality beyond the accuracy of the spreadsheet. Evaluating over 20 agents across 8 models and 4 harness types, we find that frontier agents rarely construct spreadsheets that are both accurate and meet our quality criteria: the top agent achieves a pass rate of only 16% on the benchmark. The benchmark demonstrates a substantial gap in spreadsheet building capability of current agents.",
+      "authors": [
+        "Julian Poeltl",
+        "Thomson Yen",
+        "Patrick Shea",
+        "Shubham Anil Varma",
+        "Dhruv Rastogi",
+        "Zihao Chen",
+        "Mengshi Zhang",
+        "Hongseok Namkoong"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-22T02:30:05Z",
+      "updated": "2026-10-22T02:30:05Z",
+      "announced_date": "2026-10-22",
+      "first_seen": "2026-10-22",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.31711v1",
+        "pdf": "https://arxiv.org/pdf/2610.31711v1",
+        "html": "https://arxiv.org/html/2610.31711"
+      },
+      "score": 18,
+      "tags": [
+        "workplace"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2610.31710",
+      "title": "Compact-Bench: Measuring What Context Compaction Costs Long-Horizon Coding Agents",
+      "abstract": "Context compaction lets long-horizon coding agents continue beyond their context windows, but can erase the state needed to finish a task. Prior evaluations measure efficiency, retained information, or end-to-end success, leaving the effect of a specific history replacement difficult to isolate. Compact-Bench pairs full-history and summary-only continuations from a shared repository state, and evaluates recurring details and successive production compactions. It covers 35 SWE-bench repairs, 146 agentic sessions, and 106 production chains. Across 14 summarizer backbones, stable damage ranges from 5-64% of 22 full-history successes: Claude Opus 4.8 preserves the most repairs, while DeepSeek-Flash damages the most. With Kimi-K3 as summarizer, the Kimi Code prompt preserves the most task continuations (19/22), whereas Claude Code retains the most recurring details (15.0%). LLM summaries retain at most 16.0% of recurring details, compared with 79.1% for mechanical extraction; production summaries retain 15.7% at the first boundary. Failures recur across methods: one repair is damaged by 13/14 backbones, and another by all 5 prompts. These results show that reliable compaction requires preserving the progress needed to complete a task, and that retaining relevant information alone does not ensure successful continuation. Code is available at https://github.com/cai-jianfeng/compact-bench and data is available at https://huggingface.co/datasets/caijanfeng/compact-bench.",
+      "authors": [
+        "Ruopei Sun",
+        "Jianfeng Cai",
+        "Kangwen Zhao",
+        "Wengang Zhou",
+        "Houqiang Li"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-22T02:17:12Z",
+      "updated": "2026-10-22T02:17:12Z",
+      "announced_date": "2026-10-22",
+      "first_seen": "2026-10-22",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.31710v1",
+        "pdf": "https://arxiv.org/pdf/2610.31710v1",
+        "html": "https://arxiv.org/html/2610.31710"
+      },
+      "score": 18,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
       "citations": 0
     }
   ]
