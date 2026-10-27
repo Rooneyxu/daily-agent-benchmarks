@@ -1,25 +1,25 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-26T10:21:23Z",
-  "total": 181,
+  "generated_at": "2026-10-27T09:55:53Z",
+  "total": 185,
   "counts": {
     "topics": {
-      "general_text": 69,
-      "experiment_agent": 48,
-      "multimodal": 48,
-      "biosafety": 16
+      "multimodal": 49,
+      "general_text": 70,
+      "biosafety": 17,
+      "experiment_agent": 49
     },
     "contribution_types": {
-      "new_benchmark": 148,
-      "audit": 14,
+      "new_benchmark": 151,
+      "audit": 15,
       "methodology": 19
     },
     "kinds": {
-      "paper": 181
+      "paper": 185
     },
     "evaluation_contexts": {
-      "beneficial_capability": 165,
-      "biosecurity_misuse": 16
+      "beneficial_capability": 168,
+      "biosecurity_misuse": 17
     }
   },
   "topic_labels": {
@@ -59,48 +59,48 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-10-26T10:21:44Z",
-      "finished_at": "2026-10-26T10:22:09Z",
-      "discovered": 29,
-      "published": 19,
+      "started_at": "2026-10-27T09:56:19Z",
+      "finished_at": "2026-10-27T09:56:43Z",
+      "discovered": 35,
+      "published": 23,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-10-26T10:22:09Z",
-      "finished_at": "2026-10-26T10:22:18Z",
-      "discovered": 84,
-      "published": 49,
+      "started_at": "2026-10-27T09:56:43Z",
+      "finished_at": "2026-10-27T09:56:50Z",
+      "discovered": 74,
+      "published": 45,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-26T10:22:18Z",
-      "finished_at": "2026-10-26T10:23:04Z",
-      "discovered": 816,
-      "published": 63,
+      "started_at": "2026-10-27T09:56:50Z",
+      "finished_at": "2026-10-27T09:57:28Z",
+      "discovered": 696,
+      "published": 52,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-26T10:23:04Z",
-      "finished_at": "2026-10-26T10:23:21Z",
-      "discovered": 200,
-      "published": 9,
+      "started_at": "2026-10-27T09:57:28Z",
+      "finished_at": "2026-10-27T09:57:48Z",
+      "discovered": 256,
+      "published": 21,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-10-26T10:23:21Z",
-      "finished_at": "2026-10-26T10:23:21Z",
+      "started_at": "2026-10-27T09:57:48Z",
+      "finished_at": "2026-10-27T09:57:48Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
@@ -109,15 +109,25 @@
   "days": [
     {
       "date": "2026-10-26",
-      "count": 1,
+      "count": 3,
       "entry_ids": [
+        "arxiv:2610.35847",
+        "doi:10.64898/2026.10.23.26366376",
         "doi:10.64898/2026.05.01.722166"
       ]
     },
     {
-      "date": "2026-10-23",
-      "count": 2,
+      "date": "2026-10-24",
+      "count": 1,
       "entry_ids": [
+        "arxiv:2610.33592"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "count": 3,
+      "entry_ids": [
+        "arxiv:2610.33355",
         "arxiv:2610.32305",
         "arxiv:2610.32221"
       ]
@@ -831,6 +841,176 @@
   ],
   "entries": [
     {
+      "id": "arxiv:2610.35847",
+      "slug": "arxiv-2610-35847-8205c1adb3",
+      "kind": "paper",
+      "title": "Patient-specific rubric-based evaluation of large language models across longitudinal cancer care",
+      "abstract": "Large language models (LLMs) show promise in specialty medicine, yet existing evaluations largely focus on isolated clinical encounters rather than tracking how clinical responsibilities evolve across a longitudinal care pathway. Here we introduce NPC-RubricBench, a phase-aware benchmark for evaluating multistage clinical reasoning across the cancer care continuum, using nasopharyngeal carcinoma as a defined disease context. Curated from longitudinal records of 405 patients across two cancer centers, the benchmark comprises 941 patient-phase units across six sequential care phases and 17,688 patient-specific atomic criteria spanning five evaluation dimensions, with each assessment strictly restricted to decision-time clinical evidence. Evaluating 30 general-purpose and medical LLMs revealed that strong diagnostic performance does not carry over to downstream care. We evaluated 30 general-purpose and medical LLMs, showing that high diagnostic performance did not translate into improved downstream care. Instead, the dominant failure modes reversed across phases. Explicit decision errors dominated anatomical staging at 48.2%, whereas decision omissions dominated initial work-up and post-treatment follow-up at 33.4% and 30.4%, respectively. In the evaluated model set, medically adapted models showed higher omission rates than general-purpose models. Moreover, varying query granularity exposes a critical specification trade-off: broad open-ended requests degrade Decision Quality across all 30 models, while more detailed, checklist-like prompts raise Decision Quality but reduce Evidence Faithfulness and Safety Adherence. Furthermore, NPC-RubricBench demonstrates that static diagnostic benchmarks are insufficient to ensure consistent clinical reliability over time, highlighting the importance of phase-adaptive safeguards in multistage medical AI.",
+      "authors": [
+        "Wei-Wei Zhang",
+        "Pengkai Wang",
+        "Yan Li",
+        "Zhijie Sang",
+        "Guan-Qun Zhou",
+        "Jun-Yan Li",
+        "Shu-Han Zhou",
+        "Pei-Wen Liu",
+        "Ting-Xi Tang",
+        "Min Tang",
+        "Zhitian Hou",
+        "Jianmin Wu",
+        "Jian Guan",
+        "i Lin",
+        "Hongxia Yang",
+        "Ying Sun"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-26T17:56:26+00:00",
+      "updated_at": "2026-10-26T17:56:26+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.35847"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.35847v1",
+        "pdf": "https://arxiv.org/pdf/2610.35847v1",
+        "code": "https://github.com/ZJU4HealthCare/HealthGPT/blob/4d404a518cfa8e78cd7703af7cfc4ca4fd559698/HealthGPT-Pro/README.md",
+        "html": "https://arxiv.org/html/2610.35847"
+      },
+      "evidence": [
+        {
+          "term": "we introduce NPC-RubricBench",
+          "excerpt": "ions largely focus on isolated clinical encounters rather than tracking how clinical responsibilities evolve across a longitudinal care pathway. Here we introduce NPC-RubricBench, a phase-aware benchmark for evaluating multistage clinical reasoning across the cancer care continuum, using nasopharyngeal carcinoma as a defined disease context. Curated from longitudinal records of 405 patients across two cancer center",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.35847"
+        },
+        {
+          "term": "we introduce NPC-RubricBench, a phase-aware benchmark",
+          "excerpt": "ions largely focus on isolated clinical encounters rather than tracking how clinical responsibilities evolve across a longitudinal care pathway. Here we introduce NPC-RubricBench, a phase-aware benchmark for evaluating multistage clinical reasoning across the cancer care continuum, using nasopharyngeal carcinoma as a defined disease context. Curated from longitudinal records of 405 patients across two cancer centers, the benchmark comprise",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.35847"
+        },
+        {
+          "term": "benchmark comprises",
+          "excerpt": "tinuum, using nasopharyngeal carcinoma as a defined disease context. Curated from longitudinal records of 405 patients across two cancer centers, the benchmark comprises 941 patient-phase units across six sequential care phases and 17,688 patient-specific atomic criteria spanning five evaluation dimensions, with each assessment strictly restricted to decision-time clinical evidence. Evaluating 30 general-p",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.35847"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "unters rather than tracking how clinical responsibilities evolve across a longitudinal care pathway. Here we introduce NPC-RubricBench, a phase-aware benchmark for evaluating multistage clinical reasoning across the cancer care continuum, using nasopharyngeal carcinoma as a defined disease context. Curated from longitudinal records of 405 patients across two cancer centers, the benchmark comprise",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.35847"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "rompts raise Decision Quality but reduce Evidence Faithfulness and Safety Adherence. Furthermore, NPC-RubricBench demonstrates that static diagnostic benchmarks are insufficient to ensure consistent clinical reliability over time, highlighting the importance of phase-adaptive safeguards in multistage medical AI. [[SECTION Patient-specific rubric-based evaluation of large language models across lon",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.35847"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "ient-specific rubric-based evaluation of large language models across longitudinal cancer care Large language models (LLMs) show promise in specialty medicine, yet existing evaluations largely focus on isolated clinical encounters rather than tracking how clinical responsibilities evolve across a longitudinal care pathway. Here we introduce NPC-RubricBench, a phase-aware benchmark for evaluating",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.35847"
+        },
+        {
+          "term": "medical",
+          "excerpt": "a spanning five evaluation dimensions, with each assessment strictly restricted to decision-time clinical evidence. Evaluating 30 general-purpose and medical LLMs revealed that strong diagnostic performance does not carry over to downstream care. We evaluated 30 general-purpose and medical LLMs, showing that high diagnostic performance did not translate into improved downstream care. Instead, t",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.35847"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "s across longitudinal cancer care Large language models (LLMs) show promise in specialty medicine, yet existing evaluations largely focus on isolated clinical encounters rather than tracking how clinical responsibilities evolve across a longitudinal care pathway. Here we introduce NPC-RubricBench, a phase-aware benchmark for evaluating multistage clinical reasoning across the cancer care continu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.35847"
+        }
+      ],
+      "related_benchmarks": [
+        "NPC-RubricBench",
+        "HealthBench",
+        "RubricBench",
+        "MedMCQA",
+        "PubMedQA",
+        "PromptBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 40,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "400053365b22eecbf680bc155921779e4094b29e5d26a6bccd1ac451a1390d61",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.10.23.26366376",
+      "slug": "doi-10-64898-2026-10-23-26366376-4d88b0fb9c",
+      "kind": "paper",
+      "title": "Scoring the NIH Stroke Scale from bedside exam transcripts: a synthetic benchmark of a decision model and a large language model",
+      "abstract": "Background. Clinicians score the NIH Stroke Scale (NIHSS) at the bedside, often under time pressure, and ambient AI tools that listen to clinical encounters are now entering practice. It is not known whether software can score the NIHSS from the exam conversation itself, rather than extract a score that has already been written in a note. Methods. We created 112 synthetic code-stroke cases. One hundred were allocated in proportion to real code-stroke presentations, and 12 stress cases tested special scoring rules. For each case, a large language model (Claude Opus 5.5) wrote a reference score form (the answer key) and a speech-to-text-style exam transcript, with main-set transcripts split evenly between a narrated and a telegraphic examiner style. A second model (Claude Fable 5.1), blind to the key, scored every transcript and agreed with the key on 99.2% of items. Each transcript was then scored by Jev, a decision model, and by gpt-6-luna, a general large language model (LLM). The primary outcome was item-level accuracy against the key. Results. The LLM scored 99.0% of items correctly (95% CI 98.4-99.4) and Jev 94.4% (93.2-95.4; McNemar p < 0.001), with exact totals in 101 and 63 of 112 cases. Jev was faster (median 0.15 vs 5.78 s per exam) and cheaper (USD 0.23 vs 0.67 per 1,000 exams). With telegraphic examiners, accuracy fell from 98.0% to 90.9% for Jev and from 100% to 97.7% for the LLM. In a post-hoc analysis that kept only the examiner's words, accuracy stayed high when the examiner narrated (Jev 96.9%, LLM 98.8%) but dropped to about 80% when the examiner used shorthand. Most of Jev's errors fell on four items (language, extinction and neglect, LOC questions and visual fields), and on each it tended to repeat the same mistake, for example scoring slurred speech as aphasia. Its confidence flagged most of these errors. Re-checking the 14.8% of items with confidence below 0.70 would have caught 86% of them, and a simulated hybrid reached 98.8% accuracy. Conclusions. Both engines scored most NIHSS items correctly from exam transcripts. The LLM was more accurate, and the decision model was faster and cheaper, with a confidence signal that could route uncertain items to an LLM. Because the cases and the key are synthetic, these findings need confirmation with recorded exams and human raters.",
+      "authors": [
+        "Abood, W.",
+        "Abdulla, N."
+      ],
+      "source": "medrxiv",
+      "published_at": "2026-10-26T00:00:00+00:00",
+      "updated_at": "2026-10-26T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by_nd",
+      "identifiers": {
+        "doi": "10.64898/2026.10.23.26366376"
+      },
+      "links": {
+        "abs": "https://www.medrxiv.org/content/10.64898/2026.10.23.26366376",
+        "pdf": "https://www.medrxiv.org/content/10.64898/2026.10.23.26366376.full.pdf",
+        "html": "https://www.medrxiv.org/content/10.64898/2026.10.23.26366376.full"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "Scoring the NIH Stroke Scale from bedside exam transcripts: a synthetic benchmark of a decision model and a large language model Background. Clinicians score the NIH Stroke Scale (NIHSS) at the bedside, often under time pressure, and ambient AI tools that listen to clinical encounters are now entering practice. It is no",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.23.26366376.full"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "nguage model Background. Clinicians score the NIH Stroke Scale (NIHSS) at the bedside, often under time pressure, and ambient AI tools that listen to clinical encounters are now entering practice. It is not known whether software can score the NIHSS from the exam conversation itself, rather than extract a score that has already been written in a note. Methods. We created 112 synthetic code-strok",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.23.26366376.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 10,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.23.26366376.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "6460ffd6e0f42892d2723a6e428f4df0cce5fdb6645a8009ba67c1b1588a66e3",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "doi:10.64898/2026.05.01.722166",
       "slug": "doi-10-64898-2026-05-01-722166-3e6ae3a8fe",
       "kind": "paper",
@@ -906,6 +1086,211 @@
       "content_hash": "5fa028041df5dca58b605a7d20c918f00f797575961aea585e4d6d24c9400162",
       "is_seed": false,
       "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.33592",
+      "slug": "arxiv-2610-33592-7bc33ef362",
+      "kind": "paper",
+      "title": "Auditing evaluation artifacts and data leakage in large language model systems for rare disease diagnosis",
+      "abstract": "Augmented large language model (LLM) systems have reported high benchmark accuracies in rare disease diagnosis, yet their real-world clinical utility remains unproven. A recent meta-analysis flagged augmented LLM diagnostic evaluations as having a high risk of bias due to suspected data leakage; however, the precise impact of these vulnerabilities on model inference has yet to be fully quantified. In this study, we present a comprehensive empirical audit to quantify evaluation artifacts across prevailing AI paradigms, using a repository of over 60,000 cases from diverse public and independent clinical cohorts. By reconstructing a state-of-the-art agentic framework, we demonstrate that candidate-space contamination artificially inflates performance: enforcing strict cross-dataset isolation resulted in a marked performance decline, with the cross-dataset mean Recall@1 decreasing from 54.3% (under conventional one-vs-rest evaluation) to 40.3% (Hedges' g = 0.94). Similar spatial overfitting in supervised classifiers caused diagnostic accuracy to drop from an internal mean of 42.9% to 16.7% across external cohorts (Cohen's d = 2.01). Furthermore, we quantify how LLMs infer diagnoses by exploiting retrospective therapeutic cues in clinical narratives, and how temporal misalignment in foundational knowledge bases leads to performance fluctuations. We conclude that prevailing evaluation protocols for augmented LLM systems inadvertently reflect data leakage rather than genuine medical reasoning. To address these systematic artifacts, we propose a rigorous evaluation framework - coupling strict data-isolation protocols with standardized benchmarking safeguards - to ensure future diagnostic AI for rare diseases is evaluated on actual clinical robustness.",
+      "authors": [
+        "Jian Yang",
+        "Peilin Liu",
+        "Xiaohan Li",
+        "Songda Li",
+        "Yu Cao",
+        "Yuqing Feng",
+        "Haomin Li"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-24T10:35:48+00:00",
+      "updated_at": "2026-10-24T10:35:48+00:00",
+      "priority": "P2",
+      "categories": [
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.33592"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.33592v1",
+        "pdf": "https://arxiv.org/pdf/2610.33592v1",
+        "code": "https://github.com/obophenotype/human-phenotype-ontology",
+        "html": "https://arxiv.org/html/2610.33592"
+      },
+      "evidence": [
+        {
+          "term": "Auditing evaluation artifacts and data leakage",
+          "excerpt": "Auditing evaluation artifacts and data leakage in large language model systems for rare disease diagnosis Augmented large language model (LLM) systems have reported high benchmark accuracies in rare disease diagnosis, yet their real-world clinical utility remains unproven. A recent met",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.33592"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "artifacts and data leakage in large language model systems for rare disease diagnosis Augmented large language model (LLM) systems have reported high benchmark accuracies in rare disease diagnosis, yet their real-world clinical utility remains unproven. A recent meta-analysis flagged augmented LLM diagnostic evaluations as having a high risk of bias due to suspected data leakage; however, the pre",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.33592"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "oning. To address these systematic artifacts, we propose a rigorous evaluation framework - coupling strict data-isolation protocols with standardized benchmarking safeguards - to ensure future diagnostic AI for rare diseases is evaluated on actual clinical robustness. [[SECTION Auditing evaluation artifacts and data leakage in large language model systems for rare disease diagnosis]] Auditing evalua",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.33592"
+        },
+        {
+          "term": "medical",
+          "excerpt": "mance fluctuations. We conclude that prevailing evaluation protocols for augmented LLM systems inadvertently reflect data leakage rather than genuine medical reasoning. To address these systematic artifacts, we propose a rigorous evaluation framework - coupling strict data-isolation protocols with standardized benchmarking safeguards - to ensure future diagnostic AI for rare diseases is evaluat",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.33592"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "isease diagnosis Augmented large language model (LLM) systems have reported high benchmark accuracies in rare disease diagnosis, yet their real-world clinical utility remains unproven. A recent meta-analysis flagged augmented LLM diagnostic evaluations as having a high risk of bias due to suspected data leakage; however, the precise impact of these vulnerabilities on model inference has yet to b",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.33592"
+        },
+        {
+          "term": "disease",
+          "excerpt": "Auditing evaluation artifacts and data leakage in large language model systems for rare disease diagnosis Augmented large language model (LLM) systems have reported high benchmark accuracies in rare disease diagnosis, yet their real-world clinical utility remains unproven. A recent meta-analysis flagged augmented LLM diagnostic evalu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.33592"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "regional healthcare systems. Second, our analysis primarily focuses on phenotype- and text-driven diagnostic reasoning. As the field advances toward multimodal AI—integrating whole-exome sequencing (WES) or medical imaging—new dimensions of data leakage, such as genomic batch effects or imaging equipment footprints, may emerge and require similar auditing. Finally, the continuous, opaque updating",
+          "location": "3 Discussion",
+          "source_url": "https://arxiv.org/html/2610.33592"
+        },
+        {
+          "term": "risk assessment",
+          "excerpt": "ide historical landmark studies, based on the methodological details reported in their original publications. To ensure annotation rigor, the initial risk assessment was conducted by author J.Y. and subsequently verified by an independent co-author, with any discrepancies resolved through consensus. The explicit grading rubric, along with the extracted methodological details and specific page numbers f",
+          "location": "2.6 Auditing data leakage risk in rare disease diagnostic AI",
+          "source_url": "https://arxiv.org/html/2610.33592"
+        }
+      ],
+      "related_benchmarks": [
+        "RareBench",
+        "BOQA",
+        "RD-ReEval"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "match_score": 23,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c0c8ed924dd6516ff68f6f2fb76ec05ad42d253b0194e7c37e9682c7bcd54682",
+      "is_seed": false,
+      "topic": "biosafety",
+      "contribution_type": "audit"
+    },
+    {
+      "id": "arxiv:2610.33355",
+      "slug": "arxiv-2610-33355-6e37ef2c26",
+      "kind": "paper",
+      "title": "BenchBench-Cloning: Evaluating Molecular Cloning Design and Protocol Development",
+      "abstract": "Molecular cloning is one of the most routine wet-lab workflows, yet existing evaluations of language models in biology mostly test knowledge recall or isolated steps rather than end-to-end experimental planning. We introduce BenchBench-Cloning, a benchmark for large language models comprising 65 molecular cloning tasks grounded in sequence records, laboratory notebooks, and published experimental studies. Planning a molecular cloning experiment requires defining a set of constructs needed for a scientific objective and a construction route to produce them. BenchBench-Cloning contains 50 protocol-development tasks, in which agents produce an executable protocol for a specified construct, and 15 construct-design tasks, in which agents determine the constructs a scientific objective calls for. Protocol-development tasks are evaluated by execution in a cloning simulator; construct-design tasks are evaluated with task-specific deterministic checks and, where needed, rubric-based LLM-as-a-judge evaluation. Across eight systems with repeated attempts per task, GPT-6 Astra scores highest at 30.6%, with the others between 8.6% and 22.2%, and the benchmark remains unsaturated under best-of-ten sampling. As integrating individual cloning decisions into complete, valid plans remains challenging even for frontier models, we expect BenchBench-Cloning to serve as a useful benchmark for tracking progress in experimental planning.",
+      "authors": [
+        "Aditya Sivakumar",
+        "Peter Ciaccia",
+        "Hassaan Qadir",
+        "Ian Hsu",
+        "Ashu Singhal"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-23T22:51:29+00:00",
+      "updated_at": "2026-10-23T22:51:29+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.33355"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.33355v1",
+        "pdf": "https://arxiv.org/pdf/2610.33355v1",
+        "code": "https://github.com/benchling/benchbench-cloning",
+        "html": "https://arxiv.org/html/2610.33355"
+      },
+      "evidence": [
+        {
+          "term": "We introduce BenchBench",
+          "excerpt": ", yet existing evaluations of language models in biology mostly test knowledge recall or isolated steps rather than end-to-end experimental planning. We introduce BenchBench-Cloning, a benchmark for large language models comprising 65 molecular cloning tasks grounded in sequence records, laboratory notebooks, and published experimental studies. Planning a molecular cloning experiment requires defining a set of",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.33355"
+        },
+        {
+          "term": "We introduce BenchBench-Cloning, a benchmark",
+          "excerpt": ", yet existing evaluations of language models in biology mostly test knowledge recall or isolated steps rather than end-to-end experimental planning. We introduce BenchBench-Cloning, a benchmark for large language models comprising 65 molecular cloning tasks grounded in sequence records, laboratory notebooks, and published experimental studies. Planning a molecular cloning experiment requires defining a set of constructs needed fo",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.33355"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "age models in biology mostly test knowledge recall or isolated steps rather than end-to-end experimental planning. We introduce BenchBench-Cloning, a benchmark for large language models comprising 65 molecular cloning tasks grounded in sequence records, laboratory notebooks, and published experimental studies. Planning a molecular cloning experiment requires defining a set of constructs needed fo",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.33355"
+        },
+        {
+          "term": "biology",
+          "excerpt": "loning Design and Protocol Development Molecular cloning is one of the most routine wet-lab workflows, yet existing evaluations of language models in biology mostly test knowledge recall or isolated steps rather than end-to-end experimental planning. We introduce BenchBench-Cloning, a benchmark for large language models comprising 65 molecular cloning tasks grounded in sequence records, laborat",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.33355"
+        },
+        {
+          "term": "laboratory",
+          "excerpt": "planning. We introduce BenchBench-Cloning, a benchmark for large language models comprising 65 molecular cloning tasks grounded in sequence records, laboratory notebooks, and published experimental studies. Planning a molecular cloning experiment requires defining a set of constructs needed for a scientific objective and a construction route to produce them. BenchBench-Cloning contains 50 protoco",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.33355"
+        },
+        {
+          "term": "molecular",
+          "excerpt": "BenchBench-Cloning: Evaluating Molecular Cloning Design and Protocol Development Molecular cloning is one of the most routine wet-lab workflows, yet existing evaluations of language models in biology mostly test knowledge recall or isolated steps rather than end-to-end experiment",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.33355"
+        },
+        {
+          "term": "microscopy",
+          "excerpt": "sation images, oligonucleotide and genotype tables Deterministic + rubric judge 5 Reporter choice from data Ghodke et al. 2016, Biophys. J. Published microscopy and calibration figure panels Deterministic 6 Dual-luciferase frame panel Annibaldis et al. 2020, Nucleic Acids Res. Published readthrough measurements (three panels) Deterministic 7 AG/AP1 chimera plasmid Lai et al. 2021, Nat. Commun. Sou",
+          "location": "Appendix A Construct-Design Tasks and Sources",
+          "source_url": "https://arxiv.org/html/2610.33355"
+        },
+        {
+          "term": "wet-lab protocol",
+          "excerpt": "2503.00096 Cited by: §2 . Sivakumar et al. (2026) A. Sivakumar, A. Singhal, N. Larus-Stone, and N. Parsan BenchBench-Protocol: evaluating real-world wet-lab protocol reasoning and modification . External Links: 2608.23898 Cited by: §2 . Terminal-Bench-Science Team (2026) Terminal-Bench-Science Team Terminal-Bench-Science: evaluating AI agents on research workflows across scientific domains . Note: Vers",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.33355"
+        }
+      ],
+      "related_benchmarks": [
+        "BenchBench",
+        "LifeSciBench",
+        "BixBench",
+        "CloningQA",
+        "LAB-Bench",
+        "LABBench2"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 28,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "d1f69cda110eec12bb627f30f9659f329387dc2d01fcf55c011ba92cfc3b647c",
+      "is_seed": false,
+      "topic": "experiment_agent",
       "contribution_type": "new_benchmark"
     },
     {
@@ -1238,7 +1623,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 12,
+      "match_score": 10,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "dd6262b4ef5f5dc62756eb3220aa5e2011d042f3ae3b30fc330c35856d51929a",
@@ -1331,7 +1716,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 21,
+      "match_score": 19,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "af1228162bdd70303526502c58290d2f4ad5e2e34e5f8e2ffa062179d51fec2c",
@@ -1425,7 +1810,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 23,
+      "match_score": 21,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "20837227f26563146403a71a0e4bca8d76de74b38ccbc42ff578f80e5f14ea89",

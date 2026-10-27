@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-24",
+  "count": 1,
+  "entries": [
+    {
+      "id": "arxiv:2610.33592",
+      "slug": "arxiv-2610-33592-7bc33ef362",
+      "kind": "paper",
+      "title": "Auditing evaluation artifacts and data leakage in large language model systems for rare disease diagnosis",
+      "abstract": "Augmented large language model (LLM) systems have reported high benchmark accuracies in rare disease diagnosis, yet their real-world clinical utility remains unproven. A recent meta-analysis flagged augmented LLM diagnostic evaluations as having a high risk of bias due to suspected data leakage; however, the precise impact of these vulnerabilities on model inference has yet to be fully quantified. In this study, we present a comprehensive empirical audit to quantify evaluation artifacts across prevailing AI paradigms, using a repository of over 60,000 cases from diverse public and independent clinical cohorts. By reconstructing a state-of-the-art agentic framework, we demonstrate that candidate-space contamination artificially inflates performance: enforcing strict cross-dataset isolation resulted in a marked performance decline, with the cross-dataset mean Recall@1 decreasing from 54.3% (under conventional one-vs-rest evaluation) to 40.3% (Hedges' g = 0.94). Similar spatial overfitting in supervised classifiers caused diagnostic accuracy to drop from an internal mean of 42.9% to 16.7% across external cohorts (Cohen's d = 2.01). Furthermore, we quantify how LLMs infer diagnoses by exploiting retrospective therapeutic cues in clinical narratives, and how temporal misalignment in foundational knowledge bases leads to performance fluctuations. We conclude that prevailing evaluation protocols for augmented LLM systems inadvertently reflect data leakage rather than genuine medical reasoning. To address these systematic artifacts, we propose a rigorous evaluation framework - coupling strict data-isolation protocols with standardized benchmarking safeguards - to ensure future diagnostic AI for rare diseases is evaluated on actual clinical robustness.",
+      "authors": [
+        "Jian Yang",
+        "Peilin Liu",
+        "Xiaohan Li",
+        "Songda Li",
+        "Yu Cao",
+        "Yuqing Feng",
+        "Haomin Li"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-24T10:35:48+00:00",
+      "updated_at": "2026-10-24T10:35:48+00:00",
+      "priority": "P2",
+      "categories": [
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.33592"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.33592v1",
+        "pdf": "https://arxiv.org/pdf/2610.33592v1",
+        "code": "https://github.com/obophenotype/human-phenotype-ontology",
+        "html": "https://arxiv.org/html/2610.33592"
+      },
+      "evidence": [
+        {
+          "term": "Auditing evaluation artifacts and data leakage",
+          "excerpt": "Auditing evaluation artifacts and data leakage in large language model systems for rare disease diagnosis Augmented large language model (LLM) systems have reported high benchmark accuracies in rare disease diagnosis, yet their real-world clinical utility remains unproven. A recent met",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.33592"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "artifacts and data leakage in large language model systems for rare disease diagnosis Augmented large language model (LLM) systems have reported high benchmark accuracies in rare disease diagnosis, yet their real-world clinical utility remains unproven. A recent meta-analysis flagged augmented LLM diagnostic evaluations as having a high risk of bias due to suspected data leakage; however, the pre",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.33592"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "oning. To address these systematic artifacts, we propose a rigorous evaluation framework - coupling strict data-isolation protocols with standardized benchmarking safeguards - to ensure future diagnostic AI for rare diseases is evaluated on actual clinical robustness. [[SECTION Auditing evaluation artifacts and data leakage in large language model systems for rare disease diagnosis]] Auditing evalua",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.33592"
+        },
+        {
+          "term": "medical",
+          "excerpt": "mance fluctuations. We conclude that prevailing evaluation protocols for augmented LLM systems inadvertently reflect data leakage rather than genuine medical reasoning. To address these systematic artifacts, we propose a rigorous evaluation framework - coupling strict data-isolation protocols with standardized benchmarking safeguards - to ensure future diagnostic AI for rare diseases is evaluat",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.33592"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "isease diagnosis Augmented large language model (LLM) systems have reported high benchmark accuracies in rare disease diagnosis, yet their real-world clinical utility remains unproven. A recent meta-analysis flagged augmented LLM diagnostic evaluations as having a high risk of bias due to suspected data leakage; however, the precise impact of these vulnerabilities on model inference has yet to b",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.33592"
+        },
+        {
+          "term": "disease",
+          "excerpt": "Auditing evaluation artifacts and data leakage in large language model systems for rare disease diagnosis Augmented large language model (LLM) systems have reported high benchmark accuracies in rare disease diagnosis, yet their real-world clinical utility remains unproven. A recent meta-analysis flagged augmented LLM diagnostic evalu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.33592"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "regional healthcare systems. Second, our analysis primarily focuses on phenotype- and text-driven diagnostic reasoning. As the field advances toward multimodal AI—integrating whole-exome sequencing (WES) or medical imaging—new dimensions of data leakage, such as genomic batch effects or imaging equipment footprints, may emerge and require similar auditing. Finally, the continuous, opaque updating",
+          "location": "3 Discussion",
+          "source_url": "https://arxiv.org/html/2610.33592"
+        },
+        {
+          "term": "risk assessment",
+          "excerpt": "ide historical landmark studies, based on the methodological details reported in their original publications. To ensure annotation rigor, the initial risk assessment was conducted by author J.Y. and subsequently verified by an independent co-author, with any discrepancies resolved through consensus. The explicit grading rubric, along with the extracted methodological details and specific page numbers f",
+          "location": "2.6 Auditing data leakage risk in rare disease diagnostic AI",
+          "source_url": "https://arxiv.org/html/2610.33592"
+        }
+      ],
+      "related_benchmarks": [
+        "RareBench",
+        "BOQA",
+        "RD-ReEval"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "match_score": 23,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c0c8ed924dd6516ff68f6f2fb76ec05ad42d253b0194e7c37e9682c7bcd54682",
+      "is_seed": false,
+      "topic": "biosafety",
+      "contribution_type": "audit"
+    }
+  ]
+}
