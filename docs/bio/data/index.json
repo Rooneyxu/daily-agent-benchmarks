@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-27T09:55:53Z",
-  "total": 185,
+  "generated_at": "2026-10-28T10:42:53Z",
+  "total": 188,
   "counts": {
     "topics": {
+      "experiment_agent": 51,
+      "general_text": 71,
       "multimodal": 49,
-      "general_text": 70,
-      "biosafety": 17,
-      "experiment_agent": 49
+      "biosafety": 17
     },
     "contribution_types": {
-      "new_benchmark": 151,
+      "new_benchmark": 154,
       "audit": 15,
       "methodology": 19
     },
     "kinds": {
-      "paper": 185
+      "paper": 188
     },
     "evaluation_contexts": {
-      "beneficial_capability": 168,
+      "beneficial_capability": 171,
       "biosecurity_misuse": 17
     }
   },
@@ -59,8 +59,8 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-10-27T09:56:19Z",
-      "finished_at": "2026-10-27T09:56:43Z",
+      "started_at": "2026-10-28T10:43:20Z",
+      "finished_at": "2026-10-28T10:43:50Z",
       "discovered": 35,
       "published": 23,
       "error": ""
@@ -69,44 +69,53 @@
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-10-27T09:56:43Z",
-      "finished_at": "2026-10-27T09:56:50Z",
-      "discovered": 74,
-      "published": 45,
+      "started_at": "2026-10-28T10:43:50Z",
+      "finished_at": "2026-10-28T10:43:56Z",
+      "discovered": 69,
+      "published": 41,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-27T09:56:50Z",
-      "finished_at": "2026-10-27T09:57:28Z",
-      "discovered": 696,
-      "published": 52,
+      "started_at": "2026-10-28T10:43:56Z",
+      "finished_at": "2026-10-28T10:44:37Z",
+      "discovered": 789,
+      "published": 66,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-27T09:57:28Z",
-      "finished_at": "2026-10-27T09:57:48Z",
-      "discovered": 256,
-      "published": 21,
+      "started_at": "2026-10-28T10:44:37Z",
+      "finished_at": "2026-10-28T10:44:47Z",
+      "discovered": 213,
+      "published": 19,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-10-27T09:57:48Z",
-      "finished_at": "2026-10-27T09:57:48Z",
+      "started_at": "2026-10-28T10:44:47Z",
+      "finished_at": "2026-10-28T10:44:47Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
     }
   ],
   "days": [
+    {
+      "date": "2026-10-27",
+      "count": 3,
+      "entry_ids": [
+        "arxiv:2610.37081",
+        "arxiv:2610.36513",
+        "doi:10.21203/rs.3.rs-11493680/v1"
+      ]
+    },
     {
       "date": "2026-10-26",
       "count": 3,
@@ -841,6 +850,252 @@
   ],
   "entries": [
     {
+      "id": "arxiv:2610.37081",
+      "slug": "arxiv-2610-37081-fbed41c13e",
+      "kind": "paper",
+      "title": "OpenGray: a benchmark for evaluating the decisions of radiotherapy planning agents",
+      "abstract": "Background and purpose: Radiotherapy planning agents based on large language models (LLMs) decide when to submit a plan or request review but are evaluated mainly by dose. This study developed OpenGray, a benchmark of planning tasks with known correct decisions. Materials and methods: OpenGray adds tasks with known answers to the OpenKBP-Opt head-and-neck dataset, including two contradictions with dose goals proven incompatible and a feasible control with a stored plan meeting every hard goal. Four systems, from a rule-based planning script to a full LLM agent, were evaluated on 30 patients, the LLM-based ones with a commercial (Terra) and a local (Ministral 3 8B) LLM. Decisions, achieved dose, problem recognition, and technical failures were recorded and also read from logs of 39 stereotactic radiosurgery runs of SAGE, a clinical LLM agent. Results: With Terra, the script preceded by an LLM review and the full agent had decision accuracies of 95.4% and 92.1%, respectively, yet escalated only 50% (95% confidence interval, 25-75%) and 25% (10-40%) of overlap contradictions, which required arithmetic on the anatomy. All four systems submitted every feasible control, but 24% of these plans missed a hard goal that the stored plan had met. In four SAGE runs, one goal failed at every attempt; the agent identified it in every reply but had no action for stopping. Conclusions: Favorable aggregate scores concealed specific decision failures. Planning agents should be evaluated on their decisions as well as their dose and given an explicit action for stopping and requesting review.",
+      "authors": [
+        "Humza Nusrat",
+        "Kundan Thind"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-27T11:42:47+00:00",
+      "updated_at": "2026-10-27T11:42:47+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.37081"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.37081v1",
+        "pdf": "https://arxiv.org/pdf/2610.37081v1",
+        "html": "https://arxiv.org/html/2610.37081"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "OpenGray: a benchmark for evaluating the decisions of radiotherapy planning agents Background and purpose: Radiotherapy planning agents based on large language models (LLMs) decide when to submit a plan or request review but are evaluated mainly by dose. This s",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.37081"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "ons, achieved dose, problem recognition, and technical failures were recorded and also read from logs of 39 stereotactic radiosurgery runs of SAGE, a clinical LLM agent. Results: With Terra, the script preceded by an LLM review and the full agent had decision accuracies of 95.4% and 92.1%, respectively, yet escalated only 50% (95% confidence interval, 25-75%) and 25% (10-40%) of overlap contradi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.37081"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "ol 2022;67:185012. https://doi.org/10.1088/1361-6560/ac8044 . [14] Schmidgall S, Ziaei R, Harris C, Kim JW, Reis EP, Jopling J, et al. AgentClinic: a multimodal benchmark for tool-using clinical AI agents. NPJ Digit Med 2026;9:499. https://doi.org/10.1038/s41746-026-02674-7 . [15] Nusrat H, Francisco L, Luo B, Bagher-Ebadian H, Kim J, Chin-Snyder K, et al. Automated stereotactic radiosurgery plann",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.37081"
+        },
+        {
+          "term": "tool-using",
+          "excerpt": "//doi.org/10.1088/1361-6560/ac8044 . [14] Schmidgall S, Ziaei R, Harris C, Kim JW, Reis EP, Jopling J, et al. AgentClinic: a multimodal benchmark for tool-using clinical AI agents. NPJ Digit Med 2026;9:499. https://doi.org/10.1038/s41746-026-02674-7 . [15] Nusrat H, Francisco L, Luo B, Bagher-Ebadian H, Kim J, Chin-Snyder K, et al. Automated stereotactic radiosurgery planning using a human-in-the-",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.37081"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "t planning in lung radiotherapy. Med Phys 2026;53:e70665. https://doi.org/10.1002/mp.70665 . [10] Wang D, Hu Z, Li Y, Xu D, Yang R, Zhuge C. MARTP: a multi-agent simulation framework for automated radiation therapy planning based on LLMs. Phys Med Biol 2026;71:125037. https://doi.org/10.1088/1361-6560/ae6af6 . [11] Censor Y, Ben-Israel A, Xiao Y, Galvin JM. On linear infeasibility arising in intens",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.37081"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "../../p/2610.37081.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 14,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "d2c12682e421b8b4c6df69d578100c5d9712b621acf8f8cc0505f327388aa4a5",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.36513",
+      "slug": "arxiv-2610-36513-42695414ac",
+      "kind": "paper",
+      "title": "MedConstBench: Benchmarking How Constitutions Steer LLMs in Medical Ethics",
+      "abstract": "As large language models advance rapidly, they are increasingly used to answer medical questions, and many such models are now deployed locally. Once a model is deployed, its behavior is governed mainly by the ethical policy written into its constitution. However, most existing work focuses on factual correctness rather than the trade-off between competing ethical values. Even benchmarks that do evaluate ethics treat it as a fixed property of the model rather than as a variable, so how a constitution reshapes medical-ethics behavior remains largely unexplored. We introduce MedConstBench, a medical-ethics benchmark that treats the deployment constitution as a controlled variable, is organized around Beauchamp's four principles, and is scored by human-calibrated multi-model peer review. It includes MedDilemma, our own dataset of clinical dilemmas, and supports a systematic analysis of how constitutions steer LLMs. Evaluating ten open-source LLMs under four constitutions, we find that the effect of a constitution is dimension-selective and model-dependent, and that no constitution is universally optimal. Motivated by these findings, we propose a do-no-harm adaptive selector that chooses a constitution per model, matching the per-model oracle while guaranteeing a worst-case floor and generalizing to unseen models at low cost.",
+      "authors": [
+        "Yibo Yang",
+        "Zerui Huang",
+        "Haomiao Yang",
+        "Zixia Wang"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-27T02:17:13+00:00",
+      "updated_at": "2026-10-27T02:17:13+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.36513"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.36513v1",
+        "pdf": "https://arxiv.org/pdf/2610.36513v1",
+        "html": "https://arxiv.org/html/2610.36513"
+      },
+      "evidence": [
+        {
+          "term": "We introduce MedConstBench",
+          "excerpt": "eat it as a fixed property of the model rather than as a variable, so how a constitution reshapes medical-ethics behavior remains largely unexplored. We introduce MedConstBench, a medical-ethics benchmark that treats the deployment constitution as a controlled variable, is organized around Beauchamp's four principles, and is scored by human-calibrated multi-model peer review. It includes MedDilemma, our own datas",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.36513"
+        },
+        {
+          "term": "We introduce MedConstBench, a medical-ethics benchmark",
+          "excerpt": "eat it as a fixed property of the model rather than as a variable, so how a constitution reshapes medical-ethics behavior remains largely unexplored. We introduce MedConstBench, a medical-ethics benchmark that treats the deployment constitution as a controlled variable, is organized around Beauchamp's four principles, and is scored by human-calibrated multi-model peer review. It includes MedDilemma, our own dataset of clinical dilemmas, and",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.36513"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "MedConstBench: Benchmarking How Constitutions Steer LLMs in Medical Ethics As large language models advance rapidly, they are increasingly used to answer medical questions, and many such models are now deployed locally. Once a model is deployed, its behavior is go",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.36513"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "en into its constitution. However, most existing work focuses on factual correctness rather than the trade-off between competing ethical values. Even benchmarks that do evaluate ethics treat it as a fixed property of the model rather than as a variable, so how a constitution reshapes medical-ethics behavior remains largely unexplored. We introduce MedConstBench, a medical-ethics benchmark that tre",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.36513"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "MedConstBench: Benchmarking How Constitutions Steer LLMs in Medical Ethics As large language models advance rapidly, they are increasingly used to answer medical questions, and many such models are now deployed locally. Once a model is deployed, its behavior is gover",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.36513"
+        },
+        {
+          "term": "medical",
+          "excerpt": "MedConstBench: Benchmarking How Constitutions Steer LLMs in Medical Ethics As large language models advance rapidly, they are increasingly used to answer medical questions, and many such models are now deployed locally. Once a model is deployed, its behavior is governed mainly by the ethical policy written",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.36513"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "s organized around Beauchamp's four principles, and is scored by human-calibrated multi-model peer review. It includes MedDilemma, our own dataset of clinical dilemmas, and supports a systematic analysis of how constitutions steer LLMs. Evaluating ten open-source LLMs under four constitutions, we find that the effect of a constitution is dimension-selective and model-dependent, and that no const",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.36513"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "Menon, R. Freeman, D. S. Matteson, M. L. Marin, G. N. Nadkarni, et al. (2025) Using large language models to automate data extraction from surgical pathology reports: retrospective cohort study . JMIR Formative Research 9 ( 1 ), pp. e64544 . Cited by: §I . [13] J. C. L. Ong, S. Y. Chang, W. William, A. J. Butte, N. H. Shah, L. S. T. Chew, N. Liu, F. Doshi-Velez, W. Lu, J. Savulescu, et al. (202",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.36513"
+        }
+      ],
+      "related_benchmarks": [
+        "MedConstBench",
+        "MedEthicsQA",
+        "MedQA",
+        "PubMedQA",
+        "MedMCQA",
+        "HealthBench",
+        "MultiMedQA",
+        "MedSafetyBench",
+        "PrinciplismQA",
+        "MedEthicEval",
+        "MEQA",
+        "AIDABench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 31,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "4f8521780efdf4a51f806700deca9b25c8e2c2bb016a62986af024d28ddcc590",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.21203/rs.3.rs-11493680/v1",
+      "slug": "doi-10-21203-rs-3-rs-11493680-v1-ef4c80bf24",
+      "kind": "paper",
+      "title": "Comparative Analysis of Rule-Based, Deep Learning, and LLM Approaches for Causality Extraction: A Unified Benchmark",
+      "abstract": "<title>Abstract</title>  <p>Causality extraction—the identification of cause–effect relations in natural language text—has been approached through three successive methodological paradigms: rule-based systems relying on lexical and syntactic cues, deep learning models exploiting neural architectures and pre-trained encoders, and, most recently, large language models (LLMs) applied through prompting or fine-tuning. Each paradigm has been evaluated on different datasets, under different annotation schemes, and with different metrics, making it difficult to determine how far apparent performance differences reflect genuine methodological advantages rather than benchmark artifacts. This study addresses that problem by constructing a unified benchmark for comparative evaluation of rule-based, deep learning, and LLM approaches to causality extraction. We consolidate multiple existing corpora—covering news, biomedical, and safety-incident text—into a harmonized annotation format, re-annotate a stratified subset to ensure consistent treatment of implicit and explicit causal relations, and evaluate representative methods from each paradigm under identical preprocessing, train–test splits, and evaluation protocols. We report span-level precision, recall, and F1, document-level F1, calibration error, inference cost, and annotation efficiency, and we conduct cross-domain transfer experiments to assess generalization. Results are analyzed to disentangle the contributions of architecture, training data, and task formulation, with particular attention to the conditions under which each paradigm retains a comparative advantage. We further examine error profiles across paradigms, identifying whether failures are concentrated in explicit versus implicit relations, local versus distributed constructions, and domain-specific versus general-language contexts.</p>",
+      "authors": [
+        "Schulle A."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-10-27T00:00:00+00:00",
+      "updated_at": "2026-10-28T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-11493680/v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1351163"
+      },
+      "evidence": [
+        {
+          "term": "constructing a unified benchmark",
+          "excerpt": "far apparent performance differences reflect genuine methodological advantages rather than benchmark artifacts. This study addresses that problem by constructing a unified benchmark for comparative evaluation of rule-based, deep learning, and LLM approaches to causality extraction. We consolidate multiple existing corpora—covering news, biomedical, and safety-incident text—into a harmonized annotation format, re-annot",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1351163"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Comparative Analysis of Rule-Based, Deep Learning, and LLM Approaches for Causality Extraction: A Unified Benchmark <title>Abstract</title> <p>Causality extraction—the identification of cause–effect relations in natural language text—has been approached through three successive methodological paradigms: rule-based systems relying on lexical and syntact",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1351163"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "parative evaluation of rule-based, deep learning, and LLM approaches to causality extraction. We consolidate multiple existing corpora—covering news, biomedical, and safety-incident text—into a harmonized annotation format, re-annotate a stratified subset to ensure consistent treatment of implicit and explicit causal relations, and evaluate representative methods from each paradigm under identical",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1351163"
+        },
+        {
+          "term": "medical",
+          "excerpt": "ative evaluation of rule-based, deep learning, and LLM approaches to causality extraction. We consolidate multiple existing corpora—covering news, biomedical, and safety-incident text—into a harmonized annotation format, re-annotate a stratified subset to ensure consistent treatment of implicit and explicit causal relations, and evaluate representative methods from each paradigm under identical",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1351163"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 17,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c2ac0206f43b2ada7d590602d5a0f667635634c28ea2ed322cb02bc4aa64a950",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "arxiv:2610.35847",
       "slug": "arxiv-2610-35847-8205c1adb3",
       "kind": "paper",
@@ -1285,7 +1540,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 28,
+      "match_score": 24,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "d1f69cda110eec12bb627f30f9659f329387dc2d01fcf55c011ba92cfc3b647c",
@@ -1380,7 +1635,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 20,
+      "match_score": 16,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "c9df45f422427743928dfa0603e7cd0689d10d87f273bd661c9ed4c652f120a1",
@@ -1486,7 +1741,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 25,
+      "match_score": 23,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "34f0bb2897e3c9d16b3082b1c95db4984aa8179a2ff9c08016104a8e878b6e91",
