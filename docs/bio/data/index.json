@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-28T10:42:53Z",
-  "total": 188,
+  "generated_at": "2026-10-29T10:59:54Z",
+  "total": 189,
   "counts": {
     "topics": {
+      "general_text": 72,
       "experiment_agent": 51,
-      "general_text": 71,
       "multimodal": 49,
       "biosafety": 17
     },
     "contribution_types": {
-      "new_benchmark": 154,
+      "new_benchmark": 155,
       "audit": 15,
       "methodology": 19
     },
     "kinds": {
-      "paper": 188
+      "paper": 189
     },
     "evaluation_contexts": {
-      "beneficial_capability": 171,
+      "beneficial_capability": 172,
       "biosecurity_misuse": 17
     }
   },
@@ -59,29 +59,29 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-10-28T10:43:20Z",
-      "finished_at": "2026-10-28T10:43:50Z",
-      "discovered": 35,
-      "published": 23,
+      "started_at": "2026-10-29T11:00:23Z",
+      "finished_at": "2026-10-29T11:01:14Z",
+      "discovered": 29,
+      "published": 18,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-10-28T10:43:50Z",
-      "finished_at": "2026-10-28T10:43:56Z",
-      "discovered": 69,
-      "published": 41,
+      "started_at": "2026-10-29T11:01:14Z",
+      "finished_at": "2026-10-29T11:01:17Z",
+      "discovered": 54,
+      "published": 34,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-28T10:43:56Z",
-      "finished_at": "2026-10-28T10:44:37Z",
-      "discovered": 789,
+      "started_at": "2026-10-29T11:01:17Z",
+      "finished_at": "2026-10-29T11:02:28Z",
+      "discovered": 927,
       "published": 66,
       "error": ""
     },
@@ -89,24 +89,31 @@
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-28T10:44:37Z",
-      "finished_at": "2026-10-28T10:44:47Z",
-      "discovered": 213,
-      "published": 19,
+      "started_at": "2026-10-29T11:02:28Z",
+      "finished_at": "2026-10-29T11:03:01Z",
+      "discovered": 250,
+      "published": 25,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-10-28T10:44:47Z",
-      "finished_at": "2026-10-28T10:44:47Z",
+      "started_at": "2026-10-29T11:03:01Z",
+      "finished_at": "2026-10-29T11:03:01Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
     }
   ],
   "days": [
+    {
+      "date": "2026-10-28",
+      "count": 1,
+      "entry_ids": [
+        "doi:10.64898/2026.10.27.26366650"
+      ]
+    },
     {
       "date": "2026-10-27",
       "count": 3,
@@ -850,6 +857,78 @@
   ],
   "entries": [
     {
+      "id": "doi:10.64898/2026.10.27.26366650",
+      "slug": "doi-10-64898-2026-10-27-26366650-58ee28fa1e",
+      "kind": "paper",
+      "title": "EM-BENCH: A Reproducible Framework for Benchmarking Guideline-Concordant Clinical Decision Making in Large Language Models",
+      "abstract": "Background Physicians increasingly use artificial intelligence tools to support clinical work, yet there is no accepted standard for measuring the competency of large language models (LLMs) in clinical decision support. We developed EM-BENCH, a physician-validated, deterministically scored benchmark for evaluating whether models reliably apply the American College of Emergency Physicians (ACEP) guidelines to clinical decisions. Methods EM-BENCH comprises 210 binary clinical vignettes covering all 70 critical questions across 25 ACEP clinical policies. We evaluated 149 LLM configurations representing 79 base models using prespecified answers and deterministic scoring. Each vignette had a prespecified correct answer to a binary yes-or-no question based on an ACEP recommendation. We examined associations between accuracy and model access tier (closed-access vs. open-weight models), model size, release date, clinical policy, recommendation evidence level, and reasoning settings. Results No configuration achieved complete guideline concordance. The highest performing configuration answered 207 of 210 vignettes correctly (98.6%). Closed-access models outperformed open-weight models (median accuracy, 91% vs. 63%; Hodges-Lehmann location shift, 26 percentage points; 99% CI, 20 to 33; adjusted P<0.001). Among open-weight model families, a 10-fold increase in parameter count was associated with a 14-percentage-point increase in accuracy (99% CI, 7.7 to 20; adjusted P<0.001). Across all models, accuracy increased by 8.9 percentage points per release year (99% CI, 3.6 to 14; adjusted P<0.001). Neither enabling a thinking mode (pseudomedian change, 0.95 percentage points; 99% CI, -2.6 to 3.1; adjusted P=1.00) nor high versus low reasoning effort (0.91 percentage points; 99% CI, -0.69 to 3.1; adjusted P=0.56) consistently improved accuracy. Conclusions Contemporary LLMs showed improving but incomplete ability to apply ACEP guidelines. Concordance varied markedly across models and was associated with access tier, size, and release recency, while additional inference-time reasoning offered inconsistent benefit. Specialty-specific, physician-validated benchmarks may provide a reproducible assessment of LLMs' ability to make guideline-concordant clinical decisions.",
+      "authors": [
+        "Nguyen, N.",
+        "Perice, L.",
+        "Sangal, R.",
+        "Kumar, V.",
+        "Chu, A.",
+        "Dash, D."
+      ],
+      "source": "medrxiv",
+      "published_at": "2026-10-28T00:00:00+00:00",
+      "updated_at": "2026-10-28T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by_nc_nd",
+      "identifiers": {
+        "doi": "10.64898/2026.10.27.26366650"
+      },
+      "links": {
+        "abs": "https://www.medrxiv.org/content/10.64898/2026.10.27.26366650",
+        "pdf": "https://www.medrxiv.org/content/10.64898/2026.10.27.26366650.full.pdf",
+        "html": "https://www.medrxiv.org/content/10.64898/2026.10.27.26366650.full"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "EM-BENCH: A Reproducible Framework for Benchmarking Guideline-Concordant Clinical Decision Making in Large Language Models Background Physicians increasingly use artificial intelligence tools to support clinical work, yet there is no accepted standard for measuring the competency of larg",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.27.26366650.full"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "cess tier, size, and release recency, while additional inference-time reasoning offered inconsistent benefit. Specialty-specific, physician-validated benchmarks may provide a reproducible assessment of LLMs' ability to make guideline-concordant clinical decisions. Background Physicians increasingly use artificial intelligence tools to support clinical work, yet there is no accepted standard for me",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.27.26366650.full"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "EM-BENCH: A Reproducible Framework for Benchmarking Guideline-Concordant Clinical Decision Making in Large Language Models Background Physicians increasingly use artificial intelligence tools to support clinical work, yet there is no accepted standard for measuring the competency of large l",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.27.26366650.full"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "EM-BENCH: A Reproducible Framework for Benchmarking Guideline-Concordant Clinical Decision Making in Large Language Models Background Physicians increasingly use artificial intelligence tools to support clinical work, yet there is no accepted standard for measuring the competency of large language models (LLMs) in clini",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.27.26366650.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 16,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.27.26366650.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "05b4fe3b22e28f0efde5652e7e4e39260f9ae669d032a3280c23751bab8be040",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "arxiv:2610.37081",
       "slug": "arxiv-2610-37081-fbed41c13e",
       "kind": "paper",
@@ -1214,7 +1293,7 @@
       "slug": "doi-10-64898-2026-10-23-26366376-4d88b0fb9c",
       "kind": "paper",
       "title": "Scoring the NIH Stroke Scale from bedside exam transcripts: a synthetic benchmark of a decision model and a large language model",
-      "abstract": "Background. Clinicians score the NIH Stroke Scale (NIHSS) at the bedside, often under time pressure, and ambient AI tools that listen to clinical encounters are now entering practice. It is not known whether software can score the NIHSS from the exam conversation itself, rather than extract a score that has already been written in a note. Methods. We created 112 synthetic code-stroke cases. One hundred were allocated in proportion to real code-stroke presentations, and 12 stress cases tested special scoring rules. For each case, a large language model (Claude Opus 5.5) wrote a reference score form (the answer key) and a speech-to-text-style exam transcript, with main-set transcripts split evenly between a narrated and a telegraphic examiner style. A second model (Claude Fable 5.1), blind to the key, scored every transcript and agreed with the key on 99.2% of items. Each transcript was then scored by Jev, a decision model, and by gpt-6-luna, a general large language model (LLM). The primary outcome was item-level accuracy against the key. Results. The LLM scored 99.0% of items correctly (95% CI 98.4-99.4) and Jev 94.4% (93.2-95.4; McNemar p < 0.001), with exact totals in 101 and 63 of 112 cases. Jev was faster (median 0.15 vs 5.78 s per exam) and cheaper (USD 0.23 vs 0.67 per 1,000 exams). With telegraphic examiners, accuracy fell from 98.0% to 90.9% for Jev and from 100% to 97.7% for the LLM. In a post-hoc analysis that kept only the examiner's words, accuracy stayed high when the examiner narrated (Jev 96.9%, LLM 98.8%) but dropped to about 80% when the examiner used shorthand. Most of Jev's errors fell on four items (language, extinction and neglect, LOC questions and visual fields), and on each it tended to repeat the same mistake, for example scoring slurred speech as aphasia. Its confidence flagged most of these errors. Re-checking the 14.8% of items with confidence below 0.70 would have caught 86% of them, and a simulated hybrid reached 98.8% accuracy. Conclusions. Both engines scored most NIHSS items correctly from exam transcripts. The LLM was more accurate, and the decision model was faster and cheaper, with a confidence signal that could route uncertain items to an LLM. Because the cases and the key are synthetic, these findings need confirmation with recorded exams and human raters.",
+      "abstract": "BackgroundClinicians score the NIH Stroke Scale (NIHSS) at the bedside, often under time pressure, and ambient AI tools that listen to clinical encounters are now entering practice. It is not known whether software can score the NIHSS from the exam conversation itself, rather than extract a score that has already been written in a note.\n\nMethodsWe created 112 synthetic code-stroke cases. One hundred were allocated in proportion to real code-stroke presentations, and 12 stress cases tested special scoring rules. For each case, a large language model (Claude Opus 5.5) wrote a reference score form (the answer key) and a speech-to-text-style exam transcript, with main-set transcripts split evenly between a narrated and a telegraphic examiner style. A second model (Claude Fable 5.1), blind to the key, scored every transcript and agreed with the key on 99.2% of items. Each transcript was then scored by Jev, a decision model, and by gpt-6-luna, a general large language model (LLM). The primary outcome was item-level accuracy against the key.\n\nResultsThe LLM scored 99.0% of items correctly (95% CI 98.4-99.4) and Jev 94.4% (93.2-95.4; McNemar p < 0.001), with exact totals in 101 and 63 of 112 cases. Jev was faster (median 0.15 vs 5.78 s per exam) and cheaper (USD 0.23 vs 0.67 per 1,000 exams). With telegraphic examiners, accuracy fell from 98.0% to 90.9% for Jev and from 100% to 97.7% for the LLM. In a post-hoc analysis that kept only the examiners words, accuracy stayed high when the examiner narrated (Jev 96.9%, LLM 98.8%) but dropped to about 80% when the examiner used shorthand. Most of Jevs errors fell on four items (language, extinction and neglect, LOC questions and visual fields), and on each it tended to repeat the same mistake, for example scoring slurred speech as aphasia. Its confidence flagged most of these errors. Re-checking the 14.8% of items with confidence below 0.70 would have caught 86% of them, and a simulated hybrid reached 98.8% accuracy.\n\nConclusionsBoth engines scored most NIHSS items correctly from exam transcripts. The LLM was more accurate, and the decision model was faster and cheaper, with a confidence signal that could route uncertain items to an LLM. Because the cases and the key are synthetic, these findings need confirmation with recorded exams and human raters.",
       "authors": [
         "Abood, W.",
         "Abdulla, N."
@@ -1240,13 +1319,13 @@
       "evidence": [
         {
           "term": "benchmark",
-          "excerpt": "Scoring the NIH Stroke Scale from bedside exam transcripts: a synthetic benchmark of a decision model and a large language model Background. Clinicians score the NIH Stroke Scale (NIHSS) at the bedside, often under time pressure, and ambient AI tools that listen to clinical encounters are now entering practice. It is no",
+          "excerpt": "Scoring the NIH Stroke Scale from bedside exam transcripts: a synthetic benchmark of a decision model and a large language model BackgroundClinicians score the NIH Stroke Scale (NIHSS) at the bedside, often under time pressure, and ambient AI tools that listen to clinical encounters are now entering practice. It is not",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.23.26366376.full"
         },
         {
           "term": "clinical",
-          "excerpt": "nguage model Background. Clinicians score the NIH Stroke Scale (NIHSS) at the bedside, often under time pressure, and ambient AI tools that listen to clinical encounters are now entering practice. It is not known whether software can score the NIHSS from the exam conversation itself, rather than extract a score that has already been written in a note. Methods. We created 112 synthetic code-strok",
+          "excerpt": "language model BackgroundClinicians score the NIH Stroke Scale (NIHSS) at the bedside, often under time pressure, and ambient AI tools that listen to clinical encounters are now entering practice. It is not known whether software can score the NIHSS from the exam conversation itself, rather than extract a score that has already been written in a note. MethodsWe created 112 synthetic code-stroke",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.23.26366376.full"
         }
@@ -1260,7 +1339,7 @@
       "match_score": 10,
       "extraction_status": "incomplete",
       "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.23.26366376.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
-      "content_hash": "6460ffd6e0f42892d2723a6e428f4df0cce5fdb6645a8009ba67c1b1588a66e3",
+      "content_hash": "a9f45f4cfd08e8280e8ce402c1f866c6852316650ad4d632285291b0a3531370",
       "is_seed": false,
       "topic": "general_text",
       "contribution_type": "new_benchmark"
@@ -1437,7 +1516,7 @@
         "biosecurity_misuse"
       ],
       "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
-      "match_score": 23,
+      "match_score": 19,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "c0c8ed924dd6516ff68f6f2fb76ec05ad42d253b0194e7c37e9682c7bcd54682",
