@@ -1,0 +1,354 @@
+{
+  "date": "2026-10-29",
+  "count": 4,
+  "entries": [
+    {
+      "id": "arxiv:2610.39744",
+      "slug": "arxiv-2610-39744-121bbcf66b",
+      "kind": "paper",
+      "title": "PAPERBENCHX: Can AI Reproduce Science Across Disciplines?",
+      "abstract": "Before AI can be trusted to discover new science, it should be able to reproduce what science already knows. Reproduction provides a rigorous checkpoint for an AI scientist: the target claim is known, yet recovering it still requires translating an incomplete scientific description into an executable experiment and producing evidence that can be independently verified. Existing research-reproduction benchmarks largely focus on AI and machine learning, where experiments share relatively homogeneous software stacks. Extending this capability across scientific disciplines introduces a different challenge: agents must operate domain-specific scientific software, make physical and numerical choices, diagnose long-running computations, and distinguish valid evidence from merely plausible outputs. We introduce PAPERBENCHX, a benchmark of 93 expert-constructed paper-reproduction tasks spanning 12 research areas across electromagnetics, photonics, chemistry, materials science, biology, and robotics. Each task provides the source paper, a public task specification, and a domain-native scientific environment involving specialized scientific software. Agents must reconstruct a key experiment, execute and diagnose it, and deliver a runnable workflow that supports the target scientific claim. To evaluate scientific validity rather than surface-level agreement, we replay every submission from scratch and score only regenerated evidence against expert-validated criteria. Across 10 frontier agent configurations, the best configuration fully reproduces only 14% tasks under the 90% threshold. Meanwhile, mean rubric scores range from 27.53% to 59.08%, indicating that substantial partial progress rarely translates into complete scientific reproduction. These results reveal a large gap between paper understanding and reliably producing reproducible scientific evidence.",
+      "authors": [
+        "Ruoyu Wu",
+        "Zengji Tu",
+        "Aolong Sun",
+        "Tianyi Ma",
+        "Junren Li",
+        "Xinbo Xu",
+        "Li Fu",
+        "Ziyan Zhang",
+        "Pinrui Huang",
+        "Xiaochen Wang",
+        "Chengda Wu",
+        "Yutao Zhou",
+        "Jianjun Wu",
+        "Lin Chang",
+        "Baobao Chang",
+        "Liang Chen",
+        "Kuan Li"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-29T10:05:50+00:00",
+      "updated_at": "2026-10-29T10:05:50+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.39744"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.39744v1",
+        "pdf": "https://arxiv.org/pdf/2610.39744v1",
+        "code": "https://github.com/laude-institute/harbor",
+        "html": "https://arxiv.org/html/2610.39744"
+      },
+      "evidence": [
+        {
+          "term": "We introduce PAPERBENCHX, a benchmark",
+          "excerpt": "ific software, make physical and numerical choices, diagnose long-running computations, and distinguish valid evidence from merely plausible outputs. We introduce PAPERBENCHX, a benchmark of 93 expert-constructed paper-reproduction tasks spanning 12 research areas across electromagnetics, photonics, chemistry, materials science, biology, and robotics. Each task provides the source paper, a public task specification, and a d",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.39744"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "mplete scientific description into an executable experiment and producing evidence that can be independently verified. Existing research-reproduction benchmarks largely focus on AI and machine learning, where experiments share relatively homogeneous software stacks. Extending this capability across scientific disciplines introduces a different challenge: agents must operate domain-specific scient",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.39744"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "mplete scientific description into an executable experiment and producing evidence that can be independently verified. Existing research-reproduction benchmarks largely focus on AI and machine learning, where experiments share relatively homogeneous software stacks. Extending this capability across scientific disciplines introduces a different challenge: agents must operate domain-specific scienti",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.39744"
+        },
+        {
+          "term": "biology",
+          "excerpt": "chmark of 93 expert-constructed paper-reproduction tasks spanning 12 research areas across electromagnetics, photonics, chemistry, materials science, biology, and robotics. Each task provides the source paper, a public task specification, and a domain-native scientific environment involving specialized scientific software. Agents must reconstruct a key experiment, execute and diagnose it, and d",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.39744"
+        }
+      ],
+      "related_benchmarks": [
+        "MLAgentBench",
+        "PaperBench",
+        "DiscoveryBench",
+        "ScienceAgentBench",
+        "NatureBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 13,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "a5f612c8f3cdda5c079ac805c9f402669893f399c806a907bd4c8a838289aa4a",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.10.28.26366693",
+      "slug": "doi-10-64898-2026-10-28-26366693-88eed4f7b6",
+      "kind": "paper",
+      "title": "Using iterative agentic retrieval-augmented generation to refine the risk of infection from social contexts during the COVID-19 pandemic: Development and Evaluation Study",
+      "abstract": "Background: Contact tracing is crucial to limit pathogen transmission and to gather epidemiological data. However, despite machine learning optimizations, it remains time-consuming. Large language models have been used for infection risk prediction, but no existing application converses with a user to adapt its risk estimates. Objective: We aimed to develop an iterative retrieval-augmented generation conversational framework to predict coronavirus disease 2019 (COVID-19) infection risk from textual social data. The conversational agent aims to gather personalized risk factors based on descriptions of social interactions. Methods: We trained a long short-term memory (LSTM) model to predict the risk of COVID-19 infection from 19,434 textual descriptions of social interactions, collected during the pandemic in the Leuven student community, in Belgium. We integrated this model into a Llama3.3-based conversational framework that iteratively gathers additional social information that may represent a risk of infection. We evaluated the framework using large language model (LLM)-as-a-judge metrics and by comparing its risk assessment in different social contexts. Results: Based solely on social interaction data, a fine-tuned RobBERT model predicted infection risk with an area under the receiver operating characteristic curve (ROC AUC) of 0.73. It performed similarly to an LSTM model and a logistic regression on term frequency-inverse document frequency (TF-IDF) features, which both achieved a ROC AUC of 0.72. These three models slightly outperformed a Quantized Low-Rank Adaptation (QLoRA)-fine-tuned Mistral NeMo model (ROC AUC = 0.69). Llama3.3 performed well in our framework: the predicted infection risk converged often, and it asked fewer redundant questions than the smaller models (Mistral 7B, Gemma3 12B). In addition, the framework showed the ability to stratify, by risk of infection, synthetic users who had different types of social interactions. Conclusions: Combining simple language models with large language models can refine individual infection risk from contact tracing data in a high-circulation context. Our conversational framework may help optimize contact tracing by highlighting social contexts with a high risk of infection.",
+      "authors": [
+        "Thibaut, J.",
+        "Tunc, M.",
+        "De Smedt, J.",
+        "Raymenants, J.",
+        "Geenen, C.",
+        "Cavillot, L.",
+        "Andre, E."
+      ],
+      "source": "medrxiv",
+      "published_at": "2026-10-29T00:00:00+00:00",
+      "updated_at": "2026-10-29T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by_nc_nd",
+      "identifiers": {
+        "doi": "10.64898/2026.10.28.26366693"
+      },
+      "links": {
+        "abs": "https://www.medrxiv.org/content/10.64898/2026.10.28.26366693",
+        "pdf": "https://www.medrxiv.org/content/10.64898/2026.10.28.26366693.full.pdf",
+        "html": "https://www.medrxiv.org/content/10.64898/2026.10.28.26366693.full"
+      },
+      "evidence": [
+        {
+          "term": "disease",
+          "excerpt": "adapt its risk estimates. Objective: We aimed to develop an iterative retrieval-augmented generation conversational framework to predict coronavirus disease 2019 (COVID-19) infection risk from textual social data. The conversational agent aims to gather personalized risk factors based on descriptions of social interactions. Methods: We trained a long short-term memory (LSTM) model to predict t",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.28.26366693.full"
+        },
+        {
+          "term": "risk assessment",
+          "excerpt": "formation that may represent a risk of infection. We evaluated the framework using large language model (LLM)-as-a-judge metrics and by comparing its risk assessment in different social contexts. Results: Based solely on social interaction data, a fine-tuned RobBERT model predicted infection risk with an area under the receiver operating characteristic curve (ROC AUC) of 0.73. It performed similarly to",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.28.26366693.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 9,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.28.26366693.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "5ffae038b08b22bca3e1d80ae2e7cfb9124e9bd424d5a7e67cbe14966bcdc8f2",
+      "is_seed": false,
+      "topic": "biosafety",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.10.27.762236",
+      "slug": "doi-10-64898-2026-10-27-762236-d96d752aaa",
+      "kind": "paper",
+      "title": "MutQA: A Cross-Validated Q&A Dataset for Genetic Mutations",
+      "abstract": "We introduce MutQA, a dataset of 330,387 citation-grounded question-answer (QA) pairs linking genetic mutations to their functional consequences as described in the biomedical literature. Each record pairs a protein-coding mutation with a natural-language question and an evidence-backed answer anchored to sentences in one of 27,442 open-access PubMed Central articles, spanning 6,620 genes and 125,593 gene-variant pairs. The dataset is constructed using CrossValQA, a framework that enforces information isolation between independent LLMs: one model generates QA pairs from an article, a second model answers the same question without access to the first model's response, and a third model judges whether each model's rationale supports the other's answer, so that retained QA pairs are reproducible from the source text rather than hallucinated. Of 401,406 audited QA pairs, 82.7% pass both directions of this cross-validation; those with a recoverable reference protein sequence form the released benchmark. In a 999-pair stratified audit, two expert annotators agree exactly on 86.4% of cross-validated QA pairs (95% CI 83.7-89.0; n = 638), a tier in which about 90% of ratings are \"correct\". Individual LLM judges agree with individual annotators at a comparable 87.0% on this tier but far less on QA pairs that fail cross-validation. Fine-tuning MutaPLM on MutQA nearly doubles its mean LLM-judge score for question-conditioned mutation-effect answering (1.45 to 2.82 on a 0-5 scale) and improves mutation-recovery accuracy from effect descriptions from 19.4% to 32.1%. Providing variant-matched MutQA retrieval context, without fine-tuning, improves strict answer accuracy across four LLM families by 20.0-28.6 percentage points, demonstrating the framework's ability to improve the reliability of LLM answers. We also apply CrossValQA to proteomics, providing a proof of concept for its use beyond mutation-specific QA. We release the dataset, construction framework, and evaluation code.",
+      "authors": [
+        "McCourt, R.",
+        "Arredondo, D.",
+        "Macaulay, O.",
+        "Poshiya, S.",
+        "Edeh, O.",
+        "Virupakshappa, K.",
+        "Nguyen Bach, M.",
+        "Almeida Ruiz, E.",
+        "Hu, Y.",
+        "Tafoya, L. E.",
+        "Hudgens, D. P.",
+        "Kundnani, D.",
+        "Sahu, A."
+      ],
+      "source": "biorxiv",
+      "published_at": "2026-10-29T00:00:00+00:00",
+      "updated_at": "2026-10-29T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by",
+      "identifiers": {
+        "doi": "10.64898/2026.10.27.762236"
+      },
+      "links": {
+        "abs": "https://www.biorxiv.org/content/10.64898/2026.10.27.762236",
+        "pdf": "https://www.biorxiv.org/content/10.64898/2026.10.27.762236.full.pdf",
+        "html": "https://www.biorxiv.org/content/10.64898/2026.10.27.762236.full"
+      },
+      "evidence": [
+        {
+          "term": "We release the dataset",
+          "excerpt": "improve the reliability of LLM answers. We also apply CrossValQA to proteomics, providing a proof of concept for its use beyond mutation-specific QA. We release the dataset, construction framework, and evaluation code. We introduce MutQA, a dataset of 330,387 citation-grounded question-answer (QA) pairs linking genetic mutations to their functional consequences as described in the biomedical literature. Each",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.27.762236.full"
+        },
+        {
+          "term": "We introduce MutQA",
+          "excerpt": "MutQA: A Cross-Validated Q&A Dataset for Genetic Mutations We introduce MutQA, a dataset of 330,387 citation-grounded question-answer (QA) pairs linking genetic mutations to their functional consequences as described in the biomedical literature. Each record pairs a protein-coding mutation with a natural-language qu",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.27.762236.full"
+        },
+        {
+          "term": "We introduce MutQA, a dataset",
+          "excerpt": "MutQA: A Cross-Validated Q&A Dataset for Genetic Mutations We introduce MutQA, a dataset of 330,387 citation-grounded question-answer (QA) pairs linking genetic mutations to their functional consequences as described in the biomedical literature. Each record pairs a protein-coding mutation with a natural-language question and",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.27.762236.full"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "401,406 audited QA pairs, 82.7% pass both directions of this cross-validation; those with a recoverable reference protein sequence form the released benchmark. In a 999-pair stratified audit, two expert annotators agree exactly on 86.4% of cross-validated QA pairs (95% CI 83.7-89.0; n = 638), a tier in which about 90% of ratings are \"correct\". Individual LLM judges agree with individual annotato",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.27.762236.full"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "tQA, a dataset of 330,387 citation-grounded question-answer (QA) pairs linking genetic mutations to their functional consequences as described in the biomedical literature. Each record pairs a protein-coding mutation with a natural-language question and an evidence-backed answer anchored to sentences in one of 27,442 open-access PubMed Central articles, spanning 6,620 genes and 125,593 gene-varian",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.27.762236.full"
+        },
+        {
+          "term": "medical",
+          "excerpt": ", a dataset of 330,387 citation-grounded question-answer (QA) pairs linking genetic mutations to their functional consequences as described in the biomedical literature. Each record pairs a protein-coding mutation with a natural-language question and an evidence-backed answer anchored to sentences in one of 27,442 open-access PubMed Central articles, spanning 6,620 genes and 125,593 gene-varian",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.27.762236.full"
+        },
+        {
+          "term": "proteomic",
+          "excerpt": "families by 20.0-28.6 percentage points, demonstrating the framework's ability to improve the reliability of LLM answers. We also apply CrossValQA to proteomics, providing a proof of concept for its use beyond mutation-specific QA. We release the dataset, construction framework, and evaluation code. We introduce MutQA, a dataset of 330,387 citation-grounded question-answer (QA) pairs linking gene",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.27.762236.full"
+        },
+        {
+          "term": "proteomics",
+          "excerpt": "families by 20.0-28.6 percentage points, demonstrating the framework's ability to improve the reliability of LLM answers. We also apply CrossValQA to proteomics, providing a proof of concept for its use beyond mutation-specific QA. We release the dataset, construction framework, and evaluation code. We introduce MutQA, a dataset of 330,387 citation-grounded question-answer (QA) pairs linking genet",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.27.762236.full"
+        }
+      ],
+      "related_benchmarks": [
+        "MutQA",
+        "CrossValQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 37,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.10.27.762236.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "acb42fc427db979ec87b30e5d3eaefbfebecd9194baad000252391816e903306",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.10.26.26366562",
+      "slug": "doi-10-64898-2026-10-26-26366562-e08db770dc",
+      "kind": "paper",
+      "title": "DiaBench: A Benchmarking Framework to Evaluate the Performance of LLMs in T2D Patient Education",
+      "abstract": "Background Effective type 2 diabetes (T2D) education improves patient outcomes, but clinician time constraints limit what can be covered during encounters. Large language models (LLMs) offer a scalable way to answer patient questions, yet their accuracy and reliability in T2D education across health literacy levels remain poorly characterized. Methods We developed DiaBench, a standardized benchmarking framework built from 96 question-and-answer pairs collected by clinicians from representative real-world patient encounters. GPT-5 transformed each pair into multiple-choice questions (MCQs) under three configurations (1-3) simulating different question formats and levels of user background. A five-member panel of certified diabetes care and education specialists (CDCESs), medical doctors (MDs), and endocrinologists validated the transformations, rating question rephrasing, answer rephrasing, and answer correctness. We then evaluated seven LLMs (GPT-51, Gemini-2.5-Flash2, Cohere Command3, Llama-44, DeepSeek-R15, Perplexity Sonar6, Mistral-Large-2.07) for accuracy and self-consistency across three runs. Results (i) Expert validation showed a consensus over MCQ transformation. For configuration 1, 98.1% (SD 0.01) of rephrased answers were appropriate, 98.1% (SD 0.01) of MCQ answers were correct, and 95.0% (SD 0.05) of rephrased questions were appropriate; corresponding values for configuration 2 were 96.3% (SD 0.05), 97.5% (SD 0.02), and 89.8% (SD 0.14). (ii) across benchmarking for configurations 1 and 2, most models achieved high accuracy ([&ge;]95%), but Mistral-Large-2.0, Llama 4, and Perplexity Sonar showed substantially lower self-consistency (60.4%-91.7%) than other models ([&ge;]95%). All models degraded in both accuracy and self-consistency on configuration 3. Conclusions DiaBench quantitatively differentiates LLM capability in T2D patient education, with Gemini, GPT-5, and DeepSeek-R1 performing strongly and other models suboptimally. DiaBench provides a transferable platform for evaluating existing and newly developed LLMs, addressing the need for standardized benchmarking before clinical deployment of LLM-based systems in patient education.",
+      "authors": [
+        "Li, Y.",
+        "Syna, S.",
+        "Zhang, C.",
+        "Kunisetty, B.",
+        "Healey, E.",
+        "Scheideman, A.",
+        "Shao, M.",
+        "Meng, H.",
+        "Lin, Y. K.",
+        "Kohlenberg, J.",
+        "Zhang, Y.",
+        "Klonoff, D. C.",
+        "Simos, A.",
+        "Basina, M.",
+        "Snyder, M.",
+        "Chen, H.",
+        "Wang, T."
+      ],
+      "source": "medrxiv",
+      "published_at": "2026-10-29T00:00:00+00:00",
+      "updated_at": "2026-10-29T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by_nc_nd",
+      "identifiers": {
+        "doi": "10.64898/2026.10.26.26366562"
+      },
+      "links": {
+        "abs": "https://www.medrxiv.org/content/10.64898/2026.10.26.26366562",
+        "pdf": "https://www.medrxiv.org/content/10.64898/2026.10.26.26366562.full.pdf",
+        "html": "https://www.medrxiv.org/content/10.64898/2026.10.26.26366562.full"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "DiaBench: A Benchmarking Framework to Evaluate the Performance of LLMs in T2D Patient Education Background Effective type 2 diabetes (T2D) education improves patient outcomes, but clinician time constraints limit what can be covered during encounters. Large lan",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.26.26366562.full"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "DiaBench: A Benchmarking Framework to Evaluate the Performance of LLMs in T2D Patient Education Background Effective type 2 diabetes (T2D) education improves patient outcomes, but clinician time constraints limit what can be covered during encounters. Large langua",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.26.26366562.full"
+        },
+        {
+          "term": "medical",
+          "excerpt": "mulating different question formats and levels of user background. A five-member panel of certified diabetes care and education specialists (CDCESs), medical doctors (MDs), and endocrinologists validated the transformations, rating question rephrasing, answer rephrasing, and answer correctness. We then evaluated seven LLMs (GPT-51, Gemini-2.5-Flash2, Cohere Command3, Llama-44, DeepSeek-R15, Per",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.26.26366562.full"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "DiaBench provides a transferable platform for evaluating existing and newly developed LLMs, addressing the need for standardized benchmarking before clinical deployment of LLM-based systems in patient education. Background Effective type 2 diabetes (T2D) education improves patient outcomes, but clinician time constraints limit what can be covered during encounters. Large language models (LLMs)",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.26.26366562.full"
+        },
+        {
+          "term": "patient",
+          "excerpt": "DiaBench: A Benchmarking Framework to Evaluate the Performance of LLMs in T2D Patient Education Background Effective type 2 diabetes (T2D) education improves patient outcomes, but clinician time constraints limit what can be covered during encounters. Large language models (LLMs) offer a scalable way to answer patient quest",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.26.26366562.full"
+        }
+      ],
+      "related_benchmarks": [
+        "DiaBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.26.26366562v1.full-text'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "5af13d56029f657d5b01847c6f2ce9f1b95e48b647f16f63733e43c4f8e5fc48",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}

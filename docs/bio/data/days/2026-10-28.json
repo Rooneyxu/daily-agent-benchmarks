@@ -1,7 +1,90 @@
 {
   "date": "2026-10-28",
-  "count": 1,
+  "count": 2,
   "entries": [
+    {
+      "id": "arxiv:2610.38220",
+      "slug": "arxiv-2610-38220-765c3f12d7",
+      "kind": "paper",
+      "title": "Rubricon: Automated Rubric Generation and Refinement for LLM Evaluation and Training",
+      "abstract": "Rubrics enable reward assignment on tasks without verifiable answers, but are expensive to manually produce from scratch. We present Rubricon, a pipeline that generates discriminative rubrics without requiring human preference labels, rubric annotation, or generator-model training. Using any LLM, Rubricon samples multiple rubrics, selects the most discriminative candidate, adds criteria to capture overlooked requirements or response flaws, and prunes criteria that are misaligned or shallow. Alongside LLM self-critique and test-time scaling, Rubricon uses observed criterion pass rates on example model responses to guide refinement. Across five professional, consumer, clinical, and general-use LLM benchmarks, Rubricon produces rubrics whose scores of frontier LLM responses exhibit 9% greater alignment with labor-intensive expert-authored rubrics, compared to the best alternative synthetic rubric generation method among RRD, QSRG, OpenRubrics, and agentic generation via harnesses like Codex. On HealthBench, post-training a Qwen3.5-9B model with Rubricon rubrics yields 4.5% better performance than training with rubrics from the strongest alternative synthetic rubric generator, RRD.",
+      "authors": [
+        "Ulyana Tkachenko",
+        "Hui Wen Goh",
+        "Guram Gogia",
+        "Jonas Mueller"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-28T03:18:11+00:00",
+      "updated_at": "2026-10-28T03:18:11+00:00",
+      "priority": "P0",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.38220"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.38220v1",
+        "pdf": "https://arxiv.org/pdf/2610.38220v1",
+        "code": "https://github.com/openai/codex/tree/main/sdk/python",
+        "html": "https://arxiv.org/html/2610.38220"
+      },
+      "evidence": [
+        {
+          "term": "Automated Rubric Generation",
+          "excerpt": "Rubricon: Automated Rubric Generation and Refinement for LLM Evaluation and Training Rubrics enable reward assignment on tasks without verifiable answers, but are expensive to manually produce from scratch. We present Rubricon, a pipeline that generates discriminative rubrics",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.38220"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "uses observed criterion pass rates on example model responses to guide refinement. Across five professional, consumer, clinical, and general-use LLM benchmarks, Rubricon produces rubrics whose scores of frontier LLM responses exhibit 9% greater alignment with labor-intensive expert-authored rubrics, compared to the best alternative synthetic rubric generation method among RRD, QSRG, OpenRubrics,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.38220"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "nd test-time scaling, Rubricon uses observed criterion pass rates on example model responses to guide refinement. Across five professional, consumer, clinical, and general-use LLM benchmarks, Rubricon produces rubrics whose scores of frontier LLM responses exhibit 9% greater alignment with labor-intensive expert-authored rubrics, compared to the best alternative synthetic rubric generation metho",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.38220"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "ub.com/openai/codex/tree/main/sdk/python openai-codex Python package Cited by: Appendix G , §5.4 . Qwen Team (2026) Qwen Team Qwen3.5: towards native multimodal agents . External Links: Link Cited by: §7 . Rao and Callison-Burch (2026) D. Rao and C. Callison-Burch Autorubric: a unified framework for rubric-based LLM evaluation . arXiv preprint arXiv:2603.00077 . Cited by: §2 , §4.1 . Rezaei et al",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.38220"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "quality as models continue to improve beyond the most advanced LLMs considered in our experiments. As models are increasingly trained as agentic and multi-agent systems, an agentic or multi-agent approach to rubric generation may one day surpass Rubricon. Rubricon relies heavily on model-derived signals and the resulting automatically generated rubrics are far from perfect. Because it is compatibl",
+          "location": "Limitations",
+          "source_url": "https://arxiv.org/html/2610.38220"
+        }
+      ],
+      "related_benchmarks": [
+        "HealthBench",
+        "ProfBench",
+        "PRBench",
+        "RubricBench",
+        "BankerToolBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "match_score": 17,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "e2c77e7153669470acbcdc2df3f332ceba73005886c31635deae21a896a28045",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "methodology"
+    },
     {
       "id": "doi:10.64898/2026.10.27.26366650",
       "slug": "doi-10-64898-2026-10-27-26366650-58ee28fa1e",

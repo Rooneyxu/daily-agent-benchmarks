@@ -1,7 +1,110 @@
 {
   "date": "2026-10-27",
-  "count": 3,
+  "count": 4,
   "entries": [
+    {
+      "id": "arxiv:2610.37851",
+      "slug": "arxiv-2610-37851-21e148569a",
+      "kind": "paper",
+      "title": "Evaluating and improving AI agents for sequencing protocol understanding",
+      "abstract": "Existing scientific-agent benchmarks rarely evaluate whether agents can reconstruct the exact molecular structures and generation workflows specified by sequencing protocols, a capability critical for analyzing customized sequencing assays. We introduce LibStructBench, a document-grounded benchmark for reconstructing sequencing-library structures and molecular workflows. Our experiments show that frontier agents often produce approximately correct reconstructions but remain unreliable at exact reconstruction, particularly in molecular-state representation and workflow connectivity. Switching the underlying language model produced larger average performance differences than switching agent harnesses, with a statistically significant difference only for molecular-state reconstruction. Additional knowledge improved oligo-family recovery in a small pilot without improving mean molecular-workflow scores. Autonomous accumulation of procedural rules and cross-protocol examples showed non-monotonic validation performance and no mean held-out molecular-workflow improvement in the tested trajectory. These findings highlight the need for more controlled and verifiable approaches to scientific reasoning about molecular processes in complex experimental protocols.",
+      "authors": [
+        "Chi-Lam Poon",
+        "Michael Goneos",
+        "Zezheng Song",
+        "Xi Chen"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-27T18:58:58+00:00",
+      "updated_at": "2026-10-27T18:58:58+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.37851"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.37851v1",
+        "pdf": "https://arxiv.org/pdf/2610.37851v1",
+        "code": "https://github.com/seqmachines/libstruct-bench",
+        "data": "https://huggingface.co/datasets/sequencing",
+        "html": "https://arxiv.org/html/2610.37851"
+      },
+      "evidence": [
+        {
+          "term": "We introduce LibStructBench",
+          "excerpt": "ct molecular structures and generation workflows specified by sequencing protocols, a capability critical for analyzing customized sequencing assays. We introduce LibStructBench, a document-grounded benchmark for reconstructing sequencing-library structures and molecular workflows. Our experiments show that frontier agents often produce approximately correct reconstructions but remain unreliable at exact reconstru",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.37851"
+        },
+        {
+          "term": "We introduce LibStructBench, a document-grounded benchmark",
+          "excerpt": "ct molecular structures and generation workflows specified by sequencing protocols, a capability critical for analyzing customized sequencing assays. We introduce LibStructBench, a document-grounded benchmark for reconstructing sequencing-library structures and molecular workflows. Our experiments show that frontier agents often produce approximately correct reconstructions but remain unreliable at exact reconstruction, particularly in molecula",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.37851"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Evaluating and improving AI agents for sequencing protocol understanding Existing scientific-agent benchmarks rarely evaluate whether agents can reconstruct the exact molecular structures and generation workflows specified by sequencing protocols, a capability critical for analyzing customized sequencing assays. We introduce LibStructBench, a doc",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.37851"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "Evaluating and improving AI agents for sequencing protocol understanding Existing scientific-agent benchmarks rarely evaluate whether agents can reconstruct the exact molecular structures and generation workflows specified by sequencing protocols, a capability critical for analyzing customized sequencing assays. We introduce LibStructBench, a docu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.37851"
+        },
+        {
+          "term": "molecular",
+          "excerpt": "proving AI agents for sequencing protocol understanding Existing scientific-agent benchmarks rarely evaluate whether agents can reconstruct the exact molecular structures and generation workflows specified by sequencing protocols, a capability critical for analyzing customized sequencing assays. We introduce LibStructBench, a document-grounded benchmark for reconstructing sequencing-library struc",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.37851"
+        },
+        {
+          "term": "Multimodal",
+          "excerpt": "n, reverse transcription, and amplification. Review Methods and applications for single-cell and spatial multi-omics , Vandereyken et al. 2023 [ 34 ] Multimodal branching, combinatorial indexing, tagmentation, and template switching. Review Chromatin accessibility profiling methods , Minnoye et al. 2021 [ 24 ] Fragmentation, Tn5 tagmentation, adaptor addition, indexing, and amplification. Research",
+          "location": "Appendix I External knowledge for agent improvement",
+          "source_url": "https://arxiv.org/html/2610.37851"
+        },
+        {
+          "term": "experimental protocols",
+          "excerpt": "jectory. These findings highlight the need for more controlled and verifiable approaches to scientific reasoning about molecular processes in complex experimental protocols. [[SECTION Evaluating and improving AI agents for sequencing protocol understanding]] Evaluating and improving AI agents for sequencing protocol understanding Content selection saved. Describe the issue below: NeurIPS 2026 Workshops [[SECT",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.37851"
+        },
+        {
+          "term": "research agents",
+          "excerpt": "able S4 . [35] Y. Wan, T. Fang, Z. Li, Y. Huo, W. Wang, H. Mi, D. Yu, and M. R. Lyu (2026) Inference-time scaling of verification: self-evolving deep research agents via test-time rubric-guided verification . In Findings of the Association for Computational Linguistics: ACL 2026 , pp. 24822–24835 . External Links: Document Cited by: Appendix A . [36] B. Wang, C. Xu, X. Zhao, L. Ouyang, F. Wu, Z. Zhao,",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.37851"
+        }
+      ],
+      "related_benchmarks": [
+        "LibStructBench",
+        "DrugDiscoveryBench",
+        "ScienceAgentBench",
+        "BiomniBench",
+        "VirBench",
+        "LAB-Bench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 21,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "586bb4ed22a164756729fa6ce5e964065911bc0bf0279a2ae6343a519c4a57fe",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
     {
       "id": "arxiv:2610.37081",
       "slug": "arxiv-2610-37081-fbed41c13e",
