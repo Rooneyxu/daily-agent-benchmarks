@@ -1,6 +1,6 @@
 {
   "date": "2026-10-29",
-  "count": 4,
+  "count": 5,
   "entries": [
     {
       "id": "arxiv:2610.39744",
@@ -344,11 +344,89 @@
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
       "match_score": 19,
       "extraction_status": "incomplete",
-      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.26.26366562v1.full-text'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.26.26366562.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
       "content_hash": "5af13d56029f657d5b01847c6f2ce9f1b95e48b647f16f63733e43c4f8e5fc48",
       "is_seed": false,
       "topic": "general_text",
       "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.1007/s10278-026-02430-z",
+      "slug": "doi-10-1007-s10278-026-02430-z-a02cdeb2cf",
+      "kind": "paper",
+      "title": "Measuring Data Leakage in the Absence of Patient Identifiers: A Public Kidney CT Benchmark and a Transferable Screen.",
+      "abstract": "Data leakage between training and test partitions inflates measured performance independently of a model's ability to generalise. In medical imaging its commonest form is images of one patient or acquisition in both partitions. Detecting it requires knowing which images share an origin, the field public datasets strip before release. This study measures leakage where that field is absent, in a widely used public kidney computed tomography (CT) dataset. The aim is not to restore patient identity but to recover enough of the grouping to split above the image level, and to measure what its absence has cost. A 64-bit perceptual hash read along the distributed file order resolved the 12,446 images into 219 recovered groups. These are units at the level of the acquisition, not the patient; the number of patients and their spread across groups and classes stays out of reach. Against a dataset carrying identifiers the rule divided single patients across groups more often than it merged them, so every difference reported is a lower bound. In a matched design that requires no patient identity, each of three models, trained once, scored 8.18 to 12.01 accuracy points lower on unseen groups than on seen ones, every cluster-bootstrap interval excluding zero. A nearest-neighbour rule with no learned parameters classified every test image correctly under random splitting. Of 59 studies using the dataset, two state the level at which they split. A duplicate screen applied to six further public releases returned verified overlap in three. The recovered image-to-group assignment is released.",
+      "authors": [
+        "Uçar G."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-10-29T00:00:00+00:00",
+      "updated_at": "2026-10-30T00:00:00+00:00",
+      "priority": "P2",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.1007/s10278-026-02430-z",
+        "pmid": "42955168"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/42955168"
+      },
+      "evidence": [
+        {
+          "term": "Measuring Data Leakage",
+          "excerpt": "Measuring Data Leakage in the Absence of Patient Identifiers: A Public Kidney CT Benchmark and a Transferable Screen. Data leakage between training and test partitions inflates measured performance independently of a model's ability to generalise. In medical ima",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42955168"
+        },
+        {
+          "term": "Data leakage between training and test partitions inflates measured",
+          "excerpt": "Measuring Data Leakage in the Absence of Patient Identifiers: A Public Kidney CT Benchmark and a Transferable Screen. Data leakage between training and test partitions inflates measured performance independently of a model's ability to generalise. In medical imaging its commonest form is images of one patient or acquisition in both partitions. Detecting it requires knowing which images share an origin, the field public da",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42955168"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Measuring Data Leakage in the Absence of Patient Identifiers: A Public Kidney CT Benchmark and a Transferable Screen. Data leakage between training and test partitions inflates measured performance independently of a model's ability to generalise. In medical imaging its commonest form is images of one patient or acquisition in b",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42955168"
+        },
+        {
+          "term": "medical",
+          "excerpt": "sferable Screen. Data leakage between training and test partitions inflates measured performance independently of a model's ability to generalise. In medical imaging its commonest form is images of one patient or acquisition in both partitions. Detecting it requires knowing which images share an origin, the field public datasets strip before release. This study measures leakage where that field",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42955168"
+        },
+        {
+          "term": "medical imaging",
+          "excerpt": "sferable Screen. Data leakage between training and test partitions inflates measured performance independently of a model's ability to generalise. In medical imaging its commonest form is images of one patient or acquisition in both partitions. Detecting it requires knowing which images share an origin, the field public datasets strip before release. This study measures leakage where that field is abse",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42955168"
+        },
+        {
+          "term": "patient",
+          "excerpt": "Measuring Data Leakage in the Absence of Patient Identifiers: A Public Kidney CT Benchmark and a Transferable Screen. Data leakage between training and test partitions inflates measured performance independently of a model's ability to generalise. In medical imaging its commonest form is",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42955168"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "match_score": 24,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "3eccd3c811814b29d6d2b7bdca50a52654dea2b019f2bd62c6ddd2c6a9948260",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "audit"
     }
   ]
 }

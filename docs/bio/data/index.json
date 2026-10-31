@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-30T10:57:31Z",
-  "total": 195,
+  "generated_at": "2026-10-31T10:29:51Z",
+  "total": 197,
   "counts": {
     "topics": {
-      "general_text": 75,
+      "general_text": 76,
       "biosafety": 18,
-      "experiment_agent": 53,
+      "experiment_agent": 54,
       "multimodal": 49
     },
     "contribution_types": {
-      "new_benchmark": 160,
-      "methodology": 20,
-      "audit": 15
+      "new_benchmark": 161,
+      "audit": 16,
+      "methodology": 20
     },
     "kinds": {
-      "paper": 195
+      "paper": 197
     },
     "evaluation_contexts": {
-      "beneficial_capability": 177,
+      "beneficial_capability": 179,
       "biosecurity_misuse": 18
     }
   },
@@ -59,48 +59,48 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-10-30T10:57:57Z",
-      "finished_at": "2026-10-30T10:58:28Z",
-      "discovered": 51,
-      "published": 30,
+      "started_at": "2026-10-31T10:30:11Z",
+      "finished_at": "2026-10-31T10:30:45Z",
+      "discovered": 37,
+      "published": 20,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-10-30T10:58:28Z",
-      "finished_at": "2026-10-30T10:58:33Z",
-      "discovered": 106,
-      "published": 62,
+      "started_at": "2026-10-31T10:30:45Z",
+      "finished_at": "2026-10-31T10:30:50Z",
+      "discovered": 112,
+      "published": 66,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-30T10:58:33Z",
-      "finished_at": "2026-10-30T10:59:54Z",
-      "discovered": 1086,
-      "published": 73,
+      "started_at": "2026-10-31T10:30:50Z",
+      "finished_at": "2026-10-31T10:31:40Z",
+      "discovered": 1276,
+      "published": 83,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-30T10:59:54Z",
-      "finished_at": "2026-10-30T11:00:37Z",
-      "discovered": 341,
-      "published": 42,
+      "started_at": "2026-10-31T10:31:40Z",
+      "finished_at": "2026-10-31T10:32:03Z",
+      "discovered": 289,
+      "published": 33,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-10-30T11:00:37Z",
-      "finished_at": "2026-10-30T11:00:37Z",
+      "started_at": "2026-10-31T10:32:03Z",
+      "finished_at": "2026-10-31T10:32:03Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
@@ -109,12 +109,13 @@
   "days": [
     {
       "date": "2026-10-29",
-      "count": 4,
+      "count": 5,
       "entry_ids": [
         "arxiv:2610.39744",
         "doi:10.64898/2026.10.28.26366693",
         "doi:10.64898/2026.10.27.762236",
-        "doi:10.64898/2026.10.26.26366562"
+        "doi:10.64898/2026.10.26.26366562",
+        "doi:10.1007/s10278-026-02430-z"
       ]
     },
     {
@@ -127,12 +128,13 @@
     },
     {
       "date": "2026-10-27",
-      "count": 4,
+      "count": 5,
       "entry_ids": [
         "arxiv:2610.37851",
         "arxiv:2610.37081",
         "arxiv:2610.36513",
-        "doi:10.21203/rs.3.rs-11493680/v1"
+        "doi:10.21203/rs.3.rs-11493680/v1",
+        "doi:10.1038/s44482-026-00039-1"
       ]
     },
     {
@@ -1210,11 +1212,89 @@
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
       "match_score": 19,
       "extraction_status": "incomplete",
-      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.26.26366562v1.full-text'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.26.26366562.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
       "content_hash": "5af13d56029f657d5b01847c6f2ce9f1b95e48b647f16f63733e43c4f8e5fc48",
       "is_seed": false,
       "topic": "general_text",
       "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.1007/s10278-026-02430-z",
+      "slug": "doi-10-1007-s10278-026-02430-z-a02cdeb2cf",
+      "kind": "paper",
+      "title": "Measuring Data Leakage in the Absence of Patient Identifiers: A Public Kidney CT Benchmark and a Transferable Screen.",
+      "abstract": "Data leakage between training and test partitions inflates measured performance independently of a model's ability to generalise. In medical imaging its commonest form is images of one patient or acquisition in both partitions. Detecting it requires knowing which images share an origin, the field public datasets strip before release. This study measures leakage where that field is absent, in a widely used public kidney computed tomography (CT) dataset. The aim is not to restore patient identity but to recover enough of the grouping to split above the image level, and to measure what its absence has cost. A 64-bit perceptual hash read along the distributed file order resolved the 12,446 images into 219 recovered groups. These are units at the level of the acquisition, not the patient; the number of patients and their spread across groups and classes stays out of reach. Against a dataset carrying identifiers the rule divided single patients across groups more often than it merged them, so every difference reported is a lower bound. In a matched design that requires no patient identity, each of three models, trained once, scored 8.18 to 12.01 accuracy points lower on unseen groups than on seen ones, every cluster-bootstrap interval excluding zero. A nearest-neighbour rule with no learned parameters classified every test image correctly under random splitting. Of 59 studies using the dataset, two state the level at which they split. A duplicate screen applied to six further public releases returned verified overlap in three. The recovered image-to-group assignment is released.",
+      "authors": [
+        "Uçar G."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-10-29T00:00:00+00:00",
+      "updated_at": "2026-10-30T00:00:00+00:00",
+      "priority": "P2",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.1007/s10278-026-02430-z",
+        "pmid": "42955168"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/42955168"
+      },
+      "evidence": [
+        {
+          "term": "Measuring Data Leakage",
+          "excerpt": "Measuring Data Leakage in the Absence of Patient Identifiers: A Public Kidney CT Benchmark and a Transferable Screen. Data leakage between training and test partitions inflates measured performance independently of a model's ability to generalise. In medical ima",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42955168"
+        },
+        {
+          "term": "Data leakage between training and test partitions inflates measured",
+          "excerpt": "Measuring Data Leakage in the Absence of Patient Identifiers: A Public Kidney CT Benchmark and a Transferable Screen. Data leakage between training and test partitions inflates measured performance independently of a model's ability to generalise. In medical imaging its commonest form is images of one patient or acquisition in both partitions. Detecting it requires knowing which images share an origin, the field public da",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42955168"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Measuring Data Leakage in the Absence of Patient Identifiers: A Public Kidney CT Benchmark and a Transferable Screen. Data leakage between training and test partitions inflates measured performance independently of a model's ability to generalise. In medical imaging its commonest form is images of one patient or acquisition in b",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42955168"
+        },
+        {
+          "term": "medical",
+          "excerpt": "sferable Screen. Data leakage between training and test partitions inflates measured performance independently of a model's ability to generalise. In medical imaging its commonest form is images of one patient or acquisition in both partitions. Detecting it requires knowing which images share an origin, the field public datasets strip before release. This study measures leakage where that field",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42955168"
+        },
+        {
+          "term": "medical imaging",
+          "excerpt": "sferable Screen. Data leakage between training and test partitions inflates measured performance independently of a model's ability to generalise. In medical imaging its commonest form is images of one patient or acquisition in both partitions. Detecting it requires knowing which images share an origin, the field public datasets strip before release. This study measures leakage where that field is abse",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42955168"
+        },
+        {
+          "term": "patient",
+          "excerpt": "Measuring Data Leakage in the Absence of Patient Identifiers: A Public Kidney CT Benchmark and a Transferable Screen. Data leakage between training and test partitions inflates measured performance independently of a model's ability to generalise. In medical imaging its commonest form is",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42955168"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "match_score": 24,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "3eccd3c811814b29d6d2b7bdca50a52654dea2b019f2bd62c6ddd2c6a9948260",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "audit"
     },
     {
       "id": "arxiv:2610.38220",
@@ -1721,6 +1801,87 @@
       "contribution_type": "new_benchmark"
     },
     {
+      "id": "doi:10.1038/s44482-026-00039-1",
+      "slug": "doi-10-1038-s44482-026-00039-1-c1f95a81a2",
+      "kind": "paper",
+      "title": "PVminerLLM: structured extraction of patient voice from patient-generated text using large language models.",
+      "abstract": "Patient-generated text contains critical information about patients' lived experiences, social circumstances, and engagement in care, including factors that strongly influence adherence, care coordination, and health equity. However, these patient voice signals are rarely available in structured form, limiting their use in patient-centered outcomes research and clinical quality improvement. Reliable extraction of such information is therefore essential for understanding and addressing non-clinical drivers of health outcomes at scale. We introduce PVminer, a benchmark for structured extraction of patient voice, and propose PVminerLLM, a supervised fine-tuned large language model tailored to this task. Across multiple datasets and model sizes, PVminerLLM substantially outperforms prompt-based baselines, achieving up to 84.18% F1 for Code prediction, 81.39% F1 for Sub-code prediction, and 88.24% F1 for evidence Span extraction. Notably, strong performance is achieved even with smaller models, demonstrating that reliable patient voice extraction is feasible without extreme model scale. These results enable scalable analysis of social and experiential signals embedded in patient-generated text.",
+      "authors": [
+        "Jamal Fodeh S",
+        "Ma L",
+        "Puthiaraju G",
+        "Talakokkul S",
+        "Khan A",
+        "Hagaman A",
+        "Lowe S",
+        "Roundtree A."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-10-27T00:00:00+00:00",
+      "updated_at": "2026-10-30T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc by",
+      "identifiers": {
+        "doi": "10.1038/s44482-026-00039-1",
+        "pmid": "42952888",
+        "pmcid": "PMC13713561"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/42952888",
+        "html": "https://europepmc.org/article/MED/42952888"
+      },
+      "evidence": [
+        {
+          "term": "We introduce PVminer, a benchmark",
+          "excerpt": "nt. Reliable extraction of such information is therefore essential for understanding and addressing non-clinical drivers of health outcomes at scale. We introduce PVminer, a benchmark for structured extraction of patient voice, and propose PVminerLLM, a supervised fine-tuned large language model tailored to this task. Across multiple datasets and model sizes, PVminerLLM substantially outperforms prompt-based baselines,",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42952888"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "of such information is therefore essential for understanding and addressing non-clinical drivers of health outcomes at scale. We introduce PVminer, a benchmark for structured extraction of patient voice, and propose PVminerLLM, a supervised fine-tuned large language model tailored to this task. Across multiple datasets and model sizes, PVminerLLM substantially outperforms prompt-based baselines,",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42952888"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "th equity. However, these patient voice signals are rarely available in structured form, limiting their use in patient-centered outcomes research and clinical quality improvement. Reliable extraction of such information is therefore essential for understanding and addressing non-clinical drivers of health outcomes at scale. We introduce PVminer, a benchmark for structured extraction of patient v",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42952888"
+        },
+        {
+          "term": "patient",
+          "excerpt": "PVminerLLM: structured extraction of patient voice from patient-generated text using large language models. Patient-generated text contains critical information about patients' lived experiences, social circumstances, and engagement in care, including factors that strongly influence",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42952888"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "y large and complex due to the hierarchical schema, strict output constraints, and need for disambiguation rules. A promising next step is the use of multi-agent or modular inference frameworks, where distinct agents handle complementary subtasks such as semantic interpretation, label selection, and Span verification. Decomposing the task in this way may reduce prompt complexity while improving rob",
+          "location": "Discussion",
+          "source_url": "https://europepmc.org/article/MED/42952888"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 15,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "adb0bbb61d9f0dc26a615f6ed3c0151affdba77c7dec35a6e246575ef7bdf9f4",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "arxiv:2610.35847",
       "slug": "arxiv-2610-35847-8205c1adb3",
       "kind": "paper",
@@ -1826,7 +1987,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 40,
+      "match_score": 36,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "400053365b22eecbf680bc155921779e4094b29e5d26a6bccd1ac451a1390d61",
