@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-31T10:29:51Z",
+  "generated_at": "2026-11-01T11:24:31Z",
   "total": 197,
   "counts": {
     "topics": {
@@ -59,48 +59,48 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-10-31T10:30:11Z",
-      "finished_at": "2026-10-31T10:30:45Z",
-      "discovered": 37,
-      "published": 20,
+      "started_at": "2026-11-01T11:24:51Z",
+      "finished_at": "2026-11-01T11:25:12Z",
+      "discovered": 24,
+      "published": 13,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
-      "status": "success",
-      "started_at": "2026-10-31T10:30:45Z",
-      "finished_at": "2026-10-31T10:30:50Z",
-      "discovered": 112,
-      "published": 66,
-      "error": ""
+      "status": "failed",
+      "started_at": "2026-11-01T11:25:12Z",
+      "finished_at": "2026-11-01T11:25:13Z",
+      "discovered": 0,
+      "published": 0,
+      "error": "Server error '503 ' for url 'https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=FIRST_PDATE%3A%5B2026-10-28+TO+2026-11-01%5D+AND+%28TITLE_ABS%3A%22benchmark%22+OR+TITLE_ABS%3A%22benchmarking%22+OR+TITLE_ABS%3A%22evaluation+suite%22+OR+TITLE_ABS%3A%22evaluation+dataset%22+OR+TITLE_ABS%3A%22challenge+set%22%29+AND+%28TITLE_ABS%3A%22biomedical%22+OR+TITLE_ABS%3A%22medical%22+OR+TITLE_ABS%3A%22clinical%22+OR+TITLE_ABS%3A%22biology%22+OR+TITLE_ABS%3A%22biological%22+OR+TITLE_ABS%3A%22life+science%22+OR+TITLE_ABS%3A%22genomics%22+OR+TITLE_ABS%3A%22proteomics%22+OR+TITLE_ABS%3A%22wet+lab%2"
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-31T10:30:50Z",
-      "finished_at": "2026-10-31T10:31:40Z",
-      "discovered": 1276,
-      "published": 83,
+      "started_at": "2026-11-01T11:25:13Z",
+      "finished_at": "2026-11-01T11:27:04Z",
+      "discovered": 1080,
+      "published": 64,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-10-31T10:31:40Z",
-      "finished_at": "2026-10-31T10:32:03Z",
-      "discovered": 289,
-      "published": 33,
+      "started_at": "2026-11-01T11:27:04Z",
+      "finished_at": "2026-11-01T11:27:20Z",
+      "discovered": 297,
+      "published": 35,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-10-31T10:32:03Z",
-      "finished_at": "2026-10-31T10:32:03Z",
+      "started_at": "2026-11-01T11:27:20Z",
+      "finished_at": "2026-11-01T11:27:21Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
@@ -1384,7 +1384,7 @@
       "slug": "doi-10-64898-2026-10-27-26366650-58ee28fa1e",
       "kind": "paper",
       "title": "EM-BENCH: A Reproducible Framework for Benchmarking Guideline-Concordant Clinical Decision Making in Large Language Models",
-      "abstract": "Background Physicians increasingly use artificial intelligence tools to support clinical work, yet there is no accepted standard for measuring the competency of large language models (LLMs) in clinical decision support. We developed EM-BENCH, a physician-validated, deterministically scored benchmark for evaluating whether models reliably apply the American College of Emergency Physicians (ACEP) guidelines to clinical decisions. Methods EM-BENCH comprises 210 binary clinical vignettes covering all 70 critical questions across 25 ACEP clinical policies. We evaluated 149 LLM configurations representing 79 base models using prespecified answers and deterministic scoring. Each vignette had a prespecified correct answer to a binary yes-or-no question based on an ACEP recommendation. We examined associations between accuracy and model access tier (closed-access vs. open-weight models), model size, release date, clinical policy, recommendation evidence level, and reasoning settings. Results No configuration achieved complete guideline concordance. The highest performing configuration answered 207 of 210 vignettes correctly (98.6%). Closed-access models outperformed open-weight models (median accuracy, 91% vs. 63%; Hodges-Lehmann location shift, 26 percentage points; 99% CI, 20 to 33; adjusted P<0.001). Among open-weight model families, a 10-fold increase in parameter count was associated with a 14-percentage-point increase in accuracy (99% CI, 7.7 to 20; adjusted P<0.001). Across all models, accuracy increased by 8.9 percentage points per release year (99% CI, 3.6 to 14; adjusted P<0.001). Neither enabling a thinking mode (pseudomedian change, 0.95 percentage points; 99% CI, -2.6 to 3.1; adjusted P=1.00) nor high versus low reasoning effort (0.91 percentage points; 99% CI, -0.69 to 3.1; adjusted P=0.56) consistently improved accuracy. Conclusions Contemporary LLMs showed improving but incomplete ability to apply ACEP guidelines. Concordance varied markedly across models and was associated with access tier, size, and release recency, while additional inference-time reasoning offered inconsistent benefit. Specialty-specific, physician-validated benchmarks may provide a reproducible assessment of LLMs' ability to make guideline-concordant clinical decisions.",
+      "abstract": "BackgroundPhysicians increasingly use artificial intelligence tools to support clinical work, yet there is no accepted standard for measuring the competency of large language models (LLMs) in clinical decision support. We developed EM-BENCH, a physician-validated, deterministically scored benchmark for evaluating whether models reliably apply the American College of Emergency Physicians (ACEP) guidelines to clinical decisions.\n\nMethodsEM-BENCH comprises 210 binary clinical vignettes covering all 70 critical questions across 25 ACEP clinical policies. We evaluated 149 LLM configurations representing 79 base models using prespecified answers and deterministic scoring. Each vignette had a prespecified correct answer to a binary yes-or-no question based on an ACEP recommendation. We examined associations between accuracy and model access tier (closed-access vs. open-weight models), model size, release date, clinical policy, recommendation evidence level, and reasoning settings.\n\nResultsNo configuration achieved complete guideline concordance. The highest performing configuration answered 207 of 210 vignettes correctly (98.6%). Closed-access models outperformed open-weight models (median accuracy, 91% vs. 63%; Hodges-Lehmann location shift, 26 percentage points; 99% CI, 20 to 33; adjusted P<0.001). Among open-weight model families, a 10-fold increase in parameter count was associated with a 14-percentage-point increase in accuracy (99% CI, 7.7 to 20; adjusted P<0.001). Across all models, accuracy increased by 8.9 percentage points per release year (99% CI, 3.6 to 14; adjusted P<0.001). Neither enabling a thinking mode (pseudomedian change, 0.95 percentage points; 99% CI, -2.6 to 3.1; adjusted P=1.00) nor high versus low reasoning effort (0.91 percentage points; 99% CI, -0.69 to 3.1; adjusted P=0.56) consistently improved accuracy.\n\nConclusionsContemporary LLMs showed improving but incomplete ability to apply ACEP guidelines. Concordance varied markedly across models and was associated with access tier, size, and release recency, while additional inference-time reasoning offered inconsistent benefit. Specialty-specific, physician-validated benchmarks may provide a reproducible assessment of LLMs ability to make guideline-concordant clinical decisions.",
       "authors": [
         "Nguyen, N.",
         "Perice, L.",
@@ -1414,25 +1414,25 @@
       "evidence": [
         {
           "term": "benchmark",
-          "excerpt": "EM-BENCH: A Reproducible Framework for Benchmarking Guideline-Concordant Clinical Decision Making in Large Language Models Background Physicians increasingly use artificial intelligence tools to support clinical work, yet there is no accepted standard for measuring the competency of larg",
+          "excerpt": "EM-BENCH: A Reproducible Framework for Benchmarking Guideline-Concordant Clinical Decision Making in Large Language Models BackgroundPhysicians increasingly use artificial intelligence tools to support clinical work, yet there is no accepted standard for measuring the competency of large",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.27.26366650.full"
         },
         {
           "term": "benchmarks",
-          "excerpt": "cess tier, size, and release recency, while additional inference-time reasoning offered inconsistent benefit. Specialty-specific, physician-validated benchmarks may provide a reproducible assessment of LLMs' ability to make guideline-concordant clinical decisions. Background Physicians increasingly use artificial intelligence tools to support clinical work, yet there is no accepted standard for me",
+          "excerpt": "cess tier, size, and release recency, while additional inference-time reasoning offered inconsistent benefit. Specialty-specific, physician-validated benchmarks may provide a reproducible assessment of LLMs ability to make guideline-concordant clinical decisions. BackgroundPhysicians increasingly use artificial intelligence tools to support clinical work, yet there is no accepted standard for meas",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.27.26366650.full"
         },
         {
           "term": "benchmarking",
-          "excerpt": "EM-BENCH: A Reproducible Framework for Benchmarking Guideline-Concordant Clinical Decision Making in Large Language Models Background Physicians increasingly use artificial intelligence tools to support clinical work, yet there is no accepted standard for measuring the competency of large l",
+          "excerpt": "EM-BENCH: A Reproducible Framework for Benchmarking Guideline-Concordant Clinical Decision Making in Large Language Models BackgroundPhysicians increasingly use artificial intelligence tools to support clinical work, yet there is no accepted standard for measuring the competency of large la",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.27.26366650.full"
         },
         {
           "term": "clinical",
-          "excerpt": "EM-BENCH: A Reproducible Framework for Benchmarking Guideline-Concordant Clinical Decision Making in Large Language Models Background Physicians increasingly use artificial intelligence tools to support clinical work, yet there is no accepted standard for measuring the competency of large language models (LLMs) in clini",
+          "excerpt": "EM-BENCH: A Reproducible Framework for Benchmarking Guideline-Concordant Clinical Decision Making in Large Language Models BackgroundPhysicians increasingly use artificial intelligence tools to support clinical work, yet there is no accepted standard for measuring the competency of large language models (LLMs) in clinic",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.27.26366650.full"
         }
@@ -1446,7 +1446,7 @@
       "match_score": 16,
       "extraction_status": "incomplete",
       "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.27.26366650.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
-      "content_hash": "05b4fe3b22e28f0efde5652e7e4e39260f9ae669d032a3280c23751bab8be040",
+      "content_hash": "76a7f8220da0b2e3774409946e793f070d8acf5d63a5773ff6ff796c059e7332",
       "is_seed": false,
       "topic": "general_text",
       "contribution_type": "new_benchmark"
@@ -1546,7 +1546,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 21,
+      "match_score": 19,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "586bb4ed22a164756729fa6ce5e964065911bc0bf0279a2ae6343a519c4a57fe",
@@ -1620,7 +1620,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 14,
+      "match_score": 10,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "d2c12682e421b8b4c6df69d578100c5d9712b621acf8f8cc0505f327388aa4a5",
@@ -1727,7 +1727,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 31,
+      "match_score": 27,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "4f8521780efdf4a51f806700deca9b25c8e2c2bb016a62986af024d28ddcc590",
@@ -1873,7 +1873,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 15,
+      "match_score": 13,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "adb0bbb61d9f0dc26a615f6ed3c0151affdba77c7dec35a6e246575ef7bdf9f4",
