@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-01T11:24:31Z",
-  "total": 197,
+  "generated_at": "2026-11-02T12:43:14Z",
+  "total": 199,
   "counts": {
     "topics": {
+      "experiment_agent": 56,
       "general_text": 76,
       "biosafety": 18,
-      "experiment_agent": 54,
       "multimodal": 49
     },
     "contribution_types": {
-      "new_benchmark": 161,
+      "new_benchmark": 163,
       "audit": 16,
       "methodology": 20
     },
     "kinds": {
-      "paper": 197
+      "paper": 199
     },
     "evaluation_contexts": {
-      "beneficial_capability": 179,
+      "beneficial_capability": 181,
       "biosecurity_misuse": 18
     }
   },
@@ -59,48 +59,48 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-11-01T11:24:51Z",
-      "finished_at": "2026-11-01T11:25:12Z",
-      "discovered": 24,
+      "started_at": "2026-11-02T12:43:39Z",
+      "finished_at": "2026-11-02T12:44:05Z",
+      "discovered": 26,
       "published": 13,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
-      "status": "failed",
-      "started_at": "2026-11-01T11:25:12Z",
-      "finished_at": "2026-11-01T11:25:13Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "Server error '503 ' for url 'https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=FIRST_PDATE%3A%5B2026-10-28+TO+2026-11-01%5D+AND+%28TITLE_ABS%3A%22benchmark%22+OR+TITLE_ABS%3A%22benchmarking%22+OR+TITLE_ABS%3A%22evaluation+suite%22+OR+TITLE_ABS%3A%22evaluation+dataset%22+OR+TITLE_ABS%3A%22challenge+set%22%29+AND+%28TITLE_ABS%3A%22biomedical%22+OR+TITLE_ABS%3A%22medical%22+OR+TITLE_ABS%3A%22clinical%22+OR+TITLE_ABS%3A%22biology%22+OR+TITLE_ABS%3A%22biological%22+OR+TITLE_ABS%3A%22life+science%22+OR+TITLE_ABS%3A%22genomics%22+OR+TITLE_ABS%3A%22proteomics%22+OR+TITLE_ABS%3A%22wet+lab%2"
+      "status": "success",
+      "started_at": "2026-11-02T12:44:05Z",
+      "finished_at": "2026-11-02T12:44:23Z",
+      "discovered": 109,
+      "published": 58,
+      "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-11-01T11:25:13Z",
-      "finished_at": "2026-11-01T11:27:04Z",
-      "discovered": 1080,
-      "published": 64,
+      "started_at": "2026-11-02T12:44:23Z",
+      "finished_at": "2026-11-02T12:45:19Z",
+      "discovered": 833,
+      "published": 54,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-11-01T11:27:04Z",
-      "finished_at": "2026-11-01T11:27:20Z",
-      "discovered": 297,
-      "published": 35,
+      "started_at": "2026-11-02T12:45:19Z",
+      "finished_at": "2026-11-02T12:45:41Z",
+      "discovered": 234,
+      "published": 28,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-11-01T11:27:20Z",
-      "finished_at": "2026-11-01T11:27:21Z",
+      "started_at": "2026-11-02T12:45:41Z",
+      "finished_at": "2026-11-02T12:45:41Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
@@ -109,8 +109,10 @@
   "days": [
     {
       "date": "2026-10-29",
-      "count": 5,
+      "count": 7,
       "entry_ids": [
+        "arxiv:2610.41076",
+        "arxiv:2610.41015",
         "arxiv:2610.39744",
         "doi:10.64898/2026.10.28.26366693",
         "doi:10.64898/2026.10.27.762236",
@@ -871,6 +873,210 @@
   ],
   "entries": [
     {
+      "id": "arxiv:2610.41076",
+      "slug": "arxiv-2610-41076-62d5c7b96a",
+      "kind": "paper",
+      "title": "BABA-Bench: Evaluating Long-Horizon Patient-Advocacy Agents",
+      "abstract": "An LLM agent that helps a patient get care must do two things. It must reach the correct outcome, and it must follow the necessary procedure. For example, the agent must get the patient's permission before it shares the patient's records. We introduce BABA-Bench, a benchmark of 47 interactive worlds. We built each world from a de-identified, real patient advocacy case that expert advocates reviewed. In each world, the agent must find hidden information and coordinate insurers, clinics, suppliers, pharmacies, and community organizations. The engine checks each action at the time the agent does it. It checks if the agent has permission, if the agent has evidence for the action, and if the action is prohibited. We evaluated 14 frontier models with three runs on each world, for a total of 1,974 runs. Agents often reached the correct outcome by an invalid route. Of the 921 runs that reached all required outcomes, 254 (28%) did not follow the necessary procedure. Claude Opus 5 reached all required outcomes in 81.6% of its runs, but only 52.5% of its runs passed all checks. When we gave two models a verified route, their pass rates increased from 29.8% to 91.5% and from 44.0% to 97.2%. For these models, the main problem is to find a route, not to execute it.",
+      "authors": [
+        "Shriram Vasudevan",
+        "Videet Mehta",
+        "Connor Sweeney"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-29T23:46:24+00:00",
+      "updated_at": "2026-10-29T23:46:24+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.41076"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.41076v1",
+        "pdf": "https://arxiv.org/pdf/2610.41076v1",
+        "html": "https://arxiv.org/html/2610.41076"
+      },
+      "evidence": [
+        {
+          "term": "We introduce BABA-Bench",
+          "excerpt": "outcome, and it must follow the necessary procedure. For example, the agent must get the patient's permission before it shares the patient's records. We introduce BABA-Bench, a benchmark of 47 interactive worlds. We built each world from a de-identified, real patient advocacy case that expert advocates reviewed. In each world, the agent must find hidden information and coordinate insurers, clinics, suppliers,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.41076"
+        },
+        {
+          "term": "We introduce BABA-Bench, a benchmark",
+          "excerpt": "outcome, and it must follow the necessary procedure. For example, the agent must get the patient's permission before it shares the patient's records. We introduce BABA-Bench, a benchmark of 47 interactive worlds. We built each world from a de-identified, real patient advocacy case that expert advocates reviewed. In each world, the agent must find hidden information and coordinate insurers, clinics, suppliers, pharmacies, a",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.41076"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "the necessary procedure. For example, the agent must get the patient's permission before it shares the patient's records. We introduce BABA-Bench, a benchmark of 47 interactive worlds. We built each world from a de-identified, real patient advocacy case that expert advocates reviewed. In each world, the agent must find hidden information and coordinate insurers, clinics, suppliers, pharmacies, a",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.41076"
+        },
+        {
+          "term": "patient",
+          "excerpt": "BABA-Bench: Evaluating Long-Horizon Patient-Advocacy Agents An LLM agent that helps a patient get care must do two things. It must reach the correct outcome, and it must follow the necessary procedure. For example, the agent must get the patient's permission before it shares the pat",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.41076"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "n International Conference on Learning Representations (ICLR) , 2024. arXiv:2311.12983. [27] MiniMax. MiniMax M3: Frontier coding, 1m context, native multimodality—all in one model. MiniMax Research blog, June 2026. URL https://www.minimax.io/blog/minimax-m3 . [28] Moonshot AI. Kimi K3 model card. Hugging Face model repository, July 2026. URL https://huggingface.co/moonshotai/Kimi-K3 . [29] Harsha",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.41076"
+        },
+        {
+          "term": "tool-use",
+          "excerpt": "sks in self-hosted copies of real websites [ 42 ] . OSWorld scores 369 desktop tasks in full virtual machines [ 37 ] . GAIA checks the answers to 466 tool-use questions [ 26 ] , and AgentBench uses eight environments with different metrics [ 24 ] . In these benchmarks, no party hides information, sets a deadline, or sends the agent to a different party. Benchmarks with simulated parties. Some be",
+          "location": "Related work",
+          "source_url": "https://arxiv.org/html/2610.41076"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "Lai Wei, Jialong Tang, Wei Chen, Siyuan Wang, Zhongyu Wei, Jun Xie, Fei Huang, and Jingren Zhou. AI hospital: Benchmarking large language models in a multi-agent medical interaction simulator. In Proceedings of the 31st International Conference on Computational Linguistics , pages 10183–10213, Abu Dhabi, UAE, January 2025. Association for Computational Linguistics. URL https://aclanthology.org/2025",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2610.41076"
+        }
+      ],
+      "related_benchmarks": [
+        "AgentBench",
+        "MedQA",
+        "MedMCQA",
+        "HealthBench",
+        "SDBench",
+        "MedAgentBench",
+        "HealthAdminBench"
+      ],
+      "related_agent_url": "../../p/2610.41076.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 22,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "36c1a3dfad7951cbaf143811438ae3a5ac97c32d9c39037aac04fb2e9d3d98cb",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2610.41015",
+      "slug": "arxiv-2610-41015-9f1a61580b",
+      "kind": "paper",
+      "title": "Do Language Models Know What Compelling Scientific Evidence Looks Like?",
+      "abstract": "Expert scientists excel at weighing empirical findings from multiple sources that vary in both statistical reliability and epistemic relevance. To what extent are language models, which are increasingly driving autonomous discovery systems, capable of such evidence deliberation? We introduce EDB-Bio, a scientific reasoning benchmark curated from real-world data in three biological domains: drug-perturbation transcriptomics, CRISPR screens, and human genome-wide association studies (GWAS). Each of EDB-Bio's 96k episodes presents a sequence of experimental results from published studies and asks the model to predict the probability that a target hypothesis is true. Out-of-the-box, open-weight and frontier models alike demonstrate systematic underconfidence and attain Brier scores comparable to a trivial base-rate forecaster. Post-training against strictly proper scoring rules significantly improves both calibration and discrimination. This calibration pays off downstream: in a sequential experiment selection task, our Ibis0 model is 2.5 times more efficient than the best frontier model. Throughout, quantifying evidence weights as Bayes factors reveals how models update their beliefs over time, whether they agree with expert biologists on relevance, and where they exhibit inconsistencies and biases. Our work extends calibration training and uncertainty analysis to a realistic scientific forecasting setting with applications to human cancer biology. We release all code, data, and trained models.",
+      "authors": [
+        "Conor Igoe",
+        "Gabriel Grand",
+        "Zane Koch",
+        "Albert Bou",
+        "Eli Moss",
+        "Michaela M. Hinks",
+        "Samuel G. Rodriques",
+        "Andrew White",
+        "Siddharth Narayanan"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-29T21:51:23+00:00",
+      "updated_at": "2026-10-29T21:51:23+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2610.41015"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.41015v1",
+        "pdf": "https://arxiv.org/pdf/2610.41015v1",
+        "code": "https://github.com/EdisonScientific/ibis0",
+        "data": "https://huggingface.co/datasets/EdisonScientific/EDB-Bio",
+        "html": "https://arxiv.org/html/2610.41015"
+      },
+      "evidence": [
+        {
+          "term": "We introduce EDB-Bio, a scientific reasoning benchmark",
+          "excerpt": "ic relevance. To what extent are language models, which are increasingly driving autonomous discovery systems, capable of such evidence deliberation? We introduce EDB-Bio, a scientific reasoning benchmark curated from real-world data in three biological domains: drug-perturbation transcriptomics, CRISPR screens, and human genome-wide association studies (GWAS). Each of EDB-Bio's 96k episodes presents a sequence of experimental results from",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.41015"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "els, which are increasingly driving autonomous discovery systems, capable of such evidence deliberation? We introduce EDB-Bio, a scientific reasoning benchmark curated from real-world data in three biological domains: drug-perturbation transcriptomics, CRISPR screens, and human genome-wide association studies (GWAS). Each of EDB-Bio's 96k episodes presents a sequence of experimental results from",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.41015"
+        },
+        {
+          "term": "biology",
+          "excerpt": "iases. Our work extends calibration training and uncertainty analysis to a realistic scientific forecasting setting with applications to human cancer biology. We release all code, data, and trained models. [[SECTION 1Introduction]] 1Introduction Content selection saved. Describe the issue below: [[SECTION 1 Introduction]] 1 Introduction Experienced scientists are good at weighing evidence. Show",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.41015"
+        },
+        {
+          "term": "biological",
+          "excerpt": "iscovery systems, capable of such evidence deliberation? We introduce EDB-Bio, a scientific reasoning benchmark curated from real-world data in three biological domains: drug-perturbation transcriptomics, CRISPR screens, and human genome-wide association studies (GWAS). Each of EDB-Bio's 96k episodes presents a sequence of experimental results from published studies and asks the model to predict t",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.41015"
+        },
+        {
+          "term": "transcriptomic",
+          "excerpt": "ence deliberation? We introduce EDB-Bio, a scientific reasoning benchmark curated from real-world data in three biological domains: drug-perturbation transcriptomics, CRISPR screens, and human genome-wide association studies (GWAS). Each of EDB-Bio's 96k episodes presents a sequence of experimental results from published studies and asks the model to predict the probability that a target hypothesis is",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.41015"
+        },
+        {
+          "term": "genome",
+          "excerpt": "scientific reasoning benchmark curated from real-world data in three biological domains: drug-perturbation transcriptomics, CRISPR screens, and human genome-wide association studies (GWAS). Each of EDB-Bio's 96k episodes presents a sequence of experimental results from published studies and asks the model to predict the probability that a target hypothesis is true. Out-of-the-box, open-weight",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.41015"
+        },
+        {
+          "term": "cancer",
+          "excerpt": "s and biases. Our work extends calibration training and uncertainty analysis to a realistic scientific forecasting setting with applications to human cancer biology. We release all code, data, and trained models. [[SECTION 1Introduction]] 1Introduction Content selection saved. Describe the issue below: [[SECTION 1 Introduction]] 1 Introduction Experienced scientists are good at weighing eviden",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2610.41015"
+        },
+        {
+          "term": "troubleshooting",
+          "excerpt": "ments in which an agent must form hypotheses and run experiments [ 35 , 36 ] , and biology research workflows spanning literature retrieval, protocol troubleshooting, and study-scale computational analysis [ 78 , 37 , 79 , 38 ] . Literature agents answer questions by retrieving and synthesizing published evidence [ 80 ] . Closest in form to our task is claim verification, where SciFact and SciFact-Open",
+          "location": "Scientific reasoning and evidence benchmarks.",
+          "source_url": "https://arxiv.org/html/2610.41015"
+        }
+      ],
+      "related_benchmarks": [
+        "EvidenceDeliberationBench",
+        "GPQA",
+        "DiscoveryBench",
+        "ScienceAgentBench",
+        "BixBench",
+        "LABBench2",
+        "LAB-Bench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 26,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "d1119594e84cd98b3dddd4ac9907925bad74254e3fb9d426cb12e0ffdf7976d1",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "arxiv:2610.39744",
       "slug": "arxiv-2610-39744-121bbcf66b",
       "kind": "paper",
@@ -965,7 +1171,7 @@
       "slug": "doi-10-64898-2026-10-28-26366693-88eed4f7b6",
       "kind": "paper",
       "title": "Using iterative agentic retrieval-augmented generation to refine the risk of infection from social contexts during the COVID-19 pandemic: Development and Evaluation Study",
-      "abstract": "Background: Contact tracing is crucial to limit pathogen transmission and to gather epidemiological data. However, despite machine learning optimizations, it remains time-consuming. Large language models have been used for infection risk prediction, but no existing application converses with a user to adapt its risk estimates. Objective: We aimed to develop an iterative retrieval-augmented generation conversational framework to predict coronavirus disease 2019 (COVID-19) infection risk from textual social data. The conversational agent aims to gather personalized risk factors based on descriptions of social interactions. Methods: We trained a long short-term memory (LSTM) model to predict the risk of COVID-19 infection from 19,434 textual descriptions of social interactions, collected during the pandemic in the Leuven student community, in Belgium. We integrated this model into a Llama3.3-based conversational framework that iteratively gathers additional social information that may represent a risk of infection. We evaluated the framework using large language model (LLM)-as-a-judge metrics and by comparing its risk assessment in different social contexts. Results: Based solely on social interaction data, a fine-tuned RobBERT model predicted infection risk with an area under the receiver operating characteristic curve (ROC AUC) of 0.73. It performed similarly to an LSTM model and a logistic regression on term frequency-inverse document frequency (TF-IDF) features, which both achieved a ROC AUC of 0.72. These three models slightly outperformed a Quantized Low-Rank Adaptation (QLoRA)-fine-tuned Mistral NeMo model (ROC AUC = 0.69). Llama3.3 performed well in our framework: the predicted infection risk converged often, and it asked fewer redundant questions than the smaller models (Mistral 7B, Gemma3 12B). In addition, the framework showed the ability to stratify, by risk of infection, synthetic users who had different types of social interactions. Conclusions: Combining simple language models with large language models can refine individual infection risk from contact tracing data in a high-circulation context. Our conversational framework may help optimize contact tracing by highlighting social contexts with a high risk of infection.",
+      "abstract": "BackgroundContact tracing is crucial to limit pathogen transmission and to gather epidemiological data. However, despite machine learning optimizations, it remains time-consuming. Large language models have been used for infection risk prediction, but no existing application converses with a user to adapt its risk estimates.\n\nObjectiveWe aimed to develop an iterative retrieval-augmented generation conversational framework to predict coronavirus disease 2019 (COVID-19) infection risk from textual social data. The conversational agent aims to gather personalized risk factors based on descriptions of social interactions.\n\nMethodsWe trained a long short-term memory (LSTM) model to predict the risk of COVID-19 infection from 19,434 textual descriptions of social interactions, collected during the pandemic in the Leuven student community, in Belgium. We integrated this model into a Llama3.3-based conversational framework that iteratively gathers additional social information that may represent a risk of infection. We evaluated the framework using large language model (LLM)-as-a-judge metrics and by comparing its risk assessment in different social contexts.\n\nResultsBased solely on social interaction data, a fine-tuned RobBERT model predicted infection risk with an area under the receiver operating characteristic curve (ROC AUC) of 0.73. It performed similarly to an LSTM model and a logistic regression on term frequency-inverse document frequency (TF-IDF) features, which both achieved a ROC AUC of 0.72. These three models slightly outperformed a Quantized Low-Rank Adaptation (QLoRA)-fine-tuned Mistral NeMo model (ROC AUC = 0.69). Llama3.3 performed well in our framework: the predicted infection risk converged often, and it asked fewer redundant questions than the smaller models (Mistral 7B, Gemma3 12B). In addition, the framework showed the ability to stratify, by risk of infection, synthetic users who had different types of social interactions.\n\nConclusionsCombining simple language models with large language models can refine individual infection risk from contact tracing data in a high-circulation context. Our conversational framework may help optimize contact tracing by highlighting social contexts with a high risk of infection.",
       "authors": [
         "Thibaut, J.",
         "Tunc, M.",
@@ -996,13 +1202,13 @@
       "evidence": [
         {
           "term": "disease",
-          "excerpt": "adapt its risk estimates. Objective: We aimed to develop an iterative retrieval-augmented generation conversational framework to predict coronavirus disease 2019 (COVID-19) infection risk from textual social data. The conversational agent aims to gather personalized risk factors based on descriptions of social interactions. Methods: We trained a long short-term memory (LSTM) model to predict t",
+          "excerpt": "o adapt its risk estimates. ObjectiveWe aimed to develop an iterative retrieval-augmented generation conversational framework to predict coronavirus disease 2019 (COVID-19) infection risk from textual social data. The conversational agent aims to gather personalized risk factors based on descriptions of social interactions. MethodsWe trained a long short-term memory (LSTM) model to predict th",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.28.26366693.full"
         },
         {
           "term": "risk assessment",
-          "excerpt": "formation that may represent a risk of infection. We evaluated the framework using large language model (LLM)-as-a-judge metrics and by comparing its risk assessment in different social contexts. Results: Based solely on social interaction data, a fine-tuned RobBERT model predicted infection risk with an area under the receiver operating characteristic curve (ROC AUC) of 0.73. It performed similarly to",
+          "excerpt": "formation that may represent a risk of infection. We evaluated the framework using large language model (LLM)-as-a-judge metrics and by comparing its risk assessment in different social contexts. ResultsBased solely on social interaction data, a fine-tuned RobBERT model predicted infection risk with an area under the receiver operating characteristic curve (ROC AUC) of 0.73. It performed similarly to",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.28.26366693.full"
         }
@@ -1016,7 +1222,7 @@
       "match_score": 9,
       "extraction_status": "incomplete",
       "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.28.26366693.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
-      "content_hash": "5ffae038b08b22bca3e1d80ae2e7cfb9124e9bd424d5a7e67cbe14966bcdc8f2",
+      "content_hash": "ab0de921b11586242b0a5971342c929011a3606e6539f6fe2c0c0d1c8285f30e",
       "is_seed": false,
       "topic": "biosafety",
       "contribution_type": "new_benchmark"
@@ -1132,7 +1338,7 @@
       "slug": "doi-10-64898-2026-10-26-26366562-e08db770dc",
       "kind": "paper",
       "title": "DiaBench: A Benchmarking Framework to Evaluate the Performance of LLMs in T2D Patient Education",
-      "abstract": "Background Effective type 2 diabetes (T2D) education improves patient outcomes, but clinician time constraints limit what can be covered during encounters. Large language models (LLMs) offer a scalable way to answer patient questions, yet their accuracy and reliability in T2D education across health literacy levels remain poorly characterized. Methods We developed DiaBench, a standardized benchmarking framework built from 96 question-and-answer pairs collected by clinicians from representative real-world patient encounters. GPT-5 transformed each pair into multiple-choice questions (MCQs) under three configurations (1-3) simulating different question formats and levels of user background. A five-member panel of certified diabetes care and education specialists (CDCESs), medical doctors (MDs), and endocrinologists validated the transformations, rating question rephrasing, answer rephrasing, and answer correctness. We then evaluated seven LLMs (GPT-51, Gemini-2.5-Flash2, Cohere Command3, Llama-44, DeepSeek-R15, Perplexity Sonar6, Mistral-Large-2.07) for accuracy and self-consistency across three runs. Results (i) Expert validation showed a consensus over MCQ transformation. For configuration 1, 98.1% (SD 0.01) of rephrased answers were appropriate, 98.1% (SD 0.01) of MCQ answers were correct, and 95.0% (SD 0.05) of rephrased questions were appropriate; corresponding values for configuration 2 were 96.3% (SD 0.05), 97.5% (SD 0.02), and 89.8% (SD 0.14). (ii) across benchmarking for configurations 1 and 2, most models achieved high accuracy ([&ge;]95%), but Mistral-Large-2.0, Llama 4, and Perplexity Sonar showed substantially lower self-consistency (60.4%-91.7%) than other models ([&ge;]95%). All models degraded in both accuracy and self-consistency on configuration 3. Conclusions DiaBench quantitatively differentiates LLM capability in T2D patient education, with Gemini, GPT-5, and DeepSeek-R1 performing strongly and other models suboptimally. DiaBench provides a transferable platform for evaluating existing and newly developed LLMs, addressing the need for standardized benchmarking before clinical deployment of LLM-based systems in patient education.",
+      "abstract": "BackgroundEffective type 2 diabetes (T2D) education improves patient outcomes, but clinician time constraints limit what can be covered during encounters. Large language models (LLMs) offer a scalable way to answer patient questions, yet their accuracy and reliability in T2D education across health literacy levels remain poorly characterized.\n\nMethodsWe developed DiaBench, a standardized benchmarking framework built from 96 question- and-answer pairs collected by clinicians from representative real-world patient encounters. GPT-5 transformed each pair into multiple-choice questions (MCQs) under three configurations (1-3) simulating different question formats and levels of user background. A five-member panel of certified diabetes care and education specialists (CDCESs), medical doctors (MDs), and endocrinologists validated the transformations, rating question rephrasing, answer rephrasing, and answer correctness. We then evaluated seven LLMs (GPT-51, Gemini-2.5-Flash2, Cohere Command3, Llama-44, DeepSeek-R15, Perplexity Sonar6, Mistral-Large-2.07) for accuracy and self-consistency across three runs.\n\nResults(i) Expert validation showed a consensus over MCQ transformation. For configuration 1, 98.1% (SD 0.01) of rephrased answers were appropriate, 98.1% (SD 0.01) of MCQ answers were correct, and 95.0% (SD 0.05) of rephrased questions were appropriate; corresponding values for configuration 2 were 96.3% (SD 0.05), 97.5% (SD 0.02), and 89.8% (SD 0.14). (ii) across benchmarking for configurations 1 and 2, most models achieved high accuracy ([&ge;]95%), but Mistral-Large-2.0, Llama 4, and Perplexity Sonar showed substantially lower self-consistency (60.4%-91.7%) than other models ([&ge;]95%). All models degraded in both accuracy and self-consistency on configuration 3.\n\nConclusionsDiaBench quantitatively differentiates LLM capability in T2D patient education, with Gemini, GPT-5, and DeepSeek-R1 performing strongly and other models suboptimally. DiaBench provides a transferable platform for evaluating existing and newly developed LLMs, addressing the need for standardized benchmarking before clinical deployment of LLM-based systems in patient education.",
       "authors": [
         "Li, Y.",
         "Syna, S.",
@@ -1173,13 +1379,13 @@
       "evidence": [
         {
           "term": "benchmark",
-          "excerpt": "DiaBench: A Benchmarking Framework to Evaluate the Performance of LLMs in T2D Patient Education Background Effective type 2 diabetes (T2D) education improves patient outcomes, but clinician time constraints limit what can be covered during encounters. Large lan",
+          "excerpt": "DiaBench: A Benchmarking Framework to Evaluate the Performance of LLMs in T2D Patient Education BackgroundEffective type 2 diabetes (T2D) education improves patient outcomes, but clinician time constraints limit what can be covered during encounters. Large lang",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.26.26366562.full"
         },
         {
           "term": "benchmarking",
-          "excerpt": "DiaBench: A Benchmarking Framework to Evaluate the Performance of LLMs in T2D Patient Education Background Effective type 2 diabetes (T2D) education improves patient outcomes, but clinician time constraints limit what can be covered during encounters. Large langua",
+          "excerpt": "DiaBench: A Benchmarking Framework to Evaluate the Performance of LLMs in T2D Patient Education BackgroundEffective type 2 diabetes (T2D) education improves patient outcomes, but clinician time constraints limit what can be covered during encounters. Large languag",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.26.26366562.full"
         },
@@ -1191,19 +1397,20 @@
         },
         {
           "term": "clinical",
-          "excerpt": "DiaBench provides a transferable platform for evaluating existing and newly developed LLMs, addressing the need for standardized benchmarking before clinical deployment of LLM-based systems in patient education. Background Effective type 2 diabetes (T2D) education improves patient outcomes, but clinician time constraints limit what can be covered during encounters. Large language models (LLMs)",
+          "excerpt": "DiaBench provides a transferable platform for evaluating existing and newly developed LLMs, addressing the need for standardized benchmarking before clinical deployment of LLM-based systems in patient education. BackgroundEffective type 2 diabetes (T2D) education improves patient outcomes, but clinician time constraints limit what can be covered during encounters. Large language models (LLMs) o",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.26.26366562.full"
         },
         {
           "term": "patient",
-          "excerpt": "DiaBench: A Benchmarking Framework to Evaluate the Performance of LLMs in T2D Patient Education Background Effective type 2 diabetes (T2D) education improves patient outcomes, but clinician time constraints limit what can be covered during encounters. Large language models (LLMs) offer a scalable way to answer patient quest",
+          "excerpt": "DiaBench: A Benchmarking Framework to Evaluate the Performance of LLMs in T2D Patient Education BackgroundEffective type 2 diabetes (T2D) education improves patient outcomes, but clinician time constraints limit what can be covered during encounters. Large language models (LLMs) offer a scalable way to answer patient questi",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.64898/2026.10.26.26366562.full"
         }
       ],
       "related_benchmarks": [
-        "DiaBench"
+        "DiaBench",
+        "ConclusionsDiaBench"
       ],
       "related_agent_url": "",
       "evaluation_contexts": [
@@ -1213,7 +1420,7 @@
       "match_score": 19,
       "extraction_status": "incomplete",
       "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.10.26.26366562.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
-      "content_hash": "5af13d56029f657d5b01847c6f2ce9f1b95e48b647f16f63733e43c4f8e5fc48",
+      "content_hash": "9c82dcfbcb816da8c18339f14610e36de41f83618019afd7b268d510605bf2a0",
       "is_seed": false,
       "topic": "general_text",
       "contribution_type": "new_benchmark"
@@ -1371,7 +1578,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
-      "match_score": 17,
+      "match_score": 13,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "e2c77e7153669470acbcdc2df3f332ceba73005886c31635deae21a896a28045",
