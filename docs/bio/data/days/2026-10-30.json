@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-30",
+  "count": 1,
+  "entries": [
+    {
+      "id": "arxiv:2611.00460",
+      "slug": "arxiv-2611-00460-e3df510267",
+      "kind": "paper",
+      "title": "From Small to Large: Assessing Medical Reasoning, Benchmark Contamination, and Model Size in Language Models",
+      "abstract": "Large language models (LLMs) now answer medical exam questions at or above expert level, but it is unclear whether such scores reflect clinical competence, or are instead affected by the format of the questions being asked (e.g., multiple-choice versus open-ended), prior exposure to the benchmarks, and the difficulty of the questions. These benchmarks are also public and widely used online, which may be resulting in LLM memorization. Models may perform better on questions that they have seen before. It is also not evident whether smaller models, which are more locally deployable in HIPAA-compliant hospital settings, have achieved human performance. In this study, we evaluate fourteen current models from six leading providers, one smaller and one larger model from each provider with two additional open-weight models, on 3,076 questions from four medical benchmarks (MedQA-USMLE, MedMCQA, PubMedQA, and MedBullets) under standard multiple choice, the same questions with the answer choices withheld, and reconstruction of a hidden question from its choices alone. In the standard multiple-choice setting, the strongest models exceed the human-expert baseline on MedQA-USMLE and PubMedQA, but the smaller models trail their larger models by 8.7 percentage points and only two of the six pass the human-expert bar on the licensing examination. Withholding the answer choices, however, makes every model struggle: mean accuracy falls from 82.3% to 50.9%, and the two largest drops belong to the medically specialised models. On memorization, the strongest models reconstruct one question in four from the answer choices alone, yet accuracy holds on the questions they cannot reconstruct. We further weigh accuracy against inference cost and test whether ensembling several models improves medical question answering.",
+      "authors": [
+        "Navapat Nananukul",
+        "Mayank Kejriwal"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-10-30T23:23:42+00:00",
+      "updated_at": "2026-10-30T23:23:42+00:00",
+      "priority": "P2",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.00460"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.00460v1",
+        "pdf": "https://arxiv.org/pdf/2611.00460v1",
+        "code": "https://github.com/navapatn/medical-qa-llm-evaluation",
+        "html": "https://arxiv.org/html/2611.00460"
+      },
+      "evidence": [
+        {
+          "term": "Assessing Medical Reasoning, Benchmark Contamination",
+          "excerpt": "From Small to Large: Assessing Medical Reasoning, Benchmark Contamination, and Model Size in Language Models Large language models (LLMs) now answer medical exam questions at or above expert level, but it is unclear whether such scores reflect clinical competence, or are instead affected by the format of the que",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.00460"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "From Small to Large: Assessing Medical Reasoning, Benchmark Contamination, and Model Size in Language Models Large language models (LLMs) now answer medical exam questions at or above expert level, but it is unclear whether such scores reflect clinical competence, or are instead affected by the for",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.00460"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "nical competence, or are instead affected by the format of the questions being asked (e.g., multiple-choice versus open-ended), prior exposure to the benchmarks, and the difficulty of the questions. These benchmarks are also public and widely used online, which may be resulting in LLM memorization. Models may perform better on questions that they have seen before. It is also not evident whether sm",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.00460"
+        },
+        {
+          "term": "medical",
+          "excerpt": "From Small to Large: Assessing Medical Reasoning, Benchmark Contamination, and Model Size in Language Models Large language models (LLMs) now answer medical exam questions at or above expert level, but it is unclear whether such scores reflect clinical competence, or are instea",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.00460"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "anguage Models Large language models (LLMs) now answer medical exam questions at or above expert level, but it is unclear whether such scores reflect clinical competence, or are instead affected by the format of the questions being asked (e.g., multiple-choice versus open-ended), prior exposure to the benchmarks, and the difficulty of the questions. These benchmarks are also public and widely us",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.00460"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "10776–10787 . Cited by: RELATED WORK . Schmidgall et al. (2024) S. Schmidgall, R. Ziaei, C. Harris, E. Reis, J. Jopling, and M. Moor Agentclinic: a multimodal agent benchmark to evaluate ai in simulated clinical environments . arXiv preprint arXiv:2405.07960 . Cited by: INTRODUCTION , RELATED WORK , DISCUSSION . Sellergren et al. (2025) A. Sellergren, S. Kazemzadeh, T. Jaroensri, A. Kiraly, M. T",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2611.00460"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "19, 0.749] [[SECTION Expert evaluation]] Expert evaluation We hired an independent expert, a licensed veterinarian (DVM) with training in physiology, pathology, pharmacology and clinical reasoning, to review 50 of the judge’s verdicts on generative answers. The answers were drawn at random from MedQA-USMLE, MedMCQA and MedBullets: 25 that the judge said correct and 25 that it said incorrect, with",
+          "location": "Expert evaluation",
+          "source_url": "https://arxiv.org/html/2611.00460"
+        }
+      ],
+      "related_benchmarks": [
+        "MedQA",
+        "MedMCQA",
+        "PubMedQA",
+        "MultiMedQA",
+        "LiveBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "a2e8244a271064bd8bad2820baf5384ec90e915b37edda498ec67f2113bad961",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "audit"
+    }
+  ]
+}

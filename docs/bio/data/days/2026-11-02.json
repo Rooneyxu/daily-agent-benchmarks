@@ -1,0 +1,314 @@
+{
+  "date": "2026-11-02",
+  "count": 3,
+  "entries": [
+    {
+      "id": "arxiv:2611.03601",
+      "slug": "arxiv-2611-03601-ffbd44809a",
+      "kind": "paper",
+      "title": "DiabAgent: Toward Agentic Physiological Control",
+      "abstract": "As pretraining scales, medical language models have advanced rapidly in clinical question answering. Their ability to achieve effective physiological control through sustained intervention still lacks systematic quantitative evaluation. Type 1 diabetes provides a concrete setting: impaired insulin secretion creates dependence on exogenous insulin, with dosing continually adjusted using information about meals, exercise, illness, and glucose measurements. We introduce DiabAgent, a research suite for agentic physiological control comprising the Agentic Physiological Control (APC) framework, the DiabetSim simulator, and the SweetBench benchmark. APC controls glucose through medical-device tools, using ongoing observations to infer individual states, accumulate personal experience, and choose treatment actions. We build DiabetSim to simulate different patients, events, and device conditions for scalable virtual testing and training. Using DiabetSim, we construct SweetBench by instantiating 32 scenario designs as 212 glucose-control tasks. With Claude Opus 5.5 and a fixed decision interval of one hour, APC achieves a COGI of 73.5, compared with 71.2 for the open-source closed-loop baseline OpenAPS. Ablations further show that individual adaptation and contextual information improve glucose control. Combining high-frequency rule-based control with lower-frequency agent decisions shows potential for balancing control performance and computational cost. Our work provides a framework, simulator, and evaluation foundation for agents to participate in human physiological control.",
+      "authors": [
+        "Chengxi Li",
+        "Shaoxuan Li",
+        "Deyao Hong",
+        "Qingle Liu",
+        "Yi Huang",
+        "Puheng Bian",
+        "Minzhi Xu",
+        "Lanyue Zhang",
+        "Mingze Sun",
+        "Xin Li",
+        "Calvin Xiao",
+        "Shengyuan Wang",
+        "Huan-ang Gao",
+        "Jiazheng Xu",
+        "Kaisen Yang",
+        "Hongning Wang"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-02T18:41:02+00:00",
+      "updated_at": "2026-11-02T18:41:02+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.03601"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.03601v1",
+        "pdf": "https://arxiv.org/pdf/2611.03601v1",
+        "code": "https://github.com/THU-CST-SAST/DiabAgent",
+        "html": "https://arxiv.org/html/2611.03601"
+      },
+      "evidence": [
+        {
+          "term": "we construct SweetBench",
+          "excerpt": "actions. We build DiabetSim to simulate different patients, events, and device conditions for scalable virtual testing and training. Using DiabetSim, we construct SweetBench by instantiating 32 scenario designs as 212 glucose-control tasks. With Claude Opus 5.5 and a fixed decision interval of one hour, APC achieves a COGI of 73.5, compared with 71.2 for the open-source closed-loop baseline OpenAPS. Ablations",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.03601"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "rch suite for agentic physiological control comprising the Agentic Physiological Control (APC) framework, the DiabetSim simulator, and the SweetBench benchmark. APC controls glucose through medical-device tools, using ongoing observations to infer individual states, accumulate personal experience, and choose treatment actions. We build DiabetSim to simulate different patients, events, and device",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.03601"
+        },
+        {
+          "term": "medical",
+          "excerpt": "DiabAgent: Toward Agentic Physiological Control As pretraining scales, medical language models have advanced rapidly in clinical question answering. Their ability to achieve effective physiological control through sustained intervention still lacks systematic quantitative evaluation. Type 1 diabetes provides a concre",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.03601"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "DiabAgent: Toward Agentic Physiological Control As pretraining scales, medical language models have advanced rapidly in clinical question answering. Their ability to achieve effective physiological control through sustained intervention still lacks systematic quantitative evaluation. Type 1 diabetes provides a concrete setting: impaired insulin secretion creates dep",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.03601"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "s of an action traceable through decision rules or an explicit rationale. Information integration combines glucose measurements, natural-language and multimodal reports, and personal history to infer the hidden state and select interventions. Long-tail event adaptation uses contextual reports to adjust treatment when events overlap or fall outside predefined response categories. To instantiate APC",
+          "location": "2.1 The APC Framework",
+          "source_url": "https://arxiv.org/html/2611.03601"
+        },
+        {
+          "term": "tool use",
+          "excerpt": ", 2025 ; Xu et al., 2026 ; Liu et al., 2026 ) . ReAct interleaves reasoning with environment actions; WebArena, OSWorld, and SWE-agent study extended tool use in web, desktop, and software tasks ( Yao et al., 2023 ; Zhou et al., 2023 ; Xie et al., 2024 ; Yang et al., 2024 ) . SayCan and Code as Policies connect language-based planning to robot skills and control interfaces ( Ahn et al., 2022 ; L",
+          "location": "7 Related Work",
+          "source_url": "https://arxiv.org/html/2611.03601"
+        }
+      ],
+      "related_benchmarks": [
+        "SweetBench",
+        "HealthBench",
+        "MedAgentBench",
+        "LongMedBench",
+        "HealthLoopQA",
+        "MultiMedQA",
+        "HealthAgentBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 17,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "a289b1437ff0d97dcae9cf70e6d2dce0df428e49a84c85b8e715433bab7f863e",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2611.02633",
+      "slug": "arxiv-2611-02633-1b4e162dae",
+      "kind": "paper",
+      "title": "Measuring AI Agents as Teammates with Collaborative Intelligence",
+      "abstract": "Progress in AI is often measured by what a single model can do on its own. Yet teams of AI agents are starting to make breakthroughs and discoveries in science, medicine, mathematics and software engineering. As AI begins to work in teams of agents and people, the ability to collaborate becomes a core part of their intelligence. Research on human teams has measured this ability for decades. Inspired by this, we introduce the Collaborative Intelligence Benchmark, which measures how well an AI agent works as a teammate. It contains 240 tasks across 8 dimensions of teamwork, from refusing an unsafe shortcut to checking the work that a weaker model leaves behind. Each task comes from a real record or an existing benchmark, from aviation accident reports and clinical cases to coding tasks and negotiations, and has a programmatically verifiable outcome. To isolate teamwork from individual capability, models are scored only on tasks that they can solve by themselves when they have full information. We evaluate 18 closed- and open-weight models and find that every model, across sizes and families, has clear weaknesses as a teammate, with the best model scoring only 82.2 out of 100. Frontier models almost always refuse unsafe shortcuts and report misconduct, yet they cave under interpersonal pressure, reaching the best overall deal in only 14% of conflicts, and their pass rate drops from 97% to 81% when they take over a task in which a weaker model has cheated. Crucially, general capability does not guarantee good teamwork, as models with nearly the same capability score differ by up to 11 points as teammates. The benchmark includes 160 public tasks with code and data, along with 80 held-out tasks for evaluation. As AI agents increasingly work alongside other agents and people, the ability to collaborate effectively is becoming a crucial capability to measure and develop.",
+      "authors": [
+        "Sean Wu",
+        "Aneesh Pappu",
+        "Jiaru Zou",
+        "Yubin Kim",
+        "Yuncong Mao",
+        "Hongjian Zhou",
+        "Junchi Yu",
+        "Jieneng Chen",
+        "James Zou"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-02T06:59:08+00:00",
+      "updated_at": "2026-11-02T06:59:08+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.02633"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.02633v1",
+        "pdf": "https://arxiv.org/pdf/2611.02633v1",
+        "code": "https://github.com/zou-group/collaborative-intelligence",
+        "html": "https://arxiv.org/html/2611.02633"
+      },
+      "evidence": [
+        {
+          "term": "we introduce the Collaborative Intelligence Benchmark",
+          "excerpt": "he ability to collaborate becomes a core part of their intelligence. Research on human teams has measured this ability for decades. Inspired by this, we introduce the Collaborative Intelligence Benchmark, which measures how well an AI agent works as a teammate. It contains 240 tasks across 8 dimensions of teamwork, from refusing an unsafe shortcut to checking the work that a weaker model leaves behind. Each task comes from a real record or",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.02633"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "t of their intelligence. Research on human teams has measured this ability for decades. Inspired by this, we introduce the Collaborative Intelligence Benchmark, which measures how well an AI agent works as a teammate. It contains 240 tasks across 8 dimensions of teamwork, from refusing an unsafe shortcut to checking the work that a weaker model leaves behind. Each task comes from a real record or",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.02633"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "AI is often measured by what a single model can do on its own. Yet teams of AI agents are starting to make breakthroughs and discoveries in science, medicine, mathematics and software engineering. As AI begins to work in teams of agents and people, the ability to collaborate becomes a core part of their intelligence. Research on human teams has measured this ability for decades. Inspired by thi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.02633"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "checking the work that a weaker model leaves behind. Each task comes from a real record or an existing benchmark, from aviation accident reports and clinical cases to coding tasks and negotiations, and has a programmatically verifiable outcome. To isolate teamwork from individual capability, models are scored only on tasks that they can solve by themselves when they have full information. We ev",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.02633"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "e shift toward agentic teams. Most model cards, leaderboards and benchmarks measure the capabilities of individual models [ 1 , 3 , 4 ] , while newer multi-agent benchmarks evaluate the performance of the team as a whole [ 22 , 23 ] . Neither tells us whether a particular model is a good teammate, or where its strengths and weaknesses lie across different dimensions of teamwork. Consider a model th",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2611.02633"
+        }
+      ],
+      "related_benchmarks": [
+        "ImpossibleBench",
+        "HiddenBench",
+        "GPQA",
+        "TeamBench",
+        "CooperBench",
+        "EmoBench",
+        "LiveCodeBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 15,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "14a2dfe55a418e299435ff4ed03be81c434b040032e22915d37aa3320ae9054c",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2611.02519",
+      "slug": "arxiv-2611-02519-9c41b9883c",
+      "kind": "paper",
+      "title": "MedHEB: Benchmarking Medical Embeddings Across Heterogeneous Clinical Evidence",
+      "abstract": "Clinical evidence is inherently relational: medical images are interpreted with prior studies, cross-modal examinations, reports, and localized findings, and retrieving relevant evidence is therefore central to clinical interpretation. Recent foundation models increasingly encode these heterogeneous sources into shared embedding spaces, yet existing embedding evaluation often focuses on isolated matches, leaving unclear whether current models retrieve relevant evidence across changes in modality, appearance, and granularity. We introduce MedHEB, a unified benchmark with 107 retrieval tasks from 54 datasets, including both in-distribution and held-out-source evaluation, across three axes: evidence form (2D images, 3D volumes, text), pairing type (image--image, image--text, text--text, and modality-bridging visual matching), and relevance granularity (global, question-conditioned, region-level). Under a single ranking protocol, MedHEB varies clinically relevant evidence definitions to test whether embedding proximity remains meaningful across heterogeneous evidence, including modality-bridging visual retrieval and region-level text-to-region retrieval. Across representative models, performance is uneven across retrieval families: models strong on conventional image--text or text--text retrieval are less reliable on modality-bridging and region-level tasks. Current embedding spaces capture some clinical relationships well but do not yet provide balanced retrieval across heterogeneous evidence. We further provide MedEmb, an MLLM-based reference embedding model trained on the MedHEB ID split, as a reproducible baseline for unified 2D--3D--text medical retrieval. We release MedHEB with preprocessing scripts, evaluation code, access manifests, and MedEmb to support research on clinically meaningful medical embeddings.",
+      "authors": [
+        "Yingshu Li",
+        "Shaoyang Zhou",
+        "Zhanyu Wang",
+        "Yunyi Liu",
+        "Xinyu Liang",
+        "Xi Zhang",
+        "Lingqiao Liu",
+        "Lei Wang",
+        "Luping Zhou"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-02T04:39:40+00:00",
+      "updated_at": "2026-11-02T04:39:40+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.02519"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.02519v1",
+        "pdf": "https://arxiv.org/pdf/2611.02519v1",
+        "html": "https://arxiv.org/html/2611.02519"
+      },
+      "evidence": [
+        {
+          "term": "We introduce MedHEB, a unified benchmark",
+          "excerpt": "cuses on isolated matches, leaving unclear whether current models retrieve relevant evidence across changes in modality, appearance, and granularity. We introduce MedHEB, a unified benchmark with 107 retrieval tasks from 54 datasets, including both in-distribution and held-out-source evaluation, across three axes: evidence form (2D images, 3D volumes, text), pairing type (image--image, image--text, text--text, and modality-bri",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.02519"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "MedHEB: Benchmarking Medical Embeddings Across Heterogeneous Clinical Evidence Clinical evidence is inherently relational: medical images are interpreted with prior studies, cross-modal examinations, reports, and localized findings, and retrieving relevant",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.02519"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "MedHEB: Benchmarking Medical Embeddings Across Heterogeneous Clinical Evidence Clinical evidence is inherently relational: medical images are interpreted with prior studies, cross-modal examinations, reports, and localized findings, and retrieving relevant evi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.02519"
+        },
+        {
+          "term": "medical",
+          "excerpt": "MedHEB: Benchmarking Medical Embeddings Across Heterogeneous Clinical Evidence Clinical evidence is inherently relational: medical images are interpreted with prior studies, cross-modal examinations, reports, and localized findings, and retrieving relevant evidence is",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.02519"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "MedHEB: Benchmarking Medical Embeddings Across Heterogeneous Clinical Evidence Clinical evidence is inherently relational: medical images are interpreted with prior studies, cross-modal examinations, reports, and localized findings, and retrieving relevant evidence is therefore central to clinical interpreta",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.02519"
+        },
+        {
+          "term": "Multimodal",
+          "excerpt": "5 ] 2016 ✓ ✓ 3D-MIR [ 19 ] 2023 ✓ ✓ BIMCV-R [ 20 ] 2024 ✓ ✓ ✓ M3Retrieve [ 18 ] 2025 ✓ ✓ ✓ ✓ R2MED [ 17 ] 2025 ✓ ✓ MedHEB (ours) 2026 ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ Multimodal Embedding Models. Multimodal embedding models differ in how they compose heterogeneous evidence. Dual-tower models such as SigLIP [ 23 ] and BLIP-2 [ 24 ] , along with biomedical variants MedSigLIP [ 25 ] and MedImageInsight [ 26 ] , encod",
+          "location": "2 Related Work",
+          "source_url": "https://arxiv.org/html/2611.02519"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "40 , 67 , 62 ] , abdomen/pelvis (e.g., OrganMNIST, M3D) [ 39 , 42 , 34 ] , musculoskeletal [ 68 ] , dermatology [ 69 ] , ophthalmology [ 70 , 39 ] , pathology [ 39 , 57 ] , and multi-region resources [ 49 , 52 ] . This breadth reduces single-domain bias and supports evaluation across heterogeneous clinical evidence. Full source, access, and dataset-to-task mappings are provided in the Appendix A",
+          "location": "3.1.2 Dataset Selection and Clinical Coverage",
+          "source_url": "https://arxiv.org/html/2611.02519"
+        },
+        {
+          "term": "Visual grounding",
+          "excerpt": "ROCO-VQA [ 52 ] , RadImageNet-VQA [ 53 ] , and VQA-RAD [ 54 ] . The 3D subset adds CT-RATE-VQA [ 37 ] , M3D-3DQA [ 42 ] , and RadGen-CT VQA [ 43 ] . Visual grounding is reformulated as ranking source-provided region crops against a query composed of the full image and a region-level text description. Sources cover chest X-ray (Chest-ImaGenome [ 55 ] , VinDr-CXR [ 62 ] ), endoscopy (Kvasir-SEG [ 56 ] ),",
+          "location": "A.2 Family-level Dataset Details",
+          "source_url": "https://arxiv.org/html/2611.02519"
+        }
+      ],
+      "related_benchmarks": [
+        "MIMIC-CXR-VQA",
+        "OmniMedVQA",
+        "Path-VQA",
+        "MedMCQA",
+        "PubMedQA",
+        "VQA",
+        "Medical-CXR-VQA",
+        "MedSegBench",
+        "PMC-VQA",
+        "ROCO-VQA",
+        "RadImageNet-VQA",
+        "CT-RATE-VQA",
+        "M3D-3DQA",
+        "PublicHealthQA",
+        "MedicalQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "388a454f358e841925642ee844e88260355f8e91911db7eb98891f4abe5fd513",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
