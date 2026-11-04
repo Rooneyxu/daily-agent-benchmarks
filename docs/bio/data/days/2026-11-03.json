@@ -1,0 +1,375 @@
+{
+  "date": "2026-11-03",
+  "count": 4,
+  "entries": [
+    {
+      "id": "arxiv:2611.05340",
+      "slug": "arxiv-2611-05340-f7ab28469d",
+      "kind": "paper",
+      "title": "MedPhysBench: A Benchmark for Evaluating Language Models on Medical Physics Calculations and Error Detection",
+      "abstract": "Medical physicists turn a prescription into a delivered dose and check one another's calculations, because one error in a beam calibration or a monitor-unit (MU) calculation can affect every patient treated with it. MedPhysBench has ten seeded generators of calculation items in radiation therapy, diagnostic imaging, nuclear medicine and radiation protection, up to clinical tasks such as a TG-51 calibration worksheet. Reference answers come from code implementing the governing protocols, and a grader converts units and applies tolerance bands. From the same inputs, separate checking items test error detection, showing a colleague's worksheet or only the colleague's result, half correct and half with one planted error. On a held-out test split of 1,200 items (half for two models), 12 models scored 33.3 to 100.0% on calculation. Of the nine answers graded incorrect for the four best (99.3-100.0%), five contained model errors and four followed NCRP Report 151 on points our items misstate or leave open. Below them, most models did worst on level-3 clinical tasks, and Claude Sonnet 5.5 omitted the inverse-square correction in 19 of 20 isocentric MU items. Five models detected at least 96.7% of mostly large planted errors with at most 4% false alarms; for four of the other seven, checking only the result raised false alarms significantly. In an exploratory targeted test with 20 public cases of an omitted inverse-square correction, the three best models tested caught it in every worksheet, and three weaker models accepted 16 to 18 of 20 planted worksheets, one of them while applying the correction in most of its own calculations. Claude Opus 5.5 accepted 6 of 20 wrong results, although it applied the correction in all 20 of its own. We report the effect of two problems in our shielding items, found after the runs, and release the code, per-item outcomes and targeted-test responses.",
+      "authors": [
+        "Omar Nusrat"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-03T18:40:35+00:00",
+      "updated_at": "2026-11-03T18:40:35+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.05340"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.05340v1",
+        "pdf": "https://arxiv.org/pdf/2611.05340v1",
+        "code": "https://github.com/onusrat/medphysbench",
+        "html": "https://arxiv.org/html/2611.05340"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "MedPhysBench: A Benchmark for Evaluating Language Models on Medical Physics Calculations and Error Detection Medical physicists turn a prescription into a delivered dose and check one another's calculations, because one error in a beam calibration or a monitor-unit",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.05340"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "n affect every patient treated with it. MedPhysBench has ten seeded generators of calculation items in radiation therapy, diagnostic imaging, nuclear medicine and radiation protection, up to clinical tasks such as a TG-51 calibration worksheet. Reference answers come from code implementing the governing protocols, and a grader converts units and applies tolerance bands. From the same inputs, sep",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.05340"
+        },
+        {
+          "term": "medical",
+          "excerpt": "MedPhysBench: A Benchmark for Evaluating Language Models on Medical Physics Calculations and Error Detection Medical physicists turn a prescription into a delivered dose and check one another's calculations, because one error in a beam calibration or a monitor-unit (MU) calculation can affect every patient",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.05340"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "edPhysBench has ten seeded generators of calculation items in radiation therapy, diagnostic imaging, nuclear medicine and radiation protection, up to clinical tasks such as a TG-51 calibration worksheet. Reference answers come from code implementing the governing protocols, and a grader converts units and applies tolerance bands. From the same inputs, separate checking items test error detection",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.05340"
+        },
+        {
+          "term": "patient",
+          "excerpt": "to a delivered dose and check one another's calculations, because one error in a beam calibration or a monitor-unit (MU) calculation can affect every patient treated with it. MedPhysBench has ten seeded generators of calculation items in radiation therapy, diagnostic imaging, nuclear medicine and radiation protection, up to clinical tasks such as a TG-51 calibration worksheet. Reference answers",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.05340"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "ation (54%), and coding and technical tasks (53%) [ 43 ] . Research groups have built an assistant that answers from AAPM task group reports [ 56 ] , multi-agent systems that produce radiotherapy plans [ 53 ] , and an assistant that writes and runs automation scripts inside a clinical planning platform [ 1 ] . A department deciding whether a model may draft an MU calculation, or check one, needs ev",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2611.05340"
+        }
+      ],
+      "related_benchmarks": [
+        "MedPhysBench",
+        "SciBench",
+        "LiveBench",
+        "ProcessBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 21,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "19be92baa79cbf7a3191fc389b592973c419c31839c2c5e3e6610473e142df36",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2611.04685",
+      "slug": "arxiv-2611-04685-fd66e12953",
+      "kind": "paper",
+      "title": "MIMIC-Note-Extract: A Large-Scale Structured Dataset Extracted from MIMIC-IV-Note Discharge Summaries",
+      "abstract": "MIMIC is one of the most widely used public hospital datasets for machine learning on electronic health records, yet clinically important information, such as past medical history, allergies, and diagnostic findings, remains confined to free-text discharge summaries. Studies requiring this information must therefore build their own extraction pipelines, duplicating substantial effort across projects. We release MIMIC-Note-Extract (MNE), a large-scale dataset that uses a hybrid extraction pipeline combining deterministic parsing with schema-guided large language model generation to transform 16 sections from 300,720 discharge summaries into structured tables. MNE adds information that has no structured MIMIC counterpart and enriches related tables with broader coverage and greater clinical detail, including 10 times more patient-history entries and medication histories for more than twice as many admissions. Validation by medical doctors confirms extraction accuracy above 92% across sections. Using MNE, we construct a clinical decision-making benchmark for LLM agents, demonstrating how reusable structured representations of clinical narratives reduce data curation effort.",
+      "authors": [
+        "Kristian Schwethelm",
+        "Jonas Kuntzer",
+        "Conrad Ketzer",
+        "Eva Wende",
+        "Moritz Schlager",
+        "Daniel Rueckert",
+        "Georgios Kaissis",
+        "Friederike Jungmann",
+        "Paul Hager"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-03T11:08:51+00:00",
+      "updated_at": "2026-11-03T11:08:51+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.04685"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.04685v1",
+        "pdf": "https://arxiv.org/pdf/2611.04685v1",
+        "code": "https://github.com/pydantic/pydantic",
+        "html": "https://arxiv.org/html/2611.04685"
+      },
+      "evidence": [
+        {
+          "term": "we construct a clinical decision-making benchmark",
+          "excerpt": "on histories for more than twice as many admissions. Validation by medical doctors confirms extraction accuracy above 92% across sections. Using MNE, we construct a clinical decision-making benchmark for LLM agents, demonstrating how reusable structured representations of clinical narratives reduce data curation effort. [[SECTION MIMIC-Note-Extract: A Large-Scale Structured Dataset Extracted from MIMIC-IV-Note Discharge Summaries]] MIM",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.04685"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "admissions. Validation by medical doctors confirms extraction accuracy above 92% across sections. Using MNE, we construct a clinical decision-making benchmark for LLM agents, demonstrating how reusable structured representations of clinical narratives reduce data curation effort. [[SECTION MIMIC-Note-Extract: A Large-Scale Structured Dataset Extracted from MIMIC-IV-Note Discharge Summaries]] MIM",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.04685"
+        },
+        {
+          "term": "medical",
+          "excerpt": "f the most widely used public hospital datasets for machine learning on electronic health records, yet clinically important information, such as past medical history, allergies, and diagnostic findings, remains confined to free-text discharge summaries. Studies requiring this information must therefore build their own extraction pipelines, duplicating substantial effort across projects. We rele",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.04685"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "IMIC-IV-Note Discharge Summaries MIMIC is one of the most widely used public hospital datasets for machine learning on electronic health records, yet clinically important information, such as past medical history, allergies, and diagnostic findings, remains confined to free-text discharge summaries. Studies requiring this information must therefore build their own extraction pipelines, duplicati",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.04685"
+        },
+        {
+          "term": "patient",
+          "excerpt": "ation that has no structured MIMIC counterpart and enriches related tables with broader coverage and greater clinical detail, including 10 times more patient-history entries and medication histories for more than twice as many admissions. Validation by medical doctors confirms extraction accuracy above 92% across sections. Using MNE, we construct a clinical decision-making benchmark for LLM age",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.04685"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "Health Services Research 40 ( 5 Pt 2 ), pp. 1620–1639 . External Links: Document Cited by: §7.1 . Qwen Team (2026a) Qwen Team Qwen3.5: towards native multimodal agents . Note: Accessed: 16.06.26 External Links: Link Cited by: §G.3 . Qwen Team (2026b) Qwen Team Qwen3.6-35B-A3B: agentic coding power, now open to all . Note: Accessed: 16.06.26 External Links: Link Cited by: §G.3 . Wang et al. (2024)",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2611.04685"
+        },
+        {
+          "term": "Tool-Use",
+          "excerpt": "ved in FP8 ( Qwen/Qwen3.6-35B-A3B-FP8 ), Gemma 4 31B in W4A16 ( google/gemma-4-31B-it-qat-w4a16-ct ), and Qwen3.5-2B unquantized. [[SECTION G.4 Agent Tool-Use Analysis]] G.4 Agent Tool-Use Analysis We analyze how our fine-grained tools are used. We find that tool-call behavior differs substantially across models. Interestingly, increasing or enabling reasoning reduced the mean number of tool cal",
+          "location": "G.3 Models and Inference",
+          "source_url": "https://arxiv.org/html/2611.04685"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 24,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "67d0adfc133fb5b83a8d139537eb6f0cb5de916cb3c3e6772d911eac369f63ed",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.10.28.762290",
+      "slug": "doi-10-64898-2026-10-28-762290-a760a68a4a",
+      "kind": "paper",
+      "title": "BioResearchBench: 50 Long Horizon Biological Research Tasks",
+      "abstract": "AI models are used in biology research to study disease mechanisms, discover potential treatments, analyze experimental data, troubleshoot problems, and plan next steps. Useful assistance depends on working with data in various scientific formats, interpreting results, and deciding what to test next. We present BioResearchBench, a benchmark of 50 research questions developed by PhD biologists drawing on their deep research expertise to reflect realistic problems encountered in their fields. Questions were refined through expert review and iterative model testing. The collection spans 10 diverse biology subdomains and includes sequencing data, proteomic measurements, microscopy images, assay readouts, and clinical datasets. We compared recorded outcomes and examined model responses in depth across the 50 tasks on OpenAI GPT-6 Astra, Claude Opus 5.5, Gemini 4 Argon, Meta Muse Wonder, and SpaceXSI Grok 4.7. Success across our benchmark was 18% for Claude Opus 5.5, 13% for Gemini 4 Argon, 11% for Meta Muse Wonder, 4% for GPT-6 Astra, and 4% for Grok 4.7. These results describe a deliberately challenging collection selected through expert review and model testing. Despite low whole task success, the selected responses met most rubric requirements on average: the average fraction of criteria missed ranged from 18% to 32% across models. Across models, the proportion of eligible tasks with at least one category failure was highest in computation and data handling (66.9% failure), followed by uncertainty and identification (55.3% failure), reporting and completeness (54.7% failure), biological interpretation (39.0% failure), controls and causal claims (37.2% failure), and choosing the next experiment or decision (31.0% failure). Gemini 4 Argon had the highest proportion of reviewed tasks without a recorded category failure in computation and data handling (45% success) and biological interpretation (69% success). Claude Opus 5.5 led in controls and causal claims (72% success) and choosing the next experiment or decision (75% success). GPT-6 Astra led in uncertainty and identification (56% success) which included judging the precision of estimates and recognizing when measurements could not distinguish between biological explanations. GPT-6 Astra and Meta Muse Wonder tied for the highest proportion of answers with no recorded omissions or reporting failures (51% success). Five case studies presented here show how top AI models can perform many analytical steps correctly yet misinterpret what results signify. For example, some answers described cells as fully recovered when oxygen consumption improved even though mitochondrial membrane potential and cell number remained below control levels. These model answers therefore overstated the extent of cell recovery. Other answers incorrectly called a protein a direct microRNA target, although the experiment had not tested whether the microRNA acted directly on its mRNA or affected it through another process. In a protein turnover task, some model answers misestimated protein half-lives because they did not account for the gradual labeling of amino acids used to make new proteins. These model errors can lead researchers to pursue the wrong explanation even when individual analytical steps are completed correctly. This matters for major scientific goals such as drug discovery, where progress depends on choosing useful experiments and tools, interpreting unexpected results, troubleshooting failed approaches, and deciding which direction is most worth pursuing. Evaluating AI research assistance therefore requires checking whether its explanations, conclusions, and proposed experiments follow from the data and experimental design. These cases highlight continuing challenges in scientific reasoning for frontier AI models: bringing together different types of biological data, analyzing them with appropriate tools and databases, and using the results to draw appropriate conclusions and guide the next steps in research. The observed errors suggest training priorities in data analysis, biological interpretation, and experimental judgment and motivate evaluations that follow researchers and models through iterative scientific work.",
+      "authors": [
+        "Abedrabbo, S.",
+        "Pryhoda, A.",
+        "Goodman, K.",
+        "Taavola, J.",
+        "Milam, E.",
+        "Albright, A.",
+        "Jabal, R.",
+        "Yang, M.",
+        "Burrese, C.",
+        "Tubby, J.",
+        "Villagomez, J.",
+        "Kim, J."
+      ],
+      "source": "biorxiv",
+      "published_at": "2026-11-03T00:00:00+00:00",
+      "updated_at": "2026-11-03T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by",
+      "identifiers": {
+        "doi": "10.64898/2026.10.28.762290"
+      },
+      "links": {
+        "abs": "https://www.biorxiv.org/content/10.64898/2026.10.28.762290",
+        "pdf": "https://www.biorxiv.org/content/10.64898/2026.10.28.762290.full.pdf",
+        "html": "https://www.biorxiv.org/content/10.64898/2026.10.28.762290.full"
+      },
+      "evidence": [
+        {
+          "term": "We present BioResearchBench",
+          "excerpt": "plan next steps. Useful assistance depends on working with data in various scientific formats, interpreting results, and deciding what to test next. We present BioResearchBench, a benchmark of 50 research questions developed by PhD biologists drawing on their deep research expertise to reflect realistic problems encountered in their fields. Questions were refined through expert review and iterative model testing",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.28.762290.full"
+        },
+        {
+          "term": "We present BioResearchBench, a benchmark",
+          "excerpt": "plan next steps. Useful assistance depends on working with data in various scientific formats, interpreting results, and deciding what to test next. We present BioResearchBench, a benchmark of 50 research questions developed by PhD biologists drawing on their deep research expertise to reflect realistic problems encountered in their fields. Questions were refined through expert review and iterative model testing. The collecti",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.28.762290.full"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "ance depends on working with data in various scientific formats, interpreting results, and deciding what to test next. We present BioResearchBench, a benchmark of 50 research questions developed by PhD biologists drawing on their deep research expertise to reflect realistic problems encountered in their fields. Questions were refined through expert review and iterative model testing. The collecti",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.28.762290.full"
+        },
+        {
+          "term": "biology",
+          "excerpt": "BioResearchBench: 50 Long Horizon Biological Research Tasks AI models are used in biology research to study disease mechanisms, discover potential treatments, analyze experimental data, troubleshoot problems, and plan next steps. Useful assistance depends on working with data in various scientific formats, interpreting results,",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.28.762290.full"
+        },
+        {
+          "term": "biological",
+          "excerpt": "BioResearchBench: 50 Long Horizon Biological Research Tasks AI models are used in biology research to study disease mechanisms, discover potential treatments, analyze experimental data, troubleshoot problems, and plan next steps. Useful assistance depends on working with data in vari",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.28.762290.full"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "ting. The collection spans 10 diverse biology subdomains and includes sequencing data, proteomic measurements, microscopy images, assay readouts, and clinical datasets. We compared recorded outcomes and examined model responses in depth across the 50 tasks on OpenAI GPT-6 Astra, Claude Opus 5.5, Gemini 4 Argon, Meta Muse Wonder, and SpaceXSI Grok 4.7. Success across our benchmark was 18% for Cla",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.28.762290.full"
+        },
+        {
+          "term": "proteomic",
+          "excerpt": "ions were refined through expert review and iterative model testing. The collection spans 10 diverse biology subdomains and includes sequencing data, proteomic measurements, microscopy images, assay readouts, and clinical datasets. We compared recorded outcomes and examined model responses in depth across the 50 tasks on OpenAI GPT-6 Astra, Claude Opus 5.5, Gemini 4 Argon, Meta Muse Wonder, and S",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.28.762290.full"
+        },
+        {
+          "term": "drug discovery",
+          "excerpt": "rchers to pursue the wrong explanation even when individual analytical steps are completed correctly. This matters for major scientific goals such as drug discovery, where progress depends on choosing useful experiments and tools, interpreting unexpected results, troubleshooting failed approaches, and deciding which direction is most worth pursuing. Evaluating AI research assistance therefore requires",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.28.762290.full"
+        }
+      ],
+      "related_benchmarks": [
+        "BioResearchBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 43,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.10.28.762290.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "b5819ebb44c94915612e9064b7d85a2360379416b58273390074730f8d68bd7a",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.1088/2057-1976/aebcf4",
+      "slug": "doi-10-1088-2057-1976-aebcf4-05e72ddbef",
+      "kind": "paper",
+      "title": "MaskRet-Oto: Region-Conditioned Evidence Retrieval and Calibration for Otoscopic Image Classification and Selective Referral. ",
+      "abstract": "Digital otoscopy is a compact biomedical imaging modality, but retrospective image-classification results can be distorted by duplicate content, acquisition-domain cues, uncertain confidence, and dataset prevalence. We revised the framework as MaskRet-Oto, a region-conditioned evidence-retrieval and calibration pipeline rather than a retrieval-augmented generation (RAG) system. The working archive contained 3,000 RGB otoscopic images in five approximately balanced categories. Exact-hash auditing identified 78 duplicated files; the remaining 2,922 images formed 1,956 within-class perceptual-hash groups that were kept intact across training (n=2,046), validation (n=438), and test (n=438) partitions. Because patient identifiers were unavailable, this procedure controls only exact/near-duplicate image leakage and cannot establish patient-independent evaluation; different views from the same patient or examination could remain in different splits. The soft central field-of-view operator retained 70.9% of image support and is now described as a predefined region-conditioning prior, not as empirical proof that shortcut learning was prevented. On the internal image-level test set, the compact 64 x 64 CNN pipeline achieved 98.17% accuracy (95% bootstrap confidence interval 96.80-99.32%), 98.23% macro-F1, MCC 0.977, and macro-AUC 0.9994. Training-only visual retrieval reached 99.54% top-5 recall. The source-tagged textual memory contains 15 curated statements retrieved by TF-IDF; no language model is used and the component is not presented as a clinical knowledge base or RAG. Retrieval fusion did not improve top-1 accuracy; its role is limited to exposing similar training cases, attaching source-tagged evidence, and contributing a small additional calibration change after temperature scaling. Selective prediction concentrated all observed errors in the lowest-confidence deciles in this same test set, but this is a post hoc internal utility surrogate, not a clinical-utility validation. The nearly balanced benchmark distribution also means that calibration values should not be interpreted as real-world disease-risk probabilities. Patient-level, device-diverse, prevalence-aware, and prospective validation with stronger standard backbones is required before clinical use.",
+      "authors": [
+        "Singh AK",
+        "Raghuvanshi AS",
+        "Mehta R."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-11-03T00:00:00+00:00",
+      "updated_at": "2026-11-04T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.1088/2057-1976/aebcf4",
+        "pmid": "42976380"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/42976380"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "t-confidence deciles in this same test set, but this is a post hoc internal utility surrogate, not a clinical-utility validation. The nearly balanced benchmark distribution also means that calibration values should not be interpreted as real-world disease-risk probabilities. Patient-level, device-diverse, prevalence-aware, and prospective validation with stronger standard backbones is required be",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42976380"
+        },
+        {
+          "term": "test set",
+          "excerpt": "is now described as a predefined region-conditioning prior, not as empirical proof that shortcut learning was prevented. On the internal image-level test set, the compact 64 x 64 CNN pipeline achieved 98.17% accuracy (95% bootstrap confidence interval 96.80-99.32%), 98.23% macro-F1, MCC 0.977, and macro-AUC 0.9994. Training-only visual retrieval reached 99.54% top-5 recall. The source-tagged te",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42976380"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "-Oto: Region-Conditioned Evidence Retrieval and Calibration for Otoscopic Image Classification and Selective Referral. Digital otoscopy is a compact biomedical imaging modality, but retrospective image-classification results can be distorted by duplicate content, acquisition-domain cues, uncertain confidence, and dataset prevalence. We revised the framework as MaskRet-Oto, a region-conditioned ev",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42976380"
+        },
+        {
+          "term": "medical",
+          "excerpt": "o: Region-Conditioned Evidence Retrieval and Calibration for Otoscopic Image Classification and Selective Referral. Digital otoscopy is a compact biomedical imaging modality, but retrospective image-classification results can be distorted by duplicate content, acquisition-domain cues, uncertain confidence, and dataset prevalence. We revised the framework as MaskRet-Oto, a region-conditioned ev",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42976380"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "he source-tagged textual memory contains 15 curated statements retrieved by TF-IDF; no language model is used and the component is not presented as a clinical knowledge base or RAG. Retrieval fusion did not improve top-1 accuracy; its role is limited to exposing similar training cases, attaching source-tagged evidence, and contributing a small additional calibration change after temperature scal",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42976380"
+        },
+        {
+          "term": "patient",
+          "excerpt": "d 1,956 within-class perceptual-hash groups that were kept intact across training (n=2,046), validation (n=438), and test (n=438) partitions. Because patient identifiers were unavailable, this procedure controls only exact/near-duplicate image leakage and cannot establish patient-independent evaluation; different views from the same patient or examination could remain in different splits. The s",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42976380"
+        },
+        {
+          "term": "disease",
+          "excerpt": "a clinical-utility validation. The nearly balanced benchmark distribution also means that calibration values should not be interpreted as real-world disease-risk probabilities. Patient-level, device-diverse, prevalence-aware, and prospective validation with stronger standard backbones is required before clinical use. Digital otoscopy is a compact biomedical imaging modality, but retrospective",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42976380"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 25,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "44b2b551f0f6cedae14a87c9100c744c0829ffa1d8a8cd06c355bfb0ab21c275",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}

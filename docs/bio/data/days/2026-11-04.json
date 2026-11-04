@@ -1,0 +1,83 @@
+{
+  "date": "2026-11-04",
+  "count": 1,
+  "entries": [
+    {
+      "id": "doi:10.64898/2026.10.31.763119",
+      "slug": "doi-10-64898-2026-10-31-763119-8f2a15c507",
+      "kind": "paper",
+      "title": "SPaRTA: Spatial Reasoning in Text-to-SQL for Omics Analysis",
+      "abstract": "Spatial-omics technologies provide clinicians, pathologists, and biomedical researchers with high-resolution maps of transcriptomic, proteomic, and metabolomic activity within tissues. However, querying these complex datasets often requires specialized computational expertise, limiting their accessibility to domain experts without programming experience. In the current manuscript, we develop SPaRTA (Spatial Reasoning in Text-to-SQL for Omics Analysis), a natural-language interface that translates free-text questions into executable spatial SQL queries over such data. We release SPaRTA-Bench, comprising dataset-specific database schemas, explicit query conventions, and 7,500 question-SQL pairs validated through LLM-assisted verification and targeted human review, spanning breast cancer, pancreatic cancer, and melanoma tissue sections, and identify 15 failure modes in which a query runs but returns a wrong answer. Open-weight large language models (LLMs) of the Llama, Mistral, Qwen, Gemma and Phi families reach 10-40% execution accuracy zero-shot, and at most 61% with reasoning and execution feedback. Fine-tuning raises them to 63-77%, and they lose at most 6 percentage points on a tissue unseen in training. Execution feedback repairs queries that fail to run, but rarely queries that run and return a wrong answer.",
+      "authors": [
+        "Dutta, A.",
+        "Ghosh, S.",
+        "Prado, K.",
+        "KhudaBukhsh, A.",
+        "Sarkar, H."
+      ],
+      "source": "biorxiv",
+      "published_at": "2026-11-04T00:00:00+00:00",
+      "updated_at": "2026-11-04T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by_nc",
+      "identifiers": {
+        "doi": "10.64898/2026.10.31.763119"
+      },
+      "links": {
+        "abs": "https://www.biorxiv.org/content/10.64898/2026.10.31.763119",
+        "pdf": "https://www.biorxiv.org/content/10.64898/2026.10.31.763119.full.pdf",
+        "html": "https://www.biorxiv.org/content/10.64898/2026.10.31.763119.full"
+      },
+      "evidence": [
+        {
+          "term": "We release SPaRTA-Bench",
+          "excerpt": "Text-to-SQL for Omics Analysis), a natural-language interface that translates free-text questions into executable spatial SQL queries over such data. We release SPaRTA-Bench, comprising dataset-specific database schemas, explicit query conventions, and 7,500 question-SQL pairs validated through LLM-assisted verification and targeted human review, spanning breast cancer, pancreatic cancer, and melanoma tissue s",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.31.763119.full"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "SPaRTA: Spatial Reasoning in Text-to-SQL for Omics Analysis Spatial-omics technologies provide clinicians, pathologists, and biomedical researchers with high-resolution maps of transcriptomic, proteomic, and metabolomic activity within tissues. However, querying these complex datasets often requires specialized computational expertise, limiting their accessibility to domai",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.31.763119.full"
+        },
+        {
+          "term": "transcriptomic",
+          "excerpt": "n Text-to-SQL for Omics Analysis Spatial-omics technologies provide clinicians, pathologists, and biomedical researchers with high-resolution maps of transcriptomic, proteomic, and metabolomic activity within tissues. However, querying these complex datasets often requires specialized computational expertise, limiting their accessibility to domain experts without programming experience. In the current",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.31.763119.full"
+        },
+        {
+          "term": "proteomic",
+          "excerpt": "r Omics Analysis Spatial-omics technologies provide clinicians, pathologists, and biomedical researchers with high-resolution maps of transcriptomic, proteomic, and metabolomic activity within tissues. However, querying these complex datasets often requires specialized computational expertise, limiting their accessibility to domain experts without programming experience. In the current manuscript",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.31.763119.full"
+        },
+        {
+          "term": "cancer",
+          "excerpt": "emas, explicit query conventions, and 7,500 question-SQL pairs validated through LLM-assisted verification and targeted human review, spanning breast cancer, pancreatic cancer, and melanoma tissue sections, and identify 15 failure modes in which a query runs but returns a wrong answer. Open-weight large language models (LLMs) of the Llama, Mistral, Qwen, Gemma and Phi families reach 10-40% exe",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.31.763119.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.10.31.763119v1.full-text'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "492210a399a49be1a14dcff9b608e2f3e7ebd98f8affbee3981d4ce283ffa91b",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
