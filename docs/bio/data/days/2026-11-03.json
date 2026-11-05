@@ -1,7 +1,98 @@
 {
   "date": "2026-11-03",
-  "count": 4,
+  "count": 5,
   "entries": [
+    {
+      "id": "arxiv:2611.05559",
+      "slug": "arxiv-2611-05559-e670c71f05",
+      "kind": "paper",
+      "title": "How Finely Can Vision-Language Models See Biology? Bio-VQA: A Benchmark for Taxonomic, Morphological, Spatial and Individual Reasoning",
+      "abstract": "In biodiversity monitoring, a single image raises several questions: which taxon, how many, which trait, and whether the individual has been seen before. Vision-language models (VLMs) could answer all of these from the image, but their ability is largely untested in biology, as existing benchmarks focus mostly on species identification within a few taxonomic groups. We present Bio-VQA, the largest biological visual question answering (VQA) benchmark and the only one to span four aspects of biological visual understanding: hierarchical taxonomic reasoning, fine-grained attribute grounding, quantitative spatial reasoning, and individual re-identification. Bio-VQA contains 1.86M questions over 217K images from 11 public datasets, and extends right-or-wrong scoring to graded scoring, so a near-miss counts for more than a distant one. Evaluating 18 open-weight models from 3.75B to 38.4B parameters, we find that general visual capabilities do not transfer to biological organisms: the best model counts animals exactly on 41.7% of images with 2 to 10 individuals, less than half its accuracy on everyday objects at the same counts. Taxonomic accuracy falls to one sixth, from 0.72 at phylum to 0.12 at scientific name, and scaling helps mostly at coarse ranks. The gap to a domain specialist widens accordingly, from 0.731 against BioCLIP-2's 0.874 at class (1.2x) to 0.269 against 0.544 at scientific name (2x). On trait size measurement, 15 of the 18 models do no better than an image-blind baseline that predicts one fixed number for every specimen, and on re-identification, 17 of the 18 models fall below chance under adversarial conditions. These failures persist across a tenfold range of model size. We hope Bio-VQA becomes a standard test of how well VLM capabilities transfer to the biological domain.",
+      "authors": [
+        "S M Rayeed",
+        "Qian Ma",
+        "Charles V. Stewart",
+        "Yao Ma"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-03T19:51:00+00:00",
+      "updated_at": "2026-11-03T19:51:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.05559"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.05559v1",
+        "pdf": "https://arxiv.org/pdf/2611.05559v1",
+        "code": "https://github.com/Imageomics/Bio-VQA",
+        "data": "https://huggingface.co/datasets/imageomics/Bio-VQA",
+        "html": "https://arxiv.org/html/2611.05559"
+      },
+      "evidence": [
+        {
+          "term": "We present Bio-VQA",
+          "excerpt": "image, but their ability is largely untested in biology, as existing benchmarks focus mostly on species identification within a few taxonomic groups. We present Bio-VQA, the largest biological visual question answering (VQA) benchmark and the only one to span four aspects of biological visual understanding: hierarchical taxonomic reasoning, fine-grained attribute grounding, quantitative spatial reasoning,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.05559"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "How Finely Can Vision-Language Models See Biology? Bio-VQA: A Benchmark for Taxonomic, Morphological, Spatial and Individual Reasoning In biodiversity monitoring, a single image raises several questions: which taxon, how many, which trait, and whether the individual has been seen before. Vision-language models",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.05559"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "en seen before. Vision-language models (VLMs) could answer all of these from the image, but their ability is largely untested in biology, as existing benchmarks focus mostly on species identification within a few taxonomic groups. We present Bio-VQA, the largest biological visual question answering (VQA) benchmark and the only one to span four aspects of biological visual understanding: hierarchic",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.05559"
+        },
+        {
+          "term": "biology",
+          "excerpt": "How Finely Can Vision-Language Models See Biology? Bio-VQA: A Benchmark for Taxonomic, Morphological, Spatial and Individual Reasoning In biodiversity monitoring, a single image raises several questions: which taxon, how many, which trait, and whether the individual has been seen before",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.05559"
+        },
+        {
+          "term": "biological",
+          "excerpt": "ely untested in biology, as existing benchmarks focus mostly on species identification within a few taxonomic groups. We present Bio-VQA, the largest biological visual question answering (VQA) benchmark and the only one to span four aspects of biological visual understanding: hierarchical taxonomic reasoning, fine-grained attribute grounding, quantitative spatial reasoning, and individual re-ident",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.05559"
+        },
+        {
+          "term": "Vision-Language",
+          "excerpt": "How Finely Can Vision-Language Models See Biology? Bio-VQA: A Benchmark for Taxonomic, Morphological, Spatial and Individual Reasoning In biodiversity monitoring, a single image raises several questions: which taxon, how many, which trait, and whether the individual has",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.05559"
+        }
+      ],
+      "related_benchmarks": [
+        "Bio-VQA",
+        "VQA",
+        "MMBench",
+        "PlantExpertVQA",
+        "CountBench",
+        "TallyQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 22,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c6fffdf4d90c0e6fcce9ff9700b9f6f14ac9e6cf9c0190fd4ce27cdb1b3b3158",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
     {
       "id": "arxiv:2611.05340",
       "slug": "arxiv-2611-05340-f7ab28469d",
@@ -289,7 +380,7 @@
       "id": "doi:10.1088/2057-1976/aebcf4",
       "slug": "doi-10-1088-2057-1976-aebcf4-05e72ddbef",
       "kind": "paper",
-      "title": "MaskRet-Oto: Region-Conditioned Evidence Retrieval and Calibration for Otoscopic Image Classification and Selective Referral. ",
+      "title": "MaskRet-Oto: Region-Conditioned Evidence Retrieval and Calibration for Otoscopic Image Classification and Selective Referral.",
       "abstract": "Digital otoscopy is a compact biomedical imaging modality, but retrospective image-classification results can be distorted by duplicate content, acquisition-domain cues, uncertain confidence, and dataset prevalence. We revised the framework as MaskRet-Oto, a region-conditioned evidence-retrieval and calibration pipeline rather than a retrieval-augmented generation (RAG) system. The working archive contained 3,000 RGB otoscopic images in five approximately balanced categories. Exact-hash auditing identified 78 duplicated files; the remaining 2,922 images formed 1,956 within-class perceptual-hash groups that were kept intact across training (n=2,046), validation (n=438), and test (n=438) partitions. Because patient identifiers were unavailable, this procedure controls only exact/near-duplicate image leakage and cannot establish patient-independent evaluation; different views from the same patient or examination could remain in different splits. The soft central field-of-view operator retained 70.9% of image support and is now described as a predefined region-conditioning prior, not as empirical proof that shortcut learning was prevented. On the internal image-level test set, the compact 64 x 64 CNN pipeline achieved 98.17% accuracy (95% bootstrap confidence interval 96.80-99.32%), 98.23% macro-F1, MCC 0.977, and macro-AUC 0.9994. Training-only visual retrieval reached 99.54% top-5 recall. The source-tagged textual memory contains 15 curated statements retrieved by TF-IDF; no language model is used and the component is not presented as a clinical knowledge base or RAG. Retrieval fusion did not improve top-1 accuracy; its role is limited to exposing similar training cases, attaching source-tagged evidence, and contributing a small additional calibration change after temperature scaling. Selective prediction concentrated all observed errors in the lowest-confidence deciles in this same test set, but this is a post hoc internal utility surrogate, not a clinical-utility validation. The nearly balanced benchmark distribution also means that calibration values should not be interpreted as real-world disease-risk probabilities. Patient-level, device-diverse, prevalence-aware, and prospective validation with stronger standard backbones is required before clinical use.",
       "authors": [
         "Singh AK",
@@ -328,13 +419,13 @@
         },
         {
           "term": "biomedical",
-          "excerpt": "-Oto: Region-Conditioned Evidence Retrieval and Calibration for Otoscopic Image Classification and Selective Referral. Digital otoscopy is a compact biomedical imaging modality, but retrospective image-classification results can be distorted by duplicate content, acquisition-domain cues, uncertain confidence, and dataset prevalence. We revised the framework as MaskRet-Oto, a region-conditioned ev",
+          "excerpt": "t-Oto: Region-Conditioned Evidence Retrieval and Calibration for Otoscopic Image Classification and Selective Referral. Digital otoscopy is a compact biomedical imaging modality, but retrospective image-classification results can be distorted by duplicate content, acquisition-domain cues, uncertain confidence, and dataset prevalence. We revised the framework as MaskRet-Oto, a region-conditioned ev",
           "location": "Abstract / metadata",
           "source_url": "https://europepmc.org/article/MED/42976380"
         },
         {
           "term": "medical",
-          "excerpt": "o: Region-Conditioned Evidence Retrieval and Calibration for Otoscopic Image Classification and Selective Referral. Digital otoscopy is a compact biomedical imaging modality, but retrospective image-classification results can be distorted by duplicate content, acquisition-domain cues, uncertain confidence, and dataset prevalence. We revised the framework as MaskRet-Oto, a region-conditioned ev",
+          "excerpt": "to: Region-Conditioned Evidence Retrieval and Calibration for Otoscopic Image Classification and Selective Referral. Digital otoscopy is a compact biomedical imaging modality, but retrospective image-classification results can be distorted by duplicate content, acquisition-domain cues, uncertain confidence, and dataset prevalence. We revised the framework as MaskRet-Oto, a region-conditioned ev",
           "location": "Abstract / metadata",
           "source_url": "https://europepmc.org/article/MED/42976380"
         },
