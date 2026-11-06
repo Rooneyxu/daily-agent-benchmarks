@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-05T12:36:42Z",
-  "total": 209,
+  "generated_at": "2026-11-06T12:19:08Z",
+  "total": 211,
   "counts": {
     "topics": {
-      "general_text": 78,
+      "general_text": 79,
+      "experiment_agent": 62,
       "multimodal": 52,
-      "experiment_agent": 61,
       "biosafety": 18
     },
     "contribution_types": {
-      "new_benchmark": 172,
+      "new_benchmark": 174,
       "audit": 17,
       "methodology": 20
     },
     "kinds": {
-      "paper": 209
+      "paper": 211
     },
     "evaluation_contexts": {
-      "beneficial_capability": 191,
+      "beneficial_capability": 193,
       "biosecurity_misuse": 18
     }
   },
@@ -59,54 +59,62 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-11-05T12:37:11Z",
-      "finished_at": "2026-11-05T12:38:07Z",
+      "started_at": "2026-11-06T12:19:38Z",
+      "finished_at": "2026-11-06T12:20:30Z",
       "discovered": 52,
-      "published": 21,
+      "published": 22,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-11-05T12:38:07Z",
-      "finished_at": "2026-11-05T12:38:38Z",
-      "discovered": 153,
-      "published": 83,
+      "started_at": "2026-11-06T12:20:30Z",
+      "finished_at": "2026-11-06T12:20:52Z",
+      "discovered": 108,
+      "published": 61,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-11-05T12:38:38Z",
-      "finished_at": "2026-11-05T12:40:06Z",
-      "discovered": 1271,
-      "published": 87,
+      "started_at": "2026-11-06T12:20:52Z",
+      "finished_at": "2026-11-06T12:22:08Z",
+      "discovered": 1399,
+      "published": 100,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-11-05T12:40:06Z",
-      "finished_at": "2026-11-05T12:40:23Z",
-      "discovered": 277,
-      "published": 28,
+      "started_at": "2026-11-06T12:22:08Z",
+      "finished_at": "2026-11-06T12:22:22Z",
+      "discovered": 296,
+      "published": 29,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-11-05T12:40:23Z",
-      "finished_at": "2026-11-05T12:40:23Z",
+      "started_at": "2026-11-06T12:22:22Z",
+      "finished_at": "2026-11-06T12:22:22Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
     }
   ],
   "days": [
+    {
+      "date": "2026-11-05",
+      "count": 2,
+      "entry_ids": [
+        "arxiv:2611.08315",
+        "arxiv:2611.07757"
+      ]
+    },
     {
       "date": "2026-11-04",
       "count": 1,
@@ -907,6 +915,181 @@
   ],
   "entries": [
     {
+      "id": "arxiv:2611.08315",
+      "slug": "arxiv-2611-08315-eeb954457f",
+      "kind": "paper",
+      "title": "Benchmarking Large Language Models on Heterogeneous Cognitive and Biomedical Knowledge Graphs: The Role of Graph Grounding in Multi-Hop Reasoning and Hallucination Mitigation",
+      "abstract": "Large language models (LLMs) are increasingly used in biomedical and cognitive neuroscience, but their ability to reason reliably over heterogeneous knowledge graphs (KGs) remains unclear. We benchmark five LLMs (GPT-5.1, Gemini 2.0 Pro, Llama 3, Qwen, and BioGPT) across five KGs: DrugBank, NeuroSynth, Cognitive Atlas, Brain Map, and GDPKG. We introduce a multitier query dataset to evaluate reasoning depth and factual accuracy under KG-aware (graph-grounded) and KG-agnostic conditions. Inter-annotator agreement was substantial, with Cohen's kappa of 0.781 (range: 0.753-0.807) and Fleiss' kappa of 0.77. Results show that general-purpose models, particularly GPT-5.1 and Gemini 2.0 Pro, generally outperform domain-specific models on multi-hop and high-level reasoning tasks, although performance declines as query complexity increases. KG grounding reduces hallucination rates across all evaluated models. Contrary to our initial hypothesis, domain-specific models do not consistently outperform general-purpose models on specialized tasks without graph grounding. These findings highlight the value of combining broad language-model capabilities with structured domain knowledge. We provide practical guidance for selecting LLM-KG integration strategies based on task complexity and computational constraints, and discuss hybrid neurosymbolic architectures for personalized medicine, cognitive disorder diagnosis, and explainable AI.",
+      "authors": [
+        "Ali Sarabadani",
+        "Kheirolah Rahsepar Fard",
+        "Tahereh Jeirani"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-05T17:12:58+00:00",
+      "updated_at": "2026-11-05T17:12:58+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.08315"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.08315v1",
+        "pdf": "https://arxiv.org/pdf/2611.08315v1",
+        "html": "https://arxiv.org/html/2611.08315"
+      },
+      "evidence": [
+        {
+          "term": "We introduce a multitier query dataset",
+          "excerpt": "enchmark five LLMs (GPT-5.1, Gemini 2.0 Pro, Llama 3, Qwen, and BioGPT) across five KGs: DrugBank, NeuroSynth, Cognitive Atlas, Brain Map, and GDPKG. We introduce a multitier query dataset to evaluate reasoning depth and factual accuracy under KG-aware (graph-grounded) and KG-agnostic conditions. Inter-annotator agreement was substantial, with Cohen's kappa of 0.781 (range: 0.753-0.807) and Fleiss' kappa of 0.77. Results sho",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.08315"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Benchmarking Large Language Models on Heterogeneous Cognitive and Biomedical Knowledge Graphs: The Role of Graph Grounding in Multi-Hop Reasoning and Hallucination Mitigation Large language models (LLMs) are increasingly used in biomedical and cogni",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.08315"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "Benchmarking Large Language Models on Heterogeneous Cognitive and Biomedical Knowledge Graphs: The Role of Graph Grounding in Multi-Hop Reasoning and Hallucination Mitigation Large language models (LLMs) are increasingly used in biomedical and cognitiv",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.08315"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "Benchmarking Large Language Models on Heterogeneous Cognitive and Biomedical Knowledge Graphs: The Role of Graph Grounding in Multi-Hop Reasoning and Hallucination Mitigation Large language models (LLMs) are increasingly used in biomedical and cognitive neuroscience, but their ability to reason reliably over hetero",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.08315"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "LLM-KG integration strategies based on task complexity and computational constraints, and discuss hybrid neurosymbolic architectures for personalized medicine, cognitive disorder diagnosis, and explainable AI. Large language models (LLMs) are increasingly used in biomedical and cognitive neuroscience, but their ability to reason reliably over heterogeneous knowledge graphs (KGs) remains unclear",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.08315"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '404 Not Found' for url 'https://arxiv.org/html/2611.08315'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+      "content_hash": "0ff40ab460e404d712c0e5afc8648d4c094031c6a4c239a695896db581a73c15",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2611.07757",
+      "slug": "arxiv-2611-07757-b247b2a354",
+      "kind": "paper",
+      "title": "RIVER: Evidence-guided multi-agent retrieval for enzyme--reaction discovery",
+      "abstract": "Enzyme function annotation and the identification of candidate enzymes for a given reaction are essential steps in connecting genomic information to biochemical reaction networks. However, existing methods rely on sequence or structural similarity or on training with known enzyme--reaction pairs, making it difficult to integrate biochemical evidence across large candidate spaces; they also struggle with retrieval tasks involving enzyme families whose members are highly similar. Here, we introduce RIVER (Reaction--enzyme Inference via Evidence-guided Retrieval), a multi-agent framework for bidirectional enzyme--reaction retrieval that identifies potentially catalyzed reactions for a given enzyme and ranks candidate enzymes for a given reaction. RIVER coordinates large language models, specialized biochemical computational tools, and external knowledge resources to assemble evidence at multiple levels, including reaction chemistry, protein sequences and domains, catalytic mechanisms, and database annotations. Dedicated validation modules further examine evidence gaps and potential conflicts and rerank candidates using traceable evidence records. On public benchmarks, RIVER achieves the highest success rates in both enzyme retrieval and enzyme annotation. In family-specific enzyme retrieval, RIVER outperforms the evaluated baselines on the selected datasets and metrics. In Escherichia coli enzyme retrieval tasks constructed from recent literature, RIVER achieves the best retrieval results with closed-source and open-source model configurations, substantially outperforming closed-source general-purpose and biology-specialized multi-agent systems, including Claude Code, Codex, and Phylo Max. These results suggest that evidence-guided multi-agent retrieval can prioritize biochemically supported enzyme--reaction relationships, providing a basis for subsequent experimental validation.",
+      "authors": [
+        "Yifan Chang",
+        "Yunze Li",
+        "Feifei Jiang",
+        "Juntao Wu",
+        "Xin Chen",
+        "Han Hu",
+        "Yucheng Wu",
+        "Wei Tang",
+        "Mingqian Ma",
+        "Wanli Ouyang",
+        "Kaipeng Zhang",
+        "Lei Bai",
+        "Hongting Tang",
+        "Feiran Li",
+        "Yuchen Ren"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-05T10:01:08+00:00",
+      "updated_at": "2026-11-05T10:01:08+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.07757"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.07757v1",
+        "pdf": "https://arxiv.org/pdf/2611.07757v1",
+        "code": "https://github.com/anthropics/claude-code",
+        "html": "https://arxiv.org/html/2611.07757"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "Dedicated validation modules further examine evidence gaps and potential conflicts and rerank candidates using traceable evidence records. On public benchmarks, RIVER achieves the highest success rates in both enzyme retrieval and enzyme annotation. In family-specific enzyme retrieval, RIVER outperforms the evaluated baselines on the selected datasets and metrics. In Escherichia coli enzyme retr",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.07757"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "Dedicated validation modules further examine evidence gaps and potential conflicts and rerank candidates using traceable evidence records. On public benchmarks, RIVER achieves the highest success rates in both enzyme retrieval and enzyme annotation. In family-specific enzyme retrieval, RIVER outperforms the evaluated baselines on the selected datasets and metrics. In Escherichia coli enzyme retri",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.07757"
+        },
+        {
+          "term": "biology",
+          "excerpt": "ves the best retrieval results with closed-source and open-source model configurations, substantially outperforming closed-source general-purpose and biology-specialized multi-agent systems, including Claude Code, Codex, and Phylo Max. These results suggest that evidence-guided multi-agent retrieval can prioritize biochemically supported enzyme--reaction relationships, providing a basis for sub",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.07757"
+        },
+        {
+          "term": "genomic",
+          "excerpt": "yme--reaction discovery Enzyme function annotation and the identification of candidate enzymes for a given reaction are essential steps in connecting genomic information to biochemical reaction networks. However, existing methods rely on sequence or structural similarity or on training with known enzyme--reaction pairs, making it difficult to integrate biochemical evidence across large candidat",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.07757"
+        },
+        {
+          "term": "protein",
+          "excerpt": "specialized biochemical computational tools, and external knowledge resources to assemble evidence at multiple levels, including reaction chemistry, protein sequences and domains, catalytic mechanisms, and database annotations. Dedicated validation modules further examine evidence gaps and potential conflicts and rerank candidates using traceable evidence records. On public benchmarks, RIVER a",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.07757"
+        },
+        {
+          "term": "tool-using",
+          "excerpt": "lly plausible mechanism does not establish that a particular protein actually catalyzes the queried reaction. Retrieval-augmented language models and tool-using agents offer ways to integrate dispersed information [ 31 , 32 ] ; chemistry-oriented agents and scientific multi-agent systems have demonstrated tool use, hypothesis generation, and critical review in other settings [ 33 , 34 , 35 , 36 ,",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2611.07757"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "RIVER: Evidence-guided multi-agent retrieval for enzyme--reaction discovery Enzyme function annotation and the identification of candidate enzymes for a given reaction are essential steps in connecting genomic information to biochemical reaction networks. However, existing",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.07757"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 21,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "564fe408c0cbf748912d3c96d5a048a2dd7cd13dcf5c2526a30584d0e9b4658a",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "doi:10.64898/2026.10.31.763119",
       "slug": "doi-10-64898-2026-10-31-763119-8f2a15c507",
       "kind": "paper",
@@ -977,7 +1160,7 @@
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
       "match_score": 19,
       "extraction_status": "incomplete",
-      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.10.31.763119v1.full-text'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.10.31.763119.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
       "content_hash": "492210a399a49be1a14dcff9b608e2f3e7ebd98f8affbee3981d4ce283ffa91b",
       "is_seed": false,
       "topic": "general_text",
