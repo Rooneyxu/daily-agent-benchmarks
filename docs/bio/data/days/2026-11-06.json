@@ -7,81 +7,79 @@
       "slug": "doi-10-64898-2026-11-04-764428-ca456e2f49",
       "kind": "paper",
       "title": "RadMultiBench: A Reproducible Dual-Task Benchmark Exposing the Limits of Pre-Trained Vision-Language Models Across Thoracic and Breast Imaging",
-      "abstract": "We present RadMultiBench, a multimodal benchmark of 6,148 medical images paired with expert radiological impressions across five categories--Breast Cancer, Lung Benign, Lung Malignant, Pneumonia, and Tuberculosis--targeting two core clinical tasks: automated report generation and disease classification. To enable reliable, repeatable experimentation, we provide a reproducible pipeline for data ingestion, de-identification, split management, and standardized reporting of text and classification metrics, facilitating dataset versioning and continuous benchmark testing. We compare three architectures: (1) a classical CNN-RNN with Bahdanau attention (ResNet-LSTM), (2) a general-domain vision-language (V-L) prefix-projection model (CLIP-GPT), and (3) a domain-specific V-L prefix-projection model (BioViL-T). Results reveal a sharp performance divide: the ResNet-LSTM attains near-perfect classification (99.5% accuracy) and is the only model to generate coherent reports (BLEU-4 = 0.021), whereas both prefix-projection models catastrophically fail generation (BLEU-4 [&le;] 0.0001); moreover, the domain-specific BioViL-T also fails classification (11.5% accuracy). From a data-engineering angle, the pipeline is productionizable with lineage, feature registries, and continuous integration to guard against silent regressions when updating models or data; from a data-science angle, the benchmark provides baselines and analyses that foreground feature alignment and architectural suitability as first-order concerns, inviting ablations on multimodal objectives, retrieval-augmented encoders, and uncertainty-aware decoding. Overall, RadMultiBench highlights that state-of-the-art status in general V-L domains does not translate automatically to high-stakes clinical tasks, and it furnishes the tooling and evidence base needed to develop robust, clinically viable multimodal systems.",
+      "abstract": "We present RadMultiBench, a multimodal benchmark of 6,148 medical images paired with expert radiological impressions across five categories—Breast Cancer, Lung Benign, Lung Malignant, Pneumonia, and Tuberculosis—targeting two core clinical tasks: automated report generation and disease classification. To enable reliable, repeatable experimentation, we provide a reproducible pipeline for data ingestion, de-identification, split management, and standardized reporting of text and classification metrics, facilitating dataset versioning and continuous benchmark testing. We compare three architectures: (1) a classical CNN-RNN with Bahdanau attention (ResNet-LSTM), (2) a general-domain vision-language (V-L) prefix-projection model (CLIP-GPT), and (3) a domain-specific V-L prefix-projection model (BioViL-T). Results reveal a sharp performance divide: the ResNet-LSTM attains near-perfect classification (99.5% accuracy) and is the only model to generate coherent reports (BLEU-4 = 0.021), whereas both prefix-projection models catastrophically fail generation (BLEU-4 ≤ 0.0001); moreover, the domain-specific BioViL-T also fails classification (11.5% accuracy). From a data-engineering angle, the pipeline is productionizable with lineage, feature registries, and continuous integration to guard against silent regressions when updating models or data; from a data-science angle, the benchmark provides baselines and analyses that foreground feature alignment and architectural suitability as first-order concerns, inviting ablations on multimodal objectives, retrieval-augmented encoders, and uncertainty-aware decoding. Overall, RadMultiBench highlights that state-of-the-art status in general V-L domains does not translate automatically to high-stakes clinical tasks, and it furnishes the tooling and evidence base needed to develop robust, clinically viable multimodal systems.",
       "authors": [
-        "Alam, M. N.",
-        "Rahman, M. T.",
-        "Sarkar, D.",
-        "Dhrubo, A. F. H.",
-        "Qayum, M. A.",
-        "Khan, M. A."
+        "Alam MN",
+        "Rahman MT",
+        "Sarkar D",
+        "Dhrubo AFH",
+        "Qayum MA",
+        "Khan MA."
       ],
-      "source": "biorxiv",
+      "source": "europepmc",
       "published_at": "2026-11-06T00:00:00+00:00",
-      "updated_at": "2026-11-06T00:00:00+00:00",
+      "updated_at": "2026-11-07T00:00:00+00:00",
       "priority": "P1",
       "categories": [
         "multimodal"
       ],
       "collection_status": "confirmed",
-      "access_status": "public",
-      "license": "cc_by",
+      "access_status": "unknown",
+      "license": "",
       "identifiers": {
         "doi": "10.64898/2026.11.04.764428"
       },
       "links": {
-        "abs": "https://www.biorxiv.org/content/10.64898/2026.11.04.764428",
-        "pdf": "https://www.biorxiv.org/content/10.64898/2026.11.04.764428.full.pdf",
-        "html": "https://www.biorxiv.org/content/10.64898/2026.11.04.764428.full"
+        "abs": "https://europepmc.org/article/PPR/PPR1361010"
       },
       "evidence": [
         {
           "term": "We present RadMultiBench",
-          "excerpt": "RadMultiBench: A Reproducible Dual-Task Benchmark Exposing the Limits of Pre-Trained Vision-Language Models Across Thoracic and Breast Imaging We present RadMultiBench, a multimodal benchmark of 6,148 medical images paired with expert radiological impressions across five categories--Breast Cancer, Lung Benign, Lung Malignant, Pneumonia, and Tuberculosis--targeting two core clinical tasks: automated repor",
+          "excerpt": "RadMultiBench: A Reproducible Dual-Task Benchmark Exposing the Limits of Pre-Trained Vision-Language Models Across Thoracic and Breast Imaging We present RadMultiBench, a multimodal benchmark of 6,148 medical images paired with expert radiological impressions across five categories—Breast Cancer, Lung Benign, Lung Malignant, Pneumonia, and Tuberculosis—targeting two core clinical tasks: automated report",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.04.764428.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1361010"
         },
         {
           "term": "We present RadMultiBench, a multimodal benchmark",
-          "excerpt": "RadMultiBench: A Reproducible Dual-Task Benchmark Exposing the Limits of Pre-Trained Vision-Language Models Across Thoracic and Breast Imaging We present RadMultiBench, a multimodal benchmark of 6,148 medical images paired with expert radiological impressions across five categories--Breast Cancer, Lung Benign, Lung Malignant, Pneumonia, and Tuberculosis--targeting two core clinical tasks: automated report generation and disease",
+          "excerpt": "RadMultiBench: A Reproducible Dual-Task Benchmark Exposing the Limits of Pre-Trained Vision-Language Models Across Thoracic and Breast Imaging We present RadMultiBench, a multimodal benchmark of 6,148 medical images paired with expert radiological impressions across five categories—Breast Cancer, Lung Benign, Lung Malignant, Pneumonia, and Tuberculosis—targeting two core clinical tasks: automated report generation and disease c",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.04.764428.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1361010"
         },
         {
           "term": "benchmark",
-          "excerpt": "RadMultiBench: A Reproducible Dual-Task Benchmark Exposing the Limits of Pre-Trained Vision-Language Models Across Thoracic and Breast Imaging We present RadMultiBench, a multimodal benchmark of 6,148 medical images paired with expert radiological impressions across five categories--Breas",
+          "excerpt": "RadMultiBench: A Reproducible Dual-Task Benchmark Exposing the Limits of Pre-Trained Vision-Language Models Across Thoracic and Breast Imaging We present RadMultiBench, a multimodal benchmark of 6,148 medical images paired with expert radiological impressions across five categories—Breast",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.04.764428.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1361010"
         },
         {
           "term": "medical",
-          "excerpt": "xposing the Limits of Pre-Trained Vision-Language Models Across Thoracic and Breast Imaging We present RadMultiBench, a multimodal benchmark of 6,148 medical images paired with expert radiological impressions across five categories--Breast Cancer, Lung Benign, Lung Malignant, Pneumonia, and Tuberculosis--targeting two core clinical tasks: automated report generation and disease classification",
+          "excerpt": "xposing the Limits of Pre-Trained Vision-Language Models Across Thoracic and Breast Imaging We present RadMultiBench, a multimodal benchmark of 6,148 medical images paired with expert radiological impressions across five categories—Breast Cancer, Lung Benign, Lung Malignant, Pneumonia, and Tuberculosis—targeting two core clinical tasks: automated report generation and disease classification. To",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.04.764428.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1361010"
         },
         {
           "term": "clinical",
-          "excerpt": "h expert radiological impressions across five categories--Breast Cancer, Lung Benign, Lung Malignant, Pneumonia, and Tuberculosis--targeting two core clinical tasks: automated report generation and disease classification. To enable reliable, repeatable experimentation, we provide a reproducible pipeline for data ingestion, de-identification, split management, and standardized reporting of text a",
+          "excerpt": "ith expert radiological impressions across five categories—Breast Cancer, Lung Benign, Lung Malignant, Pneumonia, and Tuberculosis—targeting two core clinical tasks: automated report generation and disease classification. To enable reliable, repeatable experimentation, we provide a reproducible pipeline for data ingestion, de-identification, split management, and standardized reporting of text a",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.04.764428.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1361010"
         },
         {
           "term": "cancer",
-          "excerpt": "g We present RadMultiBench, a multimodal benchmark of 6,148 medical images paired with expert radiological impressions across five categories--Breast Cancer, Lung Benign, Lung Malignant, Pneumonia, and Tuberculosis--targeting two core clinical tasks: automated report generation and disease classification. To enable reliable, repeatable experimentation, we provide a reproducible pipeline for da",
+          "excerpt": "ng We present RadMultiBench, a multimodal benchmark of 6,148 medical images paired with expert radiological impressions across five categories—Breast Cancer, Lung Benign, Lung Malignant, Pneumonia, and Tuberculosis—targeting two core clinical tasks: automated report generation and disease classification. To enable reliable, repeatable experimentation, we provide a reproducible pipeline for dat",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.04.764428.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1361010"
         },
         {
           "term": "disease",
-          "excerpt": "tegories--Breast Cancer, Lung Benign, Lung Malignant, Pneumonia, and Tuberculosis--targeting two core clinical tasks: automated report generation and disease classification. To enable reliable, repeatable experimentation, we provide a reproducible pipeline for data ingestion, de-identification, split management, and standardized reporting of text and classification metrics, facilitating dataset",
+          "excerpt": "categories—Breast Cancer, Lung Benign, Lung Malignant, Pneumonia, and Tuberculosis—targeting two core clinical tasks: automated report generation and disease classification. To enable reliable, repeatable experimentation, we provide a reproducible pipeline for data ingestion, de-identification, split management, and standardized reporting of text and classification metrics, facilitating dataset",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.04.764428.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1361010"
         },
         {
           "term": "Vision-Language",
-          "excerpt": "RadMultiBench: A Reproducible Dual-Task Benchmark Exposing the Limits of Pre-Trained Vision-Language Models Across Thoracic and Breast Imaging We present RadMultiBench, a multimodal benchmark of 6,148 medical images paired with expert radiological impressions across five categories--Breast Cancer, Lung Benign, Lung Malignant, Pneumonia, a",
+          "excerpt": "RadMultiBench: A Reproducible Dual-Task Benchmark Exposing the Limits of Pre-Trained Vision-Language Models Across Thoracic and Breast Imaging We present RadMultiBench, a multimodal benchmark of 6,148 medical images paired with expert radiological impressions across five categories—Breast Cancer, Lung Benign, Lung Malignant, Pneumonia, an",
           "location": "Abstract / metadata",
-          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.04.764428.full"
+          "source_url": "https://europepmc.org/article/PPR/PPR1361010"
         }
       ],
       "related_benchmarks": [
@@ -93,9 +91,9 @@
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
       "match_score": 29,
-      "extraction_status": "incomplete",
-      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.11.04.764428.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
-      "content_hash": "1f0cd939d3eaeb7f488b1e4f53414e8fd6f38148557429dd115d49da6374ce4c",
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "f53b354d077fc55aece6d362cf46d17d08531af51f7352782a10b0523e9fdd07",
       "is_seed": false,
       "topic": "multimodal",
       "contribution_type": "new_benchmark"
