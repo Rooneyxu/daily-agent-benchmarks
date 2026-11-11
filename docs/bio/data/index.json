@@ -1,25 +1,25 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-10T12:50:48Z",
-  "total": 212,
+  "generated_at": "2026-11-11T11:59:24Z",
+  "total": 217,
   "counts": {
     "topics": {
-      "multimodal": 53,
-      "general_text": 79,
-      "experiment_agent": 62,
-      "biosafety": 18
+      "experiment_agent": 64,
+      "general_text": 81,
+      "biosafety": 19,
+      "multimodal": 53
     },
     "contribution_types": {
-      "new_benchmark": 175,
-      "audit": 17,
-      "methodology": 20
+      "new_benchmark": 179,
+      "methodology": 21,
+      "audit": 17
     },
     "kinds": {
-      "paper": 212
+      "paper": 217
     },
     "evaluation_contexts": {
-      "beneficial_capability": 194,
-      "biosecurity_misuse": 18
+      "beneficial_capability": 198,
+      "biosecurity_misuse": 19
     }
   },
   "topic_labels": {
@@ -58,55 +58,72 @@
     {
       "source": "arxiv",
       "name": "arXiv",
-      "status": "failed",
-      "started_at": "2026-11-10T12:51:18Z",
-      "finished_at": "2026-11-10T12:52:09Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "Server error '500 Internal Server Error' for url 'https://export.arxiv.org/api/query?search_query=%28%28all%3Abenchmark+OR+all%3Abenchmarking+OR+all%3A%22evaluation+suite%22+OR+all%3A%22evaluation+dataset%22%29+AND+%28all%3Aconstruction+OR+all%3Acuration+OR+all%3A%22quality+control%22+OR+all%3A%22quality+assurance%22+OR+all%3Averifier+OR+all%3Agrader+OR+all%3A%22question+generation%22+OR+all%3A%22automated+evaluation%22+OR+all%3A%22synthetic+evaluation+data%22+OR+all%3A%22judge+calibration%22%29+AND+%28all%3Abiomedical+OR+all%3Amedical+OR+all%3Aclinical+OR+all%3Abiology+OR+all%3Abiological+OR+"
+      "status": "success",
+      "started_at": "2026-11-11T11:59:47Z",
+      "finished_at": "2026-11-11T12:00:36Z",
+      "discovered": 44,
+      "published": 23,
+      "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-11-10T12:52:09Z",
-      "finished_at": "2026-11-10T12:52:25Z",
-      "discovered": 39,
-      "published": 28,
+      "started_at": "2026-11-11T12:00:36Z",
+      "finished_at": "2026-11-11T12:01:42Z",
+      "discovered": 13,
+      "published": 10,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "success",
-      "started_at": "2026-11-10T12:52:25Z",
-      "finished_at": "2026-11-10T12:53:46Z",
-      "discovered": 730,
-      "published": 46,
-      "error": ""
+      "status": "failed",
+      "started_at": "2026-11-11T12:01:42Z",
+      "finished_at": "2026-11-11T12:03:51Z",
+      "discovered": 0,
+      "published": 0,
+      "error": "The read operation timed out"
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-11-10T12:53:46Z",
-      "finished_at": "2026-11-10T12:54:07Z",
-      "discovered": 195,
-      "published": 11,
+      "started_at": "2026-11-11T12:03:51Z",
+      "finished_at": "2026-11-11T12:04:57Z",
+      "discovered": 206,
+      "published": 12,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-11-10T12:54:07Z",
-      "finished_at": "2026-11-10T12:54:07Z",
+      "started_at": "2026-11-11T12:04:57Z",
+      "finished_at": "2026-11-11T12:04:57Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
     }
   ],
   "days": [
+    {
+      "date": "2026-11-10",
+      "count": 3,
+      "entry_ids": [
+        "arxiv:2611.14511",
+        "arxiv:2611.13945",
+        "arxiv:2611.13562"
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "count": 2,
+      "entry_ids": [
+        "arxiv:2611.12640",
+        "arxiv:2611.11802"
+      ]
+    },
     {
       "date": "2026-11-06",
       "count": 1,
@@ -921,6 +938,489 @@
     }
   ],
   "entries": [
+    {
+      "id": "arxiv:2611.14511",
+      "slug": "arxiv-2611-14511-9d5b33b9f0",
+      "kind": "paper",
+      "title": "Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents",
+      "abstract": "Predicting how a ligand binds to its target is central to small-molecule drug discovery. Modern cofolding models can generate diverse candidate poses, but reliably ranking these candidates remains challenging. We introduce Pyrite, a pairwise pose-ranking benchmark comprising 1,500 pose pairs across diverse protein-ligand complexes. Expert chemists equipped with 3D visualization tools and physics-based scores perform near chance, highlighting the difficulty of interpreting available chemical signals. To investigate automated ranking, we introduce PyriteRep, a structured representation of molecular geometry, protein-ligand interactions, and physicochemical scores, and develop two LLM-based agents: PyriteReasoner, which directly compares poses through text-based reasoning, and PyriteFeaturizer, which generates executable code to construct features for logistic regression, optionally incorporating features derived from LLM subcalls. These agents achieve up to 67% and 74% accuracy, respectively, exceeding observed expert performance. LLM-guided feature discovery generally outperforms direct reasoning, while Group Relative Policy Optimization (GRPO) improves open-weight models, enabling them to match or surpass closed-source frontier models in our evaluations. These results establish Pyrite as a challenging test of pose-ranking ability and highlight LLM-guided feature discovery as a promising approach to interpret and combine the outputs of computational chemistry tools.",
+      "authors": [
+        "Megha Srivastava",
+        "Michael H. Lim",
+        "Allison M. Keys",
+        "Pranav Murugan",
+        "Nate Gruver"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-10T18:56:32+00:00",
+      "updated_at": "2026-11-10T18:56:32+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.14511"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.14511v1",
+        "pdf": "https://arxiv.org/pdf/2611.14511v1",
+        "code": "https://github.com/genesistherapeutics/pyrite",
+        "data": "https://huggingface.co/datasets/genesisml/pyrite",
+        "html": "https://arxiv.org/html/2611.14511"
+      },
+      "evidence": [
+        {
+          "term": "We introduce Pyrite, a pairwise pose-ranking benchmark",
+          "excerpt": "all-molecule drug discovery. Modern cofolding models can generate diverse candidate poses, but reliably ranking these candidates remains challenging. We introduce Pyrite, a pairwise pose-ranking benchmark comprising 1,500 pose pairs across diverse protein-ligand complexes. Expert chemists equipped with 3D visualization tools and physics-based scores perform near chance, highlighting the difficulty of interpreting available chemical signals",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.14511"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents Predicting how a ligand binds to its target is central to small-molecule drug discovery. Modern cofolding models can generate diverse candidate poses, but reliably ranking these candidates remains chal",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.14511"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents Predicting how a ligand binds to its target is central to small-molecule drug discovery. Modern cofolding models can generate diverse candidate poses, but reliably ranking these candidates remains challen",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.14511"
+        },
+        {
+          "term": "drug discovery",
+          "excerpt": "Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents Predicting how a ligand binds to its target is central to small-molecule drug discovery. Modern cofolding models can generate diverse candidate poses, but reliably ranking these candidates remains challenging. We introduce Pyrite, a pairwise pose-ranking benchmark comprising 1,500 pose pairs across diverse protein-ligand comp",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.14511"
+        },
+        {
+          "term": "protein",
+          "excerpt": "Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents Predicting how a ligand binds to its target is central to small-molecule drug discovery. Modern cofolding models can generate diverse candidate poses, but reliably ranking these candidates remains challenging. We",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.14511"
+        },
+        {
+          "term": "molecular",
+          "excerpt": "g the difficulty of interpreting available chemical signals. To investigate automated ranking, we introduce PyriteRep, a structured representation of molecular geometry, protein-ligand interactions, and physicochemical scores, and develop two LLM-based agents: PyriteReasoner, which directly compares poses through text-based reasoning, and PyriteFeaturizer, which generates executable code to const",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.14511"
+        },
+        {
+          "term": "molecule",
+          "excerpt": "Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents Predicting how a ligand binds to its target is central to small-molecule drug discovery. Modern cofolding models can generate diverse candidate poses, but reliably ranking these candidates remains challenging. We introduce Pyrite, a pairwise pose-ranking benchmark comprising 1,500 pose pairs across diverse prot",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.14511"
+        },
+        {
+          "term": "tool use",
+          "excerpt": "mance of state-of-the-art LLMs on scientific tasks, including drug discovery ( Han et al., 2026 ; Narayanan et al., 2025 ; Mirza et al., 2024 ) , and tool use can substantially boost performance even on basic chemistry tasks such as interpreting SMILES ( Jang et al., 2025 ; Yu et al., 2025a ) . However, few evaluations target tasks that require reasoning over 3D molecular geometry. Pose ranking",
+          "location": "LLMs for scientific reasoning",
+          "source_url": "https://arxiv.org/html/2611.14511"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "../../p/2611.14511.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 24,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "a11c68373c73ea56415d48bfc6b89b2e297d00f383900cd4747624874cca5dd6",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2611.13945",
+      "slug": "arxiv-2611-13945-ee0b6ae241",
+      "kind": "paper",
+      "title": "Chem World: A Large-Scale Benchmark and Physics-Aware Framework for Trustworthy Molecular Property Prediction",
+      "abstract": "Molecular property prediction is fundamental to computational chemistry and drug formulation research, yet existing benchmarks remain fragmented across datasets, properties, and evaluation protocols, limiting systematic evaluation of model generalization. We introduce Chem World, a large-scale benchmark integrating 17 public datasets with over 800,000 molecular and chemical-system instances across 10 property tracks, covering single-molecule and multi-component systems, including drug solubility. Chem World provides a unified testbed for evaluating molecular representations and compositional modeling across diverse chemical properties. Building on the benchmark, we propose PACM (Physics-Aware Compositional Modeling), which combines molecular representations with composition-aware modeling and domain-specific physical constraints. Extensive experiments show that molecular language models provide strong and transferable representations, while PACM consistently improves prediction across diverse chemical systems. Chem World and our PACM-powered drug-property prediction Agent support generalizable chemical modeling and offer a foundation for AI-assisted biomedical research and drug formulation development.",
+      "authors": [
+        "Tianyou Bai",
+        "Huan Wang",
+        "Mingchen Gao",
+        "Tongrui Yang",
+        "Fangyue Lin",
+        "Pinze Ren",
+        "Zhenlin Zhao",
+        "Siming Dong"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-10T11:30:39+00:00",
+      "updated_at": "2026-11-10T11:30:39+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.13945"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.13945v1",
+        "pdf": "https://arxiv.org/pdf/2611.13945v1",
+        "html": "https://arxiv.org/html/2611.13945"
+      },
+      "evidence": [
+        {
+          "term": "Building on the benchmark",
+          "excerpt": "bility. Chem World provides a unified testbed for evaluating molecular representations and compositional modeling across diverse chemical properties. Building on the benchmark, we propose PACM (Physics-Aware Compositional Modeling), which combines molecular representations with composition-aware modeling and domain-specific physical constraints. Extensive experiments show that molecular language models provide s",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.13945"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Chem World: A Large-Scale Benchmark and Physics-Aware Framework for Trustworthy Molecular Property Prediction Molecular property prediction is fundamental to computational chemistry and drug formulation research, yet existing benchmarks remain fragmented across datasets, pro",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.13945"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "thy Molecular Property Prediction Molecular property prediction is fundamental to computational chemistry and drug formulation research, yet existing benchmarks remain fragmented across datasets, properties, and evaluation protocols, limiting systematic evaluation of model generalization. We introduce Chem World, a large-scale benchmark integrating 17 public datasets with over 800,000 molecular an",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.13945"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "ystems. Chem World and our PACM-powered drug-property prediction Agent support generalizable chemical modeling and offer a foundation for AI-assisted biomedical research and drug formulation development. [[SECTION Chem World: A Large-Scale Benchmark and Physics-Aware Framework for Trustworthy Molecular Property Prediction]] Chem World: A Large-Scale Benchmark and Physics-Aware Framework for Trustw",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.13945"
+        },
+        {
+          "term": "medical",
+          "excerpt": "ems. Chem World and our PACM-powered drug-property prediction Agent support generalizable chemical modeling and offer a foundation for AI-assisted biomedical research and drug formulation development. [[SECTION Chem World: A Large-Scale Benchmark and Physics-Aware Framework for Trustworthy Molecular Property Prediction]] Chem World: A Large-Scale Benchmark and Physics-Aware Framework for Trustw",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.13945"
+        },
+        {
+          "term": "molecular",
+          "excerpt": "Chem World: A Large-Scale Benchmark and Physics-Aware Framework for Trustworthy Molecular Property Prediction Molecular property prediction is fundamental to computational chemistry and drug formulation research, yet existing benchmarks remain fragmented across datasets, properties, and evaluation protocols, limiting systematic",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.13945"
+        },
+        {
+          "term": "molecule",
+          "excerpt": "e-scale benchmark integrating 17 public datasets with over 800,000 molecular and chemical-system instances across 10 property tracks, covering single-molecule and multi-component systems, including drug solubility. Chem World provides a unified testbed for evaluating molecular representations and compositional modeling across diverse chemical properties. Building on the benchmark, we propose PAC",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.13945"
+        },
+        {
+          "term": "microscopic",
+          "excerpt": "ctures and composition-dependent intermolecular interactions. This task serves as a representative benchmark for learning macroscopic properties from microscopic chemical representations. Enthalpy of mixing. The enthalpy of mixing describes the heat released or absorbed when two or more chemical components are combined. It directly reflects intermolecular interactions and mixture compatibility, mak",
+          "location": "B.5 Prediction Tracks",
+          "source_url": "https://arxiv.org/html/2611.13945"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 30,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "7db4b2e7b2c7909cbac6cf00614819dbbf21e5a133bf814284c7ac4a5313963b",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2611.13562",
+      "slug": "arxiv-2611-13562-2c9a7d09ab",
+      "kind": "paper",
+      "title": "An evidence-traceable benchmark of clinical reasoning in large language models",
+      "abstract": "Benchmark scores for medical large language models (LLMs) are difficult to interpret when scoring criteria cannot be traced to clinical evidence. Here we developed Med Evidence Bench (MEB; https://www.medevidencebench.org.cn/), comprising 1,536 physician-constructed items across three levels: guideline knowledge, standardized clinical scenarios and real-world laboratory scenarios. Each criterion stating a medical claim is linked to a versioned source-text span. Across ten LLMs, the Evidence Trace Score (ETS) was 0.975-0.997 for guideline knowledge, 0.292-0.658 for standardized scenarios and 0.182-0.447 for real-world scenarios, and rankings varied across levels. For real-world scenarios, scores for identifying clinical information (mean, 0.770) exceeded those for matching evidence (0.165) or formulating recommendations (0.160). On 1,296 criterion-level judgments, automated grading agreed with the majority vote of three physicians (macro-F1, 0.930; 95% confidence interval, 0.915-0.945), although agreement was lower for evidence application. These findings from Chinese-language materials indicate that guideline recall does not ensure patient-specific evidence use and do not establish clinical effectiveness.",
+      "authors": [
+        "Zhiqun Zhao",
+        "Xiaodong Yang",
+        "Bruce Gu",
+        "Ming Li",
+        "Yi Fu",
+        "Song Li",
+        "Qi Mei",
+        "Zhi Liu",
+        "Kai Zhang",
+        "Kexue Fu",
+        "Jing Wu",
+        "Xiaofei Lu",
+        "Yule Li",
+        "Zheng Wang",
+        "Haiquan Lu",
+        "Xiaoming Wu"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-10T04:28:57+00:00",
+      "updated_at": "2026-11-10T04:28:57+00:00",
+      "priority": "P0",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.13562"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.13562v1",
+        "pdf": "https://arxiv.org/pdf/2611.13562v1",
+        "html": "https://arxiv.org/html/2611.13562"
+      },
+      "evidence": [
+        {
+          "term": "automated grading",
+          "excerpt": "al information (mean, 0.770) exceeded those for matching evidence (0.165) or formulating recommendations (0.160). On 1,296 criterion-level judgments, automated grading agreed with the majority vote of three physicians (macro-F1, 0.930; 95% confidence interval, 0.915-0.945), although agreement was lower for evidence application. These findings from Chinese-language materials indicate that guideline recall",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.13562"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "An evidence-traceable benchmark of clinical reasoning in large language models Benchmark scores for medical large language models (LLMs) are difficult to interpret when scoring criteria cannot be traced to clinical evidence. Here we developed Med Evidence Bench (MEB; htt",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.13562"
+        },
+        {
+          "term": "medical",
+          "excerpt": "An evidence-traceable benchmark of clinical reasoning in large language models Benchmark scores for medical large language models (LLMs) are difficult to interpret when scoring criteria cannot be traced to clinical evidence. Here we developed Med Evidence Bench (MEB; https://www.medevidencebench.org.cn/), comprising 1,536 physician-constructed i",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.13562"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "An evidence-traceable benchmark of clinical reasoning in large language models Benchmark scores for medical large language models (LLMs) are difficult to interpret when scoring criteria cannot be traced to clinical evidence. Here we developed Med Evidence Bench (MEB; https://www.med",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.13562"
+        },
+        {
+          "term": "laboratory",
+          "excerpt": "bench.org.cn/), comprising 1,536 physician-constructed items across three levels: guideline knowledge, standardized clinical scenarios and real-world laboratory scenarios. Each criterion stating a medical claim is linked to a versioned source-text span. Across ten LLMs, the Evidence Trace Score (ETS) was 0.975-0.997 for guideline knowledge, 0.292-0.658 for standardized scenarios and 0.182-0.447 fo",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.13562"
+        },
+        {
+          "term": "patient",
+          "excerpt": "although agreement was lower for evidence application. These findings from Chinese-language materials indicate that guideline recall does not ensure patient-specific evidence use and do not establish clinical effectiveness. [[SECTION An evidence-traceable benchmark of clinical reasoning in large language models]] An evidence-traceable benchmark of clinical reasoning in large language models Co",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.13562"
+        }
+      ],
+      "related_benchmarks": [
+        "HealthBench",
+        "CARDBiomedBench",
+        "AlpacaEval",
+        "MedAgentBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "match_score": 19,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "ff8f004976993e9647dc0561569ef8cdc68ebf4ebf4b2ce868737f729f7f0346",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "methodology"
+    },
+    {
+      "id": "arxiv:2611.12640",
+      "slug": "arxiv-2611-12640-88c6a58000",
+      "kind": "paper",
+      "title": "TrialDesignBench: Benchmarking Language Models for Phase-I Trial Design Against Clinical Knowledge",
+      "abstract": "AI is used in much of the clinical trial pipeline. However, selecting the statistical design of a trial, a crucial step that determines how drug doses are tested on humans and evaluated, has seen almost no AI progress. LLMs appear to be a natural fit given their strengths in biomedical knowledge and statistical reasoning. Nevertheless, there is currently no appropriate way to evaluate such abilities because recent regulatory and methodological shifts, most notably FDA's Project Optimus, have redefined what constitutes a reasonable design and rendered many previous designs obsolete. To lay the groundwork for AI-assisted trial design, we introduce TrialDesignBench, a benchmark of 617 Phase-I/I-II oncology dose-finding trials, each paired with an expert-validated reference design that is consistent with the latest FDA regulatory initiatives. This reference standard is produced through a formalization of the expert design process. We evaluate five frontier LLMs, none of which matches the reference standard. Our ablation experiments trace this performance gap to two main causes, inference of latent, unrecorded design determinants from trial sources (supplying them raises class-wise balanced accuracy by 0.22) and structured decision-tree reasoning (+0.24). TrialDesignBench offers a reproducible, contemporary-standard objective for evaluating and enhancing AI-assisted trial design.",
+      "authors": [
+        "Yihan Hank Tang",
+        "Peng Yang",
+        "Jiayi Xin",
+        "Tianqi Shang",
+        "Xuyang Chen",
+        "Ying Yuan",
+        "Yi Lian",
+        "Qi Long"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-09T16:15:57+00:00",
+      "updated_at": "2026-11-09T16:15:57+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.12640"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.12640v1",
+        "pdf": "https://arxiv.org/pdf/2611.12640v1",
+        "code": "https://github.com/hanktang-research/TrialDesignBench",
+        "html": "https://arxiv.org/html/2611.12640"
+      },
+      "evidence": [
+        {
+          "term": "we introduce TrialDesignBench",
+          "excerpt": "have redefined what constitutes a reasonable design and rendered many previous designs obsolete. To lay the groundwork for AI-assisted trial design, we introduce TrialDesignBench, a benchmark of 617 Phase-I/I-II oncology dose-finding trials, each paired with an expert-validated reference design that is consistent with the latest FDA regulatory initiatives. This reference standard is produced through a formalization",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.12640"
+        },
+        {
+          "term": "we introduce TrialDesignBench, a benchmark",
+          "excerpt": "have redefined what constitutes a reasonable design and rendered many previous designs obsolete. To lay the groundwork for AI-assisted trial design, we introduce TrialDesignBench, a benchmark of 617 Phase-I/I-II oncology dose-finding trials, each paired with an expert-validated reference design that is consistent with the latest FDA regulatory initiatives. This reference standard is produced through a formalization of the exper",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.12640"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "TrialDesignBench: Benchmarking Language Models for Phase-I Trial Design Against Clinical Knowledge AI is used in much of the clinical trial pipeline. However, selecting the statistical design of a trial, a crucial step that determines how drug doses are tested on hum",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.12640"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "TrialDesignBench: Benchmarking Language Models for Phase-I Trial Design Against Clinical Knowledge AI is used in much of the clinical trial pipeline. However, selecting the statistical design of a trial, a crucial step that determines how drug doses are tested on humans",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.12640"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "etermines how drug doses are tested on humans and evaluated, has seen almost no AI progress. LLMs appear to be a natural fit given their strengths in biomedical knowledge and statistical reasoning. Nevertheless, there is currently no appropriate way to evaluate such abilities because recent regulatory and methodological shifts, most notably FDA's Project Optimus, have redefined what constitutes a",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.12640"
+        },
+        {
+          "term": "medical",
+          "excerpt": "rmines how drug doses are tested on humans and evaluated, has seen almost no AI progress. LLMs appear to be a natural fit given their strengths in biomedical knowledge and statistical reasoning. Nevertheless, there is currently no appropriate way to evaluate such abilities because recent regulatory and methodological shifts, most notably FDA's Project Optimus, have redefined what constitutes a",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.12640"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "TrialDesignBench: Benchmarking Language Models for Phase-I Trial Design Against Clinical Knowledge AI is used in much of the clinical trial pipeline. However, selecting the statistical design of a trial, a crucial step that determines how drug doses are tested on humans and evaluated, has seen almost no AI progress. LLMs appea",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.12640"
+        }
+      ],
+      "related_benchmarks": [
+        "TrialDesignBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 27,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "85ebbc131ff5122e7965b6c03f1341d0edb13ce16b13ceb4477f1d126326c282",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2611.11802",
+      "slug": "arxiv-2611-11802-18e22c01c6",
+      "kind": "paper",
+      "title": "HiddenPathQA: A Benchmark for Knowledge Graph Question Answering When Questions Hide Their Paths",
+      "abstract": "Knowledge graph question answering (KGQA) systems are typically evaluated on questions whose surface tokens lexically expose the gold KG path. Users, however, may ask questions without knowing the underlying schema: \"Which condition could Andrew have due to family history?\" compresses a 4-hop chain \"Andrew --[father]--> parent --[father]--> grandparent --[medical condition]--> disease --[subclass of]--> hereditary disorder\" into a single phrase (family history) that names none of those relations. We identify this collapse of path-question alignment as a blind spot in existing KGQA evaluation. Three major LLM-KG paradigms, hop-by-hop exploration, plan-then-retrieve, and similarity-based retrieval, implicitly rely on such lexical cues, an assumption rarely tested in practice. We make three contributions. (i) We introduce HiddenPathQA, a manually verified benchmark of 1,055 questions spanning 2-6 hops and multiple domains, constructed so that question wording does not reveal the gold path's relations. (ii) We propose Holistic Path Selection, which compares questions against candidate relation chains in the local subgraph as complete units, replacing irreversible per-hop relation scoring with globally informed chain-level reasoning. We develop two implementations, TieredHolistic and FlatHolistic. (iii) We conduct a pseudoword stress test that replaces entity names with meaningless placeholders to distinguish KG-grounded reasoning from entity-level memorization. Holistic Path Selection outperforms six strong KGQA baselines (ToG, PoG, FiDeLiS, R2-KG, KAPING, and KARPA) by 8.8-17.9 accuracy points across two LLM backbones and both original and pseudoword settings. Its advantage under pseudoword replacement shows that the gains cannot be explained by entity-level memorization alone.",
+      "authors": [
+        "Sumin Jo",
+        "Edward Choi"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-09T03:01:41+00:00",
+      "updated_at": "2026-11-09T03:01:41+00:00",
+      "priority": "P1",
+      "categories": [
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.11802"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.11802v1",
+        "pdf": "https://arxiv.org/pdf/2611.11802v1",
+        "code": "https://github.com/ekrxjwh2009/HiddenPathQA",
+        "data": "https://huggingface.co/datasets/suminJo/HiddenPathQA",
+        "html": "https://arxiv.org/html/2611.11802"
+      },
+      "evidence": [
+        {
+          "term": "We introduce HiddenPathQA",
+          "excerpt": "ieve, and similarity-based retrieval, implicitly rely on such lexical cues, an assumption rarely tested in practice. We make three contributions. (i) We introduce HiddenPathQA, a manually verified benchmark of 1,055 questions spanning 2-6 hops and multiple domains, constructed so that question wording does not reveal the gold path's relations. (ii) We propose Holistic Path Selection, which compares questions aga",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.11802"
+        },
+        {
+          "term": "We introduce HiddenPathQA, a manually verified benchmark",
+          "excerpt": "ieve, and similarity-based retrieval, implicitly rely on such lexical cues, an assumption rarely tested in practice. We make three contributions. (i) We introduce HiddenPathQA, a manually verified benchmark of 1,055 questions spanning 2-6 hops and multiple domains, constructed so that question wording does not reveal the gold path's relations. (ii) We propose Holistic Path Selection, which compares questions against candidate relation chains",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.11802"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "HiddenPathQA: A Benchmark for Knowledge Graph Question Answering When Questions Hide Their Paths Knowledge graph question answering (KGQA) systems are typically evaluated on questions whose surface tokens lexically expose the gold KG path. Users, however, may ask q",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.11802"
+        },
+        {
+          "term": "medical",
+          "excerpt": "schema: \"Which condition could Andrew have due to family history?\" compresses a 4-hop chain \"Andrew --[father]--> parent --[father]--> grandparent --[medical condition]--> disease --[subclass of]--> hereditary disorder\" into a single phrase (family history) that names none of those relations. We identify this collapse of path-question alignment as a blind spot in existing KGQA evaluation. Three",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.11802"
+        },
+        {
+          "term": "disease",
+          "excerpt": "on could Andrew have due to family history?\" compresses a 4-hop chain \"Andrew --[father]--> parent --[father]--> grandparent --[medical condition]--> disease --[subclass of]--> hereditary disorder\" into a single phrase (family history) that names none of those relations. We identify this collapse of path-question alignment as a blind spot in existing KGQA evaluation. Three major LLM-KG paradigm",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.11802"
+        },
+        {
+          "term": "dual-use",
+          "excerpt": "s, image generators, or scraped datasets)? Answer: [N/A] Answer: [N/A] Justification: The paper does not release high-risk models, scraped images, or dual-use generative systems. The released benchmark is documented with intended use, limitations, license information, and Responsible AI metadata. Justification: The paper does not release high-risk models, scraped images, or dual-use generative s",
+          "location": "NeurIPS Paper Checklist",
+          "source_url": "https://arxiv.org/html/2611.11802"
+        }
+      ],
+      "related_benchmarks": [
+        "HiddenPathQA",
+        "KGQA",
+        "MetaQA",
+        "GrailQA",
+        "KQA",
+        "FreeBaseQA",
+        "SimpleDBpediaQA",
+        "MINTQA",
+        "CR-LT-KGQA",
+        "Dynamic-KGQA",
+        "FreebaseQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 23,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "24fff6f5e97e53f0945501da363507e3ab035d501509c1406af77c0274724c4c",
+      "is_seed": false,
+      "topic": "biosafety",
+      "contribution_type": "new_benchmark"
+    },
     {
       "id": "doi:10.64898/2026.11.04.764428",
       "slug": "doi-10-64898-2026-11-04-764428-ca456e2f49",

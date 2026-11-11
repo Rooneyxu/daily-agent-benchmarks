@@ -1,0 +1,195 @@
+{
+  "date": "2026-11-09",
+  "count": 2,
+  "entries": [
+    {
+      "id": "arxiv:2611.12640",
+      "slug": "arxiv-2611-12640-88c6a58000",
+      "kind": "paper",
+      "title": "TrialDesignBench: Benchmarking Language Models for Phase-I Trial Design Against Clinical Knowledge",
+      "abstract": "AI is used in much of the clinical trial pipeline. However, selecting the statistical design of a trial, a crucial step that determines how drug doses are tested on humans and evaluated, has seen almost no AI progress. LLMs appear to be a natural fit given their strengths in biomedical knowledge and statistical reasoning. Nevertheless, there is currently no appropriate way to evaluate such abilities because recent regulatory and methodological shifts, most notably FDA's Project Optimus, have redefined what constitutes a reasonable design and rendered many previous designs obsolete. To lay the groundwork for AI-assisted trial design, we introduce TrialDesignBench, a benchmark of 617 Phase-I/I-II oncology dose-finding trials, each paired with an expert-validated reference design that is consistent with the latest FDA regulatory initiatives. This reference standard is produced through a formalization of the expert design process. We evaluate five frontier LLMs, none of which matches the reference standard. Our ablation experiments trace this performance gap to two main causes, inference of latent, unrecorded design determinants from trial sources (supplying them raises class-wise balanced accuracy by 0.22) and structured decision-tree reasoning (+0.24). TrialDesignBench offers a reproducible, contemporary-standard objective for evaluating and enhancing AI-assisted trial design.",
+      "authors": [
+        "Yihan Hank Tang",
+        "Peng Yang",
+        "Jiayi Xin",
+        "Tianqi Shang",
+        "Xuyang Chen",
+        "Ying Yuan",
+        "Yi Lian",
+        "Qi Long"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-09T16:15:57+00:00",
+      "updated_at": "2026-11-09T16:15:57+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.12640"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.12640v1",
+        "pdf": "https://arxiv.org/pdf/2611.12640v1",
+        "code": "https://github.com/hanktang-research/TrialDesignBench",
+        "html": "https://arxiv.org/html/2611.12640"
+      },
+      "evidence": [
+        {
+          "term": "we introduce TrialDesignBench",
+          "excerpt": "have redefined what constitutes a reasonable design and rendered many previous designs obsolete. To lay the groundwork for AI-assisted trial design, we introduce TrialDesignBench, a benchmark of 617 Phase-I/I-II oncology dose-finding trials, each paired with an expert-validated reference design that is consistent with the latest FDA regulatory initiatives. This reference standard is produced through a formalization",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.12640"
+        },
+        {
+          "term": "we introduce TrialDesignBench, a benchmark",
+          "excerpt": "have redefined what constitutes a reasonable design and rendered many previous designs obsolete. To lay the groundwork for AI-assisted trial design, we introduce TrialDesignBench, a benchmark of 617 Phase-I/I-II oncology dose-finding trials, each paired with an expert-validated reference design that is consistent with the latest FDA regulatory initiatives. This reference standard is produced through a formalization of the exper",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.12640"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "TrialDesignBench: Benchmarking Language Models for Phase-I Trial Design Against Clinical Knowledge AI is used in much of the clinical trial pipeline. However, selecting the statistical design of a trial, a crucial step that determines how drug doses are tested on hum",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.12640"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "TrialDesignBench: Benchmarking Language Models for Phase-I Trial Design Against Clinical Knowledge AI is used in much of the clinical trial pipeline. However, selecting the statistical design of a trial, a crucial step that determines how drug doses are tested on humans",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.12640"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "etermines how drug doses are tested on humans and evaluated, has seen almost no AI progress. LLMs appear to be a natural fit given their strengths in biomedical knowledge and statistical reasoning. Nevertheless, there is currently no appropriate way to evaluate such abilities because recent regulatory and methodological shifts, most notably FDA's Project Optimus, have redefined what constitutes a",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.12640"
+        },
+        {
+          "term": "medical",
+          "excerpt": "rmines how drug doses are tested on humans and evaluated, has seen almost no AI progress. LLMs appear to be a natural fit given their strengths in biomedical knowledge and statistical reasoning. Nevertheless, there is currently no appropriate way to evaluate such abilities because recent regulatory and methodological shifts, most notably FDA's Project Optimus, have redefined what constitutes a",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.12640"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "TrialDesignBench: Benchmarking Language Models for Phase-I Trial Design Against Clinical Knowledge AI is used in much of the clinical trial pipeline. However, selecting the statistical design of a trial, a crucial step that determines how drug doses are tested on humans and evaluated, has seen almost no AI progress. LLMs appea",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.12640"
+        }
+      ],
+      "related_benchmarks": [
+        "TrialDesignBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 27,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "85ebbc131ff5122e7965b6c03f1341d0edb13ce16b13ceb4477f1d126326c282",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2611.11802",
+      "slug": "arxiv-2611-11802-18e22c01c6",
+      "kind": "paper",
+      "title": "HiddenPathQA: A Benchmark for Knowledge Graph Question Answering When Questions Hide Their Paths",
+      "abstract": "Knowledge graph question answering (KGQA) systems are typically evaluated on questions whose surface tokens lexically expose the gold KG path. Users, however, may ask questions without knowing the underlying schema: \"Which condition could Andrew have due to family history?\" compresses a 4-hop chain \"Andrew --[father]--> parent --[father]--> grandparent --[medical condition]--> disease --[subclass of]--> hereditary disorder\" into a single phrase (family history) that names none of those relations. We identify this collapse of path-question alignment as a blind spot in existing KGQA evaluation. Three major LLM-KG paradigms, hop-by-hop exploration, plan-then-retrieve, and similarity-based retrieval, implicitly rely on such lexical cues, an assumption rarely tested in practice. We make three contributions. (i) We introduce HiddenPathQA, a manually verified benchmark of 1,055 questions spanning 2-6 hops and multiple domains, constructed so that question wording does not reveal the gold path's relations. (ii) We propose Holistic Path Selection, which compares questions against candidate relation chains in the local subgraph as complete units, replacing irreversible per-hop relation scoring with globally informed chain-level reasoning. We develop two implementations, TieredHolistic and FlatHolistic. (iii) We conduct a pseudoword stress test that replaces entity names with meaningless placeholders to distinguish KG-grounded reasoning from entity-level memorization. Holistic Path Selection outperforms six strong KGQA baselines (ToG, PoG, FiDeLiS, R2-KG, KAPING, and KARPA) by 8.8-17.9 accuracy points across two LLM backbones and both original and pseudoword settings. Its advantage under pseudoword replacement shows that the gains cannot be explained by entity-level memorization alone.",
+      "authors": [
+        "Sumin Jo",
+        "Edward Choi"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-09T03:01:41+00:00",
+      "updated_at": "2026-11-09T03:01:41+00:00",
+      "priority": "P1",
+      "categories": [
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.11802"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.11802v1",
+        "pdf": "https://arxiv.org/pdf/2611.11802v1",
+        "code": "https://github.com/ekrxjwh2009/HiddenPathQA",
+        "data": "https://huggingface.co/datasets/suminJo/HiddenPathQA",
+        "html": "https://arxiv.org/html/2611.11802"
+      },
+      "evidence": [
+        {
+          "term": "We introduce HiddenPathQA",
+          "excerpt": "ieve, and similarity-based retrieval, implicitly rely on such lexical cues, an assumption rarely tested in practice. We make three contributions. (i) We introduce HiddenPathQA, a manually verified benchmark of 1,055 questions spanning 2-6 hops and multiple domains, constructed so that question wording does not reveal the gold path's relations. (ii) We propose Holistic Path Selection, which compares questions aga",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.11802"
+        },
+        {
+          "term": "We introduce HiddenPathQA, a manually verified benchmark",
+          "excerpt": "ieve, and similarity-based retrieval, implicitly rely on such lexical cues, an assumption rarely tested in practice. We make three contributions. (i) We introduce HiddenPathQA, a manually verified benchmark of 1,055 questions spanning 2-6 hops and multiple domains, constructed so that question wording does not reveal the gold path's relations. (ii) We propose Holistic Path Selection, which compares questions against candidate relation chains",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.11802"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "HiddenPathQA: A Benchmark for Knowledge Graph Question Answering When Questions Hide Their Paths Knowledge graph question answering (KGQA) systems are typically evaluated on questions whose surface tokens lexically expose the gold KG path. Users, however, may ask q",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.11802"
+        },
+        {
+          "term": "medical",
+          "excerpt": "schema: \"Which condition could Andrew have due to family history?\" compresses a 4-hop chain \"Andrew --[father]--> parent --[father]--> grandparent --[medical condition]--> disease --[subclass of]--> hereditary disorder\" into a single phrase (family history) that names none of those relations. We identify this collapse of path-question alignment as a blind spot in existing KGQA evaluation. Three",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.11802"
+        },
+        {
+          "term": "disease",
+          "excerpt": "on could Andrew have due to family history?\" compresses a 4-hop chain \"Andrew --[father]--> parent --[father]--> grandparent --[medical condition]--> disease --[subclass of]--> hereditary disorder\" into a single phrase (family history) that names none of those relations. We identify this collapse of path-question alignment as a blind spot in existing KGQA evaluation. Three major LLM-KG paradigm",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.11802"
+        },
+        {
+          "term": "dual-use",
+          "excerpt": "s, image generators, or scraped datasets)? Answer: [N/A] Answer: [N/A] Justification: The paper does not release high-risk models, scraped images, or dual-use generative systems. The released benchmark is documented with intended use, limitations, license information, and Responsible AI metadata. Justification: The paper does not release high-risk models, scraped images, or dual-use generative s",
+          "location": "NeurIPS Paper Checklist",
+          "source_url": "https://arxiv.org/html/2611.11802"
+        }
+      ],
+      "related_benchmarks": [
+        "HiddenPathQA",
+        "KGQA",
+        "MetaQA",
+        "GrailQA",
+        "KQA",
+        "FreeBaseQA",
+        "SimpleDBpediaQA",
+        "MINTQA",
+        "CR-LT-KGQA",
+        "Dynamic-KGQA",
+        "FreebaseQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 23,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "24fff6f5e97e53f0945501da363507e3ab035d501509c1406af77c0274724c4c",
+      "is_seed": false,
+      "topic": "biosafety",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
