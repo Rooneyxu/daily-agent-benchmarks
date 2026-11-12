@@ -1,6 +1,6 @@
 {
   "date": "2026-11-10",
-  "count": 3,
+  "count": 4,
   "entries": [
     {
       "id": "arxiv:2611.14511",
@@ -295,6 +295,102 @@
       "is_seed": false,
       "topic": "general_text",
       "contribution_type": "methodology"
+    },
+    {
+      "id": "doi:10.64898/2026.11.09.765238",
+      "slug": "doi-10-64898-2026-11-09-765238-111a666160",
+      "kind": "paper",
+      "title": "Cross-state representation learning enables prospective discovery of dynamic protein allosteric sites",
+      "abstract": "Allosteric regulation offers multifunctional induction in therapeutic interventions, yet conformational plasticity hinders computational identification of allosteric sites. Machine learning models rely on static holo (ligand-bound) structures, generalizing poorly to apo or substrate-bound states where binding pockets are transient or cryptic. We present AsBench2, a cross-state site-recognition benchmark, and AllositeUltra, a deep learning framework integrating multimodal protein representations (combining structure-aware language models with physical dynamics) and residue-guided candidate supplementation, effectively decoupling site detection from static pocket geometry. AllositeUltra demonstrates superior generalization, achieving Top-3 site recovery rates of 65.2% and 70.6% on apo and substrate-bound structures, respectively, representing relative improvements of 36.4% and approximately 50% over the best-performing baselines. Prospective application to MAGI2 identifies a previously unrecognized interdomain allosteric pocket, validated at atomic resolution through small-molecule screening and X-ray crystallography. Proteome-wide application yields a high-confidence atlas of targetable allosteric sites, bridging the gap between structural representation learning and prospective AI-driven drug discovery.",
+      "authors": [
+        "Ren, Q.",
+        "Wu, L.",
+        "Zha, J.",
+        "Li, M.",
+        "Feng, W.",
+        "Zhang, H.",
+        "Yang, H.",
+        "Li, R.",
+        "Liu, X.",
+        "He, J.",
+        "Zhou, W.",
+        "Song, Y.",
+        "Wu, C.",
+        "Shen, Q.",
+        "Cheng, X.",
+        "Qin, W.",
+        "Zheng, Z.",
+        "Zhang, J."
+      ],
+      "source": "biorxiv",
+      "published_at": "2026-11-10T00:00:00+00:00",
+      "updated_at": "2026-11-10T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by_nd",
+      "identifiers": {
+        "doi": "10.64898/2026.11.09.765238"
+      },
+      "links": {
+        "abs": "https://www.biorxiv.org/content/10.64898/2026.11.09.765238",
+        "pdf": "https://www.biorxiv.org/content/10.64898/2026.11.09.765238.full.pdf",
+        "html": "https://www.biorxiv.org/content/10.64898/2026.11.09.765238.full"
+      },
+      "evidence": [
+        {
+          "term": "We present AsBench2, a cross-state site-recognition benchmark",
+          "excerpt": "s rely on static holo (ligand-bound) structures, generalizing poorly to apo or substrate-bound states where binding pockets are transient or cryptic. We present AsBench2, a cross-state site-recognition benchmark, and AllositeUltra, a deep learning framework integrating multimodal protein representations (combining structure-aware language models with physical dynamics) and residue-guided candidate supplementation, effectively decoupling site detec",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.09.765238.full"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "eralizing poorly to apo or substrate-bound states where binding pockets are transient or cryptic. We present AsBench2, a cross-state site-recognition benchmark, and AllositeUltra, a deep learning framework integrating multimodal protein representations (combining structure-aware language models with physical dynamics) and residue-guided candidate supplementation, effectively decoupling site detec",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.09.765238.full"
+        },
+        {
+          "term": "drug discovery",
+          "excerpt": "yields a high-confidence atlas of targetable allosteric sites, bridging the gap between structural representation learning and prospective AI-driven drug discovery. Allosteric regulation offers multifunctional induction in therapeutic interventions, yet conformational plasticity hinders computational identification of allosteric sites. Machine learning models rely on static holo (ligand-bound) struct",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.09.765238.full"
+        },
+        {
+          "term": "protein",
+          "excerpt": "Cross-state representation learning enables prospective discovery of dynamic protein allosteric sites Allosteric regulation offers multifunctional induction in therapeutic interventions, yet conformational plasticity hinders computational identification of allosteric sites. Machine learning models rely on static holo (liga",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.09.765238.full"
+        },
+        {
+          "term": "molecule",
+          "excerpt": "es. Prospective application to MAGI2 identifies a previously unrecognized interdomain allosteric pocket, validated at atomic resolution through small-molecule screening and X-ray crystallography. Proteome-wide application yields a high-confidence atlas of targetable allosteric sites, bridging the gap between structural representation learning and prospective AI-driven drug discovery. Allosteric",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.09.765238.full"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "ets are transient or cryptic. We present AsBench2, a cross-state site-recognition benchmark, and AllositeUltra, a deep learning framework integrating multimodal protein representations (combining structure-aware language models with physical dynamics) and residue-guided candidate supplementation, effectively decoupling site detection from static pocket geometry. AllositeUltra demonstrates superior",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.09.765238.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.11.09.765238.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "39d0294ace66330ac60f4d038c383dea804edc3113b91b93b8bc8e3710902465",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
     }
   ]
 }

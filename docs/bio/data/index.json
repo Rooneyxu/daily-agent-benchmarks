@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-11T11:59:24Z",
-  "total": 217,
+  "generated_at": "2026-11-12T13:01:30Z",
+  "total": 218,
   "counts": {
     "topics": {
       "experiment_agent": 64,
       "general_text": 81,
-      "biosafety": 19,
-      "multimodal": 53
+      "multimodal": 54,
+      "biosafety": 19
     },
     "contribution_types": {
-      "new_benchmark": 179,
+      "new_benchmark": 180,
       "methodology": 21,
       "audit": 17
     },
     "kinds": {
-      "paper": 217
+      "paper": 218
     },
     "evaluation_contexts": {
-      "beneficial_capability": 198,
+      "beneficial_capability": 199,
       "biosecurity_misuse": 19
     }
   },
@@ -59,48 +59,48 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-11-11T11:59:47Z",
-      "finished_at": "2026-11-11T12:00:36Z",
-      "discovered": 44,
-      "published": 23,
+      "started_at": "2026-11-12T13:02:03Z",
+      "finished_at": "2026-11-12T13:02:31Z",
+      "discovered": 38,
+      "published": 19,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-11-11T12:00:36Z",
-      "finished_at": "2026-11-11T12:01:42Z",
-      "discovered": 13,
-      "published": 10,
+      "started_at": "2026-11-12T13:02:31Z",
+      "finished_at": "2026-11-12T13:09:15Z",
+      "discovered": 103,
+      "published": 61,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "failed",
-      "started_at": "2026-11-11T12:01:42Z",
-      "finished_at": "2026-11-11T12:03:51Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "The read operation timed out"
+      "status": "success",
+      "started_at": "2026-11-12T13:09:15Z",
+      "finished_at": "2026-11-12T13:15:25Z",
+      "discovered": 864,
+      "published": 45,
+      "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-11-11T12:03:51Z",
-      "finished_at": "2026-11-11T12:04:57Z",
-      "discovered": 206,
-      "published": 12,
+      "started_at": "2026-11-12T13:15:25Z",
+      "finished_at": "2026-11-12T13:16:08Z",
+      "discovered": 237,
+      "published": 16,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-11-11T12:04:57Z",
-      "finished_at": "2026-11-11T12:04:57Z",
+      "started_at": "2026-11-12T13:16:08Z",
+      "finished_at": "2026-11-12T13:16:08Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
@@ -109,11 +109,12 @@
   "days": [
     {
       "date": "2026-11-10",
-      "count": 3,
+      "count": 4,
       "entry_ids": [
         "arxiv:2611.14511",
         "arxiv:2611.13945",
-        "arxiv:2611.13562"
+        "arxiv:2611.13562",
+        "doi:10.64898/2026.11.09.765238"
       ]
     },
     {
@@ -1231,6 +1232,102 @@
       "is_seed": false,
       "topic": "general_text",
       "contribution_type": "methodology"
+    },
+    {
+      "id": "doi:10.64898/2026.11.09.765238",
+      "slug": "doi-10-64898-2026-11-09-765238-111a666160",
+      "kind": "paper",
+      "title": "Cross-state representation learning enables prospective discovery of dynamic protein allosteric sites",
+      "abstract": "Allosteric regulation offers multifunctional induction in therapeutic interventions, yet conformational plasticity hinders computational identification of allosteric sites. Machine learning models rely on static holo (ligand-bound) structures, generalizing poorly to apo or substrate-bound states where binding pockets are transient or cryptic. We present AsBench2, a cross-state site-recognition benchmark, and AllositeUltra, a deep learning framework integrating multimodal protein representations (combining structure-aware language models with physical dynamics) and residue-guided candidate supplementation, effectively decoupling site detection from static pocket geometry. AllositeUltra demonstrates superior generalization, achieving Top-3 site recovery rates of 65.2% and 70.6% on apo and substrate-bound structures, respectively, representing relative improvements of 36.4% and approximately 50% over the best-performing baselines. Prospective application to MAGI2 identifies a previously unrecognized interdomain allosteric pocket, validated at atomic resolution through small-molecule screening and X-ray crystallography. Proteome-wide application yields a high-confidence atlas of targetable allosteric sites, bridging the gap between structural representation learning and prospective AI-driven drug discovery.",
+      "authors": [
+        "Ren, Q.",
+        "Wu, L.",
+        "Zha, J.",
+        "Li, M.",
+        "Feng, W.",
+        "Zhang, H.",
+        "Yang, H.",
+        "Li, R.",
+        "Liu, X.",
+        "He, J.",
+        "Zhou, W.",
+        "Song, Y.",
+        "Wu, C.",
+        "Shen, Q.",
+        "Cheng, X.",
+        "Qin, W.",
+        "Zheng, Z.",
+        "Zhang, J."
+      ],
+      "source": "biorxiv",
+      "published_at": "2026-11-10T00:00:00+00:00",
+      "updated_at": "2026-11-10T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by_nd",
+      "identifiers": {
+        "doi": "10.64898/2026.11.09.765238"
+      },
+      "links": {
+        "abs": "https://www.biorxiv.org/content/10.64898/2026.11.09.765238",
+        "pdf": "https://www.biorxiv.org/content/10.64898/2026.11.09.765238.full.pdf",
+        "html": "https://www.biorxiv.org/content/10.64898/2026.11.09.765238.full"
+      },
+      "evidence": [
+        {
+          "term": "We present AsBench2, a cross-state site-recognition benchmark",
+          "excerpt": "s rely on static holo (ligand-bound) structures, generalizing poorly to apo or substrate-bound states where binding pockets are transient or cryptic. We present AsBench2, a cross-state site-recognition benchmark, and AllositeUltra, a deep learning framework integrating multimodal protein representations (combining structure-aware language models with physical dynamics) and residue-guided candidate supplementation, effectively decoupling site detec",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.09.765238.full"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "eralizing poorly to apo or substrate-bound states where binding pockets are transient or cryptic. We present AsBench2, a cross-state site-recognition benchmark, and AllositeUltra, a deep learning framework integrating multimodal protein representations (combining structure-aware language models with physical dynamics) and residue-guided candidate supplementation, effectively decoupling site detec",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.09.765238.full"
+        },
+        {
+          "term": "drug discovery",
+          "excerpt": "yields a high-confidence atlas of targetable allosteric sites, bridging the gap between structural representation learning and prospective AI-driven drug discovery. Allosteric regulation offers multifunctional induction in therapeutic interventions, yet conformational plasticity hinders computational identification of allosteric sites. Machine learning models rely on static holo (ligand-bound) struct",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.09.765238.full"
+        },
+        {
+          "term": "protein",
+          "excerpt": "Cross-state representation learning enables prospective discovery of dynamic protein allosteric sites Allosteric regulation offers multifunctional induction in therapeutic interventions, yet conformational plasticity hinders computational identification of allosteric sites. Machine learning models rely on static holo (liga",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.09.765238.full"
+        },
+        {
+          "term": "molecule",
+          "excerpt": "es. Prospective application to MAGI2 identifies a previously unrecognized interdomain allosteric pocket, validated at atomic resolution through small-molecule screening and X-ray crystallography. Proteome-wide application yields a high-confidence atlas of targetable allosteric sites, bridging the gap between structural representation learning and prospective AI-driven drug discovery. Allosteric",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.09.765238.full"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "ets are transient or cryptic. We present AsBench2, a cross-state site-recognition benchmark, and AllositeUltra, a deep learning framework integrating multimodal protein representations (combining structure-aware language models with physical dynamics) and residue-guided candidate supplementation, effectively decoupling site detection from static pocket geometry. AllositeUltra demonstrates superior",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.09.765238.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.11.09.765238.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "39d0294ace66330ac60f4d038c383dea804edc3113b91b93b8bc8e3710902465",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
     },
     {
       "id": "arxiv:2611.12640",
