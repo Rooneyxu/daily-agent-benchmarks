@@ -1,0 +1,253 @@
+{
+  "date": "2026-11-11",
+  "count": 3,
+  "entries": [
+    {
+      "id": "arxiv:2611.15831",
+      "slug": "arxiv-2611-15831-16ac033f18",
+      "kind": "paper",
+      "title": "NIBench: benchmarking autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging",
+      "abstract": "Autonomous AI agents are increasingly used to automate biomedical research, creating a growing need to benchmark their capabilities on real scientific data and workflows. Their reliability in neuroimaging remains insufficiently characterized, where plausible analytical outputs can conceal errors that affect scientific conclusions. Existing studies have advanced scientific question answering and tool-based automation, but provide limited evidence on workflow reconstruction, acquisition of procedural expertise and evidence-based scientific judgment. Here we present NIBench, a neuroimaging benchmark comprising three complementary evaluations of autonomous agents. First, we benchmark execution and workflow reconstruction using 56 tasks across seven tool ecosystems, covering structural, diffusion and functional magnetic resonance imaging, positron emission tomography and multimodal analyses. Second, we examine whether agents can evolve their procedural skills through distillation of execution trajectories, evaluating the resulting skills on previously encountered tasks, unseen tasks and other models. Third, we assess scientific judgment using 36 claims from published Alzheimer's disease studies, requiring agents to analyse raw cohort data and provide reproducible evidence. We evaluate 19 language models within a shared agent framework, with selected models undergoing skill distillation and claim evaluation. Leading agents execute supplied analysis protocols nearly perfectly, whereas withholding procedural guidance widens performance differences. Distilled skills improve performance on acquisition tasks and transfer between models, but benefits on unseen tasks are inconsistent. Agents reproduce their reported results yet sometimes reach conclusions inconsistent with expert-derived answers, and access to data does not always improve judgment.",
+      "authors": [
+        "Lujia Zhong",
+        "Yihao Xia",
+        "Jianwei Zhang",
+        "Shuo Huang",
+        "Xinyu Nie",
+        "Mingyang Xia",
+        "Zhiwei Deng",
+        "Jiaxin Yue",
+        "Xinkai Wang",
+        "Junhan Zhao",
+        "Yonggang Shi"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-11T18:44:56+00:00",
+      "updated_at": "2026-11-11T18:44:56+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.15831"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.15831v1",
+        "pdf": "https://arxiv.org/pdf/2611.15831v1",
+        "html": "https://arxiv.org/html/2611.15831"
+      },
+      "evidence": [
+        {
+          "term": "we present NIBench",
+          "excerpt": "automation, but provide limited evidence on workflow reconstruction, acquisition of procedural expertise and evidence-based scientific judgment. Here we present NIBench, a neuroimaging benchmark comprising three complementary evaluations of autonomous agents. First, we benchmark execution and workflow reconstruction using 56 tasks across seven tool ecosystems, covering structural, diffusion and functional",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.15831"
+        },
+        {
+          "term": "we present NIBench, a neuroimaging benchmark",
+          "excerpt": "automation, but provide limited evidence on workflow reconstruction, acquisition of procedural expertise and evidence-based scientific judgment. Here we present NIBench, a neuroimaging benchmark comprising three complementary evaluations of autonomous agents. First, we benchmark execution and workflow reconstruction using 56 tasks across seven tool ecosystems, covering structural, diffusion and functional magnetic resonance imagin",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.15831"
+        },
+        {
+          "term": "creating a growing need to benchmark",
+          "excerpt": "ts for execution, skill evolution and scientific judgment in neuroimaging Autonomous AI agents are increasingly used to automate biomedical research, creating a growing need to benchmark their capabilities on real scientific data and workflows. Their reliability in neuroimaging remains insufficiently characterized, where plausible analytical outputs can conceal errors that affect scientific conclusions. Existing studies ha",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.15831"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "NIBench: benchmarking autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging Autonomous AI agents are increasingly used to automate biomedical research, creating a growing need to benchmark their capabilities on real scie",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.15831"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "NIBench: benchmarking autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging Autonomous AI agents are increasingly used to automate biomedical research, creating a growing need to benchmark their capabilities on real scienti",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.15831"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "ng autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging Autonomous AI agents are increasingly used to automate biomedical research, creating a growing need to benchmark their capabilities on real scientific data and workflows. Their reliability in neuroimaging remains insufficiently characterized, where plausible analytical outputs can conceal errors that aff",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.15831"
+        },
+        {
+          "term": "medical",
+          "excerpt": "autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging Autonomous AI agents are increasingly used to automate biomedical research, creating a growing need to benchmark their capabilities on real scientific data and workflows. Their reliability in neuroimaging remains insufficiently characterized, where plausible analytical outputs can conceal errors that aff",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.15831"
+        },
+        {
+          "term": "disease",
+          "excerpt": "kills on previously encountered tasks, unseen tasks and other models. Third, we assess scientific judgment using 36 claims from published Alzheimer's disease studies, requiring agents to analyse raw cohort data and provide reproducible evidence. We evaluate 19 language models within a shared agent framework, with selected models undergoing skill distillation and claim evaluation. Leading agents",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.15831"
+        }
+      ],
+      "related_benchmarks": [
+        "NIBench",
+        "MultiMedQA",
+        "MedAgentBench",
+        "BioDSBench",
+        "BioMed-AQA",
+        "SciToolEval",
+        "Neural-MedBench",
+        "OmniBrainBench"
+      ],
+      "related_agent_url": "../../p/2611.15831.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 35,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "b3811f22fd3caa12aa9c58839d667e8f40dcaa733ca2d09afcf37f0dc4504a55",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2611.15555",
+      "slug": "arxiv-2611-15555-5580f620b2",
+      "kind": "paper",
+      "title": "What Conformal Selection Can Certify in CRISPR Off-Target Design:Benchmark Leakage, Free Baselines, and a Finite-Sample Cohort Requirement",
+      "abstract": "Conformal selection promises distribution-free, finite-sample control of the error rate of a decision, and has been proposed as a safety layer for machine-learning CRISPR guide design. We ask whether such a certificate is attainable from the validated off-target data that exist. The constraint is arithmetic: a conformal p-value cannot fall below one divided by the calibration cohort size plus one, so a Benjamini-Hochberg selection certifies a single candidate only when that cohort is at least the candidate pool size divided by the tolerated error rate. Public cohorts supply ten validated guides, whereas a pool of two thousand at a ten percent error rate needs twenty thousand; the accepted set is consequently empty in over ninety-six percent of splits. Two benchmarking findings explain why this went unnoticed. The standard CIRCLE-seq file lists ten guides under eighty on-target strings, so grouping cross-validation on the sequence column trains and tests on one guide; corrected, pair-level discrimination and per-guide fidelity collapse. With that leakage removed, a training-free position-weight score and a bare count of near-match genomic sites are not beaten by a trained oracle. We give the corrected protocol, the baselines a new model must beat, and the cohort size a certified pipeline needs.",
+      "authors": [
+        "Mohammad Malekpouri",
+        "Somayeh Lotfi"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-11T14:39:10+00:00",
+      "updated_at": "2026-11-11T14:39:10+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.15555"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.15555v1",
+        "pdf": "https://arxiv.org/pdf/2611.15555v1",
+        "code": "https://github.com/malekpouri/conformal-genomics",
+        "html": "https://arxiv.org/html/2611.15555"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "What Conformal Selection Can Certify in CRISPR Off-Target Design:Benchmark Leakage, Free Baselines, and a Finite-Sample Cohort Requirement Conformal selection promises distribution-free, finite-sample control of the error rate of a decision, and has been proposed as a safety layer for machine-learning CRISPR guid",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.15555"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "l of two thousand at a ten percent error rate needs twenty thousand; the accepted set is consequently empty in over ninety-six percent of splits. Two benchmarking findings explain why this went unnoticed. The standard CIRCLE-seq file lists ten guides under eighty on-target strings, so grouping cross-validation on the sequence column trains and tests on one guide; corrected, pair-level discrimination",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.15555"
+        },
+        {
+          "term": "genomic",
+          "excerpt": "level discrimination and per-guide fidelity collapse. With that leakage removed, a training-free position-weight score and a bare count of near-match genomic sites are not beaten by a trained oracle. We give the corrected protocol, the baselines a new model must beat, and the cohort size a certified pipeline needs. [[SECTION What Conformal Selection Can Certify in CRISPR Off-Target Design:Bench",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.15555"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 13,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "4c1cfe102d31e336b18f1302f1c0d03af109f1c489f02e938567efb908d79986",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2611.15154",
+      "slug": "arxiv-2611-15154-104e2a2853",
+      "kind": "paper",
+      "title": "SciSelect-Gym: An Environment and Benchmark for Active Learning and Bayesian Optimization Configuration Selection",
+      "abstract": "In many scientific tasks, scientists repeatedly choose a small set of candidates to test, learn from the results, and use the observations to guide the next selection. Methods based on active learning~(AL) or Bayesian optimization~(BO) have been proposed for these iterative screening campaigns with a surrogate model. Yet, selecting the surrogate model and acquisition function for a new dataset remains challenging due to limited empirical evidence, while the effectiveness of large language models (LLMs) in making such decisions remains unclear. To address these gaps, we introduce SciSelect-Gym, an environment for simulating AL/BO data selection campaigns and evaluating configuration choices. We conducted simulations of AL/BO data selection campaigns across several settings and more than 100 molecular datasets. Using completed simulation campaigns as context improves LLM recommendation shortlists on held-out datasets more consistently than it improves the quality of their first choice. SciSelect-Gym provides a simulation platform and recommendation protocols for learning how to choose configurations before an acquisition campaign. An implemented agent use case connects these campaign records and simulation tools to LLM-generated configuration-selection policies. The code is provided as supplementary material.",
+      "authors": [
+        "Ying-Peng Tang",
+        "Tianle Zhang",
+        "Wanlong Fang",
+        "Ng Jing Xiang",
+        "Alvin Chan"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-11T07:50:14+00:00",
+      "updated_at": "2026-11-11T07:50:14+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.15154"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.15154v1",
+        "pdf": "https://arxiv.org/pdf/2611.15154v1",
+        "html": "https://arxiv.org/html/2611.15154"
+      },
+      "evidence": [
+        {
+          "term": "new dataset",
+          "excerpt": "have been proposed for these iterative screening campaigns with a surrogate model. Yet, selecting the surrogate model and acquisition function for a new dataset remains challenging due to limited empirical evidence, while the effectiveness of large language models (LLMs) in making such decisions remains unclear. To address these gaps, we introduce SciSelect-Gym, an environment for simulating AL/BO",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.15154"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "SciSelect-Gym: An Environment and Benchmark for Active Learning and Bayesian Optimization Configuration Selection In many scientific tasks, scientists repeatedly choose a small set of candidates to test, learn from the results, and use the observations to guide the next selection. M",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.15154"
+        },
+        {
+          "term": "molecular",
+          "excerpt": "campaigns and evaluating configuration choices. We conducted simulations of AL/BO data selection campaigns across several settings and more than 100 molecular datasets. Using completed simulation campaigns as context improves LLM recommendation shortlists on held-out datasets more consistently than it improves the quality of their first choice. SciSelect-Gym provides a simulation platform and re",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.15154"
+        },
+        {
+          "term": "research agents",
+          "excerpt": "External Links: Document Cited by: §1 , §2 . Srikanth et al. (2026) D. Srikanth, B. Zhao, D. Xu, Y. Wu, and Z. Jiang Recursive self-improvement of AI research agents . Note: arXiv preprint External Links: 2609.26457 Cited by: §4.7 . Srinivas et al. (2010) N. Srinivas, A. Krause, S. M. Kakade, and M. Seeger Gaussian process optimization in the bandit setting: no regret and experimental design . In Proce",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2611.15154"
+        }
+      ],
+      "related_benchmarks": [
+        "ALPBench",
+        "HPOBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 16,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "4ee139dfb99a4d6569db89f3732e959ab7ad4cfea3df70ea61833eec48197472",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
