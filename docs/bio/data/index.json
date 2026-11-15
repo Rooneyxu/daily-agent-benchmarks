@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-14T11:39:15Z",
-  "total": 222,
+  "generated_at": "2026-11-15T12:06:59Z",
+  "total": 224,
   "counts": {
     "topics": {
-      "general_text": 83,
+      "general_text": 85,
       "experiment_agent": 66,
       "multimodal": 54,
       "biosafety": 19
     },
     "contribution_types": {
-      "new_benchmark": 184,
+      "new_benchmark": 186,
       "methodology": 21,
       "audit": 17
     },
     "kinds": {
-      "paper": 222
+      "paper": 224
     },
     "evaluation_contexts": {
-      "beneficial_capability": 203,
+      "beneficial_capability": 205,
       "biosecurity_misuse": 19
     }
   },
@@ -58,55 +58,69 @@
     {
       "source": "arxiv",
       "name": "arXiv",
-      "status": "success",
-      "started_at": "2026-11-14T11:39:43Z",
-      "finished_at": "2026-11-14T11:40:05Z",
-      "discovered": 35,
-      "published": 17,
-      "error": ""
+      "status": "failed",
+      "started_at": "2026-11-15T12:07:34Z",
+      "finished_at": "2026-11-15T12:07:34Z",
+      "discovered": 0,
+      "published": 0,
+      "error": "Client error '406 Not Acceptable' for url 'https://export.arxiv.org/api/query?search_query=%28ti%3Abenchmark+OR+ti%3Abench+OR+ti%3A%22evaluation+suite%22%29+AND+%28all%3Abiomedical+OR+all%3Amedical+OR+all%3Aclinical%29&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406"
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-11-14T11:40:05Z",
-      "finished_at": "2026-11-14T11:40:12Z",
-      "discovered": 125,
-      "published": 74,
+      "started_at": "2026-11-15T12:07:34Z",
+      "finished_at": "2026-11-15T12:07:59Z",
+      "discovered": 118,
+      "published": 68,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-11-14T11:40:12Z",
-      "finished_at": "2026-11-14T11:40:45Z",
-      "discovered": 1150,
-      "published": 67,
+      "started_at": "2026-11-15T12:07:59Z",
+      "finished_at": "2026-11-15T12:09:47Z",
+      "discovered": 969,
+      "published": 55,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-11-14T11:40:45Z",
-      "finished_at": "2026-11-14T11:40:50Z",
-      "discovered": 289,
-      "published": 26,
+      "started_at": "2026-11-15T12:09:47Z",
+      "finished_at": "2026-11-15T12:10:04Z",
+      "discovered": 194,
+      "published": 22,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-11-14T11:40:50Z",
-      "finished_at": "2026-11-14T11:40:50Z",
+      "started_at": "2026-11-15T12:10:04Z",
+      "finished_at": "2026-11-15T12:10:04Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
     }
   ],
   "days": [
+    {
+      "date": "2026-11-14",
+      "count": 1,
+      "entry_ids": [
+        "doi:10.1101/2025.04.29.25326696"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "count": 1,
+      "entry_ids": [
+        "doi:10.1371/journal.pone.0361996"
+      ]
+    },
     {
       "date": "2026-11-12",
       "count": 1,
@@ -956,6 +970,189 @@
   ],
   "entries": [
     {
+      "id": "doi:10.1101/2025.04.29.25326696",
+      "slug": "doi-10-1101-2025-04-29-25326696-bf0b23291c",
+      "kind": "paper",
+      "title": "Systematic Benchmarking and Optimization of Retrieval-Augmented Generation (RAG) for Clinical Phenotyping: A Type II Diabetes Case Study in an ICD-Screened Cohort",
+      "abstract": "Traditional EHR phenotyping methods can require substantial disease-specific development and long-term maintenance. While integrating large language models (LLMs) with Retrieval-Augmented Generation (RAG) is promising, the impact of RAG configurations remains underexplored. We systematically evaluated these design choices for type 2 diabetes mellitus (T2DM) phenotyping in an ICD-screened cohort. Using GPT-4o, we processed 170,678 clinical notes from 275 patients. We evaluated seven embedding models and three prompt strategies (baseline, improved zero-shot, and few-shot). Using the improved zero-shot prompt, we tested 350 embedding model-chunk size-retrieval depth combinations on the training set and selected eight optimized configurations for test-set evaluation. Combined with three prompts, these yielded 24 prompt-configuration combinations for comparison with ICD codes and the institutional PheNorm method. RAG achieved a mean sensitivity of 0.9019 (95% CI: 0.8866-0.9172), specificity of 0.7907 (0.7749-0.8066), PPV of 0.9405 (0.9365-0.9445), NPV of 0.6967 (0.6653-0.7281), and F1-score of 0.9204 (0.9124-0.9283). All combinations achieved higher PPV than ICD codes (0.7838). Compared with PheNorm, sensitivity was significantly higher (Holm-adjusted p < 0.001), while specificity differences were not significant. Paired bootstrap analyses showed higher NPV and F1-score , with no significant PPV difference. General-purpose embeddings showed higher sensitivity, whereas biomedical embeddings exhibited higher specificity and PPV. Few-shot prompting increased specificity and PPV but reduced sensitivity. Token usage varied substantially across embedding models. These findings suggest the importance of aligning RAG design with task-specific clinical priorities and token efficiency.",
+      "authors": [
+        "Park, H.",
+        "Rees, M.",
+        "Kruger, N.",
+        "Fuse, K.",
+        "Castro, V. M.",
+        "Gainer, V.",
+        "Wattanasin, N.",
+        "Benoit, B.",
+        "Wagholikar, K. B.",
+        "Murphy, S."
+      ],
+      "source": "medrxiv",
+      "published_at": "2026-11-14T00:00:00+00:00",
+      "updated_at": "2026-11-14T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_no",
+      "identifiers": {
+        "doi": "10.1101/2025.04.29.25326696"
+      },
+      "links": {
+        "abs": "https://www.medrxiv.org/content/10.1101/2025.04.29.25326696",
+        "pdf": "https://www.medrxiv.org/content/10.1101/2025.04.29.25326696.full.pdf",
+        "html": "https://www.medrxiv.org/content/10.1101/2025.04.29.25326696.full"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "Systematic Benchmarking and Optimization of Retrieval-Augmented Generation (RAG) for Clinical Phenotyping: A Type II Diabetes Case Study in an ICD-Screened Cohort Traditional EHR phenotyping methods can require substantial disease-specific development and long",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.1101/2025.04.29.25326696.full"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "Systematic Benchmarking and Optimization of Retrieval-Augmented Generation (RAG) for Clinical Phenotyping: A Type II Diabetes Case Study in an ICD-Screened Cohort Traditional EHR phenotyping methods can require substantial disease-specific development and long-te",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.1101/2025.04.29.25326696.full"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "bootstrap analyses showed higher NPV and F1-score , with no significant PPV difference. General-purpose embeddings showed higher sensitivity, whereas biomedical embeddings exhibited higher specificity and PPV. Few-shot prompting increased specificity and PPV but reduced sensitivity. Token usage varied substantially across embedding models. These findings suggest the importance of aligning RAG desi",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.1101/2025.04.29.25326696.full"
+        },
+        {
+          "term": "medical",
+          "excerpt": "tstrap analyses showed higher NPV and F1-score , with no significant PPV difference. General-purpose embeddings showed higher sensitivity, whereas biomedical embeddings exhibited higher specificity and PPV. Few-shot prompting increased specificity and PPV but reduced sensitivity. Token usage varied substantially across embedding models. These findings suggest the importance of aligning RAG desi",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.1101/2025.04.29.25326696.full"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Systematic Benchmarking and Optimization of Retrieval-Augmented Generation (RAG) for Clinical Phenotyping: A Type II Diabetes Case Study in an ICD-Screened Cohort Traditional EHR phenotyping methods can require substantial disease-specific development and long-term maintenance. While integrating large language models (LLMs) with Re",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.1101/2025.04.29.25326696.full"
+        },
+        {
+          "term": "disease",
+          "excerpt": "n (RAG) for Clinical Phenotyping: A Type II Diabetes Case Study in an ICD-Screened Cohort Traditional EHR phenotyping methods can require substantial disease-specific development and long-term maintenance. While integrating large language models (LLMs) with Retrieval-Augmented Generation (RAG) is promising, the impact of RAG configurations remains underexplored. We systematically evaluated thes",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.1101/2025.04.29.25326696.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 22,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '403 Forbidden' for url 'https://www.medrxiv.org/content/10.1101/2025.04.29.25326696.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403",
+      "content_hash": "03be340430f50316c82def63acc484204e0f2b733a1f1e449e517d9206324730",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.1371/journal.pone.0361996",
+      "slug": "doi-10-1371-journal-pone-0361996-93b2e3df68",
+      "kind": "paper",
+      "title": "OpenMedEval: Benchmarking 172 open-source LLMs on 326K medical questions across 93 datasets.",
+      "abstract": "To address the practical challenges, including the difficulties in safeguarding medical data privacy arising from the closed-source nature of commercial large language models (LLMs), the limitations of existing benchmarks that predominantly focus on English-centric scenarios, and the inadequate consideration of deployment-related factors such as inference speed and parameter efficiency, we propose the OpenMedEval benchmark framework. This work aims to fill the gap in the systematic evaluation of open-source medical LLMs. The framework comprises 326,100 medical questions across 93 datasets, covering over 30 medical specialties and 4 professional tiers (ranging from entry-level licensing to senior specialist certification). It incorporates diverse assessment sources such as the United States Medical Licensing Examination (USMLE), nephrology cases from the American Journal of Kidney Diseases (AJKD), and Chinese Medical Licensing Examinations spanning 2017-2024. We conduct multi-dimensional evaluations on 172 open-source models with parameter scales ranging from 0.5B to 671B, integrating deployment-relevant metrics including inference speed and instruction-following compliance. Experimental results demonstrate that reasoning-enhanced architectures (e.g., DeepSeek-R1, QWQ) outperform general-purpose models by 20-40 percentage points in accuracy. Specifically, DeepSeek-R1-70B achieves an average accuracy of 81.8% across all datasets and 97% on the USMLE. Model rankings are reported as a macro-average over the 93 datasets and are shown to be robust to the aggregation scheme (Spearman ρ=0.999 against question-weighted accuracy) and to language stratification (ρ=0.9998 against a Chinese-only ranking); because 99.9% of questions are Chinese-language, overall figures are Chinese-dominant and English results are reported separately. Parameter-efficient models (e.g., Phi4-Reasoning-14B) exhibit performance comparable to ultra-large-scale general-purpose counterparts. Additionally, inference speed varies by 2000× across different models. These findings provide guidance for the selection of open-source models tailored to diverse deployment scenarios, from real-time triage to complex diagnostic support. We present such scenarios as candidate applications implied by the measured accuracy-throughput trade-off, not as demonstrated clinical readiness: performance on medical licensing examinations evidences domain knowledge and structured reasoning capacity, and any use in patient care would require prospective clinical validation, safety assessment, and regulatory approval.",
+      "authors": [
+        "Bi Z",
+        "Ma Z",
+        "Huang J",
+        "Hao J",
+        "Chen L",
+        "Luo H",
+        "Yu Z",
+        "Wang T",
+        "Ma Y",
+        "Tan A."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-11-13T00:00:00+00:00",
+      "updated_at": "2026-11-14T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.1371/journal.pone.0361996",
+        "pmid": "43024673"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/43024673"
+      },
+      "evidence": [
+        {
+          "term": "we propose the OpenMedEval benchmark",
+          "excerpt": "focus on English-centric scenarios, and the inadequate consideration of deployment-related factors such as inference speed and parameter efficiency, we propose the OpenMedEval benchmark framework. This work aims to fill the gap in the systematic evaluation of open-source medical LLMs. The framework comprises 326,100 medical questions across 93 datasets, covering over 30 medical specialties and 4 professional tiers (rangin",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43024673"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "OpenMedEval: Benchmarking 172 open-source LLMs on 326K medical questions across 93 datasets. To address the practical challenges, including the difficulties in safeguarding medical data privacy arising from the closed-source nature of commercial large language m",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43024673"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "es in safeguarding medical data privacy arising from the closed-source nature of commercial large language models (LLMs), the limitations of existing benchmarks that predominantly focus on English-centric scenarios, and the inadequate consideration of deployment-related factors such as inference speed and parameter efficiency, we propose the OpenMedEval benchmark framework. This work aims to fill",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43024673"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "OpenMedEval: Benchmarking 172 open-source LLMs on 326K medical questions across 93 datasets. To address the practical challenges, including the difficulties in safeguarding medical data privacy arising from the closed-source nature of commercial large language mode",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43024673"
+        },
+        {
+          "term": "medical",
+          "excerpt": "OpenMedEval: Benchmarking 172 open-source LLMs on 326K medical questions across 93 datasets. To address the practical challenges, including the difficulties in safeguarding medical data privacy arising from the closed-source nature of commercial large language models (LLMs), the limitations of existin",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43024673"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "ex diagnostic support. We present such scenarios as candidate applications implied by the measured accuracy-throughput trade-off, not as demonstrated clinical readiness: performance on medical licensing examinations evidences domain knowledge and structured reasoning capacity, and any use in patient care would require prospective clinical validation, safety assessment, and regulatory approval. T",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43024673"
+        },
+        {
+          "term": "patient",
+          "excerpt": "trated clinical readiness: performance on medical licensing examinations evidences domain knowledge and structured reasoning capacity, and any use in patient care would require prospective clinical validation, safety assessment, and regulatory approval. To address the practical challenges, including the difficulties in safeguarding medical data privacy arising from the closed-source nature of c",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43024673"
+        }
+      ],
+      "related_benchmarks": [
+        "OpenMedEval"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 26,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "1515a6222f0af7f7cc4434cfa6ca3dddd1e0b8fc7d9d4dc4bd7863c3c4d4db4b",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "arxiv:2611.16821",
       "slug": "arxiv-2611-16821-f1e4fe72fa",
       "kind": "paper",
@@ -1121,7 +1318,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 35,
+      "match_score": 33,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "b3811f22fd3caa12aa9c58839d667e8f40dcaa733ca2d09afcf37f0dc4504a55",
@@ -1258,7 +1455,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 16,
+      "match_score": 14,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "4ee139dfb99a4d6569db89f3732e959ab7ad4cfea3df70ea61833eec48197472",
@@ -1355,7 +1552,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 24,
+      "match_score": 22,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "a11c68373c73ea56415d48bfc6b89b2e297d00f383900cd4747624874cca5dd6",
@@ -1453,7 +1650,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 30,
+      "match_score": 26,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "7db4b2e7b2c7909cbac6cf00614819dbbf21e5a133bf814284c7ac4a5313963b",

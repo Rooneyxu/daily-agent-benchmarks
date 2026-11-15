@@ -1,0 +1,101 @@
+{
+  "date": "2026-11-13",
+  "count": 1,
+  "entries": [
+    {
+      "id": "doi:10.1371/journal.pone.0361996",
+      "slug": "doi-10-1371-journal-pone-0361996-93b2e3df68",
+      "kind": "paper",
+      "title": "OpenMedEval: Benchmarking 172 open-source LLMs on 326K medical questions across 93 datasets.",
+      "abstract": "To address the practical challenges, including the difficulties in safeguarding medical data privacy arising from the closed-source nature of commercial large language models (LLMs), the limitations of existing benchmarks that predominantly focus on English-centric scenarios, and the inadequate consideration of deployment-related factors such as inference speed and parameter efficiency, we propose the OpenMedEval benchmark framework. This work aims to fill the gap in the systematic evaluation of open-source medical LLMs. The framework comprises 326,100 medical questions across 93 datasets, covering over 30 medical specialties and 4 professional tiers (ranging from entry-level licensing to senior specialist certification). It incorporates diverse assessment sources such as the United States Medical Licensing Examination (USMLE), nephrology cases from the American Journal of Kidney Diseases (AJKD), and Chinese Medical Licensing Examinations spanning 2017-2024. We conduct multi-dimensional evaluations on 172 open-source models with parameter scales ranging from 0.5B to 671B, integrating deployment-relevant metrics including inference speed and instruction-following compliance. Experimental results demonstrate that reasoning-enhanced architectures (e.g., DeepSeek-R1, QWQ) outperform general-purpose models by 20-40 percentage points in accuracy. Specifically, DeepSeek-R1-70B achieves an average accuracy of 81.8% across all datasets and 97% on the USMLE. Model rankings are reported as a macro-average over the 93 datasets and are shown to be robust to the aggregation scheme (Spearman ρ=0.999 against question-weighted accuracy) and to language stratification (ρ=0.9998 against a Chinese-only ranking); because 99.9% of questions are Chinese-language, overall figures are Chinese-dominant and English results are reported separately. Parameter-efficient models (e.g., Phi4-Reasoning-14B) exhibit performance comparable to ultra-large-scale general-purpose counterparts. Additionally, inference speed varies by 2000× across different models. These findings provide guidance for the selection of open-source models tailored to diverse deployment scenarios, from real-time triage to complex diagnostic support. We present such scenarios as candidate applications implied by the measured accuracy-throughput trade-off, not as demonstrated clinical readiness: performance on medical licensing examinations evidences domain knowledge and structured reasoning capacity, and any use in patient care would require prospective clinical validation, safety assessment, and regulatory approval.",
+      "authors": [
+        "Bi Z",
+        "Ma Z",
+        "Huang J",
+        "Hao J",
+        "Chen L",
+        "Luo H",
+        "Yu Z",
+        "Wang T",
+        "Ma Y",
+        "Tan A."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-11-13T00:00:00+00:00",
+      "updated_at": "2026-11-14T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.1371/journal.pone.0361996",
+        "pmid": "43024673"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/43024673"
+      },
+      "evidence": [
+        {
+          "term": "we propose the OpenMedEval benchmark",
+          "excerpt": "focus on English-centric scenarios, and the inadequate consideration of deployment-related factors such as inference speed and parameter efficiency, we propose the OpenMedEval benchmark framework. This work aims to fill the gap in the systematic evaluation of open-source medical LLMs. The framework comprises 326,100 medical questions across 93 datasets, covering over 30 medical specialties and 4 professional tiers (rangin",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43024673"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "OpenMedEval: Benchmarking 172 open-source LLMs on 326K medical questions across 93 datasets. To address the practical challenges, including the difficulties in safeguarding medical data privacy arising from the closed-source nature of commercial large language m",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43024673"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "es in safeguarding medical data privacy arising from the closed-source nature of commercial large language models (LLMs), the limitations of existing benchmarks that predominantly focus on English-centric scenarios, and the inadequate consideration of deployment-related factors such as inference speed and parameter efficiency, we propose the OpenMedEval benchmark framework. This work aims to fill",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43024673"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "OpenMedEval: Benchmarking 172 open-source LLMs on 326K medical questions across 93 datasets. To address the practical challenges, including the difficulties in safeguarding medical data privacy arising from the closed-source nature of commercial large language mode",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43024673"
+        },
+        {
+          "term": "medical",
+          "excerpt": "OpenMedEval: Benchmarking 172 open-source LLMs on 326K medical questions across 93 datasets. To address the practical challenges, including the difficulties in safeguarding medical data privacy arising from the closed-source nature of commercial large language models (LLMs), the limitations of existin",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43024673"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "ex diagnostic support. We present such scenarios as candidate applications implied by the measured accuracy-throughput trade-off, not as demonstrated clinical readiness: performance on medical licensing examinations evidences domain knowledge and structured reasoning capacity, and any use in patient care would require prospective clinical validation, safety assessment, and regulatory approval. T",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43024673"
+        },
+        {
+          "term": "patient",
+          "excerpt": "trated clinical readiness: performance on medical licensing examinations evidences domain knowledge and structured reasoning capacity, and any use in patient care would require prospective clinical validation, safety assessment, and regulatory approval. To address the practical challenges, including the difficulties in safeguarding medical data privacy arising from the closed-source nature of c",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43024673"
+        }
+      ],
+      "related_benchmarks": [
+        "OpenMedEval"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 26,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "1515a6222f0af7f7cc4434cfa6ca3dddd1e0b8fc7d9d4dc4bd7863c3c4d4db4b",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
