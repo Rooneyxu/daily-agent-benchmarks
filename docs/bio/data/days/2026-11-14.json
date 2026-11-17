@@ -7,7 +7,7 @@
       "slug": "doi-10-1101-2025-04-29-25326696-bf0b23291c",
       "kind": "paper",
       "title": "Systematic Benchmarking and Optimization of Retrieval-Augmented Generation (RAG) for Clinical Phenotyping: A Type II Diabetes Case Study in an ICD-Screened Cohort",
-      "abstract": "Traditional EHR phenotyping methods can require substantial disease-specific development and long-term maintenance. While integrating large language models (LLMs) with Retrieval-Augmented Generation (RAG) is promising, the impact of RAG configurations remains underexplored. We systematically evaluated these design choices for type 2 diabetes mellitus (T2DM) phenotyping in an ICD-screened cohort. Using GPT-4o, we processed 170,678 clinical notes from 275 patients. We evaluated seven embedding models and three prompt strategies (baseline, improved zero-shot, and few-shot). Using the improved zero-shot prompt, we tested 350 embedding model-chunk size-retrieval depth combinations on the training set and selected eight optimized configurations for test-set evaluation. Combined with three prompts, these yielded 24 prompt-configuration combinations for comparison with ICD codes and the institutional PheNorm method. RAG achieved a mean sensitivity of 0.9019 (95% CI: 0.8866-0.9172), specificity of 0.7907 (0.7749-0.8066), PPV of 0.9405 (0.9365-0.9445), NPV of 0.6967 (0.6653-0.7281), and F1-score of 0.9204 (0.9124-0.9283). All combinations achieved higher PPV than ICD codes (0.7838). Compared with PheNorm, sensitivity was significantly higher (Holm-adjusted p < 0.001), while specificity differences were not significant. Paired bootstrap analyses showed higher NPV and F1-score , with no significant PPV difference. General-purpose embeddings showed higher sensitivity, whereas biomedical embeddings exhibited higher specificity and PPV. Few-shot prompting increased specificity and PPV but reduced sensitivity. Token usage varied substantially across embedding models. These findings suggest the importance of aligning RAG design with task-specific clinical priorities and token efficiency.",
+      "abstract": "Traditional EHR phenotyping methods can require substantial disease-specific development and long-term maintenance. While integrating large language models (LLMs) with Retrieval-Augmented Generation (RAG) is promising, the impact of RAG configurations remains underexplored. We systematically evaluated these design choices for type 2 diabetes mellitus (T2DM) phenotyping in an ICD-screened cohort. Using GPT-4o, we processed 170,678 clinical notes from 275 patients. We evaluated seven embedding models and three prompt strategies (baseline, improved zero-shot, and few-shot). Using the improved zero-shot prompt, we tested 350 embedding model-chunk size-retrieval depth combinations on the training set and selected eight optimized configurations for test-set evaluation. Combined with three prompts, these yielded 24 prompt-configuration combinations for comparison with ICD codes and the institutional PheNorm method. RAG achieved a mean sensitivity of 0.9019 (95% CI: 0.8866-0.9172), specificity of 0.7907 (0.7749-0.8066), PPV of 0.9405 (0.9365-0.9445), NPV of 0.6967 (0.6653-0.7281), and F1-score of 0.9204 (0.9124-0.9283). All combinations achieved higher PPV than ICD codes (0.7838). Compared with PheNorm, sensitivity was significantly higher (Holm-adjusted p < 0.001), while specificity differences were not significant. Paired bootstrap analyses showed higher NPV and F1-score, with no significant PPV difference. General-purpose embeddings showed higher sensitivity, whereas biomedical embeddings exhibited higher specificity and PPV. Few-shot prompting increased specificity and PPV but reduced sensitivity. Token usage varied substantially across embedding models. These findings suggest the importance of aligning RAG design with task-specific clinical priorities and token efficiency.",
       "authors": [
         "Park, H.",
         "Rees, M.",
@@ -53,13 +53,13 @@
         },
         {
           "term": "biomedical",
-          "excerpt": "bootstrap analyses showed higher NPV and F1-score , with no significant PPV difference. General-purpose embeddings showed higher sensitivity, whereas biomedical embeddings exhibited higher specificity and PPV. Few-shot prompting increased specificity and PPV but reduced sensitivity. Token usage varied substantially across embedding models. These findings suggest the importance of aligning RAG desi",
+          "excerpt": "bootstrap analyses showed higher NPV and F1-score, with no significant PPV difference. General-purpose embeddings showed higher sensitivity, whereas biomedical embeddings exhibited higher specificity and PPV. Few-shot prompting increased specificity and PPV but reduced sensitivity. Token usage varied substantially across embedding models. These findings suggest the importance of aligning RAG desi",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.1101/2025.04.29.25326696.full"
         },
         {
           "term": "medical",
-          "excerpt": "tstrap analyses showed higher NPV and F1-score , with no significant PPV difference. General-purpose embeddings showed higher sensitivity, whereas biomedical embeddings exhibited higher specificity and PPV. Few-shot prompting increased specificity and PPV but reduced sensitivity. Token usage varied substantially across embedding models. These findings suggest the importance of aligning RAG desi",
+          "excerpt": "otstrap analyses showed higher NPV and F1-score, with no significant PPV difference. General-purpose embeddings showed higher sensitivity, whereas biomedical embeddings exhibited higher specificity and PPV. Few-shot prompting increased specificity and PPV but reduced sensitivity. Token usage varied substantially across embedding models. These findings suggest the importance of aligning RAG desi",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.1101/2025.04.29.25326696.full"
         },
@@ -85,7 +85,7 @@
       "match_score": 22,
       "extraction_status": "incomplete",
       "extraction_error": "Client error '403 Forbidden' for url 'https://www.medrxiv.org/content/10.1101/2025.04.29.25326696.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403",
-      "content_hash": "03be340430f50316c82def63acc484204e0f2b733a1f1e449e517d9206324730",
+      "content_hash": "30ab742dfb5760085edfc50c73868bed65a9abba62d181f5b336226e89dfe0ce",
       "is_seed": false,
       "topic": "general_text",
       "contribution_type": "new_benchmark"

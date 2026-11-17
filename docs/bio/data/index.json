@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-16T13:00:13Z",
-  "total": 224,
+  "generated_at": "2026-11-17T13:42:25Z",
+  "total": 227,
   "counts": {
     "topics": {
-      "general_text": 85,
-      "experiment_agent": 66,
-      "multimodal": 54,
+      "multimodal": 55,
+      "general_text": 86,
+      "experiment_agent": 67,
       "biosafety": 19
     },
     "contribution_types": {
-      "new_benchmark": 186,
+      "new_benchmark": 189,
       "methodology": 21,
       "audit": 17
     },
     "kinds": {
-      "paper": 224
+      "paper": 227
     },
     "evaluation_contexts": {
-      "beneficial_capability": 205,
+      "beneficial_capability": 208,
       "biosecurity_misuse": 19
     }
   },
@@ -58,20 +58,20 @@
     {
       "source": "arxiv",
       "name": "arXiv",
-      "status": "failed",
-      "started_at": "2026-11-16T13:00:40Z",
-      "finished_at": "2026-11-16T13:01:32Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "Server error '500 Internal Server Error' for url 'https://export.arxiv.org/api/query?search_query=%28%28all%3Abenchmark+OR+all%3Abenchmarking+OR+all%3A%22evaluation+suite%22+OR+all%3A%22evaluation+dataset%22%29+AND+%28all%3Aconstruction+OR+all%3Acuration+OR+all%3A%22quality+control%22+OR+all%3A%22quality+assurance%22+OR+all%3Averifier+OR+all%3Agrader+OR+all%3A%22question+generation%22+OR+all%3A%22automated+evaluation%22+OR+all%3A%22synthetic+evaluation+data%22+OR+all%3A%22judge+calibration%22%29+AND+%28all%3Abiomedical+OR+all%3Amedical+OR+all%3Aclinical+OR+all%3Abiology+OR+all%3Abiological+OR+"
+      "status": "success",
+      "started_at": "2026-11-17T13:42:57Z",
+      "finished_at": "2026-11-17T13:43:26Z",
+      "discovered": 27,
+      "published": 16,
+      "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-11-16T13:01:32Z",
-      "finished_at": "2026-11-16T13:01:34Z",
-      "discovered": 92,
+      "started_at": "2026-11-17T13:43:26Z",
+      "finished_at": "2026-11-17T13:43:28Z",
+      "discovered": 88,
       "published": 52,
       "error": ""
     },
@@ -79,34 +79,42 @@
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-11-16T13:01:34Z",
-      "finished_at": "2026-11-16T13:04:28Z",
-      "discovered": 872,
-      "published": 61,
+      "started_at": "2026-11-17T13:43:28Z",
+      "finished_at": "2026-11-17T13:44:16Z",
+      "discovered": 918,
+      "published": 58,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-11-16T13:04:28Z",
-      "finished_at": "2026-11-16T13:04:48Z",
-      "discovered": 218,
-      "published": 29,
+      "started_at": "2026-11-17T13:44:16Z",
+      "finished_at": "2026-11-17T13:44:26Z",
+      "discovered": 191,
+      "published": 19,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-11-16T13:04:48Z",
-      "finished_at": "2026-11-16T13:04:48Z",
+      "started_at": "2026-11-17T13:44:26Z",
+      "finished_at": "2026-11-17T13:44:26Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
     }
   ],
   "days": [
+    {
+      "date": "2026-11-16",
+      "count": 2,
+      "entry_ids": [
+        "arxiv:2611.20779",
+        "doi:10.21203/rs.3.rs-11472328/v1"
+      ]
+    },
     {
       "date": "2026-11-14",
       "count": 1,
@@ -116,8 +124,9 @@
     },
     {
       "date": "2026-11-13",
-      "count": 1,
+      "count": 2,
       "entry_ids": [
+        "arxiv:2611.17931",
         "doi:10.1371/journal.pone.0361996"
       ]
     },
@@ -970,11 +979,176 @@
   ],
   "entries": [
     {
+      "id": "arxiv:2611.20779",
+      "slug": "arxiv-2611-20779-d66258baf8",
+      "kind": "paper",
+      "title": "EEGProbe: Do Vision-Language Models Really Understand EEG? A Benchmark for Signal-Grounded EEG Signals Evaluation",
+      "abstract": "Vision-language models (VLMs) have shown strong multimodal capabilities across scientific and biomedical domains, yet their ability to understand electroencephalography (EEG) signals remains unclear. We introduce EEGProbe, a signal-grounded benchmark for evaluating whether general-purpose VLMs can extract and reason from minimally processed, channel-wise EEG without task-specific feature engineering or EEG-specific adaptation. EEGProbe contains 620 EEG-centered questions across 13 subtasks and three capability categories: EEG Signal Classification, EEG Cross-modal Alignment, and EEG Neurophysiological Reasoning. To reduce shortcut-based answering, EEGProbe preserves the temporal structure of the recordings where possible, minimizes benchmark-induced processing, and applies signal-necessity testing followed by expert verification. We evaluate 11 representative open- and closed-source VLMs under a unified zero-shot protocol. The strongest model, GPT-5.6 Sol, achieves an overall score of only 41.63\\%, with cross-modal EEG alignment emerging as a major bottleneck. We further examine model behavior from a neurophysiological perspective and analyze how temporal, spectral, spatial, and physiological EEG structure relates to model successes and failures. Inference-time neurophysiological guidance can reshape model predictions by helping models recognize the neurophysiological patterns present in the input and connect them with relevant neurological knowledge, narrowing the gap between general multimodal competence and EEG understanding. EEGProbe provides a testbed for current VLMs and a basis for developing future multimodal models that can interpret EEG evidence more reliably. The EEGProbe benchmark will be publicly available at https://huggingface.co/datasets/2122ZHU/EEGProbe.",
+      "authors": [
+        "Haozhe Zhu",
+        "Dan Yuan",
+        "Chenghao Gu",
+        "Feike Xu",
+        "Yue Wen",
+        "Shin'ichi Konomi"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-16T09:27:44+00:00",
+      "updated_at": "2026-11-16T09:27:44+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.20779"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.20779v1",
+        "pdf": "https://arxiv.org/pdf/2611.20779v1",
+        "data": "https://huggingface.co/datasets/2122ZHU/EEGProbe",
+        "html": "https://arxiv.org/html/2611.20779"
+      },
+      "evidence": [
+        {
+          "term": "We introduce EEGProbe, a signal-grounded benchmark",
+          "excerpt": "ltimodal capabilities across scientific and biomedical domains, yet their ability to understand electroencephalography (EEG) signals remains unclear. We introduce EEGProbe, a signal-grounded benchmark for evaluating whether general-purpose VLMs can extract and reason from minimally processed, channel-wise EEG without task-specific feature engineering or EEG-specific adaptation. EEGProbe contains 620 EEG-centered questions across 13 subt",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.20779"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "EEGProbe: Do Vision-Language Models Really Understand EEG? A Benchmark for Signal-Grounded EEG Signals Evaluation Vision-language models (VLMs) have shown strong multimodal capabilities across scientific and biomedical domains, yet their ability to understand electroencephalography (EEG) signals remains uncle",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.20779"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "A Benchmark for Signal-Grounded EEG Signals Evaluation Vision-language models (VLMs) have shown strong multimodal capabilities across scientific and biomedical domains, yet their ability to understand electroencephalography (EEG) signals remains unclear. We introduce EEGProbe, a signal-grounded benchmark for evaluating whether general-purpose VLMs can extract and reason from minimally processed,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.20779"
+        },
+        {
+          "term": "medical",
+          "excerpt": "Benchmark for Signal-Grounded EEG Signals Evaluation Vision-language models (VLMs) have shown strong multimodal capabilities across scientific and biomedical domains, yet their ability to understand electroencephalography (EEG) signals remains unclear. We introduce EEGProbe, a signal-grounded benchmark for evaluating whether general-purpose VLMs can extract and reason from minimally processed,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.20779"
+        },
+        {
+          "term": "Vision-Language",
+          "excerpt": "EEGProbe: Do Vision-Language Models Really Understand EEG? A Benchmark for Signal-Grounded EEG Signals Evaluation Vision-language models (VLMs) have shown strong multimodal capabilities across scientific and biomedical domains, yet their ability to understand electroe",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.20779"
+        },
+        {
+          "term": "pathological",
+          "excerpt": "temporal structure. The benchmark therefore covers a continuum from subsecond evoked responses to sustained rhythms and multisecond physiological or pathological dynamics. This temporal diversity is important because the relevant evidence is not expressed at a single time scale. Depending on the subtask, a model may need to detect a localized event, recognize a recurring oscillatory pattern, or int",
+          "location": "5.1 Task Diversity and Neurophysiological Coverage",
+          "source_url": "https://arxiv.org/html/2611.20779"
+        }
+      ],
+      "related_benchmarks": [
+        "GPQA",
+        "MultiMedQA",
+        "OmniMedVQA",
+        "MedXpertQA",
+        "BrainBench",
+        "DQA",
+        "LAB-Bench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 15,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "b3b2cb93ea2cf753570c2f6d7195b8eb56c1fec1e2ee81446b755a7818219195",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.21203/rs.3.rs-11472328/v1",
+      "slug": "doi-10-21203-rs-3-rs-11472328-v1-16553b06ac",
+      "kind": "paper",
+      "title": "CliniCIRCA: LLM-powered Clinical Timeline Generation and Summarization from Unstructured EHR Texts for Mental Health Patients",
+      "abstract": "<title>Abstract</title>  <p>Background: Mental health care often requires clinicians to reason over patient journeys: longitudinal patterns of symptoms, diagnoses, treatments, behaviors, social context, and responses to care. Yet these journeys are rarely documented as readily available, explicit timelines. Clinically important temporal information is often embedded in unstructured discharge narratives, where events may be repeated, narrated out of order, or expressed through vague and relative time references. This makes temporal recovery difficult for clinicians and computational systems, and can limit the reliability of downstream summarization. <h4>Methods:</h4> We present CliniCIRCA, a multi-stage large language model (LLM) framework for Calendar-anchored, Imprecision-aware Reconstruction of Clinical Annals. CliniCIRCA decomposes patient-journey reconstruction into three stages: extracting atomic clinical events from raw discharge summaries, assigning calendar-grounded temporal labels with explicit uncertainty, and rendering the verified timeline as a date-grouped clinical summary. The framework is designed to make temporal reasoning inspectable rather than hidden inside a single summarization step. <h4>Results:</h4> From 14,882 MIMIC-III mental-health-coded admissions, we construct a benchmark of 52 discharge summaries on which CliniCIRCA produces 15,891 temporally tagged events. Following clinician-defined rubrics, human annotation with clinician adjudication corrects 629 errors, producing verified gold-standard timelines. These corrected timelines then drive a temporally grounded summarization stage that compresses each source 1.52 times into a date-grouped chronological record while preserving temporal labels and uncertainty. We further scale the framework to generate 1,000 silver-standard timelines and evaluate them as supervision for smaller open-weight models. Compared with zero- and few-shot prompting, instruction tuning generally improves five open-weight models across event extraction, temporal tagging, and summarization under both silver and clinician-verified evaluations. <h4>Conclusions:</h4> Auditable temporal reconstruction can serve as both a clinician-readable representation of complex mental health narratives and a reusable supervision source for smaller models. These findings suggest that intermediate, temporally grounded representations may help bridge clinical summarization, timeline generation, and scalable model adaptation, while preserving the need for expert adjudication in high-stakes clinical natural language processing (NLP).</p>",
+      "authors": [
+        "Zhang AI",
+        "Ishfaq N",
+        "Chandra M",
+        "Lesmes SA",
+        "Coscia A",
+        "Moon KC",
+        "Ding X",
+        "De Choudhury M."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-11-16T00:00:00+00:00",
+      "updated_at": "2026-11-17T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-11472328/v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1368343"
+      },
+      "evidence": [
+        {
+          "term": "we construct a benchmark",
+          "excerpt": "reasoning inspectable rather than hidden inside a single summarization step. <h4>Results:</h4> From 14,882 MIMIC-III mental-health-coded admissions, we construct a benchmark of 52 discharge summaries on which CliniCIRCA produces 15,891 temporally tagged events. Following clinician-defined rubrics, human annotation with clinician adjudication corrects 629 errors, producing verified gold-standard timelines. Thes",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1368343"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "ectable rather than hidden inside a single summarization step. <h4>Results:</h4> From 14,882 MIMIC-III mental-health-coded admissions, we construct a benchmark of 52 discharge summaries on which CliniCIRCA produces 15,891 temporally tagged events. Following clinician-defined rubrics, human annotation with clinician adjudication corrects 629 errors, producing verified gold-standard timelines. Thes",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1368343"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "CliniCIRCA: LLM-powered Clinical Timeline Generation and Summarization from Unstructured EHR Texts for Mental Health Patients <title>Abstract</title> <p>Background: Mental health care often requires clinicians to reason over patient journeys: longitudinal patterns of sym",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1368343"
+        },
+        {
+          "term": "patient",
+          "excerpt": "CliniCIRCA: LLM-powered Clinical Timeline Generation and Summarization from Unstructured EHR Texts for Mental Health Patients <title>Abstract</title> <p>Background: Mental health care often requires clinicians to reason over patient journeys: longitudinal patterns of symptoms, diagnoses, treatments, behaviors, social context, and responses to care. Yet these jo",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1368343"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 13,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "6dadf6ab3f6e57710eae60711785841e46c258b050ea4cd781ca87e40e32fa48",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "doi:10.1101/2025.04.29.25326696",
       "slug": "doi-10-1101-2025-04-29-25326696-bf0b23291c",
       "kind": "paper",
       "title": "Systematic Benchmarking and Optimization of Retrieval-Augmented Generation (RAG) for Clinical Phenotyping: A Type II Diabetes Case Study in an ICD-Screened Cohort",
-      "abstract": "Traditional EHR phenotyping methods can require substantial disease-specific development and long-term maintenance. While integrating large language models (LLMs) with Retrieval-Augmented Generation (RAG) is promising, the impact of RAG configurations remains underexplored. We systematically evaluated these design choices for type 2 diabetes mellitus (T2DM) phenotyping in an ICD-screened cohort. Using GPT-4o, we processed 170,678 clinical notes from 275 patients. We evaluated seven embedding models and three prompt strategies (baseline, improved zero-shot, and few-shot). Using the improved zero-shot prompt, we tested 350 embedding model-chunk size-retrieval depth combinations on the training set and selected eight optimized configurations for test-set evaluation. Combined with three prompts, these yielded 24 prompt-configuration combinations for comparison with ICD codes and the institutional PheNorm method. RAG achieved a mean sensitivity of 0.9019 (95% CI: 0.8866-0.9172), specificity of 0.7907 (0.7749-0.8066), PPV of 0.9405 (0.9365-0.9445), NPV of 0.6967 (0.6653-0.7281), and F1-score of 0.9204 (0.9124-0.9283). All combinations achieved higher PPV than ICD codes (0.7838). Compared with PheNorm, sensitivity was significantly higher (Holm-adjusted p < 0.001), while specificity differences were not significant. Paired bootstrap analyses showed higher NPV and F1-score , with no significant PPV difference. General-purpose embeddings showed higher sensitivity, whereas biomedical embeddings exhibited higher specificity and PPV. Few-shot prompting increased specificity and PPV but reduced sensitivity. Token usage varied substantially across embedding models. These findings suggest the importance of aligning RAG design with task-specific clinical priorities and token efficiency.",
+      "abstract": "Traditional EHR phenotyping methods can require substantial disease-specific development and long-term maintenance. While integrating large language models (LLMs) with Retrieval-Augmented Generation (RAG) is promising, the impact of RAG configurations remains underexplored. We systematically evaluated these design choices for type 2 diabetes mellitus (T2DM) phenotyping in an ICD-screened cohort. Using GPT-4o, we processed 170,678 clinical notes from 275 patients. We evaluated seven embedding models and three prompt strategies (baseline, improved zero-shot, and few-shot). Using the improved zero-shot prompt, we tested 350 embedding model-chunk size-retrieval depth combinations on the training set and selected eight optimized configurations for test-set evaluation. Combined with three prompts, these yielded 24 prompt-configuration combinations for comparison with ICD codes and the institutional PheNorm method. RAG achieved a mean sensitivity of 0.9019 (95% CI: 0.8866-0.9172), specificity of 0.7907 (0.7749-0.8066), PPV of 0.9405 (0.9365-0.9445), NPV of 0.6967 (0.6653-0.7281), and F1-score of 0.9204 (0.9124-0.9283). All combinations achieved higher PPV than ICD codes (0.7838). Compared with PheNorm, sensitivity was significantly higher (Holm-adjusted p < 0.001), while specificity differences were not significant. Paired bootstrap analyses showed higher NPV and F1-score, with no significant PPV difference. General-purpose embeddings showed higher sensitivity, whereas biomedical embeddings exhibited higher specificity and PPV. Few-shot prompting increased specificity and PPV but reduced sensitivity. Token usage varied substantially across embedding models. These findings suggest the importance of aligning RAG design with task-specific clinical priorities and token efficiency.",
       "authors": [
         "Park, H.",
         "Rees, M.",
@@ -1020,13 +1194,13 @@
         },
         {
           "term": "biomedical",
-          "excerpt": "bootstrap analyses showed higher NPV and F1-score , with no significant PPV difference. General-purpose embeddings showed higher sensitivity, whereas biomedical embeddings exhibited higher specificity and PPV. Few-shot prompting increased specificity and PPV but reduced sensitivity. Token usage varied substantially across embedding models. These findings suggest the importance of aligning RAG desi",
+          "excerpt": "bootstrap analyses showed higher NPV and F1-score, with no significant PPV difference. General-purpose embeddings showed higher sensitivity, whereas biomedical embeddings exhibited higher specificity and PPV. Few-shot prompting increased specificity and PPV but reduced sensitivity. Token usage varied substantially across embedding models. These findings suggest the importance of aligning RAG desi",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.1101/2025.04.29.25326696.full"
         },
         {
           "term": "medical",
-          "excerpt": "tstrap analyses showed higher NPV and F1-score , with no significant PPV difference. General-purpose embeddings showed higher sensitivity, whereas biomedical embeddings exhibited higher specificity and PPV. Few-shot prompting increased specificity and PPV but reduced sensitivity. Token usage varied substantially across embedding models. These findings suggest the importance of aligning RAG desi",
+          "excerpt": "otstrap analyses showed higher NPV and F1-score, with no significant PPV difference. General-purpose embeddings showed higher sensitivity, whereas biomedical embeddings exhibited higher specificity and PPV. Few-shot prompting increased specificity and PPV but reduced sensitivity. Token usage varied substantially across embedding models. These findings suggest the importance of aligning RAG desi",
           "location": "Abstract / metadata",
           "source_url": "https://www.medrxiv.org/content/10.1101/2025.04.29.25326696.full"
         },
@@ -1052,9 +1226,118 @@
       "match_score": 22,
       "extraction_status": "incomplete",
       "extraction_error": "Client error '403 Forbidden' for url 'https://www.medrxiv.org/content/10.1101/2025.04.29.25326696.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403",
-      "content_hash": "03be340430f50316c82def63acc484204e0f2b733a1f1e449e517d9206324730",
+      "content_hash": "30ab742dfb5760085edfc50c73868bed65a9abba62d181f5b336226e89dfe0ce",
       "is_seed": false,
       "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2611.17931",
+      "slug": "arxiv-2611-17931-4048a8b6cd",
+      "kind": "paper",
+      "title": "MineralExp: Benchmarking LLM Agents for Experimental Design in Real-World Mineral Exploration",
+      "abstract": "In mineral exploration, verifying geological hypotheses relies on designing a variety of geochemical experiments. While large language model (LLM) agents increasingly automate downstream geoscientific data analysis, a crucial upstream capability remains largely unexplored: automated geochemical experimental design, i.e., deciding which experiments to conduct before committing to costly laboratory work. Evaluating this capability of LLM agents is difficult for two reasons. First, geochemical experiments exhibit high methodological diversity and subjectivity: to test the same hypothesis, different geologists may choose different minerals and instruments, so no single protocol can serve as the reference answer. Second, open-ended experimental plans resist representation as structured labels, which makes objective scoring difficult. To address these challenges, we introduce MineralExp, a benchmark that reformulates geochemical experimental design as a hypothesis-based experiment selection problem, i.e., a multi-label classification problem. We abstract concrete instrument names and procedural details into a shared taxonomy of 19 experimental types across five mineral-system processes: Source, Transport, Deposition, Modification, and Preservation. This taxonomy yields deterministic multi-label targets while accommodating diverse experimental protocols. Constructed from published ore-deposit literature and verified by domain experts, MineralExp comprises 277 cases and 1,572 reference experimental plans. Given a geological hypothesis and initial context, an LLM agent selects the relevant tasks and generates concrete experimental plans, which are scored by multi-label classification metrics and an LLM-as-a-Judge metric. The experimental results show that current agents generally achieve high recall but low precision, tending to propose more experiments than are necessary to test the hypothesis.",
+      "authors": [
+        "Bing Wang",
+        "Mingyang Wang",
+        "Yuanhang Mi",
+        "Yue Xu",
+        "Kaibo Su",
+        "Li'ang Xiao",
+        "Chunguo Wu",
+        "Changchun Li",
+        "Ximing Li",
+        "Kun-Feng Qiu",
+        "Bo Yang"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-13T09:10:58+00:00",
+      "updated_at": "2026-11-13T09:10:58+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.17931"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.17931v1",
+        "pdf": "https://arxiv.org/pdf/2611.17931v1",
+        "code": "https://github.com/wangbing1416/MineralExp",
+        "html": "https://arxiv.org/html/2611.17931"
+      },
+      "evidence": [
+        {
+          "term": "we introduce MineralExp, a benchmark",
+          "excerpt": "cond, open-ended experimental plans resist representation as structured labels, which makes objective scoring difficult. To address these challenges, we introduce MineralExp, a benchmark that reformulates geochemical experimental design as a hypothesis-based experiment selection problem, i.e., a multi-label classification problem. We abstract concrete instrument names and procedural details into a shared taxonomy of 19 exp",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.17931"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "MineralExp: Benchmarking LLM Agents for Experimental Design in Real-World Mineral Exploration In mineral exploration, verifying geological hypotheses relies on designing a variety of geochemical experiments. While large language model (LLM) agents increasingly",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.17931"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "MineralExp: Benchmarking LLM Agents for Experimental Design in Real-World Mineral Exploration In mineral exploration, verifying geological hypotheses relies on designing a variety of geochemical experiments. While large language model (LLM) agents increasingly aut",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.17931"
+        },
+        {
+          "term": "laboratory",
+          "excerpt": "bility remains largely unexplored: automated geochemical experimental design, i.e., deciding which experiments to conduct before committing to costly laboratory work. Evaluating this capability of LLM agents is difficult for two reasons. First, geochemical experiments exhibit high methodological diversity and subjectivity: to test the same hypothesis, different geologists may choose different mine",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.17931"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "tation of geochemical datasets ( Bergen et al., 2019 ; Zuo, 2020 ; Yang et al., 2024 ; Xu et al., 2025 ) . Building on this, domain-specific LLMs and multimodal LLM agents now extend automation to geological knowledge retrieval and remote-sensing target generation ( Deng et al., 2024 ; Yu et al., 2024 ; Huang et al., 2025b ; Zhang et al., 2026b ) . While these advances excel at extracting patterns",
+          "location": "1. Introduction",
+          "source_url": "https://arxiv.org/html/2611.17931"
+        },
+        {
+          "term": "microscopy",
+          "excerpt": "sess whether the spatial resolution of existing LA-ICP-MS trace-element maps is sufficient, and if not, whether nanometer-scale transmission electron microscopy is warranted. Automated geochemical experimental design therefore targets empirical distinguishability : it matches mechanistic ambiguities to appropriate sample materials, analytical methods, and verification criteria, rather than merely",
+          "location": "3.1. Scientific Scope and Reasoning Challenges",
+          "source_url": "https://arxiv.org/html/2611.17931"
+        },
+        {
+          "term": "experimental protocols",
+          "excerpt": "es: Source, Transport, Deposition, Modification, and Preservation. This taxonomy yields deterministic multi-label targets while accommodating diverse experimental protocols. Constructed from published ore-deposit literature and verified by domain experts, MineralExp comprises 277 cases and 1,572 reference experimental plans. Given a geological hypothesis and initial context, an LLM agent selects the relevant",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.17931"
+        },
+        {
+          "term": "tool-using",
+          "excerpt": "r to test a working geological hypothesis. [[SECTION 2.3. General Scientific Agents]] 2.3. General Scientific Agents Beyond geoscience, reasoning and tool-using LLM agents have shown strong capabilities in chemical synthesis and research workflows ( Boiko et al., 2023 ; Bran et al., 2024 ; Wang et al., 2026 ) , which has motivated benchmarks for scientific coding, data-driven discovery, and intera",
+          "location": "2.3. General Scientific Agents",
+          "source_url": "https://arxiv.org/html/2611.17931"
+        }
+      ],
+      "related_benchmarks": [
+        "LabBench",
+        "AblationBench",
+        "ScienceAgentBench",
+        "CodeJudgeBench",
+        "DiscoveryBench",
+        "PubchemSearchQA"
+      ],
+      "related_agent_url": "../../p/2611.17931.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 17,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "8dcd7cb30259f880c6b1d0d253836d91ae12262106546d772e31ba0f07673e54",
+      "is_seed": false,
+      "topic": "experiment_agent",
       "contribution_type": "new_benchmark"
     },
     {

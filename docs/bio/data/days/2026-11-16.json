@@ -1,0 +1,171 @@
+{
+  "date": "2026-11-16",
+  "count": 2,
+  "entries": [
+    {
+      "id": "arxiv:2611.20779",
+      "slug": "arxiv-2611-20779-d66258baf8",
+      "kind": "paper",
+      "title": "EEGProbe: Do Vision-Language Models Really Understand EEG? A Benchmark for Signal-Grounded EEG Signals Evaluation",
+      "abstract": "Vision-language models (VLMs) have shown strong multimodal capabilities across scientific and biomedical domains, yet their ability to understand electroencephalography (EEG) signals remains unclear. We introduce EEGProbe, a signal-grounded benchmark for evaluating whether general-purpose VLMs can extract and reason from minimally processed, channel-wise EEG without task-specific feature engineering or EEG-specific adaptation. EEGProbe contains 620 EEG-centered questions across 13 subtasks and three capability categories: EEG Signal Classification, EEG Cross-modal Alignment, and EEG Neurophysiological Reasoning. To reduce shortcut-based answering, EEGProbe preserves the temporal structure of the recordings where possible, minimizes benchmark-induced processing, and applies signal-necessity testing followed by expert verification. We evaluate 11 representative open- and closed-source VLMs under a unified zero-shot protocol. The strongest model, GPT-5.6 Sol, achieves an overall score of only 41.63\\%, with cross-modal EEG alignment emerging as a major bottleneck. We further examine model behavior from a neurophysiological perspective and analyze how temporal, spectral, spatial, and physiological EEG structure relates to model successes and failures. Inference-time neurophysiological guidance can reshape model predictions by helping models recognize the neurophysiological patterns present in the input and connect them with relevant neurological knowledge, narrowing the gap between general multimodal competence and EEG understanding. EEGProbe provides a testbed for current VLMs and a basis for developing future multimodal models that can interpret EEG evidence more reliably. The EEGProbe benchmark will be publicly available at https://huggingface.co/datasets/2122ZHU/EEGProbe.",
+      "authors": [
+        "Haozhe Zhu",
+        "Dan Yuan",
+        "Chenghao Gu",
+        "Feike Xu",
+        "Yue Wen",
+        "Shin'ichi Konomi"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-16T09:27:44+00:00",
+      "updated_at": "2026-11-16T09:27:44+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.20779"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.20779v1",
+        "pdf": "https://arxiv.org/pdf/2611.20779v1",
+        "data": "https://huggingface.co/datasets/2122ZHU/EEGProbe",
+        "html": "https://arxiv.org/html/2611.20779"
+      },
+      "evidence": [
+        {
+          "term": "We introduce EEGProbe, a signal-grounded benchmark",
+          "excerpt": "ltimodal capabilities across scientific and biomedical domains, yet their ability to understand electroencephalography (EEG) signals remains unclear. We introduce EEGProbe, a signal-grounded benchmark for evaluating whether general-purpose VLMs can extract and reason from minimally processed, channel-wise EEG without task-specific feature engineering or EEG-specific adaptation. EEGProbe contains 620 EEG-centered questions across 13 subt",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.20779"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "EEGProbe: Do Vision-Language Models Really Understand EEG? A Benchmark for Signal-Grounded EEG Signals Evaluation Vision-language models (VLMs) have shown strong multimodal capabilities across scientific and biomedical domains, yet their ability to understand electroencephalography (EEG) signals remains uncle",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.20779"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "A Benchmark for Signal-Grounded EEG Signals Evaluation Vision-language models (VLMs) have shown strong multimodal capabilities across scientific and biomedical domains, yet their ability to understand electroencephalography (EEG) signals remains unclear. We introduce EEGProbe, a signal-grounded benchmark for evaluating whether general-purpose VLMs can extract and reason from minimally processed,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.20779"
+        },
+        {
+          "term": "medical",
+          "excerpt": "Benchmark for Signal-Grounded EEG Signals Evaluation Vision-language models (VLMs) have shown strong multimodal capabilities across scientific and biomedical domains, yet their ability to understand electroencephalography (EEG) signals remains unclear. We introduce EEGProbe, a signal-grounded benchmark for evaluating whether general-purpose VLMs can extract and reason from minimally processed,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.20779"
+        },
+        {
+          "term": "Vision-Language",
+          "excerpt": "EEGProbe: Do Vision-Language Models Really Understand EEG? A Benchmark for Signal-Grounded EEG Signals Evaluation Vision-language models (VLMs) have shown strong multimodal capabilities across scientific and biomedical domains, yet their ability to understand electroe",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.20779"
+        },
+        {
+          "term": "pathological",
+          "excerpt": "temporal structure. The benchmark therefore covers a continuum from subsecond evoked responses to sustained rhythms and multisecond physiological or pathological dynamics. This temporal diversity is important because the relevant evidence is not expressed at a single time scale. Depending on the subtask, a model may need to detect a localized event, recognize a recurring oscillatory pattern, or int",
+          "location": "5.1 Task Diversity and Neurophysiological Coverage",
+          "source_url": "https://arxiv.org/html/2611.20779"
+        }
+      ],
+      "related_benchmarks": [
+        "GPQA",
+        "MultiMedQA",
+        "OmniMedVQA",
+        "MedXpertQA",
+        "BrainBench",
+        "DQA",
+        "LAB-Bench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 15,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "b3b2cb93ea2cf753570c2f6d7195b8eb56c1fec1e2ee81446b755a7818219195",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.21203/rs.3.rs-11472328/v1",
+      "slug": "doi-10-21203-rs-3-rs-11472328-v1-16553b06ac",
+      "kind": "paper",
+      "title": "CliniCIRCA: LLM-powered Clinical Timeline Generation and Summarization from Unstructured EHR Texts for Mental Health Patients",
+      "abstract": "<title>Abstract</title>  <p>Background: Mental health care often requires clinicians to reason over patient journeys: longitudinal patterns of symptoms, diagnoses, treatments, behaviors, social context, and responses to care. Yet these journeys are rarely documented as readily available, explicit timelines. Clinically important temporal information is often embedded in unstructured discharge narratives, where events may be repeated, narrated out of order, or expressed through vague and relative time references. This makes temporal recovery difficult for clinicians and computational systems, and can limit the reliability of downstream summarization. <h4>Methods:</h4> We present CliniCIRCA, a multi-stage large language model (LLM) framework for Calendar-anchored, Imprecision-aware Reconstruction of Clinical Annals. CliniCIRCA decomposes patient-journey reconstruction into three stages: extracting atomic clinical events from raw discharge summaries, assigning calendar-grounded temporal labels with explicit uncertainty, and rendering the verified timeline as a date-grouped clinical summary. The framework is designed to make temporal reasoning inspectable rather than hidden inside a single summarization step. <h4>Results:</h4> From 14,882 MIMIC-III mental-health-coded admissions, we construct a benchmark of 52 discharge summaries on which CliniCIRCA produces 15,891 temporally tagged events. Following clinician-defined rubrics, human annotation with clinician adjudication corrects 629 errors, producing verified gold-standard timelines. These corrected timelines then drive a temporally grounded summarization stage that compresses each source 1.52 times into a date-grouped chronological record while preserving temporal labels and uncertainty. We further scale the framework to generate 1,000 silver-standard timelines and evaluate them as supervision for smaller open-weight models. Compared with zero- and few-shot prompting, instruction tuning generally improves five open-weight models across event extraction, temporal tagging, and summarization under both silver and clinician-verified evaluations. <h4>Conclusions:</h4> Auditable temporal reconstruction can serve as both a clinician-readable representation of complex mental health narratives and a reusable supervision source for smaller models. These findings suggest that intermediate, temporally grounded representations may help bridge clinical summarization, timeline generation, and scalable model adaptation, while preserving the need for expert adjudication in high-stakes clinical natural language processing (NLP).</p>",
+      "authors": [
+        "Zhang AI",
+        "Ishfaq N",
+        "Chandra M",
+        "Lesmes SA",
+        "Coscia A",
+        "Moon KC",
+        "Ding X",
+        "De Choudhury M."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-11-16T00:00:00+00:00",
+      "updated_at": "2026-11-17T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-11472328/v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1368343"
+      },
+      "evidence": [
+        {
+          "term": "we construct a benchmark",
+          "excerpt": "reasoning inspectable rather than hidden inside a single summarization step. <h4>Results:</h4> From 14,882 MIMIC-III mental-health-coded admissions, we construct a benchmark of 52 discharge summaries on which CliniCIRCA produces 15,891 temporally tagged events. Following clinician-defined rubrics, human annotation with clinician adjudication corrects 629 errors, producing verified gold-standard timelines. Thes",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1368343"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "ectable rather than hidden inside a single summarization step. <h4>Results:</h4> From 14,882 MIMIC-III mental-health-coded admissions, we construct a benchmark of 52 discharge summaries on which CliniCIRCA produces 15,891 temporally tagged events. Following clinician-defined rubrics, human annotation with clinician adjudication corrects 629 errors, producing verified gold-standard timelines. Thes",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1368343"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "CliniCIRCA: LLM-powered Clinical Timeline Generation and Summarization from Unstructured EHR Texts for Mental Health Patients <title>Abstract</title> <p>Background: Mental health care often requires clinicians to reason over patient journeys: longitudinal patterns of sym",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1368343"
+        },
+        {
+          "term": "patient",
+          "excerpt": "CliniCIRCA: LLM-powered Clinical Timeline Generation and Summarization from Unstructured EHR Texts for Mental Health Patients <title>Abstract</title> <p>Background: Mental health care often requires clinicians to reason over patient journeys: longitudinal patterns of symptoms, diagnoses, treatments, behaviors, social context, and responses to care. Yet these jo",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1368343"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 13,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "6dadf6ab3f6e57710eae60711785841e46c258b050ea4cd781ca87e40e32fa48",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
