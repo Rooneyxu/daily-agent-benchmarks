@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-17T13:42:25Z",
+  "generated_at": "2026-11-18T13:16:35Z",
   "total": 227,
   "counts": {
     "topics": {
@@ -58,49 +58,49 @@
     {
       "source": "arxiv",
       "name": "arXiv",
-      "status": "success",
-      "started_at": "2026-11-17T13:42:57Z",
-      "finished_at": "2026-11-17T13:43:26Z",
-      "discovered": 27,
-      "published": 16,
-      "error": ""
+      "status": "failed",
+      "started_at": "2026-11-18T13:17:06Z",
+      "finished_at": "2026-11-18T13:17:46Z",
+      "discovered": 0,
+      "published": 0,
+      "error": "Server error '500 Internal Server Error' for url 'https://export.arxiv.org/api/query?search_query=%28%28all%3Abenchmark+OR+all%3Abenchmarking+OR+all%3A%22evaluation+suite%22+OR+all%3A%22evaluation+dataset%22%29+AND+%28all%3Aconstruction+OR+all%3Acuration+OR+all%3A%22quality+control%22+OR+all%3A%22quality+assurance%22+OR+all%3Averifier+OR+all%3Agrader+OR+all%3A%22question+generation%22+OR+all%3A%22automated+evaluation%22+OR+all%3A%22synthetic+evaluation+data%22+OR+all%3A%22judge+calibration%22%29+AND+%28all%3Abiomedical+OR+all%3Amedical+OR+all%3Aclinical+OR+all%3Abiology+OR+all%3Abiological+OR+"
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
-      "status": "success",
-      "started_at": "2026-11-17T13:43:26Z",
-      "finished_at": "2026-11-17T13:43:28Z",
-      "discovered": 88,
-      "published": 52,
-      "error": ""
+      "status": "failed",
+      "started_at": "2026-11-18T13:17:46Z",
+      "finished_at": "2026-11-18T13:18:00Z",
+      "discovered": 0,
+      "published": 0,
+      "error": "Server error '503 ' for url 'https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=FIRST_PDATE%3A%5B2026-11-14+TO+2026-11-18%5D+AND+%28TITLE_ABS%3A%22benchmark+construction%22+OR+TITLE_ABS%3A%22benchmark+curation%22+OR+TITLE_ABS%3A%22benchmark+validation%22+OR+TITLE_ABS%3A%22quality+control%22+OR+TITLE_ABS%3A%22quality+assurance%22+OR+TITLE_ABS%3A%22question+generation%22+OR+TITLE_ABS%3A%22automated+verifier%22+OR+TITLE_ABS%3A%22automated+evaluation%22+OR+TITLE_ABS%3A%22benchmark+grader%22+OR+TITLE_ABS%3A%22synthetic+evaluation+data%22+OR+TITLE_ABS%3A%22judge+calibration%22%29+AND+%28T"
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-11-17T13:43:28Z",
-      "finished_at": "2026-11-17T13:44:16Z",
-      "discovered": 918,
-      "published": 58,
+      "started_at": "2026-11-18T13:18:00Z",
+      "finished_at": "2026-11-18T13:18:45Z",
+      "discovered": 994,
+      "published": 61,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-11-17T13:44:16Z",
-      "finished_at": "2026-11-17T13:44:26Z",
-      "discovered": 191,
-      "published": 19,
+      "started_at": "2026-11-18T13:18:45Z",
+      "finished_at": "2026-11-18T13:18:56Z",
+      "discovered": 214,
+      "published": 23,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-11-17T13:44:26Z",
-      "finished_at": "2026-11-17T13:44:26Z",
+      "started_at": "2026-11-18T13:18:56Z",
+      "finished_at": "2026-11-18T13:18:56Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
@@ -1332,7 +1332,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 17,
+      "match_score": 15,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "8dcd7cb30259f880c6b1d0d253836d91ae12262106546d772e31ba0f07673e54",
