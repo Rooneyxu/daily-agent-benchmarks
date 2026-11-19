@@ -1,7 +1,105 @@
 {
   "date": "2026-11-16",
-  "count": 2,
+  "count": 3,
   "entries": [
+    {
+      "id": "arxiv:2611.22009",
+      "slug": "arxiv-2611-22009-297b83d33f",
+      "kind": "paper",
+      "title": "DiagTrace: An Interactive Benchmark for Clinical Decision Making",
+      "abstract": "Large language models (LLMs) have shown strong performance on medical question answering and diagnostic reasoning benchmarks. However, existing evaluations typically provide all patient information upfront and assess only the final diagnosis or rationale. This setup ignores the need to acquire diagnostic evidence incrementally from incomplete information in real-world diagnosis. To bridge this gap, we introduce DiagTrace, a source-grounded benchmark for evaluating whether LLMs can reconstruct the documented diagnostic trajectory through interactive information seeking. Each benchmark instance is built from a PubMed Central case report and includes an initial presentation, an event bank, a clinical course, and diagnostic references. DiagTrace contains 510 cases across eight specialties, with 225 used to evaluate four LLMs on clinical-course alignment, interaction quality, and efficiency. Results reveal trade-offs in coverage, source-consistent ordering, and turn use.",
+      "authors": [
+        "Yufan Wang",
+        "Rui Yang",
+        "Yi Lin",
+        "Chunhua Weng",
+        "Yifan Peng"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-16T23:42:28+00:00",
+      "updated_at": "2026-11-16T23:42:28+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.22009"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.22009v1",
+        "pdf": "https://arxiv.org/pdf/2611.22009v1",
+        "code": "https://github.com/MoonshotAI/Kimi-K2.5",
+        "html": "https://arxiv.org/html/2611.22009"
+      },
+      "evidence": [
+        {
+          "term": "we introduce DiagTrace, a source-grounded benchmark",
+          "excerpt": "le. This setup ignores the need to acquire diagnostic evidence incrementally from incomplete information in real-world diagnosis. To bridge this gap, we introduce DiagTrace, a source-grounded benchmark for evaluating whether LLMs can reconstruct the documented diagnostic trajectory through interactive information seeking. Each benchmark instance is built from a PubMed Central case report and includes an initial presentation, an event ban",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.22009"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "DiagTrace: An Interactive Benchmark for Clinical Decision Making Large language models (LLMs) have shown strong performance on medical question answering and diagnostic reasoning benchmarks. However, existing evaluations typically provide all patient information upfront and",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.22009"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "chmark for Clinical Decision Making Large language models (LLMs) have shown strong performance on medical question answering and diagnostic reasoning benchmarks. However, existing evaluations typically provide all patient information upfront and assess only the final diagnosis or rationale. This setup ignores the need to acquire diagnostic evidence incrementally from incomplete information in real",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.22009"
+        },
+        {
+          "term": "medical",
+          "excerpt": "DiagTrace: An Interactive Benchmark for Clinical Decision Making Large language models (LLMs) have shown strong performance on medical question answering and diagnostic reasoning benchmarks. However, existing evaluations typically provide all patient information upfront and assess only the final diagnosis or rationale. This setup ignores the need to acquire diagnostic evi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.22009"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "DiagTrace: An Interactive Benchmark for Clinical Decision Making Large language models (LLMs) have shown strong performance on medical question answering and diagnostic reasoning benchmarks. However, existing evaluations typically provide all patient information upfront and assess only t",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.22009"
+        },
+        {
+          "term": "patient",
+          "excerpt": "have shown strong performance on medical question answering and diagnostic reasoning benchmarks. However, existing evaluations typically provide all patient information upfront and assess only the final diagnosis or rationale. This setup ignores the need to acquire diagnostic evidence incrementally from incomplete information in real-world diagnosis. To bridge this gap, we introduce DiagTrace,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.22009"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "ature Communications , 16:9799. Saab et al. (2026) Khaled Saab, Chunjong Park, Tim Strother, et al. 2026. Advancing conversational diagnostic AI with multimodal reasoning . Nature Medicine , 32:1726–1736. Sanghvi et al. (2026) Akshat Sanghvi, Naren Akash, Raza Imam, Amit Sharma, and Mohit Jain. 2026. MeDxAgent: Multi-agent consultation for interactive medical diagnosis . Preprint , arXiv:2606.0341",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2611.22009"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "ank is clinically diverse: the most frequent evidence types are imaging, history, routine laboratory tests, treatment response, physical examination, pathology, procedures, and outcomes (Table 2 ). A substantial fraction of events are linked to article figures or captions, reflecting the image-rich nature of PMC case reports. Specialty Cases Events Figure-linked rate Dermatology 49 541 0.325 Emer",
+          "location": "4.1 Statistics of DiagTrace",
+          "source_url": "https://arxiv.org/html/2611.22009"
+        }
+      ],
+      "related_benchmarks": [
+        "CaseReportBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 27,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "e48e6dab01660d74afe7154eb609a3f332fc352536e685559032539f190979cf",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
     {
       "id": "arxiv:2611.20779",
       "slug": "arxiv-2611-20779-d66258baf8",
