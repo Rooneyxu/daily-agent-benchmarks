@@ -1,0 +1,182 @@
+{
+  "date": "2026-11-18",
+  "count": 2,
+  "entries": [
+    {
+      "id": "doi:10.21203/rs.3.rs-10875799/v2",
+      "slug": "doi-10-21203-rs-3-rs-10875799-v2-280deca540",
+      "kind": "paper",
+      "title": "Machine Learning Validation Pipelines: From Tabular Benchmarking to Conformal Calibration and Execution-Grounded Agentic Testing",
+      "abstract": "<title>Abstract</title>  <p>  Machine learning systems are increasingly required to be multi-layered for software engineering validation protocols, and multiple checks are imposed instead of just one. Many important failure modes, such as deep class imbalance, poor probability calibration, ungrounded execution, and ”attributional” issues, come to a head in low-level deployments, such as automated code generation, credit underwriting, and clinical triage, where failures can be devastating. In clinical triage, credit underwriting, and the automated generation of code situations that are of a high stakes regularly show up critical failure modes such as severe class imbalance, poor probability calibration, unfaithful attribution, and ungrounded execution, for which standard k-fold cross-validation and regularized baselines are entirely inadequate. By combining the findings from 41 empirical studies, this review identifies three main levels of architecture: data leakage prevention and baseline benchmarking (Level 1), post-hoc interpretability audits and glass-box comparisons (Level 2), and distribution-free uncertainty quantification (Level 3). It is particularly important to note that a meta-analysis of 297 financial machine learning papers reveals a general disregard for diagnosis; only 7.1% of the papers examined included Remove and Retrain (ROAR) benchmarks for testing the faithfulness of the explanations, whereas 93.9% used TreeSHAP for feature attribution. The existence of multi-tier verification frameworks is especially important in order to prevent silent failure modes in safetycritical software systems, as these findings demonstrate. Class-conditional Mondrian conformal calibration answers the Minority Coverage Collapse Theorem, recovering +61.7 percentage points of minority coverage (p < 10  <sup>−80</sup>  ), and pairs with conformalized quantile regression and cost-optimal selective human deferral (θ  <sup>∗</sup>  = ch/CFN). Layer 4 is pre-deployment gating: on models above 0.85 AUROC, where static toolkits report nothing amiss, the RISED framework surfaces decision threshold-flip rates of 49.1% to 64.2% under minor input perturbations. Layer 5 covers execution-grounded multi-agent verification: closed-loop Abstract Syntax Tree validation with transactional rollback (ExecuGraph), lightweight multi-vector screening (TriEval), arity-matched action fairness auditing (AgentFairBench), and prompt-sensitivity benchmarking of the LLM judges such pipelines rely on to score free-form output (JudgeSense). We then formalize how the layers couple, and set out the order in which they should run.  </p>",
+      "authors": [
+        "Tambe WMA",
+        "Gaur N",
+        "Kaur J",
+        "Kaur G."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-11-18T00:00:00+00:00",
+      "updated_at": "2026-11-19T00:00:00+00:00",
+      "priority": "P2",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-10875799/v2"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1370333"
+      },
+      "evidence": [
+        {
+          "term": "data leakage prevention and baseline benchmarking (Level 1), post-hoc interpretability audits",
+          "excerpt": "zed baselines are entirely inadequate. By combining the findings from 41 empirical studies, this review identifies three main levels of architecture: data leakage prevention and baseline benchmarking (Level 1), post-hoc interpretability audits and glass-box comparisons (Level 2), and distribution-free uncertainty quantification (Level 3). It is particularly important to note that a meta-analysis of 297 financial machine learning papers reveals a general disregard for diagnosis;",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1370333"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Machine Learning Validation Pipelines: From Tabular Benchmarking to Conformal Calibration and Execution-Grounded Agentic Testing <title>Abstract</title> <p> Machine learning systems are increasingly required to be multi-layered for software engineering validation protocols, and multiple checks are",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1370333"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "297 financial machine learning papers reveals a general disregard for diagnosis; only 7.1% of the papers examined included Remove and Retrain (ROAR) benchmarks for testing the faithfulness of the explanations, whereas 93.9% used TreeSHAP for feature attribution. The existence of multi-tier verification frameworks is especially important in order to prevent silent failure modes in safetycritical s",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1370333"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "Machine Learning Validation Pipelines: From Tabular Benchmarking to Conformal Calibration and Execution-Grounded Agentic Testing <title>Abstract</title> <p> Machine learning systems are increasingly required to be multi-layered for software engineering validation protocols, and multiple checks are imp",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1370333"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "ngrounded execution, and ”attributional” issues, come to a head in low-level deployments, such as automated code generation, credit underwriting, and clinical triage, where failures can be devastating. In clinical triage, credit underwriting, and the automated generation of code situations that are of a high stakes regularly show up critical failure modes such as severe class imbalance, poor pro",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1370333"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "miss, the RISED framework surfaces decision threshold-flip rates of 49.1% to 64.2% under minor input perturbations. Layer 5 covers execution-grounded multi-agent verification: closed-loop Abstract Syntax Tree validation with transactional rollback (ExecuGraph), lightweight multi-vector screening (TriEval), arity-matched action fairness auditing (AgentFairBench), and prompt-sensitivity benchmarking",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1370333"
+        }
+      ],
+      "related_benchmarks": [
+        "TriEval",
+        "AgentFairBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c3d0836ffb8110babfb59dcd0a83bd53367d1e6653fe9096881651e143241c78",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "audit"
+    },
+    {
+      "id": "doi:10.21203/rs.3.rs-10824156/v1",
+      "slug": "doi-10-21203-rs-3-rs-10824156-v1-8261cbe2ed",
+      "kind": "paper",
+      "title": "REG2024: a benchmark challenge and curated dataset for pathology report generation from giga- pixel whole-slide images of bladder cancer",
+      "abstract": "<title>Abstract</title>  <p>Background  We aimed to construct a curated whole-slide image (WSI)-report dataset for bladder cancer and establish a clinically grounded benchmark for evaluating vision–language models through an open community challenge. Methods  We curated a dataset of 902 deidentified bladder cancer WSIs paired with corresponding pathology reports. Seven teams submitted distinct modeling frameworks. Performance was assessed using a clinically weighted composite metric integrating word-overlap scores (ROUGE-L, BLEU-4), keyword matching, and embedding-based semantic similarity. Expert mean opinion scores (MOS) were obtained, and the correlation between the weighted-sum score and expert-assigned MOS was analyzed. Results  Two modeling strategies emerged: end-to-end generative architectures and multi-step classification-then-generation pipelines. Among individual submissions, the top-ranked multi-step pipeline achieved the highest main-diagnosis accuracy (48/50), whereas end-to-end models showed greater sensitivity to rare pathological features. The weighted-sum metric correlated strongly with MOS within each team (Spearman’s ρ, 0.65–0.91) and, on reports with clinically important misclassifications, agreed with MOS more closely than any single metric. Conclusions  Performance variability was influenced by architectural design and the integration of pretrained foundation models. Our proposed evaluation framework addressed key limitations of conventional natural language processing metrics in evaluating pathology reports. This challenge establishes a benchmark for clinical-grade pathology report generation by providing vision-language pathology datasets and introducing a clinically aligned evaluation framework, thereby advancing computational pathology.</p>",
+      "authors": [
+        "Oh H",
+        "Kim E",
+        "Lee H",
+        "Kim KA",
+        "Hong S",
+        "Yoo S",
+        "Kang Y",
+        "Shim HS",
+        "Lee Y",
+        "Viriyasaranon T",
+        "Lee W",
+        "Choi J",
+        "Jo E",
+        "Lee D",
+        "Noh K",
+        "Shin Y",
+        "Park K",
+        "Park J",
+        "Kim J",
+        "Cho HY",
+        "Jeong W",
+        "Lee SH",
+        "Ahn S."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-11-18T00:00:00+00:00",
+      "updated_at": "2026-11-19T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-10824156/v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1370842"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "REG2024: a benchmark challenge and curated dataset for pathology report generation from giga- pixel whole-slide images of bladder cancer <title>Abstract</title> <p>Background We aimed to construct a curated whole-slide image (WSI)-report dataset for bladder",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1370842"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "cer <title>Abstract</title> <p>Background We aimed to construct a curated whole-slide image (WSI)-report dataset for bladder cancer and establish a clinically grounded benchmark for evaluating vision–language models through an open community challenge. Methods We curated a dataset of 902 deidentified bladder cancer WSIs paired with corresponding pathology reports. Seven teams submitted distin",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1370842"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "REG2024: a benchmark challenge and curated dataset for pathology report generation from giga- pixel whole-slide images of bladder cancer <title>Abstract</title> <p>Background We aimed to construct a curated whole-slide image (WSI)-report dataset for bladder cancer and establish a clinically grounded b",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1370842"
+        },
+        {
+          "term": "cancer",
+          "excerpt": "REG2024: a benchmark challenge and curated dataset for pathology report generation from giga- pixel whole-slide images of bladder cancer <title>Abstract</title> <p>Background We aimed to construct a curated whole-slide image (WSI)-report dataset for bladder cancer and establish a clinically grounded benchmark for evaluating vision–language models through an open community",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1370842"
+        },
+        {
+          "term": "vision-language",
+          "excerpt": "rocessing metrics in evaluating pathology reports. This challenge establishes a benchmark for clinical-grade pathology report generation by providing vision-language pathology datasets and introducing a clinically aligned evaluation framework, thereby advancing computational pathology.</p> <title>Abstract</title> <p>Background We aimed to construct a curated whole-slide image (WSI)-report dataset for",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1370842"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "57382bae74911c696987303c2296b67f157d4aac6d2575e0f38e3df683886975",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}

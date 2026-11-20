@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T13:39:54Z",
-  "total": 231,
+  "generated_at": "2026-11-20T13:22:15Z",
+  "total": 236,
   "counts": {
     "topics": {
-      "multimodal": 59,
-      "general_text": 86,
-      "experiment_agent": 67,
+      "experiment_agent": 69,
+      "general_text": 88,
+      "multimodal": 60,
       "biosafety": 19
     },
     "contribution_types": {
-      "new_benchmark": 193,
-      "methodology": 21,
-      "audit": 17
+      "new_benchmark": 196,
+      "audit": 18,
+      "methodology": 22
     },
     "kinds": {
-      "paper": 231
+      "paper": 236
     },
     "evaluation_contexts": {
-      "beneficial_capability": 212,
+      "beneficial_capability": 217,
       "biosecurity_misuse": 19
     }
   },
@@ -59,54 +59,70 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-11-19T13:40:27Z",
-      "finished_at": "2026-11-19T13:40:56Z",
-      "discovered": 44,
-      "published": 29,
+      "started_at": "2026-11-20T13:22:45Z",
+      "finished_at": "2026-11-20T13:23:20Z",
+      "discovered": 62,
+      "published": 41,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
-      "status": "failed",
-      "started_at": "2026-11-19T13:40:56Z",
-      "finished_at": "2026-11-19T13:41:42Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "The read operation timed out"
+      "status": "success",
+      "started_at": "2026-11-20T13:23:20Z",
+      "finished_at": "2026-11-20T13:24:28Z",
+      "discovered": 136,
+      "published": 82,
+      "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-11-19T13:41:42Z",
-      "finished_at": "2026-11-19T13:43:01Z",
-      "discovered": 1175,
-      "published": 85,
+      "started_at": "2026-11-20T13:24:28Z",
+      "finished_at": "2026-11-20T13:25:22Z",
+      "discovered": 1397,
+      "published": 90,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-11-19T13:43:01Z",
-      "finished_at": "2026-11-19T13:43:21Z",
-      "discovered": 267,
-      "published": 30,
+      "started_at": "2026-11-20T13:25:22Z",
+      "finished_at": "2026-11-20T13:25:33Z",
+      "discovered": 316,
+      "published": 31,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-11-19T13:43:21Z",
-      "finished_at": "2026-11-19T13:43:21Z",
+      "started_at": "2026-11-20T13:25:33Z",
+      "finished_at": "2026-11-20T13:25:33Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
     }
   ],
   "days": [
+    {
+      "date": "2026-11-19",
+      "count": 2,
+      "entry_ids": [
+        "arxiv:2611.26248",
+        "doi:10.64898/2026.11.17.26368316"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "count": 2,
+      "entry_ids": [
+        "doi:10.21203/rs.3.rs-10875799/v2",
+        "doi:10.21203/rs.3.rs-10824156/v1"
+      ]
+    },
     {
       "date": "2026-11-17",
       "count": 3,
@@ -118,9 +134,10 @@
     },
     {
       "date": "2026-11-16",
-      "count": 3,
+      "count": 4,
       "entry_ids": [
         "arxiv:2611.22009",
+        "arxiv:2611.24972",
         "arxiv:2611.20779",
         "doi:10.21203/rs.3.rs-11472328/v1"
       ]
@@ -989,6 +1006,360 @@
   ],
   "entries": [
     {
+      "id": "arxiv:2611.26248",
+      "slug": "arxiv-2611-26248-f882977190",
+      "kind": "paper",
+      "title": "TwinLab-Bench: Evaluating AI Scientists in Agentic Twins of Real Labs",
+      "abstract": "AI agents are increasingly expected to act as AI scientists, which requires three increasingly open abilities: carrying out a given computational workflow correctly, choosing the next measurements from a given design space, and designing their own experiments. Existing benchmarks mainly evaluate the first two abilities, in a terminal or in a closed loop that selects from predefined candidates. Evaluating the third ability requires reliably executing an experiment that an agent designs, with readings grounded in a real laboratory. We introduce TwinLab-Bench, which evaluates AI scientists on self-designed experiments in 52 tasks from laboratories in the physical sciences, the life sciences, and engineering. The benchmark supports more than 100 experimental action types, and the agent's report is scored by comparison with a hidden answer taken from real laboratory records. Each task has its own TwinLab agent, an agent that serves as the environment and executes the experiments that the tested agent designs, reading the raw materials of the laboratory and calling calculators that are built from its records. Compared with a language model that sees only the task description, the TwinLab agent almost eliminates readings that deviate from the real records and inconsistent answers to a repeated request, and closed-book probes control for answers recalled from memory. We find that these tasks remain hard for frontier models: the strongest, Claude Fable 5.2, averages a score of only 45.0, and we conduct an empirical study of where it fails.",
+      "authors": [
+        "Yang Wan",
+        "Linchao Zhu"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-19T15:25:34+00:00",
+      "updated_at": "2026-11-19T15:25:34+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.26248"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.26248v1",
+        "pdf": "https://arxiv.org/pdf/2611.26248v1",
+        "code": "https://github.com/aimat-lab/SDL_electrochromic",
+        "html": "https://arxiv.org/html/2611.26248"
+      },
+      "evidence": [
+        {
+          "term": "We introduce TwinLab-Bench",
+          "excerpt": "andidates. Evaluating the third ability requires reliably executing an experiment that an agent designs, with readings grounded in a real laboratory. We introduce TwinLab-Bench, which evaluates AI scientists on self-designed experiments in 52 tasks from laboratories in the physical sciences, the life sciences, and engineering. The benchmark supports more than 100 experimental action types, and the agent's report",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.26248"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "out a given computational workflow correctly, choosing the next measurements from a given design space, and designing their own experiments. Existing benchmarks mainly evaluate the first two abilities, in a terminal or in a closed loop that selects from predefined candidates. Evaluating the third ability requires reliably executing an experiment that an agent designs, with readings grounded in a",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.26248"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "out a given computational workflow correctly, choosing the next measurements from a given design space, and designing their own experiments. Existing benchmarks mainly evaluate the first two abilities, in a terminal or in a closed loop that selects from predefined candidates. Evaluating the third ability requires reliably executing an experiment that an agent designs, with readings grounded in a r",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.26248"
+        },
+        {
+          "term": "life science",
+          "excerpt": "y. We introduce TwinLab-Bench, which evaluates AI scientists on self-designed experiments in 52 tasks from laboratories in the physical sciences, the life sciences, and engineering. The benchmark supports more than 100 experimental action types, and the agent's report is scored by comparison with a hidden answer taken from real laboratory records. Each task has its own TwinLab agent, an agent that s",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.26248"
+        },
+        {
+          "term": "laboratory",
+          "excerpt": "predefined candidates. Evaluating the third ability requires reliably executing an experiment that an agent designs, with readings grounded in a real laboratory. We introduce TwinLab-Bench, which evaluates AI scientists on self-designed experiments in 52 tasks from laboratories in the physical sciences, the life sciences, and engineering. The benchmark supports more than 100 experimental action ty",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.26248"
+        },
+        {
+          "term": "vision-language",
+          "excerpt": "ailure makes the report wrong; when any core item misses full credit, the run scores 0. We report the mean score over all tasks. The judge agent is a vision-language model that serves as the judge ( Zheng et al., 2023 ) , reads the full task, the interaction log, and the report, and cites the report text or the request number for every item. Every core item with full credit is checked twice more by ind",
+          "location": "Score and judge.",
+          "source_url": "https://arxiv.org/html/2611.26248"
+        },
+        {
+          "term": "Experimental protocols",
+          "excerpt": "ays due to surface passivation, water isotope, and osmotic stress. Nature Precedings , 2010. 10.1038/npre.2010.4469.1 . Maloney (2011) Roger Maloney. Experimental protocols for and studies of the effects of surface passivation and water isotopes on the gliding speed of microtubules propelled by kinesin-1 . PhD thesis, University of New Mexico, 2011. URL https://digitalrepository.unm.edu/phyc_etds/40 . Mandyam",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2611.26248"
+        },
+        {
+          "term": "Troubleshooting",
+          "excerpt": "ks take three forms. Most tasks are claim reviews, which ask the actor agent to decide which conclusions of the laboratory hold and how to test them. Troubleshooting tasks ask for the cause of a clear failure and a working procedure, and research-campaign tasks ask for an executable procedure toward a research goal. Some tasks offer no experiments, and the actor agent analyzes only the raw records that",
+          "location": "Task forms.",
+          "source_url": "https://arxiv.org/html/2611.26248"
+        }
+      ],
+      "related_benchmarks": [
+        "HealthBench",
+        "ScienceAgentBench",
+        "EnvSimBench",
+        "BixBench",
+        "GPQA",
+        "BenchBench",
+        "PaperBench",
+        "ResearchClawBench",
+        "TruthInsightBench",
+        "ImpossibleBench",
+        "LAB-Bench",
+        "LABBench2"
+      ],
+      "related_agent_url": "../../p/2611.26248.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 24,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "a45d2158286a72b8a1b0976ca6605cdfd63676a9608a87e9f8b96cebf9420f6c",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.11.17.26368316",
+      "slug": "doi-10-64898-2026-11-17-26368316-f8c936b8cc",
+      "kind": "paper",
+      "title": "ClinDataBench: Benchmarking Large Language Model Agents in Clinical Trial Analysis Dataset Construction",
+      "abstract": "A new drug reaches patients only after the U.S. Food and Drug Administration (FDA) has reviewed its trial evidence, which every application carries as analysis datasets in the Clinical Data Interchange Standards Consortium (CDISC) Analysis Data Model (ADaM) format that programmers derive by hand from raw trial data, a statistical analysis plan (SAP) and dataset specifications. Coding agents built on large language models (LLMs) could take over this work, and a slow-changing industry will adopt them only with evidence of what they get right and wrong. However, work on large language models (LLMs) for CDISC data stops short of evaluating a complete, conformant and reproducible package, and the standard validator checks structure rather than whether each value is derived correctly. We introduce ClinDataBench, built on the public CDISC pilot study: an agent receives 22 Study Data Tabulation Model (SDTM) domains, the statistical analysis plan (SAP) and specifications, and must deliver 13 Analysis Data Model (ADaM) datasets, Define-XML metadata and a program that rebuilds them offline. Agents run in containers whose only network route is their model API, restricting online access to published reference outputs during execution. A host-only evaluator scores conformance under the Pinnacle 21 Community (P21) validator, selected derivations, clean reconstruction and effort separately. We compare three settings: Base, which submits the agent's first package; Self-Refine, which revises it without external validation feedback; and CRITIC, which revises it with the agent's own validator report. In an exploratory pilot with six models, the three closed models and DeepSeek delivered all 13 datasets in every setting and eleven of their twelve packages rebuilt semantically, while two other open-weight models delivered no complete package. Validator findings ranged from 15 to 64 dataset-rule pairs. Four of six CRITIC workflows had usable validator comparisons, and each reduced its finding count. None reduced its failed derivation count. The package with the fewest findings carried none of the 234 efficacy summary records in the form the specifications define, showing that lower validator finding counts do not necessarily indicate more correct derivations.",
+      "authors": [
+        "Li, Z.",
+        "Luo, Y.",
+        "Feng, Y.",
+        "Xu, J."
+      ],
+      "source": "medrxiv",
+      "published_at": "2026-11-19T00:00:00+00:00",
+      "updated_at": "2026-11-19T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_no",
+      "identifiers": {
+        "doi": "10.64898/2026.11.17.26368316"
+      },
+      "links": {
+        "abs": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368316",
+        "pdf": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368316.full.pdf",
+        "html": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368316.full"
+      },
+      "evidence": [
+        {
+          "term": "We introduce ClinDataBench",
+          "excerpt": "ing a complete, conformant and reproducible package, and the standard validator checks structure rather than whether each value is derived correctly. We introduce ClinDataBench, built on the public CDISC pilot study: an agent receives 22 Study Data Tabulation Model (SDTM) domains, the statistical analysis plan (SAP) and specifications, and must deliver 13 Analysis Data Model (ADaM) datasets, Define-XML metadata a",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368316.full"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "ClinDataBench: Benchmarking Large Language Model Agents in Clinical Trial Analysis Dataset Construction A new drug reaches patients only after the U.S. Food and Drug Administration (FDA) has reviewed its trial evidence, which every application carries as analysis",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368316.full"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "ClinDataBench: Benchmarking Large Language Model Agents in Clinical Trial Analysis Dataset Construction A new drug reaches patients only after the U.S. Food and Drug Administration (FDA) has reviewed its trial evidence, which every application carries as analysis dat",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368316.full"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "ClinDataBench: Benchmarking Large Language Model Agents in Clinical Trial Analysis Dataset Construction A new drug reaches patients only after the U.S. Food and Drug Administration (FDA) has reviewed its trial evidence, which every application carries as analysis datasets in the Clinical Data Interchange S",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368316.full"
+        }
+      ],
+      "related_benchmarks": [
+        "ClinDataBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 17,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.11.17.26368316.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "504f668ea35fbd1b471f86edbea1c69e80e7806c5b9381645f13d8d73c9ee173",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.21203/rs.3.rs-10875799/v2",
+      "slug": "doi-10-21203-rs-3-rs-10875799-v2-280deca540",
+      "kind": "paper",
+      "title": "Machine Learning Validation Pipelines: From Tabular Benchmarking to Conformal Calibration and Execution-Grounded Agentic Testing",
+      "abstract": "<title>Abstract</title>  <p>  Machine learning systems are increasingly required to be multi-layered for software engineering validation protocols, and multiple checks are imposed instead of just one. Many important failure modes, such as deep class imbalance, poor probability calibration, ungrounded execution, and ”attributional” issues, come to a head in low-level deployments, such as automated code generation, credit underwriting, and clinical triage, where failures can be devastating. In clinical triage, credit underwriting, and the automated generation of code situations that are of a high stakes regularly show up critical failure modes such as severe class imbalance, poor probability calibration, unfaithful attribution, and ungrounded execution, for which standard k-fold cross-validation and regularized baselines are entirely inadequate. By combining the findings from 41 empirical studies, this review identifies three main levels of architecture: data leakage prevention and baseline benchmarking (Level 1), post-hoc interpretability audits and glass-box comparisons (Level 2), and distribution-free uncertainty quantification (Level 3). It is particularly important to note that a meta-analysis of 297 financial machine learning papers reveals a general disregard for diagnosis; only 7.1% of the papers examined included Remove and Retrain (ROAR) benchmarks for testing the faithfulness of the explanations, whereas 93.9% used TreeSHAP for feature attribution. The existence of multi-tier verification frameworks is especially important in order to prevent silent failure modes in safetycritical software systems, as these findings demonstrate. Class-conditional Mondrian conformal calibration answers the Minority Coverage Collapse Theorem, recovering +61.7 percentage points of minority coverage (p < 10  <sup>−80</sup>  ), and pairs with conformalized quantile regression and cost-optimal selective human deferral (θ  <sup>∗</sup>  = ch/CFN). Layer 4 is pre-deployment gating: on models above 0.85 AUROC, where static toolkits report nothing amiss, the RISED framework surfaces decision threshold-flip rates of 49.1% to 64.2% under minor input perturbations. Layer 5 covers execution-grounded multi-agent verification: closed-loop Abstract Syntax Tree validation with transactional rollback (ExecuGraph), lightweight multi-vector screening (TriEval), arity-matched action fairness auditing (AgentFairBench), and prompt-sensitivity benchmarking of the LLM judges such pipelines rely on to score free-form output (JudgeSense). We then formalize how the layers couple, and set out the order in which they should run.  </p>",
+      "authors": [
+        "Tambe WMA",
+        "Gaur N",
+        "Kaur J",
+        "Kaur G."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-11-18T00:00:00+00:00",
+      "updated_at": "2026-11-19T00:00:00+00:00",
+      "priority": "P2",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-10875799/v2"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1370333"
+      },
+      "evidence": [
+        {
+          "term": "data leakage prevention and baseline benchmarking (Level 1), post-hoc interpretability audits",
+          "excerpt": "zed baselines are entirely inadequate. By combining the findings from 41 empirical studies, this review identifies three main levels of architecture: data leakage prevention and baseline benchmarking (Level 1), post-hoc interpretability audits and glass-box comparisons (Level 2), and distribution-free uncertainty quantification (Level 3). It is particularly important to note that a meta-analysis of 297 financial machine learning papers reveals a general disregard for diagnosis;",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1370333"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Machine Learning Validation Pipelines: From Tabular Benchmarking to Conformal Calibration and Execution-Grounded Agentic Testing <title>Abstract</title> <p> Machine learning systems are increasingly required to be multi-layered for software engineering validation protocols, and multiple checks are",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1370333"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "297 financial machine learning papers reveals a general disregard for diagnosis; only 7.1% of the papers examined included Remove and Retrain (ROAR) benchmarks for testing the faithfulness of the explanations, whereas 93.9% used TreeSHAP for feature attribution. The existence of multi-tier verification frameworks is especially important in order to prevent silent failure modes in safetycritical s",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1370333"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "Machine Learning Validation Pipelines: From Tabular Benchmarking to Conformal Calibration and Execution-Grounded Agentic Testing <title>Abstract</title> <p> Machine learning systems are increasingly required to be multi-layered for software engineering validation protocols, and multiple checks are imp",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1370333"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "ngrounded execution, and ”attributional” issues, come to a head in low-level deployments, such as automated code generation, credit underwriting, and clinical triage, where failures can be devastating. In clinical triage, credit underwriting, and the automated generation of code situations that are of a high stakes regularly show up critical failure modes such as severe class imbalance, poor pro",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1370333"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "miss, the RISED framework surfaces decision threshold-flip rates of 49.1% to 64.2% under minor input perturbations. Layer 5 covers execution-grounded multi-agent verification: closed-loop Abstract Syntax Tree validation with transactional rollback (ExecuGraph), lightweight multi-vector screening (TriEval), arity-matched action fairness auditing (AgentFairBench), and prompt-sensitivity benchmarking",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1370333"
+        }
+      ],
+      "related_benchmarks": [
+        "TriEval",
+        "AgentFairBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c3d0836ffb8110babfb59dcd0a83bd53367d1e6653fe9096881651e143241c78",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "audit"
+    },
+    {
+      "id": "doi:10.21203/rs.3.rs-10824156/v1",
+      "slug": "doi-10-21203-rs-3-rs-10824156-v1-8261cbe2ed",
+      "kind": "paper",
+      "title": "REG2024: a benchmark challenge and curated dataset for pathology report generation from giga- pixel whole-slide images of bladder cancer",
+      "abstract": "<title>Abstract</title>  <p>Background  We aimed to construct a curated whole-slide image (WSI)-report dataset for bladder cancer and establish a clinically grounded benchmark for evaluating vision–language models through an open community challenge. Methods  We curated a dataset of 902 deidentified bladder cancer WSIs paired with corresponding pathology reports. Seven teams submitted distinct modeling frameworks. Performance was assessed using a clinically weighted composite metric integrating word-overlap scores (ROUGE-L, BLEU-4), keyword matching, and embedding-based semantic similarity. Expert mean opinion scores (MOS) were obtained, and the correlation between the weighted-sum score and expert-assigned MOS was analyzed. Results  Two modeling strategies emerged: end-to-end generative architectures and multi-step classification-then-generation pipelines. Among individual submissions, the top-ranked multi-step pipeline achieved the highest main-diagnosis accuracy (48/50), whereas end-to-end models showed greater sensitivity to rare pathological features. The weighted-sum metric correlated strongly with MOS within each team (Spearman’s ρ, 0.65–0.91) and, on reports with clinically important misclassifications, agreed with MOS more closely than any single metric. Conclusions  Performance variability was influenced by architectural design and the integration of pretrained foundation models. Our proposed evaluation framework addressed key limitations of conventional natural language processing metrics in evaluating pathology reports. This challenge establishes a benchmark for clinical-grade pathology report generation by providing vision-language pathology datasets and introducing a clinically aligned evaluation framework, thereby advancing computational pathology.</p>",
+      "authors": [
+        "Oh H",
+        "Kim E",
+        "Lee H",
+        "Kim KA",
+        "Hong S",
+        "Yoo S",
+        "Kang Y",
+        "Shim HS",
+        "Lee Y",
+        "Viriyasaranon T",
+        "Lee W",
+        "Choi J",
+        "Jo E",
+        "Lee D",
+        "Noh K",
+        "Shin Y",
+        "Park K",
+        "Park J",
+        "Kim J",
+        "Cho HY",
+        "Jeong W",
+        "Lee SH",
+        "Ahn S."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-11-18T00:00:00+00:00",
+      "updated_at": "2026-11-19T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-10824156/v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1370842"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "REG2024: a benchmark challenge and curated dataset for pathology report generation from giga- pixel whole-slide images of bladder cancer <title>Abstract</title> <p>Background We aimed to construct a curated whole-slide image (WSI)-report dataset for bladder",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1370842"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "cer <title>Abstract</title> <p>Background We aimed to construct a curated whole-slide image (WSI)-report dataset for bladder cancer and establish a clinically grounded benchmark for evaluating vision–language models through an open community challenge. Methods We curated a dataset of 902 deidentified bladder cancer WSIs paired with corresponding pathology reports. Seven teams submitted distin",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1370842"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "REG2024: a benchmark challenge and curated dataset for pathology report generation from giga- pixel whole-slide images of bladder cancer <title>Abstract</title> <p>Background We aimed to construct a curated whole-slide image (WSI)-report dataset for bladder cancer and establish a clinically grounded b",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1370842"
+        },
+        {
+          "term": "cancer",
+          "excerpt": "REG2024: a benchmark challenge and curated dataset for pathology report generation from giga- pixel whole-slide images of bladder cancer <title>Abstract</title> <p>Background We aimed to construct a curated whole-slide image (WSI)-report dataset for bladder cancer and establish a clinically grounded benchmark for evaluating vision–language models through an open community",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1370842"
+        },
+        {
+          "term": "vision-language",
+          "excerpt": "rocessing metrics in evaluating pathology reports. This challenge establishes a benchmark for clinical-grade pathology report generation by providing vision-language pathology datasets and introducing a clinically aligned evaluation framework, thereby advancing computational pathology.</p> <title>Abstract</title> <p>Background We aimed to construct a curated whole-slide image (WSI)-report dataset for",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1370842"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "57382bae74911c696987303c2296b67f157d4aac6d2575e0f38e3df683886975",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "arxiv:2611.22652",
       "slug": "arxiv-2611-22652-987205c835",
       "kind": "paper",
@@ -1345,6 +1716,73 @@
       "is_seed": false,
       "topic": "multimodal",
       "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2611.24972",
+      "slug": "arxiv-2611-24972-c451b84e28",
+      "kind": "paper",
+      "title": "No-Harm-Jury A Jury-Based Multi-Dimensional Harm Evaluation Framework for Medical AI Responses",
+      "abstract": "We present No-Harm-Jury, a jury-based automated evaluation framework that scores AI-generated medical responses across seven conceptually distinct harm dimensions using a panel of five diverse language models as independent jurors. Responses generated by Ministral-14B on 3,000 questions drawn from PubMedQA, MedQA, and MedMCQA are scored by five jurors across dimensions of informational, social, psychological, autonomy, economic, privacy, and epistemic harm; the 151 empty responses (98 MedQA, 53 MedM- CQA) are excluded, leaving 2,849 valid samples. The median aggregation robustly suppresses individual juror biases while maintaining coverage through complementary specialisation. No existing system combines all five prop- erties of No-Harm-Jury: automated scalable evaluation, five diverse LLM jurors, robust me- dian aggregation (with a reliability-weighted extension), seven conceptually distinct harm dimensions, and application to medical QA benchmarks.",
+      "authors": [
+        "Antonio Puertas Gallardo",
+        "Mario Ceresa"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-16T14:08:54+00:00",
+      "updated_at": "2026-11-16T14:08:54+00:00",
+      "priority": "P0",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.24972"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.24972v1",
+        "pdf": "https://arxiv.org/pdf/2611.24972v1",
+        "html": "https://arxiv.org/html/2611.24972"
+      },
+      "evidence": [
+        {
+          "term": "automated evaluation framework",
+          "excerpt": "No-Harm-Jury A Jury-Based Multi-Dimensional Harm Evaluation Framework for Medical AI Responses We present No-Harm-Jury, a jury-based automated evaluation framework that scores AI-generated medical responses across seven conceptually distinct harm dimensions using a panel of five diverse language models as independent jurors. Responses generated by Ministral-14B on 3,000 questions drawn from PubMedQA,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.24972"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "rors, robust me- dian aggregation (with a reliability-weighted extension), seven conceptually distinct harm dimensions, and application to medical QA benchmarks. [[SECTION No-Harm-Jury: A Jury-Based Multi-Dimensional Harm Evaluation Framework for Medical AI Responses]] No-Harm-Jury: A Jury-Based Multi-Dimensional Harm Evaluation Framework for Medical AI Responses Content selection saved. Describe",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.24972"
+        },
+        {
+          "term": "medical",
+          "excerpt": "No-Harm-Jury A Jury-Based Multi-Dimensional Harm Evaluation Framework for Medical AI Responses We present No-Harm-Jury, a jury-based automated evaluation framework that scores AI-generated medical responses across seven conceptually distinct harm dimensions using a panel of five diverse language models as independent ju",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.24972"
+        }
+      ],
+      "related_benchmarks": [
+        "PubMedQA",
+        "MedQA",
+        "MedMCQA",
+        "CQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "match_score": 17,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "543b0a0b939b34e4a4f2e415375893d23910e794c0a8186c92aabc964dbb34a1",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "methodology"
     },
     {
       "id": "arxiv:2611.20779",

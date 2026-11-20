@@ -1,0 +1,184 @@
+{
+  "date": "2026-11-19",
+  "count": 2,
+  "entries": [
+    {
+      "id": "arxiv:2611.26248",
+      "slug": "arxiv-2611-26248-f882977190",
+      "kind": "paper",
+      "title": "TwinLab-Bench: Evaluating AI Scientists in Agentic Twins of Real Labs",
+      "abstract": "AI agents are increasingly expected to act as AI scientists, which requires three increasingly open abilities: carrying out a given computational workflow correctly, choosing the next measurements from a given design space, and designing their own experiments. Existing benchmarks mainly evaluate the first two abilities, in a terminal or in a closed loop that selects from predefined candidates. Evaluating the third ability requires reliably executing an experiment that an agent designs, with readings grounded in a real laboratory. We introduce TwinLab-Bench, which evaluates AI scientists on self-designed experiments in 52 tasks from laboratories in the physical sciences, the life sciences, and engineering. The benchmark supports more than 100 experimental action types, and the agent's report is scored by comparison with a hidden answer taken from real laboratory records. Each task has its own TwinLab agent, an agent that serves as the environment and executes the experiments that the tested agent designs, reading the raw materials of the laboratory and calling calculators that are built from its records. Compared with a language model that sees only the task description, the TwinLab agent almost eliminates readings that deviate from the real records and inconsistent answers to a repeated request, and closed-book probes control for answers recalled from memory. We find that these tasks remain hard for frontier models: the strongest, Claude Fable 5.2, averages a score of only 45.0, and we conduct an empirical study of where it fails.",
+      "authors": [
+        "Yang Wan",
+        "Linchao Zhu"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-19T15:25:34+00:00",
+      "updated_at": "2026-11-19T15:25:34+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.26248"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.26248v1",
+        "pdf": "https://arxiv.org/pdf/2611.26248v1",
+        "code": "https://github.com/aimat-lab/SDL_electrochromic",
+        "html": "https://arxiv.org/html/2611.26248"
+      },
+      "evidence": [
+        {
+          "term": "We introduce TwinLab-Bench",
+          "excerpt": "andidates. Evaluating the third ability requires reliably executing an experiment that an agent designs, with readings grounded in a real laboratory. We introduce TwinLab-Bench, which evaluates AI scientists on self-designed experiments in 52 tasks from laboratories in the physical sciences, the life sciences, and engineering. The benchmark supports more than 100 experimental action types, and the agent's report",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.26248"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "out a given computational workflow correctly, choosing the next measurements from a given design space, and designing their own experiments. Existing benchmarks mainly evaluate the first two abilities, in a terminal or in a closed loop that selects from predefined candidates. Evaluating the third ability requires reliably executing an experiment that an agent designs, with readings grounded in a",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.26248"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "out a given computational workflow correctly, choosing the next measurements from a given design space, and designing their own experiments. Existing benchmarks mainly evaluate the first two abilities, in a terminal or in a closed loop that selects from predefined candidates. Evaluating the third ability requires reliably executing an experiment that an agent designs, with readings grounded in a r",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.26248"
+        },
+        {
+          "term": "life science",
+          "excerpt": "y. We introduce TwinLab-Bench, which evaluates AI scientists on self-designed experiments in 52 tasks from laboratories in the physical sciences, the life sciences, and engineering. The benchmark supports more than 100 experimental action types, and the agent's report is scored by comparison with a hidden answer taken from real laboratory records. Each task has its own TwinLab agent, an agent that s",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.26248"
+        },
+        {
+          "term": "laboratory",
+          "excerpt": "predefined candidates. Evaluating the third ability requires reliably executing an experiment that an agent designs, with readings grounded in a real laboratory. We introduce TwinLab-Bench, which evaluates AI scientists on self-designed experiments in 52 tasks from laboratories in the physical sciences, the life sciences, and engineering. The benchmark supports more than 100 experimental action ty",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.26248"
+        },
+        {
+          "term": "vision-language",
+          "excerpt": "ailure makes the report wrong; when any core item misses full credit, the run scores 0. We report the mean score over all tasks. The judge agent is a vision-language model that serves as the judge ( Zheng et al., 2023 ) , reads the full task, the interaction log, and the report, and cites the report text or the request number for every item. Every core item with full credit is checked twice more by ind",
+          "location": "Score and judge.",
+          "source_url": "https://arxiv.org/html/2611.26248"
+        },
+        {
+          "term": "Experimental protocols",
+          "excerpt": "ays due to surface passivation, water isotope, and osmotic stress. Nature Precedings , 2010. 10.1038/npre.2010.4469.1 . Maloney (2011) Roger Maloney. Experimental protocols for and studies of the effects of surface passivation and water isotopes on the gliding speed of microtubules propelled by kinesin-1 . PhD thesis, University of New Mexico, 2011. URL https://digitalrepository.unm.edu/phyc_etds/40 . Mandyam",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2611.26248"
+        },
+        {
+          "term": "Troubleshooting",
+          "excerpt": "ks take three forms. Most tasks are claim reviews, which ask the actor agent to decide which conclusions of the laboratory hold and how to test them. Troubleshooting tasks ask for the cause of a clear failure and a working procedure, and research-campaign tasks ask for an executable procedure toward a research goal. Some tasks offer no experiments, and the actor agent analyzes only the raw records that",
+          "location": "Task forms.",
+          "source_url": "https://arxiv.org/html/2611.26248"
+        }
+      ],
+      "related_benchmarks": [
+        "HealthBench",
+        "ScienceAgentBench",
+        "EnvSimBench",
+        "BixBench",
+        "GPQA",
+        "BenchBench",
+        "PaperBench",
+        "ResearchClawBench",
+        "TruthInsightBench",
+        "ImpossibleBench",
+        "LAB-Bench",
+        "LABBench2"
+      ],
+      "related_agent_url": "../../p/2611.26248.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 24,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "a45d2158286a72b8a1b0976ca6605cdfd63676a9608a87e9f8b96cebf9420f6c",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.11.17.26368316",
+      "slug": "doi-10-64898-2026-11-17-26368316-f8c936b8cc",
+      "kind": "paper",
+      "title": "ClinDataBench: Benchmarking Large Language Model Agents in Clinical Trial Analysis Dataset Construction",
+      "abstract": "A new drug reaches patients only after the U.S. Food and Drug Administration (FDA) has reviewed its trial evidence, which every application carries as analysis datasets in the Clinical Data Interchange Standards Consortium (CDISC) Analysis Data Model (ADaM) format that programmers derive by hand from raw trial data, a statistical analysis plan (SAP) and dataset specifications. Coding agents built on large language models (LLMs) could take over this work, and a slow-changing industry will adopt them only with evidence of what they get right and wrong. However, work on large language models (LLMs) for CDISC data stops short of evaluating a complete, conformant and reproducible package, and the standard validator checks structure rather than whether each value is derived correctly. We introduce ClinDataBench, built on the public CDISC pilot study: an agent receives 22 Study Data Tabulation Model (SDTM) domains, the statistical analysis plan (SAP) and specifications, and must deliver 13 Analysis Data Model (ADaM) datasets, Define-XML metadata and a program that rebuilds them offline. Agents run in containers whose only network route is their model API, restricting online access to published reference outputs during execution. A host-only evaluator scores conformance under the Pinnacle 21 Community (P21) validator, selected derivations, clean reconstruction and effort separately. We compare three settings: Base, which submits the agent's first package; Self-Refine, which revises it without external validation feedback; and CRITIC, which revises it with the agent's own validator report. In an exploratory pilot with six models, the three closed models and DeepSeek delivered all 13 datasets in every setting and eleven of their twelve packages rebuilt semantically, while two other open-weight models delivered no complete package. Validator findings ranged from 15 to 64 dataset-rule pairs. Four of six CRITIC workflows had usable validator comparisons, and each reduced its finding count. None reduced its failed derivation count. The package with the fewest findings carried none of the 234 efficacy summary records in the form the specifications define, showing that lower validator finding counts do not necessarily indicate more correct derivations.",
+      "authors": [
+        "Li, Z.",
+        "Luo, Y.",
+        "Feng, Y.",
+        "Xu, J."
+      ],
+      "source": "medrxiv",
+      "published_at": "2026-11-19T00:00:00+00:00",
+      "updated_at": "2026-11-19T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_no",
+      "identifiers": {
+        "doi": "10.64898/2026.11.17.26368316"
+      },
+      "links": {
+        "abs": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368316",
+        "pdf": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368316.full.pdf",
+        "html": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368316.full"
+      },
+      "evidence": [
+        {
+          "term": "We introduce ClinDataBench",
+          "excerpt": "ing a complete, conformant and reproducible package, and the standard validator checks structure rather than whether each value is derived correctly. We introduce ClinDataBench, built on the public CDISC pilot study: an agent receives 22 Study Data Tabulation Model (SDTM) domains, the statistical analysis plan (SAP) and specifications, and must deliver 13 Analysis Data Model (ADaM) datasets, Define-XML metadata a",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368316.full"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "ClinDataBench: Benchmarking Large Language Model Agents in Clinical Trial Analysis Dataset Construction A new drug reaches patients only after the U.S. Food and Drug Administration (FDA) has reviewed its trial evidence, which every application carries as analysis",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368316.full"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "ClinDataBench: Benchmarking Large Language Model Agents in Clinical Trial Analysis Dataset Construction A new drug reaches patients only after the U.S. Food and Drug Administration (FDA) has reviewed its trial evidence, which every application carries as analysis dat",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368316.full"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "ClinDataBench: Benchmarking Large Language Model Agents in Clinical Trial Analysis Dataset Construction A new drug reaches patients only after the U.S. Food and Drug Administration (FDA) has reviewed its trial evidence, which every application carries as analysis datasets in the Clinical Data Interchange S",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368316.full"
+        }
+      ],
+      "related_benchmarks": [
+        "ClinDataBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 17,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.11.17.26368316.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "504f668ea35fbd1b471f86edbea1c69e80e7806c5b9381645f13d8d73c9ee173",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
