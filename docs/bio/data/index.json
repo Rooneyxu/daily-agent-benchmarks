@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T13:22:15Z",
-  "total": 236,
+  "generated_at": "2026-11-21T12:52:40Z",
+  "total": 238,
   "counts": {
     "topics": {
+      "multimodal": 61,
       "experiment_agent": 69,
-      "general_text": 88,
-      "multimodal": 60,
+      "general_text": 89,
       "biosafety": 19
     },
     "contribution_types": {
-      "new_benchmark": 196,
-      "audit": 18,
-      "methodology": 22
+      "new_benchmark": 197,
+      "methodology": 23,
+      "audit": 18
     },
     "kinds": {
-      "paper": 236
+      "paper": 238
     },
     "evaluation_contexts": {
-      "beneficial_capability": 217,
+      "beneficial_capability": 219,
       "biosecurity_misuse": 19
     }
   },
@@ -59,54 +59,61 @@
       "source": "arxiv",
       "name": "arXiv",
       "status": "success",
-      "started_at": "2026-11-20T13:22:45Z",
-      "finished_at": "2026-11-20T13:23:20Z",
-      "discovered": 62,
-      "published": 41,
+      "started_at": "2026-11-21T12:53:11Z",
+      "finished_at": "2026-11-21T12:53:42Z",
+      "discovered": 48,
+      "published": 30,
       "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-11-20T13:23:20Z",
-      "finished_at": "2026-11-20T13:24:28Z",
-      "discovered": 136,
-      "published": 82,
+      "started_at": "2026-11-21T12:53:42Z",
+      "finished_at": "2026-11-21T12:56:04Z",
+      "discovered": 135,
+      "published": 76,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-11-20T13:24:28Z",
-      "finished_at": "2026-11-20T13:25:22Z",
-      "discovered": 1397,
-      "published": 90,
+      "started_at": "2026-11-21T12:56:04Z",
+      "finished_at": "2026-11-21T12:57:23Z",
+      "discovered": 1230,
+      "published": 80,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-11-20T13:25:22Z",
-      "finished_at": "2026-11-20T13:25:33Z",
-      "discovered": 316,
-      "published": 31,
+      "started_at": "2026-11-21T12:57:23Z",
+      "finished_at": "2026-11-21T12:57:34Z",
+      "discovered": 331,
+      "published": 35,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-11-20T13:25:33Z",
-      "finished_at": "2026-11-20T13:25:33Z",
+      "started_at": "2026-11-21T12:57:34Z",
+      "finished_at": "2026-11-21T12:57:35Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
     }
   ],
   "days": [
+    {
+      "date": "2026-11-20",
+      "count": 1,
+      "entry_ids": [
+        "doi:10.21203/rs.3.rs-11622355/v1"
+      ]
+    },
     {
       "date": "2026-11-19",
       "count": 2,
@@ -117,8 +124,9 @@
     },
     {
       "date": "2026-11-18",
-      "count": 2,
+      "count": 3,
       "entry_ids": [
+        "doi:10.64898/2026.11.02.26364999",
         "doi:10.21203/rs.3.rs-10875799/v2",
         "doi:10.21203/rs.3.rs-10824156/v1"
       ]
@@ -1006,6 +1014,77 @@
   ],
   "entries": [
     {
+      "id": "doi:10.21203/rs.3.rs-11622355/v1",
+      "slug": "doi-10-21203-rs-3-rs-11622355-v1-8cb9dfdbe1",
+      "kind": "paper",
+      "title": "MedCapVQA: A Two-Stage Explainable Framework for Medical Visual Question Answering",
+      "abstract": "<title>Abstract</title>  <p>Medical Visual Question Answering (Med-VQA) aims to answer natural language questions about clinical images and has significant potential for diagnostic support, medical education, and improved access to expert interpretation. Most Med-VQA systems fuse image features and question embeddings directly, a mapping that is hard to learn from the few thousand question--answer pairs that medical benchmarks provide and that is usually compensated for with large-scale domain pre-training. We propose \\modelname{}, a two-stage, caption-driven framework that describes the image first and answers the question second. A MedGemma captioner, adapted with parameter-efficient fine-tuning on ROCOv2, converts each medical image into a clinically meaningful caption; a BioBERT-based reasoner with dedicated caption and question encoders and question-to-caption cross-attention then predicts the answer from text alone. We evaluate \\modelname{} on the closed-ended questions of the VQA-Med 2019 benchmark, training on the official training set (3,200 medical images, 12,792 question--answer pairs) and evaluating on the official validation set (500 images, 2,000 question--answer pairs), against six baselines that represent the main prior design families: a convolutional--recurrent fusion model, BioBERT and Med3D domain-adapted variants, a self-attention fusion network, a Vision Transformer model with cross-attention, and an end-to-end fine-tuned vision-language model. All models are trained under the same protocol and across training-set proportions from 5\\% to 100\\%, with each data-size result averaged over ten random training subsets. \\modelname{} achieves the highest validation accuracy on both tasks: 81.9\\% on binary (yes/no) questions, 11.6 percentage points above the strongest baseline, and 73.9\\% on 71-category multiclass questions, 5.4 points above the fine-tuned vision-language model and 13.5 points above the Vision Transformer model. The vision-language model attains a higher multiclass training accuracy but lower validation accuracy compared to \\modelname{} and none of the baseline models are strong on both tasks. The \\modelname{} reasoner trains on a single GPU in $\\sim$5 hours. These results show that converting medical images into textual captions before reasoning is an effective and resource-efficient alternative to direct multimodal fusion, and they highlight the value of intermediate semantic representations for the design of next-generation Med-VQA systems.</p>",
+      "authors": [
+        "Perera N",
+        "Nummenmaa J",
+        "Stefanidis K."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-11-20T00:00:00+00:00",
+      "updated_at": "2026-11-21T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-11622355/v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1372591"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "stems fuse image features and question embeddings directly, a mapping that is hard to learn from the few thousand question--answer pairs that medical benchmarks provide and that is usually compensated for with large-scale domain pre-training. We propose \\modelname{}, a two-stage, caption-driven framework that describes the image first and answers the question second. A MedGemma captioner, adapted",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1372591"
+        },
+        {
+          "term": "medical",
+          "excerpt": "MedCapVQA: A Two-Stage Explainable Framework for Medical Visual Question Answering <title>Abstract</title> <p>Medical Visual Question Answering (Med-VQA) aims to answer natural language questions about clinical images and has significant potential for diagnostic support, medical education, and",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1372591"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "cal Visual Question Answering <title>Abstract</title> <p>Medical Visual Question Answering (Med-VQA) aims to answer natural language questions about clinical images and has significant potential for diagnostic support, medical education, and improved access to expert interpretation. Most Med-VQA systems fuse image features and question embeddings directly, a mapping that is hard to learn from t",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1372591"
+        },
+        {
+          "term": "vision-language",
+          "excerpt": "ERT and Med3D domain-adapted variants, a self-attention fusion network, a Vision Transformer model with cross-attention, and an end-to-end fine-tuned vision-language model. All models are trained under the same protocol and across training-set proportions from 5\\% to 100\\%, with each data-size result averaged over ten random training subsets. \\modelname{} achieves the highest validation accuracy on bot",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1372591"
+        }
+      ],
+      "related_benchmarks": [
+        "MedCapVQA",
+        "Med-VQA",
+        "VQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "ba89fe6b6fd8e9f3c6cbdfe534e7d715180ae65119ad023b7da36d8bd70060a8",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "arxiv:2611.26248",
       "slug": "arxiv-2611-26248-f882977190",
       "kind": "paper",
@@ -1182,6 +1261,77 @@
       "is_seed": false,
       "topic": "general_text",
       "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.11.02.26364999",
+      "slug": "doi-10-64898-2026-11-02-26364999-2d8de93db4",
+      "kind": "paper",
+      "title": "Deep learning grading of Schistosoma japonicum-associated liver fibrosis from ultrasound images: a weighted soft-voting ensemble of convolutional and transformer networks",
+      "abstract": "BackgroundDespite progress towards schistosomiasis elimination in China, Schistosoma japonicum-associated liver fibrosis remains a source of morbidity. Ultrasound grading is subjective, and experienced sonographers are scarce in endemic counties.\n\nMethodsWe developed a deep learning ensemble to grade fibrosis from a single B-mode ultrasound image without manual region-of-interest delineation. We analysed 2,921 images from 2,921 adults (aged 18-88 years; median age 54; 46.4% female) at a schistosomiasis hospital in Jiangxi Province, China (2019-2023). Grades 0, 1, 2 and 3 accounted for 12.9%, 34.6%, 32.4% and 20.2% of images, respectively. Reference grades were derived from clinical ultrasound records and radiologist reassessment using the Chinese Handbook of Schistosomiasis Control, with disagreements resolved by consensus. Predictions from ResNet-18, EfficientNet-B0, DenseNet-121 and Swin-T were combined by validation-weighted soft voting. Performance was evaluated on a held-out test set of 440 images.\n\nResultsThe ensemble achieved a macro-F1 of 0.8527 (95% CI 0.8184-0.8856), accuracy of 0.8500 (95% CI 0.8136-0.8818) and quadratic weighted kappa of 0.9187 (95% CI 0.8983-0.9373) for four-grade classification, outperforming each individual network in macro-F1. All ensemble misclassifications involved adjacent grades. For detecting significant fibrosis (grades 2-3; test-set prevalence 53.0%), sensitivity was 0.9700, specificity 0.9179, positive predictive value 0.9300, negative predictive value 0.9645 and AUROC 0.9817.\n\nConclusionsThis single-image approach may assist automated grading of S. japonicum-associated liver fibrosis in endemic settings. External validation is needed before clinical implementation.",
+      "authors": [
+        "Guo, Z.",
+        "Ockenden, E. S.",
+        "Wei, M.",
+        "Li, Q.",
+        "Li, S.",
+        "Xue, J.",
+        "Li, Y.",
+        "Lin, D.",
+        "Zhou, X.",
+        "Chami, G. F.",
+        "Li, S."
+      ],
+      "source": "medrxiv",
+      "published_at": "2026-11-18T00:00:00+00:00",
+      "updated_at": "2026-11-18T00:00:00+00:00",
+      "priority": "P0",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by_nc_nd",
+      "identifiers": {
+        "doi": "10.64898/2026.11.02.26364999"
+      },
+      "links": {
+        "abs": "https://www.medrxiv.org/content/10.64898/2026.11.02.26364999",
+        "pdf": "https://www.medrxiv.org/content/10.64898/2026.11.02.26364999.full.pdf",
+        "html": "https://www.medrxiv.org/content/10.64898/2026.11.02.26364999.full"
+      },
+      "evidence": [
+        {
+          "term": "automated grading",
+          "excerpt": "ficity 0.9179, positive predictive value 0.9300, negative predictive value 0.9645 and AUROC 0.9817. ConclusionsThis single-image approach may assist automated grading of S. japonicum-associated liver fibrosis in endemic settings. External validation is needed before clinical implementation. BackgroundDespite progress towards schistosomiasis elimination in China, Schistosoma japonicum-associated liver fi",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.11.02.26364999.full"
+        },
+        {
+          "term": "test set",
+          "excerpt": "ns from ResNet-18, EfficientNet-B0, DenseNet-121 and Swin-T were combined by validation-weighted soft voting. Performance was evaluated on a held-out test set of 440 images. ResultsThe ensemble achieved a macro-F1 of 0.8527 (95% CI 0.8184-0.8856), accuracy of 0.8500 (95% CI 0.8136-0.8818) and quadratic weighted kappa of 0.9187 (95% CI 0.8983-0.9373) for four-grade classification, outperforming",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.11.02.26364999.full"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "ince, China (2019-2023). Grades 0, 1, 2 and 3 accounted for 12.9%, 34.6%, 32.4% and 20.2% of images, respectively. Reference grades were derived from clinical ultrasound records and radiologist reassessment using the Chinese Handbook of Schistosomiasis Control, with disagreements resolved by consensus. Predictions from ResNet-18, EfficientNet-B0, DenseNet-121 and Swin-T were combined by validati",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.medrxiv.org/content/10.64898/2026.11.02.26364999.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "match_score": 10,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.medrxiv.org/content/10.64898/2026.11.02.26364999.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "d5c2715c48092336526d6d05dcdfcb34cb2998a6bee1381408bca00a9995e7c2",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "methodology"
     },
     {
       "id": "doi:10.21203/rs.3.rs-10875799/v2",
@@ -1709,7 +1859,7 @@
         "beneficial_capability"
       ],
       "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 27,
+      "match_score": 23,
       "extraction_status": "complete",
       "extraction_error": "",
       "content_hash": "e48e6dab01660d74afe7154eb609a3f332fc352536e685559032539f190979cf",

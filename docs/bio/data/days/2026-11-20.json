@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-20",
+  "count": 1,
+  "entries": [
+    {
+      "id": "doi:10.21203/rs.3.rs-11622355/v1",
+      "slug": "doi-10-21203-rs-3-rs-11622355-v1-8cb9dfdbe1",
+      "kind": "paper",
+      "title": "MedCapVQA: A Two-Stage Explainable Framework for Medical Visual Question Answering",
+      "abstract": "<title>Abstract</title>  <p>Medical Visual Question Answering (Med-VQA) aims to answer natural language questions about clinical images and has significant potential for diagnostic support, medical education, and improved access to expert interpretation. Most Med-VQA systems fuse image features and question embeddings directly, a mapping that is hard to learn from the few thousand question--answer pairs that medical benchmarks provide and that is usually compensated for with large-scale domain pre-training. We propose \\modelname{}, a two-stage, caption-driven framework that describes the image first and answers the question second. A MedGemma captioner, adapted with parameter-efficient fine-tuning on ROCOv2, converts each medical image into a clinically meaningful caption; a BioBERT-based reasoner with dedicated caption and question encoders and question-to-caption cross-attention then predicts the answer from text alone. We evaluate \\modelname{} on the closed-ended questions of the VQA-Med 2019 benchmark, training on the official training set (3,200 medical images, 12,792 question--answer pairs) and evaluating on the official validation set (500 images, 2,000 question--answer pairs), against six baselines that represent the main prior design families: a convolutional--recurrent fusion model, BioBERT and Med3D domain-adapted variants, a self-attention fusion network, a Vision Transformer model with cross-attention, and an end-to-end fine-tuned vision-language model. All models are trained under the same protocol and across training-set proportions from 5\\% to 100\\%, with each data-size result averaged over ten random training subsets. \\modelname{} achieves the highest validation accuracy on both tasks: 81.9\\% on binary (yes/no) questions, 11.6 percentage points above the strongest baseline, and 73.9\\% on 71-category multiclass questions, 5.4 points above the fine-tuned vision-language model and 13.5 points above the Vision Transformer model. The vision-language model attains a higher multiclass training accuracy but lower validation accuracy compared to \\modelname{} and none of the baseline models are strong on both tasks. The \\modelname{} reasoner trains on a single GPU in $\\sim$5 hours. These results show that converting medical images into textual captions before reasoning is an effective and resource-efficient alternative to direct multimodal fusion, and they highlight the value of intermediate semantic representations for the design of next-generation Med-VQA systems.</p>",
+      "authors": [
+        "Perera N",
+        "Nummenmaa J",
+        "Stefanidis K."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-11-20T00:00:00+00:00",
+      "updated_at": "2026-11-21T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-11622355/v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1372591"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "stems fuse image features and question embeddings directly, a mapping that is hard to learn from the few thousand question--answer pairs that medical benchmarks provide and that is usually compensated for with large-scale domain pre-training. We propose \\modelname{}, a two-stage, caption-driven framework that describes the image first and answers the question second. A MedGemma captioner, adapted",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1372591"
+        },
+        {
+          "term": "medical",
+          "excerpt": "MedCapVQA: A Two-Stage Explainable Framework for Medical Visual Question Answering <title>Abstract</title> <p>Medical Visual Question Answering (Med-VQA) aims to answer natural language questions about clinical images and has significant potential for diagnostic support, medical education, and",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1372591"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "cal Visual Question Answering <title>Abstract</title> <p>Medical Visual Question Answering (Med-VQA) aims to answer natural language questions about clinical images and has significant potential for diagnostic support, medical education, and improved access to expert interpretation. Most Med-VQA systems fuse image features and question embeddings directly, a mapping that is hard to learn from t",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1372591"
+        },
+        {
+          "term": "vision-language",
+          "excerpt": "ERT and Med3D domain-adapted variants, a self-attention fusion network, a Vision Transformer model with cross-attention, and an end-to-end fine-tuned vision-language model. All models are trained under the same protocol and across training-set proportions from 5\\% to 100\\%, with each data-size result averaged over ten random training subsets. \\modelname{} achieves the highest validation accuracy on bot",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1372591"
+        }
+      ],
+      "related_benchmarks": [
+        "MedCapVQA",
+        "Med-VQA",
+        "VQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "ba89fe6b6fd8e9f3c6cbdfe534e7d715180ae65119ad023b7da36d8bd70060a8",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
