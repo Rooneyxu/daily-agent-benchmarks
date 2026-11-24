@@ -1,7 +1,153 @@
 {
   "date": "2026-11-20",
-  "count": 1,
+  "count": 4,
   "entries": [
+    {
+      "id": "arxiv:2611.27810",
+      "slug": "arxiv-2611-27810-4fa9b3e04b",
+      "kind": "paper",
+      "title": "SLP-Bench: Evaluating and Improving Acoustic Claims of Reasoning Audio Language Models on Clinical Speech",
+      "abstract": "Audio language models (ALMs) can answer clinical questions from speech, outperforming baselines built on handcrafted acoustic features. Reasoning ALMs generate a chain of thought that refers to properties of the speaker's voice before predicting. Each statement the model makes about the voice needs to be checked against clinicians' perceptual ratings of the same recording. On clinical speech, existing evaluations score only the final answer. We introduce Speech Language Pathologist Bench (SLP-Bench), a benchmark grading each acoustic claim in the chain of thought against clinicians' perceptual ratings of the same recording. It covers five clinician-rated datasets and 25 perceptual dimensions, and assesses claims for factuality, stability under resampling, and consistency across reworded and different questions. Across ten open-weight reasoning ALMs evaluated zero-shot, claim balanced accuracy ranges from 0.52 to 0.58, claims change under resampling and rewording, and the most consistent models are not the most factual. Fine-tuning a 7B ALM with GRPO on a reward for claims that agree with clinicians raises its claim balanced accuracy from 0.54 to 0.60 and its mean kappa from 0.39 to 0.61, while preserving answer accuracy on per-dimension questions. SLP-Bench is available upon request, subject to approval by the providers of each dataset.",
+      "authors": [
+        "Côme Hosxe",
+        "Rachid Riad",
+        "Quentin Spinat"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-20T16:36:57+00:00",
+      "updated_at": "2026-11-20T16:36:57+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.27810"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.27810v1",
+        "pdf": "https://arxiv.org/pdf/2611.27810v1",
+        "html": "https://arxiv.org/html/2611.27810"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "e same recording. On clinical speech, existing evaluations score only the final answer. We introduce Speech Language Pathologist Bench (SLP-Bench), a benchmark grading each acoustic claim in the chain of thought against clinicians' perceptual ratings of the same recording. It covers five clinician-rated datasets and 25 perceptual dimensions, and assesses claims for factuality, stability under res",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.27810"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "SLP-Bench: Evaluating and Improving Acoustic Claims of Reasoning Audio Language Models on Clinical Speech Audio language models (ALMs) can answer clinical questions from speech, outperforming baselines built on handcrafted acoustic features. Reasoning ALMs generate a chain of thought that refers to properties of the speaker's voice befo",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.27810"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "States, 2023–2024 . Note: ICPSR, Version V6 External Links: Document Cited by: Table 1 . [20] NVIDIA (2026) Nemotron 3 Nano Omni: efficient and open multimodal intelligence . arXiv preprint arXiv:2604.24954 . Cited by: §1 , §4.1 . [21] OpenBMB (2026) MiniCPM-o 4.5: towards real-time full-duplex omni-modal interaction . arXiv preprint arXiv:2604.27393 . Cited by: §1 , §4.1 . [22] OpenMOSS Team (20",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2611.27810"
+        },
+        {
+          "term": "Pathology",
+          "excerpt": "t al. (2009) Consensus auditory-perceptual evaluation of voice: development of a standardized clinical protocol . American Journal of Speech-Language Pathology 18 ( 2 ), pp. 124–132 . Cited by: §1 , §3.2 . [15] T. Lanham et al. (2023) Measuring faithfulness in chain-of-thought reasoning . arXiv preprint arXiv:2307.13702 . Cited by: §1 . [16] Z. Ma et al. (2025) MMAR: a challenging benchmark for d",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2611.27810"
+        }
+      ],
+      "related_benchmarks": [
+        "AudioProcessBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 12,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "75942fba5a7c76687fcaaa1f5740a6618baaff536541f81ddc456ab5fba8ba86",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.2196/96885",
+      "slug": "doi-10-2196-96885-c6d0d4af58",
+      "kind": "paper",
+      "title": "Medical Reasoning in Large Language Models: Development and Evaluation of the MedEvalArena Benchmark.",
+      "abstract": "<h4>Background</h4>Large language models (LLMs) perform strongly on medical specialty board multiple-choice questions (MCQs) but underperform in complex medical reasoning. This gap indicates a need to improve LLM medical reasoning and evaluation paradigms.<h4>Objective</h4>This study aimed to develop and evaluate MedEvalArena, a dynamically regenerable benchmark for assessing medical reasoning in LLMs.<h4>Methods</h4>In a symmetric round-robin format, 6 frontier LLMs from the OpenAI, Grok, Gemini, Claude, Kimi, and DeepSeek families generated challenging board-style medical MCQs, adjudicated question validity on an ensemble LLM-as-judge panel, and answered the validated examination. Candidate items were generated until each model contributed 50 validated questions according to Association of American Medical Colleges (AAMC)/American Board of Medical Specialties (ABMS) physician specialty distributions, yielding a 300-question examination. Judges adjudicated candidate questions' logical validity and medical accuracy. We compared question-generation validity rates, assessed leave-one-out judge agreement, and tested for self-judging preference. Questions were audited for overlap with public MedQA (medical question-answering) benchmarks. We tested question-answering (QA) accuracy across LLMs using a binomial-logit generalized linear mixed model likelihood-ratio test. A generator-stratified 90-question subset was completed by 5 board-certified physicians for paired human-LLM analysis. We evaluated inference cost-accuracy tradeoffs. Multiple comparisons were adjusted by the Benjamini-Hochberg (BH) procedure.<h4>Results</h4>Judge-panel validity rates were significantly higher for questions generated by OpenAI (94.8%, Wilson 95% CI 85.9%-98.2%), Gemini (92.3%, 95% CI 83.2%-96.7%), and Claude (83.3%, 95% CI 72.6%-90.4%) models than those generated by Kimi (63.8%, 95% CI 54.3%-72.4%), Grok (56%, 95% CI 45.8%-65.8%), and DeepSeek (46.0%, 95% CI 37.4%-54.7%). Kimi also demonstrated significantly higher validity than DeepSeek (2-sample tests of proportions; BH-adjusted <i>P</i>=.01). The public-source similarity audit found no exact or near-duplicate matches. Leave-one-out judge agreement was moderate. Generator-specific same-family judging coefficients were nonnegative (0 to 11.0 percentage points); however, none remained significant after BH adjustment. There was no significant difference between the 6 frontier LLM QA accuracies, which ranged from 85.7% (257/300) to 91.7% (275/300), on the 300-question examination (generalized linear mixed model likelihood-ratio test <i>P</i>=.07). The study had 80% power to detect LLM accuracy differences of 9.2 percentage points; nonsignificance did not establish equivalence. On the 90-question subset, physician accuracy was 85.6% (95% CI 79.4%-91.7%; stratified normal with finite-population correction), compared with aggregate LLM performance of 94.4% (85/90; Wilson 95% CI 87.6%-97.6%). This difference was not significant (McNemar test, <i>P</i>=.08); however, the study was powered to detect a human vs LLM accuracy difference of 14% to 15%. Answering-only costs varied by nearly 2 orders of magnitude, with multiple models on the cost-accuracy Pareto frontier.<h4>Conclusions</h4>MedEvalArena enables scalable, regenerable, peer-judged benchmarking of LLM medical reasoning. Question-generation validity differentiated model families more clearly than answering accuracy, suggesting that valid MCQ generation may complement QA benchmarks for assessing LLM medical reasoning.",
+      "authors": [
+        "Prem P",
+        "Kuppa V",
+        "Shidara K",
+        "Wheeler E",
+        "Chang G",
+        "Liu F",
+        "Alaa A",
+        "Bernardo D."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-11-20T00:00:00+00:00",
+      "updated_at": "2026-11-23T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc by",
+      "identifiers": {
+        "doi": "10.2196/96885",
+        "pmid": "43066929"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/43066929"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "Medical Reasoning in Large Language Models: Development and Evaluation of the MedEvalArena Benchmark. <h4>Background</h4>Large language models (LLMs) perform strongly on medical specialty board multiple-choice questions (MCQs) but underperform in complex medical reasoning. This gap indicates a need to improve LLM medical reasoning and eva",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43066929"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "ve-one-out judge agreement, and tested for self-judging preference. Questions were audited for overlap with public MedQA (medical question-answering) benchmarks. We tested question-answering (QA) accuracy across LLMs using a binomial-logit generalized linear mixed model likelihood-ratio test. A generator-stratified 90-question subset was completed by 5 board-certified physicians for paired human-L",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43066929"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "s of magnitude, with multiple models on the cost-accuracy Pareto frontier.<h4>Conclusions</h4>MedEvalArena enables scalable, regenerable, peer-judged benchmarking of LLM medical reasoning. Question-generation validity differentiated model families more clearly than answering accuracy, suggesting that valid MCQ generation may complement QA benchmarks for assessing LLM medical reasoning. <h4>Backgroun",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43066929"
+        },
+        {
+          "term": "medical",
+          "excerpt": "Medical Reasoning in Large Language Models: Development and Evaluation of the MedEvalArena Benchmark. <h4>Background</h4>Large language models (LLMs) perform strongly on medical specialty board multiple-choice questions (MCQs) but underperform in",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43066929"
+        }
+      ],
+      "related_benchmarks": [
+        "MedQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 16,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "b936d57591051e22007f9bf6355bb17db643e4a03c33da141e63a058c4860649",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
     {
       "id": "doi:10.21203/rs.3.rs-11622355/v1",
       "slug": "doi-10-21203-rs-3-rs-11622355-v1-8cb9dfdbe1",
@@ -71,6 +217,88 @@
       "content_hash": "ba89fe6b6fd8e9f3c6cbdfe534e7d715180ae65119ad023b7da36d8bd70060a8",
       "is_seed": false,
       "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2611.26914",
+      "slug": "arxiv-2611-26914-0c1bbb8274",
+      "kind": "paper",
+      "title": "Multi-Tier Edge Triage: Optimizing Latency for Safe Clinical Agents",
+      "abstract": "Deploying generative AI agents in enterprise clinical workflows requires enforcing multi-dimensional safety and compliance policies--preventing HIPAA Protected Health Information (PHI) exposure, maintaining clinical scope-of-practice boundaries, ensuring patient-appropriate reading comprehension, and preserving brand integrity--under interactive latency constraints. Synchronous outbound calls to cloud Large Language Model (LLM) judges add substantial network and decoding overhead onto the critical response path. We present Multi-Tier Edge Triage, a safety screening architecture that co-locates a compact Tier-1 sequence classifier on the clinical agent's host server, resolving clear queries in-process without a network round-trip and escalating only ambiguous queries to a Tier-2 cloud LLM judge. To evaluate Tier-1 encoders without length or unigram shortcuts, we construct four length-matched contrastive twin benchmarks seeded from MedSafetyBench, ASQ-PHI, and a synthetic four-mandate clinical assistant policy (Generic HealthCorp). While frozen local encoders match cloud models on structured PHI detection (>= 98.3% accuracy in <= 23.5 ms), they degrade markedly on semantic safety and symmetric-blocklist prompts. However, end-to-end representation fine-tuning closes the multi-policy accuracy gap: a fine-tuned 335M-parameter BGE-Large classifier achieves 98.90% out-of-fold accuracy versus 99.20% for a zero-shot cloud LLM judge (exact McNemar p = 0.648, zero shared errors), 97.8%-98.2% recall, and a 0.0%-0.4% over-refusal rate in 39.0 ms (>14x faster than cloud LLM evaluation on our benchmark host). Per-policy error analysis reveals ceiling local recall on PHI (100.0%), brand (100.0%), and clinical scope (98.7%-99.3%) violations, isolating residual errors to reading-level checks (93.3%-95.3%) and motivating targeted multi-tier escalation.",
+      "authors": [
+        "Joshua Broyde",
+        "Sarita A. Joshi"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-20T00:00:00+00:00",
+      "updated_at": "2026-11-20T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.26914"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.26914v1",
+        "pdf": "https://arxiv.org/pdf/2611.26914v1",
+        "html": "https://arxiv.org/html/2611.26914"
+      },
+      "evidence": [
+        {
+          "term": "we construct four length-matched contrastive twin benchmarks",
+          "excerpt": "etwork round-trip and escalating only ambiguous queries to a Tier-2 cloud LLM judge. To evaluate Tier-1 encoders without length or unigram shortcuts, we construct four length-matched contrastive twin benchmarks seeded from MedSafetyBench, ASQ-PHI, and a synthetic four-mandate clinical assistant policy (Generic HealthCorp). While frozen local encoders match cloud models on structured PHI detection (>= 98.3% accuracy in <= 23.5 ms), they degrade ma",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.26914"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "eries to a Tier-2 cloud LLM judge. To evaluate Tier-1 encoders without length or unigram shortcuts, we construct four length-matched contrastive twin benchmarks seeded from MedSafetyBench, ASQ-PHI, and a synthetic four-mandate clinical assistant policy (Generic HealthCorp). While frozen local encoders match cloud models on structured PHI detection (>= 98.3% accuracy in <= 23.5 ms), they degrade m",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.26914"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "eries to a Tier-2 cloud LLM judge. To evaluate Tier-1 encoders without length or unigram shortcuts, we construct four length-matched contrastive twin benchmarks seeded from MedSafetyBench, ASQ-PHI, and a synthetic four-mandate clinical assistant policy (Generic HealthCorp). While frozen local encoders match cloud models on structured PHI detection (>= 98.3% accuracy in <= 23.5 ms), they degrade ma",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.26914"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Multi-Tier Edge Triage: Optimizing Latency for Safe Clinical Agents Deploying generative AI agents in enterprise clinical workflows requires enforcing multi-dimensional safety and compliance policies--preventing HIPAA Protected Health Information (PHI) exposure, maintaining clinical scope-of-practic",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.26914"
+        },
+        {
+          "term": "patient",
+          "excerpt": "ty and compliance policies--preventing HIPAA Protected Health Information (PHI) exposure, maintaining clinical scope-of-practice boundaries, ensuring patient-appropriate reading comprehension, and preserving brand integrity--under interactive latency constraints. Synchronous outbound calls to cloud Large Language Model (LLM) judges add substantial network and decoding overhead onto the critical",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.26914"
+        },
+        {
+          "term": "over-refusal",
+          "excerpt": "out-of-fold accuracy versus 99.20% for a zero-shot cloud LLM judge (exact McNemar p = 0.648, zero shared errors), 97.8%-98.2% recall, and a 0.0%-0.4% over-refusal rate in 39.0 ms (>14x faster than cloud LLM evaluation on our benchmark host). Per-policy error analysis reveals ceiling local recall on PHI (100.0%), brand (100.0%), and clinical scope (98.7%-99.3%) violations, isolating residual errors t",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.26914"
+        }
+      ],
+      "related_benchmarks": [
+        "MedSafetyBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "ac7fc87ca5d125732ef4b4437dbfcfcb564a1b692883757f2a15fbdc1bb0bbc2",
+      "is_seed": false,
+      "topic": "biosafety",
       "contribution_type": "new_benchmark"
     }
   ]

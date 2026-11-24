@@ -1,25 +1,25 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T15:05:51Z",
-  "total": 238,
+  "generated_at": "2026-11-24T15:03:29Z",
+  "total": 248,
   "counts": {
     "topics": {
-      "multimodal": 61,
-      "experiment_agent": 69,
-      "general_text": 89,
-      "biosafety": 19
+      "multimodal": 66,
+      "general_text": 92,
+      "experiment_agent": 70,
+      "biosafety": 20
     },
     "contribution_types": {
-      "new_benchmark": 197,
-      "methodology": 23,
+      "new_benchmark": 205,
+      "methodology": 25,
       "audit": 18
     },
     "kinds": {
-      "paper": 238
+      "paper": 248
     },
     "evaluation_contexts": {
-      "beneficial_capability": 219,
-      "biosecurity_misuse": 19
+      "beneficial_capability": 228,
+      "biosecurity_misuse": 20
     }
   },
   "topic_labels": {
@@ -58,49 +58,49 @@
     {
       "source": "arxiv",
       "name": "arXiv",
-      "status": "failed",
-      "started_at": "2026-11-23T15:06:29Z",
-      "finished_at": "2026-11-23T15:06:45Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "Client error '429 Too Many Requests' for url 'https://export.arxiv.org/api/query?search_query=%28ti%3Abenchmark+OR+ti%3Abench+OR+ti%3A%22evaluation+suite%22%29+AND+%28all%3Abiomedical+OR+all%3Amedical+OR+all%3Aclinical%29&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "status": "success",
+      "started_at": "2026-11-24T15:04:09Z",
+      "finished_at": "2026-11-24T15:04:47Z",
+      "discovered": 50,
+      "published": 27,
+      "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
       "status": "success",
-      "started_at": "2026-11-23T15:06:45Z",
-      "finished_at": "2026-11-23T15:07:46Z",
-      "discovered": 68,
-      "published": 36,
+      "started_at": "2026-11-24T15:04:47Z",
+      "finished_at": "2026-11-24T15:05:29Z",
+      "discovered": 67,
+      "published": 37,
       "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
-      "status": "failed",
-      "started_at": "2026-11-23T15:07:46Z",
-      "finished_at": "2026-11-23T15:09:06Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "Server disconnected without sending a response."
+      "status": "success",
+      "started_at": "2026-11-24T15:05:29Z",
+      "finished_at": "2026-11-24T15:06:53Z",
+      "discovered": 600,
+      "published": 42,
+      "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-11-23T15:09:06Z",
-      "finished_at": "2026-11-23T15:09:36Z",
-      "discovered": 216,
-      "published": 19,
+      "started_at": "2026-11-24T15:06:53Z",
+      "finished_at": "2026-11-24T15:07:10Z",
+      "discovered": 235,
+      "published": 23,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-11-23T15:09:36Z",
-      "finished_at": "2026-11-23T15:09:37Z",
+      "started_at": "2026-11-24T15:07:10Z",
+      "finished_at": "2026-11-24T15:07:10Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
@@ -108,10 +108,32 @@
   ],
   "days": [
     {
-      "date": "2026-11-20",
-      "count": 1,
+      "date": "2026-11-23",
+      "count": 3,
       "entry_ids": [
-        "doi:10.21203/rs.3.rs-11622355/v1"
+        "arxiv:2611.29934",
+        "doi:10.21203/rs.3.rs-11793294/v1",
+        "doi:10.21203/rs.3.rs-11468975/v1"
+      ]
+    },
+    {
+      "date": "2026-11-22",
+      "count": 4,
+      "entry_ids": [
+        "arxiv:2611.29741",
+        "arxiv:2611.29592",
+        "arxiv:2611.29305",
+        "arxiv:2611.29243"
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "count": 4,
+      "entry_ids": [
+        "arxiv:2611.27810",
+        "doi:10.2196/96885",
+        "doi:10.21203/rs.3.rs-11622355/v1",
+        "arxiv:2611.26914"
       ]
     },
     {
@@ -1014,6 +1036,810 @@
   ],
   "entries": [
     {
+      "id": "arxiv:2611.29934",
+      "slug": "arxiv-2611-29934-8c6bfe2955",
+      "kind": "paper",
+      "title": "Benchmarking VLM Medical Hallucination across 5 Modalities",
+      "abstract": "Hallucinations in Vision-Language Models (VLMs) within the medical domain remain a difficult and not well-understood problem, and it is still unclear where these models break down. Although several benchmarks targeting medical hallucination have been introduced, they often lack broad coverage across different medical imaging modalities. We introduce Multi-Med, a medical hallucination benchmark containing 1,000 image-question pairs spanning five distinct modalities. Using this benchmark, we perform an in-depth experimental study of 10 widely used VLMs across five modalities and four question categories. Our findings indicate that model performance differs substantially depending on the imaging modality and question type, and that the differences among the best-performing models are not statistically significant.",
+      "authors": [
+        "Zhixing Cao",
+        "Yusen Peng"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-23T02:50:36+00:00",
+      "updated_at": "2026-11-23T02:50:36+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.29934"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.29934v1",
+        "pdf": "https://arxiv.org/pdf/2611.29934v1",
+        "html": "https://arxiv.org/html/2611.29934"
+      },
+      "evidence": [
+        {
+          "term": "We introduce Multi-Med, a medical hallucination benchmark",
+          "excerpt": "several benchmarks targeting medical hallucination have been introduced, they often lack broad coverage across different medical imaging modalities. We introduce Multi-Med, a medical hallucination benchmark containing 1,000 image-question pairs spanning five distinct modalities. Using this benchmark, we perform an in-depth experimental study of 10 widely used VLMs across five modalities and four question categories. Our findings indicate that",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29934"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Benchmarking VLM Medical Hallucination across 5 Modalities Hallucinations in Vision-Language Models (VLMs) within the medical domain remain a difficult and not well-understood problem, and it is still unclear where these models break down. Although",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29934"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "within the medical domain remain a difficult and not well-understood problem, and it is still unclear where these models break down. Although several benchmarks targeting medical hallucination have been introduced, they often lack broad coverage across different medical imaging modalities. We introduce Multi-Med, a medical hallucination benchmark containing 1,000 image-question pairs spanning five",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29934"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "Benchmarking VLM Medical Hallucination across 5 Modalities Hallucinations in Vision-Language Models (VLMs) within the medical domain remain a difficult and not well-understood problem, and it is still unclear where these models break down. Although sev",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29934"
+        },
+        {
+          "term": "medical",
+          "excerpt": "Benchmarking VLM Medical Hallucination across 5 Modalities Hallucinations in Vision-Language Models (VLMs) within the medical domain remain a difficult and not well-understood problem, and it is still unclear where these models break down. Although several benchma",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29934"
+        },
+        {
+          "term": "medical imaging",
+          "excerpt": "models break down. Although several benchmarks targeting medical hallucination have been introduced, they often lack broad coverage across different medical imaging modalities. We introduce Multi-Med, a medical hallucination benchmark containing 1,000 image-question pairs spanning five distinct modalities. Using this benchmark, we perform an in-depth experimental study of 10 widely used VLMs across fi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29934"
+        },
+        {
+          "term": "Vision-Language",
+          "excerpt": "Benchmarking VLM Medical Hallucination across 5 Modalities Hallucinations in Vision-Language Models (VLMs) within the medical domain remain a difficult and not well-understood problem, and it is still unclear where these models break down. Although several benchmarks targeting medical hallucination have been introduced, they often",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29934"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "cinations still lack sufficient modality coverage : medical images may come from many different sources, including CT, MRI, X-ray, ECG, EEG, and even pathology imaging. MedVH [ 5 ] evaluates models only on chest X-ray (CXR), whereas Med-HallMark [ 4 ] and MedHEval [ 3 ] extend coverage by adding two more modalities, CT and MRI. Therefore, to achieve broader coverage, we introduce a benchmark span",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2611.29934"
+        }
+      ],
+      "related_benchmarks": [
+        "MedHEval",
+        "MedEval",
+        "PathVQA",
+        "OCRBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 21,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "edde4b87e4ef1e3a24b232b7cfb948935a42ffcc24d2ffd62791703586c97ba5",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.21203/rs.3.rs-11793294/v1",
+      "slug": "doi-10-21203-rs-3-rs-11793294-v1-74883aa1e8",
+      "kind": "paper",
+      "title": "Diagnostic specificity of a retrieval augmented language model on complex clinical cases: a retrospective benchmark study",
+      "abstract": "<title>Abstract</title>  <p>Background  Diagnostic benchmarks can reward recognition of a disease family without requiring the specificity of the final diagnosis. We evaluated the separation between broad diagnostic concordance and strict diagnostic correctness in a retrieval augmented language model. Methods  This retrospective benchmark evaluated MediDx AI, which couples Claude Sonnet 4.6 with retrieval from seven biomedical sources without fine-tuning, on presentation-only text from 100 consecutive published Massachusetts General Hospital Case Records, issued from 26 October 2023 to 11 June 2026. Published expert discussions, final diagnoses, source tables and images were withheld. Five ranked suggestions were adjudicated under broad concordance and strict correct, partial or incorrect scoring. Case-level proportions and Wilson 95% confidence intervals were calculated. A separate evaluation used 1,273 medical multiple-choice questions, counting unanswered questions as incorrect. Results  Broad top-ranked concordance was 71% (95% confidence interval 61.5–79.0%), whereas 53% (43.3–62.5%) of top-ranked diagnoses were strictly correct; 19% were partial and 28% incorrect. Within five suggestions, broad concordance was 88% and strict correctness was 63%. The 18 broadly concordant but partial top-ranked diagnoses accounted for the difference between the two top-ranked outcomes. Failures included missed causative organisms, rare neoplasms and structural conditions; partial responses often omitted an underlying mechanism or a component of a multicomponent diagnosis. Medical question-answering accuracy was 86.5% across all submitted questions, compared with 92.0% among parseable responses; response coverage was 94.0%. Conclusions  Broad diagnostic concordance and strict diagnostic correctness describe different aspects of performance. Reporting both, alongside ranked inclusion and response completion, exposes information concealed by aggregate accuracy. These results do not establish the incremental benefit of retrieval or clinical effectiveness, which require controlled evaluation.</p>",
+      "authors": [
+        "Abor EK",
+        "Diller PM",
+        "Sam PK",
+        "Afful LYE",
+        "Afutu L",
+        "Ghartey-Kwansah G",
+        "Armah FA."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "updated_at": "2026-11-24T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-11793294/v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1374460"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "Diagnostic specificity of a retrieval augmented language model on complex clinical cases: a retrospective benchmark study <title>Abstract</title> <p>Background Diagnostic benchmarks can reward recognition of a disease family without requiring the specificity of the final diagnosis. We evaluated the separation between broad diagnostic concordance and s",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1374460"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "of a retrieval augmented language model on complex clinical cases: a retrospective benchmark study <title>Abstract</title> <p>Background Diagnostic benchmarks can reward recognition of a disease family without requiring the specificity of the final diagnosis. We evaluated the separation between broad diagnostic concordance and strict diagnostic correctness in a retrieval augmented language model",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1374460"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "rieval augmented language model. Methods This retrospective benchmark evaluated MediDx AI, which couples Claude Sonnet 4.6 with retrieval from seven biomedical sources without fine-tuning, on presentation-only text from 100 consecutive published Massachusetts General Hospital Case Records, issued from 26 October 2023 to 11 June 2026. Published expert discussions, final diagnoses, source tables an",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1374460"
+        },
+        {
+          "term": "medical",
+          "excerpt": "val augmented language model. Methods This retrospective benchmark evaluated MediDx AI, which couples Claude Sonnet 4.6 with retrieval from seven biomedical sources without fine-tuning, on presentation-only text from 100 consecutive published Massachusetts General Hospital Case Records, issued from 26 October 2023 to 11 June 2026. Published expert discussions, final diagnoses, source tables an",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1374460"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Diagnostic specificity of a retrieval augmented language model on complex clinical cases: a retrospective benchmark study <title>Abstract</title> <p>Background Diagnostic benchmarks can reward recognition of a disease family without requiring the specificity of the final diagnosis. We evaluated the separation between b",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1374460"
+        },
+        {
+          "term": "disease",
+          "excerpt": "on complex clinical cases: a retrospective benchmark study <title>Abstract</title> <p>Background Diagnostic benchmarks can reward recognition of a disease family without requiring the specificity of the final diagnosis. We evaluated the separation between broad diagnostic concordance and strict diagnostic correctness in a retrieval augmented language model. Methods This retrospective benchm",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1374460"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 22,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "2855cab73f5a9b21fefbd3cd1e678468f3f76360634cdfe400302ae967747dc6",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.21203/rs.3.rs-11468975/v1",
+      "slug": "doi-10-21203-rs-3-rs-11468975-v1-fa543b4607",
+      "kind": "paper",
+      "title": "From benchmarking to application: a scalable mitochondrial DNA analysis and variant identification framework for whole-genome sequencing",
+      "abstract": "<title>Abstract</title>  <p>Purpose: Mitochondrial DNA (mtDNA) variants are implicated in a wide range of diseases. The increasing availability of whole-genome sequencing enables mtDNA analysis in large-scale clinical and population studies. However, optimal tools for accurate variant detection from short-read data remain unclear. <h4>Methods:</h4> We systematically benchmarked four scalable mtDNA variant calling tools: MitoHPC, mtSwirl, mity, and mtDNA-Server 2. Using 1000 Genomes Project (1KG) data and simulations across diverse haplogroups, we evaluated performance in detecting homoplasmic and heteroplasmic variants. Using the optimal tool, we built MARVel (https://github.com/bahlolab/MARVel), an integrated workflow combining variant calling, automated quality-control reporting, and interactive variant curation, including an mtDNA principal component reference from 1KG that captures haplogroup structure and enables projection of external cohorts. We then applied MARVel to an independent ataxia cohort to assess research utility. <h4>Results:</h4> MitoHPC and mtSwirl showed the strongest overall performance, particularly in non-European populations, with MitoHPC preferred for its ease of implementation. mity excelled in detecting low variant allele frequency single nucleotide variants (SNVs) but underperformed for insertions/deletions and showed inconsistent multi-nucleotide polymorphism normalisation. mtDNA-Server 2 maximised SNV sensitivity but had a higher false-positive rate and missed variants in the MT-RNR2 region. Applying MARVel (MitoHPC) to the ataxia cohort recovered known pathogenic mtDNA variants and identified additional candidates for investigation. <h4>Conclusion:</h4> We provide guidance for mtDNA tool selection in large-scale sequencing studies, along with a reproducible benchmarking framework for future evaluation as methods evolve. We also developed MARVel to facilitate disease-associated mtDNA variant discovery and reporting, supporting robust and scalable mtDNA analysis.</p>",
+      "authors": [
+        "Chen K",
+        "Milton M",
+        "Jackson VE",
+        "Rafehi H",
+        "Snell P",
+        "Davies KC",
+        "Eldo A",
+        "Lockhart PJ",
+        "Bahlo M",
+        "Wang L."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "updated_at": "2026-11-24T00:00:00+00:00",
+      "priority": "P0",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-11468975/v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1375046"
+      },
+      "evidence": [
+        {
+          "term": "reproducible benchmarking framework",
+          "excerpt": "ional candidates for investigation. <h4>Conclusion:</h4> We provide guidance for mtDNA tool selection in large-scale sequencing studies, along with a reproducible benchmarking framework for future evaluation as methods evolve. We also developed MARVel to facilitate disease-associated mtDNA variant discovery and reporting, supporting robust and scalable mtDNA analysis.</p> <title>Abstract</title> <p>Purpose: Mitochondrial",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1375046"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "From benchmarking to application: a scalable mitochondrial DNA analysis and variant identification framework for whole-genome sequencing <title>Abstract</title> <p>Purpose: Mitochondrial DNA (mtDNA) variants are implicated in a wide range of diseases. T",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1375046"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "From benchmarking to application: a scalable mitochondrial DNA analysis and variant identification framework for whole-genome sequencing <title>Abstract</title> <p>Purpose: Mitochondrial DNA (mtDNA) variants are implicated in a wide range of diseases. The",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1375046"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "NA) variants are implicated in a wide range of diseases. The increasing availability of whole-genome sequencing enables mtDNA analysis in large-scale clinical and population studies. However, optimal tools for accurate variant detection from short-read data remain unclear. <h4>Methods:</h4> We systematically benchmarked four scalable mtDNA variant calling tools: MitoHPC, mtSwirl, mity, and mtDNA",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1375046"
+        },
+        {
+          "term": "genome",
+          "excerpt": "From benchmarking to application: a scalable mitochondrial DNA analysis and variant identification framework for whole-genome sequencing <title>Abstract</title> <p>Purpose: Mitochondrial DNA (mtDNA) variants are implicated in a wide range of diseases. The increasing availability of whole-genome sequencing enables mtDNA analysis in large-scale clinical and popula",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1375046"
+        },
+        {
+          "term": "disease",
+          "excerpt": "ation framework for whole-genome sequencing <title>Abstract</title> <p>Purpose: Mitochondrial DNA (mtDNA) variants are implicated in a wide range of diseases. The increasing availability of whole-genome sequencing enables mtDNA analysis in large-scale clinical and population studies. However, optimal tools for accurate variant detection from short-read data remain unclear. <h4>Methods:</h4> We",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1375046"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "match_score": 19,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "bbe3d5e67d1fe24b37b37d040dd5407a011df5228fe839075750d9e8672908b6",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "methodology"
+    },
+    {
+      "id": "arxiv:2611.29741",
+      "slug": "arxiv-2611-29741-895d7593c5",
+      "kind": "paper",
+      "title": "MISeg-Agent: A Human-in-the-Loop Agentic Framework for Error Diagnosis and Executable Prompt Review in 3D Medical Image Segmentation",
+      "abstract": "Despite the strong performance of modern medical image segmentation models, their predictions can still contain localized errors that compromise segmentation quality. Identifying and correcting these errors is therefore essential for improving the reliability of existing segmentation results. While interactive segmentation models enable targeted corrections, identifying potential errors, determining where to intervene, and evaluating corrective actions remain challenging. Moreover, each correction changes the current mask, requiring subsequent error diagnosis and recommendations to adapt accordingly. To address these challenges, we propose MISeg-Agent, a human-in-the-loop agentic framework that diagnoses segmentation errors and provides evidence-based correction recommendations. MISeg-Agent first selects a suitable pretrained segmentation model based on benchmark performance and computational requirements. Given its predicted mask, the framework identifies potential missing and excess foreground regions and recommends suspicious slices and corrective points for review. The framework then evaluates candidate point prompts using an interactive segmentation model and presents the resulting corrections for human verification before applying them. By operating directly on images and predicted masks, the error diagnosis process remains independent of the underlying segmentation model architecture. Evaluations on CT datasets demonstrate that MISeg-Agent improves initial segmentation results and produces final masks closely aligned with reference annotations. By integrating adaptive error diagnosis with validated correction recommendations, MISeg-Agent provides an interpretable approach to identifying and reducing residual errors in existing medical image segmentations.",
+      "authors": [
+        "Delin An",
+        "Mingqi Xu",
+        "Jian-Xun Wang",
+        "Pengfei Gu"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-22T20:10:04+00:00",
+      "updated_at": "2026-11-22T20:10:04+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.29741"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.29741v1",
+        "pdf": "https://arxiv.org/pdf/2611.29741v1",
+        "html": "https://arxiv.org/html/2611.29741"
+      },
+      "evidence": [
+        {
+          "term": "first selects a suitable pretrained segmentation model based on benchmark",
+          "excerpt": "g-Agent, a human-in-the-loop agentic framework that diagnoses segmentation errors and provides evidence-based correction recommendations. MISeg-Agent first selects a suitable pretrained segmentation model based on benchmark performance and computational requirements. Given its predicted mask, the framework identifies potential missing and excess foreground regions and recommends suspicious slices and corrective points for review. The framework then evaluates",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29741"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "gmentation errors and provides evidence-based correction recommendations. MISeg-Agent first selects a suitable pretrained segmentation model based on benchmark performance and computational requirements. Given its predicted mask, the framework identifies potential missing and excess foreground regions and recommends suspicious slices and corrective points for review. The framework then evaluates",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29741"
+        },
+        {
+          "term": "medical",
+          "excerpt": "MISeg-Agent: A Human-in-the-Loop Agentic Framework for Error Diagnosis and Executable Prompt Review in 3D Medical Image Segmentation Despite the strong performance of modern medical image segmentation models, their predictions can still contain localized errors that compromise segmentation quality. Identifying and correcting these errors is therefore",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29741"
+        },
+        {
+          "term": "error localization",
+          "excerpt": "rror voxels with B = 1 B=1 correspond to FNs, while error voxels with B = 0 B=0 correspond to FPs. This separation supports two correction decisions: error localization identifies where review is needed, while polarity indicates whether to add or remove foreground. We construct the benchmark by running a fixed library of candidate pretrained segmentation models on each dataset–target group, producing the",
+          "location": "2.2 Error Diagnosis Benchmark",
+          "source_url": "https://arxiv.org/html/2611.29741"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 12,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "0eca73cd4dce3aa299554373ad8f7e9f6db138ec2ba4d4d81f46b8fc4f3a0e4c",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2611.29592",
+      "slug": "arxiv-2611-29592-96713eb152",
+      "kind": "paper",
+      "title": "Rethinking Closed-Ended Medical VLM Evaluation: From Stable Wrongness to Counterfactual Answer Sensitivity",
+      "abstract": "As medical VLMs are increasingly evaluated for clinical decision-support scenarios, knowing when to trust their predictions is critical. Closed-ended medical VQA has become a common benchmark format because it enables automated scoring. Yet, systematic investigation into whether this format changes the reliability problem remains scarce. We identify a failure mode that we call stable wrongness: models can produce incorrect yes/no answers that remain confident and repeatable even when patient-specific visual evidence is removed or mismatched. This failure violates the premise behind sampling-stability uncertainty methods, including recent hallucination-aware calibration (HAC) variants: disagreement is informative only when errors are unstable. When shortcut-driven errors are themselves stable, sampling agreement can remain deceptively high. Motivated by this limitation, we introduce Counterfactual Answer Sensitivity (CAS), which shifts reliability estimation from answer stability to evidence sensitivity. CAS uses cross-modal counterfactual interventions, such as text-only, black, and corrupted images, to audit whether a committed yes/no answer remains supported when visual evidence is invalidated. Across 7 VLMs and 3 benchmarks, CAS outperforms the best HAC-family scores across all evaluated settings, achieving a macro-averaged AUROC gain of +0.150 for error detection. Mechanistic analysis further shows that CAS recovers hidden errors in the HAC-confident region and that its strongest standalone signal is counterfactual decision-boundary shift rather than hard prediction stability. Our findings suggest that closed-ended evaluation should test visual dependence, not only answer stability, in safety-critical medical contexts.",
+      "authors": [
+        "Qi Wu",
+        "Xiaoyu Liu",
+        "Ao Wang",
+        "Rongsheng Wang",
+        "Wenting Chen",
+        "Wenxuan Wang",
+        "Qingsong Yao"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-22T16:27:28+00:00",
+      "updated_at": "2026-11-22T16:27:28+00:00",
+      "priority": "P0",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.29592"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.29592v1",
+        "pdf": "https://arxiv.org/pdf/2611.29592v1",
+        "html": "https://arxiv.org/html/2611.29592"
+      },
+      "evidence": [
+        {
+          "term": "automated scoring",
+          "excerpt": "port scenarios, knowing when to trust their predictions is critical. Closed-ended medical VQA has become a common benchmark format because it enables automated scoring. Yet, systematic investigation into whether this format changes the reliability problem remains scarce. We identify a failure mode that we call stable wrongness: models can produce incorrect yes/no answers that remain confident and repeata",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29592"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "evaluated for clinical decision-support scenarios, knowing when to trust their predictions is critical. Closed-ended medical VQA has become a common benchmark format because it enables automated scoring. Yet, systematic investigation into whether this format changes the reliability problem remains scarce. We identify a failure mode that we call stable wrongness: models can produce incorrect yes/",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29592"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "y, black, and corrupted images, to audit whether a committed yes/no answer remains supported when visual evidence is invalidated. Across 7 VLMs and 3 benchmarks, CAS outperforms the best HAC-family scores across all evaluated settings, achieving a macro-averaged AUROC gain of +0.150 for error detection. Mechanistic analysis further shows that CAS recovers hidden errors in the HAC-confident region",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29592"
+        },
+        {
+          "term": "medical",
+          "excerpt": "Rethinking Closed-Ended Medical VLM Evaluation: From Stable Wrongness to Counterfactual Answer Sensitivity As medical VLMs are increasingly evaluated for clinical decision-support scenarios, knowing when to trust their predictions is critical. Closed-ended medical VQA ha",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29592"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "inking Closed-Ended Medical VLM Evaluation: From Stable Wrongness to Counterfactual Answer Sensitivity As medical VLMs are increasingly evaluated for clinical decision-support scenarios, knowing when to trust their predictions is critical. Closed-ended medical VQA has become a common benchmark format because it enables automated scoring. Yet, systematic investigation into whether this format cha",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29592"
+        },
+        {
+          "term": "patient",
+          "excerpt": "We identify a failure mode that we call stable wrongness: models can produce incorrect yes/no answers that remain confident and repeatable even when patient-specific visual evidence is removed or mismatched. This failure violates the premise behind sampling-stability uncertainty methods, including recent hallucination-aware calibration (HAC) variants: disagreement is informative only when erro",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29592"
+        },
+        {
+          "term": "Vision-language",
+          "excerpt": "d evaluation should test visual dependence, not only answer stability, in safety-critical medical contexts. [[SECTION I Introduction]] I Introduction Vision-language models (VLMs) are increasingly evaluated for clinical decision support, making reliable uncertainty estimation essential [ 4 , 5 , 6 ] . Closed-ended medical VQA is attractive because yes/no answers permit inexpensive automated scoring, bu",
+          "location": "I Introduction",
+          "source_url": "https://arxiv.org/html/2611.29592"
+        },
+        {
+          "term": "Visual Grounding",
+          "excerpt": "and measuring structured support and boundary shifts across controlled visual interventions. [[SECTION III Rethinking: When Stability Does Not Imply Visual Grounding]] III Rethinking: When Stability Does Not Imply Visual Grounding Closed-ended medical VQA is often treated as the simpler and more controlled evaluation setting because the model only needs to choose between yes and no . However, this form",
+          "location": "II Related Work",
+          "source_url": "https://arxiv.org/html/2611.29592"
+        }
+      ],
+      "related_benchmarks": [
+        "VQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "match_score": 21,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c7d5a3310d72da3f84612cdc1c83dc56f02f0041321b8e65b28e36909bc7f6fa",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "methodology"
+    },
+    {
+      "id": "arxiv:2611.29305",
+      "slug": "arxiv-2611-29305-db39cec2ca",
+      "kind": "paper",
+      "title": "CT-Navigator: Towards Interpretable and Generalizable CT Understanding through Agentic Perception and Tool-Invocation",
+      "abstract": "Clinical computed tomography (CT) interpretation inherently requires progressive visual exploration, where radiologists navigate from whole scans to individual slices and regions of interest and interact with external tools when necessary. However, existing 3D medical multimodal large language models (MLLMs) typically connect a specialized 3D visual encoder to a language model, without fully leveraging the native 2D visual and agentic capabilities of generalist MLLMs. Trained on large-scale one-hop CT instruction-following data, these models also have limited ability to perform iterative reasoning and explicitly ground their conclusions in visual evidence, limiting their support for traceable CT interpretation. To solve these problems, we propose \\textbf{agentic perception} as an alternative paradigm inspired by radiologists' interpretation workflows. We introduce \\textbf{CT-Navigator}, a framework that harnesses generalist MLLMs' 2D visual and agentic capabilities to progressively ground CT interpretation in explicit, traceable visual evidence through hierarchical visual exploration and radiology tool invocation. To build these capabilities, we curate 8,904 visual chain-of-thought (V-CoT) trajectories for cold-start agentic supervised fine-tuning. We then optimize the policy through reinforcement learning on 33,219 questions, with data selection and dynamic rollout sampling prioritizing informative learning signals. Finally, we introduce CTNavi-Bench, a 3D CT visual question answering benchmark comprising 7,000 questions spanning anatomical regions throughout the human body. CT-Navigator achieves 79.50\\% accuracy on CTNavi-Bench, surpassing the strongest baseline by 17.59\\%, and demonstrates strong generalization across three external CT benchmarks. The code, model, and benchmark will be released on \\href{https://github.com/fyb99/ct_navigator}{GitHub}.",
+      "authors": [
+        "Yibing Fu",
+        "Huidong Xie",
+        "Yihao Niu",
+        "Wei Ji",
+        "Heming Dong",
+        "Ziyue Wang",
+        "Jingyu Chen",
+        "Jun Zhao",
+        "Haoyuan Hu",
+        "Hongming Shan",
+        "Lai Jiang",
+        "Mai Xu",
+        "Yueming Jin"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-22T07:57:58+00:00",
+      "updated_at": "2026-11-22T07:57:58+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.29305"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.29305v1",
+        "pdf": "https://arxiv.org/pdf/2611.29305v1",
+        "code": "https://github.com/fyb99/ct_navigator",
+        "html": "https://arxiv.org/html/2611.29305"
+      },
+      "evidence": [
+        {
+          "term": "we introduce CTNavi-Bench",
+          "excerpt": "ough reinforcement learning on 33,219 questions, with data selection and dynamic rollout sampling prioritizing informative learning signals. Finally, we introduce CTNavi-Bench, a 3D CT visual question answering benchmark comprising 7,000 questions spanning anatomical regions throughout the human body. CT-Navigator achieves 79.50\\% accuracy on CTNavi-Bench, surpassing the strongest baseline by 17.59\\%, and demons",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29305"
+        },
+        {
+          "term": "we introduce CTNavi-Bench, a 3D CT visual question answering benchmark",
+          "excerpt": "ough reinforcement learning on 33,219 questions, with data selection and dynamic rollout sampling prioritizing informative learning signals. Finally, we introduce CTNavi-Bench, a 3D CT visual question answering benchmark comprising 7,000 questions spanning anatomical regions throughout the human body. CT-Navigator achieves 79.50\\% accuracy on CTNavi-Bench, surpassing the strongest baseline by 17.59\\%, and demonstrates strong generalization across three ext",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29305"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "lection and dynamic rollout sampling prioritizing informative learning signals. Finally, we introduce CTNavi-Bench, a 3D CT visual question answering benchmark comprising 7,000 questions spanning anatomical regions throughout the human body. CT-Navigator achieves 79.50\\% accuracy on CTNavi-Bench, surpassing the strongest baseline by 17.59\\%, and demonstrates strong generalization across three ext",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29305"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "ieves 79.50\\% accuracy on CTNavi-Bench, surpassing the strongest baseline by 17.59\\%, and demonstrates strong generalization across three external CT benchmarks. The code, model, and benchmark will be released on \\href{https://github.com/fyb99/ct_navigator}{GitHub}. [[SECTION CT-Navigator: Towards Interpretable and Generalizable CT Understanding through Agentic Perception and Tool-Invocation]] CT-",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29305"
+        },
+        {
+          "term": "medical",
+          "excerpt": "ologists navigate from whole scans to individual slices and regions of interest and interact with external tools when necessary. However, existing 3D medical multimodal large language models (MLLMs) typically connect a specialized 3D visual encoder to a language model, without fully leveraging the native 2D visual and agentic capabilities of generalist MLLMs. Trained on large-scale one-hop CT i",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29305"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "CT-Navigator: Towards Interpretable and Generalizable CT Understanding through Agentic Perception and Tool-Invocation Clinical computed tomography (CT) interpretation inherently requires progressive visual exploration, where radiologists navigate from whole scans to individual slices and regions of interest and interact with external tools when necessary. However,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29305"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "navigate from whole scans to individual slices and regions of interest and interact with external tools when necessary. However, existing 3D medical multimodal large language models (MLLMs) typically connect a specialized 3D visual encoder to a language model, without fully leveraging the native 2D visual and agentic capabilities of generalist MLLMs. Trained on large-scale one-hop CT instruction-",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29305"
+        },
+        {
+          "term": "pathological",
+          "excerpt": "92–34916 . Cited by: §2.1 . [24] O. Oren, B. J. Gersh, and D. L. Bhatt (2020) Artificial intelligence in medical imaging: switching from radiographic pathological data to clinically meaningful endpoints . The Lancet Digital Health 2 ( 9 ), pp. e486–e488 . Cited by: §1 . [25] D. Peeters, B. Obreja, N. Antonissen, Z. Saghir, U. Pastorino, M. Silva, G. H. De Bock, H. Gietema, F. Gleeson, M. A. Heuvelma",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2611.29305"
+        }
+      ],
+      "related_benchmarks": [
+        "VQA",
+        "M3D-VQA",
+        "DeepTumorVQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 24,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "1faf537d4b45940361ad2557835462e72fe7e45ac44fe57bde9f03ec2e448aab",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2611.29243",
+      "slug": "arxiv-2611-29243-f28f9946af",
+      "kind": "paper",
+      "title": "Seeing Is Not Acting: WARD Diagnoses the Evidence-to-State-to-Action Gap in Longitudinal Clinical Agents",
+      "abstract": "Large language models for longitudinal clinical care must revise their assessments and actions as patient information accumulates. However, benchmarks centered on isolated responses or final task outcomes provide limited insight into intermediate failures in evidence use, state updating, and action selection. We introduce WARD, a benchmark for evaluating how clinical agents translate accumulating evidence into patient-state judgments and timely, safe actions. WARD comprises 4,560 clinical tasks across seven clinical output domains, organized into 240 checkpoints from 40 longitudinal clinical trajectories spanning 95 hospitalizations. Its Longitudinal Track evaluates these tasks under controlled cumulative evidence. Its Interactive Track evaluates end-to-end, tool-mediated clinical management across 271 verifiable evidence items and 141 reference transitions. Across 12 models with scorable checkpoint outputs, evidence recognition consistently outpaces downstream state and action decisions, with linked-evidence nonresponse reaching 74.47--90.90\\%. Models also struggle to retain and update information over time, while in the Interactive Track only 11.46\\% of executed actions advance a reference transition. These results reveal a persistent evidence-to-state-to-action gap and highlight the need for process-level evaluation of longitudinal clinical agents.Code and data: https://github.com/Dingsuper-creator/WARD.",
+      "authors": [
+        "Chao Ding",
+        "Yidong Jiang",
+        "Junzhi Ning",
+        "Juncheng Wu",
+        "Yuhan Wang",
+        "Renjie Lu",
+        "Minjia Yuan",
+        "Gaopeng Wang",
+        "Liyang Wang",
+        "Pengcheng Chen",
+        "Dong Yin",
+        "Meiping Wang",
+        "Jinru Ding",
+        "Yuyin Zhou"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-22T05:30:24+00:00",
+      "updated_at": "2026-11-22T05:30:24+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.29243"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.29243v1",
+        "pdf": "https://arxiv.org/pdf/2611.29243v1",
+        "code": "https://github.com/Dingsuper-creator/WARD",
+        "html": "https://arxiv.org/html/2611.29243"
+      },
+      "evidence": [
+        {
+          "term": "We introduce WARD, a benchmark",
+          "excerpt": "n isolated responses or final task outcomes provide limited insight into intermediate failures in evidence use, state updating, and action selection. We introduce WARD, a benchmark for evaluating how clinical agents translate accumulating evidence into patient-state judgments and timely, safe actions. WARD comprises 4,560 clinical tasks across seven clinical output domains, organized into 240 checkpoints from 40 long",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29243"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "al Agents Large language models for longitudinal clinical care must revise their assessments and actions as patient information accumulates. However, benchmarks centered on isolated responses or final task outcomes provide limited insight into intermediate failures in evidence use, state updating, and action selection. We introduce WARD, a benchmark for evaluating how clinical agents translate ac",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29243"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "al Agents Large language models for longitudinal clinical care must revise their assessments and actions as patient information accumulates. However, benchmarks centered on isolated responses or final task outcomes provide limited insight into intermediate failures in evidence use, state updating, and action selection. We introduce WARD, a benchmark for evaluating how clinical agents translate acc",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29243"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Seeing Is Not Acting: WARD Diagnoses the Evidence-to-State-to-Action Gap in Longitudinal Clinical Agents Large language models for longitudinal clinical care must revise their assessments and actions as patient information accumulates. However, benchmarks centered on isolated responses or final task outcomes provide limited insight int",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29243"
+        },
+        {
+          "term": "patient",
+          "excerpt": "State-to-Action Gap in Longitudinal Clinical Agents Large language models for longitudinal clinical care must revise their assessments and actions as patient information accumulates. However, benchmarks centered on isolated responses or final task outcomes provide limited insight into intermediate failures in evidence use, state updating, and action selection. We introduce WARD, a benchmark for",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29243"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "e plans . Note: STAT News External Links: Link Cited by: §1 , §1 . Schmidgall et al. (2026) S. Schmidgall, R. Ziaei, C. Harris, et al. AgentClinic: a multimodal benchmark for tool-using clinical AI agents . npj Digital Medicine 9 , pp. 499 . External Links: Document Cited by: Table 4 , §1 , §2 . Sellergren et al. (2025) A. Sellergren, S. Kazemzadeh, T. Jaroensri, A. Kiraly, M. Traverse, T. Kohlber",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2611.29243"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "ct breast cancer diagnosis, but judges that the patient can enter discharge or follow-up and sets remaining_blockers to empty while the breast-lesion pathology has not yet returned, whereas the reference still requires waiting for pathology. Case (c) exposes a more severe trajectory-level inconsistency. GPT-5.6-Terra performs definitive surgery before the biopsy pathology is visible, and reads th",
+          "location": "7 Case Study",
+          "source_url": "https://arxiv.org/html/2611.29243"
+        },
+        {
+          "term": "tool use",
+          "excerpt": ", 2021 ; Singhal et al., 2023 ) . Second, recent interactive benchmarks move closer to real clinical workflows, introducing sequential dialogue, EHR tool use, and multi-turn database queries ( Schmidgall et al., 2026 ; Jiang et al., 2025 ; Lee et al., 2026 ) , but their scoring remains tied almost entirely to final outcomes, overlooking whether the model’s intermediate decisions remain clinical",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2611.29243"
+        }
+      ],
+      "related_benchmarks": [
+        "MedQA",
+        "MultiMedQA",
+        "EHRBench",
+        "MedAgentBench",
+        "EHRChatQA",
+        "PubMedQA",
+        "HealthAgentBench",
+        "MedMCQA",
+        "ProcessEval"
+      ],
+      "related_agent_url": "../../p/2611.29243.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 20,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "18984c10a755f09092e8a56873287b54a96b1785654ab0d75a09566c3e58e2f4",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2611.27810",
+      "slug": "arxiv-2611-27810-4fa9b3e04b",
+      "kind": "paper",
+      "title": "SLP-Bench: Evaluating and Improving Acoustic Claims of Reasoning Audio Language Models on Clinical Speech",
+      "abstract": "Audio language models (ALMs) can answer clinical questions from speech, outperforming baselines built on handcrafted acoustic features. Reasoning ALMs generate a chain of thought that refers to properties of the speaker's voice before predicting. Each statement the model makes about the voice needs to be checked against clinicians' perceptual ratings of the same recording. On clinical speech, existing evaluations score only the final answer. We introduce Speech Language Pathologist Bench (SLP-Bench), a benchmark grading each acoustic claim in the chain of thought against clinicians' perceptual ratings of the same recording. It covers five clinician-rated datasets and 25 perceptual dimensions, and assesses claims for factuality, stability under resampling, and consistency across reworded and different questions. Across ten open-weight reasoning ALMs evaluated zero-shot, claim balanced accuracy ranges from 0.52 to 0.58, claims change under resampling and rewording, and the most consistent models are not the most factual. Fine-tuning a 7B ALM with GRPO on a reward for claims that agree with clinicians raises its claim balanced accuracy from 0.54 to 0.60 and its mean kappa from 0.39 to 0.61, while preserving answer accuracy on per-dimension questions. SLP-Bench is available upon request, subject to approval by the providers of each dataset.",
+      "authors": [
+        "Côme Hosxe",
+        "Rachid Riad",
+        "Quentin Spinat"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-20T16:36:57+00:00",
+      "updated_at": "2026-11-20T16:36:57+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.27810"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.27810v1",
+        "pdf": "https://arxiv.org/pdf/2611.27810v1",
+        "html": "https://arxiv.org/html/2611.27810"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "e same recording. On clinical speech, existing evaluations score only the final answer. We introduce Speech Language Pathologist Bench (SLP-Bench), a benchmark grading each acoustic claim in the chain of thought against clinicians' perceptual ratings of the same recording. It covers five clinician-rated datasets and 25 perceptual dimensions, and assesses claims for factuality, stability under res",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.27810"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "SLP-Bench: Evaluating and Improving Acoustic Claims of Reasoning Audio Language Models on Clinical Speech Audio language models (ALMs) can answer clinical questions from speech, outperforming baselines built on handcrafted acoustic features. Reasoning ALMs generate a chain of thought that refers to properties of the speaker's voice befo",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.27810"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "States, 2023–2024 . Note: ICPSR, Version V6 External Links: Document Cited by: Table 1 . [20] NVIDIA (2026) Nemotron 3 Nano Omni: efficient and open multimodal intelligence . arXiv preprint arXiv:2604.24954 . Cited by: §1 , §4.1 . [21] OpenBMB (2026) MiniCPM-o 4.5: towards real-time full-duplex omni-modal interaction . arXiv preprint arXiv:2604.27393 . Cited by: §1 , §4.1 . [22] OpenMOSS Team (20",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2611.27810"
+        },
+        {
+          "term": "Pathology",
+          "excerpt": "t al. (2009) Consensus auditory-perceptual evaluation of voice: development of a standardized clinical protocol . American Journal of Speech-Language Pathology 18 ( 2 ), pp. 124–132 . Cited by: §1 , §3.2 . [15] T. Lanham et al. (2023) Measuring faithfulness in chain-of-thought reasoning . arXiv preprint arXiv:2307.13702 . Cited by: §1 . [16] Z. Ma et al. (2025) MMAR: a challenging benchmark for d",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2611.27810"
+        }
+      ],
+      "related_benchmarks": [
+        "AudioProcessBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 12,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "75942fba5a7c76687fcaaa1f5740a6618baaff536541f81ddc456ab5fba8ba86",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.2196/96885",
+      "slug": "doi-10-2196-96885-c6d0d4af58",
+      "kind": "paper",
+      "title": "Medical Reasoning in Large Language Models: Development and Evaluation of the MedEvalArena Benchmark.",
+      "abstract": "<h4>Background</h4>Large language models (LLMs) perform strongly on medical specialty board multiple-choice questions (MCQs) but underperform in complex medical reasoning. This gap indicates a need to improve LLM medical reasoning and evaluation paradigms.<h4>Objective</h4>This study aimed to develop and evaluate MedEvalArena, a dynamically regenerable benchmark for assessing medical reasoning in LLMs.<h4>Methods</h4>In a symmetric round-robin format, 6 frontier LLMs from the OpenAI, Grok, Gemini, Claude, Kimi, and DeepSeek families generated challenging board-style medical MCQs, adjudicated question validity on an ensemble LLM-as-judge panel, and answered the validated examination. Candidate items were generated until each model contributed 50 validated questions according to Association of American Medical Colleges (AAMC)/American Board of Medical Specialties (ABMS) physician specialty distributions, yielding a 300-question examination. Judges adjudicated candidate questions' logical validity and medical accuracy. We compared question-generation validity rates, assessed leave-one-out judge agreement, and tested for self-judging preference. Questions were audited for overlap with public MedQA (medical question-answering) benchmarks. We tested question-answering (QA) accuracy across LLMs using a binomial-logit generalized linear mixed model likelihood-ratio test. A generator-stratified 90-question subset was completed by 5 board-certified physicians for paired human-LLM analysis. We evaluated inference cost-accuracy tradeoffs. Multiple comparisons were adjusted by the Benjamini-Hochberg (BH) procedure.<h4>Results</h4>Judge-panel validity rates were significantly higher for questions generated by OpenAI (94.8%, Wilson 95% CI 85.9%-98.2%), Gemini (92.3%, 95% CI 83.2%-96.7%), and Claude (83.3%, 95% CI 72.6%-90.4%) models than those generated by Kimi (63.8%, 95% CI 54.3%-72.4%), Grok (56%, 95% CI 45.8%-65.8%), and DeepSeek (46.0%, 95% CI 37.4%-54.7%). Kimi also demonstrated significantly higher validity than DeepSeek (2-sample tests of proportions; BH-adjusted <i>P</i>=.01). The public-source similarity audit found no exact or near-duplicate matches. Leave-one-out judge agreement was moderate. Generator-specific same-family judging coefficients were nonnegative (0 to 11.0 percentage points); however, none remained significant after BH adjustment. There was no significant difference between the 6 frontier LLM QA accuracies, which ranged from 85.7% (257/300) to 91.7% (275/300), on the 300-question examination (generalized linear mixed model likelihood-ratio test <i>P</i>=.07). The study had 80% power to detect LLM accuracy differences of 9.2 percentage points; nonsignificance did not establish equivalence. On the 90-question subset, physician accuracy was 85.6% (95% CI 79.4%-91.7%; stratified normal with finite-population correction), compared with aggregate LLM performance of 94.4% (85/90; Wilson 95% CI 87.6%-97.6%). This difference was not significant (McNemar test, <i>P</i>=.08); however, the study was powered to detect a human vs LLM accuracy difference of 14% to 15%. Answering-only costs varied by nearly 2 orders of magnitude, with multiple models on the cost-accuracy Pareto frontier.<h4>Conclusions</h4>MedEvalArena enables scalable, regenerable, peer-judged benchmarking of LLM medical reasoning. Question-generation validity differentiated model families more clearly than answering accuracy, suggesting that valid MCQ generation may complement QA benchmarks for assessing LLM medical reasoning.",
+      "authors": [
+        "Prem P",
+        "Kuppa V",
+        "Shidara K",
+        "Wheeler E",
+        "Chang G",
+        "Liu F",
+        "Alaa A",
+        "Bernardo D."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-11-20T00:00:00+00:00",
+      "updated_at": "2026-11-23T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc by",
+      "identifiers": {
+        "doi": "10.2196/96885",
+        "pmid": "43066929"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/43066929"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "Medical Reasoning in Large Language Models: Development and Evaluation of the MedEvalArena Benchmark. <h4>Background</h4>Large language models (LLMs) perform strongly on medical specialty board multiple-choice questions (MCQs) but underperform in complex medical reasoning. This gap indicates a need to improve LLM medical reasoning and eva",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43066929"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "ve-one-out judge agreement, and tested for self-judging preference. Questions were audited for overlap with public MedQA (medical question-answering) benchmarks. We tested question-answering (QA) accuracy across LLMs using a binomial-logit generalized linear mixed model likelihood-ratio test. A generator-stratified 90-question subset was completed by 5 board-certified physicians for paired human-L",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43066929"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "s of magnitude, with multiple models on the cost-accuracy Pareto frontier.<h4>Conclusions</h4>MedEvalArena enables scalable, regenerable, peer-judged benchmarking of LLM medical reasoning. Question-generation validity differentiated model families more clearly than answering accuracy, suggesting that valid MCQ generation may complement QA benchmarks for assessing LLM medical reasoning. <h4>Backgroun",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43066929"
+        },
+        {
+          "term": "medical",
+          "excerpt": "Medical Reasoning in Large Language Models: Development and Evaluation of the MedEvalArena Benchmark. <h4>Background</h4>Large language models (LLMs) perform strongly on medical specialty board multiple-choice questions (MCQs) but underperform in",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43066929"
+        }
+      ],
+      "related_benchmarks": [
+        "MedQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 16,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "b936d57591051e22007f9bf6355bb17db643e4a03c33da141e63a058c4860649",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
       "id": "doi:10.21203/rs.3.rs-11622355/v1",
       "slug": "doi-10-21203-rs-3-rs-11622355-v1-8cb9dfdbe1",
       "kind": "paper",
@@ -1082,6 +1908,88 @@
       "content_hash": "ba89fe6b6fd8e9f3c6cbdfe534e7d715180ae65119ad023b7da36d8bd70060a8",
       "is_seed": false,
       "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2611.26914",
+      "slug": "arxiv-2611-26914-0c1bbb8274",
+      "kind": "paper",
+      "title": "Multi-Tier Edge Triage: Optimizing Latency for Safe Clinical Agents",
+      "abstract": "Deploying generative AI agents in enterprise clinical workflows requires enforcing multi-dimensional safety and compliance policies--preventing HIPAA Protected Health Information (PHI) exposure, maintaining clinical scope-of-practice boundaries, ensuring patient-appropriate reading comprehension, and preserving brand integrity--under interactive latency constraints. Synchronous outbound calls to cloud Large Language Model (LLM) judges add substantial network and decoding overhead onto the critical response path. We present Multi-Tier Edge Triage, a safety screening architecture that co-locates a compact Tier-1 sequence classifier on the clinical agent's host server, resolving clear queries in-process without a network round-trip and escalating only ambiguous queries to a Tier-2 cloud LLM judge. To evaluate Tier-1 encoders without length or unigram shortcuts, we construct four length-matched contrastive twin benchmarks seeded from MedSafetyBench, ASQ-PHI, and a synthetic four-mandate clinical assistant policy (Generic HealthCorp). While frozen local encoders match cloud models on structured PHI detection (>= 98.3% accuracy in <= 23.5 ms), they degrade markedly on semantic safety and symmetric-blocklist prompts. However, end-to-end representation fine-tuning closes the multi-policy accuracy gap: a fine-tuned 335M-parameter BGE-Large classifier achieves 98.90% out-of-fold accuracy versus 99.20% for a zero-shot cloud LLM judge (exact McNemar p = 0.648, zero shared errors), 97.8%-98.2% recall, and a 0.0%-0.4% over-refusal rate in 39.0 ms (>14x faster than cloud LLM evaluation on our benchmark host). Per-policy error analysis reveals ceiling local recall on PHI (100.0%), brand (100.0%), and clinical scope (98.7%-99.3%) violations, isolating residual errors to reading-level checks (93.3%-95.3%) and motivating targeted multi-tier escalation.",
+      "authors": [
+        "Joshua Broyde",
+        "Sarita A. Joshi"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-20T00:00:00+00:00",
+      "updated_at": "2026-11-20T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "biosafety"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.26914"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.26914v1",
+        "pdf": "https://arxiv.org/pdf/2611.26914v1",
+        "html": "https://arxiv.org/html/2611.26914"
+      },
+      "evidence": [
+        {
+          "term": "we construct four length-matched contrastive twin benchmarks",
+          "excerpt": "etwork round-trip and escalating only ambiguous queries to a Tier-2 cloud LLM judge. To evaluate Tier-1 encoders without length or unigram shortcuts, we construct four length-matched contrastive twin benchmarks seeded from MedSafetyBench, ASQ-PHI, and a synthetic four-mandate clinical assistant policy (Generic HealthCorp). While frozen local encoders match cloud models on structured PHI detection (>= 98.3% accuracy in <= 23.5 ms), they degrade ma",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.26914"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "eries to a Tier-2 cloud LLM judge. To evaluate Tier-1 encoders without length or unigram shortcuts, we construct four length-matched contrastive twin benchmarks seeded from MedSafetyBench, ASQ-PHI, and a synthetic four-mandate clinical assistant policy (Generic HealthCorp). While frozen local encoders match cloud models on structured PHI detection (>= 98.3% accuracy in <= 23.5 ms), they degrade m",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.26914"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "eries to a Tier-2 cloud LLM judge. To evaluate Tier-1 encoders without length or unigram shortcuts, we construct four length-matched contrastive twin benchmarks seeded from MedSafetyBench, ASQ-PHI, and a synthetic four-mandate clinical assistant policy (Generic HealthCorp). While frozen local encoders match cloud models on structured PHI detection (>= 98.3% accuracy in <= 23.5 ms), they degrade ma",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.26914"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Multi-Tier Edge Triage: Optimizing Latency for Safe Clinical Agents Deploying generative AI agents in enterprise clinical workflows requires enforcing multi-dimensional safety and compliance policies--preventing HIPAA Protected Health Information (PHI) exposure, maintaining clinical scope-of-practic",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.26914"
+        },
+        {
+          "term": "patient",
+          "excerpt": "ty and compliance policies--preventing HIPAA Protected Health Information (PHI) exposure, maintaining clinical scope-of-practice boundaries, ensuring patient-appropriate reading comprehension, and preserving brand integrity--under interactive latency constraints. Synchronous outbound calls to cloud Large Language Model (LLM) judges add substantial network and decoding overhead onto the critical",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.26914"
+        },
+        {
+          "term": "over-refusal",
+          "excerpt": "out-of-fold accuracy versus 99.20% for a zero-shot cloud LLM judge (exact McNemar p = 0.648, zero shared errors), 97.8%-98.2% recall, and a 0.0%-0.4% over-refusal rate in 39.0 ms (>14x faster than cloud LLM evaluation on our benchmark host). Per-policy error analysis reveals ceiling local recall on PHI (100.0%), brand (100.0%), and clinical scope (98.7%-99.3%) violations, isolating residual errors t",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.26914"
+        }
+      ],
+      "related_benchmarks": [
+        "MedSafetyBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "biosecurity_misuse"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 18,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "ac7fc87ca5d125732ef4b4437dbfcfcb564a1b692883757f2a15fbdc1bb0bbc2",
+      "is_seed": false,
+      "topic": "biosafety",
       "contribution_type": "new_benchmark"
     },
     {

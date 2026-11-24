@@ -1,0 +1,398 @@
+{
+  "date": "2026-11-22",
+  "count": 4,
+  "entries": [
+    {
+      "id": "arxiv:2611.29741",
+      "slug": "arxiv-2611-29741-895d7593c5",
+      "kind": "paper",
+      "title": "MISeg-Agent: A Human-in-the-Loop Agentic Framework for Error Diagnosis and Executable Prompt Review in 3D Medical Image Segmentation",
+      "abstract": "Despite the strong performance of modern medical image segmentation models, their predictions can still contain localized errors that compromise segmentation quality. Identifying and correcting these errors is therefore essential for improving the reliability of existing segmentation results. While interactive segmentation models enable targeted corrections, identifying potential errors, determining where to intervene, and evaluating corrective actions remain challenging. Moreover, each correction changes the current mask, requiring subsequent error diagnosis and recommendations to adapt accordingly. To address these challenges, we propose MISeg-Agent, a human-in-the-loop agentic framework that diagnoses segmentation errors and provides evidence-based correction recommendations. MISeg-Agent first selects a suitable pretrained segmentation model based on benchmark performance and computational requirements. Given its predicted mask, the framework identifies potential missing and excess foreground regions and recommends suspicious slices and corrective points for review. The framework then evaluates candidate point prompts using an interactive segmentation model and presents the resulting corrections for human verification before applying them. By operating directly on images and predicted masks, the error diagnosis process remains independent of the underlying segmentation model architecture. Evaluations on CT datasets demonstrate that MISeg-Agent improves initial segmentation results and produces final masks closely aligned with reference annotations. By integrating adaptive error diagnosis with validated correction recommendations, MISeg-Agent provides an interpretable approach to identifying and reducing residual errors in existing medical image segmentations.",
+      "authors": [
+        "Delin An",
+        "Mingqi Xu",
+        "Jian-Xun Wang",
+        "Pengfei Gu"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-22T20:10:04+00:00",
+      "updated_at": "2026-11-22T20:10:04+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.29741"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.29741v1",
+        "pdf": "https://arxiv.org/pdf/2611.29741v1",
+        "html": "https://arxiv.org/html/2611.29741"
+      },
+      "evidence": [
+        {
+          "term": "first selects a suitable pretrained segmentation model based on benchmark",
+          "excerpt": "g-Agent, a human-in-the-loop agentic framework that diagnoses segmentation errors and provides evidence-based correction recommendations. MISeg-Agent first selects a suitable pretrained segmentation model based on benchmark performance and computational requirements. Given its predicted mask, the framework identifies potential missing and excess foreground regions and recommends suspicious slices and corrective points for review. The framework then evaluates",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29741"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "gmentation errors and provides evidence-based correction recommendations. MISeg-Agent first selects a suitable pretrained segmentation model based on benchmark performance and computational requirements. Given its predicted mask, the framework identifies potential missing and excess foreground regions and recommends suspicious slices and corrective points for review. The framework then evaluates",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29741"
+        },
+        {
+          "term": "medical",
+          "excerpt": "MISeg-Agent: A Human-in-the-Loop Agentic Framework for Error Diagnosis and Executable Prompt Review in 3D Medical Image Segmentation Despite the strong performance of modern medical image segmentation models, their predictions can still contain localized errors that compromise segmentation quality. Identifying and correcting these errors is therefore",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29741"
+        },
+        {
+          "term": "error localization",
+          "excerpt": "rror voxels with B = 1 B=1 correspond to FNs, while error voxels with B = 0 B=0 correspond to FPs. This separation supports two correction decisions: error localization identifies where review is needed, while polarity indicates whether to add or remove foreground. We construct the benchmark by running a fixed library of candidate pretrained segmentation models on each dataset–target group, producing the",
+          "location": "2.2 Error Diagnosis Benchmark",
+          "source_url": "https://arxiv.org/html/2611.29741"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 12,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "0eca73cd4dce3aa299554373ad8f7e9f6db138ec2ba4d4d81f46b8fc4f3a0e4c",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2611.29592",
+      "slug": "arxiv-2611-29592-96713eb152",
+      "kind": "paper",
+      "title": "Rethinking Closed-Ended Medical VLM Evaluation: From Stable Wrongness to Counterfactual Answer Sensitivity",
+      "abstract": "As medical VLMs are increasingly evaluated for clinical decision-support scenarios, knowing when to trust their predictions is critical. Closed-ended medical VQA has become a common benchmark format because it enables automated scoring. Yet, systematic investigation into whether this format changes the reliability problem remains scarce. We identify a failure mode that we call stable wrongness: models can produce incorrect yes/no answers that remain confident and repeatable even when patient-specific visual evidence is removed or mismatched. This failure violates the premise behind sampling-stability uncertainty methods, including recent hallucination-aware calibration (HAC) variants: disagreement is informative only when errors are unstable. When shortcut-driven errors are themselves stable, sampling agreement can remain deceptively high. Motivated by this limitation, we introduce Counterfactual Answer Sensitivity (CAS), which shifts reliability estimation from answer stability to evidence sensitivity. CAS uses cross-modal counterfactual interventions, such as text-only, black, and corrupted images, to audit whether a committed yes/no answer remains supported when visual evidence is invalidated. Across 7 VLMs and 3 benchmarks, CAS outperforms the best HAC-family scores across all evaluated settings, achieving a macro-averaged AUROC gain of +0.150 for error detection. Mechanistic analysis further shows that CAS recovers hidden errors in the HAC-confident region and that its strongest standalone signal is counterfactual decision-boundary shift rather than hard prediction stability. Our findings suggest that closed-ended evaluation should test visual dependence, not only answer stability, in safety-critical medical contexts.",
+      "authors": [
+        "Qi Wu",
+        "Xiaoyu Liu",
+        "Ao Wang",
+        "Rongsheng Wang",
+        "Wenting Chen",
+        "Wenxuan Wang",
+        "Qingsong Yao"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-22T16:27:28+00:00",
+      "updated_at": "2026-11-22T16:27:28+00:00",
+      "priority": "P0",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.29592"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.29592v1",
+        "pdf": "https://arxiv.org/pdf/2611.29592v1",
+        "html": "https://arxiv.org/html/2611.29592"
+      },
+      "evidence": [
+        {
+          "term": "automated scoring",
+          "excerpt": "port scenarios, knowing when to trust their predictions is critical. Closed-ended medical VQA has become a common benchmark format because it enables automated scoring. Yet, systematic investigation into whether this format changes the reliability problem remains scarce. We identify a failure mode that we call stable wrongness: models can produce incorrect yes/no answers that remain confident and repeata",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29592"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "evaluated for clinical decision-support scenarios, knowing when to trust their predictions is critical. Closed-ended medical VQA has become a common benchmark format because it enables automated scoring. Yet, systematic investigation into whether this format changes the reliability problem remains scarce. We identify a failure mode that we call stable wrongness: models can produce incorrect yes/",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29592"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "y, black, and corrupted images, to audit whether a committed yes/no answer remains supported when visual evidence is invalidated. Across 7 VLMs and 3 benchmarks, CAS outperforms the best HAC-family scores across all evaluated settings, achieving a macro-averaged AUROC gain of +0.150 for error detection. Mechanistic analysis further shows that CAS recovers hidden errors in the HAC-confident region",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29592"
+        },
+        {
+          "term": "medical",
+          "excerpt": "Rethinking Closed-Ended Medical VLM Evaluation: From Stable Wrongness to Counterfactual Answer Sensitivity As medical VLMs are increasingly evaluated for clinical decision-support scenarios, knowing when to trust their predictions is critical. Closed-ended medical VQA ha",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29592"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "inking Closed-Ended Medical VLM Evaluation: From Stable Wrongness to Counterfactual Answer Sensitivity As medical VLMs are increasingly evaluated for clinical decision-support scenarios, knowing when to trust their predictions is critical. Closed-ended medical VQA has become a common benchmark format because it enables automated scoring. Yet, systematic investigation into whether this format cha",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29592"
+        },
+        {
+          "term": "patient",
+          "excerpt": "We identify a failure mode that we call stable wrongness: models can produce incorrect yes/no answers that remain confident and repeatable even when patient-specific visual evidence is removed or mismatched. This failure violates the premise behind sampling-stability uncertainty methods, including recent hallucination-aware calibration (HAC) variants: disagreement is informative only when erro",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29592"
+        },
+        {
+          "term": "Vision-language",
+          "excerpt": "d evaluation should test visual dependence, not only answer stability, in safety-critical medical contexts. [[SECTION I Introduction]] I Introduction Vision-language models (VLMs) are increasingly evaluated for clinical decision support, making reliable uncertainty estimation essential [ 4 , 5 , 6 ] . Closed-ended medical VQA is attractive because yes/no answers permit inexpensive automated scoring, bu",
+          "location": "I Introduction",
+          "source_url": "https://arxiv.org/html/2611.29592"
+        },
+        {
+          "term": "Visual Grounding",
+          "excerpt": "and measuring structured support and boundary shifts across controlled visual interventions. [[SECTION III Rethinking: When Stability Does Not Imply Visual Grounding]] III Rethinking: When Stability Does Not Imply Visual Grounding Closed-ended medical VQA is often treated as the simpler and more controlled evaluation setting because the model only needs to choose between yes and no . However, this form",
+          "location": "II Related Work",
+          "source_url": "https://arxiv.org/html/2611.29592"
+        }
+      ],
+      "related_benchmarks": [
+        "VQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly studies biomedical benchmark construction or quality methodology.",
+      "match_score": 21,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "c7d5a3310d72da3f84612cdc1c83dc56f02f0041321b8e65b28e36909bc7f6fa",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "methodology"
+    },
+    {
+      "id": "arxiv:2611.29305",
+      "slug": "arxiv-2611-29305-db39cec2ca",
+      "kind": "paper",
+      "title": "CT-Navigator: Towards Interpretable and Generalizable CT Understanding through Agentic Perception and Tool-Invocation",
+      "abstract": "Clinical computed tomography (CT) interpretation inherently requires progressive visual exploration, where radiologists navigate from whole scans to individual slices and regions of interest and interact with external tools when necessary. However, existing 3D medical multimodal large language models (MLLMs) typically connect a specialized 3D visual encoder to a language model, without fully leveraging the native 2D visual and agentic capabilities of generalist MLLMs. Trained on large-scale one-hop CT instruction-following data, these models also have limited ability to perform iterative reasoning and explicitly ground their conclusions in visual evidence, limiting their support for traceable CT interpretation. To solve these problems, we propose \\textbf{agentic perception} as an alternative paradigm inspired by radiologists' interpretation workflows. We introduce \\textbf{CT-Navigator}, a framework that harnesses generalist MLLMs' 2D visual and agentic capabilities to progressively ground CT interpretation in explicit, traceable visual evidence through hierarchical visual exploration and radiology tool invocation. To build these capabilities, we curate 8,904 visual chain-of-thought (V-CoT) trajectories for cold-start agentic supervised fine-tuning. We then optimize the policy through reinforcement learning on 33,219 questions, with data selection and dynamic rollout sampling prioritizing informative learning signals. Finally, we introduce CTNavi-Bench, a 3D CT visual question answering benchmark comprising 7,000 questions spanning anatomical regions throughout the human body. CT-Navigator achieves 79.50\\% accuracy on CTNavi-Bench, surpassing the strongest baseline by 17.59\\%, and demonstrates strong generalization across three external CT benchmarks. The code, model, and benchmark will be released on \\href{https://github.com/fyb99/ct_navigator}{GitHub}.",
+      "authors": [
+        "Yibing Fu",
+        "Huidong Xie",
+        "Yihao Niu",
+        "Wei Ji",
+        "Heming Dong",
+        "Ziyue Wang",
+        "Jingyu Chen",
+        "Jun Zhao",
+        "Haoyuan Hu",
+        "Hongming Shan",
+        "Lai Jiang",
+        "Mai Xu",
+        "Yueming Jin"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-22T07:57:58+00:00",
+      "updated_at": "2026-11-22T07:57:58+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.29305"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.29305v1",
+        "pdf": "https://arxiv.org/pdf/2611.29305v1",
+        "code": "https://github.com/fyb99/ct_navigator",
+        "html": "https://arxiv.org/html/2611.29305"
+      },
+      "evidence": [
+        {
+          "term": "we introduce CTNavi-Bench",
+          "excerpt": "ough reinforcement learning on 33,219 questions, with data selection and dynamic rollout sampling prioritizing informative learning signals. Finally, we introduce CTNavi-Bench, a 3D CT visual question answering benchmark comprising 7,000 questions spanning anatomical regions throughout the human body. CT-Navigator achieves 79.50\\% accuracy on CTNavi-Bench, surpassing the strongest baseline by 17.59\\%, and demons",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29305"
+        },
+        {
+          "term": "we introduce CTNavi-Bench, a 3D CT visual question answering benchmark",
+          "excerpt": "ough reinforcement learning on 33,219 questions, with data selection and dynamic rollout sampling prioritizing informative learning signals. Finally, we introduce CTNavi-Bench, a 3D CT visual question answering benchmark comprising 7,000 questions spanning anatomical regions throughout the human body. CT-Navigator achieves 79.50\\% accuracy on CTNavi-Bench, surpassing the strongest baseline by 17.59\\%, and demonstrates strong generalization across three ext",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29305"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "lection and dynamic rollout sampling prioritizing informative learning signals. Finally, we introduce CTNavi-Bench, a 3D CT visual question answering benchmark comprising 7,000 questions spanning anatomical regions throughout the human body. CT-Navigator achieves 79.50\\% accuracy on CTNavi-Bench, surpassing the strongest baseline by 17.59\\%, and demonstrates strong generalization across three ext",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29305"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "ieves 79.50\\% accuracy on CTNavi-Bench, surpassing the strongest baseline by 17.59\\%, and demonstrates strong generalization across three external CT benchmarks. The code, model, and benchmark will be released on \\href{https://github.com/fyb99/ct_navigator}{GitHub}. [[SECTION CT-Navigator: Towards Interpretable and Generalizable CT Understanding through Agentic Perception and Tool-Invocation]] CT-",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29305"
+        },
+        {
+          "term": "medical",
+          "excerpt": "ologists navigate from whole scans to individual slices and regions of interest and interact with external tools when necessary. However, existing 3D medical multimodal large language models (MLLMs) typically connect a specialized 3D visual encoder to a language model, without fully leveraging the native 2D visual and agentic capabilities of generalist MLLMs. Trained on large-scale one-hop CT i",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29305"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "CT-Navigator: Towards Interpretable and Generalizable CT Understanding through Agentic Perception and Tool-Invocation Clinical computed tomography (CT) interpretation inherently requires progressive visual exploration, where radiologists navigate from whole scans to individual slices and regions of interest and interact with external tools when necessary. However,",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29305"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "navigate from whole scans to individual slices and regions of interest and interact with external tools when necessary. However, existing 3D medical multimodal large language models (MLLMs) typically connect a specialized 3D visual encoder to a language model, without fully leveraging the native 2D visual and agentic capabilities of generalist MLLMs. Trained on large-scale one-hop CT instruction-",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29305"
+        },
+        {
+          "term": "pathological",
+          "excerpt": "92–34916 . Cited by: §2.1 . [24] O. Oren, B. J. Gersh, and D. L. Bhatt (2020) Artificial intelligence in medical imaging: switching from radiographic pathological data to clinically meaningful endpoints . The Lancet Digital Health 2 ( 9 ), pp. e486–e488 . Cited by: §1 . [25] D. Peeters, B. Obreja, N. Antonissen, Z. Saghir, U. Pastorino, M. Silva, G. H. De Bock, H. Gietema, F. Gleeson, M. A. Heuvelma",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2611.29305"
+        }
+      ],
+      "related_benchmarks": [
+        "VQA",
+        "M3D-VQA",
+        "DeepTumorVQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 24,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "1faf537d4b45940361ad2557835462e72fe7e45ac44fe57bde9f03ec2e448aab",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2611.29243",
+      "slug": "arxiv-2611-29243-f28f9946af",
+      "kind": "paper",
+      "title": "Seeing Is Not Acting: WARD Diagnoses the Evidence-to-State-to-Action Gap in Longitudinal Clinical Agents",
+      "abstract": "Large language models for longitudinal clinical care must revise their assessments and actions as patient information accumulates. However, benchmarks centered on isolated responses or final task outcomes provide limited insight into intermediate failures in evidence use, state updating, and action selection. We introduce WARD, a benchmark for evaluating how clinical agents translate accumulating evidence into patient-state judgments and timely, safe actions. WARD comprises 4,560 clinical tasks across seven clinical output domains, organized into 240 checkpoints from 40 longitudinal clinical trajectories spanning 95 hospitalizations. Its Longitudinal Track evaluates these tasks under controlled cumulative evidence. Its Interactive Track evaluates end-to-end, tool-mediated clinical management across 271 verifiable evidence items and 141 reference transitions. Across 12 models with scorable checkpoint outputs, evidence recognition consistently outpaces downstream state and action decisions, with linked-evidence nonresponse reaching 74.47--90.90\\%. Models also struggle to retain and update information over time, while in the Interactive Track only 11.46\\% of executed actions advance a reference transition. These results reveal a persistent evidence-to-state-to-action gap and highlight the need for process-level evaluation of longitudinal clinical agents.Code and data: https://github.com/Dingsuper-creator/WARD.",
+      "authors": [
+        "Chao Ding",
+        "Yidong Jiang",
+        "Junzhi Ning",
+        "Juncheng Wu",
+        "Yuhan Wang",
+        "Renjie Lu",
+        "Minjia Yuan",
+        "Gaopeng Wang",
+        "Liyang Wang",
+        "Pengcheng Chen",
+        "Dong Yin",
+        "Meiping Wang",
+        "Jinru Ding",
+        "Yuyin Zhou"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-22T05:30:24+00:00",
+      "updated_at": "2026-11-22T05:30:24+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.29243"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.29243v1",
+        "pdf": "https://arxiv.org/pdf/2611.29243v1",
+        "code": "https://github.com/Dingsuper-creator/WARD",
+        "html": "https://arxiv.org/html/2611.29243"
+      },
+      "evidence": [
+        {
+          "term": "We introduce WARD, a benchmark",
+          "excerpt": "n isolated responses or final task outcomes provide limited insight into intermediate failures in evidence use, state updating, and action selection. We introduce WARD, a benchmark for evaluating how clinical agents translate accumulating evidence into patient-state judgments and timely, safe actions. WARD comprises 4,560 clinical tasks across seven clinical output domains, organized into 240 checkpoints from 40 long",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29243"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "al Agents Large language models for longitudinal clinical care must revise their assessments and actions as patient information accumulates. However, benchmarks centered on isolated responses or final task outcomes provide limited insight into intermediate failures in evidence use, state updating, and action selection. We introduce WARD, a benchmark for evaluating how clinical agents translate ac",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29243"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "al Agents Large language models for longitudinal clinical care must revise their assessments and actions as patient information accumulates. However, benchmarks centered on isolated responses or final task outcomes provide limited insight into intermediate failures in evidence use, state updating, and action selection. We introduce WARD, a benchmark for evaluating how clinical agents translate acc",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29243"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "Seeing Is Not Acting: WARD Diagnoses the Evidence-to-State-to-Action Gap in Longitudinal Clinical Agents Large language models for longitudinal clinical care must revise their assessments and actions as patient information accumulates. However, benchmarks centered on isolated responses or final task outcomes provide limited insight int",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29243"
+        },
+        {
+          "term": "patient",
+          "excerpt": "State-to-Action Gap in Longitudinal Clinical Agents Large language models for longitudinal clinical care must revise their assessments and actions as patient information accumulates. However, benchmarks centered on isolated responses or final task outcomes provide limited insight into intermediate failures in evidence use, state updating, and action selection. We introduce WARD, a benchmark for",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.29243"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "e plans . Note: STAT News External Links: Link Cited by: §1 , §1 . Schmidgall et al. (2026) S. Schmidgall, R. Ziaei, C. Harris, et al. AgentClinic: a multimodal benchmark for tool-using clinical AI agents . npj Digital Medicine 9 , pp. 499 . External Links: Document Cited by: Table 4 , §1 , §2 . Sellergren et al. (2025) A. Sellergren, S. Kazemzadeh, T. Jaroensri, A. Kiraly, M. Traverse, T. Kohlber",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2611.29243"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "ct breast cancer diagnosis, but judges that the patient can enter discharge or follow-up and sets remaining_blockers to empty while the breast-lesion pathology has not yet returned, whereas the reference still requires waiting for pathology. Case (c) exposes a more severe trajectory-level inconsistency. GPT-5.6-Terra performs definitive surgery before the biopsy pathology is visible, and reads th",
+          "location": "7 Case Study",
+          "source_url": "https://arxiv.org/html/2611.29243"
+        },
+        {
+          "term": "tool use",
+          "excerpt": ", 2021 ; Singhal et al., 2023 ) . Second, recent interactive benchmarks move closer to real clinical workflows, introducing sequential dialogue, EHR tool use, and multi-turn database queries ( Schmidgall et al., 2026 ; Jiang et al., 2025 ; Lee et al., 2026 ) , but their scoring remains tied almost entirely to final outcomes, overlooking whether the model’s intermediate decisions remain clinical",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2611.29243"
+        }
+      ],
+      "related_benchmarks": [
+        "MedQA",
+        "MultiMedQA",
+        "EHRBench",
+        "MedAgentBench",
+        "EHRChatQA",
+        "PubMedQA",
+        "HealthAgentBench",
+        "MedMCQA",
+        "ProcessEval"
+      ],
+      "related_agent_url": "../../p/2611.29243.html",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 20,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "18984c10a755f09092e8a56873287b54a96b1785654ab0d75a09566c3e58e2f4",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
