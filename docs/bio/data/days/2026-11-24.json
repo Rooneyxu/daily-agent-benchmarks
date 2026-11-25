@@ -1,0 +1,166 @@
+{
+  "date": "2026-11-24",
+  "count": 2,
+  "entries": [
+    {
+      "id": "arxiv:2611.32734",
+      "slug": "arxiv-2611-32734-48a63727d8",
+      "kind": "paper",
+      "title": "ASCENT: A Benchmark for Evaluating and Advancing Stepwise Diagnostic Reasoning in Large Language Models on Common Clinical Scenarios",
+      "abstract": "Large language models (LLMs) excel at medical question answering yet are rarely evaluated on the stepwise diagnostic reasoning that defines real clinical workflows, where impressions are revised as information accumulates. We build Annotated Stepwise Clinical rEasoning for NaturalisTic Diagnosis (ASCENT), a clinician-annotated benchmark and training resource of 3,078 stepwise problems derived from MedQA-USMLE that decomposes each vignette into EMR-aligned steps (Findings, Impression, supporting Rationale), enabling evaluation of intermediate reasoning under incomplete information. Experiments and training with ASCENT revealed insights into how current LLMs handle stepwise diagnostic reasoning. Even strong reasoning models that perform well on MedQA-USMLE leave substantial headroom on ASCENT, and general-purpose frontier models trail further, exposing a persistent gap between fully informed and stepwise diagnosis. Fine-tuning Qwen2.5-7B and 32B on ASCENT yields measurable F1 gains over both pre-trained and HuatuoGPT-o1 CoT-trained baselines, with gains driven primarily by precision. Complementary robustness analyses (counterfactual perturbation, format-vs-content control, judge agreement, and rollout) further show that ASCENT-fine-tuned models rely on the diagnostic content of prior impressions rather than imitating their output format, while error propagation under rollout remains a key challenge for clinical deployment.",
+      "authors": [
+        "Yera Choi",
+        "Yeong Hwa Kim",
+        "Jaedeok Lee",
+        "Taekang Kim",
+        "Sangdoo Yun",
+        "Seong-Eun Moon"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-24T14:49:50+00:00",
+      "updated_at": "2026-11-24T14:49:50+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.32734"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.32734v1",
+        "pdf": "https://arxiv.org/pdf/2611.32734v1",
+        "code": "https://github.com/naver-ai/ascent",
+        "html": "https://arxiv.org/html/2611.32734"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "ASCENT: A Benchmark for Evaluating and Advancing Stepwise Diagnostic Reasoning in Large Language Models on Common Clinical Scenarios Large language models (LLMs) excel at medical question answering yet are rarely evaluated on the stepwise diagnostic reasoning",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.32734"
+        },
+        {
+          "term": "medical",
+          "excerpt": "or Evaluating and Advancing Stepwise Diagnostic Reasoning in Large Language Models on Common Clinical Scenarios Large language models (LLMs) excel at medical question answering yet are rarely evaluated on the stepwise diagnostic reasoning that defines real clinical workflows, where impressions are revised as information accumulates. We build Annotated Stepwise Clinical rEasoning for NaturalisTi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.32734"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "ASCENT: A Benchmark for Evaluating and Advancing Stepwise Diagnostic Reasoning in Large Language Models on Common Clinical Scenarios Large language models (LLMs) excel at medical question answering yet are rarely evaluated on the stepwise diagnostic reasoning that defines real clinical workflows, where impressions are revised as information accumulates. We bui",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.32734"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": "2305.09617 Cited by: §1 . Sun et al. (2025) Y. Sun, X. Qian, W. Xu, H. Zhang, C. Xiao, L. Li, Y. Rong, W. Huang, Q. Bai, and T. Xu ReasonMed: a 370k multi-agent generated dataset for advancing medical reasoning . External Links: 2506.09513 Cited by: §1 , §2 . Wei et al. (2022) J. Wei, X. Wang, D. Schuurmans, M. Bosma, E. H. Chi, F. Xia, Q. Le, and D. Zhou Chain of thought prompting elicits reasoni",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2611.32734"
+        }
+      ],
+      "related_benchmarks": [
+        "MedQA",
+        "HealthBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 15,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "11b7c92d20f4781f3a8927d4c8425f616abcf9e78b987c8e6aa8da346e9804a5",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.64898/2026.11.10.765703",
+      "slug": "doi-10-64898-2026-11-10-765703-f230b26246",
+      "kind": "paper",
+      "title": "CLOVER: Chemical-gene LLM benchmark for obtaining valid entity relationships for the Comparative Toxicogenomics Database (CTD)",
+      "abstract": "Objective: The Comparative Toxicogenomics Database (CTD) provides expert-curated chemical-gene interactions about environmental exposure effects on human diseases. Existing automated relation extraction systems are typically restricted to 3-10 interaction types and operate on abstracts only. We introduce CLOVER, a systematic benchmark for evaluating large language models (LLMs) on full-text chemical-gene interaction extraction using CTD-defined chemical-gene interaction terminology. The framework is designed to support 47 base interactions with directional modifiers (increase, decrease, affects), yielding 136 possible supported interaction classes. Evaluation is restricted to the subset of classes represented in the selected articles. Methods: CLOVER processes 50 full-text PubMed Central articles (1,563 sections) with PubTator and CTD integration. The pipeline consists of four stages: (1) LLM Extraction with one-shot and few-shot prompting; (2) LLM Validation to confirm and revise interactions; (3) Rule-based Refinement of extracted interactions to standardize terminology and eliminate errors; and (4) Human Review for expert oversight. We benchmark four LLMs (GPT-4.1, GPT-4o, Claude-Sonnet-4.5, and DeepSeek-V4.1-Flash) and compare against a naive baseline that applies unstructured prompting directly to full-text PDFs. Results: The naive baseline achieves only 13% recall and 36% precision. Refinement significantly enhances performance by eliminating unsupported interactions. Under strict limitations, Claude-Sonnet-4.5 alone achieves 72% recall and 61% precision, and Claude with self-validation achieves 74% recall and 49% precision compared to CTD. Of the 136 supported interaction classes, 17 were represented in our evaluation. Conclusion: To our knowledge, CLOVER establishes the first benchmark for full-text chemical-gene interaction extraction aligned with CTD. Our findings demonstrate that CLOVER achieves workable metrics for CTD-aligned curation relative to minimal whole-PDF prompting. This study addresses only a fraction of the content manually curated in CTD; considerably more work is needed to advance LLM-based tools to determine the extent to which these tools can approximate the full capacity of manual curation at CTD.",
+      "authors": [
+        "Cheerla, S.",
+        "Davis, A. P.",
+        "Wiegers, T. C.",
+        "Mattingly, C. J.",
+        "Heber, S.",
+        "Singh, M. P."
+      ],
+      "source": "biorxiv",
+      "published_at": "2026-11-24T00:00:00+00:00",
+      "updated_at": "2026-11-24T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "cc_by",
+      "identifiers": {
+        "doi": "10.64898/2026.11.10.765703"
+      },
+      "links": {
+        "abs": "https://www.biorxiv.org/content/10.64898/2026.11.10.765703",
+        "pdf": "https://www.biorxiv.org/content/10.64898/2026.11.10.765703.full.pdf",
+        "html": "https://www.biorxiv.org/content/10.64898/2026.11.10.765703.full"
+      },
+      "evidence": [
+        {
+          "term": "We introduce CLOVER, a systematic benchmark",
+          "excerpt": "s on human diseases. Existing automated relation extraction systems are typically restricted to 3-10 interaction types and operate on abstracts only. We introduce CLOVER, a systematic benchmark for evaluating large language models (LLMs) on full-text chemical-gene interaction extraction using CTD-defined chemical-gene interaction terminology. The framework is designed to support 47 base interactions with directional modifiers (in",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.10.765703.full"
+        },
+        {
+          "term": "first benchmark",
+          "excerpt": "ompared to CTD. Of the 136 supported interaction classes, 17 were represented in our evaluation. Conclusion: To our knowledge, CLOVER establishes the first benchmark for full-text chemical-gene interaction extraction aligned with CTD. Our findings demonstrate that CLOVER achieves workable metrics for CTD-aligned curation relative to minimal whole-PDF prompting. This study addresses only a fraction of t",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.10.765703.full"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "CLOVER: Chemical-gene LLM benchmark for obtaining valid entity relationships for the Comparative Toxicogenomics Database (CTD) Objective: The Comparative Toxicogenomics Database (CTD) provides expert-curated chemical-gene interactions about environmental exposure effects on",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.10.765703.full"
+        },
+        {
+          "term": "genomic",
+          "excerpt": "CLOVER: Chemical-gene LLM benchmark for obtaining valid entity relationships for the Comparative Toxicogenomics Database (CTD) Objective: The Comparative Toxicogenomics Database (CTD) provides expert-curated chemical-gene interactions about environmental exposure effects on human diseases. Existing automated relation extraction systems are typicall",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.10.765703.full"
+        },
+        {
+          "term": "genomics",
+          "excerpt": "CLOVER: Chemical-gene LLM benchmark for obtaining valid entity relationships for the Comparative Toxicogenomics Database (CTD) Objective: The Comparative Toxicogenomics Database (CTD) provides expert-curated chemical-gene interactions about environmental exposure effects on human diseases. Existing automated relation extraction systems are typically",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.10.765703.full"
+        },
+        {
+          "term": "gene",
+          "excerpt": "CLOVER: Chemical-gene LLM benchmark for obtaining valid entity relationships for the Comparative Toxicogenomics Database (CTD) Objective: The Comparative Toxicogenomics Database (CTD) provides expert-curated chemical-gene interactions about environmental exposu",
+          "location": "Abstract / metadata",
+          "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.10.765703.full"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 24,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '429 Too Many Requests' for url 'https://www.biorxiv.org/content/10.64898/2026.11.10.765703.full'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "content_hash": "689e26972c663ab0a3806533b56ac182a23f1fd934e20aa2ba9be249be754588",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
