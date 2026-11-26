@@ -1,6 +1,6 @@
 {
   "date": "2026-11-23",
-  "count": 3,
+  "count": 5,
   "entries": [
     {
       "id": "arxiv:2611.29934",
@@ -97,6 +97,84 @@
       "content_hash": "edde4b87e4ef1e3a24b232b7cfb948935a42ffcc24d2ffd62791703586c97ba5",
       "is_seed": false,
       "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.2196/111146",
+      "slug": "doi-10-2196-111146-d62ab3788d",
+      "kind": "paper",
+      "title": "Error Direction of Large Language Models on Medical Multiple-Response Questions: Opportunity-Standardized Benchmark Study.",
+      "abstract": "<h4>Background</h4>Large language models (LLMs) attain high accuracy on medical examinations, yet evaluations rely predominantly on single-best-answer multiple-choice questions and report only overall accuracy. Multiple-response items, termed X-type in China, require selecting every correct option and remain understudied. Whether models err by omitting correct options or by commissioning incorrect ones has yet to be assessed within an opportunity-standardized framework.<h4>Objective</h4>This study aimed to quantify the accuracy penalty of multiple-response (X-type) items relative to single-select items and to determine, after standardizing for the unequal numbers of correct and incorrect options, whether LLMs lean toward omission or commission.<h4>Methods</h4>We analyzed 1644 text-based items from 10 examination cohorts (2017-2026) of the Chinese National Postgraduate Entrance Examination in Clinical Medicine, comprising 1344 single-select items of types A1, A2, A3, and B, and 300 X-type items. Five LLMs, DeepSeek V4 Pro, Kimi K3, Doubao Seed-2.1-pro, GPT-5.6 Sol, and Gemini-3.6 Flash, were tested zero-shot bilingually, yielding 16,440 planned responses. Item-type effects were estimated using generalized estimating equations with cluster-robust standard errors, adjusting for model, language, discipline, and cohort. Opportunity-standardized error direction was analyzed 2 ways: an option-level model treating each option as 1 judgment record and the omission-bias index.<h4>Results</h4>Of 16,440 planned responses, 16,426 (99.91%) were evaluable. X-type accuracy (2527/3000, 84.23%) was markedly below single-select accuracy (12,990/13,426, 96.75%; adjusted odds ratio at GPT-5.6 Sol in Chinese 0.17, 95% CI 0.11-0.26; <i>P</i><.001), a gap of 12.52 percentage points observed and 13.55 adjusted, with no statistically significant item type × model or item type × language interaction (<i>P</i>=.19 and <i>P</i>=.82). Raw counts suggested more strict omissions (245/3000, 8.17%) than overselections (201/3000, 6.70%), but X-type items averaged 2.79 correct vs 1.21 incorrect options per item, a 2.3-fold imbalance in error opportunities. After opportunity standardization, the per-opportunity false-selection rate was 6.69% (242/3620), roughly twice the 3.57% per-opportunity omission rate (299/8380; rate ratio 1.87, 95% CI 1.28-2.74; adjusted odds ratio at the reference model and language 0.38, 95% CI 0.20-0.70; <i>P</i>=.002), so the tilt is modest on the absolute scale and close to 2-fold on the relative scale. Strict omission showed no between-model difference (all Holm-adjusted pairwise comparisons, <i>P</i>≥.46).<h4>Conclusions</h4>LLMs incur a substantial accuracy penalty on medical multiple-response items. The apparent omission dominance in raw counts is an artifact of answer-key opportunity imbalance; after opportunity standardization, models show a commission tilt that is modest on the absolute scale (3.12 percentage points per opportunity) and close to 2-fold on the relative scale, and that holds in every model-language condition and in the answer-key stratum whose opportunity base is exactly balanced. Medical LLM benchmarks should report accuracy stratified by item type and error direction on an opportunity-standardized basis.",
+      "authors": [
+        "Ran X",
+        "Yin H",
+        "Yang Y",
+        "Duan S",
+        "Luo X",
+        "Liu Y",
+        "Liao M."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "updated_at": "2026-11-26T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.2196/111146",
+        "pmid": "43083842"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/43083842"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "Error Direction of Large Language Models on Medical Multiple-Response Questions: Opportunity-Standardized Benchmark Study. <h4>Background</h4>Large language models (LLMs) attain high accuracy on medical examinations, yet evaluations rely predominantly on single-best-answer multiple-choice questions and report only overall accuracy. Multiple-response ite",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43083842"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "elative scale, and that holds in every model-language condition and in the answer-key stratum whose opportunity base is exactly balanced. Medical LLM benchmarks should report accuracy stratified by item type and error direction on an opportunity-standardized basis. <h4>Background</h4>Large language models (LLMs) attain high accuracy on medical examinations, yet evaluations rely predominantly on si",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43083842"
+        },
+        {
+          "term": "medicine",
+          "excerpt": "s</h4>We analyzed 1644 text-based items from 10 examination cohorts (2017-2026) of the Chinese National Postgraduate Entrance Examination in Clinical Medicine, comprising 1344 single-select items of types A1, A2, A3, and B, and 300 X-type items. Five LLMs, DeepSeek V4 Pro, Kimi K3, Doubao Seed-2.1-pro, GPT-5.6 Sol, and Gemini-3.6 Flash, were tested zero-shot bilingually, yielding 16,440 planned",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43083842"
+        },
+        {
+          "term": "medical",
+          "excerpt": "Error Direction of Large Language Models on Medical Multiple-Response Questions: Opportunity-Standardized Benchmark Study. <h4>Background</h4>Large language models (LLMs) attain high accuracy on medical examinations, yet evaluations rely predominantly on single-best-answer multiple-choice q",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43083842"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "h4>Methods</h4>We analyzed 1644 text-based items from 10 examination cohorts (2017-2026) of the Chinese National Postgraduate Entrance Examination in Clinical Medicine, comprising 1344 single-select items of types A1, A2, A3, and B, and 300 X-type items. Five LLMs, DeepSeek V4 Pro, Kimi K3, Doubao Seed-2.1-pro, GPT-5.6 Sol, and Gemini-3.6 Flash, were tested zero-shot bilingually, yielding 16,440",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43083842"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "99c553a10ea328ded57478192ffa0d00e86d300ec4c4ee0718422b4245d6e772",
+      "is_seed": false,
+      "topic": "general_text",
       "contribution_type": "new_benchmark"
     },
     {
@@ -267,6 +345,92 @@
       "is_seed": false,
       "topic": "general_text",
       "contribution_type": "methodology"
+    },
+    {
+      "id": "doi:10.1088/2057-1976/aebcf4",
+      "slug": "doi-10-1088-2057-1976-aebcf4-05e72ddbef",
+      "kind": "paper",
+      "title": "MaskRet-Oto: region-conditioned evidence retrieval and calibration for otoscopic image classification and selective referral.",
+      "abstract": "Digital otoscopy is a compact biomedical imaging modality, but retrospective image-classification results can be distorted by duplicate content, acquisition-domain cues, uncertain confidence, and dataset prevalence. We revised the framework as MaskRet-Oto, a region-conditioned evidence-retrieval and calibration pipeline rather than a retrieval-augmented generation (RAG) system. The working archive contained 3000 RGB otoscopic images in five approximately balanced categories. Exact-hash auditing identified 78 duplicated files; the remaining 2922 images formed 1956 within-class perceptual-hash groups that were kept intact across training (<i>n</i>= 2046), validation (<i>n</i>= 438), and test (<i>n</i>= 438) partitions. Because patient identifiers were unavailable, this procedure controls only exact/near-duplicate image leakage and cannot establish patient-independent evaluation; different views from the same patient or examination could remain in different splits. The soft central field-of-view operator retained 70.9% of image support and is now described as a predefined region-conditioning prior, not as empirical proof that shortcut learning was prevented. On the internal image-level test set, the compact 64 × 64 CNN pipeline achieved 98.17% accuracy (95% bootstrap confidence interval 96.80%-99.32%), 98.23% macro-<i>F</i>1, MCC 0.977, and macro-AUC 0.9994. Training-only visual retrieval reached 99.54% top-5 recall. The source-tagged textual memory contains 15 curated statements retrieved by TF-IDF; no language model is used and the component is not presented as a clinical knowledge base or RAG. Retrieval fusion did not improve top-1 accuracy; its role is limited to exposing similar training cases, attaching source-tagged evidence, and contributing a small additional calibration change after temperature scaling. Selective prediction concentrated all observed errors in the lowest-confidence decile in this same test set, but this is a post hoc internal utility surrogate, not a clinical-utility validation. The nearly balanced benchmark distribution also means that calibration values should not be interpreted as real-world disease-risk probabilities. Patient-level, device-diverse, prevalence-aware, and prospective validation with stronger standard backbones is required before clinical use.",
+      "authors": [
+        "Singh AK",
+        "Raghuvanshi AS",
+        "Mehta R."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "updated_at": "2026-11-04T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.1088/2057-1976/aebcf4",
+        "pmid": "42976380"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/42976380"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "st-confidence decile in this same test set, but this is a post hoc internal utility surrogate, not a clinical-utility validation. The nearly balanced benchmark distribution also means that calibration values should not be interpreted as real-world disease-risk probabilities. Patient-level, device-diverse, prevalence-aware, and prospective validation with stronger standard backbones is required be",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42976380"
+        },
+        {
+          "term": "test set",
+          "excerpt": "is now described as a predefined region-conditioning prior, not as empirical proof that shortcut learning was prevented. On the internal image-level test set, the compact 64 × 64 CNN pipeline achieved 98.17% accuracy (95% bootstrap confidence interval 96.80%-99.32%), 98.23% macro-<i>F</i>1, MCC 0.977, and macro-AUC 0.9994. Training-only visual retrieval reached 99.54% top-5 recall. The source-t",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42976380"
+        },
+        {
+          "term": "biomedical",
+          "excerpt": "t-Oto: region-conditioned evidence retrieval and calibration for otoscopic image classification and selective referral. Digital otoscopy is a compact biomedical imaging modality, but retrospective image-classification results can be distorted by duplicate content, acquisition-domain cues, uncertain confidence, and dataset prevalence. We revised the framework as MaskRet-Oto, a region-conditioned ev",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42976380"
+        },
+        {
+          "term": "medical",
+          "excerpt": "to: region-conditioned evidence retrieval and calibration for otoscopic image classification and selective referral. Digital otoscopy is a compact biomedical imaging modality, but retrospective image-classification results can be distorted by duplicate content, acquisition-domain cues, uncertain confidence, and dataset prevalence. We revised the framework as MaskRet-Oto, a region-conditioned ev",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42976380"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "he source-tagged textual memory contains 15 curated statements retrieved by TF-IDF; no language model is used and the component is not presented as a clinical knowledge base or RAG. Retrieval fusion did not improve top-1 accuracy; its role is limited to exposing similar training cases, attaching source-tagged evidence, and contributing a small additional calibration change after temperature scal",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42976380"
+        },
+        {
+          "term": "patient",
+          "excerpt": "rceptual-hash groups that were kept intact across training (<i>n</i>= 2046), validation (<i>n</i>= 438), and test (<i>n</i>= 438) partitions. Because patient identifiers were unavailable, this procedure controls only exact/near-duplicate image leakage and cannot establish patient-independent evaluation; different views from the same patient or examination could remain in different splits. The s",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42976380"
+        },
+        {
+          "term": "disease",
+          "excerpt": "a clinical-utility validation. The nearly balanced benchmark distribution also means that calibration values should not be interpreted as real-world disease-risk probabilities. Patient-level, device-diverse, prevalence-aware, and prospective validation with stronger standard backbones is required before clinical use. Digital otoscopy is a compact biomedical imaging modality, but retrospective",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/42976380"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 25,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "7bc11581e139e974f35370da7ad7ab0d265d355e127222dcac05d17479263c4e",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
     }
   ]
 }

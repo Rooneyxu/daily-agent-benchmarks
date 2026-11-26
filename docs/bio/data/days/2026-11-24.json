@@ -1,6 +1,6 @@
 {
   "date": "2026-11-24",
-  "count": 2,
+  "count": 3,
   "entries": [
     {
       "id": "arxiv:2611.32734",
@@ -161,6 +161,68 @@
       "is_seed": false,
       "topic": "general_text",
       "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.21203/rs.3.rs-11252166/v1",
+      "slug": "doi-10-21203-rs-3-rs-11252166-v1-18ce2c93c9",
+      "kind": "paper",
+      "title": "Augmentation Leakage in Dental Radiograph Classification: Source-Grouped Evaluation and an External Cross-Institution, Cross-Modality Output-Shift Stress Test",
+      "abstract": "<title>Abstract</title>  <p>Objectives:  This study investigates how data leakage from augmented images affects model performance and how well a model trained on panoramic radiographs performs on clinical periapical radiographs. <h4>Methods:</h4> A ResNet-50 multi-label classifier was trained using 1,269 files derived from 655 source panoramic radiographs covering four classes. The model was evaluated using source-grouped five-fold cross-validation, with performance measured at the source-radiograph level. A controlled experiment was conducted to measure the effect of augmented images from the same source in the training and test sets. ViT-B/16 and ResNet-50 were also compared using identical image geometry. Finally, the trained model was applied to 58 external clinical periapical radiographs using three preprocessing schemes to examine changes in predicted probabilities. <h4>Results:</h4> Across three random seeds, the average precision for caries was 0.490 ± 0.018, compared with a prevalence of 0.198. The primary single-run result was 0.553. The model also showed a high false-negative burden, limiting its suitability for autonomous diagnosis. In the controlled experiment, caries average precision increased from 0.558 to 0.787 when augmented images from the same source were allowed to appear across the training and test sets. This 0.229 AP increase (95% CI: 0.160–0.298) was observed across all five partitions. On external periapical radiographs, the spread of predicted probabilities was about one-tenth of that observed on in-domain data across all three preprocessing schemes. An inference control confirmed that the pipeline scored in-domain images correctly. However, since the external images were unlabeled, their diagnostic accuracy could not be assessed. <h4>Conclusions:</h4> The findings show that augmentation leakage can lead to substantial overestimation of classification performance in dental-radiograph datasets. Grouping images by their original source provides a more reliable evaluation when augmented derivatives are present. Changes in predicted probabilities on external periapical radiographs also indicate that performance on panoramic images alone is insufficient to establish clinical transfer. Further evaluation is needed before clinical use, including studies of diagnostic accuracy, fairness, and cost-effectiveness. No three-dimensional reconstruction is claimed.</p>",
+      "authors": [
+        "Ismail S",
+        "Nair V",
+        "Rocha A",
+        "Vaseashta A."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-11-24T00:00:00+00:00",
+      "updated_at": "2026-11-25T00:00:00+00:00",
+      "priority": "P2",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.21203/rs.3.rs-11252166/v1"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/PPR/PPR1376179"
+      },
+      "evidence": [
+        {
+          "term": "investigates how data leakage",
+          "excerpt": "rce-Grouped Evaluation and an External Cross-Institution, Cross-Modality Output-Shift Stress Test <title>Abstract</title> <p>Objectives: This study investigates how data leakage from augmented images affects model performance and how well a model trained on panoramic radiographs performs on clinical periapical radiographs. <h4>Methods:</h4> A ResNet-50 multi-label classifier was trained using 1,269 files derived f",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1376179"
+        },
+        {
+          "term": "test set",
+          "excerpt": "the source-radiograph level. A controlled experiment was conducted to measure the effect of augmented images from the same source in the training and test sets. ViT-B/16 and ResNet-50 were also compared using identical image geometry. Finally, the trained model was applied to 58 external clinical periapical radiographs using three preprocessing schemes to examine changes in predicted probabiliti",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1376179"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "study investigates how data leakage from augmented images affects model performance and how well a model trained on panoramic radiographs performs on clinical periapical radiographs. <h4>Methods:</h4> A ResNet-50 multi-label classifier was trained using 1,269 files derived from 655 source panoramic radiographs covering four classes. The model was evaluated using source-grouped five-fold cross-va",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/PPR/PPR1376179"
+        }
+      ],
+      "related_benchmarks": [],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a biomedical benchmark audit.",
+      "match_score": 10,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "cc56afb85f520e0f2aeed1e33bb7d72f7c00fee98d4016635005bfcb990aff6e",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "audit"
     }
   ]
 }

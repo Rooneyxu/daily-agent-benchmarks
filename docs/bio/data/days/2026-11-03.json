@@ -1,6 +1,6 @@
 {
   "date": "2026-11-03",
-  "count": 5,
+  "count": 4,
   "entries": [
     {
       "id": "arxiv:2611.05559",
@@ -374,92 +374,6 @@
       "content_hash": "b5819ebb44c94915612e9064b7d85a2360379416b58273390074730f8d68bd7a",
       "is_seed": false,
       "topic": "experiment_agent",
-      "contribution_type": "new_benchmark"
-    },
-    {
-      "id": "doi:10.1088/2057-1976/aebcf4",
-      "slug": "doi-10-1088-2057-1976-aebcf4-05e72ddbef",
-      "kind": "paper",
-      "title": "MaskRet-Oto: Region-Conditioned Evidence Retrieval and Calibration for Otoscopic Image Classification and Selective Referral.",
-      "abstract": "Digital otoscopy is a compact biomedical imaging modality, but retrospective image-classification results can be distorted by duplicate content, acquisition-domain cues, uncertain confidence, and dataset prevalence. We revised the framework as MaskRet-Oto, a region-conditioned evidence-retrieval and calibration pipeline rather than a retrieval-augmented generation (RAG) system. The working archive contained 3,000 RGB otoscopic images in five approximately balanced categories. Exact-hash auditing identified 78 duplicated files; the remaining 2,922 images formed 1,956 within-class perceptual-hash groups that were kept intact across training (n=2,046), validation (n=438), and test (n=438) partitions. Because patient identifiers were unavailable, this procedure controls only exact/near-duplicate image leakage and cannot establish patient-independent evaluation; different views from the same patient or examination could remain in different splits. The soft central field-of-view operator retained 70.9% of image support and is now described as a predefined region-conditioning prior, not as empirical proof that shortcut learning was prevented. On the internal image-level test set, the compact 64 x 64 CNN pipeline achieved 98.17% accuracy (95% bootstrap confidence interval 96.80-99.32%), 98.23% macro-F1, MCC 0.977, and macro-AUC 0.9994. Training-only visual retrieval reached 99.54% top-5 recall. The source-tagged textual memory contains 15 curated statements retrieved by TF-IDF; no language model is used and the component is not presented as a clinical knowledge base or RAG. Retrieval fusion did not improve top-1 accuracy; its role is limited to exposing similar training cases, attaching source-tagged evidence, and contributing a small additional calibration change after temperature scaling. Selective prediction concentrated all observed errors in the lowest-confidence deciles in this same test set, but this is a post hoc internal utility surrogate, not a clinical-utility validation. The nearly balanced benchmark distribution also means that calibration values should not be interpreted as real-world disease-risk probabilities. Patient-level, device-diverse, prevalence-aware, and prospective validation with stronger standard backbones is required before clinical use.",
-      "authors": [
-        "Singh AK",
-        "Raghuvanshi AS",
-        "Mehta R."
-      ],
-      "source": "europepmc",
-      "published_at": "2026-11-03T00:00:00+00:00",
-      "updated_at": "2026-11-04T00:00:00+00:00",
-      "priority": "P1",
-      "categories": [
-        "general_text"
-      ],
-      "collection_status": "confirmed",
-      "access_status": "unknown",
-      "license": "",
-      "identifiers": {
-        "doi": "10.1088/2057-1976/aebcf4",
-        "pmid": "42976380"
-      },
-      "links": {
-        "abs": "https://europepmc.org/article/MED/42976380"
-      },
-      "evidence": [
-        {
-          "term": "benchmark",
-          "excerpt": "t-confidence deciles in this same test set, but this is a post hoc internal utility surrogate, not a clinical-utility validation. The nearly balanced benchmark distribution also means that calibration values should not be interpreted as real-world disease-risk probabilities. Patient-level, device-diverse, prevalence-aware, and prospective validation with stronger standard backbones is required be",
-          "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/MED/42976380"
-        },
-        {
-          "term": "test set",
-          "excerpt": "is now described as a predefined region-conditioning prior, not as empirical proof that shortcut learning was prevented. On the internal image-level test set, the compact 64 x 64 CNN pipeline achieved 98.17% accuracy (95% bootstrap confidence interval 96.80-99.32%), 98.23% macro-F1, MCC 0.977, and macro-AUC 0.9994. Training-only visual retrieval reached 99.54% top-5 recall. The source-tagged te",
-          "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/MED/42976380"
-        },
-        {
-          "term": "biomedical",
-          "excerpt": "t-Oto: Region-Conditioned Evidence Retrieval and Calibration for Otoscopic Image Classification and Selective Referral. Digital otoscopy is a compact biomedical imaging modality, but retrospective image-classification results can be distorted by duplicate content, acquisition-domain cues, uncertain confidence, and dataset prevalence. We revised the framework as MaskRet-Oto, a region-conditioned ev",
-          "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/MED/42976380"
-        },
-        {
-          "term": "medical",
-          "excerpt": "to: Region-Conditioned Evidence Retrieval and Calibration for Otoscopic Image Classification and Selective Referral. Digital otoscopy is a compact biomedical imaging modality, but retrospective image-classification results can be distorted by duplicate content, acquisition-domain cues, uncertain confidence, and dataset prevalence. We revised the framework as MaskRet-Oto, a region-conditioned ev",
-          "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/MED/42976380"
-        },
-        {
-          "term": "clinical",
-          "excerpt": "he source-tagged textual memory contains 15 curated statements retrieved by TF-IDF; no language model is used and the component is not presented as a clinical knowledge base or RAG. Retrieval fusion did not improve top-1 accuracy; its role is limited to exposing similar training cases, attaching source-tagged evidence, and contributing a small additional calibration change after temperature scal",
-          "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/MED/42976380"
-        },
-        {
-          "term": "patient",
-          "excerpt": "d 1,956 within-class perceptual-hash groups that were kept intact across training (n=2,046), validation (n=438), and test (n=438) partitions. Because patient identifiers were unavailable, this procedure controls only exact/near-duplicate image leakage and cannot establish patient-independent evaluation; different views from the same patient or examination could remain in different splits. The s",
-          "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/MED/42976380"
-        },
-        {
-          "term": "disease",
-          "excerpt": "a clinical-utility validation. The nearly balanced benchmark distribution also means that calibration values should not be interpreted as real-world disease-risk probabilities. Patient-level, device-diverse, prevalence-aware, and prospective validation with stronger standard backbones is required before clinical use. Digital otoscopy is a compact biomedical imaging modality, but retrospective",
-          "location": "Abstract / metadata",
-          "source_url": "https://europepmc.org/article/MED/42976380"
-        }
-      ],
-      "related_benchmarks": [],
-      "related_agent_url": "",
-      "evaluation_contexts": [
-        "beneficial_capability"
-      ],
-      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
-      "match_score": 25,
-      "extraction_status": "complete",
-      "extraction_error": "",
-      "content_hash": "44b2b551f0f6cedae14a87c9100c744c0829ffa1d8a8cd06c355bfb0ab21c275",
-      "is_seed": false,
-      "topic": "general_text",
       "contribution_type": "new_benchmark"
     }
   ]

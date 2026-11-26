@@ -1,0 +1,662 @@
+{
+  "date": "2026-11-25",
+  "count": 7,
+  "entries": [
+    {
+      "id": "arxiv:2611.34465",
+      "slug": "arxiv-2611-34465-aa68539519",
+      "kind": "paper",
+      "title": "Evidence-Aligned Benchmarking and Learning for Medical Video Language Models",
+      "abstract": "A medical video language model should answer from the visual evidence its question asks about. We find three places where this breaks down and address each with an approach we call MedEvidU. First, benchmarks reward answers that ignore the video: on one dataset, the position of a clip within its recording predicts the surgical step in 37% of questions, and a constant answer beats every trained model on a standard safety-assessment metric. We build MedVidBench-v2, 34 tasks from 18 surgical and clinical video datasets, in which prompts and metrics are audited with answers given without video, and which tests unseen hospitals and windows cut blindly from whole recordings. Second, common video encoders merge consecutive frames into shared tokens, so a question about one frame is answered from a blend of two. Query-slot inputs give each queried frame its own tokens at almost no extra cost. Third, a fine-tuned model has memorized its training questions, which leaves little to learn from. Label-matched question resampling (LQR) adds unseen questions about the same recordings while keeping the answer distribution fixed, in a final supervised epoch and in reinforcement learning. Together, these raise the grounding IoU of a 4B model from 30.4 to 44.4, above a supervised 27B model, and instrument grounding at an unseen hospital from 33.9 to 72.5. On blindly cut windows, event-presence accuracy improves by 5.5 points and localization F1 by 8.1 points. Project page: https://gaozhongpai.github.io/MedEvidU/",
+      "authors": [
+        "Zhongpai Gao",
+        "Anwesa Choudhuri",
+        "Meng Zheng",
+        "Benjamin Planche",
+        "Terrence Chen",
+        "Ziyan Wu"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-25T14:35:42+00:00",
+      "updated_at": "2026-11-25T14:35:42+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.34465"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.34465v1",
+        "pdf": "https://arxiv.org/pdf/2611.34465v1",
+        "html": "https://arxiv.org/html/2611.34465"
+      },
+      "evidence": [
+        {
+          "term": "We build MedVidBench",
+          "excerpt": "its recording predicts the surgical step in 37% of questions, and a constant answer beats every trained model on a standard safety-assessment metric. We build MedVidBench-v2, 34 tasks from 18 surgical and clinical video datasets, in which prompts and metrics are audited with answers given without video, and which tests unseen hospitals and windows cut blindly from whole recordings. Second, common video enco",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.34465"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "Evidence-Aligned Benchmarking and Learning for Medical Video Language Models A medical video language model should answer from the visual evidence its question asks about. We find three places where this breaks down and address each with an approach we call MedEvidU",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.34465"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "m the visual evidence its question asks about. We find three places where this breaks down and address each with an approach we call MedEvidU. First, benchmarks reward answers that ignore the video: on one dataset, the position of a clip within its recording predicts the surgical step in 37% of questions, and a constant answer beats every trained model on a standard safety-assessment metric. We bu",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.34465"
+        },
+        {
+          "term": "benchmarking",
+          "excerpt": "Evidence-Aligned Benchmarking and Learning for Medical Video Language Models A medical video language model should answer from the visual evidence its question asks about. We find three places where this breaks down and address each with an approach we call MedEvidU. F",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.34465"
+        },
+        {
+          "term": "medical",
+          "excerpt": "Evidence-Aligned Benchmarking and Learning for Medical Video Language Models A medical video language model should answer from the visual evidence its question asks about. We find three places where this breaks down and address each with an approach we call MedEvidU. First, benchmarks reward a",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.34465"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "tions, and a constant answer beats every trained model on a standard safety-assessment metric. We build MedVidBench-v2, 34 tasks from 18 surgical and clinical video datasets, in which prompts and metrics are audited with answers given without video, and which tests unseen hospitals and windows cut blindly from whole recordings. Second, common video encoders merge consecutive frames into shared t",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.34465"
+        }
+      ],
+      "related_benchmarks": [
+        "MedVidBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 19,
+      "extraction_status": "incomplete",
+      "extraction_error": "Client error '404 Not Found' for url 'https://arxiv.org/html/2611.34465'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+      "content_hash": "dd522d4cfdcdc4c573642e96c3b31ec84981b96e723270683e71347c80c53596",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2611.34250",
+      "slug": "arxiv-2611-34250-3a9c660f7b",
+      "kind": "paper",
+      "title": "MedSkill-E$^{2}$: Evaluating and Evolving Skills for Medical Agents",
+      "abstract": "Large language model (LLM) agents increasingly use skills to access domain knowledge and complete real-world tasks. We observe that even when a skill specifies the rules and procedures needed for a task, agents may fail to apply them effectively during autonomous execution, a phenomenon we call skill Enable But Underuse (EBU). This issue is particularly consequential in medical tasks, where overlooking a single critical constraint can yield a plausible but incorrect result. To evaluate and address EBU, we introduce MedSkill-E$^{2}$, a framework for evaluating and evolving skills for medical agents. We construct EBU-Bench, a challenging benchmark covering 12 medically relevant task groups and associated skills, to evaluate agents' ability to use available skills autonomously. We quantify the EBU gap as the difference in skill-use accuracy between autonomous use and explicitly guided reading and application of the same skill. On EBU-Bench, all evaluated model-harness combinations exhibit EBU, with a mean gap of 43.94 percentage points (pp). For the same model, skill-use accuracy under autonomous use differs by up to 38.96 pp across harnesses. Motivated by these observations, we propose EBU-Evolve, which uses execution feedback from autonomous and explicitly guided skill use to distill effective guidance into reusable skill instructions. Relative to their pre-evolution versions, the revised skills improve skill-use accuracy during autonomous execution by 33.33 to 55.17 pp and continue to yield improvements when transferred across multiple models and harnesses. Our results show that autonomous skill-use accuracy varies across harnesses with the model and skill held fixed, and model rankings can change. EBU can persist even after a skill is opened. EBU-Evolve improves autonomous skill-use accuracy on unseen tasks within the same skill, with gains transferring across models and harnesses.",
+      "authors": [
+        "Jingjing Hua",
+        "Shaocong Wei",
+        "Jianghan Shen",
+        "Junzhi Ning",
+        "Min Cen",
+        "Cheng Tang",
+        "Ziyan Huang",
+        "Jiepeng Li",
+        "Fengshuo Liu",
+        "Kangkun Mao",
+        "Mouxiao Bian",
+        "Yirong Chen",
+        "Ming Hu",
+        "Jiyao Liu"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-25T12:13:27+00:00",
+      "updated_at": "2026-11-25T12:13:27+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.34250"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.34250v1",
+        "pdf": "https://arxiv.org/pdf/2611.34250v1",
+        "html": "https://arxiv.org/html/2611.34250"
+      },
+      "evidence": [
+        {
+          "term": "We construct EBU-Bench",
+          "excerpt": "but incorrect result. To evaluate and address EBU, we introduce MedSkill-E$^{2}$, a framework for evaluating and evolving skills for medical agents. We construct EBU-Bench, a challenging benchmark covering 12 medically relevant task groups and associated skills, to evaluate agents' ability to use available skills autonomously. We quantify the EBU gap as the difference in skill-use accuracy between autonomous",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.34250"
+        },
+        {
+          "term": "We construct EBU-Bench, a challenging benchmark",
+          "excerpt": "but incorrect result. To evaluate and address EBU, we introduce MedSkill-E$^{2}$, a framework for evaluating and evolving skills for medical agents. We construct EBU-Bench, a challenging benchmark covering 12 medically relevant task groups and associated skills, to evaluate agents' ability to use available skills autonomously. We quantify the EBU gap as the difference in skill-use accuracy between autonomous use and explicitly guide",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.34250"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "address EBU, we introduce MedSkill-E$^{2}$, a framework for evaluating and evolving skills for medical agents. We construct EBU-Bench, a challenging benchmark covering 12 medically relevant task groups and associated skills, to evaluate agents' ability to use available skills autonomously. We quantify the EBU gap as the difference in skill-use accuracy between autonomous use and explicitly guide",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.34250"
+        },
+        {
+          "term": "medical",
+          "excerpt": "MedSkill-E$^{2}$: Evaluating and Evolving Skills for Medical Agents Large language model (LLM) agents increasingly use skills to access domain knowledge and complete real-world tasks. We observe that even when a skill specifies the rules and procedures needed for a task, agents may fail to apply the",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.34250"
+        },
+        {
+          "term": "biomedical agent",
+          "excerpt": "analysis. Expert review and validation in real medical workflows could test effectiveness across broader tasks, supporting more reliable execution in biomedical agent research and evidence processing. MedSkill-E² focuses on biomedical tasks. Future work could extend EBU evaluation to other domains, investigate underuse across tasks and execution environments, and explore EBU-Evolve for continual skill s",
+          "location": "7 Conclusion",
+          "source_url": "https://arxiv.org/html/2611.34250"
+        },
+        {
+          "term": "tool-use",
+          "excerpt": "1 Introduction Large language model (LLM) agents use skills to access domain knowledge and apply it to specific tasks. A skill organizes the methods, tool-use instructions, and operating procedures needed for a class of tasks into a reusable resource, so that agents need not work out a solution procedure anew for each problem. This support is particularly important in medicine and related resear",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2611.34250"
+        },
+        {
+          "term": "multi-agent",
+          "excerpt": ": §3 , §5.2 , §6 . Alzubi et al. (2026) S. Alzubi, N. Provenzano, J. Bingham, C. A. Calvo, W. Chen, and T. Vu EvoSkill: automated skill discovery for multi-agent systems . In Third Conference on Language Modeling , External Links: Link Cited by: §6 . Chen et al. (2026) C. Chen, J. Lin, T. Sun, Y. Yang, J. Wang, C. Qin, Y. Hu, L. Pan, and K. Zeng Skill or skip? learning selective skill invocation in",
+          "location": "References",
+          "source_url": "https://arxiv.org/html/2611.34250"
+        }
+      ],
+      "related_benchmarks": [
+        "BixBench",
+        "SkillsBench",
+        "SkillLearnBench",
+        "ScienceAgentBench",
+        "MedAgentBench",
+        "PhysicianBench",
+        "AgentBench",
+        "ScBench",
+        "OpenSkillEval",
+        "ChestAgentBench",
+        "CompBioBench",
+        "BioAgentBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 16,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "1679c2c99bb2f523e2c4f97ee67c83f870b0cea9834943a747a3e014a7f56086",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2611.34024",
+      "slug": "arxiv-2611-34024-45f7e16d5f",
+      "kind": "paper",
+      "title": "JHealthBench-L: Clinician-Reviewed Localization of HealthBench for Rubric-Based Medical LLM Evaluation in Japan",
+      "abstract": "Rubric-based benchmarks such as HealthBench evaluate large language models (LLMs) on open-ended health consultations using case-specific physician criteria, many of which presuppose the healthcare institutions, medications, and care pathways of their source region. Under machine translation alone, these regional assumptions remain in the rubric, leaving responses appropriate in Japan uncredited or falsely penalized under foreign clinical rules. To adapt established clinical evaluation perspectives to Japan without authoring rubrics from scratch, we construct JHealthBench-L (79 patient-facing consultations, 1,022 criteria) through source-cited LLM drafting, single-specialist selection and revision, independent dual-physician review, and meta-review. Specialists rewrote only 4.4% of criteria from scratch, and independent reviewers approved 93.6% of Stage-2 criteria without issue. Comparing JHealthBench-L with a machine-translated baseline across 18 LLMs reveals that translation-only evaluation preserves coarse model rankings ($τ= 0.817$, mean shift +0.027) yet flips verdicts on 17.7% of modified criteria (vs. 7.3% re-grading noise) and reduces false penalties on Japan-adapted negative criteria by 7.1 percentage points, masking item-level clinical mismeasurement behind stable leaderboards. Axis-level and paired analyses further show that context awareness and Japan-specific clinical criteria remain primary bottlenecks, whereas Japanese continual pretraining and reasoning post-training substantially improve locally grounded performance. Datasets, physician revision logs, and evaluation code are available at https://github.com/horshohei/JHealthBench-L.",
+      "authors": [
+        "Shohei Hisada",
+        "Keisuke Orimo",
+        "Kenji Igarashi",
+        "Kota Sato",
+        "Masahiro Kazama",
+        "Mitsuhisa Ota",
+        "Shoko Wakamiya",
+        "Eiji Aramaki"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-25T09:12:36+00:00",
+      "updated_at": "2026-11-25T09:12:36+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.34024"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.34024v1",
+        "pdf": "https://arxiv.org/pdf/2611.34024v1",
+        "code": "https://github.com/horshohei/JHealthBench-L",
+        "html": "https://arxiv.org/html/2611.34024"
+      },
+      "evidence": [
+        {
+          "term": "we construct JHealthBench",
+          "excerpt": "alsely penalized under foreign clinical rules. To adapt established clinical evaluation perspectives to Japan without authoring rubrics from scratch, we construct JHealthBench-L (79 patient-facing consultations, 1,022 criteria) through source-cited LLM drafting, single-specialist selection and revision, independent dual-physician review, and meta-review. Specialists rewrote only 4.4% of criteria from scratch, an",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.34024"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "JHealthBench-L: Clinician-Reviewed Localization of HealthBench for Rubric-Based Medical LLM Evaluation in Japan Rubric-based benchmarks such as HealthBench evaluate large language models (LLMs) on open-ended health consultations using case-specific physician criteria, many of which presuppose the healthcare institutions, medications, and care pathways of their source regi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.34024"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "JHealthBench-L: Clinician-Reviewed Localization of HealthBench for Rubric-Based Medical LLM Evaluation in Japan Rubric-based benchmarks such as HealthBench evaluate large language models (LLMs) on open-ended health consultations using case-specific physician criteria, many of which presuppose the healthcare institutions, medications, and care pathways of their source regio",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.34024"
+        },
+        {
+          "term": "leaderboard",
+          "excerpt": "se) and reduces false penalties on Japan-adapted negative criteria by 7.1 percentage points, masking item-level clinical mismeasurement behind stable leaderboards. Axis-level and paired analyses further show that context awareness and Japan-specific clinical criteria remain primary bottlenecks, whereas Japanese continual pretraining and reasoning post-training substantially improve locally grounded",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.34024"
+        },
+        {
+          "term": "medical",
+          "excerpt": "JHealthBench-L: Clinician-Reviewed Localization of HealthBench for Rubric-Based Medical LLM Evaluation in Japan Rubric-based benchmarks such as HealthBench evaluate large language models (LLMs) on open-ended health consultations using case-specific physician criteria, many of which presuppose the healthcare institutions, medi",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.34024"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "nslation alone, these regional assumptions remain in the rubric, leaving responses appropriate in Japan uncredited or falsely penalized under foreign clinical rules. To adapt established clinical evaluation perspectives to Japan without authoring rubrics from scratch, we construct JHealthBench-L (79 patient-facing consultations, 1,022 criteria) through source-cited LLM drafting, single-specialis",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.34024"
+        },
+        {
+          "term": "healthcare",
+          "excerpt": "thBench evaluate large language models (LLMs) on open-ended health consultations using case-specific physician criteria, many of which presuppose the healthcare institutions, medications, and care pathways of their source region. Under machine translation alone, these regional assumptions remain in the rubric, leaving responses appropriate in Japan uncredited or falsely penalized under foreign cli",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.34024"
+        },
+        {
+          "term": "patient",
+          "excerpt": "linical rules. To adapt established clinical evaluation perspectives to Japan without authoring rubrics from scratch, we construct JHealthBench-L (79 patient-facing consultations, 1,022 criteria) through source-cited LLM drafting, single-specialist selection and revision, independent dual-physician review, and meta-review. Specialists rewrote only 4.4% of criteria from scratch, and independent",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.34024"
+        }
+      ],
+      "related_benchmarks": [
+        "JHealthBench",
+        "HealthBench",
+        "JPharmaBench",
+        "JMedBench",
+        "JMedEthicBench",
+        "J-ClinicalBench",
+        "KampoBench",
+        "LiveMedBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 29,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "65f3f63523ef29d49066a6199427f557d38f2b8c4d326d3f73c32d57ed89d6ed",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2611.33775",
+      "slug": "arxiv-2611-33775-b443594990",
+      "kind": "paper",
+      "title": "CHD-Bench: Diagnosing Congenital Heart Disease through Interactive Examination",
+      "abstract": "Diagnosis of congenital heart disease (CHD) requires understanding the spatial relationships between cardiac structures, which clinicians assess by scrolling through CT or cardiac magnetic resonance imaging (MRI) slices and rotating 3D reconstructions. Although automated methods have advanced cardiac segmentation, identifying congenital heart defects from volumetric scans remains an open challenge. The two existing approaches rely on handcrafted diagnostic rules limited to static anatomical abnormalities. We introduce CHD-Bench, the first benchmark for interactive CHD diagnosis, defining a multi-label task and evaluation protocol over 247 CT and MRI scans from three cohorts covering 38 CHD types. We also present CHD-Harness, open-source software that runs a VLM in a 3D Slicer environment through 22 tools, manages each examination, and records the resulting diagnosis and supporting views. We evaluate off-the-shelf medical, open weight, and closed weight VLMs and compare them with a 3D CNN classifier and published rule-based results. Gemini 4 Argon with CHD-Harness achieves the highest macro F1 across all three cohorts (0.63, 0.63, and 0.43). Allowing for interactive examination raises its macro F1 by up to 20 points over static views. These results establish CHD-Bench and CHD-Harness as a foundation for developing and evaluating VLMs for interactive CHD diagnosis.",
+      "authors": [
+        "Gautham Krishnan P",
+        "Shrisharanyan Vasu",
+        "Aniketh Vijesh",
+        "Rajagopalan Rameshbabu",
+        "Harikrishnan Anil Maya",
+        "Sarin Xavier",
+        "Mahesh Kappanayil",
+        "Gilad Gressel"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-25T05:00:19+00:00",
+      "updated_at": "2026-11-25T05:00:19+00:00",
+      "priority": "P1",
+      "categories": [
+        "experiment_agent"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.33775"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.33775v1",
+        "pdf": "https://arxiv.org/pdf/2611.33775v1",
+        "code": "https://github.com/Maitri-Labs-Amrita/CHD-Bench",
+        "html": "https://arxiv.org/html/2611.33775"
+      },
+      "evidence": [
+        {
+          "term": "We introduce CHD-Bench",
+          "excerpt": "umetric scans remains an open challenge. The two existing approaches rely on handcrafted diagnostic rules limited to static anatomical abnormalities. We introduce CHD-Bench, the first benchmark for interactive CHD diagnosis, defining a multi-label task and evaluation protocol over 247 CT and MRI scans from three cohorts covering 38 CHD types. We also present CHD-Harness, open-source software that runs a VLM i",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.33775"
+        },
+        {
+          "term": "We introduce CHD-Bench, the first benchmark",
+          "excerpt": "umetric scans remains an open challenge. The two existing approaches rely on handcrafted diagnostic rules limited to static anatomical abnormalities. We introduce CHD-Bench, the first benchmark for interactive CHD diagnosis, defining a multi-label task and evaluation protocol over 247 CT and MRI scans from three cohorts covering 38 CHD types. We also present CHD-Harness, open-source software that runs a VLM in a 3D Slicer environ",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.33775"
+        },
+        {
+          "term": "first benchmark",
+          "excerpt": "n challenge. The two existing approaches rely on handcrafted diagnostic rules limited to static anatomical abnormalities. We introduce CHD-Bench, the first benchmark for interactive CHD diagnosis, defining a multi-label task and evaluation protocol over 247 CT and MRI scans from three cohorts covering 38 CHD types. We also present CHD-Harness, open-source software that runs a VLM in a 3D Slicer environ",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.33775"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "lenge. The two existing approaches rely on handcrafted diagnostic rules limited to static anatomical abnormalities. We introduce CHD-Bench, the first benchmark for interactive CHD diagnosis, defining a multi-label task and evaluation protocol over 247 CT and MRI scans from three cohorts covering 38 CHD types. We also present CHD-Harness, open-source software that runs a VLM in a 3D Slicer environ",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.33775"
+        },
+        {
+          "term": "medical",
+          "excerpt": "3D Slicer environment through 22 tools, manages each examination, and records the resulting diagnosis and supporting views. We evaluate off-the-shelf medical, open weight, and closed weight VLMs and compare them with a 3D CNN classifier and published rule-based results. Gemini 4 Argon with CHD-Harness achieves the highest macro F1 across all three cohorts (0.63, 0.63, and 0.43). Allowing for in",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.33775"
+        },
+        {
+          "term": "disease",
+          "excerpt": "CHD-Bench: Diagnosing Congenital Heart Disease through Interactive Examination Diagnosis of congenital heart disease (CHD) requires understanding the spatial relationships between cardiac structures, which clinicians assess by scrolling through CT or cardiac magnetic resonance imaging",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.33775"
+        },
+        {
+          "term": "vision-language",
+          "excerpt": "proach to automation: giving a general-purpose model direct access to an imaging environment and allowing it to choose how to examine the scan. Can a vision-language model (VLM) diagnose CHD by examining a cardiac scan as a clinician does? To answer this question, we introduce CHD-Bench , a benchmark that defines the scans and diagnostic labels, the multi-label task, and a standardized evaluation proto",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2611.33775"
+        },
+        {
+          "term": "tool use",
+          "excerpt": "his process requires multiple steps of anatomical reasoning, with findings guiding subsequent inspection. Recent advances in multi-step reasoning and tool use in large language models [ 20 ] motivate a different approach to automation: giving a general-purpose model direct access to an imaging environment and allowing it to choose how to examine the scan. Can a vision-language model (VLM) diagno",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2611.33775"
+        }
+      ],
+      "related_benchmarks": [
+        "OmniBrainBench",
+        "MedFlowBench",
+        "ComfyBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 29,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "8282a40765dc348ae0cc7a6f4f5805fd3876d385ece0a8b741d1cf4428c89e5d",
+      "is_seed": false,
+      "topic": "experiment_agent",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "arxiv:2611.33643",
+      "slug": "arxiv-2611-33643-112b5a0e91",
+      "kind": "paper",
+      "title": "CariesBench: A Hierarchical Multi-view Benchmark for Dental Caries Screening and Diagnostic Reasoning from 3D Intraoral Scans",
+      "abstract": "Dental caries assessment is a structured clinical process requiring lesion localization, identification of the affected tooth and surface, and severity grading rather than simple image-level recognition. 3D intraoral scans (IOS) preserve detailed dental geometry and surface morphology and support standardized rendering from complementary viewpoints, enabling fine-grained visual assessment while introducing a distinct need for anatomically grounded multi-view reasoning. Despite recent advances in multimodal large language models (MLLMs) and dental vision-language benchmarks, existing evaluations do not jointly assess hierarchical arch-to-tooth-to-surface reasoning, cross-view evidence integration, and surface-level caries assessment. To address this gap, we introduce CariesBench, a hierarchical benchmark constructed from 5,932 3D IOS, comprising 85,455 standardized multi-view renderings and 133,994 clinically grounded visual question answering instances with expert quality control. CariesBench comprises three complementary task families: Arch-level Clinical Screening (ACS), Tooth-level Diagnostic Reasoning (TDR), and Structured Clinical Decision-Making (SCD). Using the CariesBench training set, we further fine-tune Qwen3-VL-8B-Instruct to obtain IntraoralGPT. Extensive evaluation of 24 representative baseline MLLMs reveals a substantial benchmark-level performance disparity between arch-level screening and tooth-level diagnostic reasoning, with higher accuracy on ACS than on TDR. CariesBench-specific supervision substantially improves the Qwen3-VL-8B-Instruct baseline, increasing the 19-task macro-average clinical accuracy from 52.7% to 69.5% and TDR Overall from 34.4% to 44.7%.",
+      "authors": [
+        "Xuefen Liu",
+        "Yanxiong",
+        "Xinquan Yang",
+        "Fangqian Zhang",
+        "Qinyi Lu",
+        "Yuning Zhang",
+        "Xianxu Hou",
+        "Shinan Zhang",
+        "Wen Ma",
+        "Linlin Shen"
+      ],
+      "source": "arxiv",
+      "published_at": "2026-11-25T02:11:32+00:00",
+      "updated_at": "2026-11-25T02:11:32+00:00",
+      "priority": "P1",
+      "categories": [
+        "multimodal"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "public",
+      "license": "",
+      "identifiers": {
+        "arxiv": "2611.33643"
+      },
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.33643v1",
+        "pdf": "https://arxiv.org/pdf/2611.33643v1",
+        "html": "https://arxiv.org/html/2611.33643"
+      },
+      "evidence": [
+        {
+          "term": "we introduce CariesBench",
+          "excerpt": "ly assess hierarchical arch-to-tooth-to-surface reasoning, cross-view evidence integration, and surface-level caries assessment. To address this gap, we introduce CariesBench, a hierarchical benchmark constructed from 5,932 3D IOS, comprising 85,455 standardized multi-view renderings and 133,994 clinically grounded visual question answering instances with expert quality control. CariesBench comprises three comp",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.33643"
+        },
+        {
+          "term": "we introduce CariesBench, a hierarchical benchmark",
+          "excerpt": "ly assess hierarchical arch-to-tooth-to-surface reasoning, cross-view evidence integration, and surface-level caries assessment. To address this gap, we introduce CariesBench, a hierarchical benchmark constructed from 5,932 3D IOS, comprising 85,455 standardized multi-view renderings and 133,994 clinically grounded visual question answering instances with expert quality control. CariesBench comprises three complementary task families: A",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.33643"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "CariesBench: A Hierarchical Multi-view Benchmark for Dental Caries Screening and Diagnostic Reasoning from 3D Intraoral Scans Dental caries assessment is a structured clinical process requiring lesion localization, identification of the affected tooth and surface, and severity grading ra",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.33643"
+        },
+        {
+          "term": "benchmarks",
+          "excerpt": "t need for anatomically grounded multi-view reasoning. Despite recent advances in multimodal large language models (MLLMs) and dental vision-language benchmarks, existing evaluations do not jointly assess hierarchical arch-to-tooth-to-surface reasoning, cross-view evidence integration, and surface-level caries assessment. To address this gap, we introduce CariesBench, a hierarchical benchmark cons",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.33643"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "erarchical Multi-view Benchmark for Dental Caries Screening and Diagnostic Reasoning from 3D Intraoral Scans Dental caries assessment is a structured clinical process requiring lesion localization, identification of the affected tooth and surface, and severity grading rather than simple image-level recognition. 3D intraoral scans (IOS) preserve detailed dental geometry and surface morphology and",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.33643"
+        },
+        {
+          "term": "multimodal",
+          "excerpt": "enabling fine-grained visual assessment while introducing a distinct need for anatomically grounded multi-view reasoning. Despite recent advances in multimodal large language models (MLLMs) and dental vision-language benchmarks, existing evaluations do not jointly assess hierarchical arch-to-tooth-to-surface reasoning, cross-view evidence integration, and surface-level caries assessment. To addre",
+          "location": "Abstract / metadata",
+          "source_url": "https://arxiv.org/html/2611.33643"
+        },
+        {
+          "term": "pathology",
+          "excerpt": "ical tasks [ 17 , 23 , 18 , 20 ] , motivating growing research interest in dentistry. Dental datasets and benchmarks have accordingly evolved from 2D pathology recognition and localization toward visual question answering, anatomical reasoning, and multimodal interpretation. Traditional resources such as DENTEX [ 14 ] primarily focus on recognition or localization from 2D dental images, whereas r",
+          "location": "1 Introduction",
+          "source_url": "https://arxiv.org/html/2611.33643"
+        }
+      ],
+      "related_benchmarks": [
+        "CariesBench",
+        "VQA",
+        "PathVQA",
+        "OmniMedVQA"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 23,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "18c740bfe064cb35cf7849eb30d55387a4bb9636e2983b960c8dde64ab3e8751",
+      "is_seed": false,
+      "topic": "multimodal",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.1097/rct.0000000000001950",
+      "slug": "doi-10-1097-rct-0000000000001950-5b136dc642",
+      "kind": "paper",
+      "title": "ChatGPT for Clinicians and HealthBench Professional: Promise, Limitations, and Possible Future Directions for Development.",
+      "abstract": "In April 2026, OpenAI launched ChatGPT for Clinicians (CfC) alongside HealthBench Professional (HBP), an open benchmark evaluating large language models (LLMs) on real clinician chat tasks across 3 domains: care consult, writing and documentation, and medical research. These releases could represent a significant step toward incorporating AI into clinical settings and warrant evaluation by radiologists. We critically analyzed HBP's methodology, results, and implicit claims, with particular attention to what the benchmark reveals about AI performance in radiology workflows. Also, we examined the benchmark design, performance data across models, the physician baseline, and key limitations relevant to imaging informatics and academic radiology practice. HBP offers a rigorous, openly reported benchmark of AI performance in the clinical setting. However, radiology is underrepresented in the data set; its sampling strategy, which favors difficult and adversarial cases, means its absolute scores cannot be interpreted as real-world performance rates. Because HBP uses difficult and adversarial red-teaming cases, and the benchmark authors state its score is \"not percent accuracy,\" the finding that the CfC system outscores the physician baseline (59.0 vs. 43.7) should be read as a benchmark-conditional result under intentionally hard sampling, not as evidence that the system is superior to physicians in routine care. For radiologists and radiology AI researchers, this benchmark is a useful yet incomplete evaluation of LLMs' capabilities in imaging informatics. In addition, HBP is a text-based benchmark of clinician chat tasks that does not assess image interpretation; therefore, its relevance to radiology is mostly confined to documentation, communication, and evidence-retrieval workflows.",
+      "authors": [
+        "Virarkar M",
+        "Ortiz Cordero RG."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-11-25T00:00:00+00:00",
+      "updated_at": "2026-11-26T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.1097/rct.0000000000001950",
+        "pmid": "43081902"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/43081902"
+      },
+      "evidence": [
+        {
+          "term": "benchmark",
+          "excerpt": "ible Future Directions for Development. In April 2026, OpenAI launched ChatGPT for Clinicians (CfC) alongside HealthBench Professional (HBP), an open benchmark evaluating large language models (LLMs) on real clinician chat tasks across 3 domains: care consult, writing and documentation, and medical research. These releases could represent a significant step toward incorporating AI into clinical s",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43081902"
+        },
+        {
+          "term": "medical",
+          "excerpt": "an open benchmark evaluating large language models (LLMs) on real clinician chat tasks across 3 domains: care consult, writing and documentation, and medical research. These releases could represent a significant step toward incorporating AI into clinical settings and warrant evaluation by radiologists. We critically analyzed HBP's methodology, results, and implicit claims, with particular atte",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43081902"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "omains: care consult, writing and documentation, and medical research. These releases could represent a significant step toward incorporating AI into clinical settings and warrant evaluation by radiologists. We critically analyzed HBP's methodology, results, and implicit claims, with particular attention to what the benchmark reveals about AI performance in radiology workflows. Also, we examined",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43081902"
+        }
+      ],
+      "related_benchmarks": [
+        "HealthBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 13,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "adee4ab39d1fc4ab0eb9dd9d27a0e84b1f61e2599681d7d0922521938380d7ea",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    },
+    {
+      "id": "doi:10.1007/s10916-026-02493-z",
+      "slug": "doi-10-1007-s10916-026-02493-z-9e17a3851c",
+      "kind": "paper",
+      "title": "RheumBench: A Specialist-Validated Rubric-Based Benchmark for Evaluating Large Language Models in Rheumatology.",
+      "abstract": "Large language models (LLMs) are increasingly used for clinical decision support, yet scalable and specialty-specific methods for evaluating their performance and safety remain limited. We developed RheumBench, the first rubric-based LLM benchmark in rheumatology, providing a specialist-validated framework for open-ended evaluation. We evaluated ten systems, comprising three frontier proprietary general-purpose LLMs, one frontier open-weight general-purpose LLM, and six clinical retrieval-augmented generation (RAG) systems, including two certified medical products and one rheumatology-specific RAG system. RheumBench comprised 100 clinical cases (70 diagnostic and 30 diverse clinical management) and 1,020 case-specific rubric criteria independently reviewed and weighted for clinical appropriateness and potential harm by two board-certified rheumatologists. Systems were evaluated for answer quality, prompt sensitivity, potential harm, diagnostic accuracy, and system confidence. Responses were scored by a three LLM judge panel, yielding 50,553 rubric-level LLM evaluations, with high agreement with rheumatologist consensus (Cohen's κ = 0.91). Overall system performance (0-100%) varied substantially, with a maximum RheumBench score of 54.0% (Claude Fable 5), and frontier general-purpose LLMs generally outperformed clinical RAG systems, including certified Prof. Valmed and DR.INFO. Management case performance varied widely, with thorough prompting improving mean management scores in 9 of 10 systems and yielding a peak score of 72.9% with GPT-5.6 Sol. Potentially severe errors occurred with all systems and were predominantly omission errors. In predominantly rare-disease cases, top-1 accuracy reached 57.1% (GPT-5.6 Sol) and top-3 67.1% (Claude Fable 5). Self-reported system confidence was generally high and diagnostic calibration analyses showed systematic overconfidence for all systems, with the lowest Brier score of 0.203 (Claude Fable 5). RheumBench identified substantial differences that were not explained by clinical specialization or medical product certification. These findings highlight limitations of current LLM-based clinical decision support, and underscore the need for human oversight. Further studies are needed to assess human-LLM interaction and effects on clinical outcomes.",
+      "authors": [
+        "Lechner F",
+        "Bamberger J",
+        "Kremer P",
+        "Richter J",
+        "Schneider M",
+        "Kiltz U",
+        "Kuhn S",
+        "Flek L",
+        "Klemm P",
+        "Hueber AJ",
+        "Krusche M",
+        "Labinsky H",
+        "Knitza J."
+      ],
+      "source": "europepmc",
+      "published_at": "2026-11-25T00:00:00+00:00",
+      "updated_at": "2026-11-25T00:00:00+00:00",
+      "priority": "P1",
+      "categories": [
+        "general_text"
+      ],
+      "collection_status": "confirmed",
+      "access_status": "unknown",
+      "license": "",
+      "identifiers": {
+        "doi": "10.1007/s10916-026-02493-z",
+        "pmid": "43079047"
+      },
+      "links": {
+        "abs": "https://europepmc.org/article/MED/43079047"
+      },
+      "evidence": [
+        {
+          "term": "first rubric-based LLM benchmark",
+          "excerpt": "ecision support, yet scalable and specialty-specific methods for evaluating their performance and safety remain limited. We developed RheumBench, the first rubric-based LLM benchmark in rheumatology, providing a specialist-validated framework for open-ended evaluation. We evaluated ten systems, comprising three frontier proprietary general-purpose LLMs, one frontier open-weight general-purpose LLM, and six clinical ret",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43079047"
+        },
+        {
+          "term": "benchmark",
+          "excerpt": "RheumBench: A Specialist-Validated Rubric-Based Benchmark for Evaluating Large Language Models in Rheumatology. Large language models (LLMs) are increasingly used for clinical decision support, yet scalable and specialty-specific methods for evaluating their performance and safety remain limited",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43079047"
+        },
+        {
+          "term": "medical",
+          "excerpt": "al-purpose LLMs, one frontier open-weight general-purpose LLM, and six clinical retrieval-augmented generation (RAG) systems, including two certified medical products and one rheumatology-specific RAG system. RheumBench comprised 100 clinical cases (70 diagnostic and 30 diverse clinical management) and 1,020 case-specific rubric criteria independently reviewed and weighted for clinical appropri",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43079047"
+        },
+        {
+          "term": "clinical",
+          "excerpt": "cialist-Validated Rubric-Based Benchmark for Evaluating Large Language Models in Rheumatology. Large language models (LLMs) are increasingly used for clinical decision support, yet scalable and specialty-specific methods for evaluating their performance and safety remain limited. We developed RheumBench, the first rubric-based LLM benchmark in rheumatology, providing a specialist-validated frame",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43079047"
+        },
+        {
+          "term": "disease",
+          "excerpt": "ak score of 72.9% with GPT-5.6 Sol. Potentially severe errors occurred with all systems and were predominantly omission errors. In predominantly rare-disease cases, top-1 accuracy reached 57.1% (GPT-5.6 Sol) and top-3 67.1% (Claude Fable 5). Self-reported system confidence was generally high and diagnostic calibration analyses showed systematic overconfidence for all systems, with the lowest Br",
+          "location": "Abstract / metadata",
+          "source_url": "https://europepmc.org/article/MED/43079047"
+        }
+      ],
+      "related_benchmarks": [
+        "RheumBench"
+      ],
+      "related_agent_url": "",
+      "evaluation_contexts": [
+        "beneficial_capability"
+      ],
+      "classification_reason": "Title or abstract explicitly identifies a new biomedical benchmark, dataset, or evaluation suite.",
+      "match_score": 20,
+      "extraction_status": "complete",
+      "extraction_error": "",
+      "content_hash": "4634ad489768e45df063186ea46ea6809f8b9a351d7f5d84842370b5fbee7b00",
+      "is_seed": false,
+      "topic": "general_text",
+      "contribution_type": "new_benchmark"
+    }
+  ]
+}
