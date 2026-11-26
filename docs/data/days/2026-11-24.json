@@ -1,15 +1,21 @@
 {
   "date": "2026-11-24",
-  "count": 9,
+  "count": 10,
   "report": {
     "date": "2026-11-24",
-    "count": 9,
+    "count": 10,
     "themes": [
       {
         "id": "coding",
         "count": 3,
         "en": "Coding agents",
         "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
       },
       {
         "id": "computer-use",
@@ -24,12 +30,6 @@
         "zh": "安全"
       },
       {
-        "id": "tool-use",
-        "count": 2,
-        "en": "Tool use",
-        "zh": "工具使用"
-      },
-      {
         "id": "memory",
         "count": 1,
         "en": "Memory",
@@ -42,21 +42,21 @@
         "zh": "多模态"
       },
       {
-        "id": "embodied",
+        "id": "multi-agent",
         "count": 1,
-        "en": "Embodied / robotics",
-        "zh": "具身 / 机器人"
+        "en": "Multi-agent",
+        "zh": "多智能体"
       },
       {
-        "id": "gui",
+        "id": "planning",
         "count": 1,
-        "en": "GUI agents",
-        "zh": "GUI 智能体"
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
       }
     ],
     "en": {
-      "headline": "9 new agent benchmarks",
-      "summary": "On November 24, 2026, arXiv listed 9 new agent benchmarks. Work clustered around Coding agents (3), Computer use (2), Safety (2), and Tool use (2).",
+      "headline": "10 new agent benchmarks",
+      "summary": "On November 24, 2026, arXiv listed 10 new agent benchmarks. Work clustered around Coding agents (3), Tool use (3), Computer use (2), and Safety (2).",
       "highlights": [
         {
           "id": "2611.32321",
@@ -76,8 +76,8 @@
       ]
     },
     "zh": {
-      "headline": "新增 9 篇 Agent Benchmark",
-      "summary": "2026年11月24日，arXiv 新增 9 篇 Agent Benchmark。当日主题集中在代码智能体（3）、计算机使用（2）、安全（2）、工具使用（2）。",
+      "headline": "新增 10 篇 Agent Benchmark",
+      "summary": "2026年11月24日，arXiv 新增 10 篇 Agent Benchmark。当日主题集中在代码智能体（3）、工具使用（3）、计算机使用（2）、安全（2）。",
       "highlights": [
         {
           "id": "2611.32321",
@@ -164,6 +164,41 @@
         "multimodal"
       ],
       "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2611.33242",
+      "title": "CypherMAS: Benchmarking Routing Reliability in LLM-Based Multi-Agent Systems",
+      "abstract": "Multi-agent systems (MAS) built on large language models (LLMs) distribute reasoning across specialized agents that must exchange messages and invoke tools reliably. Existing evaluations typically couple communication with open domain tasks, making it difficult to determine whether a failure arises from reasoning, malformed tool use, lost messages, or forgotten requests. Prior benchmarks do not isolate communication execution or measure routing redundancy against a known optimal path. We introduce CypherMAS, a synthetic benchmark that isolates communication and routing in fixed multi-agent graphs. Agents in chain, star, bipartite, or ring graphs route cyphered messages to remote peers holding the matching decoders; since the optimal route is known, redundant LLM calls can be measured and routing failures may be easily tracked. Across eleven open-weight models from 4B to 753B, small models fail at routing and tool use, dense models above 27B degrade with diameter, and successful runs exceed minimum LLM calls. These findings identify communication reliability as a distinct scaling bottleneck for multi-agent systems and provide a controlled diagnostic for complex multi-agent systems. The source code is freely available: https://github.com/Andoree/CypherMAS.",
+      "authors": [
+        "Danil Kostromin",
+        "Andrey Sakhovskiy",
+        "Semen Budennyy"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-11-24T14:39:07Z",
+      "updated": "2026-11-24T14:39:07Z",
+      "announced_date": "2026-11-24",
+      "first_seen": "2026-11-24",
+      "comment": "26 pages, 13 tables, 9 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.33242v1",
+        "pdf": "https://arxiv.org/pdf/2611.33242v1",
+        "html": "https://arxiv.org/html/2611.33242"
+      },
+      "score": 15,
+      "tags": [
+        "tool-use",
+        "multi-agent",
+        "planning"
+      ],
+      "field": "multi-agent",
       "citations": 0
     },
     {
