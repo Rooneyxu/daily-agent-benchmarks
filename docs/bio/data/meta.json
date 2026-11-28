@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T14:05:54Z",
+  "generated_at": "2026-11-28T13:23:41Z",
   "total": 259,
   "day_count": 115,
   "latest_date": "2026-11-25",
   "counts": {
     "topics": {
-      "general_text": 99,
+      "general_text": 98,
       "experiment_agent": 73,
-      "multimodal": 67,
+      "multimodal": 68,
       "biosafety": 20
     },
     "contribution_types": {
@@ -28,49 +28,49 @@
     {
       "source": "arxiv",
       "name": "arXiv",
-      "status": "failed",
-      "started_at": "2026-11-27T14:06:34Z",
-      "finished_at": "2026-11-27T14:07:00Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "Client error '429 Unknown Error' for url 'https://export.arxiv.org/api/query?search_query=%28ti%3Abenchmark+OR+ti%3Abench+OR+ti%3A%22evaluation+suite%22%29+AND+%28all%3Abiomedical+OR+all%3Amedical+OR+all%3Aclinical%29&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "status": "success",
+      "started_at": "2026-11-28T13:24:08Z",
+      "finished_at": "2026-11-28T13:24:33Z",
+      "discovered": 38,
+      "published": 24,
+      "error": ""
     },
     {
       "source": "europepmc",
       "name": "Europe PMC",
-      "status": "failed",
-      "started_at": "2026-11-27T14:07:00Z",
-      "finished_at": "2026-11-27T14:07:34Z",
-      "discovered": 0,
-      "published": 0,
-      "error": "Server error '503 ' for url 'https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=FIRST_PDATE%3A%5B2026-11-23+TO+2026-11-27%5D+AND+%28TITLE_ABS%3A%22benchmark%22+OR+TITLE_ABS%3A%22benchmarking%22+OR+TITLE_ABS%3A%22evaluation+suite%22+OR+TITLE_ABS%3A%22evaluation+dataset%22+OR+TITLE_ABS%3A%22challenge+set%22%29+AND+%28TITLE_ABS%3A%22biomedical%22+OR+TITLE_ABS%3A%22medical%22+OR+TITLE_ABS%3A%22clinical%22+OR+TITLE_ABS%3A%22biology%22+OR+TITLE_ABS%3A%22biological%22+OR+TITLE_ABS%3A%22life+science%22+OR+TITLE_ABS%3A%22genomics%22+OR+TITLE_ABS%3A%22proteomics%22+OR+TITLE_ABS%3A%22wet+lab%2"
+      "status": "success",
+      "started_at": "2026-11-28T13:24:33Z",
+      "finished_at": "2026-11-28T13:29:51Z",
+      "discovered": 126,
+      "published": 77,
+      "error": ""
     },
     {
       "source": "biorxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-11-27T14:07:34Z",
-      "finished_at": "2026-11-27T14:14:09Z",
-      "discovered": 1057,
-      "published": 75,
+      "started_at": "2026-11-28T13:29:51Z",
+      "finished_at": "2026-11-28T13:31:47Z",
+      "discovered": 1178,
+      "published": 82,
       "error": ""
     },
     {
       "source": "medrxiv",
       "name": "bioRxiv / medRxiv",
       "status": "success",
-      "started_at": "2026-11-27T14:14:09Z",
-      "finished_at": "2026-11-27T14:14:27Z",
-      "discovered": 327,
-      "published": 33,
+      "started_at": "2026-11-28T13:31:47Z",
+      "finished_at": "2026-11-28T13:31:56Z",
+      "discovered": 252,
+      "published": 24,
       "error": ""
     },
     {
       "source": "openreview",
       "name": "OpenReview",
       "status": "failed",
-      "started_at": "2026-11-27T14:14:27Z",
-      "finished_at": "2026-11-27T14:14:27Z",
+      "started_at": "2026-11-28T13:31:56Z",
+      "finished_at": "2026-11-28T13:31:57Z",
       "discovered": 0,
       "published": 0,
       "error": "Client error '400 Bad Request' for url 'https://api2.openreview.net/notes/search?query=benchmark+biology&content=all&sort=tmdate%3Adesc&limit=200'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
